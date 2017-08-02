@@ -190,7 +190,7 @@ for(gend.data in 1:gen.count){
             if(length(df.previous.calcs[,1])>0){
               if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel)){next}}
             not.failed=0
-            set.seed(seed.const)
+            set.seed(seed.var)
             try({trainedmodel <- train(x=data.frame(training[,2:length(training[1,])]),
                                        y = df.toprocess[inTrain,1],
                                        method = allmodel,
@@ -219,7 +219,7 @@ for(gend.data in 1:gen.count){
             if(length(overRMSE)<1){overRMSE=-1}
 
             #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
-            write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),round(overRMSE,digits = 3),round(RMSE,digits = 3),round(mae,digits = 3),date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,RMSE.mean,adaptControl$search,seed.const,round(proc.time()[3]-when[3]),adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune),
+            write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),round(overRMSE,digits = 3),round(RMSE,digits = 3),round(mae,digits = 3),date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune),
                         file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
                         eol = "\n", na = "NA", dec = ".", row.names = F,
                         col.names = F, qmethod = "double")
@@ -258,7 +258,7 @@ for(gend.data in 1:gen.count){
               if(length(overRMSE)<1){overRMSE=-1}
 
               #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
-              write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),round(overRMSE,digits = 3),round(RMSE,digits = 3),round(mae,digits = 3),date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,RMSE.mean,simpleControl$search,seed.const,round(proc.time()[3]-when[3]),simpleControl$method,tuneLength2,simpleControl$number,"no rep","no min",trainedmodel$bestTune),
+              write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),round(overRMSE,digits = 3),round(RMSE,digits = 3),round(mae,digits = 3),date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,RMSE.mean,simpleControl$search,seed.var,round(proc.time()[3]-when[3]),simpleControl$method,tuneLength2,simpleControl$number,"no rep","no min",trainedmodel$bestTune),
                           file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
                           eol = "\n", na = "NA", dec = ".", row.names = F,
                           col.names = F, qmethod = "double")
