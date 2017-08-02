@@ -1,0 +1,70 @@
+0.335,0.212,0.659,0.889,0.593,Wed Aug 02 16:37:25 2017,avNNet,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 16:37:26 2017,bag,8,1,basic latent features,ignore,none,asis,1
+0.999,0.999,0.001,NA,NA,Wed Aug 02 16:39:17 2017,bagEarth,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,30,adaptive_cv,16,5,2,2,7,2
+0.999,0.999,-1,NA,NA,Wed Aug 02 16:39:31 2017,bagEarthGCV,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,14,cv,10,8,no rep,no min,1
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 16:40:35 2017,bam,8,1,basic latent features,ignore,none,asis,65
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 16:40:36 2017,bartMachine,8,1,basic latent features,ignore,none,asis,1
+1,1,-1,NA,NA,Wed Aug 02 16:40:39 2017,bayesglm,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,2,cv,10,8,no rep,no min,none
+0.801,0.798,0.3,0.228,0.178,Wed Aug 02 16:47:01 2017,blackboost,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,382,adaptive_cv,16,5,2,2,795,1
+0.998,0.998,0.002,0.002,0.002,Wed Aug 02 16:47:07 2017,blasso,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,6,adaptive_cv,16,5,2,2,0.0344665902666748
+0.999,0.999,-1,0.001,0.001,Wed Aug 02 16:47:15 2017,blassoAveraged,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,7,cv,10,8,no rep,no min,none
+0.998,0.998,-1,0.002,0.002,Wed Aug 02 16:47:22 2017,bridge,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,6,cv,10,8,no rep,no min,none
+0.976,0.981,0.023,NA,NA,Wed Aug 02 16:51:04 2017,BstLm,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,223,adaptive_cv,16,5,2,2,49,0.38863467263151
+0.997,0.997,0.009,0.003,0.003,Wed Aug 02 16:58:23 2017,bstSm,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,439,adaptive_cv,16,5,2,2,379,0.584763705758844
+0.767,0.778,0.238,0.237,0.19,Wed Aug 02 17:11:13 2017,bstTree,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,433,adaptive_cv,16,5,2,2,333,7,0.102631600300549
+0.593,0.555,0.441,0.477,0.333,Wed Aug 02 17:11:30 2017,cforest,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,16,adaptive_cv,16,5,2,2,8
+0.402,0.398,0.543,0.645,0.489,Wed Aug 02 17:11:35 2017,ctree,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,5,adaptive_cv,16,5,2,2,0.870237660128623
+0.416,0.403,0.585,0.64,0.477,Wed Aug 02 17:11:48 2017,ctree2,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,13,adaptive_cv,16,5,2,2,4,0.398618868086487
+0.999,1,0,0.001,0,Wed Aug 02 17:12:25 2017,cubist,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,37,adaptive_cv,16,5,2,2,7,8
+-0.119,-0.081,0.655,NA,NA,Wed Aug 02 17:13:48 2017,DENFIS,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,82,adaptive_cv,16,5,2,2,0.647859189426526,15
+0,0,0.889,1.072,0.817,Wed Aug 02 17:14:03 2017,dnn,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,15,adaptive_cv,16,5,2,2,18,11,6,0.00716611226089299,0.0360623519401997
+0.999,0.999,0.001,NA,NA,Wed Aug 02 17:14:08 2017,earth,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,5,adaptive_cv,16,5,2,2,7,1
+1,1,0,NA,NA,Wed Aug 02 17:14:16 2017,elm,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,8,adaptive_cv,16,5,2,2,12,purelin
+0.973,0.976,0.032,NA,NA,Wed Aug 02 17:14:20 2017,enet,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,4,adaptive_cv,16,5,2,2,0.840448141796514,0.222891093701197
+0.119,0.183,0.768,0.875,0.72,Wed Aug 02 17:17:31 2017,evtree,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,191,adaptive_cv,16,5,2,2,1.86253012530506
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:17:33 2017,extraTrees,8,1,basic latent features,ignore,none,asis,1
+1,1,0,NA,NA,Wed Aug 02 17:17:42 2017,foba,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,9,adaptive_cv,16,5,2,2,5,1.18108138939221e-05
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:17:57 2017,gam,8,1,basic latent features,ignore,none,asis,15
+0.995,0.995,0.007,0.005,0.004,Wed Aug 02 17:19:17 2017,gamboost,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,80,adaptive_cv,16,5,2,2,955,no
+1,1,0,NA,NA,Wed Aug 02 17:19:49 2017,gamSpline,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,31,adaptive_cv,16,5,2,2,0.0602331885602325
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:19:54 2017,gaussprLinear,8,1,basic latent features,ignore,none,asis,5
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:20:04 2017,gaussprPoly,8,1,basic latent features,ignore,none,asis,10
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:20:20 2017,gaussprRadial,8,1,basic latent features,ignore,none,asis,16
+0.765,0.752,0.206,0.266,0.192,Wed Aug 02 17:20:33 2017,gbm,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,13,adaptive_cv,16,5,2,2,4351,5,0.132856195455417,6
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:21:40 2017,gbm_h2o,8,1,basic latent features,ignore,none,asis,67
+0.999,0.999,-1,NA,NA,Wed Aug 02 17:21:43 2017,gcvEarth,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,3,cv,10,8,no rep,no min,1
+1,1,-1,NA,NA,Wed Aug 02 17:21:46 2017,glm,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,2,cv,10,8,no rep,no min,none
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:21:52 2017,glm.nb,8,1,basic latent features,ignore,none,asis,5
+1,1,0,NA,NA,Wed Aug 02 17:22:23 2017,glmboost,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,31,adaptive_cv,16,5,2,2,521,yes
+0.969,0.97,0.027,0.032,0.025,Wed Aug 02 17:22:35 2017,glmnet,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,12,adaptive_cv,16,5,2,2,0.339777322718874,0.00162123888538498
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:23:30 2017,glmnet_h2o,8,1,basic latent features,ignore,none,asis,55
+1,1,-1,NA,NA,Wed Aug 02 17:23:34 2017,glmStepAIC,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,4,cv,10,8,no rep,no min,none
+1,1,0,NA,NA,Wed Aug 02 17:23:56 2017,icr,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,22,adaptive_cv,16,5,2,2,5
+1,1,0,NA,NA,Wed Aug 02 17:24:07 2017,kernelpls,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,10,adaptive_cv,16,5,2,2,5
+0.699,0.685,0.348,0.338,0.246,Wed Aug 02 17:24:24 2017,kknn,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,17,adaptive_cv,16,5,2,2,7,2.36517546256073,biweight
+0.688,0.693,0.394,0.329,0.255,Wed Aug 02 17:24:33 2017,knn,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,8,adaptive_cv,16,5,2,2,2
+0.037,0.033,0.859,1.036,0.787,Wed Aug 02 17:24:40 2017,krlsPoly,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,7,adaptive_cv,16,5,2,2,0.134821382556912,1
+0.994,0.994,0.009,0.007,0.005,Wed Aug 02 17:24:50 2017,krlsRadial,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,10,adaptive_cv,16,5,2,2,3.89140700467817e-05,459.949225396258
+1,1,0,NA,NA,Wed Aug 02 17:24:55 2017,lars,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,5,adaptive_cv,16,5,2,2,0.870237660128623
+1,1,0,NA,NA,Wed Aug 02 17:25:03 2017,lars2,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,8,adaptive_cv,16,5,2,2,6
+1,1,0,NA,NA,Wed Aug 02 17:25:08 2017,lasso,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,5,adaptive_cv,16,5,2,2,0.870237660128623
+1,1,0,NA,NA,Wed Aug 02 17:25:16 2017,leapBackward,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,8,adaptive_cv,16,5,2,2,3
+1,1,0,NA,NA,Wed Aug 02 17:25:23 2017,leapForward,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,7,adaptive_cv,16,5,2,2,5
+1,1,0,NA,NA,Wed Aug 02 17:25:31 2017,leapSeq,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,8,adaptive_cv,16,5,2,2,3
+1,1,-1,NA,NA,Wed Aug 02 17:25:34 2017,lm,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,2,cv,10,8,no rep,no min,TRUE
+1,1,-1,NA,NA,Wed Aug 02 17:25:38 2017,lmStepAIC,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,4,cv,10,8,no rep,no min,none
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:25:44 2017,logicBag,8,1,basic latent features,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:25:49 2017,logreg,8,1,basic latent features,ignore,none,asis,5
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:25:50 2017,M5,8,1,basic latent features,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:25:51 2017,M5Rules,8,1,basic latent features,ignore,none,asis,1
+1,1,0,NA,NA,Wed Aug 02 17:26:18 2017,msaenet,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,26,adaptive_cv,16,5,2,2,0.908739947108552,7,1.59958218957763
+0.986,0.982,0.031,0.019,0.011,Wed Aug 02 17:28:42 2017,neuralnet,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,144,adaptive_cv,16,5,2,2,2,13,7
+0.339,0.201,0.651,0.857,0.54,Wed Aug 02 17:28:52 2017,nnet,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,11,adaptive_cv,16,5,2,2,3,0.00101376002583678
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:28:55 2017,nnls,8,1,basic latent features,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 17:28:56 2017,ordinalNet,8,1,basic latent features,ignore,none,asis,1
+0.738,0.716,0.306,0.305,0.214,Wed Aug 02 17:29:17 2017,parRF,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,21,adaptive_cv,16,5,2,2,6
+0.555,0.528,0.585,0.506,0.363,Wed Aug 02 17:32:16 2017,partDSA,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,179,adaptive_cv,16,5,2,2,6,0.394195910426788
+0.338,0.201,0.674,0.857,0.541,Wed Aug 02 17:32:27 2017,pcaNNet,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,11,adaptive_cv,16,5,2,2,3,0.00101376002583678
+1,1,0,NA,NA,Wed Aug 02 17:32:35 2017,pcr,8,1,basic latent features,ignore,none,asis,1.07178337800835,random,222,8,adaptive_cv,16,5,2,2,3
+0.975,0.971,0.011,0.022,0.016,Wed Aug 02 18:09:39 2017,avNNet,8,1,basic latent features,ignore,none,range01,0.765677328143738,random,222,36,adaptive_cv,16,5,2,2,7,0.0000217534828456259,FALSE
+Fail,Fail,Fail,Fail,Fail,Wed Aug 02 18:09:42 2017,bag,8,1,basic latent features,ignore,none,range01,2
