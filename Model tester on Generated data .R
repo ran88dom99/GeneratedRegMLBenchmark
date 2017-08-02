@@ -118,7 +118,7 @@ for(gend.data in 1:gen.count){
       data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
 
 
-      normings=c("range01","centernscale","YeoJohnson","expoTrans","quantile","asis")#
+      normings=c("range01","expoTrans","quantile")#,"asis","centernscale","YeoJohnson"
       for(norming in normings) {
         for(trans.y in 1:2) {
           df.toprocess=data.source
@@ -172,10 +172,10 @@ for(gend.data in 1:gen.count){
           ######for all models########
           for(allmodel in allmodels){#just before all models define d.f and reduce it
             write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
-            bad.models=c("brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
+            bad.models=c("penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
             if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
             library(caret) #mlp...s creat some bizzare problem that breaks caret::train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
-
+            #penalized slow hen fails
             list.of.packages <-getModelInfo(allmodel)[[1]]$library
             new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
             if(length(new.packages)) install.packages(new.packages, dep = TRUE)
@@ -247,7 +247,9 @@ for(gend.data in 1:gen.count){
               RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
               #mae=mean(abs(p[,2]-p[,1]), na.rm = T)
               mae=MAE(p[,1],p[,2])
-
+              print(confusionMatrix(p[,1],p[,2]))
+              
+              
               wut=print(trainedmodel,selectCol=TRUE)
               overRMSE=as.numeric(wut[wut[,length(wut[1,])]=="*",length(wut[1,])-3])
               replace.overRMSE=1
