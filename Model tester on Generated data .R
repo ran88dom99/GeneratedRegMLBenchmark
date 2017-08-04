@@ -91,7 +91,7 @@ print(date());
 
 if(!exists("gen.count")){gen.count=17}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-for(gend.data in 1:gen.count){
+for(gend.data in 6:gen.count){
   data.source<-as.matrix(read.csv(paste(gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data]
   missingdatas=c("ignore")
@@ -118,7 +118,7 @@ for(gend.data in 1:gen.count){
       data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
 
 
-      normings=c("range01","expoTrans","quantile")#,"asis","centernscale","YeoJohnson"
+      normings=c("asis")#,"range01","expoTrans","quantile","centernscale","YeoJohnson"
       for(norming in normings) {
         for(trans.y in 1:2) {
           df.toprocess=data.source
@@ -160,7 +160,7 @@ for(gend.data in 1:gen.count){
 
           tuneLength=16
           tuneLength2=10
-          seed.var=seed.var+1
+          
           set.seed(seed.var)
           inTrain <- createDataPartition(y = df.toprocess[,1],
                                          p = .75,
@@ -176,6 +176,7 @@ for(gend.data in 1:gen.count){
             if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
             library(caret) #mlp...s creat some bizzare problem that breaks caret::train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
             #penalized slow hen fails
+            seed.var=seed.var+1
             list.of.packages <-getModelInfo(allmodel)[[1]]$library
             new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
             if(length(new.packages)) install.packages(new.packages, dep = TRUE)

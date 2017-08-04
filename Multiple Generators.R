@@ -5,7 +5,7 @@ gens.names=vector(length = 100)
 #single scalar to keep count
 gen.count=0
 
-############from latent features######
+############basic latent features######
 gen.count=gen.count+1
 gens.names[gen.count]="basic latent features"
 
