@@ -1,4 +1,4 @@
-0.335,0.212,0.659,0.889,0.593,Wed Aug 02 16:37:25 2017,avNNet,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE
+0.335,0.212,0.659,0.889,0.593,Wed Aug 02 16:37:25 2017,avNNet,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,
 Fail,Fail,Fail,Fail,Fail,Wed Aug 02 16:37:26 2017,bag,8,1,basic latent features,ignore,none,asis,1
 0.999,0.999,0.001,NA,NA,Wed Aug 02 16:39:17 2017,bagEarth,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,30,adaptive_cv,16,5,2,2,7,2
 0.999,0.999,-1,NA,NA,Wed Aug 02 16:39:31 2017,bagEarthGCV,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,14,cv,10,8,no rep,no min,1
