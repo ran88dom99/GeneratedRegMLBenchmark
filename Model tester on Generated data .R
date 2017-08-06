@@ -74,12 +74,12 @@ allmodels <- unique(modelLookup()[modelLookup()$forReg,c(1)])
 
 
 adaptControl <- trainControl(method = "adaptive_cv",
-                             number = 5, repeats = 2,
-                             adaptive = list(min = 2, alpha = 0.05,
+                             number = 8, repeats = 5,
+                             adaptive = list(min = 4, alpha = 0.05,
                                              method = "gls", complete = FALSE),
                              search = "random")
 simpleControl <- trainControl(method = "cv",
-                              number = 8,
+                              number = 10,
                               search = "random")
 
 
@@ -118,9 +118,9 @@ for(gend.data in 6:gen.count){
       data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
 
 
-      normings=c("asis")#,"range01","expoTrans","quantile","centernscale","YeoJohnson"
+      normings=c("range01")#,"asis","expoTrans","quantile","centernscale","YeoJohnson"
       for(norming in normings) {
-        for(trans.y in 1:2) {
+        for(trans.y in 1:1) {
           df.toprocess=data.source
           y.untransformed<-df.toprocess[,1]
 
@@ -158,8 +158,8 @@ for(gend.data in 6:gen.count){
           #nzv[nzv$nzv,][1:10,]
           #df.toprocess = (df.toprocess[, -nzv])
 
-          tuneLength=16
-          tuneLength2=10
+          tuneLength=32
+          tuneLength2=20
           
           set.seed(seed.var)
           inTrain <- createDataPartition(y = df.toprocess[,1],
@@ -172,7 +172,8 @@ for(gend.data in 6:gen.count){
           ######for all models########
           for(allmodel in allmodels){#just before all models define d.f and reduce it
             write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
-            bad.models=c("penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
+            bad.models=c("partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
+            #too slow 
             if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
             library(caret) #mlp...s creat some bizzare problem that breaks caret::train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
             #penalized slow hen fails

@@ -1,2 +1,542 @@
 0.335,0.212,0.659,0.889,0.593,Wed Aug 02 16:37:25 2017,avNNet,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,,
 Fail,Fail,Fail,Fail,Fail,Wed Aug 02 16:37:26 2017,bag,8,1,basic latent features,ignore,none,asis,1
+0.879,0.85,0.015,0.122,0.067,Sat Aug 05 22:21:41 2017,avNNet,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,223,297,adaptive_cv,32,8,5,4,11,0.0000117908739407287,FALSE
+Fail,Fail,Fail,Fail,Fail,Sat Aug 05 22:21:43 2017,bag,8,1,polynomial C1 t C2,ignore,none,range01,2
+0.965,0.932,0.009,0.055,0.02,Sat Aug 05 22:31:50 2017,bagEarth,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,225,607,adaptive_cv,32,8,5,4,15,2
+Fail,Fail,Fail,Fail,Fail,Sat Aug 05 22:32:21 2017,bagEarthGCV,8,1,polynomial C1 t C2,ignore,none,range01,31
+Fail,Fail,Fail,Fail,Fail,Sat Aug 05 22:32:31 2017,bam,8,1,polynomial C1 t C2,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sat Aug 05 22:32:32 2017,bartMachine,8,1,polynomial C1 t C2,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sat Aug 05 22:32:36 2017,bayesglm,8,1,polynomial C1 t C2,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sat Aug 05 22:33:20 2017,blasso,8,1,polynomial C1 t C2,ignore,none,range01,44
+Fail,Fail,Fail,Fail,Fail,Sat Aug 05 22:33:47 2017,blassoAveraged,8,1,polynomial C1 t C2,ignore,none,range01,27
+Fail,Fail,Fail,Fail,Fail,Sat Aug 05 22:34:13 2017,bridge,8,1,polynomial C1 t C2,ignore,none,range01,26
+0,-0.027,0.117,0.837,0.556,Sat Aug 05 22:54:57 2017,BstLm,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,233,1244,adaptive_cv,32,8,5,4,28,0.118049225007184
+0.106,0.065,0.103,0.761,0.497,Sat Aug 05 22:55:41 2017,cforest,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,234,43,adaptive_cv,32,8,5,4,9
+0.075,-0.002,0.114,0.816,0.514,Sat Aug 05 22:56:17 2017,ctree,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,235,36,adaptive_cv,32,8,5,4,0.0541181555017829
+0.075,-0.002,0.108,0.816,0.514,Sat Aug 05 22:57:09 2017,ctree2,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,236,51,adaptive_cv,32,8,5,4,8,0.0898204930126667
+0.828,0.83,0.025,0.139,0.095,Sat Aug 05 23:36:09 2017,cubist,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,237,2340,adaptive_cv,32,8,5,4,92,2
+Fail,Fail,Fail,Fail,Fail,Sat Aug 05 23:36:21 2017,DENFIS,8,1,polynomial C1 t C2,ignore,none,range01,12
+-0.465,-0.305,0.119,1.063,0.815,Sat Aug 05 23:36:57 2017,dnn,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,239,36,adaptive_cv,32,8,5,4,11,13,10,0.00446037813089788,0.0577907839091495
+0.954,0.935,0.013,NA,NA,Sat Aug 05 23:37:37 2017,earth,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,240,40,adaptive_cv,32,8,5,4,13,2
+0.069,0.113,0.106,0.723,0.518,Sat Aug 05 23:38:00 2017,elm,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,241,22,adaptive_cv,32,8,5,4,18,tansig
+Fail,Fail,Fail,Fail,Fail,Sat Aug 05 23:38:10 2017,enet,8,1,polynomial C1 t C2,ignore,none,range01,10
+0.43,0.467,0.069,0.434,0.317,Sun Aug 06 00:06:11 2017,evtree,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,243,1680,adaptive_cv,32,8,5,4,1.17076915875077
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:06:12 2017,extraTrees,8,1,polynomial C1 t C2,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:06:27 2017,foba,8,1,polynomial C1 t C2,ignore,none,range01,15
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:06:35 2017,gam,8,1,polynomial C1 t C2,ignore,none,range01,7
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:06:44 2017,gamboost,8,1,polynomial C1 t C2,ignore,none,range01,9
+-0.141,-0.123,0.119,0.915,0.635,Sun Aug 06 00:08:59 2017,gamSpline,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,248,135,adaptive_cv,32,8,5,4,1.65430007968098
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:09:03 2017,gaussprLinear,8,1,polynomial C1 t C2,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:09:45 2017,gaussprPoly,8,1,polynomial C1 t C2,ignore,none,range01,42
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:11:29 2017,gaussprRadial,8,1,polynomial C1 t C2,ignore,none,range01,104
+0.505,0.475,0.069,0.428,0.275,Sun Aug 06 00:18:10 2017,gbm,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,252,400,adaptive_cv,32,8,5,4,4947,4,0.0167040169460233,8
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:22:32 2017,gbm_h2o,8,1,polynomial C1 t C2,ignore,none,range01,261
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:22:36 2017,gcvEarth,8,1,polynomial C1 t C2,ignore,none,range01,4
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:22:39 2017,glm,8,1,polynomial C1 t C2,ignore,none,range01,3
+-0.154,-0.127,0.117,0.918,0.642,Sun Aug 06 00:22:43 2017,glm.nb,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,256,4,adaptive_cv,32,8,5,4,identity
+-0.035,-0.05,0.121,0.856,0.576,Sun Aug 06 00:23:06 2017,glmboost,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,257,22,adaptive_cv,32,8,5,4,27,no
+0.017,-0.01,0.118,0.823,0.547,Sun Aug 06 00:23:19 2017,glmnet,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,258,13,adaptive_cv,32,8,5,4,0.312030049273744,0.732987904162706
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:27:40 2017,glmnet_h2o,8,1,polynomial C1 t C2,ignore,none,range01,260
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:27:47 2017,glmStepAIC,8,1,polynomial C1 t C2,ignore,none,range01,7
+-0.013,-0.02,0.115,0.831,0.564,Sun Aug 06 00:29:06 2017,icr,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,261,79,adaptive_cv,32,8,5,4,1
+-0.115,-0.101,0.122,0.897,0.62,Sun Aug 06 00:29:09 2017,kernelpls,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,262,3,adaptive_cv,32,8,5,4,1
+0.239,0.207,0.087,0.646,0.423,Sun Aug 06 00:33:25 2017,kknn,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,263,256,adaptive_cv,32,8,5,4,73,2.51616379246116,epanechnikov
+0.242,0.19,0.089,0.66,0.421,Sun Aug 06 00:33:56 2017,knn,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,264,30,adaptive_cv,32,8,5,4,4
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:34:07 2017,krlsPoly,8,1,polynomial C1 t C2,ignore,none,range01,11
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:34:19 2017,krlsRadial,8,1,polynomial C1 t C2,ignore,none,range01,11
+0.014,-0.014,0.118,0.826,0.548,Sun Aug 06 00:34:38 2017,lars,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,267,19,adaptive_cv,32,8,5,4,0.0148714499082416
+-0.046,-0.057,0.115,0.861,0.582,Sun Aug 06 00:34:58 2017,lars2,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,268,20,adaptive_cv,32,8,5,4,5
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:35:03 2017,lasso,8,1,polynomial C1 t C2,ignore,none,range01,5
+-0.109,-0.092,0.119,0.89,0.617,Sun Aug 06 00:35:33 2017,leapBackward,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,270,29,adaptive_cv,32,8,5,4,4
+-0.133,-0.113,0.12,0.907,0.63,Sun Aug 06 00:36:01 2017,leapForward,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,271,28,adaptive_cv,32,8,5,4,7
+-0.133,-0.113,0.119,0.907,0.63,Sun Aug 06 00:36:29 2017,leapSeq,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,272,28,adaptive_cv,32,8,5,4,7
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:36:32 2017,lm,8,1,polynomial C1 t C2,ignore,none,range01,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:36:37 2017,lmStepAIC,8,1,polynomial C1 t C2,ignore,none,range01,5
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:36:47 2017,logicBag,8,1,polynomial C1 t C2,ignore,none,range01,9
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:36:57 2017,logreg,8,1,polynomial C1 t C2,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:36:58 2017,M5,8,1,polynomial C1 t C2,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:36:59 2017,M5Rules,8,1,polynomial C1 t C2,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:37:36 2017,msaenet,8,1,polynomial C1 t C2,ignore,none,range01,36
+0.773,0.757,0.027,0.198,0.126,Sun Aug 06 00:57:26 2017,neuralnet,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,280,1190,adaptive_cv,32,8,5,4,5,19,8
+0.916,0.879,0.016,0.099,0.047,Sun Aug 06 00:59:37 2017,nnet,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,281,130,adaptive_cv,32,8,5,4,17,0.0000170916820924357
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:59:39 2017,nnls,8,1,polynomial C1 t C2,ignore,none,range01,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 00:59:40 2017,ordinalNet,8,1,polynomial C1 t C2,ignore,none,range01,0
+0.395,0.277,0.072,0.589,0.336,Sun Aug 06 01:00:31 2017,parRF,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,284,51,adaptive_cv,32,8,5,4,9
+0.89,0.866,0.014,0.109,0.061,Sun Aug 06 01:01:29 2017,pcaNNet,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,285,58,adaptive_cv,32,8,5,4,11,0.0000179499075370661
+-0.064,-0.078,0.117,0.878,0.592,Sun Aug 06 01:01:56 2017,pcr,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,286,27,adaptive_cv,32,8,5,4,3
+Fail,Fail,Fail,Fail,PackageFail,Sun Aug 06 01:02:15 2017,pls,8,1,polynomial C1 t C2,ignore,none,range01,46
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:02:29 2017,plsRglm,8,1,polynomial C1 t C2,ignore,none,range01,14
+0.94,0.91,0.02,0.073,0.034,Sun Aug 06 01:10:32 2017,ppr,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,289,482,adaptive_cv,32,8,5,4,5
+Fail,Fail,Fail,Fail,PackageFail,Sun Aug 06 01:10:45 2017,pythonKnnReg,8,1,polynomial C1 t C2,ignore,none,range01,495
+-0.628,-0.585,0.147,1.291,0.906,Sun Aug 06 01:13:07 2017,qrf,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,291,141,adaptive_cv,32,8,5,4,9
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:13:39 2017,qrnn,8,1,polynomial C1 t C2,ignore,none,range01,32
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:13:40 2017,randomGLM,8,1,polynomial C1 t C2,ignore,none,range01,0
+0.408,0.288,0.085,0.58,0.329,Sun Aug 06 01:13:57 2017,ranger,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,294,16,adaptive_cv,32,8,5,4,9
+0.437,0.325,0.08,0.55,0.313,Sun Aug 06 01:17:46 2017,Rborist,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,295,228,adaptive_cv,32,8,5,4,8
+-2.744,-1.893,0.541,2.357,2.083,Sun Aug 06 01:18:01 2017,relaxo,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,296,15,adaptive_cv,32,8,5,4,61.2564653032032,0.405950943008065
+0.409,0.286,0.085,0.582,0.329,Sun Aug 06 01:19:05 2017,rf,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,297,64,adaptive_cv,32,8,5,4,9
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:19:15 2017,ridge,8,1,polynomial C1 t C2,ignore,none,range01,9
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:19:22 2017,rlm,8,1,polynomial C1 t C2,ignore,none,range01,6
+-0.013,-0.053,0.115,0.858,0.564,Sun Aug 06 01:19:59 2017,rpart,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,300,38,adaptive_cv,32,8,5,4,0.046817795980217
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:20:03 2017,rpart1SE,8,1,polynomial C1 t C2,ignore,none,range01,3
+-0.127,-0.135,0.12,0.925,0.627,Sun Aug 06 01:20:13 2017,rpart2,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,302,10,adaptive_cv,32,8,5,4,15
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:20:14 2017,rqlasso,8,1,polynomial C1 t C2,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:20:15 2017,rqnc,8,1,polynomial C1 t C2,ignore,none,range01,0
+0.438,0.318,0.08,0.556,0.313,Sun Aug 06 01:31:14 2017,RRF,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,305,658,adaptive_cv,32,8,5,4,7,0.0733739235438406,0.436226203106344
+0.615,0.408,0.059,0.482,0.214,Sun Aug 06 01:33:50 2017,RRFglobal,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,306,156,adaptive_cv,32,8,5,4,8,0.00938234687782824
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:33:58 2017,rvmLinear,8,1,polynomial C1 t C2,ignore,none,range01,7
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:39:58 2017,rvmPoly,8,1,polynomial C1 t C2,ignore,none,range01,360
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:46:09 2017,rvmRadial,8,1,polynomial C1 t C2,ignore,none,range01,370
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:46:20 2017,SBC,8,1,polynomial C1 t C2,ignore,none,range01,11
+-0.115,-0.101,0.128,0.897,0.62,Sun Aug 06 01:46:24 2017,simpls,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,311,4,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:48:08 2017,spikeslab,8,1,polynomial C1 t C2,ignore,none,range01,103
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:48:19 2017,spls,8,1,polynomial C1 t C2,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:48:25 2017,superpc,8,1,polynomial C1 t C2,ignore,none,range01,6
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:48:25 2017,svmBoundrangeString,8,1,polynomial C1 t C2,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:48:26 2017,svmExpoString,8,1,polynomial C1 t C2,ignore,none,range01,0
+NA,NA,0.118,NA,NA,Sun Aug 06 01:49:11 2017,svmLinear,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,317,44,adaptive_cv,32,8,5,4,0.032874394112627
+-0.069,-0.083,0.12,0.882,0.595,Sun Aug 06 01:49:50 2017,svmLinear2,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,318,39,adaptive_cv,32,8,5,4,0.045192282892989
+-2.731,-1.755,0.26,2.245,2.075,Sun Aug 06 01:50:25 2017,svmLinear3,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,319,34,adaptive_cv,32,8,5,4,0.0124750029805675,L2
+NA,NA,0.07,NA,NA,Sun Aug 06 01:50:45 2017,svmPoly,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,320,19,adaptive_cv,32,8,5,4,3,0.647428271510306,2.04099999774909
+NA,NA,0.07,NA,NA,Sun Aug 06 01:51:22 2017,svmRadial,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,321,37,adaptive_cv,32,8,5,4,0.436368087989233,24.8585731828729
+NA,NA,0.08,NA,NA,Sun Aug 06 01:52:21 2017,svmRadialCost,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,322,59,adaptive_cv,32,8,5,4,4.83169087963661
+NA,NA,0.071,NA,NA,Sun Aug 06 01:52:33 2017,svmRadialSigma,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,323,11,adaptive_cv,32,8,5,4,0.413783830360209,487.841111445825
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:52:33 2017,svmSpectrumString,8,1,polynomial C1 t C2,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:52:43 2017,treebag,8,1,polynomial C1 t C2,ignore,none,range01,10
+-0.115,-0.101,0.118,0.897,0.62,Sun Aug 06 01:53:45 2017,widekernelpls,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,326,62,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 01:56:31 2017,WM,8,1,polynomial C1 t C2,ignore,none,range01,166
+0.506,0.395,0.069,0.493,0.275,Sun Aug 06 01:58:13 2017,xgbLinear,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,328,101,adaptive_cv,32,8,5,4,40,0.0000399691153878907,0.0327474828413038,2.09719480806962
+0.07,0.059,0.096,0.767,0.517,Sun Aug 06 02:01:37 2017,xgbTree,8,1,polynomial C1 t C2,ignore,none,range01,0.814735159077309,random,329,204,adaptive_cv,32,8,5,4,406,10,0.0807593868139665,0.0596956699155271,0.493050570785999,18,0.384734627150465
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:01:56 2017,xyf,8,1,polynomial C1 t C2,ignore,none,range01,19
+0.477,-0.015,0.001,837.934,145.927,Sun Aug 06 02:02:53 2017,avNNet,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,331,53,adaptive_cv,32,8,5,4,7,0.0000144312053241148,FALSE
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:02:55 2017,bag,8,1,polynomial C1 ^ C2,ignore,none,range01,2
+0.484,-0.012,0,NA,NA,Sun Aug 06 02:13:37 2017,bagEarth,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,333,642,adaptive_cv,32,8,5,4,3,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:14:02 2017,bagEarthGCV,8,1,polynomial C1 ^ C2,ignore,none,range01,24
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:14:10 2017,bam,8,1,polynomial C1 ^ C2,ignore,none,range01,8
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:14:11 2017,bartMachine,8,1,polynomial C1 ^ C2,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:14:14 2017,bayesglm,8,1,polynomial C1 ^ C2,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:14:44 2017,blasso,8,1,polynomial C1 ^ C2,ignore,none,range01,29
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:15:02 2017,blassoAveraged,8,1,polynomial C1 ^ C2,ignore,none,range01,18
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:15:18 2017,bridge,8,1,polynomial C1 ^ C2,ignore,none,range01,16
+0.482,-0.015,0.001,838.142,144.699,Sun Aug 06 02:30:16 2017,BstLm,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,341,898,adaptive_cv,32,8,5,4,347,0.0198714155519847
+0.482,-0.015,0,838.105,144.438,Sun Aug 06 02:32:16 2017,cforest,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,342,119,adaptive_cv,32,8,5,4,4
+0.484,-0.013,0.001,836.738,144.08,Sun Aug 06 02:32:33 2017,ctree,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,343,16,adaptive_cv,32,8,5,4,0.269369754940271
+0.484,-0.013,0.001,836.738,144.08,Sun Aug 06 02:33:22 2017,ctree2,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,344,49,adaptive_cv,32,8,5,4,11,0.0151482592336833
+0.482,-0.015,0,838.3,144.436,Sun Aug 06 02:35:08 2017,cubist,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,345,105,adaptive_cv,32,8,5,4,35,9
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:35:19 2017,DENFIS,8,1,polynomial C1 ^ C2,ignore,none,range01,11
+0.463,-0.014,0.01,837.206,149.85,Sun Aug 06 02:36:21 2017,dnn,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,347,62,adaptive_cv,32,8,5,4,13,9,3,0.0511770494980738,0.0636984296143055
+0.484,-0.013,0,836.227,144.035,Sun Aug 06 02:37:10 2017,earth,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,348,49,adaptive_cv,32,8,5,4,3,2
+0.481,-0.015,0,838.416,144.895,Sun Aug 06 02:37:48 2017,elm,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,349,37,adaptive_cv,32,8,5,4,2,tansig
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:37:58 2017,enet,8,1,polynomial C1 ^ C2,ignore,none,range01,10
+0.483,-0.013,0.001,836.673,144.249,Sun Aug 06 02:53:09 2017,evtree,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,351,911,adaptive_cv,32,8,5,4,1.10720813926309
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:53:10 2017,extraTrees,8,1,polynomial C1 ^ C2,ignore,none,range01,1
+0.482,-0.015,0.001,837.992,144.58,Sun Aug 06 02:53:25 2017,foba,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,353,15,adaptive_cv,32,8,5,4,1,0.638634417728362
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:53:32 2017,gam,8,1,polynomial C1 ^ C2,ignore,none,range01,6
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:53:41 2017,gamboost,8,1,polynomial C1 ^ C2,ignore,none,range01,8
+0.481,-0.014,0.001,NA,NA,Sun Aug 06 02:55:07 2017,gamSpline,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,356,85,adaptive_cv,32,8,5,4,1.27304350724444
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:55:10 2017,gaussprLinear,8,1,polynomial C1 ^ C2,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:56:27 2017,gaussprPoly,8,1,polynomial C1 ^ C2,ignore,none,range01,76
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 02:57:59 2017,gaussprRadial,8,1,polynomial C1 ^ C2,ignore,none,range01,92
+0.483,-0.013,0.001,NA,NA,Sun Aug 06 02:59:14 2017,gbm,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,360,75,adaptive_cv,32,8,5,4,447,4,0.0679494357891381,9
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:03:32 2017,gbm_h2o,8,1,polynomial C1 ^ C2,ignore,none,range01,258
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:03:36 2017,gcvEarth,8,1,polynomial C1 ^ C2,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:03:39 2017,glm,8,1,polynomial C1 ^ C2,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:03:53 2017,glm.nb,8,1,polynomial C1 ^ C2,ignore,none,range01,14
+0.482,-0.015,0.001,NA,NA,Sun Aug 06 03:04:11 2017,glmboost,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,365,18,adaptive_cv,32,8,5,4,38,yes
+0.481,-0.015,0,838.222,144.828,Sun Aug 06 03:04:20 2017,glmnet,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,366,8,adaptive_cv,32,8,5,4,0.00722328177653253,0.0173930357480231
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:08:37 2017,glmnet_h2o,8,1,polynomial C1 ^ C2,ignore,none,range01,257
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:08:43 2017,glmStepAIC,8,1,polynomial C1 ^ C2,ignore,none,range01,6
+0.481,-0.015,0.001,838.213,144.952,Sun Aug 06 03:09:37 2017,icr,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,369,53,adaptive_cv,32,8,5,4,1
+0.481,-0.015,0,NA,NA,Sun Aug 06 03:09:40 2017,kernelpls,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,370,4,adaptive_cv,32,8,5,4,1
+0.483,-0.015,0,837.867,144.366,Sun Aug 06 03:11:01 2017,kknn,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,371,80,adaptive_cv,32,8,5,4,20,2.1599265395198,triangular
+0.482,-0.015,0,838.3,144.501,Sun Aug 06 03:11:26 2017,knn,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,372,25,adaptive_cv,32,8,5,4,6
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:11:37 2017,krlsPoly,8,1,polynomial C1 ^ C2,ignore,none,range01,11
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:11:48 2017,krlsRadial,8,1,polynomial C1 ^ C2,ignore,none,range01,11
+0.482,-0.015,0.001,838.078,144.661,Sun Aug 06 03:12:12 2017,lars,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,375,23,adaptive_cv,32,8,5,4,0.123112460132688
+0.482,-0.015,0.001,838.041,144.624,Sun Aug 06 03:12:42 2017,lars2,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,376,30,adaptive_cv,32,8,5,4,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:12:47 2017,lasso,8,1,polynomial C1 ^ C2,ignore,none,range01,5
+0.482,-0.014,0.001,NA,NA,Sun Aug 06 03:13:01 2017,leapBackward,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,378,13,adaptive_cv,32,8,5,4,2
+0.482,-0.014,0.001,NA,NA,Sun Aug 06 03:13:22 2017,leapForward,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,379,21,adaptive_cv,32,8,5,4,2
+0.482,-0.014,0.001,NA,NA,Sun Aug 06 03:13:32 2017,leapSeq,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,380,10,adaptive_cv,32,8,5,4,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:13:35 2017,lm,8,1,polynomial C1 ^ C2,ignore,none,range01,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:13:41 2017,lmStepAIC,8,1,polynomial C1 ^ C2,ignore,none,range01,5
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:13:50 2017,logicBag,8,1,polynomial C1 ^ C2,ignore,none,range01,9
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:14:00 2017,logreg,8,1,polynomial C1 ^ C2,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:14:01 2017,M5,8,1,polynomial C1 ^ C2,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:14:02 2017,M5Rules,8,1,polynomial C1 ^ C2,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:14:30 2017,msaenet,8,1,polynomial C1 ^ C2,ignore,none,range01,28
+0.481,-0.015,0.004,838.237,144.808,Sun Aug 06 03:15:52 2017,neuralnet,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,388,81,adaptive_cv,32,8,5,4,5,19,3
+0.478,-0.015,0.001,838.026,145.582,Sun Aug 06 03:16:11 2017,nnet,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,389,19,adaptive_cv,32,8,5,4,19,0.0000132803803957033
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:16:13 2017,nnls,8,1,polynomial C1 ^ C2,ignore,none,range01,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:16:14 2017,ordinalNet,8,1,polynomial C1 ^ C2,ignore,none,range01,0
+0.483,-0.014,0,837.289,144.229,Sun Aug 06 03:18:44 2017,parRF,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,392,150,adaptive_cv,32,8,5,4,3
+0.48,-0.014,0.001,837.757,145.186,Sun Aug 06 03:19:11 2017,pcaNNet,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,393,27,adaptive_cv,32,8,5,4,20,0.0000105582289013946
+0.481,-0.015,0.001,838.217,144.816,Sun Aug 06 03:19:24 2017,pcr,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,394,12,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,PackageFail,Sun Aug 06 03:19:37 2017,pls,8,1,polynomial C1 ^ C2,ignore,none,range01,26
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:20:53 2017,plsRglm,8,1,polynomial C1 ^ C2,ignore,none,range01,13
+0.481,-0.014,0.001,837.669,144.802,Sun Aug 06 03:24:07 2017,ppr,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,397,194,adaptive_cv,32,8,5,4,3
+Fail,Fail,Fail,Fail,PackageFail,Sun Aug 06 03:24:21 2017,pythonKnnReg,8,1,polynomial C1 ^ C2,ignore,none,range01,207
+0.482,-0.015,0.001,838.502,144.593,Sun Aug 06 03:26:18 2017,qrf,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,399,117,adaptive_cv,32,8,5,4,9
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:26:50 2017,qrnn,8,1,polynomial C1 ^ C2,ignore,none,range01,31
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:26:51 2017,randomGLM,8,1,polynomial C1 ^ C2,ignore,none,range01,0
+0.483,-0.014,0.001,837.44,144.37,Sun Aug 06 03:27:37 2017,ranger,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,402,46,adaptive_cv,32,8,5,4,2
+0.483,-0.014,0.001,837.287,144.326,Sun Aug 06 03:41:49 2017,Rborist,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,403,852,adaptive_cv,32,8,5,4,2
+0.48,-0.015,0.001,838.515,145.064,Sun Aug 06 03:42:35 2017,relaxo,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,404,45,adaptive_cv,32,8,5,4,0.0251952834274568,0.649216019781306
+0.483,-0.014,0.001,837.286,144.252,Sun Aug 06 03:44:44 2017,rf,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,405,128,adaptive_cv,32,8,5,4,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:44:53 2017,ridge,8,1,polynomial C1 ^ C2,ignore,none,range01,9
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:45:00 2017,rlm,8,1,polynomial C1 ^ C2,ignore,none,range01,6
+0.481,-0.015,0,838.229,144.837,Sun Aug 06 03:45:13 2017,rpart,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,408,13,adaptive_cv,32,8,5,4,0.216833032591024
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:45:16 2017,rpart1SE,8,1,polynomial C1 ^ C2,ignore,none,range01,3
+0.482,-0.015,0.001,838.281,144.555,Sun Aug 06 03:45:20 2017,rpart2,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,410,4,adaptive_cv,32,8,5,4,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:45:20 2017,rqlasso,8,1,polynomial C1 ^ C2,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:45:21 2017,rqnc,8,1,polynomial C1 ^ C2,ignore,none,range01,1
+0.483,-0.014,0,837.399,144.326,Sun Aug 06 03:53:41 2017,RRF,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,413,500,adaptive_cv,32,8,5,4,2,0.389287371421233,0.0194164703134447
+0.484,-0.013,0.001,836.698,144.002,Sun Aug 06 03:56:51 2017,RRFglobal,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,414,190,adaptive_cv,32,8,5,4,8,0.133529012091458
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:56:55 2017,rvmLinear,8,1,polynomial C1 ^ C2,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:58:07 2017,rvmPoly,8,1,polynomial C1 ^ C2,ignore,none,range01,72
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:59:43 2017,rvmRadial,8,1,polynomial C1 ^ C2,ignore,none,range01,96
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 03:59:55 2017,SBC,8,1,polynomial C1 ^ C2,ignore,none,range01,11
+0.481,-0.015,0.001,NA,NA,Sun Aug 06 04:00:14 2017,simpls,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,419,19,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:01:59 2017,spikeslab,8,1,polynomial C1 ^ C2,ignore,none,range01,105
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:02:09 2017,spls,8,1,polynomial C1 ^ C2,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:02:15 2017,superpc,8,1,polynomial C1 ^ C2,ignore,none,range01,6
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:02:16 2017,svmBoundrangeString,8,1,polynomial C1 ^ C2,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:02:17 2017,svmExpoString,8,1,polynomial C1 ^ C2,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:02:31 2017,svmLinear,8,1,polynomial C1 ^ C2,ignore,none,range01,14
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:02:43 2017,svmLinear2,8,1,polynomial C1 ^ C2,ignore,none,range01,12
+0.48,-0.015,0.001,838.515,145.064,Sun Aug 06 04:04:01 2017,svmLinear3,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,427,77,adaptive_cv,32,8,5,4,0.00175876948608965,L2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:04:16 2017,svmPoly,8,1,polynomial C1 ^ C2,ignore,none,range01,14
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:04:31 2017,svmRadial,8,1,polynomial C1 ^ C2,ignore,none,range01,14
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:04:46 2017,svmRadialCost,8,1,polynomial C1 ^ C2,ignore,none,range01,15
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:05:00 2017,svmRadialSigma,8,1,polynomial C1 ^ C2,ignore,none,range01,14
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:05:01 2017,svmSpectrumString,8,1,polynomial C1 ^ C2,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:05:10 2017,treebag,8,1,polynomial C1 ^ C2,ignore,none,range01,9
+0.481,-0.015,0.001,NA,NA,Sun Aug 06 04:05:14 2017,widekernelpls,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,434,4,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:07:17 2017,WM,8,1,polynomial C1 ^ C2,ignore,none,range01,123
+0.483,-0.013,0.001,836.894,144.342,Sun Aug 06 04:08:41 2017,xgbLinear,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,436,83,adaptive_cv,32,8,5,4,54,0.000411386387181966,0.0000813659969313102,2.72822501300834
+0.481,-0.015,0.001,838.22,144.876,Sun Aug 06 04:13:15 2017,xgbTree,8,1,polynomial C1 ^ C2,ignore,none,range01,825.871120570765,random,437,274,adaptive_cv,32,8,5,4,384,2,0.278751205998939,4.69990773824975,0.453799934219569,19,0.565659590414725
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:13:31 2017,xyf,8,1,polynomial C1 ^ C2,ignore,none,range01,15
+0.028,-0.004,0.088,1.055,0.56,Sun Aug 06 04:21:02 2017,avNNet,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,439,445,adaptive_cv,32,8,5,4,9,1.67595410514088,FALSE
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:21:04 2017,bag,8,1,polynomial C1 t C2 t C3,ignore,none,range01,2
+-0.015,-0.054,0.089,1.107,0.585,Sun Aug 06 04:28:38 2017,bagEarth,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,441,454,adaptive_cv,32,8,5,4,2,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:29:06 2017,bagEarthGCV,8,1,polynomial C1 t C2 t C3,ignore,none,range01,28
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:29:17 2017,bam,8,1,polynomial C1 t C2 t C3,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:29:18 2017,bartMachine,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:29:21 2017,bayesglm,8,1,polynomial C1 t C2 t C3,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:30:03 2017,blasso,8,1,polynomial C1 t C2 t C3,ignore,none,range01,42
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:30:30 2017,blassoAveraged,8,1,polynomial C1 t C2 t C3,ignore,none,range01,27
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:30:56 2017,bridge,8,1,polynomial C1 t C2 t C3,ignore,none,range01,26
+0.021,-0.005,0.081,1.056,0.563,Sun Aug 06 04:39:15 2017,BstLm,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,449,499,adaptive_cv,32,8,5,4,29,0.042838839633856
+0.028,-0.004,0.089,1.054,0.56,Sun Aug 06 04:40:47 2017,cforest,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,450,91,adaptive_cv,32,8,5,4,1
+-0.009,-0.014,0.089,1.065,0.581,Sun Aug 06 04:41:32 2017,ctree,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,451,44,adaptive_cv,32,8,5,4,0.810189549345523
+0.026,-0.004,0.088,1.055,0.561,Sun Aug 06 04:41:57 2017,ctree2,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,452,24,adaptive_cv,32,8,5,4,1,0.988642609212548
+-0.025,-0.117,0.091,1.173,0.59,Sun Aug 06 04:51:44 2017,cubist,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,453,587,adaptive_cv,32,8,5,4,30,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:51:57 2017,DENFIS,8,1,polynomial C1 t C2 t C3,ignore,none,range01,12
+-0.321,-0.115,0.091,1.171,0.76,Sun Aug 06 04:53:07 2017,dnn,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,455,70,adaptive_cv,32,8,5,4,3,10,2,0.0328405158827081,0.0681121275061742
+-0.073,-0.094,0.091,1.149,0.618,Sun Aug 06 04:53:34 2017,earth,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,456,27,adaptive_cv,32,8,5,4,3,1
+0.015,0.015,0.091,1.035,0.567,Sun Aug 06 04:54:16 2017,elm,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,457,42,adaptive_cv,32,8,5,4,10,purelin
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 04:54:27 2017,enet,8,1,polynomial C1 t C2 t C3,ignore,none,range01,10
+-0.029,-0.095,0.092,1.15,0.593,Sun Aug 06 05:10:55 2017,evtree,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,459,988,adaptive_cv,32,8,5,4,2.26172197144479
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:10:56 2017,extraTrees,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:11:10 2017,foba,8,1,polynomial C1 t C2 t C3,ignore,none,range01,14
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:11:18 2017,gam,8,1,polynomial C1 t C2 t C3,ignore,none,range01,7
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:11:27 2017,gamboost,8,1,polynomial C1 t C2 t C3,ignore,none,range01,9
+-0.011,-0.007,0.09,1.058,0.582,Sun Aug 06 05:13:26 2017,gamSpline,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,464,119,adaptive_cv,32,8,5,4,1.50957434321754
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:13:30 2017,gaussprLinear,8,1,polynomial C1 t C2 t C3,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:15:09 2017,gaussprPoly,8,1,polynomial C1 t C2 t C3,ignore,none,range01,98
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:16:14 2017,gaussprRadial,8,1,polynomial C1 t C2 t C3,ignore,none,range01,65
+-0.167,-0.047,0.094,1.1,0.672,Sun Aug 06 05:22:43 2017,gbm,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,468,389,adaptive_cv,32,8,5,4,3762,5,0.00884827058692463,24
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:27:09 2017,gbm_h2o,8,1,polynomial C1 t C2 t C3,ignore,none,range01,265
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:27:13 2017,gcvEarth,8,1,polynomial C1 t C2 t C3,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:27:16 2017,glm,8,1,polynomial C1 t C2 t C3,ignore,none,range01,3
+0.017,0.016,0.098,1.034,0.566,Sun Aug 06 05:27:21 2017,glm.nb,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,472,4,adaptive_cv,32,8,5,4,identity
+0.027,0.006,0.087,1.044,0.56,Sun Aug 06 05:28:05 2017,glmboost,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,473,45,adaptive_cv,32,8,5,4,24,yes
+0.026,-0.004,0.088,1.055,0.561,Sun Aug 06 05:28:49 2017,glmnet,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,474,44,adaptive_cv,32,8,5,4,0.978866082848981,0.905586484014307
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:33:12 2017,glmnet_h2o,8,1,polynomial C1 t C2 t C3,ignore,none,range01,262
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:33:19 2017,glmStepAIC,8,1,polynomial C1 t C2 t C3,ignore,none,range01,7
+-0.002,0.001,0.088,1.05,0.577,Sun Aug 06 05:34:07 2017,icr,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,477,47,adaptive_cv,32,8,5,4,1
+0.01,0.014,0.101,1.036,0.57,Sun Aug 06 05:34:10 2017,kernelpls,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,478,3,adaptive_cv,32,8,5,4,1
+-0.125,-0.102,0.088,1.158,0.648,Sun Aug 06 05:38:05 2017,kknn,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,479,235,adaptive_cv,32,8,5,4,6,2.25183636182919,gaussian
+-0.031,-0.025,0.087,1.077,0.594,Sun Aug 06 05:38:45 2017,knn,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,480,39,adaptive_cv,32,8,5,4,26
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:38:56 2017,krlsPoly,8,1,polynomial C1 t C2 t C3,ignore,none,range01,11
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:39:07 2017,krlsRadial,8,1,polynomial C1 t C2 t C3,ignore,none,range01,11
+0.027,-0.003,0.088,1.054,0.56,Sun Aug 06 05:39:38 2017,lars,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,483,31,adaptive_cv,32,8,5,4,0.0487275791820139
+0.027,0.004,0.089,1.047,0.56,Sun Aug 06 05:39:44 2017,lars2,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,484,6,adaptive_cv,32,8,5,4,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:39:50 2017,lasso,8,1,polynomial C1 t C2 t C3,ignore,none,range01,5
+0.01,0.011,0.089,1.039,0.57,Sun Aug 06 05:39:53 2017,leapBackward,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,486,3,adaptive_cv,32,8,5,4,2
+0.01,0.011,0.089,1.039,0.57,Sun Aug 06 05:39:59 2017,leapForward,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,487,5,adaptive_cv,32,8,5,4,2
+0.01,0.011,0.092,1.039,0.57,Sun Aug 06 05:40:09 2017,leapSeq,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,488,10,adaptive_cv,32,8,5,4,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:40:12 2017,lm,8,1,polynomial C1 t C2 t C3,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:40:18 2017,lmStepAIC,8,1,polynomial C1 t C2 t C3,ignore,none,range01,6
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:40:28 2017,logicBag,8,1,polynomial C1 t C2 t C3,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:40:38 2017,logreg,8,1,polynomial C1 t C2 t C3,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:40:39 2017,M5,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:40:40 2017,M5Rules,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:41:17 2017,msaenet,8,1,polynomial C1 t C2 t C3,ignore,none,range01,37
+0.026,-0.001,0.09,1.052,0.561,Sun Aug 06 05:56:44 2017,neuralnet,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,496,926,adaptive_cv,32,8,5,4,2,19,2
+0.028,-0.003,0.089,1.054,0.56,Sun Aug 06 05:59:04 2017,nnet,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,497,141,adaptive_cv,32,8,5,4,5,1.61847742982999
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:59:07 2017,nnls,8,1,polynomial C1 t C2 t C3,ignore,none,range01,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 05:59:07 2017,ordinalNet,8,1,polynomial C1 t C2 t C3,ignore,none,range01,0
+-0.004,-0.026,0.09,1.078,0.578,Sun Aug 06 06:00:04 2017,parRF,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,500,57,adaptive_cv,32,8,5,4,1
+0.028,-0.003,0.089,1.054,0.56,Sun Aug 06 06:01:44 2017,pcaNNet,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,501,99,adaptive_cv,32,8,5,4,20,5.27529681980194
+0.001,0.005,0.086,1.046,0.575,Sun Aug 06 06:01:54 2017,pcr,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,502,10,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,PackageFail,Sun Aug 06 06:02:07 2017,pls,8,1,polynomial C1 t C2 t C3,ignore,none,range01,23
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:02:21 2017,plsRglm,8,1,polynomial C1 t C2 t C3,ignore,none,range01,14
+-0.033,-0.028,0.095,1.08,0.594,Sun Aug 06 06:04:09 2017,ppr,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,505,107,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,PackageFail,Sun Aug 06 06:04:23 2017,pythonKnnReg,8,1,polynomial C1 t C2 t C3,ignore,none,range01,121
+-0.904,-0.475,0.121,1.55,1.096,Sun Aug 06 06:07:50 2017,qrf,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,507,207,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:08:23 2017,qrnn,8,1,polynomial C1 t C2 t C3,ignore,none,range01,33
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:08:24 2017,randomGLM,8,1,polynomial C1 t C2 t C3,ignore,none,range01,0
+-0.005,-0.025,0.089,1.077,0.579,Sun Aug 06 06:08:51 2017,ranger,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,510,27,adaptive_cv,32,8,5,4,1
+-0.04,-0.036,0.089,1.088,0.599,Sun Aug 06 06:15:47 2017,Rborist,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,511,416,adaptive_cv,32,8,5,4,1
+-7.536,-3.783,0.376,5.025,4.914,Sun Aug 06 06:17:00 2017,relaxo,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,512,72,adaptive_cv,32,8,5,4,60.2000304189946,0.483491805149242
+-0.001,-0.024,0.085,1.075,0.576,Sun Aug 06 06:18:22 2017,rf,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,513,82,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:18:32 2017,ridge,8,1,polynomial C1 t C2 t C3,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:18:39 2017,rlm,8,1,polynomial C1 t C2 t C3,ignore,none,range01,6
+0.026,-0.004,0.093,1.055,0.561,Sun Aug 06 06:19:09 2017,rpart,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,516,31,adaptive_cv,32,8,5,4,0.0530372773774301
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:19:13 2017,rpart1SE,8,1,polynomial C1 t C2 t C3,ignore,none,range01,3
+-0.065,-0.099,0.092,1.155,0.613,Sun Aug 06 06:19:42 2017,rpart2,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,518,29,adaptive_cv,32,8,5,4,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:19:43 2017,rqlasso,8,1,polynomial C1 t C2 t C3,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:19:44 2017,rqnc,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1
+0.017,-0.014,0.088,1.065,0.566,Sun Aug 06 06:26:09 2017,RRF,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,521,385,adaptive_cv,32,8,5,4,1,0.856257207458839,0.917777669383213
+-0.01,-0.032,0.09,1.084,0.582,Sun Aug 06 06:29:48 2017,RRFglobal,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,522,218,adaptive_cv,32,8,5,4,1,0.984715657541528
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:29:55 2017,rvmLinear,8,1,polynomial C1 t C2 t C3,ignore,none,range01,7
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:35:44 2017,rvmPoly,8,1,polynomial C1 t C2 t C3,ignore,none,range01,349
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:44:56 2017,rvmRadial,8,1,polynomial C1 t C2 t C3,ignore,none,range01,552
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:45:08 2017,SBC,8,1,polynomial C1 t C2 t C3,ignore,none,range01,11
+0.01,0.014,0.094,1.036,0.57,Sun Aug 06 06:45:11 2017,simpls,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,527,3,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:46:55 2017,spikeslab,8,1,polynomial C1 t C2 t C3,ignore,none,range01,103
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:47:06 2017,spls,8,1,polynomial C1 t C2 t C3,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:47:12 2017,superpc,8,1,polynomial C1 t C2 t C3,ignore,none,range01,6
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:47:12 2017,svmBoundrangeString,8,1,polynomial C1 t C2 t C3,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:47:13 2017,svmExpoString,8,1,polynomial C1 t C2 t C3,ignore,none,range01,0
+NA,NA,0.09,NA,NA,Sun Aug 06 06:47:32 2017,svmLinear,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,533,19,adaptive_cv,32,8,5,4,0.0363564466869139
+0.016,0.015,0.087,1.035,0.567,Sun Aug 06 06:47:51 2017,svmLinear2,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,534,19,adaptive_cv,32,8,5,4,0.0327289202442539
+-2.842,-1.332,0.229,2.45,2.212,Sun Aug 06 06:48:51 2017,svmLinear3,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,535,60,adaptive_cv,32,8,5,4,0.00599177830707045,L2
+NA,NA,0.089,NA,NA,Sun Aug 06 06:49:36 2017,svmPoly,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,536,45,adaptive_cv,32,8,5,4,2,0.0000315135830074544,0.0912417735650229
+NA,NA,0.087,NA,NA,Sun Aug 06 06:50:22 2017,svmRadial,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,537,46,adaptive_cv,32,8,5,4,10.2702389398024,0.0509140708572339
+NA,NA,0.088,NA,NA,Sun Aug 06 06:50:48 2017,svmRadialCost,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,538,26,adaptive_cv,32,8,5,4,0.0399907766158689
+NA,NA,0.088,NA,NA,Sun Aug 06 06:51:34 2017,svmRadialSigma,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,539,46,adaptive_cv,32,8,5,4,3.28744425024953,0.0546189445272824
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:51:35 2017,svmSpectrumString,8,1,polynomial C1 t C2 t C3,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:51:44 2017,treebag,8,1,polynomial C1 t C2 t C3,ignore,none,range01,9
+0.01,0.014,0.078,1.036,0.57,Sun Aug 06 06:51:57 2017,widekernelpls,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,542,13,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 06:55:23 2017,WM,8,1,polynomial C1 t C2 t C3,ignore,none,range01,206
+-0.103,-0.036,0.093,1.089,0.635,Sun Aug 06 06:56:11 2017,xgbLinear,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,544,47,adaptive_cv,32,8,5,4,1,0.0233242680305543,0.000064083683630804,1.14687010087073
+0.02,-0.006,0.088,1.057,0.564,Sun Aug 06 07:01:49 2017,xgbTree,8,1,polynomial C1 t C2 t C3,ignore,none,range01,1.05069889209237,random,545,338,adaptive_cv,32,8,5,4,790,1,0.438193715537665,2.48058268101886,0.686588224582374,7,0.70067118096631
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:02:09 2017,xyf,8,1,polynomial C1 t C2 t C3,ignore,none,range01,19
+0.638,0.658,0.046,0.3,0.213,Sun Aug 06 07:04:25 2017,avNNet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,547,128,adaptive_cv,32,8,5,4,20,0.00053462159279808,FALSE
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:04:27 2017,bag,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,2
+0.706,0.729,0.046,0.238,0.173,Sun Aug 06 07:17:41 2017,bagEarth,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,549,794,adaptive_cv,32,8,5,4,10,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:18:06 2017,bagEarthGCV,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,24
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:18:15 2017,bam,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,8
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:18:16 2017,bartMachine,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:18:19 2017,bayesglm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:18:47 2017,blasso,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,27
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:19:04 2017,blassoAveraged,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,17
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:19:21 2017,bridge,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,16
+-0.012,-0.001,0.159,0.879,0.596,Sun Aug 06 07:27:15 2017,BstLm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,557,474,adaptive_cv,32,8,5,4,100,0.00122410050686449
+0.116,0.085,0.151,0.803,0.521,Sun Aug 06 07:27:51 2017,cforest,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,558,35,adaptive_cv,32,8,5,4,9
+0.193,0.244,0.149,0.664,0.475,Sun Aug 06 07:28:36 2017,ctree,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,559,44,adaptive_cv,32,8,5,4,0.232885228469968
+-0.01,-0.001,0.154,0.879,0.595,Sun Aug 06 07:29:36 2017,ctree2,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,560,60,adaptive_cv,32,8,5,4,6,0.593591071665287
+0.588,0.615,0.075,0.338,0.243,Sun Aug 06 07:46:57 2017,cubist,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,561,1041,adaptive_cv,32,8,5,4,42,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:47:09 2017,DENFIS,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,11
+-0.003,-0.01,0.158,0.887,0.591,Sun Aug 06 07:47:37 2017,dnn,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,563,28,adaptive_cv,32,8,5,4,15,9,3,0.0380447298055515,0.0782616096781567
+0.604,0.679,0.058,0.282,0.233,Sun Aug 06 07:48:14 2017,earth,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,564,36,adaptive_cv,32,8,5,4,7,2
+-0.058,0.065,0.158,0.821,0.623,Sun Aug 06 07:48:59 2017,elm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,565,45,adaptive_cv,32,8,5,4,18,sin
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:49:09 2017,enet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,10
+0.265,0.37,0.107,0.553,0.433,Sun Aug 06 07:55:43 2017,evtree,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,567,393,adaptive_cv,32,8,5,4,1.03289146069437
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:55:44 2017,extraTrees,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:55:58 2017,foba,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,14
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:56:05 2017,gam,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,6
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:56:14 2017,gamboost,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,8
+-0.098,-0.068,0.155,0.937,0.647,Sun Aug 06 07:58:50 2017,gamSpline,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,572,155,adaptive_cv,32,8,5,4,2.08337172283791
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:58:53 2017,gaussprLinear,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 07:59:13 2017,gaussprPoly,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,20
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:00:16 2017,gaussprRadial,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,63
+0.201,0.242,0.13,0.665,0.471,Sun Aug 06 08:04:13 2017,gbm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,576,237,adaptive_cv,32,8,5,4,4646,5,0.0669675667588599,9
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:08:38 2017,gbm_h2o,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,264
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:08:42 2017,gcvEarth,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:08:45 2017,glm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,3
+-0.048,-0.026,0.169,0.901,0.617,Sun Aug 06 08:08:48 2017,glm.nb,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,580,4,adaptive_cv,32,8,5,4,identity
+-0.015,-0.001,0.164,0.879,0.598,Sun Aug 06 08:10:05 2017,glmboost,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,581,77,adaptive_cv,32,8,5,4,212,yes
+-0.01,-0.001,0.145,0.879,0.595,Sun Aug 06 08:10:15 2017,glmnet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,582,10,adaptive_cv,32,8,5,4,0.695854311343282,7.07209141081755
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:14:37 2017,glmnet_h2o,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,262
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:14:45 2017,glmStepAIC,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,7
+-0.041,-0.021,0.156,0.896,0.613,Sun Aug 06 08:15:17 2017,icr,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,585,32,adaptive_cv,32,8,5,4,1
+-0.021,-0.038,0.167,0.911,0.602,Sun Aug 06 08:15:44 2017,kernelpls,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,586,27,adaptive_cv,32,8,5,4,1
+0.173,0.221,0.131,0.683,0.487,Sun Aug 06 08:16:37 2017,kknn,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,587,53,adaptive_cv,32,8,5,4,25,0.741689343005419,triangular
+0.053,0.147,0.136,0.749,0.558,Sun Aug 06 08:17:20 2017,knn,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,588,43,adaptive_cv,32,8,5,4,4
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:17:32 2017,krlsPoly,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,11
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:17:43 2017,krlsRadial,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,11
+-0.013,0.001,0.156,0.877,0.597,Sun Aug 06 08:17:56 2017,lars,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,591,12,adaptive_cv,32,8,5,4,0.0356625465210527
+-0.01,-0.001,0.157,0.879,0.595,Sun Aug 06 08:18:04 2017,lars2,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,592,8,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:18:10 2017,lasso,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,5
+-0.018,-0.016,0.167,0.892,0.6,Sun Aug 06 08:18:29 2017,leapBackward,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,594,19,adaptive_cv,32,8,5,4,3
+-0.03,-0.034,0.168,0.907,0.607,Sun Aug 06 08:18:58 2017,leapForward,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,595,29,adaptive_cv,32,8,5,4,5
+-0.029,-0.033,0.17,0.906,0.606,Sun Aug 06 08:19:28 2017,leapSeq,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,596,30,adaptive_cv,32,8,5,4,7
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:19:31 2017,lm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:19:37 2017,lmStepAIC,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,6
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:19:47 2017,logicBag,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:19:57 2017,logreg,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:19:58 2017,M5,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:19:59 2017,M5Rules,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:20:27 2017,msaenet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,28
+0.55,0.572,0.071,0.376,0.265,Sun Aug 06 08:26:11 2017,neuralnet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,604,343,adaptive_cv,32,8,5,4,11,19,15
+0.644,0.655,0.054,0.303,0.21,Sun Aug 06 08:27:04 2017,nnet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,605,53,adaptive_cv,32,8,5,4,10,0.0013603680941504
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:27:06 2017,nnls,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:27:06 2017,ordinalNet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0
+0.261,0.249,0.127,0.659,0.435,Sun Aug 06 08:27:49 2017,parRF,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,608,42,adaptive_cv,32,8,5,4,9
+0.625,0.608,0.081,0.344,0.221,Sun Aug 06 08:28:59 2017,pcaNNet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,609,70,adaptive_cv,32,8,5,4,4,0.0107231735972934
+-0.016,-0.002,0.158,0.88,0.598,Sun Aug 06 08:29:13 2017,pcr,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,610,13,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,PackageFail,Sun Aug 06 08:29:27 2017,pls,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,27
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:30:46 2017,plsRglm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,13
+0.08,0.189,0.122,0.712,0.542,Sun Aug 06 08:32:27 2017,ppr,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,613,101,adaptive_cv,32,8,5,4,10
+Fail,Fail,Fail,Fail,PackageFail,Sun Aug 06 08:32:41 2017,pythonKnnReg,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,114
+-0.418,-0.329,0.203,1.167,0.835,Sun Aug 06 08:34:17 2017,qrf,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,615,96,adaptive_cv,32,8,5,4,9
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:34:41 2017,qrnn,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,23
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:34:42 2017,randomGLM,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,1
+0.259,0.242,0.133,0.665,0.437,Sun Aug 06 08:35:11 2017,ranger,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,618,29,adaptive_cv,32,8,5,4,9
+0.35,0.32,0.115,0.597,0.383,Sun Aug 06 08:38:22 2017,Rborist,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,619,191,adaptive_cv,32,8,5,4,9
+-0.366,-0.235,0.399,1.084,0.805,Sun Aug 06 08:38:35 2017,relaxo,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,620,13,adaptive_cv,32,8,5,4,22.1845950719906,0.163068250752985
+0.248,0.237,0.11,0.669,0.443,Sun Aug 06 08:38:59 2017,rf,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,621,23,adaptive_cv,32,8,5,4,9
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:39:08 2017,ridge,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,9
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:39:15 2017,rlm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,6
+0.073,0.11,0.14,0.781,0.546,Sun Aug 06 08:39:24 2017,rpart,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,624,9,adaptive_cv,32,8,5,4,0.0678806448372899
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:39:27 2017,rpart1SE,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,3
+0.085,0.128,0.144,0.765,0.539,Sun Aug 06 08:39:43 2017,rpart2,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,626,15,adaptive_cv,32,8,5,4,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:39:44 2017,rqlasso,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:39:45 2017,rqnc,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0
+0.417,0.339,0.1,0.58,0.343,Sun Aug 06 08:42:12 2017,RRF,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,629,147,adaptive_cv,32,8,5,4,9,0.0322745582088828,0.149169860873371
+0.276,0.264,0.123,0.646,0.427,Sun Aug 06 08:43:26 2017,RRFglobal,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,630,73,adaptive_cv,32,8,5,4,9,0.289040773874149
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:43:30 2017,rvmLinear,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,4
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:44:47 2017,rvmPoly,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,78
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:46:48 2017,rvmRadial,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,120
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:46:59 2017,SBC,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,11
+-0.021,-0.038,0.166,0.911,0.602,Sun Aug 06 08:47:12 2017,simpls,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,635,12,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:48:55 2017,spikeslab,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,103
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:49:06 2017,spls,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:49:12 2017,superpc,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,6
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:49:13 2017,svmBoundrangeString,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:49:13 2017,svmExpoString,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0
+NA,NA,0.164,NA,NA,Sun Aug 06 08:49:36 2017,svmLinear,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,641,23,adaptive_cv,32,8,5,4,0.0396177037273712
+-0.031,-0.015,0.154,0.891,0.607,Sun Aug 06 08:50:01 2017,svmLinear2,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,642,25,adaptive_cv,32,8,5,4,0.0331868201844609
+-1.393,-0.759,0.275,1.544,1.41,Sun Aug 06 08:50:15 2017,svmLinear3,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,643,13,adaptive_cv,32,8,5,4,0.0330139005961343,L2
+NA,NA,0.102,NA,NA,Sun Aug 06 08:50:28 2017,svmPoly,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,644,13,adaptive_cv,32,8,5,4,2,0.105575773033705,663.951217484239
+NA,NA,0.107,NA,NA,Sun Aug 06 08:50:45 2017,svmRadial,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,645,17,adaptive_cv,32,8,5,4,0.832496167551011,142.564753285089
+NA,NA,0.117,NA,NA,Sun Aug 06 08:51:35 2017,svmRadialCost,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,646,49,adaptive_cv,32,8,5,4,871.730325499645
+NA,NA,0.105,NA,NA,Sun Aug 06 08:52:16 2017,svmRadialSigma,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,647,41,adaptive_cv,32,8,5,4,0.365122264869552,25.9734755100749
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:52:17 2017,svmSpectrumString,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:52:26 2017,treebag,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,9
+-0.021,-0.038,0.167,0.911,0.602,Sun Aug 06 08:52:57 2017,widekernelpls,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,650,30,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:54:44 2017,WM,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,107
+0.308,0.362,0.118,0.56,0.408,Sun Aug 06 08:56:37 2017,xgbLinear,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,652,112,adaptive_cv,32,8,5,4,44,0.00546716420169694,0.0000167998398033307,2.08935895375907
+0.203,0.195,0.137,0.707,0.469,Sun Aug 06 08:59:26 2017,xgbTree,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,0.877780723770713,random,653,169,adaptive_cv,32,8,5,4,917,4,0.357091392295901,0.106402037199587,0.430111833382398,14,0.965124851441942
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 08:59:42 2017,xyf,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,range01,15
+0.24,0.218,0.131,0.711,0.548,Sun Aug 06 09:03:53 2017,avNNet,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,655,239,adaptive_cv,32,8,5,4,9,0.00521260013379227,FALSE
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:03:55 2017,bag,8,1,mean subtraction in each row,ignore,none,range01,2
+0.239,0.223,0.135,0.707,0.549,Sun Aug 06 09:14:41 2017,bagEarth,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,657,645,adaptive_cv,32,8,5,4,13,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:15:10 2017,bagEarthGCV,8,1,mean subtraction in each row,ignore,none,range01,29
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:15:21 2017,bam,8,1,mean subtraction in each row,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:15:22 2017,bartMachine,8,1,mean subtraction in each row,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:15:25 2017,bayesglm,8,1,mean subtraction in each row,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:17:13 2017,blasso,8,1,mean subtraction in each row,ignore,none,range01,108
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:18:25 2017,blassoAveraged,8,1,mean subtraction in each row,ignore,none,range01,71
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:19:35 2017,bridge,8,1,mean subtraction in each row,ignore,none,range01,70
+-0.016,-0.012,0.17,0.921,0.733,Sun Aug 06 09:27:04 2017,BstLm,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,665,449,adaptive_cv,32,8,5,4,20,0.31848213003343
+0.073,0.076,0.166,0.841,0.669,Sun Aug 06 09:28:01 2017,cforest,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,666,56,adaptive_cv,32,8,5,4,9
+-0.003,-0.001,0.169,0.911,0.724,Sun Aug 06 09:28:46 2017,ctree,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,667,44,adaptive_cv,32,8,5,4,0.99374225223437
+-0.003,-0.001,0.176,0.911,0.724,Sun Aug 06 09:29:00 2017,ctree2,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,668,14,adaptive_cv,32,8,5,4,3,0.993493472691625
+0.259,0.234,0.136,0.697,0.535,Sun Aug 06 09:32:53 2017,cubist,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,669,233,adaptive_cv,32,8,5,4,43,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:33:05 2017,DENFIS,8,1,mean subtraction in each row,ignore,none,range01,11
+-0.503,-0.442,0.171,1.312,1.085,Sun Aug 06 09:33:49 2017,dnn,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,671,44,adaptive_cv,32,8,5,4,15,5,2,0.075792614556849,0.0688292336417362
+0.203,0.191,0.135,0.736,0.575,Sun Aug 06 09:34:30 2017,earth,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,672,40,adaptive_cv,32,8,5,4,10,1
+0.254,0.232,0.133,0.698,0.538,Sun Aug 06 09:35:09 2017,elm,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,673,39,adaptive_cv,32,8,5,4,10,purelin
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:35:19 2017,enet,8,1,mean subtraction in each row,ignore,none,range01,10
+-0.004,-0.018,0.181,0.926,0.724,Sun Aug 06 09:45:31 2017,evtree,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,675,612,adaptive_cv,32,8,5,4,1.7675760332495
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:45:33 2017,extraTrees,8,1,mean subtraction in each row,ignore,none,range01,1
+0.255,0.232,0.132,0.699,0.538,Sun Aug 06 09:46:13 2017,foba,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,677,40,adaptive_cv,32,8,5,4,9,0.00208022022908779
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:46:21 2017,gam,8,1,mean subtraction in each row,ignore,none,range01,8
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:46:30 2017,gamboost,8,1,mean subtraction in each row,ignore,none,range01,9
+0.259,0.24,0.132,0.692,0.535,Sun Aug 06 09:48:03 2017,gamSpline,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,680,93,adaptive_cv,32,8,5,4,1.70695869834162
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:48:07 2017,gaussprLinear,8,1,mean subtraction in each row,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:49:06 2017,gaussprPoly,8,1,mean subtraction in each row,ignore,none,range01,58
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:51:07 2017,gaussprRadial,8,1,mean subtraction in each row,ignore,none,range01,121
+0.161,0.154,0.166,0.77,0.606,Sun Aug 06 09:53:25 2017,gbm,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,684,138,adaptive_cv,32,8,5,4,964,2,0.0290777227813378,20
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:57:51 2017,gbm_h2o,8,1,mean subtraction in each row,ignore,none,range01,266
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:57:55 2017,gcvEarth,8,1,mean subtraction in each row,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 09:57:58 2017,glm,8,1,mean subtraction in each row,ignore,none,range01,3
+0.255,0.233,0.125,0.698,0.538,Sun Aug 06 09:58:03 2017,glm.nb,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,688,4,adaptive_cv,32,8,5,4,identity
+0.255,0.229,0.133,0.702,0.538,Sun Aug 06 10:00:36 2017,glmboost,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,689,154,adaptive_cv,32,8,5,4,998,yes
+0.256,0.23,0.131,0.7,0.537,Sun Aug 06 10:01:16 2017,glmnet,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,690,39,adaptive_cv,32,8,5,4,0.17868963512592,0.00139288486480473
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 10:05:39 2017,glmnet_h2o,8,1,mean subtraction in each row,ignore,none,range01,263
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 10:05:43 2017,glmStepAIC,8,1,mean subtraction in each row,ignore,none,range01,4
+0.254,0.232,0.133,0.698,0.538,Sun Aug 06 10:05:58 2017,icr,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,693,15,adaptive_cv,32,8,5,4,8
+0.255,0.233,0.131,0.698,0.538,Sun Aug 06 10:06:29 2017,kernelpls,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,694,31,adaptive_cv,32,8,5,4,4
+0.042,0.042,0.161,0.872,0.691,Sun Aug 06 10:08:41 2017,kknn,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,695,132,adaptive_cv,32,8,5,4,54,2.57722885161638,biweight
+0.052,0.035,0.163,0.878,0.684,Sun Aug 06 10:09:24 2017,knn,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,696,43,adaptive_cv,32,8,5,4,16
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 10:09:36 2017,krlsPoly,8,1,mean subtraction in each row,ignore,none,range01,11
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 10:09:47 2017,krlsRadial,8,1,mean subtraction in each row,ignore,none,range01,11
+0.255,0.23,0.131,0.701,0.537,Sun Aug 06 10:10:19 2017,lars,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,699,31,adaptive_cv,32,8,5,4,0.947916552424431
+-0.011,-0.007,0.171,0.916,0.729,Sun Aug 06 10:10:23 2017,lars2,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,700,4,adaptive_cv,32,8,5,4,5
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 10:10:29 2017,lasso,8,1,mean subtraction in each row,ignore,none,range01,5
+0.254,0.232,0.128,0.698,0.538,Sun Aug 06 10:10:32 2017,leapBackward,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,702,3,adaptive_cv,32,8,5,4,8
+0.254,0.232,0.137,0.698,0.538,Sun Aug 06 10:10:35 2017,leapForward,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,703,3,adaptive_cv,32,8,5,4,8
+0.254,0.232,0.132,0.698,0.538,Sun Aug 06 10:10:39 2017,leapSeq,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,704,4,adaptive_cv,32,8,5,4,8
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 10:10:42 2017,lm,8,1,mean subtraction in each row,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 10:10:45 2017,lmStepAIC,8,1,mean subtraction in each row,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 10:10:56 2017,logicBag,8,1,mean subtraction in each row,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 10:11:06 2017,logreg,8,1,mean subtraction in each row,ignore,none,range01,10
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 10:11:07 2017,M5,8,1,mean subtraction in each row,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 10:11:08 2017,M5Rules,8,1,mean subtraction in each row,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 10:11:42 2017,msaenet,8,1,mean subtraction in each row,ignore,none,range01,33
+0.219,0.203,0.138,0.725,0.564,Sun Aug 06 12:33:29 2017,neuralnet,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,712,8507,adaptive_cv,32,8,5,4,2,5,9
+0.239,0.218,0.129,0.712,0.549,Sun Aug 06 12:35:24 2017,nnet,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,713,112,adaptive_cv,32,8,5,4,13,0.00470512930081677
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 12:35:28 2017,nnls,8,1,mean subtraction in each row,ignore,none,range01,4
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 12:35:30 2017,ordinalNet,8,1,mean subtraction in each row,ignore,none,range01,1
+0.053,0.06,0.162,0.856,0.683,Sun Aug 06 12:38:22 2017,parRF,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,716,172,adaptive_cv,32,8,5,4,4
+0.257,0.235,0.131,0.697,0.536,Sun Aug 06 12:39:18 2017,pcaNNet,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,717,56,adaptive_cv,32,8,5,4,19,0.0531999663309536
+0.254,0.232,0.133,0.698,0.538,Sun Aug 06 12:39:22 2017,pcr,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,718,3,adaptive_cv,32,8,5,4,8
+Fail,Fail,Fail,Fail,PackageFail,Sun Aug 06 12:39:42 2017,pls,8,1,mean subtraction in each row,ignore,none,range01,23
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 12:39:56 2017,plsRglm,8,1,mean subtraction in each row,ignore,none,range01,14
+0.208,0.197,0.135,0.731,0.571,Sun Aug 06 12:41:19 2017,ppr,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,721,83,adaptive_cv,32,8,5,4,1
+Fail,Fail,Fail,Fail,PackageFail,Sun Aug 06 12:41:33 2017,pythonKnnReg,8,1,mean subtraction in each row,ignore,none,range01,96
+-0.654,-0.581,0.276,1.439,1.193,Sun Aug 06 12:44:30 2017,qrf,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,723,177,adaptive_cv,32,8,5,4,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 12:45:02 2017,qrnn,8,1,mean subtraction in each row,ignore,none,range01,32
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 12:45:03 2017,randomGLM,8,1,mean subtraction in each row,ignore,none,range01,0
+0.053,0.065,0.163,0.851,0.683,Sun Aug 06 12:46:21 2017,ranger,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,726,78,adaptive_cv,32,8,5,4,8
+0.061,0.058,0.162,0.857,0.678,Sun Aug 06 13:08:18 2017,Rborist,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,727,1316,adaptive_cv,32,8,5,4,5
+-0.087,-0.085,0.191,0.987,0.784,Sun Aug 06 13:09:14 2017,relaxo,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,728,54,adaptive_cv,32,8,5,4,62.0688002315533,0.000754281645640731
+0.058,0.065,0.161,0.851,0.68,Sun Aug 06 13:13:11 2017,rf,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,729,236,adaptive_cv,32,8,5,4,7
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 13:13:33 2017,ridge,8,1,mean subtraction in each row,ignore,none,range01,21
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 13:13:46 2017,rlm,8,1,mean subtraction in each row,ignore,none,range01,13
+-0.004,-0.018,0.184,0.926,0.724,Sun Aug 06 13:14:33 2017,rpart,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,732,46,adaptive_cv,32,8,5,4,0.0363889447646151
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 13:14:37 2017,rpart1SE,8,1,mean subtraction in each row,ignore,none,range01,3
+-0.019,-0.066,0.184,0.97,0.735,Sun Aug 06 13:14:46 2017,rpart2,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,734,9,adaptive_cv,32,8,5,4,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 13:14:47 2017,rqlasso,8,1,mean subtraction in each row,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 13:14:48 2017,rqnc,8,1,mean subtraction in each row,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 13:28:05 2017,RRF,8,1,mean subtraction in each row,ignore,none,range01,797
+0.034,0.048,0.163,0.866,0.697,Sun Aug 06 13:42:43 2017,RRFglobal,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,738,877,adaptive_cv,32,8,5,4,3,0.77180358604528
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 13:42:54 2017,rvmLinear,8,1,mean subtraction in each row,ignore,none,range01,11
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 13:52:45 2017,rvmPoly,8,1,mean subtraction in each row,ignore,none,range01,591
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 13:57:10 2017,rvmRadial,8,1,mean subtraction in each row,ignore,none,range01,261
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 13:57:23 2017,SBC,8,1,mean subtraction in each row,ignore,none,range01,12
+0.254,0.232,0.132,0.698,0.538,Sun Aug 06 13:57:53 2017,simpls,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,743,30,adaptive_cv,32,8,5,4,8
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 13:59:51 2017,spikeslab,8,1,mean subtraction in each row,ignore,none,range01,117
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 14:00:03 2017,spls,8,1,mean subtraction in each row,ignore,none,range01,11
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 14:00:09 2017,superpc,8,1,mean subtraction in each row,ignore,none,range01,6
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 14:00:10 2017,svmBoundrangeString,8,1,mean subtraction in each row,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 14:00:11 2017,svmExpoString,8,1,mean subtraction in each row,ignore,none,range01,0
+NA,NA,0.133,NA,NA,Sun Aug 06 14:01:48 2017,svmLinear,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,749,97,adaptive_cv,32,8,5,4,6.92479755337484
+0.266,0.243,0.133,0.689,0.53,Sun Aug 06 14:05:27 2017,svmLinear2,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,750,218,adaptive_cv,32,8,5,4,5.6740351364908
+-0.576,-0.53,0.261,1.392,1.137,Sun Aug 06 14:06:11 2017,svmLinear3,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,751,44,adaptive_cv,32,8,5,4,967.157096118987,L1
+NA,NA,0.133,NA,NA,Sun Aug 06 14:07:07 2017,svmPoly,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,752,56,adaptive_cv,32,8,5,4,1,1.47103801434274,15.0887697772793
+NA,NA,0.143,NA,NA,Sun Aug 06 14:07:59 2017,svmRadial,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,753,51,adaptive_cv,32,8,5,4,1.23984797004053,0.654580151301752
+NA,NA,0.147,NA,NA,Sun Aug 06 14:08:57 2017,svmRadialCost,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,754,57,adaptive_cv,32,8,5,4,0.287090903799784
+NA,NA,0.141,NA,NA,Sun Aug 06 14:09:13 2017,svmRadialSigma,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,755,16,adaptive_cv,32,8,5,4,1.26415704110398,0.31516199598749
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 14:09:14 2017,svmSpectrumString,8,1,mean subtraction in each row,ignore,none,range01,0
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 14:09:24 2017,treebag,8,1,mean subtraction in each row,ignore,none,range01,10
+0.254,0.232,0.133,0.698,0.538,Sun Aug 06 14:10:11 2017,widekernelpls,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,758,46,adaptive_cv,32,8,5,4,5
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 14:13:49 2017,WM,8,1,mean subtraction in each row,ignore,none,range01,218
+0.053,0.055,0.164,0.86,0.683,Sun Aug 06 14:15:58 2017,xgbLinear,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,760,129,adaptive_cv,32,8,5,4,31,0.0000648001278969451,0.983889249373362,2.05690888152458
+-0.004,-0.002,0.169,0.912,0.724,Sun Aug 06 14:37:49 2017,xgbTree,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,761,1310,adaptive_cv,32,8,5,4,663,4,0.0897802104330622,9.17853203602135,0.456418282259256,14,0.258872647886164
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 14:38:34 2017,xyf,8,1,mean subtraction in each row,ignore,none,range01,39

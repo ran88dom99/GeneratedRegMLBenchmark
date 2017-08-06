@@ -1,4 +1,4 @@
-Rows=1000
+Rows=300
 simScores<-matrix(data = 0, nrow = Rows, ncol = 12, byrow = FALSE,dimnames = NULL);
 simScores[,11]<-1;###!!!!!!! this may be necessary for many algorithms
 #vector of strings to keep names of each project, increase maximum
