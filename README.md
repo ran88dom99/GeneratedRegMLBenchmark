@@ -1,6 +1,10 @@
 # GeneratedRegMLBenchmark
 Testing what the machine learning algorithms of R-caret can detect.
 
+First run completed. R version 332, 100 datapoints, 5x3 repeated cv , 16 random hyper-parameter tests. 
+Look inside folder for graphs and conclusions. bagEarth & cubist are best on at detecting most patterns with svmLinear2 & cforest for support.  
+42 models always fail. Some patterns, like median subtraction and 3 variebles multiplied are undetectable.
+
 Warning! Installs each model's package without prompt.
 
 Run "multiple generators" to generate data then "model tester" to see if any of caret's modeling algorithms can detect each generated pattern.

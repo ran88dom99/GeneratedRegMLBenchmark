@@ -540,3 +540,13 @@ Fail,Fail,Fail,Fail,Fail,Sun Aug 06 14:13:49 2017,WM,8,1,mean subtraction in eac
 0.053,0.055,0.164,0.86,0.683,Sun Aug 06 14:15:58 2017,xgbLinear,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,760,129,adaptive_cv,32,8,5,4,31,0.0000648001278969451,0.983889249373362,2.05690888152458
 -0.004,-0.002,0.169,0.912,0.724,Sun Aug 06 14:37:49 2017,xgbTree,8,1,mean subtraction in each row,ignore,none,range01,0.910067915552576,random,761,1310,adaptive_cv,32,8,5,4,663,4,0.0897802104330622,9.17853203602135,0.456418282259256,14,0.258872647886164
 Fail,Fail,Fail,Fail,Fail,Sun Aug 06 14:38:34 2017,xyf,8,1,mean subtraction in each row,ignore,none,range01,39
+0.993,0.988,0.004,0.029,0.014,Sun Aug 06 23:42:34 2017,avNNet,8,1,basic latent features,ignore,none,range01,2.40770365434635,random,223,218,adaptive_cv,32,8,5,4,11,0.0000117908739407287,FALSE
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 23:42:43 2017,bag,8,1,basic latent features,ignore,none,range01,2
+0.984,0.984,0.003,0.038,0.03,Sun Aug 06 23:45:49 2017,bagEarth,8,1,basic latent features,ignore,none,range01,2.40770365434635,random,225,186,adaptive_cv,32,8,5,4,5,2
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 23:46:20 2017,bagEarthGCV,8,1,basic latent features,ignore,none,range01,27
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 23:46:35 2017,bam,8,1,basic latent features,ignore,none,range01,15
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 23:46:37 2017,bartMachine,8,1,basic latent features,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 23:46:41 2017,bayesglm,8,1,basic latent features,ignore,none,range01,4
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 23:46:49 2017,blasso,8,1,basic latent features,ignore,none,range01,7
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 23:46:52 2017,blassoAveraged,8,1,basic latent features,ignore,none,range01,3
+Fail,Fail,Fail,Fail,Fail,Sun Aug 06 23:46:55 2017,bridge,8,1,basic latent features,ignore,none,range01,3

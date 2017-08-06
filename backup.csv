@@ -2630,3 +2630,13 @@ Fail, Sun Aug 06 14:13:49 2017, WM
 Succ, Sun Aug 06 14:15:58 2017, xgbLinear
 Succ, Sun Aug 06 14:37:49 2017, xgbTree
 Fail, Sun Aug 06 14:38:34 2017, xyf
+Succ, Sun Aug 06 23:42:34 2017, avNNet
+Fail, Sun Aug 06 23:42:43 2017, bag
+Succ, Sun Aug 06 23:45:49 2017, bagEarth
+Fail, Sun Aug 06 23:46:20 2017, bagEarthGCV
+Fail, Sun Aug 06 23:46:35 2017, bam
+Fail, Sun Aug 06 23:46:37 2017, bartMachine
+Fail, Sun Aug 06 23:46:41 2017, bayesglm
+Fail, Sun Aug 06 23:46:49 2017, blasso
+Fail, Sun Aug 06 23:46:52 2017, blassoAveraged
+Fail, Sun Aug 06 23:46:55 2017, bridge
