@@ -1,0 +1,8 @@
+'bagEarth' Bagged MARS and 'cubist' "rule-based model tree" cover just about everything that can be covered and many things twice.
+"Mean subtraction in each row" can only be covered by Simple Vector Machine svmLinear2.
+ It is useful for "randomly switches between C1 & C2".
+Cforest is within .05 of highest rating of "switches between 1 & -1 based on C1".
+
+'Earth' Multivariate Adaptive Regression Spline stands out but may be redundant.
+ Many tree-forests of which Regularized Random Forest RRFglobal is the highest performing in terms of power.
+ Finaly maybe eXtreme gradient boosting xgbLinear.

@@ -204,10 +204,8 @@ z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,5]),na.rm = TRUE)+
   geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,3]))+
   geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6]))))
 ggsave(paste(exp.name,"PowerTask.png", sep = ""),plot = last_plot(),scale = 3)
-#some algos are better at some category of tasks and these tasks are overepresented
-#some tasks are harder and thus improvement in them should count for more
+#some algos are better at some category of tasks and missing them could affect statistic metric index
 ########difference between %MAE & %RMSE by task####
-
 exp.res.noF2<-expiramentresults[,2]
 for(countr in 1:length(exp.res.noF2)){
   if(is.na(exp.res.noF2[countr])){exp.res.noF2[countr]<--.09}
@@ -262,5 +260,38 @@ z+ geom_point(colour="red",aes(I.diff.df[,1] ,I.diff.df[,8]),na.rm = TRUE)+
   geom_point(colour="blue",aes(I.diff.df[,1] ,I.diff.df[,12]))+
   geom_point(colour="green",aes(I.diff.df[,1] ,(I.diff.df[,14])))
 ggsave(paste(exp.name,"DiffTask.png", sep = ""),plot = last_plot(),scale = 3)
+
+#########acceptable minimum######
+acceptablePloss<-.05
+lowestFindScore<-.1
+acceptAlgo.df<-data.frame()
+acceptAlgo.df[1,1]<-NA
+acceptAlgo.df[,c(1:220)]<-NA
+countr=0
+for(algo in unique(expiramentresults[,10]))
+{
+  countr=countr+1
+  only.algo<-as.logical((expiramentresults[,10]==algo)*(expiramentresults[,1]!="Fail"))
+  only.algo[is.na(only.algo)]<-F
+  if(sum(only.algo, na.rm=T)<1) {
+    countr=countr-1    
+    next()}
+  taskSeek=(power.df[,1]==algo)
+  if(power.df[taskSeek,5]<lowestFindScore) {countr=countr-1 ; next()}
+  minAccept<-power.df[taskSeek,5]*(1-acceptablePloss)
+  acceptAlgo.df[countr,1]<-algo
+  #ranks<-rank(exp.res.noF[only.algo])
+  acceptAlgo<-as.logical((exp.res.noF>minAccept)*only.algo)
+  acceptAlgo.df[countr,2]<-sum(acceptAlgo)
+  acceptAlgo.df[countr,3]<-minAccept
+  acceptAlgo.df[countr,4:(sum(acceptAlgo)+3)]<-as.character(expiramentresults[acceptAlgo,7])
+ }
+
+
+write.table(acceptAlgo.df,
+            file = paste(exp.name,acceptablePloss,"MinNecessary.csv", sep = ""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+
 
 
