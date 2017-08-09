@@ -1,10 +1,11 @@
 #ggplot: how  label, print to file
-expiramentresults<-read.csv("Generated data output first complete run.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
 exp.name<-"First 332v100dp5n3n16"
 mainDir<-getwd()
 subDir<-exp.name
 #dir.create(file.path(mainDir, subDir))
 #setwd(file.path(mainDir, subDir))
+expiramentresults<-read.csv("Generated data output first complete run.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+
 #######percent failed######
 fails.df<-data.frame()
 countr=0
@@ -62,49 +63,6 @@ z+   geom_point(colour="blue",aes(I.time.df[,1] ,I.time.df[,2]))#+
   #geom_point(colour="green",aes(I.time.df[,1] ,(I.time.df[,6]/max(I.time.df[,6]))))
   ggsave(paste(exp.name,"Time.png", sep = ""),plot = last_plot(),scale = 3)
   
-######power to detect#####
-exp.res.noF<-expiramentresults[,1]
-for(countr in 1:length(exp.res.noF)){
-  if(is.na(exp.res.noF[countr])){exp.res.noF[countr]<--.09}
-  if(exp.res.noF[countr]=="Fail"){exp.res.noF[countr]<--.09}
-}
-exp.res.noF<-as.numeric(levels(exp.res.noF))[exp.res.noF]
-power.df<-data.frame()
-countr=0
-for(algo in unique(expiramentresults[,7]))
-{
-  countr=countr+1
-  only.algo<-as.logical((expiramentresults[,7]==algo)*(expiramentresults[,1]!="Fail"))
-  only.algo[is.na(only.algo)]<-F
-  if(sum(only.algo, na.rm=T)<1) {
-    countr=countr-1    
-    next()}
-  power.df[countr,1]<-algo
-  power.df[countr,2]<-min(exp.res.noF[only.algo],na.rm = T)
-  power.df[countr,3]<-median(exp.res.noF[only.algo],na.rm = T)
-  power.df[countr,4]<-round(mean(exp.res.noF[only.algo],na.rm = T),digits = 3)
-  power.df[countr,5]<-max(exp.res.noF[only.algo],na.rm = T)
-  power.df[countr,6]<-sum(only.algo, na.rm=T)
-  power.df[countr,7]<-round(quantile(exp.res.noF[only.algo], probs = .8, na.rm =T),digits = 3)
-}
-
-iti <- order(power.df[,4],power.df[,3])
-power.df<-rbind(power.df)[iti,]
-write.table(power.df,
-            file = paste(exp.name,"Power.csv", sep = ""), append =F, quote = F, sep = ",",
-            eol = "\n", na = "", dec = ".", row.names = F,
-            col.names = F, qmethod = "double")
-#power.df<-data.frame(power.df, row.names = 1:length(power.df[,1]))
-not.interesting<-(power.df[,6]<17)+(power.df[,4]<.2)+ is.na(power.df[,6]) 
-I.power.df<-power.df[!not.interesting,]
-
-z<-ggplot(I.power.df, aes(y = I.power.df[,4], x = reorder(I.power.df[,1], I.power.df[,4]))) + geom_point()+ coord_flip()
-z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,7]),na.rm = TRUE)+
-  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,3]))+
-  geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6]))))
-ggsave(paste(exp.name,"Power.png", sep = ""),plot = last_plot(),scale = 3)
-#some algos are better at some category of tasks and these tasks are overepresented
-#some tasks are harder and thus improvement in them should count for more
 #####success by task#### 
 fails.df<-data.frame()
 countr=0
@@ -165,11 +123,8 @@ ggsave(paste(exp.name,"TimeTask.png", sep = ""),plot = last_plot(),scale = 3)
 
 ######power to detect by task#####
 exp.res.noF<-expiramentresults[,1]
-for(countr in 1:length(exp.res.noF)){
-  if(is.na(exp.res.noF[countr])){exp.res.noF[countr]<--.09}
-  if(exp.res.noF[countr]=="Fail"){exp.res.noF[countr]<--.09}
-}
 exp.res.noF<-as.numeric(levels(exp.res.noF))[exp.res.noF]
+exp.res.noF[is.na(exp.res.noF)]<-0
 power.df<-data.frame()
 countr=0
 for(algo in unique(expiramentresults[,10]))
@@ -186,10 +141,12 @@ for(algo in unique(expiramentresults[,10]))
   power.df[countr,4]<-round(mean(exp.res.noF[only.algo],na.rm = T),digits = 3)
   power.df[countr,5]<-max(exp.res.noF[only.algo],na.rm = T)
   power.df[countr,6]<-sum(only.algo, na.rm=T)
-  power.df[countr,7]<-round(quantile(exp.res.noF[only.algo], probs = .85, na.rm =T),digits = 3)
+  power.df[countr,7]<-round(quantile(exp.res.noF[only.algo], probs = .90, na.rm =T),digits = 3)
+  power.df[countr,8]<-round(quantile(exp.res.noF[only.algo], probs = .75, na.rm =T),digits = 3)
+  
 }
 
-iti <- order(power.df[,4],power.df[,3])
+iti <- order(power.df[,5],power.df[,7])
 power.df<-rbind(power.df)[iti,]
 write.table(power.df,
             file = paste(exp.name,"PowerTask.csv", sep = ""), append =F, quote = F, sep = ",",
@@ -199,19 +156,18 @@ write.table(power.df,
 not.interesting<-(power.df[,6]<10)+ is.na(power.df[,6]) 
 I.power.df<-power.df[!not.interesting,]
 
-z<-ggplot(I.power.df, aes(y = I.power.df[,4], x = reorder(I.power.df[,1], I.power.df[,4]))) + geom_point()+ coord_flip()
+z<-ggplot(I.power.df, aes(y = I.power.df[,7], x = reorder(I.power.df[,1], I.power.df[,7]))) + geom_point()+ coord_flip()
 z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,5]),na.rm = TRUE)+
   geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,3]))+
-  geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6]))))
+  #geom_point(colour="purple",aes(I.power.df[,1] ,I.power.df[,3]))+
+  geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6])-.35)))
 ggsave(paste(exp.name,"PowerTask.png", sep = ""),plot = last_plot(),scale = 3)
 #some algos are better at some category of tasks and missing them could affect statistic metric index
 ########difference between %MAE & %RMSE by task####
 exp.res.noF2<-expiramentresults[,2]
-for(countr in 1:length(exp.res.noF2)){
-  if(is.na(exp.res.noF2[countr])){exp.res.noF2[countr]<--.09}
-  if(exp.res.noF2[countr]=="Fail"){exp.res.noF2[countr]<--.09}
-}
+
 exp.res.noF2<-as.numeric(levels(exp.res.noF2))[exp.res.noF2]
+exp.res.noF2[is.na(exp.res.noF2)]<-0
 Results.Defactor<-data.frame(exp.res.noF,exp.res.noF2,expiramentresults[,3:length(expiramentresults[1,])])
 
 exp.res.noFZ<-exp.res.noF;exp.res.noFZ2<-exp.res.noF2
@@ -280,7 +236,6 @@ for(algo in unique(expiramentresults[,10]))
   if(power.df[taskSeek,5]<lowestFindScore) {countr=countr-1 ; next()}
   minAccept<-power.df[taskSeek,5]*(1-acceptablePloss)
   acceptAlgo.df[countr,1]<-algo
-  #ranks<-rank(exp.res.noF[only.algo])
   acceptAlgo<-as.logical((exp.res.noF>minAccept)*only.algo)
   acceptAlgo.df[countr,2]<-sum(acceptAlgo)
   acceptAlgo.df[countr,3]<-minAccept
@@ -295,3 +250,87 @@ write.table(acceptAlgo.df,
 
 
 
+
+######power to detect#####
+exp.res.noF<-expiramentresults[,1]
+exp.res.noF<-as.numeric(levels(exp.res.noF))[exp.res.noF]
+exp.res.noF[is.na(exp.res.noF)]<-0
+exp.res.noF[exp.res.noF<0]<-0
+
+algPower.df<-data.frame()
+countr=0
+for(algo in unique(expiramentresults[,7]))
+{
+  countr=countr+1
+  only.algo<-as.logical((expiramentresults[,7]==algo)*(expiramentresults[,1]!="Fail"))
+  only.algo[is.na(only.algo)]<-F
+  if(sum(only.algo, na.rm=T)<1) {
+    countr=countr-1    
+    next()}
+  algPower.df[countr,1]<-algo
+  algPower.df[countr,2]<-round(mean(exp.res.noF[only.algo],na.rm = T),digits = 3)
+
+}
+
+algo.max<-vector()
+for(countr in 1:length(exp.res.noF)){
+  for(task in 1:length(power.df[,1])){
+    if(power.df[task,1]==expiramentresults[countr,10]){
+      algo.max[countr]<-power.df[task,5]}}}
+
+algo.max[algo.max<.2]<-.2
+exp.res.noF<-exp.res.noF/algo.max
+#exp.res.noF<-exp.res.noF+1-algo.max
+
+#algPower.df<-data.frame()
+countr=0
+for(algo in unique(expiramentresults[,7]))
+{
+  countr=countr+1
+  only.algo<-as.logical((expiramentresults[,7]==algo)*(expiramentresults[,1]!="Fail"))
+  only.algo[is.na(only.algo)]<-F
+  if(sum(only.algo, na.rm=T)<1) {
+    countr=countr-1    
+    next()}
+  #algPower.df[countr,1]<-algo
+  algPower.df[countr,3]<-min(exp.res.noF[only.algo],na.rm = T)
+  algPower.df[countr,4]<-median(exp.res.noF[only.algo],na.rm = T)
+  #algPower.df[countr,4]<-round(mean(exp.res.noF[only.algo],na.rm = T),digits = 3)
+  algPower.df[countr,5]<-max(exp.res.noF[only.algo],na.rm = T)
+  algPower.df[countr,6]<-sum(only.algo, na.rm=T)
+  algPower.df[countr,7]<-round(quantile(exp.res.noF[only.algo], probs = c(.7), na.rm =T),digits = 3)
+  algPower.df[countr,8]<-round(quantile(exp.res.noF[only.algo], probs = c(.8), na.rm =T),digits = 3)
+  algPower.df[countr,9]<-round(quantile(exp.res.noF[only.algo], probs = c(.9), na.rm =T),digits = 3)
+}
+
+iti <- order(algPower.df[,4],algPower.df[,8])
+algPower.df<-rbind(algPower.df)[iti,]
+write.table(algPower.df,
+            file = paste(exp.name,"Power.csv", sep = ""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+#algPower.df<-data.frame(algPower.df, row.names = 1:length(algPower.df[,1]))
+not.interesting<-(algPower.df[,6]<17)+(algPower.df[,4]<.2)+ is.na(algPower.df[,6]) 
+I.power.df<-algPower.df[!not.interesting,]
+
+z<-ggplot(I.power.df, aes(y = I.power.df[,2], x = reorder(I.power.df[,1], I.power.df[,2]))) + 
+  geom_point()+#+##+coord_flip()
+  theme(axis.text.x=element_text(size=7, angle=270,hjust=0.95,vjust=0.2))+scale_x_discrete(position = "top")
+z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,8]),na.rm = TRUE)+
+  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,5]))+
+  geom_point(colour="purple",aes(I.power.df[,1] ,I.power.df[,9]))+
+  geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6])-.45)))
+ggsave(paste(exp.name,"Power.png", sep = ""),plot = last_plot(),scale = 3)
+
+#some tasks are harder and thus improvement in them should count for more
+#that affects the black mean but not red-blue bc 1-0 is % of max score on that task
+#some algos are better at some category of tasks and these tasks are overepresented
+#that affects the black mean but less red-blue bc as only method's best 20% matter
+z<-ggplot(I.power.df, aes(y = I.power.df[,2], x = reorder(I.power.df[,1], I.power.df[,8]))) + 
+  geom_point()+#+##+coord_flip()
+  theme(axis.text.x=element_text(size=7, angle=270,hjust=0.95,vjust=0.2))+scale_x_discrete(position = "top")
+z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,8]),na.rm = TRUE)+
+  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,5]))+
+  geom_point(colour="purple",aes(I.power.df[,1] ,I.power.df[,9]))+
+  geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6])-.45)))
+ggsave(paste(exp.name,"PowerReorder.png", sep = ""),plot = last_plot(),scale = 3)

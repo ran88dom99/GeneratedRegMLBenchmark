@@ -1,3 +1,10 @@
+## capture messages and errors to a file.
+zz <- file("all.Rout", open="wt")
+sink(zz, type="message")
+
+try(log("a"))
+
+
 list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics")
 #list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
@@ -91,7 +98,7 @@ print(date());
 
 if(!exists("gen.count")){gen.count=17}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-for(gend.data in 1:gen.count){
+for(gend.data in 13:gen.count){
   data.source<-as.matrix(read.csv(paste(gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data]
   missingdatas=c("ignore")
@@ -172,8 +179,8 @@ for(gend.data in 1:gen.count){
           ######for all models########
           for(allmodel in allmodels){#just before all models define d.f and reduce it
             write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
-            bad.models=c("partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
-            #too slow 
+            bad.models=c("neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
+            #too slow neuralnet
             if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
             library(caret) #mlp...s creat some bizzare problem that breaks caret::train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
             #penalized slow hen fails
@@ -287,3 +294,9 @@ for(gend.data in 1:gen.count){
                           col.names = F, qmethod = "double")}
           }}}}}}
 #stopCluster(cl)
+## reset message sink and close the file connection
+sink(type="message")
+close(zz)
+
+### Display the log file
+readLines("all.Rout")
