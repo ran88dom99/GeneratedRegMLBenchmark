@@ -1,0 +1,16 @@
+median subtraction in each row,72,39,0,0.541666666666667
+polynomial C1 ^ .5,108,56,5,0.564814814814815
+basic latent features,110,58,5,0.572727272727273
+polynomial C1 ^ 2,108,57,5,0.574074074074074
+polynomial C1 ^ -2,108,57,5,0.574074074074074
+switches between C2 & -C2 based on C1,109,58,5,0.577981651376147
+switches between C2+U3 & C4+C5 based on C1,109,58,5,0.577981651376147
+smoothed switches between -C2-U3 & C2+U3 based on C1,107,57,5,0.579439252336449
+switches between -C2-U3 & C2+U3 based on C1,107,57,5,0.579439252336449
+randomly switches between C1 & C2,107,57,5,0.579439252336449
+polynomial C1 t C2,110,59,5,0.581818181818182
+polynomial C1 t C2 t U3,110,59,5,0.581818181818182
+polynomial C1 t C2 t U3^1d3,110,59,5,0.581818181818182
+mean subtraction in each row,110,59,5,0.581818181818182
+just random,108,58,5,0.583333333333333
+polynomial C1 ^ C2,110,65,0,0.590909090909091

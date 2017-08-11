@@ -1032,230 +1032,230 @@ Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:03:40 2017,WM,8,1,polynomial C1 ^ C2,igno
 0.455,-0.04,538.96,264.928,73.946,Thu Aug 03 22:04:27 2017,xgbLinear,8,1,polynomial C1 ^ C2,ignore,none,asis,254.653518079628,random,444,47,adaptive_cv,16,5,2,2,11,0.667729402657732,0.0125157113603301,0.793568689841777
 0.138,-0.004,164.997,255.616,116.958,Thu Aug 03 22:05:17 2017,xgbTree,8,1,polynomial C1 ^ C2,ignore,none,asis,254.653518079628,random,445,49,adaptive_cv,16,5,2,2,67,2,0.119195199112175,1.80749104823917,0.516086966078728,17,0.307357748795766
 Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:05:26 2017,xyf,8,1,polynomial C1 ^ C2,ignore,none,asis,9
-0.017,-0.051,1.122,0.59,0.407,Thu Aug 03 22:07:07 2017,avNNet,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,447,62,adaptive_cv,16,5,2,2,17,0.00021021561982797,FALSE
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:07:10 2017,bag,8,1,polynomial C1 t C2 t C3,ignore,none,asis,2
--0.494,-0.538,1.252,0.863,0.618,Thu Aug 03 22:09:31 2017,bagEarth,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,449,141,adaptive_cv,16,5,2,2,4,2
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:09:59 2017,bagEarthGCV,8,1,polynomial C1 t C2 t C3,ignore,none,asis,28
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:10:07 2017,bam,8,1,polynomial C1 t C2 t C3,ignore,none,asis,7
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:10:08 2017,bartMachine,8,1,polynomial C1 t C2 t C3,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:10:11 2017,bayesglm,8,1,polynomial C1 t C2 t C3,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:10:22 2017,blackboost,8,1,polynomial C1 t C2 t C3,ignore,none,asis,10
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:10:42 2017,blasso,8,1,polynomial C1 t C2 t C3,ignore,none,asis,20
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:10:56 2017,blassoAveraged,8,1,polynomial C1 t C2 t C3,ignore,none,asis,13
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:11:08 2017,bridge,8,1,polynomial C1 t C2 t C3,ignore,none,asis,12
-0.012,-0.032,1.319,0.579,0.409,Thu Aug 03 22:13:15 2017,BstLm,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,458,127,adaptive_cv,16,5,2,2,2,0.186936356593156
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:13:32 2017,bstSm,8,1,polynomial C1 t C2 t C3,ignore,none,asis,16
--1.147,-1.071,1.333,1.163,0.888,Thu Aug 03 22:39:45 2017,bstTree,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,460,1573,adaptive_cv,16,5,2,2,419,6,0.189441180424765
-0.048,-0.015,1.033,0.57,0.394,Thu Aug 03 22:40:02 2017,cforest,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,461,17,adaptive_cv,16,5,2,2,2
-0.049,-0.018,1.05,0.571,0.393,Thu Aug 03 22:40:15 2017,ctree,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,462,13,adaptive_cv,16,5,2,2,0.845188476843759
-0.049,-0.018,1.014,0.571,0.393,Thu Aug 03 22:40:27 2017,ctree2,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,463,12,adaptive_cv,16,5,2,2,1,0.767489042133093
-0.057,-0.04,0.907,0.584,0.39,Thu Aug 03 22:40:58 2017,cubist,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,464,30,adaptive_cv,16,5,2,2,36,0
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:41:06 2017,DENFIS,8,1,polynomial C1 t C2 t C3,ignore,none,asis,8
-0.047,-0.014,1.009,0.569,0.394,Thu Aug 03 22:41:25 2017,dnn,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,466,19,adaptive_cv,16,5,2,2,16,14,9,0.052568159205839,0.0795979405753315
--0.242,-0.3,1.294,0.73,0.514,Thu Aug 03 22:41:44 2017,earth,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,467,18,adaptive_cv,16,5,2,2,8,1
-0.048,-0.051,1.022,0.59,0.394,Thu Aug 03 22:42:01 2017,elm,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,468,17,adaptive_cv,16,5,2,2,1,tansig
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:42:08 2017,enet,8,1,polynomial C1 t C2 t C3,ignore,none,asis,6
--0.336,-0.434,1.176,0.805,0.553,Thu Aug 03 22:45:32 2017,evtree,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,470,204,adaptive_cv,16,5,2,2,2.8459274340421
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:45:33 2017,extraTrees,8,1,polynomial C1 t C2 t C3,ignore,none,asis,1
--0.039,-0.078,1.069,0.605,0.43,Thu Aug 03 22:45:46 2017,foba,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,472,13,adaptive_cv,16,5,2,2,1,0.270554335052862
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:45:53 2017,gam,8,1,polynomial C1 t C2 t C3,ignore,none,asis,6
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:46:00 2017,gamboost,8,1,polynomial C1 t C2 t C3,ignore,none,asis,7
--0.132,-0.22,1.165,0.685,0.469,Thu Aug 03 22:46:26 2017,gamSpline,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,475,26,adaptive_cv,16,5,2,2,0.151763226604089
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:46:30 2017,gaussprLinear,8,1,polynomial C1 t C2 t C3,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:46:46 2017,gaussprPoly,8,1,polynomial C1 t C2 t C3,ignore,none,asis,16
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:46:59 2017,gaussprRadial,8,1,polynomial C1 t C2 t C3,ignore,none,asis,12
--0.34,-0.317,1.284,0.74,0.555,Thu Aug 03 22:47:24 2017,gbm,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,479,25,adaptive_cv,16,5,2,2,9,8,0.530899923059624,9
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:48:25 2017,gbm_h2o,8,1,polynomial C1 t C2 t C3,ignore,none,asis,61
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:48:29 2017,gcvEarth,8,1,polynomial C1 t C2 t C3,ignore,none,asis,4
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:48:33 2017,glm,8,1,polynomial C1 t C2 t C3,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:48:39 2017,glm.nb,8,1,polynomial C1 t C2 t C3,ignore,none,asis,5
-0.012,-0.035,1.297,0.581,0.409,Thu Aug 03 22:48:47 2017,glmboost,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,484,8,adaptive_cv,16,5,2,2,4,no
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:48:57 2017,glmnet,8,1,polynomial C1 t C2 t C3,ignore,none,asis,10
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:49:58 2017,glmnet_h2o,8,1,polynomial C1 t C2 t C3,ignore,none,asis,60
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:50:04 2017,glmStepAIC,8,1,polynomial C1 t C2 t C3,ignore,none,asis,6
--0.039,-0.064,1.197,0.598,0.43,Thu Aug 03 22:50:15 2017,icr,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,488,11,adaptive_cv,16,5,2,2,1
--0.131,-0.22,1.418,0.685,0.468,Thu Aug 03 22:50:19 2017,kernelpls,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,489,3,adaptive_cv,16,5,2,2,3
--0.068,-0.114,1.021,0.625,0.442,Thu Aug 03 22:50:52 2017,kknn,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,490,33,adaptive_cv,16,5,2,2,16,1.03600835474208,gaussian
--0.069,-0.096,1.134,0.615,0.442,Thu Aug 03 22:51:09 2017,knn,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,491,16,adaptive_cv,16,5,2,2,24
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:51:19 2017,krlsPoly,8,1,polynomial C1 t C2 t C3,ignore,none,asis,10
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:51:31 2017,krlsRadial,8,1,polynomial C1 t C2 t C3,ignore,none,asis,12
-0.021,-0.03,0.96,0.578,0.405,Thu Aug 03 22:51:41 2017,lars,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,494,10,adaptive_cv,16,5,2,2,0.0878082087729126
--0.124,-0.214,0.862,0.682,0.465,Thu Aug 03 22:51:52 2017,lars2,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,495,10,adaptive_cv,16,5,2,2,8
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:01 2017,lasso,8,1,polynomial C1 t C2 t C3,ignore,none,asis,8
--0.079,-0.187,1.22,0.666,0.447,Thu Aug 03 22:52:06 2017,leapBackward,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,497,5,adaptive_cv,16,5,2,2,3
--0.034,-0.121,1.798,0.629,0.428,Thu Aug 03 22:52:09 2017,leapForward,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,498,3,adaptive_cv,16,5,2,2,2
--0.034,-0.121,1.214,0.629,0.428,Thu Aug 03 22:52:16 2017,leapSeq,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,499,7,adaptive_cv,16,5,2,2,2
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:20 2017,lm,8,1,polynomial C1 t C2 t C3,ignore,none,asis,4
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:27 2017,lmStepAIC,8,1,polynomial C1 t C2 t C3,ignore,none,asis,6
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:35 2017,logicBag,8,1,polynomial C1 t C2 t C3,ignore,none,asis,8
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:46 2017,logreg,8,1,polynomial C1 t C2 t C3,ignore,none,asis,10
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:47 2017,M5,8,1,polynomial C1 t C2 t C3,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:48 2017,M5Rules,8,1,polynomial C1 t C2 t C3,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:53:26 2017,msaenet,8,1,polynomial C1 t C2 t C3,ignore,none,asis,37
--2.415,-2.361,1.517,1.887,1.413,Thu Aug 03 23:02:57 2017,neuralnet,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,507,571,adaptive_cv,16,5,2,2,17,15,16
-0.015,-0.006,0.988,0.565,0.407,Thu Aug 03 23:03:17 2017,nnet,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,508,18,adaptive_cv,16,5,2,2,9,1.3443308138575
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:03:20 2017,nnls,8,1,polynomial C1 t C2 t C3,ignore,none,asis,2
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:03:20 2017,ordinalNet,8,1,polynomial C1 t C2 t C3,ignore,none,asis,1
--0.098,-0.15,1.053,0.645,0.454,Thu Aug 03 23:03:41 2017,parRF,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,511,21,adaptive_cv,16,5,2,2,1
--0.55,-0.576,1.238,0.885,0.641,Thu Aug 03 23:09:44 2017,partDSA,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,512,362,adaptive_cv,16,5,2,2,4,0.15305839641951
-0.052,-0.049,1.074,0.589,0.392,Thu Aug 03 23:10:01 2017,pcaNNet,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,513,17,adaptive_cv,16,5,2,2,2,0.0000124614530965845
--0.033,-0.094,1.001,0.614,0.427,Thu Aug 03 23:10:04 2017,pcr,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,514,2,adaptive_cv,16,5,2,2,2
-Fail,Fail,Fail,Fail,PackageFail,Thu Aug 03 23:10:28 2017,pls,8,1,polynomial C1 t C2 t C3,ignore,none,asis,27
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:11:10 2017,plsRglm,8,1,polynomial C1 t C2 t C3,ignore,none,asis,7
--0.15,-0.151,1.344,0.646,0.476,Thu Aug 03 23:11:15 2017,ppr,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,517,5,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,PackageFail,Thu Aug 03 23:11:30 2017,pythonKnnReg,8,1,polynomial C1 t C2 t C3,ignore,none,asis,20
--1.128,-1.369,1.44,1.33,0.88,Thu Aug 03 23:12:51 2017,qrf,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,519,57,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:13:01 2017,qrnn,8,1,polynomial C1 t C2 t C3,ignore,none,asis,9
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:13:01 2017,randomGLM,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0
--0.079,-0.12,1.23,0.629,0.446,Thu Aug 03 23:13:08 2017,ranger,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,522,6,adaptive_cv,16,5,2,2,1
--0.266,-0.238,0.622,0.695,0.524,Thu Aug 03 23:14:12 2017,Rborist,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,523,63,adaptive_cv,16,5,2,2,2
-0.004,-0.081,1.114,0.607,0.412,Thu Aug 03 23:14:23 2017,relaxo,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,524,10,adaptive_cv,16,5,2,2,6.93512920701235,0.992797889746726
--0.094,-0.132,1.142,0.636,0.453,Thu Aug 03 23:14:32 2017,rf,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,525,8,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:14:38 2017,ridge,8,1,polynomial C1 t C2 t C3,ignore,none,asis,6
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:14:43 2017,rlm,8,1,polynomial C1 t C2 t C3,ignore,none,asis,5
--0.336,-0.434,0.992,0.805,0.553,Thu Aug 03 23:14:48 2017,rpart,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,528,5,adaptive_cv,16,5,2,2,0.145638789848044
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:14:51 2017,rpart1SE,8,1,polynomial C1 t C2 t C3,ignore,none,asis,2
--0.336,-0.434,0.907,0.805,0.553,Thu Aug 03 23:14:54 2017,rpart2,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,530,3,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:14:55 2017,rqlasso,8,1,polynomial C1 t C2 t C3,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:14:56 2017,rqnc,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:16:10 2017,RRF,8,1,polynomial C1 t C2 t C3,ignore,none,asis,74
--0.118,-0.13,1.182,0.635,0.462,Thu Aug 03 23:16:53 2017,RRFglobal,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,534,43,adaptive_cv,16,5,2,2,5,0.0381772634573281
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:16:57 2017,rvmLinear,8,1,polynomial C1 t C2 t C3,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:17:14 2017,rvmPoly,8,1,polynomial C1 t C2 t C3,ignore,none,asis,17
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:17:33 2017,rvmRadial,8,1,polynomial C1 t C2 t C3,ignore,none,asis,19
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:17:40 2017,SBC,8,1,polynomial C1 t C2 t C3,ignore,none,asis,6
--0.111,-0.193,1.438,0.67,0.46,Thu Aug 03 23:17:42 2017,simpls,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,539,2,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:19:02 2017,spikeslab,8,1,polynomial C1 t C2 t C3,ignore,none,asis,79
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:19:09 2017,spls,8,1,polynomial C1 t C2 t C3,ignore,none,asis,7
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:19:15 2017,superpc,8,1,polynomial C1 t C2 t C3,ignore,none,asis,5
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:19:15 2017,svmBoundrangeString,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:19:16 2017,svmExpoString,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0
-NA,NA,1.014,NA,NA,Thu Aug 03 23:19:32 2017,svmLinear,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,545,16,adaptive_cv,16,5,2,2,0.0461474048139209
--0.068,-0.08,0.969,0.606,0.442,Thu Aug 03 23:20:38 2017,svmLinear2,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,546,65,adaptive_cv,16,5,2,2,0.0317403727002724
-0.037,-0.06,1.048,0.595,0.399,Thu Aug 03 23:20:55 2017,svmLinear3,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,547,17,adaptive_cv,16,5,2,2,0.00117722848879895,L1
-NA,NA,1.01,NA,NA,Thu Aug 03 23:21:48 2017,svmPoly,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,548,53,adaptive_cv,16,5,2,2,3,0.0000588528598815319,0.165308526968949
-NA,NA,1.052,NA,NA,Thu Aug 03 23:22:01 2017,svmRadial,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,549,13,adaptive_cv,16,5,2,2,0.266842199353028,0.167987330221105
-NA,NA,0.935,NA,NA,Thu Aug 03 23:22:11 2017,svmRadialCost,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,550,10,adaptive_cv,16,5,2,2,0.0466508181492355
-NA,NA,1.01,NA,NA,Thu Aug 03 23:22:30 2017,svmRadialSigma,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,551,18,adaptive_cv,16,5,2,2,0.0176319273202272,0.0477726331593459
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:22:30 2017,svmSpectrumString,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:22:46 2017,treebag,8,1,polynomial C1 t C2 t C3,ignore,none,asis,15
--0.111,-0.193,1.193,0.67,0.46,Thu Aug 03 23:22:57 2017,widekernelpls,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,554,11,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:23:30 2017,WM,8,1,polynomial C1 t C2 t C3,ignore,none,asis,33
--0.707,-0.873,1.298,1.051,0.706,Thu Aug 03 23:23:51 2017,xgbLinear,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,556,20,adaptive_cv,16,5,2,2,2,0.0000330543402022617,0.00002279269298231,1.38088329043239
--0.131,-0.124,0.988,0.631,0.468,Thu Aug 03 23:24:56 2017,xgbTree,8,1,polynomial C1 t C2 t C3,ignore,none,asis,0.56142422901987,random,557,65,adaptive_cv,16,5,2,2,73,2,0.480087188292528,8.8736323453486,0.478528731875122,10,0.911442513053771
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:25:06 2017,xyf,8,1,polynomial C1 t C2 t C3,ignore,none,asis,9
-0,0,0.845,0.637,0.416,Thu Aug 03 23:26:01 2017,avNNet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,559,25,adaptive_cv,16,5,2,2,12,0.0000113362744701747,TRUE
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:26:04 2017,bag,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,2
-0.592,0.601,0.489,0.254,0.17,Thu Aug 03 23:27:41 2017,bagEarth,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,561,97,adaptive_cv,16,5,2,2,14,2
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:08 2017,bagEarthGCV,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,27
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:15 2017,bam,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,6
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:17 2017,bartMachine,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:20 2017,bayesglm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:30 2017,blackboost,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,10
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:47 2017,blasso,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,17
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:58 2017,blassoAveraged,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,11
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:29:09 2017,bridge,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,10
--0.035,0.01,1.176,0.631,0.431,Thu Aug 03 23:30:28 2017,BstLm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,570,79,adaptive_cv,16,5,2,2,345,0.0110181630055886
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:30:39 2017,bstSm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,11
-0.137,-0.053,0.85,0.671,0.359,Thu Aug 03 23:41:11 2017,bstTree,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,572,631,adaptive_cv,16,5,2,2,389,3,0.0021495147170499
--0.043,-0.03,0.926,0.656,0.434,Thu Aug 03 23:41:19 2017,cforest,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,573,8,adaptive_cv,16,5,2,2,1
--0.058,-0.036,0.793,0.66,0.44,Thu Aug 03 23:41:36 2017,ctree,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,574,17,adaptive_cv,16,5,2,2,0.99679619865492
--0.058,-0.036,0.898,0.66,0.44,Thu Aug 03 23:41:50 2017,ctree2,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,575,13,adaptive_cv,16,5,2,2,5,0.552527989726514
-0.103,-0.04,0.836,0.662,0.373,Thu Aug 03 23:42:46 2017,cubist,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,576,56,adaptive_cv,16,5,2,2,49,5
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:42:54 2017,DENFIS,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,8
--0.022,-0.01,0.865,0.643,0.425,Thu Aug 03 23:43:14 2017,dnn,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,578,20,adaptive_cv,16,5,2,2,10,6,13,0.0232017641421407,0.0188587769633159
-0.615,0.692,0.656,0.196,0.16,Thu Aug 03 23:43:28 2017,earth,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,579,13,adaptive_cv,16,5,2,2,5,2
-0.024,0.102,0.898,0.572,0.406,Thu Aug 03 23:43:39 2017,elm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,580,10,adaptive_cv,16,5,2,2,3,radbas
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:43:46 2017,enet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,6
--0.089,-0.075,1.015,0.685,0.453,Thu Aug 03 23:49:07 2017,evtree,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,582,321,adaptive_cv,16,5,2,2,1.32413917873055
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:49:08 2017,extraTrees,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:49:18 2017,foba,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,9
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:49:24 2017,gam,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,6
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:49:32 2017,gamboost,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,7
--0.03,0.023,1.054,0.622,0.428,Thu Aug 03 23:49:54 2017,gamSpline,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,587,22,adaptive_cv,16,5,2,2,0.633783877128735
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:49:58 2017,gaussprLinear,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:50:16 2017,gaussprPoly,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,18
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:50:36 2017,gaussprRadial,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,19
--0.398,-0.298,1.054,0.827,0.582,Thu Aug 03 23:50:49 2017,gbm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,591,13,adaptive_cv,16,5,2,2,1376,4,0.10867340464727,6
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:51:51 2017,gbm_h2o,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,61
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:51:54 2017,gcvEarth,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:51:57 2017,glm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:52:03 2017,glm.nb,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,5
--0.064,-0.033,0.987,0.658,0.443,Thu Aug 03 23:52:20 2017,glmboost,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,596,17,adaptive_cv,16,5,2,2,149,yes
--0.058,-0.036,0.921,0.66,0.44,Thu Aug 03 23:52:28 2017,glmnet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,597,7,adaptive_cv,16,5,2,2,0.235948064830154,1.88469599629154
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:53:30 2017,glmnet_h2o,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,61
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:53:36 2017,glmStepAIC,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,6
--0.04,-0.035,0.802,0.659,0.433,Thu Aug 03 23:53:43 2017,icr,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,600,7,adaptive_cv,16,5,2,2,1
--0.011,0.038,1.075,0.613,0.421,Thu Aug 03 23:53:51 2017,kernelpls,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,601,7,adaptive_cv,16,5,2,2,2
-0.047,-0.078,0.842,0.687,0.396,Thu Aug 03 23:54:09 2017,kknn,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,602,17,adaptive_cv,16,5,2,2,8,0.163872060365975,inv
--0.139,-0.067,0.836,0.68,0.474,Thu Aug 03 23:54:16 2017,knn,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,603,7,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:54:22 2017,krlsPoly,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,6
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:54:29 2017,krlsRadial,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,6
--0.062,-0.034,0.883,0.659,0.442,Thu Aug 03 23:54:37 2017,lars,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,606,7,adaptive_cv,16,5,2,2,0.014169099740684
--0.058,-0.036,0.72,0.66,0.44,Thu Aug 03 23:54:41 2017,lars2,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,607,4,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:54:46 2017,lasso,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,5
--0.074,-0.015,1.148,0.647,0.447,Thu Aug 03 23:54:51 2017,leapBackward,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,609,4,adaptive_cv,16,5,2,2,2
--0.074,-0.015,1.004,0.647,0.447,Thu Aug 03 23:54:58 2017,leapForward,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,610,7,adaptive_cv,16,5,2,2,2
--0.074,-0.015,0.984,0.647,0.447,Thu Aug 03 23:55:09 2017,leapSeq,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,611,10,adaptive_cv,16,5,2,2,2
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:11 2017,lm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,2
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:17 2017,lmStepAIC,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,6
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:25 2017,logicBag,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,7
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:32 2017,logreg,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,7
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:33 2017,M5,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:34 2017,M5Rules,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:47 2017,msaenet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,12
--1.105,-0.887,0.935,1.202,0.876,Thu Aug 03 23:56:57 2017,neuralnet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,619,70,adaptive_cv,16,5,2,2,14,10,0
-0,0,0.799,0.637,0.416,Thu Aug 03 23:57:07 2017,nnet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,620,10,adaptive_cv,16,5,2,2,20,0.000018048644356519
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:57:10 2017,nnls,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,2
-Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:57:10 2017,ordinalNet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0
-0.033,-0.039,0.886,0.661,0.402,Thu Aug 03 23:57:17 2017,parRF,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,623,7,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:02:26 2017,partDSA,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,308
-0,0,0.878,0.637,0.416,Fri Aug 04 00:02:44 2017,pcaNNet,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,625,18,adaptive_cv,16,5,2,2,9,0.0000141532938191688
--0.067,-0.028,0.677,0.655,0.444,Fri Aug 04 00:02:49 2017,pcr,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,626,5,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 00:03:13 2017,pls,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,29
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:04:41 2017,plsRglm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,48
--0.169,-0.169,1.356,0.745,0.487,Fri Aug 04 00:04:55 2017,ppr,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,629,14,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 00:05:10 2017,pythonKnnReg,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,29
--1.404,-0.891,1.367,1.204,1,Fri Aug 04 00:06:13 2017,qrf,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,631,27,adaptive_cv,16,5,2,2,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:06:22 2017,qrnn,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,9
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:06:23 2017,randomGLM,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0
--0.008,-0.079,0.909,0.687,0.42,Fri Aug 04 00:06:39 2017,ranger,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,634,16,adaptive_cv,16,5,2,2,3
-0.019,-0.072,0.855,0.683,0.408,Fri Aug 04 00:10:28 2017,Rborist,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,635,228,adaptive_cv,16,5,2,2,1
--0.033,-0.007,0.92,0.641,0.43,Fri Aug 04 00:10:37 2017,relaxo,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,636,9,adaptive_cv,16,5,2,2,5.55828360114712,0.434431698871776
--0.002,-0.047,0.881,0.667,0.417,Fri Aug 04 00:10:50 2017,rf,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,637,13,adaptive_cv,16,5,2,2,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:10:58 2017,ridge,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,7
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:11:05 2017,rlm,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,7
--0.058,-0.036,0.621,0.66,0.44,Fri Aug 04 00:11:08 2017,rpart,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,640,2,adaptive_cv,16,5,2,2,0.124015740498115
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:11:12 2017,rpart1SE,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,3
--0.004,-0.336,1.238,0.851,0.418,Fri Aug 04 00:11:15 2017,rpart2,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,642,3,adaptive_cv,16,5,2,2,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:11:16 2017,rqlasso,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:11:17 2017,rqnc,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0
--0.026,-0.025,0.874,0.653,0.427,Fri Aug 04 00:11:36 2017,RRF,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,645,19,adaptive_cv,16,5,2,2,1,0.427566109225154,0.757026036502793
-0.005,-0.054,0.926,0.671,0.414,Fri Aug 04 00:12:02 2017,RRFglobal,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,646,26,adaptive_cv,16,5,2,2,2,0.560514603974298
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:12:07 2017,rvmLinear,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,4
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:12:26 2017,rvmPoly,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,19
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:12:44 2017,rvmRadial,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,17
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:12:54 2017,SBC,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,10
-0.021,0.075,1.407,0.589,0.407,Fri Aug 04 00:12:57 2017,simpls,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,651,3,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:14:31 2017,spikeslab,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,94
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:14:40 2017,spls,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,8
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:14:47 2017,superpc,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,6
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:14:48 2017,svmBoundrangeString,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:14:49 2017,svmExpoString,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0
-NA,NA,0.961,NA,NA,Fri Aug 04 00:15:22 2017,svmLinear,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,657,33,adaptive_cv,16,5,2,2,0.0401092127214188
-0.048,0.04,0.875,0.612,0.396,Fri Aug 04 00:16:29 2017,svmLinear2,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,658,66,adaptive_cv,16,5,2,2,0.0329280118065787
-0.01,0.01,0.958,0.631,0.412,Fri Aug 04 00:16:35 2017,svmLinear3,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,659,6,adaptive_cv,16,5,2,2,0.00170913282946954,L2
-NA,NA,0.807,NA,NA,Fri Aug 04 00:16:48 2017,svmPoly,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,660,13,adaptive_cv,16,5,2,2,3,0.0136594461720328,20.8895873713315
-NA,NA,0.817,NA,NA,Fri Aug 04 00:17:02 2017,svmRadial,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,661,14,adaptive_cv,16,5,2,2,0.248129376924044,0.405120022842093
-NA,NA,0.817,NA,NA,Fri Aug 04 00:17:13 2017,svmRadialCost,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,662,11,adaptive_cv,16,5,2,2,465.261931336054
-NA,NA,0.702,NA,NA,Fri Aug 04 00:17:26 2017,svmRadialSigma,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,663,12,adaptive_cv,16,5,2,2,0.0104768833360133,681.003352133907
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:17:27 2017,svmSpectrumString,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:17:35 2017,treebag,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,8
--0.011,0.038,1.196,0.613,0.421,Fri Aug 04 00:17:39 2017,widekernelpls,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,666,3,adaptive_cv,16,5,2,2,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:18:07 2017,WM,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,28
--0.228,-0.226,0.939,0.781,0.511,Fri Aug 04 00:18:26 2017,xgbLinear,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,668,19,adaptive_cv,16,5,2,2,5,0.616119561923691,0.000711928047424363,2.60041529685259
--0.041,-0.025,0.858,0.653,0.433,Fri Aug 04 00:20:08 2017,xgbTree,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,0.636882571375777,random,669,101,adaptive_cv,16,5,2,2,620,8,0.00633076250250451,9.55157949356362,0.404739676602185,0,0.763912692607846
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:20:16 2017,xyf,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,8
+0.017,-0.051,1.122,0.59,0.407,Thu Aug 03 22:07:07 2017,avNNet,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,447,62,adaptive_cv,16,5,2,2,17,0.00021021561982797,FALSE
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:07:10 2017,bag,8,1,polynomial C1 t C2 t U3,ignore,none,asis,2
+-0.494,-0.538,1.252,0.863,0.618,Thu Aug 03 22:09:31 2017,bagEarth,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,449,141,adaptive_cv,16,5,2,2,4,2
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:09:59 2017,bagEarthGCV,8,1,polynomial C1 t C2 t U3,ignore,none,asis,28
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:10:07 2017,bam,8,1,polynomial C1 t C2 t U3,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:10:08 2017,bartMachine,8,1,polynomial C1 t C2 t U3,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:10:11 2017,bayesglm,8,1,polynomial C1 t C2 t U3,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:10:22 2017,blackboost,8,1,polynomial C1 t C2 t U3,ignore,none,asis,10
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:10:42 2017,blasso,8,1,polynomial C1 t C2 t U3,ignore,none,asis,20
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:10:56 2017,blassoAveraged,8,1,polynomial C1 t C2 t U3,ignore,none,asis,13
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:11:08 2017,bridge,8,1,polynomial C1 t C2 t U3,ignore,none,asis,12
+0.012,-0.032,1.319,0.579,0.409,Thu Aug 03 22:13:15 2017,BstLm,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,458,127,adaptive_cv,16,5,2,2,2,0.186936356593156
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:13:32 2017,bstSm,8,1,polynomial C1 t C2 t U3,ignore,none,asis,16
+-1.147,-1.071,1.333,1.163,0.888,Thu Aug 03 22:39:45 2017,bstTree,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,460,1573,adaptive_cv,16,5,2,2,419,6,0.189441180424765
+0.048,-0.015,1.033,0.57,0.394,Thu Aug 03 22:40:02 2017,cforest,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,461,17,adaptive_cv,16,5,2,2,2
+0.049,-0.018,1.05,0.571,0.393,Thu Aug 03 22:40:15 2017,ctree,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,462,13,adaptive_cv,16,5,2,2,0.845188476843759
+0.049,-0.018,1.014,0.571,0.393,Thu Aug 03 22:40:27 2017,ctree2,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,463,12,adaptive_cv,16,5,2,2,1,0.767489042133093
+0.057,-0.04,0.907,0.584,0.39,Thu Aug 03 22:40:58 2017,cubist,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,464,30,adaptive_cv,16,5,2,2,36,0
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:41:06 2017,DENFIS,8,1,polynomial C1 t C2 t U3,ignore,none,asis,8
+0.047,-0.014,1.009,0.569,0.394,Thu Aug 03 22:41:25 2017,dnn,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,466,19,adaptive_cv,16,5,2,2,16,14,9,0.052568159205839,0.0795979405753315
+-0.242,-0.3,1.294,0.73,0.514,Thu Aug 03 22:41:44 2017,earth,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,467,18,adaptive_cv,16,5,2,2,8,1
+0.048,-0.051,1.022,0.59,0.394,Thu Aug 03 22:42:01 2017,elm,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,468,17,adaptive_cv,16,5,2,2,1,tansig
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:42:08 2017,enet,8,1,polynomial C1 t C2 t U3,ignore,none,asis,6
+-0.336,-0.434,1.176,0.805,0.553,Thu Aug 03 22:45:32 2017,evtree,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,470,204,adaptive_cv,16,5,2,2,2.8459274340421
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:45:33 2017,extraTrees,8,1,polynomial C1 t C2 t U3,ignore,none,asis,1
+-0.039,-0.078,1.069,0.605,0.43,Thu Aug 03 22:45:46 2017,foba,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,472,13,adaptive_cv,16,5,2,2,1,0.270554335052862
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:45:53 2017,gam,8,1,polynomial C1 t C2 t U3,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:46:00 2017,gamboost,8,1,polynomial C1 t C2 t U3,ignore,none,asis,7
+-0.132,-0.22,1.165,0.685,0.469,Thu Aug 03 22:46:26 2017,gamSpline,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,475,26,adaptive_cv,16,5,2,2,0.151763226604089
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:46:30 2017,gaussprLinear,8,1,polynomial C1 t C2 t U3,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:46:46 2017,gaussprPoly,8,1,polynomial C1 t C2 t U3,ignore,none,asis,16
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:46:59 2017,gaussprRadial,8,1,polynomial C1 t C2 t U3,ignore,none,asis,12
+-0.34,-0.317,1.284,0.74,0.555,Thu Aug 03 22:47:24 2017,gbm,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,479,25,adaptive_cv,16,5,2,2,9,8,0.530899923059624,9
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:48:25 2017,gbm_h2o,8,1,polynomial C1 t C2 t U3,ignore,none,asis,61
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:48:29 2017,gcvEarth,8,1,polynomial C1 t C2 t U3,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:48:33 2017,glm,8,1,polynomial C1 t C2 t U3,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:48:39 2017,glm.nb,8,1,polynomial C1 t C2 t U3,ignore,none,asis,5
+0.012,-0.035,1.297,0.581,0.409,Thu Aug 03 22:48:47 2017,glmboost,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,484,8,adaptive_cv,16,5,2,2,4,no
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:48:57 2017,glmnet,8,1,polynomial C1 t C2 t U3,ignore,none,asis,10
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:49:58 2017,glmnet_h2o,8,1,polynomial C1 t C2 t U3,ignore,none,asis,60
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:50:04 2017,glmStepAIC,8,1,polynomial C1 t C2 t U3,ignore,none,asis,6
+-0.039,-0.064,1.197,0.598,0.43,Thu Aug 03 22:50:15 2017,icr,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,488,11,adaptive_cv,16,5,2,2,1
+-0.131,-0.22,1.418,0.685,0.468,Thu Aug 03 22:50:19 2017,kernelpls,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,489,3,adaptive_cv,16,5,2,2,3
+-0.068,-0.114,1.021,0.625,0.442,Thu Aug 03 22:50:52 2017,kknn,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,490,33,adaptive_cv,16,5,2,2,16,1.03600835474208,gaussian
+-0.069,-0.096,1.134,0.615,0.442,Thu Aug 03 22:51:09 2017,knn,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,491,16,adaptive_cv,16,5,2,2,24
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:51:19 2017,krlsPoly,8,1,polynomial C1 t C2 t U3,ignore,none,asis,10
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:51:31 2017,krlsRadial,8,1,polynomial C1 t C2 t U3,ignore,none,asis,12
+0.021,-0.03,0.96,0.578,0.405,Thu Aug 03 22:51:41 2017,lars,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,494,10,adaptive_cv,16,5,2,2,0.0878082087729126
+-0.124,-0.214,0.862,0.682,0.465,Thu Aug 03 22:51:52 2017,lars2,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,495,10,adaptive_cv,16,5,2,2,8
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:01 2017,lasso,8,1,polynomial C1 t C2 t U3,ignore,none,asis,8
+-0.079,-0.187,1.22,0.666,0.447,Thu Aug 03 22:52:06 2017,leapBackward,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,497,5,adaptive_cv,16,5,2,2,3
+-0.034,-0.121,1.798,0.629,0.428,Thu Aug 03 22:52:09 2017,leapForward,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,498,3,adaptive_cv,16,5,2,2,2
+-0.034,-0.121,1.214,0.629,0.428,Thu Aug 03 22:52:16 2017,leapSeq,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,499,7,adaptive_cv,16,5,2,2,2
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:20 2017,lm,8,1,polynomial C1 t C2 t U3,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:27 2017,lmStepAIC,8,1,polynomial C1 t C2 t U3,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:35 2017,logicBag,8,1,polynomial C1 t C2 t U3,ignore,none,asis,8
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:46 2017,logreg,8,1,polynomial C1 t C2 t U3,ignore,none,asis,10
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:47 2017,M5,8,1,polynomial C1 t C2 t U3,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:52:48 2017,M5Rules,8,1,polynomial C1 t C2 t U3,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 22:53:26 2017,msaenet,8,1,polynomial C1 t C2 t U3,ignore,none,asis,37
+-2.415,-2.361,1.517,1.887,1.413,Thu Aug 03 23:02:57 2017,neuralnet,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,507,571,adaptive_cv,16,5,2,2,17,15,16
+0.015,-0.006,0.988,0.565,0.407,Thu Aug 03 23:03:17 2017,nnet,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,508,18,adaptive_cv,16,5,2,2,9,1.3443308138575
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:03:20 2017,nnls,8,1,polynomial C1 t C2 t U3,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:03:20 2017,ordinalNet,8,1,polynomial C1 t C2 t U3,ignore,none,asis,1
+-0.098,-0.15,1.053,0.645,0.454,Thu Aug 03 23:03:41 2017,parRF,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,511,21,adaptive_cv,16,5,2,2,1
+-0.55,-0.576,1.238,0.885,0.641,Thu Aug 03 23:09:44 2017,partDSA,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,512,362,adaptive_cv,16,5,2,2,4,0.15305839641951
+0.052,-0.049,1.074,0.589,0.392,Thu Aug 03 23:10:01 2017,pcaNNet,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,513,17,adaptive_cv,16,5,2,2,2,0.0000124614530965845
+-0.033,-0.094,1.001,0.614,0.427,Thu Aug 03 23:10:04 2017,pcr,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,514,2,adaptive_cv,16,5,2,2,2
+Fail,Fail,Fail,Fail,PackageFail,Thu Aug 03 23:10:28 2017,pls,8,1,polynomial C1 t C2 t U3,ignore,none,asis,27
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:11:10 2017,plsRglm,8,1,polynomial C1 t C2 t U3,ignore,none,asis,7
+-0.15,-0.151,1.344,0.646,0.476,Thu Aug 03 23:11:15 2017,ppr,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,517,5,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Aug 03 23:11:30 2017,pythonKnnReg,8,1,polynomial C1 t C2 t U3,ignore,none,asis,20
+-1.128,-1.369,1.44,1.33,0.88,Thu Aug 03 23:12:51 2017,qrf,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,519,57,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:13:01 2017,qrnn,8,1,polynomial C1 t C2 t U3,ignore,none,asis,9
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:13:01 2017,randomGLM,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0
+-0.079,-0.12,1.23,0.629,0.446,Thu Aug 03 23:13:08 2017,ranger,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,522,6,adaptive_cv,16,5,2,2,1
+-0.266,-0.238,0.622,0.695,0.524,Thu Aug 03 23:14:12 2017,Rborist,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,523,63,adaptive_cv,16,5,2,2,2
+0.004,-0.081,1.114,0.607,0.412,Thu Aug 03 23:14:23 2017,relaxo,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,524,10,adaptive_cv,16,5,2,2,6.93512920701235,0.992797889746726
+-0.094,-0.132,1.142,0.636,0.453,Thu Aug 03 23:14:32 2017,rf,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,525,8,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:14:38 2017,ridge,8,1,polynomial C1 t C2 t U3,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:14:43 2017,rlm,8,1,polynomial C1 t C2 t U3,ignore,none,asis,5
+-0.336,-0.434,0.992,0.805,0.553,Thu Aug 03 23:14:48 2017,rpart,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,528,5,adaptive_cv,16,5,2,2,0.145638789848044
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:14:51 2017,rpart1SE,8,1,polynomial C1 t C2 t U3,ignore,none,asis,2
+-0.336,-0.434,0.907,0.805,0.553,Thu Aug 03 23:14:54 2017,rpart2,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,530,3,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:14:55 2017,rqlasso,8,1,polynomial C1 t C2 t U3,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:14:56 2017,rqnc,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:16:10 2017,RRF,8,1,polynomial C1 t C2 t U3,ignore,none,asis,74
+-0.118,-0.13,1.182,0.635,0.462,Thu Aug 03 23:16:53 2017,RRFglobal,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,534,43,adaptive_cv,16,5,2,2,5,0.0381772634573281
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:16:57 2017,rvmLinear,8,1,polynomial C1 t C2 t U3,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:17:14 2017,rvmPoly,8,1,polynomial C1 t C2 t U3,ignore,none,asis,17
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:17:33 2017,rvmRadial,8,1,polynomial C1 t C2 t U3,ignore,none,asis,19
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:17:40 2017,SBC,8,1,polynomial C1 t C2 t U3,ignore,none,asis,6
+-0.111,-0.193,1.438,0.67,0.46,Thu Aug 03 23:17:42 2017,simpls,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,539,2,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:19:02 2017,spikeslab,8,1,polynomial C1 t C2 t U3,ignore,none,asis,79
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:19:09 2017,spls,8,1,polynomial C1 t C2 t U3,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:19:15 2017,superpc,8,1,polynomial C1 t C2 t U3,ignore,none,asis,5
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:19:15 2017,svmBoundrangeString,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:19:16 2017,svmExpoString,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0
+NA,NA,1.014,NA,NA,Thu Aug 03 23:19:32 2017,svmLinear,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,545,16,adaptive_cv,16,5,2,2,0.0461474048139209
+-0.068,-0.08,0.969,0.606,0.442,Thu Aug 03 23:20:38 2017,svmLinear2,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,546,65,adaptive_cv,16,5,2,2,0.0317403727002724
+0.037,-0.06,1.048,0.595,0.399,Thu Aug 03 23:20:55 2017,svmLinear3,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,547,17,adaptive_cv,16,5,2,2,0.00117722848879895,L1
+NA,NA,1.01,NA,NA,Thu Aug 03 23:21:48 2017,svmPoly,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,548,53,adaptive_cv,16,5,2,2,3,0.0000588528598815319,0.165308526968949
+NA,NA,1.052,NA,NA,Thu Aug 03 23:22:01 2017,svmRadial,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,549,13,adaptive_cv,16,5,2,2,0.266842199353028,0.167987330221105
+NA,NA,0.935,NA,NA,Thu Aug 03 23:22:11 2017,svmRadialCost,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,550,10,adaptive_cv,16,5,2,2,0.0466508181492355
+NA,NA,1.01,NA,NA,Thu Aug 03 23:22:30 2017,svmRadialSigma,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,551,18,adaptive_cv,16,5,2,2,0.0176319273202272,0.0477726331593459
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:22:30 2017,svmSpectrumString,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:22:46 2017,treebag,8,1,polynomial C1 t C2 t U3,ignore,none,asis,15
+-0.111,-0.193,1.193,0.67,0.46,Thu Aug 03 23:22:57 2017,widekernelpls,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,554,11,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:23:30 2017,WM,8,1,polynomial C1 t C2 t U3,ignore,none,asis,33
+-0.707,-0.873,1.298,1.051,0.706,Thu Aug 03 23:23:51 2017,xgbLinear,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,556,20,adaptive_cv,16,5,2,2,2,0.0000330543402022617,0.00002279269298231,1.38088329043239
+-0.131,-0.124,0.988,0.631,0.468,Thu Aug 03 23:24:56 2017,xgbTree,8,1,polynomial C1 t C2 t U3,ignore,none,asis,0.56142422901987,random,557,65,adaptive_cv,16,5,2,2,73,2,0.480087188292528,8.8736323453486,0.478528731875122,10,0.911442513053771
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:25:06 2017,xyf,8,1,polynomial C1 t C2 t U3,ignore,none,asis,9
+0,0,0.845,0.637,0.416,Thu Aug 03 23:26:01 2017,avNNet,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,559,25,adaptive_cv,16,5,2,2,12,0.0000113362744701747,TRUE
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:26:04 2017,bag,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,2
+0.592,0.601,0.489,0.254,0.17,Thu Aug 03 23:27:41 2017,bagEarth,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,561,97,adaptive_cv,16,5,2,2,14,2
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:08 2017,bagEarthGCV,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,27
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:15 2017,bam,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:17 2017,bartMachine,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:20 2017,bayesglm,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:30 2017,blackboost,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,10
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:47 2017,blasso,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,17
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:28:58 2017,blassoAveraged,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,11
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:29:09 2017,bridge,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,10
+-0.035,0.01,1.176,0.631,0.431,Thu Aug 03 23:30:28 2017,BstLm,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,570,79,adaptive_cv,16,5,2,2,345,0.0110181630055886
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:30:39 2017,bstSm,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,11
+0.137,-0.053,0.85,0.671,0.359,Thu Aug 03 23:41:11 2017,bstTree,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,572,631,adaptive_cv,16,5,2,2,389,3,0.0021495147170499
+-0.043,-0.03,0.926,0.656,0.434,Thu Aug 03 23:41:19 2017,cforest,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,573,8,adaptive_cv,16,5,2,2,1
+-0.058,-0.036,0.793,0.66,0.44,Thu Aug 03 23:41:36 2017,ctree,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,574,17,adaptive_cv,16,5,2,2,0.99679619865492
+-0.058,-0.036,0.898,0.66,0.44,Thu Aug 03 23:41:50 2017,ctree2,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,575,13,adaptive_cv,16,5,2,2,5,0.552527989726514
+0.103,-0.04,0.836,0.662,0.373,Thu Aug 03 23:42:46 2017,cubist,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,576,56,adaptive_cv,16,5,2,2,49,5
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:42:54 2017,DENFIS,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,8
+-0.022,-0.01,0.865,0.643,0.425,Thu Aug 03 23:43:14 2017,dnn,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,578,20,adaptive_cv,16,5,2,2,10,6,13,0.0232017641421407,0.0188587769633159
+0.615,0.692,0.656,0.196,0.16,Thu Aug 03 23:43:28 2017,earth,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,579,13,adaptive_cv,16,5,2,2,5,2
+0.024,0.102,0.898,0.572,0.406,Thu Aug 03 23:43:39 2017,elm,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,580,10,adaptive_cv,16,5,2,2,3,radbas
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:43:46 2017,enet,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,6
+-0.089,-0.075,1.015,0.685,0.453,Thu Aug 03 23:49:07 2017,evtree,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,582,321,adaptive_cv,16,5,2,2,1.32413917873055
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:49:08 2017,extraTrees,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:49:18 2017,foba,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,9
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:49:24 2017,gam,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:49:32 2017,gamboost,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,7
+-0.03,0.023,1.054,0.622,0.428,Thu Aug 03 23:49:54 2017,gamSpline,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,587,22,adaptive_cv,16,5,2,2,0.633783877128735
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:49:58 2017,gaussprLinear,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:50:16 2017,gaussprPoly,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,18
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:50:36 2017,gaussprRadial,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,19
+-0.398,-0.298,1.054,0.827,0.582,Thu Aug 03 23:50:49 2017,gbm,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,591,13,adaptive_cv,16,5,2,2,1376,4,0.10867340464727,6
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:51:51 2017,gbm_h2o,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,61
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:51:54 2017,gcvEarth,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:51:57 2017,glm,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:52:03 2017,glm.nb,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,5
+-0.064,-0.033,0.987,0.658,0.443,Thu Aug 03 23:52:20 2017,glmboost,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,596,17,adaptive_cv,16,5,2,2,149,yes
+-0.058,-0.036,0.921,0.66,0.44,Thu Aug 03 23:52:28 2017,glmnet,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,597,7,adaptive_cv,16,5,2,2,0.235948064830154,1.88469599629154
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:53:30 2017,glmnet_h2o,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,61
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:53:36 2017,glmStepAIC,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,6
+-0.04,-0.035,0.802,0.659,0.433,Thu Aug 03 23:53:43 2017,icr,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,600,7,adaptive_cv,16,5,2,2,1
+-0.011,0.038,1.075,0.613,0.421,Thu Aug 03 23:53:51 2017,kernelpls,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,601,7,adaptive_cv,16,5,2,2,2
+0.047,-0.078,0.842,0.687,0.396,Thu Aug 03 23:54:09 2017,kknn,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,602,17,adaptive_cv,16,5,2,2,8,0.163872060365975,inv
+-0.139,-0.067,0.836,0.68,0.474,Thu Aug 03 23:54:16 2017,knn,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,603,7,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:54:22 2017,krlsPoly,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:54:29 2017,krlsRadial,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,6
+-0.062,-0.034,0.883,0.659,0.442,Thu Aug 03 23:54:37 2017,lars,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,606,7,adaptive_cv,16,5,2,2,0.014169099740684
+-0.058,-0.036,0.72,0.66,0.44,Thu Aug 03 23:54:41 2017,lars2,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,607,4,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:54:46 2017,lasso,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,5
+-0.074,-0.015,1.148,0.647,0.447,Thu Aug 03 23:54:51 2017,leapBackward,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,609,4,adaptive_cv,16,5,2,2,2
+-0.074,-0.015,1.004,0.647,0.447,Thu Aug 03 23:54:58 2017,leapForward,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,610,7,adaptive_cv,16,5,2,2,2
+-0.074,-0.015,0.984,0.647,0.447,Thu Aug 03 23:55:09 2017,leapSeq,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,611,10,adaptive_cv,16,5,2,2,2
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:11 2017,lm,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:17 2017,lmStepAIC,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:25 2017,logicBag,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:32 2017,logreg,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:33 2017,M5,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:34 2017,M5Rules,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:55:47 2017,msaenet,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,12
+-1.105,-0.887,0.935,1.202,0.876,Thu Aug 03 23:56:57 2017,neuralnet,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,619,70,adaptive_cv,16,5,2,2,14,10,0
+0,0,0.799,0.637,0.416,Thu Aug 03 23:57:07 2017,nnet,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,620,10,adaptive_cv,16,5,2,2,20,0.000018048644356519
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:57:10 2017,nnls,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Thu Aug 03 23:57:10 2017,ordinalNet,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0
+0.033,-0.039,0.886,0.661,0.402,Thu Aug 03 23:57:17 2017,parRF,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,623,7,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:02:26 2017,partDSA,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,308
+0,0,0.878,0.637,0.416,Fri Aug 04 00:02:44 2017,pcaNNet,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,625,18,adaptive_cv,16,5,2,2,9,0.0000141532938191688
+-0.067,-0.028,0.677,0.655,0.444,Fri Aug 04 00:02:49 2017,pcr,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,626,5,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 00:03:13 2017,pls,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,29
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:04:41 2017,plsRglm,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,48
+-0.169,-0.169,1.356,0.745,0.487,Fri Aug 04 00:04:55 2017,ppr,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,629,14,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 00:05:10 2017,pythonKnnReg,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,29
+-1.404,-0.891,1.367,1.204,1,Fri Aug 04 00:06:13 2017,qrf,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,631,27,adaptive_cv,16,5,2,2,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:06:22 2017,qrnn,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,9
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:06:23 2017,randomGLM,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0
+-0.008,-0.079,0.909,0.687,0.42,Fri Aug 04 00:06:39 2017,ranger,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,634,16,adaptive_cv,16,5,2,2,3
+0.019,-0.072,0.855,0.683,0.408,Fri Aug 04 00:10:28 2017,Rborist,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,635,228,adaptive_cv,16,5,2,2,1
+-0.033,-0.007,0.92,0.641,0.43,Fri Aug 04 00:10:37 2017,relaxo,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,636,9,adaptive_cv,16,5,2,2,5.55828360114712,0.434431698871776
+-0.002,-0.047,0.881,0.667,0.417,Fri Aug 04 00:10:50 2017,rf,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,637,13,adaptive_cv,16,5,2,2,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:10:58 2017,ridge,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:11:05 2017,rlm,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,7
+-0.058,-0.036,0.621,0.66,0.44,Fri Aug 04 00:11:08 2017,rpart,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,640,2,adaptive_cv,16,5,2,2,0.124015740498115
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:11:12 2017,rpart1SE,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,3
+-0.004,-0.336,1.238,0.851,0.418,Fri Aug 04 00:11:15 2017,rpart2,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,642,3,adaptive_cv,16,5,2,2,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:11:16 2017,rqlasso,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:11:17 2017,rqnc,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0
+-0.026,-0.025,0.874,0.653,0.427,Fri Aug 04 00:11:36 2017,RRF,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,645,19,adaptive_cv,16,5,2,2,1,0.427566109225154,0.757026036502793
+0.005,-0.054,0.926,0.671,0.414,Fri Aug 04 00:12:02 2017,RRFglobal,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,646,26,adaptive_cv,16,5,2,2,2,0.560514603974298
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:12:07 2017,rvmLinear,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:12:26 2017,rvmPoly,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,19
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:12:44 2017,rvmRadial,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,17
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:12:54 2017,SBC,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,10
+0.021,0.075,1.407,0.589,0.407,Fri Aug 04 00:12:57 2017,simpls,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,651,3,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:14:31 2017,spikeslab,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,94
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:14:40 2017,spls,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,8
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:14:47 2017,superpc,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:14:48 2017,svmBoundrangeString,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:14:49 2017,svmExpoString,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0
+NA,NA,0.961,NA,NA,Fri Aug 04 00:15:22 2017,svmLinear,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,657,33,adaptive_cv,16,5,2,2,0.0401092127214188
+0.048,0.04,0.875,0.612,0.396,Fri Aug 04 00:16:29 2017,svmLinear2,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,658,66,adaptive_cv,16,5,2,2,0.0329280118065787
+0.01,0.01,0.958,0.631,0.412,Fri Aug 04 00:16:35 2017,svmLinear3,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,659,6,adaptive_cv,16,5,2,2,0.00170913282946954,L2
+NA,NA,0.807,NA,NA,Fri Aug 04 00:16:48 2017,svmPoly,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,660,13,adaptive_cv,16,5,2,2,3,0.0136594461720328,20.8895873713315
+NA,NA,0.817,NA,NA,Fri Aug 04 00:17:02 2017,svmRadial,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,661,14,adaptive_cv,16,5,2,2,0.248129376924044,0.405120022842093
+NA,NA,0.817,NA,NA,Fri Aug 04 00:17:13 2017,svmRadialCost,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,662,11,adaptive_cv,16,5,2,2,465.261931336054
+NA,NA,0.702,NA,NA,Fri Aug 04 00:17:26 2017,svmRadialSigma,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,663,12,adaptive_cv,16,5,2,2,0.0104768833360133,681.003352133907
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:17:27 2017,svmSpectrumString,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:17:35 2017,treebag,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,8
+-0.011,0.038,1.196,0.613,0.421,Fri Aug 04 00:17:39 2017,widekernelpls,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,666,3,adaptive_cv,16,5,2,2,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:18:07 2017,WM,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,28
+-0.228,-0.226,0.939,0.781,0.511,Fri Aug 04 00:18:26 2017,xgbLinear,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,668,19,adaptive_cv,16,5,2,2,5,0.616119561923691,0.000711928047424363,2.60041529685259
+-0.041,-0.025,0.858,0.653,0.433,Fri Aug 04 00:20:08 2017,xgbTree,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,0.636882571375777,random,669,101,adaptive_cv,16,5,2,2,620,8,0.00633076250250451,9.55157949356362,0.404739676602185,0,0.763912692607846
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:20:16 2017,xyf,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,8
 0.08,0.085,0.99,0.977,0.777,Fri Aug 04 00:21:53 2017,avNNet,8,1,mean subtraction in each row,ignore,none,asis,1.06749847043216,random,671,64,adaptive_cv,16,5,2,2,1,0.000146496701142135,FALSE
 Fail,Fail,Fail,Fail,Fail,Fri Aug 04 00:21:55 2017,bag,8,1,mean subtraction in each row,ignore,none,asis,2
 0.006,0.079,1.077,0.983,0.839,Fri Aug 04 00:24:09 2017,bagEarth,8,1,mean subtraction in each row,ignore,none,asis,1.06749847043216,random,673,133,adaptive_cv,16,5,2,2,4,2
@@ -1704,342 +1704,342 @@ Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:47:59 2017,WM,8,1,switches between C2 & -
 0.721,0.304,0.66,0.591,0.187,Fri Aug 04 14:48:42 2017,xgbLinear,8,1,switches between C2 & -C2 based on C1,ignore,none,asis,0.848952556217562,random,1116,43,adaptive_cv,16,5,2,2,86,0.00801477154406039,0.0000102785623833012,1.0975317468401
 0.3,0.237,0.762,0.647,0.469,Fri Aug 04 14:50:02 2017,xgbTree,8,1,switches between C2 & -C2 based on C1,ignore,none,asis,0.848952556217562,random,1117,79,adaptive_cv,16,5,2,2,440,6,0.368194111146731,4.84183829044923,0.45600341418758,2,0.808043708791956
 Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:50:14 2017,xyf,8,1,switches between C2 & -C2 based on C1,ignore,none,asis,11
-0.266,0.257,1.152,0.773,0.645,Fri Aug 04 14:52:41 2017,avNNet,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1119,79,adaptive_cv,16,5,2,2,17,0.0371251262795689,FALSE
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:52:44 2017,bag,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,3
-0.488,0.431,0.951,0.592,0.45,Fri Aug 04 14:57:31 2017,bagEarth,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1121,287,adaptive_cv,16,5,2,2,10,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:58:05 2017,bagEarthGCV,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,33
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:58:18 2017,bam,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,13
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:58:19 2017,bartMachine,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:58:24 2017,bayesglm,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,4
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:58:40 2017,blackboost,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,15
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:59:15 2017,blasso,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,34
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:59:36 2017,blassoAveraged,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,21
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:59:53 2017,bridge,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,16
-0.344,0.33,1.005,0.697,0.577,Fri Aug 04 15:03:34 2017,BstLm,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1130,220,adaptive_cv,16,5,2,2,14,0.343408432359109
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:03:50 2017,bstSm,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,17
-0.261,0.243,0.974,0.787,0.65,Fri Aug 04 15:21:48 2017,bstTree,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1132,1077,adaptive_cv,16,5,2,2,377,3,0.36044080516696
-0.307,0.285,1.068,0.744,0.609,Fri Aug 04 15:22:18 2017,cforest,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1133,29,adaptive_cv,16,5,2,2,8
-0.189,0.16,1.31,0.873,0.713,Fri Aug 04 15:22:39 2017,ctree,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1134,21,adaptive_cv,16,5,2,2,0.568818684201688
-0.149,0.116,1.224,0.919,0.748,Fri Aug 04 15:23:00 2017,ctree2,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1135,20,adaptive_cv,16,5,2,2,5,0.0849465187638998
-0.501,0.461,0.944,0.561,0.438,Fri Aug 04 15:24:40 2017,cubist,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1136,99,adaptive_cv,16,5,2,2,100,7
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:24:47 2017,DENFIS,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,7
--0.027,-0.041,1.335,1.083,0.903,Fri Aug 04 15:25:05 2017,dnn,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1138,18,adaptive_cv,16,5,2,2,10,12,9,0.0989070453913882,0.0773951175622642
-0.244,0.201,1.146,0.831,0.665,Fri Aug 04 15:25:18 2017,earth,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1139,13,adaptive_cv,16,5,2,2,4,1
-0.318,0.312,1.037,0.716,0.599,Fri Aug 04 15:25:31 2017,elm,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1140,12,adaptive_cv,16,5,2,2,9,purelin
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:25:39 2017,enet,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,7
--0.101,-0.094,1.189,1.138,0.968,Fri Aug 04 15:27:42 2017,evtree,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1142,123,adaptive_cv,16,5,2,2,3.15280333906412
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:27:43 2017,extraTrees,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1
-0.313,0.282,0.987,0.747,0.604,Fri Aug 04 15:27:50 2017,foba,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1144,6,adaptive_cv,16,5,2,2,6,0.605348626715932
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:27:58 2017,gam,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,7
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:28:05 2017,gamboost,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,7
-0.318,0.312,1.098,0.716,0.599,Fri Aug 04 15:28:18 2017,gamSpline,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1147,12,adaptive_cv,16,5,2,2,0.643043696181849
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:28:21 2017,gaussprLinear,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:28:42 2017,gaussprPoly,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,21
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:29:05 2017,gaussprRadial,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,23
-0.152,0.103,0.945,0.933,0.746,Fri Aug 04 15:29:31 2017,gbm,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1151,26,adaptive_cv,16,5,2,2,1435,3,0.225685359437251,7
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:30:51 2017,gbm_h2o,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,79
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:30:54 2017,gcvEarth,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:30:58 2017,glm,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:31:04 2017,glm.nb,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,6
-0.354,0.327,0.97,0.699,0.568,Fri Aug 04 15:31:33 2017,glmboost,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1156,29,adaptive_cv,16,5,2,2,49,no
-0.338,0.309,1.011,0.718,0.582,Fri Aug 04 15:31:57 2017,glmnet,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1157,23,adaptive_cv,16,5,2,2,0.520848907297477,0.234597138145719
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:33:16 2017,glmnet_h2o,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,79
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:33:22 2017,glmStepAIC,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,6
-0.238,0.261,1.022,0.769,0.67,Fri Aug 04 15:33:52 2017,icr,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1160,30,adaptive_cv,16,5,2,2,7
-0.28,0.275,1.055,0.754,0.633,Fri Aug 04 15:34:06 2017,kernelpls,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1161,14,adaptive_cv,16,5,2,2,1
-0.396,0.381,1.107,0.644,0.531,Fri Aug 04 15:34:29 2017,kknn,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1162,23,adaptive_cv,16,5,2,2,5,1.13700868561864,cos
-0.323,0.335,1.095,0.692,0.595,Fri Aug 04 15:34:45 2017,knn,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1163,15,adaptive_cv,16,5,2,2,6
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:34:54 2017,krlsPoly,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,9
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:35:02 2017,krlsRadial,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,8
-0.35,0.325,0.979,0.702,0.571,Fri Aug 04 15:35:16 2017,lars,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1166,13,adaptive_cv,16,5,2,2,0.691253227181733
-0.342,0.318,1.089,0.709,0.578,Fri Aug 04 15:35:23 2017,lars2,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1167,7,adaptive_cv,16,5,2,2,8
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:35:30 2017,lasso,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,6
-0.372,0.337,0.983,0.69,0.552,Fri Aug 04 15:35:34 2017,leapBackward,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1169,4,adaptive_cv,16,5,2,2,3
-0.372,0.337,0.983,0.69,0.552,Fri Aug 04 15:35:37 2017,leapForward,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1170,3,adaptive_cv,16,5,2,2,3
-0.372,0.337,1.007,0.69,0.552,Fri Aug 04 15:35:46 2017,leapSeq,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1171,9,adaptive_cv,16,5,2,2,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:35:49 2017,lm,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:35:55 2017,lmStepAIC,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,5
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:36:04 2017,logicBag,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,9
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:36:12 2017,logreg,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,7
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:36:13 2017,M5,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:36:14 2017,M5Rules,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1
-0.372,0.337,0.966,0.689,0.552,Fri Aug 04 15:37:19 2017,msaenet,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1178,64,adaptive_cv,16,5,2,2,0.341159970429726,4,3.97848032362526
-0.111,0.055,1.072,0.983,0.782,Fri Aug 04 15:52:53 2017,neuralnet,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1179,934,adaptive_cv,16,5,2,2,20,12,19
-0.248,0.236,1.141,0.795,0.661,Fri Aug 04 15:53:16 2017,nnet,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1180,22,adaptive_cv,16,5,2,2,20,0.00300958332106902
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:53:18 2017,nnls,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:53:19 2017,ordinalNet,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,0
-0.332,0.294,1.075,0.734,0.587,Fri Aug 04 15:54:08 2017,parRF,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1183,49,adaptive_cv,16,5,2,2,5
--0.101,-0.094,1.25,1.138,0.968,Fri Aug 04 15:57:14 2017,partDSA,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1184,186,adaptive_cv,16,5,2,2,2,0.018942229798995
-0.178,0.178,1.141,0.855,0.723,Fri Aug 04 15:57:39 2017,pcaNNet,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1185,25,adaptive_cv,16,5,2,2,17,0.0155052739015237
-0.282,0.295,1.02,0.734,0.631,Fri Aug 04 15:57:53 2017,pcr,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1186,13,adaptive_cv,16,5,2,2,7
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 15:58:24 2017,pls,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,44
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:00:53 2017,plsRglm,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,82
-0.133,0.078,1.164,0.959,0.762,Fri Aug 04 16:01:14 2017,ppr,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1189,21,adaptive_cv,16,5,2,2,6
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 16:01:39 2017,pythonKnnReg,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,46
--0.605,-0.537,1.807,1.599,1.411,Fri Aug 04 16:02:18 2017,qrf,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1191,39,adaptive_cv,16,5,2,2,9
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:03:20 2017,qrnn,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,59
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:03:21 2017,randomGLM,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1
-0.314,0.277,1.077,0.752,0.603,Fri Aug 04 16:03:37 2017,ranger,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1194,16,adaptive_cv,16,5,2,2,5
-0.344,0.297,1.022,0.731,0.577,Fri Aug 04 16:06:58 2017,Rborist,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1195,201,adaptive_cv,16,5,2,2,9
-0.335,0.304,0.972,0.724,0.584,Fri Aug 04 16:07:10 2017,relaxo,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1196,11,adaptive_cv,16,5,2,2,11.700866046932,0.427268353756517
-0.293,0.261,1.059,0.769,0.621,Fri Aug 04 16:07:28 2017,rf,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1197,18,adaptive_cv,16,5,2,2,4
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:07:35 2017,ridge,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,7
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:07:41 2017,rlm,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,6
-0.059,-0.116,1.258,1.161,0.828,Fri Aug 04 16:07:50 2017,rpart,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1200,9,adaptive_cv,16,5,2,2,0
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:07:53 2017,rpart1SE,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,2
--0.101,-0.094,1.244,1.138,0.968,Fri Aug 04 16:08:02 2017,rpart2,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1202,9,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:08:03 2017,rqlasso,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,0
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:08:03 2017,rqnc,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,0
-0.384,0.375,0.974,0.65,0.541,Fri Aug 04 16:08:38 2017,RRF,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1205,34,adaptive_cv,16,5,2,2,6,0.0182074159383774,0.845814544707537
-0.35,0.312,1.077,0.715,0.571,Fri Aug 04 16:09:08 2017,RRFglobal,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1206,29,adaptive_cv,16,5,2,2,8,0.283609658014029
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:09:11 2017,rvmLinear,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:09:42 2017,rvmPoly,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,30
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:10:07 2017,rvmRadial,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,25
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:10:14 2017,SBC,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,6
-0.316,0.314,1.077,0.713,0.601,Fri Aug 04 16:10:21 2017,simpls,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1211,7,adaptive_cv,16,5,2,2,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:11:36 2017,spikeslab,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,75
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:11:42 2017,spls,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,6
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:11:47 2017,superpc,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,4
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:11:47 2017,svmBoundrangeString,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,0
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:11:48 2017,svmExpoString,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,0
-NA,NA,1.036,NA,NA,Fri Aug 04 16:12:49 2017,svmLinear,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1217,60,adaptive_cv,16,5,2,2,0.103126550573151
-0.411,0.372,1.036,0.653,0.518,Fri Aug 04 16:13:20 2017,svmLinear2,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1218,31,adaptive_cv,16,5,2,2,0.0390651209117608
-0.27,0.271,0.996,0.758,0.642,Fri Aug 04 16:13:33 2017,svmLinear3,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1219,12,adaptive_cv,16,5,2,2,0.0448728497769711,L1
-NA,NA,1.013,NA,NA,Fri Aug 04 16:13:45 2017,svmPoly,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1220,12,adaptive_cv,16,5,2,2,2,0.00165066607312359,16.0496154532995
-NA,NA,0.957,NA,NA,Fri Aug 04 16:13:56 2017,svmRadial,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1221,11,adaptive_cv,16,5,2,2,0.0656318261138887,422.608565286846
-NA,NA,0.908,NA,NA,Fri Aug 04 16:14:07 2017,svmRadialCost,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1222,10,adaptive_cv,16,5,2,2,410.074865677955
-NA,NA,0.973,NA,NA,Fri Aug 04 16:14:19 2017,svmRadialSigma,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1223,11,adaptive_cv,16,5,2,2,0.0580627531106978,288.318530849416
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:14:19 2017,svmSpectrumString,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,0
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:14:26 2017,treebag,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,7
-0.28,0.275,0.936,0.754,0.633,Fri Aug 04 16:14:29 2017,widekernelpls,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1226,2,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:15:10 2017,WM,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,40
-0.267,0.216,1.11,0.815,0.644,Fri Aug 04 16:15:20 2017,xgbLinear,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1228,9,adaptive_cv,16,5,2,2,69,0.0279484861277351,0.387826980577191,0.583647944731638
-0.301,0.279,1.038,0.749,0.615,Fri Aug 04 16:17:03 2017,xgbTree,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1229,104,adaptive_cv,16,5,2,2,950,3,0.175298654705053,1.84339134255424,0.585106182750314,1,0.963116835744586
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:17:12 2017,xyf,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,8
--0.01,-0.021,1.091,1.455,0.874,Fri Aug 04 16:19:26 2017,avNNet,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1231,87,adaptive_cv,16,5,2,2,16,0.000120439299801777,TRUE
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:19:29 2017,bag,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,3
--0.055,-0.042,0.911,1.485,0.912,Fri Aug 04 16:21:47 2017,bagEarth,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1233,138,adaptive_cv,16,5,2,2,3,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:22:14 2017,bagEarthGCV,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,22
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:22:22 2017,bam,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,8
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:22:23 2017,bartMachine,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:22:27 2017,bayesglm,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:22:39 2017,blackboost,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,12
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:23:00 2017,blasso,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,20
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:23:14 2017,blassoAveraged,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,13
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:23:26 2017,bridge,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,12
--0.253,-0.159,0.979,1.652,1.084,Fri Aug 04 16:29:55 2017,BstLm,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1242,389,adaptive_cv,16,5,2,2,481,0.00627233006083406
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:30:06 2017,bstSm,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,10
--0.386,-0.372,1.004,1.956,1.199,Fri Aug 04 16:42:33 2017,bstTree,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1244,747,adaptive_cv,16,5,2,2,183,1,0.101583857783349
--0.12,-0.133,0.973,1.615,0.969,Fri Aug 04 16:42:54 2017,cforest,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1245,21,adaptive_cv,16,5,2,2,9
--0.201,-0.204,1.061,1.716,1.039,Fri Aug 04 16:43:03 2017,ctree,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1246,8,adaptive_cv,16,5,2,2,0.893206425476819
--0.201,-0.204,1.019,1.716,1.039,Fri Aug 04 16:43:16 2017,ctree2,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1247,13,adaptive_cv,16,5,2,2,9,0.911072793183848
--0.099,-0.11,1.031,1.582,0.951,Fri Aug 04 16:44:30 2017,cubist,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1248,73,adaptive_cv,16,5,2,2,19,6
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:44:37 2017,DENFIS,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,7
-0.017,-0.019,1.053,1.452,0.85,Fri Aug 04 16:44:53 2017,dnn,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1250,16,adaptive_cv,16,5,2,2,6,18,3,0.0143717384897172,0.0208342095836997
--0.299,-0.239,0.869,1.766,1.123,Fri Aug 04 16:45:03 2017,earth,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1251,10,adaptive_cv,16,5,2,2,2,2
--0.379,-0.157,0.827,1.649,1.193,Fri Aug 04 16:45:07 2017,elm,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1252,4,adaptive_cv,16,5,2,2,14,tansig
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:45:13 2017,enet,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,6
--0.281,-0.236,0.994,1.762,1.108,Fri Aug 04 16:46:54 2017,evtree,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1254,100,adaptive_cv,16,5,2,2,1.95149019174278
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:46:55 2017,extraTrees,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1
--0.371,-0.232,1.028,1.756,1.186,Fri Aug 04 16:47:07 2017,foba,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1256,12,adaptive_cv,16,5,2,2,2,0.000768399530961203
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:47:13 2017,gam,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,5
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:47:20 2017,gamboost,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,6
--0.361,-0.224,1.044,1.744,1.177,Fri Aug 04 16:47:41 2017,gamSpline,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1259,21,adaptive_cv,16,5,2,2,1.45520367310382
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:47:44 2017,gaussprLinear,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:48:02 2017,gaussprPoly,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,18
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:48:16 2017,gaussprRadial,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,14
--0.431,-0.345,1.033,1.916,1.237,Fri Aug 04 16:48:35 2017,gbm,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1263,19,adaptive_cv,16,5,2,2,1149,2,0.154253052450484,6
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:49:34 2017,gbm_h2o,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,58
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:49:37 2017,gcvEarth,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:49:39 2017,glm,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:49:44 2017,glm.nb,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,4
--0.25,-0.158,1.007,1.65,1.081,Fri Aug 04 16:50:10 2017,glmboost,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1268,25,adaptive_cv,16,5,2,2,24,no
--0.267,-0.163,1.009,1.658,1.096,Fri Aug 04 16:50:25 2017,glmnet,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1269,15,adaptive_cv,16,5,2,2,0.0447097548749298,0.173437878116905
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:51:25 2017,glmnet_h2o,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,60
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:51:31 2017,glmStepAIC,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,5
--0.351,-0.217,1.036,1.735,1.169,Fri Aug 04 16:51:56 2017,icr,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1272,24,adaptive_cv,16,5,2,2,7
--0.327,-0.199,1.043,1.709,1.148,Fri Aug 04 16:52:02 2017,kernelpls,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1273,6,adaptive_cv,16,5,2,2,2
-0.075,0.006,0.869,1.417,0.8,Fri Aug 04 16:52:14 2017,kknn,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1274,11,adaptive_cv,16,5,2,2,12,1.07650505541824,triweight
-0.084,0.043,0.982,1.364,0.792,Fri Aug 04 16:52:23 2017,knn,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1275,9,adaptive_cv,16,5,2,2,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:52:30 2017,krlsPoly,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,6
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:52:37 2017,krlsRadial,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,6
--0.256,-0.16,0.992,1.653,1.087,Fri Aug 04 16:52:46 2017,lars,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1278,9,adaptive_cv,16,5,2,2,0.351648551411927
--0.287,-0.173,1.048,1.672,1.114,Fri Aug 04 16:52:55 2017,lars2,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1279,9,adaptive_cv,16,5,2,2,5
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:00 2017,lasso,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,4
--0.371,-0.232,1.021,1.756,1.186,Fri Aug 04 16:53:07 2017,leapBackward,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1281,6,adaptive_cv,16,5,2,2,2
--0.371,-0.232,0.983,1.756,1.186,Fri Aug 04 16:53:15 2017,leapForward,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1282,8,adaptive_cv,16,5,2,2,2
--0.371,-0.232,1.038,1.756,1.186,Fri Aug 04 16:53:24 2017,leapSeq,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1283,8,adaptive_cv,16,5,2,2,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:27 2017,lm,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:31 2017,lmStepAIC,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,4
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:38 2017,logicBag,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,6
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:44 2017,logreg,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,6
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:45 2017,M5,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:46 2017,M5Rules,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,0
--0.37,-0.226,1.019,1.747,1.185,Fri Aug 04 16:54:13 2017,msaenet,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1290,27,adaptive_cv,16,5,2,2,0.147540806722827,8,2.24757243361091
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:36:13 2017,neuralnet,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,2520
--0.054,-0.041,1.113,1.484,0.911,Fri Aug 04 17:36:29 2017,nnet,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1292,15,adaptive_cv,16,5,2,2,3,0.000104225345815675
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:36:31 2017,nnls,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:36:31 2017,ordinalNet,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,0
--0.127,-0.113,1.017,1.587,0.975,Fri Aug 04 17:37:10 2017,parRF,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1295,39,adaptive_cv,16,5,2,2,2
--0.109,-0.157,1.151,1.649,0.959,Fri Aug 04 17:43:42 2017,partDSA,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1296,392,adaptive_cv,16,5,2,2,9,0.227847775677219
--0.027,-0.039,1.09,1.481,0.888,Fri Aug 04 17:44:22 2017,pcaNNet,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1297,34,adaptive_cv,16,5,2,2,20,0.0378996687057946
--0.216,-0.129,1.05,1.609,1.052,Fri Aug 04 17:44:34 2017,pcr,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1298,8,adaptive_cv,16,5,2,2,6
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 17:45:01 2017,pls,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,35
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:46:34 2017,plsRglm,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,20
--0.427,-0.249,1.076,1.78,1.234,Fri Aug 04 17:46:58 2017,ppr,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1301,18,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 17:47:24 2017,pythonKnnReg,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,45
--0.67,-0.512,1.552,2.155,1.444,Fri Aug 04 17:50:29 2017,qrf,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1303,125,adaptive_cv,16,5,2,2,9
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:50:47 2017,qrnn,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,10
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:50:47 2017,randomGLM,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,0
--0.136,-0.098,1.028,1.565,0.983,Fri Aug 04 17:51:10 2017,ranger,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1306,23,adaptive_cv,16,5,2,2,8
--0.137,-0.105,1.025,1.575,0.983,Fri Aug 04 17:54:11 2017,Rborist,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1307,180,adaptive_cv,16,5,2,2,3
--0.29,-0.163,1.037,1.658,1.115,Fri Aug 04 17:54:25 2017,relaxo,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1308,12,adaptive_cv,16,5,2,2,4.063015351151,0.929902868112549
--0.125,-0.096,1.018,1.563,0.973,Fri Aug 04 17:54:52 2017,rf,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1309,27,adaptive_cv,16,5,2,2,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:54:59 2017,ridge,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,7
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:55:06 2017,rlm,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,6
--0.169,-0.166,1.122,1.662,1.011,Fri Aug 04 17:55:19 2017,rpart,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1312,13,adaptive_cv,16,5,2,2,0.0179909012472105
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:55:22 2017,rpart1SE,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,3
--0.169,-0.166,1.059,1.662,1.011,Fri Aug 04 17:55:39 2017,rpart2,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1314,16,adaptive_cv,16,5,2,2,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:55:40 2017,rqlasso,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:55:40 2017,rqnc,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1
--0.136,-0.112,1.007,1.585,0.983,Fri Aug 04 17:56:41 2017,RRF,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1317,60,adaptive_cv,16,5,2,2,3,0.707621478941292,0.958526480710134
--0.136,-0.106,1.035,1.576,0.982,Fri Aug 04 17:57:11 2017,RRFglobal,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1318,30,adaptive_cv,16,5,2,2,5,0.675797892268747
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:57:16 2017,rvmLinear,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,4
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:57:45 2017,rvmPoly,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,29
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:58:20 2017,rvmRadial,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,34
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:58:29 2017,SBC,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,9
--0.327,-0.196,0.866,1.704,1.148,Fri Aug 04 17:58:33 2017,simpls,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1323,3,adaptive_cv,16,5,2,2,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:00:36 2017,spikeslab,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,123
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:00:45 2017,spls,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,9
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:00:51 2017,superpc,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,5
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:00:51 2017,svmBoundrangeString,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,0
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:00:52 2017,svmExpoString,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,0
-NA,NA,1.005,NA,NA,Fri Aug 04 18:01:22 2017,svmLinear,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1329,30,adaptive_cv,16,5,2,2,0.0423136063940667
--0.302,-0.184,0.968,1.687,1.126,Fri Aug 04 18:02:47 2017,svmLinear2,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1330,84,adaptive_cv,16,5,2,2,0.690633314215908
--0.29,-0.177,0.984,1.677,1.116,Fri Aug 04 18:03:02 2017,svmLinear3,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1331,14,adaptive_cv,16,5,2,2,3.81698599950079,L2
-NA,NA,0.929,NA,NA,Fri Aug 04 18:03:09 2017,svmPoly,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1332,6,adaptive_cv,16,5,2,2,3,0.00115574413819741,561.609610041217
-NA,NA,0.967,NA,NA,Fri Aug 04 18:03:24 2017,svmRadial,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1333,16,adaptive_cv,16,5,2,2,0.0584482317168109,0.847461798905465
-NA,NA,0.969,NA,NA,Fri Aug 04 18:03:41 2017,svmRadialCost,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1334,16,adaptive_cv,16,5,2,2,0.898430497936161
-NA,NA,0.932,NA,NA,Fri Aug 04 18:03:56 2017,svmRadialSigma,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1335,15,adaptive_cv,16,5,2,2,0.016972990881144,15.0895807288107
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:03:57 2017,svmSpectrumString,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,0
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:04:06 2017,treebag,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,8
--0.326,-0.194,1.04,1.702,1.147,Fri Aug 04 18:04:17 2017,widekernelpls,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1338,10,adaptive_cv,16,5,2,2,8
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:04:58 2017,WM,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,41
--0.054,0.011,1.169,1.409,0.912,Fri Aug 04 18:05:22 2017,xgbLinear,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1340,23,adaptive_cv,16,5,2,2,9,0.0122419514909915,0.518610294913134,2.96674807160161
--0.295,-0.265,1.037,1.803,1.12,Fri Aug 04 18:07:24 2017,xgbTree,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.4253517834546,random,1341,122,adaptive_cv,16,5,2,2,679,6,0.1221597397679,3.86093497741967,0.344881729315966,11,0.822531527897809
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:07:38 2017,xyf,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,13
-0.207,0.174,1.285,0.833,0.683,Fri Aug 04 18:09:50 2017,avNNet,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1343,58,adaptive_cv,16,5,2,2,7,0.00151094956803214,FALSE
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:09:52 2017,bag,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,2
-0.3,0.311,1.056,0.694,0.603,Fri Aug 04 18:12:14 2017,bagEarth,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1345,141,adaptive_cv,16,5,2,2,5,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:12:45 2017,bagEarthGCV,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,31
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:12:56 2017,bam,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,10
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:12:57 2017,bartMachine,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:13:01 2017,bayesglm,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,4
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:13:12 2017,blackboost,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,10
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:13:34 2017,blasso,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,22
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:13:48 2017,blassoAveraged,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,14
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:14:02 2017,bridge,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,13
-0.064,0.043,1.405,0.965,0.806,Fri Aug 04 18:15:42 2017,BstLm,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1354,100,adaptive_cv,16,5,2,2,219,0.0181923078624532
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:15:54 2017,bstSm,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,12
-0.137,0.096,1.149,0.911,0.743,Fri Aug 04 18:30:12 2017,bstTree,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1356,857,adaptive_cv,16,5,2,2,174,10,0.337575720491353
-0.171,0.167,1.262,0.839,0.714,Fri Aug 04 18:30:28 2017,cforest,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1357,17,adaptive_cv,16,5,2,2,8
--0.276,-0.284,1.413,1.294,1.099,Fri Aug 04 18:30:41 2017,ctree,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1358,13,adaptive_cv,16,5,2,2,0.129885293543339
--0.276,-0.284,1.374,1.294,1.099,Fri Aug 04 18:30:57 2017,ctree2,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1359,15,adaptive_cv,16,5,2,2,6,0.237112144241109
-0.375,0.368,1.071,0.637,0.538,Fri Aug 04 18:31:44 2017,cubist,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1360,46,adaptive_cv,16,5,2,2,3,7
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:31:52 2017,DENFIS,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,8
-0,0,1.38,1.008,0.861,Fri Aug 04 18:32:11 2017,dnn,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1362,18,adaptive_cv,16,5,2,2,4,9,6,0.00188493521418422,0.0794084520079196
-0.241,0.247,0.997,0.759,0.654,Fri Aug 04 18:32:16 2017,earth,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1363,5,adaptive_cv,16,5,2,2,4,2
--0.008,-0.011,1.362,1.019,0.868,Fri Aug 04 18:32:28 2017,elm,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1364,11,adaptive_cv,16,5,2,2,2,radbas
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:32:36 2017,enet,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,7
--0.121,-0.083,1.438,1.092,0.966,Fri Aug 04 18:39:36 2017,evtree,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1366,420,adaptive_cv,16,5,2,2,1.653608773835
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:39:37 2017,extraTrees,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:39:50 2017,foba,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,12
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:39:59 2017,gam,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,8
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:40:08 2017,gamboost,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,9
--0.004,-0.093,1.383,1.102,0.864,Fri Aug 04 18:40:47 2017,gamSpline,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1371,38,adaptive_cv,16,5,2,2,0.0973520160187036
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:40:50 2017,gaussprLinear,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,4
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:41:21 2017,gaussprPoly,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,30
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:41:40 2017,gaussprRadial,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,19
-0.185,0.143,1.18,0.864,0.701,Fri Aug 04 18:42:11 2017,gbm,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1375,31,adaptive_cv,16,5,2,2,2994,6,0.0342412243825383,5
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:43:16 2017,gbm_h2o,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,64
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:43:19 2017,gcvEarth,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:43:22 2017,glm,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:43:28 2017,glm.nb,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,6
-0.015,-0.059,1.355,1.068,0.848,Fri Aug 04 18:44:13 2017,glmboost,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1380,44,adaptive_cv,16,5,2,2,154,no
-0.063,0.028,1.37,0.98,0.807,Fri Aug 04 18:44:30 2017,glmnet,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1381,17,adaptive_cv,16,5,2,2,0.175135313998908,0.319010962641078
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:45:43 2017,glmnet_h2o,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,73
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:45:49 2017,glmStepAIC,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,5
--0.082,-0.116,1.36,1.124,0.932,Fri Aug 04 18:46:15 2017,icr,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1384,26,adaptive_cv,16,5,2,2,6
--0.003,-0.093,1.407,1.102,0.864,Fri Aug 04 18:46:24 2017,kernelpls,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1385,9,adaptive_cv,16,5,2,2,6
-0.212,0.237,1.286,0.769,0.678,Fri Aug 04 18:46:40 2017,kknn,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1386,16,adaptive_cv,16,5,2,2,25,0.767407125094905,triangular
-0.222,0.238,1.279,0.768,0.67,Fri Aug 04 18:46:48 2017,knn,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1387,8,adaptive_cv,16,5,2,2,12
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:46:56 2017,krlsPoly,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,7
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:47:04 2017,krlsRadial,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,8
-0.06,0.018,1.336,0.99,0.81,Fri Aug 04 18:47:19 2017,lars,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1390,14,adaptive_cv,16,5,2,2,0.640641002217308
-0.014,-0.061,1.337,1.069,0.849,Fri Aug 04 18:47:34 2017,lars2,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1391,14,adaptive_cv,16,5,2,2,8
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:47:39 2017,lasso,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,5
-0.007,-0.062,1.399,1.07,0.855,Fri Aug 04 18:47:49 2017,leapBackward,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1393,9,adaptive_cv,16,5,2,2,5
-0.007,-0.062,1.332,1.07,0.855,Fri Aug 04 18:47:58 2017,leapForward,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1394,9,adaptive_cv,16,5,2,2,5
-0.182,0.063,1.349,0.945,0.705,Fri Aug 04 18:48:08 2017,leapSeq,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1395,10,adaptive_cv,16,5,2,2,6
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:48:11 2017,lm,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:48:16 2017,lmStepAIC,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,4
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:48:24 2017,logicBag,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,7
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:48:31 2017,logreg,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,7
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:48:32 2017,M5,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:48:33 2017,M5Rules,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1
-0.008,-0.06,1.402,1.069,0.854,Fri Aug 04 18:49:39 2017,msaenet,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1402,65,adaptive_cv,16,5,2,2,0.1034636762226,5,1.73897943407064
--0.109,-0.209,1.573,1.218,0.955,Fri Aug 04 19:19:42 2017,neuralnet,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1403,1803,adaptive_cv,16,5,2,2,19,8,17
-0.158,0.148,1.275,0.859,0.725,Fri Aug 04 19:20:03 2017,nnet,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1404,21,adaptive_cv,16,5,2,2,5,0.000513673883914946
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:20:06 2017,nnls,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:20:07 2017,ordinalNet,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,0
-0.085,0.085,1.276,0.922,0.788,Fri Aug 04 19:20:39 2017,parRF,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1407,32,adaptive_cv,16,5,2,2,5
-0.043,-0.031,1.416,1.039,0.824,Fri Aug 04 19:28:52 2017,partDSA,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1408,493,adaptive_cv,16,5,2,2,8,0.0243271288927644
-0.236,0.205,1.318,0.801,0.658,Fri Aug 04 19:29:18 2017,pcaNNet,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1409,25,adaptive_cv,16,5,2,2,7,0.00023924877609654
-0.018,-0.075,1.388,1.084,0.846,Fri Aug 04 19:29:29 2017,pcr,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1410,11,adaptive_cv,16,5,2,2,6
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 19:29:58 2017,pls,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,40
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:33:00 2017,plsRglm,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,126
--0.189,-0.386,1.567,NA,NA,Fri Aug 04 19:33:09 2017,ppr,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1413,7,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 19:33:40 2017,pythonKnnReg,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,38
--0.479,-0.547,2.1,1.559,1.274,Fri Aug 04 19:36:17 2017,qrf,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1415,109,adaptive_cv,16,5,2,2,8
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:36:27 2017,qrnn,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,10
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:36:28 2017,randomGLM,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,0
-0.11,0.109,1.231,0.898,0.767,Fri Aug 04 19:36:45 2017,ranger,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1418,17,adaptive_cv,16,5,2,2,5
-0.117,0.082,1.215,0.925,0.76,Fri Aug 04 19:40:41 2017,Rborist,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1419,235,adaptive_cv,16,5,2,2,8
-0.104,-0.017,1.265,1.025,0.772,Fri Aug 04 19:40:48 2017,relaxo,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1420,5,adaptive_cv,16,5,2,2,8.26401875533823,0.319446006091312
-0.065,0.107,1.269,0.901,0.805,Fri Aug 04 19:41:15 2017,rf,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1421,26,adaptive_cv,16,5,2,2,3
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:41:26 2017,ridge,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,7
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:41:34 2017,rlm,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,7
--0.126,-0.086,1.398,1.094,0.97,Fri Aug 04 19:41:46 2017,rpart,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1424,12,adaptive_cv,16,5,2,2,0.0869072144550326
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:41:50 2017,rpart1SE,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,3
-0.009,0.055,1.359,0.952,0.853,Fri Aug 04 19:42:00 2017,rpart2,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1426,10,adaptive_cv,16,5,2,2,2
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:42:02 2017,rqlasso,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:42:03 2017,rqnc,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1
-0.095,0.054,1.171,0.953,0.779,Fri Aug 04 19:42:57 2017,RRF,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1429,53,adaptive_cv,16,5,2,2,9,0.134536284720525,0.500778619898483
-0.121,0.094,1.256,0.913,0.757,Fri Aug 04 19:43:29 2017,RRFglobal,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1430,32,adaptive_cv,16,5,2,2,9,0.835181483998895
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:43:33 2017,rvmLinear,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,4
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:44:17 2017,rvmPoly,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,44
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:45:01 2017,rvmRadial,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,43
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:45:09 2017,SBC,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,8
-0.011,-0.034,1.287,1.043,0.852,Fri Aug 04 19:45:18 2017,simpls,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1435,8,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:46:56 2017,spikeslab,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,98
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:47:04 2017,spls,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,8
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:47:10 2017,superpc,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,6
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:47:11 2017,svmBoundrangeString,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,0
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:47:11 2017,svmExpoString,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,0
-NA,NA,1.366,NA,NA,Fri Aug 04 19:48:33 2017,svmLinear,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1441,81,adaptive_cv,16,5,2,2,10.6096867948905
-0.145,0.08,1.401,0.928,0.736,Fri Aug 04 19:48:50 2017,svmLinear2,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1442,17,adaptive_cv,16,5,2,2,0.0520160875157086
-0.085,0.044,1.355,0.964,0.788,Fri Aug 04 19:49:04 2017,svmLinear3,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1443,13,adaptive_cv,16,5,2,2,0.00502811655025815,L1
-NA,NA,1.322,NA,NA,Fri Aug 04 19:49:19 2017,svmPoly,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1444,14,adaptive_cv,16,5,2,2,2,0.0687808064711462,0.0997307650667769
-NA,NA,1.213,NA,NA,Fri Aug 04 19:49:32 2017,svmRadial,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1445,13,adaptive_cv,16,5,2,2,0.0827733588295762,3.23684427031304
-NA,NA,1.218,NA,NA,Fri Aug 04 19:49:49 2017,svmRadialCost,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1446,16,adaptive_cv,16,5,2,2,5.26520736513999
-NA,NA,1.149,NA,NA,Fri Aug 04 19:50:02 2017,svmRadialSigma,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1447,13,adaptive_cv,16,5,2,2,0.0738125591817237,10.2304998251923
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:50:03 2017,svmSpectrumString,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,0
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:50:12 2017,treebag,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,9
-0.011,-0.034,1.342,1.043,0.852,Fri Aug 04 19:50:22 2017,widekernelpls,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1450,10,adaptive_cv,16,5,2,2,1
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:51:07 2017,WM,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,44
--0.118,-0.188,1.245,1.198,0.963,Fri Aug 04 19:51:27 2017,xgbLinear,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1452,20,adaptive_cv,16,5,2,2,91,0.513461018416323,0.097865213518272,0.0961932262871414
-0.202,0.203,1.195,0.803,0.687,Fri Aug 04 19:53:28 2017,xgbTree,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,1.00800144675822,random,1453,120,adaptive_cv,16,5,2,2,265,3,0.381284303561551,2.07385422196239,0.565128245763481,4,0.673994538141415
-Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:53:39 2017,xyf,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,9
+0.266,0.257,1.152,0.773,0.645,Fri Aug 04 14:52:41 2017,avNNet,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1119,79,adaptive_cv,16,5,2,2,17,0.0371251262795689,FALSE
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:52:44 2017,bag,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,3
+0.488,0.431,0.951,0.592,0.45,Fri Aug 04 14:57:31 2017,bagEarth,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1121,287,adaptive_cv,16,5,2,2,10,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:58:05 2017,bagEarthGCV,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,33
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:58:18 2017,bam,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,13
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:58:19 2017,bartMachine,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:58:24 2017,bayesglm,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:58:40 2017,blackboost,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,15
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:59:15 2017,blasso,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,34
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:59:36 2017,blassoAveraged,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,21
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 14:59:53 2017,bridge,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,16
+0.344,0.33,1.005,0.697,0.577,Fri Aug 04 15:03:34 2017,BstLm,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1130,220,adaptive_cv,16,5,2,2,14,0.343408432359109
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:03:50 2017,bstSm,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,17
+0.261,0.243,0.974,0.787,0.65,Fri Aug 04 15:21:48 2017,bstTree,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1132,1077,adaptive_cv,16,5,2,2,377,3,0.36044080516696
+0.307,0.285,1.068,0.744,0.609,Fri Aug 04 15:22:18 2017,cforest,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1133,29,adaptive_cv,16,5,2,2,8
+0.189,0.16,1.31,0.873,0.713,Fri Aug 04 15:22:39 2017,ctree,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1134,21,adaptive_cv,16,5,2,2,0.568818684201688
+0.149,0.116,1.224,0.919,0.748,Fri Aug 04 15:23:00 2017,ctree2,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1135,20,adaptive_cv,16,5,2,2,5,0.0849465187638998
+0.501,0.461,0.944,0.561,0.438,Fri Aug 04 15:24:40 2017,cubist,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1136,99,adaptive_cv,16,5,2,2,100,7
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:24:47 2017,DENFIS,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,7
+-0.027,-0.041,1.335,1.083,0.903,Fri Aug 04 15:25:05 2017,dnn,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1138,18,adaptive_cv,16,5,2,2,10,12,9,0.0989070453913882,0.0773951175622642
+0.244,0.201,1.146,0.831,0.665,Fri Aug 04 15:25:18 2017,earth,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1139,13,adaptive_cv,16,5,2,2,4,1
+0.318,0.312,1.037,0.716,0.599,Fri Aug 04 15:25:31 2017,elm,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1140,12,adaptive_cv,16,5,2,2,9,purelin
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:25:39 2017,enet,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,7
+-0.101,-0.094,1.189,1.138,0.968,Fri Aug 04 15:27:42 2017,evtree,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1142,123,adaptive_cv,16,5,2,2,3.15280333906412
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:27:43 2017,extraTrees,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1
+0.313,0.282,0.987,0.747,0.604,Fri Aug 04 15:27:50 2017,foba,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1144,6,adaptive_cv,16,5,2,2,6,0.605348626715932
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:27:58 2017,gam,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:28:05 2017,gamboost,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,7
+0.318,0.312,1.098,0.716,0.599,Fri Aug 04 15:28:18 2017,gamSpline,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1147,12,adaptive_cv,16,5,2,2,0.643043696181849
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:28:21 2017,gaussprLinear,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:28:42 2017,gaussprPoly,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,21
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:29:05 2017,gaussprRadial,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,23
+0.152,0.103,0.945,0.933,0.746,Fri Aug 04 15:29:31 2017,gbm,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1151,26,adaptive_cv,16,5,2,2,1435,3,0.225685359437251,7
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:30:51 2017,gbm_h2o,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,79
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:30:54 2017,gcvEarth,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:30:58 2017,glm,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:31:04 2017,glm.nb,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,6
+0.354,0.327,0.97,0.699,0.568,Fri Aug 04 15:31:33 2017,glmboost,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1156,29,adaptive_cv,16,5,2,2,49,no
+0.338,0.309,1.011,0.718,0.582,Fri Aug 04 15:31:57 2017,glmnet,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1157,23,adaptive_cv,16,5,2,2,0.520848907297477,0.234597138145719
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:33:16 2017,glmnet_h2o,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,79
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:33:22 2017,glmStepAIC,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,6
+0.238,0.261,1.022,0.769,0.67,Fri Aug 04 15:33:52 2017,icr,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1160,30,adaptive_cv,16,5,2,2,7
+0.28,0.275,1.055,0.754,0.633,Fri Aug 04 15:34:06 2017,kernelpls,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1161,14,adaptive_cv,16,5,2,2,1
+0.396,0.381,1.107,0.644,0.531,Fri Aug 04 15:34:29 2017,kknn,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1162,23,adaptive_cv,16,5,2,2,5,1.13700868561864,cos
+0.323,0.335,1.095,0.692,0.595,Fri Aug 04 15:34:45 2017,knn,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1163,15,adaptive_cv,16,5,2,2,6
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:34:54 2017,krlsPoly,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,9
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:35:02 2017,krlsRadial,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,8
+0.35,0.325,0.979,0.702,0.571,Fri Aug 04 15:35:16 2017,lars,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1166,13,adaptive_cv,16,5,2,2,0.691253227181733
+0.342,0.318,1.089,0.709,0.578,Fri Aug 04 15:35:23 2017,lars2,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1167,7,adaptive_cv,16,5,2,2,8
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:35:30 2017,lasso,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,6
+0.372,0.337,0.983,0.69,0.552,Fri Aug 04 15:35:34 2017,leapBackward,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1169,4,adaptive_cv,16,5,2,2,3
+0.372,0.337,0.983,0.69,0.552,Fri Aug 04 15:35:37 2017,leapForward,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1170,3,adaptive_cv,16,5,2,2,3
+0.372,0.337,1.007,0.69,0.552,Fri Aug 04 15:35:46 2017,leapSeq,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1171,9,adaptive_cv,16,5,2,2,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:35:49 2017,lm,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:35:55 2017,lmStepAIC,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,5
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:36:04 2017,logicBag,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,9
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:36:12 2017,logreg,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:36:13 2017,M5,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:36:14 2017,M5Rules,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1
+0.372,0.337,0.966,0.689,0.552,Fri Aug 04 15:37:19 2017,msaenet,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1178,64,adaptive_cv,16,5,2,2,0.341159970429726,4,3.97848032362526
+0.111,0.055,1.072,0.983,0.782,Fri Aug 04 15:52:53 2017,neuralnet,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1179,934,adaptive_cv,16,5,2,2,20,12,19
+0.248,0.236,1.141,0.795,0.661,Fri Aug 04 15:53:16 2017,nnet,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1180,22,adaptive_cv,16,5,2,2,20,0.00300958332106902
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:53:18 2017,nnls,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 15:53:19 2017,ordinalNet,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,0
+0.332,0.294,1.075,0.734,0.587,Fri Aug 04 15:54:08 2017,parRF,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1183,49,adaptive_cv,16,5,2,2,5
+-0.101,-0.094,1.25,1.138,0.968,Fri Aug 04 15:57:14 2017,partDSA,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1184,186,adaptive_cv,16,5,2,2,2,0.018942229798995
+0.178,0.178,1.141,0.855,0.723,Fri Aug 04 15:57:39 2017,pcaNNet,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1185,25,adaptive_cv,16,5,2,2,17,0.0155052739015237
+0.282,0.295,1.02,0.734,0.631,Fri Aug 04 15:57:53 2017,pcr,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1186,13,adaptive_cv,16,5,2,2,7
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 15:58:24 2017,pls,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,44
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:00:53 2017,plsRglm,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,82
+0.133,0.078,1.164,0.959,0.762,Fri Aug 04 16:01:14 2017,ppr,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1189,21,adaptive_cv,16,5,2,2,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 16:01:39 2017,pythonKnnReg,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,46
+-0.605,-0.537,1.807,1.599,1.411,Fri Aug 04 16:02:18 2017,qrf,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1191,39,adaptive_cv,16,5,2,2,9
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:03:20 2017,qrnn,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,59
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:03:21 2017,randomGLM,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1
+0.314,0.277,1.077,0.752,0.603,Fri Aug 04 16:03:37 2017,ranger,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1194,16,adaptive_cv,16,5,2,2,5
+0.344,0.297,1.022,0.731,0.577,Fri Aug 04 16:06:58 2017,Rborist,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1195,201,adaptive_cv,16,5,2,2,9
+0.335,0.304,0.972,0.724,0.584,Fri Aug 04 16:07:10 2017,relaxo,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1196,11,adaptive_cv,16,5,2,2,11.700866046932,0.427268353756517
+0.293,0.261,1.059,0.769,0.621,Fri Aug 04 16:07:28 2017,rf,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1197,18,adaptive_cv,16,5,2,2,4
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:07:35 2017,ridge,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:07:41 2017,rlm,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,6
+0.059,-0.116,1.258,1.161,0.828,Fri Aug 04 16:07:50 2017,rpart,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1200,9,adaptive_cv,16,5,2,2,0
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:07:53 2017,rpart1SE,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,2
+-0.101,-0.094,1.244,1.138,0.968,Fri Aug 04 16:08:02 2017,rpart2,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1202,9,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:08:03 2017,rqlasso,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:08:03 2017,rqnc,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,0
+0.384,0.375,0.974,0.65,0.541,Fri Aug 04 16:08:38 2017,RRF,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1205,34,adaptive_cv,16,5,2,2,6,0.0182074159383774,0.845814544707537
+0.35,0.312,1.077,0.715,0.571,Fri Aug 04 16:09:08 2017,RRFglobal,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1206,29,adaptive_cv,16,5,2,2,8,0.283609658014029
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:09:11 2017,rvmLinear,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:09:42 2017,rvmPoly,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,30
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:10:07 2017,rvmRadial,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,25
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:10:14 2017,SBC,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,6
+0.316,0.314,1.077,0.713,0.601,Fri Aug 04 16:10:21 2017,simpls,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1211,7,adaptive_cv,16,5,2,2,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:11:36 2017,spikeslab,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,75
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:11:42 2017,spls,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:11:47 2017,superpc,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:11:47 2017,svmBoundrangeString,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:11:48 2017,svmExpoString,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,0
+NA,NA,1.036,NA,NA,Fri Aug 04 16:12:49 2017,svmLinear,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1217,60,adaptive_cv,16,5,2,2,0.103126550573151
+0.411,0.372,1.036,0.653,0.518,Fri Aug 04 16:13:20 2017,svmLinear2,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1218,31,adaptive_cv,16,5,2,2,0.0390651209117608
+0.27,0.271,0.996,0.758,0.642,Fri Aug 04 16:13:33 2017,svmLinear3,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1219,12,adaptive_cv,16,5,2,2,0.0448728497769711,L1
+NA,NA,1.013,NA,NA,Fri Aug 04 16:13:45 2017,svmPoly,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1220,12,adaptive_cv,16,5,2,2,2,0.00165066607312359,16.0496154532995
+NA,NA,0.957,NA,NA,Fri Aug 04 16:13:56 2017,svmRadial,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1221,11,adaptive_cv,16,5,2,2,0.0656318261138887,422.608565286846
+NA,NA,0.908,NA,NA,Fri Aug 04 16:14:07 2017,svmRadialCost,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1222,10,adaptive_cv,16,5,2,2,410.074865677955
+NA,NA,0.973,NA,NA,Fri Aug 04 16:14:19 2017,svmRadialSigma,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1223,11,adaptive_cv,16,5,2,2,0.0580627531106978,288.318530849416
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:14:19 2017,svmSpectrumString,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:14:26 2017,treebag,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,7
+0.28,0.275,0.936,0.754,0.633,Fri Aug 04 16:14:29 2017,widekernelpls,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1226,2,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:15:10 2017,WM,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,40
+0.267,0.216,1.11,0.815,0.644,Fri Aug 04 16:15:20 2017,xgbLinear,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1228,9,adaptive_cv,16,5,2,2,69,0.0279484861277351,0.387826980577191,0.583647944731638
+0.301,0.279,1.038,0.749,0.615,Fri Aug 04 16:17:03 2017,xgbTree,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,1.03986293167257,random,1229,104,adaptive_cv,16,5,2,2,950,3,0.175298654705053,1.84339134255424,0.585106182750314,1,0.963116835744586
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:17:12 2017,xyf,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,8
+-0.01,-0.021,1.091,1.455,0.874,Fri Aug 04 16:19:26 2017,avNNet,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1231,87,adaptive_cv,16,5,2,2,16,0.000120439299801777,TRUE
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:19:29 2017,bag,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,3
+-0.055,-0.042,0.911,1.485,0.912,Fri Aug 04 16:21:47 2017,bagEarth,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1233,138,adaptive_cv,16,5,2,2,3,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:22:14 2017,bagEarthGCV,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,22
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:22:22 2017,bam,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,8
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:22:23 2017,bartMachine,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:22:27 2017,bayesglm,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:22:39 2017,blackboost,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,12
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:23:00 2017,blasso,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,20
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:23:14 2017,blassoAveraged,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,13
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:23:26 2017,bridge,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,12
+-0.253,-0.159,0.979,1.652,1.084,Fri Aug 04 16:29:55 2017,BstLm,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1242,389,adaptive_cv,16,5,2,2,481,0.00627233006083406
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:30:06 2017,bstSm,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,10
+-0.386,-0.372,1.004,1.956,1.199,Fri Aug 04 16:42:33 2017,bstTree,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1244,747,adaptive_cv,16,5,2,2,183,1,0.101583857783349
+-0.12,-0.133,0.973,1.615,0.969,Fri Aug 04 16:42:54 2017,cforest,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1245,21,adaptive_cv,16,5,2,2,9
+-0.201,-0.204,1.061,1.716,1.039,Fri Aug 04 16:43:03 2017,ctree,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1246,8,adaptive_cv,16,5,2,2,0.893206425476819
+-0.201,-0.204,1.019,1.716,1.039,Fri Aug 04 16:43:16 2017,ctree2,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1247,13,adaptive_cv,16,5,2,2,9,0.911072793183848
+-0.099,-0.11,1.031,1.582,0.951,Fri Aug 04 16:44:30 2017,cubist,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1248,73,adaptive_cv,16,5,2,2,19,6
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:44:37 2017,DENFIS,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,7
+0.017,-0.019,1.053,1.452,0.85,Fri Aug 04 16:44:53 2017,dnn,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1250,16,adaptive_cv,16,5,2,2,6,18,3,0.0143717384897172,0.0208342095836997
+-0.299,-0.239,0.869,1.766,1.123,Fri Aug 04 16:45:03 2017,earth,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1251,10,adaptive_cv,16,5,2,2,2,2
+-0.379,-0.157,0.827,1.649,1.193,Fri Aug 04 16:45:07 2017,elm,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1252,4,adaptive_cv,16,5,2,2,14,tansig
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:45:13 2017,enet,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,6
+-0.281,-0.236,0.994,1.762,1.108,Fri Aug 04 16:46:54 2017,evtree,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1254,100,adaptive_cv,16,5,2,2,1.95149019174278
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:46:55 2017,extraTrees,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1
+-0.371,-0.232,1.028,1.756,1.186,Fri Aug 04 16:47:07 2017,foba,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1256,12,adaptive_cv,16,5,2,2,2,0.000768399530961203
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:47:13 2017,gam,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,5
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:47:20 2017,gamboost,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,6
+-0.361,-0.224,1.044,1.744,1.177,Fri Aug 04 16:47:41 2017,gamSpline,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1259,21,adaptive_cv,16,5,2,2,1.45520367310382
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:47:44 2017,gaussprLinear,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:48:02 2017,gaussprPoly,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,18
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:48:16 2017,gaussprRadial,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,14
+-0.431,-0.345,1.033,1.916,1.237,Fri Aug 04 16:48:35 2017,gbm,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1263,19,adaptive_cv,16,5,2,2,1149,2,0.154253052450484,6
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:49:34 2017,gbm_h2o,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,58
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:49:37 2017,gcvEarth,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:49:39 2017,glm,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:49:44 2017,glm.nb,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,4
+-0.25,-0.158,1.007,1.65,1.081,Fri Aug 04 16:50:10 2017,glmboost,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1268,25,adaptive_cv,16,5,2,2,24,no
+-0.267,-0.163,1.009,1.658,1.096,Fri Aug 04 16:50:25 2017,glmnet,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1269,15,adaptive_cv,16,5,2,2,0.0447097548749298,0.173437878116905
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:51:25 2017,glmnet_h2o,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,60
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:51:31 2017,glmStepAIC,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,5
+-0.351,-0.217,1.036,1.735,1.169,Fri Aug 04 16:51:56 2017,icr,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1272,24,adaptive_cv,16,5,2,2,7
+-0.327,-0.199,1.043,1.709,1.148,Fri Aug 04 16:52:02 2017,kernelpls,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1273,6,adaptive_cv,16,5,2,2,2
+0.075,0.006,0.869,1.417,0.8,Fri Aug 04 16:52:14 2017,kknn,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1274,11,adaptive_cv,16,5,2,2,12,1.07650505541824,triweight
+0.084,0.043,0.982,1.364,0.792,Fri Aug 04 16:52:23 2017,knn,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1275,9,adaptive_cv,16,5,2,2,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:52:30 2017,krlsPoly,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:52:37 2017,krlsRadial,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,6
+-0.256,-0.16,0.992,1.653,1.087,Fri Aug 04 16:52:46 2017,lars,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1278,9,adaptive_cv,16,5,2,2,0.351648551411927
+-0.287,-0.173,1.048,1.672,1.114,Fri Aug 04 16:52:55 2017,lars2,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1279,9,adaptive_cv,16,5,2,2,5
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:00 2017,lasso,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,4
+-0.371,-0.232,1.021,1.756,1.186,Fri Aug 04 16:53:07 2017,leapBackward,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1281,6,adaptive_cv,16,5,2,2,2
+-0.371,-0.232,0.983,1.756,1.186,Fri Aug 04 16:53:15 2017,leapForward,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1282,8,adaptive_cv,16,5,2,2,2
+-0.371,-0.232,1.038,1.756,1.186,Fri Aug 04 16:53:24 2017,leapSeq,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1283,8,adaptive_cv,16,5,2,2,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:27 2017,lm,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:31 2017,lmStepAIC,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:38 2017,logicBag,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:44 2017,logreg,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:45 2017,M5,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 16:53:46 2017,M5Rules,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,0
+-0.37,-0.226,1.019,1.747,1.185,Fri Aug 04 16:54:13 2017,msaenet,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1290,27,adaptive_cv,16,5,2,2,0.147540806722827,8,2.24757243361091
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:36:13 2017,neuralnet,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,2520
+-0.054,-0.041,1.113,1.484,0.911,Fri Aug 04 17:36:29 2017,nnet,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1292,15,adaptive_cv,16,5,2,2,3,0.000104225345815675
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:36:31 2017,nnls,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:36:31 2017,ordinalNet,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,0
+-0.127,-0.113,1.017,1.587,0.975,Fri Aug 04 17:37:10 2017,parRF,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1295,39,adaptive_cv,16,5,2,2,2
+-0.109,-0.157,1.151,1.649,0.959,Fri Aug 04 17:43:42 2017,partDSA,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1296,392,adaptive_cv,16,5,2,2,9,0.227847775677219
+-0.027,-0.039,1.09,1.481,0.888,Fri Aug 04 17:44:22 2017,pcaNNet,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1297,34,adaptive_cv,16,5,2,2,20,0.0378996687057946
+-0.216,-0.129,1.05,1.609,1.052,Fri Aug 04 17:44:34 2017,pcr,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1298,8,adaptive_cv,16,5,2,2,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 17:45:01 2017,pls,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,35
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:46:34 2017,plsRglm,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,20
+-0.427,-0.249,1.076,1.78,1.234,Fri Aug 04 17:46:58 2017,ppr,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1301,18,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 17:47:24 2017,pythonKnnReg,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,45
+-0.67,-0.512,1.552,2.155,1.444,Fri Aug 04 17:50:29 2017,qrf,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1303,125,adaptive_cv,16,5,2,2,9
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:50:47 2017,qrnn,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,10
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:50:47 2017,randomGLM,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,0
+-0.136,-0.098,1.028,1.565,0.983,Fri Aug 04 17:51:10 2017,ranger,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1306,23,adaptive_cv,16,5,2,2,8
+-0.137,-0.105,1.025,1.575,0.983,Fri Aug 04 17:54:11 2017,Rborist,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1307,180,adaptive_cv,16,5,2,2,3
+-0.29,-0.163,1.037,1.658,1.115,Fri Aug 04 17:54:25 2017,relaxo,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1308,12,adaptive_cv,16,5,2,2,4.063015351151,0.929902868112549
+-0.125,-0.096,1.018,1.563,0.973,Fri Aug 04 17:54:52 2017,rf,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1309,27,adaptive_cv,16,5,2,2,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:54:59 2017,ridge,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:55:06 2017,rlm,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,6
+-0.169,-0.166,1.122,1.662,1.011,Fri Aug 04 17:55:19 2017,rpart,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1312,13,adaptive_cv,16,5,2,2,0.0179909012472105
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:55:22 2017,rpart1SE,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,3
+-0.169,-0.166,1.059,1.662,1.011,Fri Aug 04 17:55:39 2017,rpart2,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1314,16,adaptive_cv,16,5,2,2,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:55:40 2017,rqlasso,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:55:40 2017,rqnc,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1
+-0.136,-0.112,1.007,1.585,0.983,Fri Aug 04 17:56:41 2017,RRF,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1317,60,adaptive_cv,16,5,2,2,3,0.707621478941292,0.958526480710134
+-0.136,-0.106,1.035,1.576,0.982,Fri Aug 04 17:57:11 2017,RRFglobal,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1318,30,adaptive_cv,16,5,2,2,5,0.675797892268747
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:57:16 2017,rvmLinear,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:57:45 2017,rvmPoly,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,29
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:58:20 2017,rvmRadial,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,34
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 17:58:29 2017,SBC,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,9
+-0.327,-0.196,0.866,1.704,1.148,Fri Aug 04 17:58:33 2017,simpls,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1323,3,adaptive_cv,16,5,2,2,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:00:36 2017,spikeslab,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,123
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:00:45 2017,spls,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,9
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:00:51 2017,superpc,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,5
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:00:51 2017,svmBoundrangeString,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:00:52 2017,svmExpoString,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,0
+NA,NA,1.005,NA,NA,Fri Aug 04 18:01:22 2017,svmLinear,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1329,30,adaptive_cv,16,5,2,2,0.0423136063940667
+-0.302,-0.184,0.968,1.687,1.126,Fri Aug 04 18:02:47 2017,svmLinear2,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1330,84,adaptive_cv,16,5,2,2,0.690633314215908
+-0.29,-0.177,0.984,1.677,1.116,Fri Aug 04 18:03:02 2017,svmLinear3,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1331,14,adaptive_cv,16,5,2,2,3.81698599950079,L2
+NA,NA,0.929,NA,NA,Fri Aug 04 18:03:09 2017,svmPoly,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1332,6,adaptive_cv,16,5,2,2,3,0.00115574413819741,561.609610041217
+NA,NA,0.967,NA,NA,Fri Aug 04 18:03:24 2017,svmRadial,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1333,16,adaptive_cv,16,5,2,2,0.0584482317168109,0.847461798905465
+NA,NA,0.969,NA,NA,Fri Aug 04 18:03:41 2017,svmRadialCost,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1334,16,adaptive_cv,16,5,2,2,0.898430497936161
+NA,NA,0.932,NA,NA,Fri Aug 04 18:03:56 2017,svmRadialSigma,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1335,15,adaptive_cv,16,5,2,2,0.016972990881144,15.0895807288107
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:03:57 2017,svmSpectrumString,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:04:06 2017,treebag,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,8
+-0.326,-0.194,1.04,1.702,1.147,Fri Aug 04 18:04:17 2017,widekernelpls,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1338,10,adaptive_cv,16,5,2,2,8
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:04:58 2017,WM,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,41
+-0.054,0.011,1.169,1.409,0.912,Fri Aug 04 18:05:22 2017,xgbLinear,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1340,23,adaptive_cv,16,5,2,2,9,0.0122419514909915,0.518610294913134,2.96674807160161
+-0.295,-0.265,1.037,1.803,1.12,Fri Aug 04 18:07:24 2017,xgbTree,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.4253517834546,random,1341,122,adaptive_cv,16,5,2,2,679,6,0.1221597397679,3.86093497741967,0.344881729315966,11,0.822531527897809
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:07:38 2017,xyf,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,13
+0.207,0.174,1.285,0.833,0.683,Fri Aug 04 18:09:50 2017,avNNet,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1343,58,adaptive_cv,16,5,2,2,7,0.00151094956803214,FALSE
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:09:52 2017,bag,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,2
+0.3,0.311,1.056,0.694,0.603,Fri Aug 04 18:12:14 2017,bagEarth,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1345,141,adaptive_cv,16,5,2,2,5,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:12:45 2017,bagEarthGCV,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,31
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:12:56 2017,bam,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,10
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:12:57 2017,bartMachine,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:13:01 2017,bayesglm,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:13:12 2017,blackboost,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,10
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:13:34 2017,blasso,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,22
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:13:48 2017,blassoAveraged,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,14
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:14:02 2017,bridge,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,13
+0.064,0.043,1.405,0.965,0.806,Fri Aug 04 18:15:42 2017,BstLm,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1354,100,adaptive_cv,16,5,2,2,219,0.0181923078624532
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:15:54 2017,bstSm,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,12
+0.137,0.096,1.149,0.911,0.743,Fri Aug 04 18:30:12 2017,bstTree,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1356,857,adaptive_cv,16,5,2,2,174,10,0.337575720491353
+0.171,0.167,1.262,0.839,0.714,Fri Aug 04 18:30:28 2017,cforest,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1357,17,adaptive_cv,16,5,2,2,8
+-0.276,-0.284,1.413,1.294,1.099,Fri Aug 04 18:30:41 2017,ctree,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1358,13,adaptive_cv,16,5,2,2,0.129885293543339
+-0.276,-0.284,1.374,1.294,1.099,Fri Aug 04 18:30:57 2017,ctree2,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1359,15,adaptive_cv,16,5,2,2,6,0.237112144241109
+0.375,0.368,1.071,0.637,0.538,Fri Aug 04 18:31:44 2017,cubist,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1360,46,adaptive_cv,16,5,2,2,3,7
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:31:52 2017,DENFIS,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,8
+0,0,1.38,1.008,0.861,Fri Aug 04 18:32:11 2017,dnn,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1362,18,adaptive_cv,16,5,2,2,4,9,6,0.00188493521418422,0.0794084520079196
+0.241,0.247,0.997,0.759,0.654,Fri Aug 04 18:32:16 2017,earth,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1363,5,adaptive_cv,16,5,2,2,4,2
+-0.008,-0.011,1.362,1.019,0.868,Fri Aug 04 18:32:28 2017,elm,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1364,11,adaptive_cv,16,5,2,2,2,radbas
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:32:36 2017,enet,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,7
+-0.121,-0.083,1.438,1.092,0.966,Fri Aug 04 18:39:36 2017,evtree,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1366,420,adaptive_cv,16,5,2,2,1.653608773835
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:39:37 2017,extraTrees,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:39:50 2017,foba,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,12
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:39:59 2017,gam,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,8
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:40:08 2017,gamboost,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,9
+-0.004,-0.093,1.383,1.102,0.864,Fri Aug 04 18:40:47 2017,gamSpline,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1371,38,adaptive_cv,16,5,2,2,0.0973520160187036
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:40:50 2017,gaussprLinear,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:41:21 2017,gaussprPoly,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,30
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:41:40 2017,gaussprRadial,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,19
+0.185,0.143,1.18,0.864,0.701,Fri Aug 04 18:42:11 2017,gbm,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1375,31,adaptive_cv,16,5,2,2,2994,6,0.0342412243825383,5
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:43:16 2017,gbm_h2o,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,64
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:43:19 2017,gcvEarth,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:43:22 2017,glm,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:43:28 2017,glm.nb,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,6
+0.015,-0.059,1.355,1.068,0.848,Fri Aug 04 18:44:13 2017,glmboost,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1380,44,adaptive_cv,16,5,2,2,154,no
+0.063,0.028,1.37,0.98,0.807,Fri Aug 04 18:44:30 2017,glmnet,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1381,17,adaptive_cv,16,5,2,2,0.175135313998908,0.319010962641078
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:45:43 2017,glmnet_h2o,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,73
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:45:49 2017,glmStepAIC,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,5
+-0.082,-0.116,1.36,1.124,0.932,Fri Aug 04 18:46:15 2017,icr,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1384,26,adaptive_cv,16,5,2,2,6
+-0.003,-0.093,1.407,1.102,0.864,Fri Aug 04 18:46:24 2017,kernelpls,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1385,9,adaptive_cv,16,5,2,2,6
+0.212,0.237,1.286,0.769,0.678,Fri Aug 04 18:46:40 2017,kknn,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1386,16,adaptive_cv,16,5,2,2,25,0.767407125094905,triangular
+0.222,0.238,1.279,0.768,0.67,Fri Aug 04 18:46:48 2017,knn,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1387,8,adaptive_cv,16,5,2,2,12
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:46:56 2017,krlsPoly,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:47:04 2017,krlsRadial,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,8
+0.06,0.018,1.336,0.99,0.81,Fri Aug 04 18:47:19 2017,lars,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1390,14,adaptive_cv,16,5,2,2,0.640641002217308
+0.014,-0.061,1.337,1.069,0.849,Fri Aug 04 18:47:34 2017,lars2,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1391,14,adaptive_cv,16,5,2,2,8
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:47:39 2017,lasso,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,5
+0.007,-0.062,1.399,1.07,0.855,Fri Aug 04 18:47:49 2017,leapBackward,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1393,9,adaptive_cv,16,5,2,2,5
+0.007,-0.062,1.332,1.07,0.855,Fri Aug 04 18:47:58 2017,leapForward,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1394,9,adaptive_cv,16,5,2,2,5
+0.182,0.063,1.349,0.945,0.705,Fri Aug 04 18:48:08 2017,leapSeq,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1395,10,adaptive_cv,16,5,2,2,6
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:48:11 2017,lm,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:48:16 2017,lmStepAIC,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:48:24 2017,logicBag,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:48:31 2017,logreg,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:48:32 2017,M5,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 18:48:33 2017,M5Rules,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1
+0.008,-0.06,1.402,1.069,0.854,Fri Aug 04 18:49:39 2017,msaenet,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1402,65,adaptive_cv,16,5,2,2,0.1034636762226,5,1.73897943407064
+-0.109,-0.209,1.573,1.218,0.955,Fri Aug 04 19:19:42 2017,neuralnet,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1403,1803,adaptive_cv,16,5,2,2,19,8,17
+0.158,0.148,1.275,0.859,0.725,Fri Aug 04 19:20:03 2017,nnet,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1404,21,adaptive_cv,16,5,2,2,5,0.000513673883914946
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:20:06 2017,nnls,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:20:07 2017,ordinalNet,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,0
+0.085,0.085,1.276,0.922,0.788,Fri Aug 04 19:20:39 2017,parRF,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1407,32,adaptive_cv,16,5,2,2,5
+0.043,-0.031,1.416,1.039,0.824,Fri Aug 04 19:28:52 2017,partDSA,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1408,493,adaptive_cv,16,5,2,2,8,0.0243271288927644
+0.236,0.205,1.318,0.801,0.658,Fri Aug 04 19:29:18 2017,pcaNNet,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1409,25,adaptive_cv,16,5,2,2,7,0.00023924877609654
+0.018,-0.075,1.388,1.084,0.846,Fri Aug 04 19:29:29 2017,pcr,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1410,11,adaptive_cv,16,5,2,2,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 19:29:58 2017,pls,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,40
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:33:00 2017,plsRglm,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,126
+-0.189,-0.386,1.567,NA,NA,Fri Aug 04 19:33:09 2017,ppr,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1413,7,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 19:33:40 2017,pythonKnnReg,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,38
+-0.479,-0.547,2.1,1.559,1.274,Fri Aug 04 19:36:17 2017,qrf,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1415,109,adaptive_cv,16,5,2,2,8
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:36:27 2017,qrnn,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,10
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:36:28 2017,randomGLM,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,0
+0.11,0.109,1.231,0.898,0.767,Fri Aug 04 19:36:45 2017,ranger,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1418,17,adaptive_cv,16,5,2,2,5
+0.117,0.082,1.215,0.925,0.76,Fri Aug 04 19:40:41 2017,Rborist,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1419,235,adaptive_cv,16,5,2,2,8
+0.104,-0.017,1.265,1.025,0.772,Fri Aug 04 19:40:48 2017,relaxo,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1420,5,adaptive_cv,16,5,2,2,8.26401875533823,0.319446006091312
+0.065,0.107,1.269,0.901,0.805,Fri Aug 04 19:41:15 2017,rf,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1421,26,adaptive_cv,16,5,2,2,3
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:41:26 2017,ridge,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:41:34 2017,rlm,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,7
+-0.126,-0.086,1.398,1.094,0.97,Fri Aug 04 19:41:46 2017,rpart,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1424,12,adaptive_cv,16,5,2,2,0.0869072144550326
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:41:50 2017,rpart1SE,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,3
+0.009,0.055,1.359,0.952,0.853,Fri Aug 04 19:42:00 2017,rpart2,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1426,10,adaptive_cv,16,5,2,2,2
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:42:02 2017,rqlasso,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:42:03 2017,rqnc,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1
+0.095,0.054,1.171,0.953,0.779,Fri Aug 04 19:42:57 2017,RRF,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1429,53,adaptive_cv,16,5,2,2,9,0.134536284720525,0.500778619898483
+0.121,0.094,1.256,0.913,0.757,Fri Aug 04 19:43:29 2017,RRFglobal,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1430,32,adaptive_cv,16,5,2,2,9,0.835181483998895
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:43:33 2017,rvmLinear,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:44:17 2017,rvmPoly,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,44
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:45:01 2017,rvmRadial,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,43
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:45:09 2017,SBC,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,8
+0.011,-0.034,1.287,1.043,0.852,Fri Aug 04 19:45:18 2017,simpls,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1435,8,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:46:56 2017,spikeslab,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,98
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:47:04 2017,spls,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,8
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:47:10 2017,superpc,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:47:11 2017,svmBoundrangeString,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:47:11 2017,svmExpoString,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,0
+NA,NA,1.366,NA,NA,Fri Aug 04 19:48:33 2017,svmLinear,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1441,81,adaptive_cv,16,5,2,2,10.6096867948905
+0.145,0.08,1.401,0.928,0.736,Fri Aug 04 19:48:50 2017,svmLinear2,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1442,17,adaptive_cv,16,5,2,2,0.0520160875157086
+0.085,0.044,1.355,0.964,0.788,Fri Aug 04 19:49:04 2017,svmLinear3,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1443,13,adaptive_cv,16,5,2,2,0.00502811655025815,L1
+NA,NA,1.322,NA,NA,Fri Aug 04 19:49:19 2017,svmPoly,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1444,14,adaptive_cv,16,5,2,2,2,0.0687808064711462,0.0997307650667769
+NA,NA,1.213,NA,NA,Fri Aug 04 19:49:32 2017,svmRadial,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1445,13,adaptive_cv,16,5,2,2,0.0827733588295762,3.23684427031304
+NA,NA,1.218,NA,NA,Fri Aug 04 19:49:49 2017,svmRadialCost,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1446,16,adaptive_cv,16,5,2,2,5.26520736513999
+NA,NA,1.149,NA,NA,Fri Aug 04 19:50:02 2017,svmRadialSigma,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1447,13,adaptive_cv,16,5,2,2,0.0738125591817237,10.2304998251923
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:50:03 2017,svmSpectrumString,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:50:12 2017,treebag,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,9
+0.011,-0.034,1.342,1.043,0.852,Fri Aug 04 19:50:22 2017,widekernelpls,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1450,10,adaptive_cv,16,5,2,2,1
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:51:07 2017,WM,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,44
+-0.118,-0.188,1.245,1.198,0.963,Fri Aug 04 19:51:27 2017,xgbLinear,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1452,20,adaptive_cv,16,5,2,2,91,0.513461018416323,0.097865213518272,0.0961932262871414
+0.202,0.203,1.195,0.803,0.687,Fri Aug 04 19:53:28 2017,xgbTree,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,1.00800144675822,random,1453,120,adaptive_cv,16,5,2,2,265,3,0.381284303561551,2.07385422196239,0.565128245763481,4,0.673994538141415
+Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:53:39 2017,xyf,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,9
 0.187,0.129,0.728,0.799,0.615,Fri Aug 04 19:55:55 2017,avNNet,8,1,randomly switches between C1 & C2,ignore,none,asis,0.917370811938783,random,1455,81,adaptive_cv,16,5,2,2,2,0.0198821220511078,TRUE
 Fail,Fail,Fail,Fail,Fail,Fri Aug 04 19:55:58 2017,bag,8,1,randomly switches between C1 & C2,ignore,none,asis,2
 0.328,0.251,0.585,0.687,0.508,Fri Aug 04 19:58:08 2017,bagEarth,8,1,randomly switches between C1 & C2,ignore,none,asis,0.917370811938783,random,1457,130,adaptive_cv,16,5,2,2,3,2
@@ -2156,10 +2156,10 @@ Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 21:13:54 2017,pls,8,1,polynomial C1 t
 Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 21:14:24 2017,pythonKnnReg,8,1,polynomial C1 t C2,ignore,none,asis,25
 Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 21:25:33 2017,pls,8,1,polynomial C1 ^ C2,ignore,none,asis,39
 Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 21:27:35 2017,pythonKnnReg,8,1,polynomial C1 ^ C2,ignore,none,asis,30
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 21:41:26 2017,pls,8,1,polynomial C1 t C2 t C3,ignore,none,asis,30
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 21:41:47 2017,pythonKnnReg,8,1,polynomial C1 t C2 t C3,ignore,none,asis,17
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 21:54:18 2017,pls,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,25
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 21:55:59 2017,pythonKnnReg,8,1,polynomial C1 t C2 t C3^1d3,ignore,none,asis,25
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 21:41:26 2017,pls,8,1,polynomial C1 t C2 t U3,ignore,none,asis,30
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 21:41:47 2017,pythonKnnReg,8,1,polynomial C1 t C2 t U3,ignore,none,asis,17
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 21:54:18 2017,pls,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,25
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 21:55:59 2017,pythonKnnReg,8,1,polynomial C1 t C2 t U3^1d3,ignore,none,asis,25
 Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 22:06:42 2017,pls,8,1,mean subtraction in each row,ignore,none,asis,30
 Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 22:08:38 2017,pythonKnnReg,8,1,mean subtraction in each row,ignore,none,asis,32
 Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 22:19:58 2017,pls,8,1,median subtraction in each row,ignore,none,asis,33
@@ -2168,11 +2168,11 @@ Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 22:33:28 2017,pls,8,1,switches betwee
 Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 22:33:52 2017,pythonKnnReg,8,1,switches between 1 & -1 based on C1,ignore,none,asis,19
 Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 22:45:07 2017,pls,8,1,switches between C2 & -C2 based on C1,ignore,none,asis,25
 Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 22:46:57 2017,pythonKnnReg,8,1,switches between C2 & -C2 based on C1,ignore,none,asis,23
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 22:57:05 2017,pls,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,25
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 22:57:36 2017,pythonKnnReg,8,1,switches between C2+C3 & C4+C5 based on C1,ignore,none,asis,26
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 23:07:26 2017,pls,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,28
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 23:07:59 2017,pythonKnnReg,8,1,smoothed switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,27
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 23:18:54 2017,pls,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,24
-Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 23:19:22 2017,pythonKnnReg,8,1,switches between -C2-C3 & C2+C3 based on C1,ignore,none,asis,24
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 22:57:05 2017,pls,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,25
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 22:57:36 2017,pythonKnnReg,8,1,switches between C2+U3 & C4+C5 based on C1,ignore,none,asis,26
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 23:07:26 2017,pls,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,28
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 23:07:59 2017,pythonKnnReg,8,1,smoothed switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,27
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 23:18:54 2017,pls,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,24
+Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 23:19:22 2017,pythonKnnReg,8,1,switches between -C2-U3 & C2+U3 based on C1,ignore,none,asis,24
 Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 23:30:20 2017,pls,8,1,randomly switches between C1 & C2,ignore,none,asis,21
 Fail,Fail,Fail,Fail,PackageFail,Fri Aug 04 23:30:57 2017,pythonKnnReg,8,1,randomly switches between C1 & C2,ignore,none,asis,33

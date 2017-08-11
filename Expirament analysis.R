@@ -1,10 +1,10 @@
 #ggplot: how  label, print to file
-exp.name<-"First 332v100dp5n3n16"
+exp.name<-"Fourth dp300asis5hp tiny332v"
 mainDir<-getwd()
 subDir<-exp.name
-#dir.create(file.path(mainDir, subDir))
-#setwd(file.path(mainDir, subDir))
-expiramentresults<-read.csv("Generated data output first complete run.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+expiramentresults<-read.csv("Fourth dp300asis5hp tiny.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+dir.create(file.path(mainDir, subDir))
+setwd(file.path(mainDir, subDir))
 
 #######percent failed######
 fails.df<-data.frame()
@@ -24,7 +24,7 @@ write.table(fails.df,
             file = paste(exp.name,"Fails.csv", sep = ""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-not.interesting<-(fails.df[,5]==1) + (fails.df[,5]<.01)
+not.interesting<-(fails.df[,5]==1) + (fails.df[,5]<.001)
 I.fails.df<-fails.df[!not.interesting,]
 library(ggplot2)
 
@@ -125,6 +125,7 @@ ggsave(paste(exp.name,"TimeTask.png", sep = ""),plot = last_plot(),scale = 3)
 exp.res.noF<-expiramentresults[,1]
 exp.res.noF<-as.numeric(levels(exp.res.noF))[exp.res.noF]
 exp.res.noF[is.na(exp.res.noF)]<-0
+exp.res.noF[exp.res.noF<0]<-0
 power.df<-data.frame()
 countr=0
 for(algo in unique(expiramentresults[,10]))
@@ -164,8 +165,11 @@ z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,5]),na.rm = TRUE)+
 ggsave(paste(exp.name,"PowerTask.png", sep = ""),plot = last_plot(),scale = 3)
 #some algos are better at some category of tasks and missing them could affect statistic metric index
 ########difference between %MAE & %RMSE by task####
-exp.res.noF2<-expiramentresults[,2]
+exp.res.noF<-expiramentresults[,1]
+exp.res.noF<-as.numeric(levels(exp.res.noF))[exp.res.noF]
+exp.res.noF[is.na(exp.res.noF)]<-0
 
+exp.res.noF2<-expiramentresults[,2]
 exp.res.noF2<-as.numeric(levels(exp.res.noF2))[exp.res.noF2]
 exp.res.noF2[is.na(exp.res.noF2)]<-0
 Results.Defactor<-data.frame(exp.res.noF,exp.res.noF2,expiramentresults[,3:length(expiramentresults[1,])])
@@ -310,7 +314,7 @@ write.table(algPower.df,
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
 #algPower.df<-data.frame(algPower.df, row.names = 1:length(algPower.df[,1]))
-not.interesting<-(algPower.df[,6]<17)+(algPower.df[,4]<.2)+ is.na(algPower.df[,6]) 
+not.interesting<-(algPower.df[,6]<13)+(algPower.df[,4]<.2)+ is.na(algPower.df[,6]) 
 I.power.df<-algPower.df[!not.interesting,]
 
 z<-ggplot(I.power.df, aes(y = I.power.df[,2], x = reorder(I.power.df[,1], I.power.df[,2]))) + 

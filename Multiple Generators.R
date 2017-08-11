@@ -1,4 +1,4 @@
-Rows=300
+Rows=100
 simScores<-matrix(data = 0, nrow = Rows, ncol = 12, byrow = FALSE,dimnames = NULL);
 simScores[,11]<-1;###!!!!!!! this may be necessary for many algorithms
 #vector of strings to keep names of each project, increase maximum
@@ -41,8 +41,6 @@ write.table(round(simScores,digits  = 3),
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
 
-
-
 ########polynomial C1 ^ 2#######
 gen.count=gen.count+1
 gens.names[gen.count]="polynomial C1 ^ 2"
@@ -50,7 +48,7 @@ for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  simScores[Row,8]=simScores[Row,1]*simScores[Row,1]
+  simScores[Row,1]=simScores[Row,2]*simScores[Row,2]
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
@@ -63,7 +61,7 @@ for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  simScores[Row,8]=simScores[Row,1]^.5
+  simScores[Row,1]=simScores[Row,2]^.5
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
@@ -76,7 +74,7 @@ for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  simScores[Row,8]=simScores[Row,1]^-2
+  simScores[Row,1]=simScores[Row,2]^-2
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
@@ -90,7 +88,7 @@ for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  simScores[Row,8]=simScores[Row,2]*simScores[Row,1]
+  simScores[Row,1]=simScores[Row,2]*simScores[Row,3]
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
@@ -103,7 +101,7 @@ for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  simScores[Row,8]=simScores[Row,1]^simScores[Row,2]
+  simScores[Row,1]=simScores[Row,3]^simScores[Row,2]
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
@@ -116,7 +114,7 @@ for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  simScores[Row,8]=simScores[Row,2]*simScores[Row,1]*simScores[Row,3]
+  simScores[Row,1]=simScores[Row,2]*simScores[Row,4]*simScores[Row,3]
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
@@ -129,7 +127,7 @@ for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  simScores[Row,8]=simScores[Row,2]*simScores[Row,1]*simScores[Row,3]^(1/3)
+  simScores[Row,1]=simScores[Row,2]*simScores[Row,4]*simScores[Row,3]^(1/3)
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
@@ -170,10 +168,10 @@ for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  if(simScores[Row,1]>.5){
-    simScores[Row,8]=-1
+  if(simScores[Row,2]>.5){
+    simScores[Row,1]=-1
   }else{
-    simScores[Row,8]=1
+    simScores[Row,1]=1
   }
 }
 write.table(round(simScores,digits  = 3),
@@ -188,10 +186,10 @@ for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  if(simScores[Row,1]>.5){
-    simScores[Row,8]=-simScores[Row,2]
+  if(simScores[Row,3]>.5){
+    simScores[Row,1]=-simScores[Row,2]
   }else{
-    simScores[Row,8]=simScores[Row,2]
+    simScores[Row,1]=simScores[Row,2]
   }
 }
 write.table(round(simScores,digits  = 3),
@@ -205,10 +203,10 @@ for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  if(simScores[Row,1]>.5){
-    simScores[Row,8]=simScores[Row,2]+simScores[Row,3]
+  if(simScores[Row,4]>.5){
+    simScores[Row,1]=simScores[Row,2]+simScores[Row,3]
   }else{
-    simScores[Row,8]=simScores[Row,5]+simScores[Row,6]
+    simScores[Row,1]=simScores[Row,5]+simScores[Row,6]
   }
 }
 write.table(round(simScores,digits  = 3),
@@ -222,16 +220,16 @@ for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  if(simScores[Row,1]>.5){
-    simScores[Row,8]=-simScores[Row,2]-simScores[Row,3]
+  if(simScores[Row,4]>.5){
+    simScores[Row,1]=-simScores[Row,2]-simScores[Row,3]
   }else{
-    simScores[Row,8]=simScores[Row,2]+simScores[Row,3]
+    simScores[Row,1]=simScores[Row,2]+simScores[Row,3]
   }
-  if((simScores[Row,1]>.0)&&(simScores[Row,1]<.5)){
-    simScores[Row,8]=-simScores[Row,2]*.1-simScores[Row,3]*.1
+  if((simScores[Row,4]>.0)&&(simScores[Row,1]<.5)){
+    simScores[Row,1]=-simScores[Row,2]*.1-simScores[Row,3]*.1
   }
-  if((simScores[Row,1]>-.5)&&(simScores[Row,1]<.0)){
-    simScores[Row,8]=simScores[Row,2]*.1+simScores[Row,3]*.1
+  if((simScores[Row,4]>-.5)&&(simScores[Row,1]<.0)){
+    simScores[Row,1]=simScores[Row,2]*.1+simScores[Row,3]*.1
   }
 }
 write.table(round(simScores,digits  = 3),
@@ -245,67 +243,34 @@ for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  if(simScores[Row,1]>.5){
-    simScores[Row,8]=-simScores[Row,2]-simScores[Row,3]
+  if(simScores[Row,4]>.5){
+    simScores[Row,1]=-simScores[Row,2]-simScores[Row,3]
   }else{
-    simScores[Row,8]=simScores[Row,2]+simScores[Row,3]
+    simScores[Row,1]=simScores[Row,2]+simScores[Row,3]
   }
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-#####randomly switches between C1 & C2#####
+
+#####switches between C1 & C2 based on C1#####
 gen.count=gen.count+1
-gens.names[gen.count]="randomly switches between C1 & C2"
+gens.names[gen.count]="switches between C1 & C2 based on C1"
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  if(simGames[Row,1]>.5){
-    simScores[Row,8]=simScores[Row,1]
+  if(simScores[Row,2]>.5){
+    simScores[Row,1]=simScores[Row,3]
   }else{
-    simScores[Row,8]=simScores[Row,2]
+    simScores[Row,1]=simScores[Row,2]
   }
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-##########needles in haystack######
-
-########Spread thinly#######
-
-########log(C1)#######
-
-#######C1^-C2######
-
-#######1/C1#######
-
-#######haystack + noise######
-
-#######bizzare rescales######
-
-#######what if users missvote? that the noise is in predictors####
-
-######outliers ######
-
-######colinerity#####
-
-#######partial friedman sin()#####
-
-
-#######generated by pros######
-#Friedman 1/80 generated for validation of MARS https://artax.karlin.mff.cuni.cz/r-help/library/tgp/html/friedman.1.data.html
-#https://www.openml.org/d/344
-#https://www.openml.org/d/215
-#######maximum possible accuracy test####3
-#since data is generated, maximum attainable is determinable
-
-#####nonuniform generating distributions#####
-
-
-#####if c1 c2 c3 agree its a geat movie#####
 
 #####write alg names to file; last######
 write.table(gens.names,

@@ -1,17 +1,17 @@
-just random,-0.695,-0.036,-0.085,0.004,47,0,-0.004
-median subtraction in each row,-0.641,-0.033,-0.058,0.027,47,0.008,0
-polynomial C1 t C2 t C3,-2.415,-0.079,-0.208,0.057,46,0.048,0.012
-smoothed switches between -C2-C3 & C2+C3 based on C1,-0.67,-0.2545,-0.229,0.084,48,-0.046,-0.126
-mean subtraction in each row,-0.58,0.019,0.042,0.259,47,0.155,0.154
-switches between -C2-C3 & C2+C3 based on C1,-0.479,0.0615,0.048,0.375,48,0.215,0.148
-polynomial C1 ^ C2,-0.959,0.092,0.015,0.455,48,0.455,0.274
-randomly switches between C1 & C2,-0.071,0.324,0.287,0.462,49,0.372,0.36
+just random,0,0,0,0.004,47,0,0
+median subtraction in each row,0,0,0.002,0.027,47,0.008,0
+polynomial C1 t C2 t U3,0,0,0.01,0.057,46,0.048,0.012
+smoothed switches between -C2-U3 & C2+U3 based on C1,0,0,0.004,0.084,48,0,0
+mean subtraction in each row,0,0.019,0.069,0.259,47,0.155,0.154
+switches between -C2-U3 & C2+U3 based on C1,0,0.0615,0.085,0.375,48,0.215,0.148
+polynomial C1 ^ C2,0,0.092,0.162,0.455,48,0.455,0.274
+randomly switches between C1 & C2,0,0.324,0.288,0.462,49,0.372,0.36
 polynomial C1 ^ -2,0.445,0.4635,0.462,0.477,26,0.472,0.466
-switches between C2+C3 & C4+C5 based on C1,-0.605,0.307,0.25,0.501,49,0.374,0.344
-polynomial C1 t C2 t C3^1d3,-1.404,-0.0315,-0.063,0.615,46,0.048,0.004
-polynomial C1 t C2,-0.092,0.063,0.134,0.911,47,0.323,0.162
-polynomial C1 ^ 2,-0.322,0.272,0.354,0.969,49,0.93,0.73
-polynomial C1 ^ .5,-0.43,0.731,0.648,0.989,48,0.932,0.808
-switches between C2 & -C2 based on C1,-0.303,0.346,0.339,1,49,0.543,0.468
+switches between C2+U3 & C4+C5 based on C1,0,0.307,0.269,0.501,49,0.374,0.344
+polynomial C1 t C2 t U3^1d3,0,0,0.036,0.615,46,0.048,0.004
+polynomial C1 t C2,0,0.063,0.137,0.911,47,0.323,0.162
+polynomial C1 ^ 2,0,0.272,0.379,0.969,49,0.93,0.73
+polynomial C1 ^ .5,0,0.731,0.66,0.989,48,0.932,0.808
+switches between C2 & -C2 based on C1,0,0.346,0.345,1,49,0.543,0.468
 switches between 1 & -1 based on C1,0.025,0.434,0.592,1,45,0.927,0.92
-basic latent features,-0.119,0.975,0.791,1,209,1,1
+basic latent features,0,0.975,0.792,1,209,1,1

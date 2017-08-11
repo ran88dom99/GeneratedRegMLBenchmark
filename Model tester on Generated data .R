@@ -92,7 +92,7 @@ simpleControl <- trainControl(method = "cv",
 
 seed.const=222
 seed.var=seed.const
-column.to.predict=8
+column.to.predict=1
 
 print(date());
 
