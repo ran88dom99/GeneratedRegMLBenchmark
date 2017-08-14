@@ -10,6 +10,7 @@ list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
+
 #install.packages("mlr", dependencies = c("Depends", "Suggests"))
 #install.packages("caret", dependencies = c("Depends", "Suggests"))
 #install.packages("SuperLearner", dependencies = c("Depends", "Suggests"))
@@ -21,12 +22,12 @@ library(caret)
 #library(caretEnsemble)
 library(MLmetrics)
 
-
+try({
 before.last.alg<-as.matrix(read.csv("beforelast algorithm.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 last.alg<-as.matrix(read.csv("last algorithm tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 if(last.alg==before.last.alg){print("algorithm may be broken")}
 write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
-
+})
 
 #make sure not to redo a test
 check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextra="missing",missingdata="leaveempty",datasource="mean" ,column.to.predict=200,allmodel="ctree")
@@ -101,7 +102,7 @@ print(date());
 
 if(!exists("gen.count")){gen.count=17}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-for(gend.data in 1:gen.count){
+for(gend.data in 16:gen.count){
   data.source<-as.matrix(read.csv(paste(gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data]
   missingdatas=c("ignore")

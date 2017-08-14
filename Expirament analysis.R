@@ -1,8 +1,8 @@
 #ggplot: how  label, print to file
-exp.name<-"Fourth dp300asis5hp tiny332v"
+exp.name<-"Combined 1t4"
 mainDir<-getwd()
 subDir<-exp.name
-expiramentresults<-read.csv("Fourth dp300asis5hp tiny.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+expiramentresults<-read.csv("combo to fourth.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
 dir.create(file.path(mainDir, subDir))
 setwd(file.path(mainDir, subDir))
 
@@ -226,7 +226,7 @@ acceptablePloss<-.05
 lowestFindScore<-.1
 acceptAlgo.df<-data.frame()
 acceptAlgo.df[1,1]<-NA
-acceptAlgo.df[,c(1:220)]<-NA
+acceptAlgo.df[,c(1:400)]<-NA
 countr=0
 for(algo in unique(expiramentresults[,10]))
 {

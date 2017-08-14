@@ -122,7 +122,7 @@ for(gend.data in 13:gen.count){
 
 
 
-      data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
+      #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
 
 
       normings=c("range01")#,"asis","expoTrans","quantile","centernscale","YeoJohnson"

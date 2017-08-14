@@ -15,18 +15,18 @@
 15,smoothed switches between -C2-C3 & C2+C3 based on C1
 16,switches between -C2-C3 & C2+C3 based on C1
 17,switches between C1 & C2 based on C1
-18,FALSE
-19,FALSE
-20,FALSE
-21,FALSE
-22,FALSE
-23,FALSE
-24,FALSE
-25,FALSE
-26,FALSE
-27,FALSE
-28,FALSE
-29,FALSE
+18,Spread thinly
+19,log(C1)
+20,C1^-C2
+21,1/C1
+22,1dC1
+23,noise in predictors
+24,outliers
+25,switches between C3 & C2 based on C4>1.5
+26,colinerity unnecessary
+27,colinerity middle is correct
+28,partial friedman sin(C2)
+29,randomly switches between C1 & C2
 30,FALSE
 31,FALSE
 32,FALSE

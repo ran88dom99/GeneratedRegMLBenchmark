@@ -38,9 +38,9 @@ write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-#######1/C1#######
+#######1dC1#######
 gen.count=gen.count+1
-gens.names[gen.count]="1/C1"
+gens.names[gen.count]="1dC1"
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
