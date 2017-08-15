@@ -21,14 +21,14 @@
 21,1dC1
 22,noise in predictors
 23,outliers
-24,switches between C3 & C2 on C4g1.5
-25,colinerity unnecessary
-26,colinerity middle is correct
-27,partial friedman sin(C2)
-28,randomly switches between C1 & C2
-29,FALSE
-30,FALSE
-31,FALSE
+24,switches between C3 & C2 based on C4>1.5
+25,Spread thinly
+26,log(C1)
+27,C1^-C2
+28,1dC1
+29,noise in predictors
+30,outliers
+31,switches between C3 & C2 based on C4>1.5
 32,FALSE
 33,FALSE
 34,FALSE

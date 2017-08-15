@@ -93,7 +93,7 @@ write.table(round(simScores,digits  = 3),
 
 #####switch C2 & C3 based on C4>1.5#####
 gen.count=gen.count+1
-gens.names[gen.count]="switches between C3 & C2 based on C4>1.5"
+gens.names[gen.count]="switches between C3 & C2 on C4g1.5"
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -120,7 +120,7 @@ for(Row in 1:Rows){
 }
 for(Row in 1:Rows){
   simScores[Row,5:7]=simScores[Row,2:4]
-  for(COl in 5:7){
+  for(Col in 5:7){
     simScores[Row,Col]<-simScores[Row,Col]+rnorm(1, mean = 0, sd = .3)}
 }
 write.table(round(simScores,digits  = 3),
@@ -201,7 +201,9 @@ write.table(round(simScores,digits  = 3),
 
 #####if c1 c2 c3 agree its a geat movie#####
 
-#####each of the scalings in preprocessing#######
+#####reverse quatilization#######
+
+
 
 #######maximum possible accuracy####
 #since data is generated, maximum attainable is determinable
