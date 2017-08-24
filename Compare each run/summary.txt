@@ -1,0 +1,16 @@
+Fail rates.
+By generator. Laptop slightly decreases them. Greater CV and HP exploration increases them as expected.
+	C1^.5 is most affected.
+By learner. A few learners preffer ASIS a few, Range 0-1. Same tablet v332 vs laptop 341. 
+	Quarter perform far better with fewer CV & HP. 7 did not fail only on First(tab, 110dp 16hp) and then once.
+
+
+Percent of maximum score for a task.
+	By generator. C1^C2 is dramaticaly and positively affected by everything. I fear an error.
+Asis improves a few more strongly than 0-1. Tablet v332 ,32bit improves performance on almost all datasets.
+Greater than any other change. Again I fear an error. Higher CVHP improves all but one even if only a tiny bit on most.
+Most problems benefit from 3x more data instead of a middling increase in CVHP. Except C2^-2 which just sits at the -.5 mark.
+Probably an error again. I think I aught to redo the calculations on everything here.
+	By learner. C1^C2 is probably skewing everything. Everything with nnet in the name requires range 0-1.
+A few learners need asis. All learners preffer the tablet. WHAT. Almost all learners benefit from higher CVHP.
+Some way more. A few learners benefit more from slight increase in CVHP than 3x datapoints. 

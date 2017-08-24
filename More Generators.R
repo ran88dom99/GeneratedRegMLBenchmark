@@ -1,64 +1,123 @@
+library(caret)
 
-########Spread thinly#######
+######mean subtraction byrow####
 gen.count=gen.count+1
-gens.names[gen.count]="Spread thinly"
+gens.names[gen.count]="mean subtraction in each row"
+max.out[gen.count]=1#1 err.sqd
+for(Row in 1:Rows){
+  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+  me.sim.sub=mean(simScores[Row,1:10],na.rm=T)
+  for(Col in 1:10){
+    simScores[Row,Col]=simScores[Row,Col]-me.sim.sub
+  }}
+
+write.table(round(simScores,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+######median subtraction byrow######
+gen.count=gen.count+1
+gens.names[gen.count]="median subtraction in each row"
+max.out[gen.count]=.29#.43 err.sqd
+for(Row in 1:Rows){
+  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+  me.sim.sub=median(simScores[Row,1:10],na.rm=T)
+  for(Col in 1:10){
+    simScores[Row,Col]=simScores[Row,Col]-me.sim.sub
+  }}
+write.table(round(simScores,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+
+######rescale 4 poly ######
+gen.count=gen.count+1
+gens.names[gen.count]="rescale 4 poly"
+max.out[gen.count]=0#0 err.sqd
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  simScores[Row,1]=.1*simScores[Row,8]+.1*simScores[Row,2]+.1*simScores[Row,3]+.1*simScores[Row,4]+.1*simScores[Row,5]+.1*simScores[Row,6]+.1*simScores[Row,7]
+  simScores[Row,1]=simScores[Row,2]+simScores[Row,3]+simScores[Row,4]
+}
+for(Col in 1:10){
+  A<-rnorm(1, mean = 0, sd = 1)
+  B<-rnorm(1, mean = 0, sd = 1)
+  C<-rnorm(1, mean = 0, sd = 1)
+  D<-rnorm(1, mean = 0, sd = 1)
+  for(Row in 1:Rows){
+    X<-simScores[Row,Col]
+    simScores[Row,1]=A+X*B+X*X*C+X*X*X*D
+    }
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-########log(C1)#######
+######rescale iso addition########
 gen.count=gen.count+1
-gens.names[gen.count]="log(C1)"
+gens.names[gen.count]="rescale isotonic addition"
+max.out[gen.count]=.5#.8 err.sqd
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  simScores[Row,1]=log(simScores[Row,2])
+  simScores[Row,1]=simScores[Row,2]+simScores[Row,3]+simScores[Row,4]
+}
+for(Col in 1:10){
+  A<-abs(rnorm(1, mean = 0, sd = .2))
+  B<-abs(rnorm(1, mean = 0, sd = .2))
+  C<-abs(rnorm(1, mean = 0, sd = .2))
+  D<-abs(rnorm(1, mean = 0, sd = .2))
+  for(Row in 1:Rows){
+    x<-simScores[Row,Col]
+    if(x>-1) x=x+A
+    if(x>-.3) x=x+B
+    if(x>.1) x=x+C
+    if(x>1) x=x+D
+    x->simScores[Row,Col]
   }
+}
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-#######C1^-C2######
+######rescale iso add rand bin######
 gen.count=gen.count+1
-gens.names[gen.count]="C1^-C2"
+gens.names[gen.count]="rescale isotonic addition ran bin"
+max.out[gen.count]=.5#.8 err.sqd
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  simScores[Row,1]=(simScores[Row,3])^(-simScores[Row,2])
+  simScores[Row,1]=simScores[Row,2]+simScores[Row,3]+simScores[Row,4]
+}
+for(Col in 1:10){
+  q<-rnorm(1, mean = 0, sd = 1)
+  w<-rnorm(1, mean = 0, sd = 1)
+  p<-rnorm(1, mean = 0, sd = 1)
+  o<-rnorm(1, mean = 0, sd = 1)
+  A<-abs(rnorm(1, mean = 0, sd = .2))
+  B<-abs(rnorm(1, mean = 0, sd = .2))
+  C<-abs(rnorm(1, mean = 0, sd = .2))
+  D<-abs(rnorm(1, mean = 0, sd = .2))
+  for(Row in 1:Rows){
+    x<-simScores[Row,Col]
+    if(x>q) x=x+A
+    if(x>w) x=x+B
+    if(x>p) x=x+C
+    if(x>o) x=x+D
+    x->simScores[Row,Col]
+  }
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-#######1dC1#######
-gen.count=gen.count+1
-gens.names[gen.count]="1dC1"
-for(Row in 1:Rows){
-  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
-}
-for(Row in 1:Rows){
-  simScores[Row,1]=1/(simScores[Row,2])
-}
-write.table(round(simScores,digits  = 3),
-            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
-            eol = "\n", na = "", dec = ".", row.names = F,
-            col.names = F, qmethod = "double")
-
-#######bizzare rescales ######
-
-#######some users just vote everything they didnt hate at 9#######
-
-#######what if users missvote? that the noise is in predictors####
+######noise on predictors what if users missvote?####
 gen.count=gen.count+1
 gens.names[gen.count]="noise in predictors"
+max.out[gen.count]=.7#.91 err.sqd
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -76,30 +135,13 @@ write.table(round(simScores,digits  = 3),
 ######outliers ######
 gen.count=gen.count+1
 gens.names[gen.count]="outliers"
+max.out[gen.count]=.6#.24 err.sqd
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  if(simScores[Row,4]>1.5){
+  if(rnorm(1, mean = 0, sd = 1)>1.5){###error used to be posssible to switch
     simScores[Row,1]=rnorm(1, mean = 0, sd = 7)
-  }else{
-    simScores[Row,1]=simScores[Row,2]
-  }
-}
-write.table(round(simScores,digits  = 3),
-            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
-            eol = "\n", na = "", dec = ".", row.names = F,
-            col.names = F, qmethod = "double")
-
-#####switch C2 & C3 based on C4>1.5#####
-gen.count=gen.count+1
-gens.names[gen.count]="switches between C3 & C2 on C4g1.5"
-for(Row in 1:Rows){
-  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
-}
-for(Row in 1:Rows){
-  if(simScores[Row,4]>1.5){
-    simScores[Row,1]=simScores[Row,3]*2
   }else{
     simScores[Row,1]=simScores[Row,2]
   }
@@ -112,6 +154,7 @@ write.table(round(simScores,digits  = 3),
 ######colinerity unnecessary#####
 gen.count=gen.count+1
 gens.names[gen.count]="colinerity unnecessary"
+max.out[gen.count]=1
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -120,16 +163,17 @@ for(Row in 1:Rows){
 }
 for(Row in 1:Rows){
   simScores[Row,5:7]=simScores[Row,2:4]
-  for(Col in 5:7){
-    simScores[Row,Col]<-simScores[Row,Col]+rnorm(1, mean = 0, sd = .3)}
+  for(Col in 5:7){#noise is applied only to doubles
+    simScores[Row,Col]<-simScores[Row,Col]+rnorm(1, mean = 0, sd = .1)}
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
 ######colinerity middle is correct#####
-gen.count=gen.count+1
+gen.count=gen.count+1#almost identical to "noise in predictors"
 gens.names[gen.count]="colinerity middle is correct"
+max.out[gen.count]=.8#.96 err.sqd
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -145,69 +189,184 @@ write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-#######partial friedman sin()#####
+######Spread thinly#######
 gen.count=gen.count+1
-gens.names[gen.count]="partial friedman sin(C2)"
+gens.names[gen.count]="Spread thinly"
+max.out[gen.count]=1
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  simScores[Row,1]=sin(simScores[Row,2])
+  simScores[Row,1]=.1*simScores[Row,8]+.1*simScores[Row,2]+.1*simScores[Row,3]+.1*simScores[Row,4]+.1*simScores[Row,5]+.1*simScores[Row,6]+.1*simScores[Row,7]
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-##########needles in haystack######
+######needles in haystack######
+gen.count=gen.count+1
+gens.names[gen.count]="needles in haystack"
+max.out[gen.count]=1
+simScores<-matrix(data = 0, nrow = Rows, ncol = 1000, byrow = FALSE,dimnames = NULL);
+for(Row in 1:Rows){
+  simScores[Row,1:1000]=rnorm(1000, mean = 0, sd = 1)
+}
+a<-round(runif(10, min = 0, max = 1000))
+for(Row in 1:Rows){
+  simScores[Row,1]=.1*simScores[Row,a[1]]+.1*simScores[Row,a[2]]+.1*simScores[Row,a[3]]+.1*simScores[Row,a[4]]+.1*simScores[Row,a[5]]+.1*simScores[Row,a[6]]+.1*simScores[Row,a[7]]+.1*simScores[Row,a[8]]+.1*simScores[Row,a[9]]
+}
+write.table(round(simScores,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+simScores<-matrix(data = 0, nrow = Rows, ncol = 12, byrow = FALSE,dimnames = NULL);
+simScores[,11]<-1
+######haystack + noise######
+gen.count=gen.count+1
+gens.names[gen.count]="needles hay noise"
+simScores<-matrix(data = 0, nrow = Rows, ncol = 1000, byrow = FALSE,dimnames = NULL);
+max.out[gen.count]=.5#.5 actualy I forgot.....
+for(Row in 1:Rows){
+  simScores[Row,1:1000]=rnorm(1000, mean = 0, sd = 1)
+}
+a<-round(runif(10, min = 0, max = 1000))
+for(Row in 1:Rows){
+  simScores[Row,1]=.1*simScores[Row,a[1]]+.1*simScores[Row,a[2]]+.1*simScores[Row,a[3]]+.1*simScores[Row,a[4]]+.1*simScores[Row,a[5]]+.1*simScores[Row,a[6]]+.1*simScores[Row,a[7]]+.1*simScores[Row,a[8]]+.1*simScores[Row,a[9]]
+}
+for(Row in 1:Rows){
+  simScores[Row,2:1000]=simScores[Row,2:1000]+rnorm(999, mean = 0, sd = .3)
+}
+write.table(round(simScores,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+simScores<-matrix(data = 0, nrow = Rows, ncol = 12, byrow = FALSE,dimnames = NULL);
+simScores[,11]<-1
 
-#######haystack + noise######
-
-######simple lack of data######
 
 ######sparsity NA#########
-
-######sparsity 0#########
-
-######sparsity 20#########
-
-######nested if C2 if C3 C4 e C5 e if C5 C6 e C7######
-
-#####randomly switches between C1 & C2#####
 gen.count=gen.count+1
-gens.names[gen.count]="randomly switches between C1 & C2"
+gens.names[gen.count]="sparsity NA"
+max.out[gen.count]=.44#.62 me^2
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
 for(Row in 1:Rows){
-  if(rnorm(1, mean = 0, sd = 1)>.5){
-    simScores[Row,1]=simScores[Row,3]
-  }else{
-    simScores[Row,1]=simScores[Row,2]
+  simScores[Row,1]=simScores[Row,2]+simScores[Row,3]+simScores[Row,4]+simScores[Row,5]
+}
+for(Row in 1:Rows){
+  for(Col in 2:10){
+    if(runif(1, min = 0, max = 1)>.7) simScores[Row,Col]<-NA
   }
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
+######sparsity 0#########
+gen.count=gen.count+1
+gens.names[gen.count]="sparsity 0"
+max.out[gen.count]=.54#.7 me^2
+for(Row in 1:Rows){
+  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+}
+for(Row in 1:Rows){
+  simScores[Row,1]=simScores[Row,2]+simScores[Row,3]+simScores[Row,4]+simScores[Row,5]
+}
+for(Row in 1:Rows){
+  for(Col in 2:10){
+    if(runif(1, min = 0, max = 1)>.7) simScores[Row,Col]<-0
+  }
+}
+write.table(round(simScores,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+######sparsity 20#########
+gen.count=gen.count+1
+gens.names[gen.count]="sparsity 20"
+max.out[gen.count]=.5#.65 me^2
+for(Row in 1:Rows){
+  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+}
+for(Row in 1:Rows){
+  simScores[Row,1]=simScores[Row,2]+simScores[Row,3]+simScores[Row,4]+simScores[Row,5]
+}
+for(Row in 1:Rows){
+  for(Col in 2:10){
+    if(runif(1, min = 0, max = 1)>.7) simScores[Row,Col]<-20
+  }
+}
+write.table(round(simScores,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+######quantilization#######
+gen.count=gen.count+1
+gens.names[gen.count]="quantilization"
+max.out[gen.count]=.1#.1 err.sqd
+for(Row in 1:Rows){
+  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+}
+simScores[,2]<- (rank(simScores[,1],na.last = "keep",ties.method = "average")-1) 
+#preProcValues<- preProcess(simScores[,2],method = c("range"))
+#simScores[,2]<- predict(preProcValues, simScores[,2])
+write.table(round(simScores,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
 
-#######generated by pros######
-#friedman.1.data(n=Rows) #tgp package#
-#Friedman 1/80 generated for validation of MARS https://artax.karlin.mff.cuni.cz/r-help/library/tgp/html/friedman.1.data.html
+######composite####
+gen.count=gen.count+1
+gens.names[gen.count]="composite 1"
+max.out[gen.count]=.21#.42
+for(Row in 1:Rows){
+  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+}
+for(Row in 1:Rows){
+  simScores[Row,1]=simScores[Row,2]+simScores[Row,3]+simScores[Row,4]+simScores[Row,5]
+}
+simScores1<-simScores[,c(1,2,3,6,7)]
+simScores2<-simScores[,c(1,4,5,8,9)]
+write.table(round(simScores1,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+gen.count=gen.count+1
+gens.names[gen.count]="composite 2"
+max.out[gen.count]=.21#.42
+write.table(round(simScores2,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+gen.count=gen.count+1
+gens.names[gen.count]="composite complete"
+max.out[gen.count]=1
+write.table(round(simScores,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+######generated by pros#########
+gen.count=gen.count+1
+gens.names[gen.count]="OpenML mv"
+max.out[gen.count]=1#1 err.sqd
+gen.count=gen.count+1
+gens.names[gen.count]="OpenML 2dplanes"
+max.out[gen.count]=1#1 err.sqd
 #OpenML mv.csv
 #OpenML 2dplanes.csv
 
-#####nonuniform generating distributions#####
+#friedman.1.data(n=Rows) #tgp package#
+#Friedman 1/80 generated for validation of MARS https://artax.karlin.mff.cuni.cz/r-help/library/tgp/html/friedman.1.data.html
+#first kaggle
+#kaggle MAL
 
-
-#####if c1 c2 c3 agree its a geat movie#####
-
-#####reverse quatilization#######
-
-
-
+#######some users just vote everything they didnt hate at 9###
+#####nonuniform generating distributions###
+######simple lack of data###
+#####if c1 c2 c3 agree its a geat movie###
 #######maximum possible accuracy####
 #since data is generated, maximum attainable is determinable
-
 #####write alg names to file; last######
 write.table(gens.names,
             file = "gens names.csv", append =F, quote = F, sep = ",",

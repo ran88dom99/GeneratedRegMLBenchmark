@@ -1,3 +1,6 @@
+#########QUICK IS MORE UP TO DATE!!!!#######
+########DO NOT USE UNTIL MERGING!!!!!!#######
+
 ## capture messages and errors to a file.
 zz <- file("all.Rout", open="wt")
 sink(zz, type="message")

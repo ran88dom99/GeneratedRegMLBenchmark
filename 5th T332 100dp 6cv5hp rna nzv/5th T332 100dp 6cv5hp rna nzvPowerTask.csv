@@ -1,0 +1,28 @@
+just random,0,0,0.002,0.02,142,0.009,0
+polynomial C1 t C2 t C3,0,0,0.004,0.157,145,0.021,0
+median subtraction in each row,0,0,0.005,0.162,145,0.003,0
+polynomial C1 ^ C2,0,0,0.033,0.452,143,0.171,0
+polynomial C1 ^ -2,0,0.431,0.238,0.455,142,0.445,0.441
+C1^-C2,0,0,0.05,0.468,143,0.213,0.051
+smoothed switches between -C2-C3 & C2+C3 based on C1,0,0.013,0.057,0.479,145,0.197,0.062
+randomly switches between C1 & C2,0,0.257,0.257,0.659,145,0.382,0.336
+noise in predictors,0,0.655,0.525,0.723,143,0.693,0.678
+polynomial C1 t C2 t C3^1d3,0,0.045,0.078,0.775,144,0.167,0.098
+outliers,0,0.316,0.312,0.818,144,0.56,0.402
+1dC1,0,0,0.081,0.822,143,0.293,0.076
+colinerity middle is correct,0,0.779,0.65,0.85,145,0.831,0.814
+switches between C2 & -C2 based on C1,0,0.196,0.209,0.907,144,0.483,0.297
+switches between C3 & C2 on C4g1.5,0,0.5365,0.499,0.938,142,0.688,0.639
+log(C1),0,0.573,0.522,0.947,144,0.811,0.644
+polynomial C1 ^ .5,0,0.665,0.598,0.976,145,0.919,0.723
+switches between -C2-C3 & C2+C3 based on C1,0,0.192,0.221,0.99,144,0.424,0.315
+polynomial C1 t C2,0,0.001,0.084,0.999,145,0.178,0.05
+switches between C2+C3 & C4+C5 based on C1,0,0.267,0.289,0.999,144,0.442,0.424
+polynomial C1 ^ 2,0,0.017,0.277,0.999,145,0.893,0.684
+partial friedman sin(C2),0,0.7225,0.674,0.999,146,0.928,0.828
+mean subtraction in each row,0,0.364,0.478,0.999,144,0.999,0.991
+Spread thinly,0,0.865,0.645,0.999,144,0.999,0.999
+switches between C1 & C2 based on C1,0,0.2095,0.256,1,144,0.598,0.369
+basic latent features,0,0.976,0.804,1,141,1,1
+switches between 1 & -1 based on C1,0,0.39,0.446,1,145,1,0.8
+colinerity unnecessary,0,0.9365,0.749,1,138,1,1

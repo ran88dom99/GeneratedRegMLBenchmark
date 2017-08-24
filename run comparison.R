@@ -1,9 +1,9 @@
 #load data
-exp.name<-"Compare each run"
+exp.name<-"Compare nzv and 01col"
 mainDir<-getwd()
 subDir<-exp.name
 expiramentresults<-data.frame()
-expiramentresults<-(read.csv("first to fourth.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".",stringsAsFactors=F))
+expiramentresults<-(read.csv("Compare nzv onecol.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".",stringsAsFactors=F))
 dir.create(file.path(mainDir, subDir))
 setwd(file.path(mainDir, subDir))
 
@@ -17,10 +17,10 @@ exp.res.noF->expiramentresults[,1]
 
 
 #list of good comparisons of tasks
-runsTcompare<-data.frame(c("4A","2nd","2nd","4A"))
+runsTcompare<-data.frame(c("oncol"))
 #runsTcompare[,1]<-
-runsTcompare[,2]<-c("4B","3rd","4B","First")
-runsTcompare[,3]<-c("asis vs range 01","tablet vs lapT on 01","high cvhp vs low cvhp on 01","300dp low cvhp vs 100dp medcvhp on asis")
+runsTcompare[,2]<-c("nzv")
+runsTcompare[,3]<-c("oncol vs nzv")
 
 u.learns<-unique(expiramentresults[,8])
 u.gens<-unique(expiramentresults[,11])

@@ -1,11 +1,14 @@
 #ggplot: how  label, print to file
-exp.name<-"Combined 1t4"
+exp.name<-"6th T332 100dp 6cv5hp rna 01"
 mainDir<-getwd()
 subDir<-exp.name
-expiramentresults<-read.csv("combo to fourth.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+expiramentresults<-read.csv("gen test out 01col 6th like 5th.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
 dir.create(file.path(mainDir, subDir))
 setwd(file.path(mainDir, subDir))
 
+
+library(ggplot2)    
+library(reshape2) 
 #######percent failed######
 fails.df<-data.frame()
 countr=0
@@ -157,12 +160,27 @@ write.table(power.df,
 not.interesting<-(power.df[,6]<10)+ is.na(power.df[,6]) 
 I.power.df<-power.df[!not.interesting,]
 
-z<-ggplot(I.power.df, aes(y = I.power.df[,7], x = reorder(I.power.df[,1], I.power.df[,7]))) + geom_point()+ coord_flip()
+z<-ggplot(I.power.df, aes(y = I.power.df[,7], x = reorder(I.power.df[,1], I.power.df[,5]))) + geom_point()+ coord_flip()
 z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,5]),na.rm = TRUE)+
   geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,3]))+
   #geom_point(colour="purple",aes(I.power.df[,1] ,I.power.df[,3]))+
   geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6])-.35)))
 ggsave(paste(exp.name,"PowerTask.png", sep = ""),plot = last_plot(),scale = 3)
+
+ttdd<-data.frame()
+ttdz<-data.frame()
+iti <- order(power.df[,4],power.df[,3])
+power.df<-rbind(power.df)[iti,]
+orderedlevels<-factor(expiramentresults[,10], power.df[,1],  ordered = T)
+ttdz<-data.frame(exp.res.noF,orderedlevels)
+ttdd<-ttdz[expiramentresults[,1]!="Fail",]
+
+p <- ggplot(as.data.frame(ttdd), aes(x=melt(ttdd)[,1],y=melt(ttdd)[,3]))
+p  +geom_boxplot(width=0.4) + stat_summary(fun.y = "mean", colour = "red", size = 1, geom = "point")+
+  theme(axis.text.x=element_text(size=7, angle=270,hjust=0.95,vjust=0.2))+scale_x_discrete(position = "top")+
+  xlab(paste("task in",exp.name)) + ylab("detectability") + coord_flip()
+
+ggsave(paste(exp.name,"PowerTaskMean.png", sep = ""),plot = last_plot(),scale = 3)
 #some algos are better at some category of tasks and missing them could affect statistic metric index
 ########difference between %MAE & %RMSE by task####
 exp.res.noF<-expiramentresults[,1]
@@ -245,7 +263,8 @@ for(algo in unique(expiramentresults[,10]))
   acceptAlgo.df[countr,3]<-minAccept
   acceptAlgo.df[countr,4:(sum(acceptAlgo)+3)]<-as.character(expiramentresults[acceptAlgo,7])
  }
-
+iti <- order(acceptAlgo.df[,3],acceptAlgo.df[,2])
+acceptAlgo.df<-rbind(acceptAlgo.df)[iti,]
 
 write.table(acceptAlgo.df,
             file = paste(exp.name,acceptablePloss,"MinNecessary.csv", sep = ""), append =F, quote = F, sep = ",",
@@ -314,14 +333,14 @@ write.table(algPower.df,
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
 #algPower.df<-data.frame(algPower.df, row.names = 1:length(algPower.df[,1]))
-not.interesting<-(algPower.df[,6]<13)+(algPower.df[,4]<.2)+ is.na(algPower.df[,6]) 
+not.interesting<-(algPower.df[,6]<20)+(algPower.df[,4]<.2)+ is.na(algPower.df[,6]) 
 I.power.df<-algPower.df[!not.interesting,]
 
 z<-ggplot(I.power.df, aes(y = I.power.df[,2], x = reorder(I.power.df[,1], I.power.df[,2]))) + 
   geom_point()+#+##+coord_flip()
   theme(axis.text.x=element_text(size=7, angle=270,hjust=0.95,vjust=0.2))+scale_x_discrete(position = "top")
 z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,8]),na.rm = TRUE)+
-  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,5]))+
+  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,5]))+xlab("Learn power by task") + ylab("ord by mean") +
   geom_point(colour="purple",aes(I.power.df[,1] ,I.power.df[,9]))+
   geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6])-.45)))
 ggsave(paste(exp.name,"Power.png", sep = ""),plot = last_plot(),scale = 3)
@@ -334,7 +353,17 @@ z<-ggplot(I.power.df, aes(y = I.power.df[,2], x = reorder(I.power.df[,1], I.powe
   geom_point()+#+##+coord_flip()
   theme(axis.text.x=element_text(size=7, angle=270,hjust=0.95,vjust=0.2))+scale_x_discrete(position = "top")
 z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,8]),na.rm = TRUE)+
-  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,5]))+
+  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,5]))+xlab("Learn power % of maximum by task") + ylab("ord by 80%") +
   geom_point(colour="purple",aes(I.power.df[,1] ,I.power.df[,9]))+
   geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6])-.45)))
 ggsave(paste(exp.name,"PowerReorder.png", sep = ""),plot = last_plot(),scale = 3)
+z<-ggplot(I.power.df, aes(y = I.power.df[,2], x = reorder(I.power.df[,1], I.power.df[,9]))) + 
+  geom_point()+#+##+coord_flip()
+  theme(axis.text.x=element_text(size=7, angle=270,hjust=0.95,vjust=0.2))+scale_x_discrete(position = "top")
+z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,8]),na.rm = TRUE)+
+  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,5]))+xlab("Learn power % of maximum by task") + ylab("ord by 90%") +
+  geom_point(colour="purple",aes(I.power.df[,1] ,I.power.df[,9]))+
+  geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6])-.45)))
+ggsave(paste(exp.name,"PowerReorder2.png", sep = ""),plot = last_plot(),scale = 3)
+
+setwd(file.path(mainDir))

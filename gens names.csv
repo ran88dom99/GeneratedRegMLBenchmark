@@ -1,43 +1,43 @@
 1,basic latent features
-2,just random
-3,polynomial C1 ^ 2
-4,polynomial C1 ^ .5
-5,polynomial C1 ^ -2
-6,polynomial C1 t C2
-7,polynomial C1 ^ C2
-8,polynomial C1 t C2 t C3
-9,polynomial C1 t C2 t C3^1d3
-10,mean subtraction in each row
-11,median subtraction in each row
-12,switches between 1 & -1 based on C1
-13,switches between C2 & -C2 based on C1
-14,switches between C2+C3 & C4+C5 based on C1
-15,smoothed switches between -C2-C3 & C2+C3 based on C1
-16,switches between -C2-C3 & C2+C3 based on C1
-17,switches between C1 & C2 based on C1
-18,Spread thinly
-19,log(C1)
-20,C1^-C2
-21,1dC1
-22,noise in predictors
-23,outliers
-24,switches between C3 & C2 on C4g1.5
-25,colinerity unnecessary
-26,colinerity middle is correct
-27,partial friedman sin(C2)
-28,randomly switches between C1 & C2
-29,FALSE
-30,FALSE
-31,FALSE
-32,FALSE
-33,FALSE
-34,FALSE
-35,FALSE
-36,FALSE
-37,FALSE
-38,FALSE
-39,FALSE
-40,FALSE
+2,random
+3,bm C1 ^ 2
+4,bm C1 ^ .5
+5,bm C1 ^ -2
+6,bm log(C1)
+7,bm 1dC1
+8,bm sin(C2)
+9,poly C1 t C2
+10,poly C1 ^ C2
+11,poly C1 t C2 t C3
+12,poly C1 t C2 t C3^1d3
+13,ifs 1 & -1 on C1
+14,ifs C2 & -C2 on C1
+15,ifs C2+C3 & C4+C5 on C1
+16,ifs smooth -C2-C3&C2+C3 onC1
+17,ifs -C2-C3 & C2+C3 on C1
+18,ifs C1 & C2 on C1
+19,ifs C2 & C3t2 on C4g1.5
+20,ifs C1&C2 on random
+21,ifs nested 2 layer
+22,mean subtraction in each row
+23,median subtraction in each row
+24,rescale 4 poly
+25,rescale isotonic addition
+26,rescale isotonic addition ran bin
+27,noise in predictors
+28,outliers
+29,colinerity unnecessary
+30,colinerity middle is correct
+31,Spread thinly
+32,needles in haystack
+33,needles hay noise
+34,sparsity NA
+35,sparsity 0
+36,sparsity 20
+37,quantilization
+38,composite 1
+39,composite 2
+40,composite complete
 41,FALSE
 42,FALSE
 43,FALSE

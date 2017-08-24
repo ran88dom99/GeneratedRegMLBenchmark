@@ -68,8 +68,8 @@ allmodels <- c("rlm", "rpart", "rpart2",
 allmodels <- c("avNNet","BstLm","bstTree","cforest","ctree","ctree2",
                "cubist","earth","enet","evtree","glmboost",
                "icr","kernelpls","kknn","lasso","pcaNNet",
-               "pcr","pls","qrf","ranger","rf"
-)
+               "pcr","pls","qrf","ranger","rf")
+
 #allmodels <- c("ranger")#"BstLm","enet","lasso",
 #allmodels <- c("rf")"rqlasso",, "xyf" "rvmPoly", "rvmRadial",    "spls", "superpc" ,   "treebag",  "svmLinear2",  "SBC",
 #allmodels <- c("bartMachine", "xgbLinear", "pcaNNet","svmLinear","glmnet","cforest","cubist","rf","ranger")"glmnet",
@@ -77,7 +77,7 @@ allmodels <- c("avNNet","BstLm","bstTree","cforest","ctree","ctree2",
 # brak everythig "rbfDDA","ridge","rqnc",
 # use "rf" to test all
 allmodels <- unique(modelLookup()[modelLookup()$forReg,c(1)])
-
+#allmodels<- c("svmLinear","svmPoly","svmRadial")
 #library(doParallel); cl <- makeCluster(detectCores()); registerDoParallel(cl)
 
 
@@ -94,15 +94,15 @@ simpleControl <- trainControl(method = "cv",
                               search = "random")
 
 
-seed.const=222
+seed.const=222+round(runif(1,min=0,max=100))
 seed.var=seed.const
 column.to.predict=1
 
 print(date());
 
-if(!exists("gen.count")){gen.count=17}
+if(!exists("gen.count")){gen.count=40}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-for(gend.data in 21:gen.count){
+for(gend.data in 32:40){
   data.source<-as.matrix(read.csv(paste(gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data]
   missingdatas=c("ignore")
@@ -167,7 +167,8 @@ for(gend.data in 21:gen.count){
           #df.toprocess = data.frame(df.toprocess,)
           nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
           #nzv[nzv$nzv,][1:10,]
-          df.toprocess = (df.toprocess[, -nzv])
+          if(length(nzv)>1){
+          df.toprocess = (df.toprocess[, -nzv])}
           
           tuneLength=5
           tuneLength2=4
@@ -184,11 +185,15 @@ for(gend.data in 21:gen.count){
           ######for all models########
           for(allmodel in allmodels){#just before all models define d.f and reduce it
             write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
-            bad.models=c("neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
-            #too slow neuralnet
+            bad.models=c("DENFIS","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
+            #too slow neuralnet# dnfis useless and just stops on huge datasets
             if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
             library(caret) #mlp...s creat some bizzare problem that breaks caret::train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
-            #penalized slow hen fails
+            #penalized slow then fails
+            slow.models=c("leapSeq","glmStepAIC","ppr","qrnn")#leapSeq
+            if(allmodel %in% slow.models && datasource=="needles in haystack"){next()}#too slow for many columns
+            if(allmodel %in% slow.models && datasource=="needles hay noise"){next()}#too slow for many columns
+            
             seed.var=seed.var+1
             list.of.packages <-getModelInfo(allmodel)[[1]]$library
             new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
@@ -210,7 +215,7 @@ for(gend.data in 21:gen.count){
                                        method = allmodel,
                                        trControl = adaptControl,
                                        tuneLength = tuneLength)
-            #SVMS crash cause mean needs na.rm to = T #
+           
             predicted.outcomes<-predict(trainedmodel, newdata=(testing))
             p <- data.frame(predicted.outcomes,testing)
             #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
@@ -226,14 +231,20 @@ for(gend.data in 21:gen.count){
             mae=MAE(p[,1],p[,2])
             
             wut=print(trainedmodel,selectCol=TRUE)
-            overRMSE=as.numeric(wut[wut[,length(wut[1,])]=="*",length(wut[1,])-3])
+            overRMSE=-1
+            try({overRMSE=as.numeric(wut[wut[,length(wut[1,])]=="*","RMSE"])})#length(wut[1,])-3]
             replace.overRMSE=1
             try({if(is.numeric(overRMSE)){replace.overRMSE=0}})
             if(replace.overRMSE==1){overRMSE=-1}
             if(length(overRMSE)<1){overRMSE=-1}
             
             #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
-            write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),round(overRMSE,digits = 3),round(RMSE,digits = 3),round(mae,digits = 3),date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune),
+            write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
+                        round(overRMSE,digits = 3),round(RMSE,digits = 3),round(mae,digits = 3),
+                        date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
+                        withextra,norming,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
+                        adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
+                        adaptControl$adaptive$min,trainedmodel$bestTune),
                         file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
                         eol = "\n", na = "NA", dec = ".", row.names = F,
                         col.names = F, qmethod = "double")
@@ -263,16 +274,20 @@ for(gend.data in 21:gen.count){
               mae=MAE(p[,1],p[,2])
               print(confusionMatrix(p[,1],p[,2]))
               
-              
+              overRMSE=-1
               wut=print(trainedmodel,selectCol=TRUE)
-              overRMSE=as.numeric(wut[wut[,length(wut[1,])]=="*",length(wut[1,])-3])
+              try({overRMSE=as.numeric(wut[wut[,length(wut[1,])]=="*","RMSE"])})#length(wut[1,])-
               replace.overRMSE=1
               try({if(is.numeric(overRMSE)){replace.overRMSE=0}})
               if(replace.overRMSE==1){overRMSE=-1}
               if(length(overRMSE)<1){overRMSE=-1}
               
               #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
-              write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),round(overRMSE,digits = 3),round(RMSE,digits = 3),round(mae,digits = 3),date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,RMSE.mean,simpleControl$search,seed.var,round(proc.time()[3]-when[3]),simpleControl$method,tuneLength2,simpleControl$number,"no rep","no min",trainedmodel$bestTune),
+              write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),round(overRMSE,digits = 3),
+                            round(RMSE,digits = 3),round(mae,digits = 3),date(),allmodel,column.to.predict,
+                            trans.y,datasource,missingdata,withextra,norming,RMSE.mean,simpleControl$search,
+                            seed.var,round(proc.time()[3]-when[3]),simpleControl$method,tuneLength2,
+                            simpleControl$number,"no rep","no min",trainedmodel$bestTune),
                           file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
                           eol = "\n", na = "NA", dec = ".", row.names = F,
                           col.names = F, qmethod = "double")
