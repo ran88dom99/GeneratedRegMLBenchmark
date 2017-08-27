@@ -1,8 +1,8 @@
 #ggplot: how  label, print to file
-exp.name<-"6th T332 100dp 6cv5hp rna 01"
+exp.name<-"7th T332 100dp 6cv5hp 40g rna nzv"
 mainDir<-getwd()
 subDir<-exp.name
-expiramentresults<-read.csv("gen test out 01col 6th like 5th.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+expiramentresults<-read.csv("gen test out.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
 dir.create(file.path(mainDir, subDir))
 setwd(file.path(mainDir, subDir))
 
@@ -34,7 +34,8 @@ library(ggplot2)
 z<-ggplot(I.fails.df, aes(y = I.fails.df[,4], x = reorder(I.fails.df[,1], I.fails.df[,5]))) + geom_point()+ coord_flip()
 z+ geom_point(colour="red",aes(I.fails.df[,1] ,I.fails.df[,3]),na.rm = TRUE)+
   geom_point(colour="blue",aes(I.fails.df[,1] ,I.fails.df[,2]))+
-  geom_point(colour="green",aes(I.fails.df[,1] ,(I.fails.df[,5]*.5*max(I.fails.df[,2]))))
+  geom_point(colour="green",aes(I.fails.df[,1] ,(I.fails.df[,5]*.5*max(I.fails.df[,2]))))+
+  ylab(paste("Failures, R %fail/NA, Bu Attempts, Bk NA, G Fails")) + xlab("")
 ggsave(paste(exp.name,"Fails.png", sep = ""),plot = last_plot(),scale = 3)
 
 #####time taken#####
@@ -60,9 +61,10 @@ not.interesting<-(time.df[,3]<40)
 I.time.df<-time.df[!not.interesting,]
 
 z<-ggplot(I.time.df, aes(y = I.time.df[,3], x = reorder(I.time.df[,1], I.time.df[,3]))) + geom_point()+ coord_flip()
-z+   geom_point(colour="blue",aes(I.time.df[,1] ,I.time.df[,2]))#+
-  geom_point(colour="red",aes(I.time.df[,1] ,I.time.df[,4]),na.rm = TRUE)
-#+
+z+   geom_point(colour="blue",aes(I.time.df[,1] ,I.time.df[,2]))+
+  ylab(paste("time taken in seconds, min and Median")) + xlab("")
+
+
   #geom_point(colour="green",aes(I.time.df[,1] ,(I.time.df[,6]/max(I.time.df[,6]))))
   ggsave(paste(exp.name,"Time.png", sep = ""),plot = last_plot(),scale = 3)
   
@@ -91,7 +93,9 @@ I.fails.df<-fails.df#[!not.interesting,]
 z<-ggplot(I.fails.df, aes(y = I.fails.df[,4], x = reorder(I.fails.df[,1], I.fails.df[,5]))) + geom_point()+ coord_flip()
 z+ geom_point(colour="green",aes(I.fails.df[,1] ,I.fails.df[,3]),na.rm = TRUE)+
   geom_point(colour="blue",aes(I.fails.df[,1] ,I.fails.df[,2]*170/max(I.fails.df[,2])))+
-  geom_point(colour="red",aes(I.fails.df[,1] ,(I.fails.df[,5]*.5*max(I.fails.df[,2]))))
+  geom_point(colour="red",aes(I.fails.df[,1] ,(I.fails.df[,5]*.5*max(I.fails.df[,2]))))+
+  ylab(paste("Failures, R %fail/NA, Bu Attempts, Bk NA, G Fails")) + xlab("")
+
 ggsave(paste(exp.name,"FailTask.png", sep = ""),plot = last_plot(),scale = 3)
 
 #####time taken by task#####
@@ -117,7 +121,8 @@ not.interesting<-(time.df[,3]<40)
 I.time.df<-time.df#[!not.interesting,]
 
 z<-ggplot(I.time.df, aes(y = I.time.df[,3], x = reorder(I.time.df[,1], I.time.df[,3]))) + geom_point()+ coord_flip()
-z+   geom_point(colour="blue",aes(I.time.df[,1] ,I.time.df[,2]))#+
+z+   geom_point(colour="blue",aes(I.time.df[,1] ,I.time.df[,2]))+
+  ylab(paste("time taken in seconds, min and Median")) + xlab("")
 ggsave(paste(exp.name,"TimeTask.png", sep = ""),plot = last_plot(),scale = 3)
 
 #geom_point(colour="red",aes(I.time.df[,1] ,I.time.df[,4]),na.rm = TRUE)
@@ -161,10 +166,11 @@ not.interesting<-(power.df[,6]<10)+ is.na(power.df[,6])
 I.power.df<-power.df[!not.interesting,]
 
 z<-ggplot(I.power.df, aes(y = I.power.df[,7], x = reorder(I.power.df[,1], I.power.df[,5]))) + geom_point()+ coord_flip()
-z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,5]),na.rm = TRUE)+
+z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,5]),na.rm = TRUE)+scale_x_discrete(position = "top")+
   geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,3]))+
   #geom_point(colour="purple",aes(I.power.df[,1] ,I.power.df[,3]))+
-  geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6])-.35)))
+  geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6])-.35)))+
+  ylab(paste("%MAE, Bk 90th quantile, R max, Bu median, G Suc.Attempts")) + xlab("")
 ggsave(paste(exp.name,"PowerTask.png", sep = ""),plot = last_plot(),scale = 3)
 
 ttdd<-data.frame()
@@ -178,7 +184,7 @@ ttdd<-ttdz[expiramentresults[,1]!="Fail",]
 p <- ggplot(as.data.frame(ttdd), aes(x=melt(ttdd)[,1],y=melt(ttdd)[,3]))
 p  +geom_boxplot(width=0.4) + stat_summary(fun.y = "mean", colour = "red", size = 1, geom = "point")+
   theme(axis.text.x=element_text(size=7, angle=270,hjust=0.95,vjust=0.2))+scale_x_discrete(position = "top")+
-  xlab(paste("task in",exp.name)) + ylab("detectability") + coord_flip()
+  xlab(paste("task in",exp.name)) + ylab("detectability MAE, boxplot and mean red dot") + coord_flip()
 
 ggsave(paste(exp.name,"PowerTaskMean.png", sep = ""),plot = last_plot(),scale = 3)
 #some algos are better at some category of tasks and missing them could affect statistic metric index
@@ -196,9 +202,9 @@ exp.res.noFZ<-exp.res.noF;exp.res.noFZ2<-exp.res.noF2
 for(countr in 1:length(exp.res.noFZ))
 {if(exp.res.noFZ[countr]<0) exp.res.noFZ[countr]<-0
   if(exp.res.noFZ2[countr]<0) exp.res.noFZ2[countr]<-0 }
-rel.res.diff<-(round((exp.res.noFZ-exp.res.noFZ2)/max((exp.res.noFZ)+(exp.res.noFZ2)),digits = 3))
-res.diff<-(round((exp.res.noFZ-exp.res.noFZ2),digits = 3))
-
+res.diff<-round((exp.res.noFZ-exp.res.noFZ2),digits = 3)
+rel.res.diff<-(round((exp.res.noFZ-exp.res.noFZ2)/(exp.res.noFZ+exp.res.noFZ2),digits = 3))
+rel.res.diff[is.na(rel.res.diff)]<-0
 
 diff.df<-data.frame()
 countr=0
@@ -219,7 +225,6 @@ for(algo in unique(Results.Defactor[,10]))
   fivenumber<-round(fivenum(rel.res.diff[only.algo],na.rm = T),digits = 3)
   diff.df[countr,9]<-(fivenumber[1]);diff.df[countr,10]<-(fivenumber[2])
   diff.df[countr,11]<-(fivenumber[3]);diff.df[countr,12]<-(fivenumber[4]);diff.df[countr,13]<-(fivenumber[5])
-  
   diff.df[countr,14]<-round(mean(rel.res.diff[only.algo],na.rm = T),digits = 3)
 }
 
@@ -233,18 +238,22 @@ write.table(diff.df,
 not.interesting<-(diff.df[,6]<10)+ is.na(diff.df[,6]) 
 I.diff.df<-diff.df#[!not.interesting,]
 
-z<-ggplot(I.diff.df, aes(y = I.diff.df[,5], x = reorder(I.diff.df[,1], I.diff.df[,5]))) + geom_point()+ coord_flip()
+z<-ggplot(I.diff.df, aes(y = I.diff.df[,4], x = reorder(I.diff.df[,1], I.diff.df[,8]))) + geom_point()+ coord_flip()
 z+ geom_point(colour="red",aes(I.diff.df[,1] ,I.diff.df[,8]),na.rm = TRUE)+
-  geom_point(colour="blue",aes(I.diff.df[,1] ,I.diff.df[,12]))+
-  geom_point(colour="green",aes(I.diff.df[,1] ,(I.diff.df[,14])))
+  geom_point(colour="blue",aes(I.diff.df[,1] ,I.diff.df[,6]))+
+  geom_point(colour="green",aes(I.diff.df[,1] ,(I.diff.df[,7])))+
+  ylab(paste("%MAE - %RMSE, Bk L.Quartile, R mean, Bu U.Quart, G max")) + xlab("")
 ggsave(paste(exp.name,"DiffTask.png", sep = ""),plot = last_plot(),scale = 3)
 
-#########acceptable minimum######
+#########acceptable minimum ######
 acceptablePloss<-.05
 lowestFindScore<-.1
 acceptAlgo.df<-data.frame()
 acceptAlgo.df[1,1]<-NA
 acceptAlgo.df[,c(1:400)]<-NA
+acceptAlgo.Rdf<-data.frame()
+acceptAlgo.Rdf[1,1]<-NA
+acceptAlgo.Rdf[,c(1:400)]<-NA
 countr=0
 for(algo in unique(expiramentresults[,10]))
 {
@@ -262,9 +271,17 @@ for(algo in unique(expiramentresults[,10]))
   acceptAlgo.df[countr,2]<-sum(acceptAlgo)
   acceptAlgo.df[countr,3]<-minAccept
   acceptAlgo.df[countr,4:(sum(acceptAlgo)+3)]<-as.character(expiramentresults[acceptAlgo,7])
+  acceptAlgo.Rdf[countr,4:(sum(acceptAlgo)+3)]<-as.numeric(as.character(expiramentresults[acceptAlgo,1]))
  }
+
+for(countr in 1:length(acceptAlgo.df[,3]))
+{
+  iti <- order(as.numeric(acceptAlgo.Rdf[countr,4:(acceptAlgo.df[countr,2]+3)]), decreasing = T)
+  acceptAlgo.df[countr,4:(acceptAlgo.df[countr,2]+3)]<-(acceptAlgo.df[countr,4:(acceptAlgo.df[countr,2]+3)])[iti]
+}
+
 iti <- order(acceptAlgo.df[,3],acceptAlgo.df[,2])
-acceptAlgo.df<-rbind(acceptAlgo.df)[iti,]
+#acceptAlgo.df<-rbind(acceptAlgo.df)[iti,]
 
 write.table(acceptAlgo.df,
             file = paste(exp.name,acceptablePloss,"MinNecessary.csv", sep = ""), append =F, quote = F, sep = ",",
@@ -340,7 +357,8 @@ z<-ggplot(I.power.df, aes(y = I.power.df[,2], x = reorder(I.power.df[,1], I.powe
   geom_point()+#+##+coord_flip()
   theme(axis.text.x=element_text(size=7, angle=270,hjust=0.95,vjust=0.2))+scale_x_discrete(position = "top")
 z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,8]),na.rm = TRUE)+
-  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,5]))+xlab("Learn power by task") + ylab("ord by mean") +
+  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,5]))+
+  xlab("") + ylab("%MAE, ord. by mean, G Succ.Attempts, Bk mean, Bu P R Max 90 80 quant of max for task") +
   geom_point(colour="purple",aes(I.power.df[,1] ,I.power.df[,9]))+
   geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6])-.45)))
 ggsave(paste(exp.name,"Power.png", sep = ""),plot = last_plot(),scale = 3)
@@ -353,7 +371,8 @@ z<-ggplot(I.power.df, aes(y = I.power.df[,2], x = reorder(I.power.df[,1], I.powe
   geom_point()+#+##+coord_flip()
   theme(axis.text.x=element_text(size=7, angle=270,hjust=0.95,vjust=0.2))+scale_x_discrete(position = "top")
 z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,8]),na.rm = TRUE)+
-  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,5]))+xlab("Learn power % of maximum by task") + ylab("ord by 80%") +
+  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,5]))+
+  xlab("") + ylab("%MAE, ord. by 80%, G Succ.Attempts, Bk mean, Bu P R Max 90 80 quant of max for task") +
   geom_point(colour="purple",aes(I.power.df[,1] ,I.power.df[,9]))+
   geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6])-.45)))
 ggsave(paste(exp.name,"PowerReorder.png", sep = ""),plot = last_plot(),scale = 3)
@@ -361,9 +380,10 @@ z<-ggplot(I.power.df, aes(y = I.power.df[,2], x = reorder(I.power.df[,1], I.powe
   geom_point()+#+##+coord_flip()
   theme(axis.text.x=element_text(size=7, angle=270,hjust=0.95,vjust=0.2))+scale_x_discrete(position = "top")
 z+ geom_point(colour="red",aes(I.power.df[,1] ,I.power.df[,8]),na.rm = TRUE)+
-  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,5]))+xlab("Learn power % of maximum by task") + ylab("ord by 90%") +
+  geom_point(colour="blue",aes(I.power.df[,1] ,I.power.df[,5]))+
+  xlab("") + ylab("%MAE, ord. by 90%, G Succ.Attempts, Bk mean, Bu P R Max 90 80 quant of max for task") +
   geom_point(colour="purple",aes(I.power.df[,1] ,I.power.df[,9]))+
   geom_point(colour="green",aes(I.power.df[,1] ,(I.power.df[,6]/max(I.power.df[,6])-.45)))
 ggsave(paste(exp.name,"PowerReorder2.png", sep = ""),plot = last_plot(),scale = 3)
-
+################end#######
 setwd(file.path(mainDir))
