@@ -3,6 +3,7 @@ exp.name<-"7th T332 100dp 6cv5hp 40g rna nzv"
 mainDir<-getwd()
 subDir<-exp.name
 expiramentresults<-read.csv("gen test out.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+gene.expect<-read.csv("gens names.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
 dir.create(file.path(mainDir, subDir))
 setwd(file.path(mainDir, subDir))
 
@@ -247,7 +248,7 @@ ggsave(paste(exp.name,"DiffTask.png", sep = ""),plot = last_plot(),scale = 3)
 
 #########acceptable minimum ######
 acceptablePloss<-.05
-lowestFindScore<-.1
+lowestFindScore<-.01
 acceptAlgo.df<-data.frame()
 acceptAlgo.df[1,1]<-NA
 acceptAlgo.df[,c(1:400)]<-NA
@@ -269,7 +270,7 @@ for(algo in unique(expiramentresults[,10]))
   acceptAlgo.df[countr,1]<-algo
   acceptAlgo<-as.logical((exp.res.noF>minAccept)*only.algo)
   acceptAlgo.df[countr,2]<-sum(acceptAlgo)
-  acceptAlgo.df[countr,3]<-minAccept
+  acceptAlgo.df[countr,3]<-power.df[taskSeek,5]
   acceptAlgo.df[countr,4:(sum(acceptAlgo)+3)]<-as.character(expiramentresults[acceptAlgo,7])
   acceptAlgo.Rdf[countr,4:(sum(acceptAlgo)+3)]<-as.numeric(as.character(expiramentresults[acceptAlgo,1]))
  }
@@ -282,8 +283,8 @@ for(countr in 1:length(acceptAlgo.df[,3]))
 
 iti <- order(acceptAlgo.df[,3],acceptAlgo.df[,2])
 #acceptAlgo.df<-rbind(acceptAlgo.df)[iti,]
-
-write.table(acceptAlgo.df,
+out<-data.frame(acceptAlgo.df[,1:2],gene.expect[,3],acceptAlgo.df[,3:length(acceptAlgo.df[1,])])
+write.table(out,
             file = paste(exp.name,acceptablePloss,"MinNecessary.csv", sep = ""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")

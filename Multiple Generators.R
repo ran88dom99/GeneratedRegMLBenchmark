@@ -372,7 +372,7 @@ write.table(round(simScores,digits  = 3),
 
 #####write alg names to file; last######
 out<-data.frame(gens.names,max.out)
-write.table(gens.names,
+write.table(out,
             file = "gens names.csv", append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = T,
             col.names = F, qmethod = "double")

@@ -82,16 +82,17 @@ allmodels <- unique(modelLookup()[modelLookup()$forReg,c(1)])
 
 
 adaptControl <- trainControl(method = "adaptive_cv",
-                             number = 8, repeats = 5,
+                             number = 7, repeats = 5,
                              adaptive = list(min = 4, alpha = 0.05,
                                              method = "gls", complete = FALSE),
                              search = "random")
-adaptControl <-trainControl(method = "cv",
-                            number = 6,
-                            search = "random")
+#adaptControl <-trainControl(method = "cv", number = 6,
+#                            search = "random")
 simpleControl <- trainControl(method = "cv",
-                              number = 6,
+                              number = 10,
                               search = "random")
+tuneLength=32
+tuneLength2=16
 
 
 seed.const=222+round(runif(1,min=0,max=100))
@@ -102,7 +103,7 @@ print(date());
 
 if(!exists("gen.count")){gen.count=40}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-for(gend.data in 33:34){
+for(gend.data in 7:40){
   data.source<-as.matrix(read.csv(paste(gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data]
   missingdatas=c("ignore")
@@ -170,9 +171,6 @@ for(gend.data in 33:34){
           if(length(nzv)>1){
           df.toprocess = (df.toprocess[, -nzv])}
           
-          tuneLength=5
-          tuneLength2=4
-          
           set.seed(seed.var)
           inTrain <- createDataPartition(y = df.toprocess[,1],
                                          p = .75,
@@ -193,6 +191,10 @@ for(gend.data in 33:34){
             slow.models=c("leapSeq","glmStepAIC","ppr","qrnn")#leapSeq
             if(allmodel %in% slow.models && datasource=="needles in haystack"){next()}#too slow for many columns
             if(allmodel %in% slow.models && datasource=="needles hay noise"){next()}#too slow for many columns
+            slow.models=c("qrnn")
+            if(allmodel %in% slow.models){next()}#too slow for much cv
+            noNA.models=c("kknn")#leapSeq
+            if(allmodel %in% noNA.models && datasource=="sparsity NA"){next()}#too slow for many columns
             
             seed.var=seed.var+1
             list.of.packages <-getModelInfo(allmodel)[[1]]$library

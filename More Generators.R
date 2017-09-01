@@ -356,10 +356,87 @@ max.out[gen.count]=1#1 err.sqd
 #OpenML mv.csv
 #OpenML 2dplanes.csv
 
+#######mlbench Boston Friedman#############
+library(mlbench)
+data("BostonHousing")
+summary("BostonHousing")
+is.data.frame(BostonHousing)
+BostonHow<-data.frame(BostonHousing[,14],BostonHousing[,1:13])
+gen.count=gen.count+1
+gens.names[gen.count]="Boston Housing"
+max.out[gen.count]=1
+write.table(round(BostonHow,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+
+F1<-mlbench.friedman1(Rows, sd=1)
+FF1<-data.frame(F1[["y"]],F1[[1]])
+gen.count=gen.count+1
+gens.names[gen.count]="Friedman's 1st"
+max.out[gen.count]=1
+write.table(round(FF1,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
 #friedman.1.data(n=Rows) #tgp package#
 #Friedman 1/80 generated for validation of MARS https://artax.karlin.mff.cuni.cz/r-help/library/tgp/html/friedman.1.data.html
 #first kaggle
 #kaggle MAL
+#######simulate reccomendation problem######
+gen.count=gen.count+1
+gens.names[gen.count]="Recc sim 1"
+max.out[gen.count]=1
+
+simPubs<-matrix(data = 0, nrow = 100, ncol = 10, byrow = FALSE,dimnames = NULL)
+simGames<-matrix(data = 0, nrow = Rows, ncol = 10, byrow = FALSE,dimnames = NULL)
+#simScores<-matrix(data = 0, nrow = Rows, ncol = 11, byrow = FALSE,dimnames = NULL)
+#generate based on latency, then missvote, then isotonic reg, then finaly sparsity 0
+
+for(Col in 1:100)
+{simPubs[Col,1:10]=rnorm(10, mean = 0, sd = 1)}
+for(Row in 1:Rows)
+{simGames[Row,1:10]=rnorm(10, mean = 0, sd = 1)}
+for(Col in 1:100){
+  for(Row in 1:Rows){
+    simScores[Row,Col]=sum(simPubs[Col,1]*simGames[Row,1],simPubs[Col,2]*simGames[Row,2],simPubs[Col,3]*simGames[Row,3])
+  }}
+
+for(Row in 1:Rows){
+  for(Col in 2:100){
+    simScores[Row,Col]=simScores[Row,Col]+rnorm(1, mean = 0, sd = .3)}
+}
+
+for(Col in 2:100){
+  q<-rnorm(1, mean = 0, sd = 1)
+  w<-rnorm(1, mean = 0, sd = 1)
+  p<-rnorm(1, mean = 0, sd = 1)
+  o<-rnorm(1, mean = 0, sd = 1)
+  A<-abs(rnorm(1, mean = 0, sd = .2))
+  B<-abs(rnorm(1, mean = 0, sd = .2))
+  C<-abs(rnorm(1, mean = 0, sd = .2))
+  D<-abs(rnorm(1, mean = 0, sd = .2))
+  for(Row in 1:Rows){
+    x<-simScores[Row,Col]
+    if(x>q) x=x+A
+    if(x>w) x=x+B
+    if(x>p) x=x+C
+    if(x>o) x=x+D
+    x->simScores[Row,Col]
+  }
+}
+
+for(Row in 1:Rows){
+  for(Col in 2:100){
+    if(runif(1, min = 0, max = 1)>.4) simScores[Row,Col]<-0
+  }
+}
+
+write.table(round(simScores,digits  = 3),
+            file = paste(gens.names[gen.count],".csv", sep = ""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+
 
 #######some users just vote everything they didnt hate at 9###
 #####nonuniform generating distributions###
@@ -368,7 +445,8 @@ max.out[gen.count]=1#1 err.sqd
 #######maximum possible accuracy####
 #since data is generated, maximum attainable is determinable
 #####write alg names to file; last######
-write.table(gens.names,
+out<-data.frame(gens.names,max.out)
+write.table(out,
             file = "gens names.csv", append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = T,
             col.names = F, qmethod = "double")
