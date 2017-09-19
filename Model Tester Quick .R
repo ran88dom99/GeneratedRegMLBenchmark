@@ -45,10 +45,6 @@ check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextr
   return(FALSE)
 }
 
-
-
-
-
 allmodels <- c("avNNet", "bagEarth", "bagEarthGCV",
                "bayesglm", "bdk", "blackboost", "Boruta", "brnn", "BstLm" ,
                "bstTree", "cforest", "ctree", "ctree2", "cubist", "DENFIS",
@@ -103,7 +99,7 @@ print(date());
 
 if(!exists("gen.count")){gen.count=40}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-for(gend.data in 7:40){
+for(gend.data in 32:34){
   data.source<-as.matrix(read.csv(paste(gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data]
   missingdatas=c("ignore")
@@ -188,7 +184,7 @@ for(gend.data in 7:40){
             if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
             library(caret) #mlp...s creat some bizzare problem that breaks caret::train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
             #penalized slow then fails
-            slow.models=c("leapSeq","glmStepAIC","ppr","qrnn")#leapSeq
+            slow.models=c("leapSeq","glmStepAIC","ppr","qrnn","cubist","plsRglm","WM","gamboost")#cubist, plsRglm,WM,gamboost  only sometimes
             if(allmodel %in% slow.models && datasource=="needles in haystack"){next()}#too slow for many columns
             if(allmodel %in% slow.models && datasource=="needles hay noise"){next()}#too slow for many columns
             slow.models=c("qrnn")
@@ -229,8 +225,8 @@ for(gend.data in 7:40){
             RMSE=RMSE(p[,1],p[,2])
             #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
             RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
-            #mae=mean(abs(p[,2]-p[,1]), na.rm = T)
-            mae=MAE(p[,1],p[,2])
+            #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
+            MMAAEE=MAE(p[,1],p[,2])
             
             wut=print(trainedmodel,selectCol=TRUE)
             overRMSE=-1
@@ -242,7 +238,7 @@ for(gend.data in 7:40){
             
             #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
             write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
-                        round(overRMSE,digits = 3),round(RMSE,digits = 3),round(mae,digits = 3),
+                        round(overRMSE,digits = 3),round(RMSE,digits = 3),round(MMAAEE,digits = 3),
                         date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
                         withextra,norming,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
                         adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
@@ -272,8 +268,8 @@ for(gend.data in 7:40){
               RMSE=RMSE(p[,1],p[,2])
               #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
               RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
-              #mae=mean(abs(p[,2]-p[,1]), na.rm = T)
-              mae=MAE(p[,1],p[,2])
+              #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
+              MMAAEE=MAE(p[,1],p[,2])
               print(confusionMatrix(p[,1],p[,2]))
               
               overRMSE=-1
@@ -286,7 +282,7 @@ for(gend.data in 7:40){
               
               #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
               write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),round(overRMSE,digits = 3),
-                            round(RMSE,digits = 3),round(mae,digits = 3),date(),allmodel,column.to.predict,
+                            round(RMSE,digits = 3),round(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
                             trans.y,datasource,missingdata,withextra,norming,RMSE.mean,simpleControl$search,
                             seed.var,round(proc.time()[3]-when[3]),simpleControl$method,tuneLength2,
                             simpleControl$number,"no rep","no min",trainedmodel$bestTune),

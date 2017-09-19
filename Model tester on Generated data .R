@@ -220,8 +220,8 @@ for(gend.data in 13:gen.count){
             RMSE=RMSE(p[,1],p[,2])
             #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
             RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
-            #mae=mean(abs(p[,2]-p[,1]), na.rm = T)
-            mae=MAE(p[,1],p[,2])
+            #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
+            MMAAEE=MAE(p[,1],p[,2])
 
             wut=print(trainedmodel,selectCol=TRUE)
             overRMSE=as.numeric(wut[wut[,length(wut[1,])]=="*",length(wut[1,])-3])
@@ -231,7 +231,7 @@ for(gend.data in 13:gen.count){
             if(length(overRMSE)<1){overRMSE=-1}
 
             #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
-            write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),round(overRMSE,digits = 3),round(RMSE,digits = 3),round(mae,digits = 3),date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune),
+            write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),round(overRMSE,digits = 3),round(RMSE,digits = 3),round(MMAAEE,digits = 3),date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune),
                         file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
                         eol = "\n", na = "NA", dec = ".", row.names = F,
                         col.names = F, qmethod = "double")
@@ -257,8 +257,8 @@ for(gend.data in 13:gen.count){
               RMSE=RMSE(p[,1],p[,2])
               #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
               RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
-              #mae=mean(abs(p[,2]-p[,1]), na.rm = T)
-              mae=MAE(p[,1],p[,2])
+              #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
+              MMAAEE=MAE(p[,1],p[,2])
               print(confusionMatrix(p[,1],p[,2]))
               
               
@@ -270,7 +270,7 @@ for(gend.data in 13:gen.count){
               if(length(overRMSE)<1){overRMSE=-1}
 
               #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
-              write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),round(overRMSE,digits = 3),round(RMSE,digits = 3),round(mae,digits = 3),date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,RMSE.mean,simpleControl$search,seed.var,round(proc.time()[3]-when[3]),simpleControl$method,tuneLength2,simpleControl$number,"no rep","no min",trainedmodel$bestTune),
+              write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),round(overRMSE,digits = 3),round(RMSE,digits = 3),round(MMAAEE,digits = 3),date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,RMSE.mean,simpleControl$search,seed.var,round(proc.time()[3]-when[3]),simpleControl$method,tuneLength2,simpleControl$number,"no rep","no min",trainedmodel$bestTune),
                           file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
                           eol = "\n", na = "NA", dec = ".", row.names = F,
                           col.names = F, qmethod = "double")
