@@ -379,9 +379,12 @@ write.table(round(FF1,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
+
+gen.count=gen.count+1
+gens.names[gen.count]="kaggle housing"
+max.out[gen.count]=.75
 #friedman.1.data(n=Rows) #tgp package#
 #Friedman 1/80 generated for validation of MARS https://artax.karlin.mff.cuni.cz/r-help/library/tgp/html/friedman.1.data.html
-#first kaggle
 #kaggle MAL
 #######simulate reccomendation problem######
 gen.count=gen.count+1

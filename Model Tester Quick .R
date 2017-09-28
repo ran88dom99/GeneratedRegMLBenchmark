@@ -82,10 +82,10 @@ adaptControl <- trainControl(method = "adaptive_cv",
                              adaptive = list(min = 4, alpha = 0.05,
                                              method = "gls", complete = FALSE),
                              search = "random")
-#adaptControl <-trainControl(method = "cv", number = 6,
-#                            search = "random")
+adaptControl <-trainControl(method = "cv", number = 3,
+                            search = "random")
 simpleControl <- trainControl(method = "cv",
-                              number = 10,
+                              number = 3,
                               search = "random")
 tuneLength=32
 tuneLength2=16
@@ -99,7 +99,7 @@ print(date());
 
 if(!exists("gen.count")){gen.count=40}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-for(gend.data in 32:34){
+for(gend.data in 30:40){
   data.source<-as.matrix(read.csv(paste(gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data]
   missingdatas=c("ignore")
@@ -184,11 +184,11 @@ for(gend.data in 32:34){
             if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
             library(caret) #mlp...s creat some bizzare problem that breaks caret::train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
             #penalized slow then fails
-            slow.models=c("leapSeq","glmStepAIC","ppr","qrnn","cubist","plsRglm","WM","gamboost")#cubist, plsRglm,WM,gamboost  only sometimes
+            slow.models=c("leapSeq","glmStepAIC","ppr","qrnn")#,"cubist","plsRglm","WM","gamboost")#cubist, plsRglm,WM,gamboost  only sometimes
             if(allmodel %in% slow.models && datasource=="needles in haystack"){next()}#too slow for many columns
             if(allmodel %in% slow.models && datasource=="needles hay noise"){next()}#too slow for many columns
             slow.models=c("qrnn")
-            if(allmodel %in% slow.models){next()}#too slow for much cv
+            #if(allmodel %in% slow.models){next()}#too slow for much cv
             noNA.models=c("kknn")#leapSeq
             if(allmodel %in% noNA.models && datasource=="sparsity NA"){next()}#too slow for many columns
             

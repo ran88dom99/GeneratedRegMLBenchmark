@@ -1,9 +1,9 @@
 #ggplot: how  label, print to file
-exp.name<-"7th T332 100dp 6cv5hp 40g rna nzv"
+exp.name<-"8th superlong 16n32 35adaptive rna nzv"
 mainDir<-getwd()
 subDir<-exp.name
-expiramentresults<-read.csv("gen test out.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
-gene.expect<-read.csv("gens names.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+expiramentresults<-read.csv("8th superlong 16n32 35adaptive.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+#gene.expect<-read.csv("gens names.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
 dir.create(file.path(mainDir, subDir))
 setwd(file.path(mainDir, subDir))
 
@@ -283,7 +283,8 @@ for(countr in 1:length(acceptAlgo.df[,3]))
 
 iti <- order(acceptAlgo.df[,3],acceptAlgo.df[,2])
 #acceptAlgo.df<-rbind(acceptAlgo.df)[iti,]
-out<-data.frame(acceptAlgo.df[,1:2],gene.expect[,3],acceptAlgo.df[,3:length(acceptAlgo.df[1,])])
+gene.expect[,3]<-1#,gene.expect[length(acceptAlgo.df[,1]),3]
+out<-data.frame(acceptAlgo.df[,1:2],acceptAlgo.df[,3:length(acceptAlgo.df[1,])])
 write.table(out,
             file = paste(exp.name,acceptablePloss,"MinNecessary.csv", sep = ""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,

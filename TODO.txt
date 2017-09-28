@@ -1,0 +1,150 @@
+pingpong pump mouthwash? antibacteria?  warm?
+DOC 
+SUN 
+mil/km per degree 10k km 6.25k mi
+lots
+
++3 way comparison should be available soon
++how to predict with hyperopt?
+
++batchtools search online ;compare graphs etc.
++just for luls a database for R
++maximal number of dps at which everything still works.... including with sparsity
++2d terrain map for strange interactions
++add housing
++add recc lab funksvd
+
++shouldn't loss cost error function depend on number of pubs reviewing a game?, so sampling based on that?
++and similarity + so an error detection system? or rather certainty prediction
++outside program to restart computer  
+
+???+OR fast randomness test
+---+and internal to keep track of fail algorithms.
+---+but first! automatic yes please dl update
+
++SVD and RMB feature creation as in Netflix Prize
++that one mlr tester had a program on github
++mlr no hyper serach if hypersearch fails
+
++Outliers and removing them based on 10% highest RMSE.... or cubist can be stacked on SQRT()? no algos do not work like this... will need a split
+
++read?write up on the type of relations the methods can detect
+-+Polynoms!?! use formula interface and poly()
+-+one model works when a column is over 5 points, another when under. how do I resolve that?! CUBIST
+--expirament:lots of little highest R2=.75, R1=.65 but highest always split though many algorithms .4 both. conditional reaction; sometimes copies one set sometimes another
+--X: if C1 low C2 represents
+-can the median(with only a few columns) and mean subtraction be detected? and plain random?
+--+generation model of 10 pubs 3 elements and 100 games
+
+-probably skip this completely and just check RMSE and ME don't correct before calculating.
++Convert from quantile and range into "original"  
++Convert between 0-40 and real original and maybe 
+-+the rescaling of each publication score, but if it does not help then do not bother with deviation equalization
+--leave the subtraction median with MC part of the calc but MC missing, so hopeufully just using subtraction does not work.
+-+test for prediction based on genera and other things that should not matter; none.both. and only other metrics.; what pub is really pointless
+
+-move MAE before date, add MAE absolute, MAE relative 1-
+-time counting for each calc
+
+-Test all algorithms and maybe find out why some dont work(seems to be a case of too big data; need big pc?)
+-was mlmetrics really a good idea? get back if predictions are very personal
+-i think mean will have to be recalculated to hide target column's influence. 
+-median from scratch ?
+
++MLR, adaptive hyperparam picking?
++perhaps i set the wrong aim? ABD test should aim for average diffferenc? that is check decomposition?
++check if quantile ever works better. actualy check if anything ever works better. only work on it if theres a chance
++split score and # of reviews off stats, to show what is clearly cause,also test decompositionability
+
++test how long accidental success takes.
+
++Test with random seed and many more crossvalidations?? on a much bigger computer.
++multistacking. (its another for loop like data representation)
+++error insted of prediction for each model to stack itself?
+++(picking models)
++confidence of any given prediction
+++models of prediction of error rate
+
++why doesn't bartmachine work?
++the other filter reccomendation systems
++column importance
+
+stacks=c("nostack","prestackA","prestackB","stack1","errorcorrection","errorprediction")
+for (stack in stacks)
+...
+if statement transforms test/training into A train and B train
+...
+IF! save predictions into correct database part....How do I recombine vectors?
+save errors too.
+
+include checks for previous calculation... except don't.
+
++Make an interface
+++first pubs with similar focus
+++here develop choosing number based on MAE. 
+++INTERPRETABLE PREDICTION; then lowest RMSE?  or ME . but using CV or maybe testing split. CV adjusts for those rare mistakes too? Knn i think its called.
+++ULTIMATE BLACKBOX PREDICTION; finaly revert bagged boosted stacked orchestrated to find most important pubs including using L1OUT
++advise badly chosen scores
+++ANOMALY DETECTION; MicroS says One-class svm -> 100 features agressive boundry, PCA based anomaly detection.
+++MUST INCLUDE PROOF, a printout of all scores by user and pubs that may effect him ordered by most effective...
+++++actual maximum rated game
+++resort userinput based on config and previouse use
+
+read config
+read main
+read user input
+read column.names
+reduce data to only important rows
+sort columns by # reviews
+Function "proof"(prints your scores and all closest pubs scores)
+calculate rmse of naivest methods(averages and means and medians)
+calculate genera sufficiencys (and print them?)
+?calculate all the funy score adjustments including outliers.
+Function printout selected columns
+	calculate 5,5,5 extremes
+	calculate sucess rates
+	transpose print to file inc date based name
+--------------------require would be better
+list.of.packages <- c("xx", "yy") # replace xx and yy with package names
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, dep = TRUE) 
+lapply(new.packages, require, character.only=T)
+-----------------------require(pkg) || install.packages(pkg) 
+usePackage <- function(p) 
+{
+  if (!is.element(p, installed.packages()[,1]))
+    install.packages(p, dep = TRUE)
+  require(p, character.only = TRUE)
+}
+	
+#sort #split and recombine when stacking
+	
+stats.rows<- as.data.frame(x=read.csv("all statistic columns.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+dummies <- dummyVars(V4 ~ ., data = stats.rows)
+stats.rows<-data.frame(stats.rows[,4],predict(dummies, newdata = stats.rows))
+preProcValues= preProcess(stats.rows,method = "medianImpute")
+stats.rows<- predict(preProcValues, stats.rows)
+
+#?as.data.frame(x=read.csv("all statistic columns.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+column.names<-as.data.frame(x=read.csv("all statistic columns.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+users.config<-as.matrix(read.csv("26340 transform right tail 0 t 40  .csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+data.source<-as.matrix(read.csv("26340 transform right tail 0 t 40  .csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+user.revscor<-as.matrix(read.csv("26340 transform right tail 0 t 40  .csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+
+column.to.predict=1
+df.data=data.frame(user.revscor[,3] ,data.source[,])
+      
+  user.scor.select=complete.cases(df.data[,column.to.predict])
+  df.data=data.frame(df.data[user.scor.select,])
+
+#sort by mpg (ascending) and cyl (descending)
+newdata <- mtcars[order(mpg, -cyl),]
+
+
+
+in the above 99% avNNET-only-0-1 pcaNNet-only-0-1  BstLm cubist earth enet glmboost icr kernelpls lasso pcr pls
+
+random is random, pcr ? detects mean to 40%rmse vs mean. median best 7%. elements most 100%. 
+
+
+install.packages.compile.from.source: Used by install.packages(type = "both") (and indirectly update.packages) on platforms which support binary packages. Possible values are "never", "interactive" (which means ask in interactive use and "never" in batch use) and "always". The default is taken from environment variable R_COMPILE_AND_INSTALL_PACKAGES, with default "interactive" if unset. However, install.packages uses "never" unless a make program is found, consulting the environment variable MAKE.

@@ -1,6 +1,7 @@
-R.utils::gcDLLs()
-list.of.packages <- c("ParamHelpers","devtools")
-#list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
+#R.utils::gcDLLs()
+#list.of.packages <- c("ParamHelpers","devtools","mlrMBO","RJSONIO","plot3D","plotly")
+#install.packages("mlrMBO", dependencies = c("Depends", "Suggests"))
+list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
@@ -8,15 +9,21 @@ if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 library(mlr)
 library(mlbench)
+library(mlrHyperopt)
 configureMlr(on.learner.error = "warn")
 regr.task = makeRegrTask(id = "recc", data = training, target = "V1")
 
-hyper.control<-makeHyperControl(mlr.control = makeTuneControlRandom(maxit = 20),
-                                resampling = cv3,
-                                measures = mse)
-library(mlrHyperopt)
-res = hyperopt(regr.task, learner = "regr.svm", hyper.control =hyper.control)
-res
+tuneLength=32
+resampler<-makeResampleDesc("CV",iters=3)
+hyper.control<-makeHyperControl(mlr.control = makeTuneControlIrace(maxExperiments=5L),#makeTuneControlRandom(maxit=tuneLength)
+                                resampling = resampler,
+                                measures = rmse)
+hyper.control.rand<-makeHyperControl(mlr.control = makeTuneControlRandom(maxit=tuneLength),
+                                resampling = resampler,
+                                measures = rmse)
+
+#res = hyperopt(regr.task, learner = "regr.svm", hyper.control =hyper.control)
+#res
 
 mlrallmodels<-listLearners("regr")
 ######for all mlr models########
@@ -57,9 +64,56 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
     if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel)){next}}
   not.failed=0
   set.seed(seed.var)
-  try({mod<-train(allmodel, regr.task)#hyperopt(regr.task, learner = allmodel, hyper.control =hyper.control)
-
+  try({mod<-hyperopt(regr.task, learner = allmodel, hyper.control =hyper.control.rand)
+#train(allmodel, regr.task)
   
+  write.table(mod$y,
+              file = "hyperopt.csv", append =TRUE, quote = F, sep = ",",
+              eol = "\n", na = "NA", dec = ".", row.names = F,
+              col.names = F, qmethod = "double")
+  lrn = setHyperPars(makeLearner(allmodel), par.vals = mod$x)
+  m = train(lrn, regr.task)
+ 
+  #keep rmse but train new model on mod$x's parameters
+  
+  predicted.outcomes<-predict(m, newdata=(testing))
+  p <- data.frame(predicted.outcomes$data[,2],testing[,1])
+  #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
+  Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
+  #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
+  mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],mean(p[,2], na.rm = T))
+  p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
+  #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
+  RMSE=RMSE(p[,1],p[,2])
+  #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
+  RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
+  #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
+  MMAAEE=MAE(p[,1],p[,2])
+  
+  
+  overRMSE=-1
+  overRMSE<-mod$y
+  #if(replace.overRMSE==1){overRMSE=-1}
+  if(length(overRMSE)<1){overRMSE=-1}
+  
+  #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
+  write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
+                round(overRMSE,digits = 3),round(RMSE,digits = 3),round(MMAAEE,digits = 3),
+                date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
+                withextra,norming,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
+                adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
+                adaptControl$adaptive$min,mod$x),
+              file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+              eol = "\n", na = "NA", dec = ".", row.names = F,
+              col.names = F, qmethod = "double")
+  print(date())
+  not.failed=1
+  })
+  
+  #if hyperopt failed just use no hypering
+  try({if(not.failed==0) {
+  mod<-  train(allmodel, regr.task)
+
   predicted.outcomes<-predict(mod, newdata=(testing))
   p <- data.frame(predicted.outcomes$data[,2],testing[,1])
   #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
@@ -76,23 +130,25 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   
   
   overRMSE=-1
-  if(replace.overRMSE==1){overRMSE=-1}
+  #if(replace.overRMSE==1){overRMSE=-1}
   if(length(overRMSE)<1){overRMSE=-1}
+  NoAp<-"NoAp"
+  NoHyper<-"nohyperparam"
   
   #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
-  write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
+  write.table(paste(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
                 round(overRMSE,digits = 3),round(RMSE,digits = 3),round(MMAAEE,digits = 3),
                 date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
-                withextra,norming,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
+                withextra,norming,RMSE.mean,NoHyper,seed.var,round(proc.time()[3]-when[3]),
                 adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
-                adaptControl$adaptive$min,trainedmodel$bestTune),
+                adaptControl$adaptive$min, sep = ","),
               file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
               eol = "\n", na = "NA", dec = ".", row.names = F,
               col.names = F, qmethod = "double")
+  
   print(date())
   not.failed=1
-  })
-  
+  }})
   if(not.failed==0) {
     print(c("failed","failed",date(),datasource,missingdata,withextra,norming,allmodel))
     write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,round(proc.time()[3]-when[3]),  sep = ","),

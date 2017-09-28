@@ -130,6 +130,23 @@ write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
+######poly C1^3 + C1^2 + C1 ########
+gen.count=gen.count+1
+gens.names[gen.count]="poly C1^3 + C1^2 + C1"
+max.out[gen.count]=1
+for(Row in 1:Rows){
+  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+}
+coef1<-rnorm(1, mean = 0, sd = 1);coef2<-rnorm(1, mean = 0, sd = 1);
+coef3<-rnorm(1, mean = 0, sd = 1);
+
+for(Row in 1:Rows){
+  simScores[Row,1]=coef1*simScores[Row,2]^3+coef2*simScores[Row,2]^2+coef3*simScores[Row,2]
+}
+write.table(round(simScores,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
 ######poly C1 t C2 ########
 gen.count=gen.count+1
 gens.names[gen.count]="poly C1 t C2"
@@ -284,7 +301,7 @@ write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-######ifs C1 & C2 based on C1#####
+######ifs C1 & C2 based on C3#####
 gen.count=gen.count+1
 gens.names[gen.count]="ifs C1 & C2 on C1"
 max.out[gen.count]=1
