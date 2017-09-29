@@ -5,6 +5,8 @@
 #try(log("a"))
 
 
+########packages install check######
+library(caret)
 list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
 #list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
@@ -18,6 +20,7 @@ if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
 # Load libraries
 #library(mlbench)
+
 library(caret)
 #library(caretEnsemble)
 library(MLmetrics)
@@ -29,7 +32,7 @@ if(last.alg==before.last.alg){print("algorithm may be broken")}
 write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 })
 
-#make sure not to redo a test
+#######not to redo a test function#####
 check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextra="missing",missingdata="leaveempty",datasource="mean" ,column.to.predict=200,allmodel="ctree")
 {
   for(intern in 1:length(df[,1])){
@@ -44,7 +47,7 @@ check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextr
   }
   return(FALSE)
 }
-
+#####caret init#####
 allmodels <- c("avNNet", "bagEarth", "bagEarthGCV",
                "bayesglm", "bdk", "blackboost", "Boruta", "brnn", "BstLm" ,
                "bstTree", "cforest", "ctree", "ctree2", "cubist", "DENFIS",
@@ -66,7 +69,7 @@ allmodels <- c("avNNet","BstLm","bstTree","cforest","ctree","ctree2",
                "icr","kernelpls","kknn","lasso","pcaNNet",
                "pcr","pls","qrf","ranger","rf")
 
-#allmodels <- c("ranger")#"BstLm","enet","lasso",
+allmodels <- c("BstLm")#"","enet","lasso",
 #allmodels <- c("rf")"rqlasso",, "xyf" "rvmPoly", "rvmRadial",    "spls", "superpc" ,   "treebag",  "svmLinear2",  "SBC",
 #allmodels <- c("bartMachine", "xgbLinear", "pcaNNet","svmLinear","glmnet","cforest","cubist","rf","ranger")"glmnet",
 #wow rfRules is really slow "rfRules","WM", takes 50min
@@ -88,18 +91,21 @@ simpleControl <- trainControl(method = "cv",
                               number = 3,
                               search = "random")
 tuneLength=32
-tuneLength2=16
+tuneLength2=32
 
 
+
+
+
+#######data read process start#####
 seed.const=222+round(runif(1,min=0,max=100))
 seed.var=seed.const
 column.to.predict=1
-
 print(date());
 
 if(!exists("gen.count")){gen.count=40}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-for(gend.data in 30:40){
+for(gend.data in 4:40){
   data.source<-as.matrix(read.csv(paste(gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data]
   missingdatas=c("ignore")
@@ -175,14 +181,15 @@ for(gend.data in 30:40){
           testing  <- df.toprocess[-inTrain,]
           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F,col.names = F)
           
+
           
-          ######for all models########
+###########for all models#################
           for(allmodel in allmodels){#just before all models define d.f and reduce it
             write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
             bad.models=c("DENFIS","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
             #too slow neuralnet# dnfis useless and just stops on huge datasets
             if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
-            library(caret) #mlp...s creat some bizzare problem that breaks caret::train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
+            library(caret) #mlp...s creat some bizzare problem that breaks train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
             #penalized slow then fails
             slow.models=c("leapSeq","glmStepAIC","ppr","qrnn")#,"cubist","plsRglm","WM","gamboost")#cubist, plsRglm,WM,gamboost  only sometimes
             if(allmodel %in% slow.models && datasource=="needles in haystack"){next()}#too slow for many columns
@@ -191,8 +198,22 @@ for(gend.data in 30:40){
             #if(allmodel %in% slow.models){next()}#too slow for much cv
             noNA.models=c("kknn")#leapSeq
             if(allmodel %in% noNA.models && datasource=="sparsity NA"){next()}#too slow for many columns
-            
+
+          
             seed.var=seed.var+1
+            if(length(df.previous.calcs[,1])>0){
+              if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel)){next}}
+
+        
+            # unloading the NS 'object'
+            pkgs = names(sessionInfo()$otherPkgs) 
+            #pkgs = paste('package:', pkgs, sep = "")#detach
+            lapply(pkgs, unloadNamespace)#, character.only = TRUE, unload = TRUE)
+            library(caret)
+            #library(caretEnsemble)
+            library(MLmetrics)
+            gc()
+                        
             list.of.packages <-getModelInfo(allmodel)[[1]]$library
             new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
             if(length(new.packages)) install.packages(new.packages, dep = TRUE)
@@ -204,8 +225,6 @@ for(gend.data in 30:40){
               next()}
             when<-proc.time()
             
-            if(length(df.previous.calcs[,1])>0){
-              if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel)){next}}
             not.failed=0
             set.seed(seed.var)
             try({trainedmodel <- train(x=data.frame(training[,2:length(training[1,])]),
@@ -310,7 +329,16 @@ for(gend.data in 30:40){
                           file = "backup.csv", append =TRUE, quote = F, sep = ",",
                           eol = "\n", na = "NA", dec = ".", row.names = F,
                           col.names = F, qmethod = "double")}
-          }}}}}}
+          }
+          
+          #source("MLR part.R")
+        }
+        }
+      }
+    }
+  
+}
+##########end#########
 #stopCluster(cl)
 ## reset message sink and close the file connection
 sink(type="message")

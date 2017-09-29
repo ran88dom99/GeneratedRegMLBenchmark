@@ -4,6 +4,11 @@ SUN
 mil/km per degree 10k km 6.25k mi
 lots
 
++ c_dfRowsToList , bad unload causes memory leak
+
++avnnet, nnet , pcannet, maybe glm.nb foba WM qrnn
++msaenet, svmlinear 2&3 relaxo xgbtree superpc SBC? BstLm?
+
 +3 way comparison should be available soon
 +how to predict with hyperopt?
 
@@ -11,8 +16,8 @@ lots
 +just for luls a database for R
 +maximal number of dps at which everything still works.... including with sparsity
 +2d terrain map for strange interactions
-+add housing
-+add recc lab funksvd
+-add kaggle housing
++add recc lab funksvd or netflix svd features?
 
 +shouldn't loss cost error function depend on number of pubs reviewing a game?, so sampling based on that?
 +and similarity + so an error detection system? or rather certainty prediction

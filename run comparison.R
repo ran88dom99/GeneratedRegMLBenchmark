@@ -1,9 +1,9 @@
 #load data
-exp.name<-"7th range01 vs asis"
+exp.name<-"8th range01 vs asis"
 mainDir<-getwd()
 subDir<-exp.name
 expiramentresults<-data.frame()
-expiramentresults<-(read.csv("7th range01 vs asis.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".",stringsAsFactors=F))
+expiramentresults<-(read.csv("8th superlong 16n32 35adaptive asis vs range.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".",stringsAsFactors=F))
 dir.create(file.path(mainDir, subDir))
 setwd(file.path(mainDir, subDir))
 

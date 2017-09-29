@@ -1,3 +1,4 @@
+#########MLR init######
 #R.utils::gcDLLs()
 #list.of.packages <- c("ParamHelpers","devtools","mlrMBO","RJSONIO","plot3D","plotly")
 #install.packages("mlrMBO", dependencies = c("Depends", "Suggests"))
@@ -7,25 +8,35 @@ if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
+pkgs = names(sessionInfo()$otherPkgs) 
+if(length(pkgs)>0){
+  print(data())
+  pkgs = paste('package:', pkgs, sep = "")
+  lapply(pkgs, detach, character.only = TRUE, unload = TRUE)
+}
+library(ParamHelpers)
 library(mlr)
 library(mlbench)
 library(mlrHyperopt)
+library(MLmetrics)
 configureMlr(on.learner.error = "warn")
 regr.task = makeRegrTask(id = "recc", data = training, target = "V1")
 
-tuneLength=32
+tuneLengthMLR=32
 resampler<-makeResampleDesc("CV",iters=3)
 hyper.control<-makeHyperControl(mlr.control = makeTuneControlIrace(maxExperiments=5L),#makeTuneControlRandom(maxit=tuneLength)
                                 resampling = resampler,
                                 measures = rmse)
-hyper.control.rand<-makeHyperControl(mlr.control = makeTuneControlRandom(maxit=tuneLength),
-                                resampling = resampler,
-                                measures = rmse)
+hyper.control.rand<-makeHyperControl(mlr.control = makeTuneControlRandom(maxit=tuneLengthMLR),
+                                     resampling = resampler,
+                                     measures = rmse)
 
 #res = hyperopt(regr.task, learner = "regr.svm", hyper.control =hyper.control)
 #res
 
 mlrallmodels<-listLearners("regr")
+#mlrallmodels<-"regr.bartMachine"
+
 ######for all mlr models########
 for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce it
   write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
@@ -44,11 +55,18 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   
   seed.var=seed.var+1
   
-
+  if(length(df.previous.calcs[,1])>0){
+    if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel)){next}}
+  
   error.pack=0
   try({list.of.packages <-getLearnerPackages(allmodel)
   error.pack=1})
-  if(error.pack==0){next()}
+  if(error.pack==0){
+    write.table(paste("Fail","Fail","Fail","Fail","PrePackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,round(proc.time()[3]-when[3]),  sep = ","),
+                file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+                eol = "\n", na = "NA", dec = ".", row.names = F,
+                col.names = F, qmethod = "double")
+    next()}
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
   if(length(new.packages)) install.packages(new.packages, dep = TRUE)
   if(length(list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])])){
@@ -65,12 +83,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   not.failed=0
   set.seed(seed.var)
   try({mod<-hyperopt(regr.task, learner = allmodel, hyper.control =hyper.control.rand)
-#train(allmodel, regr.task)
-  
-  write.table(mod$y,
-              file = "hyperopt.csv", append =TRUE, quote = F, sep = ",",
-              eol = "\n", na = "NA", dec = ".", row.names = F,
-              col.names = F, qmethod = "double")
+
   lrn = setHyperPars(makeLearner(allmodel), par.vals = mod$x)
   m = train(lrn, regr.task)
  
