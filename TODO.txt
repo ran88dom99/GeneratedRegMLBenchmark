@@ -4,13 +4,15 @@ SUN
 mil/km per degree 10k km 6.25k mi
 lots
 
-+ c_dfRowsToList , bad unload causes memory leak
++ c_dfRowsToList , bad unload causes memory leak?
++ c() in importance.csv or why append a vector to file seperates each scalar to a new line.
 
 +avnnet, nnet , pcannet, maybe glm.nb foba WM qrnn
 +msaenet, svmlinear 2&3 relaxo xgbtree superpc SBC? BstLm?
 
+
 +3 way comparison should be available soon
-+how to predict with hyperopt?
+-how to predict with hyperopt?; train with new parameters
 
 +batchtools search online ;compare graphs etc.
 +just for luls a database for R

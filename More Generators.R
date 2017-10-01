@@ -4,6 +4,8 @@ library(caret)
 gen.count=gen.count+1
 gens.names[gen.count]="mean subtraction in each row"
 max.out[gen.count]=1#1 err.sqd
+varim=c(1,1,1,1,1,1,1,1,1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
   me.sim.sub=mean(simScores[Row,1:10],na.rm=T)
@@ -19,6 +21,8 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="median subtraction in each row"
 max.out[gen.count]=.29#.43 err.sqd
+varim=c(1,1,1,1,1,1,1,1,1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
   me.sim.sub=median(simScores[Row,1:10],na.rm=T)
@@ -34,6 +38,8 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="rescale 4 poly"
 max.out[gen.count]=0#0 err.sqd
+varim=c(1,1,1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -58,6 +64,8 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="rescale isotonic addition"
 max.out[gen.count]=.5#.8 err.sqd
+varim=c(1,1,1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -86,6 +94,8 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="rescale isotonic addition ran bin"
 max.out[gen.count]=.5#.8 err.sqd
+varim=c(1,1,1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -118,6 +128,8 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="noise in predictors"
 max.out[gen.count]=.7#.91 err.sqd
+varim=c(1,1,1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -136,6 +148,8 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="outliers"
 max.out[gen.count]=.6#.24 err.sqd
+varim=c(1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -155,6 +169,8 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="colinerity unnecessary"
 max.out[gen.count]=1
+varim=c(1,1,1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -174,6 +190,8 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1#almost identical to "noise in predictors"
 gens.names[gen.count]="colinerity middle is correct"
 max.out[gen.count]=.8#.96 err.sqd
+varim=c(1,1,1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -193,6 +211,8 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="Spread thinly"
 max.out[gen.count]=1
+varim=c(1,1,1,1,1,1,1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -215,6 +235,9 @@ a<-round(runif(10, min = 0, max = 1000))
 for(Row in 1:Rows){
   simScores[Row,1]=.1*simScores[Row,a[1]]+.1*simScores[Row,a[2]]+.1*simScores[Row,a[3]]+.1*simScores[Row,a[4]]+.1*simScores[Row,a[5]]+.1*simScores[Row,a[6]]+.1*simScores[Row,a[7]]+.1*simScores[Row,a[8]]+.1*simScores[Row,a[9]]
 }
+varim=vector(mode ="numeric",length = 999)
+varim[a]<-1
+varimport[gen.count,1:length(varim)]=varim #EXPECT ERRORS HERE
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
@@ -236,6 +259,9 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,2:1000]=simScores[Row,2:1000]+rnorm(999, mean = 0, sd = .3)
 }
+varim=vector(mode ="numeric",length = 999)
+varim[a]<-1
+varimport[gen.count,1:length(varim)]=varim #EXPECT ERRORS HERE
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
@@ -248,6 +274,8 @@ simScores[,11]<-1
 gen.count=gen.count+1
 gens.names[gen.count]="sparsity NA"
 max.out[gen.count]=.44#.62 me^2
+varim=c(1,1,1,1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -267,6 +295,8 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="sparsity 0"
 max.out[gen.count]=.54#.7 me^2
+varim=c(1,1,1,1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -286,6 +316,8 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="sparsity 20"
 max.out[gen.count]=.5#.65 me^2
+varim=c(1,1,1,1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -305,6 +337,8 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="quantilization"
 max.out[gen.count]=.1#.1 err.sqd
+varim=c(1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -320,6 +354,8 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="composite 1"
 max.out[gen.count]=.21#.42
+varim=c(1,1)
+varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
@@ -335,6 +371,8 @@ write.table(round(simScores1,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="composite 2"
 max.out[gen.count]=.21#.42
+varim=c(1,1)
+varimport[gen.count,1:length(varim)]=varim
 write.table(round(simScores2,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
@@ -342,6 +380,8 @@ write.table(round(simScores2,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="composite complete"
 max.out[gen.count]=1
+varim=c(1,1,1,1)
+varimport[gen.count,1:length(varim)]=varim
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
@@ -452,4 +492,8 @@ out<-data.frame(gens.names,max.out)
 write.table(out,
             file = "gens names.csv", append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = T,
+            col.names = F, qmethod = "double")
+write.table(varimport,
+            file = "gens names.csv", append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")

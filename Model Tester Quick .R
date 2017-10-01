@@ -105,7 +105,7 @@ print(date());
 
 if(!exists("gen.count")){gen.count=40}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-for(gend.data in 4:40){
+for(gend.data in 8:40){
   data.source<-as.matrix(read.csv(paste(gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data]
   missingdatas=c("ignore")
@@ -207,8 +207,8 @@ for(gend.data in 4:40){
         
             # unloading the NS 'object'
             pkgs = names(sessionInfo()$otherPkgs) 
-            #pkgs = paste('package:', pkgs, sep = "")#detach
-            lapply(pkgs, unloadNamespace)#, character.only = TRUE, unload = TRUE)
+            pkgs = paste('package:', pkgs, sep = "")#detach
+            lapply(pkgs,  detach, character.only = TRUE, unload = TRUE)
             library(caret)
             #library(caretEnsemble)
             library(MLmetrics)
@@ -328,7 +328,27 @@ for(gend.data in 4:40){
               write.table(paste("Succ",date(),allmodel,  sep = ", "),
                           file = "backup.csv", append =TRUE, quote = F, sep = ",",
                           eol = "\n", na = "NA", dec = ".", row.names = F,
-                          col.names = F, qmethod = "double")}
+                          col.names = F, qmethod = "double")
+              fail.try=T
+              try({
+              #noVarImp.models=c("parRF")#var imp crashes with these models
+              #if(allmodel %in% noVarImp.models){next()}#
+              if(mean.improvement<0){mean.improvement=0}
+              varimportant<-varImp(trainedmodel)
+              write.table(paste(allmodel,date(),mean.improvement,datasource,varimportant$importance,  sep = ", "),
+                          file = "importance.csv", append =TRUE, quote = F, sep = ",",
+                          eol = "\n", na = "NA", dec = ".", row.names = F,
+                          col.names = F, qmethod = "double")
+              fail.try=F
+              })
+              if(fail.try==T){
+                write.table(paste(allmodel,date(),mean.improvement,datasource,"Failed",  sep = ", "),
+                            file = "importance.csv", append =TRUE, quote = F, sep = ",",
+                            eol = "\n", na = "NA", dec = ".", row.names = F,
+                            col.names = F, qmethod = "double")
+              }
+              }
+            
           }
           
           #source("MLR part.R")
