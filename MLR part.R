@@ -1,13 +1,4 @@
-#########MLR init######
-#R.utils::gcDLLs()
-#list.of.packages <- c("ParamHelpers","devtools","mlrMBO","RJSONIO","plot3D","plotly")
-#install.packages("mlrMBO", dependencies = c("Depends", "Suggests"))
-list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
-#devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
-#devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 pkgs = names(sessionInfo()$otherPkgs) 
 if(length(pkgs)>0){
   print(data())
@@ -21,9 +12,9 @@ library(mlrHyperopt)
 library(MLmetrics)
 configureMlr(on.learner.error = "warn")
 regr.task = makeRegrTask(id = "recc", data = training, target = "V1")
+mlrallmodels<-listLearners("regr")
 
-tuneLengthMLR=32
-resampler<-makeResampleDesc("CV",iters=3)
+resampler<-makeResampleDesc("CV",iters=mlr.iters)
 hyper.control<-makeHyperControl(mlr.control = makeTuneControlIrace(maxExperiments=5L),#makeTuneControlRandom(maxit=tuneLength)
                                 resampling = resampler,
                                 measures = rmse)
@@ -34,8 +25,18 @@ hyper.control.rand<-makeHyperControl(mlr.control = makeTuneControlRandom(maxit=t
 #res = hyperopt(regr.task, learner = "regr.svm", hyper.control =hyper.control)
 #res
 
-mlrallmodels<-listLearners("regr")
 #mlrallmodels<-"regr.bartMachine"
+fv = generateFilterValuesData(regr.task, 
+                              method = c("mrmr","randomForestSRC.rfsrc",
+                                         "univariate.model.score"),
+                              nselect<-10)#,,"permutation.importance","randomForestSRC.var.select"
+                                         
+plotFilterValues(fv)#issues errors"cforest.importance",,more.args = list(imp.learner<-"regr.cubist")
+write.table(paste("mlr",date(),datasource,fv$data,  sep = ", "),
+            file = "importancemlr.csv", append =TRUE, quote = F, sep = ",",
+            eol = "\n", na = "NA", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+
 
 ######for all mlr models########
 for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce it

@@ -60,10 +60,12 @@ write.table(time.df,
             col.names = F, qmethod = "double")
 not.interesting<-(time.df[,3]<40) 
 I.time.df<-time.df[!not.interesting,]
+time.df[,2]<-log(time.df[,2])
+time.df[,3]<-log(time.df[,3])
 
 z<-ggplot(I.time.df, aes(y = I.time.df[,3], x = reorder(I.time.df[,1], I.time.df[,3]))) + geom_point()+ coord_flip()
 z+   geom_point(colour="blue",aes(I.time.df[,1] ,I.time.df[,2]))+
-  ylab(paste("time taken in seconds, min and Median")) + xlab("")
+  ylab(paste("time taken in log seconds, min and Median")) + xlab("")
 
 
   #geom_point(colour="green",aes(I.time.df[,1] ,(I.time.df[,6]/max(I.time.df[,6]))))

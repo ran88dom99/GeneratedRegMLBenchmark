@@ -1326,34 +1326,34 @@ leapBackward, Mon Oct 02 21:41:53 2017, 0.474, ifs C2 & C3t2 on C4g1.5, 100, 7.6
 lm, Mon Oct 02 21:42:08 2017, 0.361, ifs C2 & C3t2 on C4g1.5, 100, 30.7, 8.9, 11.9, 0, 4.4, 18.2, 14.5, 5.9
 lmStepAIC, Mon Oct 02 21:42:13 2017, 0.361, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
 nnet, Mon Oct 02 21:43:06 2017, 0.452, ifs C2 & C3t2 on C4g1.5, 55.1, 56.3, 100, 32.9, 45.8, 39.5, 41.3, 20, 0
-parRF, Mon Oct 02 21:43:24 2017, 0.65, ifs C2 & C3t2 on C4g1.5, Failed
+parRF, Mon Oct 02 21:43:24 2017, 0.65, ifs C2 & C3t2 on C4g1.5, 
 pcaNNet, Mon Oct 02 21:43:40 2017, 0.212, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
 pcr, Mon Oct 02 21:43:45 2017, 0.395, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
 plsRglm, Mon Oct 02 21:44:30 2017, 0.497, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
 ppr, Mon Oct 02 21:44:48 2017, 0.392, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
 qrf, Mon Oct 02 21:45:19 2017, 0.337, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
 qrnn, Mon Oct 02 22:10:04 2017, 0.731, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
-ranger, Mon Oct 02 22:10:16 2017, 0.615, ifs C2 & C3t2 on C4g1.5, Failed
+ranger, Mon Oct 02 22:10:16 2017, 0.615, ifs C2 & C3t2 on C4g1.5, 
 Rborist, Mon Oct 02 22:11:35 2017, 0.624, ifs C2 & C3t2 on C4g1.5, 100, 13.6, 21.7, 10.5, 2, 0.9, 2.1, 3.1, 0
 relaxo, Mon Oct 02 22:11:44 2017, 0.274, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
-rf, Mon Oct 02 22:11:54 2017, 0.701, ifs C2 & C3t2 on C4g1.5, Failed
+rf, Mon Oct 02 22:11:54 2017, 0.701, ifs C2 & C3t2 on C4g1.5, 
 ridge, Mon Oct 02 22:12:01 2017, 0.362, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
 rlm, Mon Oct 02 22:12:07 2017, 0.546, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
 rpart, Mon Oct 02 22:12:12 2017, 0.306, ifs C2 & C3t2 on C4g1.5, 100, 23.5, 17, 20.8, 9.4, 0, 0, 0, 0
 rpart1SE, Mon Oct 02 22:12:18 2017, 0.216, ifs C2 & C3t2 on C4g1.5, 0, 100, 74.9, 43.8, 61.8, 95.6, 25.7, 6.3, 66.1
 rpart2, Mon Oct 02 22:12:23 2017, 0.306, ifs C2 & C3t2 on C4g1.5, 100, 23.5, 17, 20.8, 9.4, 0, 0, 0, 0
-RRF, Mon Oct 02 22:13:07 2017, 0.483, ifs C2 & C3t2 on C4g1.5, Failed
-RRFglobal, Mon Oct 02 22:13:27 2017, 0.542, ifs C2 & C3t2 on C4g1.5, Failed
+RRF, Mon Oct 02 22:13:07 2017, 0.483, ifs C2 & C3t2 on C4g1.5, 
+RRFglobal, Mon Oct 02 22:13:27 2017, 0.542, ifs C2 & C3t2 on C4g1.5, 
 simpls, Mon Oct 02 22:16:06 2017, 0.366, ifs C2 & C3t2 on C4g1.5, 100, 30, 0, 17.7, 6.9, 5.2, 11.2, 22.5, 6.4
 spikeslab, Mon Oct 02 22:16:28 2017, 0.477, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
 spls, Mon Oct 02 22:16:38 2017, 0.474, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
 superpc, Mon Oct 02 22:16:44 2017, 0, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
-svmLinear, Mon Oct 02 22:18:07 2017, NA, ifs C2 & C3t2 on C4g1.5, Failed
+svmLinear, Mon Oct 02 22:18:07 2017, NA, ifs C2 & C3t2 on C4g1.5, 
 svmLinear3, Mon Oct 02 22:18:30 2017, 0.333, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
-svmPoly, Mon Oct 02 22:18:40 2017, NA, ifs C2 & C3t2 on C4g1.5, Failed
-svmRadial, Mon Oct 02 22:18:50 2017, NA, ifs C2 & C3t2 on C4g1.5, Failed
-svmRadialCost, Mon Oct 02 22:19:00 2017, NA, ifs C2 & C3t2 on C4g1.5, Failed
-svmRadialSigma, Mon Oct 02 22:19:10 2017, NA, ifs C2 & C3t2 on C4g1.5, Failed
+svmPoly, Mon Oct 02 22:18:40 2017, NA, ifs C2 & C3t2 on C4g1.5, 
+svmRadial, Mon Oct 02 22:18:50 2017, NA, ifs C2 & C3t2 on C4g1.5, 
+svmRadialCost, Mon Oct 02 22:19:00 2017, NA, ifs C2 & C3t2 on C4g1.5, 
+svmRadialSigma, Mon Oct 02 22:19:10 2017, NA, ifs C2 & C3t2 on C4g1.5, 
 treebag, Mon Oct 02 22:19:27 2017, 0.444, ifs C2 & C3t2 on C4g1.5, 0, 100, 24.3, 30.1, 23.3, 16.7, 12.8, 20, 29.7
 widekernelpls, Mon Oct 02 22:19:33 2017, 0.36, ifs C2 & C3t2 on C4g1.5, 100, 30, 0, 17.7, 6.9, 5.2, 11.2, 22.5, 6.4
 WM, Mon Oct 02 22:23:34 2017, 0, ifs C2 & C3t2 on C4g1.5, 100, 7.6, 4.1, 15.4, 9.1, 18.1, 0, 12.5, 7.8
@@ -1392,31 +1392,31 @@ lasso, Mon Oct 02 22:50:11 2017, 0.548, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2,
 lm, Mon Oct 02 22:50:30 2017, 0.514, ifs C2 & C3t2 on C4g1.5, 100, 21.5, 23.6, 16.6, 7.8, 7.9, 0, 7.7, 8.7
 lmStepAIC, Mon Oct 02 22:50:36 2017, 0.528, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2, 0, 11.6, 21.7, 2, 21.4, 3.9
 nnet, Mon Oct 02 22:51:17 2017, 0.215, ifs C2 & C3t2 on C4g1.5, 100, 18.1, 57.1, 0, 12.1, 8.6, 13.9, 8.8, 6.1
-parRF, Mon Oct 02 22:51:35 2017, 0.635, ifs C2 & C3t2 on C4g1.5, Failed
+parRF, Mon Oct 02 22:51:35 2017, 0.635, ifs C2 & C3t2 on C4g1.5, 
 pcaNNet, Mon Oct 02 22:51:52 2017, 0.212, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2, 0, 11.6, 21.7, 2, 21.4, 3.9
 pcr, Mon Oct 02 22:51:57 2017, 0.51, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2, 0, 11.6, 21.7, 2, 21.4, 3.9
 plsRglm, Mon Oct 02 22:52:41 2017, 0.537, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2, 0, 11.6, 21.7, 2, 21.4, 3.9
 ppr, Mon Oct 02 22:52:58 2017, 0.5, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2, 0, 11.6, 21.7, 2, 21.4, 3.9
 qrf, Mon Oct 02 22:53:29 2017, 0.479, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2, 0, 11.6, 21.7, 2, 21.4, 3.9
 qrnn, Mon Oct 02 23:18:24 2017, 0.689, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2, 0, 11.6, 21.7, 2, 21.4, 3.9
-ranger, Mon Oct 02 23:18:36 2017, 0.647, ifs C2 & C3t2 on C4g1.5, Failed
+ranger, Mon Oct 02 23:18:36 2017, 0.647, ifs C2 & C3t2 on C4g1.5, 
 relaxo, Mon Oct 02 23:18:49 2017, 0.511, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2, 0, 11.6, 21.7, 2, 21.4, 3.9
-rf, Mon Oct 02 23:18:58 2017, 0.634, ifs C2 & C3t2 on C4g1.5, Failed
+rf, Mon Oct 02 23:18:58 2017, 0.634, ifs C2 & C3t2 on C4g1.5, 
 ridge, Mon Oct 02 23:19:06 2017, 0.501, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2, 0, 11.6, 21.7, 2, 21.4, 3.9
 rlm, Mon Oct 02 23:19:12 2017, 0.689, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2, 0, 11.6, 21.7, 2, 21.4, 3.9
 rpart, Mon Oct 02 23:19:17 2017, 0.254, ifs C2 & C3t2 on C4g1.5, 100, 25.8, 15.1, 13.6, 16.6, 0, 0, 0, 0
 rpart1SE, Mon Oct 02 23:19:23 2017, 0.21, ifs C2 & C3t2 on C4g1.5, 32.4, 83, 44.6, 100, 26.1, 25.4, 30.5, 32.3, 0
 rpart2, Mon Oct 02 23:19:28 2017, 0.254, ifs C2 & C3t2 on C4g1.5, 100, 25.8, 15.1, 13.6, 16.6, 0, 0, 0, 0
-RRF, Mon Oct 02 23:20:12 2017, 0.682, ifs C2 & C3t2 on C4g1.5, Failed
-RRFglobal, Mon Oct 02 23:20:31 2017, 0.566, ifs C2 & C3t2 on C4g1.5, Failed
+RRF, Mon Oct 02 23:20:12 2017, 0.682, ifs C2 & C3t2 on C4g1.5, 
+RRFglobal, Mon Oct 02 23:20:31 2017, 0.566, ifs C2 & C3t2 on C4g1.5, 
 simpls, Mon Oct 02 23:23:19 2017, 0.532, ifs C2 & C3t2 on C4g1.5, 100, 20.5, 33.7, 5, 3.6, 3.1, 11.6, 19.9, 0
 spls, Mon Oct 02 23:23:35 2017, 0.557, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2, 0, 11.6, 21.7, 2, 21.4, 3.9
 superpc, Mon Oct 02 23:23:41 2017, 0.104, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2, 0, 11.6, 21.7, 2, 21.4, 3.9
-svmLinear, Mon Oct 02 23:24:48 2017, NA, ifs C2 & C3t2 on C4g1.5, Failed
-svmPoly, Mon Oct 02 23:25:09 2017, NA, ifs C2 & C3t2 on C4g1.5, Failed
-svmRadial, Mon Oct 02 23:25:20 2017, NA, ifs C2 & C3t2 on C4g1.5, Failed
-svmRadialCost, Mon Oct 02 23:25:30 2017, NA, ifs C2 & C3t2 on C4g1.5, Failed
-svmRadialSigma, Mon Oct 02 23:25:40 2017, NA, ifs C2 & C3t2 on C4g1.5, Failed
+svmLinear, Mon Oct 02 23:24:48 2017, NA, ifs C2 & C3t2 on C4g1.5, 
+svmPoly, Mon Oct 02 23:25:09 2017, NA, ifs C2 & C3t2 on C4g1.5, 
+svmRadial, Mon Oct 02 23:25:20 2017, NA, ifs C2 & C3t2 on C4g1.5, 
+svmRadialCost, Mon Oct 02 23:25:30 2017, NA, ifs C2 & C3t2 on C4g1.5, 
+svmRadialSigma, Mon Oct 02 23:25:40 2017, NA, ifs C2 & C3t2 on C4g1.5, 
 treebag, Mon Oct 02 23:25:57 2017, 0.54, ifs C2 & C3t2 on C4g1.5, 23.2, 100, 24, 35.2, 6.8, 23.8, 22.4, 0, 6.3
 widekernelpls, Mon Oct 02 23:26:02 2017, 0.513, ifs C2 & C3t2 on C4g1.5, 100, 20.5, 33.7, 5, 3.6, 3.1, 11.6, 19.9, 0
 WM, Mon Oct 02 23:29:56 2017, 0.123, ifs C2 & C3t2 on C4g1.5, 100, 7.5, 16.2, 0, 11.6, 21.7, 2, 21.4, 3.9
@@ -1455,34 +1455,34 @@ lasso, Tue Oct 03 00:04:45 2017, 0.324, ifs C1&C2 on random, 100, 32.3, 19, 9.4,
 lm, Tue Oct 03 00:05:05 2017, 0.374, ifs C1&C2 on random, 100, 54.3, 9.4, 4, 4.6, 7, 11.7, 0.3, 0
 lmStepAIC, Tue Oct 03 00:05:12 2017, 0.354, ifs C1&C2 on random, 100, 32.3, 19, 9.4, 1.9, 0, 0.8, 6.3, 5.9
 nnet, Tue Oct 03 00:05:55 2017, 0.406, ifs C1&C2 on random, 100, 98.6, 94.4, 0, 40.7, 68, 48.6, 37.9, 11
-parRF, Tue Oct 03 00:06:13 2017, 0.428, ifs C1&C2 on random, Failed
+parRF, Tue Oct 03 00:06:13 2017, 0.428, ifs C1&C2 on random, 
 pcaNNet, Tue Oct 03 00:06:32 2017, 0.387, ifs C1&C2 on random, 100, 32.3, 19, 9.4, 1.9, 0, 0.8, 6.3, 5.9
 pcr, Tue Oct 03 00:06:38 2017, 0.331, ifs C1&C2 on random, 100, 32.3, 19, 9.4, 1.9, 0, 0.8, 6.3, 5.9
 plsRglm, Tue Oct 03 00:07:18 2017, 0.349, ifs C1&C2 on random, 100, 32.3, 19, 9.4, 1.9, 0, 0.8, 6.3, 5.9
 ppr, Tue Oct 03 00:07:36 2017, 0.259, ifs C1&C2 on random, 100, 32.3, 19, 9.4, 1.9, 0, 0.8, 6.3, 5.9
 qrf, Tue Oct 03 00:08:06 2017, 0.007, ifs C1&C2 on random, 100, 32.3, 19, 9.4, 1.9, 0, 0.8, 6.3, 5.9
 qrnn, Tue Oct 03 00:30:57 2017, 0.609, ifs C1&C2 on random, 100, 32.3, 19, 9.4, 1.9, 0, 0.8, 6.3, 5.9
-ranger, Tue Oct 03 08:21:58 2017, 0.302, ifs C1&C2 on random, Failed
+ranger, Tue Oct 03 08:21:58 2017, 0.302, ifs C1&C2 on random, 
 Rborist, Tue Oct 03 08:23:29 2017, 0.278, ifs C1&C2 on random, 100, 19, 9, 4.1, 2.7, 1.1, 0, 5.4, 2.2
 relaxo, Tue Oct 03 08:23:39 2017, 0.327, ifs C1&C2 on random, 100, 39.7, 20, 12.7, 5, 0, 0.9, 22.8, 9
-rf, Tue Oct 03 08:23:50 2017, 0.241, ifs C1&C2 on random, Failed
+rf, Tue Oct 03 08:23:50 2017, 0.241, ifs C1&C2 on random, 
 ridge, Tue Oct 03 08:23:59 2017, 0.305, ifs C1&C2 on random, 100, 39.7, 20, 12.7, 5, 0, 0.9, 22.8, 9
 rlm, Tue Oct 03 08:24:06 2017, 0.509, ifs C1&C2 on random, 100, 39.7, 20, 12.7, 5, 0, 0.9, 22.8, 9
 rpart, Tue Oct 03 08:24:14 2017, 0.236, ifs C1&C2 on random, 17.9, 100, 24.9, 18.9, 18.2, 0, 0, 0, 0
 rpart1SE, Tue Oct 03 08:24:21 2017, 0.192, ifs C1&C2 on random, 0, 100, 22.9, 18.1, 4.8, 3.8, 18.5, 9, 55.7
 rpart2, Tue Oct 03 08:24:30 2017, 0.236, ifs C1&C2 on random, 17.9, 100, 24.9, 18.9, 18.2, 0, 0, 0, 0
-RRF, Tue Oct 03 08:25:23 2017, 0.302, ifs C1&C2 on random, Failed
-RRFglobal, Tue Oct 03 08:25:46 2017, 0.308, ifs C1&C2 on random, Failed
+RRF, Tue Oct 03 08:25:23 2017, 0.302, ifs C1&C2 on random, 
+RRFglobal, Tue Oct 03 08:25:46 2017, 0.308, ifs C1&C2 on random, 
 simpls, Tue Oct 03 08:28:25 2017, 0.205, ifs C1&C2 on random, 100, 27.5, 19.9, 0, 17.7, 5.2, 0.1, 24, 21.1
 spikeslab, Tue Oct 03 08:28:47 2017, 0.335, ifs C1&C2 on random, 100, 39.7, 20, 12.7, 5, 0, 0.9, 22.8, 9
 spls, Tue Oct 03 08:29:00 2017, 0.403, ifs C1&C2 on random, 100, 39.7, 20, 12.7, 5, 0, 0.9, 22.8, 9
 superpc, Tue Oct 03 08:29:09 2017, 0, ifs C1&C2 on random, 100, 39.7, 20, 12.7, 5, 0, 0.9, 22.8, 9
-svmLinear, Tue Oct 03 08:30:07 2017, NA, ifs C1&C2 on random, Failed
+svmLinear, Tue Oct 03 08:30:07 2017, NA, ifs C1&C2 on random, 
 svmLinear3, Tue Oct 03 08:30:30 2017, 0.361, ifs C1&C2 on random, 100, 39.7, 20, 12.7, 5, 0, 0.9, 22.8, 9
-svmPoly, Tue Oct 03 08:30:43 2017, NA, ifs C1&C2 on random, Failed
-svmRadial, Tue Oct 03 08:30:56 2017, NA, ifs C1&C2 on random, Failed
-svmRadialCost, Tue Oct 03 08:31:07 2017, NA, ifs C1&C2 on random, Failed
-svmRadialSigma, Tue Oct 03 08:31:21 2017, NA, ifs C1&C2 on random, Failed
+svmPoly, Tue Oct 03 08:30:43 2017, NA, ifs C1&C2 on random, 
+svmRadial, Tue Oct 03 08:30:56 2017, NA, ifs C1&C2 on random, 
+svmRadialCost, Tue Oct 03 08:31:07 2017, NA, ifs C1&C2 on random, 
+svmRadialSigma, Tue Oct 03 08:31:21 2017, NA, ifs C1&C2 on random, 
 treebag, Tue Oct 03 08:31:42 2017, 0.34, ifs C1&C2 on random, 19.1, 100, 26.2, 28.1, 21.2, 25.7, 6.7, 0, 32.2
 widekernelpls, Tue Oct 03 08:31:51 2017, 0.301, ifs C1&C2 on random, 100, 28.1, 19.9, 0, 18.3, 6.3, 0, 24.2, 21.9
 WM, Tue Oct 03 09:05:53 2017, 0.084, ifs C1&C2 on random, 100, 20.2, 23.1, 8.3, 0, 2.2, 4.5, 4.6, 6.5
@@ -1532,31 +1532,31 @@ msaenet, Tue Oct 03 09:31:10 2017, 0.35, ifs C1&C2 on random, 0
 msaenet, Tue Oct 03 09:31:10 2017, 0.35, ifs C1&C2 on random, 0
 msaenet, Tue Oct 03 09:31:10 2017, 0.35, ifs C1&C2 on random, 0
 nnet, Tue Oct 03 09:31:25 2017, 0.022, ifs C1&C2 on random, 100, 71.1, 29.1, 0, 12.2, 38.4, 46, 34.1, 64.4
-parRF, Tue Oct 03 09:31:45 2017, 0.41, ifs C1&C2 on random, Failed
+parRF, Tue Oct 03 09:31:45 2017, 0.41, ifs C1&C2 on random, 
 pcaNNet, Tue Oct 03 09:32:01 2017, 0.03, ifs C1&C2 on random, 100, 49, 10.7, 24, 3.2, 1.4, 5.4, 6.5, 0
 pcr, Tue Oct 03 09:32:06 2017, 0.315, ifs C1&C2 on random, 100, 49, 10.7, 24, 3.2, 1.4, 5.4, 6.5, 0
 plsRglm, Tue Oct 03 09:32:59 2017, 0.329, ifs C1&C2 on random, 100, 49, 10.7, 24, 3.2, 1.4, 5.4, 6.5, 0
 ppr, Tue Oct 03 09:33:16 2017, 0.349, ifs C1&C2 on random, 100, 49, 10.7, 24, 3.2, 1.4, 5.4, 6.5, 0
 qrf, Tue Oct 03 09:33:48 2017, 0, ifs C1&C2 on random, 100, 49, 10.7, 24, 3.2, 1.4, 5.4, 6.5, 0
 qrnn, Tue Oct 03 09:56:09 2017, 0.644, ifs C1&C2 on random, 100, 49, 10.7, 24, 3.2, 1.4, 5.4, 6.5, 0
-ranger, Tue Oct 03 09:56:24 2017, 0.404, ifs C1&C2 on random, Failed
+ranger, Tue Oct 03 09:56:24 2017, 0.404, ifs C1&C2 on random, 
 relaxo, Tue Oct 03 09:56:39 2017, 0.351, ifs C1&C2 on random, 100, 49, 10.7, 24, 3.2, 1.4, 5.4, 6.5, 0
-rf, Tue Oct 03 09:56:48 2017, 0.457, ifs C1&C2 on random, Failed
+rf, Tue Oct 03 09:56:48 2017, 0.457, ifs C1&C2 on random, 
 ridge, Tue Oct 03 09:56:57 2017, 0.328, ifs C1&C2 on random, 100, 49, 10.7, 24, 3.2, 1.4, 5.4, 6.5, 0
 rlm, Tue Oct 03 09:57:03 2017, 0.644, ifs C1&C2 on random, 100, 49, 10.7, 24, 3.2, 1.4, 5.4, 6.5, 0
 rpart, Tue Oct 03 09:57:11 2017, 0.258, ifs C1&C2 on random, 100, 44.3, 32.8, 11.4, 17.5, 0, 0, 0, 0
 rpart1SE, Tue Oct 03 09:57:16 2017, 0.254, ifs C1&C2 on random, 27.7, 89.5, 100, 25.7, 26.4, 31.6, 72.9, 83.9, 0
 rpart2, Tue Oct 03 09:57:22 2017, 0.258, ifs C1&C2 on random, 100, 44.3, 32.8, 11.4, 17.5, 0, 0, 0, 0
-RRF, Tue Oct 03 09:58:08 2017, 0.4, ifs C1&C2 on random, Failed
-RRFglobal, Tue Oct 03 09:58:29 2017, 0.237, ifs C1&C2 on random, Failed
+RRF, Tue Oct 03 09:58:08 2017, 0.4, ifs C1&C2 on random, 
+RRFglobal, Tue Oct 03 09:58:29 2017, 0.237, ifs C1&C2 on random, 
 simpls, Tue Oct 03 10:01:15 2017, 0.321, ifs C1&C2 on random, 100, 50.1, 11, 8.7, 8.7, 1.1, 16, 16, 0
 spls, Tue Oct 03 10:01:34 2017, 0.347, ifs C1&C2 on random, 100, 49, 10.7, 24, 3.2, 1.4, 5.4, 6.5, 0
 superpc, Tue Oct 03 10:01:40 2017, 0.081, ifs C1&C2 on random, 100, 49, 10.7, 24, 3.2, 1.4, 5.4, 6.5, 0
-svmLinear, Tue Oct 03 10:02:25 2017, NA, ifs C1&C2 on random, Failed
-svmPoly, Tue Oct 03 10:03:20 2017, NA, ifs C1&C2 on random, Failed
-svmRadial, Tue Oct 03 10:03:30 2017, NA, ifs C1&C2 on random, Failed
-svmRadialCost, Tue Oct 03 10:03:43 2017, NA, ifs C1&C2 on random, Failed
-svmRadialSigma, Tue Oct 03 10:03:53 2017, NA, ifs C1&C2 on random, Failed
+svmLinear, Tue Oct 03 10:02:25 2017, NA, ifs C1&C2 on random, 
+svmPoly, Tue Oct 03 10:03:20 2017, NA, ifs C1&C2 on random, 
+svmRadial, Tue Oct 03 10:03:30 2017, NA, ifs C1&C2 on random, 
+svmRadialCost, Tue Oct 03 10:03:43 2017, NA, ifs C1&C2 on random, 
+svmRadialSigma, Tue Oct 03 10:03:53 2017, NA, ifs C1&C2 on random, 
 treebag, Tue Oct 03 10:04:12 2017, 0.377, ifs C1&C2 on random, 0, 100, 51.3, 25.8, 14.5, 12.1, 28.7, 15.1, 22.4
 widekernelpls, Tue Oct 03 10:04:20 2017, 0.321, ifs C1&C2 on random, 100, 50.1, 11, 8.7, 8.7, 1.1, 16, 16, 0
 WM, Tue Oct 03 10:08:21 2017, 0.299, ifs C1&C2 on random, 100, 49, 10.7, 24, 3.2, 1.4, 5.4, 6.5, 0
@@ -1595,35 +1595,35 @@ lasso, Tue Oct 03 10:40:10 2017, 0.007, ifs nested 2 layer, 63.5, 23.8, 46, 100,
 lm, Tue Oct 03 10:40:34 2017, 0.029, ifs nested 2 layer, 7.6, 65.5, 30.2, 19.9, 100, 17.4, 46.5, 0.6, 0
 lmStepAIC, Tue Oct 03 10:40:43 2017, 0.07, ifs nested 2 layer, 63.5, 23.8, 46, 100, 66, 1.8, 41.8, 0, 41.3
 nnet, Tue Oct 03 10:41:24 2017, 0, ifs nested 2 layer, 0, 51.8, 36.7, 15.9, 100, 8.9, 35.2, 1.2, 0.9
-parRF, Tue Oct 03 10:41:49 2017, 0.024, ifs nested 2 layer, Failed
+parRF, Tue Oct 03 10:41:49 2017, 0.024, ifs nested 2 layer, 
 pcaNNet, Tue Oct 03 10:42:08 2017, 0, ifs nested 2 layer, 63.5, 23.8, 46, 100, 66, 1.8, 41.8, 0, 41.3
 pcr, Tue Oct 03 10:42:15 2017, 0.004, ifs nested 2 layer, 63.5, 23.8, 46, 100, 66, 1.8, 41.8, 0, 41.3
 plsRglm, Tue Oct 03 10:42:58 2017, 0.032, ifs nested 2 layer, 63.5, 23.8, 46, 100, 66, 1.8, 41.8, 0, 41.3
 ppr, Tue Oct 03 10:43:18 2017, 0.099, ifs nested 2 layer, 63.5, 23.8, 46, 100, 66, 1.8, 41.8, 0, 41.3
 qrf, Tue Oct 03 10:43:51 2017, 0, ifs nested 2 layer, 63.5, 23.8, 46, 100, 66, 1.8, 41.8, 0, 41.3
 qrnn, Tue Oct 03 11:05:43 2017, 0, ifs nested 2 layer, 63.5, 23.8, 46, 100, 66, 1.8, 41.8, 0, 41.3
-ranger, Tue Oct 03 11:05:58 2017, 0.024, ifs nested 2 layer, Failed
+ranger, Tue Oct 03 11:05:58 2017, 0.024, ifs nested 2 layer, 
 relaxo, Tue Oct 03 11:06:13 2017, 0, ifs nested 2 layer, 63.5, 23.8, 46, 100, 66, 1.8, 41.8, 0, 41.3
-rf, Tue Oct 03 11:06:24 2017, 0.029, ifs nested 2 layer, Failed
+rf, Tue Oct 03 11:06:24 2017, 0.029, ifs nested 2 layer, 
 ridge, Tue Oct 03 11:06:32 2017, 0.033, ifs nested 2 layer, 63.5, 23.8, 46, 100, 66, 1.8, 41.8, 0, 41.3
 rlm, Tue Oct 03 11:06:42 2017, 0.019, ifs nested 2 layer, 63.5, 23.8, 46, 100, 66, 1.8, 41.8, 0, 41.3
-rpart, Tue Oct 03 11:06:51 2017, 0, ifs nested 2 layer, Failed
+rpart, Tue Oct 03 11:06:51 2017, 0, ifs nested 2 layer, 
 rpart1SE, Tue Oct 03 11:07:01 2017, 0, ifs nested 2 layer, 16.6, 54.7, 100, 59.9, 68.4, 35.6, 44.7, 37.3, 0
 rpart2, Tue Oct 03 11:07:06 2017, 0, ifs nested 2 layer, 23.1, 61.6, 39.2, 100, 30.2, 0, 0, 0, 0
-RRF, Tue Oct 03 11:07:54 2017, 0.029, ifs nested 2 layer, Failed
-RRFglobal, Tue Oct 03 11:08:22 2017, 0.033, ifs nested 2 layer, Failed
+RRF, Tue Oct 03 11:07:54 2017, 0.029, ifs nested 2 layer, 
+RRFglobal, Tue Oct 03 11:08:22 2017, 0.033, ifs nested 2 layer, 
 simpls, Tue Oct 03 11:11:19 2017, 0.023, ifs nested 2 layer, 4, 51.2, 41.3, 19.6, 100, 12.5, 35, 5.1, 0
 spls, Tue Oct 03 11:11:34 2017, 0.022, ifs nested 2 layer, 63.5, 23.8, 46, 100, 66, 1.8, 41.8, 0, 41.3
-svmLinear, Tue Oct 03 11:12:17 2017, NA, ifs nested 2 layer, Failed
-svmPoly, Tue Oct 03 11:12:45 2017, NA, ifs nested 2 layer, Failed
-svmRadial, Tue Oct 03 11:13:00 2017, NA, ifs nested 2 layer, Failed
-svmRadialCost, Tue Oct 03 11:13:14 2017, NA, ifs nested 2 layer, Failed
-svmRadialSigma, Tue Oct 03 11:13:28 2017, NA, ifs nested 2 layer, Failed
+svmLinear, Tue Oct 03 11:12:17 2017, NA, ifs nested 2 layer, 
+svmPoly, Tue Oct 03 11:12:45 2017, NA, ifs nested 2 layer, 
+svmRadial, Tue Oct 03 11:13:00 2017, NA, ifs nested 2 layer, 
+svmRadialCost, Tue Oct 03 11:13:14 2017, NA, ifs nested 2 layer, 
+svmRadialSigma, Tue Oct 03 11:13:28 2017, NA, ifs nested 2 layer, 
 treebag, Tue Oct 03 11:13:47 2017, 0, ifs nested 2 layer, 15.6, 0, 74.9, 48, 100, 80.4, 37.5, 72.4, 4.3
 widekernelpls, Tue Oct 03 11:13:56 2017, 0.023, ifs nested 2 layer, 4, 51.2, 41.3, 19.6, 100, 12.5, 35, 5.1, 0
 WM, Tue Oct 03 11:19:09 2017, 0, ifs nested 2 layer, 63.5, 23.8, 46, 100, 66, 1.8, 41.8, 0, 41.3
 xgbLinear, Tue Oct 03 11:19:53 2017, 0, ifs nested 2 layer, 100, 87.5, 46.1, 39.6, 25, 18.3, 15.7, 0, 0
-xgbTree, Tue Oct 03 11:22:58 2017, 0, ifs nested 2 layer, Failed
+xgbTree, Tue Oct 03 11:22:58 2017, 0, ifs nested 2 layer, 
 avNNet, Tue Oct 03 11:24:17 2017, 0, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.6, 20.1, 19, 0, 49.3
 bagEarth, Tue Oct 03 11:27:32 2017, 0, ifs nested 2 layer, 100, 30, 0, 0, 0, 0, 0, 0, 0
 bagEarthGCV, Tue Oct 03 11:27:58 2017, 0, ifs nested 2 layer, 100, 79.3, 64.1, 52.5, 37.2, 18.4, 6.5, 0, 0
@@ -1656,30 +1656,30 @@ lasso, Tue Oct 03 12:12:08 2017, 0, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.
 lm, Tue Oct 03 12:12:38 2017, 0, ifs nested 2 layer, 14.9, 62.4, 46.7, 17, 100, 0, 0.9, 31.8, 17
 lmStepAIC, Tue Oct 03 12:12:49 2017, 0, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.6, 20.1, 19, 0, 49.3
 nnet, Tue Oct 03 12:13:49 2017, 0, ifs nested 2 layer, 42.8, 29.5, 20.8, 30.4, 100, 27.8, 33.4, 29.5, 0
-parRF, Tue Oct 03 12:14:13 2017, 0.005, ifs nested 2 layer, Failed
+parRF, Tue Oct 03 12:14:13 2017, 0.005, ifs nested 2 layer, 
 pcaNNet, Tue Oct 03 12:14:31 2017, 0, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.6, 20.1, 19, 0, 49.3
 pcr, Tue Oct 03 12:14:41 2017, 0.001, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.6, 20.1, 19, 0, 49.3
 plsRglm, Tue Oct 03 12:15:46 2017, 0, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.6, 20.1, 19, 0, 49.3
 ppr, Tue Oct 03 12:16:12 2017, 0, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.6, 20.1, 19, 0, 49.3
 qrf, Tue Oct 03 12:17:06 2017, 0, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.6, 20.1, 19, 0, 49.3
 qrnn, Tue Oct 03 12:50:09 2017, 0, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.6, 20.1, 19, 0, 49.3
-ranger, Tue Oct 03 12:50:42 2017, 0, ifs nested 2 layer, Failed
+ranger, Tue Oct 03 12:50:42 2017, 0, ifs nested 2 layer, 
 relaxo, Tue Oct 03 12:51:07 2017, 0, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.6, 20.1, 19, 0, 49.3
-rf, Tue Oct 03 12:51:24 2017, 0.014, ifs nested 2 layer, Failed
+rf, Tue Oct 03 12:51:24 2017, 0.014, ifs nested 2 layer, 
 ridge, Tue Oct 03 12:51:39 2017, 0, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.6, 20.1, 19, 0, 49.3
 rlm, Tue Oct 03 12:51:51 2017, 0, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.6, 20.1, 19, 0, 49.3
-rpart, Tue Oct 03 12:51:58 2017, 0, ifs nested 2 layer, Failed
+rpart, Tue Oct 03 12:51:58 2017, 0, ifs nested 2 layer, 
 rpart1SE, Tue Oct 03 12:52:09 2017, 0, ifs nested 2 layer, 54, 56, 48.9, 33.3, 0, 100, 32.7, 89.4, 75.4
 rpart2, Tue Oct 03 12:52:16 2017, 0, ifs nested 2 layer, 56.5, 33, 28.4, 100, 32.2, 0, 0, 0, 0
-RRF, Tue Oct 03 12:53:11 2017, 0.048, ifs nested 2 layer, Failed
-RRFglobal, Tue Oct 03 12:53:35 2017, 0.012, ifs nested 2 layer, Failed
+RRF, Tue Oct 03 12:53:11 2017, 0.048, ifs nested 2 layer, 
+RRFglobal, Tue Oct 03 12:53:35 2017, 0.012, ifs nested 2 layer, 
 simpls, Tue Oct 03 12:57:48 2017, 0, ifs nested 2 layer, 30.5, 64.1, 64.8, 38.6, 100, 6.9, 8.8, 25.2, 0
 spls, Tue Oct 03 12:58:19 2017, 0, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.6, 20.1, 19, 0, 49.3
-svmLinear, Tue Oct 03 12:59:23 2017, NA, ifs nested 2 layer, Failed
-svmPoly, Tue Oct 03 12:59:49 2017, NA, ifs nested 2 layer, Failed
-svmRadial, Tue Oct 03 13:00:06 2017, NA, ifs nested 2 layer, Failed
-svmRadialCost, Tue Oct 03 13:00:24 2017, NA, ifs nested 2 layer, Failed
-svmRadialSigma, Tue Oct 03 13:00:42 2017, NA, ifs nested 2 layer, Failed
+svmLinear, Tue Oct 03 12:59:23 2017, NA, ifs nested 2 layer, 
+svmPoly, Tue Oct 03 12:59:49 2017, NA, ifs nested 2 layer, 
+svmRadial, Tue Oct 03 13:00:06 2017, NA, ifs nested 2 layer, 
+svmRadialCost, Tue Oct 03 13:00:24 2017, NA, ifs nested 2 layer, 
+svmRadialSigma, Tue Oct 03 13:00:42 2017, NA, ifs nested 2 layer, 
 treebag, Tue Oct 03 13:01:02 2017, 0, ifs nested 2 layer, 5.4, 53.4, 57.9, 63.6, 100, 29.6, 62.2, 67.7, 0
 widekernelpls, Tue Oct 03 13:01:09 2017, 0, ifs nested 2 layer, 30.5, 64.1, 64.8, 38.6, 100, 6.9, 8.8, 25.2, 0
 WM, Tue Oct 03 13:05:03 2017, 0, ifs nested 2 layer, 58, 25.5, 24.8, 100, 47.6, 20.1, 19, 0, 49.3
@@ -1698,293 +1698,3 @@ dnn, Tue Oct 03 13:28:16 2017, 0, mean subtraction in each row, 44.7, 25.1, 29, 
 earth, Tue Oct 03 13:28:31 2017, 0.613, mean subtraction in each row, 100, 77.8, 49.7, 31, 19.6, 14.4, 14.4, 18.4, 0
 elm, Tue Oct 03 13:28:49 2017, 0.999, mean subtraction in each row, 44.7, 25.1, 29, 73.5, 100, 46.2, 0, 51.4, 18.8
 enet, Tue Oct 03 13:29:14 2017, 0.969, mean subtraction in each row, 44.7, 25.1, 29, 73.5, 100, 46.2, 0, 51.4, 18.8
-evtree, Wed Oct 04 09:48:39 2017, 0, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-foba, Wed Oct 04 09:48:48 2017, 0.999, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-gamboost, Wed Oct 04 09:49:49 2017, 0.467, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-gamSpline, Wed Oct 04 09:50:11 2017, 0.999, mean subtraction in each row, c(0.2, 3.8, 0.4, 0.2, 0, 0.1, 2, 0.4, 100)
-gbm, Wed Oct 04 09:51:10 2017, 0, mean subtraction in each row, c(26.6, 43.7, 0, 74.9, 100, 36.7, 2.6, 41.8, 49.2)
-gcvEarth, Wed Oct 04 09:52:54 2017, 0.999, mean subtraction in each row, c(100, 36.7, 19.7, 23.4, 10.7, 10.7, 4.2, 12.8, 0)
-glm, Wed Oct 04 09:53:03 2017, 0.999, mean subtraction in each row, c(46.9, 43.7, 43.8, 72.5, 100, 0, 1.5, 16.1, 54.3)
-glmboost, Wed Oct 04 09:53:30 2017, 0.72, mean subtraction in each row, c(79.6, 31.7, 77.1, 100, 59.2, 34.8, 0, 35.3, 39.7)
-glmnet, Wed Oct 04 09:53:42 2017, 0.918, mean subtraction in each row, c(87.2, 24.2, 100, 98, 46.9, 34.1, 0, 44.7, 34.9)
-glmStepAIC, Wed Oct 04 09:55:32 2017, 0.999, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-icr, Wed Oct 04 09:55:46 2017, 0.999, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-kernelpls, Wed Oct 04 09:55:51 2017, 0.999, mean subtraction in each row, c(56.9, 2.6, 100, 99.8, 41.7, 0, 59.2, 25.8, 45.7)
-kknn, Wed Oct 04 09:56:04 2017, 0.078, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-knn, Wed Oct 04 09:56:12 2017, 0.06, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-krlsPoly, Wed Oct 04 09:56:24 2017, 0.008, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-krlsRadial, Wed Oct 04 09:56:42 2017, 0.993, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-lars, Wed Oct 04 09:56:48 2017, 0.961, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-lars2, Wed Oct 04 09:56:54 2017, 0.152, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-lasso, Wed Oct 04 09:57:00 2017, 0.967, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-leapBackward, Wed Oct 04 09:57:05 2017, 0, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-lm, Wed Oct 04 09:57:26 2017, 0.999, mean subtraction in each row, c(46.9, 43.7, 43.8, 72.5, 100, 0, 1.5, 16.1, 54.3)
-lmStepAIC, Wed Oct 04 09:57:31 2017, 0.999, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-nnet, Wed Oct 04 09:58:26 2017, 0.892, mean subtraction in each row, c(83.9, 0, 67.9, 100, 4.3, 17.4, 7, 92.4, 18.3)
-parRF, Wed Oct 04 09:58:49 2017, 0.092, mean subtraction in each row, Failed
-pcaNNet, Wed Oct 04 09:59:05 2017, 0.839, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-pcr, Wed Oct 04 09:59:10 2017, 0.051, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-plsRglm, Wed Oct 04 10:00:26 2017, 0.999, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-ppr, Wed Oct 04 10:00:46 2017, 0.999, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-qrf, Wed Oct 04 10:01:20 2017, 0, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-qrnn, Wed Oct 04 10:21:51 2017, 0.999, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-ranger, Wed Oct 04 10:22:06 2017, 0.117, mean subtraction in each row, Failed
-Rborist, Wed Oct 04 10:23:35 2017, 0.094, mean subtraction in each row, c(37, 43.6, 15.2, 53.1, 100, 11.8, 0, 18.3, 21.3)
-relaxo, Wed Oct 04 10:23:43 2017, 0, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-rf, Wed Oct 04 10:23:53 2017, 0.106, mean subtraction in each row, Failed
-ridge, Wed Oct 04 10:24:00 2017, 0.999, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-rlm, Wed Oct 04 10:24:09 2017, 0.999, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-rpart, Wed Oct 04 10:24:14 2017, 0, mean subtraction in each row, c(30.8, 39.7, 29.6, 56.5, 100, 0, 0, 0, 0)
-rpart1SE, Wed Oct 04 10:24:22 2017, 0, mean subtraction in each row, c(62.1, 52.9, 68.7, 31.4, 73.8, 100, 39.4, 12.7, 0)
-rpart2, Wed Oct 04 10:24:27 2017, 0, mean subtraction in each row, c(30.8, 39.7, 29.6, 56.5, 100, 0, 0, 0, 0)
-RRF, Wed Oct 04 10:25:19 2017, 0.102, mean subtraction in each row, Failed
-RRFglobal, Wed Oct 04 10:25:40 2017, 0.097, mean subtraction in each row, Failed
-simpls, Wed Oct 04 10:28:21 2017, 0.999, mean subtraction in each row, c(56.9, 2.6, 100, 99.8, 41.7, 0, 59.2, 25.8, 45.7)
-spikeslab, Wed Oct 04 10:28:47 2017, 0, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-spls, Wed Oct 04 10:28:57 2017, 0.999, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-superpc, Wed Oct 04 10:29:03 2017, 0, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-svmLinear, Wed Oct 04 10:29:23 2017, NA, mean subtraction in each row, Failed
-svmLinear3, Wed Oct 04 10:29:44 2017, 0.709, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-svmPoly, Wed Oct 04 10:29:54 2017, NA, mean subtraction in each row, Failed
-svmRadial, Wed Oct 04 10:30:04 2017, NA, mean subtraction in each row, Failed
-svmRadialCost, Wed Oct 04 10:30:14 2017, NA, mean subtraction in each row, Failed
-svmRadialSigma, Wed Oct 04 10:30:27 2017, NA, mean subtraction in each row, Failed
-treebag, Wed Oct 04 10:30:47 2017, 0.109, mean subtraction in each row, c(59.8, 51.1, 39.9, 27.4, 100, 87.7, 57.6, 29.3, 0)
-widekernelpls, Wed Oct 04 10:30:53 2017, 0.999, mean subtraction in each row, c(56.9, 2.6, 100, 99.8, 41.7, 0, 59.2, 25.8, 45.7)
-WM, Wed Oct 04 10:35:02 2017, 0, mean subtraction in each row, c(40.1, 28.6, 19, 72.5, 100, 0, 24.5, 30.6, 49.8)
-xgbLinear, Wed Oct 04 10:35:31 2017, 0.016, mean subtraction in each row, c(100, 63.7, 47.6, 21.2, 17.8, 10.4, 2.4, 0.8, 0)
-xgbTree, Wed Oct 04 10:37:47 2017, 0, mean subtraction in each row, Failed
-avNNet, Wed Oct 04 10:38:46 2017, 0.413, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-bagEarth, Wed Oct 04 10:41:06 2017, 0.709, mean subtraction in each row, c(100, 83, 70.1, 57.6, 48.1, 40, 29.5, 21.4, 0)
-bagEarthGCV, Wed Oct 04 10:41:24 2017, 0.928, mean subtraction in each row, c(100, 77.6, 61.5, 51.3, 39.9, 30.4, 21.8, 13.8, 0)
-bayesglm, Wed Oct 04 10:43:58 2017, 0.999, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-blasso, Wed Oct 04 10:44:10 2017, 0.966, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-blassoAveraged, Wed Oct 04 10:44:22 2017, 0.993, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-bridge, Wed Oct 04 10:44:30 2017, 0.996, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-BstLm, Wed Oct 04 10:46:52 2017, 0.892, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-cforest, Wed Oct 04 10:47:04 2017, 0.077, mean subtraction in each row, c(4, 0, 4.9, 31.5, 100, 15.6, 6.9, 21.3, 4.4)
-cubist, Wed Oct 04 10:48:09 2017, 0.994, mean subtraction in each row, c(100, 100, 98, 0, 0, 0, 0, 0, 0)
-dnn, Wed Oct 04 10:48:22 2017, 0.005, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-earth, Wed Oct 04 10:48:33 2017, 0.718, mean subtraction in each row, c(100, 74.7, 73.7, 48, 48, 48, 64.3, 48.5, 0)
-elm, Wed Oct 04 10:48:42 2017, 0.999, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-enet, Wed Oct 04 10:48:49 2017, 0.895, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-evtree, Wed Oct 04 10:52:09 2017, 0, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-foba, Wed Oct 04 10:52:22 2017, 0.999, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-gamSpline, Wed Oct 04 10:53:00 2017, 0.999, mean subtraction in each row, c(0.4, 1.1, 0, 0.6, 0.1, 0.3, 0.5, 0.3, 100)
-gbm, Wed Oct 04 10:53:54 2017, 0.239, mean subtraction in each row, c(0, 27.6, 13.1, 100, 94.5, 54.3, 41.9, 45.7, 63.3)
-gcvEarth, Wed Oct 04 11:29:22 2017, 0.999, mean subtraction in each row, c(100, 74.4, 73.4, 47.6, 47.6, 47.6, 64, 48.1, 0)
-glm, Wed Oct 04 11:29:28 2017, 0.999, mean subtraction in each row, c(50.1, 28.6, 49.9, 44.9, 100, 38.7, 0, 27.5, 41.8)
-glmnet, Wed Oct 04 11:29:56 2017, 0.971, mean subtraction in each row, c(40.9, 44.6, 0, 85.1, 100, 58.9, 2.9, 41.4, 46.5)
-glmStepAIC, Wed Oct 04 11:34:11 2017, 0.999, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-icr, Wed Oct 04 11:34:27 2017, 0.999, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-kernelpls, Wed Oct 04 11:34:33 2017, 0.999, mean subtraction in each row, c(62.2, 55.5, 99.3, 51.1, 0, 76.7, 100, 37.3, 31.5)
-kknn, Wed Oct 04 11:34:45 2017, 0.101, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-knn, Wed Oct 04 11:34:55 2017, 0.066, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-krlsPoly, Wed Oct 04 11:35:07 2017, 0.097, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-krlsRadial, Wed Oct 04 11:35:21 2017, 0.996, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-lars, Wed Oct 04 11:35:31 2017, 0.985, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-lars2, Wed Oct 04 11:35:38 2017, 0.224, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-lasso, Wed Oct 04 11:35:44 2017, 0.997, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-lm, Wed Oct 04 11:36:12 2017, 0.999, mean subtraction in each row, c(50.1, 28.6, 49.9, 44.9, 100, 38.7, 0, 27.5, 41.8)
-lmStepAIC, Wed Oct 04 11:36:18 2017, 0.999, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-nnet, Wed Oct 04 11:37:20 2017, 0.415, mean subtraction in each row, c(9.1, 32.5, 59.3, 100, 77.5, 50.2, 0, 9.1, 41.2)
-parRF, Wed Oct 04 11:37:44 2017, 0.092, mean subtraction in each row, Failed
-pcaNNet, Wed Oct 04 11:38:04 2017, 0.415, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-pcr, Wed Oct 04 11:38:13 2017, 0.027, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-plsRglm, Wed Oct 04 11:39:28 2017, 0.999, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-ppr, Wed Oct 04 11:39:50 2017, 0.999, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-qrf, Wed Oct 04 11:40:28 2017, 0, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-qrnn, Wed Oct 04 12:04:35 2017, 0.999, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-ranger, Wed Oct 04 12:04:54 2017, 0.126, mean subtraction in each row, Failed
-relaxo, Wed Oct 04 12:05:10 2017, 0.221, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-rf, Wed Oct 04 12:05:21 2017, 0.066, mean subtraction in each row, Failed
-ridge, Wed Oct 04 12:05:33 2017, 0.999, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-rlm, Wed Oct 04 12:05:40 2017, 0.999, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-rpart, Wed Oct 04 12:05:47 2017, 0.001, mean subtraction in each row, Failed
-rpart1SE, Wed Oct 04 12:05:53 2017, 0, mean subtraction in each row, c(0, 16.7, 11.9, 38.1, 67, 38, 16.2, 41.9, 100)
-rpart2, Wed Oct 04 12:06:04 2017, 0, mean subtraction in each row, c(26.1, 48.2, 100, 27.2, 29.4, 0, 0, 0, 0)
-RRF, Wed Oct 04 12:07:16 2017, 0.153, mean subtraction in each row, Failed
-RRFglobal, Wed Oct 04 12:07:54 2017, 0.11, mean subtraction in each row, Failed
-simpls, Wed Oct 04 12:11:48 2017, 0.999, mean subtraction in each row, c(62.2, 55.5, 99.3, 51.1, 0, 76.7, 100, 37.3, 31.5)
-spls, Wed Oct 04 12:12:14 2017, 0.999, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-superpc, Wed Oct 04 12:12:23 2017, 0.024, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-svmLinear, Wed Oct 04 12:12:49 2017, NA, mean subtraction in each row, Failed
-svmPoly, Wed Oct 04 12:13:17 2017, NA, mean subtraction in each row, Failed
-svmRadial, Wed Oct 04 12:13:28 2017, NA, mean subtraction in each row, Failed
-svmRadialCost, Wed Oct 04 12:13:45 2017, NA, mean subtraction in each row, Failed
-svmRadialSigma, Wed Oct 04 12:13:56 2017, NA, mean subtraction in each row, Failed
-treebag, Wed Oct 04 12:14:22 2017, 0.061, mean subtraction in each row, c(7.8, 16.7, 0, 24.3, 57, 100, 13, 30.5, 61.4)
-widekernelpls, Wed Oct 04 12:14:29 2017, 0.999, mean subtraction in each row, c(62.2, 55.5, 99.3, 51.1, 0, 76.7, 100, 37.3, 31.5)
-WM, Wed Oct 04 12:19:22 2017, 0, mean subtraction in each row, c(44.1, 7.9, 1.8, 84.6, 100, 19.3, 29.2, 22.3, 0)
-xgbLinear, Wed Oct 04 12:20:06 2017, 0.115, mean subtraction in each row, c(100, 52.6, 36.9, 24.7, 19.6, 9.5, 5.4, 3.9, 0)
-xgbTree, Wed Oct 04 12:22:39 2017, 0.078, mean subtraction in each row, c(100, 57.7, 57, 41.1, 27.9, 23, 11.5, 2.8, 0)
-avNNet, Wed Oct 04 12:26:09 2017, 0.032, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-bagEarth, Wed Oct 04 12:28:07 2017, 0.025, median subtraction in each row, c(100, 53.1, 14.3, 4, 0, 0, 0, 0, 0)
-bagEarthGCV, Wed Oct 04 12:28:31 2017, 0, median subtraction in each row, c(100, 84.8, 67.6, 57.5, 38.4, 20.9, 1.6, 0.5, 0)
-bayesglm, Wed Oct 04 12:32:54 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-blasso, Wed Oct 04 12:33:10 2017, 0.028, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-blassoAveraged, Wed Oct 04 12:33:19 2017, 0.033, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-bridge, Wed Oct 04 12:33:33 2017, 0.034, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-BstLm, Wed Oct 04 12:36:15 2017, 0.014, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-cubist, Wed Oct 04 12:37:09 2017, 0, median subtraction in each row, c(100, 96.1, 0, 0, 0, 0, 0, 0, 0)
-dnn, Wed Oct 04 12:37:26 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-earth, Wed Oct 04 12:37:37 2017, 0, median subtraction in each row, c(100, 71.3, 0, 0, 0, 0, 0, 0, 0)
-elm, Wed Oct 04 12:37:48 2017, 0.007, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-enet, Wed Oct 04 12:37:59 2017, 0.024, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-evtree, Wed Oct 04 12:41:35 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-foba, Wed Oct 04 12:41:52 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-gamSpline, Wed Oct 04 12:42:40 2017, 0, median subtraction in each row, c(9, 91.3, 100, 35.8, 5, 85.6, 32.9, 62.6, 0)
-gbm, Wed Oct 04 12:43:54 2017, 0.06, median subtraction in each row, c(94.3, 58.4, 100, 59.4, 44.6, 88.7, 57.5, 72.7, 0)
-gcvEarth, Wed Oct 04 12:50:12 2017, 0, median subtraction in each row, c(100, 78.1, 76.3, 0, 0, 0, 0, 0, 0)
-glm, Wed Oct 04 12:50:19 2017, 0, median subtraction in each row, c(58.8, 71.2, 100, 75.7, 0, 13.7, 51.3, 85.8, 11.1)
-glmnet, Wed Oct 04 12:50:46 2017, 0.033, median subtraction in each row, c(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN)
-glmStepAIC, Wed Oct 04 12:57:11 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-icr, Wed Oct 04 12:57:24 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-kernelpls, Wed Oct 04 12:57:30 2017, 0, median subtraction in each row, c(29.1, 43.1, 100, 65.1, 6.2, 0, 25.5, 44.5, 22.7)
-kknn, Wed Oct 04 12:57:42 2017, 0.016, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-knn, Wed Oct 04 12:57:49 2017, 0.071, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-krlsPoly, Wed Oct 04 12:57:58 2017, 0.036, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-krlsRadial, Wed Oct 04 12:58:13 2017, 0.023, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-lars, Wed Oct 04 12:58:24 2017, 0.032, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-lars2, Wed Oct 04 12:58:35 2017, 0.033, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-lasso, Wed Oct 04 12:58:42 2017, 0.028, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-lm, Wed Oct 04 12:59:12 2017, 0, median subtraction in each row, c(58.8, 71.2, 100, 75.7, 0, 13.7, 51.3, 85.8, 11.1)
-lmStepAIC, Wed Oct 04 12:59:23 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-nnet, Wed Oct 04 13:00:13 2017, 0, median subtraction in each row, c(54.9, 66, 100, 66.6, 0, 16.3, 47, 73.3, 5.7)
-parRF, Wed Oct 04 13:00:41 2017, 0.05, median subtraction in each row, Failed
-pcaNNet, Wed Oct 04 13:01:02 2017, 0.029, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-pcr, Wed Oct 04 13:01:08 2017, 0.024, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-plsRglm, Wed Oct 04 13:02:02 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-ppr, Wed Oct 04 13:02:26 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-qrf, Wed Oct 04 13:02:59 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-qrnn, Wed Oct 04 13:27:34 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-ranger, Wed Oct 04 13:27:55 2017, 0.057, median subtraction in each row, Failed
-relaxo, Wed Oct 04 13:28:15 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-rf, Wed Oct 04 13:28:30 2017, 0.008, median subtraction in each row, Failed
-ridge, Wed Oct 04 13:28:43 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-rlm, Wed Oct 04 13:28:50 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-rpart, Wed Oct 04 13:29:03 2017, 0, median subtraction in each row, c(0, 100, 18.5, 6.9, 20.1, 7.6, 6, 41.5, 3.3)
-rpart1SE, Wed Oct 04 13:29:09 2017, 0, median subtraction in each row, c(0, 100, 30.4, 22.7, 18.2, 15.2, 5.4, 37.5, 21.5)
-rpart2, Wed Oct 04 13:29:21 2017, 0, median subtraction in each row, c(57.9, 60.7, 100, 44.1, 73.1, 0, 0, 0, 0)
-RRF, Wed Oct 04 13:30:16 2017, 0.063, median subtraction in each row, Failed
-RRFglobal, Wed Oct 04 13:30:44 2017, 0.011, median subtraction in each row, Failed
-simpls, Wed Oct 04 13:37:16 2017, 0, median subtraction in each row, c(36.6, 51.1, 100, 53.6, 24.6, 0, 31.6, 62.4, 43.4)
-spls, Wed Oct 04 13:37:41 2017, 0, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-svmLinear, Wed Oct 04 13:39:00 2017, NA, median subtraction in each row, Failed
-svmPoly, Wed Oct 04 13:40:03 2017, NA, median subtraction in each row, Failed
-svmRadial, Wed Oct 04 13:40:29 2017, NA, median subtraction in each row, Failed
-svmRadialCost, Wed Oct 04 13:40:50 2017, NA, median subtraction in each row, Failed
-svmRadialSigma, Wed Oct 04 13:41:10 2017, NA, median subtraction in each row, Failed
-widekernelpls, Wed Oct 04 13:41:54 2017, 0, median subtraction in each row, c(36.6, 51.1, 100, 53.6, 24.6, 0, 31.6, 62.4, 43.4)
-WM, Wed Oct 04 13:52:09 2017, 0.047, median subtraction in each row, c(95.9, 86, 100, 20.8, 14.5, 31.9, 64.5, 57.2, 0)
-xgbLinear, Wed Oct 04 15:11:18 2017, 0.085, median subtraction in each row, c(100, 65, 45.3, 44, 15.8, 6.7, 6.1, 6, 0)
-xgbTree, Wed Oct 04 15:14:04 2017, 0.056, median subtraction in each row, c(100, 53.9, 39.5, 36.3, 27.6, 15.1, 0, 0, 0)
-avNNet, Wed Oct 04 15:14:59 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-bagEarth, Wed Oct 04 15:17:35 2017, 0.048, median subtraction in each row, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
-bagEarthGCV, Wed Oct 04 15:17:54 2017, 0.056, median subtraction in each row, c(100, 78.5, 64.4, 51.7, 38.3, 25.4, 12.6, 4.9, 0)
-bayesglm, Wed Oct 04 15:19:09 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-blasso, Wed Oct 04 15:19:20 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-blassoAveraged, Wed Oct 04 15:19:27 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-bridge, Wed Oct 04 15:19:35 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-BstLm, Wed Oct 04 15:22:52 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-cforest, Wed Oct 04 15:23:06 2017, 0.027, median subtraction in each row, c(35.1, 100, 20.8, 7.5, 7.2, 18.2, 12.1, 0, 17.6)
-cubist, Wed Oct 04 15:24:00 2017, 0, median subtraction in each row, c(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN)
-dnn, Wed Oct 04 15:24:09 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-earth, Wed Oct 04 15:24:17 2017, 0.049, median subtraction in each row, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
-elm, Wed Oct 04 15:24:22 2017, 0.026, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-enet, Wed Oct 04 15:24:29 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-evtree, Wed Oct 04 15:27:31 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-foba, Wed Oct 04 15:27:42 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-gamSpline, Wed Oct 04 15:28:20 2017, 0, median subtraction in each row, c(84.2, 31.2, 35.2, 0, 5.4, 69.8, 100, 9.7, 10.4)
-gbm, Wed Oct 04 15:29:18 2017, 0.034, median subtraction in each row, c(54.9, 26.6, 59.8, 34.6, 18.9, 100, 18.2, 0, 13.2)
-gcvEarth, Wed Oct 04 15:31:22 2017, 0.049, median subtraction in each row, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
-glm, Wed Oct 04 15:31:27 2017, 0, median subtraction in each row, c(31.5, 100, 35.4, 36.5, 0, 20.5, 4.5, 2.6, 72.7)
-glmnet, Wed Oct 04 15:31:46 2017, 0, median subtraction in each row, c(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN)
-glmStepAIC, Wed Oct 04 15:33:55 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-icr, Wed Oct 04 15:34:05 2017, 0.026, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-kernelpls, Wed Oct 04 15:34:10 2017, 0, median subtraction in each row, c(39.6, 100, 14.8, 23.7, 34.8, 28.7, 0, 7.9, 56.1)
-kknn, Wed Oct 04 15:34:29 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-knn, Wed Oct 04 15:34:36 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-krlsPoly, Wed Oct 04 15:34:45 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-krlsRadial, Wed Oct 04 15:34:59 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-lars, Wed Oct 04 15:35:06 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-lars2, Wed Oct 04 15:35:11 2017, 0.001, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-lasso, Wed Oct 04 15:35:17 2017, 0.002, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-leapBackward, Wed Oct 04 15:35:22 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-lm, Wed Oct 04 15:35:38 2017, 0, median subtraction in each row, c(31.5, 100, 35.4, 36.5, 0, 20.5, 4.5, 2.6, 72.7)
-lmStepAIC, Wed Oct 04 15:35:44 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-msaenet, Wed Oct 04 15:36:24 2017, 0.024, median subtraction in each row, 0
-msaenet, Wed Oct 04 15:36:24 2017, 0.024, median subtraction in each row, 100
-msaenet, Wed Oct 04 15:36:24 2017, 0.024, median subtraction in each row, 0
-msaenet, Wed Oct 04 15:36:24 2017, 0.024, median subtraction in each row, 0
-msaenet, Wed Oct 04 15:36:24 2017, 0.024, median subtraction in each row, 0
-msaenet, Wed Oct 04 15:36:24 2017, 0.024, median subtraction in each row, 0
-msaenet, Wed Oct 04 15:36:24 2017, 0.024, median subtraction in each row, 0
-msaenet, Wed Oct 04 15:36:24 2017, 0.024, median subtraction in each row, 0
-msaenet, Wed Oct 04 15:36:24 2017, 0.024, median subtraction in each row, 0
-nnet, Wed Oct 04 15:36:40 2017, 0, median subtraction in each row, c(34.4, 100, 3.5, 4.2, 8.3, 8, 9.4, 0, 38.6)
-parRF, Wed Oct 04 15:37:01 2017, 0.026, median subtraction in each row, Failed
-pcaNNet, Wed Oct 04 15:37:17 2017, 0.056, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-pcr, Wed Oct 04 15:37:22 2017, 0.021, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-plsRglm, Wed Oct 04 15:38:16 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-ppr, Wed Oct 04 15:38:33 2017, 0.074, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-qrf, Wed Oct 04 15:39:10 2017, 0, median subtraction in each row, c(59.7, 100, 86.5, 26.1, 8.4, 70.4, 25.7, 19.8, 0)
-qrnn, Wed Oct 04 22:51:14 2017, 0, median subtraction in each row, c(100, 60.9, 87.9, 22.8, 31.8, 21.2, 89.7, 49.5, 0)
-ranger, Wed Oct 04 22:51:32 2017, 0.183, median subtraction in each row, Failed
-Rborist, Wed Oct 04 22:53:25 2017, 0.113, median subtraction in each row, c(83.1, 87.9, 41, 0, 23.5, 19.7, 100, 70.1, 41.7)
-relaxo, Wed Oct 04 22:53:35 2017, 0.052, median subtraction in each row, c(100, 60.9, 87.9, 22.8, 31.8, 21.2, 89.7, 49.5, 0)
-rf, Wed Oct 04 22:53:46 2017, 0.118, median subtraction in each row, Failed
-ridge, Wed Oct 04 22:53:55 2017, 0.042, median subtraction in each row, c(100, 60.9, 87.9, 22.8, 31.8, 21.2, 89.7, 49.5, 0)
-rlm, Wed Oct 04 22:54:03 2017, 0.063, median subtraction in each row, c(100, 60.9, 87.9, 22.8, 31.8, 21.2, 89.7, 49.5, 0)
-rpart, Wed Oct 04 22:54:11 2017, 0, median subtraction in each row, c(18, 90.8, 100, 87, 20.6, 29.9, 92, 87, 0)
-rpart1SE, Wed Oct 04 22:54:18 2017, 0, median subtraction in each row, c(17.8, 75.9, 80.8, 54.2, 3.3, 0, 7.5, 58.3, 100)
-rpart2, Wed Oct 04 22:54:25 2017, 0, median subtraction in each row, c(20.7, 73.3, 59.9, 62.6, 23.7, 63.3, 100, 0, 0)
-RRFglobal, Wed Oct 04 22:56:20 2017, 0.108, median subtraction in each row, Failed
-simpls, Wed Oct 04 22:58:55 2017, 0.035, median subtraction in each row, c(56.3, 100, 34.8, 10.5, 37, 0, 29.4, 45.4, 52.4)
-spikeslab, Wed Oct 04 22:59:19 2017, 0.05, median subtraction in each row, c(100, 60.9, 87.9, 22.8, 31.8, 21.2, 89.7, 49.5, 0)
-spls, Wed Oct 04 22:59:31 2017, 0.052, median subtraction in each row, c(100, 60.9, 87.9, 22.8, 31.8, 21.2, 89.7, 49.5, 0)
-svmLinear, Wed Oct 04 23:01:05 2017, NA, median subtraction in each row, Failed
-svmLinear3, Wed Oct 04 23:01:26 2017, 0.051, median subtraction in each row, c(100, 60.9, 87.9, 22.8, 31.8, 21.2, 89.7, 49.5, 0)
-svmPoly, Wed Oct 04 23:01:38 2017, NA, median subtraction in each row, Failed
-svmRadial, Wed Oct 04 23:01:51 2017, NA, median subtraction in each row, Failed
-svmRadialCost, Wed Oct 04 23:02:04 2017, NA, median subtraction in each row, Failed
-svmRadialSigma, Wed Oct 04 23:02:17 2017, NA, median subtraction in each row, Failed
-treebag, Wed Oct 04 23:02:40 2017, 0.067, median subtraction in each row, c(42.4, 57.4, 69.2, 52.8, 14, 5.8, 0, 55.8, 100)
-widekernelpls, Wed Oct 04 23:02:48 2017, 0.034, median subtraction in each row, c(56.3, 100, 34.8, 10.5, 37, 0, 29.4, 45.4, 52.4)
-WM, Wed Oct 04 23:06:40 2017, 0, median subtraction in each row, c(100, 60.9, 87.9, 22.8, 31.8, 21.2, 89.7, 49.5, 0)
-xgbLinear, Wed Oct 04 23:07:19 2017, 0.128, median subtraction in each row, c(100, 95.6, 53.7, 40.5, 26.5, 20.8, 13.9, 1.3, 0)
-xgbTree, Wed Oct 04 23:10:44 2017, 0.206, median subtraction in each row, c(100, 95.4, 83.9, 65.3, 63.8, 41.2, 39.9, 29.4, 0)
-avNNet, Wed Oct 04 23:13:41 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-bagEarth, Wed Oct 04 23:15:10 2017, 0.59, rescale 4 poly, c(100, 34.5, 8.8, 1.4, 0.1, 0, 0, 0, 0)
-bagEarthGCV, Wed Oct 04 23:15:26 2017, 0.308, rescale 4 poly, c(100, 12.5, 8.1, 5.8, 3.1, 1.2, 0.4, 0.1, 0)
-bayesglm, Wed Oct 04 23:17:02 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-blasso, Wed Oct 04 23:17:10 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-blassoAveraged, Wed Oct 04 23:17:17 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-bridge, Wed Oct 04 23:17:23 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-BstLm, Wed Oct 04 23:19:52 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-cforest, Wed Oct 04 23:20:06 2017, 0.334, rescale 4 poly, c(0.3, 0.7, 0, 0.8, 0.9, 0.8, 1.2, 0.8, 100)
-cubist, Wed Oct 04 23:20:59 2017, 0.651, rescale 4 poly, c(100, 3, 0, 0, 0, 0, 0, 0, 0)
-dnn, Wed Oct 04 23:21:08 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-earth, Wed Oct 04 23:21:16 2017, 0.091, rescale 4 poly, c(100, 5.7, 3.6, 0, 0, 0, 0, 0, 0)
-elm, Wed Oct 04 23:21:21 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-enet, Wed Oct 04 23:21:27 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-evtree, Wed Oct 04 23:24:41 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-foba, Wed Oct 04 23:24:49 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-gamSpline, Wed Oct 04 23:25:24 2017, 0.58, rescale 4 poly, c(0, 0, 0, 0, 0, 0, NaN, 0, 0)
-gbm, Wed Oct 04 23:26:20 2017, 0, rescale 4 poly, c(87.1, 17.2, 33.9, 25.6, 0, 41.2, 47.1, 70.6, 100)
-gcvEarth, Wed Oct 04 23:29:10 2017, 0.091, rescale 4 poly, c(100, 5.7, 3.6, 0, 0, 0, 0, 0, 0)
-glm, Wed Oct 04 23:29:14 2017, 0, rescale 4 poly, c(27.6, 5.2, 1.5, 7.5, 7.7, 0, 10.3, 6.2, 100)
-glmnet, Wed Oct 04 23:29:33 2017, 0.123, rescale 4 poly, c(0, 0, 0, 0, 0, 0, 0, 0, 100)
-glmStepAIC, Wed Oct 04 23:32:32 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-icr, Wed Oct 04 23:32:44 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-kernelpls, Wed Oct 04 23:32:48 2017, 0, rescale 4 poly, c(6.4, 12.4, 31.1, 0, 8.8, 0.5, 25.4, 7.7, 100)
-kknn, Wed Oct 04 23:33:01 2017, 0.284, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-knn, Wed Oct 04 23:33:08 2017, 0.035, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-krlsPoly, Wed Oct 04 23:33:15 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-krlsRadial, Wed Oct 04 23:33:28 2017, 0.223, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-lars, Wed Oct 04 23:33:33 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-lars2, Wed Oct 04 23:33:39 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-lasso, Wed Oct 04 23:33:44 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-leapBackward, Wed Oct 04 23:33:48 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
-lm, Wed Oct 04 23:34:02 2017, 0, rescale 4 poly, c(27.6, 5.2, 1.5, 7.5, 7.7, 0, 10.3, 6.2, 100)
-lmStepAIC, Wed Oct 04 23:34:08 2017, 0, rescale 4 poly, c(8.4, 2, 4.2, 2.1, 2.3, 0, 9.9, 3.4, 100)
