@@ -291,14 +291,14 @@ write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-######sparsity 0#########
+######sparsity 0 offcenter#########
 gen.count=gen.count+1
-gens.names[gen.count]="sparsity 0"
+gens.names[gen.count]="sparsity 0 offcenter"
 max.out[gen.count]=.54#.7 me^2
 varim=c(1,1,1,1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
-  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+  simScores[Row,1:10]=rnorm(10, mean = 2, sd = 1)
 }
 for(Row in 1:Rows){
   simScores[Row,1]=simScores[Row,2]+simScores[Row,3]+simScores[Row,4]+simScores[Row,5]
@@ -312,6 +312,51 @@ write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
+######sparsity 2 row center#########
+gen.count=gen.count+1
+gens.names[gen.count]="sparsity 2 row center"
+max.out[gen.count]=.54#.7 me^2
+varim=c(1,1,1,1)
+varimport[gen.count,1:length(varim)]=varim
+for(Row in 1:Rows){
+  simScores[Row,1:10]=rnorm(10, mean = 2, sd = 1)
+}
+for(Row in 1:Rows){
+  simScores[Row,1]=simScores[Row,2]+simScores[Row,3]+simScores[Row,4]+simScores[Row,5]
+}
+for(Row in 1:Rows){
+  for(Col in 2:10){
+    if(runif(1, min = 0, max = 1)>.7) simScores[Row,Col]<-2
+  }
+}
+write.table(round(simScores,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+
+######sparsity col center#########
+gen.count=gen.count+1
+gens.names[gen.count]="sparsity 2 col center"
+max.out[gen.count]=.54#.7 me^2
+varim=c(1,1,1,1)
+varimport[gen.count,1:length(varim)]=varim
+for(Row in 1:Rows){
+  simScores[Row,1:10]=rnorm(10, mean = 2, sd = 1)
+}
+for(Row in 1:Rows){
+  simScores[Row,1]=simScores[Row,2]+simScores[Row,3]+simScores[Row,4]+simScores[Row,5]
+}
+for(Col in 2:10){
+  mean.col<-mean(simScores[,Col], na.rm = T)
+  for(Row in 1:Rows){
+    if(runif(1, min = 0, max = 1)>.7) simScores[Row,Col]<-mean.col
+  }
+}
+write.table(round(simScores,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+
 ######sparsity 20#########
 gen.count=gen.count+1
 gens.names[gen.count]="sparsity 20"
