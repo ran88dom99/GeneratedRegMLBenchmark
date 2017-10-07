@@ -6050,3 +6050,108 @@ Fail,Fail,Fail,Fail,Fail,Fri Oct 06 21:41:56 2017,ctree2,1,1,Spread thinly,ignor
 0.813,0.757,0.052,0.049,0.03,Fri Oct 06 21:43:06 2017,earth,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,598,6,cv,32,3,1,5,12,1
 0.998,0.998,0,0,0,Fri Oct 06 21:43:13 2017,elm,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,599,4,cv,32,3,1,5,17,purelin
 0.957,0.952,0.011,0.01,0.007,Fri Oct 06 21:43:21 2017,enet,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,600,6,cv,32,3,1,5,0.957338031148538,0.000969469129520831
+0.087,-0.035,0.221,0.208,0.147,Fri Oct 06 21:46:51 2017,evtree,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,601,207,cv,32,3,1,5,1.59228482376784
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 21:46:55 2017,extraTrees,1,1,Spread thinly,ignore,none,asis,1
+0.998,0.999,0,0,0,Fri Oct 06 21:47:02 2017,foba,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,603,5,cv,32,3,1,5,7,4.62312790788718e-05
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 21:47:11 2017,gam,1,1,Spread thinly,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 21:47:15 2017,gamboost,1,1,Spread thinly,ignore,none,asis,2
+0.998,0.998,0,0,0,Fri Oct 06 21:47:40 2017,gamSpline,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,606,20,cv,32,3,1,5,0.0708454987034202
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 21:47:49 2017,gaussprLinear,1,1,Spread thinly,ignore,none,asis,7
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 21:48:07 2017,gaussprPoly,1,1,Spread thinly,ignore,none,asis,15
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 21:48:23 2017,gaussprRadial,1,1,Spread thinly,ignore,none,asis,14
+0.502,0.488,0.105,0.103,0.08,Fri Oct 06 21:48:39 2017,gbm,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,610,13,cv,32,3,1,5,4968,8,0.171846212631091,6
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 21:53:28 2017,gbm_h2o,1,1,Spread thinly,ignore,none,asis,285
+0.998,0.999,-1,0,0,Fri Oct 06 21:53:37 2017,gcvEarth,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,612,5,cv,32,3,1,5,1
+0.998,0.998,-1,0,0,Fri Oct 06 21:53:42 2017,glm,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,613,3,cv,32,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 21:53:47 2017,glm.nb,1,1,Spread thinly,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 21:53:54 2017,glmboost,1,1,Spread thinly,ignore,none,asis,4
+0.97,0.966,0.008,0.007,0.005,Fri Oct 06 21:54:03 2017,glmnet,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,616,7,cv,32,3,1,5,0.115466235671192,0.00230152842004376
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 21:58:44 2017,glmnet_h2o,1,1,Spread thinly,ignore,none,asis,278
+0.998,0.998,-1,0,0,Fri Oct 06 21:58:51 2017,glmStepAIC,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,618,3,cv,32,3,1,5,none
+0.998,0.998,0,0,0,Fri Oct 06 21:59:03 2017,icr,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,619,9,cv,32,3,1,5,9
+0.998,0.998,0,0,0,Fri Oct 06 21:59:11 2017,kernelpls,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,620,5,cv,32,3,1,5,7
+0.392,0.315,0.166,0.137,0.098,Fri Oct 06 21:59:24 2017,kknn,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,621,11,cv,32,3,1,5,17,1.28773039765656,triangular
+0.335,0.265,0.165,0.148,0.107,Fri Oct 06 21:59:30 2017,knn,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,622,3,cv,32,3,1,5,4
+0.072,0.019,0.213,0.197,0.149,Fri Oct 06 21:59:38 2017,krlsPoly,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,623,5,cv,32,3,1,5,0.0688782779620388,1
+0.998,0.998,0.001,0,0,Fri Oct 06 21:59:50 2017,krlsRadial,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,624,9,cv,32,3,1,5,1.80220739003636e-05,5680.45569077676
+0.97,0.966,0.008,0.007,0.005,Fri Oct 06 21:59:57 2017,lars,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,625,3,cv,32,3,1,5,0.96973403240554
+0.998,0.999,0,0,0,Fri Oct 06 22:00:04 2017,lars2,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,626,5,cv,32,3,1,5,9
+0.996,0.995,0.001,0.001,0.001,Fri Oct 06 22:00:10 2017,lasso,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,627,3,cv,32,3,1,5,0.995506829814985
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:00:17 2017,leapBackward,1,1,Spread thinly,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:00:24 2017,leapForward,1,1,Spread thinly,ignore,none,asis,5
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:00:28 2017,leapSeq,1,1,Spread thinly,ignore,none,asis,2
+0.998,0.998,-1,0,0,Fri Oct 06 22:00:36 2017,lm,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,631,5,cv,32,3,1,5,TRUE
+0.998,0.998,-1,0,0,Fri Oct 06 22:00:43 2017,lmStepAIC,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,632,4,cv,32,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:00:50 2017,logicBag,1,1,Spread thinly,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:00:59 2017,logreg,1,1,Spread thinly,ignore,none,asis,4
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:01:02 2017,M5,1,1,Spread thinly,ignore,none,asis,0
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:01:07 2017,M5Rules,1,1,Spread thinly,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:01:14 2017,msaenet,1,1,Spread thinly,ignore,none,asis,5
+0.503,0.477,0.165,0.105,0.08,Fri Oct 06 22:01:29 2017,nnet,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,638,12,cv,32,3,1,5,12,0.00352765568374953
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:01:34 2017,nnls,1,1,Spread thinly,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:01:37 2017,ordinalNet,1,1,Spread thinly,ignore,none,asis,1
+0.353,0.298,0.167,0.141,0.104,Fri Oct 06 22:01:47 2017,parRF,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,641,8,cv,32,3,1,5,8
+0.466,0.472,0.165,0.106,0.086,Fri Oct 06 22:02:02 2017,pcaNNet,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,642,12,cv,32,3,1,5,15,0.00058231119477116
+0.003,-0.054,0.187,0.212,0.16,Fri Oct 06 22:02:08 2017,pcr,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,643,3,cv,32,3,1,5,8
+Fail,Fail,Fail,Fail,PackageFail,Fri Oct 06 22:02:25 2017,pls,1,1,Spread thinly,ignore,none,asis,15
+0.998,0.998,0,0,0,Fri Oct 06 22:03:08 2017,plsRglm,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,645,40,cv,32,3,1,5,7,0.0411664708517492
+0.997,0.997,0.015,0.001,0,Fri Oct 06 22:03:27 2017,ppr,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,646,16,cv,32,3,1,5,7
+Fail,Fail,Fail,Fail,PackageFail,Fri Oct 06 22:03:36 2017,pythonKnnReg,1,1,Spread thinly,ignore,none,asis,6
+-0.679,-0.543,0.303,0.31,0.27,Fri Oct 06 22:03:52 2017,qrf,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,648,13,cv,32,3,1,5,7
+0.998,0.998,0,0,0,Fri Oct 06 22:24:07 2017,qrnn,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,649,1212,cv,32,3,1,5,1,0,FALSE
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:24:13 2017,randomGLM,1,1,Spread thinly,ignore,none,asis,1
+0.34,0.287,0.156,0.143,0.106,Fri Oct 06 22:24:25 2017,ranger,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,651,10,cv,32,3,1,5,6
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:24:35 2017,Rborist,1,1,Spread thinly,ignore,none,asis,7
+0.998,0.999,0,0,0,Fri Oct 06 22:24:44 2017,relaxo,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,653,7,cv,32,3,1,5,0.191115782573438,0.0167342401109636
+0.355,0.302,0.166,0.14,0.104,Fri Oct 06 22:25:00 2017,rf,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,654,12,cv,32,3,1,5,6
+0.998,0.998,0,0,0,Fri Oct 06 22:25:09 2017,ridge,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,655,6,cv,32,3,1,5,3.46637736994826e-05
+0.998,0.998,0,0,0,Fri Oct 06 22:25:20 2017,rlm,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,656,8,cv,32,3,1,5,FALSE,psi.hampel
+0.034,-0.017,0.212,0.204,0.155,Fri Oct 06 22:25:26 2017,rpart,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,657,3,cv,32,3,1,5,0.246290797079713
+0.058,-0.014,-1,0.204,0.152,Fri Oct 06 22:25:33 2017,rpart1SE,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,658,4,cv,32,3,1,5,none
+0.103,0.006,0.198,0.2,0.144,Fri Oct 06 22:25:39 2017,rpart2,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,659,3,cv,32,3,1,5,4
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:25:43 2017,rqlasso,1,1,Spread thinly,ignore,none,asis,1
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:25:46 2017,rqnc,1,1,Spread thinly,ignore,none,asis,1
+0.341,0.286,0.162,0.143,0.106,Fri Oct 06 22:26:34 2017,RRF,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,662,45,cv,32,3,1,5,7,0.493370558368042,0.644821749301627
+0.377,0.316,0.18,0.137,0.1,Fri Oct 06 22:27:01 2017,RRFglobal,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,663,24,cv,32,3,1,5,3,0.998051823116839
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:27:14 2017,rvmLinear,1,1,Spread thinly,ignore,none,asis,10
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:27:39 2017,rvmPoly,1,1,Spread thinly,ignore,none,asis,22
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:28:13 2017,rvmRadial,1,1,Spread thinly,ignore,none,asis,31
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:30:06 2017,SBC,1,1,Spread thinly,ignore,none,asis,110
+0.998,0.998,0,0,0,Fri Oct 06 22:30:16 2017,simpls,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,668,7,cv,32,3,1,5,8
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:30:22 2017,spikeslab,1,1,Spread thinly,ignore,none,asis,3
+0.998,0.998,0,0,0,Fri Oct 06 22:30:33 2017,spls,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,670,8,cv,32,3,1,5,6,0.818598895566538,0.384457748848945
+0.073,0.035,0.17,0.194,0.149,Fri Oct 06 22:30:45 2017,superpc,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,671,9,cv,32,3,1,5,0.597672441508621,3
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:30:50 2017,svmBoundrangeString,1,1,Spread thinly,ignore,none,asis,2
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:30:55 2017,svmExpoString,1,1,Spread thinly,ignore,none,asis,2
+NA,NA,0.015,NA,NA,Fri Oct 06 22:31:10 2017,svmLinear,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,674,12,cv,32,3,1,5,0.506367324632433
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:31:23 2017,svmLinear2,1,1,Spread thinly,ignore,none,asis,10
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:31:26 2017,svmLinear3,1,1,Spread thinly,ignore,none,asis,1
+NA,NA,0.017,NA,NA,Fri Oct 06 22:31:40 2017,svmPoly,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,677,11,cv,32,3,1,5,1,0.0153438214027697,594.213493290673
+NA,NA,0.039,NA,NA,Fri Oct 06 22:31:51 2017,svmRadial,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,678,8,cv,32,3,1,5,0.0228779956429041,129.325717265711
+NA,NA,0.075,NA,NA,Fri Oct 06 22:32:07 2017,svmRadialCost,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,679,12,cv,32,3,1,5,2.35038324852111
+NA,NA,0.031,NA,NA,Fri Oct 06 22:32:22 2017,svmRadialSigma,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,680,12,cv,32,3,1,5,0.0150569277588122,29.4295768302228
+Fail,Fail,Fail,Fail,Fail,Fri Oct 06 22:32:27 2017,svmSpectrumString,1,1,Spread thinly,ignore,none,asis,2
+0.207,0.136,-1,0.173,0.127,Fri Oct 06 22:32:41 2017,treebag,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,682,6,cv,32,3,1,5,none
+0.998,0.998,0,0,0,Fri Oct 06 22:32:51 2017,widekernelpls,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,683,4,cv,32,3,1,5,6
+-0.127,-0.167,0.186,NA,NA,Fri Oct 06 22:37:12 2017,WM,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,684,258,cv,32,3,1,5,9,GAUSSIAN
+0.334,0.292,0.153,0.142,0.107,Fri Oct 06 22:37:52 2017,xgbLinear,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,685,37,cv,32,3,1,5,61,3.84861097848417e-05,0.187990110273863,2.94691714947112
+0.225,0.152,0.188,0.17,0.125,Fri Oct 06 22:41:00 2017,xgbTree,1,1,Spread thinly,ignore,none,asis,0.200810026310109,random,686,185,cv,32,3,1,5,519,6,0.0366423332591075,0.202243910171092,0.435218162462115,10,0.45532530505443
+Fail,Fail,Fail,Fail,Fail,Sat Oct 07 00:09:04 2017,xyf,1,1,Spread thinly,ignore,none,asis,6
+Fail,Fail,Fail,Fail,Fail,Sat Oct 07 00:14:23 2017,avNNet,1,1,needles in haystack,ignore,none,range01,147
+Fail,Fail,Fail,Fail,Fail,Sat Oct 07 00:14:27 2017,bag,1,1,needles in haystack,ignore,none,range01,2
+0.068,0.103,0.174,0.254,0.216,Sat Oct 07 02:00:41 2017,bagEarth,1,1,needles in haystack,ignore,none,range01,0.283430130524066,random,710,6373,cv,32,3,1,5,12,2
+0.099,0.131,-1,0.246,0.208,Sat Oct 07 02:05:50 2017,bagEarthGCV,1,1,needles in haystack,ignore,none,range01,0.283430130524066,random,711,300,cv,32,3,1,5,1
+Fail,Fail,Fail,Fail,Fail,Sat Oct 07 02:49:43 2017,bam,1,1,needles in haystack,ignore,none,range01,2623
+Fail,Fail,Fail,Fail,Fail,Sat Oct 07 02:49:45 2017,bartMachine,1,1,needles in haystack,ignore,none,range01,1
+0.08,0.065,-1,0.265,0.213,Sat Oct 07 02:50:47 2017,bayesglm,1,1,needles in haystack,ignore,none,range01,0.283430130524066,random,714,59,cv,32,3,1,5,none
+0.347,0.381,0.167,0.176,0.151,Sat Oct 07 03:07:08 2017,blasso,1,1,needles in haystack,ignore,none,range01,0.283430130524066,random,715,970,cv,32,3,1,5,0.119636674877256
+0.369,0.321,-1,0.192,0.146,Sat Oct 07 03:23:23 2017,blassoAveraged,1,1,needles in haystack,ignore,none,range01,0.283430130524066,random,716,965,cv,32,3,1,5,none
+0.278,0.269,-1,0.207,0.167,Sat Oct 07 03:39:43 2017,bridge,1,1,needles in haystack,ignore,none,range01,0.283430130524066,random,717,969,cv,32,3,1,5,none
+0.232,0.239,0.157,0.216,0.178,Sat Oct 07 03:43:48 2017,BstLm,1,1,needles in haystack,ignore,none,range01,0.283430130524066,random,718,234,cv,32,3,1,5,421,0.432518766269553
+0.055,0.066,0.166,0.265,0.219,Sat Oct 07 03:57:56 2017,cforest,1,1,needles in haystack,ignore,none,range01,0.283430130524066,random,719,838,cv,32,3,1,5,824
+Fail,Fail,Fail,Fail,Fail,Sat Oct 07 03:58:01 2017,ctree,1,1,needles in haystack,ignore,none,range01,1
+Fail,Fail,Fail,Fail,Fail,Sat Oct 07 03:58:03 2017,ctree2,1,1,needles in haystack,ignore,none,range01,1
+-0.031,-0.041,0.165,0.3,0.251,Sat Oct 07 08:49:54 2017,cubist,1,1,needles in haystack,ignore,none,range01,0.287712047405426,random,252,2774,cv,32,3,1,5,34,8
+-0.003,-0.053,0.184,0.303,0.244,Sat Oct 07 08:50:38 2017,dnn,1,1,needles in haystack,ignore,none,range01,0.287712047405426,random,253,39,cv,32,3,1,5,13,17,2,0.0551618308527395,0.0077727445634082
+Fail,Fail,Fail,Fail,Fail,Sat Oct 07 08:50:53 2017,earth,1,1,needles in haystack,ignore,none,range01,2
+Fail,Fail,Fail,Fail,Fail,Sat Oct 07 08:50:55 2017,elm,1,1,needles in haystack,ignore,none,range01,1

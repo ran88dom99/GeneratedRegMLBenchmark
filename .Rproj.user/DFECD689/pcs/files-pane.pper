@@ -2,6 +2,10 @@
     "path" : "C:/Users/Dm/Desktop/generated data test",
     "sortOrder" : [
         {
+            "ascending" : false,
+            "columnIndex" : 4
+        },
+        {
             "ascending" : true,
             "columnIndex" : 2
         }

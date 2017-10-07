@@ -13,14 +13,15 @@ lots
 
 +avnnet, nnet , pcannet, maybe glm.nb foba WM qrnn
 +msaenet, svmlinear 2&3 relaxo xgbtree superpc SBC? BstLm?
-  need.range=c("leapSeq","glmStepAIC","ppr","qrnn") 
-  if(allmodel %in% need.range && norming=="range01"){next()}
-  best.asis=c("leapSeq","glmStepAIC","ppr","qrnn")
-  if(allmodel %in% best.asis && norming=="asis"){next()}
+  need.range01=c("leapSeq","glmStepAIC","ppr","qrnn") 
+  if(allmodel %in% need.range01 && norming=="range01"){next()}
+  best.wo.range=c("leapSeq","glmStepAIC","ppr","qrnn")
+  if(allmodel %in% best.wo.range && norming=="asis"){next()}
 +but what is to be our center?
-++and that means a second run with allmodels as some other set..
+++and that means a second run with allmodel from some other set..
 
 +3 way comparison should be available soon
++then I will need to do one with mlr 
 -how to predict with hyperopt?; train with new parameters
 
 --+batchtools search online ;compare graphs etc.
