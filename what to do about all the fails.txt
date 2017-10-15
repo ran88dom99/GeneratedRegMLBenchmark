@@ -1,0 +1,12 @@
+I ran many expeiraments using the regresssion learners in caret and many never ever work. Here.
+I compared to MLR and noticed that some of the same learners also failed. What am I doing wrong? 
+
+ooopsss its JAVA! must install JAVA
+
+That and a bunch are just terrible. Causing crashes or taking too much time without remotely decent results.
+bad.models=c("DENFIS","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
+  #too slow neuralnet# dnfis useless and just stops on huge datasets
+@should I retry these?
+
+
+Ask on github and ... hah github only. 

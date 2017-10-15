@@ -1,5 +1,8 @@
 library(caret)
 
+#spread < haystack < no.hay. cu<cmc. no.pred>out
+#mean subtraction is too easy. 4poly only unsolved
+#composite and sparsity NA&20 is boring.
 ######mean subtraction byrow####
 gen.count=gen.count+1
 gens.names[gen.count]="mean subtraction in each row"
@@ -21,6 +24,7 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="median subtraction in each row"
 max.out[gen.count]=.29#.43 err.sqd
+max.out.sq[gen.count]=.43
 varim=c(1,1,1,1,1,1,1,1,1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
@@ -64,6 +68,7 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="rescale isotonic addition"
 max.out[gen.count]=.5#.8 err.sqd
+max.out.sq[gen.count]=.8
 varim=c(1,1,1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
@@ -94,6 +99,7 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="rescale isotonic addition ran bin"
 max.out[gen.count]=.5#.8 err.sqd
+max.out.sq[gen.count]=.8
 varim=c(1,1,1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
@@ -128,6 +134,7 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="noise in predictors"
 max.out[gen.count]=.7#.91 err.sqd
+max.out.sq[gen.count]=.91
 varim=c(1,1,1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
@@ -147,7 +154,8 @@ write.table(round(simScores,digits  = 3),
 ######outliers ######
 gen.count=gen.count+1
 gens.names[gen.count]="outliers"
-max.out[gen.count]=.6#.24 err.sqd
+max.out[gen.count]=.76#.4 err.sqd
+max.out.sq[gen.count]=.4
 varim=c(1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
@@ -190,6 +198,7 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1#almost identical to "noise in predictors"
 gens.names[gen.count]="colinerity middle is correct"
 max.out[gen.count]=.8#.96 err.sqd
+max.out.sq[gen.count]=.96
 varim=c(1,1,1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
@@ -274,6 +283,7 @@ simScores[,11]<-1
 gen.count=gen.count+1
 gens.names[gen.count]="sparsity NA"
 max.out[gen.count]=.44#.62 me^2
+max.out.sq[gen.count]=.62
 varim=c(1,1,1,1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
@@ -295,6 +305,7 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="sparsity 0 offcenter"
 max.out[gen.count]=.54#.7 me^2
+max.out.sq[gen.count]=.7
 varim=c(1,1,1,1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
@@ -316,6 +327,7 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="sparsity 2 row center"
 max.out[gen.count]=.54#.7 me^2
+max.out.sq[gen.count]=.7
 varim=c(1,1,1,1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
@@ -338,6 +350,7 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="sparsity 2 col center"
 max.out[gen.count]=.54#.7 me^2
+max.out.sq[gen.count]=.7
 varim=c(1,1,1,1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
@@ -361,6 +374,7 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="sparsity 20"
 max.out[gen.count]=.5#.65 me^2
+max.out.sq[gen.count]=.65
 varim=c(1,1,1,1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
@@ -399,6 +413,7 @@ write.table(round(simScores,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="composite 1"
 max.out[gen.count]=.21#.42
+max.out.sq[gen.count]=.42
 varim=c(1,1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
@@ -416,6 +431,7 @@ write.table(round(simScores1,digits  = 3),
 gen.count=gen.count+1
 gens.names[gen.count]="composite 2"
 max.out[gen.count]=.21#.42
+max.out.sq[gen.count]=.42
 varim=c(1,1)
 varimport[gen.count,1:length(varim)]=varim
 write.table(round(simScores2,digits  = 3),
@@ -533,7 +549,8 @@ write.table(round(simScores,digits  = 3),
 #######maximum possible accuracy####
 #since data is generated, maximum attainable is determinable
 #####write alg names to file; last######
-out<-data.frame(gens.names,max.out)
+max.out.sq[is.na(max.out.sq)]<-max.out[is.na(max.out.sq)]
+out<-data.frame(gens.names,max.out,max.out.sq)
 write.table(out,
             file = "gens names.csv", append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = T,

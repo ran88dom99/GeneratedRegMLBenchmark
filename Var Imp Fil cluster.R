@@ -2,7 +2,7 @@
 #percent of all intersections above a set amount
 #diagnol is rangeing data vs asis
 S.pear<-"pearson"#"kendall","spearman"
-use.mean<-T
+use.mean<-F
 min.corr<-.93#only if use.mean is false
 
 #read file
@@ -86,6 +86,8 @@ for(c.gen in (u.gens)){
 #make 140x140DF p.a.1
 out.array<-array(0, c(length(u.learns), length(u.learns)))
 out.array.mean<-array(0, c(length(u.learns), length(u.learns)))
+not.na.array<-array(0, c(length(u.learns), length(u.learns)))
+
 #how often is each intersection true?
 #for every model model
 for(n in 1:length(u.learns)){ 
@@ -96,6 +98,7 @@ for(n in 1:length(u.learns)){
     for(g in 1:length(u.gens)){
     #sum Ts into 140xxdf
       if(!is.na(pearson.array[n,c,g])){
+        not.na.array[n,c]=not.na.array[n,c]+1
         if(pearson.array[n,c,g]>=min.corr)
           {out.array[n,c]=out.array[n,c]+1}
         }
@@ -120,7 +123,8 @@ if(T){
   col4 <- colorRampPalette(c("#7F0000","red","#FF7F00","yellow","#7FFF7F",
                              "cyan", "#007FFF", "blue","#00007F"))
   if(use.mean){
-  M<-out.array.mean}else{M<-out.array}
+  M<-out.array.mean}else{
+    M<-out.array/not.na.array}
   
   library('corrplot') #package corrplot
   #corrplot(M, method = "circle") #plot matrix

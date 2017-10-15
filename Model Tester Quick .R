@@ -78,6 +78,7 @@ allmodels <- c("BstLm")#"","enet","lasso",
 allmodels <- unique(modelLookup()[modelLookup()$forReg,c(1)])
 #allmodels<- c("svmLinear","svmPoly","svmRadial")
 #library(doParallel); cl <- makeCluster(detectCores()); registerDoParallel(cl)
+allmodels<-c("bartMachine","extraTrees")#,"randomGLM"
 
 
 adaptControl <- trainControl(method = "adaptive_cv",
@@ -113,7 +114,7 @@ print(date());
 
 if(!exists("gen.count")){gen.count=40}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-for(gend.data in 32:40){
+for(gend.data in 12:40){
   data.source<-as.matrix(read.csv(paste(gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data]
   missingdatas=c("ignore")

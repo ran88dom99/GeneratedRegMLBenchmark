@@ -2,11 +2,11 @@
 for(allmodel in allmodels){#just before all models define d.f and reduce it
   write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
   bad.models=c("DENFIS","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
-  #too slow neuralnet# dnfis useless and just stops on huge datasets
+  #randomGLM "bartMachine","extraTrees","randomGLM",temp#too slow neuralnet# dnfis useless and just stops on huge datasets
   if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
   library(caret) #mlp...s creat some bizzare problem that breaks train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
   #penalized slow then fails
-  slow.models=c("leapSeq","glmStepAIC","ppr","qrnn")#,"cubist","plsRglm","WM","gamboost")#cubist, plsRglm,WM,gamboost  only sometimes
+  slow.models=c("gamSpline","leapSeq","glmStepAIC","ppr","qrnn","WM","plsRglm")#,"cubist","plsRglm","gamboost")#cubist, plsRglm,WM,gamboost  only sometimes
   if(allmodel %in% slow.models && datasource=="needles in haystack"){next()}#too slow for many columns
   if(allmodel %in% slow.models && datasource=="needles hay noise"){next()}#too slow for many columns
   slow.models=c("qrnn")
@@ -19,14 +19,14 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   if(length(df.previous.calcs[,1])>0){
     if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel)){next}}
   
-  
+  if(F){
   # unloading the NS 'object'
   pkgs = names(sessionInfo()$otherPkgs) 
   pkgs = paste('package:', pkgs, sep = "")#detach
   lapply(pkgs,  detach, character.only = TRUE, unload = TRUE)
   library(caret)
   #library(caretEnsemble)
-  library(MLmetrics)
+  library(MLmetrics)}
   gc()
   
   when<-proc.time()            
@@ -127,7 +127,48 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     print(date())
     not.failed=1
     })
+  }
+  ########no hp&cv  goes here
+  if(not.failed==0) {
+    try({trainedmodel <- train(x=data.frame(training[,2:length(training[1,])]),
+                               y =  df.toprocess[inTrain,1],
+                               method = allmodel)
     
+    predicted.outcomes<-predict(trainedmodel, newdata=(testing))
+    p <- data.frame(predicted.outcomes,testing)
+    #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
+    Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
+    #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
+    mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],mean(p[,2], na.rm = T))
+    p<- data.frame(predict(loess.model,predicted.outcomes),y.untransformed[-inTrain])
+    #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
+    RMSE=RMSE(p[,1],p[,2])
+    #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
+    RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
+    #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
+    MMAAEE=MAE(p[,1],p[,2])
+    
+    overRMSE=-1
+    
+    try({wut=print(trainedmodel,selectCol=TRUE)
+      overRMSE=as.numeric(wut[wut[,length(wut[1,])]=="*","RMSE"])})#length(wut[1,])-
+    replace.overRMSE=1
+    try({if(is.numeric(overRMSE)){replace.overRMSE=0}})
+    if(replace.overRMSE==1){overRMSE=-1}
+    if(length(overRMSE)<1){overRMSE=-1}
+    
+    #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
+    write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),round(overRMSE,digits = 3),
+                  round(RMSE,digits = 3),round(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
+                  trans.y,datasource,missingdata,withextra,norming,RMSE.mean,simpleControl$search,
+                  seed.var,round(proc.time()[3]-when[3]),"nohyperparameters",tuneLength2,
+                  simpleControl$number,"no rep","no min",trainedmodel$bestTune),
+                file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+                eol = "\n", na = "NA", dec = ".", row.names = F,
+                col.names = F, qmethod = "double")
+    print(date())
+    not.failed=1
+    })
   }
   if(not.failed==0) {
     print(c("failed","failed",date(),datasource,missingdata,withextra,norming,allmodel))

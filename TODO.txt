@@ -3,13 +3,26 @@ DOC
 SUN 
 mil/km per degree 10k km 6.25k mi
 lots
+- add hyperparamless part to cartpart.R
+++ does java and this ever help?
++ rerun all significant differences between #9 and 8 to check for reset influence
++ C2^.56 + C3^1.3 + C4^1.055
 
-+ brilliant.org/datasceptik
+
++ truth detection is a matter of non-interaction!
+++-unless only true some of the time
+++-or use one to balance out the specific flaws of another
+++ or get a better center, 
++++current simulation seems like it may show exactly this
+
+- brilliant.org/datasceptik
 + c_dfRowsToList , bad unload causes memory leak?
 + c() in importance.csv or why append a vector to file seperates each scalar to a new line.
 	+ ie how remove c()
-+ too much unload causes crashes, 
++ too much unload causes crashes,
+ 
 + search generateFilterValuesData + benchmark probably on github 
++ add actual correct output directly to var fil corr 
 
 +avnnet, nnet , pcannet, maybe glm.nb foba WM qrnn
 +msaenet, svmlinear 2&3 relaxo xgbtree superpc SBC? BstLm?
@@ -17,18 +30,23 @@ lots
   if(allmodel %in% need.range01 && norming=="range01"){next()}
   best.wo.range=c("leapSeq","glmStepAIC","ppr","qrnn")
   if(allmodel %in% best.wo.range && norming=="asis"){next()}
-+but what is to be our center?
++but what will be the common preprocess?
 ++and that means a second run with allmodel from some other set..
 
 +3 way comparison should be available soon
 +then I will need to do one with mlr 
--how to predict with hyperopt?; train with new parameters
++maximal number of dps at which everything still works.... including with sparsity
 
+-how to predict with hyperopt?; train with new parameters
 --+batchtools search online ;compare graphs etc.
 --+just for luls a database for R
-+maximal number of dps at which everything still works.... including with sparsity
 --+2d terrain map for strange interactions
 -add kaggle housing
++add kaggle MAL. or lens or w/e
+
++reiewers do not vote on things they do not like. I think this is called "survival"
+
++extract 'earth' nomials
 +add recc lab funksvd or netflix svd features?
 +add MARS earth features 
 +Can MARSEARTH deal with ifs if features to multiply against are added??? YES! its the 2  interactions limitation
