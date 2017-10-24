@@ -6,7 +6,7 @@
 
 
 ########packages install check######
-library(caret)
+
 list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
 #list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
@@ -69,16 +69,23 @@ allmodels <- c("avNNet","BstLm","bstTree","cforest","ctree","ctree2",
                "icr","kernelpls","kknn","lasso","pcaNNet",
                "pcr","pls","qrf","ranger","rf")
 
-allmodels <- c("BstLm")#"","enet","lasso",
+allmodels <- c("kknn", "cubist", "avNNet", "xgbLinear", "RRF", "pcaNNet","earth","nnet","gbm","enet","lasso","BstLm",
+               "foba", "leapBackward", "gcvEarth", "SBC","glm.nb","gamboost","ctree2","relaxo", 
+               "bartMachine","extraTrees","bam","gam","randomGLM")
+#allmodels <- c("bam")
 #allmodels <- c("rf")"rqlasso",, "xyf" "rvmPoly", "rvmRadial",    "spls", "superpc" ,   "treebag",  "svmLinear2",  "SBC",
 #allmodels <- c("bartMachine", "xgbLinear", "pcaNNet","svmLinear","glmnet","cforest","cubist","rf","ranger")"glmnet",
 #wow rfRules is really slow "rfRules","WM", takes 50min
 # brak everythig "rbfDDA","ridge","rqnc",
 # use "rf" to test all
-allmodels <- unique(modelLookup()[modelLookup()$forReg,c(1)])
+#library(caret)
+#allmodels <- unique(modelLookup()[modelLookup()$forReg,c(1)])
+allmodels <-c("avNNet", "nnet", "pcaNNet",  "glm.nb", "gam" ,
+              "bam","msaenet", "svmLinear2","svmLinear3",
+              "relaxo",  "superpc", "xgbTree", "BstLm")
 #allmodels<- c("svmLinear","svmPoly","svmRadial")
 #library(doParallel); cl <- makeCluster(detectCores()); registerDoParallel(cl)
-allmodels<-c("bartMachine","extraTrees")#,"randomGLM"
+#allmodels<-c("bartMachine","extraTrees")#,"randomGLM"
 
 
 adaptControl <- trainControl(method = "adaptive_cv",
@@ -114,7 +121,7 @@ print(date());
 
 if(!exists("gen.count")){gen.count=40}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-for(gend.data in 12:40){
+for(gend.data in 8:40){
   data.source<-as.matrix(read.csv(paste(gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data]
   missingdatas=c("ignore")
@@ -141,7 +148,7 @@ for(gend.data in 12:40){
       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
       
       
-      normings=c("range01","asis")#,"expoTrans","quantile","centernscale","YeoJohnson"
+      normings=c("centernscale")#"range01","asis","expoTrans","quantile","centernscale","YeoJohnson"
       for(norming in normings) {
         for(trans.y in 1:1) {
           df.toprocess=data.source

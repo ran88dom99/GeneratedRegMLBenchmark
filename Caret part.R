@@ -1,8 +1,8 @@
 ###########for all models#################
 for(allmodel in allmodels){#just before all models define d.f and reduce it
   write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
-  bad.models=c("DENFIS","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
-  #randomGLM "bartMachine","extraTrees","randomGLM",temp#too slow neuralnet# dnfis useless and just stops on huge datasets
+  bad.models=c("randomGLM","DENFIS","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
+  #randomGLM "bartMachine","extraTrees",temp#too slow neuralnet# dnfis useless and just stops on huge datasets
   if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
   library(caret) #mlp...s creat some bizzare problem that breaks train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
   #penalized slow then fails
@@ -54,7 +54,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
   Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
   #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-  mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],mean(p[,2], na.rm = T))
+  mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
   p<- data.frame(predict(loess.model,predicted.outcomes),y.untransformed[-inTrain])
   #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
   RMSE=RMSE(p[,1],p[,2])
@@ -97,7 +97,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
     Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
     #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-    mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],mean(p[,2], na.rm = T))
+    mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
     p<- data.frame(predict(loess.model,predicted.outcomes),y.untransformed[-inTrain])
     #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
     RMSE=RMSE(p[,1],p[,2])
@@ -139,7 +139,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
     Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
     #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-    mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],mean(p[,2], na.rm = T))
+    mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
     p<- data.frame(predict(loess.model,predicted.outcomes),y.untransformed[-inTrain])
     #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
     RMSE=RMSE(p[,1],p[,2])

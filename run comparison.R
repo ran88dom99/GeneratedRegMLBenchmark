@@ -1,10 +1,10 @@
 #load data
-exp.name<-"8th range01 vs asis"
+exp.name<-"10th mlr asis vs range"
 mainDir<-getwd()
 subDir<-exp.name
 expiramentresults<-data.frame()
-expiramentresults<-(read.csv("8th superlong 16n32 35adaptive asis vs range.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".",stringsAsFactors=F))
-dir.create(file.path(mainDir, subDir))
+expiramentresults<-(read.csv("10th asis vs range mlr.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".",stringsAsFactors=F))
+dir.create(file.path(mainDir, subDir))#789 low high cv hp.csv
 setwd(file.path(mainDir, subDir))
 
 #why do negative numbers ever matter? and de-factoring
@@ -17,10 +17,10 @@ exp.res.noF->expiramentresults[,1]
 
 
 #list of good comparisons of tasks
-runsTcompare<-data.frame(c("asis"))
+runsTcompare<-data.frame(c("asis"))#c("lcv lhp","lcv lhp","lcv hhp"))
 #runsTcompare[,1]<-
-runsTcompare[,2]<-c("range01")
-runsTcompare[,3]<-c("asis vs range01")
+runsTcompare[,2]<-c("range01")#c("lcv hhp","hcv hhp","hcv hhp")
+runsTcompare[,3]<-c("asis vs range")#c("ll vs lhw","ll vs hh","lhw vs hh")
 
 u.learns<-unique(expiramentresults[,8])
 u.gens<-unique(expiramentresults[,11])
@@ -63,7 +63,8 @@ for(comp.run in 1:length(runsTcompare[,1])){
       sssExpRes<-selselExpRes[as.logical(selselExpRes[,11]==ev.gen),]
       count.gen<-1+count.gen
       #Test for fails
-      if(length(sssExpRes[,1])<2) {next()}
+      if(length(sssExpRes[sssExpRes[,2]==runsTcompare[count.comp,1],1])<1) {next()}
+      if(length(sssExpRes[sssExpRes[,2]==runsTcompare[count.comp,2],1])<1) {next()}
       #do not assume.be specific
       maxone<-max(sssExpRes[sssExpRes[,2]==runsTcompare[count.comp,1],1])
       maxtwo<-max(sssExpRes[sssExpRes[,2]==runsTcompare[count.comp,2],1])
@@ -72,7 +73,8 @@ for(comp.run in 1:length(runsTcompare[,1])){
         #fill in data points in success and fail dataframes
         failruncomp[count.comp,count.learn,count.gen]<-maxone-maxtwo
       }else{
-        runcomp[count.comp,count.learn,count.gen]<-maxone-maxtwo  
+        runcomp[count.comp,count.learn,count.gen]<-maxone-maxtwo 
+
       }
       comboruncomp[count.comp,count.learn,count.gen]<-maxone-maxtwo
       maxruncomp[count.comp,count.learn,count.gen]<-task.max[count.gen]
@@ -148,6 +150,16 @@ for(r in 1:length(runsTcompare[,1])){
     theme(axis.text.x=element_text(size=7, angle=270,hjust=1,vjust=0.3))+scale_x_discrete(position = "top")+
     xlab(paste("gens in",exp.name)) + ylab("diff") 
   ggsave(paste(exp.name," and boxes per generator.png", sep = ""),plot = last_plot(),scale = 3)
+
+
+  
+ # meltyd<-melt(ttdd)
+#  p <- ggplot(meltyd, aes(y=meltyd[,3],x=reorder(melt(ttdd)[,2],melt((ttdd))[,3])))
+#  p  + geom_boxplot(width=0.4)+ stat_summary(fun.y = "mean", colour = "red", size = 1, geom = "point")+
+#    theme(axis.text.x=element_text(size=7, angle=270,hjust=1,vjust=0.3))+scale_x_discrete(position = "top")+
+#    xlab(paste("gens in",exp.name)) + ylab("diff") 
+#  ggsave(paste(exp.name," and boxes per generator sorted.png", sep = ""),plot = last_plot(),scale = 3)
+  
 }
 
 ##########Now repeat with percent adjusted#########

@@ -69,8 +69,8 @@ denormalize(r_m)
 ###################################################
 ### code chunk number 10: recommenderlab.Rnw:1133-1135 (eval = FALSE)
 ###################################################
-## image(r, main = "Raw Ratings")
-## image(r_m, main = "Normalized Ratings")
+ image(r, main = "Raw Ratings")
+ image(r_m, main = "Normalized Ratings")
 
 
 ###################################################

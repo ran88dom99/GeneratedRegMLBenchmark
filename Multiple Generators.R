@@ -86,7 +86,7 @@ write.table(round(simScores,digits  = 3),
 
 ######just random#########
 gen.count=gen.count+1
-gens.names[gen.count]="random"
+gens.names[gen.count]="just random"
 max.out[gen.count]=0
 varim=c(0,0,0,0,0,0,0,0,0,0)
 varimport[gen.count,1:length(varim)]=varim
@@ -266,6 +266,26 @@ coef3<-rnorm(1, mean = 0, sd = 1);
 
 for(Row in 1:Rows){
   simScores[Row,1]=coef1*simScores[Row,2]^1.3+coef2*simScores[Row,2]^2.1+coef3*simScores[Row,2]^.7
+}
+write.table(round(simScores,digits  = 3),
+            file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+
+######poly aC1^1.3 + bC2^2.1 + dC3^.7 ########
+gen.count=gen.count+1
+gens.names[gen.count]="poly aC1^1.3 + bC2^2.1 + dC3^.7"
+max.out[gen.count]=1
+varim=c(1,0)
+varimport[gen.count,1:length(varim)]=varim
+for(Row in 1:Rows){
+  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+}
+coef1<-rnorm(1, mean = 0, sd = 1);coef2<-rnorm(1, mean = 0, sd = 1);
+coef3<-rnorm(1, mean = 0, sd = 1);
+
+for(Row in 1:Rows){
+  simScores[Row,1]=coef1*simScores[Row,2]^1.3+coef2*simScores[Row,3]^2.1+coef3*simScores[Row,4]^.7
 }
 write.table(round(simScores,digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",

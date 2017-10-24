@@ -1,41 +1,63 @@
-pingpong pump mouthwash? antibacteria?  warm?
-DOC 
-SUN 
+DOC  
 mil/km per degree 10k km 6.25k mi
 lots
 - add hyperparamless part to cartpart.R
-++ does java and this ever help?
+- does java and this ever help?
 + rerun all significant differences between #9 and 8 to check for reset influence
-+ C2^.56 + C3^1.3 + C4^1.055
+- C2^.56 + C3^1.3 + C4^1.055 + C5 ^ 2.2
+- wtf is up with detection and crashing on random?
 
++find best
+++find missed little things
+++find most misrated by collective
++find friend / find honest
+++find similar interests
++find all that belong to a set... just use white noise?
 
 + truth detection is a matter of non-interaction!
-++-unless only true some of the time
-++-or use one to balance out the specific flaws of another
-++ or get a better center, 
-+++current simulation seems like it may show exactly this
+++ or get a better center,
+++ or use one to balance out the specific flaws of another
++++ re-run each isotonic regression to hopefully adjust for errors of previous.
+++ isotonic regressions only. on the best for polynom transformation algorithms. probably biased?
++ what about missing values?
+++ how do I combine with similar interest?
++++ 0? row column center? slightly less than that? generate random values similar to user?
++++ reiewers do not vote on things they do not like. I think this is called "survival"?
++ game centered? or absolute? or test various options like before?
++ how do I know it works? prediction again?  well yes.
++ there exist works on subject of friends to follow / journals most honest + query recommenderlab
+
+
 
 - brilliant.org/datasceptik
 + c_dfRowsToList , bad unload causes memory leak?
 + c() in importance.csv or why append a vector to file seperates each scalar to a new line.
 	+ ie how remove c()
 + too much unload causes crashes,
- 
 + search generateFilterValuesData + benchmark probably on github 
-+ add actual correct output directly to var fil corr 
+- add actual correct output directly to var fil corr 
++ whats up with random? redo a few times please
 
-+avnnet, nnet , pcannet, maybe glm.nb foba WM qrnn
-+msaenet, svmlinear 2&3 relaxo xgbtree superpc SBC? BstLm?
-  need.range01=c("leapSeq","glmStepAIC","ppr","qrnn") 
++ Random Hunt +++++
+
++ Center n Scale +++++
+
++ avnnet, nnet , pcannet,  glm.nb, gam ,bam --- foba WM qrnn ... those last three are not important
++ msaenet, svmlinear 2&3 relaxo  superpc xgbtree? BstLm? -- SBC?
+  need.range01=c("avnnet", "nnet", "pcannet",  "glm.nb", "gam" , "bam") 
   if(allmodel %in% need.range01 && norming=="range01"){next()}
-  best.wo.range=c("leapSeq","glmStepAIC","ppr","qrnn")
+  best.asis=c("msaenet", "svmLinear2","svmLinear3", "relaxo",  "superpc", "xgbtree", "BstLm")
   if(allmodel %in% best.wo.range && norming=="asis"){next()}
-+but what will be the common preprocess?
-++and that means a second run with allmodel from some other set..
++ but what will be the common preprocess?
+++ and that means a second run with allmodel from some other set..
++ 3 way comparison should be available soon
++ then I will need to do one with mlr 
++ some problems need range or scale! must try CnS on many things
 
-+3 way comparison should be available soon
-+then I will need to do one with mlr 
-+maximal number of dps at which everything still works.... including with sparsity
++ test each algorithm through and through
+++ maximal number of dps at which target works
+++ on theoretical setup and actual 
+
 
 -how to predict with hyperopt?; train with new parameters
 --+batchtools search online ;compare graphs etc.
@@ -44,7 +66,7 @@ lots
 -add kaggle housing
 +add kaggle MAL. or lens or w/e
 
-+reiewers do not vote on things they do not like. I think this is called "survival"
+
 
 +extract 'earth' nomials
 +add recc lab funksvd or netflix svd features?
@@ -62,9 +84,7 @@ lots
 
 +SVD and RMB feature creation as in Netflix Prize
 +that one mlr tester had a program on github
-+mlr no hyper serach if hypersearch fails
-
-+Outliers and removing them based on 10% highest RMSE.... or cubist can be stacked on SQRT()? no algos do not work like this... will need a split
++mlr no hyper search if hypersearch fails
 
 +read?write up on the type of relations the methods can detect
 -+Polynoms!?! use formula interface and poly()

@@ -1,9 +1,10 @@
 #ggplot: how  label, print to file
-exp.name<-"8th superlong 16n32 35adaptive rna nzv"
+exp.name<-"10th lcv hhp first mlr"
 mainDir<-getwd()
 subDir<-exp.name
-expiramentresults<-read.csv("8th superlong 16n32 35adaptive.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
-#gene.expect<-read.csv("gens names.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+expiramentresults<-read.csv("gen test out first mlr.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+gene.expect<-matrix(data = NA, nrow = 100, ncol = 100, byrow = FALSE,
+                    dimnames = NULL)#gene.expect<-read.csv("gens names.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
 dir.create(file.path(mainDir, subDir))
 setwd(file.path(mainDir, subDir))
 
@@ -58,7 +59,7 @@ write.table(time.df,
             file = paste(exp.name,"Time.csv", sep = ""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-not.interesting<-(time.df[,3]<40) 
+not.interesting<-(time.df[,3]<10) 
 I.time.df<-time.df[!not.interesting,]
 time.df[,2]<-log(time.df[,2])
 time.df[,3]<-log(time.df[,3])

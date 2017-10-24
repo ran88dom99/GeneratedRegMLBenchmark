@@ -1,10 +1,11 @@
-
-pkgs = names(sessionInfo()$otherPkgs) 
-if(length(pkgs)>0){
-  print(data())
-  pkgs = paste('package:', pkgs, sep = "")
-  lapply(pkgs, detach, character.only = TRUE, unload = TRUE)
-}
+#svm with Radial Basis Function is the most recommended learner. 
+#Get hypertopt's outputs for the  5 models pls
+#pkgs = names(sessionInfo()$otherPkgs) 
+#if(length(pkgs)>0){
+#  print(data())
+#  pkgs = paste('package:', pkgs, sep = "")
+#  lapply(pkgs, detach, character.only = TRUE, unload = TRUE)
+#}
 library(ParamHelpers)
 library(mlr)
 library(mlbench)
@@ -95,7 +96,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
   Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
   #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-  mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],mean(p[,2], na.rm = T))
+  mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
   p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
   #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
   RMSE=RMSE(p[,1],p[,2])
@@ -133,7 +134,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
   Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
   #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-  mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],mean(p[,2], na.rm = T))
+  mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
   p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
   #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
   RMSE=RMSE(p[,1],p[,2])
