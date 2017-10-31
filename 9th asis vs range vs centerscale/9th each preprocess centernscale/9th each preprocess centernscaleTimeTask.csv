@@ -1,0 +1,40 @@
+poly C1 ^ C2,2,5,33.6962025316456,958
+ifs 1 & -1 on C1,2,5,38.8987341772152,1098
+composite 2,2,5,40.7160493827161,1546
+composite 1,2,5,41.1234567901235,1498
+composite complete,2,5,41.8101265822785,1010
+poly C1 t C2 t C3,2,6,43.5641025641026,1093
+outliers,2,6,44.7179487179487,1346
+bm C1 ^ -2,2,6,85.038961038961,2880
+ifs C2 & -C2 on C1,2,7,43.6455696202532,1233
+ifs C2 & C3t2 on C4g1.5,2,7,46.6329113924051,1356
+ifs C1&C2 on random,2,7,47.6153846153846,1266
+rescale 4 poly,2,7,47.6835443037975,1328
+ifs -C2-C3 & C2+C3 on C1,2,7,50.9240506329114,1446
+ifs C1 & C2 on C1,2,7,52.3544303797468,1313
+ifs nested 2 layer,2,7,93.1898734177215,2850
+ifs smooth -C2-C3&C2+C3 onC1,2,8,50.253164556962,1315
+ifs C2+C3 & C4+C5 on C1,2,8,193.607594936709,3768
+poly C1 t C2 t C3^1d3,5,10,38.8888888888889,143
+basic latent features,5,10.5,41.8,154
+colinerity unnecessary,4,12,40.8,172
+sparsity 20,3,13,45.9,175
+bm C1 ^ 2,8,13,51,147
+median subtraction in each row,5,13,56,192
+mean subtraction in each row,3,13.5,47.8,183
+Spread thinly,3,14,46.7,191
+bm 1dC1,6,14,47.6666666666667,155
+bm log(C1),3,14.5,38.7,160
+poly C1 t C2,3,14.5,41,140
+bm C1 ^ .5,5,14.5,45.2,151
+bm sin(C2),4,15,62.7777777777778,181
+sparsity 0,3,15,99.6,705
+rescale isotonic addition ran bin,3,16,61.4,262
+colinerity middle is correct,3,16,63.5,199
+rescale isotonic addition,3,16.5,56.8,168
+noise in predictors,3,17.5,53.4,176
+quantilization,5,18,65,181
+sparsity NA,7,22,223,640
+needles in haystack,8,96,248.625,1112
+needles hay noise,7,99,408.75,2532
+random,Inf,,,-Inf

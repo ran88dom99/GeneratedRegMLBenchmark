@@ -1,10 +1,10 @@
 #load data
-exp.name<-"10th mlr asis vs range"
+exp.name<-"9th asis vs range vs centerscale"
 mainDir<-getwd()
 subDir<-exp.name
 expiramentresults<-data.frame()
-expiramentresults<-(read.csv("10th asis vs range mlr.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".",stringsAsFactors=F))
-dir.create(file.path(mainDir, subDir))#789 low high cv hp.csv
+expiramentresults<-(read.csv("9th asis vs range vs centerscale.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".",stringsAsFactors=F))
+dir.create(file.path(mainDir, subDir))#10th asis vs range mlr.csv
 setwd(file.path(mainDir, subDir))
 
 #why do negative numbers ever matter? and de-factoring
@@ -17,10 +17,14 @@ exp.res.noF->expiramentresults[,1]
 
 
 #list of good comparisons of tasks
-runsTcompare<-data.frame(c("asis"))#c("lcv lhp","lcv lhp","lcv hhp"))
+#runsTcompare<-data.frame(c("lcv lhp","lcv lhp","lcv hhp","lcv hhp"))#)c("asis")
 #runsTcompare[,1]<-
-runsTcompare[,2]<-c("range01")#c("lcv hhp","hcv hhp","hcv hhp")
-runsTcompare[,3]<-c("asis vs range")#c("ll vs lhw","ll vs hh","lhw vs hh")
+#runsTcompare[,2]<-c("lcv hhp","hcv hhp","hcv hhp","lcv hhp norm")#c("range01")
+#runsTcompare[,3]<-c("ll vs lhw","ll vs hh","lhw vs hh","lhw vs lh")#c("asis vs range")
+runsTcompare<-data.frame(c("asis","asis","range01"))#)c("asis")
+runsTcompare[,2]<-c("range01","centernscale","centernscale")#c("range01")
+runsTcompare[,3]<-c("asis vs range","asis vs centerscale","range vs centerscale")#c("asis vs range")
+
 
 u.learns<-unique(expiramentresults[,8])
 u.gens<-unique(expiramentresults[,11])

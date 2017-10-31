@@ -1,8 +1,8 @@
 #ggplot: how  label, print to file
-exp.name<-"10th lcv hhp first mlr"
+exp.name<-"9th ex center and scale"
 mainDir<-getwd()
 subDir<-exp.name
-expiramentresults<-read.csv("gen test out first mlr.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+expiramentresults<-read.csv("gen t o cts of range asis learners and gens.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
 gene.expect<-matrix(data = NA, nrow = 100, ncol = 100, byrow = FALSE,
                     dimnames = NULL)#gene.expect<-read.csv("gens names.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
 dir.create(file.path(mainDir, subDir))

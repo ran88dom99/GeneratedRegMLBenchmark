@@ -1,0 +1,41 @@
+colinerity unnecessary,42,0,0,0
+colinerity middle is correct,42,0,0,0
+Spread thinly,42,0,0,0
+needles in haystack,38,0,0,0
+sparsity 0,42,0,0,0
+sparsity 20,42,0,0,0
+quantilization,42,0,0,0
+composite 1,46,0,0,0
+composite 2,46,0,0,0
+composite complete,42,0,0,0
+ifs 1 & -1 on C1,43,1,0,0.0232558139534884
+poly C1 t C2 t C3,44,2,0,0.0454545454545455
+poly C1 t C2,44,2,0,0.0454545454545455
+poly C1 ^ C2,44,2,0,0.0454545454545455
+poly C1 t C2 t C3^1d3,44,2,0,0.0454545454545455
+ifs C2 & -C2 on C1,44,2,0,0.0454545454545455
+ifs C2+C3 & C4+C5 on C1,44,2,0,0.0454545454545455
+ifs smooth -C2-C3&C2+C3 onC1,44,2,0,0.0454545454545455
+ifs -C2-C3 & C2+C3 on C1,44,2,0,0.0454545454545455
+ifs C1 & C2 on C1,44,2,0,0.0454545454545455
+ifs C2 & C3t2 on C4g1.5,44,2,0,0.0454545454545455
+ifs C1&C2 on random,44,2,0,0.0454545454545455
+ifs nested 2 layer,44,2,0,0.0454545454545455
+mean subtraction in each row,44,2,0,0.0454545454545455
+median subtraction in each row,44,2,0,0.0454545454545455
+rescale 4 poly,44,2,0,0.0454545454545455
+rescale isotonic addition,44,2,0,0.0454545454545455
+rescale isotonic addition ran bin,44,2,0,0.0454545454545455
+noise in predictors,44,2,0,0.0454545454545455
+outliers,44,2,0,0.0454545454545455
+bm sin(C2),46,4,0,0.0869565217391304
+basic latent features,58,6,0,0.103448275862069
+bm C1 ^ 2,48,6,0,0.125
+bm C1 ^ .5,48,6,0,0.125
+bm C1 ^ -2,48,6,0,0.125
+bm log(C1),48,6,0,0.125
+bm 1dC1,48,6,0,0.125
+needles hay noise,45,8,0,0.177777777777778
+sparsity NA,11,0,2,0.181818181818182
+,3,3,0,1
+random,2,2,0,1

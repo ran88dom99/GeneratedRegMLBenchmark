@@ -78,11 +78,11 @@ allmodels <- c("kknn", "cubist", "avNNet", "xgbLinear", "RRF", "pcaNNet","earth"
 #wow rfRules is really slow "rfRules","WM", takes 50min
 # brak everythig "rbfDDA","ridge","rqnc",
 # use "rf" to test all
-#library(caret)
-#allmodels <- unique(modelLookup()[modelLookup()$forReg,c(1)])
-allmodels <-c("avNNet", "nnet", "pcaNNet",  "glm.nb", "gam" ,
-              "bam","msaenet", "svmLinear2","svmLinear3",
-              "relaxo",  "superpc", "xgbTree", "BstLm")
+library(caret)
+allmodels <- unique(modelLookup()[modelLookup()$forReg,c(1)])
+#allmodels <-c("avNNet", "nnet", "pcaNNet",  "glm.nb", "gam" ,
+#              "bam","msaenet", "svmLinear2","svmLinear3",
+#              "relaxo",  "superpc", "xgbTree", "BstLm")
 #allmodels<- c("svmLinear","svmPoly","svmRadial")
 #library(doParallel); cl <- makeCluster(detectCores()); registerDoParallel(cl)
 #allmodels<-c("bartMachine","extraTrees")#,"randomGLM"
@@ -99,7 +99,7 @@ simpleControl <- trainControl(method = "cv",
                               number = 3,
                               search = "random")
 tuneLength=32
-tuneLength2=32
+tuneLength2=8
 #########MLR init######
 #R.utils::gcDLLs()
 #list.of.packages <- c("ParamHelpers","devtools","mlrMBO","RJSONIO","plot3D","plotly")
@@ -119,9 +119,10 @@ seed.var=seed.const
 column.to.predict=1
 print(date());
 
+gensTTest<-c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 if(!exists("gen.count")){gen.count=40}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-for(gend.data in 8:40){
+for(gend.data in gensTTest){
   data.source<-as.matrix(read.csv(paste(gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data]
   missingdatas=c("ignore")

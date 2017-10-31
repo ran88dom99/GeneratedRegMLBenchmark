@@ -38,15 +38,20 @@ lots
 - add actual correct output directly to var fil corr 
 + whats up with random? redo a few times please
 
-+ Random Hunt +++++
++ Random Hunt +++++ in secong gen when random is not "random"
 
 + Center n Scale +++++
 
++ SIMPSON'S PARADOX ++++++ well add it ok?
+
+I need to split 789 by asis vs range so I can get min necessary for both
+and 
+
 + avnnet, nnet , pcannet,  glm.nb, gam ,bam --- foba WM qrnn ... those last three are not important
 + msaenet, svmlinear 2&3 relaxo  superpc xgbtree? BstLm? -- SBC?
-  need.range01=c("avnnet", "nnet", "pcannet",  "glm.nb", "gam" , "bam") 
+  need.range01=c("avNNet", "nnet", "pcaNNet",  "glm.nb", "gam" , "bam") 
   if(allmodel %in% need.range01 && norming=="range01"){next()}
-  best.asis=c("msaenet", "svmLinear2","svmLinear3", "relaxo",  "superpc", "xgbtree", "BstLm")
+  best.asis=c("msaenet", "svmLinear2","svmLinear3", "relaxo",  "superpc", "xgbTree", "BstLm")
   if(allmodel %in% best.wo.range && norming=="asis"){next()}
 + but what will be the common preprocess?
 ++ and that means a second run with allmodel from some other set..
@@ -57,6 +62,9 @@ lots
 + test each algorithm through and through
 ++ maximal number of dps at which target works
 ++ on theoretical setup and actual 
+
++  find oh say 100 best by simply kendall spearman then boosting.
++  can svd be boostd? and kendall spearman?
 
 
 -how to predict with hyperopt?; train with new parameters

@@ -1,0 +1,511 @@
+0.335,0.212,0.659,0.889,0.593,Wed Aug 02 16:37:25 2017,avNNe,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,,0.953,0.91,0.012,0.109,0.042,Thu Aug 17 23:20:08 2017,avNNet,1,1,basic latent features,ignore,none,range01,1.21305970973197,random,249,26,cv,5,6,1,5,3,0.000154371552198701,FALSE
+0.382,0.213,0.768,1.06,0.639,Mon Oct 23 20:32:26 2017,avNNet,1,1,basic latent features,ignore,none,centernscale,1.34710488886249,random,272,48,cv,32,3,1,5,14,0.000266004350085447,FALSE
+0.366,0.213,0.757,1.061,0.655,Mon Oct 23 20:32:40 2017,nnet,1,1,basic latent features,ignore,none,centernscale,1.34710488886249,random,273,11,cv,32,3,1,5,19,0.00312019395138481
+0.388,0.214,0.743,1.059,0.632,Mon Oct 23 20:32:50 2017,pcaNNet,1,1,basic latent features,ignore,none,centernscale,1.34710488886249,random,274,10,cv,32,3,1,5,16,8.37841566392746e-05
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 20:32:58 2017,glm.nb,1,1,basic latent features,ignore,none,centernscale,4
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 20:33:16 2017,gam,1,1,basic latent features,ignore,none,centernscale,17
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 20:34:49 2017,bam,1,1,basic latent features,ignore,none,centernscale,93
+0.999,0.999,0.001,0.001,0.001,Mon Oct 23 20:35:13 2017,msaenet,1,1,basic latent features,ignore,none,centernscale,1.34710488886249,random,278,23,cv,32,3,1,5,0.35472363634035,2,0.250993622234091
+0.96,0.96,0.049,0.054,0.041,Mon Oct 23 20:35:19 2017,svmLinear2,1,1,basic latent features,ignore,none,centernscale,1.34710488886249,random,279,6,cv,32,3,1,5,0.171246154035238
+0.957,0.957,0.054,0.057,0.044,Mon Oct 23 20:35:28 2017,svmLinear3,1,1,basic latent features,ignore,none,centernscale,1.34710488886249,random,280,6,cv,32,3,1,5,66.6384806134793,L2
+1,1,0,0,0,Mon Oct 23 20:35:36 2017,relaxo,1,1,basic latent features,ignore,none,centernscale,1.34710488886249,random,281,8,cv,32,3,1,5,0.000608431279123602,0.989925908157602
+0.995,0.996,0.019,0.005,0.005,Mon Oct 23 20:35:44 2017,superpc,1,1,basic latent features,ignore,none,centernscale,1.34710488886249,random,282,5,cv,32,3,1,5,0.0308962650597095,3
+0.804,0.799,0.277,0.271,0.203,Mon Oct 23 20:38:11 2017,xgbTree,1,1,basic latent features,ignore,none,centernscale,1.34710488886249,random,283,147,cv,32,3,1,5,345,8,0.0409382070873398,0.380563917569816,0.608961520250887,0,0.432817288965452
+0.995,0.996,0.05,0.005,0.005,Mon Oct 23 20:40:48 2017,BstLm,1,1,basic latent features,ignore,none,centernscale,1.34710488886249,random,284,154,cv,32,3,1,5,74,0.336829513662495
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 20:41:01 2017,glm.nb,1,1,random,ignore,none,centernscale,4
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 20:41:19 2017,gam,1,1,random,ignore,none,centernscale,16
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 20:42:59 2017,bam,1,1,random,ignore,none,centernscale,96
+-0.055,0.118,0.831,1.598,1.164,Mon Oct 23 20:44:00 2017,avNNet,1,1,bm C1 ^ 2,ignore,none,centernscale,1.81222043629417,random,298,49,cv,32,3,1,5,16,0.000293753869134447,TRUE
+0.039,0.124,0.838,1.588,1.06,Mon Oct 23 20:44:13 2017,nnet,1,1,bm C1 ^ 2,ignore,none,centernscale,1.81222043629417,random,299,12,cv,32,3,1,5,20,0.0270014871807262
+0.049,0.125,0.818,1.585,1.049,Mon Oct 23 20:44:26 2017,pcaNNet,1,1,bm C1 ^ 2,ignore,none,centernscale,1.81222043629417,random,300,13,cv,32,3,1,5,5,0.0159932218194507
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 20:44:35 2017,glm.nb,1,1,bm C1 ^ 2,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 20:44:53 2017,gam,1,1,bm C1 ^ 2,ignore,none,centernscale,18
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 20:46:34 2017,bam,1,1,bm C1 ^ 2,ignore,none,centernscale,100
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 20:48:00 2017,msaenet,1,1,bm C1 ^ 2,ignore,none,centernscale,86
+-0.16,-0.138,1.029,NA,NA,Mon Oct 23 20:49:25 2017,svmLinear2,1,1,bm C1 ^ 2,ignore,none,centernscale,1.81222043629417,random,305,84,cv,32,3,1,5,0.105202218471656
+-0.158,-0.016,0.918,1.841,1.278,Mon Oct 23 20:49:40 2017,svmLinear3,1,1,bm C1 ^ 2,ignore,none,centernscale,1.81222043629417,random,306,12,cv,32,3,1,5,0.00282563793582334,L1
+-0.133,-0.002,0.921,1.816,1.249,Mon Oct 23 20:49:53 2017,relaxo,1,1,bm C1 ^ 2,ignore,none,centernscale,1.81222043629417,random,307,8,cv,32,3,1,5,11.1630192132731,0.229917944176123
+-0.141,0.002,1.005,1.809,1.259,Mon Oct 23 20:50:08 2017,superpc,1,1,bm C1 ^ 2,ignore,none,centernscale,1.81222043629417,random,308,11,nohyperparameters,32,3,no rep,no min,0.1,1
+0.517,0.423,0.584,1.045,0.533,Mon Oct 23 20:52:36 2017,xgbTree,1,1,bm C1 ^ 2,ignore,none,centernscale,1.81222043629417,random,309,147,cv,32,3,1,5,95,2,0.464136760116322,1.18037432199344,0.658799163531512,2,0.676039272162598
+-0.135,-0.015,0.971,1.839,1.252,Mon Oct 23 20:54:40 2017,BstLm,1,1,bm C1 ^ 2,ignore,none,centernscale,1.81222043629417,random,310,123,cv,32,3,1,5,7,0.111134227793431
+0.262,0.231,0.723,0.259,0.188,Mon Oct 23 20:55:20 2017,avNNet,1,1,bm C1 ^ .5,ignore,none,centernscale,0.336712899053316,random,311,37,cv,32,3,1,5,16,0.00414129576180619,FALSE
+0.259,0.231,0.728,0.259,0.189,Mon Oct 23 20:55:31 2017,nnet,1,1,bm C1 ^ .5,ignore,none,centernscale,0.336712899053316,random,312,10,cv,32,3,1,5,17,0.0032771006481191
+0.277,0.233,0.723,0.258,0.184,Mon Oct 23 20:55:42 2017,pcaNNet,1,1,bm C1 ^ .5,ignore,none,centernscale,0.336712899053316,random,313,11,cv,32,3,1,5,20,0.00139212961500266
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 20:55:48 2017,glm.nb,1,1,bm C1 ^ .5,ignore,none,centernscale,6
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 20:56:05 2017,gam,1,1,bm C1 ^ .5,ignore,none,centernscale,17
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 20:57:44 2017,bam,1,1,bm C1 ^ .5,ignore,none,centernscale,98
+0.723,0.764,0.234,0.08,0.071,Mon Oct 23 20:58:02 2017,msaenet,1,1,bm C1 ^ .5,ignore,none,centernscale,0.336712899053316,random,317,18,cv,32,3,1,5,0.207128582824953,3,0.351899363507982
+0.597,0.669,0.304,NA,NA,Mon Oct 23 20:59:34 2017,svmLinear2,1,1,bm C1 ^ .5,ignore,none,centernscale,0.336712899053316,random,318,92,cv,32,3,1,5,14.297686361905
+0.542,0.61,0.25,0.131,0.117,Mon Oct 23 20:59:42 2017,svmLinear3,1,1,bm C1 ^ .5,ignore,none,centernscale,0.336712899053316,random,319,8,cv,32,3,1,5,0.563370007433276,L2
+-0.382,-0.071,1.023,NA,NA,Mon Oct 23 20:59:51 2017,relaxo,1,1,bm C1 ^ .5,ignore,none,centernscale,0.336712899053316,random,320,6,cv,32,3,1,5,28.3765632465313,0.799156594788656
+0.643,0.707,0.242,0.099,0.091,Mon Oct 23 20:59:56 2017,superpc,1,1,bm C1 ^ .5,ignore,none,centernscale,0.336712899053316,random,321,5,cv,32,3,1,5,0.86474969657138,3
+0.492,0.492,0.491,0.171,0.129,Mon Oct 23 21:01:50 2017,xgbTree,1,1,bm C1 ^ .5,ignore,none,centernscale,0.336712899053316,random,322,114,cv,32,3,1,5,833,3,0.0155346912862733,1.58729031914845,0.669077938050032,5,0.887599798152223
+-0.029,0.044,0.809,0.322,0.262,Mon Oct 23 21:04:25 2017,BstLm,1,1,bm C1 ^ .5,ignore,none,centernscale,0.336712899053316,random,323,151,cv,32,3,1,5,32,0.148356048495742
+-1.609,-0.013,0.72,10903.659,5892.697,Mon Oct 23 21:05:04 2017,avNNet,1,1,bm C1 ^ -2,ignore,none,centernscale,10764.7214441784,random,324,34,cv,32,3,1,5,10,1.29202974204672e-05,FALSE
+-1.613,-0.013,0.793,10904.571,5900.835,Mon Oct 23 21:05:17 2017,nnet,1,1,bm C1 ^ -2,ignore,none,centernscale,10764.7214441784,random,325,11,cv,32,3,1,5,9,6.73739193851185e-05
+-1.609,-0.013,0.724,10903.665,5892.669,Mon Oct 23 21:05:33 2017,pcaNNet,1,1,bm C1 ^ -2,ignore,none,centernscale,10764.7214441784,random,326,12,cv,32,3,1,5,6,1.19561650622029e-05
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:05:42 2017,glm.nb,1,1,bm C1 ^ -2,ignore,none,centernscale,6
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:06:00 2017,gam,1,1,bm C1 ^ -2,ignore,none,centernscale,18
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:07:39 2017,bam,1,1,bm C1 ^ -2,ignore,none,centernscale,98
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:08:52 2017,msaenet,1,1,bm C1 ^ -2,ignore,none,centernscale,73
+-1.082,0.007,0.693,10692.482,4701.768,Mon Oct 23 21:09:57 2017,svmLinear2,1,1,bm C1 ^ -2,ignore,none,centernscale,10764.7214441784,random,331,65,cv,32,3,1,5,404.133322530529
+-1.182,0.001,0.703,10751.564,4928.312,Mon Oct 23 21:10:07 2017,svmLinear3,1,1,bm C1 ^ -2,ignore,none,centernscale,10764.7214441784,random,332,10,cv,32,3,1,5,0.226004810473308,L2
+-1.609,-0.013,0.713,10903.665,5892.669,Mon Oct 23 21:10:14 2017,relaxo,1,1,bm C1 ^ -2,ignore,none,centernscale,10764.7214441784,random,333,6,cv,32,3,1,5,10.3472189823577,0.0638051906134933
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:10:21 2017,superpc,1,1,bm C1 ^ -2,ignore,none,centernscale,7
+-3.631,-0.179,0.737,12688.008,10458.581,Mon Oct 23 21:12:08 2017,xgbTree,1,1,bm C1 ^ -2,ignore,none,centernscale,10764.7214441784,random,335,106,cv,32,3,1,5,301,3,0.59872993795108,7.95442343922332,0.381824973877519,13,0.434165862970985
+-1.994,-0.048,0.777,11282.993,6762.268,Mon Oct 23 21:15:07 2017,BstLm,1,1,bm C1 ^ -2,ignore,none,centernscale,10764.7214441784,random,336,179,cv,32,3,1,5,1,0.280943832418881
+0.177,0.04,0.615,1.429,0.669,Mon Oct 23 21:15:40 2017,avNNet,1,1,bm log(C1),ignore,none,centernscale,1.48824505850571,random,337,29,cv,32,3,1,5,10,0.000452760426573329,FALSE
+0.225,0.042,0.661,1.425,0.63,Mon Oct 23 21:15:50 2017,nnet,1,1,bm log(C1),ignore,none,centernscale,1.48824505850571,random,338,10,cv,32,3,1,5,3,0.00194609719368461
+0.232,0.043,0.628,1.424,0.624,Mon Oct 23 21:16:03 2017,pcaNNet,1,1,bm log(C1),ignore,none,centernscale,1.48824505850571,random,339,12,cv,32,3,1,5,11,0.00702261654017313
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:16:10 2017,glm.nb,1,1,bm log(C1),ignore,none,centernscale,6
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:16:27 2017,gam,1,1,bm log(C1),ignore,none,centernscale,17
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:18:05 2017,bam,1,1,bm log(C1),ignore,none,centernscale,97
+0.366,0.288,0.437,NA,NA,Mon Oct 23 21:18:23 2017,msaenet,1,1,bm log(C1),ignore,none,centernscale,1.48824505850571,random,343,17,cv,32,3,1,5,0.0543913651956245,5,2.93553659814643
+0.361,0.264,0.443,1.095,0.519,Mon Oct 23 21:19:12 2017,svmLinear2,1,1,bm log(C1),ignore,none,centernscale,1.48824505850571,random,344,48,cv,32,3,1,5,9.48236422066716
+0.411,0.27,0.507,1.086,0.478,Mon Oct 23 21:19:19 2017,svmLinear3,1,1,bm log(C1),ignore,none,centernscale,1.48824505850571,random,345,7,cv,32,3,1,5,2.65324860522442,L2
+-0.109,-0.009,0.883,1.502,0.901,Mon Oct 23 21:19:26 2017,relaxo,1,1,bm log(C1),ignore,none,centernscale,1.48824505850571,random,346,6,cv,32,3,1,5,18.6365601789979,0.88306723581627
+0.396,0.327,0.306,1.002,0.491,Mon Oct 23 21:19:33 2017,superpc,1,1,bm log(C1),ignore,none,centernscale,1.48824505850571,random,347,3,cv,32,3,1,5,0.740478569408879,3
+0.279,0.212,0.458,1.173,0.586,Mon Oct 23 21:21:10 2017,xgbTree,1,1,bm log(C1),ignore,none,centernscale,1.48824505850571,random,348,95,cv,32,3,1,5,701,5,0.521482490780298,3.4552135062404,0.501224905997515,6,0.933785201690625
+0.067,0.023,0.75,1.453,0.758,Mon Oct 23 21:23:53 2017,BstLm,1,1,bm log(C1),ignore,none,centernscale,1.48824505850571,random,349,160,cv,32,3,1,5,28,0.0900020373724401
+-0.029,-0.035,0.823,9.143,4.769,Mon Oct 23 21:24:40 2017,avNNet,1,1,bm 1dC1,ignore,none,centernscale,8.83746044742053,random,350,42,cv,32,3,1,5,9,1.20516752739124e-05,TRUE
+-0.029,-0.035,0.786,9.143,4.768,Mon Oct 23 21:24:52 2017,nnet,1,1,bm 1dC1,ignore,none,centernscale,8.83746044742053,random,351,11,cv,32,3,1,5,19,3.89913753469489e-05
+0.018,-0.035,0.798,9.147,4.55,Mon Oct 23 21:25:06 2017,pcaNNet,1,1,bm 1dC1,ignore,none,centernscale,8.83746044742053,random,352,14,cv,32,3,1,5,16,9.31700191347139e-05
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:25:15 2017,glm.nb,1,1,bm 1dC1,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:25:33 2017,gam,1,1,bm 1dC1,ignore,none,centernscale,18
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:27:11 2017,bam,1,1,bm 1dC1,ignore,none,centernscale,98
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:28:15 2017,msaenet,1,1,bm 1dC1,ignore,none,centernscale,64
+-0.036,-0.036,0.794,9.154,4.801,Mon Oct 23 21:29:01 2017,svmLinear2,1,1,bm 1dC1,ignore,none,centernscale,8.83746044742053,random,357,46,cv,32,3,1,5,0.0458625812518873
+-0.022,-0.034,0.819,9.14,4.738,Mon Oct 23 21:29:10 2017,svmLinear3,1,1,bm 1dC1,ignore,none,centernscale,8.83746044742053,random,358,7,cv,32,3,1,5,0.0246223990572786,L2
+-0.029,-0.035,0.818,9.143,4.769,Mon Oct 23 21:29:17 2017,relaxo,1,1,bm 1dC1,ignore,none,centernscale,8.83746044742053,random,359,6,cv,32,3,1,5,12.8852715032477,0.759589040884748
+-0.052,-0.037,0.961,9.164,4.874,Mon Oct 23 21:29:27 2017,superpc,1,1,bm 1dC1,ignore,none,centernscale,8.83746044742053,random,360,8,nohyperparameters,32,3,no rep,no min,0.1,1
+0.105,-0.305,0.759,11.53,4.149,Mon Oct 23 21:31:47 2017,xgbTree,1,1,bm 1dC1,ignore,none,centernscale,8.83746044742053,random,361,140,cv,32,3,1,5,874,7,0.245278911318397,9.30378300370649,0.433641759306192,4,0.897811910137534
+-0.208,-0.079,0.85,9.535,5.601,Mon Oct 23 21:34:24 2017,BstLm,1,1,bm 1dC1,ignore,none,centernscale,8.83746044742053,random,362,155,cv,32,3,1,5,106,0.0500241693493444
+0.426,0.259,0.731,0.499,0.341,Mon Oct 23 21:35:24 2017,avNNet,1,1,bm sin(C2),ignore,none,centernscale,0.673213529719377,random,363,54,cv,32,3,1,5,17,0.013593442408193,FALSE
+0.424,0.26,0.733,0.498,0.342,Mon Oct 23 21:35:39 2017,nnet,1,1,bm sin(C2),ignore,none,centernscale,0.673213529719377,random,364,15,cv,32,3,1,5,13,0.0058662940368155
+0.419,0.26,0.73,0.498,0.345,Mon Oct 23 21:35:52 2017,pcaNNet,1,1,bm sin(C2),ignore,none,centernscale,0.673213529719377,random,365,13,cv,32,3,1,5,12,0.00223078851548402
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:35:59 2017,glm.nb,1,1,bm sin(C2),ignore,none,centernscale,6
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:36:17 2017,gam,1,1,bm sin(C2),ignore,none,centernscale,18
+Fail,Fail,Fail,Fail,Fail,Mon Oct 23 21:37:53 2017,bam,1,1,bm sin(C2),ignore,none,centernscale,96
+0.791,0.78,0.29,NA,NA,Mon Oct 23 21:38:08 2017,msaenet,1,1,bm sin(C2),ignore,none,centernscale,0.673213529719377,random,369,15,cv,32,3,1,5,0.903081821324304,9,0.615745445888024
+0.761,0.658,0.273,NA,NA,Tue Oct 24 13:52:34 2017,svmLinear2,1,1,bm sin(C2),ignore,none,centernscale,0.673017602079123,random,282,181,cv,32,3,1,5,0.18319385421817
+0.76,0.657,0.242,NA,NA,Tue Oct 24 13:52:49 2017,svmLinear3,1,1,bm sin(C2),ignore,none,centernscale,0.673017602079123,random,283,11,cv,32,3,1,5,11.0038736542703,L2
+0.723,0.678,0.272,NA,NA,Tue Oct 24 13:52:55 2017,relaxo,1,1,bm sin(C2),ignore,none,centernscale,0.673017602079123,random,284,4,cv,32,3,1,5,0.616518766277732,0.787552224704996
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 13:53:04 2017,superpc,1,1,bm sin(C2),ignore,none,centernscale,6
+0.694,0.667,0.252,NA,NA,Tue Oct 24 13:55:10 2017,xgbTree,1,1,bm sin(C2),ignore,none,centernscale,0.673017602079123,random,286,124,cv,32,3,1,5,674,2,0.439530531937955,0.610915923025459,0.427160345576704,0,0.500999359239358
+0.736,0.701,0.272,NA,NA,Tue Oct 24 13:57:42 2017,BstLm,1,1,bm sin(C2),ignore,none,centernscale,0.673017602079123,random,287,148,cv,32,3,1,5,265,0.0179781260064337
+-0.007,0.002,0.978,0.673,0.52,Tue Oct 24 13:58:29 2017,avNNet,1,1,poly C1 t C2,ignore,none,centernscale,0.673552582652032,random,288,41,cv,32,3,1,5,11,1.98363336236453e-05,FALSE
+-0.075,-0.04,0.953,0.701,0.555,Tue Oct 24 13:58:44 2017,nnet,1,1,poly C1 t C2,ignore,none,centernscale,0.673552582652032,random,289,13,cv,32,3,1,5,13,0.001294814665419
+-0.063,-0.034,0.921,0.697,0.549,Tue Oct 24 13:59:00 2017,pcaNNet,1,1,poly C1 t C2,ignore,none,centernscale,0.673552582652032,random,290,15,cv,32,3,1,5,19,0.00112367418056691
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 13:59:06 2017,glm.nb,1,1,poly C1 t C2,ignore,none,centernscale,6
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 13:59:24 2017,gam,1,1,poly C1 t C2,ignore,none,centernscale,18
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:03:59 2017,bam,1,1,poly C1 t C2,ignore,none,centernscale,89
+0.017,-0.02,0.973,0.687,0.507,Tue Oct 24 14:04:16 2017,msaenet,1,1,poly C1 t C2,ignore,none,centernscale,0.673552582652032,random,294,14,cv,32,3,1,5,0.055773730459623,5,0.624284867721144
+0.056,-0.026,1.031,0.691,0.487,Tue Oct 24 14:04:59 2017,svmLinear2,1,1,poly C1 t C2,ignore,none,centernscale,0.673552582652032,random,295,41,cv,32,3,1,5,0.0353162922095494
+0.037,0.009,0.987,0.668,0.497,Tue Oct 24 14:05:08 2017,svmLinear3,1,1,poly C1 t C2,ignore,none,centernscale,0.673552582652032,random,296,6,cv,32,3,1,5,0.0118479372570485,L2
+-0.004,-0.005,1.011,0.677,0.518,Tue Oct 24 14:05:16 2017,relaxo,1,1,poly C1 t C2,ignore,none,centernscale,0.673552582652032,random,297,4,cv,32,3,1,5,20.2974125469287,0.121454999083653
+-0.006,-0.005,1.053,0.677,0.519,Tue Oct 24 14:05:21 2017,superpc,1,1,poly C1 t C2,ignore,none,centernscale,0.673552582652032,random,298,3,cv,32,3,1,5,0.171450526220724,1
+-0.011,-0.055,0.919,0.806,0.58,Tue Oct 24 14:09:41 2017,xgbTree,1,1,poly C1 t C2,ignore,none,centernscale,0.764053052940915,random,254,133,cv,32,3,1,5,862,10,0.0312739924599882,4.67572609893978,0.60764092579484,3,0.974263707525097
+0.004,-0.013,0.988,0.774,0.571,Tue Oct 24 14:12:03 2017,BstLm,1,1,poly C1 t C2,ignore,none,centernscale,0.764053052940915,random,255,140,cv,32,3,1,5,162,0.00182204708224162
+-0.166,0.117,0.664,6.09,3.107,Tue Oct 24 14:12:43 2017,avNNet,1,1,poly C1 ^ C2,ignore,none,centernscale,6.89844340483578,random,256,36,cv,32,3,1,5,7,7.06164319511779e-05,TRUE
+-0.149,0.171,0.657,5.721,3.06,Tue Oct 24 14:12:53 2017,nnet,1,1,poly C1 ^ C2,ignore,none,centernscale,6.89844340483578,random,257,10,cv,32,3,1,5,9,0.000338043567987059
+-0.149,0.169,0.644,5.73,3.06,Tue Oct 24 14:13:04 2017,pcaNNet,1,1,poly C1 ^ C2,ignore,none,centernscale,6.89844340483578,random,258,10,cv,32,3,1,5,13,0.00689163694207938
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:13:09 2017,glm.nb,1,1,poly C1 ^ C2,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:13:25 2017,gam,1,1,poly C1 ^ C2,ignore,none,centernscale,16
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:15:02 2017,bam,1,1,poly C1 ^ C2,ignore,none,centernscale,97
+-0.127,0.16,0.676,NA,NA,Tue Oct 24 14:15:17 2017,msaenet,1,1,poly C1 ^ C2,ignore,none,centernscale,6.89844340483578,random,262,15,cv,32,3,1,5,0.128015705384314,9,3.78383043431677
+-0.049,0.012,0.645,NA,NA,Tue Oct 24 14:15:31 2017,svmLinear2,1,1,poly C1 ^ C2,ignore,none,centernscale,6.89844340483578,random,263,13,cv,32,3,1,5,0.0430401710047697
+-0.196,0.148,0.713,NA,NA,Tue Oct 24 14:15:39 2017,svmLinear3,1,1,poly C1 ^ C2,ignore,none,centernscale,6.89844340483578,random,264,6,cv,32,3,1,5,0.0416587183217103,L1
+-0.057,0.123,0.664,NA,NA,Tue Oct 24 14:15:44 2017,relaxo,1,1,poly C1 ^ C2,ignore,none,centernscale,6.89844340483578,random,265,5,cv,32,3,1,5,7.63573035115167,0.069184320513159
+-0.082,0.193,0.72,NA,NA,Tue Oct 24 14:15:47 2017,superpc,1,1,poly C1 ^ C2,ignore,none,centernscale,6.89844340483578,random,266,3,cv,32,3,1,5,0.959317231085151,3
+0.021,0.143,0.679,5.913,2.608,Tue Oct 24 14:17:47 2017,xgbTree,1,1,poly C1 ^ C2,ignore,none,centernscale,6.89844340483578,random,267,120,cv,32,3,1,5,811,2,0.0184442848840263,3.87422405183315,0.550168881565332,2,0.403821814805269
+-0.115,0.116,0.677,NA,NA,Tue Oct 24 14:20:43 2017,BstLm,1,1,poly C1 ^ C2,ignore,none,centernscale,6.89844340483578,random,268,174,cv,32,3,1,5,5,0.420954042522702
+-0.094,-0.065,0.862,1.636,1.037,Tue Oct 24 14:21:50 2017,avNNet,1,1,poly C1 t C2 t C3,ignore,none,centernscale,1.536570658606,random,269,63,cv,32,3,1,5,17,7.31205921904808e-05,FALSE
+-0.041,-0.001,0.878,1.538,0.987,Tue Oct 24 14:22:02 2017,nnet,1,1,poly C1 t C2 t C3,ignore,none,centernscale,1.536570658606,random,270,10,cv,32,3,1,5,11,1.3507242446277e-05
+-0.094,-0.065,0.835,1.636,1.037,Tue Oct 24 14:22:18 2017,pcaNNet,1,1,poly C1 t C2 t C3,ignore,none,centernscale,1.536570658606,random,271,16,cv,32,3,1,5,6,0.000280076857894781
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:22:25 2017,glm.nb,1,1,poly C1 t C2 t C3,ignore,none,centernscale,7
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:22:48 2017,gam,1,1,poly C1 t C2 t C3,ignore,none,centernscale,23
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:24:54 2017,bam,1,1,poly C1 t C2 t C3,ignore,none,centernscale,125
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:26:25 2017,msaenet,1,1,poly C1 t C2 t C3,ignore,none,centernscale,91
+-0.049,-0.018,0.921,1.565,0.994,Tue Oct 24 14:27:29 2017,svmLinear2,1,1,poly C1 t C2 t C3,ignore,none,centernscale,1.536570658606,random,276,64,cv,32,3,1,5,0.0608787421821996
+-0.051,-0.005,0.874,1.544,0.997,Tue Oct 24 14:27:35 2017,svmLinear3,1,1,poly C1 t C2 t C3,ignore,none,centernscale,1.536570658606,random,277,5,cv,32,3,1,5,0.0012025417410189,L1
+-0.041,-0.001,0.903,1.538,0.987,Tue Oct 24 14:27:40 2017,relaxo,1,1,poly C1 t C2 t C3,ignore,none,centernscale,1.536570658606,random,278,5,cv,32,3,1,5,12.7909366576126,0.742518592393026
+-0.068,-0.025,0.96,1.575,1.013,Tue Oct 24 14:27:43 2017,superpc,1,1,poly C1 t C2 t C3,ignore,none,centernscale,1.536570658606,random,279,3,cv,32,3,1,5,0.176331079797819,3
+-0.12,-0.002,0.901,1.54,1.062,Tue Oct 24 14:29:50 2017,xgbTree,1,1,poly C1 t C2 t C3,ignore,none,centernscale,1.536570658606,random,280,125,cv,32,3,1,5,180,5,0.461352948829532,6.8940759729594,0.315695041045547,18,0.330493551795371
+-0.027,-0.003,0.893,1.541,0.974,Tue Oct 24 14:32:14 2017,BstLm,1,1,poly C1 t C2 t C3,ignore,none,centernscale,1.536570658606,random,281,144,cv,32,3,1,5,250,0.0012938841895666
+-0.191,-0.052,0.781,1.104,0.698,Tue Oct 24 14:32:48 2017,avNNet,1,1,poly C1 t C2 t C3^1d3,ignore,none,centernscale,1.04945724067253,random,282,29,cv,32,3,1,5,3,9.81326954887397e-05,TRUE
+0,-0.005,0.792,1.054,0.586,Tue Oct 24 14:32:58 2017,nnet,1,1,poly C1 t C2 t C3^1d3,ignore,none,centernscale,1.04945724067253,random,283,9,cv,32,3,1,5,5,1.31940851102763e-05
+0,-0.005,0.788,1.054,0.586,Tue Oct 24 14:33:08 2017,pcaNNet,1,1,poly C1 t C2 t C3^1d3,ignore,none,centernscale,1.04945724067253,random,284,10,cv,32,3,1,5,1,3.16520256837585e-05
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:33:13 2017,glm.nb,1,1,poly C1 t C2 t C3^1d3,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:33:29 2017,gam,1,1,poly C1 t C2 t C3^1d3,ignore,none,centernscale,16
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:35:09 2017,bam,1,1,poly C1 t C2 t C3^1d3,ignore,none,centernscale,99
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:36:27 2017,msaenet,1,1,poly C1 t C2 t C3^1d3,ignore,none,centernscale,77
+-0.055,-0.011,0.817,1.061,0.619,Tue Oct 24 14:36:40 2017,svmLinear2,1,1,poly C1 t C2 t C3^1d3,ignore,none,centernscale,1.04945724067253,random,289,13,cv,32,3,1,5,0.0394932767674611
+-0.004,-0.007,0.753,1.056,0.588,Tue Oct 24 14:36:49 2017,svmLinear3,1,1,poly C1 t C2 t C3^1d3,ignore,none,centernscale,1.04945724067253,random,290,8,cv,32,3,1,5,0.00132615917339283,L2
+-0.228,0.076,0.769,0.969,0.72,Tue Oct 24 14:36:54 2017,relaxo,1,1,poly C1 t C2 t C3^1d3,ignore,none,centernscale,1.04945724067253,random,291,5,cv,32,3,1,5,0.373665459449675,0.18776550097391
+-0.066,-0.019,0.959,1.069,0.625,Tue Oct 24 14:37:02 2017,superpc,1,1,poly C1 t C2 t C3^1d3,ignore,none,centernscale,1.04945724067253,random,292,7,nohyperparameters,32,3,no rep,no min,0.1,1
+0,-0.004,0.791,1.054,0.586,Tue Oct 24 14:39:09 2017,xgbTree,1,1,poly C1 t C2 t C3^1d3,ignore,none,centernscale,1.04945724067253,random,293,126,cv,32,3,1,5,746,8,0.238260850035353,8.72232546331361,0.618965654633939,4,0.493280725670047
+0.018,0.041,0.799,1.006,0.575,Tue Oct 24 14:41:33 2017,BstLm,1,1,poly C1 t C2 t C3^1d3,ignore,none,centernscale,1.04945724067253,random,294,143,cv,32,3,1,5,115,0.00484273838368244
+0.068,0.118,0.937,NA,NA,Tue Oct 24 14:42:56 2017,avNNet,1,1,ifs 1 & -1 on C1,ignore,none,centernscale,0.733212111192935,random,295,77,cv,32,3,1,5,19,0.0124719975970964,FALSE
+0.106,0.11,0.92,NA,NA,Tue Oct 24 14:43:09 2017,nnet,1,1,ifs 1 & -1 on C1,ignore,none,centernscale,0.733212111192935,random,296,13,cv,32,3,1,5,15,0.000310472286996786
+0.032,0.117,0.934,NA,NA,Tue Oct 24 14:43:23 2017,pcaNNet,1,1,ifs 1 & -1 on C1,ignore,none,centernscale,0.733212111192935,random,297,13,cv,32,3,1,5,14,0.0233103933185984
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:43:28 2017,glm.nb,1,1,ifs 1 & -1 on C1,ignore,none,centernscale,4
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:43:45 2017,gam,1,1,ifs 1 & -1 on C1,ignore,none,centernscale,17
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:46:01 2017,bam,1,1,ifs 1 & -1 on C1,ignore,none,centernscale,135
+-0.437,0.272,0.729,NA,NA,Tue Oct 24 14:46:17 2017,msaenet,1,1,ifs 1 & -1 on C1,ignore,none,centernscale,0.733212111192935,random,301,16,cv,32,3,1,5,0.067955810832791,2,1.69855641905451
+-0.248,0.104,0.906,NA,NA,Tue Oct 24 14:47:18 2017,svmLinear2,1,1,ifs 1 & -1 on C1,ignore,none,centernscale,0.733212111192935,random,302,60,cv,32,3,1,5,0.0722670153017808
+-0.434,0.234,0.755,NA,NA,Tue Oct 24 14:47:28 2017,svmLinear3,1,1,ifs 1 & -1 on C1,ignore,none,centernscale,0.733212111192935,random,303,9,cv,32,3,1,5,0.0635899155025953,L1
+-0.415,0.275,0.756,NA,NA,Tue Oct 24 14:47:33 2017,relaxo,1,1,ifs 1 & -1 on C1,ignore,none,centernscale,0.733212111192935,random,304,4,cv,32,3,1,5,13.0331400757904,0.678146288963035
+-0.422,0.253,0.704,NA,NA,Tue Oct 24 14:47:37 2017,superpc,1,1,ifs 1 & -1 on C1,ignore,none,centernscale,0.733212111192935,random,305,4,cv,32,3,1,5,0.957859046058729,2
+0.427,0.636,0.319,1,1,Tue Oct 24 14:50:00 2017,xgbTree,1,1,ifs 1 & -1 on C1,ignore,none,centernscale,0.733212111192935,random,306,142,cv,32,3,1,5,651,3,0.550513474998763,7.72980635752901,0.614006680808961,5,0.544640973035712
+-0.456,0.255,0.726,NA,NA,Tue Oct 24 14:52:34 2017,BstLm,1,1,ifs 1 & -1 on C1,ignore,none,centernscale,0.733212111192935,random,307,153,cv,32,3,1,5,145,0.0327332286566962
+0.147,0.109,0.893,0.766,0.573,Tue Oct 24 14:53:22 2017,avNNet,1,1,ifs C2 & -C2 on C1,ignore,none,centernscale,0.859153361317925,random,308,42,cv,32,3,1,5,6,0.000123813903813181,FALSE
+-0.015,-0.01,0.914,0.868,0.683,Tue Oct 24 14:53:33 2017,nnet,1,1,ifs C2 & -C2 on C1,ignore,none,centernscale,0.859153361317925,random,309,11,cv,32,3,1,5,11,2.48442940686466e-05
+0.169,0.124,0.899,0.753,0.559,Tue Oct 24 14:53:44 2017,pcaNNet,1,1,ifs C2 & -C2 on C1,ignore,none,centernscale,0.859153361317925,random,310,10,cv,32,3,1,5,11,0.145815839942329
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:53:49 2017,glm.nb,1,1,ifs C2 & -C2 on C1,ignore,none,centernscale,4
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 14:54:05 2017,gam,1,1,ifs C2 & -C2 on C1,ignore,none,centernscale,16
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 15:17:44 2017,bam,1,1,ifs C2 & -C2 on C1,ignore,none,centernscale,1419
+0.185,0.178,1.051,0.706,0.548,Tue Oct 24 15:18:01 2017,msaenet,1,1,ifs C2 & -C2 on C1,ignore,none,centernscale,0.859153361317925,random,314,17,cv,32,3,1,5,0.117272604373284,10,2.56530071701854
+0.516,0.45,1.071,0.473,0.325,Tue Oct 24 15:19:09 2017,svmLinear2,1,1,ifs C2 & -C2 on C1,ignore,none,centernscale,0.859153361317925,random,315,67,cv,32,3,1,5,0.0792403695863035
+0.048,0.065,0.984,0.803,0.64,Tue Oct 24 15:19:19 2017,svmLinear3,1,1,ifs C2 & -C2 on C1,ignore,none,centernscale,0.859153361317925,random,316,9,cv,32,3,1,5,0.00392289625687329,L1
+-0.015,-0.01,0.992,0.868,0.683,Tue Oct 24 15:19:24 2017,relaxo,1,1,ifs C2 & -C2 on C1,ignore,none,centernscale,0.859153361317925,random,317,5,cv,32,3,1,5,21.3152803427781,0.583461506292224
+-0.015,-0.009,1.015,0.867,0.683,Tue Oct 24 15:19:33 2017,superpc,1,1,ifs C2 & -C2 on C1,ignore,none,centernscale,0.859153361317925,random,318,8,nohyperparameters,32,3,no rep,no min,0.1,1
+0.258,0.273,0.892,0.625,0.499,Tue Oct 24 15:22:11 2017,xgbTree,1,1,ifs C2 & -C2 on C1,ignore,none,centernscale,0.859153361317925,random,319,157,cv,32,3,1,5,863,3,0.534889573901659,2.54023907473311,0.659462688770145,7,0.871184150397312
+0.164,0.175,1.005,0.709,0.562,Tue Oct 24 15:24:44 2017,BstLm,1,1,ifs C2 & -C2 on C1,ignore,none,centernscale,0.859153361317925,random,320,152,cv,32,3,1,5,23,0.240365667546866
+0.055,0.029,0.935,1.217,0.867,Tue Oct 24 15:25:38 2017,avNNet,1,1,ifs C2+C3 & C4+C5 on C1,ignore,none,centernscale,1.25353749168326,random,321,48,cv,32,3,1,5,20,0.250409692907499,TRUE
+0.065,0.036,0.883,1.209,0.857,Tue Oct 24 15:25:51 2017,nnet,1,1,ifs C2+C3 & C4+C5 on C1,ignore,none,centernscale,1.25353749168326,random,322,13,cv,32,3,1,5,17,0.00606083624824709
+0.014,0.009,0.919,1.243,0.904,Tue Oct 24 15:26:06 2017,pcaNNet,1,1,ifs C2+C3 & C4+C5 on C1,ignore,none,centernscale,1.25353749168326,random,323,14,cv,32,3,1,5,11,0.0012591410260233
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 15:26:11 2017,glm.nb,1,1,ifs C2+C3 & C4+C5 on C1,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 15:26:28 2017,gam,1,1,ifs C2+C3 & C4+C5 on C1,ignore,none,centernscale,17
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 15:28:08 2017,bam,1,1,ifs C2+C3 & C4+C5 on C1,ignore,none,centernscale,100
+0.178,0.298,0.823,0.88,0.753,Tue Oct 24 15:28:27 2017,msaenet,1,1,ifs C2+C3 & C4+C5 on C1,ignore,none,centernscale,1.25353749168326,random,327,19,cv,32,3,1,5,0.167597443517297,2,0.526168577547651
+0.158,0.292,0.778,0.888,0.772,Tue Oct 24 15:29:43 2017,svmLinear2,1,1,ifs C2+C3 & C4+C5 on C1,ignore,none,centernscale,1.25353749168326,random,328,75,cv,32,3,1,5,0.0332981828151553
+0.032,0.203,0.803,0.999,0.887,Tue Oct 24 15:29:52 2017,svmLinear3,1,1,ifs C2+C3 & C4+C5 on C1,ignore,none,centernscale,1.25353749168326,random,329,9,cv,32,3,1,5,0.0886307193086785,L1
+0.116,0.25,0.744,0.94,0.81,Tue Oct 24 15:29:58 2017,relaxo,1,1,ifs C2+C3 & C4+C5 on C1,ignore,none,centernscale,1.25353749168326,random,330,4,cv,32,3,1,5,9.22501018607256,0.573364225681871
+-0.083,0.012,0.817,1.239,0.993,Tue Oct 24 15:30:01 2017,superpc,1,1,ifs C2+C3 & C4+C5 on C1,ignore,none,centernscale,1.25353749168326,random,331,3,cv,32,3,1,5,0.0830705806147307,3
+0.166,0.228,0.758,0.968,0.765,Tue Oct 24 15:32:31 2017,xgbTree,1,1,ifs C2+C3 & C4+C5 on C1,ignore,none,centernscale,1.25353749168326,random,332,150,cv,32,3,1,5,593,7,0.0638210641376209,2.3470623511821,0.554097001627088,3,0.62643697479507
+0.087,0.236,0.748,0.957,0.837,Tue Oct 24 16:00:27 2017,BstLm,1,1,ifs C2+C3 & C4+C5 on C1,ignore,none,centernscale,1.25353749168326,random,333,1675,cv,32,3,1,5,307,0.0296428662212566
+0.033,0.075,0.878,0.952,0.613,Tue Oct 24 16:01:25 2017,avNNet,1,1,ifs smooth -C2-C3&C2+C3 onC1,ignore,none,centernscale,1.02874621556615,random,334,52,cv,32,3,1,5,18,0.0113573385729494,FALSE
+0.057,0.083,0.873,0.943,0.598,Tue Oct 24 16:01:37 2017,nnet,1,1,ifs smooth -C2-C3&C2+C3 onC1,ignore,none,centernscale,1.02874621556615,random,335,11,cv,32,3,1,5,12,0.00141523848503793
+0.043,0.078,0.893,0.949,0.607,Tue Oct 24 16:01:50 2017,pcaNNet,1,1,ifs smooth -C2-C3&C2+C3 onC1,ignore,none,centernscale,1.02874621556615,random,336,13,cv,32,3,1,5,20,0.000342615998281579
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 16:01:54 2017,glm.nb,1,1,ifs smooth -C2-C3&C2+C3 onC1,ignore,none,centernscale,4
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 16:02:10 2017,gam,1,1,ifs smooth -C2-C3&C2+C3 onC1,ignore,none,centernscale,15
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 16:23:45 2017,bam,1,1,ifs smooth -C2-C3&C2+C3 onC1,ignore,none,centernscale,1295
+-0.002,0.226,0.867,0.797,0.636,Tue Oct 24 16:24:04 2017,msaenet,1,1,ifs smooth -C2-C3&C2+C3 onC1,ignore,none,centernscale,1.02874621556615,random,340,18,cv,32,3,1,5,0.0779190113767982,4,2.91751696006395
+-0.032,0.206,0.803,0.817,0.655,Tue Oct 24 16:26:27 2017,svmLinear2,1,1,ifs smooth -C2-C3&C2+C3 onC1,ignore,none,centernscale,1.02874621556615,random,341,143,cv,32,3,1,5,0.120966890872911
+-0.035,0.193,0.787,0.831,0.657,Tue Oct 24 16:26:36 2017,svmLinear3,1,1,ifs smooth -C2-C3&C2+C3 onC1,ignore,none,centernscale,1.02874621556615,random,342,9,cv,32,3,1,5,0.147960371643096,L2
+-0.057,0.216,0.806,0.806,0.671,Tue Oct 24 16:26:42 2017,relaxo,1,1,ifs smooth -C2-C3&C2+C3 onC1,ignore,none,centernscale,1.02874621556615,random,343,5,cv,32,3,1,5,1.923781431491,0.952746571740136
+-0.096,0.062,0.831,0.965,0.696,Tue Oct 24 16:26:46 2017,superpc,1,1,ifs smooth -C2-C3&C2+C3 onC1,ignore,none,centernscale,1.02874621556615,random,344,4,cv,32,3,1,5,0.207436573226005,3
+0.177,0.353,0.805,0.666,0.522,Tue Oct 24 16:29:19 2017,xgbTree,1,1,ifs smooth -C2-C3&C2+C3 onC1,ignore,none,centernscale,1.02874621556615,random,345,152,cv,32,3,1,5,677,6,0.38636107488093,1.5079586673528,0.481047110073268,10,0.736883373872843
+-0.054,0.217,0.784,0.805,0.669,Tue Oct 24 16:32:49 2017,BstLm,1,1,ifs smooth -C2-C3&C2+C3 onC1,ignore,none,centernscale,1.02874621556615,random,346,210,cv,32,3,1,5,108,0.21957412969484
+0.06,0.069,0.936,1.48,1.186,Tue Oct 24 16:33:44 2017,avNNet,1,1,ifs -C2-C3 & C2+C3 on C1,ignore,none,centernscale,1.58962324982648,random,347,47,cv,32,3,1,5,2,2.2075805835939e-05,FALSE
+0.192,0.188,0.901,1.291,1.02,Tue Oct 24 16:33:57 2017,nnet,1,1,ifs -C2-C3 & C2+C3 on C1,ignore,none,centernscale,1.58962324982648,random,348,13,cv,32,3,1,5,13,0.00857474972330522
+0.128,0.118,0.92,1.401,1.1,Tue Oct 24 16:34:10 2017,pcaNNet,1,1,ifs -C2-C3 & C2+C3 on C1,ignore,none,centernscale,1.58962324982648,random,349,12,cv,32,3,1,5,19,0.00297206303062443
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 16:34:15 2017,glm.nb,1,1,ifs -C2-C3 & C2+C3 on C1,ignore,none,centernscale,4
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 16:34:32 2017,gam,1,1,ifs -C2-C3 & C2+C3 on C1,ignore,none,centernscale,17
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 16:36:20 2017,bam,1,1,ifs -C2-C3 & C2+C3 on C1,ignore,none,centernscale,107
+0.374,0.265,0.977,1.168,0.789,Tue Oct 24 16:36:38 2017,msaenet,1,1,ifs -C2-C3 & C2+C3 on C1,ignore,none,centernscale,1.58962324982648,random,353,17,cv,32,3,1,5,0.105559637327679,6,1.61976502399193
+0.481,0.162,0.988,1.332,0.654,Tue Oct 24 16:37:48 2017,svmLinear2,1,1,ifs -C2-C3 & C2+C3 on C1,ignore,none,centernscale,1.58962324982648,random,354,70,cv,32,3,1,5,0.0831118448704386
+0.196,0.144,0.922,1.361,1.014,Tue Oct 24 16:37:56 2017,svmLinear3,1,1,ifs -C2-C3 & C2+C3 on C1,ignore,none,centernscale,1.58962324982648,random,355,7,cv,32,3,1,5,0.00667882642639652,L1
+0.339,0.242,0.947,1.205,0.834,Tue Oct 24 16:38:01 2017,relaxo,1,1,ifs -C2-C3 & C2+C3 on C1,ignore,none,centernscale,1.58962324982648,random,356,5,cv,32,3,1,5,3.32886766025462,0.395450627198443
+0.255,0.208,0.836,1.259,0.939,Tue Oct 24 16:38:05 2017,superpc,1,1,ifs -C2-C3 & C2+C3 on C1,ignore,none,centernscale,1.58962324982648,random,357,3,cv,32,3,1,5,0.653998744906858,1
+0.067,0.028,0.944,1.545,1.177,Tue Oct 24 16:40:29 2017,xgbTree,1,1,ifs -C2-C3 & C2+C3 on C1,ignore,none,centernscale,1.58962324982648,random,358,144,cv,32,3,1,5,273,8,0.571024085569195,1.80584335466847,0.499521360360086,17,0.557665761676617
+0.202,0.155,0.981,1.343,1.007,Tue Oct 24 16:43:34 2017,BstLm,1,1,ifs -C2-C3 & C2+C3 on C1,ignore,none,centernscale,1.58962324982648,random,359,184,cv,32,3,1,5,101,0.0302320054073352
+0.147,0.167,0.919,0.683,0.554,Tue Oct 24 16:44:33 2017,avNNet,1,1,ifs C1 & C2 on C1,ignore,none,centernscale,0.819502337761902,random,360,50,cv,32,3,1,5,17,0.000148768776032343,TRUE
+0.173,0.166,0.883,0.684,0.537,Tue Oct 24 16:44:46 2017,nnet,1,1,ifs C1 & C2 on C1,ignore,none,centernscale,0.819502337761902,random,361,12,cv,32,3,1,5,18,0.0404690177872851
+0.164,0.162,0.915,0.686,0.543,Tue Oct 24 16:44:59 2017,pcaNNet,1,1,ifs C1 & C2 on C1,ignore,none,centernscale,0.819502337761902,random,362,12,cv,32,3,1,5,15,0.000242077050541752
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 16:45:05 2017,glm.nb,1,1,ifs C1 & C2 on C1,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 16:45:23 2017,gam,1,1,ifs C1 & C2 on C1,ignore,none,centernscale,18
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 16:47:09 2017,bam,1,1,ifs C1 & C2 on C1,ignore,none,centernscale,105
+0.434,0.365,0.762,0.52,0.368,Tue Oct 24 16:47:28 2017,msaenet,1,1,ifs C1 & C2 on C1,ignore,none,centernscale,0.819502337761902,random,366,18,cv,32,3,1,5,0.608321912330575,2,3.61254798225127
+0.539,0.363,0.741,0.522,0.3,Tue Oct 24 16:49:00 2017,svmLinear2,1,1,ifs C1 & C2 on C1,ignore,none,centernscale,0.819502337761902,random,367,92,cv,32,3,1,5,0.096322162082993
+0.543,0.372,0.733,0.515,0.297,Tue Oct 24 16:49:05 2017,svmLinear3,1,1,ifs C1 & C2 on C1,ignore,none,centernscale,0.819502337761902,random,368,4,cv,32,3,1,5,0.151413786663219,L2
+0.467,0.395,0.735,0.496,0.346,Tue Oct 24 16:49:10 2017,relaxo,1,1,ifs C1 & C2 on C1,ignore,none,centernscale,0.819502337761902,random,369,4,cv,32,3,1,5,8.56011770687065,0.0982491564936936
+0.368,0.278,0.751,0.592,0.41,Tue Oct 24 16:49:13 2017,superpc,1,1,ifs C1 & C2 on C1,ignore,none,centernscale,0.819502337761902,random,370,3,cv,32,3,1,5,0.799696530215442,3
+0.281,0.179,0.822,0.673,0.467,Tue Oct 24 16:52:25 2017,xgbTree,1,1,ifs C1 & C2 on C1,ignore,none,centernscale,0.819502337761902,random,371,192,cv,32,3,1,5,594,5,0.257763354757335,6.33287760429084,0.643757783807814,8,0.780893714050762
+0.417,0.354,0.818,0.529,0.378,Tue Oct 24 16:55:33 2017,BstLm,1,1,ifs C1 & C2 on C1,ignore,none,centernscale,0.819502337761902,random,372,187,cv,32,3,1,5,446,0.00967982991738245
+0.201,0.105,0.837,1.217,0.847,Tue Oct 24 16:56:23 2017,avNNet,1,1,ifs C2 & C3t2 on C4g1.5,ignore,none,centernscale,1.35890825256486,random,373,42,cv,32,3,1,5,11,0.000245832051592924,TRUE
+0.209,0.113,0.836,1.205,0.838,Tue Oct 24 16:56:35 2017,nnet,1,1,ifs C2 & C3t2 on C4g1.5,ignore,none,centernscale,1.35890825256486,random,374,11,cv,32,3,1,5,6,0.00788688240397629
+0.255,0.164,0.838,1.136,0.789,Tue Oct 24 16:56:53 2017,pcaNNet,1,1,ifs C2 & C3t2 on C4g1.5,ignore,none,centernscale,1.35890825256486,random,375,15,cv,32,3,1,5,16,0.00142364521261962
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 16:57:01 2017,glm.nb,1,1,ifs C2 & C3t2 on C4g1.5,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 16:57:19 2017,gam,1,1,ifs C2 & C3t2 on C4g1.5,ignore,none,centernscale,18
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 16:59:13 2017,bam,1,1,ifs C2 & C3t2 on C4g1.5,ignore,none,centernscale,114
+0.53,0.235,0.632,1.039,0.498,Tue Oct 24 16:59:36 2017,msaenet,1,1,ifs C2 & C3t2 on C4g1.5,ignore,none,centernscale,1.35890825256486,random,379,22,cv,32,3,1,5,0.819059572252445,5,3.94468149961904
+0.598,0.257,0.644,1.01,0.426,Tue Oct 24 17:00:14 2017,svmLinear2,1,1,ifs C2 & C3t2 on C4g1.5,ignore,none,centernscale,1.35890825256486,random,380,37,cv,32,3,1,5,0.139804070218901
+0.58,0.257,0.646,1.009,0.446,Tue Oct 24 17:00:22 2017,svmLinear3,1,1,ifs C2 & C3t2 on C4g1.5,ignore,none,centernscale,1.35890825256486,random,381,8,cv,32,3,1,5,0.0464707912272106,L2
+0.531,0.236,0.652,1.039,0.497,Tue Oct 24 17:00:28 2017,relaxo,1,1,ifs C2 & C3t2 on C4g1.5,ignore,none,centernscale,1.35890825256486,random,382,5,cv,32,3,1,5,15.9471549604691,0.0489803929813206
+0.517,0.248,0.883,1.022,0.512,Tue Oct 24 17:00:32 2017,superpc,1,1,ifs C2 & C3t2 on C4g1.5,ignore,none,centernscale,1.35890825256486,random,383,3,cv,32,3,1,5,0.833781278226525,3
+0.339,0.13,0.69,1.182,0.701,Tue Oct 24 17:03:00 2017,xgbTree,1,1,ifs C2 & C3t2 on C4g1.5,ignore,none,centernscale,1.35890825256486,random,384,148,cv,32,3,1,5,479,10,0.297094681663671,3.86710616061464,0.616125309001654,7,0.838029674894642
+0.513,0.293,0.657,0.96,0.516,Tue Oct 24 17:05:59 2017,BstLm,1,1,ifs C2 & C3t2 on C4g1.5,ignore,none,centernscale,1.35890825256486,random,385,178,cv,32,3,1,5,478,0.0177344720102847
+0.299,0.216,0.902,0.768,0.569,Tue Oct 24 17:06:54 2017,avNNet,1,1,ifs C1&C2 on random,ignore,none,centernscale,0.980072899782914,random,386,45,cv,32,3,1,5,4,0.00725623171026667,TRUE
+0.318,0.214,0.945,0.77,0.554,Tue Oct 24 17:07:08 2017,nnet,1,1,ifs C1&C2 on random,ignore,none,centernscale,0.980072899782914,random,387,13,cv,32,3,1,5,16,0.0109103689792454
+0.274,0.205,0.944,0.779,0.59,Tue Oct 24 17:07:22 2017,pcaNNet,1,1,ifs C1&C2 on random,ignore,none,centernscale,0.980072899782914,random,388,14,cv,32,3,1,5,5,0.125346957822301
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 17:07:28 2017,glm.nb,1,1,ifs C1&C2 on random,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 17:07:46 2017,gam,1,1,ifs C1&C2 on random,ignore,none,centernscale,18
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 17:09:29 2017,bam,1,1,ifs C1&C2 on random,ignore,none,centernscale,103
+0.564,0.517,0.882,0.473,0.354,Tue Oct 24 17:09:48 2017,msaenet,1,1,ifs C1&C2 on random,ignore,none,centernscale,0.980072899782914,random,392,18,cv,32,3,1,5,0.0516477952012792,4,2.78365568409208
+0.641,0.462,0.76,0.527,0.292,Tue Oct 24 17:11:08 2017,svmLinear2,1,1,ifs C1&C2 on random,ignore,none,centernscale,0.980072899782914,random,393,80,cv,32,3,1,5,0.0770302082252538
+0.578,0.479,0.743,0.51,0.343,Tue Oct 24 17:11:17 2017,svmLinear3,1,1,ifs C1&C2 on random,ignore,none,centernscale,0.980072899782914,random,394,8,cv,32,3,1,5,0.0354959980397659,L2
+0.563,0.521,0.77,0.47,0.355,Tue Oct 24 17:11:22 2017,relaxo,1,1,ifs C1&C2 on random,ignore,none,centernscale,0.980072899782914,random,395,5,cv,32,3,1,5,10.6674422449932,0.315531748114154
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 17:11:32 2017,superpc,1,1,ifs C1&C2 on random,ignore,none,centernscale,9
+0.374,0.341,0.811,0.646,0.509,Tue Oct 24 17:15:18 2017,xgbTree,1,1,ifs C1&C2 on random,ignore,none,centernscale,0.980072899782914,random,397,225,cv,32,3,1,5,213,6,0.555975799125386,7.34238985925913,0.310120246186852,4,0.709995593526401
+0.513,0.484,0.847,0.505,0.396,Tue Oct 24 17:18:10 2017,BstLm,1,1,ifs C1&C2 on random,ignore,none,centernscale,0.980072899782914,random,398,170,cv,32,3,1,5,208,0.0368835623676423
+-0.032,0.003,0.958,1.037,0.882,Tue Oct 24 17:19:13 2017,avNNet,1,1,ifs nested 2 layer,ignore,none,centernscale,1.04080096610335,random,399,54,cv,32,3,1,5,11,3.60602916724433e-05,TRUE
+0,-0.003,0.955,1.044,0.854,Tue Oct 24 17:19:28 2017,nnet,1,1,ifs nested 2 layer,ignore,none,centernscale,1.04080096610335,random,400,14,cv,32,3,1,5,14,1.08157941261042e-05
+-0.018,-0.079,0.949,1.123,0.87,Tue Oct 24 17:19:43 2017,pcaNNet,1,1,ifs nested 2 layer,ignore,none,centernscale,1.04080096610335,random,401,15,cv,32,3,1,5,18,1.97509616442969e-05
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 17:19:50 2017,glm.nb,1,1,ifs nested 2 layer,ignore,none,centernscale,6
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 17:20:11 2017,gam,1,1,ifs nested 2 layer,ignore,none,centernscale,20
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 17:22:07 2017,bam,1,1,ifs nested 2 layer,ignore,none,centernscale,116
+0.006,0.001,1.064,0.943,0.748,Tue Oct 24 21:27:42 2017,msaenet,1,1,ifs nested 2 layer,ignore,none,centernscale,0.943893597427109,random,281,10,cv,32,3,1,5,0.315949688409455,9,0.583247760427184
+0.015,0.008,1.057,0.937,0.741,Tue Oct 24 21:28:25 2017,svmLinear2,1,1,ifs nested 2 layer,ignore,none,centernscale,0.943893597427109,random,282,42,cv,32,3,1,5,0.0430884190480359
+0.001,0.006,1.003,0.938,0.752,Tue Oct 24 21:28:35 2017,svmLinear3,1,1,ifs nested 2 layer,ignore,none,centernscale,0.943893597427109,random,283,8,cv,32,3,1,5,0.00171327729251423,L2
+0.01,0.011,0.969,0.933,0.745,Tue Oct 24 21:28:40 2017,relaxo,1,1,ifs nested 2 layer,ignore,none,centernscale,0.943893597427109,random,284,4,cv,32,3,1,5,9.884325666049,0.525239092297852
+-0.05,-0.065,0.952,1.005,0.79,Tue Oct 24 21:28:47 2017,superpc,1,1,ifs nested 2 layer,ignore,none,centernscale,0.943893597427109,random,285,7,nohyperparameters,32,3,no rep,no min,0.1,1
+-0.033,-0.046,0.98,0.988,0.777,Tue Oct 24 21:46:14 2017,xgbTree,1,1,ifs nested 2 layer,ignore,none,centernscale,0.943893597427109,random,286,1046,cv,32,3,1,5,727,6,0.56224596353597,9.13008447503671,0.340669243782759,14,0.48101322207367
+-0.002,0.003,0.997,0.942,0.754,Tue Oct 24 22:33:46 2017,BstLm,1,1,ifs nested 2 layer,ignore,none,centernscale,0.943893597427109,random,287,2850,cv,32,3,1,5,33,0.00709996957238764
+0.417,0.254,0.779,0.65,0.433,Tue Oct 24 22:34:42 2017,avNNet,1,1,mean subtraction in each row,ignore,none,centernscale,0.871168416393881,random,288,47,cv,32,3,1,5,18,0.00246370448618647,FALSE
+0.417,0.254,0.779,0.65,0.433,Tue Oct 24 22:34:55 2017,nnet,1,1,mean subtraction in each row,ignore,none,centernscale,0.871168416393881,random,289,13,cv,32,3,1,5,7,0.00285751192738097
+0.417,0.254,0.909,0.65,0.433,Tue Oct 24 22:35:10 2017,pcaNNet,1,1,mean subtraction in each row,ignore,none,centernscale,0.871168416393881,random,290,14,cv,32,3,1,5,11,0.00631465457556363
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 22:35:15 2017,glm.nb,1,1,mean subtraction in each row,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 22:35:34 2017,gam,1,1,mean subtraction in each row,ignore,none,centernscale,18
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 22:37:17 2017,bam,1,1,mean subtraction in each row,ignore,none,centernscale,103
+0.999,0.999,0.001,0.001,0.001,Tue Oct 24 22:37:41 2017,msaenet,1,1,mean subtraction in each row,ignore,none,centernscale,0.871168416393881,random,294,24,cv,32,3,1,5,0.906722026551142,2,0.663513182138558
+0.933,0.927,0.069,0.064,0.05,Tue Oct 24 22:37:46 2017,svmLinear2,1,1,mean subtraction in each row,ignore,none,centernscale,0.871168416393881,random,295,4,cv,32,3,1,5,1.43605769667384
+0.926,0.92,0.078,0.07,0.055,Tue Oct 24 22:37:50 2017,svmLinear3,1,1,mean subtraction in each row,ignore,none,centernscale,0.871168416393881,random,296,4,cv,32,3,1,5,2.31720604740174,L2
+0.262,0.189,0.846,0.706,0.548,Tue Oct 24 22:37:56 2017,relaxo,1,1,mean subtraction in each row,ignore,none,centernscale,0.871168416393881,random,297,5,cv,32,3,1,5,6.50300772372251,0.255080298753455
+-0.052,-0.048,0.777,0.913,0.781,Tue Oct 24 22:37:59 2017,superpc,1,1,mean subtraction in each row,ignore,none,centernscale,0.871168416393881,random,298,3,cv,32,3,1,5,0.855514079099521,3
+-0.065,-0.037,0.926,0.904,0.79,Tue Oct 24 22:41:03 2017,xgbTree,1,1,mean subtraction in each row,ignore,none,centernscale,0.871168416393881,random,299,183,cv,32,3,1,5,802,5,0.299345002752496,4.81771638151258,0.321991661936045,2,0.565039994718973
+0.987,0.986,0.021,0.012,0.009,Tue Oct 24 22:44:07 2017,BstLm,1,1,mean subtraction in each row,ignore,none,centernscale,0.871168416393881,random,300,181,cv,32,3,1,5,458,0.596285740214866
+0.013,0.029,1.002,0.866,0.612,Tue Oct 24 22:45:01 2017,avNNet,1,1,median subtraction in each row,ignore,none,centernscale,0.891844904304181,random,301,46,cv,32,3,1,5,19,1.69418350260387e-05,TRUE
+-0.012,-0.002,1.004,0.894,0.627,Tue Oct 24 22:45:12 2017,nnet,1,1,median subtraction in each row,ignore,none,centernscale,0.891844904304181,random,302,10,cv,32,3,1,5,7,1.23157960696873e-05
+-0.019,0.051,0.986,0.846,0.631,Tue Oct 24 22:45:25 2017,pcaNNet,1,1,median subtraction in each row,ignore,none,centernscale,0.891844904304181,random,303,13,cv,32,3,1,5,14,0.000445963567855806
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 22:45:31 2017,glm.nb,1,1,median subtraction in each row,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 22:45:49 2017,gam,1,1,median subtraction in each row,ignore,none,centernscale,17
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 22:47:38 2017,bam,1,1,median subtraction in each row,ignore,none,centernscale,109
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 22:49:18 2017,msaenet,1,1,median subtraction in each row,ignore,none,centernscale,100
+0.023,-0.016,1.002,0.906,0.605,Tue Oct 24 22:50:16 2017,svmLinear2,1,1,median subtraction in each row,ignore,none,centernscale,0.891844904304181,random,308,58,cv,32,3,1,5,0.0342827822907166
+0.015,0.007,1.01,0.885,0.61,Tue Oct 24 22:50:25 2017,svmLinear3,1,1,median subtraction in each row,ignore,none,centernscale,0.891844904304181,random,309,8,cv,32,3,1,5,0.00150172448828517,L1
+-0.006,0.021,1.007,0.873,0.623,Tue Oct 24 22:50:30 2017,relaxo,1,1,median subtraction in each row,ignore,none,centernscale,0.891844904304181,random,310,5,cv,32,3,1,5,9.74128499876268,0.536442904733121
+-0.006,0.001,0.978,0.891,0.623,Tue Oct 24 22:50:39 2017,superpc,1,1,median subtraction in each row,ignore,none,centernscale,0.891844904304181,random,311,8,nohyperparameters,32,3,no rep,no min,0.1,1
+-0.054,0.04,0.892,0.856,0.653,Tue Oct 24 22:53:23 2017,xgbTree,1,1,median subtraction in each row,ignore,none,centernscale,0.891844904304181,random,312,164,cv,32,3,1,5,646,10,0.357911967458669,1.4064439595677,0.31697307927534,10,0.589871202304494
+0.006,0.005,1.022,0.887,0.616,Tue Oct 24 22:56:35 2017,BstLm,1,1,median subtraction in each row,ignore,none,centernscale,0.891844904304181,random,313,192,cv,32,3,1,5,24,0.0504949847029056
+0.1,0.306,0.7,3.255,1.795,Tue Oct 24 22:57:26 2017,avNNet,1,1,rescale 4 poly,ignore,none,centernscale,4.68716045807291,random,314,41,cv,32,3,1,5,20,0.000924780836715609,FALSE
+0.043,0.296,0.773,3.298,1.908,Tue Oct 24 22:57:38 2017,nnet,1,1,rescale 4 poly,ignore,none,centernscale,4.68716045807291,random,315,11,cv,32,3,1,5,15,0.000310459283350057
+0.08,0.306,0.775,3.254,1.833,Tue Oct 24 22:57:51 2017,pcaNNet,1,1,rescale 4 poly,ignore,none,centernscale,4.68716045807291,random,316,13,cv,32,3,1,5,18,0.000146917677867221
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 22:57:56 2017,glm.nb,1,1,rescale 4 poly,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 22:58:15 2017,gam,1,1,rescale 4 poly,ignore,none,centernscale,18
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:00:08 2017,bam,1,1,rescale 4 poly,ignore,none,centernscale,113
+-0.575,0.251,0.867,3.509,3.139,Tue Oct 24 23:00:29 2017,msaenet,1,1,rescale 4 poly,ignore,none,centernscale,4.68716045807291,random,320,20,cv,32,3,1,5,0.296882189949974,7,3.55416097975103
+0.315,0.363,0.663,2.984,1.366,Tue Oct 24 23:03:13 2017,svmLinear2,1,1,rescale 4 poly,ignore,none,centernscale,4.68716045807291,random,321,164,cv,32,3,1,5,0.218340562661196
+0.33,0.354,0.643,3.028,1.336,Tue Oct 24 23:03:25 2017,svmLinear3,1,1,rescale 4 poly,ignore,none,centernscale,4.68716045807291,random,322,11,cv,32,3,1,5,6.8892075793263,L2
+-0.135,-0.002,0.837,4.695,2.262,Tue Oct 24 23:03:30 2017,relaxo,1,1,rescale 4 poly,ignore,none,centernscale,4.68716045807291,random,323,5,cv,32,3,1,5,48.3517066185012,0.0336923368740827
+-0.618,-0.03,1.136,4.828,3.225,Tue Oct 24 23:03:40 2017,superpc,1,1,rescale 4 poly,ignore,none,centernscale,4.68716045807291,random,324,9,nohyperparameters,32,3,no rep,no min,0.1,1
+-0.083,0.12,0.85,4.124,2.159,Tue Oct 24 23:06:21 2017,xgbTree,1,1,rescale 4 poly,ignore,none,centernscale,4.68716045807291,random,325,161,cv,32,3,1,5,749,8,0.212563917393796,7.98452319344506,0.582107014767826,12,0.634896081406623
+0.036,0.447,0.748,2.592,1.922,Tue Oct 24 23:09:33 2017,BstLm,1,1,rescale 4 poly,ignore,none,centernscale,4.68716045807291,random,326,192,cv,32,3,1,5,400,0.00223063750728033
+0.347,0.243,0.711,1.766,1.237,Tue Oct 24 23:10:33 2017,avNNet,1,1,rescale isotonic addition,ignore,none,centernscale,2.33394981141888,random,327,50,cv,32,3,1,5,16,0.0042371550751432,FALSE
+0.334,0.24,0.705,1.773,1.26,Tue Oct 24 23:10:43 2017,nnet,1,1,rescale isotonic addition,ignore,none,centernscale,2.33394981141888,random,328,10,cv,32,3,1,5,17,0.0126475932092799
+0.351,0.245,0.706,1.761,1.23,Tue Oct 24 23:10:57 2017,pcaNNet,1,1,rescale isotonic addition,ignore,none,centernscale,2.33394981141888,random,329,14,cv,32,3,1,5,11,0.00209581614564683
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:11:02 2017,glm.nb,1,1,rescale isotonic addition,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:11:19 2017,gam,1,1,rescale isotonic addition,ignore,none,centernscale,17
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:13:00 2017,bam,1,1,rescale isotonic addition,ignore,none,centernscale,100
+0.892,0.893,0.11,NA,NA,Tue Oct 24 23:13:19 2017,msaenet,1,1,rescale isotonic addition,ignore,none,centernscale,2.33394981141888,random,333,19,cv,32,3,1,5,0.105225745053031,7,0.627025435736869
+0.891,0.888,0.116,NA,NA,Tue Oct 24 23:16:07 2017,svmLinear2,1,1,rescale isotonic addition,ignore,none,centernscale,2.33394981141888,random,334,168,cv,32,3,1,5,0.156482103150154
+0.863,0.863,0.125,0.32,0.259,Tue Oct 24 23:16:12 2017,svmLinear3,1,1,rescale isotonic addition,ignore,none,centernscale,2.33394981141888,random,335,5,cv,32,3,1,5,560.845989928801,L2
+0.894,0.894,0.118,NA,NA,Tue Oct 24 23:16:17 2017,relaxo,1,1,rescale isotonic addition,ignore,none,centernscale,2.33394981141888,random,336,4,cv,32,3,1,5,3.14227577067015,0.0560228182002902
+0.896,0.896,0.121,NA,NA,Tue Oct 24 23:16:21 2017,superpc,1,1,rescale isotonic addition,ignore,none,centernscale,2.33394981141888,random,337,3,cv,32,3,1,5,0.909861058462411,3
+0.465,0.445,0.446,1.295,1.014,Tue Oct 24 23:18:59 2017,xgbTree,1,1,rescale isotonic addition,ignore,none,centernscale,2.33394981141888,random,338,158,cv,32,3,1,5,311,4,0.0451953403130174,0.533111828844994,0.354195261094719,15,0.821568155253772
+0.891,0.888,0.12,NA,NA,Tue Oct 24 23:21:17 2017,BstLm,1,1,rescale isotonic addition,ignore,none,centernscale,2.33394981141888,random,339,137,cv,32,3,1,5,35,0.383512837062357
+0.336,0.23,0.727,1.479,1.091,Tue Oct 24 23:22:19 2017,avNNet,1,1,rescale isotonic addition ran bin,ignore,none,centernscale,1.92093317121234,random,340,52,cv,32,3,1,5,16,0.00160033615806292,FALSE
+0.319,0.226,0.723,1.487,1.118,Tue Oct 24 23:22:32 2017,nnet,1,1,rescale isotonic addition ran bin,ignore,none,centernscale,1.92093317121234,random,341,12,cv,32,3,1,5,20,0.00125560569826534
+0.332,0.231,0.727,1.478,1.098,Tue Oct 24 23:22:43 2017,pcaNNet,1,1,rescale isotonic addition ran bin,ignore,none,centernscale,1.92093317121234,random,342,11,cv,32,3,1,5,16,0.00921411977124107
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:22:49 2017,glm.nb,1,1,rescale isotonic addition ran bin,ignore,none,centernscale,4
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:23:06 2017,gam,1,1,rescale isotonic addition ran bin,ignore,none,centernscale,17
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:24:47 2017,bam,1,1,rescale isotonic addition ran bin,ignore,none,centernscale,100
+0.87,0.869,0.109,0.251,0.213,Tue Oct 24 23:25:07 2017,msaenet,1,1,rescale isotonic addition ran bin,ignore,none,centernscale,1.92093317121234,random,346,20,cv,32,3,1,5,0.944231310836039,2,0.558385779208038
+0.851,0.854,0.145,0.281,0.245,Tue Oct 24 23:26:12 2017,svmLinear2,1,1,rescale isotonic addition ran bin,ignore,none,centernscale,1.92093317121234,random,347,64,cv,32,3,1,5,3.11515910059637
+0.85,0.852,0.118,0.284,0.247,Tue Oct 24 23:26:20 2017,svmLinear3,1,1,rescale isotonic addition ran bin,ignore,none,centernscale,1.92093317121234,random,348,8,cv,32,3,1,5,1.87103545085687,L2
+0.87,0.869,0.11,0.251,0.214,Tue Oct 24 23:26:25 2017,relaxo,1,1,rescale isotonic addition ran bin,ignore,none,centernscale,1.92093317121234,random,349,5,cv,32,3,1,5,2.41503461562659,0.060233733151108
+0.873,0.867,0.116,0.256,0.209,Tue Oct 24 23:26:29 2017,superpc,1,1,rescale isotonic addition ran bin,ignore,none,centernscale,1.92093317121234,random,350,3,cv,32,3,1,5,0.988135352730751,3
+0.577,0.505,0.423,0.951,0.696,Tue Oct 24 23:30:52 2017,xgbTree,1,1,rescale isotonic addition ran bin,ignore,none,centernscale,1.92093317121234,random,351,262,cv,32,3,1,5,946,6,0.288270218434045,0.841217546258122,0.571663820277899,5,0.749316221685149
+0.86,0.861,0.145,0.266,0.23,Tue Oct 24 23:33:50 2017,BstLm,1,1,rescale isotonic addition ran bin,ignore,none,centernscale,1.92093317121234,random,352,177,cv,32,3,1,5,95,0.208549616433214
+0.259,0.249,0.801,1.093,0.875,Tue Oct 24 23:34:50 2017,avNNet,1,1,noise in predictors,ignore,none,centernscale,1.45513605463544,random,353,50,cv,32,3,1,5,19,0.00054783962211574,TRUE
+0.231,0.245,0.81,1.099,0.907,Tue Oct 24 23:35:03 2017,nnet,1,1,noise in predictors,ignore,none,centernscale,1.45513605463544,random,354,11,cv,32,3,1,5,14,0.0641016307922128
+0.232,0.25,0.798,1.091,0.907,Tue Oct 24 23:35:17 2017,pcaNNet,1,1,noise in predictors,ignore,none,centernscale,1.45513605463544,random,355,14,cv,32,3,1,5,20,0.0188382378869913
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:35:23 2017,glm.nb,1,1,noise in predictors,ignore,none,centernscale,6
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:35:42 2017,gam,1,1,noise in predictors,ignore,none,centernscale,19
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:37:31 2017,bam,1,1,noise in predictors,ignore,none,centernscale,108
+0.713,0.71,0.311,0.422,0.339,Tue Oct 24 23:37:52 2017,msaenet,1,1,noise in predictors,ignore,none,centernscale,1.45513605463544,random,359,21,cv,32,3,1,5,0.214706128812395,8,1.07128251844551
+0.68,0.688,0.341,0.454,0.378,Tue Oct 24 23:39:12 2017,svmLinear2,1,1,noise in predictors,ignore,none,centernscale,1.45513605463544,random,360,80,cv,32,3,1,5,0.292067228802343
+0.684,0.697,0.332,0.441,0.373,Tue Oct 24 23:39:21 2017,svmLinear3,1,1,noise in predictors,ignore,none,centernscale,1.45513605463544,random,361,8,cv,32,3,1,5,710.266736983157,L1
+0.713,0.71,0.306,0.422,0.339,Tue Oct 24 23:39:26 2017,relaxo,1,1,noise in predictors,ignore,none,centernscale,1.45513605463544,random,362,4,cv,32,3,1,5,9.89970689390448,0.0253586270846426
+0.222,0.215,0.638,1.143,0.918,Tue Oct 24 23:39:29 2017,superpc,1,1,noise in predictors,ignore,none,centernscale,1.45513605463544,random,363,3,cv,32,3,1,5,0.744591244729236,3
+0.502,0.515,0.562,0.706,0.588,Tue Oct 24 23:42:17 2017,xgbTree,1,1,noise in predictors,ignore,none,centernscale,1.45513605463544,random,364,167,cv,32,3,1,5,870,9,0.0488957041685935,0.622564700897783,0.410640092007816,7,0.436599330801982
+0.688,0.699,0.314,0.438,0.369,Tue Oct 24 23:45:14 2017,BstLm,1,1,noise in predictors,ignore,none,centernscale,1.45513605463544,random,365,176,cv,32,3,1,5,477,0.0802529896132182
+0.258,0.112,0.878,1.054,0.646,Tue Oct 24 23:46:06 2017,avNNet,1,1,outliers,ignore,none,centernscale,1.18701828533609,random,366,42,cv,32,3,1,5,18,0.000103039618590515,TRUE
+0.295,0.127,0.881,1.036,0.614,Tue Oct 24 23:46:17 2017,nnet,1,1,outliers,ignore,none,centernscale,1.18701828533609,random,367,10,cv,32,3,1,5,17,0.000126157351104543
+0.372,0.135,0.891,1.027,0.547,Tue Oct 24 23:46:30 2017,pcaNNet,1,1,outliers,ignore,none,centernscale,1.18701828533609,random,368,11,cv,32,3,1,5,10,0.0105961449404307
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:46:34 2017,glm.nb,1,1,outliers,ignore,none,centernscale,4
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:46:51 2017,gam,1,1,outliers,ignore,none,centernscale,16
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:48:30 2017,bam,1,1,outliers,ignore,none,centernscale,99
+0.721,0.716,0.9,0.337,0.243,Tue Oct 24 23:48:48 2017,msaenet,1,1,outliers,ignore,none,centernscale,1.18701828533609,random,372,18,cv,32,3,1,5,0.321744564734399,3,3.78841504896991
+0.93,0.928,0.561,0.086,0.061,Tue Oct 24 23:48:59 2017,svmLinear2,1,1,outliers,ignore,none,centernscale,1.18701828533609,random,373,10,cv,32,3,1,5,0.115556403309268
+0.928,0.926,0.585,0.088,0.062,Tue Oct 24 23:49:04 2017,svmLinear3,1,1,outliers,ignore,none,centernscale,1.18701828533609,random,374,5,cv,32,3,1,5,0.176997830323552,L2
+0.614,0.639,0.362,0.428,0.336,Tue Oct 24 23:49:09 2017,relaxo,1,1,outliers,ignore,none,centernscale,1.18701828533609,random,375,4,cv,32,3,1,5,9.22492516782023,0.254325765185058
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:49:17 2017,superpc,1,1,outliers,ignore,none,centernscale,7
+0.458,0.366,0.824,0.753,0.472,Tue Oct 24 23:51:42 2017,xgbTree,1,1,outliers,ignore,none,centernscale,1.18701828533609,random,377,145,cv,32,3,1,5,530,5,0.479080654081423,5.57817471213639,0.518587609753013,18,0.749924296978861
+0.603,0.636,0.81,0.432,0.346,Tue Oct 24 23:54:25 2017,BstLm,1,1,outliers,ignore,none,centernscale,1.18701828533609,random,378,163,cv,32,3,1,5,230,0.0268351950277574
+0.333,0.205,0.721,1.529,0.967,Tue Oct 24 23:55:13 2017,avNNet,1,1,colinerity unnecessary,ignore,none,centernscale,1.9228724155255,random,379,37,cv,32,3,1,5,18,0.00332404892530098,FALSE
+0.334,0.205,0.709,1.529,0.965,Tue Oct 24 23:55:25 2017,nnet,1,1,colinerity unnecessary,ignore,none,centernscale,1.9228724155255,random,380,12,cv,32,3,1,5,19,0.00612147294875371
+0.276,0.196,0.724,1.546,1.05,Tue Oct 24 23:55:37 2017,pcaNNet,1,1,colinerity unnecessary,ignore,none,centernscale,1.9228724155255,random,381,12,cv,32,3,1,5,15,0.00640389449955214
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:55:42 2017,glm.nb,1,1,colinerity unnecessary,ignore,none,centernscale,4
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:56:00 2017,gam,1,1,colinerity unnecessary,ignore,none,centernscale,17
+Fail,Fail,Fail,Fail,Fail,Tue Oct 24 23:57:46 2017,bam,1,1,colinerity unnecessary,ignore,none,centernscale,106
+1,1,0,0.001,0.001,Tue Oct 24 23:58:06 2017,msaenet,1,1,colinerity unnecessary,ignore,none,centernscale,1.9228724155255,random,385,19,cv,32,3,1,5,0.921832989691757,4,3.86437215935439
+0.949,0.951,0.077,NA,NA,Tue Oct 24 23:58:10 2017,svmLinear2,1,1,colinerity unnecessary,ignore,none,centernscale,1.9228724155255,random,386,4,cv,32,3,1,5,0.510404402880603
+0.947,0.949,0.071,NA,NA,Tue Oct 24 23:58:14 2017,svmLinear3,1,1,colinerity unnecessary,ignore,none,centernscale,1.9228724155255,random,387,4,cv,32,3,1,5,0.395916951074719,L2
+1,1,0,0.001,0.001,Tue Oct 24 23:58:20 2017,relaxo,1,1,colinerity unnecessary,ignore,none,centernscale,1.9228724155255,random,388,5,cv,32,3,1,5,0.0222583410766618,0.120591865852475
+0.848,0.848,0.161,NA,NA,Tue Oct 24 23:58:24 2017,superpc,1,1,colinerity unnecessary,ignore,none,centernscale,1.9228724155255,random,389,4,cv,32,3,1,5,0.616341385757551,3
+0.508,0.504,0.42,0.955,0.713,Wed Oct 25 00:00:44 2017,xgbTree,1,1,colinerity unnecessary,ignore,none,centernscale,1.9228724155255,random,390,139,cv,32,3,1,5,792,2,0.12515601706598,1.26044890843332,0.631108055543154,6,0.525163703132421
+0.996,0.997,0.046,NA,NA,Wed Oct 25 00:03:37 2017,BstLm,1,1,colinerity unnecessary,ignore,none,centernscale,1.9228724155255,random,391,172,cv,32,3,1,5,430,0.387264430103125
+0.349,0.315,0.78,1.174,0.921,Wed Oct 25 00:04:41 2017,avNNet,1,1,colinerity middle is correct,ignore,none,centernscale,1.71407906061584,random,392,51,cv,32,3,1,5,12,0.0219441404985671,FALSE
+0.351,0.316,0.776,1.173,0.919,Wed Oct 25 00:04:53 2017,nnet,1,1,colinerity middle is correct,ignore,none,centernscale,1.71407906061584,random,393,12,cv,32,3,1,5,18,0.0363493668793579
+0.349,0.316,0.784,1.172,0.921,Wed Oct 25 00:05:05 2017,pcaNNet,1,1,colinerity middle is correct,ignore,none,centernscale,1.71407906061584,random,394,11,cv,32,3,1,5,15,0.0128195919327758
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 00:05:10 2017,glm.nb,1,1,colinerity middle is correct,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 00:05:28 2017,gam,1,1,colinerity middle is correct,ignore,none,centernscale,17
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 00:07:12 2017,bam,1,1,colinerity middle is correct,ignore,none,centernscale,104
+0.835,0.84,0.204,NA,NA,Wed Oct 25 00:07:32 2017,msaenet,1,1,colinerity middle is correct,ignore,none,centernscale,1.71407906061584,random,398,20,cv,32,3,1,5,0.0840762709034607,10,0.726815790170804
+0.837,0.832,0.229,0.288,0.23,Wed Oct 25 00:10:51 2017,svmLinear2,1,1,colinerity middle is correct,ignore,none,centernscale,1.71407906061584,random,399,199,cv,32,3,1,5,0.170098688097233
+0.853,0.843,0.22,0.27,0.208,Wed Oct 25 00:10:57 2017,svmLinear3,1,1,colinerity middle is correct,ignore,none,centernscale,1.71407906061584,random,400,5,cv,32,3,1,5,0.241706875448506,L1
+0.837,0.841,0.228,NA,NA,Wed Oct 25 00:11:02 2017,relaxo,1,1,colinerity middle is correct,ignore,none,centernscale,1.71407906061584,random,401,4,cv,32,3,1,5,2.92511879346283,0.0791160573717207
+0.833,0.815,0.219,0.317,0.237,Wed Oct 25 00:11:06 2017,superpc,1,1,colinerity middle is correct,ignore,none,centernscale,1.71407906061584,random,402,3,cv,32,3,1,5,0.183752799406648,3
+0.582,0.49,0.501,0.874,0.591,Wed Oct 25 00:13:49 2017,xgbTree,1,1,colinerity middle is correct,ignore,none,centernscale,1.71407906061584,random,403,162,cv,32,3,1,5,744,4,0.0681053691585548,1.28772674128413,0.550909953191876,4,0.326276212930679
+0.839,0.839,0.242,0.276,0.227,Wed Oct 25 00:16:38 2017,BstLm,1,1,colinerity middle is correct,ignore,none,centernscale,1.71407906061584,random,404,168,cv,32,3,1,5,79,0.571588339079404
+0.351,0.295,0.775,0.148,0.105,Wed Oct 25 00:17:36 2017,avNNet,1,1,Spread thinly,ignore,none,centernscale,0.210048601353486,random,405,45,cv,32,3,1,5,12,0.00156714470992473,TRUE
+0.356,0.293,0.774,0.148,0.104,Wed Oct 25 00:17:50 2017,nnet,1,1,Spread thinly,ignore,none,centernscale,0.210048601353486,random,406,13,cv,32,3,1,5,18,0.0135849502999771
+0.356,0.295,0.758,0.148,0.104,Wed Oct 25 00:18:05 2017,pcaNNet,1,1,Spread thinly,ignore,none,centernscale,0.210048601353486,random,407,15,cv,32,3,1,5,18,0.00370461754200701
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 00:18:10 2017,glm.nb,1,1,Spread thinly,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 00:18:28 2017,gam,1,1,Spread thinly,ignore,none,centernscale,17
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 00:20:19 2017,bam,1,1,Spread thinly,ignore,none,centernscale,111
+0.998,0.999,0.002,0,0,Wed Oct 25 00:20:42 2017,msaenet,1,1,Spread thinly,ignore,none,centernscale,0.210048601353486,random,411,22,cv,32,3,1,5,0.916885821335018,5,3.04804467107169
+0.93,0.931,0.078,0.014,0.011,Wed Oct 25 00:20:47 2017,svmLinear2,1,1,Spread thinly,ignore,none,centernscale,0.210048601353486,random,412,4,cv,32,3,1,5,0.534107507190982
+0.93,0.93,0.081,0.015,0.011,Wed Oct 25 00:20:51 2017,svmLinear3,1,1,Spread thinly,ignore,none,centernscale,0.210048601353486,random,413,3,cv,32,3,1,5,4.61238356120311,L2
+0.998,0.999,0.001,0,0,Wed Oct 25 00:20:57 2017,relaxo,1,1,Spread thinly,ignore,none,centernscale,0.210048601353486,random,414,5,cv,32,3,1,5,1.25673099654643,0.118075489997864
+0.033,0.105,0.847,0.188,0.156,Wed Oct 25 00:21:01 2017,superpc,1,1,Spread thinly,ignore,none,centernscale,0.210048601353486,random,415,4,cv,32,3,1,5,0.942557890433818,2
+0.528,0.517,0.578,0.101,0.076,Wed Oct 25 00:23:47 2017,xgbTree,1,1,Spread thinly,ignore,none,centernscale,0.210048601353486,random,416,165,cv,32,3,1,5,420,2,0.398990888986504,0.0646111625246704,0.529095295909792,3,0.589677381620277
+0.983,0.986,0.055,0.003,0.003,Wed Oct 25 00:26:58 2017,BstLm,1,1,Spread thinly,ignore,none,centernscale,0.210048601353486,random,417,191,cv,32,3,1,5,469,0.353333862066967
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 00:32:48 2017,avNNet,1,1,needles in haystack,ignore,none,centernscale,331
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 00:37:46 2017,nnet,1,1,needles in haystack,ignore,none,centernscale,297
+-0.07,-0.023,0.917,0.323,0.259,Wed Oct 25 00:56:18 2017,pcaNNet,1,1,needles in haystack,ignore,none,centernscale,0.316114340139239,random,420,1112,nohyperparameters,32,3,no rep,no min,1,0.1
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 00:56:37 2017,glm.nb,1,1,needles in haystack,ignore,none,centernscale,9
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 02:55:18 2017,gam,1,1,needles in haystack,ignore,none,centernscale,7120
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 04:38:10 2017,bam,1,1,needles in haystack,ignore,none,centernscale,6171
+0.184,0.265,0.926,0.232,0.198,Wed Oct 25 04:39:41 2017,msaenet,1,1,needles in haystack,ignore,none,centernscale,0.316114340139239,random,424,91,cv,32,3,1,5,0.269712980464101,2,3.27412874996662
+-0.09,-0.036,0.939,0.328,0.264,Wed Oct 25 04:40:31 2017,svmLinear2,1,1,needles in haystack,ignore,none,centernscale,0.316114340139239,random,425,49,cv,32,3,1,5,0.0756669798214091
+-0.096,-0.044,0.941,0.33,0.265,Wed Oct 25 04:40:55 2017,svmLinear3,1,1,needles in haystack,ignore,none,centernscale,0.316114340139239,random,426,16,cv,32,3,1,5,442.945946707249,L1
+0.998,0.999,0.52,0,0,Wed Oct 25 04:42:45 2017,relaxo,1,1,needles in haystack,ignore,none,centernscale,0.316114340139239,random,427,101,cv,32,3,1,5,0.0168495566899411,0.29537597252056
+-0.027,0.053,0.845,0.299,0.249,Wed Oct 25 04:43:02 2017,superpc,1,1,needles in haystack,ignore,none,centernscale,0.316114340139239,random,428,8,cv,32,3,1,5,0.934252448612824,1
+0.013,0.068,0.959,0.295,0.239,Wed Oct 25 04:49:43 2017,xgbTree,1,1,needles in haystack,ignore,none,centernscale,0.316114340139239,random,429,392,cv,32,3,1,5,224,8,0.0336814601290971,4.65484627056867,0.442157492227852,15,0.787048889207654
+0.528,0.58,0.77,0.133,0.114,Wed Oct 25 04:53:23 2017,BstLm,1,1,needles in haystack,ignore,none,centernscale,0.316114340139239,random,430,220,cv,32,3,1,5,133,0.341785441983026
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 04:58:21 2017,avNNet,1,1,needles hay noise,ignore,none,centernscale,273
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 05:02:15 2017,nnet,1,1,needles hay noise,ignore,none,centernscale,233
+0.107,-0.025,0.98,0.307,0.229,Wed Oct 25 05:06:23 2017,pcaNNet,1,1,needles hay noise,ignore,none,centernscale,0.299984571362521,random,433,248,cv,32,3,1,5,6,8.85517368512911e-05
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 05:06:40 2017,glm.nb,1,1,needles hay noise,ignore,none,centernscale,8
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 06:31:01 2017,gam,1,1,needles hay noise,ignore,none,centernscale,5061
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 08:12:42 2017,bam,1,1,needles hay noise,ignore,none,centernscale,6100
+0.781,0.731,0.934,0.081,0.056,Wed Oct 25 08:14:19 2017,msaenet,1,1,needles hay noise,ignore,none,centernscale,0.299984571362521,random,437,97,cv,32,3,1,5,0.216771948174573,5,1.54563545051496
+0.09,0.058,0.983,0.283,0.234,Wed Oct 25 08:15:07 2017,svmLinear2,1,1,needles hay noise,ignore,none,centernscale,0.299984571362521,random,438,48,cv,32,3,1,5,0.0328817371639811
+0.093,0.066,1.016,0.28,0.233,Wed Oct 25 08:15:32 2017,svmLinear3,1,1,needles hay noise,ignore,none,centernscale,0.299984571362521,random,439,16,cv,32,3,1,5,0.0164792302200696,L1
+0.385,0.339,0.924,0.198,0.158,Wed Oct 25 08:17:23 2017,relaxo,1,1,needles hay noise,ignore,none,centernscale,0.299984571362521,random,440,101,cv,32,3,1,5,12.8574079358661,0.736153529956937
+0.067,-0.023,0.974,0.307,0.24,Wed Oct 25 08:17:39 2017,superpc,1,1,needles hay noise,ignore,none,centernscale,0.299984571362521,random,441,7,cv,32,3,1,5,0.855495643103495,1
+-0.002,-0.066,0.949,0.32,0.257,Wed Oct 25 09:00:00 2017,xgbTree,1,1,needles hay noise,ignore,none,centernscale,0.299984571362521,random,442,2532,cv,32,3,1,5,89,4,0.191770692426944,8.43460465315729,0.578456379938871,3,0.494083343364764
+0.431,0.368,0.865,0.19,0.146,Wed Oct 25 09:03:41 2017,BstLm,1,1,needles hay noise,ignore,none,centernscale,0.299984571362521,random,443,221,cv,32,3,1,5,329,0.234881528218044
+-0.04,-0.105,1.105,1.864,1.468,Wed Oct 25 09:04:23 2017,avNNet,1,1,sparsity NA,ignore,none,centernscale,1.68633673434377,random,444,22,cv,32,3,1,5,7,4.17396487766183,TRUE
+NA,NA,0.686,NA,NA,Wed Oct 25 09:04:31 2017,nnet,1,1,sparsity NA,ignore,none,centernscale,1.68633673434377,random,445,7,cv,32,3,1,5,9,5.00155560710412
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:04:47 2017,pcaNNet,1,1,sparsity NA,ignore,none,centernscale,15
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:04:51 2017,glm.nb,1,1,sparsity NA,ignore,none,centernscale,4
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:04:59 2017,gam,1,1,sparsity NA,ignore,none,centernscale,8
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:06:18 2017,bam,1,1,sparsity NA,ignore,none,centernscale,79
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:06:31 2017,msaenet,1,1,sparsity NA,ignore,none,centernscale,12
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:06:38 2017,svmLinear2,1,1,sparsity NA,ignore,none,centernscale,7
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:06:45 2017,svmLinear3,1,1,sparsity NA,ignore,none,centernscale,7
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:06:46 2017,relaxo,1,1,sparsity NA,ignore,none,centernscale,1
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:06:51 2017,superpc,1,1,sparsity NA,ignore,none,centernscale,5
+0.22,0.192,0.829,1.363,1.102,Wed Oct 25 09:17:32 2017,xgbTree,1,1,sparsity NA,ignore,none,centernscale,1.68633673434377,random,455,640,cv,32,3,1,5,783,6,0.327990010606823,3.41821979498491,0.321542310714722,6,0.594655380467884
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:17:40 2017,BstLm,1,1,sparsity NA,ignore,none,centernscale,7
+0.089,0.095,0.862,1.567,1.302,Wed Oct 25 09:18:39 2017,avNNet,1,1,sparsity 0,ignore,none,centernscale,1.73109983053084,random,457,48,cv,32,3,1,5,17,0.00177456623289049,FALSE
+0.091,0.103,0.88,1.554,1.299,Wed Oct 25 09:18:51 2017,nnet,1,1,sparsity 0,ignore,none,centernscale,1.73109983053084,random,458,11,cv,32,3,1,5,16,0.176240361989939
+0.104,0.109,0.903,1.543,1.281,Wed Oct 25 09:19:03 2017,pcaNNet,1,1,sparsity 0,ignore,none,centernscale,1.73109983053084,random,459,11,cv,32,3,1,5,9,0.000226492674993916
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:19:07 2017,glm.nb,1,1,sparsity 0,ignore,none,centernscale,4
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:19:22 2017,gam,1,1,sparsity 0,ignore,none,centernscale,15
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:20:56 2017,bam,1,1,sparsity 0,ignore,none,centernscale,93
+0.36,0.317,0.543,1.183,0.915,Wed Oct 25 09:21:15 2017,msaenet,1,1,sparsity 0,ignore,none,centernscale,1.73109983053084,random,463,19,cv,32,3,1,5,0.145488820644096,10,0.589255876315292
+0.441,0.359,0.548,1.11,0.798,Wed Oct 25 09:22:01 2017,svmLinear2,1,1,sparsity 0,ignore,none,centernscale,1.73109983053084,random,464,46,cv,32,3,1,5,0.851239610438538
+0.365,0.317,0.571,1.182,0.908,Wed Oct 25 09:22:06 2017,svmLinear3,1,1,sparsity 0,ignore,none,centernscale,1.73109983053084,random,465,4,cv,32,3,1,5,0.630989423587028,L1
+0.398,0.334,0.531,1.154,0.861,Wed Oct 25 09:22:11 2017,relaxo,1,1,sparsity 0,ignore,none,centernscale,1.73109983053084,random,466,4,cv,32,3,1,5,1.14287876730089,0.929586264770478
+0.273,0.161,0.751,1.453,1.039,Wed Oct 25 09:22:14 2017,superpc,1,1,sparsity 0,ignore,none,centernscale,1.73109983053084,random,467,3,cv,32,3,1,5,0.482535002753139,3
+0.356,0.325,0.704,1.169,0.921,Wed Oct 25 09:34:00 2017,xgbTree,1,1,sparsity 0,ignore,none,centernscale,1.73109983053084,random,468,705,cv,32,3,1,5,453,7,0.235836543713463,0.626995032653213,0.555809840559959,1,0.779685557528865
+0.405,0.336,0.565,1.15,0.85,Wed Oct 25 09:36:26 2017,BstLm,1,1,sparsity 0,ignore,none,centernscale,1.73109983053084,random,469,145,cv,32,3,1,5,142,0.127114712470444
+0.049,0.038,0.966,1.993,1.554,Wed Oct 25 09:37:15 2017,avNNet,1,1,sparsity 20,ignore,none,centernscale,2.07141416695012,random,470,37,cv,32,3,1,5,13,1.59289293098654e-05,FALSE
+-0.056,-0.05,0.956,2.175,1.726,Wed Oct 25 09:37:24 2017,nnet,1,1,sparsity 20,ignore,none,centernscale,2.07141416695012,random,471,9,cv,32,3,1,5,17,1.44918568903009e-05
+-0.017,0.002,0.966,2.067,1.662,Wed Oct 25 09:37:38 2017,pcaNNet,1,1,sparsity 20,ignore,none,centernscale,2.07141416695012,random,472,13,cv,32,3,1,5,14,0.853787389012244
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:37:43 2017,glm.nb,1,1,sparsity 20,ignore,none,centernscale,4
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:38:04 2017,gam,1,1,sparsity 20,ignore,none,centernscale,21
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:39:50 2017,bam,1,1,sparsity 20,ignore,none,centernscale,106
+0.018,0.051,1.081,1.966,1.604,Wed Oct 25 09:40:06 2017,msaenet,1,1,sparsity 20,ignore,none,centernscale,2.07141416695012,random,476,13,cv,32,3,1,5,0.383371917926706,4,0.806437679042574
+0.067,0.055,1.004,1.957,1.524,Wed Oct 25 09:40:34 2017,svmLinear2,1,1,sparsity 20,ignore,none,centernscale,2.07141416695012,random,477,28,cv,32,3,1,5,0.0402205101298065
+0.029,0.027,0.963,2.015,1.587,Wed Oct 25 09:40:42 2017,svmLinear3,1,1,sparsity 20,ignore,none,centernscale,2.07141416695012,random,478,7,cv,32,3,1,5,0.00260407670313718,L1
+0.014,0.035,0.955,1.999,1.611,Wed Oct 25 09:40:48 2017,relaxo,1,1,sparsity 20,ignore,none,centernscale,2.07141416695012,random,479,5,cv,32,3,1,5,13.0023222680914,0.674965771846473
+0.036,0.042,0.923,1.984,1.575,Wed Oct 25 09:40:51 2017,superpc,1,1,sparsity 20,ignore,none,centernscale,2.07141416695012,random,480,3,cv,32,3,1,5,0.0129874837584794,3
+0.02,0.035,0.78,1.999,1.602,Wed Oct 25 09:43:41 2017,xgbTree,1,1,sparsity 20,ignore,none,centernscale,2.07141416695012,random,481,169,cv,32,3,1,5,953,3,0.291177094963845,3.74891617102548,0.34425531513989,0,0.57756602606969
+0.058,0.046,0.984,1.976,1.54,Wed Oct 25 09:46:37 2017,BstLm,1,1,sparsity 20,ignore,none,centernscale,2.07141416695012,random,482,175,cv,32,3,1,5,8,0.440167194291018
+0.364,0.3,0.765,0.608,0.442,Wed Oct 25 09:47:42 2017,avNNet,1,1,quantilization,ignore,none,centernscale,0.868945062034035,random,483,49,cv,32,3,1,5,17,0.000963001960464994,TRUE
+0.377,0.301,0.768,0.608,0.433,Wed Oct 25 09:47:55 2017,nnet,1,1,quantilization,ignore,none,centernscale,0.868945062034035,random,484,12,cv,32,3,1,5,15,0.00861834180136616
+0.375,0.3,0.764,0.608,0.434,Wed Oct 25 09:48:07 2017,pcaNNet,1,1,quantilization,ignore,none,centernscale,0.868945062034035,random,485,12,cv,32,3,1,5,18,0.00538194431148982
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:48:13 2017,glm.nb,1,1,quantilization,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:48:31 2017,gam,1,1,quantilization,ignore,none,centernscale,18
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:50:22 2017,bam,1,1,quantilization,ignore,none,centernscale,111
+0.89,0.874,0.166,0.11,0.077,Wed Oct 25 09:50:41 2017,msaenet,1,1,quantilization,ignore,none,centernscale,0.868945062034035,random,489,18,cv,32,3,1,5,0.0558066443074495,5,2.1985882675508
+0.887,0.879,0.177,0.105,0.079,Wed Oct 25 09:53:03 2017,svmLinear2,1,1,quantilization,ignore,none,centernscale,0.868945062034035,random,490,142,cv,32,3,1,5,1.83103034360596
+0.881,0.873,0.171,0.11,0.083,Wed Oct 25 09:53:12 2017,svmLinear3,1,1,quantilization,ignore,none,centernscale,0.868945062034035,random,491,9,cv,32,3,1,5,8.0186765210853,L2
+0.892,0.874,0.165,0.11,0.075,Wed Oct 25 09:53:18 2017,relaxo,1,1,quantilization,ignore,none,centernscale,0.868945062034035,random,492,5,cv,32,3,1,5,16.50542982211,0.65402222936973
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 09:53:28 2017,superpc,1,1,quantilization,ignore,none,centernscale,10
+0.784,0.751,0.404,0.217,0.15,Wed Oct 25 09:56:06 2017,xgbTree,1,1,quantilization,ignore,none,centernscale,0.868945062034035,random,494,157,cv,32,3,1,5,891,5,0.282034319873666,1.05889660306275,0.346909497771412,10,0.596959570364561
+0.897,0.874,0.175,0.109,0.072,Wed Oct 25 09:59:07 2017,BstLm,1,1,quantilization,ignore,none,centernscale,0.868945062034035,random,495,181,cv,32,3,1,5,94,0.0455578977605328
+-0.001,0.002,0.913,1.767,1.39,Wed Oct 25 09:59:59 2017,avNNet,1,1,composite 1,ignore,none,centernscale,1.77024819303129,random,496,36,cv,32,3,1,5,20,0.00509442483890351,FALSE
+0.139,0.136,0.929,1.529,1.196,Wed Oct 25 10:00:07 2017,nnet,1,1,composite 1,ignore,none,centernscale,1.77024819303129,random,497,8,cv,32,3,1,5,9,0.000167673785198144
+0.139,0.126,0.91,1.547,1.196,Wed Oct 25 10:00:17 2017,pcaNNet,1,1,composite 1,ignore,none,centernscale,1.77024819303129,random,498,9,cv,32,3,1,5,17,0.141354845513289
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 10:00:22 2017,glm.nb,1,1,composite 1,ignore,none,centernscale,5
+0.298,0.305,0.83,1.23,0.975,Wed Oct 25 10:00:32 2017,gam,1,1,composite 1,ignore,none,centernscale,1.77024819303129,random,500,10,cv,32,3,1,5,TRUE,ML
+0.257,0.295,0.939,1.248,1.032,Wed Oct 25 10:01:31 2017,bam,1,1,composite 1,ignore,none,centernscale,1.77024819303129,random,501,59,cv,32,3,1,5,FALSE,ML
+0.303,0.308,0.803,1.224,0.969,Wed Oct 25 10:01:50 2017,msaenet,1,1,composite 1,ignore,none,centernscale,1.77024819303129,random,502,18,cv,32,3,1,5,0.939579405076802,8,0.317246208782308
+0.266,0.284,0.823,1.267,1.02,Wed Oct 25 10:02:07 2017,svmLinear2,1,1,composite 1,ignore,none,centernscale,1.77024819303129,random,503,16,cv,32,3,1,5,95.0836344795136
+0.261,0.292,0.777,1.254,1.026,Wed Oct 25 10:02:12 2017,svmLinear3,1,1,composite 1,ignore,none,centernscale,1.77024819303129,random,504,5,cv,32,3,1,5,0.164356277850981,L1
+0.28,0.307,0.782,1.227,1,Wed Oct 25 10:02:16 2017,relaxo,1,1,composite 1,ignore,none,centernscale,1.77024819303129,random,505,4,cv,32,3,1,5,3.22618015567216,0.455359074519947
+0.275,0.309,0.829,1.223,1.008,Wed Oct 25 10:02:20 2017,superpc,1,1,composite 1,ignore,none,centernscale,1.77024819303129,random,506,3,cv,32,3,1,5,0.326249124482274,3
+0.161,0.131,0.845,1.538,1.165,Wed Oct 25 10:04:32 2017,xgbTree,1,1,composite 1,ignore,none,centernscale,1.77024819303129,random,507,132,cv,32,3,1,5,557,7,0.466579623446101,3.33989204606041,0.437562115117907,20,0.958050254150294
+0.279,0.3,0.81,1.239,1.002,Wed Oct 25 10:07:20 2017,BstLm,1,1,composite 1,ignore,none,centernscale,1.77024819303129,random,508,167,cv,32,3,1,5,20,0.320005318021169
+0.069,0.099,0.828,1.951,1.555,Wed Oct 25 10:08:02 2017,avNNet,1,1,composite 2,ignore,none,centernscale,2.16446370338333,random,509,27,cv,32,3,1,5,5,0.000924710811514656,TRUE
+0.103,0.17,0.84,1.798,1.498,Wed Oct 25 10:08:09 2017,nnet,1,1,composite 2,ignore,none,centernscale,2.16446370338333,random,510,6,cv,32,3,1,5,3,0.00146279748954301
+0.121,0.134,0.853,1.874,1.469,Wed Oct 25 10:08:19 2017,pcaNNet,1,1,composite 2,ignore,none,centernscale,2.16446370338333,random,511,9,cv,32,3,1,5,20,0.0771770836119514
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 10:08:24 2017,glm.nb,1,1,composite 2,ignore,none,centernscale,5
+0.239,0.271,0.737,1.577,1.271,Wed Oct 25 10:08:33 2017,gam,1,1,composite 2,ignore,none,centernscale,2.16446370338333,random,513,9,cv,32,3,1,5,TRUE,ML
+0.239,0.271,0.726,1.577,1.271,Wed Oct 25 10:09:27 2017,bam,1,1,composite 2,ignore,none,centernscale,2.16446370338333,random,514,53,cv,32,3,1,5,TRUE,REML
+0.306,0.312,0.774,1.489,1.159,Wed Oct 25 10:09:44 2017,msaenet,1,1,composite 2,ignore,none,centernscale,2.16446370338333,random,515,17,cv,32,3,1,5,0.0567291873740032,5,2.68132182455156
+0.261,0.282,0.801,1.553,1.235,Wed Oct 25 10:09:54 2017,svmLinear2,1,1,composite 2,ignore,none,centernscale,2.16446370338333,random,516,10,cv,32,3,1,5,1.84458631214681
+0.286,0.303,0.744,1.509,1.193,Wed Oct 25 10:10:00 2017,svmLinear3,1,1,composite 2,ignore,none,centernscale,2.16446370338333,random,517,6,cv,32,3,1,5,256.342813728261,L1
+0.29,0.304,0.764,1.506,1.186,Wed Oct 25 10:10:04 2017,relaxo,1,1,composite 2,ignore,none,centernscale,2.16446370338333,random,518,4,cv,32,3,1,5,8.03138347675836,0.4683591297362
+0.273,0.298,0.778,1.519,1.214,Wed Oct 25 10:10:07 2017,superpc,1,1,composite 2,ignore,none,centernscale,2.16446370338333,random,519,3,cv,32,3,1,5,0.619385392870754,3
+0.084,0.163,0.808,1.811,1.53,Wed Oct 25 10:12:46 2017,xgbTree,1,1,composite 2,ignore,none,centernscale,2.16446370338333,random,520,158,cv,32,3,1,5,381,8,0.284383321908303,2.3296704608947,0.434881465602666,4,0.268078628345393
+0.28,0.297,0.752,1.521,1.203,Wed Oct 25 10:15:33 2017,BstLm,1,1,composite 2,ignore,none,centernscale,2.16446370338333,random,521,167,cv,32,3,1,5,272,0.0331675737674814
+0.309,0.206,0.732,1.439,0.939,Wed Oct 25 10:16:43 2017,avNNet,1,1,composite complete,ignore,none,centernscale,1.81208558049604,random,522,53,cv,32,3,1,5,20,0.000563377938872405,TRUE
+0.325,0.208,0.731,1.435,0.918,Wed Oct 25 10:16:56 2017,nnet,1,1,composite complete,ignore,none,centernscale,1.81208558049604,random,523,12,cv,32,3,1,5,18,0.00694150351730058
+0.323,0.208,0.731,1.436,0.92,Wed Oct 25 10:17:08 2017,pcaNNet,1,1,composite complete,ignore,none,centernscale,1.81208558049604,random,524,12,cv,32,3,1,5,18,0.00302325822248256
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 10:17:13 2017,glm.nb,1,1,composite complete,ignore,none,centernscale,5
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 10:17:31 2017,gam,1,1,composite complete,ignore,none,centernscale,18
+Fail,Fail,Fail,Fail,Fail,Wed Oct 25 10:19:23 2017,bam,1,1,composite complete,ignore,none,centernscale,112
+1,1,0,0.001,0.001,Wed Oct 25 10:19:45 2017,msaenet,1,1,composite complete,ignore,none,centernscale,1.81208558049604,random,528,22,cv,32,3,1,5,0.889413465862162,5,0.934362221509218
+0.934,0.942,0.072,0.105,0.09,Wed Oct 25 10:19:50 2017,svmLinear2,1,1,composite complete,ignore,none,centernscale,1.81208558049604,random,529,4,cv,32,3,1,5,0.929608588628649
+0.934,0.941,0.07,0.106,0.089,Wed Oct 25 10:19:54 2017,svmLinear3,1,1,composite complete,ignore,none,centernscale,1.81208558049604,random,530,3,cv,32,3,1,5,10.4028981659681,L2
+1,1,0,0.001,0.001,Wed Oct 25 10:20:00 2017,relaxo,1,1,composite complete,ignore,none,centernscale,1.81208558049604,random,531,5,cv,32,3,1,5,0.0368588382549898,0.0450177248567343
+0.056,0.18,0.749,1.486,1.283,Wed Oct 25 10:20:04 2017,superpc,1,1,composite complete,ignore,none,centernscale,1.81208558049604,random,532,4,cv,32,3,1,5,0.702920298092067,3
+0.414,0.47,0.545,0.961,0.797,Wed Oct 25 10:23:01 2017,xgbTree,1,1,composite complete,ignore,none,centernscale,1.81208558049604,random,533,177,cv,32,3,1,5,631,7,0.300591885068221,0.957731360103935,0.36343206660822,6,0.516212112735957
+0.984,0.988,0.033,0.022,0.021,Wed Oct 25 10:26:15 2017,BstLm,1,1,composite complete,ignore,none,centernscale,1.81208558049604,random,534,193,cv,32,3,1,5,465,0.0693699707125779
