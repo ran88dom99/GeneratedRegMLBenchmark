@@ -48,6 +48,17 @@ check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextr
   return(FALSE)
 }
 #####caret init#####
+best.ranged <- c("avNNet", "nnet", "pcaNNet", "glm.nb")
+best.asis <- c("svmLinear3", "relaxo", "superpc", "xgbTree")
+best.cns <- c("gam", "bam", "svmLinear2", "msaenet", "BstLm", "gbm") 
+
+cv6hp5 <- c( "BstLm", "qrnn")#earth
+cv3hp32 <- c("Rborist", "pcaNNet", "SBC")
+cv7x5hp32 <- c("gbm", "krlsPoly", "kknn", "xgbLinear","RRF", "cubist", "rlm" )
+cv6hp5.avoid <- c("pcaNNet")
+cv3hp32.avoid <- c("glm.nb", "gamboost", "ctree2","glmboost", "leapSeq","ctree","svmLinear2")
+cv7x5hp32.avoid <- c("SBC","bagearthgcv","gcvearth","lmStepAIC","glmStepAIC","bridge","lm","glm","bayesglm","blassoAveraged","treebag","rpart1SE")
+
 allmodels <- c("avNNet", "bagEarth", "bagEarthGCV",
                "bayesglm", "bdk", "blackboost", "Boruta", "brnn", "BstLm" ,
                "bstTree", "cforest", "ctree", "ctree2", "cubist", "DENFIS",

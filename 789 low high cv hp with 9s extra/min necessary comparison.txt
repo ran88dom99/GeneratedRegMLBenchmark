@@ -7,16 +7,51 @@ cubist cubist rlm gbm
 
 9th lots hp 3cv 32hp
 Rborist, pcaNNet
-sparsity 0:spls	leapBackward	foba	cubist	gcvEarth	bridge
+sparsity 0:(spls	leapBackward	foba	cubist	gcvEarth	bridge)
 
 7th not much of either, crashes? 6cv 5hp
 earth earth BstLm
 
 If some generator or learner  clearly preffer an approach almost all the time write that down. ! 
+---ll vs lhw
+qrnn ! ctree, rpart, kknn, ctree2, 
+pcaNNet, relaxo, krlsPoly
+---ll vs hh
+rlm
+gbm, xgbTree
+---lhw vs hh
+gam, earth,ranger,glm.nb,rlm
+ctree,gbm,avNNet,ctree2,msaenet
+##now with failures included
+---ll vs lhw
+glm.nb, gamboost, ctree2,glmboost, leapSeq,ctree,svmLinear2,  qrnn, 
+SBC, relaxo, pcaNNet, krlsPoly
+---ll vs hh
+bagearthgcv,gcvearth,lmStepAIC,glmStepAIC,bridge,lm,glm,bayesglm,blassoAveraged,treebag,rpart1SE,!neverran!glm.nb, SBC,
+gbm, xgbTree, pcaNNet,krlsPoly,icr,
+---lhw vs hh
+gam, bagearthgcv,gcvearth,lmStepAIC,glmStepAIC,bridge,lm,glm,bayesglm,blassoAveraged,treebag,rpart1SE, !!! earth,SBC,
+glm.nb,gamboost,leapSeq,ctree2,ctree,glmboost,leapForward,svmLinear2,!,gbm,xgbTree,nnet,avNNet,leapBackward,krlsPoly,BstLm,msaenet
+
+hh: gbm, krlsPoly, -SBC, -the following fail: bagearthgcv,gcvearth,lmStepAIC,glmStepAIC,bridge,lm,glm,bayesglm,blassoAveraged,treebag,rpart1SE,
+lhw: SBC ? fails: glm.nb, gamboost, ctree2,glmboost, leapSeq,ctree,svmLinear2,
+ll: qrnn  -pcaNNet 
+
+combined:
+ll: earth BstLm qrnn  -pcaNNet 
+lhw: Rborist, pcaNNet  SBC ? fails: glm.nb, gamboost, ctree2,glmboost, leapSeq,ctree,svmLinear2,
+hh:gbm, krlsPoly, kknn xgbLinear	RRF cubist rlm ; -SBC, -the following fail: bagearthgcv,gcvearth,lmStepAIC,glmStepAIC,bridge,lm,glm,bayesglm,blassoAveraged,treebag,rpart1SE,
 
 
+Generators!   
+ll vs lhw
+^2, ifs1-1, hay noise, NA, .125 25%
+rescale 4 poly. mean of 25
+lhw vs lh
+^2,comp2,quant, haynoise,
+^-2, ifssmooth
 
-If some problem learner combo then investigate further?
+
 
 -------------------------------------------------------------------------
 Same thing with asis centernscale and range 0-
@@ -47,3 +82,19 @@ sum range: ifs onC1, ifs smooth	?poly^C2asis: comp2 .
 no real effect except cns's common pref for critical issues. requires more study but not by me.
 
 By most successful; all learners outpacing other categories by at least .05. 
+cns  the major drop in sum of max scores should have been a bump. 
+ I did not run full test on cns! many learners were ignored. 
+cns:msaenet! cubist. msaenet for very sure. amazing sucess in needles haystack... hope thats not the mean median switch.
+asis:cubist cubist (bagEarth earth)!,Rborist ,gamSpline
+range:(ppr	cubist	bagEarth), (cubist	qrf), (pcaNNet	ppr), pcaNNet, !,
+ earth, (spls	leapBackward	foba	cubist	gcvEarth	bridge), bagEarth	
+Range wins again however. in sum of scores as well. seems its default.
+cns:msaenet
+asis:cubist (though, really, use all) same with bag-earth !,Rborist ,gamSpline
+range: pcaNNet,ppr,qrf, !!, spls, leapBackward, foba, bridge
+...........................
+combined with bar graphs. in the end this will need to be redone. How ever I am certain of the chosen learners.
+cubist and all earths allways run on "all". 
+cns:msaenet, gam, bam, svmLinear2, BstLm, gbm
+asis:"svmLinear3", "relaxo",  "superpc", "xgbTree",Rborist,
+range:"avNNet", "nnet", "pcaNNet",  "glm.nb" ,ppr,
