@@ -1,100 +1,100 @@
-1,basic latent features
-2,random
-3,bm C1 ^ 2
-4,bm C1 ^ .5
-5,bm C1 ^ -2
-6,bm log(C1)
-7,bm 1dC1
-8,bm sin(C2)
-9,poly C1 t C2
-10,poly C1 ^ C2
-11,poly C1 t C2 t C3
-12,poly C1 t C2 t C3^1d3
-13,ifs 1 & -1 on C1
-14,ifs C2 & -C2 on C1
-15,ifs C2+C3 & C4+C5 on C1
-16,ifs smooth -C2-C3&C2+C3 onC1
-17,ifs -C2-C3 & C2+C3 on C1
-18,ifs C1 & C2 on C1
-19,ifs C2 & C3t2 on C4g1.5
-20,ifs C1&C2 on random
-21,ifs nested 2 layer
-22,mean subtraction in each row
-23,median subtraction in each row
-24,rescale 4 poly
-25,rescale isotonic addition
-26,rescale isotonic addition ran bin
-27,noise in predictors
-28,outliers
-29,colinerity unnecessary
-30,colinerity middle is correct
-31,Spread thinly
-32,needles in haystack
-33,needles hay noise
-34,sparsity NA
-35,sparsity 0
-36,sparsity 20
-37,quantilization
-38,composite 1
-39,composite 2
-40,composite complete
-41,FALSE
-42,FALSE
-43,FALSE
-44,FALSE
-45,FALSE
-46,FALSE
-47,FALSE
-48,FALSE
-49,FALSE
-50,FALSE
-51,FALSE
-52,FALSE
-53,FALSE
-54,FALSE
-55,FALSE
-56,FALSE
-57,FALSE
-58,FALSE
-59,FALSE
-60,FALSE
-61,FALSE
-62,FALSE
-63,FALSE
-64,FALSE
-65,FALSE
-66,FALSE
-67,FALSE
-68,FALSE
-69,FALSE
-70,FALSE
-71,FALSE
-72,FALSE
-73,FALSE
-74,FALSE
-75,FALSE
-76,FALSE
-77,FALSE
-78,FALSE
-79,FALSE
-80,FALSE
-81,FALSE
-82,FALSE
-83,FALSE
-84,FALSE
-85,FALSE
-86,FALSE
-87,FALSE
-88,FALSE
-89,FALSE
-90,FALSE
-91,FALSE
-92,FALSE
-93,FALSE
-94,FALSE
-95,FALSE
-96,FALSE
-97,FALSE
-98,FALSE
-99,FALSE
-100,FALSE
+1,basic sum C1 + C2,1,1
+2,basic latent features,1,1
+3,bas interactive latent features,1,1
+4,just random,0,0
+5,bm C1 ^ 2,1,1
+6,bm sqroot(C1),1,1
+7,bm C1 ^ .5,1,1
+8,bm 1dC1,1,1
+9,bm C1 ^ -2,1,1
+10,bm log(C1),1,1
+11,bm sin(C2),1,1
+12,bm sin(13 t C2 ^ -.2),1,1
+13,poly aC1^3 + bC1^2 + dC1,1,1
+14,poly aC1^1.3 + bC1^2.1 + dC1^.7,1,1
+15,poly aC1^1.3 + bC2^2.1 + dC3^.7,1,1
+16,poly C1 t C2,1,1
+17,poly C1 ^ C2,1,1
+18,poly C1 t C2 t C3,1,1
+19,poly C1 t C2 t C3^1d3,1,1
+20,poly C1 t C2 ^ C3,1,1
+21,ifs 1 & -1 on C1,1,1
+22,ifs C2 & -C2 on C1,1,1
+23,ifs C2+C3 & C4+C5 on C1,1,1
+24,ifs smooth -C2-C3&C2+C3 onC1,1,1
+25,ifs -C2-C3 & C2+C3 on C1,1,1
+26,ifs C1 & C2 on C1,1,1
+27,ifs C2 & C3t2 on C4g1.5,1,1
+28,ifs C1&C2 on random,0.6,0.24
+29,ifs nested 2 layer,1,1
+30,mean subtraction in each row,1,1
+31,median subtraction in each row,0.29,0.43
+32,rescale 4 poly,0,0
+33,rescale isotonic addition,0.5,0.8
+34,rescale isotonic addition ran bin,0.5,0.8
+35,noise in predictors,0.7,0.91
+36,outliers,0.76,0.4
+37,colinerity unnecessary,1,1
+38,colinerity middle is correct,0.8,0.96
+39,Spread thinly,1,1
+40,needles in haystack,1,1
+41,needles hay noise,0.5,0.5
+42,sparsity NA,0.44,0.62
+43,sparsity 0 offcenter,0.54,0.7
+44,sparsity 2 row center,0.54,0.7
+45,sparsity 2 col center,0.54,0.7
+46,sparsity 20,0.5,0.65
+47,quantilization,0.1,0.1
+48,composite 1,0.21,0.42
+49,composite 2,0.21,0.42
+50,composite complete,1,1
+51,OpenML mv,1,1
+52,OpenML 2dplanes,1,1
+53,Boston Housing,1,1
+54,Friedman's 1st,1,1
+55,kaggle housing,0.75,0.75
+56,Recc sim 1,1,1
+57,FALSE,0,0
+58,FALSE,0,0
+59,FALSE,0,0
+60,FALSE,0,0
+61,FALSE,0,0
+62,FALSE,0,0
+63,FALSE,0,0
+64,FALSE,0,0
+65,FALSE,0,0
+66,FALSE,0,0
+67,FALSE,0,0
+68,FALSE,0,0
+69,FALSE,0,0
+70,FALSE,0,0
+71,FALSE,0,0
+72,FALSE,0,0
+73,FALSE,0,0
+74,FALSE,0,0
+75,FALSE,0,0
+76,FALSE,0,0
+77,FALSE,0,0
+78,FALSE,0,0
+79,FALSE,0,0
+80,FALSE,0,0
+81,FALSE,0,0
+82,FALSE,0,0
+83,FALSE,0,0
+84,FALSE,0,0
+85,FALSE,0,0
+86,FALSE,0,0
+87,FALSE,0,0
+88,FALSE,0,0
+89,FALSE,0,0
+90,FALSE,0,0
+91,FALSE,0,0
+92,FALSE,0,0
+93,FALSE,0,0
+94,FALSE,0,0
+95,FALSE,0,0
+96,FALSE,0,0
+97,FALSE,0,0
+98,FALSE,0,0
+99,FALSE,0,0
+100,FALSE,0,0

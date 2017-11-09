@@ -99,7 +99,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
   p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
   #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
-  RMSE=RMSE(p[,1],p[,2])
+  RMSEp=RMSE(p[,1],p[,2])
   #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
   RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
   #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
@@ -113,7 +113,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   
   #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
   write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
-                round(overRMSE,digits = 3),round(RMSE,digits = 3),round(MMAAEE,digits = 3),
+                round(overRMSE,digits = 3),round(RMSEp,digits = 3),round(MMAAEE,digits = 3),
                 date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
                 withextra,norming,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
                 adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
@@ -137,7 +137,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
   p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
   #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
-  RMSE=RMSE(p[,1],p[,2])
+  RMSEp=RMSE(p[,1],p[,2])
   #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
   RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
   #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
@@ -152,7 +152,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   
   #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
   write.table(paste(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
-                round(overRMSE,digits = 3),round(RMSE,digits = 3),round(MMAAEE,digits = 3),
+                round(overRMSE,digits = 3),round(RMSEp,digits = 3),round(MMAAEE,digits = 3),
                 date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
                 withextra,norming,RMSE.mean,NoHyper,seed.var,round(proc.time()[3]-when[3]),
                 adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,

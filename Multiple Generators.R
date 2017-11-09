@@ -5,7 +5,7 @@ simScores[,11]<-1;###!!!!!!! this may be necessary for many algorithms
 gens.names=vector(length = 100)
 max.out=vector(length = 100)
 max.out.sq=vector(length = 100)
-max.out.sq<-NA
+max.out.sq[]<-NA
 varimport=matrix(data=0, nrow = 100, ncol = 1000)
 #single scalar to keep count
 gen.count=0
@@ -218,7 +218,7 @@ write.table(round(simScores,digits  = 3),
 
 ######bm sin(13 * C2 ^ -.2)#####
 gen.count=gen.count+1
-gens.names[gen.count]="bm sin(13 * C2 ^ -.2)"
+gens.names[gen.count]="bm sin(13 t C2 ^ -.2)"
 max.out[gen.count]=1#many values undefined
 varim=c(1,0)
 varimport[gen.count,1:length(varim)]=varim

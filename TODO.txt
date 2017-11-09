@@ -3,7 +3,7 @@ mil/km per degree 10k km 6.25k mi
 lots
 - add hyperparamless part to cartpart.R
 - does java and this ever help?
-+ rerun all significant differences between #9 and 8 to check for reset influence
+- rerun all significant differences between #9 and 8 to check for reset influence
 - C2^.56 + C3^1.3 + C4^1.055 + C5 ^ 2.2
 - wtf is up with detection and crashing on random?
 
@@ -27,7 +27,9 @@ lots
 + how do I know it works? prediction again?  well yes.
 + there exist works on subject of friends to follow / journals most honest + query recommenderlab
 
-
++ but first test condorcet, mean median reset etc. 
++ test using MAE RMSE pearson kendall
++ THEN isotonic JUSTICE!
 
 - brilliant.org/datasceptik
 + c_dfRowsToList , bad unload causes memory leak?
@@ -36,28 +38,16 @@ lots
 + too much unload causes crashes,
 + search generateFilterValuesData + benchmark probably on github 
 - add actual correct output directly to var fil corr 
-+ whats up with random? redo a few times please
 
-+ Random Hunt +++++ in secong gen when random is not "random"
-
-+ Center n Scale +++++
+- Random Hunt + in secong gen when random is not "random"
+- Center n Scale 
 
 + SIMPSON'S PARADOX ++++++ well add it ok?
 
-I need to split 789 by asis vs range so I can get min necessary for both
-and 
-
-+ avnnet, nnet , pcannet,  glm.nb, gam ,bam --- foba WM qrnn ... those last three are not important
-+ msaenet, svmlinear 2&3 relaxo  superpc xgbtree? BstLm? -- SBC?
-  need.range01=c("avNNet", "nnet", "pcaNNet",  "glm.nb", "gam" , "bam") 
-  if(allmodel %in% need.range01 && norming=="range01"){next()}
-  best.asis=c("msaenet", "svmLinear2","svmLinear3", "relaxo",  "superpc", "xgbTree", "BstLm")
-  if(allmodel %in% best.wo.range && norming=="asis"){next()}
-+ but what will be the common preprocess?
-++ and that means a second run with allmodel from some other set..
-+ 3 way comparison should be available soon
-+ then I will need to do one with mlr 
-+ some problems need range or scale! must try CnS on many things
++ but what will be the common preprocess? cns or range?
++ reaserch mlr's preffered algorithms (km mob brnn gamboost glmnet)
++ missing? maybe in mlr: dlkeras, LibSVM, generalized regression neural network and extreme learning machine with Gaussian kernels in Matlab (named grnn and elm-kernel respectively)
+- add manisha thesis to list on data!science!
 
 + test each algorithm through and through
 ++ maximal number of dps at which target works

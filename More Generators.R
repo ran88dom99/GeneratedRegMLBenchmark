@@ -466,7 +466,8 @@ BostonHow<-data.frame(BostonHousing[,14],BostonHousing[,1:13])
 gen.count=gen.count+1
 gens.names[gen.count]="Boston Housing"
 max.out[gen.count]=1
-write.table(round(BostonHow,digits  = 3),
+BostonHow$chas<-as.numeric(levels(BostonHow$chas))[BostonHow$chas]
+write.table(round((BostonHow),digits  = 3),
             file = paste(gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -494,7 +495,7 @@ max.out[gen.count]=1
 
 simPubs<-matrix(data = 0, nrow = 100, ncol = 10, byrow = FALSE,dimnames = NULL)
 simGames<-matrix(data = 0, nrow = Rows, ncol = 10, byrow = FALSE,dimnames = NULL)
-#simScores<-matrix(data = 0, nrow = Rows, ncol = 11, byrow = FALSE,dimnames = NULL)
+simScores<-matrix(data = 0, nrow = Rows, ncol = 100, byrow = FALSE,dimnames = NULL)
 #generate based on latency, then missvote, then isotonic reg, then finaly sparsity 0
 
 for(Col in 1:100)
@@ -556,6 +557,6 @@ write.table(out,
             eol = "\n", na = "", dec = ".", row.names = T,
             col.names = F, qmethod = "double")
 write.table(varimport,
-            file = "gens names.csv", append =F, quote = F, sep = ",",
+            file = "variable importance actual.csv", append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
