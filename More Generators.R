@@ -484,7 +484,7 @@ write.table(round(FF1,digits  = 3),
 
 gen.count=gen.count+1
 gens.names[gen.count]="kaggle housing"
-max.out[gen.count]=.75
+max.out[gen.count]=1
 #friedman.1.data(n=Rows) #tgp package#
 #Friedman 1/80 generated for validation of MARS https://artax.karlin.mff.cuni.cz/r-help/library/tgp/html/friedman.1.data.html
 #kaggle MAL

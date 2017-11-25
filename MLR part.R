@@ -11,6 +11,8 @@ library(mlr)
 library(mlbench)
 library(mlrHyperopt)
 library(MLmetrics)
+
+
 configureMlr(on.learner.error = "warn")
 regr.task = makeRegrTask(id = "recc", data = training, target = "V1")
 mlrallmodels<-listLearners("regr")
@@ -27,11 +29,12 @@ hyper.control.rand<-makeHyperControl(mlr.control = makeTuneControlRandom(maxit=t
 #res
 
 #mlrallmodels<-"regr.bartMachine"
+try({
 fv = generateFilterValuesData(regr.task, 
                               method = c("mrmr","randomForestSRC.rfsrc",
                                          "univariate.model.score"),
                               nselect<-10)#,,"permutation.importance","randomForestSRC.var.select"
-                                         
+})
 plotFilterValues(fv)#issues errors"cforest.importance",,more.args = list(imp.learner<-"regr.cubist")
 write.table(paste("mlr",date(),datasource,fv$data,  sep = ", "),
             file = "importancemlr.csv", append =TRUE, quote = F, sep = ",",
@@ -41,12 +44,14 @@ write.table(paste("mlr",date(),datasource,fv$data,  sep = ", "),
 
 ######for all mlr models########
 for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce it
-  write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
-  bad.models=c("regr.GPfit","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
+   bad.models=c( "regr.GPfit","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
+  
   #too slow neuralnet# dnfis useless and just stops on huge datasets
   if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
   library(caret) #mlp...s creat some bizzare problem that breaks caret::train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
-  #penalized slow then fails
+  pass.sometimes<-c("regr.LiblineaRL2L2SVR")
+  if((allmodel %in% pass.sometimes) &&  ("expoTrans"==normings)) {next()}
+  #penalized slow then fails"Boston Housing"==datasource &&
   slow.models=c("leapSeq","glmStepAIC","ppr","qrnn")#leapSeq
   if(allmodel %in% slow.models && datasource=="needles in haystack"){next()}#too slow for many columns
   if(allmodel %in% slow.models && datasource=="needles hay noise"){next()}#too slow for many columns
@@ -54,11 +59,14 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   if(allmodel %in% slow.models){next()}#too slow for much cv
   noNA.models=c("kknn")#leapSeq
   if(allmodel %in% noNA.models && datasource=="sparsity NA"){next()}#too slow for many columns
-  
+ 
+
   seed.var=seed.var+1
   
   if(length(df.previous.calcs[,1])>0){
     if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel)){next}}
+
+  write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
   
   error.pack=0
   try({list.of.packages <-getLearnerPackages(allmodel)
@@ -77,7 +85,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
     next()}
-
+  
   
   when<-proc.time()
   if(length(df.previous.calcs[,1])>0){
@@ -85,10 +93,10 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   not.failed=0
   set.seed(seed.var)
   try({mod<-hyperopt(regr.task, learner = allmodel, hyper.control =hyper.control.rand)
-
+  
   lrn = setHyperPars(makeLearner(allmodel), par.vals = mod$x)
   m = train(lrn, regr.task)
- 
+  
   #keep rmse but train new model on mod$x's parameters
   
   predicted.outcomes<-predict(m, newdata=(testing))
@@ -127,42 +135,42 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   
   #if hyperopt failed just use no hypering
   try({if(not.failed==0) {
-  mod<-  train(allmodel, regr.task)
-
-  predicted.outcomes<-predict(mod, newdata=(testing))
-  p <- data.frame(predicted.outcomes$data[,2],testing[,1])
-  #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
-  Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
-  #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-  mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
-  p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
-  #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
-  RMSEp=RMSE(p[,1],p[,2])
-  #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
-  RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
-  #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
-  MMAAEE=MAE(p[,1],p[,2])
-  
-  
-  overRMSE=-1
-  #if(replace.overRMSE==1){overRMSE=-1}
-  if(length(overRMSE)<1){overRMSE=-1}
-  NoAp<-"NoAp"
-  NoHyper<-"nohyperparam"
-  
-  #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
-  write.table(paste(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
-                round(overRMSE,digits = 3),round(RMSEp,digits = 3),round(MMAAEE,digits = 3),
-                date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
-                withextra,norming,RMSE.mean,NoHyper,seed.var,round(proc.time()[3]-when[3]),
-                adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
-                adaptControl$adaptive$min, sep = ","),
-              file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
-              eol = "\n", na = "NA", dec = ".", row.names = F,
-              col.names = F, qmethod = "double")
-  
-  print(date())
-  not.failed=1
+    mod<-  train(allmodel, regr.task)
+    
+    predicted.outcomes<-predict(mod, newdata=(testing))
+    p <- data.frame(predicted.outcomes$data[,2],testing[,1])
+    #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
+    Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
+    #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
+    mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
+    p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
+    #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
+    RMSEp=RMSE(p[,1],p[,2])
+    #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
+    RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
+    #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
+    MMAAEE=MAE(p[,1],p[,2])
+    
+    
+    overRMSE=-1
+    #if(replace.overRMSE==1){overRMSE=-1}
+    if(length(overRMSE)<1){overRMSE=-1}
+    NoAp<-"NoAp"
+    NoHyper<-"nohyperparam"
+    
+    #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
+    write.table(paste(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
+                      round(overRMSE,digits = 3),round(RMSEp,digits = 3),round(MMAAEE,digits = 3),
+                      date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
+                      withextra,norming,RMSE.mean,NoHyper,seed.var,round(proc.time()[3]-when[3]),
+                      adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
+                      adaptControl$adaptive$min, sep = ","),
+                file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+                eol = "\n", na = "NA", dec = ".", row.names = F,
+                col.names = F, qmethod = "double")
+    
+    print(date())
+    not.failed=1
   }})
   if(not.failed==0) {
     print(c("failed","failed",date(),datasource,missingdata,withextra,norming,allmodel))
