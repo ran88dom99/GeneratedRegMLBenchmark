@@ -44,7 +44,7 @@ write.table(paste("mlr",date(),datasource,fv$data,  sep = ", "),
 
 ######for all mlr models########
 for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce it
-   bad.models=c( "regr.GPfit","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
+   bad.models=c("regr.btg","regr.btgp","regr.btgpllm", "regr.GPfit","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
   
   #too slow neuralnet# dnfis useless and just stops on huge datasets
   if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible

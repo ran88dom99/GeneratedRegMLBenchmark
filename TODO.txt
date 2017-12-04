@@ -7,6 +7,7 @@ lots
 - C2^.56 + C3^1.3 + C4^1.055 + C5 ^ 2.2
 - wtf is up with detection and crashing on random?
   
+++ c2-c3 while rather covariant
   
 + first level: mean ,median, evened mean, shcules and other condorcet methods. 
 +++ all platt calibrated/iso reg. MAL RMSE minimized
