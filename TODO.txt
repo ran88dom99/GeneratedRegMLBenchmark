@@ -1,38 +1,51 @@
 DOC  
 mil/km per degree 10k km 6.25k mi
 lots
-- add hyperparamless part to cartpart.R
-- does java and this ever help?
-- rerun all significant differences between #9 and 8 to check for reset influence
-- C2^.56 + C3^1.3 + C4^1.055 + C5 ^ 2.2
-- wtf is up with detection and crashing on random?
+
   
-++ c2-c3 while rather covariant
++combine calculators
+++add datasets as "generators" in a third "gens" sheet
   
-+ first level: mean ,median, evened mean, shcules and other condorcet methods. 
-+++ all platt calibrated/iso reg. MAL RMSE minimized
-+ Second level: favorite game finder, jusctice friend finder. all the correlations.
-+++ SVD, any other feature finder including RMB interaction seekers
- 
- 
++real final project with github 
+++and MAL and movielens and combining with generator
++++and seperate folder generation
+++++and automatic 01 encoder
++better projects!
++MVP
+
++info from carret on MC
++info from all on generated
+  
++ c1=gL1^cL1+gL2^cL2
++ what if one is subset of another
+++ c1= u1  c2=c3+ u1
 + haystack  A*B      and later *C
 + haystack noise thin
-+ haystack thin and interaction
-
++ haystack thin and interaction 
+  
++ first level: mean ,median, schules, weighed evened mean +++ and other condorcet methods.,  
++++ all platt calibrated/iso reg. MAL RMSE minimized
++ Second level: favorite game finder, jusctice friend finder. all the correlations.
++++ SVD, any other feature finder including RMB distribution seekers
 + mean median condorcet realignment realignment
 + really need that isotonic regression... 
-
 + SVD on transformations. 
 + RMB
++ XML parser
++ basic file system
+
 
 + minimal reproducible example tester
 
-+  find best
++ graph errors to see what user aught to change,  sqr and mae
++ graph mars-etc to see what columns are important when
+
++ find best
 ++ find missed little things
 ++ find most misrated by collective
-+  find friend / find honest
++ find friend / find honest
 ++ find similar interests
-+  find all that belong to a set... just use white noise?
++ find all that belong to a set... just use white noise?
 
 + truth detection is a matter of non-interaction!
 ++ or get a better center,
@@ -57,7 +70,13 @@ lots
 	+ ie how remove c()
 + too much unload causes crashes,
 + search generateFilterValuesData + benchmark probably on github 
-- add actual correct output directly to var fil corr 
+- add actual correct output directly to var fil corr
+ 
+- add hyperparamless part to cartpart.R
+- does java and this ever help?
+- rerun all significant differences between #9 and 8 to check for reset influence
+- C2^.56 + C3^1.3 + C4^1.055 + C5 ^ 2.2
+- wtf is up with detection and crashing on random?
 
 - Random Hunt + in secong gen when random is not "random"
 - Center n Scale 
