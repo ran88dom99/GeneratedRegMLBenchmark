@@ -6,14 +6,15 @@
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 
-
-
+cv.iters=3
+tuneLength=20
+tuneLength2=8
 ########packages install check######
 
-list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
-list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages, dep = TRUE)
+#list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
+#list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
+#new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+#if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
 
 #install.packages("mlr", dependencies = c("Depends", "Suggests"))
@@ -107,13 +108,12 @@ adaptControl <- trainControl(method = "adaptive_cv",
                              adaptive = list(min = 4, alpha = 0.05,
                                              method = "gls", complete = FALSE),
                              search = "random")
-adaptControl <-trainControl(method = "cv", number = 3,
-                            search = "random")
+adaptControl <-trainControl(method = "cv", number = cv.iters,                            search = "random")
 simpleControl <- trainControl(method = "cv",
-                              number = 3,
+                              number = cv.iters,
                               search = "random")
-tuneLength=32
-tuneLength2=8
+
+
 #########MLR init######
 #R.utils::gcDLLs()
 #list.of.packages <- c("ParamHelpers","devtools","mlrMBO","RJSONIO","plot3D","plotly")
@@ -125,15 +125,15 @@ if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 
-tuneLengthMLR=3
-mlr.iters<-20
+tuneLengthMLR<-tuneLength
+mlr.iters<-cv.iters
 #######data read process start#####
 seed.const=222+round(runif(1,min=0,max=100))
 seed.var=seed.const
 column.to.predict=1
 print(date());
 
-gensTTest<-c(1,3,4,12,13,14,15,20, 44,45,53,54,55,56)#52,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+gensTTest<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 if(!exists("gen.count")){gen.count=56}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
 for(gend.data in gensTTest){
@@ -163,7 +163,7 @@ for(gend.data in gensTTest){
       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
       
       
-      normings=c("YeoJohnson","ICA" )#"centernscale""expoTrans","range01","asis","quantile","centernscale"
+      normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quantile")#,"centernscale"
       for(norming in normings) {
         for(trans.y in 1:1) {
           df.toprocess=data.source
