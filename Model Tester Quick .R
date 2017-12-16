@@ -6,9 +6,18 @@
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 
+#test.out.file<-"gen test out.csv"
 cv.iters=3
 tuneLength=20
 tuneLength2=8
+normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quantile")#,"centernscale"
+
+gensTTest<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+write.table( t(gensTTest),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
+try({
+  gensTTest<-(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+})
+
 ########packages install check######
 
 #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
@@ -32,10 +41,17 @@ library(MLmetrics)
 try({
   before.last.alg<-as.matrix(read.csv("beforelast algorithm.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   last.alg<-as.matrix(read.csv("last algorithm tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+  write.table(paste(date(), last.alg,sep=" "),file = "algos after which reset.csv",  quote = F, row.names = F,col.names = F,append = T)
   if(last.alg==before.last.alg){print("algorithm may be broken")}
   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 })
-
+try({
+  before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+  last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+  write.table(paste(date(), last.tsk,sep=" "),file = "test after which reset.csv",  quote = F, row.names = F,col.names = F,append = T)
+  if(last.tsk==before.last.tsk){print("task may be broken")}
+  write.table(last.tsk,file = "beforelast task.csv",  quote = F, row.names = F,col.names = F)
+})
 #######not to redo a test function#####
 check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextra="missing",missingdata="leaveempty",datasource="mean" ,column.to.predict=200,allmodel="ctree")
 {
@@ -133,7 +149,6 @@ seed.var=seed.const
 column.to.predict=1
 print(date());
 
-gensTTest<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 if(!exists("gen.count")){gen.count=56}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
 for(gend.data in gensTTest){
@@ -163,8 +178,7 @@ for(gend.data in gensTTest){
       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
       
       
-      normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quantile")#,"centernscale"
-      for(norming in normings) {
+        for(norming in normings) {
         for(trans.y in 1:1) {
           df.toprocess=data.source
           y.untransformed<-df.toprocess[,1]
@@ -218,6 +232,9 @@ for(gend.data in gensTTest){
           
           #source("Caret part.R")
           source("MLR part.R")
+          if(norming == normings[length(normings)]){
+            write.table( gensTTest[-1],file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
+          
         }
       }
     }

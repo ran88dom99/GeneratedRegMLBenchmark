@@ -44,6 +44,9 @@ write.table(paste("mlr",date(),datasource,fv$data,  sep = ", "),
 
 ######for all mlr models########
 for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce it
+  write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
+  write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
+  
    bad.models=c("regr.btg","regr.bgp","regr.btgp","regr.btgpllm", "regr.GPfit","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
   #too slow neuralnet# dnfis useless and just stops on huge datasets
   if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
@@ -65,7 +68,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   if(length(df.previous.calcs[,1])>0){
     if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel)){next}}
 
-  write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
+
   
   error.pack=0
   try({list.of.packages <-getLearnerPackages(allmodel)

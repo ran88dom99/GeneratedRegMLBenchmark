@@ -2,6 +2,13 @@ DOC
 mil/km per degree 10k km 6.25k mi
 lots
 
++simple bestest friend finder
+
+
++ and why does column median work so poorly  in the other computer?
++ move server output, download more parts for server
++ setup indefinite tester. 
+  
   
 +combine calculators
 ++add datasets as "generators" in a third "gens" sheet
