@@ -61,7 +61,7 @@ try({
 })
 bad.models=c("spaccceeee")
 previous.fails<-(read.csv("test after which reset.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
-previous.fails<-previous.fails[previous.fails[,6]==which.computer,]
+previous.fails<-previous.fails[previous.fails[,8]==which.computer,]
 lgf<-length(previous.fails[,2])
 for(lt in 2:lgf)  {
   if(previous.fails[lt,2]==previous.fails[lt-1,2])  {
