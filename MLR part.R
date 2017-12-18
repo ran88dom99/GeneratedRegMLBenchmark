@@ -47,12 +47,12 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
   write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
   
-   bad.models=c("regr.btg","regr.bgp","regr.btgp","regr.btgpllm", "regr.GPfit","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
+   bad.models=c("regr.bgpllm","regr.btg","regr.bgp","regr.btgp","regr.btgpllm", "regr.GPfit","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS")
   #too slow neuralnet# dnfis useless and just stops on huge datasets
   if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
   library(caret) #mlp...s creat some bizzare problem that breaks caret::train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
   pass.sometimes<-c("regr.LiblineaRL2L2SVR")
-  if((allmodel %in% pass.sometimes) &&  ("expoTrans"==normings)) {next()}
+  if((allmodel %in% pass.sometimes) &&  ("expoTrans"==norming)) {next()}
   #penalized slow then fails"Boston Housing"==datasource &&
   slow.models=c("leapSeq","glmStepAIC","ppr","qrnn")#leapSeq
   if(allmodel %in% slow.models && datasource=="needles in haystack"){next()}#too slow for many columns
@@ -63,7 +63,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   if(allmodel %in% noNA.models && datasource=="sparsity NA"){next()}#too slow for many columns
  
 
-  seed.var=seed.var+1
+  #seed.var=seed.var+1
   
   if(length(df.previous.calcs[,1])>0){
     if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel)){next}}
@@ -75,7 +75,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   error.pack=1})
   if(error.pack==0){
     write.table(paste("Fail","Fail","Fail","Fail","PrePackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,round(proc.time()[3]-when[3]),  sep = ","),
-                file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+                file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
     next()}
@@ -83,7 +83,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   if(length(new.packages)) install.packages(new.packages, dep = TRUE)
   if(length(list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])])){
     write.table(paste("Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,round(proc.time()[3]-when[3]),  sep = ","),
-                file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+                file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
     next()}
@@ -128,7 +128,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
                 withextra,norming,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
                 adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
                 adaptControl$adaptive$min,mod$x),
-              file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+              file = out.file, append =TRUE, quote = F, sep = ",",
               eol = "\n", na = "NA", dec = ".", row.names = F,
               col.names = F, qmethod = "double")
   print(date())
@@ -167,7 +167,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
                       withextra,norming,RMSE.mean,NoHyper,seed.var,round(proc.time()[3]-when[3]),
                       adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
                       adaptControl$adaptive$min, sep = ","),
-                file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+                file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
     
@@ -177,7 +177,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   if(not.failed==0) {
     print(c("failed","failed",date(),datasource,missingdata,withextra,norming,allmodel))
     write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,round(proc.time()[3]-when[3]),  sep = ","),
-                file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+                file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
     write.table(paste("Fail",date(),allmodel,  sep = ", "),

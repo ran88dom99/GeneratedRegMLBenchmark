@@ -18,7 +18,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   if(allmodel %in% noNA.models && datasource=="sparsity NA"){next()}#too slow for many columns
   
   
-  seed.var=seed.var+1
+  #seed.var=seed.var+1
   if(length(df.previous.calcs[,1])>0){
     if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel)){next}}
   
@@ -38,7 +38,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   if(length(new.packages)) install.packages(new.packages, dep = TRUE)
   if(length(list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])])){
     write.table(paste("Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,round(proc.time()[3]-when[3]),  sep = ","),
-                file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+                file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
     next()}
@@ -81,7 +81,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
                 withextra,norming,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
                 adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
                 adaptControl$adaptive$min,trainedmodel$bestTune),
-              file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+              file = out.file, append =TRUE, quote = F, sep = ",",
               eol = "\n", na = "NA", dec = ".", row.names = F,
               col.names = F, qmethod = "double")
   print(date())
@@ -124,7 +124,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
                   trans.y,datasource,missingdata,withextra,norming,RMSE.mean,simpleControl$search,
                   seed.var,round(proc.time()[3]-when[3]),simpleControl$method,tuneLength2,
                   simpleControl$number,"no rep","no min",trainedmodel$bestTune),
-                file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+                file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
     print(date())
@@ -166,7 +166,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
                   trans.y,datasource,missingdata,withextra,norming,RMSE.mean,simpleControl$search,
                   seed.var,round(proc.time()[3]-when[3]),"nohyperparameters",tuneLength2,
                   simpleControl$number,"no rep","no min",trainedmodel$bestTune),
-                file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+                file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
     print(date())
@@ -176,7 +176,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   if(not.failed==0) {
     print(c("failed","failed",date(),datasource,missingdata,withextra,norming,allmodel))
     write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,round(proc.time()[3]-when[3]),  sep = ","),
-                file = "gen test out.csv", append =TRUE, quote = F, sep = ",",
+                file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
     write.table(paste("Fail",date(),allmodel,  sep = ", "),
@@ -196,14 +196,14 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
       if(mean.improvement<0){mean.improvement=0}
       varimportant<-varImp(trainedmodel)
       write.table(paste(allmodel,date(),round(mean.improvement,digits=3),datasource,round(varimportant$importance,digits=1),  sep = ", "),
-                  file = "importance.csv", append =TRUE, quote = F, sep = ",",
+                  file = importance.file, append =TRUE, quote = F, sep = ",",
                   eol = "\n", na = "NA", dec = ".", row.names = F,
                   col.names = F, qmethod = "double")
       fail.try=F
     })
     if(fail.try==T){
       write.table(paste(allmodel,date(),round(mean.improvement,digits=3),datasource,"Failed",  sep = ", "),
-                  file = "importance.csv", append =TRUE, quote = F, sep = ",",
+                  file = importance.file, append =TRUE, quote = F, sep = ",",
                   eol = "\n", na = "NA", dec = ".", row.names = F,
                   col.names = F, qmethod = "double")
     }
