@@ -7,7 +7,6 @@ options(repos=structure(c(CRAN="https://cran.cnr.berkeley.edu")))
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 
-
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"14th20hp3cv"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
@@ -64,9 +63,9 @@ bad.models=c("spaccceeee")
 previous.fails<-(read.csv("test after which reset.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 previous.fails<-previous.fails[previous.fails[,6]==which.computer,]
 lgf<-length(previous.fails[,2])
-for(lt in 2:lgf){
-  if(previous.fails[lt,2]==previous.fails[lt-1,2]){
-    bad.models=union(bad.models,c(paste(previous.fails[lt,2])))}}
+for(lt in 2:lgf)  {
+  if(previous.fails[lt,2]==previous.fails[lt-1,2])  {
+    bad.models=union(bad.models,c(paste(previous.fails[lt,2])))  }}
 
 #######not to redo a test function#####
 check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextra="missing",missingdata="leaveempty",datasource="mean" ,column.to.predict=200,allmodel="ctree")
@@ -245,9 +244,11 @@ for(gend.data in gensTTest){
           
           
           ###########for all models#################
+          if(which.computer=="ALTA")
+            source("MLR part.R")
+          else
+            source("Caret part.R")
           
-          #source("Caret part.R")
-          source("MLR part.R")
           if(norming == normings[length(normings)]){
             write.table( gensTTest[-1],file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
           
