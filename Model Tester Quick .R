@@ -6,12 +6,13 @@ options(repos=structure(c(CRAN="https://cran.cnr.berkeley.edu")))
 #try(log("a"))
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
+
+
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"14th20hp3cv"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 if(length(which(list.files() == out.file))<1) write.table( "0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,," ,file = out.file,  quote = F, sep = ",", row.names = F,col.names = F)
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
-
 
 cv.iters=3
 tuneLength=20
@@ -44,6 +45,7 @@ library(caret)
 #library(caretEnsemble)
 library(MLmetrics)
 
+########error no repeat#########
 try({
   before.last.alg<-as.matrix(read.csv("beforelast algorithm.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   last.alg<-as.matrix(read.csv("last algorithm tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -54,10 +56,18 @@ try({
 try({
   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
-  write.table(paste(date(),last.alg, last.tsk,cv.iters,tuneLength,.Platform$OS.type,.Platform$r_arch,which.computer,sep=", "),file = "test after which reset.csv",  quote = F, row.names = F,col.names = F,append = T)
+  write.table(paste(date(),last.alg, last.tsk,cv.iters,tuneLength,.Platform$OS.type,.Platform$r_arch,which.computer,sep=","),file = "test after which reset.csv",  quote = F, row.names = F,col.names = F,append = T)
   if(last.tsk==before.last.tsk){print("task may be broken")}
   write.table(last.tsk,file = "beforelast task.csv",  quote = F, row.names = F,col.names = F)
 })
+bad.models=c("spaccceeee")
+previous.fails<-(read.csv("test after which reset.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+previous.fails<-previous.fails[previous.fails[,6]==which.computer,]
+lgf<-length(previous.fails[,2])
+for(lt in 2:lgf){
+  if(previous.fails[lt,2]==previous.fails[lt-1,2]){
+    bad.models=union(bad.models,c(paste(previous.fails[lt,2])))}}
+
 #######not to redo a test function#####
 check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextra="missing",missingdata="leaveempty",datasource="mean" ,column.to.predict=200,allmodel="ctree")
 {
