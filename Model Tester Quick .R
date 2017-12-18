@@ -7,9 +7,9 @@
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 
 #test.out.file<-"gen test out.csv"
-cv.iters=3
-tuneLength=20
-tuneLength2=8
+cv.iters=20
+tuneLength=5
+tuneLength2=2
 normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quantile")#,"centernscale"
 
 gensTTest<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
@@ -230,8 +230,8 @@ for(gend.data in gensTTest){
           
           ###########for all models#################
           
-          #source("Caret part.R")
-          source("MLR part.R")
+          source("Caret part.R")
+          #source("MLR part.R")
           if(norming == normings[length(normings)]){
             write.table( gensTTest[-1],file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
           
