@@ -48,7 +48,7 @@ library(MLmetrics)
 try({
   before.last.alg<-as.matrix(read.csv("beforelast algorithm.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   last.alg<-as.matrix(read.csv("last algorithm tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
-  write.table(paste(date(), last.alg,.Platform$OS.type,.Platform$r_arch,which.computer,sep=" "),file = "algos after which reset.csv",  quote = F, row.names = F,col.names = F,append = T)
+  #write.table(paste(date(), last.alg,.Platform$OS.type,.Platform$r_arch,which.computer,sep=" "),file = "algos after which reset.csv",  quote = F, row.names = F,col.names = F,append = T)
   if(last.alg==before.last.alg){print("algorithm may be broken")}
   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 })
