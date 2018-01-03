@@ -1,0 +1,1069 @@
+0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,,
+NA,NA,-1,NA,NA,Tue Dec 12 17:45:00 2017,regr.bartMachine,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,264,2,cv,20,3,NA,5
+0,-0.007,-1,0.835,0.636,Tue Dec 12 17:45:02 2017,regr.bcart,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,265,2,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Tue Dec 12 17:45:03 2017,regr.bdk,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,266,0,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Tue Dec 12 17:45:04 2017,regr.bgpllm,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,267,1,cv,20,3,NA,5
+0.573,0.549,0.425,0.374,0.272,Tue Dec 12 17:46:42 2017,regr.blackboost,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,random,268,98,cv,20,3,NA,5,4,448
+NA,NA,-1,NA,NA,Tue Dec 12 17:46:43 2017,regr.blm,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,269,1,cv,20,3,NA,5
+0.707,0.728,-1,NA,NA,Tue Dec 12 17:47:07 2017,regr.brnn,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,270,24,cv,20,3,NA,5
+0.589,0.586,-1,NA,NA,Tue Dec 12 17:47:08 2017,regr.bst,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,271,1,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Tue Dec 12 17:47:13 2017,regr.btlm,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,272,5,cv,20,3,NA,5
+0.209,0.174,-1,0.685,0.503,Tue Dec 12 17:47:16 2017,regr.cforest,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,273,2,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Tue Dec 12 17:47:27 2017,regr.crs,1,1,Recc sim 1,ignore,none,YeoJohnson,14
+0.321,0.355,-1,0.535,0.432,Tue Dec 12 17:47:29 2017,regr.ctree,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,275,2,cv,20,3,NA,5
+0.564,0.549,-1,0.374,0.277,Tue Dec 12 17:48:20 2017,regr.cubist,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,276,51,cv,20,3,NA,5
+0.713,0.709,-1,NA,NA,Tue Dec 12 17:48:22 2017,regr.cvglmnet,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,277,2,cv,20,3,NA,5
+0.564,0.474,-1,NA,NA,Tue Dec 12 17:48:30 2017,regr.earth,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,278,7,cv,20,3,NA,5
+0.01,0.013,-1,0.819,0.629,Tue Dec 12 17:48:31 2017,regr.elmNN,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,279,1,cv,20,3,NA,5
+0.066,0.062,-1,0.778,0.594,Tue Dec 12 17:48:42 2017,regr.evtree,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,280,11,cv,20,3,NA,5
+0.552,0.513,0.37,0.404,0.285,Tue Dec 12 17:54:28 2017,regr.extraTrees,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,random,281,346,cv,20,3,NA,5,13,3
+0,-0.007,-1,0.835,0.636,Tue Dec 12 17:54:32 2017,regr.featureless,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,282,3,cv,20,3,NA,5
+0.431,0.413,-1,0.487,0.362,Tue Dec 12 17:54:33 2017,regr.fnn,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,283,1,cv,20,3,NA,5
+0.334,0.341,-1,0.547,0.424,Tue Dec 12 17:55:00 2017,regr.frbs,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,284,27,cv,20,3,NA,5
+0.674,0.678,-1,NA,NA,Tue Dec 12 17:55:07 2017,regr.gamboost,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,285,6,cv,20,3,NA,5
+0.44,0.342,-1,0.546,0.356,Tue Dec 12 17:55:11 2017,regr.gausspr,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,286,4,cv,20,3,NA,5
+0.51,0.46,0.487,0.448,0.311,Tue Dec 12 17:55:24 2017,regr.gbm,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,random,287,13,cv,20,3,NA,5,699,8,0.293062150323531,7
+-5.765,-5.834,-1,NA,NA,Tue Dec 12 17:55:25 2017,regr.glm,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,288,1,cv,20,3,NA,5
+0.681,0.663,0.257,NA,NA,Tue Dec 12 17:55:40 2017,regr.glmboost,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,random,289,15,cv,20,3,NA,5,541,0.284543638117611
+0.734,0.738,0.165,NA,NA,Tue Dec 12 17:55:47 2017,regr.glmnet,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,random,290,6,cv,20,3,NA,5,0.0501954457722604,0.0947504829147152
+0.509,0.519,-1,0.399,0.312,Tue Dec 12 17:56:40 2017,regr.h2o.deeplearning,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,291,53,cv,20,3,NA,5
+0.435,0.394,-1,0.502,0.359,Tue Dec 12 17:56:55 2017,regr.h2o.gbm,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,292,15,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Tue Dec 12 17:57:00 2017,regr.h2o.glm,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,293,4,cv,20,3,NA,5
+0.47,0.425,-1,0.477,0.337,Tue Dec 12 17:57:08 2017,regr.h2o.randomForest,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,294,8,cv,20,3,NA,5
+0.318,0.306,-1,0.575,0.434,Tue Dec 12 17:57:18 2017,regr.IBk,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,295,10,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Tue Dec 12 17:57:29 2017,regr.kknn,1,1,Recc sim 1,ignore,none,YeoJohnson,21
+NA,NA,-1,NA,NA,Tue Dec 12 17:57:32 2017,regr.km,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,297,3,cv,20,3,NA,5
+0.726,0.727,0.168,NA,NA,Tue Dec 12 17:57:43 2017,regr.ksvm,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,random,298,11,cv,20,3,NA,5,78.7629051596027,0.000236339786068219
+0.74,0.711,-1,0.24,0.165,Tue Dec 12 17:58:14 2017,regr.laGP,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,299,32,cv,20,3,NA,5
+0.756,0.749,-1,NA,NA,Tue Dec 12 17:58:20 2017,regr.LiblineaRL2L1SVR,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,300,6,cv,20,3,NA,5
+0.741,0.746,-1,NA,NA,Tue Dec 12 17:58:32 2017,regr.LiblineaRL2L2SVR,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,301,12,cv,20,3,NA,5
+-5.765,-5.834,-1,NA,NA,Tue Dec 12 17:58:33 2017,regr.lm,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,302,1,cv,20,3,NA,5
+0.634,0.585,-1,NA,NA,Tue Dec 12 17:58:35 2017,regr.mars,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,303,1,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Tue Dec 12 17:58:36 2017,regr.mob,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,304,1,cv,20,3,NA,5
+0.767,0.713,0.236,0.238,0.148,Tue Dec 12 17:58:56 2017,regr.nnet,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,random,305,20,cv,20,3,NA,5,5,0.40980233251488
+0.215,0.21,-1,0.655,0.499,Tue Dec 12 17:59:22 2017,regr.nodeHarvest,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,306,26,cv,20,3,NA,5
+0.681,0.694,-1,NA,NA,Tue Dec 12 17:59:23 2017,regr.pcr,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,307,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Tue Dec 12 17:59:23 2017,regr.penalized.fusedlasso,1,1,Recc sim 1,ignore,none,YeoJohnson,2
+Fail,Fail,Fail,Fail,PrePackageFail,Tue Dec 12 17:59:23 2017,regr.penalized.lasso,1,1,Recc sim 1,ignore,none,YeoJohnson,2
+Fail,Fail,Fail,Fail,PrePackageFail,Tue Dec 12 17:59:24 2017,regr.penalized.ridge,1,1,Recc sim 1,ignore,none,YeoJohnson,2
+0.681,0.694,-1,NA,NA,Tue Dec 12 17:59:25 2017,regr.plsr,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,311,1,cv,20,3,NA,5
+0.496,0.442,0.426,0.463,0.32,Tue Dec 12 18:00:16 2017,regr.randomForest,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,random,312,51,cv,20,3,NA,5,2,8
+0.463,0.413,-1,0.487,0.341,Tue Dec 12 18:00:41 2017,regr.randomForestSRC,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,313,24,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Tue Dec 12 18:00:41 2017,regr.ranger,1,1,Recc sim 1,ignore,none,YeoJohnson,25
+Fail,Fail,Fail,Fail,PrePackageFail,Tue Dec 12 18:00:41 2017,regr.rknn,1,1,Recc sim 1,ignore,none,YeoJohnson,25
+-0.06,-0.047,0.676,0.869,0.674,Tue Dec 12 18:00:51 2017,regr.rpart,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,random,316,10,cv,20,3,NA,5,0.0955672864946294,17,18,16
+Fail,Fail,Fail,Fail,PrePackageFail,Tue Dec 12 18:00:51 2017,regr.RRF,1,1,Recc sim 1,ignore,none,YeoJohnson,10
+-5.765,-5.834,-1,NA,NA,Tue Dec 12 18:01:03 2017,regr.rsm,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,318,11,cv,20,3,NA,5
+0.46,0.392,-1,0.504,0.344,Tue Dec 12 18:01:04 2017,regr.rvm,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,319,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Tue Dec 12 18:01:05 2017,regr.slim,1,1,Recc sim 1,ignore,none,YeoJohnson,2
+0.752,0.727,0.196,0.226,0.158,Tue Dec 12 18:01:17 2017,regr.svm,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,random,321,12,cv,20,3,NA,5,6226.59495287105,0.000846107502203093
+Fail,Fail,Fail,Fail,PrePackageFail,Tue Dec 12 18:01:17 2017,regr.xgboost,1,1,Recc sim 1,ignore,none,YeoJohnson,12
+NA,NA,-1,NA,NA,Tue Dec 12 18:01:21 2017,regr.xyf,1,1,Recc sim 1,ignore,none,YeoJohnson,0.82944837655818,nohyperparam,323,4,cv,20,3,NA,5
+0.728,0.708,-1,0.203,0.153,Tue Dec 12 18:01:39 2017,regr.bartMachine,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,324,6,cv,20,3,NA,5
+0,-0.003,-1,0.698,0.562,Tue Dec 12 18:01:42 2017,regr.bcart,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,325,3,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Tue Dec 12 18:01:43 2017,regr.bdk,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,326,1,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Tue Dec 12 18:01:43 2017,regr.bgpllm,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,327,1,cv,20,3,NA,5
+0.682,0.635,0.511,0.254,0.179,Tue Dec 12 18:04:35 2017,regr.blackboost,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,random,328,171,cv,20,3,NA,5,10,88
+NA,NA,-1,NA,NA,Tue Dec 12 18:04:42 2017,regr.blm,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,329,7,cv,20,3,NA,5
+0.711,0.716,-1,0.198,0.162,Tue Dec 12 18:04:49 2017,regr.brnn,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,330,6,cv,20,3,NA,5
+0.665,0.668,-1,0.231,0.188,Tue Dec 12 18:04:59 2017,regr.bst,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,331,10,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Tue Dec 12 18:05:17 2017,regr.btlm,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,332,18,cv,20,3,NA,5
+0.261,0.233,-1,0.534,0.415,Tue Dec 12 18:05:19 2017,regr.cforest,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,333,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Tue Dec 12 18:05:30 2017,regr.crs,1,1,Recc sim 1,ignore,none,ICA,12
+0.342,0.289,-1,0.495,0.369,Tue Dec 12 18:05:32 2017,regr.ctree,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,335,2,cv,20,3,NA,5
+0.551,0.527,-1,0.329,0.252,Tue Dec 12 18:05:34 2017,regr.cubist,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,336,2,cv,20,3,NA,5
+0.734,0.73,-1,0.188,0.149,Tue Dec 12 18:05:39 2017,regr.cvglmnet,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,337,4,cv,20,3,NA,5
+0.332,0.322,-1,NA,NA,Tue Dec 12 18:05:43 2017,regr.earth,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,338,4,cv,20,3,NA,5
+0.003,-0.006,-1,0.7,0.56,Tue Dec 12 18:05:44 2017,regr.elmNN,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,339,1,cv,20,3,NA,5
+0.218,0.205,-1,0.553,0.439,Tue Dec 12 18:05:55 2017,regr.evtree,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,340,11,cv,20,3,NA,5
+0.685,0.636,0.399,0.254,0.177,Tue Dec 12 18:12:45 2017,regr.extraTrees,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,random,341,411,cv,20,3,NA,5,7,22
+0,-0.003,-1,0.698,0.562,Tue Dec 12 18:12:47 2017,regr.featureless,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,342,1,cv,20,3,NA,5
+0.3,0.31,-1,0.48,0.393,Tue Dec 12 18:12:48 2017,regr.fnn,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,343,1,cv,20,3,NA,5
+0.364,0.34,-1,0.459,0.357,Tue Dec 12 18:13:38 2017,regr.frbs,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,344,50,cv,20,3,NA,5
+0.728,0.709,-1,0.203,0.153,Tue Dec 12 18:13:56 2017,regr.gamboost,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,345,17,cv,20,3,NA,5
+0.635,0.543,-1,0.318,0.205,Wed Dec 13 14:22:40 2017,regr.gausspr,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,346,72524,cv,20,3,NA,5
+0.488,0.454,0.528,0.38,0.287,Wed Dec 13 14:23:02 2017,regr.gbm,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,random,347,21,cv,20,3,NA,5,23,2,0.221360270922305,7
+-1.891,-2.337,-1,NA,NA,Wed Dec 13 14:23:17 2017,regr.glm,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,348,15,cv,20,3,NA,5
+0.719,0.723,0.316,0.193,0.158,Wed Dec 13 14:23:33 2017,regr.glmboost,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,random,349,16,cv,20,3,NA,5,526,0.168984540505335
+0.74,0.739,0.249,0.182,0.146,Wed Dec 13 14:23:48 2017,regr.glmnet,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,random,350,14,cv,20,3,NA,5,0.246358458185568,0.0648432507216347
+0.564,0.539,-1,0.321,0.245,Wed Dec 13 14:24:00 2017,regr.h2o.deeplearning,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,351,12,cv,20,3,NA,5
+0.58,0.549,-1,0.314,0.236,Wed Dec 13 14:24:08 2017,regr.h2o.gbm,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,352,8,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 14:24:13 2017,regr.h2o.glm,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,353,4,cv,20,3,NA,5
+0.565,0.537,-1,0.323,0.245,Wed Dec 13 14:24:26 2017,regr.h2o.randomForest,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,354,13,cv,20,3,NA,5
+0.152,0.208,-1,0.551,0.476,Wed Dec 13 14:24:28 2017,regr.IBk,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,355,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Wed Dec 13 14:24:44 2017,regr.kknn,1,1,Recc sim 1,ignore,none,ICA,18
+NA,NA,-1,NA,NA,Wed Dec 13 14:25:09 2017,regr.km,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,357,25,cv,20,3,NA,5
+0.799,0.786,0.205,0.149,0.113,Wed Dec 13 14:25:21 2017,regr.ksvm,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,random,358,11,cv,20,3,NA,5,38.0248223538187,5.85018812308521e-05
+0.734,0.734,-1,0.185,0.149,Wed Dec 13 14:25:28 2017,regr.laGP,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,359,7,cv,20,3,NA,5
+0.755,0.755,-1,0.171,0.137,Wed Dec 13 14:25:29 2017,regr.LiblineaRL2L1SVR,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,360,0,cv,20,3,NA,5
+0.767,0.754,-1,0.171,0.131,Wed Dec 13 14:25:29 2017,regr.LiblineaRL2L2SVR,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,361,1,cv,20,3,NA,5
+-1.891,-2.337,-1,NA,NA,Wed Dec 13 14:25:30 2017,regr.lm,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,362,1,cv,20,3,NA,5
+0.478,0.405,-1,NA,NA,Wed Dec 13 14:25:31 2017,regr.mars,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,363,1,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 14:25:32 2017,regr.mob,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,364,1,cv,20,3,NA,5
+0.732,0.747,0.256,0.176,0.151,Wed Dec 13 14:26:43 2017,regr.nnet,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,random,365,70,cv,20,3,NA,5,8,1.17680611136697
+0.33,0.319,-1,0.474,0.376,Wed Dec 13 14:27:02 2017,regr.nodeHarvest,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,366,20,cv,20,3,NA,5
+0.563,0.564,-1,NA,NA,Wed Dec 13 14:27:03 2017,regr.pcr,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,367,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:27:04 2017,regr.penalized.fusedlasso,1,1,Recc sim 1,ignore,none,ICA,1
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:27:04 2017,regr.penalized.lasso,1,1,Recc sim 1,ignore,none,ICA,1
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:27:04 2017,regr.penalized.ridge,1,1,Recc sim 1,ignore,none,ICA,1
+0.563,0.564,-1,NA,NA,Wed Dec 13 14:27:05 2017,regr.plsr,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,371,1,cv,20,3,NA,5
+0.58,0.541,0.462,0.319,0.236,Wed Dec 13 14:27:52 2017,regr.randomForest,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,random,372,46,cv,20,3,NA,5,3,5
+0.582,0.547,-1,0.315,0.235,Wed Dec 13 14:27:54 2017,regr.randomForestSRC,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,373,2,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:27:54 2017,regr.ranger,1,1,Recc sim 1,ignore,none,ICA,2
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:27:55 2017,regr.rknn,1,1,Recc sim 1,ignore,none,ICA,3
+0.132,0.131,0.643,0.605,0.487,Wed Dec 13 14:28:05 2017,regr.rpart,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,random,376,10,cv,20,3,NA,5,0.136742126628476,20,7,5
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:28:05 2017,regr.RRF,1,1,Recc sim 1,ignore,none,ICA,10
+-1.891,-2.337,-1,NA,NA,Wed Dec 13 14:28:06 2017,regr.rsm,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,378,1,cv,20,3,NA,5
+0.608,0.558,-1,0.308,0.22,Wed Dec 13 14:28:07 2017,regr.rvm,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,379,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:28:07 2017,regr.slim,1,1,Recc sim 1,ignore,none,ICA,1
+0.772,0.766,0.216,0.163,0.128,Wed Dec 13 14:28:19 2017,regr.svm,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,random,381,12,cv,20,3,NA,5,1268.80569394703,0.000123004906950325
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:28:19 2017,regr.xgboost,1,1,Recc sim 1,ignore,none,ICA,12
+NA,NA,-1,NA,NA,Wed Dec 13 14:28:20 2017,regr.xyf,1,1,Recc sim 1,ignore,none,ICA,0.695999819155069,nohyperparam,383,1,cv,20,3,NA,5
+0.65,0.658,-1,0.248,0.204,Wed Dec 13 14:28:41 2017,regr.bartMachine,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,384,9,cv,20,3,NA,5
+-0.002,-0.002,-1,0.728,0.586,Wed Dec 13 14:28:43 2017,regr.bcart,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,385,3,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 14:28:44 2017,regr.bdk,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,386,1,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 14:28:45 2017,regr.bgpllm,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,387,1,cv,20,3,NA,5
+0.625,0.591,0.545,0.297,0.219,Wed Dec 13 14:31:46 2017,regr.blackboost,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,random,388,181,cv,20,3,NA,5,7,308
+NA,NA,-1,NA,NA,Wed Dec 13 14:31:47 2017,regr.blm,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,389,1,cv,20,3,NA,5
+0.653,0.644,-1,0.258,0.203,Wed Dec 13 14:31:50 2017,regr.brnn,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,390,2,cv,20,3,NA,5
+0.71,0.678,-1,0.234,0.169,Wed Dec 13 14:31:51 2017,regr.bst,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,391,1,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 14:31:52 2017,regr.btlm,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,392,1,cv,20,3,NA,5
+0.237,0.212,-1,0.572,0.446,Wed Dec 13 14:31:54 2017,regr.cforest,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,393,2,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Wed Dec 13 14:32:05 2017,regr.crs,1,1,Recc sim 1,ignore,none,centernscale,13
+0.385,0.359,-1,0.465,0.359,Wed Dec 13 14:32:06 2017,regr.ctree,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,395,1,cv,20,3,NA,5
+0.491,0.47,-1,NA,NA,Wed Dec 13 14:32:07 2017,regr.cubist,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,396,1,cv,20,3,NA,5
+0.75,0.737,-1,NA,NA,Wed Dec 13 14:32:10 2017,regr.cvglmnet,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,397,2,cv,20,3,NA,5
+0.424,0.383,-1,0.449,0.337,Wed Dec 13 14:32:11 2017,regr.earth,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,398,1,cv,20,3,NA,5
+-0.007,-0.03,-1,0.748,0.588,Wed Dec 13 14:32:12 2017,regr.elmNN,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,399,0,cv,20,3,NA,5
+0.279,0.208,-1,0.576,0.421,Wed Dec 13 14:32:20 2017,regr.evtree,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,400,8,cv,20,3,NA,5
+0.71,0.643,0.533,0.26,0.169,Wed Dec 13 14:38:30 2017,regr.extraTrees,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,random,401,370,cv,20,3,NA,5,9,3
+-0.002,-0.002,-1,0.728,0.586,Wed Dec 13 14:38:32 2017,regr.featureless,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,402,2,cv,20,3,NA,5
+0.31,0.303,-1,0.506,0.403,Wed Dec 13 14:38:33 2017,regr.fnn,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,403,1,cv,20,3,NA,5
+0.219,0.238,-1,0.554,0.456,Wed Dec 13 14:39:01 2017,regr.frbs,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,404,28,cv,20,3,NA,5
+0.717,0.713,-1,0.208,0.166,Wed Dec 13 14:39:08 2017,regr.gamboost,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,405,6,cv,20,3,NA,5
+0.518,0.409,-1,0.429,0.282,Wed Dec 13 14:39:09 2017,regr.gausspr,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,406,1,cv,20,3,NA,5
+0.6,0.573,0.616,0.31,0.234,Wed Dec 13 14:39:30 2017,regr.gbm,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,random,407,21,cv,20,3,NA,5,923,9,0.125193061348982,5
+-0.138,-0.175,-1,NA,NA,Wed Dec 13 14:39:31 2017,regr.glm,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,408,1,cv,20,3,NA,5
+0.687,0.688,0.377,NA,NA,Wed Dec 13 14:39:44 2017,regr.glmboost,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,random,409,12,cv,20,3,NA,5,299,0.228141165338457
+0.738,0.73,0.291,NA,NA,Wed Dec 13 14:39:50 2017,regr.glmnet,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,random,410,6,cv,20,3,NA,5,0.212497728643939,0.0716605235447302
+0.6,0.576,-1,NA,NA,Wed Dec 13 14:39:59 2017,regr.h2o.deeplearning,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,411,9,cv,20,3,NA,5
+0.563,0.553,-1,0.325,0.255,Wed Dec 13 14:40:14 2017,regr.h2o.gbm,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,412,15,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 14:40:20 2017,regr.h2o.glm,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,413,5,cv,20,3,NA,5
+0.604,0.576,-1,0.308,0.232,Wed Dec 13 14:40:26 2017,regr.h2o.randomForest,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,414,6,cv,20,3,NA,5
+0.364,0.316,-1,0.497,0.372,Wed Dec 13 14:40:28 2017,regr.IBk,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,415,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Wed Dec 13 14:40:39 2017,regr.kknn,1,1,Recc sim 1,ignore,none,centernscale,12
+NA,NA,-1,NA,NA,Wed Dec 13 14:40:40 2017,regr.km,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,417,1,cv,20,3,NA,5
+0.758,0.745,0.269,0.185,0.141,Wed Dec 13 14:40:51 2017,regr.ksvm,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,random,418,11,cv,20,3,NA,5,6.28426678246329,0.00070418281686311
+0.727,0.7,-1,0.218,0.16,Wed Dec 13 14:41:04 2017,regr.laGP,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,419,13,cv,20,3,NA,5
+0.713,0.698,-1,NA,NA,Wed Dec 13 14:41:27 2017,regr.LiblineaRL2L1SVR,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,420,23,cv,20,3,NA,5
+0.757,0.737,-1,NA,NA,Wed Dec 13 14:41:28 2017,regr.LiblineaRL2L2SVR,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,421,1,cv,20,3,NA,5
+-0.138,-0.175,-1,NA,NA,Wed Dec 13 14:41:29 2017,regr.lm,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,422,1,cv,20,3,NA,5
+0.445,0.427,-1,NA,NA,Wed Dec 13 14:41:30 2017,regr.mars,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,423,1,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 14:41:32 2017,regr.mob,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,424,1,cv,20,3,NA,5
+0.718,0.709,0.281,0.212,0.165,Wed Dec 13 14:42:53 2017,regr.nnet,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,random,425,82,cv,20,3,NA,5,9,2.08403226991254
+0.34,0.299,-1,0.509,0.386,Wed Dec 13 14:43:29 2017,regr.nodeHarvest,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,426,35,cv,20,3,NA,5
+0.58,0.555,-1,NA,NA,Wed Dec 13 14:43:30 2017,regr.pcr,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,427,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:43:30 2017,regr.penalized.fusedlasso,1,1,Recc sim 1,ignore,none,centernscale,1
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:43:30 2017,regr.penalized.lasso,1,1,Recc sim 1,ignore,none,centernscale,1
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:43:31 2017,regr.penalized.ridge,1,1,Recc sim 1,ignore,none,centernscale,1
+0.58,0.555,-1,NA,NA,Wed Dec 13 14:43:32 2017,regr.plsr,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,431,1,cv,20,3,NA,5
+0.597,0.553,0.591,0.324,0.236,Wed Dec 13 14:44:24 2017,regr.randomForest,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,random,432,51,cv,20,3,NA,5,3,9
+0.579,0.529,-1,0.342,0.246,Wed Dec 13 14:44:26 2017,regr.randomForestSRC,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,433,2,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:44:26 2017,regr.ranger,1,1,Recc sim 1,ignore,none,centernscale,2
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:44:26 2017,regr.rknn,1,1,Recc sim 1,ignore,none,centernscale,2
+0.356,0.291,0.913,0.516,0.376,Wed Dec 13 14:44:36 2017,regr.rpart,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,random,436,10,cv,20,3,NA,5,0.0110198608271101,19,7,34
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:44:37 2017,regr.RRF,1,1,Recc sim 1,ignore,none,centernscale,10
+-0.138,-0.175,-1,NA,NA,Wed Dec 13 14:44:37 2017,regr.rsm,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,438,1,cv,20,3,NA,5
+0.645,0.568,-1,0.314,0.208,Wed Dec 13 14:44:39 2017,regr.rvm,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,439,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:44:39 2017,regr.slim,1,1,Recc sim 1,ignore,none,centernscale,1
+0.721,0.707,0.233,NA,NA,Wed Dec 13 14:44:51 2017,regr.svm,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,random,441,12,cv,20,3,NA,5,3949.6338561926,0.000154618997880772
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 14:44:51 2017,regr.xgboost,1,1,Recc sim 1,ignore,none,centernscale,12
+NA,NA,-1,NA,NA,Wed Dec 13 14:44:53 2017,regr.xyf,1,1,Recc sim 1,ignore,none,centernscale,0.726604000308207,nohyperparam,443,1,cv,20,3,NA,5
+0.643,0.538,-1,0.331,0.209,Wed Dec 13 14:45:15 2017,regr.bartMachine,1,1,Recc sim 1,ignore,none,expoTrans,0.716106485282663,nohyperparam,444,10,cv,20,3,NA,5
+0,-0.003,-1,0.717,0.582,Wed Dec 13 14:45:19 2017,regr.bcart,1,1,Recc sim 1,ignore,none,expoTrans,0.716106485282663,nohyperparam,445,4,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 14:45:21 2017,regr.bdk,1,1,Recc sim 1,ignore,none,expoTrans,0.716106485282663,nohyperparam,446,2,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 14:45:24 2017,regr.bgpllm,1,1,Recc sim 1,ignore,none,expoTrans,0.716106485282663,nohyperparam,447,3,cv,20,3,NA,5
+0.713,0.723,-1,NA,NA,Wed Dec 13 15:08:54 2017,regr.bartMachine,1,1,Boston Housing,ignore,none,YeoJohnson,9.22272858540248,nohyperparam,245,13,cv,20,3,NA,5
+0.379,0.363,-1,5.877,4.19,Wed Dec 13 15:08:58 2017,regr.bcart,1,1,Boston Housing,ignore,none,YeoJohnson,9.22272858540248,nohyperparam,246,4,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 15:09:00 2017,regr.bdk,1,1,Boston Housing,ignore,none,YeoJohnson,9.22272858540248,nohyperparam,247,1,cv,20,3,NA,5
+0.573,0.528,0.396,0.378,0.264,Wed Dec 13 15:40:21 2017,regr.blackboost,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,random,478,209,cv,20,3,NA,5,10,777
+NA,NA,-1,NA,NA,Wed Dec 13 15:40:27 2017,regr.blm,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,479,3,cv,20,3,NA,5
+0.659,0.653,-1,0.281,0.213,Wed Dec 13 15:40:34 2017,regr.brnn,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,480,5,cv,20,3,NA,5
+0.589,0.591,-1,0.334,0.256,Wed Dec 13 15:40:40 2017,regr.bst,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,481,3,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 15:40:45 2017,regr.btlm,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,482,3,cv,20,3,NA,5
+0.196,0.171,-1,0.674,0.5,Wed Dec 13 15:40:51 2017,regr.cforest,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,483,4,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Wed Dec 13 15:41:05 2017,regr.crs,1,1,Recc sim 1,ignore,none,expoTrans,17
+0.357,0.368,-1,0.512,0.398,Wed Dec 13 15:41:10 2017,regr.ctree,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,485,3,cv,20,3,NA,5
+0.647,0.647,-1,NA,NA,Wed Dec 13 15:41:16 2017,regr.cubist,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,486,3,cv,20,3,NA,5
+0.699,0.683,-1,0.258,0.187,Wed Dec 13 15:41:22 2017,regr.cvglmnet,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,487,3,cv,20,3,NA,5
+0.558,0.522,-1,NA,NA,Wed Dec 13 15:41:27 2017,regr.earth,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,488,3,cv,20,3,NA,5
+0.019,0.058,-1,0.759,0.61,Wed Dec 13 15:41:36 2017,regr.elmNN,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,489,6,cv,20,3,NA,5
+0.166,0.173,-1,0.667,0.517,Wed Dec 13 15:41:46 2017,regr.evtree,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,490,7,cv,20,3,NA,5
+0.562,0.506,0.377,0.401,0.273,Wed Dec 13 15:47:53 2017,regr.extraTrees,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,random,491,365,cv,20,3,NA,5,4,11
+0,0,-1,0.813,0.622,Wed Dec 13 15:47:58 2017,regr.featureless,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,492,3,cv,20,3,NA,5
+0.336,0.299,-1,0.578,0.415,Wed Dec 13 15:48:03 2017,regr.fnn,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,493,2,cv,20,3,NA,5
+0.27,0.328,-1,0.547,0.455,Wed Dec 13 15:48:35 2017,regr.frbs,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,494,29,cv,20,3,NA,5
+0.656,0.665,-1,0.274,0.214,Wed Dec 13 15:48:46 2017,regr.gamboost,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,495,8,cv,20,3,NA,5
+0.438,0.344,-1,0.532,0.349,Wed Dec 13 15:48:51 2017,regr.gausspr,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,496,3,cv,20,3,NA,5
+0.475,0.44,0.416,0.455,0.327,Wed Dec 13 15:49:05 2017,regr.gbm,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,random,497,12,cv,20,3,NA,5,255,1,0.0320818514323328,5
+-18.237,-16.135,-1,NA,NA,Wed Dec 13 15:49:10 2017,regr.glm,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,498,3,cv,20,3,NA,5
+0.656,0.661,0.223,0.273,0.213,Wed Dec 13 15:49:31 2017,regr.glmboost,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,random,499,18,cv,20,3,NA,5,580,0.114189751446247
+0.689,0.676,0.134,NA,NA,Wed Dec 13 15:49:41 2017,regr.glmnet,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,random,500,8,cv,20,3,NA,5,0.0902326046489179,0.0183799393170727
+0.61,0.585,-1,0.339,0.244,Wed Dec 13 15:49:54 2017,regr.h2o.deeplearning,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,501,11,cv,20,3,NA,5
+0.518,0.476,-1,0.42,0.298,Wed Dec 13 15:50:05 2017,regr.h2o.gbm,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,502,9,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 15:50:14 2017,regr.h2o.glm,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,503,6,cv,20,3,NA,5
+0.48,0.445,-1,0.449,0.323,Wed Dec 13 15:50:26 2017,regr.h2o.randomForest,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,504,9,cv,20,3,NA,5
+0.339,0.313,-1,0.569,0.414,Wed Dec 13 15:50:31 2017,regr.IBk,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,505,3,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Wed Dec 13 15:50:44 2017,regr.kknn,1,1,Recc sim 1,ignore,none,expoTrans,16
+NA,NA,-1,NA,NA,Wed Dec 13 15:50:49 2017,regr.km,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,507,3,cv,20,3,NA,5
+0.698,0.695,0.14,NA,NA,Wed Dec 13 15:51:12 2017,regr.ksvm,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,random,508,21,cv,20,3,NA,5,280.89381521544,0.000120988897914459
+0.624,0.616,-1,0.309,0.233,Wed Dec 13 15:51:28 2017,regr.laGP,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,509,13,cv,20,3,NA,5
+0.691,0.69,-1,0.251,0.193,Wed Dec 13 15:51:33 2017,regr.LiblineaRL2L1SVR,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,510,3,cv,20,3,NA,5
+0.674,0.691,-1,0.251,0.203,Wed Dec 13 15:51:38 2017,regr.LiblineaRL2L2SVR,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,511,2,cv,20,3,NA,5
+-18.237,-16.135,-1,NA,NA,Wed Dec 13 15:51:43 2017,regr.lm,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,512,3,cv,20,3,NA,5
+0.516,0.533,-1,NA,NA,Wed Dec 13 15:51:48 2017,regr.mars,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,513,3,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 15:51:53 2017,regr.mob,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,514,3,cv,20,3,NA,5
+0.629,0.645,0.182,0.287,0.23,Wed Dec 13 15:52:55 2017,regr.nnet,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,random,515,60,cv,20,3,NA,5,9,0.358260196173772
+0.348,0.28,-1,0.584,0.405,Wed Dec 13 15:53:29 2017,regr.nodeHarvest,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,516,31,cv,20,3,NA,5
+0.669,0.67,-1,NA,NA,Wed Dec 13 15:53:34 2017,regr.pcr,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,517,3,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 15:53:36 2017,regr.penalized.fusedlasso,1,1,Recc sim 1,ignore,none,expoTrans,5
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 15:53:39 2017,regr.penalized.lasso,1,1,Recc sim 1,ignore,none,expoTrans,8
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 15:53:41 2017,regr.penalized.ridge,1,1,Recc sim 1,ignore,none,expoTrans,10
+0.669,0.67,-1,NA,NA,Wed Dec 13 15:53:46 2017,regr.plsr,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,521,3,cv,20,3,NA,5
+0.483,0.44,0.439,0.455,0.322,Wed Dec 13 15:54:46 2017,regr.randomForest,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,random,522,56,cv,20,3,NA,5,6,25
+0.464,0.428,-1,0.463,0.333,Wed Dec 13 15:54:52 2017,regr.randomForestSRC,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,523,4,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 15:54:54 2017,regr.ranger,1,1,Recc sim 1,ignore,none,expoTrans,6
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 15:54:56 2017,regr.rknn,1,1,Recc sim 1,ignore,none,expoTrans,8
+0.309,0.265,0.64,0.593,0.427,Wed Dec 13 15:55:10 2017,regr.rpart,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,random,526,11,cv,20,3,NA,5,0.0401394807149305,22,6,16
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 15:55:13 2017,regr.RRF,1,1,Recc sim 1,ignore,none,expoTrans,14
+-18.237,-16.135,-1,NA,NA,Wed Dec 13 15:55:17 2017,regr.rsm,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,528,3,cv,20,3,NA,5
+0.501,0.449,-1,0.444,0.31,Wed Dec 13 15:55:23 2017,regr.rvm,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,529,3,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 15:55:25 2017,regr.slim,1,1,Recc sim 1,ignore,none,expoTrans,5
+0.488,0.395,0.426,0.488,0.318,Wed Dec 13 15:55:41 2017,regr.svm,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,random,531,14,cv,20,3,NA,5,3.86852614332563,0.0076537380365224
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 15:55:44 2017,regr.xgboost,1,1,Recc sim 1,ignore,none,expoTrans,16
+NA,NA,-1,NA,NA,Wed Dec 13 15:55:48 2017,regr.xyf,1,1,Recc sim 1,ignore,none,expoTrans,0.813076435478581,nohyperparam,533,2,cv,20,3,NA,5
+0.72,0.646,-1,0.27,0.168,Wed Dec 13 15:56:07 2017,regr.bartMachine,1,1,Recc sim 1,ignore,none,range01,0.761539559051268,nohyperparam,534,6,cv,20,3,NA,5
+-0.003,-0.024,-1,0.78,0.603,Wed Dec 13 15:56:13 2017,regr.bcart,1,1,Recc sim 1,ignore,none,range01,0.761539559051268,nohyperparam,535,4,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 15:56:17 2017,regr.bdk,1,1,Recc sim 1,ignore,none,range01,0.761539559051268,nohyperparam,536,2,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 15:56:22 2017,regr.bgpllm,1,1,Recc sim 1,ignore,none,range01,0.761539559051268,nohyperparam,537,3,cv,20,3,NA,5
+0.635,0.584,0.134,0.317,0.22,Wed Dec 13 16:00:07 2017,regr.blackboost,1,1,Recc sim 1,ignore,none,range01,0.761539559051268,random,538,215,cv,20,3,NA,5,7,64
+NA,NA,-1,NA,NA,Wed Dec 13 16:00:14 2017,regr.blm,1,1,Recc sim 1,ignore,none,range01,0.761539559051268,nohyperparam,539,5,cv,20,3,NA,5
+0.711,0.715,-1,0.217,0.174,Wed Dec 13 16:00:21 2017,regr.brnn,1,1,Recc sim 1,ignore,none,range01,0.761539559051268,nohyperparam,540,5,cv,20,3,NA,5
+0.212,0.214,-1,0.598,0.474,Wed Dec 13 16:01:49 2017,regr.bst,1,1,Recc sim 1,ignore,none,range01,0.761539559051268,nohyperparam,541,85,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 16:02:34 2017,regr.btlm,1,1,Recc sim 1,ignore,none,range01,0.761539559051268,nohyperparam,542,35,cv,20,3,NA,5
+0.198,0.161,-1,0.639,0.482,Wed Dec 13 16:02:50 2017,regr.cforest,1,1,Recc sim 1,ignore,none,range01,0.761539559051268,nohyperparam,543,14,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Wed Dec 13 16:03:05 2017,regr.crs,1,1,Recc sim 1,ignore,none,range01,29
+0.139,0.152,-1,0.55,0.442,Wed Dec 13 20:18:08 2017,regr.ctree,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,523,11,cv,20,3,NA,5
+0.455,0.427,-1,0.372,0.279,Wed Dec 13 20:18:18 2017,regr.cubist,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,524,6,cv,20,3,NA,5
+0.581,0.514,-1,0.316,0.215,Wed Dec 13 20:18:30 2017,regr.cvglmnet,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,525,8,cv,20,3,NA,5
+0.379,0.37,-1,0.409,0.319,Wed Dec 13 20:18:37 2017,regr.earth,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,526,4,cv,20,3,NA,5
+-1.169,-0.994,-1,1.295,1.113,Wed Dec 13 20:19:07 2017,regr.elmNN,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,527,26,cv,20,3,NA,5
+0.075,0.029,-1,0.63,0.474,Wed Dec 13 20:19:23 2017,regr.evtree,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,528,12,cv,20,3,NA,5
+0.586,0.524,0.104,0.309,0.213,Wed Dec 13 20:27:31 2017,regr.extraTrees,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,random,529,483,cv,20,3,NA,5,62,1
+0,-0.001,-1,0.65,0.513,Wed Dec 13 20:27:37 2017,regr.featureless,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,530,3,cv,20,3,NA,5
+0.357,0.357,-1,0.417,0.33,Wed Dec 13 20:27:44 2017,regr.fnn,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,531,3,cv,20,3,NA,5
+0.064,0.13,-1,0.565,0.48,Wed Dec 13 20:28:24 2017,regr.frbs,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,532,37,cv,20,3,NA,5
+0.599,0.541,-1,0.298,0.206,Wed Dec 13 20:28:38 2017,regr.gamboost,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,533,11,cv,20,3,NA,5
+0.48,0.419,-1,0.377,0.267,Wed Dec 13 20:28:45 2017,regr.gausspr,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,534,3,cv,20,3,NA,5
+0.553,0.48,0.115,0.337,0.229,Wed Dec 13 20:29:09 2017,regr.gbm,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,random,535,21,cv,20,3,NA,5,423,7,0.0346722675068304,5
+-4.238,-4.53,-1,NA,NA,Wed Dec 13 20:29:15 2017,regr.glm,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,536,3,cv,20,3,NA,5
+0.533,0.471,0.066,0.344,0.24,Wed Dec 13 20:29:35 2017,regr.glmboost,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,random,537,16,cv,20,3,NA,5,34,0.335451652063057
+0.624,0.587,0.057,0.268,0.193,Wed Dec 13 20:29:46 2017,regr.glmnet,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,random,538,8,cv,20,3,NA,5,0.281636134255677,0.0197967815484853
+0.49,0.501,-1,0.324,0.261,Wed Dec 13 20:30:07 2017,regr.h2o.deeplearning,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,539,16,cv,20,3,NA,5
+0.42,0.406,-1,0.386,0.298,Wed Dec 13 20:30:29 2017,regr.h2o.gbm,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,540,19,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 20:30:40 2017,regr.h2o.glm,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,541,7,cv,20,3,NA,5
+0.478,0.406,-1,0.386,0.268,Wed Dec 13 20:30:57 2017,regr.h2o.randomForest,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,542,14,cv,20,3,NA,5
+0.383,0.394,-1,0.393,0.317,Wed Dec 13 20:31:10 2017,regr.IBk,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,543,4,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Wed Dec 13 20:31:24 2017,regr.kknn,1,1,Recc sim 1,ignore,none,range01,18
+NA,NA,-1,NA,NA,Wed Dec 13 20:31:31 2017,regr.km,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,545,3,cv,20,3,NA,5
+0.695,0.687,0.081,0.203,0.156,Wed Dec 13 20:31:53 2017,regr.ksvm,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,random,546,19,cv,20,3,NA,5,13.3546478724233,0.00249417536890909
+0.674,0.624,-1,0.244,0.167,Wed Dec 13 20:32:11 2017,regr.laGP,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,547,14,cv,20,3,NA,5
+0.63,0.618,-1,0.248,0.19,Wed Dec 13 20:32:22 2017,regr.LiblineaRL2L1SVR,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,548,7,cv,20,3,NA,5
+0.586,0.576,-1,0.275,0.212,Wed Dec 13 20:34:40 2017,regr.LiblineaRL2L2SVR,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,549,136,cv,20,3,NA,5
+-4.238,-4.53,-1,NA,NA,Wed Dec 13 20:34:57 2017,regr.lm,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,550,13,cv,20,3,NA,5
+0.37,0.359,-1,0.416,0.323,Wed Dec 13 20:35:13 2017,regr.mars,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,551,13,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 20:35:30 2017,regr.mob,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,552,13,cv,20,3,NA,5
+0.644,0.618,0.062,0.248,0.183,Wed Dec 13 20:35:53 2017,regr.nnet,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,random,553,19,cv,20,3,NA,5,3,0.00936345380332012
+0.342,0.277,-1,0.47,0.337,Wed Dec 13 20:36:42 2017,regr.nodeHarvest,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,554,45,cv,20,3,NA,5
+0.452,0.445,-1,NA,NA,Wed Dec 13 20:36:59 2017,regr.pcr,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,555,13,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Wed Dec 13 20:37:13 2017,regr.penalized.fusedlasso,1,1,Recc sim 1,ignore,none,range01,27
+Fail,Fail,Fail,Fail,PackageFail,Wed Dec 13 20:37:27 2017,regr.penalized.lasso,1,1,Recc sim 1,ignore,none,range01,41
+Fail,Fail,Fail,Fail,PackageFail,Wed Dec 13 20:37:41 2017,regr.penalized.ridge,1,1,Recc sim 1,ignore,none,range01,56
+0.452,0.445,-1,NA,NA,Wed Dec 13 20:37:49 2017,regr.plsr,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,559,4,cv,20,3,NA,5
+0.589,0.54,0.12,0.299,0.211,Wed Dec 13 20:38:52 2017,regr.randomForest,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,random,560,60,cv,20,3,NA,5,6,7
+0.523,0.461,-1,0.35,0.245,Wed Dec 13 20:38:59 2017,regr.randomForestSRC,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,561,4,cv,20,3,NA,5
+0.594,0.543,0.123,0.297,0.208,Wed Dec 13 20:39:54 2017,regr.ranger,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,random,562,51,cv,20,3,NA,5,9,9
+0.465,0.461,-1,0.35,0.275,Wed Dec 13 20:40:02 2017,regr.rknn,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,563,4,cv,20,3,NA,5
+-0.083,-0.014,0.194,0.658,0.555,Wed Dec 13 20:40:18 2017,regr.rpart,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,random,564,12,cv,20,3,NA,5,0.0890854840881228,24,8,28
+0.57,0.489,0.12,0.332,0.221,Wed Dec 13 20:41:19 2017,regr.RRF,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,random,565,57,cv,20,3,NA,5,29,0.329640018288046
+-4.238,-4.53,-1,NA,NA,Wed Dec 13 20:41:25 2017,regr.rsm,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,566,3,cv,20,3,NA,5
+0.113,0,-1,0.65,0.455,Wed Dec 13 20:41:32 2017,regr.rvm,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,567,3,cv,20,3,NA,5
+0.557,0.471,-1,0.344,0.227,Wed Dec 13 20:41:39 2017,regr.slim,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,568,4,cv,20,3,NA,5
+0.708,0.703,0.056,0.193,0.15,Wed Dec 13 20:42:06 2017,regr.svm,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,random,569,24,cv,20,3,NA,5,6501.5589442884,0.000449575597538685
+0.063,0.065,0.217,0.607,0.481,Wed Dec 13 20:46:06 2017,regr.xgboost,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,random,570,236,cv,20,3,NA,5,200,8,0.565655930119799,1.04918093420565,0.463177518453449,9.67688988894224,0.716396007104777
+NA,NA,-1,NA,NA,Wed Dec 13 20:46:22 2017,regr.xyf,1,1,Recc sim 1,ignore,none,range01,0.649503623236408,nohyperparam,571,13,cv,20,3,NA,5
+0.724,0.698,-1,0.253,0.187,Wed Dec 13 20:46:46 2017,regr.bartMachine,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,572,7,cv,20,3,NA,5
+0,-0.001,-1,0.839,0.676,Wed Dec 13 20:46:54 2017,regr.bcart,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,573,6,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 20:47:00 2017,regr.bdk,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,574,3,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 20:47:06 2017,regr.bgpllm,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,575,3,cv,20,3,NA,5
+0.612,0.582,0.454,0.351,0.262,Wed Dec 13 20:50:03 2017,regr.blackboost,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,random,576,175,cv,20,3,NA,5,2,302
+NA,NA,-1,NA,NA,Wed Dec 13 20:50:09 2017,regr.blm,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,577,3,cv,20,3,NA,5
+0.8,0.806,-1,NA,NA,Wed Dec 13 20:50:16 2017,regr.brnn,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,578,4,cv,20,3,NA,5
+0.775,0.779,-1,0.185,0.152,Wed Dec 13 20:50:22 2017,regr.bst,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,579,3,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Wed Dec 13 20:50:28 2017,regr.btlm,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,580,3,cv,20,3,NA,5
+0.227,0.199,-1,0.672,0.523,Wed Dec 13 20:50:34 2017,regr.cforest,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,581,3,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Dec 13 20:50:38 2017,regr.crs,1,1,Recc sim 1,ignore,none,asis,7
+0.438,0.44,-1,0.47,0.38,Wed Dec 13 20:50:48 2017,regr.ctree,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,583,7,cv,20,3,NA,5
+0.562,0.548,-1,NA,NA,Wed Dec 13 20:50:57 2017,regr.cubist,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,584,6,cv,20,3,NA,5
+0.818,0.816,-1,NA,NA,Wed Dec 13 20:52:51 2017,regr.cvglmnet,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,585,112,cv,20,3,NA,5
+0.549,0.504,-1,NA,NA,Wed Dec 13 20:53:01 2017,regr.earth,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,586,7,cv,20,3,NA,5
+0.003,-0.003,-1,0.841,0.673,Wed Dec 13 20:53:38 2017,regr.elmNN,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,587,34,cv,20,3,NA,5
+0.291,0.298,-1,0.589,0.479,Wed Dec 13 20:54:00 2017,regr.evtree,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,588,19,cv,20,3,NA,5
+0.654,0.6,0.381,0.336,0.234,Wed Dec 13 20:59:34 2017,regr.extraTrees,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,random,589,330,cv,20,3,NA,5,13,2
+0,-0.001,-1,0.839,0.676,Wed Dec 13 20:59:39 2017,regr.featureless,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,590,2,cv,20,3,NA,5
+0.33,0.346,-1,0.548,0.453,Wed Dec 13 20:59:44 2017,regr.fnn,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,591,3,cv,20,3,NA,5
+0.37,0.345,-1,0.549,0.426,Wed Dec 13 21:00:21 2017,regr.frbs,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,592,33,cv,20,3,NA,5
+0.805,0.808,-1,0.161,0.132,Wed Dec 13 21:00:32 2017,regr.gamboost,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,593,8,cv,20,3,NA,5
+0.507,0.397,-1,0.506,0.333,Wed Dec 13 21:00:39 2017,regr.gausspr,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,594,4,cv,20,3,NA,5
+0.528,0.512,0.505,0.409,0.319,Wed Dec 13 21:01:01 2017,regr.gbm,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,random,595,20,cv,20,3,NA,5,916,3,0.0926910544789862,7
+-1.537,-1.522,-1,NA,NA,Wed Dec 13 21:01:07 2017,regr.glm,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,596,3,cv,20,3,NA,5
+0.833,0.827,0.28,0.145,0.113,Wed Dec 13 21:01:25 2017,regr.glmboost,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,random,597,15,cv,20,3,NA,5,76,0.130277897929773
+0.815,0.803,0.218,NA,NA,Wed Dec 13 21:01:36 2017,regr.glmnet,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,random,598,8,cv,20,3,NA,5,0.044453785289079,0.098258054930532
+0.437,0.356,-1,NA,NA,Wed Dec 13 21:02:00 2017,regr.h2o.deeplearning,1,1,Recc sim 1,ignore,none,asis,0.838293072881833,nohyperparam,599,21,cv,20,3,NA,5
+0.574,0.509,-1,0.361,0.259,Thu Dec 14 14:21:35 2017,regr.h2o.gbm,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,564,10,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 14:21:49 2017,regr.h2o.glm,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,565,9,cv,20,3,NA,5
+0.612,0.552,-1,0.329,0.236,Thu Dec 14 14:22:13 2017,regr.h2o.randomForest,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,566,19,cv,20,3,NA,5
+0.365,0.306,-1,0.51,0.386,Thu Dec 14 14:22:24 2017,regr.IBk,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,567,6,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 14:22:39 2017,regr.kknn,1,1,Recc sim 1,ignore,none,asis,21
+NA,NA,-1,NA,NA,Thu Dec 14 14:22:50 2017,regr.km,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,569,5,cv,20,3,NA,5
+0.734,0.699,0.169,0.221,0.162,Thu Dec 14 14:23:10 2017,regr.ksvm,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,random,570,16,cv,20,3,NA,5,150.97054491733,5.16749680574107e-05
+0.697,0.681,-1,0.234,0.184,Thu Dec 14 14:23:28 2017,regr.laGP,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,571,13,cv,20,3,NA,5
+0.734,0.706,-1,0.216,0.162,Thu Dec 14 14:23:38 2017,regr.LiblineaRL2L1SVR,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,572,5,cv,20,3,NA,5
+0.737,0.704,-1,0.217,0.16,Thu Dec 14 14:23:48 2017,regr.LiblineaRL2L2SVR,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,573,5,cv,20,3,NA,5
+-0.486,-0.624,-1,NA,NA,Thu Dec 14 14:23:57 2017,regr.lm,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,574,5,cv,20,3,NA,5
+0.53,0.491,-1,NA,NA,Thu Dec 14 14:24:08 2017,regr.mars,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,575,5,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 14:24:18 2017,regr.mob,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,576,5,cv,20,3,NA,5
+0.737,0.708,0.209,0.214,0.16,Thu Dec 14 14:25:51 2017,regr.nnet,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,random,577,88,cv,20,3,NA,5,9,0.833009735416152
+0.348,0.301,-1,0.514,0.396,Thu Dec 14 14:26:30 2017,regr.nodeHarvest,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,578,34,cv,20,3,NA,5
+0.674,0.644,-1,0.262,0.198,Thu Dec 14 14:26:40 2017,regr.pcr,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,579,5,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 14:26:55 2017,regr.penalized.fusedlasso,1,1,Recc sim 1,ignore,none,asis,20
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 14:27:11 2017,regr.penalized.lasso,1,1,Recc sim 1,ignore,none,asis,37
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 14:27:28 2017,regr.penalized.ridge,1,1,Recc sim 1,ignore,none,asis,53
+0.674,0.644,-1,0.262,0.198,Thu Dec 14 14:27:47 2017,regr.plsr,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,583,5,cv,20,3,NA,5
+0.573,0.533,0.471,0.344,0.26,Thu Dec 14 14:28:43 2017,regr.randomForest,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,random,584,51,cv,20,3,NA,5,6,5
+0.596,0.531,-1,0.345,0.246,Thu Dec 14 14:28:54 2017,regr.randomForestSRC,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,585,6,cv,20,3,NA,5
+0.57,0.534,0.445,0.343,0.261,Thu Dec 14 14:29:47 2017,regr.ranger,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,random,586,48,cv,20,3,NA,5,5,3
+0.469,0.453,-1,0.402,0.323,Thu Dec 14 14:29:58 2017,regr.rknn,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,587,6,cv,20,3,NA,5
+0.138,0.15,0.755,0.625,0.524,Thu Dec 14 14:30:17 2017,regr.rpart,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,random,588,14,cv,20,3,NA,5,0.00581546986244577,15,17,23
+0.559,0.537,0.414,0.34,0.268,Thu Dec 14 14:31:24 2017,regr.RRF,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,random,589,62,cv,20,3,NA,5,26,0.227598406374454
+-0.486,-0.624,-1,NA,NA,Thu Dec 14 14:31:34 2017,regr.rsm,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,590,5,cv,20,3,NA,5
+0.591,0.54,-1,0.338,0.249,Thu Dec 14 14:31:44 2017,regr.rvm,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,591,5,cv,20,3,NA,5
+0.683,0.629,-1,0.273,0.193,Thu Dec 14 14:31:55 2017,regr.slim,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,592,6,cv,20,3,NA,5
+0.732,0.698,0.166,0.222,0.163,Thu Dec 14 14:32:16 2017,regr.svm,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,random,593,16,cv,20,3,NA,5,788.607729594758,5.48025760031807e-05
+0.561,0.485,0.564,0.379,0.267,Thu Dec 14 14:34:50 2017,regr.xgboost,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,random,594,149,cv,20,3,NA,5,52,5,0.246942178789061,0.677120350301266,0.33807275313884,6.92156838718802,0.837990825122688
+NA,NA,-1,NA,NA,Thu Dec 14 14:35:00 2017,regr.xyf,1,1,Recc sim 1,ignore,none,asis,0.734967965099311,nohyperparam,595,5,cv,20,3,NA,5
+0.723,0.664,-1,0.384,0.234,Thu Dec 14 14:35:25 2017,regr.bartMachine,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,596,11,cv,20,3,NA,5
+0,0,-1,0.819,0.638,Thu Dec 14 14:35:34 2017,regr.bcart,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,597,5,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 14:35:41 2017,regr.bdk,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,598,3,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 14:35:49 2017,regr.bgpllm,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,599,3,cv,20,3,NA,5
+0.595,0.543,0.168,0.481,0.328,Thu Dec 14 14:38:37 2017,regr.blackboost,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,random,600,165,cv,20,3,NA,5,1,181
+NA,NA,-1,NA,NA,Thu Dec 14 14:38:44 2017,regr.blm,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,601,3,cv,20,3,NA,5
+0.564,0.544,-1,0.44,0.339,Thu Dec 14 14:38:53 2017,regr.brnn,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,602,5,cv,20,3,NA,5
+0.237,0.183,-1,0.728,0.53,Thu Dec 14 14:39:01 2017,regr.bst,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,603,4,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 14:39:08 2017,regr.btlm,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,604,3,cv,20,3,NA,5
+0.22,0.21,-1,0.706,0.531,Thu Dec 14 14:39:16 2017,regr.cforest,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,605,4,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 14 14:39:19 2017,regr.crs,1,1,Recc sim 1,ignore,none,quantile,8
+0.378,0.359,-1,0.546,0.422,Thu Dec 14 14:39:26 2017,regr.ctree,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,607,4,cv,20,3,NA,5
+0.474,0.384,-1,0.558,0.406,Thu Dec 14 14:39:34 2017,regr.cubist,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,608,4,cv,20,3,NA,5
+0.609,0.588,-1,0.463,0.326,Thu Dec 14 14:39:42 2017,regr.cvglmnet,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,609,4,cv,20,3,NA,5
+0.28,0.248,-1,NA,NA,Thu Dec 14 14:39:49 2017,regr.earth,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,610,4,cv,20,3,NA,5
+-0.583,-0.58,-1,1.346,1.179,Thu Dec 14 14:39:56 2017,regr.elmNN,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,611,3,cv,20,3,NA,5
+0.41,0.347,-1,0.536,0.405,Thu Dec 14 14:40:09 2017,regr.evtree,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,612,9,cv,20,3,NA,5
+0.591,0.579,0.152,0.478,0.337,Thu Dec 14 14:46:03 2017,regr.extraTrees,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,random,613,351,cv,20,3,NA,5,11,21
+0,0,-1,0.819,0.638,Thu Dec 14 14:46:10 2017,regr.featureless,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,614,3,cv,20,3,NA,5
+0.57,0.541,-1,0.47,0.336,Thu Dec 14 14:46:17 2017,regr.fnn,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,615,3,cv,20,3,NA,5
+0.496,0.425,-1,0.59,0.441,Thu Dec 14 14:46:52 2017,regr.frbs,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,616,30,cv,20,3,NA,5
+0.701,0.64,-1,0.386,0.245,Thu Dec 14 14:47:04 2017,regr.gamboost,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,617,9,cv,20,3,NA,5
+0.584,0.557,-1,0.505,0.349,Thu Dec 14 14:47:12 2017,regr.gausspr,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,618,4,cv,20,3,NA,5
+0.524,0.482,0.168,0.538,0.374,Thu Dec 14 14:47:31 2017,regr.gbm,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,random,619,16,cv,20,3,NA,5,531,10,0.0451122624946292,9
+-8.949,-9.617,-1,NA,NA,Thu Dec 14 14:47:39 2017,regr.glm,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,620,3,cv,20,3,NA,5
+0.541,0.496,0.136,0.462,0.34,Thu Dec 14 14:48:00 2017,regr.glmboost,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,random,621,17,cv,20,3,NA,5,814,0.303493520477787
+0.644,0.621,0.108,0.429,0.305,Thu Dec 14 14:48:13 2017,regr.glmnet,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,random,622,9,cv,20,3,NA,5,0.234367727069184,0.0137996762090204
+0.58,0.569,-1,0.434,0.332,Thu Dec 14 14:48:28 2017,regr.h2o.deeplearning,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,623,11,cv,20,3,NA,5
+0.57,0.506,-1,0.506,0.336,Thu Dec 14 14:48:40 2017,regr.h2o.gbm,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,624,9,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 14:48:51 2017,regr.h2o.glm,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,625,7,cv,20,3,NA,5
+0.573,0.523,-1,0.512,0.351,Thu Dec 14 14:49:05 2017,regr.h2o.randomForest,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,626,10,cv,20,3,NA,5
+0.416,0.423,-1,0.556,0.449,Thu Dec 14 14:49:12 2017,regr.IBk,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,627,4,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 14:49:34 2017,regr.kknn,1,1,Recc sim 1,ignore,none,quantile,26
+NA,NA,-1,NA,NA,Thu Dec 14 14:49:42 2017,regr.km,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,629,4,cv,20,3,NA,5
+0.701,0.661,0.095,0.37,0.244,Thu Dec 14 14:50:00 2017,regr.ksvm,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,random,630,14,cv,20,3,NA,5,7.54393407226935,0.000188633114373132
+0.671,0.627,-1,0.379,0.263,Thu Dec 14 14:50:18 2017,regr.laGP,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,631,14,cv,20,3,NA,5
+0.625,0.606,-1,0.412,0.297,Thu Dec 14 14:50:25 2017,regr.LiblineaRL2L1SVR,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,632,3,cv,20,3,NA,5
+0.581,0.567,-1,0.468,0.344,Thu Dec 14 14:50:32 2017,regr.LiblineaRL2L2SVR,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,633,3,cv,20,3,NA,5
+-8.949,-9.617,-1,NA,NA,Thu Dec 14 14:50:39 2017,regr.lm,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,634,3,cv,20,3,NA,5
+0.202,0.133,-1,NA,NA,Thu Dec 14 14:50:46 2017,regr.mars,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,635,4,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 14:50:54 2017,regr.mob,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,636,4,cv,20,3,NA,5
+0.555,0.527,0.1,0.445,0.344,Thu Dec 14 14:51:41 2017,regr.nnet,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,random,637,43,cv,20,3,NA,5,4,0.00021214465429044
+0.358,0.331,-1,0.643,0.47,Thu Dec 14 14:52:14 2017,regr.nodeHarvest,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,638,30,cv,20,3,NA,5
+0.455,0.431,-1,NA,NA,Thu Dec 14 14:52:22 2017,regr.pcr,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,639,3,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 14:52:36 2017,regr.penalized.fusedlasso,1,1,Recc sim 1,ignore,none,quantile,18
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 14:52:51 2017,regr.penalized.lasso,1,1,Recc sim 1,ignore,none,quantile,32
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 14:53:06 2017,regr.penalized.ridge,1,1,Recc sim 1,ignore,none,quantile,48
+0.455,0.431,-1,NA,NA,Thu Dec 14 14:53:14 2017,regr.plsr,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,643,4,cv,20,3,NA,5
+0.548,0.522,0.164,0.529,0.371,Thu Dec 14 14:54:06 2017,regr.randomForest,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,random,644,49,cv,20,3,NA,5,7,9
+0.504,0.49,-1,0.538,0.392,Thu Dec 14 14:54:14 2017,regr.randomForestSRC,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,645,4,cv,20,3,NA,5
+0.531,0.513,0.165,0.536,0.381,Thu Dec 14 14:55:07 2017,regr.ranger,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,random,646,49,cv,20,3,NA,5,7,9
+0.429,0.409,-1,0.604,0.44,Thu Dec 14 14:55:15 2017,regr.rknn,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,647,4,cv,20,3,NA,5
+0.295,0.218,0.22,0.642,0.485,Thu Dec 14 14:55:32 2017,regr.rpart,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,random,648,13,cv,20,3,NA,5,0.0383552261862534,14,6,29
+0.547,0.524,0.164,0.53,0.375,Thu Dec 14 14:56:36 2017,regr.RRF,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,random,649,61,cv,20,3,NA,5,7,0.374053206294775
+-8.949,-9.617,-1,NA,NA,Thu Dec 14 14:56:43 2017,regr.rsm,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,650,3,cv,20,3,NA,5
+0.673,0.625,-1,0.407,0.268,Thu Dec 14 14:56:51 2017,regr.rvm,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,651,4,cv,20,3,NA,5
+0.508,0.474,-1,0.554,0.389,Thu Dec 14 14:56:58 2017,regr.slim,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,652,4,cv,20,3,NA,5
+0.6,0.577,0.097,NA,NA,Thu Dec 14 14:57:17 2017,regr.svm,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,random,653,15,cv,20,3,NA,5,127.223728946389,6.44561529889076e-05
+0.257,0.247,0.22,0.685,0.517,Thu Dec 14 15:01:43 2017,regr.xgboost,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,random,654,262,cv,20,3,NA,5,506,2,0.0482139711503405,0.467795056756586,0.567636117897928,2.19277908559889,0.650452990084887
+NA,NA,-1,NA,NA,Thu Dec 14 15:01:50 2017,regr.xyf,1,1,Recc sim 1,ignore,none,quantile,0.818495417375008,nohyperparam,655,3,cv,20,3,NA,5
+0.655,0.622,-1,NA,NA,Thu Dec 14 15:28:19 2017,regr.bgpllm,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,659,1569,cv,20,3,NA,5
+0.648,0.604,4.302,3.405,2.193,Thu Dec 14 15:29:47 2017,regr.blackboost,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,random,660,88,cv,20,3,NA,5,10,77
+0.436,0.419,-1,NA,NA,Thu Dec 14 15:29:51 2017,regr.blm,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,661,3,cv,20,3,NA,5
+0.538,0.509,-1,NA,NA,Thu Dec 14 15:29:53 2017,regr.brnn,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,662,0,cv,20,3,NA,5
+0.278,0.208,-1,6.813,4.495,Thu Dec 14 15:29:54 2017,regr.bst,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,663,1,cv,20,3,NA,5
+0.445,0.353,-1,NA,NA,Thu Dec 14 15:30:05 2017,regr.btlm,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,664,10,cv,20,3,NA,5
+0.586,0.528,-1,4.064,2.578,Thu Dec 14 15:30:10 2017,regr.cforest,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,665,4,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 14 15:30:11 2017,regr.crs,1,1,Boston Housing,ignore,none,YeoJohnson,5
+0.481,0.449,-1,4.742,3.23,Thu Dec 14 15:30:11 2017,regr.ctree,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,667,0,cv,20,3,NA,5
+0.508,0.335,-1,NA,NA,Thu Dec 14 15:30:13 2017,regr.cubist,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,668,1,cv,20,3,NA,5
+0.396,0.352,-1,NA,NA,Thu Dec 14 15:30:14 2017,regr.cvglmnet,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,669,1,cv,20,3,NA,5
+0.583,0.56,-1,NA,NA,Thu Dec 14 15:30:15 2017,regr.earth,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,670,0,cv,20,3,NA,5
+-1.802,-1.475,-1,NA,NA,Thu Dec 14 15:30:16 2017,regr.elmNN,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,671,0,cv,20,3,NA,5
+0.528,0.562,-1,3.767,2.941,Thu Dec 14 15:30:45 2017,regr.evtree,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,672,29,cv,20,3,NA,5
+0.66,0.584,3.887,3.578,2.114,Thu Dec 14 15:34:52 2017,regr.extraTrees,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,random,673,246,cv,20,3,NA,5,9,1
+-0.021,0,-1,8.604,6.356,Thu Dec 14 15:34:56 2017,regr.featureless,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,674,0,cv,20,3,NA,5
+0.197,0.202,-1,6.867,4.998,Thu Dec 14 15:34:57 2017,regr.fnn,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,675,0,cv,20,3,NA,5
+0.446,0.366,-1,5.455,3.451,Thu Dec 14 15:36:16 2017,regr.frbs,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,676,79,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 15:36:18 2017,regr.gamboost,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,677,1,cv,20,3,NA,5
+0.579,0.52,-1,4.128,2.621,Thu Dec 14 15:36:20 2017,regr.gausspr,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,678,1,cv,20,3,NA,5
+0.656,0.595,3.659,3.488,2.143,Thu Dec 14 15:36:41 2017,regr.gbm,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,random,679,21,cv,20,3,NA,5,82,10,0.118512993305689,8
+0.409,0.373,-1,NA,NA,Thu Dec 14 15:36:42 2017,regr.glm,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,680,0,cv,20,3,NA,5
+0.409,0.373,4.953,NA,NA,Thu Dec 14 15:36:53 2017,regr.glmboost,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,random,681,10,cv,20,3,NA,5,955,0.497888998826966
+0.412,0.374,4.738,NA,NA,Thu Dec 14 15:36:58 2017,regr.glmnet,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,random,682,5,cv,20,3,NA,5,0.311258540023118,0.0778338766453027
+0.552,0.437,-1,NA,NA,Thu Dec 14 15:37:12 2017,regr.h2o.deeplearning,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,683,13,cv,20,3,NA,5
+0.651,0.593,-1,3.5,2.174,Thu Dec 14 15:37:18 2017,regr.h2o.gbm,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,684,4,cv,20,3,NA,5
+0.41,0.374,-1,NA,NA,Thu Dec 14 15:37:21 2017,regr.h2o.glm,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,685,3,cv,20,3,NA,5
+0.645,0.606,-1,3.391,2.208,Thu Dec 14 15:37:27 2017,regr.h2o.randomForest,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,686,5,cv,20,3,NA,5
+0.458,0.386,-1,5.283,3.374,Thu Dec 14 15:37:28 2017,regr.IBk,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,687,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 15:37:42 2017,regr.kknn,1,1,Boston Housing,ignore,none,YeoJohnson,15
+0.575,0.583,-1,NA,NA,Thu Dec 14 15:40:03 2017,regr.km,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,689,127,cv,20,3,NA,5
+0.601,0.508,3.427,NA,NA,Thu Dec 14 15:40:13 2017,regr.ksvm,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,random,690,9,cv,20,3,NA,5,161.466499295148,0.00707844950449031
+0.47,0.401,-1,NA,NA,Thu Dec 14 15:40:56 2017,regr.laGP,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,691,42,cv,20,3,NA,5
+0.233,0.223,-1,NA,NA,Thu Dec 14 15:40:59 2017,regr.LiblineaRL2L1SVR,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,692,2,cv,20,3,NA,5
+0.032,0.065,-1,NA,NA,Thu Dec 14 15:40:59 2017,regr.LiblineaRL2L2SVR,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,693,0,cv,20,3,NA,5
+0.409,0.373,-1,NA,NA,Thu Dec 14 15:41:00 2017,regr.lm,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,694,0,cv,20,3,NA,5
+0.562,0.485,-1,NA,NA,Thu Dec 14 15:41:01 2017,regr.mars,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,695,0,cv,20,3,NA,5
+0.565,0.433,-1,NA,NA,Thu Dec 14 15:41:05 2017,regr.mob,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,696,3,cv,20,3,NA,5
+0.283,0.287,4.974,6.133,4.465,Thu Dec 14 15:41:23 2017,regr.nnet,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,random,697,17,cv,20,3,NA,5,6,0.014342396617406
+0.514,0.494,-1,4.351,3.024,Thu Dec 14 15:41:43 2017,regr.nodeHarvest,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,698,19,cv,20,3,NA,5
+0.409,0.373,-1,NA,NA,Thu Dec 14 15:41:44 2017,regr.pcr,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,699,0,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 15:41:58 2017,regr.penalized.fusedlasso,1,1,Boston Housing,ignore,none,YeoJohnson,14
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 15:42:10 2017,regr.penalized.lasso,1,1,Boston Housing,ignore,none,YeoJohnson,26
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 15:42:22 2017,regr.penalized.ridge,1,1,Boston Housing,ignore,none,YeoJohnson,39
+0.409,0.373,-1,NA,NA,Thu Dec 14 15:42:23 2017,regr.plsr,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,703,0,cv,20,3,NA,5
+0.656,0.629,3.356,3.19,2.142,Thu Dec 14 15:43:53 2017,regr.randomForest,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,random,704,90,cv,20,3,NA,5,1,5
+0.639,0.595,-1,3.487,2.246,Thu Dec 14 15:43:56 2017,regr.randomForestSRC,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,705,3,cv,20,3,NA,5
+0.652,0.625,3.637,3.227,2.167,Thu Dec 14 15:45:16 2017,regr.ranger,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,random,706,79,cv,20,3,NA,5,5,2
+0.463,0.447,-1,4.754,3.34,Thu Dec 14 15:45:19 2017,regr.rknn,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,707,2,cv,20,3,NA,5
+0.512,0.457,4.541,4.675,3.035,Thu Dec 14 15:45:24 2017,regr.rpart,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,random,708,5,cv,20,3,NA,5,0.00219810125379241,11,12,30
+0.646,0.616,3.545,3.302,2.2,Thu Dec 14 15:46:49 2017,regr.RRF,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,random,709,84,cv,20,3,NA,5,4,0.777959691127762
+0.409,0.373,-1,NA,NA,Thu Dec 14 15:46:50 2017,regr.rsm,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,710,1,cv,20,3,NA,5
+0.298,0.302,-1,NA,NA,Thu Dec 14 15:46:56 2017,regr.rvm,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,711,6,cv,20,3,NA,5
+0.374,0.357,-1,NA,NA,Thu Dec 14 15:47:01 2017,regr.slim,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,712,5,cv,20,3,NA,5
+0.572,0.488,3.557,NA,NA,Thu Dec 14 15:47:17 2017,regr.svm,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,random,713,15,cv,20,3,NA,5,535.116272714359,0.00589073923165466
+0.645,0.591,4.208,3.521,2.21,Thu Dec 14 15:51:18 2017,regr.xgboost,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,random,714,240,cv,20,3,NA,5,84,10,0.0632502703901846,4.50919662136585,0.487537808064371,7.81118699349463,0.50167526176665
+NA,NA,-1,NA,NA,Thu Dec 14 15:51:19 2017,regr.xyf,1,1,Boston Housing,ignore,none,YeoJohnson,8.60249325719003,nohyperparam,715,0,cv,20,3,NA,5
+0.62,0.597,-1,NA,NA,Thu Dec 14 15:52:08 2017,regr.bartMachine,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,716,43,cv,20,3,NA,5
+0.393,0.36,-1,5.626,3.766,Thu Dec 14 15:52:13 2017,regr.bcart,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,717,2,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 15:52:14 2017,regr.bdk,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,718,0,cv,20,3,NA,5
+0.619,0.55,-1,NA,NA,Thu Dec 14 16:19:58 2017,regr.bgpllm,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,719,1663,cv,20,3,NA,5
+0.603,0.602,3.612,NA,NA,Thu Dec 14 16:23:27 2017,regr.blackboost,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,random,720,209,cv,20,3,NA,5,2,727
+0.454,0.438,-1,NA,NA,Thu Dec 14 16:23:32 2017,regr.blm,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,721,4,cv,20,3,NA,5
+0.581,0.574,-1,NA,NA,Thu Dec 14 16:23:33 2017,regr.brnn,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,722,1,cv,20,3,NA,5
+0.293,0.21,-1,6.945,4.382,Thu Dec 14 16:23:34 2017,regr.bst,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,723,1,cv,20,3,NA,5
+0.433,-0.152,-1,NA,NA,Thu Dec 14 16:23:44 2017,regr.btlm,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,724,10,cv,20,3,NA,5
+0.589,0.539,-1,4.051,2.546,Thu Dec 14 16:23:49 2017,regr.cforest,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,725,4,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 14 16:23:49 2017,regr.crs,1,1,Boston Housing,ignore,none,ICA,5
+0.495,0.467,-1,4.686,3.132,Thu Dec 14 16:23:50 2017,regr.ctree,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,727,0,cv,20,3,NA,5
+0.553,0.511,-1,NA,NA,Thu Dec 14 16:23:51 2017,regr.cubist,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,728,0,cv,20,3,NA,5
+0.495,0.471,-1,NA,NA,Thu Dec 14 16:23:52 2017,regr.cvglmnet,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,729,1,cv,20,3,NA,5
+0.579,0.574,-1,NA,NA,Thu Dec 14 16:23:52 2017,regr.earth,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,730,0,cv,20,3,NA,5
+-8875.074,-69993.143,-1,NA,NA,Thu Dec 14 16:23:53 2017,regr.elmNN,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,731,0,cv,20,3,NA,5
+0.548,0.504,-1,4.36,2.805,Thu Dec 14 16:24:42 2017,regr.evtree,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,732,49,cv,20,3,NA,5
+0.658,0.649,3.406,3.087,2.122,Thu Dec 14 16:31:53 2017,regr.extraTrees,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,random,733,431,cv,20,3,NA,5,3,9
+-0.028,0,-1,8.788,6.377,Thu Dec 14 16:31:56 2017,regr.featureless,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,734,0,cv,20,3,NA,5
+0.326,0.287,-1,6.263,4.18,Thu Dec 14 16:31:56 2017,regr.fnn,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,735,0,cv,20,3,NA,5
+0.499,0.51,-1,4.308,3.109,Thu Dec 14 16:33:19 2017,regr.frbs,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,736,82,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 16:33:22 2017,regr.gamboost,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,737,1,cv,20,3,NA,5
+0.62,0.585,-1,3.649,2.356,Thu Dec 14 16:33:24 2017,regr.gausspr,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,738,1,cv,20,3,NA,5
+0.59,0.559,4.037,NA,NA,Thu Dec 14 16:33:50 2017,regr.gbm,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,random,739,26,cv,20,3,NA,5,558,8,0.0649929876222741,14
+0.482,0.478,-1,NA,NA,Thu Dec 14 16:33:51 2017,regr.glm,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,740,1,cv,20,3,NA,5
+0.493,0.475,5.215,NA,NA,Thu Dec 14 16:33:58 2017,regr.glmboost,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,random,741,7,cv,20,3,NA,5,40,0.609260233817622
+0.482,0.478,4.967,NA,NA,Thu Dec 14 16:34:07 2017,regr.glmnet,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,random,742,8,cv,20,3,NA,5,0.35373694403097,0.00239074118616421
+0.588,0.594,-1,NA,NA,Thu Dec 14 16:34:20 2017,regr.h2o.deeplearning,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,743,13,cv,20,3,NA,5
+0.619,0.573,-1,NA,NA,Thu Dec 14 16:34:25 2017,regr.h2o.gbm,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,744,4,cv,20,3,NA,5
+0.487,0.48,-1,NA,NA,Thu Dec 14 16:34:28 2017,regr.h2o.glm,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,745,3,cv,20,3,NA,5
+0.621,0.584,-1,3.657,2.348,Thu Dec 14 16:34:33 2017,regr.h2o.randomForest,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,746,5,cv,20,3,NA,5
+0.506,0.472,-1,4.638,3.065,Thu Dec 14 16:34:34 2017,regr.IBk,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,747,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 16:34:49 2017,regr.kknn,1,1,Boston Housing,ignore,none,ICA,15
+0.414,0.387,-1,NA,NA,Thu Dec 14 16:35:34 2017,regr.km,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,749,45,cv,20,3,NA,5
+0.674,0.683,3.676,NA,NA,Thu Dec 14 16:35:44 2017,regr.ksvm,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,random,750,9,cv,20,3,NA,5,18.5435164112019,0.0402809145933902
+0.484,0.424,-1,NA,NA,Thu Dec 14 16:36:26 2017,regr.laGP,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,751,43,cv,20,3,NA,5
+-0.249,-0.024,-1,9.001,7.747,Thu Dec 14 16:36:29 2017,regr.LiblineaRL2L1SVR,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,752,2,cv,20,3,NA,5
+-0.058,-0.004,-1,NA,NA,Thu Dec 14 16:36:29 2017,regr.LiblineaRL2L2SVR,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,753,0,cv,20,3,NA,5
+0.482,0.478,-1,NA,NA,Thu Dec 14 16:36:29 2017,regr.lm,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,754,0,cv,20,3,NA,5
+0.607,0.546,-1,3.992,2.436,Thu Dec 14 16:36:30 2017,regr.mars,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,755,0,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 16:36:37 2017,regr.mob,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,756,7,cv,20,3,NA,5
+0.26,0.283,5.876,6.3,4.588,Thu Dec 14 16:36:59 2017,regr.nnet,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,random,757,22,cv,20,3,NA,5,5,0.111684722124838
+0.56,0.526,-1,4.169,2.728,Thu Dec 14 16:37:26 2017,regr.nodeHarvest,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,758,26,cv,20,3,NA,5
+0.482,0.478,-1,NA,NA,Thu Dec 14 16:37:26 2017,regr.pcr,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,759,0,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 16:37:40 2017,regr.penalized.fusedlasso,1,1,Boston Housing,ignore,none,ICA,14
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 16:37:52 2017,regr.penalized.lasso,1,1,Boston Housing,ignore,none,ICA,26
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 16:38:04 2017,regr.penalized.ridge,1,1,Boston Housing,ignore,none,ICA,38
+0.482,0.478,-1,NA,NA,Thu Dec 14 16:38:05 2017,regr.plsr,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,763,0,cv,20,3,NA,5
+0.631,0.604,3.654,3.477,2.288,Thu Dec 14 16:39:54 2017,regr.randomForest,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,random,764,109,cv,20,3,NA,5,2,5
+0.622,0.6,-1,3.512,2.343,Thu Dec 14 16:39:57 2017,regr.randomForestSRC,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,765,3,cv,20,3,NA,5
+0.632,0.606,3.471,3.461,2.28,Thu Dec 14 16:41:16 2017,regr.ranger,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,random,766,78,cv,20,3,NA,5,6,2
+NA,NA,-1,NA,NA,Thu Dec 14 16:41:16 2017,regr.rknn,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,767,0,cv,20,3,NA,5
+0.497,0.429,4.715,5.014,3.119,Thu Dec 14 16:41:22 2017,regr.rpart,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,random,768,5,cv,20,3,NA,5,0.00342019592328517,10,10,17
+0.629,0.607,3.429,3.457,2.298,Thu Dec 14 16:43:01 2017,regr.RRF,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,random,769,99,cv,20,3,NA,5,6,0.301930845947936
+0.482,0.478,-1,NA,NA,Thu Dec 14 16:43:02 2017,regr.rsm,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,770,0,cv,20,3,NA,5
+0.395,0.387,-1,NA,NA,Thu Dec 14 16:43:08 2017,regr.rvm,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,771,6,cv,20,3,NA,5
+0.46,0.423,-1,5.074,3.347,Thu Dec 14 16:43:13 2017,regr.slim,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,772,5,cv,20,3,NA,5
+0.648,0.604,4.059,NA,NA,Thu Dec 14 16:43:22 2017,regr.svm,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,random,773,9,cv,20,3,NA,5,7.53346392163981,0.00939154424139058
+0.586,0.567,3.599,3.803,2.568,Thu Dec 14 16:47:01 2017,regr.xgboost,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,random,774,218,cv,20,3,NA,5,2813,5,0.145669259769842,5.81961138173938,0.30484739234671,14.6055726939812,0.943763659044635
+NA,NA,-1,NA,NA,Thu Dec 14 16:47:01 2017,regr.xyf,1,1,Boston Housing,ignore,none,ICA,8.78791919853614,nohyperparam,775,0,cv,20,3,NA,5
+0.449,0.478,-1,NA,NA,Thu Dec 14 16:47:24 2017,regr.bartMachine,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,776,17,cv,20,3,NA,5
+0.257,0.21,-1,6.495,4.523,Thu Dec 14 16:47:27 2017,regr.bcart,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,777,2,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 16:47:27 2017,regr.bdk,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,778,0,cv,20,3,NA,5
+0.683,0.68,-1,2.634,1.927,Thu Dec 14 17:15:54 2017,regr.bgpllm,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,779,1706,cv,20,3,NA,5
+0.627,0.606,0.417,NA,NA,Thu Dec 14 17:18:23 2017,regr.blackboost,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,random,780,149,cv,20,3,NA,5,8,309
+0.467,0.416,-1,4.803,3.243,Thu Dec 14 17:18:28 2017,regr.blm,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,781,5,cv,20,3,NA,5
+0.538,0.504,-1,4.077,2.815,Thu Dec 14 17:18:29 2017,regr.brnn,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,782,1,cv,20,3,NA,5
+0.436,0.349,-1,5.354,3.43,Thu Dec 14 17:18:30 2017,regr.bst,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,783,1,cv,20,3,NA,5
+0.531,0.496,-1,NA,NA,Thu Dec 14 17:18:38 2017,regr.btlm,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,784,8,cv,20,3,NA,5
+0.579,0.534,-1,3.83,2.562,Thu Dec 14 17:18:43 2017,regr.cforest,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,785,4,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 14 17:18:43 2017,regr.crs,1,1,Boston Housing,ignore,none,centernscale,5
+0.471,0.427,-1,4.711,3.221,Thu Dec 14 17:18:44 2017,regr.ctree,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,787,0,cv,20,3,NA,5
+0.621,0.498,-1,4.124,2.305,Thu Dec 14 17:18:45 2017,regr.cubist,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,788,0,cv,20,3,NA,5
+0.429,0.347,-1,5.366,3.477,Thu Dec 14 17:18:46 2017,regr.cvglmnet,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,789,1,cv,20,3,NA,5
+0.591,0.607,-1,3.233,2.492,Thu Dec 14 17:18:47 2017,regr.earth,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,790,0,cv,20,3,NA,5
+0.078,0.043,-1,7.867,5.61,Thu Dec 14 17:18:47 2017,regr.elmNN,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,791,0,cv,20,3,NA,5
+0.534,0.503,-1,4.084,2.836,Thu Dec 14 17:19:13 2017,regr.evtree,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,792,25,cv,20,3,NA,5
+0.655,0.64,0.386,2.962,2.101,Thu Dec 14 17:24:46 2017,regr.extraTrees,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,random,793,333,cv,20,3,NA,5,4,13
+-0.021,-0.003,-1,8.242,6.213,Thu Dec 14 17:24:48 2017,regr.featureless,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,794,1,cv,20,3,NA,5
+0.56,0.506,-1,4.063,2.679,Thu Dec 14 17:24:48 2017,regr.fnn,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,795,0,cv,20,3,NA,5
+0.379,0.34,-1,5.424,3.778,Thu Dec 14 17:26:09 2017,regr.frbs,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,796,81,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 17:26:10 2017,regr.gamboost,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,797,1,cv,20,3,NA,5
+0.583,0.533,-1,3.835,2.538,Thu Dec 14 17:26:11 2017,regr.gausspr,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,798,1,cv,20,3,NA,5
+0.608,0.593,0.425,3.348,2.384,Thu Dec 14 17:26:29 2017,regr.gbm,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,random,799,18,cv,20,3,NA,5,35,8,0.135958129348001,10
+0.469,0.409,-1,4.857,3.234,Thu Dec 14 17:26:29 2017,regr.glm,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,800,0,cv,20,3,NA,5
+0.469,0.409,0.549,4.857,3.234,Thu Dec 14 17:26:37 2017,regr.glmboost,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,random,801,7,cv,20,3,NA,5,400,0.976199873490259
+0.47,0.408,0.549,4.867,3.223,Thu Dec 14 17:26:42 2017,regr.glmnet,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,random,802,5,cv,20,3,NA,5,0.168121750000864,0.00307616986871164
+0.377,0.408,-1,4.87,3.793,Thu Dec 14 17:26:57 2017,regr.h2o.deeplearning,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,803,15,cv,20,3,NA,5
+0.629,0.615,-1,3.162,2.261,Thu Dec 14 17:27:02 2017,regr.h2o.gbm,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,804,4,cv,20,3,NA,5
+0.47,0.408,-1,4.865,3.224,Thu Dec 14 17:27:05 2017,regr.h2o.glm,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,805,3,cv,20,3,NA,5
+0.64,0.626,-1,3.076,2.192,Thu Dec 14 17:27:10 2017,regr.h2o.randomForest,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,806,5,cv,20,3,NA,5
+0.488,0.45,-1,4.523,3.114,Thu Dec 14 17:27:11 2017,regr.IBk,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,807,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 17:27:25 2017,regr.kknn,1,1,Boston Housing,ignore,none,centernscale,15
+0.635,0.63,-1,3.042,2.224,Thu Dec 14 17:29:33 2017,regr.km,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,809,128,cv,20,3,NA,5
+0.648,0.596,0.418,NA,NA,Thu Dec 14 17:29:43 2017,regr.ksvm,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,random,810,10,cv,20,3,NA,5,30.7525213833477,0.0210030836234533
+0.628,0.602,-1,NA,NA,Thu Dec 14 17:30:24 2017,regr.laGP,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,811,41,cv,20,3,NA,5
+0.509,0.384,-1,5.064,2.986,Thu Dec 14 17:30:25 2017,regr.LiblineaRL2L1SVR,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,812,1,cv,20,3,NA,5
+0.44,0.403,-1,4.91,3.408,Thu Dec 14 17:30:26 2017,regr.LiblineaRL2L2SVR,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,813,0,cv,20,3,NA,5
+0.469,0.409,-1,4.857,3.234,Thu Dec 14 17:30:26 2017,regr.lm,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,814,0,cv,20,3,NA,5
+0.58,0.584,-1,3.416,2.556,Thu Dec 14 17:30:27 2017,regr.mars,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,815,0,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 17:30:34 2017,regr.mob,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,816,7,cv,20,3,NA,5
+0.658,0.659,0.382,NA,NA,Thu Dec 14 17:31:07 2017,regr.nnet,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,random,817,33,cv,20,3,NA,5,19,0.104830215078145
+0.519,0.492,-1,4.172,2.925,Thu Dec 14 17:31:32 2017,regr.nodeHarvest,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,818,25,cv,20,3,NA,5
+0.469,0.409,-1,4.857,3.234,Thu Dec 14 17:31:33 2017,regr.pcr,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,819,0,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 17:31:47 2017,regr.penalized.fusedlasso,1,1,Boston Housing,ignore,none,centernscale,14
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 17:31:59 2017,regr.penalized.lasso,1,1,Boston Housing,ignore,none,centernscale,26
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 17:32:19 2017,regr.penalized.ridge,1,1,Boston Housing,ignore,none,centernscale,47
+0.469,0.409,-1,4.857,3.234,Thu Dec 14 17:32:20 2017,regr.plsr,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,823,0,cv,20,3,NA,5
+0.61,0.581,0.362,3.443,2.373,Thu Dec 14 17:33:51 2017,regr.randomForest,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,random,824,91,cv,20,3,NA,5,2,13
+0.613,0.605,-1,3.243,2.358,Thu Dec 14 17:33:54 2017,regr.randomForestSRC,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,825,2,cv,20,3,NA,5
+0.627,0.619,0.373,3.129,2.272,Thu Dec 14 17:35:14 2017,regr.ranger,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,random,826,79,cv,20,3,NA,5,9,1
+NA,NA,-1,NA,NA,Thu Dec 14 17:35:14 2017,regr.rknn,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,827,0,cv,20,3,NA,5
+0.44,0.383,0.519,5.07,3.406,Thu Dec 14 17:35:20 2017,regr.rpart,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,random,828,5,cv,20,3,NA,5,0.00718335109077478,9,8,15
+0.628,0.618,0.364,3.136,2.267,Thu Dec 14 17:36:47 2017,regr.RRF,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,random,829,87,cv,20,3,NA,5,8,0.412632814608514
+0.469,0.409,-1,4.857,3.234,Thu Dec 14 17:36:47 2017,regr.rsm,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,830,0,cv,20,3,NA,5
+0.626,0.613,-1,3.184,2.279,Thu Dec 14 17:36:51 2017,regr.rvm,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,831,4,cv,20,3,NA,5
+0.407,0.334,-1,5.474,3.606,Thu Dec 14 17:36:53 2017,regr.slim,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,832,2,cv,20,3,NA,5
+0.635,0.57,0.407,NA,NA,Thu Dec 14 17:37:11 2017,regr.svm,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,random,833,17,cv,20,3,NA,5,101.249707293937,0.010872968667855
+0.609,0.596,0.418,3.323,2.379,Thu Dec 14 17:38:48 2017,regr.xgboost,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,random,834,97,cv,20,3,NA,5,30,5,0.227226221476449,0.147878830321133,0.473041580244899,16.7262972891331,0.843396556680091
+NA,NA,-1,NA,NA,Thu Dec 14 17:38:48 2017,regr.xyf,1,1,Boston Housing,ignore,none,centernscale,8.22001327492845,nohyperparam,835,0,cv,20,3,NA,5
+0.686,0.684,-1,NA,NA,Thu Dec 14 17:39:31 2017,regr.bartMachine,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,836,37,cv,20,3,NA,5
+0.473,0.441,-1,4.886,3.437,Thu Dec 14 17:39:56 2017,regr.bcart,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,837,25,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 17:39:57 2017,regr.bdk,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,838,0,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 17:39:57 2017,regr.bgpllm,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,839,0,cv,20,3,NA,5
+0.683,0.667,1.468,NA,NA,Thu Dec 14 17:43:13 2017,regr.blackboost,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,random,840,195,cv,20,3,NA,5,9,847
+NA,NA,-1,NA,NA,Thu Dec 14 17:43:13 2017,regr.blm,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,841,0,cv,20,3,NA,5
+0.666,0.641,-1,NA,NA,Thu Dec 14 17:43:14 2017,regr.brnn,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,842,0,cv,20,3,NA,5
+0.222,0.213,-1,7.78,5.206,Thu Dec 14 17:43:15 2017,regr.bst,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,843,1,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 17:43:17 2017,regr.btlm,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,844,0,cv,20,3,NA,5
+0.629,0.602,-1,3.712,2.451,Thu Dec 14 17:43:22 2017,regr.cforest,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,845,5,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 14 17:43:23 2017,regr.crs,1,1,Boston Housing,ignore,none,expoTrans,6
+0.592,0.567,-1,4.023,2.729,Thu Dec 14 17:43:23 2017,regr.ctree,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,847,0,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 17:43:24 2017,regr.cubist,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,848,0,cv,20,3,NA,5
+0.53,0.523,-1,4.522,3.173,Thu Dec 14 17:43:25 2017,regr.cvglmnet,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,849,1,cv,20,3,NA,5
+0.67,0.642,-1,3.227,2.168,Thu Dec 14 17:43:26 2017,regr.earth,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,850,0,cv,20,3,NA,5
+-0.019,-0.03,-1,NA,NA,Thu Dec 14 17:43:26 2017,regr.elmNN,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,851,0,cv,20,3,NA,5
+0.558,0.529,-1,3.993,2.814,Thu Dec 14 17:44:03 2017,regr.evtree,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,852,37,cv,20,3,NA,5
+0.706,0.689,1.374,2.577,1.851,Thu Dec 14 17:50:37 2017,regr.extraTrees,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,random,853,394,cv,20,3,NA,5,4,15
+0,-0.001,-1,9.077,6.519,Thu Dec 14 17:50:46 2017,regr.featureless,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,854,9,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,Fail,Thu Dec 14 17:50:48 2017,regr.fnn,1,1,Boston Housing,ignore,none,expoTrans,0
+0.483,0.486,-1,4.951,3.52,Thu Dec 14 17:52:16 2017,regr.frbs,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,856,88,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 17:52:18 2017,regr.gamboost,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,857,1,cv,20,3,NA,5
+0.66,0.625,-1,3.372,2.2,Thu Dec 14 17:52:19 2017,regr.gausspr,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,858,1,cv,20,3,NA,5
+0.715,0.698,1.418,2.459,1.804,Thu Dec 14 17:52:35 2017,regr.gbm,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,random,859,15,cv,20,3,NA,5,267,8,0.0635327072469518,6
+0.551,0.555,-1,4.053,2.997,Thu Dec 14 17:52:35 2017,regr.glm,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,860,0,cv,20,3,NA,5
+0.552,0.556,1.781,4.081,3.002,Thu Dec 14 17:52:50 2017,regr.glmboost,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,random,861,14,cv,20,3,NA,5,113,0.715672795893624
+0.551,0.554,1.813,4.068,2.996,Thu Dec 14 17:52:55 2017,regr.glmnet,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,random,862,5,cv,20,3,NA,5,0.277352999895811,0.0143746762392582
+0.589,0.581,-1,NA,NA,Thu Dec 14 17:53:17 2017,regr.h2o.deeplearning,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,863,22,cv,20,3,NA,5
+0.671,0.655,-1,2.855,2.072,Thu Dec 14 17:53:22 2017,regr.h2o.gbm,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,864,4,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Dec 14 17:53:26 2017,regr.h2o.glm,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,865,4,cv,20,3,NA,5
+0.705,0.676,-1,2.796,1.875,Thu Dec 14 17:53:32 2017,regr.h2o.randomForest,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,866,5,cv,20,3,NA,5
+0.568,0.539,-1,4.21,2.834,Thu Dec 14 17:53:33 2017,regr.IBk,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,867,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 14 17:53:48 2017,regr.kknn,1,1,Boston Housing,ignore,none,expoTrans,16
+0.534,0.529,-1,4.339,3.099,Thu Dec 14 17:53:59 2017,regr.km,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,869,10,cv,20,3,NA,5
+0.71,0.648,1.429,NA,NA,Thu Dec 14 17:54:21 2017,regr.ksvm,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,random,870,22,cv,20,3,NA,5,885.930660561118,0.00415965089512015
+NA,NA,-1,NA,NA,Thu Dec 14 17:54:22 2017,regr.laGP,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,871,0,cv,20,3,NA,5
+-1.88439272127685e+157,-Inf,-1,NA,NA,Thu Dec 14 17:54:24 2017,regr.LiblineaRL2L1SVR,1,1,Boston Housing,ignore,none,expoTrans,9.02036274215178,nohyperparam,872,2,cv,20,3,NA,5
+0.556,0.535,-1,4.521,3.082,Sun Dec 17 18:37:17 2017,regr.lm,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,nohyperparam,539,4,cv,20,3,NA,5
+0.618,0.58,-1,NA,NA,Sun Dec 17 18:37:26 2017,regr.mars,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,nohyperparam,540,4,cv,20,3,NA,5
+0.556,0.535,-1,4.521,3.082,Sun Dec 17 18:37:36 2017,regr.mob,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,nohyperparam,541,4,cv,20,3,NA,5
+0.007,0.004,3.436,9.507,6.663,Sun Dec 17 18:38:02 2017,regr.nnet,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,random,542,21,cv,20,3,NA,5,1,0.942960032824158
+0.538,0.491,-1,5.369,3.184,Sun Dec 17 18:38:36 2017,regr.nodeHarvest,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,nohyperparam,543,30,cv,20,3,NA,5
+NaN,NaN,-1,NA,NA,Sun Dec 17 18:38:44 2017,regr.pcr,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,nohyperparam,544,4,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 18:38:53 2017,regr.penalized.fusedlasso,1,1,Boston Housing,ignore,none,expoTrans,13
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 18:39:01 2017,regr.penalized.lasso,1,1,Boston Housing,ignore,none,expoTrans,21
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 18:39:09 2017,regr.penalized.ridge,1,1,Boston Housing,ignore,none,expoTrans,29
+NaN,NaN,-1,NA,NA,Sun Dec 17 18:39:19 2017,regr.plsr,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,nohyperparam,548,5,cv,20,3,NA,5
+0.633,0.586,1.327,4.373,2.536,Sun Dec 17 18:41:00 2017,regr.randomForest,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,random,549,97,cv,20,3,NA,5,2,7
+0.637,0.587,-1,4.454,2.498,Sun Dec 17 18:41:11 2017,regr.randomForestSRC,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,nohyperparam,550,6,cv,20,3,NA,5
+0.64,0.598,1.348,4.296,2.475,Sun Dec 17 18:42:30 2017,regr.ranger,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,random,551,75,cv,20,3,NA,5,5,1
+NA,NA,-1,NA,NA,Sun Dec 17 18:42:38 2017,regr.rknn,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,nohyperparam,552,4,cv,20,3,NA,5
+0.534,0.513,1.76,5.177,3.219,Sun Dec 17 18:42:51 2017,regr.rpart,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,random,553,9,cv,20,3,NA,5,0.00104885815610784,17,7,17
+0.641,0.591,1.279,4.294,2.482,Sun Dec 17 18:44:31 2017,regr.RRF,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,random,554,96,cv,20,3,NA,5,7,0.739077982958406
+0.556,0.535,-1,4.521,3.082,Sun Dec 17 18:44:40 2017,regr.rsm,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,nohyperparam,555,4,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Sun Dec 17 18:45:08 2017,regr.rvm,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,nohyperparam,556,24,cv,20,3,NA,5
+0.487,0.473,-1,5.42,3.545,Sun Dec 17 18:45:20 2017,regr.slim,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,nohyperparam,557,7,cv,20,3,NA,5
+0.644,0.595,1.536,NA,NA,Sun Dec 17 18:45:39 2017,regr.svm,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,random,558,16,cv,20,3,NA,5,185.93740296424,0.025411480035518
+0.668,0.623,1.282,3.548,2.187,Sun Dec 17 18:48:33 2017,regr.xgboost,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,random,559,169,cv,20,3,NA,5,798,9,0.0259626619722694,1.96067927870899,0.592181635834277,6.7929734615609,0.946476349898148
+NA,NA,-1,NA,NA,Sun Dec 17 18:48:42 2017,regr.xyf,1,1,Boston Housing,ignore,none,expoTrans,9.43930505916617,nohyperparam,560,4,cv,20,3,NA,5
+0.668,0.679,-1,2.771,2.032,Sun Dec 17 18:49:06 2017,regr.bartMachine,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,561,13,cv,20,3,NA,5
+0.43,0.429,-1,4.932,3.487,Sun Dec 17 18:49:16 2017,regr.bcart,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,562,7,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Sun Dec 17 18:49:20 2017,regr.bdk,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,563,2,cv,20,3,NA,5
+0.669,0.59,-1,3.535,2.022,Sun Dec 17 19:15:31 2017,regr.bgpllm,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,564,1568,cv,20,3,NA,5
+0.68,0.695,0.087,2.634,1.953,Sun Dec 17 19:18:00 2017,regr.blackboost,1,1,Boston Housing,ignore,none,range01,8.63149210739371,random,565,146,cv,20,3,NA,5,5,59
+0.441,0.454,-1,4.716,3.415,Sun Dec 17 19:18:09 2017,regr.blm,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,566,6,cv,20,3,NA,5
+0.581,0.625,-1,3.24,2.559,Sun Dec 17 19:18:15 2017,regr.brnn,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,567,2,cv,20,3,NA,5
+0.292,0.291,-1,6.119,4.326,Sun Dec 17 19:18:20 2017,regr.bst,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,568,3,cv,20,3,NA,5
+0.567,0.531,-1,4.05,2.644,Sun Dec 17 19:18:34 2017,regr.btlm,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,569,12,cv,20,3,NA,5
+0.649,0.683,-1,2.735,2.148,Sun Dec 17 19:18:43 2017,regr.cforest,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,570,6,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 19:18:53 2017,regr.crs,1,1,Boston Housing,ignore,none,range01,16
+0.558,0.574,-1,3.677,2.705,Sun Dec 17 19:18:59 2017,regr.ctree,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,572,2,cv,20,3,NA,5
+0.674,0.682,-1,NA,NA,Sun Dec 17 19:19:04 2017,regr.cubist,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,573,3,cv,20,3,NA,5
+0.429,0.479,-1,NA,NA,Sun Dec 17 19:19:11 2017,regr.cvglmnet,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,574,4,cv,20,3,NA,5
+0.632,0.663,-1,2.906,2.249,Sun Dec 17 19:19:17 2017,regr.earth,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,575,3,cv,20,3,NA,5
+-0.277,-0.193,-1,10.295,7.809,Sun Dec 17 19:19:21 2017,regr.elmNN,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,576,2,cv,20,3,NA,5
+0.525,0.536,-1,4.009,2.901,Sun Dec 17 19:20:09 2017,regr.evtree,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,577,45,cv,20,3,NA,5
+0.693,0.709,0.081,2.513,1.878,Sun Dec 17 19:27:39 2017,regr.extraTrees,1,1,Boston Housing,ignore,none,range01,8.63149210739371,random,578,447,cv,20,3,NA,5,3,7
+-0.022,-0.001,-1,8.636,6.251,Sun Dec 17 19:27:44 2017,regr.featureless,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,579,2,cv,20,3,NA,5
+0.588,0.584,-1,3.586,2.519,Sun Dec 17 19:27:49 2017,regr.fnn,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,580,2,cv,20,3,NA,5
+0.448,0.484,-1,4.452,3.376,Sun Dec 17 19:29:26 2017,regr.frbs,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,581,94,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Sun Dec 17 19:29:34 2017,regr.gamboost,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,582,5,cv,20,3,NA,5
+0.672,0.677,-1,2.786,2.007,Sun Dec 17 19:29:39 2017,regr.gausspr,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,583,3,cv,20,3,NA,5
+0.699,0.713,0.079,2.476,1.841,Sun Dec 17 19:30:04 2017,regr.gbm,1,1,Boston Housing,ignore,none,range01,8.63149210739371,random,584,22,cv,20,3,NA,5,301,5,0.0345271158011164,7
+0.458,0.512,-1,NA,NA,Sun Dec 17 19:30:09 2017,regr.glm,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,585,2,cv,20,3,NA,5
+0.46,0.513,0.114,NA,NA,Sun Dec 17 19:30:24 2017,regr.glmboost,1,1,Boston Housing,ignore,none,range01,8.63149210739371,random,586,13,cv,20,3,NA,5,563,0.236931494437158
+0.46,0.512,0.114,NA,NA,Sun Dec 17 19:30:34 2017,regr.glmnet,1,1,Boston Housing,ignore,none,range01,8.63149210739371,random,587,7,cv,20,3,NA,5,0.0670054664369673,0.00153039700035926
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 19:30:36 2017,regr.h2o.deeplearning,1,1,Boston Housing,ignore,none,range01,10
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 19:30:39 2017,regr.h2o.gbm,1,1,Boston Housing,ignore,none,range01,12
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 19:30:41 2017,regr.h2o.glm,1,1,Boston Housing,ignore,none,range01,15
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 19:30:44 2017,regr.h2o.randomForest,1,1,Boston Housing,ignore,none,range01,17
+0.483,0.451,-1,4.741,3.163,Sun Dec 17 19:30:54 2017,regr.IBk,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,592,3,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 19:30:56 2017,regr.kknn,1,1,Boston Housing,ignore,none,range01,6
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 19:30:59 2017,regr.km,1,1,Boston Housing,ignore,none,range01,8
+0.643,0.661,0.087,NA,NA,Sun Dec 17 19:31:17 2017,regr.ksvm,1,1,Boston Housing,ignore,none,range01,8.63149210739371,random,595,16,cv,20,3,NA,5,73.9424372247419,0.106238599479388
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 19:31:20 2017,regr.laGP,1,1,Boston Housing,ignore,none,range01,18
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 19:31:22 2017,regr.LiblineaRL2L1SVR,1,1,Boston Housing,ignore,none,range01,21
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 19:31:25 2017,regr.LiblineaRL2L2SVR,1,1,Boston Housing,ignore,none,range01,23
+0.458,0.512,-1,NA,NA,Sun Dec 17 19:31:29 2017,regr.lm,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,599,2,cv,20,3,NA,5
+0.612,0.646,-1,3.059,2.37,Sun Dec 17 19:31:35 2017,regr.mars,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,600,3,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Sun Dec 17 19:31:51 2017,regr.mob,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,601,13,cv,20,3,NA,5
+0.699,0.693,0.079,2.652,1.841,Sun Dec 17 19:32:25 2017,regr.nnet,1,1,Boston Housing,ignore,none,range01,8.63149210739371,random,602,32,cv,20,3,NA,5,13,0.0063300034973764
+0.563,0.603,-1,3.425,2.673,Sun Dec 17 19:32:54 2017,regr.nodeHarvest,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,603,26,cv,20,3,NA,5
+0.458,0.512,-1,NA,NA,Sun Dec 17 19:32:59 2017,regr.pcr,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,604,2,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 19:33:06 2017,regr.penalized.fusedlasso,1,1,Boston Housing,ignore,none,range01,9
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 19:33:13 2017,regr.penalized.lasso,1,1,Boston Housing,ignore,none,range01,16
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 19:33:20 2017,regr.penalized.ridge,1,1,Boston Housing,ignore,none,range01,23
+0.458,0.512,-1,NA,NA,Sun Dec 17 19:33:26 2017,regr.plsr,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,608,3,cv,20,3,NA,5
+0.694,0.719,0.077,2.43,1.872,Sun Dec 17 19:35:04 2017,regr.randomForest,1,1,Boston Housing,ignore,none,range01,8.63149210739371,random,609,95,cv,20,3,NA,5,2,5
+0.693,0.728,-1,2.351,1.878,Sun Dec 17 19:35:14 2017,regr.randomForestSRC,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,610,8,cv,20,3,NA,5
+0.689,0.701,0.082,2.583,1.899,Sun Dec 17 19:36:25 2017,regr.ranger,1,1,Boston Housing,ignore,none,range01,8.63149210739371,random,611,68,cv,20,3,NA,5,11,2
+0.537,0.563,-1,3.771,2.829,Sun Dec 17 19:36:32 2017,regr.rknn,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,612,4,cv,20,3,NA,5
+0.556,0.594,0.115,3.503,2.716,Sun Dec 17 19:36:42 2017,regr.rpart,1,1,Boston Housing,ignore,none,range01,8.63149210739371,random,613,7,cv,20,3,NA,5,0.00489193212957936,16,10,10
+0.695,0.703,0.079,2.566,1.864,Sun Dec 17 19:38:12 2017,regr.RRF,1,1,Boston Housing,ignore,none,range01,8.63149210739371,random,614,87,cv,20,3,NA,5,10,0.782488995231688
+0.458,0.512,-1,NA,NA,Sun Dec 17 19:38:17 2017,regr.rsm,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,615,3,cv,20,3,NA,5
+0.647,0.681,-1,2.75,2.158,Sun Dec 17 19:38:26 2017,regr.rvm,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,616,6,cv,20,3,NA,5
+0.379,0.429,-1,NA,NA,Sun Dec 17 19:38:32 2017,regr.slim,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,617,4,cv,20,3,NA,5
+0.739,0.751,0.09,2.148,1.595,Sun Dec 17 19:38:53 2017,regr.svm,1,1,Boston Housing,ignore,none,range01,8.63149210739371,random,618,18,cv,20,3,NA,5,4.98130266080252,0.0395084457995048
+0.345,0.344,0.149,5.664,4.006,Sun Dec 17 19:40:59 2017,regr.xgboost,1,1,Boston Housing,ignore,none,range01,8.63149210739371,random,619,123,cv,20,3,NA,5,302,4,0.584788889193675,2.25316636264324,0.572941950429231,2.84655496478081,0.633557947585359
+NA,NA,-1,NA,NA,Sun Dec 17 19:41:04 2017,regr.xyf,1,1,Boston Housing,ignore,none,range01,8.63149210739371,nohyperparam,620,3,cv,20,3,NA,5
+0.671,0.662,-1,3.207,2.187,Sun Dec 17 19:41:41 2017,regr.bartMachine,1,1,Boston Housing,ignore,none,asis,9.47889465285906,nohyperparam,621,28,cv,20,3,NA,5
+0.392,0.345,-1,6.207,4.048,Sun Dec 17 19:41:48 2017,regr.bcart,1,1,Boston Housing,ignore,none,asis,9.47889465285906,nohyperparam,622,5,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Sun Dec 17 19:41:53 2017,regr.bdk,1,1,Boston Housing,ignore,none,asis,9.47889465285906,nohyperparam,623,2,cv,20,3,NA,5
+0.704,0.71,-1,2.314,1.813,Sun Dec 17 20:00:12 2017,regr.bartMachine,1,1,Boston Housing,ignore,none,YeoJohnson,7.98096735991321,nohyperparam,306,11,cv,20,3,NA,5
+0.383,0.393,-1,4.844,3.777,Sun Dec 17 20:00:15 2017,regr.bcart,1,1,Boston Housing,ignore,none,YeoJohnson,7.98096735991321,nohyperparam,307,3,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Sun Dec 17 20:00:16 2017,regr.bdk,1,1,Boston Housing,ignore,none,YeoJohnson,7.98096735991321,nohyperparam,308,0,cv,20,3,NA,5
+0.668,0.563,-1,3.706,2.054,Sun Dec 17 20:44:20 2017,regr.bgpllm,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,548,1637,cv,20,3,NA,5
+0.619,0.514,3.324,4.125,2.354,Sun Dec 17 20:46:27 2017,regr.blackboost,1,1,Boston Housing,ignore,none,asis,8.4797231652926,random,549,123,cv,20,3,NA,5,4,707
+0.427,0.385,-1,NA,NA,Sun Dec 17 20:46:38 2017,regr.blm,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,550,8,cv,20,3,NA,5
+0.57,0.533,-1,NA,NA,Sun Dec 17 20:46:42 2017,regr.brnn,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,551,2,cv,20,3,NA,5
+0.323,0.228,-1,6.546,4.186,Sun Dec 17 20:46:47 2017,regr.bst,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,552,2,cv,20,3,NA,5
+0.516,0.452,-1,4.65,2.994,Sun Dec 17 20:47:00 2017,regr.btlm,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,553,10,cv,20,3,NA,5
+0.621,0.456,-1,4.61,2.347,Sun Dec 17 20:47:08 2017,regr.cforest,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,554,6,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 20:47:16 2017,regr.crs,1,1,Boston Housing,ignore,none,asis,14
+0.533,0.412,-1,4.983,2.887,Sun Dec 17 20:47:21 2017,regr.ctree,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,556,2,cv,20,3,NA,5
+0.577,0.468,-1,4.512,2.618,Sun Dec 17 20:47:26 2017,regr.cubist,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,557,3,cv,20,3,NA,5
+0.453,0.393,-1,NA,NA,Sun Dec 17 20:47:32 2017,regr.cvglmnet,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,558,3,cv,20,3,NA,5
+0.603,0.53,-1,3.984,2.458,Sun Dec 17 20:47:37 2017,regr.earth,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,559,3,cv,20,3,NA,5
+-0.411,-0.412,-1,NA,NA,Sun Dec 17 20:47:41 2017,regr.elmNN,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,560,2,cv,20,3,NA,5
+0.502,0.415,-1,4.958,3.08,Sun Dec 17 20:48:08 2017,regr.evtree,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,561,25,cv,20,3,NA,5
+0.659,0.539,3.021,3.912,2.11,Sun Dec 17 20:53:33 2017,regr.extraTrees,1,1,Boston Housing,ignore,none,asis,8.4797231652926,random,562,320,cv,20,3,NA,5,7,4
+-0.015,-0.003,-1,8.507,6.277,Sun Dec 17 20:53:38 2017,regr.featureless,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,563,2,cv,20,3,NA,5
+0.232,0.182,-1,6.937,4.749,Sun Dec 17 20:53:42 2017,regr.fnn,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,564,2,cv,20,3,NA,5
+0.43,0.368,-1,5.361,3.528,Sun Dec 17 20:55:19 2017,regr.frbs,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,565,95,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Sun Dec 17 20:55:25 2017,regr.gamboost,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,566,4,cv,20,3,NA,5
+0.634,0.545,-1,3.857,2.262,Sun Dec 17 20:55:30 2017,regr.gausspr,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,567,3,cv,20,3,NA,5
+0.57,0.507,3.628,NA,NA,Sun Dec 17 20:55:52 2017,regr.gbm,1,1,Boston Housing,ignore,none,asis,8.4797231652926,random,568,19,cv,20,3,NA,5,71,7,0.324679380735848,10
+0.435,0.402,-1,NA,NA,Sun Dec 17 20:55:56 2017,regr.glm,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,569,2,cv,20,3,NA,5
+0.455,0.408,4.943,NA,NA,Sun Dec 17 20:56:11 2017,regr.glmboost,1,1,Boston Housing,ignore,none,asis,8.4797231652926,random,570,12,cv,20,3,NA,5,147,0.38881626795046
+0.441,0.404,4.863,NA,NA,Sun Dec 17 20:56:20 2017,regr.glmnet,1,1,Boston Housing,ignore,none,asis,8.4797231652926,random,571,7,cv,20,3,NA,5,0.345360942184925,0.0492266733307399
+0.412,0.421,-1,4.913,3.636,Sun Dec 17 20:57:07 2017,regr.h2o.deeplearning,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,572,44,cv,20,3,NA,5
+0.643,0.525,-1,NA,NA,Sun Dec 17 20:57:18 2017,regr.h2o.gbm,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,573,9,cv,20,3,NA,5
+0.441,0.404,-1,NA,NA,Sun Dec 17 20:57:26 2017,regr.h2o.glm,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,574,6,cv,20,3,NA,5
+0.645,0.508,-1,4.176,2.198,Sun Dec 17 20:57:35 2017,regr.h2o.randomForest,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,575,7,cv,20,3,NA,5
+0.542,0.463,-1,4.553,2.832,Sun Dec 17 20:57:43 2017,regr.IBk,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,576,3,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 20:57:49 2017,regr.kknn,1,1,Boston Housing,ignore,none,asis,9
+0.592,0.551,-1,NA,NA,Sun Dec 17 20:59:55 2017,regr.km,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,578,123,cv,20,3,NA,5
+0.644,0.586,3.318,NA,NA,Sun Dec 17 21:00:13 2017,regr.ksvm,1,1,Boston Housing,ignore,none,asis,8.4797231652926,random,579,15,cv,20,3,NA,5,81.4114556599004,0.0149025430841386
+0.342,0.23,-1,NA,NA,Sun Dec 17 21:00:59 2017,regr.laGP,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,580,44,cv,20,3,NA,5
+0.414,0.369,-1,5.353,3.624,Sun Dec 17 21:01:05 2017,regr.LiblineaRL2L1SVR,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,581,4,cv,20,3,NA,5
+0.002,0.016,-1,NA,NA,Sun Dec 17 21:01:10 2017,regr.LiblineaRL2L2SVR,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,582,3,cv,20,3,NA,5
+0.435,0.402,-1,NA,NA,Sun Dec 17 21:01:22 2017,regr.lm,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,583,2,cv,20,3,NA,5
+0.581,0.475,-1,4.456,2.591,Sun Dec 17 21:01:27 2017,regr.mars,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,584,2,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Sun Dec 17 21:01:39 2017,regr.mob,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,585,9,cv,20,3,NA,5
+0.159,0.089,5.782,7.727,5.2,Sun Dec 17 21:02:08 2017,regr.nnet,1,1,Boston Housing,ignore,none,asis,8.4797231652926,random,586,27,cv,20,3,NA,5,18,0.00253925326167793
+0.527,0.409,-1,5.011,2.927,Sun Dec 17 21:02:43 2017,regr.nodeHarvest,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,587,33,cv,20,3,NA,5
+0.435,0.402,-1,NA,NA,Sun Dec 17 21:02:47 2017,regr.pcr,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,588,2,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 21:02:54 2017,regr.penalized.fusedlasso,1,1,Boston Housing,ignore,none,asis,9
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 21:03:02 2017,regr.penalized.lasso,1,1,Boston Housing,ignore,none,asis,17
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 21:03:09 2017,regr.penalized.ridge,1,1,Boston Housing,ignore,none,asis,24
+0.435,0.402,-1,NA,NA,Sun Dec 17 21:03:15 2017,regr.plsr,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,592,3,cv,20,3,NA,5
+0.661,0.514,3.311,4.125,2.098,Sun Dec 17 21:04:44 2017,regr.randomForest,1,1,Boston Housing,ignore,none,asis,8.4797231652926,random,593,87,cv,20,3,NA,5,2,4
+0.649,0.515,-1,4.114,2.173,Sun Dec 17 21:04:51 2017,regr.randomForestSRC,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,594,5,cv,20,3,NA,5
+0.654,0.503,3.658,4.213,2.14,Sun Dec 17 21:06:10 2017,regr.ranger,1,1,Boston Housing,ignore,none,asis,8.4797231652926,random,595,76,cv,20,3,NA,5,5,7
+NA,NA,-1,NA,NA,Sun Dec 17 21:06:15 2017,regr.rknn,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,596,2,cv,20,3,NA,5
+0.569,0.452,4.965,4.643,2.664,Sun Dec 17 21:06:25 2017,regr.rpart,1,1,Boston Housing,ignore,none,asis,8.4797231652926,random,597,7,cv,20,3,NA,5,0.00247095899437106,25,12,34
+0.665,0.521,3.332,4.062,2.069,Sun Dec 17 21:08:06 2017,regr.RRF,1,1,Boston Housing,ignore,none,asis,8.4797231652926,random,598,99,cv,20,3,NA,5,5,0.344401286682114
+0.435,0.402,-1,NA,NA,Sun Dec 17 21:08:11 2017,regr.rsm,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,599,2,cv,20,3,NA,5
+0.227,0.239,-1,NA,NA,Sun Dec 17 21:08:21 2017,regr.rvm,1,1,Boston Housing,ignore,none,asis,8.4797231652926,nohyperparam,600,7,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 21:08:23 2017,regr.slim,1,1,Boston Housing,ignore,none,asis,10
+0.636,0.58,3.227,NA,NA,Sun Dec 17 21:10:07 2017,regr.svm,1,1,Boston Housing,ignore,none,asis,8.4797231652926,random,602,101,cv,20,3,NA,5,86.7799042822278,0.0113197319693442
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 21:10:09 2017,regr.xgboost,1,1,Boston Housing,ignore,none,asis,104
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 21:10:12 2017,regr.xyf,1,1,Boston Housing,ignore,none,asis,106
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 21:10:19 2017,regr.bartMachine,1,1,Boston Housing,ignore,none,quantile,113
+0.511,0.434,-1,5.35,3.701,Sun Dec 17 21:10:25 2017,regr.bcart,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,4,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 21:10:28 2017,regr.bdk,1,1,Boston Housing,ignore,none,quantile,7
+0.66,0.601,-1,NA,NA,Sun Dec 17 21:36:29 2017,regr.bgpllm,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,1559,cv,20,3,NA,5
+0.644,0.583,0.115,NA,NA,Sun Dec 17 21:39:34 2017,regr.blackboost,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,random,604,183,cv,20,3,NA,5,4,49
+0.575,0.54,-1,NA,NA,Sun Dec 17 21:39:42 2017,regr.blm,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,5,cv,20,3,NA,5
+0.629,0.58,-1,NA,NA,Sun Dec 17 21:39:47 2017,regr.brnn,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,3,cv,20,3,NA,5
+0.364,0.36,-1,7.591,4.961,Sun Dec 17 21:39:53 2017,regr.bst,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,4,cv,20,3,NA,5
+0.663,0.603,-1,NA,NA,Sun Dec 17 21:40:05 2017,regr.btlm,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,10,cv,20,3,NA,5
+0.63,0.587,-1,5.088,2.988,Sun Dec 17 21:40:14 2017,regr.cforest,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,6,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 21:40:21 2017,regr.crs,1,1,Boston Housing,ignore,none,quantile,13
+0.575,0.486,-1,4.965,3.112,Sun Dec 17 21:40:26 2017,regr.ctree,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,3,cv,20,3,NA,5
+0.642,0.572,-1,NA,NA,Sun Dec 17 21:40:32 2017,regr.cubist,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,3,cv,20,3,NA,5
+0.516,0.503,-1,6.025,3.937,Sun Dec 17 21:40:37 2017,regr.cvglmnet,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,3,cv,20,3,NA,5
+0.617,0.587,-1,NA,NA,Sun Dec 17 21:40:45 2017,regr.earth,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,6,cv,20,3,NA,5
+-0.192,-0.222,-1,10.682,7.203,Sun Dec 17 21:40:50 2017,regr.elmNN,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,2,cv,20,3,NA,5
+0.527,0.47,-1,5.527,3.761,Sun Dec 17 21:41:15 2017,regr.evtree,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,22,cv,20,3,NA,5
+0.668,0.627,0.112,4.082,2.554,Sun Dec 17 21:48:24 2017,regr.extraTrees,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,random,604,427,cv,20,3,NA,5,4,2
+0,0,-1,9.442,6.423,Sun Dec 17 21:48:28 2017,regr.featureless,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,2,cv,20,3,NA,5
+0.591,0.525,-1,5.372,3.307,Sun Dec 17 21:48:33 2017,regr.fnn,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,2,cv,20,3,NA,5
+0.523,0.42,-1,6.247,3.72,Sun Dec 17 21:50:06 2017,regr.frbs,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,91,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Sun Dec 17 21:50:22 2017,regr.gamboost,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,10,cv,20,3,NA,5
+0.636,0.596,-1,5.514,3.141,Sun Dec 17 21:50:28 2017,regr.gausspr,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,4,cv,20,3,NA,5
+0.651,0.614,0.119,4.399,2.81,Sun Dec 17 21:50:47 2017,regr.gbm,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,random,604,16,cv,20,3,NA,5,31,9,0.221931120455964,18
+0.575,0.542,-1,NA,NA,Sun Dec 17 21:50:51 2017,regr.glm,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,2,cv,20,3,NA,5
+0.56,0.533,0.139,NA,NA,Sun Dec 17 21:51:05 2017,regr.glmboost,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,random,604,12,cv,20,3,NA,5,9,0.704671847401187
+0.571,0.54,0.14,NA,NA,Sun Dec 17 21:51:14 2017,regr.glmnet,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,random,604,6,cv,20,3,NA,5,0.180081848520786,0.00646525273878356
+0.518,0.439,-1,NA,NA,Sun Dec 17 21:51:30 2017,regr.h2o.deeplearning,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,14,cv,20,3,NA,5
+0.639,0.583,-1,NA,NA,Sun Dec 17 21:51:39 2017,regr.h2o.gbm,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,6,cv,20,3,NA,5
+0.575,0.542,-1,NA,NA,Sun Dec 17 21:51:46 2017,regr.h2o.glm,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,5,cv,20,3,NA,5
+0.676,0.645,-1,4.124,2.527,Sun Dec 17 21:51:57 2017,regr.h2o.randomForest,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,8,cv,20,3,NA,5
+0.537,0.429,-1,6.085,3.667,Sun Dec 17 21:52:02 2017,regr.IBk,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,3,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 21:52:12 2017,regr.kknn,1,1,Boston Housing,ignore,none,quantile,12
+0.597,0.531,-1,NA,NA,Sun Dec 17 21:53:53 2017,regr.km,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,99,cv,20,3,NA,5
+0.69,0.628,0.11,NA,NA,Sun Dec 17 21:54:05 2017,regr.ksvm,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,random,604,10,cv,20,3,NA,5,3.26890995368006,0.0553116565923668
+0.614,0.529,-1,NA,NA,Sun Dec 17 21:54:50 2017,regr.laGP,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,43,cv,20,3,NA,5
+0.573,0.535,-1,NA,NA,Sun Dec 17 21:54:55 2017,regr.LiblineaRL2L1SVR,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,2,cv,20,3,NA,5
+0.495,0.467,-1,NA,NA,Sun Dec 17 21:54:59 2017,regr.LiblineaRL2L2SVR,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,2,cv,20,3,NA,5
+0.575,0.542,-1,NA,NA,Sun Dec 17 21:55:03 2017,regr.lm,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,2,cv,20,3,NA,5
+0.581,0.543,-1,NA,NA,Sun Dec 17 21:55:08 2017,regr.mars,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,2,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Sun Dec 17 21:55:13 2017,regr.mob,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,3,cv,20,3,NA,5
+0.678,0.609,0.12,NA,NA,Sun Dec 17 21:55:55 2017,regr.nnet,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,random,604,39,cv,20,3,NA,5,7,0.0241755816255282
+0.56,0.532,-1,6.142,3.704,Sun Dec 17 21:56:19 2017,regr.nodeHarvest,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,22,cv,20,3,NA,5
+0.575,0.542,-1,NA,NA,Sun Dec 17 21:56:24 2017,regr.pcr,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,2,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 21:56:30 2017,regr.penalized.fusedlasso,1,1,Boston Housing,ignore,none,quantile,8
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 21:56:37 2017,regr.penalized.lasso,1,1,Boston Housing,ignore,none,quantile,15
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 21:56:44 2017,regr.penalized.ridge,1,1,Boston Housing,ignore,none,quantile,22
+0.575,0.542,-1,NA,NA,Sun Dec 17 21:56:49 2017,regr.plsr,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,3,cv,20,3,NA,5
+0.677,0.639,0.115,4.139,2.511,Sun Dec 17 21:58:22 2017,regr.randomForest,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,random,604,91,cv,20,3,NA,5,5,4
+0.667,0.627,-1,4.259,2.588,Sun Dec 17 21:58:32 2017,regr.randomForestSRC,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,7,cv,20,3,NA,5
+0.673,0.636,0.115,3.974,2.479,Sun Dec 17 21:59:44 2017,regr.ranger,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,random,604,70,cv,20,3,NA,5,5,3
+0.539,0.494,-1,6.064,3.702,Sun Dec 17 21:59:51 2017,regr.rknn,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,4,cv,20,3,NA,5
+0.54,0.486,0.141,5.165,3.507,Sun Dec 17 22:00:00 2017,regr.rpart,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,random,604,7,cv,20,3,NA,5,0.00150863540539303,16,9,5
+0.671,0.63,0.115,4.111,2.537,Sun Dec 17 22:01:35 2017,regr.RRF,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,random,604,93,cv,20,3,NA,5,5,0.216334478463978
+0.575,0.542,-1,NA,NA,Sun Dec 17 22:01:40 2017,regr.rsm,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,2,cv,20,3,NA,5
+0.646,0.605,-1,NA,NA,Sun Dec 17 22:01:48 2017,regr.rvm,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,nohyperparam,604,6,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 22:01:50 2017,regr.slim,1,1,Boston Housing,ignore,none,quantile,8
+0.635,0.563,0.123,NA,NA,Sun Dec 17 22:02:16 2017,regr.svm,1,1,Boston Housing,ignore,none,quantile,9.33537972232517,random,604,23,cv,20,3,NA,5,23.8055836638404,0.0736747301918236
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 22:02:18 2017,regr.xgboost,1,1,Boston Housing,ignore,none,quantile,26
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 22:02:21 2017,regr.xyf,1,1,Boston Housing,ignore,none,quantile,28
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 22:02:45 2017,regr.bartMachine,1,1,just random,ignore,none,YeoJohnson,53
+-0.003,-0.001,-1,1.068,0.828,Sun Dec 17 22:02:48 2017,regr.bcart,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,2,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 22:02:49 2017,regr.bdk,1,1,just random,ignore,none,YeoJohnson,3
+-0.012,-0.006,-1,1.073,0.836,Sun Dec 17 22:49:23 2017,regr.bgpllm,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,2794,cv,20,3,NA,5
+-0.004,-0.001,0.982,1.068,0.829,Sun Dec 17 22:53:34 2017,regr.blackboost,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,random,604,251,cv,20,3,NA,5,1,1
+-0.012,-0.006,-1,1.073,0.836,Sun Dec 17 22:53:38 2017,regr.blm,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,4,cv,20,3,NA,5
+-0.01,-0.005,-1,1.071,0.834,Sun Dec 17 22:53:39 2017,regr.brnn,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.008,-0.003,-1,1.07,0.833,Sun Dec 17 22:53:40 2017,regr.bst,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+-0.012,-0.006,-1,1.073,0.836,Sun Dec 17 22:53:47 2017,regr.btlm,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,6,cv,20,3,NA,5
+-0.024,-0.013,-1,1.081,0.846,Sun Dec 17 22:54:00 2017,regr.cforest,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,12,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 22:54:07 2017,regr.crs,1,1,just random,ignore,none,YeoJohnson,19
+-0.003,-0.001,-1,1.068,0.828,Sun Dec 17 22:54:12 2017,regr.ctree,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.007,-0.002,-1,1.069,0.832,Sun Dec 17 22:54:13 2017,regr.cubist,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+-0.003,-0.001,-1,1.068,0.828,Sun Dec 17 22:54:14 2017,regr.cvglmnet,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+-0.016,-0.012,-1,1.08,0.839,Sun Dec 17 22:54:15 2017,regr.earth,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.003,-0.001,-1,1.068,0.829,Sun Dec 17 22:54:15 2017,regr.elmNN,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.004,-0.002,-1,1.069,0.83,Sun Dec 17 22:54:28 2017,regr.evtree,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,13,cv,20,3,NA,5
+-0.019,-0.012,0.996,1.079,0.842,Sun Dec 17 23:08:27 2017,regr.extraTrees,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,random,604,840,cv,20,3,NA,5,1,1
+-0.003,-0.001,-1,1.068,0.828,Sun Dec 17 23:08:30 2017,regr.featureless,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.178,-0.16,-1,1.237,0.973,Sun Dec 17 23:08:31 2017,regr.fnn,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.105,-0.118,-1,1.192,0.913,Sun Dec 17 23:12:40 2017,regr.frbs,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,250,cv,20,3,NA,5
+-0.018,-0.009,-1,1.076,0.841,Sun Dec 17 23:12:46 2017,regr.gamboost,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,5,cv,20,3,NA,5
+-0.041,-0.024,-1,1.093,0.86,Sun Dec 17 23:12:50 2017,regr.gausspr,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,4,cv,20,3,NA,5
+-0.002,0.001,0.994,1.066,0.828,Sun Dec 17 23:13:16 2017,regr.gbm,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,random,604,25,cv,20,3,NA,5,22,10,0.0241947014746256,5
+-0.012,-0.007,-1,1.073,0.836,Sun Dec 17 23:13:16 2017,regr.glm,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.003,-0.001,0.983,1.068,0.828,Sun Dec 17 23:13:25 2017,regr.glmboost,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,random,604,9,cv,20,3,NA,5,1,0.0327861609403044
+-0.003,-0.001,0.983,1.068,0.828,Sun Dec 17 23:13:31 2017,regr.glmnet,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,random,604,6,cv,20,3,NA,5,0.167282323818654,4.2516927071631
+-0.077,-0.076,-1,1.147,0.89,Sun Dec 17 23:13:48 2017,regr.h2o.deeplearning,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,16,cv,20,3,NA,5
+-0.081,-0.068,-1,1.139,0.893,Sun Dec 17 23:13:52 2017,regr.h2o.gbm,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,4,cv,20,3,NA,5
+-0.012,-0.007,-1,1.073,0.836,Sun Dec 17 23:13:55 2017,regr.h2o.glm,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,3,cv,20,3,NA,5
+-0.052,-0.044,-1,1.114,0.869,Sun Dec 17 23:14:01 2017,regr.h2o.randomForest,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,6,cv,20,3,NA,5
+-0.407,-0.362,-1,1.452,1.162,Sun Dec 17 23:14:02 2017,regr.IBk,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 23:14:09 2017,regr.kknn,1,1,just random,ignore,none,YeoJohnson,8
+-0.003,-0.001,-1,1.068,0.828,Sun Dec 17 23:14:42 2017,regr.km,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,27,cv,20,3,NA,5
+-0.006,-0.004,0.983,1.07,0.831,Sun Dec 17 23:14:57 2017,regr.ksvm,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,random,604,15,cv,20,3,NA,5,0.0410505555436611,0.208809768430458
+-0.036,-0.039,-1,1.108,0.856,Sun Dec 17 23:17:18 2017,regr.laGP,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,141,cv,20,3,NA,5
+-0.011,-0.009,-1,1.076,0.835,Sun Dec 17 23:17:19 2017,regr.LiblineaRL2L1SVR,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+-0.013,-0.006,-1,1.073,0.837,Sun Dec 17 23:17:20 2017,regr.LiblineaRL2L2SVR,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.012,-0.007,-1,1.073,0.836,Sun Dec 17 23:17:20 2017,regr.lm,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.017,-0.014,-1,1.081,0.84,Sun Dec 17 23:17:21 2017,regr.mars,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.012,-0.007,-1,1.073,0.836,Sun Dec 17 23:17:22 2017,regr.mob,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.007,-0.003,0.992,1.07,0.832,Sun Dec 17 23:18:04 2017,regr.nnet,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,random,604,42,cv,20,3,NA,5,20,8.71058776811489
+-0.022,-0.013,-1,1.08,0.844,Sun Dec 17 23:18:36 2017,regr.nodeHarvest,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,32,cv,20,3,NA,5
+-0.012,-0.007,-1,1.073,0.836,Sun Dec 17 23:18:36 2017,regr.pcr,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 23:18:43 2017,regr.penalized.fusedlasso,1,1,just random,ignore,none,YeoJohnson,7
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 23:18:48 2017,regr.penalized.lasso,1,1,just random,ignore,none,YeoJohnson,12
+Fail,Fail,Fail,Fail,PackageFail,Sun Dec 17 23:18:54 2017,regr.penalized.ridge,1,1,just random,ignore,none,YeoJohnson,17
+-0.012,-0.007,-1,1.073,0.836,Sun Dec 17 23:18:54 2017,regr.plsr,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.036,-0.025,1.019,1.094,0.856,Sun Dec 17 23:23:41 2017,regr.randomForest,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,random,604,287,cv,20,3,NA,5,1,1
+-0.039,-0.026,-1,1.094,0.859,Sun Dec 17 23:23:49 2017,regr.randomForestSRC,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,7,cv,20,3,NA,5
+-0.034,-0.018,1.016,1.086,0.854,Sun Dec 17 23:26:03 2017,regr.ranger,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,random,604,134,cv,20,3,NA,5,1,9
+-0.031,-0.018,-1,1.086,0.852,Sun Dec 17 23:26:08 2017,regr.rknn,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,5,cv,20,3,NA,5
+-0.003,-0.001,0.983,1.068,0.828,Sun Dec 17 23:26:14 2017,regr.rpart,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,random,604,5,cv,20,3,NA,5,0.0247642070393359,13,29,7
+-0.035,-0.025,1.016,1.093,0.856,Sun Dec 17 23:29:07 2017,regr.RRF,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,random,604,173,cv,20,3,NA,5,1,0.0327861609403044
+-0.012,-0.007,-1,1.073,0.836,Sun Dec 17 23:29:08 2017,regr.rsm,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.027,-0.014,-1,1.082,0.848,Sun Dec 17 23:29:25 2017,regr.rvm,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,nohyperparam,604,17,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 23:29:25 2017,regr.slim,1,1,just random,ignore,none,YeoJohnson,17
+-0.003,-0.002,0.983,1.068,0.829,Sun Dec 17 23:29:43 2017,regr.svm,1,1,just random,ignore,none,YeoJohnson,1.06649457702202,random,604,18,cv,20,3,NA,5,5302.60162288338,9632.69876012941
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 23:29:44 2017,regr.xgboost,1,1,just random,ignore,none,YeoJohnson,18
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 23:29:44 2017,regr.xyf,1,1,just random,ignore,none,YeoJohnson,19
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 23:29:53 2017,regr.bartMachine,1,1,just random,ignore,none,ICA,27
+-0.003,-0.001,-1,1.068,0.828,Sun Dec 17 23:29:55 2017,regr.bcart,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,2,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Sun Dec 17 23:29:55 2017,regr.bdk,1,1,just random,ignore,none,ICA,2
+-0.012,-0.006,-1,1.073,0.836,Mon Dec 18 00:16:28 2017,regr.bgpllm,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,2793,cv,20,3,NA,5
+-0.004,-0.001,0.982,1.068,0.829,Mon Dec 18 00:20:40 2017,regr.blackboost,1,1,just random,ignore,none,ICA,1.06649457702202,random,604,252,cv,20,3,NA,5,1,1
+-0.012,-0.006,-1,1.073,0.836,Mon Dec 18 00:20:45 2017,regr.blm,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,4,cv,20,3,NA,5
+-0.01,-0.005,-1,1.071,0.834,Mon Dec 18 00:20:45 2017,regr.brnn,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.008,-0.003,-1,1.07,0.833,Mon Dec 18 00:20:46 2017,regr.bst,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+-0.012,-0.006,-1,1.073,0.836,Mon Dec 18 00:20:53 2017,regr.btlm,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,6,cv,20,3,NA,5
+-0.024,-0.013,-1,1.081,0.846,Mon Dec 18 00:21:05 2017,regr.cforest,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,12,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 00:21:12 2017,regr.crs,1,1,just random,ignore,none,ICA,19
+-0.003,-0.001,-1,1.068,0.828,Mon Dec 18 00:21:12 2017,regr.ctree,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.007,-0.002,-1,1.069,0.832,Mon Dec 18 00:21:13 2017,regr.cubist,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+-0.003,-0.001,-1,1.068,0.828,Mon Dec 18 00:21:14 2017,regr.cvglmnet,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+-0.016,-0.012,-1,1.08,0.839,Mon Dec 18 00:21:15 2017,regr.earth,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.003,-0.001,-1,1.068,0.829,Mon Dec 18 00:21:15 2017,regr.elmNN,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.004,-0.002,-1,1.069,0.83,Mon Dec 18 00:21:29 2017,regr.evtree,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,13,cv,20,3,NA,5
+-0.019,-0.012,0.996,1.079,0.842,Mon Dec 18 00:35:06 2017,regr.extraTrees,1,1,just random,ignore,none,ICA,1.06649457702202,random,604,817,cv,20,3,NA,5,1,1
+-0.003,-0.001,-1,1.068,0.828,Mon Dec 18 00:35:09 2017,regr.featureless,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.178,-0.16,-1,1.237,0.973,Mon Dec 18 00:35:09 2017,regr.fnn,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.105,-0.118,-1,1.192,0.913,Mon Dec 18 00:39:20 2017,regr.frbs,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,251,cv,20,3,NA,5
+-0.018,-0.009,-1,1.076,0.841,Mon Dec 18 00:39:24 2017,regr.gamboost,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,3,cv,20,3,NA,5
+-0.041,-0.024,-1,1.093,0.86,Mon Dec 18 00:39:28 2017,regr.gausspr,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,4,cv,20,3,NA,5
+-0.002,0.001,0.994,1.066,0.828,Mon Dec 18 00:39:53 2017,regr.gbm,1,1,just random,ignore,none,ICA,1.06649457702202,random,604,25,cv,20,3,NA,5,22,10,0.0241947014746256,5
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 00:39:53 2017,regr.glm,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.003,-0.001,0.983,1.068,0.828,Mon Dec 18 00:40:02 2017,regr.glmboost,1,1,just random,ignore,none,ICA,1.06649457702202,random,604,9,cv,20,3,NA,5,1,0.0327861609403044
+-0.003,-0.001,0.983,1.068,0.828,Mon Dec 18 00:40:07 2017,regr.glmnet,1,1,just random,ignore,none,ICA,1.06649457702202,random,604,5,cv,20,3,NA,5,0.167282323818654,4.2516927071631
+-0.03,-0.015,-1,1.083,0.851,Mon Dec 18 00:40:23 2017,regr.h2o.deeplearning,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,15,cv,20,3,NA,5
+-0.081,-0.068,-1,1.139,0.893,Mon Dec 18 00:40:28 2017,regr.h2o.gbm,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,5,cv,20,3,NA,5
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 00:40:31 2017,regr.h2o.glm,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,3,cv,20,3,NA,5
+-0.058,-0.055,-1,1.125,0.874,Mon Dec 18 00:40:38 2017,regr.h2o.randomForest,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,6,cv,20,3,NA,5
+-0.407,-0.362,-1,1.452,1.162,Mon Dec 18 00:40:39 2017,regr.IBk,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 00:40:46 2017,regr.kknn,1,1,just random,ignore,none,ICA,8
+-0.003,-0.001,-1,1.068,0.828,Mon Dec 18 00:41:15 2017,regr.km,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,29,cv,20,3,NA,5
+-0.006,-0.004,0.983,1.07,0.831,Mon Dec 18 00:41:32 2017,regr.ksvm,1,1,just random,ignore,none,ICA,1.06649457702202,random,604,15,cv,20,3,NA,5,0.0410505555436611,0.208809768430458
+-0.036,-0.039,-1,1.108,0.856,Mon Dec 18 00:43:53 2017,regr.laGP,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,141,cv,20,3,NA,5
+-0.011,-0.009,-1,1.076,0.835,Mon Dec 18 00:43:54 2017,regr.LiblineaRL2L1SVR,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+-0.013,-0.006,-1,1.073,0.837,Mon Dec 18 00:43:54 2017,regr.LiblineaRL2L2SVR,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 00:43:54 2017,regr.lm,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.017,-0.014,-1,1.081,0.84,Mon Dec 18 00:43:55 2017,regr.mars,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 00:43:56 2017,regr.mob,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.007,-0.003,0.992,1.07,0.832,Mon Dec 18 00:44:29 2017,regr.nnet,1,1,just random,ignore,none,ICA,1.06649457702202,random,604,33,cv,20,3,NA,5,20,8.71058776811489
+-0.022,-0.013,-1,1.08,0.844,Mon Dec 18 00:45:10 2017,regr.nodeHarvest,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,41,cv,20,3,NA,5
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 00:45:11 2017,regr.pcr,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 00:45:18 2017,regr.penalized.fusedlasso,1,1,just random,ignore,none,ICA,7
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 00:45:29 2017,regr.penalized.lasso,1,1,just random,ignore,none,ICA,19
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 00:45:34 2017,regr.penalized.ridge,1,1,just random,ignore,none,ICA,23
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 00:45:34 2017,regr.plsr,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.036,-0.025,1.019,1.094,0.856,Mon Dec 18 00:50:16 2017,regr.randomForest,1,1,just random,ignore,none,ICA,1.06649457702202,random,604,282,cv,20,3,NA,5,1,1
+-0.039,-0.026,-1,1.094,0.859,Mon Dec 18 00:50:24 2017,regr.randomForestSRC,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,7,cv,20,3,NA,5
+NA,NA,1.026,NA,NA,Mon Dec 18 00:51:49 2017,regr.ranger,1,1,just random,ignore,none,ICA,1.06649457702202,random,604,84,cv,20,3,NA,5,2,5
+-0.036,-0.019,-1,1.087,0.856,Mon Dec 18 00:51:55 2017,regr.rknn,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,5,cv,20,3,NA,5
+-0.003,-0.001,0.983,1.068,0.828,Mon Dec 18 00:52:00 2017,regr.rpart,1,1,just random,ignore,none,ICA,1.06649457702202,random,604,5,cv,20,3,NA,5,0.0247642070393359,13,29,7
+-0.035,-0.025,1.016,1.093,0.856,Mon Dec 18 00:54:44 2017,regr.RRF,1,1,just random,ignore,none,ICA,1.06649457702202,random,604,164,cv,20,3,NA,5,1,0.0327861609403044
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 00:54:45 2017,regr.rsm,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.027,-0.014,-1,1.082,0.848,Mon Dec 18 00:55:01 2017,regr.rvm,1,1,just random,ignore,none,ICA,1.06649457702202,nohyperparam,604,16,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Mon Dec 18 00:55:01 2017,regr.slim,1,1,just random,ignore,none,ICA,17
+-0.003,-0.002,0.983,1.068,0.829,Mon Dec 18 00:55:20 2017,regr.svm,1,1,just random,ignore,none,ICA,1.06649457702202,random,604,18,cv,20,3,NA,5,5302.60162288338,9632.69876012941
+Fail,Fail,Fail,Fail,PrePackageFail,Mon Dec 18 00:55:20 2017,regr.xgboost,1,1,just random,ignore,none,ICA,19
+Fail,Fail,Fail,Fail,PrePackageFail,Mon Dec 18 00:55:20 2017,regr.xyf,1,1,just random,ignore,none,ICA,19
+Fail,Fail,Fail,Fail,PrePackageFail,Mon Dec 18 00:55:29 2017,regr.bartMachine,1,1,just random,ignore,none,centernscale,27
+-0.003,-0.001,-1,1.068,0.828,Mon Dec 18 00:55:31 2017,regr.bcart,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,2,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Mon Dec 18 00:55:32 2017,regr.bdk,1,1,just random,ignore,none,centernscale,3
+-0.012,-0.006,-1,1.073,0.836,Mon Dec 18 01:42:58 2017,regr.bgpllm,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,2846,cv,20,3,NA,5
+-0.004,-0.001,0.978,1.068,0.829,Mon Dec 18 01:47:08 2017,regr.blackboost,1,1,just random,ignore,none,centernscale,1.06649457702202,random,604,250,cv,20,3,NA,5,1,1
+-0.012,-0.006,-1,1.073,0.836,Mon Dec 18 01:47:12 2017,regr.blm,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,4,cv,20,3,NA,5
+-0.01,-0.005,-1,1.071,0.834,Mon Dec 18 01:47:13 2017,regr.brnn,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.008,-0.003,-1,1.07,0.833,Mon Dec 18 01:47:14 2017,regr.bst,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+-0.012,-0.006,-1,1.073,0.836,Mon Dec 18 01:47:21 2017,regr.btlm,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,7,cv,20,3,NA,5
+-0.024,-0.013,-1,1.081,0.846,Mon Dec 18 01:47:33 2017,regr.cforest,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,12,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 01:47:40 2017,regr.crs,1,1,just random,ignore,none,centernscale,18
+-0.003,-0.001,-1,1.068,0.828,Mon Dec 18 01:47:40 2017,regr.ctree,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.007,-0.002,-1,1.069,0.832,Mon Dec 18 01:47:41 2017,regr.cubist,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+-0.003,-0.001,-1,1.068,0.828,Mon Dec 18 01:47:42 2017,regr.cvglmnet,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+-0.016,-0.012,-1,1.08,0.839,Mon Dec 18 01:47:43 2017,regr.earth,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.004,-0.002,-1,1.069,0.829,Mon Dec 18 01:47:43 2017,regr.elmNN,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.004,-0.002,-1,1.069,0.83,Mon Dec 18 01:47:57 2017,regr.evtree,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,13,cv,20,3,NA,5
+-0.019,-0.012,0.991,1.079,0.842,Mon Dec 18 02:02:33 2017,regr.extraTrees,1,1,just random,ignore,none,centernscale,1.06649457702202,random,604,876,cv,20,3,NA,5,1,1
+-0.003,-0.001,-1,1.068,0.828,Mon Dec 18 02:02:35 2017,regr.featureless,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.173,-0.152,-1,1.228,0.969,Mon Dec 18 02:02:35 2017,regr.fnn,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.105,-0.118,-1,1.192,0.913,Mon Dec 18 02:06:52 2017,regr.frbs,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,256,cv,20,3,NA,5
+-0.018,-0.009,-1,1.076,0.841,Mon Dec 18 02:06:57 2017,regr.gamboost,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,5,cv,20,3,NA,5
+-0.041,-0.024,-1,1.093,0.86,Mon Dec 18 02:07:00 2017,regr.gausspr,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,4,cv,20,3,NA,5
+-0.002,0.001,0.99,1.066,0.828,Mon Dec 18 02:07:25 2017,regr.gbm,1,1,just random,ignore,none,centernscale,1.06649457702202,random,604,25,cv,20,3,NA,5,22,10,0.0241947014746256,5
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 02:07:26 2017,regr.glm,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.003,-0.001,0.978,1.068,0.828,Mon Dec 18 02:07:34 2017,regr.glmboost,1,1,just random,ignore,none,centernscale,1.06649457702202,random,604,8,cv,20,3,NA,5,1,0.0327861609403044
+-0.003,-0.001,0.978,1.068,0.828,Mon Dec 18 02:07:39 2017,regr.glmnet,1,1,just random,ignore,none,centernscale,1.06649457702202,random,604,5,cv,20,3,NA,5,0.167282323818654,4.2516927071631
+-0.014,-0.013,-1,1.08,0.838,Mon Dec 18 02:07:55 2017,regr.h2o.deeplearning,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,16,cv,20,3,NA,5
+-0.074,-0.051,-1,1.121,0.887,Mon Dec 18 02:07:59 2017,regr.h2o.gbm,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,4,cv,20,3,NA,5
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 02:08:02 2017,regr.h2o.glm,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,3,cv,20,3,NA,5
+-0.061,-0.037,-1,1.105,0.876,Mon Dec 18 02:08:09 2017,regr.h2o.randomForest,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,6,cv,20,3,NA,5
+-0.407,-0.362,-1,1.452,1.162,Mon Dec 18 02:08:10 2017,regr.IBk,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 02:08:17 2017,regr.kknn,1,1,just random,ignore,none,centernscale,8
+-0.003,-0.001,-1,1.068,0.828,Mon Dec 18 02:09:05 2017,regr.km,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,47,cv,20,3,NA,5
+-0.006,-0.004,0.978,1.07,0.831,Mon Dec 18 02:09:21 2017,regr.ksvm,1,1,just random,ignore,none,centernscale,1.06649457702202,random,604,17,cv,20,3,NA,5,0.0410505555436611,0.208809768430458
+-0.022,-0.026,-1,1.095,0.844,Mon Dec 18 02:11:43 2017,regr.laGP,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,141,cv,20,3,NA,5
+-0.009,-0.006,-1,1.073,0.833,Mon Dec 18 02:11:43 2017,regr.LiblineaRL2L1SVR,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,1,cv,20,3,NA,5
+-0.013,-0.006,-1,1.073,0.837,Mon Dec 18 02:11:44 2017,regr.LiblineaRL2L2SVR,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 02:11:44 2017,regr.lm,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.017,-0.014,-1,1.081,0.84,Mon Dec 18 02:11:45 2017,regr.mars,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 02:11:45 2017,regr.mob,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.008,-0.004,0.987,1.07,0.833,Mon Dec 18 02:12:26 2017,regr.nnet,1,1,just random,ignore,none,centernscale,1.06649457702202,random,604,41,cv,20,3,NA,5,20,8.71058776811489
+-0.021,-0.013,-1,1.08,0.844,Mon Dec 18 02:13:03 2017,regr.nodeHarvest,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,36,cv,20,3,NA,5
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 02:13:03 2017,regr.pcr,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 02:13:10 2017,regr.penalized.fusedlasso,1,1,just random,ignore,none,centernscale,7
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 02:13:14 2017,regr.penalized.lasso,1,1,just random,ignore,none,centernscale,12
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 02:13:19 2017,regr.penalized.ridge,1,1,just random,ignore,none,centernscale,17
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 02:13:20 2017,regr.plsr,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.036,-0.024,1.014,1.093,0.856,Mon Dec 18 02:18:04 2017,regr.randomForest,1,1,just random,ignore,none,centernscale,1.06649457702202,random,604,284,cv,20,3,NA,5,1,1
+-0.039,-0.026,-1,1.094,0.859,Mon Dec 18 02:18:12 2017,regr.randomForestSRC,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,8,cv,20,3,NA,5
+NA,NA,1.016,NA,NA,Mon Dec 18 02:20:13 2017,regr.ranger,1,1,just random,ignore,none,centernscale,1.06649457702202,random,604,121,cv,20,3,NA,5,1,1
+-0.033,-0.015,-1,1.083,0.853,Mon Dec 18 02:20:18 2017,regr.rknn,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,4,cv,20,3,NA,5
+-0.003,-0.001,0.978,1.068,0.828,Mon Dec 18 02:20:24 2017,regr.rpart,1,1,just random,ignore,none,centernscale,1.06649457702202,random,604,5,cv,20,3,NA,5,0.0247642070393359,13,29,7
+-0.035,-0.023,1.012,1.091,0.855,Mon Dec 18 02:23:19 2017,regr.RRF,1,1,just random,ignore,none,centernscale,1.06649457702202,random,604,176,cv,20,3,NA,5,1,0.0327861609403044
+-0.012,-0.007,-1,1.073,0.836,Mon Dec 18 02:23:20 2017,regr.rsm,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,0,cv,20,3,NA,5
+-0.027,-0.014,-1,1.081,0.848,Mon Dec 18 02:23:41 2017,regr.rvm,1,1,just random,ignore,none,centernscale,1.06649457702202,nohyperparam,604,21,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Mon Dec 18 02:23:41 2017,regr.slim,1,1,just random,ignore,none,centernscale,21
+-0.003,-0.002,0.978,1.068,0.829,Mon Dec 18 02:23:59 2017,regr.svm,1,1,just random,ignore,none,centernscale,1.06649457702202,random,604,18,cv,20,3,NA,5,5302.60162288338,9632.69876012941
+Fail,Fail,Fail,Fail,PrePackageFail,Mon Dec 18 02:24:00 2017,regr.xgboost,1,1,just random,ignore,none,centernscale,18
+Fail,Fail,Fail,Fail,PrePackageFail,Mon Dec 18 02:24:00 2017,regr.xyf,1,1,just random,ignore,none,centernscale,19
+Fail,Fail,Fail,Fail,PrePackageFail,Mon Dec 18 02:24:08 2017,regr.bartMachine,1,1,just random,ignore,none,expoTrans,26
+-0.002,-0.001,-1,1.068,0.828,Mon Dec 18 02:24:10 2017,regr.bcart,1,1,just random,ignore,none,expoTrans,1.06649457702202,nohyperparam,604,2,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Mon Dec 18 02:24:11 2017,regr.bdk,1,1,just random,ignore,none,expoTrans,2
+-0.005,-0.004,1.008,1.01,0.8,Mon Dec 18 08:58:47 2017,regr.blackboost,1,1,just random,ignore,none,expoTrans,1.00537372167733,random,292,221,cv,20,3,NA,5,3,1
+-0.013,-0.014,-1,1.019,0.807,Mon Dec 18 08:58:56 2017,regr.blm,1,1,just random,ignore,none,expoTrans,1.00537372167733,nohyperparam,292,8,cv,20,3,NA,5
+-0.012,-0.014,-1,1.019,0.806,Mon Dec 18 08:59:00 2017,regr.brnn,1,1,just random,ignore,none,expoTrans,1.00537372167733,nohyperparam,292,2,cv,20,3,NA,5
+-0.01,-0.012,-1,1.018,0.805,Mon Dec 18 08:59:04 2017,regr.bst,1,1,just random,ignore,none,expoTrans,1.00537372167733,nohyperparam,292,2,cv,20,3,NA,5
+-0.013,-0.014,-1,1.019,0.807,Mon Dec 18 08:59:15 2017,regr.btlm,1,1,just random,ignore,none,expoTrans,1.00537372167733,nohyperparam,292,9,cv,20,3,NA,5
+-0.02,-0.03,-1,1.036,0.812,Mon Dec 18 08:59:29 2017,regr.cforest,1,1,just random,ignore,none,expoTrans,1.00537372167733,nohyperparam,292,13,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 08:59:38 2017,regr.crs,1,1,just random,ignore,none,expoTrans,22
+-0.015,-0.015,-1,1.021,0.809,Mon Dec 18 08:59:41 2017,regr.ctree,1,1,just random,ignore,none,expoTrans,1.00537372167733,nohyperparam,292,1,cv,20,3,NA,5
+0,-0.004,-1,1.01,0.797,Mon Dec 18 08:59:45 2017,regr.cubist,1,1,just random,ignore,none,expoTrans,1.00537372167733,nohyperparam,292,2,cv,20,3,NA,5
+-0.001,-0.001,-1,1.007,0.797,Mon Dec 18 08:59:57 2017,regr.cvglmnet,1,1,just random,ignore,none,expoTrans,1.00537372167733,nohyperparam,292,11,cv,20,3,NA,5
+-0.031,-0.027,-1,1.033,0.822,Mon Dec 18 09:00:01 2017,regr.earth,1,1,just random,ignore,none,expoTrans,1.00537372167733,nohyperparam,292,2,cv,20,3,NA,5
+-0.002,-0.002,-1,1.007,0.798,Mon Dec 18 09:00:04 2017,regr.elmNN,1,1,just random,ignore,none,expoTrans,1.00537372167733,nohyperparam,292,2,cv,20,3,NA,5
+-0.015,-0.015,-1,1.021,0.809,Mon Dec 18 09:00:20 2017,regr.evtree,1,1,just random,ignore,none,expoTrans,1.00537372167733,nohyperparam,292,14,cv,20,3,NA,5
+-0.057,-0.047,1.024,1.066,0.858,Mon Dec 18 13:36:32 2017,regr.extraTrees,1,1,just random,ignore,none,expoTrans,1.01756539225111,random,283,887,cv,20,3,NA,5,1,7
+-0.001,0,-1,1.018,0.813,Mon Dec 18 13:36:37 2017,regr.featureless,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,3,cv,20,3,NA,5
+-0.147,-0.135,-1,1.155,0.932,Mon Dec 18 13:36:41 2017,regr.fnn,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,2,cv,20,3,NA,5
+-0.278,-0.242,-1,1.263,1.038,Mon Dec 18 13:41:15 2017,regr.frbs,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,272,cv,20,3,NA,5
+-0.033,-0.025,-1,1.043,0.839,Mon Dec 18 13:41:25 2017,regr.gamboost,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,5,cv,20,3,NA,5
+-0.07,-0.062,-1,1.08,0.869,Mon Dec 18 13:41:32 2017,regr.gausspr,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,5,cv,20,3,NA,5
+-0.004,-0.003,1.003,1.021,0.816,Mon Dec 18 13:42:04 2017,regr.gbm,1,1,just random,ignore,none,expoTrans,1.01756539225111,random,283,29,cv,20,3,NA,5,31,1,0.0145890770244878,11
+-0.031,-0.023,-1,1.041,0.838,Mon Dec 18 13:42:08 2017,regr.glm,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,2,cv,20,3,NA,5
+-0.016,-0.011,1.002,1.029,0.825,Mon Dec 18 13:42:22 2017,regr.glmboost,1,1,just random,ignore,none,expoTrans,1.01756539225111,random,283,13,cv,20,3,NA,5,2,0.673808582127094
+-0.015,-0.011,1.003,1.028,0.824,Mon Dec 18 13:42:32 2017,regr.glmnet,1,1,just random,ignore,none,expoTrans,1.01756539225111,random,283,7,cv,20,3,NA,5,0.881166926817968,0.0395264158204569
+-0.056,-0.061,-1,1.081,0.857,Mon Dec 18 13:43:21 2017,regr.h2o.deeplearning,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,46,cv,20,3,NA,5
+-0.099,-0.089,-1,1.108,0.893,Mon Dec 18 13:43:33 2017,regr.h2o.gbm,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,8,cv,20,3,NA,5
+-0.031,-0.023,-1,1.041,0.838,Mon Dec 18 13:43:40 2017,regr.h2o.glm,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,6,cv,20,3,NA,5
+-0.11,-0.094,-1,1.113,0.902,Mon Dec 18 13:43:50 2017,regr.h2o.randomForest,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,7,cv,20,3,NA,5
+-0.367,-0.35,-1,1.373,1.11,Mon Dec 18 13:43:58 2017,regr.IBk,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,3,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 13:44:07 2017,regr.kknn,1,1,just random,ignore,none,expoTrans,12
+-0.001,0,-1,1.018,0.813,Mon Dec 18 13:44:41 2017,regr.km,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,31,cv,20,3,NA,5
+-0.009,-0.007,1,1.025,0.82,Mon Dec 18 13:45:03 2017,regr.ksvm,1,1,just random,ignore,none,expoTrans,1.01756539225111,random,283,20,cv,20,3,NA,5,3.45974461217485,0.000127073207249083
+-0.04,-0.041,-1,1.059,0.845,Mon Dec 18 13:47:36 2017,regr.laGP,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,150,cv,20,3,NA,5
+-0.028,-0.022,-1,1.04,0.835,Mon Dec 18 13:47:40 2017,regr.LiblineaRL2L1SVR,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,2,cv,20,3,NA,5
+-0.031,-0.023,-1,1.041,0.838,Mon Dec 18 13:47:43 2017,regr.lm,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,2,cv,20,3,NA,5
+-0.02,-0.01,-1,1.028,0.829,Mon Dec 18 13:47:47 2017,regr.mars,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,2,cv,20,3,NA,5
+-0.031,-0.023,-1,1.041,0.838,Mon Dec 18 13:47:52 2017,regr.mob,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,2,cv,20,3,NA,5
+-0.019,-0.013,1.002,1.031,0.828,Mon Dec 18 13:48:38 2017,regr.nnet,1,1,just random,ignore,none,expoTrans,1.01756539225111,random,283,44,cv,20,3,NA,5,4,8.27087496743567
+-0.021,-0.016,-1,1.034,0.83,Mon Dec 18 13:49:21 2017,regr.nodeHarvest,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,41,cv,20,3,NA,5
+-0.031,-0.023,-1,1.041,0.838,Mon Dec 18 13:49:25 2017,regr.pcr,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,2,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 13:49:34 2017,regr.penalized.fusedlasso,1,1,just random,ignore,none,expoTrans,11
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 13:49:41 2017,regr.penalized.lasso,1,1,just random,ignore,none,expoTrans,17
+Fail,Fail,Fail,Fail,PackageFail,Mon Dec 18 13:49:47 2017,regr.penalized.ridge,1,1,just random,ignore,none,expoTrans,24
+-0.031,-0.023,-1,1.041,0.838,Mon Dec 18 13:49:52 2017,regr.plsr,1,1,just random,ignore,none,expoTrans,1.01756539225111,nohyperparam,283,3,cv,20,3,NA,5
