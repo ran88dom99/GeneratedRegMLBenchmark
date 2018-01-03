@@ -12,6 +12,7 @@ library(mlbench)
 library(mlrHyperopt)
 library(MLmetrics)
 
+setwd(cpout.folder)
 
 configureMlr(on.learner.error = "warn")
 regr.task = makeRegrTask(id = "recc", data = training, target = "V1")
@@ -37,13 +38,14 @@ fv = generateFilterValuesData(regr.task,
 })
 plotFilterValues(fv)#issues errors"cforest.importance",,more.args = list(imp.learner<-"regr.cubist")
 write.table(paste("mlr",date(),datasource,fv$data,  sep = ", "),
-            file = "importancemlr.csv", append =TRUE, quote = F, sep = ",",
+            file = paste(importance.file,"mlr.csv",sep=""), append =TRUE, quote = F, sep = ",",
             eol = "\n", na = "NA", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
 
 
 ######for all mlr models########
 for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce it
+  when<-proc.time()
   write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
   write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
   
@@ -193,3 +195,4 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")}
 }
+setwd(base.folder)

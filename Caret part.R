@@ -1,4 +1,4 @@
-
+setwd(cpout.folder)
 ###########for all models#################
 for(allmodel in allmodels){#just before all models define d.f and reduce it
   write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
@@ -198,7 +198,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
       if(mean.improvement<0){mean.improvement=0}
       varimportant<-varImp(trainedmodel)
       write.table(paste(allmodel,date(),round(mean.improvement,digits=3),datasource,round(varimportant$importance,digits=1),  sep = ", "),
-                  file = importance.file, append =TRUE, quote = F, sep = ",",
+                  file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
                   eol = "\n", na = "NA", dec = ".", row.names = F,
                   col.names = F, qmethod = "double")
       fail.try=F
@@ -212,3 +212,4 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   }
   
 }
+setwd(base.folder)
