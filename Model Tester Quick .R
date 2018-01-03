@@ -10,19 +10,27 @@ options(repos=structure(c(CRAN="https://cran.cnr.berkeley.edu")))
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"14th20hp3cv"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
-if(length(which(list.files() == out.file))<1) write.table( "0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,," ,file = out.file,  quote = F, sep = ",", row.names = F,col.names = F)
-importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
+importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
+
+base.folder<-getwd()
+cpout.folder<-paste(base.folder,"/",which.computer,sep = "")
+setwd(cpout.folder)
+
+if(length(which(list.files() == out.file))<1) write.table( "0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,," ,file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
+if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,".csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
+if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 
 cv.iters=3
 tuneLength=20
 tuneLength2=8
 normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quantile")#,"centernscale"
 
-gensTTest<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
-write.table( t(gensTTest),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
+gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 try({
   gensTTest<-(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 })
+if(length(gensTTest)<1) gensTTest<-gensTTesto
 
 ########packages install check######
 
@@ -45,6 +53,8 @@ library(caret)
 library(MLmetrics)
 
 ########error no repeat#########
+
+
 try({
   before.last.alg<-as.matrix(read.csv("beforelast algorithm.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   last.alg<-as.matrix(read.csv("last algorithm tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -163,11 +173,13 @@ seed.var =222+round(runif(1,min=0,max=100))
 column.to.predict=1
 print(date());
 
+setwd(base.folder)
 if(!exists("gen.count")){gen.count=56}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
 for(gend.data in gensTTest){
-  data.source<-as.matrix(read.csv(paste(gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+  data.source<-as.matrix(read.csv(paste("Generats/",gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data,1]
+  setwd(cpout.folder)
   missingdatas=c("ignore")
   for(missingdata in missingdatas){
     withextras=c("none")
@@ -244,11 +256,13 @@ for(gend.data in gensTTest){
           
           
           ###########for all models#################
+          setwd(base.folder)
           if(which.computer=="ALTA")
             source("MLR part.R")
           else
             source("Caret part.R")
           
+         setwd(cpout.folder)
           if(norming == normings[length(normings)]){
             write.table( gensTTest[-1],file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
           
