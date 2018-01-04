@@ -7044,3 +7044,6 @@ Fail,Fail,Fail,Fail,Fail,Wed Jan  3 03:33:50 2018,blassoAveraged,1,1,kaggle hous
 Fail,Fail,Fail,Fail,Fail,Wed Jan  3 03:33:58 2018,bridge,1,1,kaggle housing,ignore,none,centernscale,6
 0.691,0.669,0.398,0.131,0.095,Wed Jan  3 03:41:25 2018,BstLm,1,1,kaggle housing,ignore,none,centernscale,0.395834643092205,random,275,445,cv,20,3,NA,5,198,0.330261868385132
 0.659,0.627,0.408,0.147,0.104,Wed Jan  3 17:25:44 2018,cforest,1,1,kaggle housing,ignore,none,centernscale,0.394476004088852,random,273,21466,cv,20,3,NA,5,47
+0.552,0.53,0.489,0.187,0.14,Wed Jan  3 17:43:52 2018,ctree,1,1,kaggle housing,ignore,none,centernscale,0.396917480454428,random,238,72,cv,20,3,NA,5,0.282940405420959
+0.551,0.531,0.488,0.186,0.14,Wed Jan  3 17:45:12 2018,ctree2,1,1,kaggle housing,ignore,none,centernscale,0.396917480454428,random,238,75,cv,20,3,NA,5,8,0.308994192630053
+0.732,0.721,0.353,0.111,0.083,Wed Jan  3 18:01:38 2018,cubist,1,1,kaggle housing,ignore,none,centernscale,0.396917480454428,random,238,982,cv,20,3,NA,5,14,5
