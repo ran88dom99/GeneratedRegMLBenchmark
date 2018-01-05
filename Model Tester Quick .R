@@ -177,6 +177,7 @@ setwd(base.folder)
 if(!exists("gen.count")){gen.count=56}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
 for(gend.data in gensTTest){
+  setwd(base.folder)
   data.source<-as.matrix(read.csv(paste("Generats/",gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data,1]
   setwd(cpout.folder)

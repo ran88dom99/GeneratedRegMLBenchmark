@@ -14,6 +14,13 @@ library(MLmetrics)
 
 setwd(cpout.folder)
 
+imp = impute(training, classes = list(numeric = 0),
+             dummy.classes = "numeric", dummy.type = "numeric")
+training<-imp$data
+imp = impute(testing, classes = list(numeric = 0),
+             dummy.classes = "numeric", dummy.type = "numeric")
+testing<-imp$data
+
 configureMlr(on.learner.error = "warn")
 regr.task = makeRegrTask(id = "recc", data = training, target = "V1")
 mlrallmodels<-listLearners("regr")
@@ -30,17 +37,19 @@ hyper.control.rand<-makeHyperControl(mlr.control = makeTuneControlRandom(maxit=t
 #res
 
 #mlrallmodels<-"regr.bartMachine"
+
+
 try({
 fv = generateFilterValuesData(regr.task, 
                               method = c("mrmr","randomForestSRC.rfsrc",
                                          "univariate.model.score"),
                               nselect<-10)#,,"permutation.importance","randomForestSRC.var.select"
-})
 plotFilterValues(fv)#issues errors"cforest.importance",,more.args = list(imp.learner<-"regr.cubist")
 write.table(paste("mlr",date(),datasource,fv$data,  sep = ", "),
             file = paste(importance.file,"mlr.csv",sep=""), append =TRUE, quote = F, sep = ",",
             eol = "\n", na = "NA", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
+})
 
 
 ######for all mlr models########
