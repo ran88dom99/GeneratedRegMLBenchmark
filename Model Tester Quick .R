@@ -206,7 +206,7 @@ for(gend.data in gensTTest){
       
       
         for(norming in normings) {
-        for(trans.y in 1:1) {
+        for(trans.y in 1:2) {
           df.toprocess=data.source
           y.untransformed<-df.toprocess[,1]
           
