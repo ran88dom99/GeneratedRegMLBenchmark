@@ -3,7 +3,7 @@
 killall rsession
 killall Rscript
 killall R
- cd /home/dg/GeneratedRegMLBenchmark/
+ cd C:\Users\gvg\Desktop\Gen Test\gentest
 git add -A
 git commit -a -m "auto"
 git pull

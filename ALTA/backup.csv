@@ -168,3 +168,13 @@ Succ, Tue Jan 02 21:07:46 2018, regr.gamboost
 Succ, Tue Jan 02 21:07:49 2018, regr.gausspr
 Succ, Tue Jan 02 21:07:58 2018, regr.gbm
 Succ, Tue Jan 02 21:08:02 2018, regr.glm
+Succ, Fri Jan 05 19:06:55 2018, regr.laGP
+Succ, Fri Jan 05 19:07:24 2018, regr.LiblineaRL2L1SVR
+Succ, Fri Jan 05 19:07:37 2018, regr.LiblineaRL2L2SVR
+Succ, Fri Jan 05 19:07:50 2018, regr.lm
+Succ, Fri Jan 05 19:08:06 2018, regr.mars
+Succ, Fri Jan 05 19:08:24 2018, regr.mob
+Succ, Fri Jan 05 19:47:35 2018, regr.nnet
+Succ, Fri Jan 05 19:50:36 2018, regr.nodeHarvest
+Succ, Fri Jan 05 19:50:46 2018, regr.pcr
+Succ, Fri Jan 05 19:51:29 2018, regr.plsr
