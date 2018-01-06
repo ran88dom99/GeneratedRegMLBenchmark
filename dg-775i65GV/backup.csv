@@ -6332,3 +6332,7 @@ Fail, Sat Jan  6 14:38:10 2018, blasso
 Fail, Sat Jan  6 14:38:22 2018, blassoAveraged
 Fail, Sat Jan  6 14:38:34 2018, bridge
 Fail, Sat Jan  6 14:38:43 2018, BstLm
+Fail, Sat Jan  6 16:23:16 2018, bartMachine
+Succ, Sat Jan  6 16:25:08 2018, ctree
+Succ, Sat Jan  6 16:26:46 2018, ctree2
+Succ, Sat Jan  6 16:36:26 2018, cubist
