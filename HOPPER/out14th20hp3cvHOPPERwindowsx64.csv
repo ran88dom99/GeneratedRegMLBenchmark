@@ -1,0 +1,11 @@
+0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,,
+Fail,Fail,Fail,Fail,Fail,Fri Jan 05 20:41:17 2018,avNNet,1,1,kaggle housing,ignore,none,YeoJohnson,53
+Fail,Fail,Fail,Fail,Fail,Fri Jan 05 20:41:21 2018,bag,1,1,kaggle housing,ignore,none,YeoJohnson,3
+Fail,Fail,Fail,Fail,Fail,Fri Jan 05 20:41:26 2018,bagEarth,1,1,kaggle housing,ignore,none,YeoJohnson,4
+Fail,Fail,Fail,Fail,Fail,Fri Jan 05 20:41:31 2018,bagEarthGCV,1,1,kaggle housing,ignore,none,YeoJohnson,5
+Fail,Fail,Fail,Fail,Fail,Fri Jan 05 20:52:25 2018,bayesglm,1,1,kaggle housing,ignore,none,YeoJohnson,10
+Fail,Fail,Fail,Fail,Fail,Fri Jan 05 20:52:30 2018,blasso,1,1,kaggle housing,ignore,none,YeoJohnson,4
+Fail,Fail,Fail,Fail,Fail,Fri Jan 05 20:52:33 2018,blassoAveraged,1,1,kaggle housing,ignore,none,YeoJohnson,3
+Fail,Fail,Fail,Fail,Fail,Fri Jan 05 20:52:37 2018,bridge,1,1,kaggle housing,ignore,none,YeoJohnson,3
+0.605,0.573,0.016,0.167,0.121,Fri Jan 05 20:54:10 2018,BstLm,1,1,kaggle housing,ignore,none,YeoJohnson,0.395157400946683,random,294,92,cv,20,3,1,5,362,0.521887372118887
+Fail,Fail,Fail,Fail,Fail,Fri Jan 05 21:10:25 2018,bam,1,1,kaggle housing,ignore,none,YeoJohnson,151
