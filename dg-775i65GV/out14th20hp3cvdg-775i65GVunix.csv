@@ -7264,3 +7264,8 @@ Fail,Fail,Fail,Fail,Fail,Sat Jan  6 14:03:22 2018,bag,1,2,kaggle housing,ignore,
 Fail,Fail,Fail,Fail,Fail,Sat Jan  6 14:03:33 2018,bagEarth,1,2,kaggle housing,ignore,none,YeoJohnson,6
 Fail,Fail,Fail,Fail,Fail,Sat Jan  6 14:03:48 2018,bagEarthGCV,1,2,kaggle housing,ignore,none,YeoJohnson,9
 Fail,Fail,Fail,Fail,Fail,Sat Jan  6 14:06:22 2018,bam,1,2,kaggle housing,ignore,none,YeoJohnson,149
+Fail,Fail,Fail,Fail,Fail,Sat Jan  6 14:37:55 2018,bayesglm,1,2,kaggle housing,ignore,none,YeoJohnson,15
+Fail,Fail,Fail,Fail,Fail,Sat Jan  6 14:38:10 2018,blasso,1,2,kaggle housing,ignore,none,YeoJohnson,8
+Fail,Fail,Fail,Fail,Fail,Sat Jan  6 14:38:22 2018,blassoAveraged,1,2,kaggle housing,ignore,none,YeoJohnson,6
+Fail,Fail,Fail,Fail,Fail,Sat Jan  6 14:38:34 2018,bridge,1,2,kaggle housing,ignore,none,YeoJohnson,6
+Fail,Fail,Fail,Fail,Fail,Sat Jan  6 14:38:43 2018,BstLm,1,2,kaggle housing,ignore,none,YeoJohnson,3
