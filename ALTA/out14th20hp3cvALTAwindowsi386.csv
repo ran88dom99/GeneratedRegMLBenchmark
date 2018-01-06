@@ -5199,3 +5199,16 @@ Fail,Fail,Fail,Fail,PrePackageFail,Tue Jan 02 21:07:33 2018,regr.fnn,1,1,sparsit
 0.137,0.079,2.599,1.766,1.339,Tue Jan 02 21:07:58 2018,regr.gbm,1,1,sparsity 2 col center,ignore,none,expoTrans,1.95411545775121,random,318,7,cv,20,3,NA,5,116,1,0.0480212155270856,7
 0.328,0.29,-1,1.366,1.039,Tue Jan 02 21:08:02 2018,regr.glm,1,1,sparsity 2 col center,ignore,none,expoTrans,1.95411545775121,nohyperparam,318,2,cv,20,3,NA,5
 Fail,Fail,Fail,Fail,PackageFail,Wed Jan 03 22:24:10 2018,regr.kknn,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,16
+0.725,0.716,-1,1.253,0.995,Fri Jan 05 19:06:55 2018,regr.laGP,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41277048476679,nohyperparam,276,7471,cv,20,3,NA,5
+0.467,0.453,-1,2.413,1.93,Fri Jan 05 19:07:24 2018,regr.LiblineaRL2L1SVR,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41277048476679,nohyperparam,276,27,cv,20,3,NA,5
+0.468,0.46,-1,2.385,1.925,Fri Jan 05 19:07:37 2018,regr.LiblineaRL2L2SVR,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41277048476679,nohyperparam,276,11,cv,20,3,NA,5
+0.468,0.46,-1,2.385,1.925,Fri Jan 05 19:07:50 2018,regr.lm,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41277048476679,nohyperparam,276,11,cv,20,3,NA,5
+0.468,0.46,-1,2.385,1.926,Fri Jan 05 19:08:06 2018,regr.mars,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41277048476679,nohyperparam,276,15,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Fri Jan 05 19:08:24 2018,regr.mob,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41277048476679,nohyperparam,276,15,cv,20,3,NA,5
+0.779,0.773,1.001,1.001,0.8,Fri Jan 05 19:47:35 2018,regr.nnet,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41277048476679,random,276,2349,cv,20,3,NA,5,19,0.0790649978547719
+NA,NA,-1,NA,NA,Fri Jan 05 19:50:36 2018,regr.nodeHarvest,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41277048476679,nohyperparam,276,179,cv,20,3,NA,5
+0.468,0.46,-1,2.385,1.925,Fri Jan 05 19:50:46 2018,regr.pcr,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41277048476679,nohyperparam,276,9,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Fri Jan 05 19:51:01 2018,regr.penalized.fusedlasso,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,15
+Fail,Fail,Fail,Fail,PackageFail,Fri Jan 05 19:51:12 2018,regr.penalized.lasso,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,11
+Fail,Fail,Fail,Fail,PackageFail,Fri Jan 05 19:51:24 2018,regr.penalized.ridge,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,12
+0.468,0.46,-1,2.385,1.925,Fri Jan 05 19:51:29 2018,regr.plsr,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41277048476679,nohyperparam,276,4,cv,20,3,NA,5

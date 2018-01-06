@@ -17,3 +17,7 @@ Wed Jan 03 20:49:26 2018,regr.xyf,kaggle housing,3,20,windows,i386,ALTA
 Wed Jan 03 20:58:03 2018,regr.h2o.gbm,kaggle housing,3,20,windows,i386,ALTA
 
 Wed Jan 03 22:20:37 2018,regr.xyf,sparsity 2 row center,3,20,windows,i386,ALTA
+Thu Jan 04 20:59:25 2018,regr.ksvm,OpenML 2dplanes,3,20,windows,i386,ALTA
+Thu Jan 04 21:24:03 2018,regr.bartMachine,OpenML 2dplanes,3,20,windows,i386,ALTA
+Thu Jan 04 21:54:47 2018,regr.ksvm,OpenML 2dplanes,3,20,windows,i386,ALTA
+
