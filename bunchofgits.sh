@@ -2,5 +2,5 @@
 
 git add -A
 git commit -a -m "auto"
-git pull  -s recursive -X theirs 
+git pull 
 git push origin
