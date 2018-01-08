@@ -258,7 +258,7 @@ for(gend.data in gensTTest){
           
           ###########for all models#################
           setwd(base.folder)
-          if(which.computer=="ALTA")
+          if(max(which.computer==c("ALTA","HOPPER"))>0)
             source("MLR part.R")
           else
             source("Caret part.R")

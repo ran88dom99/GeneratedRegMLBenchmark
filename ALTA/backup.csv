@@ -178,3 +178,8 @@ Succ, Fri Jan 05 19:47:35 2018, regr.nnet
 Succ, Fri Jan 05 19:50:36 2018, regr.nodeHarvest
 Succ, Fri Jan 05 19:50:46 2018, regr.pcr
 Succ, Fri Jan 05 19:51:29 2018, regr.plsr
+Succ, Sun Jan 07 07:54:09 2018, regr.randomForest
+Succ, Sun Jan 07 07:54:23 2018, regr.randomForestSRC
+Succ, Sun Jan 07 08:00:45 2018, regr.ranger
+Succ, Sun Jan 07 15:00:30 2018, regr.rknn
+Succ, Sun Jan 07 15:01:02 2018, regr.rpart

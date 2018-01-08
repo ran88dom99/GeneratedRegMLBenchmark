@@ -75,7 +75,7 @@ for(Row in 1:Rows)
 
 for(Col in 1:10){
   for(Row in 1:Rows){
-    simScores[Row,Col]=(simPubs[Col,1]*simGames[Row,1])+(simGames[Row,2]^simPubs[Col,2])*(simPubs[Col,3]^simGames[Row,3])
+    simScores[Row,Col]=(simPubs[Col,1]^simGames[Row,1])+(simGames[Row,2]^simPubs[Col,2])*(simPubs[Col,3]^simGames[Row,3])
   }}
 
 write.table(round(simScores,digits  = 3),
@@ -93,6 +93,24 @@ varimport[gen.count,1:length(varim)]=varim
 
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+}
+write.table(round(simScores,digits  = 3),
+            file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+
+######bm (C1-C2)t3#######
+gen.count=gen.count+1
+gens.names[gen.count]="bm (C1-C2)t3"
+max.out[gen.count]=1
+varim=c(.5,.5,0,0,0,0,0,0,0,0)
+varimport[gen.count,1:length(varim)]=varim
+
+for(Row in 1:Rows){
+  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+}
+for(Row in 1:Rows){
+  simScores[Row,1]=(simScores[Row,2]-simScores[Row,3])*3
 }
 write.table(round(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
@@ -484,7 +502,7 @@ write.table(round(simScores,digits  = 3),
             col.names = F, qmethod = "double")
 ######ifs C1 & C2 based on C3#####
 gen.count=gen.count+1
-gens.names[gen.count]="ifs C1 & C2 on C1"
+gens.names[gen.count]="ifs C1 & C2 on C3"
 max.out[gen.count]=1
 varim=c(1,1,1)
 varimport[gen.count,1:length(varim)]=varim
