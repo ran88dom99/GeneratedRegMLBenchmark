@@ -6,6 +6,8 @@
 #  pkgs = paste('package:', pkgs, sep = "")
 #  lapply(pkgs, detach, character.only = TRUE, unload = TRUE)
 #}
+if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file =,paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
+
 library(ParamHelpers)
 library(mlr)
 library(mlbench)
@@ -45,6 +47,7 @@ fv = generateFilterValuesData(regr.task,
                                          "univariate.model.score"),
                               nselect<-10)#,,"permutation.importance","randomForestSRC.var.select"
 plotFilterValues(fv)#issues errors"cforest.importance",,more.args = list(imp.learner<-"regr.cubist")
+
 write.table(paste("mlr",date(),datasource,fv$data,  sep = ", "),
             file = paste(importance.file,"mlr.csv",sep=""), append =TRUE, quote = F, sep = ",",
             eol = "\n", na = "NA", dec = ".", row.names = F,
