@@ -8,7 +8,7 @@ options(repos=structure(c(CRAN="https://cran.cnr.berkeley.edu")))
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 
 which.computer<-Sys.info()[['nodename']]
-task.subject<-"14th20hp3cvt"
+task.subject<-"14th20hp3cv"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
 
