@@ -253,6 +253,49 @@ write.table(round(simScores,digits  = 3),
             col.names = F, qmethod = "double")
 simScores<-matrix(data = 0, nrow = Rows, ncol = 12, byrow = FALSE,dimnames = NULL);
 simScores[,11]<-1
+######needles in haystack A t B######
+gen.count=gen.count+1
+gens.names[gen.count]="needles in haystack A t B"
+max.out[gen.count]=1
+simScores<-matrix(data = 0, nrow = Rows, ncol = 1000, byrow = FALSE,dimnames = NULL);
+for(Row in 1:Rows){
+  simScores[Row,1:1000]=rnorm(1000, mean = 0, sd = 1)
+}
+a<-round(runif(10, min = 0, max = 1000))
+for(Row in 1:Rows){
+  simScores[Row,1]=.1*simScores[Row,a[1]]*.1*simScores[Row,a[2]]+.1*simScores[Row,a[3]]*.1*simScores[Row,a[4]]+.1*simScores[Row,a[5]]*.1*simScores[Row,a[6]]+.1*simScores[Row,a[7]]*.1*simScores[Row,a[8]] 
+}
+varim=vector(mode ="numeric",length = 999)
+varim[a]<-1
+varimport[gen.count,1:length(varim)]=varim #EXPECT ERRORS HERE
+write.table(round(simScores,digits  = 3),
+            file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+simScores<-matrix(data = 0, nrow = Rows, ncol = 12, byrow = FALSE,dimnames = NULL);
+simScores[,11]<-1
+######needles in haystack A t B t C######
+gen.count=gen.count+1
+gens.names[gen.count]="needles in haystack A t B t C"
+max.out[gen.count]=1
+simScores<-matrix(data = 0, nrow = Rows, ncol = 1000, byrow = FALSE,dimnames = NULL);
+for(Row in 1:Rows){
+  simScores[Row,1:1000]=rnorm(1000, mean = 0, sd = 1)
+}
+a<-round(runif(10, min = 0, max = 1000))
+for(Row in 1:Rows){
+  simScores[Row,1]=.1*simScores[Row,a[1]]*.1*simScores[Row,a[2]]*.1*simScores[Row,a[3]]+.1*simScores[Row,a[4]]*.1*simScores[Row,a[5]]*.1*simScores[Row,a[6]]+.1*simScores[Row,a[7]]*.1*simScores[Row,a[8]]*.1*simScores[Row,a[9]] 
+}
+varim=vector(mode ="numeric",length = 999)
+varim[a]<-1
+varimport[gen.count,1:length(varim)]=varim #EXPECT ERRORS HERE
+write.table(round(simScores,digits  = 3),
+            file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+simScores<-matrix(data = 0, nrow = Rows, ncol = 12, byrow = FALSE,dimnames = NULL);
+simScores[,11]<-1
+
 ######haystack + noise######
 gen.count=gen.count+1
 gens.names[gen.count]="needles hay noise"
@@ -279,6 +322,33 @@ simScores<-matrix(data = 0, nrow = Rows, ncol = 12, byrow = FALSE,dimnames = NUL
 simScores[,11]<-1
 
 
+######haystack + noise + small effect######
+gen.count=gen.count+1
+gens.names[gen.count]="needles hay noise small effect"
+simScores<-matrix(data = 0, nrow = Rows, ncol = 1000, byrow = FALSE,dimnames = NULL);
+max.out[gen.count]=.3#.3 actualy I forgot.....
+for(Row in 1:Rows){
+  simScores[Row,1:1000]=rnorm(1000, mean = 0, sd = 1)
+}
+a<-round(runif(10, min = 0, max = 1000))
+for(Row in 1:Rows){
+  simScores[Row,1]=.1*simScores[Row,a[1]]+.1*simScores[Row,a[2]]+.1*simScores[Row,a[3]]+.1*simScores[Row,a[4]]+.1*simScores[Row,a[5]]+.1*simScores[Row,a[6]]+.1*simScores[Row,a[7]]+.1*simScores[Row,a[8]]+.1*simScores[Row,a[9]]
+}
+for(Row in 1:Rows){
+  simScores[Row,2:1000]=simScores[Row,2:1000]+rnorm(999, mean = 0, sd = .3)
+}
+for(Row in 1:Rows){
+  simScores[Row,1]=simScores[Row,1]+rnorm(1, mean = 0, sd = .5)
+}
+varim=vector(mode ="numeric",length = 999)
+varim[a]<-1
+varimport[gen.count,1:length(varim)]=varim #EXPECT ERRORS HERE
+write.table(round(simScores,digits  = 3),
+            file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+simScores<-matrix(data = 0, nrow = Rows, ncol = 12, byrow = FALSE,dimnames = NULL);
+simScores[,11]<-1
 ######sparsity NA#########
 gen.count=gen.count+1
 gens.names[gen.count]="sparsity NA"
@@ -301,15 +371,15 @@ write.table(round(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-######sparsity 0 offcenter#########
+######sparsity 0#########
 gen.count=gen.count+1
-gens.names[gen.count]="sparsity 0 offcenter"
+gens.names[gen.count]="sparsity 0"
 max.out[gen.count]=.54#.7 me^2
 max.out.sq[gen.count]=.7
 varim=c(1,1,1,1)
 varimport[gen.count,1:length(varim)]=varim
-for(Row in 1:Rows){
-  simScores[Row,1:10]=rnorm(10, mean = 2, sd = 1)
+for(Col in 1:10){
+  simScores[1:Rows,Col]=rnorm(Rows, mean = 2, sd = 1)
 }
 for(Row in 1:Rows){
   simScores[Row,1]=simScores[Row,2]+simScores[Row,3]+simScores[Row,4]+simScores[Row,5]
@@ -323,6 +393,29 @@ write.table(round(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
+######sparsity 0 random dist#########
+gen.count=gen.count+1
+gens.names[gen.count]="sparsity 0 random dist"
+max.out[gen.count]=.54#.7 me^2
+max.out.sq[gen.count]=.7
+varim=c(1,1,1,1)
+varimport[gen.count,1:length(varim)]=varim
+for(Col in 1:10){
+  simScores[1:Rows,Col]=rnorm(Rows, mean = sample(1:5,1), sd = rnorm(1,mean=3,sd=1))
+}
+for(Row in 1:Rows){
+  simScores[Row,1]=simScores[Row,2]+simScores[Row,3]+simScores[Row,4]+simScores[Row,5]
+}
+for(Row in 1:Rows){
+  for(Col in 2:10){
+    if(runif(1, min = 0, max = 1)>.7) simScores[Row,Col]<-0
+  }
+}
+write.table(round(simScores,digits  = 3),
+            file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+
 ######sparsity 2 row center#########
 gen.count=gen.count+1
 gens.names[gen.count]="sparsity 2 row center"
@@ -392,7 +485,7 @@ write.table(round(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
-######quantilization#######
+######quantilization, may need to guess distribution#######
 gen.count=gen.count+1
 gens.names[gen.count]="quantilization"
 max.out[gen.count]=.1#.1 err.sqd
