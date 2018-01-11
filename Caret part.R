@@ -205,7 +205,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     })
     if(fail.try==T){
       write.table(paste(allmodel,date(),round(mean.improvement,digits=3),datasource,"Failed",  sep = ", "),
-                  file = importance.file, append =TRUE, quote = F, sep = ",",
+                  file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
                   eol = "\n", na = "NA", dec = ".", row.names = F,
                   col.names = F, qmethod = "double")
     }

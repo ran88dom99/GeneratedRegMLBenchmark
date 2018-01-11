@@ -23,13 +23,14 @@ lots
 +info from carret on MC
 +info from all on generated
   
-+ what if mean or median of columns differs for sparsity?  
-+ c1=gL1^cL1+gL2^cL2
-+ what if one is subset of another
-++ c1= u1  c2=c3+ u1
-+ haystack  A*B      and later *C
-+ haystack noise thin
-+ haystack thin and interaction 
+- what if mean or median of columns differs for sparsity?  
+- c1=gL1^cL1+gL2^cL2 (latent interactive features)
++? what if one is subset of another
+-- c1= u1  c2=c3+ c1
+- haystack  A*B      and later *C
+- haystack noise thin
++? haystack thin and interaction 
++ toy model generators for R
   
 + first level: mean ,median, schules, weighed evened mean +++ and other condorcet methods.,  
 +++ all platt calibrated/iso reg. MAL RMSE minimized
