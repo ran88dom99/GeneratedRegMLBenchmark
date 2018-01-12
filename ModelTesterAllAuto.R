@@ -1,8 +1,8 @@
-options(repos=structure(c(CRAN="https://cran.cnr.berkeley.edu")))
-## capture messages and errors to a file.
-#zz <- file("all.Rout", open="wt")
+options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
+## capture messages and errors to a file.https://rweb.crmda.ku.edu/cran/
+#zz <- file("all.Rout", open="wt")https://cran.cnr.berkeley.edu
 #sink(zz, type="message")
-
+#chek for R package updates
 #try(log("a"))
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
@@ -35,13 +35,14 @@ if(length(gensTTest)<1) gensTTest<-gensTTesto
 ########packages install check######
 
 #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
-#list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
+#list.of.packages <- c("gower","dimRed","DEoptimR","caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 #new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 #if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
 
 #install.packages("mlr", dependencies = c("Depends", "Suggests"))
 #install.packages("caret", dependencies = c("Depends", "Suggests"))
+#install.packages("caret",repos = "http://cran.r-project.org",dependencies = c("Depends", "Imports", "Suggests"))
 #install.packages("SuperLearner", dependencies = c("Depends", "Suggests"))
 #install.packages("rattle", dependencies = c("Depends", "Suggests"))
 

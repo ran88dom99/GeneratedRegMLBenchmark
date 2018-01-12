@@ -1,5 +1,5 @@
 
-R version 3.4.1 (2017-06-30) -- "Single Candle"
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
@@ -15,9 +15,9 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
-> options(repos=structure(c(CRAN="https://cran.cnr.berkeley.edu")))
-> ## capture messages and errors to a file.
-> #zz <- file("all.Rout", open="wt")
+> options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
+> ## capture messages and errors to a file.https://rweb.crmda.ku.edu/cran/
+> #zz <- file("all.Rout", open="wt")https://cran.cnr.berkeley.edu
 > #sink(zz, type="message")
 > 
 > #try(log("a"))
@@ -52,13 +52,14 @@ Type 'q()' to quit R.
 > ########packages install check######
 > 
 > #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
-> #list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
+> #list.of.packages <- c("dimRed","DEoptimR","caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > #new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > #if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 > 
 > 
 > #install.packages("mlr", dependencies = c("Depends", "Suggests"))
 > #install.packages("caret", dependencies = c("Depends", "Suggests"))
+> #install.packages("caret",repos = "http://cran.r-project.org",dependencies = c("Depends", "Imports", "Suggests"))
 > #install.packages("SuperLearner", dependencies = c("Depends", "Suggests"))
 > #install.packages("rattle", dependencies = c("Depends", "Suggests"))
 > 
@@ -73,9 +74,9 @@ Loading required package: ggplot2
 
 Attaching package: 'MLmetrics'
 
-The following object is masked from 'package:caret':
+The following objects are masked from 'package:caret':
 
-    RMSE
+    MAE, RMSE
 
 The following object is masked from 'package:base':
 
@@ -195,7 +196,7 @@ The following object is masked from 'package:base':
 > new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 Warning message:
-packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1) 
+packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.3) 
 > 
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
@@ -206,7 +207,7 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Thu Jan 11 17:07:48 2018"
+[1] "Thu Jan 11 21:03:38 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -315,9 +316,47 @@ The following object is masked from 'package:caret':
 
     train
 
-Error in library(mlrHyperopt) : there is no package called 'mlrHyperopt'
-Calls: source -> withVisible -> eval -> eval -> library
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.bartMachine please install the following packages: bartMachine
 In addition: Warning message:
-In estimateTransform.default(X, Y, weights, family, ...) :
-  Convergence failure: return code = 52
-Execution halted
+replacing previous import 'BBmisc::isFALSE' by 'backports::isFALSE' when loading 'mlr' 
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.bcart no default is available.
+
+burn in:
+**GROW** @depth 0: [69,0], n=(790,307)
+**GROW** @depth 1: [151,0], n=(388,402)
+**GROW** @depth 1: [91,0.25], n=(187,330)
+r=1000 d=[0] [0] [0] [0]; n=(388,192,187,330)
+**GROW** @depth 2: [57,0], n=(193,195)
+r=2000 d=[0] [0] [0] [0] [0]; n=(193,195,192,187,330)
+
+Sampling @ nn=0 pred locs:
+r=1000 d=[0] [0] [0] [0] [0]; mh=4 n=(193,195,192,187,330)
+r=2000 d=[0] [0] [0] [0] [0]; mh=4 n=(193,195,192,187,330)
+r=3000 d=[0] [0] [0] [0] [0]; mh=4 n=(193,195,192,187,330)
+r=4000 d=[0] [0] [0] [0] [0]; mh=4 n=(193,195,192,187,330)
+r=5000 d=[0] [0] [0] [0] [0]; mh=4 n=(193,195,192,187,330)
+Grow: 1.143%, Prune: 0%, Change: 0%, Swap: 0.274%
+
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.bcart: Error in predict.tgp(.model$learner.model, XX = .newdata, pred.n = FALSE,  : 
+  mismatched column dimension of object$X and XX
+
+[1] "Thu Jan 11 21:13:01 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.bdk no default is available.
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.bdk: Error : 'bdk' is not an exported object from 'namespace:kohonen'
+
+[1] "Thu Jan 11 21:13:17 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.blackboost please install the following packages: mboost
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.blm no default is available.
+
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.blm: Error in tgp(X, Z, XX, BTE, R, m0r1, FALSE, params, itemps, pred.n, krige,  : 
+  X[,1:166]-matrix is not of full rank
+
+[1] "Thu Jan 11 21:13:42 2018"

@@ -5458,3 +5458,8 @@ NA,NA,-1,NA,NA,Sun Jan 07 07:54:23 2018,regr.randomForestSRC,1,1,OpenML 2dplanes
 NA,NA,NA,NA,NA,Sun Jan 07 08:00:45 2018,regr.ranger,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41662684994513,random,313,380,cv,20,3,NA,5,6,3
 NA,NA,-1,NA,NA,Sun Jan 07 15:00:30 2018,regr.rknn,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.39881029037805,nohyperparam,275,10,cv,20,3,NA,5
 0.761,0.755,1.084,1.078,0.863,Sun Jan 07 15:01:02 2018,regr.rpart,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.39881029037805,random,275,30,cv,20,3,NA,5,0.0010839418310029,30,41,33
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jan 11 21:12:38 2018,regr.bartMachine,1,2,kaggle housing,ignore,none,YeoJohnson,12
+NA,NA,-1,NA,NA,Thu Jan 11 21:13:01 2018,regr.bcart,1,2,kaggle housing,ignore,none,YeoJohnson,0.386307246141524,nohyperparam,306,15,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Jan 11 21:13:17 2018,regr.bdk,1,2,kaggle housing,ignore,none,YeoJohnson,0.386307246141524,nohyperparam,306,8,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jan 11 21:13:25 2018,regr.blackboost,1,2,kaggle housing,ignore,none,YeoJohnson,9
+NA,NA,-1,NA,NA,Thu Jan 11 21:13:42 2018,regr.blm,1,2,kaggle housing,ignore,none,YeoJohnson,0.386307246141524,nohyperparam,306,9,cv,20,3,NA,5
