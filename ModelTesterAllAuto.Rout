@@ -1,5 +1,5 @@
 
-R version 3.4.1 (2017-06-30) -- "Single Candle"
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
@@ -15,11 +15,11 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
-> options(repos=structure(c(CRAN="https://cran.cnr.berkeley.edu")))
-> ## capture messages and errors to a file.
-> #zz <- file("all.Rout", open="wt")
+> options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
+> ## capture messages and errors to a file.https://rweb.crmda.ku.edu/cran/
+> #zz <- file("all.Rout", open="wt")https://cran.cnr.berkeley.edu
 > #sink(zz, type="message")
-> 
+> #chek for R package updates
 > #try(log("a"))
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
@@ -34,8 +34,8 @@ Type 'q()' to quit R.
 > setwd(cpout.folder)
 > 
 > if(length(which(list.files() == out.file))<1) write.table( "0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,," ,file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
-> if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,".csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
-> if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
+> if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,".csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
+> if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 > 
 > cv.iters=3
 > tuneLength=20
@@ -52,13 +52,14 @@ Type 'q()' to quit R.
 > ########packages install check######
 > 
 > #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
-> #list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
+> #list.of.packages <- c("gower","dimRed","DEoptimR","caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > #new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > #if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 > 
 > 
 > #install.packages("mlr", dependencies = c("Depends", "Suggests"))
 > #install.packages("caret", dependencies = c("Depends", "Suggests"))
+> #install.packages("caret",repos = "http://cran.r-project.org",dependencies = c("Depends", "Imports", "Suggests"))
 > #install.packages("SuperLearner", dependencies = c("Depends", "Suggests"))
 > #install.packages("rattle", dependencies = c("Depends", "Suggests"))
 > 
@@ -73,9 +74,9 @@ Loading required package: ggplot2
 
 Attaching package: 'MLmetrics'
 
-The following object is masked from 'package:caret':
+The following objects are masked from 'package:caret':
 
-    RMSE
+    MAE, RMSE
 
 The following object is masked from 'package:base':
 
@@ -193,3 +194,3215 @@ The following object is masked from 'package:base':
 > list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
+Warning message:
+packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.3) 
+> 
+> #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
+> #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
+> 
+> tuneLengthMLR<-tuneLength
+> mlr.iters<-cv.iters
+> #######data read process start#####
+> seed.var =222+round(runif(1,min=0,max=100))
+> column.to.predict=1
+> print(date());
+[1] "Thu Jan 11 21:28:20 2018"
+> 
+> setwd(base.folder)
+> if(!exists("gen.count")){gen.count=56}
+> gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
+> for(gend.data in gensTTest){
++   setwd(base.folder)
++   data.source<-as.matrix(read.csv(paste("Generats/",gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
++   datasource<-gens.names[gend.data,1]
++   setwd(cpout.folder)
++   missingdatas=c("ignore")
++   for(missingdata in missingdatas){
++     withextras=c("none")
++     for(withextra in withextras){
++       ################data wrestling###############
++       
++       dependant.selection=complete.cases(data.source[,column.to.predict])
++       df.previous.calcs=as.data.frame(read.csv(file=out.file, header = FALSE, sep = ",", quote = "",
++                                                dec = ".", fill = TRUE, comment.char = ""))
++       unimportant.computations<-vector(mode = "logical",length=length(df.previous.calcs[,1])  )
++       for(intern in 1:length(df.previous.calcs[,1])){
++         if((any(df.previous.calcs[intern,] == withextra, na.rm=T))&&
++            (any(df.previous.calcs[intern,] == missingdata, na.rm=T))&&
++            (any(df.previous.calcs[intern,] == datasource, na.rm=T))&&
++            (any(df.previous.calcs[intern,] == column.to.predict, na.rm=T)))
++         {unimportant.computations[intern]<-T}}
++       
++       df.previous.calcs<-df.previous.calcs[unimportant.computations,]
++       
++       
++       
++       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
++       
++       
++         for(norming in normings) {
++         for(trans.y in 1:2) {
++           df.toprocess=data.source
++           y.untransformed<-df.toprocess[,1]
++           
++           if(norming=="centernscale"){
++             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("center", "scale"))
++             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++           if(norming=="range01"){
++             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
++             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++           if(norming=="expoTrans"){
++             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("expoTrans"))
++             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++           if(norming=="YeoJohnson"){
++             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("YeoJohnson"))#"center", "scale",
++             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++           
++           if((norming=="asis")&&(trans.y==2)){next}
++           
++           
++           ################preprocess###########
++           df.toprocess=data.frame(df.toprocess[dependant.selection,])
++           y.untransformed=y.untransformed[dependant.selection]
++           if(norming=="quantile"){
++             for(Clol in trans.y:length(data.source[1,])){
++               df.toprocess[,Clol]<- (rank(df.toprocess[,Clol],na.last = "keep",ties.method = "average")-1) }
++             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
++             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++           
++           
++           loess.model<-loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
++           
++           
++           #df.toprocess = data.frame(df.toprocess,)
++           nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
++           #nzv[nzv$nzv,][1:10,]
++           if(length(nzv)>1){
++             df.toprocess = (df.toprocess[, -nzv])}
++           
++           seed.var =222+round(runif(1,min=0,max=100))
++           set.seed(seed.var)
++           inTrain <- createDataPartition(y = df.toprocess[,1],
++                                          p = .75,
++                                          list = FALSE)
++           training <- df.toprocess[ inTrain,]
++           testing  <- df.toprocess[-inTrain,]
++           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F,col.names = F)
++           
++           
++           
++           ###########for all models#################
++           setwd(base.folder)
++           if(max(which.computer==c("ALTA","HOPPER"))>0)
++             source("MLR part.R")
++           else
++             source("Caret part.R")
++           
++          setwd(cpout.folder)
++           if(norming == normings[length(normings)]){
++             write.table( gensTTest[-1],file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
++           
++         }
++       }
++     }
++   }
++   
++ }
+
+Attaching package: 'mlr'
+
+The following object is masked from 'package:caret':
+
+    train
+
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.brnn no default is available.
+In addition: Warning message:
+replacing previous import 'BBmisc::isFALSE' by 'backports::isFALSE' when loading 'mlr' 
+Number of parameters (weights and biases) to estimate: 332 
+Nguyen-Widrow method
+Scaling factor= 0.7004424 
+gamma= 205.4741 	 alpha= 56.7985 	 beta= 108.6158 
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.brnn: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Thu Jan 11 21:38:19 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.bst no default is available.
+[1] "Thu Jan 11 21:38:35 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.btlm no default is available.
+
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.btlm: Error in tgp(X, Z, XX, BTE, R, m0r1, FALSE, params, itemps, pred.n, krige,  : 
+  X[,1:164]-matrix is not of full rank
+
+[1] "Thu Jan 11 21:38:50 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.cforest no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.cforest: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Thu Jan 11 21:39:16 2018"
+Loading required package: crs
+Error: package or namespace load failed for 'crs' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'MatrixModels'
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.crs please install the following packages: crs
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.ctree no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.ctree: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Thu Jan 11 21:39:41 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.cubist no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.cubist: Error in `[.data.frame`(newdata, , object$vars$all, drop = FALSE) : 
+  undefined columns selected
+
+[1] "Thu Jan 11 21:39:59 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.cvglmnet no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.cvglmnet: Error in cbind2(1, newx) %*% nbeta : 
+  Cholmod error 'X and/or Y have wrong dimensions' at file ../MatrixOps/cholmod_sdmult.c, line 90
+
+[1] "Thu Jan 11 21:40:18 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.earth no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.earth: Error : get.earth.x from model.matrix.earth from predict.earth: x has 162 columns, expected 164 to match: V2 V3 V7 V8 V9 V10 V13 V14 V15 V18 V22 V25 V26 V29 V30 V38 V40 V41 V45 V48 V49 V50 V51 V53 V59 V60 V75 V79 V80 V82 V85 V88 V89 V90 V91 V93 V95 V112 V114 V115 V118 V119 V127 V129 V131 V134 V135 V138 V139 V140 V141 V144 V145 V148 V150 V151 V152 V153 V157 V159 V160 V164 V165 V166 V167 V168 V169 V170 V171 V172 V173 V174 V175 V181 V183 V184 V191 V193 V195 V196 V197 V198 V202 V203 V204 V206 V207 V208 V209 V210 V211 V213 V215 V216 V217 V224 V225 V228 V230 V232 V234 V236 V237 V238 V239 V240 V241 V242 V253 V255 V256 V257 V262 V263 V264 V265 V266 V267 V271 V274 V275 V282 V284 V285 V289 V290 V9.dummy V13.dummy V14.dummy V138.dummy V139.dummy V140.dummy V141.dummy V157.dummy V159.dummy V160.dummy V164.dummy V165.dummy V166.dummy V167.dummy V168.dummy V169.dummy V170.dummy V171.dummy V172.dummy V173.dummy V174.dummy V181.dummy V228.dummy V230.dummy V23 [... truncated]
+[1] "Thu Jan 11 21:40:34 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.elmNN no default is available.
+Loading required package: MASS
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.elmNN: Error in inpweight %*% TV.P : non-conformable arguments
+
+[1] "Thu Jan 11 21:40:50 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.evtree please install the following packages: evtree
+[Tune] Started tuning learner regr.extraTrees for parameter set:
+                 Type len Def   Constr Req Tunable Trafo
+mtry          integer   -  54 1 to 164   -    TRUE     -
+numRandomCuts integer   -   1  1 to 25   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: mtry=22; numRandomCuts=3
+[Tune-y] 1: rmse.test.rmse=0.144; time: 0.6 min
+[Tune-x] 2: mtry=111; numRandomCuts=4
+[Tune-y] 2: rmse.test.rmse=0.147; time: 3.2 min
+[Tune-x] 3: mtry=109; numRandomCuts=16
+[Tune-y] 3: rmse.test.rmse=0.15; time: 10.7 min
+[Tune-x] 4: mtry=99; numRandomCuts=19
+[Tune-y] 4: rmse.test.rmse=0.148; time: 12.0 min
+[Tune-x] 5: mtry=64; numRandomCuts=24
+[Tune-y] 5: rmse.test.rmse=0.143; time: 10.9 min
+[Tune-x] 6: mtry=75; numRandomCuts=25
+[Tune-y] 6: rmse.test.rmse=0.145; time: 12.6 min
+[Tune-x] 7: mtry=37; numRandomCuts=19
+[Tune-y] 7: rmse.test.rmse=0.141; time: 5.0 min
+[Tune-x] 8: mtry=100; numRandomCuts=22
+[Tune-y] 8: rmse.test.rmse=0.149; time: 14.2 min
+[Tune-x] 9: mtry=127; numRandomCuts=12
+[Tune-y] 9: rmse.test.rmse=0.154; time: 9.4 min
+[Tune-x] 10: mtry=49; numRandomCuts=11
+[Tune-y] 10: rmse.test.rmse=0.142; time: 3.9 min
+[Tune-x] 11: mtry=32; numRandomCuts=8
+[Tune-y] 11: rmse.test.rmse=0.141; time: 2.0 min
+[Tune-x] 12: mtry=159; numRandomCuts=11
+[Tune-y] 12: rmse.test.rmse=0.162; time: 9.5 min
+[Tune-x] 13: mtry=60; numRandomCuts=7
+[Tune-y] 13: rmse.test.rmse=0.143; time: 3.2 min
+[Tune-x] 14: mtry=13; numRandomCuts=3
+[Tune-y] 14: rmse.test.rmse=0.147; time: 0.4 min
+[Tune-x] 15: mtry=62; numRandomCuts=7
+[Tune-y] 15: rmse.test.rmse=0.142; time: 3.3 min
+[Tune-x] 16: mtry=10; numRandomCuts=5
+[Tune-y] 16: rmse.test.rmse=0.147; time: 0.5 min
+[Tune-x] 17: mtry=143; numRandomCuts=25
+[Tune-y] 17: rmse.test.rmse=0.162; time: 20.2 min
+[Tune-x] 18: mtry=24; numRandomCuts=1
+[Tune-y] 18: rmse.test.rmse=0.152; time: 0.4 min
+[Tune-x] 19: mtry=88; numRandomCuts=18
+[Tune-y] 19: rmse.test.rmse=0.146; time: 11.3 min
+[Tune-x] 20: mtry=114; numRandomCuts=5
+[Tune-y] 20: rmse.test.rmse=0.148; time: 4.0 min
+[Tune] Result: mtry=37; numRandomCuts=19 : rmse.test.rmse=0.141
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.extraTrees: Error in predict.extraTrees(.model$learner.model, as.matrix(.newdata),  : 
+  newdata(ncol=162) does not have the same dimensions as the original x (ncol=164)
+
+[1] "Fri Jan 12 00:01:17 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+[1] "Fri Jan 12 00:01:33 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.fnn: Error in get.knnx(train, test, k, algorithm) : 
+  Number of columns must be same!.
+
+[1] "Fri Jan 12 00:01:48 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.frbs: Error in rep(1:num.varinput, num.labels.input) : invalid 'times' argument
+
+[1] "Fri Jan 12 00:03:02 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.gamboost please install the following packages: mboost
+In addition: Warning messages:
+1: In validate.params(object, newdata) :
+  There are your newdata which are out of the specified range
+2: In validate.params(object, newdata) :
+  There are your newdata which are out of the specified range
+3: In validate.params(object, newdata) :
+  There are your newdata which are out of the specified range
+4: In validate.params(object, newdata) :
+  There are your newdata which are out of the specified range
+5: In validate.params(object, newdata) :
+  There are your newdata which are out of the specified range
+6: In validate.params(object, newdata) :
+  There are your newdata which are out of the specified range
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Using automatic sigma estimation (sigest) for RBF or laplace kernel 
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.gausspr: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Fri Jan 12 00:03:30 2018"
+[Tune] Started tuning learner regr.gbm for parameter set:
+                     Type len   Def       Constr Req Tunable Trafo
+n.trees           numeric   -  5.64    0 to 6.64   -    TRUE     Y
+interaction.depth integer   -     1      1 to 10   -    TRUE     -
+shrinkage         numeric   - 0.001 0.001 to 0.6   -    TRUE     -
+n.minobsinnode    integer   -    10      5 to 25   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: n.trees=18; interaction.depth=1; shrinkage=0.404; n.minobsinnode=7
+[Tune-y] 1: rmse.test.rmse=0.17; time: 0.0 min
+[Tune-x] 2: n.trees=210; interaction.depth=7; shrinkage=0.362; n.minobsinnode=20
+[Tune-y] 2: rmse.test.rmse=0.165; time: 0.3 min
+[Tune-x] 3: n.trees=59; interaction.depth=10; shrinkage=0.274; n.minobsinnode=25
+[Tune-y] 3: rmse.test.rmse=0.154; time: 0.1 min
+[Tune-x] 4: n.trees=28; interaction.depth=8; shrinkage=0.363; n.minobsinnode=23
+[Tune-y] 4: rmse.test.rmse=0.16; time: 0.1 min
+[Tune-x] 5: n.trees=348; interaction.depth=5; shrinkage=0.177; n.minobsinnode=13
+[Tune-y] 5: rmse.test.rmse=0.149; time: 0.3 min
+[Tune-x] 6: n.trees=24; interaction.depth=4; shrinkage=0.581; n.minobsinnode=13
+[Tune-y] 6: rmse.test.rmse=0.172; time: 0.0 min
+[Tune-x] 7: n.trees=54; interaction.depth=3; shrinkage=0.0454; n.minobsinnode=6
+[Tune-y] 7: rmse.test.rmse=0.178; time: 0.0 min
+[Tune-x] 8: n.trees=57; interaction.depth=3; shrinkage=0.037; n.minobsinnode=9
+[Tune-y] 8: rmse.test.rmse=0.186; time: 0.0 min
+[Tune-x] 9: n.trees=551; interaction.depth=10; shrinkage=0.0878; n.minobsinnode=5
+[Tune-y] 9: rmse.test.rmse=0.141; time: 0.9 min
+[Tune-x] 10: n.trees=116; interaction.depth=7; shrinkage=0.417; n.minobsinnode=8
+[Tune-y] 10: rmse.test.rmse=0.175; time: 0.2 min
+[Tune-x] 11: n.trees=22; interaction.depth=2; shrinkage=0.564; n.minobsinnode=17
+[Tune-y] 11: rmse.test.rmse=0.163; time: 0.0 min
+[Tune-x] 12: n.trees=41; interaction.depth=3; shrinkage=0.169; n.minobsinnode=20
+[Tune-y] 12: rmse.test.rmse=0.146; time: 0.0 min
+[Tune-x] 13: n.trees=12; interaction.depth=7; shrinkage=0.0225; n.minobsinnode=22
+[Tune-y] 13: rmse.test.rmse=0.336; time: 0.0 min
+[Tune-x] 14: n.trees=247; interaction.depth=3; shrinkage=0.29; n.minobsinnode=13
+[Tune-y] 14: rmse.test.rmse=0.149; time: 0.1 min
+[Tune-x] 15: n.trees=203; interaction.depth=2; shrinkage=0.0132; n.minobsinnode=19
+[Tune-y] 15: rmse.test.rmse=0.185; time: 0.1 min
+[Tune-x] 16: n.trees=177; interaction.depth=10; shrinkage=0.484; n.minobsinnode=5
+[Tune-y] 16: rmse.test.rmse=0.194; time: 0.3 min
+[Tune-x] 17: n.trees=205; interaction.depth=7; shrinkage=0.396; n.minobsinnode=25
+[Tune-y] 17: rmse.test.rmse=0.168; time: 0.3 min
+[Tune-x] 18: n.trees=130; interaction.depth=6; shrinkage=0.452; n.minobsinnode=6
+[Tune-y] 18: rmse.test.rmse=0.176; time: 0.2 min
+[Tune-x] 19: n.trees=512; interaction.depth=8; shrinkage=0.129; n.minobsinnode=8
+[Tune-y] 19: rmse.test.rmse=0.141; time: 0.7 min
+[Tune-x] 20: n.trees=11; interaction.depth=3; shrinkage=0.438; n.minobsinnode=19
+[Tune-y] 20: rmse.test.rmse=0.166; time: 0.0 min
+[Tune] Result: n.trees=512; interaction.depth=8; shrinkage=0.129; n.minobsinnode=8 : rmse.test.rmse=0.141
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.gbm: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Fri Jan 12 00:07:55 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: There were 20 warnings (use warnings() to see them)
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.glm: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Fri Jan 12 00:08:10 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.glmboost please install the following packages: mboost
+[Tune] Started tuning learner regr.glmnet for parameter set:
+          Type len Def   Constr Req Tunable Trafo
+alpha  numeric   -   1   0 to 1   -    TRUE     -
+lambda numeric   -   0 -10 to 3   -    TRUE     Y
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: alpha=0.133; lambda=0.00214
+[Tune-y] 1: rmse.test.rmse=0.141; time: 0.0 min
+[Tune-x] 2: alpha=0.673; lambda=0.00316
+[Tune-y] 2: rmse.test.rmse=0.135; time: 0.0 min
+[Tune-x] 3: alpha=0.661; lambda=0.252
+[Tune-y] 3: rmse.test.rmse=0.28; time: 0.0 min
+[Tune-x] 4: alpha=0.602; lambda=0.856
+[Tune-y] 4: rmse.test.rmse=0.403; time: 0.0 min
+[Tune-x] 5: alpha=0.387; lambda=4.03
+[Tune-y] 5: rmse.test.rmse=0.403; time: 0.0 min
+[Tune-x] 6: alpha=0.456; lambda=7.14
+[Tune-y] 6: rmse.test.rmse=0.403; time: 0.0 min
+[Tune-x] 7: alpha=0.223; lambda=0.66
+[Tune-y] 7: rmse.test.rmse=0.289; time: 0.0 min
+[Tune-x] 8: alpha=0.605; lambda=2.38
+[Tune-y] 8: rmse.test.rmse=0.403; time: 0.0 min
+[Tune-x] 9: alpha=0.771; lambda=0.0668
+[Tune-y] 9: rmse.test.rmse=0.173; time: 0.0 min
+[Tune-x] 10: alpha=0.294; lambda=0.0431
+[Tune-y] 10: rmse.test.rmse=0.14; time: 0.0 min
+[Tune-x] 11: alpha=0.19; lambda=0.0151
+[Tune-y] 11: rmse.test.rmse=0.134; time: 0.0 min
+[Tune-x] 12: alpha=0.968; lambda=0.0444
+[Tune-y] 12: rmse.test.rmse=0.166; time: 0.0 min
+[Tune-x] 13: alpha=0.365; lambda=0.0106
+[Tune-y] 13: rmse.test.rmse=0.134; time: 0.0 min
+[Tune-x] 14: alpha=0.0741; lambda=0.00218
+[Tune-y] 14: rmse.test.rmse=0.141; time: 0.0 min
+[Tune-x] 15: alpha=0.377; lambda=0.0113
+[Tune-y] 15: rmse.test.rmse=0.134; time: 0.0 min
+[Tune-x] 16: alpha=0.0601; lambda=0.00587
+[Tune-y] 16: rmse.test.rmse=0.139; time: 0.0 min
+[Tune-x] 17: alpha=0.871; lambda=6.41
+[Tune-y] 17: rmse.test.rmse=0.403; time: 0.0 min
+[Tune-x] 18: alpha=0.145; lambda=0.00108
+[Tune-y] 18: rmse.test.rmse=0.142; time: 0.0 min
+[Tune-x] 19: alpha=0.532; lambda=0.455
+[Tune-y] 19: rmse.test.rmse=0.353; time: 0.0 min
+[Tune-x] 20: alpha=0.694; lambda=0.00443
+[Tune-y] 20: rmse.test.rmse=0.135; time: 0.0 min
+[Tune] Result: alpha=0.377; lambda=0.0113 : rmse.test.rmse=0.134
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.glmnet: Error in cbind2(1, newx) %*% nbeta : 
+  Cholmod error 'X and/or Y have wrong dimensions' at file ../MatrixOps/cholmod_sdmult.c, line 90
+
+[1] "Fri Jan 12 00:08:39 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+
+H2O is not running yet, starting it now...
+
+Note:  In case of errors look at the following log files:
+    C:\Users\gvg\AppData\Local\Temp\RtmpKIcNTQ/h2o_gvg_started_from_r.out
+    C:\Users\gvg\AppData\Local\Temp\RtmpKIcNTQ/h2o_gvg_started_from_r.err
+
+java version "1.8.0_25"
+Java(TM) SE Runtime Environment (build 1.8.0_25-b18)
+Java HotSpot(TM) 64-Bit Server VM (build 25.25-b02, mixed mode)
+
+Starting H2O JVM and connecting: ..... Connection successful!
+
+R is connected to the H2O cluster: 
+    H2O cluster uptime:         10 seconds 992 milliseconds 
+    H2O cluster version:        3.16.0.2 
+    H2O cluster version age:    1 month and 12 days  
+    H2O cluster name:           H2O_started_from_R_gvg_kco261 
+    H2O cluster total nodes:    1 
+    H2O cluster total memory:   0.77 GB 
+    H2O cluster total cores:    4 
+    H2O cluster allowed cores:  4 
+    H2O cluster healthy:        TRUE 
+    H2O Connection ip:          localhost 
+    H2O Connection port:        54321 
+    H2O Connection proxy:       NA 
+    H2O Internal Security:      FALSE 
+    H2O API Extensions:         Algos, AutoML, Core V3, Core V4 
+    R Version:                  R version 3.4.3 (2017-11-30) 
+
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |=======                                                               |  10%  |                                                                              |=====================                                                 |  30%  |                                                                              |==========================================                            |  60%  |                                                                              |=================================================                     |  70%  |                                                                              |===============================================================       |  90%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+[1] "Fri Jan 12 00:09:40 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: Warning messages:
+1: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V138.dummy': substituting in a column of NaN
+2: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V139.dummy': substituting in a column of NaN
+3: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V140.dummy': substituting in a column of NaN
+4: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V141.dummy': substituting in a column of NaN
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |===========                                                           |  16%  |                                                                              |==========================================                            |  60%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+[1] "Fri Jan 12 00:10:04 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: Warning messages:
+1: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V138.dummy': substituting in a column of NaN
+2: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V139.dummy': substituting in a column of NaN
+3: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V140.dummy': substituting in a column of NaN
+4: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V141.dummy': substituting in a column of NaN
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+[1] "Fri Jan 12 00:10:24 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: Warning messages:
+1: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V138.dummy': substituting in a column of NaN
+2: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V139.dummy': substituting in a column of NaN
+3: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V140.dummy': substituting in a column of NaN
+4: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V141.dummy': substituting in a column of NaN
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |====                                                                  |   6%  |                                                                              |=============                                                         |  18%  |                                                                              |========================                                              |  34%  |                                                                              |================================                                      |  46%  |                                                                              |===========================================                           |  62%  |                                                                              |=======================================================               |  78%  |                                                                              |==================================================================    |  94%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+[1] "Fri Jan 12 00:10:53 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.IBk please install the following packages: RWeka
+In addition: Warning messages:
+1: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V138.dummy': substituting in a column of NaN
+2: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V139.dummy': substituting in a column of NaN
+3: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V140.dummy': substituting in a column of NaN
+4: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V141.dummy': substituting in a column of NaN
+Loading required package: kknn
+
+Attaching package: 'kknn'
+
+The following object is masked from 'package:caret':
+
+    contr.dummy
+
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: Warning message:
+package '!kknn' is not available (for R version 3.4.3) 
+
+optimisation start
+------------------
+* estimation method   : MLE 
+* optimisation method : BFGS 
+* analytical gradient : used
+* trend model : ~1
+* covariance model : 
+  - type :  matern5_2 
+  - nugget : NO
+  - parameters lower bounds :  1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 
+  - parameters upper bounds :  2918 340 2 2 626 427536 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 18 16 276 120 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3200 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 4520 2 4672 6412 2 2 2 2 2 2 2 5608 4130 8684 6 4 6 4 16 2 2 2 24 2 6 2 2 2 2 2 4020 2 2 2 8 2780 2 2 1714 1094 2 2 2 2 2 2 2 22 8 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+  - best initial criterion value(s) :  -546.4995 
+
+N = 164, M = 5 machine precision = 2.22045e-16
+At X0, 0 variables are exactly at the bounds
+At iterate     0  f=        546.5  |proj g|=       3.3196
+At iterate     1  f =       514.55  |proj g|=        1.5242
+At iterate     2  f =       513.24  |proj g|=        1.4884
+ys=-2.740e-02  -gs= 1.294e+00, BFGS update SKIPPED
+At iterate     3  f =       512.13  |proj g|=        1.4509
+ys=-2.213e-02  -gs= 1.100e+00, BFGS update SKIPPED
+At iterate     4  f =       510.46  |proj g|=        1.4671
+ys=-2.188e-02  -gs= 1.654e+00, BFGS update SKIPPED
+At iterate     5  f =       508.61  |proj g|=        1.4504
+ys=-1.767e-02  -gs= 1.845e+00, BFGS update SKIPPED
+At iterate     6  f =       505.02  |proj g|=        1.7187
+ys=-6.952e-02  -gs= 3.550e+00, BFGS update SKIPPED
+At iterate     7  f =       503.19  |proj g|=        1.6902
+ys=-4.858e-02  -gs= 1.801e+00, BFGS update SKIPPED
+At iterate     8  f =        502.1  |proj g|=        1.6591
+ys=-5.161e-02  -gs= 1.069e+00, BFGS update SKIPPED
+At iterate     9  f =       500.37  |proj g|=        1.7283
+ys=-1.436e-01  -gs= 1.660e+00, BFGS update SKIPPED
+At iterate    10  f =       495.91  |proj g|=        1.6872
+ys=-6.508e-01  -gs= 4.072e+00, BFGS update SKIPPED
+At iterate    11  f =       492.71  |proj g|=        1.6397
+ys=-1.659e-01  -gs= 3.114e+00, BFGS update SKIPPED
+At iterate    12  f =       488.63  |proj g|=        1.5501
+ys=-3.743e-01  -gs= 3.873e+00, BFGS update SKIPPED
+At iterate    13  f =       482.54  |proj g|=        1.6379
+ys=-7.854e-01  -gs= 5.624e+00, BFGS update SKIPPED
+At iterate    14  f =       477.69  |proj g|=        1.7185
+ys=-1.661e-01  -gs= 4.737e+00, BFGS update SKIPPED
+At iterate    15  f =       472.58  |proj g|=        1.7968
+At iterate    16  f =       432.68  |proj g|=        2.1648
+At iterate    17  f =       419.06  |proj g|=        2.1166
+At iterate    18  f =       396.03  |proj g|=        1.6426
+At iterate    19  f =        382.7  |proj g|=         1.156
+At iterate    20  f =       376.11  |proj g|=        1.6924
+ys=-4.293e-01  -gs= 6.814e+00, BFGS update SKIPPED
+At iterate    21  f =       341.57  |proj g|=        1.2916
+At iterate    22  f =       339.94  |proj g|=        1.7246
+At iterate    23  f =       333.24  |proj g|=        1.2599
+ys=-2.622e+00  -gs= 3.986e+00, BFGS update SKIPPED
+At iterate    24  f =       329.82  |proj g|=       0.90301
+At iterate    25  f =       326.82  |proj g|=       0.99225
+At iterate    26  f =       324.45  |proj g|=        1.5229
+ys=-6.427e-01  -gs= 2.002e+00, BFGS update SKIPPED
+At iterate    27  f =       320.86  |proj g|=       0.74842
+At iterate    28  f =        319.1  |proj g|=       0.42842
+At iterate    29  f =        318.2  |proj g|=       0.41198
+At iterate    30  f =       309.13  |proj g|=        1.3039
+ys=-7.471e+00  -gs= 3.632e+00, BFGS update SKIPPED
+At iterate    31  f =       297.66  |proj g|=         1.585
+At iterate    32  f =       284.01  |proj g|=       0.41265
+At iterate    33  f =       283.79  |proj g|=       0.43111
+ys=-5.347e-03  -gs= 2.116e-01, BFGS update SKIPPED
+At iterate    34  f =       283.62  |proj g|=       0.44436
+ys=-9.164e-03  -gs= 1.684e-01, BFGS update SKIPPED
+At iterate    35  f =       282.22  |proj g|=       0.64357
+ys=-2.951e-01  -gs= 1.235e+00, BFGS update SKIPPED
+At iterate    36  f =       280.36  |proj g|=       0.81732
+ys=-3.012e-01  -gs= 1.630e+00, BFGS update SKIPPED
+At iterate    37  f =        279.5  |proj g|=       0.62564
+At iterate    38  f =       277.02  |proj g|=       0.24366
+At iterate    39  f =       275.35  |proj g|=       0.24044
+At iterate    40  f =       273.07  |proj g|=       0.23406
+At iterate    41  f =       270.71  |proj g|=       0.22661
+At iterate    42  f =       245.68  |proj g|=       0.15226
+At iterate    43  f =       245.26  |proj g|=       0.21639
+ys=-4.404e-02  -gs= 3.851e-01, BFGS update SKIPPED
+At iterate    44  f =       244.24  |proj g|=       0.13867
+At iterate    45  f =       243.24  |proj g|=       0.13529
+At iterate    46  f =       194.76  |proj g|=       0.64749
+At iterate    47  f =       190.64  |proj g|=      0.057875
+At iterate    48  f =       179.44  |proj g|=       0.05485
+At iterate    49  f =       173.39  |proj g|=      0.052056
+At iterate    50  f =       160.69  |proj g|=       0.04549
+At iterate    51  f =       151.02  |proj g|=      0.039719
+At iterate    52  f =       122.17  |proj g|=      0.022167
+At iterate    53  f =       116.66  |proj g|=      0.019002
+At iterate    54  f =       112.12  |proj g|=      0.017737
+At iterate    55  f =       101.28  |proj g|=      0.014708
+At iterate    56  f =       96.343  |proj g|=      0.012545
+At iterate    57  f =       85.562  |proj g|=     0.0083247
+At iterate    58  f =       81.613  |proj g|=     0.0068825
+At iterate    59  f =       79.822  |proj g|=     0.0062677
+At iterate    60  f =       77.376  |proj g|=     0.0044768
+At iterate    61  f =       75.365  |proj g|=     0.0040333
+At iterate    62  f =       67.121  |proj g|=      0.011633
+At iterate    63  f =       65.981  |proj g|=      0.014196
+At iterate    64  f =       65.903  |proj g|=      0.001887
+At iterate    65  f =       65.903  |proj g|=     0.0018867
+At iterate    66  f =       65.666  |proj g|=      0.001818
+At iterate    67  f =       65.665  |proj g|=     0.0018174
+At iterate    68  f =       65.664  |proj g|=     0.0029274
+At iterate    69  f =       65.661  |proj g|=     0.0061608
+At iterate    70  f =       65.654  |proj g|=      0.010614
+At iterate    71  f =       65.638  |proj g|=      0.014837
+At iterate    72  f =       65.581  |proj g|=      0.014483
+At iterate    73  f =       64.943  |proj g|=      0.015566
+At iterate    74  f =       64.525  |proj g|=        0.0893
+At iterate    75  f =       64.153  |proj g|=      0.019006
+At iterate    76  f =       64.072  |proj g|=      0.001303
+At iterate    77  f =       64.072  |proj g|=     0.0013032
+At iterate    78  f =       63.963  |proj g|=      0.017067
+At iterate    79  f =       63.724  |proj g|=      0.020288
+At iterate    80  f =       63.717  |proj g|=      0.002641
+At iterate    81  f =       63.717  |proj g|=     0.0010031
+At iterate    82  f =       63.717  |proj g|=      0.001003
+At iterate    83  f =       63.717  |proj g|=     0.0010029
+At iterate    84  f =       63.717  |proj g|=      0.001109
+At iterate    85  f =       63.716  |proj g|=     0.0020967
+At iterate    86  f =       63.716  |proj g|=     0.0037116
+At iterate    87  f =       63.715  |proj g|=     0.0061022
+At iterate    88  f =       63.713  |proj g|=     0.0095633
+At iterate    89  f =       63.707  |proj g|=      0.014036
+At iterate    90  f =       63.694  |proj g|=      0.018769
+At iterate    91  f =       63.658  |proj g|=       0.02042
+At iterate    92  f =       63.604  |proj g|=      0.017361
+ys=-4.749e-03  -gs= 5.189e-02, BFGS update SKIPPED
+At iterate    93  f =       62.876  |proj g|=      0.016292
+At iterate    94  f =       62.732  |proj g|=     0.0011294
+At iterate    95  f =       62.688  |proj g|=     0.0013083
+At iterate    96  f =       62.688  |proj g|=    0.00063577
+At iterate    97  f =       62.688  |proj g|=    0.00063491
+At iterate    98  f =       62.688  |proj g|=    0.00064321
+At iterate    99  f =       62.688  |proj g|=     0.0018994
+At iterate   100  f =       62.688  |proj g|=     0.0035559
+At iterate   101  f =       62.687  |proj g|=     0.0067218
+final  value 62.686729 
+stopped after 101 iterations
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.km: Error in checkNames(X1 = X, X2 = newdata, X1.name = "the design", X2.name = "newdata") : 
+  the design and newdata must have the same numbers of columns
+
+[1] "Fri Jan 12 03:21:46 2018"
+[Tune] Started tuning learner regr.ksvm for parameter set:
+         Type len  Def    Constr Req Tunable Trafo
+C     numeric   -    0  -5 to 10   -    TRUE     Y
+sigma numeric   - TRUE -15 to 15   -    TRUE     Y
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: C=3.77; sigma=8.85
+[Tune-y] 1: rmse.test.rmse=0.403; time: 0.1 min
+[Tune-x] 2: C=5.37; sigma=742
+[Tune-y] 2: rmse.test.rmse=0.403; time: 0.0 min
+[Tune-x] 3: C=505; sigma=0.00367
+[Tune-y] 3: rmse.test.rmse=0.266; time: 0.0 min
+[Tune-x] 4: C=95.1; sigma=0.0152
+[Tune-y] 4: rmse.test.rmse=0.294; time: 0.0 min
+[Tune-x] 5: C=294; sigma=0.000184
+[Tune-y] 5: rmse.test.rmse=0.258; time: 0.1 min
+[Tune-x] 6: C=15.1; sigma=2.11e+04
+[Tune-y] 6: rmse.test.rmse=0.403; time: 0.0 min
+[Tune-x] 7: C=0.0345; sigma=0.0475
+[Tune-y] 7: rmse.test.rmse=0.402; time: 0.0 min
+[Tune-x] 8: C=142; sigma=0.0437
+[Tune-y] 8: rmse.test.rmse=0.377; time: 0.0 min
+[Tune-x] 9: C=1.48; sigma=0.000312
+[Tune-y] 9: rmse.test.rmse=0.262; time: 0.0 min
+[Tune-x] 10: C=47.8; sigma=0.00121
+[Tune-y] 10: rmse.test.rmse=0.263; time: 0.0 min
+[Tune-x] 11: C=0.109; sigma=0.000261
+[Tune-y] 11: rmse.test.rmse=0.322; time: 0.0 min
+[Tune-x] 12: C=19; sigma=1.77
+[Tune-y] 12: rmse.test.rmse=0.403; time: 0.0 min
+[Tune-x] 13: C=3.7; sigma=2.2e+03
+[Tune-y] 13: rmse.test.rmse=0.403; time: 0.0 min
+[Tune-x] 14: C=380; sigma=0.0399
+[Tune-y] 14: rmse.test.rmse=0.37; time: 0.0 min
+[Tune-x] 15: C=2.65; sigma=0.0844
+[Tune-y] 15: rmse.test.rmse= 0.4; time: 0.0 min
+[Tune-x] 16: C=466; sigma=13.2
+[Tune-y] 16: rmse.test.rmse=0.403; time: 0.0 min
+[Tune-x] 17: C=0.419; sigma=0.0728
+[Tune-y] 17: rmse.test.rmse=0.401; time: 0.0 min
+[Tune-x] 18: C=44.9; sigma=0.000191
+[Tune-y] 18: rmse.test.rmse=0.256; time: 0.0 min
+[Tune-x] 19: C=0.3; sigma=0.000264
+[Tune-y] 19: rmse.test.rmse=0.282; time: 0.0 min
+[Tune-x] 20: C=5.67; sigma=0.348
+[Tune-y] 20: rmse.test.rmse=0.403; time: 0.0 min
+[Tune] Result: C=44.9; sigma=0.000191 : rmse.test.rmse=0.256
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.ksvm: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Fri Jan 12 03:23:03 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: There were 20 warnings (use warnings() to see them)
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.laGP: Error in (function (X, Z, XX, start = 6, end = 50, d = NULL, g = 1/10000,  : 
+  mismatch XX and X cols
+
+[1] "Fri Jan 12 03:23:21 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.LiblineaRL2L1SVR: Error in predict.LiblineaR(.model$learner.model, newx = .newdata, ...) : 
+  columns of 'test' and 'train' differ
+
+[1] "Fri Jan 12 03:23:42 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.LiblineaRL2L2SVR: Error in predict.LiblineaR(.model$learner.model, newx = .newdata, ...) : 
+  columns of 'test' and 'train' differ
+
+[1] "Fri Jan 12 03:23:57 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.lm: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Fri Jan 12 03:24:13 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+[1] "Fri Jan 12 03:25:17 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Error in root.matrix(crossprod(process)) : 
+  matrix is not positive semidefinite
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.mob: Error in trainLearner.regr.mob(.learner = structure(list(id = "regr.mob",  : 
+  Failed to fit party::mob. Some coefficients are estimated as NA
+
+[1] "Fri Jan 12 03:25:33 2018"
+[Tune] Started tuning learner regr.nnet for parameter set:
+         Type len   Def  Constr Req Tunable Trafo
+size  integer   -     3 1 to 20   -    TRUE     -
+decay numeric   - 1e-05 -5 to 1   -    TRUE     Y
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: size=3; decay=3.33e-05
+# weights:  499
+initial  value 113295.886959 
+final  value 121.114765 
+converged
+# weights:  499
+initial  value 85723.668236 
+final  value 115.134434 
+converged
+# weights:  499
+initial  value 124579.693954 
+iter  10 value 112.305750
+final  value 112.305747 
+converged
+[Tune-y] 1: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 2: size=14; decay=6.05e-05
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2325) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2325) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2325) weights
+
+[Tune-y] 2: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 3: size=14; decay=0.0499
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2325) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2325) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2325) weights
+
+[Tune-y] 3: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 4: size=13; decay=0.325
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2159) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2159) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2159) weights
+
+[Tune-y] 4: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 5: size=8; decay=3.5
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1329) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1329) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1329) weights
+
+[Tune-y] 5: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 6: size=10; decay=8.4
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1661) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1661) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1661) weights
+
+[Tune-y] 6: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 7: size=5; decay=0.218
+# weights:  831
+initial  value 117503.781979 
+iter  10 value 167.826205
+iter  20 value 127.431611
+iter  30 value 104.720566
+iter  40 value 102.989990
+iter  50 value 77.333102
+iter  60 value 69.506813
+iter  70 value 39.271043
+iter  80 value 28.672639
+iter  90 value 26.601828
+iter 100 value 25.930418
+final  value 25.930418 
+stopped after 100 iterations
+# weights:  831
+initial  value 87338.684243 
+iter  10 value 224.453413
+iter  20 value 128.978561
+iter  30 value 128.060776
+iter  40 value 126.344481
+iter  50 value 124.479117
+iter  60 value 112.320935
+iter  70 value 111.887339
+iter  80 value 106.612654
+iter  90 value 78.730948
+iter 100 value 73.430767
+final  value 73.430767 
+stopped after 100 iterations
+# weights:  831
+initial  value 132132.263436 
+iter  10 value 157.920008
+iter  20 value 155.817781
+iter  30 value 155.295449
+iter  40 value 152.388516
+iter  50 value 109.280730
+iter  60 value 104.803591
+iter  70 value 95.639373
+iter  80 value 91.666728
+iter  90 value 90.135390
+iter 100 value 77.312033
+final  value 77.312033 
+stopped after 100 iterations
+[Tune-y] 7: rmse.test.rmse=0.27; time: 0.2 min
+[Tune-x] 8: size=13; decay=1.56
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2159) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2159) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2159) weights
+
+[Tune-y] 8: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 9: size=16; decay=0.0065
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2657) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2657) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2657) weights
+
+[Tune-y] 9: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 10: size=6; decay=0.00333
+# weights:  997
+initial  value 77901.307594 
+iter  10 value 120.277143
+iter  20 value 111.155076
+iter  30 value 83.717598
+iter  40 value 69.915227
+iter  50 value 66.305960
+iter  60 value 65.337958
+iter  70 value 64.888578
+iter  80 value 64.160009
+iter  90 value 63.363131
+iter 100 value 61.804461
+final  value 61.804461 
+stopped after 100 iterations
+# weights:  997
+initial  value 97903.042230 
+iter  10 value 117.256162
+iter  20 value 116.294485
+iter  30 value 112.655883
+iter  40 value 77.169436
+iter  50 value 73.051441
+iter  60 value 64.763200
+iter  70 value 64.387128
+iter  80 value 63.970331
+iter  90 value 63.753862
+iter 100 value 63.476076
+final  value 63.476076 
+stopped after 100 iterations
+# weights:  997
+initial  value 113578.515719 
+iter  10 value 225.800604
+iter  20 value 111.497954
+iter  30 value 105.146618
+iter  40 value 87.790799
+iter  50 value 81.300363
+iter  60 value 72.925492
+iter  70 value 70.936887
+iter  80 value 69.044214
+iter  90 value 68.027601
+iter 100 value 67.586288
+final  value 67.586288 
+stopped after 100 iterations
+[Tune-y] 10: rmse.test.rmse=0.308; time: 0.2 min
+[Tune-x] 11: size=4; decay=0.000667
+# weights:  665
+initial  value 88824.649008 
+iter  10 value 121.756104
+iter  20 value 121.735165
+iter  30 value 121.078536
+iter  40 value 120.823347
+iter  50 value 120.343699
+iter  60 value 119.585344
+iter  70 value 118.887215
+iter  80 value 118.698767
+iter  90 value 118.566379
+iter 100 value 115.448758
+final  value 115.448758 
+stopped after 100 iterations
+# weights:  665
+initial  value 79499.542140 
+iter  10 value 119.911437
+iter  20 value 99.767925
+iter  30 value 81.825343
+iter  40 value 76.099034
+iter  50 value 75.428536
+iter  60 value 74.920802
+iter  70 value 74.699733
+iter  80 value 74.661153
+iter  90 value 74.588998
+iter 100 value 74.562863
+final  value 74.562863 
+stopped after 100 iterations
+# weights:  665
+initial  value 95472.575174 
+iter  10 value 115.742918
+iter  20 value 114.793253
+iter  30 value 114.492969
+iter  40 value 99.479320
+iter  50 value 75.788912
+iter  60 value 67.784079
+iter  70 value 67.416342
+iter  80 value 62.462971
+iter  90 value 61.960355
+iter 100 value 61.895354
+final  value 61.895354 
+stopped after 100 iterations
+[Tune-y] 11: rmse.test.rmse=0.354; time: 0.1 min
+[Tune-x] 12: size=20; decay=0.00347
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (3321) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (3321) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (3321) weights
+
+[Tune-y] 12: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 13: size=8; decay=0.000389
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1329) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1329) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1329) weights
+
+[Tune-y] 13: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 14: size=2; decay=3.43e-05
+# weights:  333
+initial  value 115996.291405 
+iter  10 value 1504.286862
+final  value 118.440659 
+converged
+# weights:  333
+initial  value 111433.593197 
+final  value 115.937770 
+converged
+# weights:  333
+initial  value 110536.129661 
+final  value 116.075537 
+converged
+[Tune-y] 14: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 15: size=8; decay=0.000425
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1329) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1329) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1329) weights
+
+[Tune-y] 15: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 16: size=2; decay=0.000156
+# weights:  333
+initial  value 113327.024442 
+iter  10 value 121.121274
+iter  20 value 121.119936
+final  value 121.119921 
+converged
+# weights:  333
+initial  value 111903.976159 
+iter  10 value 114.316572
+iter  20 value 114.153809
+iter  30 value 114.143027
+iter  40 value 90.880525
+iter  50 value 86.496161
+iter  60 value 70.296679
+iter  70 value 64.996081
+iter  80 value 63.230497
+iter  90 value 63.087510
+iter 100 value 62.997853
+final  value 62.997853 
+stopped after 100 iterations
+# weights:  333
+initial  value 87841.098851 
+iter  10 value 115.980378
+iter  20 value 112.266573
+iter  30 value 111.542752
+iter  40 value 109.277484
+iter  50 value 64.278456
+iter  60 value 62.638971
+iter  70 value 61.094316
+iter  80 value 60.131832
+iter  90 value 59.094426
+iter 100 value 57.737059
+final  value 57.737059 
+stopped after 100 iterations
+[Tune-y] 16: rmse.test.rmse=0.33; time: 0.1 min
+[Tune-x] 17: size=18; decay=7.12
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2989) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2989) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2989) weights
+
+[Tune-y] 17: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 18: size=3; decay=1.16e-05
+# weights:  499
+initial  value 82348.666628 
+iter  10 value 140.964306
+iter  20 value 118.451315
+final  value 118.308201 
+converged
+# weights:  499
+initial  value 106293.742232 
+final  value 114.635534 
+converged
+# weights:  499
+initial  value 119667.207439 
+final  value 112.398574 
+converged
+[Tune-y] 18: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 19: size=11; decay=0.123
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1827) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1827) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1827) weights
+
+[Tune-y] 19: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 20: size=14; decay=0.000102
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2325) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2325) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2325) weights
+
+[Tune-y] 20: rmse.test.rmse=  NA; time: 0.0 min
+[Tune] Result: size=5; decay=0.218 : rmse.test.rmse=0.27
+# weights:  831
+initial  value 121737.067015 
+iter  10 value 214.113763
+iter  20 value 190.759753
+iter  30 value 178.211899
+iter  40 value 155.337358
+iter  50 value 151.113441
+iter  60 value 144.449006
+iter  70 value 139.637853
+iter  80 value 86.433530
+iter  90 value 70.355001
+iter 100 value 64.703621
+final  value 64.703621 
+stopped after 100 iterations
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.nnet: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Fri Jan 12 03:26:35 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+
+ ... generating 1000 nodes ...
+ total number of nodes in initial set                   : 1081
+ total number of nodes after removal of identical nodes : 402 
+ ... computing node means ... 
+ ... computing node weights ...
+ dimension of null space of I                           : 209
+ number of selected nodes                               : 55 
+[1] "Fri Jan 12 03:27:03 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.pcr: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Fri Jan 12 03:27:20 2018"
+Loading required package: penalized
+Loading required package: survival
+
+Attaching package: 'survival'
+
+The following object is masked from 'package:caret':
+
+    cluster
+
+Welcome to penalized. For extended examples, see vignette("penalized").
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: Warning messages:
+1: package '!penalized' is not available (for R version 3.4.3) 
+2: package '!penalized' is not available (for R version 3.4.3) 
+3: package '!penalized' is not available (for R version 3.4.3) 
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.plsr: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Fri Jan 12 03:28:17 2018"
+[Tune] Started tuning learner regr.randomForest for parameter set:
+            Type len Def   Constr Req Tunable Trafo
+nodesize integer   -   1  1 to 10   -    TRUE     -
+mtry     integer   -  54 1 to 164   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: nodesize=2; mtry=15
+[Tune-y] 1: rmse.test.rmse=0.147; time: 0.4 min
+[Tune-x] 2: nodesize=7; mtry=22
+[Tune-y] 2: rmse.test.rmse=0.145; time: 0.4 min
+[Tune-x] 3: nodesize=7; mtry=102
+[Tune-y] 3: rmse.test.rmse=0.146; time: 1.4 min
+[Tune-x] 4: nodesize=7; mtry=124
+[Tune-y] 4: rmse.test.rmse=0.147; time: 1.8 min
+[Tune-x] 5: nodesize=4; mtry=152
+[Tune-y] 5: rmse.test.rmse=0.149; time: 2.6 min
+[Tune-x] 6: nodesize=5; mtry=162
+[Tune-y] 6: rmse.test.rmse=0.15; time: 2.6 min
+[Tune-x] 7: nodesize=3; mtry=119
+[Tune-y] 7: rmse.test.rmse=0.147; time: 2.3 min
+[Tune-x] 8: nodesize=7; mtry=142
+[Tune-y] 8: rmse.test.rmse=0.148; time: 2.0 min
+[Tune-x] 9: nodesize=8; mtry=77
+[Tune-y] 9: rmse.test.rmse=0.145; time: 1.1 min
+[Tune-x] 10: nodesize=3; mtry=69
+[Tune-y] 10: rmse.test.rmse=0.144; time: 1.4 min
+[Tune-x] 11: nodesize=2; mtry=50
+[Tune-y] 11: rmse.test.rmse=0.143; time: 1.2 min
+[Tune-x] 12: nodesize=10; mtry=70
+[Tune-y] 12: rmse.test.rmse=0.145; time: 0.8 min
+[Tune-x] 13: nodesize=4; mtry=44
+[Tune-y] 13: rmse.test.rmse=0.144; time: 0.9 min
+[Tune-x] 14: nodesize=1; mtry=15
+[Tune-y] 14: rmse.test.rmse=0.147; time: 0.5 min
+[Tune-x] 15: nodesize=4; mtry=45
+[Tune-y] 15: rmse.test.rmse=0.144; time: 0.9 min
+[Tune-x] 16: nodesize=1; mtry=33
+[Tune-y] 16: rmse.test.rmse=0.144; time: 1.1 min
+[Tune-x] 17: nodesize=9; mtry=160
+[Tune-y] 17: rmse.test.rmse=0.15; time: 2.0 min
+[Tune-x] 18: nodesize=2; mtry=2
+[Tune-y] 18: rmse.test.rmse=0.196; time: 0.1 min
+[Tune-x] 19: nodesize=6; mtry=112
+[Tune-y] 19: rmse.test.rmse=0.147; time: 1.7 min
+[Tune-x] 20: nodesize=7; mtry=28
+[Tune-y] 20: rmse.test.rmse=0.145; time: 0.5 min
+[Tune] Result: nodesize=2; mtry=50 : rmse.test.rmse=0.143
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.randomForest: Error in predict.randomForest(.model$learner.model, newdata = .newdata,  : 
+  variables in the training data missing in newdata
+
+[1] "Fri Jan 12 03:55:00 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.randomForestSRC: Error in generic.predict.rfsrc(object, newdata, outcome.target = outcome.target,  : 
+  x-variables in test data do not match original training data
+
+[1] "Fri Jan 12 03:55:33 2018"
+[Tune] Started tuning learner regr.ranger for parameter set:
+                 Type len Def   Constr Req Tunable Trafo
+mtry          integer   -  54 1 to 164   -    TRUE     -
+min.node.size integer   -   5  1 to 10   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: mtry=22; min.node.size=1
+[Tune-y] 1: rmse.test.rmse=0.144; time: 0.3 min
+[Tune-x] 2: mtry=111; min.node.size=2
+[Tune-y] 2: rmse.test.rmse=0.147; time: 0.9 min
+[Tune-x] 3: mtry=109; min.node.size=7
+[Tune-y] 3: rmse.test.rmse=0.146; time: 0.7 min
+[Tune-x] 4: mtry=99; min.node.size=8
+[Tune-y] 4: rmse.test.rmse=0.146; time: 0.6 min
+[Tune-x] 5: mtry=64; min.node.size=10
+[Tune-y] 5: rmse.test.rmse=0.145; time: 0.4 min
+[Tune-x] 6: mtry=75; min.node.size=10
+[Tune-y] 6: rmse.test.rmse=0.145; time: 0.4 min
+[Tune-x] 7: mtry=37; min.node.size=8
+[Tune-y] 7: rmse.test.rmse=0.144; time: 0.3 min
+[Tune-x] 8: mtry=100; min.node.size=9
+[Tune-y] 8: rmse.test.rmse=0.146; time: 0.6 min
+[Tune-x] 9: mtry=127; min.node.size=5
+[Tune-y] 9: rmse.test.rmse=0.147; time: 0.8 min
+[Tune-x] 10: mtry=49; min.node.size=5
+[Tune-y] 10: rmse.test.rmse=0.144; time: 0.4 min
+[Tune-x] 11: mtry=32; min.node.size=4
+[Tune-y] 11: rmse.test.rmse=0.144; time: 0.3 min
+[Tune-x] 12: mtry=159; min.node.size=5
+[Tune-y] 12: rmse.test.rmse=0.15; time: 1.1 min
+[Tune-x] 13: mtry=60; min.node.size=3
+[Tune-y] 13: rmse.test.rmse=0.144; time: 0.5 min
+[Tune-x] 14: mtry=13; min.node.size=1
+[Tune-y] 14: rmse.test.rmse=0.148; time: 0.2 min
+[Tune-x] 15: mtry=62; min.node.size=3
+[Tune-y] 15: rmse.test.rmse=0.144; time: 0.5 min
+[Tune-x] 16: mtry=10; min.node.size=2
+[Tune-y] 16: rmse.test.rmse=0.15; time: 0.2 min
+[Tune-x] 17: mtry=143; min.node.size=10
+[Tune-y] 17: rmse.test.rmse=0.149; time: 0.7 min
+[Tune-x] 18: mtry=24; min.node.size=1
+[Tune-y] 18: rmse.test.rmse=0.144; time: 0.3 min
+[Tune-x] 19: mtry=88; min.node.size=7
+[Tune-y] 19: rmse.test.rmse=0.145; time: 0.5 min
+[Tune-x] 20: mtry=114; min.node.size=2
+[Tune-y] 20: rmse.test.rmse=0.146; time: 0.9 min
+[Tune] Result: mtry=62; min.node.size=3 : rmse.test.rmse=0.144
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.ranger: Error in `[.data.frame`(data, , forest$independent.variable.names, drop = FALSE) : 
+  undefined columns selected
+
+[1] "Fri Jan 12 04:06:40 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.rknn: Error in knn.reg(train = data[, fset], test = newdata[, fset], y = y,  : 
+  too many ties in knn
+
+[1] "Fri Jan 12 04:06:56 2018"
+[Tune] Started tuning learner regr.rpart for parameter set:
+             Type len   Def   Constr Req Tunable Trafo
+cp        numeric   - -6.64 -10 to 0   -    TRUE     Y
+maxdepth  integer   -    30  3 to 30   -    TRUE     -
+minbucket integer   -     7  5 to 50   -    TRUE     -
+minsplit  integer   -    20  5 to 50   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: cp=0.00246; maxdepth=5; minbucket=35; minsplit=10
+[Tune-y] 1: rmse.test.rmse=0.214; time: 0.0 min
+[Tune-x] 2: cp=0.0953; maxdepth=20; minbucket=32; minsplit=39
+[Tune-y] 2: rmse.test.rmse=0.292; time: 0.0 min
+[Tune-x] 3: cp=0.0142; maxdepth=28; minbucket=25; minsplit=50
+[Tune-y] 3: rmse.test.rmse=0.227; time: 0.0 min
+[Tune-x] 4: cp=0.00458; maxdepth=23; minbucket=32; minsplit=44
+[Tune-y] 4: rmse.test.rmse=0.214; time: 0.0 min
+[Tune-x] 5: cp=0.204; maxdepth=16; minbucket=18; minsplit=24
+[Tune-y] 5: rmse.test.rmse=0.292; time: 0.0 min
+[Tune-x] 6: cp=0.00364; maxdepth=11; minbucket=49; minsplit=24
+[Tune-y] 6: rmse.test.rmse=0.222; time: 0.0 min
+[Tune-x] 7: cp=0.0123; maxdepth=10; minbucket=8; minsplit=9
+[Tune-y] 7: rmse.test.rmse=0.225; time: 0.0 min
+[Tune-x] 8: cp=0.0133; maxdepth=10; minbucket=7; minsplit=14
+[Tune-y] 8: rmse.test.rmse=0.228; time: 0.0 min
+[Tune-x] 9: cp=0.408; maxdepth=30; minbucket=11; minsplit=5
+[Tune-y] 9: rmse.test.rmse=0.292; time: 0.0 min
+[Tune-x] 10: cp=0.0391; maxdepth=22; minbucket=36; minsplit=12
+[Tune-y] 10: rmse.test.rmse=0.243; time: 0.0 min
+[Tune-x] 11: cp=0.00322; maxdepth=8; minbucket=48; minsplit=31
+[Tune-y] 11: rmse.test.rmse=0.218; time: 0.0 min
+[Tune-x] 12: cp=0.00824; maxdepth=10; minbucket=17; minsplit=38
+[Tune-y] 12: rmse.test.rmse=0.221; time: 0.0 min
+[Tune-x] 13: cp=0.00122; maxdepth=22; minbucket=6; minsplit=43
+[Tune-y] 13: rmse.test.rmse=0.206; time: 0.0 min
+[Tune-x] 14: cp=0.122; maxdepth=9; minbucket=27; minsplit=23
+[Tune-y] 14: rmse.test.rmse=0.292; time: 0.0 min
+[Tune-x] 15: cp=0.0909; maxdepth=7; minbucket=5; minsplit=37
+[Tune-y] 15: rmse.test.rmse=0.292; time: 0.0 min
+[Tune-x] 16: cp=0.0736; maxdepth=29; minbucket=42; minsplit=6
+[Tune-y] 16: rmse.test.rmse=0.266; time: 0.0 min
+[Tune-x] 17: cp=0.092; maxdepth=20; minbucket=35; minsplit=50
+[Tune-y] 17: rmse.test.rmse=0.292; time: 0.0 min
+[Tune-x] 18: cp=0.0462; maxdepth=18; minbucket=39; minsplit=7
+[Tune-y] 18: rmse.test.rmse=0.249; time: 0.0 min
+[Tune-x] 19: cp=0.365; maxdepth=25; minbucket=14; minsplit=12
+[Tune-y] 19: rmse.test.rmse=0.292; time: 0.0 min
+[Tune-x] 20: cp=0.00114; maxdepth=11; minbucket=38; minsplit=37
+[Tune-y] 20: rmse.test.rmse=0.218; time: 0.0 min
+[Tune] Result: cp=0.00122; maxdepth=22; minbucket=6; minsplit=43 : rmse.test.rmse=0.206
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.rpart: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Fri Jan 12 04:07:24 2018"
+[Tune] Started tuning learner regr.RRF for parameter set:
+           Type len Def   Constr Req Tunable Trafo
+mtry    integer   -  54 1 to 164   -    TRUE     -
+coefReg numeric   - 0.8   0 to 1   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: mtry=22; coefReg=0.087
+[Tune-y] 1: rmse.test.rmse=0.146; time: 0.5 min
+[Tune-x] 2: mtry=111; coefReg=0.13
+[Tune-y] 2: rmse.test.rmse=0.16; time: 1.8 min
+[Tune-x] 3: mtry=109; coefReg=0.616
+[Tune-y] 3: rmse.test.rmse=0.146; time: 1.7 min
+[Tune-x] 4: mtry=99; coefReg=0.752
+[Tune-y] 4: rmse.test.rmse=0.146; time: 1.7 min
+[Tune-x] 5: mtry=64; coefReg=0.924
+[Tune-y] 5: rmse.test.rmse=0.144; time: 1.1 min
+[Tune-x] 6: mtry=75; coefReg=0.987
+[Tune-y] 6: rmse.test.rmse=0.144; time: 1.2 min
+[Tune-x] 7: mtry=37; coefReg=0.723
+[Tune-y] 7: rmse.test.rmse=0.144; time: 0.7 min
+[Tune-x] 8: mtry=100; coefReg=0.866
+[Tune-y] 8: rmse.test.rmse=0.146; time: 1.6 min
+[Tune-x] 9: mtry=127; coefReg=0.469
+[Tune-y] 9: rmse.test.rmse=0.148; time: 2.0 min
+[Tune-x] 10: mtry=49; coefReg=0.42
+[Tune-y] 10: rmse.test.rmse=0.145; time: 0.9 min
+[Tune-x] 11: mtry=32; coefReg=0.304
+[Tune-y] 11: rmse.test.rmse=0.144; time: 0.6 min
+[Tune-x] 12: mtry=159; coefReg=0.423
+[Tune-y] 12: rmse.test.rmse=0.153; time: 2.5 min
+[Tune-x] 13: mtry=60; coefReg=0.265
+[Tune-y] 13: rmse.test.rmse=0.146; time: 1.0 min
+[Tune-x] 14: mtry=13; coefReg=0.0891
+[Tune-y] 14: rmse.test.rmse=0.149; time: 0.3 min
+[Tune-x] 15: mtry=62; coefReg=0.271
+[Tune-y] 15: rmse.test.rmse=0.145; time: 1.1 min
+[Tune-x] 16: mtry=10; coefReg=0.199
+[Tune-y] 16: rmse.test.rmse=0.151; time: 0.2 min
+[Tune-x] 17: mtry=143; coefReg=0.975
+[Tune-y] 17: rmse.test.rmse=0.149; time: 2.3 min
+[Tune-x] 18: mtry=24; coefReg=0.0107
+[Tune-y] 18: rmse.test.rmse=0.145; time: 0.5 min
+[Tune-x] 19: mtry=88; coefReg=0.682
+[Tune-y] 19: rmse.test.rmse=0.146; time: 1.4 min
+[Tune-x] 20: mtry=114; coefReg=0.168
+[Tune-y] 20: rmse.test.rmse=0.153; time: 1.8 min
+[Tune] Result: mtry=32; coefReg=0.304 : rmse.test.rmse=0.144
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.RRF: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Fri Jan 12 04:33:01 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.rsm: Error in lapply(X = X, FUN = FUN, ...) : object 'V138.dummy' not found
+
+[1] "Fri Jan 12 04:33:17 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: Warning message:
+In (function (formula, data, ...)  :
+  Some coefficients are aliased - cannot use 'rsm' methods.
+  Returning an 'lm' object.
+Using automatic sigma estimation (sigest) for RBF or laplace kernel 
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.rvm: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Fri Jan 12 04:35:16 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Sparse Linear Regression with L1 Regularization.
+Square root Lasso with screening.
+
+slim options summary: 
+5 lambdas used:
+[1] 0.8230 0.4420 0.2370 0.1270 0.0682
+Method = lq 
+q = 2 loss, SQRT Lasso
+Degree of freedom: 0 -----> 50 
+Runtime: 36.78811 secs 
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.slim: Error in newdata %*% object$beta[, lambda.idx] : 
+  non-conformable arguments
+
+[1] "Fri Jan 12 04:36:10 2018"
+[Tune] Started tuning learner regr.svm for parameter set:
+         Type len   Def    Constr Req Tunable Trafo
+cost  numeric   -     0 -15 to 15   -    TRUE     Y
+gamma numeric   - -7.36 -15 to 15   -    TRUE     Y
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: cost=0.000485; gamma=0.000186
+[Tune-y] 1: rmse.test.rmse=0.404; time: 0.1 min
+[Tune-x] 2: cost=36.6; gamma=0.000459
+[Tune-y] 2: rmse.test.rmse=0.256; time: 0.1 min
+[Tune-x] 3: cost=28.4; gamma=11.3
+[Tune-y] 3: rmse.test.rmse=0.403; time: 0.1 min
+[Tune-x] 4: cost=8.36; gamma=189
+[Tune-y] 4: rmse.test.rmse=0.403; time: 0.1 min
+[Tune-x] 5: cost=0.0945; gamma=6.74e+03
+[Tune-y] 5: rmse.test.rmse=0.404; time: 0.1 min
+[Tune-x] 6: cost=0.398; gamma=2.52e+04
+[Tune-y] 6: rmse.test.rmse=0.403; time: 0.1 min
+[Tune-x] 7: cost=0.00315; gamma=104
+[Tune-y] 7: rmse.test.rmse=0.404; time: 0.1 min
+[Tune-x] 8: cost=8.85; gamma=2e+03
+[Tune-y] 8: rmse.test.rmse=0.403; time: 0.1 min
+[Tune-x] 9: cost=278; gamma=0.523
+[Tune-y] 9: rmse.test.rmse=0.403; time: 0.1 min
+[Tune-x] 10: cost=0.0138; gamma=0.191
+[Tune-y] 10: rmse.test.rmse=0.404; time: 0.1 min
+[Tune-x] 11: cost=0.00158; gamma=0.017
+[Tune-y] 11: rmse.test.rmse=0.402; time: 0.1 min
+[Tune-x] 12: cost=1.68e+04; gamma=0.204
+[Tune-y] 12: rmse.test.rmse=0.403; time: 0.1 min
+[Tune-x] 13: cost=0.061; gamma=0.00755
+[Tune-y] 13: rmse.test.rmse=0.313; time: 0.1 min
+[Tune-x] 14: cost=0.000142; gamma=0.000195
+[Tune-y] 14: rmse.test.rmse=0.404; time: 0.1 min
+[Tune-x] 15: cost=0.0774; gamma=0.00862
+[Tune-y] 15: rmse.test.rmse=0.312; time: 0.1 min
+[Tune-x] 16: cost=0.000106; gamma=0.00191
+[Tune-y] 16: rmse.test.rmse=0.404; time: 0.1 min
+[Tune-x] 17: cost=2.23e+03; gamma=1.96e+04
+[Tune-y] 17: rmse.test.rmse=0.403; time: 0.1 min
+[Tune-x] 18: cost=0.00062; gamma=3.81e-05
+[Tune-y] 18: rmse.test.rmse=0.404; time: 0.1 min
+[Tune-x] 19: cost=1.95; gamma=43.8
+[Tune-y] 19: rmse.test.rmse=0.403; time: 0.1 min
+[Tune-x] 20: cost=56.6; gamma=0.001
+[Tune-y] 20: rmse.test.rmse=0.261; time: 0.1 min
+[Tune] Result: cost=36.6; gamma=0.000459 : rmse.test.rmse=0.256
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.svm: Error in eval(predvars, data, env) : object 'V138.dummy' not found
+
+[1] "Fri Jan 12 04:38:17 2018"
+[Tune] Started tuning learner regr.xgboost for parameter set:
+                    Type len Def       Constr Req Tunable Trafo
+nrounds          numeric   -   0    0 to 8.64   -    TRUE     Y
+max_depth        integer   -   6      1 to 10   -    TRUE     -
+eta              numeric   - 0.3 0.001 to 0.6   -    TRUE     -
+gamma            numeric   -   0      0 to 10   -    TRUE     -
+colsample_bytree numeric   - 0.5   0.3 to 0.7   -    TRUE     -
+min_child_weight numeric   -   1      0 to 20   -    TRUE     -
+subsample        numeric   -   1    0.25 to 1   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: nrounds=22; max_depth=1; eta=0.404; gamma=1.3; colsample_bytree=0.564; min_child_weight=12.3; subsample=0.702
+[Tune-y] 1: rmse.test.rmse=0.191; time: 0.0 min
+[Tune-x] 2: nrounds=905; max_depth=4; eta=0.554; gamma=4.56; colsample_bytree=0.695; min_child_weight=4.46; subsample=0.792
+[Tune-y] 2: rmse.test.rmse=0.221; time: 0.4 min
+[Tune-x] 3: nrounds=375; max_depth=9; eta=0.463; gamma=4.69; colsample_bytree=0.418; min_child_weight=8.41; subsample=0.392
+[Tune-y] 3: rmse.test.rmse=0.243; time: 0.2 min
+[Tune-x] 4: nrounds=62; max_depth=10; eta=0.255; gamma=3.65; colsample_bytree=0.406; min_child_weight=1.48; subsample=0.317
+[Tune-y] 4: rmse.test.rmse=0.231; time: 0.1 min
+[Tune-x] 5: nrounds=96; max_depth=3; eta=0.037; gamma=1.99; colsample_bytree=0.648; min_child_weight=19.5; subsample=0.359
+[Tune-y] 5: rmse.test.rmse=0.387; time: 0.0 min
+[Tune-x] 6: nrounds=11; max_depth=6; eta=0.409; gamma=6.94; colsample_bytree=0.367; min_child_weight=3.45; subsample=0.399
+[Tune-y] 6: rmse.test.rmse=0.277; time: 0.0 min
+[Tune-x] 7: nrounds=2.8e+03; max_depth=6; eta=0.185; gamma=2.73; colsample_bytree=0.412; min_child_weight=14.6; subsample=0.274
+[Tune-y] 7: rmse.test.rmse=0.197; time: 1.2 min
+[Tune-x] 8: nrounds=654; max_depth=1; eta=0.503; gamma=6.96; colsample_bytree=0.388; min_child_weight=9.64; subsample=0.545
+[Tune-y] 8: rmse.test.rmse=0.254; time: 0.1 min
+[Tune-x] 9: nrounds=503; max_depth=2; eta=0.0132; gamma=7.06; colsample_bytree=0.549; min_child_weight=18.7; subsample=0.855
+[Tune-y] 9: rmse.test.rmse=0.243; time: 0.1 min
+[Tune-x] 10: nrounds=13; max_depth=7; eta=0.365; gamma=6.59; colsample_bytree=0.693; min_child_weight=11.1; subsample=0.663
+[Tune-y] 10: rmse.test.rmse=0.233; time: 0.0 min
+[Tune-x] 11: nrounds=909; max_depth=1; eta=0.513; gamma=7.93; colsample_bytree=0.385; min_child_weight=3.48; subsample=0.267
+[Tune-y] 11: rmse.test.rmse=0.263; time: 0.1 min
+[Tune-x] 12: nrounds=56; max_depth=8; eta=0.421; gamma=0.922; colsample_bytree=0.414; min_child_weight=5.67; subsample=0.55
+[Tune-y] 12: rmse.test.rmse=0.176; time: 0.0 min
+[Tune-x] 13: nrounds=18; max_depth=5; eta=0.563; gamma=6.29; colsample_bytree=0.35; min_child_weight=9.2; subsample=0.62
+[Tune-y] 13: rmse.test.rmse=0.244; time: 0.0 min
+[Tune-x] 14: nrounds=48; max_depth=9; eta=0.492; gamma=7.97; colsample_bytree=0.387; min_child_weight=0.803; subsample=0.999
+[Tune-y] 14: rmse.test.rmse=0.246; time: 0.0 min
+[Tune-x] 15: nrounds=12; max_depth=8; eta=0.106; gamma=1.59; colsample_bytree=0.548; min_child_weight=5.1; subsample=0.899
+[Tune-y] 15: rmse.test.rmse=3.03; time: 0.0 min
+[Tune-x] 16: nrounds=3.68e+03; max_depth=1; eta=0.51; gamma=9.99; colsample_bytree=0.637; min_child_weight=18.4; subsample=0.357
+[Tune-y] 16: rmse.test.rmse=0.259; time: 0.5 min
+[Tune-x] 17: nrounds=124; max_depth=9; eta=0.268; gamma=4.09; colsample_bytree=0.59; min_child_weight=6.6; subsample=0.267
+[Tune-y] 17: rmse.test.rmse=0.235; time: 0.1 min
+[Tune-x] 18: nrounds=30; max_depth=7; eta=0.0343; gamma=3.33; colsample_bytree=0.457; min_child_weight=9.22; subsample=0.683
+[Tune-y] 18: rmse.test.rmse=4.08; time: 0.0 min
+[Tune-x] 19: nrounds=609; max_depth=7; eta=0.292; gamma=3.25; colsample_bytree=0.442; min_child_weight=0.0995; subsample=0.978
+[Tune-y] 19: rmse.test.rmse=0.203; time: 0.4 min
+[Tune-x] 20: nrounds=533; max_depth=4; eta=0.435; gamma=2.12; colsample_bytree=0.449; min_child_weight=8.63; subsample=0.315
+[Tune-y] 20: rmse.test.rmse=0.202; time: 0.2 min
+[Tune] Result: nrounds=56; max_depth=8; eta=0.421; gamma=0.922; colsample_bytree=0.414; min_child_weight=5.67; subsample=0.55 : rmse.test.rmse=0.176
+[1] "Fri Jan 12 04:42:03 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: There were 20 warnings (use warnings() to see them)
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.xyf: Error in !toroidal : invalid argument type
+
+[1] "Fri Jan 12 04:42:19 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.bartMachine please install the following packages: bartMachine
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+
+burn in:
+**GROW** @depth 0: [100,0], n=(452,645)
+**GROW** @depth 1: [58,0], n=(294,351)
+r=1000 d=[0] [0] [0]; n=(452,294,351)
+r=2000 d=[0] [0] [0]; n=(452,294,351)
+
+Sampling @ nn=0 pred locs:
+r=1000 d=[0] [0] [0]; mh=3 n=(452,294,351)
+**GROW** @depth 1: [94,0], n=(173,279)
+r=2000 d=[0] [0] [0] [0]; mh=3 n=(173,279,294,351)
+r=3000 d=[0] [0] [0] [0]; mh=3 n=(173,279,294,351)
+r=4000 d=[0] [0] [0] [0]; mh=3 n=(173,279,294,351)
+r=5000 d=[0] [0] [0] [0]; mh=3 n=(173,279,294,351)
+Grow: 0.9036%, Prune: 0%, Change: 0%, Swap: 0%
+
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.bcart: Error in predict.tgp(.model$learner.model, XX = .newdata, pred.n = FALSE,  : 
+  mismatched column dimension of object$X and XX
+
+[1] "Fri Jan 12 04:46:40 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.bdk: Error : 'bdk' is not an exported object from 'namespace:kohonen'
+
+[1] "Fri Jan 12 04:46:48 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.blackboost please install the following packages: mboost
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.blm: Error in tgp(X, Z, XX, BTE, R, m0r1, FALSE, params, itemps, pred.n, krige,  : 
+  X[,1:166]-matrix is not of full rank
+
+[1] "Fri Jan 12 04:47:02 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Number of parameters (weights and biases) to estimate: 336 
+Nguyen-Widrow method
+Scaling factor= 0.7004424 
+gamma= 207.0461 	 alpha= 47.9236 	 beta= 110.9058 
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.brnn: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 04:47:39 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+[1] "Fri Jan 12 04:47:49 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.btlm: Error in tgp(X, Z, XX, BTE, R, m0r1, FALSE, params, itemps, pred.n, krige,  : 
+  X[,1:166]-matrix is not of full rank
+
+[1] "Fri Jan 12 04:47:57 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.cforest: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 04:48:18 2018"
+Loading required package: crs
+Error: package or namespace load failed for 'crs' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'MatrixModels'
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.crs please install the following packages: crs
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.ctree: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 04:48:33 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.cubist: Error in `[.data.frame`(newdata, , object$vars$all, drop = FALSE) : 
+  undefined columns selected
+
+[1] "Fri Jan 12 04:48:45 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.cvglmnet: Error in cbind2(1, newx) %*% nbeta : 
+  Cholmod error 'X and/or Y have wrong dimensions' at file ../MatrixOps/cholmod_sdmult.c, line 90
+
+[1] "Fri Jan 12 04:48:56 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+[1] "Fri Jan 12 04:49:07 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.elmNN: Error in inpweight %*% TV.P : non-conformable arguments
+
+[1] "Fri Jan 12 04:49:16 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.evtree please install the following packages: evtree
+[Tune] Started tuning learner regr.extraTrees for parameter set:
+                 Type len Def   Constr Req Tunable Trafo
+mtry          integer   -  55 1 to 166   -    TRUE     -
+numRandomCuts integer   -   1  1 to 25   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: mtry=106; numRandomCuts=13
+[Tune-y] 1: rmse.test.rmse=0.151; time: 9.2 min
+[Tune-x] 2: mtry=77; numRandomCuts=19
+[Tune-y] 2: rmse.test.rmse=0.149; time: 10.0 min
+[Tune-x] 3: mtry=58; numRandomCuts=13
+[Tune-y] 3: rmse.test.rmse=0.147; time: 5.5 min
+[Tune-x] 4: mtry=45; numRandomCuts=16
+[Tune-y] 4: rmse.test.rmse=0.146; time: 5.2 min
+[Tune-x] 5: mtry=128; numRandomCuts=22
+[Tune-y] 5: rmse.test.rmse=0.155; time: 16.7 min
+[Tune-x] 6: mtry=5; numRandomCuts=20
+[Tune-y] 6: rmse.test.rmse=0.154; time: 0.8 min
+[Tune-x] 7: mtry=146; numRandomCuts=24
+[Tune-y] 7: rmse.test.rmse=0.159; time: 20.4 min
+[Tune-x] 8: mtry=136; numRandomCuts=1
+[Tune-y] 8: rmse.test.rmse=0.156; time: 1.4 min
+[Tune-x] 9: mtry=77; numRandomCuts=14
+[Tune-y] 9: rmse.test.rmse=0.149; time: 7.6 min
+[Tune-x] 10: mtry=57; numRandomCuts=19
+[Tune-y] 10: rmse.test.rmse=0.147; time: 7.6 min
+[Tune-x] 11: mtry=128; numRandomCuts=25
+[Tune-y] 11: rmse.test.rmse=0.156; time: 18.9 min
+[Tune-x] 12: mtry=135; numRandomCuts=22
+[Tune-y] 12: rmse.test.rmse=0.156; time: 17.2 min
+[Tune-x] 13: mtry=17; numRandomCuts=18
+[Tune-y] 13: rmse.test.rmse=0.146; time: 2.3 min
+[Tune-x] 14: mtry=141; numRandomCuts=6
+[Tune-y] 14: rmse.test.rmse=0.153; time: 5.3 min
+[Tune-x] 15: mtry=44; numRandomCuts=9
+[Tune-y] 15: rmse.test.rmse=0.146; time: 3.0 min
+[Tune-x] 16: mtry=141; numRandomCuts=25
+[Tune-y] 16: rmse.test.rmse=0.159; time: 19.8 min
+[Tune-x] 17: mtry=142; numRandomCuts=3
+[Tune-y] 17: rmse.test.rmse=0.151; time: 3.0 min
+[Tune-x] 18: mtry=120; numRandomCuts=25
+[Tune-y] 18: rmse.test.rmse=0.154; time: 18.2 min
+[Tune-x] 19: mtry=10; numRandomCuts=21
+[Tune-y] 19: rmse.test.rmse=0.147; time: 1.6 min
+[Tune-x] 20: mtry=66; numRandomCuts=21
+[Tune-y] 20: rmse.test.rmse=0.148; time: 9.6 min
+[Tune] Result: mtry=45; numRandomCuts=16 : rmse.test.rmse=0.146
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.extraTrees: Error in predict.extraTrees(.model$learner.model, as.matrix(.newdata),  : 
+  newdata(ncol=164) does not have the same dimensions as the original x (ncol=166)
+
+[1] "Fri Jan 12 07:55:30 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+[1] "Fri Jan 12 07:55:47 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.fnn: Error in get.knnx(train, test, k, algorithm) : 
+  Number of columns must be same!.
+
+[1] "Fri Jan 12 07:56:06 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.frbs: Error in rep(1:num.varinput, num.labels.input) : invalid 'times' argument
+
+[1] "Fri Jan 12 07:56:36 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.gamboost please install the following packages: mboost
+In addition: Warning messages:
+1: In validate.params(object, newdata) :
+  There are your newdata which are out of the specified range
+2: In validate.params(object, newdata) :
+  There are your newdata which are out of the specified range
+3: In validate.params(object, newdata) :
+  There are your newdata which are out of the specified range
+4: In validate.params(object, newdata) :
+  There are your newdata which are out of the specified range
+5: In validate.params(object, newdata) :
+  There are your newdata which are out of the specified range
+6: In validate.params(object, newdata) :
+  There are your newdata which are out of the specified range
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Using automatic sigma estimation (sigest) for RBF or laplace kernel 
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.gausspr: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 07:56:55 2018"
+[Tune] Started tuning learner regr.gbm for parameter set:
+                     Type len   Def       Constr Req Tunable Trafo
+n.trees           numeric   -  5.64    0 to 6.64   -    TRUE     Y
+interaction.depth integer   -     1      1 to 10   -    TRUE     -
+shrinkage         numeric   - 0.001 0.001 to 0.6   -    TRUE     -
+n.minobsinnode    integer   -    10      5 to 25   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: n.trees=187; interaction.depth=6; shrinkage=0.276; n.minobsinnode=20
+[Tune-y] 1: rmse.test.rmse=0.155; time: 0.2 min
+[Tune-x] 2: n.trees=49; interaction.depth=6; shrinkage=0.162; n.minobsinnode=18
+[Tune-y] 2: rmse.test.rmse=0.143; time: 0.1 min
+[Tune-x] 3: n.trees=342; interaction.depth=9; shrinkage=0.0176; n.minobsinnode=21
+[Tune-y] 3: rmse.test.rmse=0.136; time: 0.6 min
+[Tune-x] 4: n.trees=570; interaction.depth=10; shrinkage=0.49; n.minobsinnode=5
+[Tune-y] 4: rmse.test.rmse=0.196; time: 1.0 min
+[Tune-x] 5: n.trees=84; interaction.depth=6; shrinkage=0.206; n.minobsinnode=20
+[Tune-y] 5: rmse.test.rmse=0.144; time: 0.1 min
+[Tune-x] 6: n.trees=348; interaction.depth=10; shrinkage=0.485; n.minobsinnode=22
+[Tune-y] 6: rmse.test.rmse=0.181; time: 0.6 min
+[Tune-x] 7: n.trees=16; interaction.depth=7; shrinkage=0.509; n.minobsinnode=10
+[Tune-y] 7: rmse.test.rmse=0.168; time: 0.0 min
+[Tune-x] 8: n.trees=33; interaction.depth=4; shrinkage=0.507; n.minobsinnode=25
+[Tune-y] 8: rmse.test.rmse=0.162; time: 0.0 min
+[Tune-x] 9: n.trees=503; interaction.depth=1; shrinkage=0.43; n.minobsinnode=25
+[Tune-y] 9: rmse.test.rmse=0.149; time: 0.1 min
+[Tune-x] 10: n.trees=13; interaction.depth=9; shrinkage=0.237; n.minobsinnode=21
+[Tune-y] 10: rmse.test.rmse=0.154; time: 0.0 min
+[Tune-x] 11: n.trees=27; interaction.depth=9; shrinkage=0.288; n.minobsinnode=20
+[Tune-y] 11: rmse.test.rmse=0.15; time: 0.1 min
+[Tune-x] 12: n.trees=39; interaction.depth=1; shrinkage=0.537; n.minobsinnode=8
+[Tune-y] 12: rmse.test.rmse=0.169; time: 0.0 min
+[Tune-x] 13: n.trees=145; interaction.depth=7; shrinkage=0.144; n.minobsinnode=14
+[Tune-y] 13: rmse.test.rmse=0.14; time: 0.2 min
+[Tune-x] 14: n.trees=32; interaction.depth=10; shrinkage=0.303; n.minobsinnode=8
+[Tune-y] 14: rmse.test.rmse=0.148; time: 0.1 min
+[Tune-x] 15: n.trees=132; interaction.depth=7; shrinkage=0.452; n.minobsinnode=15
+[Tune-y] 15: rmse.test.rmse=0.169; time: 0.2 min
+[Tune-x] 16: n.trees=356; interaction.depth=10; shrinkage=0.271; n.minobsinnode=14
+[Tune-y] 16: rmse.test.rmse=0.155; time: 0.6 min
+[Tune-x] 17: n.trees=760; interaction.depth=4; shrinkage=0.587; n.minobsinnode=10
+[Tune-y] 17: rmse.test.rmse=0.188; time: 0.6 min
+[Tune-x] 18: n.trees=322; interaction.depth=2; shrinkage=0.489; n.minobsinnode=15
+[Tune-y] 18: rmse.test.rmse=0.161; time: 0.1 min
+[Tune-x] 19: n.trees=841; interaction.depth=7; shrinkage=0.16; n.minobsinnode=24
+[Tune-y] 19: rmse.test.rmse=0.148; time: 1.1 min
+[Tune-x] 20: n.trees=568; interaction.depth=9; shrinkage=0.22; n.minobsinnode=25
+[Tune-y] 20: rmse.test.rmse=0.154; time: 0.9 min
+[Tune] Result: n.trees=342; interaction.depth=9; shrinkage=0.0176; n.minobsinnode=21 : rmse.test.rmse=0.136
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.gbm: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 08:04:01 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.glm: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 08:04:09 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.glmboost please install the following packages: mboost
+[Tune] Started tuning learner regr.glmnet for parameter set:
+          Type len Def   Constr Req Tunable Trafo
+alpha  numeric   -   1   0 to 1   -    TRUE     -
+lambda numeric   -   0 -10 to 3   -    TRUE     Y
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: alpha=0.635; lambda=0.105
+[Tune-y] 1: rmse.test.rmse= 0.2; time: 0.0 min
+[Tune-x] 2: alpha=0.458; lambda=0.834
+[Tune-y] 2: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 3: alpha=0.346; lambda=0.092
+[Tune-y] 3: rmse.test.rmse=0.172; time: 0.0 min
+[Tune-x] 4: alpha=0.268; lambda=0.3
+[Tune-y] 4: rmse.test.rmse=0.221; time: 0.0 min
+[Tune-x] 5: alpha=0.767; lambda=1.95
+[Tune-y] 5: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 6: alpha=0.0278; lambda=1.16
+[Tune-y] 6: rmse.test.rmse=0.202; time: 0.0 min
+[Tune-x] 7: alpha=0.878; lambda=5.5
+[Tune-y] 7: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 8: alpha=0.817; lambda=0.0013
+[Tune-y] 8: rmse.test.rmse=0.151; time: 0.0 min
+[Tune-x] 9: alpha=0.462; lambda=0.114
+[Tune-y] 9: rmse.test.rmse=0.191; time: 0.0 min
+[Tune-x] 10: alpha=0.343; lambda=0.801
+[Tune-y] 10: rmse.test.rmse=0.382; time: 0.0 min
+[Tune-x] 11: alpha=0.771; lambda=6.52
+[Tune-y] 11: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 12: alpha=0.807; lambda=2.17
+[Tune-y] 12: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 13: alpha=0.102; lambda=0.521
+[Tune-y] 13: rmse.test.rmse=0.206; time: 0.0 min
+[Tune-x] 14: alpha=0.849; lambda=0.00842
+[Tune-y] 14: rmse.test.rmse=0.149; time: 0.0 min
+[Tune-x] 15: alpha=0.262; lambda=0.0246
+[Tune-y] 15: rmse.test.rmse=0.148; time: 0.0 min
+[Tune-x] 16: alpha=0.845; lambda=6.3
+[Tune-y] 16: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 17: alpha=0.851; lambda=0.00206
+[Tune-y] 17: rmse.test.rmse=0.149; time: 0.0 min
+[Tune-x] 18: alpha=0.717; lambda=5.69
+[Tune-y] 18: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 19: alpha=0.0597; lambda=1.54
+[Tune-y] 19: rmse.test.rmse=0.271; time: 0.0 min
+[Tune-x] 20: alpha=0.393; lambda=1.39
+[Tune-y] 20: rmse.test.rmse=0.399; time: 0.0 min
+[Tune] Result: alpha=0.262; lambda=0.0246 : rmse.test.rmse=0.148
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.glmnet: Error in cbind2(1, newx) %*% nbeta : 
+  Cholmod error 'X and/or Y have wrong dimensions' at file ../MatrixOps/cholmod_sdmult.c, line 90
+
+[1] "Fri Jan 12 08:04:28 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |=======                                                               |  10%  |                                                                              |=====================                                                 |  30%  |                                                                              |============================                                          |  40%  |                                                                              |===================================                                   |  50%  |                                                                              |========================================================              |  80%  |                                                                              |===============================================================       |  90%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+[1] "Fri Jan 12 08:04:58 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: Warning messages:
+1: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V198.dummy': substituting in a column of NaN
+2: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V202.dummy': substituting in a column of NaN
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |=                                                                     |   2%  |                                                                              |====================================                                  |  52%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+[1] "Fri Jan 12 08:05:13 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: Warning messages:
+1: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V198.dummy': substituting in a column of NaN
+2: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V202.dummy': substituting in a column of NaN
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |=                                                                     |   2%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+[1] "Fri Jan 12 08:05:26 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: Warning messages:
+1: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V198.dummy': substituting in a column of NaN
+2: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V202.dummy': substituting in a column of NaN
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |========                                                              |  12%  |                                                                              |====================                                                  |  28%  |                                                                              |============================                                          |  40%  |                                                                              |=======================================                               |  56%  |                                                                              |==================================================                    |  72%  |                                                                              |==============================================================        |  88%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+[1] "Fri Jan 12 08:05:47 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.IBk please install the following packages: RWeka
+In addition: Warning messages:
+1: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V198.dummy': substituting in a column of NaN
+2: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V202.dummy': substituting in a column of NaN
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: Warning message:
+package '!kknn' is not available (for R version 3.4.3) 
+
+optimisation start
+------------------
+* estimation method   : MLE 
+* optimisation method : BFGS 
+* analytical gradient : used
+* trend model : ~1
+* covariance model : 
+  - type :  matern5_2 
+  - nugget : NO
+  - parameters lower bounds :  1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 
+  - parameters upper bounds :  2912 340 2 2 626 427890 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 18 16 276 120 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3200 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 11288 2 4092 12220 2 2 2 2 2 2 2 8716 4130 10616 6 4 6 4 12 2 2 2 20 2 6 2 2 2 2 2 4020 2 2 2 8 2836 2 2 1456 1094 2 2 2 2 2 2 2 22 8 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+  - best initial criterion value(s) :  -523.1117 
+
+N = 166, M = 5 machine precision = 2.22045e-16
+At X0, 0 variables are exactly at the bounds
+At iterate     0  f=       523.11  |proj g|=       1.6823
+At iterate     1  f =       405.79  |proj g|=        2.6204
+ys=-3.568e+01  -gs= 6.837e+01, BFGS update SKIPPED
+At iterate     2  f =       346.44  |proj g|=        1.5406
+At iterate     3  f =        337.1  |proj g|=        1.0234
+At iterate     4  f =       327.46  |proj g|=        1.7221
+At iterate     5  f =       319.34  |proj g|=       0.88247
+ys=-1.620e+00  -gs= 4.464e+00, BFGS update SKIPPED
+At iterate     6  f =       314.44  |proj g|=        1.6727
+At iterate     7  f =       308.46  |proj g|=        1.4259
+ys=-9.598e-01  -gs= 4.877e+00, BFGS update SKIPPED
+At iterate     8  f =       305.88  |proj g|=        1.4632
+At iterate     9  f =        301.6  |proj g|=        1.0093
+At iterate    10  f =       298.82  |proj g|=        1.0188
+At iterate    11  f =       287.18  |proj g|=        1.2712
+At iterate    12  f =       283.61  |proj g|=       0.95883
+At iterate    13  f =       278.36  |proj g|=       0.89645
+At iterate    14  f =       266.29  |proj g|=       0.71149
+At iterate    15  f =       252.26  |proj g|=       0.48219
+At iterate    16  f =       243.64  |proj g|=        0.3514
+At iterate    17  f =       232.72  |proj g|=       0.20393
+At iterate    18  f =       224.03  |proj g|=       0.10603
+At iterate    19  f =       218.87  |proj g|=       0.05789
+At iterate    20  f =       215.73  |proj g|=      0.033251
+At iterate    21  f =       214.15  |proj g|=      0.023089
+At iterate    22  f =          212  |proj g|=      0.020256
+At iterate    23  f =       211.74  |proj g|=      0.019746
+At iterate    24  f =       198.96  |proj g|=       0.97659
+ys=-3.691e+00  -gs= 6.650e-01, BFGS update SKIPPED
+At iterate    25  f =       193.28  |proj g|=      0.016459
+At iterate    26  f =          192  |proj g|=      0.010911
+At iterate    27  f =       191.37  |proj g|=     0.0095961
+At iterate    28  f =        190.2  |proj g|=       0.25155
+At iterate    29  f =       179.57  |proj g|=       0.47842
+ys=-2.274e+00  -gs= 3.200e+00, BFGS update SKIPPED
+At iterate    30  f =       178.68  |proj g|=     0.0085625
+At iterate    31  f =        177.6  |proj g|=     0.0080974
+At iterate    32  f =       176.55  |proj g|=     0.0076243
+At iterate    33  f =       173.15  |proj g|=      0.006004
+At iterate    34  f =        170.3  |proj g|=     0.0047867
+At iterate    35  f =       168.95  |proj g|=     0.0040906
+At iterate    36  f =       168.33  |proj g|=      0.044287
+ys=-6.384e-02  -gs= 5.828e-01, BFGS update SKIPPED
+At iterate    37  f =       168.23  |proj g|=      0.035658
+ys=-1.927e-02  -gs= 8.509e-02, BFGS update SKIPPED
+At iterate    38  f =       168.19  |proj g|=     0.0037689
+At iterate    39  f =       165.35  |proj g|=     0.0024165
+At iterate    40  f =        161.5  |proj g|=     0.0012792
+At iterate    41  f =       160.86  |proj g|=     0.0011768
+At iterate    42  f =       160.39  |proj g|=     0.0010258
+At iterate    43  f =       159.74  |proj g|=    0.00052842
+At iterate    44  f =       159.31  |proj g|=     0.0006455
+At iterate    45  f =       157.46  |proj g|=     0.0012637
+ys=-6.041e-01  -gs= 1.641e+00, BFGS update SKIPPED
+At iterate    46  f =       156.76  |proj g|=        1.3098
+ys=-1.118e+00  -gs= 2.990e-02, BFGS update SKIPPED
+At iterate    47  f =       150.92  |proj g|=      0.001414
+At iterate    48  f =       149.49  |proj g|=    0.00092798
+At iterate    49  f =       149.44  |proj g|=     0.0006895
+At iterate    50  f =       149.44  |proj g|=    0.00068952
+At iterate    51  f =       149.44  |proj g|=    0.00068952
+At iterate    52  f =       149.44  |proj g|=    0.00068952
+At iterate    53  f =       149.44  |proj g|=    0.00068952
+At iterate    54  f =       149.44  |proj g|=    0.00068949
+At iterate    55  f =       149.44  |proj g|=    0.00068941
+At iterate    56  f =       149.44  |proj g|=    0.00068917
+At iterate    57  f =       149.44  |proj g|=    0.00068851
+At iterate    58  f =       149.43  |proj g|=    0.00068678
+At iterate    59  f =       149.43  |proj g|=     0.0006822
+At iterate    60  f =       149.42  |proj g|=    0.00067052
+At iterate    61  f =        149.4  |proj g|=    0.00077164
+At iterate    62  f =       149.33  |proj g|=     0.0011693
+At iterate    63  f =       149.31  |proj g|=     0.0012246
+At iterate    64  f =       149.26  |proj g|=    0.00084434
+At iterate    65  f =       149.21  |proj g|=    0.00018067
+At iterate    66  f =       149.21  |proj g|=     0.0001083
+At iterate    67  f =       149.21  |proj g|=    0.00010826
+At iterate    68  f =       149.21  |proj g|=    0.00010826
+
+iterations 68
+function evaluations 137
+segments explored during Cauchy searches 197
+BFGS updates skipped 9
+active bounds at final generalized Cauchy point 154
+norm of the final projected gradient 0.000108262
+final function value 149.213
+
+F = 149.213
+final  value 149.212990 
+converged
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.km: Error in checkNames(X1 = X, X2 = newdata, X1.name = "the design", X2.name = "newdata") : 
+  the design and newdata must have the same numbers of columns
+
+[1] "Fri Jan 12 10:15:20 2018"
+[Tune] Started tuning learner regr.ksvm for parameter set:
+         Type len  Def    Constr Req Tunable Trafo
+C     numeric   -    0  -5 to 10   -    TRUE     Y
+sigma numeric   - TRUE -15 to 15   -    TRUE     Y
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: C=529; sigma=0.00201
+[Tune-y] 1: rmse.test.rmse=0.399; time: 0.1 min
+[Tune-x] 2: C=426; sigma=6.09e-05
+[Tune-y] 2: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 3: C=2.18; sigma=7.77e+03
+[Tune-y] 3: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 4: C=0.0353; sigma=5.3e+03
+[Tune-y] 4: rmse.test.rmse= 0.4; time: 0.0 min
+[Tune-x] 5: C=0.0623; sigma=1.78e+03
+[Tune-y] 5: rmse.test.rmse= 0.4; time: 0.0 min
+[Tune-x] 6: C=7.09; sigma=4.67e-05
+[Tune-y] 6: rmse.test.rmse=0.398; time: 0.0 min
+[Tune-x] 7: C=540; sigma=939
+[Tune-y] 7: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 8: C=0.845; sigma=0.608
+[Tune-y] 8: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 9: C=0.55; sigma=3.39e+03
+[Tune-y] 9: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 10: C=1.99; sigma=0.00492
+[Tune-y] 10: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 11: C=98.6; sigma=54.8
+[Tune-y] 11: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 12: C=0.161; sigma=4.54
+[Tune-y] 12: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 13: C=3; sigma=199
+[Tune-y] 13: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 14: C=0.0579; sigma=5.28e+03
+[Tune-y] 14: rmse.test.rmse= 0.4; time: 0.0 min
+[Tune-x] 15: C=727; sigma=8e-05
+[Tune-y] 15: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 16: C=0.67; sigma=0.00277
+[Tune-y] 16: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 17: C=839; sigma=0.0599
+[Tune-y] 17: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 18: C=570; sigma=0.00736
+[Tune-y] 18: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 19: C=124; sigma=1.94
+[Tune-y] 19: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 20: C=156; sigma=0.0357
+[Tune-y] 20: rmse.test.rmse=0.399; time: 0.0 min
+[Tune] Result: C=7.09; sigma=4.67e-05 : rmse.test.rmse=0.398
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.ksvm: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 10:16:36 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.laGP no default is available.
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.laGP: Error in (function (X, Z, XX, start = 6, end = 50, d = NULL, g = 1/10000,  : 
+  mismatch XX and X cols
+
+[1] "Fri Jan 12 10:16:53 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.LiblineaRL2L1SVR no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.LiblineaRL2L1SVR: Error in predict.LiblineaR(.model$learner.model, newx = .newdata, ...) : 
+  columns of 'test' and 'train' differ
+
+[1] "Fri Jan 12 10:17:13 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.LiblineaRL2L2SVR no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.LiblineaRL2L2SVR: Error in predict.LiblineaR(.model$learner.model, newx = .newdata, ...) : 
+  columns of 'test' and 'train' differ
+
+[1] "Fri Jan 12 10:17:22 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.lm no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.lm: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 10:17:31 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.mars no default is available.
+[1] "Fri Jan 12 10:18:34 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.mob no default is available.
+Error in root.matrix(crossprod(process)) : 
+  matrix is not positive semidefinite
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.mob: Error in trainLearner.regr.mob(.learner = structure(list(id = "regr.mob",  : 
+  Failed to fit party::mob. Some coefficients are estimated as NA
+
+[1] "Fri Jan 12 10:18:44 2018"
+[Tune] Started tuning learner regr.nnet for parameter set:
+         Type len   Def  Constr Req Tunable Trafo
+size  integer   -     3 1 to 20   -    TRUE     -
+decay numeric   - 1e-05 -5 to 1   -    TRUE     Y
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: size=13; decay=0.013
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2185) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2185) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2185) weights
+
+[Tune-y] 1: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 2: size=10; decay=0.312
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1681) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1681) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1681) weights
+
+[Tune-y] 2: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 3: size=7; decay=0.0106
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1177) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1177) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1177) weights
+
+[Tune-y] 3: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 4: size=6; decay=0.065
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1009) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1009) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1009) weights
+
+[Tune-y] 4: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 5: size=16; decay=1.15
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2689) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2689) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2689) weights
+
+[Tune-y] 5: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 6: size=1; decay=0.519
+# weights:  169
+initial  value 105148.573097 
+iter  10 value 143.468849
+iter  20 value 141.925345
+iter  30 value 140.699843
+iter  40 value 129.095511
+iter  50 value 95.701846
+iter  60 value 74.731178
+iter  70 value 65.324242
+iter  80 value 60.484777
+iter  90 value 55.874691
+iter 100 value 53.684548
+final  value 53.684548 
+stopped after 100 iterations
+# weights:  169
+initial  value 111774.355134 
+iter  10 value 160.944190
+iter  20 value 147.092157
+iter  30 value 142.851355
+iter  40 value 141.352750
+iter  50 value 141.100509
+iter  60 value 139.687027
+iter  70 value 137.348215
+iter  80 value 135.424537
+iter  90 value 135.171164
+iter 100 value 135.001414
+final  value 135.001414 
+stopped after 100 iterations
+# weights:  169
+initial  value 113220.600342 
+iter  10 value 159.717833
+iter  20 value 156.336387
+iter  30 value 133.146743
+iter  40 value 131.964053
+iter  50 value 114.581867
+iter  60 value 83.248671
+iter  70 value 69.182506
+iter  80 value 61.220370
+iter  90 value 58.364699
+iter 100 value 55.943327
+final  value 55.943327 
+stopped after 100 iterations
+[Tune-y] 6: rmse.test.rmse=0.221; time: 0.0 min
+[Tune-x] 7: size=18; decay=5.63
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (3025) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (3025) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (3025) weights
+
+[Tune-y] 7: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 8: size=17; decay=1.56e-05
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2857) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2857) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2857) weights
+
+[Tune-y] 8: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 9: size=10; decay=0.0148
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1681) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1681) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1681) weights
+
+[Tune-y] 9: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 10: size=7; decay=0.294
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1177) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1177) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1177) weights
+
+[Tune-y] 10: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 11: size=16; decay=7.3
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2689) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2689) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2689) weights
+
+[Tune-y] 11: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 12: size=17; decay=1.36
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2857) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2857) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2857) weights
+
+[Tune-y] 12: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 13: size=3; decay=0.152
+# weights:  505
+initial  value 103101.280288 
+iter  10 value 268.004487
+iter  20 value 151.720709
+iter  30 value 123.945114
+iter  40 value 122.349710
+iter  50 value 119.143607
+iter  60 value 108.567450
+iter  70 value 102.880839
+iter  80 value 73.449530
+iter  90 value 62.728604
+iter 100 value 52.698311
+final  value 52.698311 
+stopped after 100 iterations
+# weights:  505
+initial  value 105928.678176 
+iter  10 value 118.899652
+iter  20 value 96.507464
+iter  30 value 86.134322
+iter  40 value 86.008167
+iter  50 value 76.543813
+iter  60 value 76.013784
+iter  70 value 75.489775
+iter  80 value 75.162506
+iter  90 value 71.835439
+iter 100 value 67.570032
+final  value 67.570032 
+stopped after 100 iterations
+# weights:  505
+initial  value 107639.867057 
+iter  10 value 145.699505
+iter  20 value 132.118106
+iter  30 value 100.350655
+iter  40 value 92.904414
+iter  50 value 90.471194
+iter  60 value 86.501949
+iter  70 value 85.907870
+iter  80 value 82.710007
+iter  90 value 80.061351
+iter 100 value 78.934092
+final  value 78.934092 
+stopped after 100 iterations
+[Tune-y] 13: rmse.test.rmse=0.31; time: 0.1 min
+[Tune-x] 14: size=17; decay=0.000272
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2857) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2857) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2857) weights
+
+[Tune-y] 14: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 15: size=6; decay=0.0014
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1009) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1009) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1009) weights
+
+[Tune-y] 15: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 16: size=17; decay=6.94
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2857) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2857) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2857) weights
+
+[Tune-y] 16: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 17: size=18; decay=3.15e-05
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (3025) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (3025) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (3025) weights
+
+[Tune-y] 17: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 18: size=15; decay=5.93
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2521) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2521) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (2521) weights
+
+[Tune-y] 18: rmse.test.rmse=  NA; time: 0.0 min
+[Tune-x] 19: size=2; decay=0.799
+# weights:  337
+initial  value 123163.059766 
+iter  10 value 224.622270
+iter  20 value 203.984754
+iter  30 value 200.693786
+iter  40 value 193.260211
+iter  50 value 190.312886
+iter  60 value 186.959224
+iter  70 value 182.649213
+iter  80 value 181.494534
+iter  90 value 178.870242
+iter 100 value 177.585836
+final  value 177.585836 
+stopped after 100 iterations
+# weights:  337
+initial  value 106839.689312 
+iter  10 value 176.181814
+iter  20 value 168.944116
+iter  30 value 166.983170
+iter  40 value 165.830758
+iter  50 value 164.646533
+iter  60 value 161.434637
+iter  70 value 160.280814
+iter  80 value 158.409085
+iter  90 value 157.226851
+iter 100 value 156.790657
+final  value 156.790657 
+stopped after 100 iterations
+# weights:  337
+initial  value 119589.930331 
+iter  10 value 233.999872
+iter  20 value 231.823562
+iter  30 value 209.012556
+iter  40 value 207.729724
+iter  50 value 194.847159
+iter  60 value 191.667920
+iter  70 value 189.728011
+iter  80 value 188.074064
+iter  90 value 187.918544
+iter 100 value 187.780547
+final  value 187.780547 
+stopped after 100 iterations
+[Tune-y] 19: rmse.test.rmse=0.321; time: 0.1 min
+[Tune-x] 20: size=8; decay=0.687
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1345) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1345) weights
+
+Warning in train(learner, task, subset = train.i, weights = weights[train.i]) :
+  Could not train learner regr.nnet: Error in nnet.default(x, y, w, ...) : too many (1345) weights
+
+[Tune-y] 20: rmse.test.rmse=  NA; time: 0.0 min
+[Tune] Result: size=1; decay=0.519 : rmse.test.rmse=0.221
+# weights:  169
+initial  value 176547.218252 
+iter  10 value 248.951920
+iter  20 value 248.409744
+iter  30 value 247.090228
+iter  40 value 235.585120
+iter  50 value 172.597491
+iter  60 value 169.048746
+iter  70 value 168.501340
+iter  80 value 168.125309
+iter  90 value 167.681532
+iter 100 value 167.438508
+final  value 167.438508 
+stopped after 100 iterations
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.nnet: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 10:19:14 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.nodeHarvest no default is available.
+
+ ... generating 1000 nodes ...
+ total number of nodes in initial set                   : 1081
+ total number of nodes after removal of identical nodes : 450 
+ ... computing node means ... 
+ ... computing node weights ...
+ dimension of null space of I                           : 228
+ number of selected nodes                               : 65 
+[1] "Fri Jan 12 10:19:34 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.pcr no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.pcr: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 10:19:44 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.plsr no default is available.
+In addition: Warning messages:
+1: package '!penalized' is not available (for R version 3.4.3) 
+2: package '!penalized' is not available (for R version 3.4.3) 
+3: package '!penalized' is not available (for R version 3.4.3) 
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.plsr: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 10:20:23 2018"
+[Tune] Started tuning learner regr.randomForest for parameter set:
+            Type len Def   Constr Req Tunable Trafo
+nodesize integer   -   1  1 to 10   -    TRUE     -
+mtry     integer   -  55 1 to 166   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: nodesize=7; mtry=87
+[Tune-y] 1: rmse.test.rmse=0.148; time: 1.2 min
+[Tune-x] 2: nodesize=5; mtry=125
+[Tune-y] 2: rmse.test.rmse=0.15; time: 2.0 min
+[Tune-x] 3: nodesize=4; mtry=84
+[Tune-y] 3: rmse.test.rmse=0.148; time: 1.4 min
+[Tune-x] 4: nodesize=3; mtry=106
+[Tune-y] 4: rmse.test.rmse=0.149; time: 2.0 min
+[Tune-x] 5: nodesize=8; mtry=140
+[Tune-y] 5: rmse.test.rmse=0.151; time: 1.8 min
+[Tune-x] 6: nodesize=1; mtry=131
+[Tune-y] 6: rmse.test.rmse=0.149; time: 3.5 min
+[Tune-x] 7: nodesize=9; mtry=160
+[Tune-y] 7: rmse.test.rmse=0.152; time: 1.9 min
+[Tune-x] 8: nodesize=9; mtry=6
+[Tune-y] 8: rmse.test.rmse=0.164; time: 0.1 min
+[Tune-x] 9: nodesize=5; mtry=88
+[Tune-y] 9: rmse.test.rmse=0.148; time: 1.4 min
+[Tune-x] 10: nodesize=4; mtry=124
+[Tune-y] 10: rmse.test.rmse=0.15; time: 2.0 min
+[Tune-x] 11: nodesize=8; mtry=163
+[Tune-y] 11: rmse.test.rmse=0.153; time: 2.1 min
+[Tune-x] 12: nodesize=9; mtry=143
+[Tune-y] 12: rmse.test.rmse=0.151; time: 1.7 min
+[Tune-x] 13: nodesize=2; mtry=116
+[Tune-y] 13: rmse.test.rmse=0.149; time: 2.6 min
+[Tune-x] 14: nodesize=9; mtry=40
+[Tune-y] 14: rmse.test.rmse=0.148; time: 0.5 min
+[Tune-x] 15: nodesize=3; mtry=60
+[Tune-y] 15: rmse.test.rmse=0.147; time: 1.2 min
+[Tune-x] 16: nodesize=9; mtry=162
+[Tune-y] 16: rmse.test.rmse=0.153; time: 1.9 min
+[Tune-x] 17: nodesize=9; mtry=14
+[Tune-y] 17: rmse.test.rmse=0.153; time: 0.2 min
+[Tune-x] 18: nodesize=8; mtry=160
+[Tune-y] 18: rmse.test.rmse=0.153; time: 2.0 min
+[Tune-x] 19: nodesize=1; mtry=136
+[Tune-y] 19: rmse.test.rmse=0.15; time: 3.6 min
+[Tune-x] 20: nodesize=4; mtry=134
+[Tune-y] 20: rmse.test.rmse=0.151; time: 2.2 min
+[Tune] Result: nodesize=3; mtry=60 : rmse.test.rmse=0.147
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.randomForest: Error in predict.randomForest(.model$learner.model, newdata = .newdata,  : 
+  variables in the training data missing in newdata
+
+[1] "Fri Jan 12 10:56:45 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.randomForestSRC no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.randomForestSRC: Error in generic.predict.rfsrc(object, newdata, outcome.target = outcome.target,  : 
+  x-variables in test data do not match original training data
+
+[1] "Fri Jan 12 10:57:13 2018"
+[Tune] Started tuning learner regr.ranger for parameter set:
+                 Type len Def   Constr Req Tunable Trafo
+mtry          integer   -  55 1 to 166   -    TRUE     -
+min.node.size integer   -   5  1 to 10   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: mtry=106; min.node.size=6
+[Tune-y] 1: rmse.test.rmse=0.149; time: 0.7 min
+[Tune-x] 2: mtry=77; min.node.size=8
+[Tune-y] 2: rmse.test.rmse=0.148; time: 0.5 min
+[Tune-x] 3: mtry=58; min.node.size=6
+[Tune-y] 3: rmse.test.rmse=0.147; time: 0.4 min
+[Tune-x] 4: mtry=45; min.node.size=7
+[Tune-y] 4: rmse.test.rmse=0.147; time: 0.3 min
+[Tune-x] 5: mtry=128; min.node.size=9
+[Tune-y] 5: rmse.test.rmse=0.15; time: 0.7 min
+[Tune-x] 6: mtry=5; min.node.size=8
+[Tune-y] 6: rmse.test.rmse=0.167; time: 0.1 min
+[Tune-x] 7: mtry=146; min.node.size=10
+[Tune-y] 7: rmse.test.rmse=0.152; time: 0.7 min
+[Tune-x] 8: mtry=136; min.node.size=1
+[Tune-y] 8: rmse.test.rmse=0.15; time: 1.1 min
+[Tune-x] 9: mtry=77; min.node.size=6
+[Tune-y] 9: rmse.test.rmse=0.147; time: 0.5 min
+[Tune-x] 10: mtry=57; min.node.size=8
+[Tune-y] 10: rmse.test.rmse=0.147; time: 0.4 min
+[Tune-x] 11: mtry=128; min.node.size=10
+[Tune-y] 11: rmse.test.rmse=0.151; time: 0.7 min
+[Tune-x] 12: mtry=135; min.node.size=9
+[Tune-y] 12: rmse.test.rmse=0.15; time: 0.7 min
+[Tune-x] 13: mtry=17; min.node.size=7
+[Tune-y] 13: rmse.test.rmse=0.15; time: 0.2 min
+[Tune-x] 14: mtry=141; min.node.size=3
+[Tune-y] 14: rmse.test.rmse=0.15; time: 1.1 min
+[Tune-x] 15: mtry=44; min.node.size=4
+[Tune-y] 15: rmse.test.rmse=0.147; time: 0.4 min
+[Tune-x] 16: mtry=141; min.node.size=10
+[Tune-y] 16: rmse.test.rmse=0.151; time: 0.7 min
+[Tune-x] 17: mtry=142; min.node.size=1
+[Tune-y] 17: rmse.test.rmse=0.15; time: 1.2 min
+[Tune-x] 18: mtry=120; min.node.size=10
+[Tune-y] 18: rmse.test.rmse=0.15; time: 0.6 min
+[Tune-x] 19: mtry=10; min.node.size=9
+[Tune-y] 19: rmse.test.rmse=0.155; time: 0.1 min
+[Tune-x] 20: mtry=66; min.node.size=9
+[Tune-y] 20: rmse.test.rmse=0.148; time: 0.4 min
+[Tune] Result: mtry=44; min.node.size=4 : rmse.test.rmse=0.147
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.ranger: Error in `[.data.frame`(data, , forest$independent.variable.names, drop = FALSE) : 
+  undefined columns selected
+
+[1] "Fri Jan 12 11:09:01 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.rknn no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.rknn: Error in knn.reg(train = data[, fset], test = newdata[, fset], y = y,  : 
+  too many ties in knn
+
+[1] "Fri Jan 12 11:09:11 2018"
+[Tune] Started tuning learner regr.rpart for parameter set:
+             Type len   Def   Constr Req Tunable Trafo
+cp        numeric   - -6.64 -10 to 0   -    TRUE     Y
+maxdepth  integer   -    30  3 to 30   -    TRUE     -
+minbucket integer   -     7  5 to 50   -    TRUE     -
+minsplit  integer   -    20  5 to 50   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: cp=0.0799; maxdepth=17; minbucket=26; minsplit=39
+[Tune-y] 1: rmse.test.rmse=0.279; time: 0.0 min
+[Tune-x] 2: cp=0.0107; maxdepth=17; minbucket=17; minsplit=34
+[Tune-y] 2: rmse.test.rmse=0.225; time: 0.0 min
+[Tune-x] 3: cp=0.199; maxdepth=26; minbucket=6; minsplit=41
+[Tune-y] 3: rmse.test.rmse=0.292; time: 0.0 min
+[Tune-x] 4: cp=0.429; maxdepth=29; minbucket=42; minsplit=6
+[Tune-y] 4: rmse.test.rmse=0.292; time: 0.0 min
+[Tune-x] 5: cp=0.024; maxdepth=17; minbucket=20; minsplit=39
+[Tune-y] 5: rmse.test.rmse=0.245; time: 0.0 min
+[Tune-x] 6: cp=0.204; maxdepth=30; minbucket=42; minsplit=44
+[Tune-y] 6: rmse.test.rmse=0.292; time: 0.0 min
+[Tune-x] 7: cp=0.00198; maxdepth=22; minbucket=44; minsplit=15
+[Tune-y] 7: rmse.test.rmse=0.221; time: 0.0 min
+[Tune-x] 8: cp=0.00602; maxdepth=13; minbucket=43; minsplit=49
+[Tune-y] 8: rmse.test.rmse=0.22; time: 0.0 min
+[Tune-x] 9: cp=0.356; maxdepth=5; minbucket=37; minsplit=49
+[Tune-y] 9: rmse.test.rmse=0.292; time: 0.0 min
+[Tune-x] 10: cp=0.00148; maxdepth=25; minbucket=23; minsplit=42
+[Tune-y] 10: rmse.test.rmse=0.208; time: 0.0 min
+[Tune-x] 11: cp=0.00437; maxdepth=26; minbucket=27; minsplit=40
+[Tune-y] 11: rmse.test.rmse=0.22; time: 0.0 min
+[Tune-x] 12: cp=0.00743; maxdepth=3; minbucket=46; minsplit=12
+[Tune-y] 12: rmse.test.rmse=0.235; time: 0.0 min
+[Tune-x] 13: cp=0.0547; maxdepth=21; minbucket=16; minsplit=26
+[Tune-y] 13: rmse.test.rmse=0.26; time: 0.0 min
+[Tune-x] 14: cp=0.00575; maxdepth=28; minbucket=28; minsplit=13
+[Tune-y] 14: rmse.test.rmse=0.221; time: 0.0 min
+[Tune-x] 15: cp=0.0476; maxdepth=20; minbucket=39; minsplit=27
+[Tune-y] 15: rmse.test.rmse=0.26; time: 0.0 min
+[Tune-x] 16: cp=0.211; maxdepth=29; minbucket=25; minsplit=24
+[Tune-y] 16: rmse.test.rmse=0.292; time: 0.0 min
+[Tune-x] 17: cp=0.662; maxdepth=12; minbucket=50; minsplit=16
+[Tune-y] 17: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 18: cp=0.181; maxdepth=8; minbucket=42; minsplit=27
+[Tune-y] 18: rmse.test.rmse=0.292; time: 0.0 min
+[Tune-x] 19: cp=0.77; maxdepth=21; minbucket=17; minsplit=46
+[Tune-y] 19: rmse.test.rmse=0.399; time: 0.0 min
+[Tune-x] 20: cp=0.427; maxdepth=25; minbucket=21; minsplit=50
+[Tune-y] 20: rmse.test.rmse=0.292; time: 0.0 min
+[Tune] Result: cp=0.00148; maxdepth=25; minbucket=23; minsplit=42 : rmse.test.rmse=0.208
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.rpart: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 11:09:33 2018"
+[Tune] Started tuning learner regr.RRF for parameter set:
+           Type len Def   Constr Req Tunable Trafo
+mtry    integer   -  55 1 to 166   -    TRUE     -
+coefReg numeric   - 0.8   0 to 1   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: mtry=106; coefReg=0.519
+[Tune-y] 1: rmse.test.rmse=0.148; time: 1.7 min
+[Tune-x] 2: mtry=77; coefReg=0.749
+[Tune-y] 2: rmse.test.rmse=0.148; time: 1.2 min
+[Tune-x] 3: mtry=58; coefReg=0.504
+[Tune-y] 3: rmse.test.rmse=0.148; time: 0.9 min
+[Tune-x] 4: mtry=45; coefReg=0.636
+[Tune-y] 4: rmse.test.rmse=0.147; time: 0.8 min
+[Tune-x] 5: mtry=128; coefReg=0.843
+[Tune-y] 5: rmse.test.rmse=0.15; time: 2.0 min
+[Tune-x] 6: mtry=5; coefReg=0.786
+[Tune-y] 6: rmse.test.rmse=0.166; time: 0.2 min
+[Tune-x] 7: mtry=146; coefReg=0.958
+[Tune-y] 7: rmse.test.rmse=0.151; time: 2.2 min
+[Tune-x] 8: mtry=136; coefReg=0.032
+[Tune-y] 8: rmse.test.rmse=0.167; time: 2.2 min
+[Tune-x] 9: mtry=77; coefReg=0.529
+[Tune-y] 9: rmse.test.rmse=0.147; time: 1.3 min
+[Tune-x] 10: mtry=57; coefReg=0.745
+[Tune-y] 10: rmse.test.rmse=0.147; time: 1.0 min
+[Tune-x] 11: mtry=128; coefReg=0.977
+[Tune-y] 11: rmse.test.rmse=0.15; time: 2.0 min
+[Tune-x] 12: mtry=135; coefReg=0.855
+[Tune-y] 12: rmse.test.rmse=0.15; time: 2.0 min
+[Tune-x] 13: mtry=17; coefReg=0.697
+[Tune-y] 13: rmse.test.rmse=0.15; time: 0.4 min
+[Tune-x] 14: mtry=141; coefReg=0.239
+[Tune-y] 14: rmse.test.rmse=0.158; time: 2.2 min
+[Tune-x] 15: mtry=44; coefReg=0.358
+[Tune-y] 15: rmse.test.rmse=0.147; time: 0.8 min
+[Tune-x] 16: mtry=141; coefReg=0.974
+[Tune-y] 16: rmse.test.rmse=0.151; time: 2.1 min
+[Tune-x] 17: mtry=142; coefReg=0.0831
+[Tune-y] 17: rmse.test.rmse=0.167; time: 2.2 min
+[Tune-x] 18: mtry=120; coefReg=0.962
+[Tune-y] 18: rmse.test.rmse=0.15; time: 1.8 min
+[Tune-x] 19: mtry=10; coefReg=0.817
+[Tune-y] 19: rmse.test.rmse=0.155; time: 0.2 min
+[Tune-x] 20: mtry=66; coefReg=0.806
+[Tune-y] 20: rmse.test.rmse=0.147; time: 1.1 min
+[Tune] Result: mtry=44; coefReg=0.358 : rmse.test.rmse=0.147
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.RRF: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 11:38:16 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.rsm no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.rsm: Error in lapply(X = X, FUN = FUN, ...) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 11:38:26 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.rvm no default is available.
+In addition: Warning message:
+In (function (formula, data, ...)  :
+  Some coefficients are aliased - cannot use 'rsm' methods.
+  Returning an 'lm' object.
+Using automatic sigma estimation (sigest) for RBF or laplace kernel 
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.rvm: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 11:40:16 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.slim no default is available.
+Sparse Linear Regression with L1 Regularization.
+Square root Lasso with screening.
+
+slim options summary: 
+5 lambdas used:
+[1] 0.8130 0.4380 0.2360 0.1270 0.0683
+Method = lq 
+q = 2 loss, SQRT Lasso
+Degree of freedom: 1 -----> 46 
+Runtime: 39.88328 secs 
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.slim: Error in newdata %*% object$beta[, lambda.idx] : 
+  non-conformable arguments
+
+[1] "Fri Jan 12 11:41:06 2018"
+[Tune] Started tuning learner regr.svm for parameter set:
+         Type len   Def    Constr Req Tunable Trafo
+cost  numeric   -     0 -15 to 15   -    TRUE     Y
+gamma numeric   - -7.38 -15 to 15   -    TRUE     Y
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: cost=16.7; gamma=1.48
+[Tune-y] 1: rmse.test.rmse=0.399; time: 0.1 min
+[Tune-x] 2: cost=0.42; gamma=178
+[Tune-y] 2: rmse.test.rmse=0.399; time: 0.1 min
+[Tune-x] 3: cost=0.0403; gamma=1.1
+[Tune-y] 3: rmse.test.rmse= 0.4; time: 0.1 min
+[Tune-x] 4: cost=0.00806; gamma=16.7
+[Tune-y] 4: rmse.test.rmse= 0.4; time: 0.1 min
+[Tune-x] 5: cost=258; gamma=1.26e+03
+[Tune-y] 5: rmse.test.rmse=0.399; time: 0.1 min
+[Tune-x] 6: cost=5.44e-05; gamma=382
+[Tune-y] 6: rmse.test.rmse= 0.4; time: 0.1 min
+[Tune-x] 7: cost=2.59e+03; gamma=1.38e+04
+[Tune-y] 7: rmse.test.rmse=0.399; time: 0.1 min
+[Tune-x] 8: cost=726; gamma=5.93e-05
+[Tune-y] 8: rmse.test.rmse=0.399; time: 0.1 min
+[Tune-x] 9: cost=0.455; gamma=1.81
+[Tune-y] 9: rmse.test.rmse=0.399; time: 0.1 min
+[Tune-x] 10: cost=0.038; gamma=162
+[Tune-y] 10: rmse.test.rmse= 0.4; time: 0.1 min
+[Tune-x] 11: cost=279; gamma=2.04e+04
+[Tune-y] 11: rmse.test.rmse=0.399; time: 0.1 min
+[Tune-x] 12: cost=598; gamma=1.62e+03
+[Tune-y] 12: rmse.test.rmse=0.399; time: 0.1 min
+[Tune-x] 13: cost=0.000256; gamma=60
+[Tune-y] 13: rmse.test.rmse= 0.4; time: 0.1 min
+[Tune-x] 14: cost=1.41e+03; gamma=0.0044
+[Tune-y] 14: rmse.test.rmse=0.399; time: 0.1 min
+[Tune-x] 15: cost=0.00714; gamma=0.0521
+[Tune-y] 15: rmse.test.rmse= 0.4; time: 0.1 min
+[Tune-x] 16: cost=1.3e+03; gamma=1.89e+04
+[Tune-y] 16: rmse.test.rmse=0.399; time: 0.1 min
+[Tune-x] 17: cost=1.47e+03; gamma=0.000172
+[Tune-y] 17: rmse.test.rmse=0.399; time: 0.1 min
+[Tune-x] 18: cost=90.9; gamma=1.49e+04
+[Tune-y] 18: rmse.test.rmse=0.399; time: 0.1 min
+[Tune-x] 19: cost=0.000106; gamma=730
+[Tune-y] 19: rmse.test.rmse= 0.4; time: 0.1 min
+[Tune-x] 20: cost=0.109; gamma=582
+[Tune-y] 20: rmse.test.rmse= 0.4; time: 0.1 min
+[Tune] Result: cost=726; gamma=5.93e-05 : rmse.test.rmse=0.399
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.svm: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 11:42:51 2018"
+[Tune] Started tuning learner regr.xgboost for parameter set:
+                    Type len Def       Constr Req Tunable Trafo
+nrounds          numeric   -   0    0 to 8.64   -    TRUE     Y
+max_depth        integer   -   6      1 to 10   -    TRUE     -
+eta              numeric   - 0.3 0.001 to 0.6   -    TRUE     -
+gamma            numeric   -   0      0 to 10   -    TRUE     -
+colsample_bytree numeric   - 0.5   0.3 to 0.7   -    TRUE     -
+min_child_weight numeric   -   1      0 to 20   -    TRUE     -
+subsample        numeric   -   1    0.25 to 1   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: nrounds=450; max_depth=6; eta=0.276; gamma=7.49; colsample_bytree=0.438; min_child_weight=10.1; subsample=0.451
+[Tune-y] 1: rmse.test.rmse=0.25; time: 0.2 min
+[Tune-x] 2: nrounds=450; max_depth=8; eta=0.506; gamma=0.278; colsample_bytree=0.614; min_child_weight=17.6; subsample=0.969
+[Tune-y] 2: rmse.test.rmse=0.156; time: 0.3 min
+[Tune-x] 3: nrounds=1.33e+03; max_depth=1; eta=0.278; gamma=5.29; colsample_bytree=0.437; min_child_weight=14.9; subsample=0.828
+[Tune-y] 3: rmse.test.rmse=0.217; time: 0.2 min
+[Tune-x] 4: nrounds=3.49e+03; max_depth=9; eta=0.513; gamma=1.02; colsample_bytree=0.579; min_child_weight=17; subsample=0.429
+[Tune-y] 4: rmse.test.rmse=0.18; time: 2.2 min
+[Tune-x] 5: nrounds=48; max_depth=4; eta=0.507; gamma=9.74; colsample_bytree=0.64; min_child_weight=1.66; subsample=0.788
+[Tune-y] 5: rmse.test.rmse=0.258; time: 0.0 min
+[Tune-x] 6: nrounds=3.19e+03; max_depth=1; eta=0.49; gamma=3.93; colsample_bytree=0.622; min_child_weight=4.32; subsample=0.885
+[Tune-y] 6: rmse.test.rmse=0.21; time: 0.4 min
+[Tune-x] 7: nrounds=176; max_depth=8; eta=0.176; gamma=0.0271; colsample_bytree=0.658; min_child_weight=3.47; subsample=0.686
+[Tune-y] 7: rmse.test.rmse=0.145; time: 0.1 min
+[Tune-x] 8: nrounds=556; max_depth=3; eta=0.279; gamma=2.56; colsample_bytree=0.662; min_child_weight=10.1; subsample=0.383
+[Tune-y] 8: rmse.test.rmse=0.194; time: 0.2 min
+[Tune-x] 9: nrounds=288; max_depth=7; eta=0.452; gamma=4.9; colsample_bytree=0.61; min_child_weight=18.6; subsample=0.588
+[Tune-y] 9: rmse.test.rmse=0.227; time: 0.2 min
+[Tune-x] 10: nrounds=131; max_depth=10; eta=0.205; gamma=9.78; colsample_bytree=0.397; min_child_weight=15.1; subsample=0.386
+[Tune-y] 10: rmse.test.rmse=0.285; time: 0.1 min
+[Tune-x] 11: nrounds=1.32e+03; max_depth=5; eta=0.577; gamma=6.73; colsample_bytree=0.406; min_child_weight=18.3; subsample=0.908
+[Tune-y] 11: rmse.test.rmse=0.237; time: 0.5 min
+[Tune-x] 12: nrounds=1.33e+03; max_depth=4; eta=0.589; gamma=6.52; colsample_bytree=0.601; min_child_weight=11.4; subsample=0.522
+[Tune-y] 12: rmse.test.rmse=0.247; time: 0.5 min
+[Tune-x] 13: nrounds=964; max_depth=5; eta=0.308; gamma=6.58; colsample_bytree=0.405; min_child_weight=17.7; subsample=0.742
+[Tune-y] 13: rmse.test.rmse=0.234; time: 0.4 min
+[Tune-x] 14: nrounds=86; max_depth=6; eta=0.41; gamma=4.63; colsample_bytree=0.365; min_child_weight=15.4; subsample=0.92
+[Tune-y] 14: rmse.test.rmse=0.213; time: 0.0 min
+[Tune-x] 15: nrounds=23; max_depth=10; eta=0.309; gamma=6.69; colsample_bytree=0.522; min_child_weight=8.59; subsample=0.461
+[Tune-y] 15: rmse.test.rmse=0.255; time: 0.0 min
+[Tune-x] 16: nrounds=12; max_depth=5; eta=0.276; gamma=1.5; colsample_bytree=0.586; min_child_weight=0.311; subsample=0.577
+[Tune-y] 16: rmse.test.rmse=0.318; time: 0.0 min
+[Tune-x] 17: nrounds=1.1e+03; max_depth=3; eta=0.136; gamma=3.44; colsample_bytree=0.319; min_child_weight=9.74; subsample=0.438
+[Tune-y] 17: rmse.test.rmse=0.211; time: 0.3 min
+[Tune-x] 18: nrounds=409; max_depth=3; eta=0.532; gamma=4.5; colsample_bytree=0.666; min_child_weight=18.4; subsample=0.759
+[Tune-y] 18: rmse.test.rmse=0.222; time: 0.1 min
+[Tune-x] 19: nrounds=2.07e+03; max_depth=7; eta=0.598; gamma=9.57; colsample_bytree=0.591; min_child_weight=16.8; subsample=0.609
+[Tune-y] 19: rmse.test.rmse=0.25; time: 1.2 min
+[Tune-x] 20: nrounds=93; max_depth=1; eta=0.0525; gamma=8.03; colsample_bytree=0.609; min_child_weight=13.3; subsample=0.512
+[Tune-y] 20: rmse.test.rmse=0.283; time: 0.0 min
+[Tune] Result: nrounds=176; max_depth=8; eta=0.176; gamma=0.0271; colsample_bytree=0.658; min_child_weight=3.47; subsample=0.686 : rmse.test.rmse=0.145
+[1] "Fri Jan 12 11:49:58 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.xyf no default is available.
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.xyf: Error in !toroidal : invalid argument type
+
+[1] "Fri Jan 12 11:50:10 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.bartMachine please install the following packages: bartMachine
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.bcart no default is available.
+
+burn in:
+**GROW** @depth 0: [52,0], n=(727,370)
+**GROW** @depth 1: [87,0], n=(197,173)
+**GROW** @depth 1: [165,0], n=(186,541)
+r=1000 d=[0] [0] [0] [0]; n=(186,541,197,173)
+**PRUNE** @depth 1: [165,0]
+**GROW** @depth 1: [84,0.237527], n=(355,372)
+r=2000 d=[0] [0] [0] [0]; n=(349,378,197,173)
+
+Sampling @ nn=0 pred locs:
+r=1000 d=[0] [0] [0] [0]; mh=3 n=(349,378,197,173)
+r=2000 d=[0] [0] [0] [0]; mh=3 n=(345,382,197,173)
+r=3000 d=[0] [0] [0] [0]; mh=3 n=(349,378,197,173)
+r=4000 d=[0] [0] [0] [0]; mh=3 n=(349,378,197,173)
+r=5000 d=[0] [0] [0] [0]; mh=3 n=(355,372,197,173)
+Grow: 1.078%, Prune: 0.2809%, Change: 14.16%, Swap: 0%
+
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.bcart: Error in predict.tgp(.model$learner.model, XX = .newdata, pred.n = FALSE,  : 
+  mismatched column dimension of object$X and XX
+
+[1] "Fri Jan 12 11:54:10 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.bdk no default is available.
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.bdk: Error : 'bdk' is not an exported object from 'namespace:kohonen'
+
+[1] "Fri Jan 12 11:54:18 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.blackboost please install the following packages: mboost
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.blm no default is available.
+
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.blm: Error in tgp(X, Z, XX, BTE, R, m0r1, FALSE, params, itemps, pred.n, krige,  : 
+  X[,1:166]-matrix is not of full rank
+
+[1] "Fri Jan 12 11:54:30 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.brnn no default is available.
+Number of parameters (weights and biases) to estimate: 336 
+Nguyen-Widrow method
+Scaling factor= 0.7004424 
+gamma= 210.0972 	 alpha= 51.2502 	 beta= 115.5161 
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.brnn: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 11:55:10 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.bst no default is available.
+[1] "Fri Jan 12 11:55:19 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.btlm no default is available.
+
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.btlm: Error in tgp(X, Z, XX, BTE, R, m0r1, FALSE, params, itemps, pred.n, krige,  : 
+  X[,1:166]-matrix is not of full rank
+
+[1] "Fri Jan 12 11:55:27 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.cforest no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.cforest: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 11:55:45 2018"
+Loading required package: crs
+Error: package or namespace load failed for 'crs' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'MatrixModels'
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.crs please install the following packages: crs
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.ctree no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.ctree: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 11:55:57 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.cubist no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.cubist: Error in `[.data.frame`(newdata, , object$vars$all, drop = FALSE) : 
+  undefined columns selected
+
+[1] "Fri Jan 12 11:56:08 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.cvglmnet no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.cvglmnet: Error in cbind2(1, newx) %*% nbeta : 
+  Cholmod error 'X and/or Y have wrong dimensions' at file ../MatrixOps/cholmod_sdmult.c, line 90
+
+[1] "Fri Jan 12 11:56:19 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.earth no default is available.
+[1] "Fri Jan 12 11:56:27 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.elmNN no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.elmNN: Error in inpweight %*% TV.P : non-conformable arguments
+
+[1] "Fri Jan 12 11:56:35 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.evtree please install the following packages: evtree
+[Tune] Started tuning learner regr.extraTrees for parameter set:
+                 Type len Def   Constr Req Tunable Trafo
+mtry          integer   -  55 1 to 166   -    TRUE     -
+numRandomCuts integer   -   1  1 to 25   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: mtry=43; numRandomCuts=20
+[Tune-y] 1: rmse.test.rmse=0.142; time: 5.8 min
+[Tune-x] 2: mtry=107; numRandomCuts=13
+[Tune-y] 2: rmse.test.rmse=0.148; time: 9.1 min
+[Tune-x] 3: mtry=24; numRandomCuts=7
+[Tune-y] 3: rmse.test.rmse=0.142; time: 1.3 min
+[Tune-x] 4: mtry=136; numRandomCuts=3
+[Tune-y] 4: rmse.test.rmse=0.148; time: 2.8 min
+[Tune-x] 5: mtry=124; numRandomCuts=1
+[Tune-y] 5: rmse.test.rmse=0.151; time: 1.2 min
+[Tune-x] 6: mtry=70; numRandomCuts=20
+[Tune-y] 6: rmse.test.rmse=0.144; time: 9.2 min
+[Tune-x] 7: mtry=76; numRandomCuts=24
+[Tune-y] 7: rmse.test.rmse=0.145; time: 12.0 min
+[Tune-x] 8: mtry=143; numRandomCuts=17
+[Tune-y] 8: rmse.test.rmse=0.153; time: 13.4 min
+[Tune-x] 9: mtry=1; numRandomCuts=8
+[Tune-y] 9: rmse.test.rmse=0.188; time: 0.1 min
+[Tune-x] 10: mtry=166; numRandomCuts=10
+Warning in predict.WrappedModel(m, task, subset = test.i) :
+  Could not predict with learner regr.extraTrees: Error in .jcall(et$jobject, "[D", "getValues", toJavaMatrix2D(newdata)) : 
+  java.lang.OutOfMemoryError: Java heap space
+
+[Tune-y] 10: rmse.test.rmse=  NA; time: 39.4 min
+[Tune-x] 11: mtry=147; numRandomCuts=1
+Warning in predict.WrappedModel(m, task, subset = test.i) :
+  Could not predict with learner regr.extraTrees: Error in .jcall(et$jobject, "[D", "getValues", toJavaMatrix2D(newdata)) : 
+  java.lang.OutOfMemoryError: Java heap space
+
+[Tune-y] 11: rmse.test.rmse=  NA; time: 61.4 min
+[Tune-x] 12: mtry=83; numRandomCuts=20
+[Tune-y] 12: rmse.test.rmse=0.146; time: 11.5 min
+[Tune-x] 13: mtry=85; numRandomCuts=24
+[Tune-y] 13: rmse.test.rmse=0.146; time: 13.3 min
+[Tune-x] 14: mtry=40; numRandomCuts=5
+[Tune-y] 14: rmse.test.rmse=0.142; time: 1.7 min
+[Tune-x] 15: mtry=94; numRandomCuts=10
+[Tune-y] 15: rmse.test.rmse=0.145; time: 6.4 min
+[Tune-x] 16: mtry=122; numRandomCuts=2
+[Tune-y] 16: rmse.test.rmse=0.147; time: 2.5 min
+[Tune-x] 17: mtry=25; numRandomCuts=10
+Warning in predict.WrappedModel(m, task, subset = test.i) :
+  Could not predict with learner regr.extraTrees: Error in .jcall(et$jobject, "[D", "getValues", toJavaMatrix2D(newdata)) : 
+  java.lang.OutOfMemoryError: Java heap space
+
+[Tune-y] 17: rmse.test.rmse=  NA; time: 6.2 min
+[Tune-x] 18: mtry=3; numRandomCuts=2
+[Tune-y] 18: rmse.test.rmse=0.166; time: 0.2 min
+[Tune-x] 19: mtry=46; numRandomCuts=13
+[Tune-y] 19: rmse.test.rmse=0.142; time: 4.5 min
+[Tune-x] 20: mtry=33; numRandomCuts=19
+[Tune-y] 20: rmse.test.rmse=0.142; time: 4.4 min
+[Tune] Result: mtry=33; numRandomCuts=19 : rmse.test.rmse=0.142
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.extraTrees: Error in predict.extraTrees(.model$learner.model, as.matrix(.newdata),  : 
+  newdata(ncol=164) does not have the same dimensions as the original x (ncol=166)
+
+[1] "Fri Jan 12 15:25:29 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.featureless no default is available.
+[1] "Fri Jan 12 15:26:08 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.fnn no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.fnn: Error in get.knnx(train, test, k, algorithm) : 
+  Number of columns must be same!.
+
+[1] "Fri Jan 12 15:26:16 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.frbs no default is available.
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.frbs: Error in rep(1:num.varinput, num.labels.input) : invalid 'times' argument
+
+[1] "Fri Jan 12 15:27:17 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.gamboost please install the following packages: mboost
+In addition: There were 13 warnings (use warnings() to see them)
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.gausspr no default is available.
+Using automatic sigma estimation (sigest) for RBF or laplace kernel 
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.gausspr: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 15:27:35 2018"
+[Tune] Started tuning learner regr.gbm for parameter set:
+                     Type len   Def       Constr Req Tunable Trafo
+n.trees           numeric   -  5.64    0 to 6.64   -    TRUE     Y
+interaction.depth integer   -     1      1 to 10   -    TRUE     -
+shrinkage         numeric   - 0.001 0.001 to 0.6   -    TRUE     -
+n.minobsinnode    integer   -    10      5 to 25   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: n.trees=32; interaction.depth=8; shrinkage=0.386; n.minobsinnode=15
+[Tune-y] 1: rmse.test.rmse=0.154; time: 0.1 min
+[Tune-x] 2: n.trees=19; interaction.depth=3; shrinkage=0.49; n.minobsinnode=7
+[Tune-y] 2: rmse.test.rmse=0.164; time: 0.0 min
+[Tune-x] 3: n.trees=307; interaction.depth=1; shrinkage=0.253; n.minobsinnode=20
+[Tune-y] 3: rmse.test.rmse=0.138; time: 0.1 min
+[Tune-x] 4: n.trees=80; interaction.depth=10; shrinkage=0.514; n.minobsinnode=18
+[Tune-y] 4: rmse.test.rmse=0.178; time: 0.2 min
+[Tune-x] 5: n.trees=10; interaction.depth=4; shrinkage=0.6; n.minobsinnode=12
+[Tune-y] 5: rmse.test.rmse=0.168; time: 0.0 min
+[Tune-x] 6: n.trees=579; interaction.depth=1; shrinkage=0.299; n.minobsinnode=21
+[Tune-y] 6: rmse.test.rmse=0.139; time: 0.1 min
+[Tune-x] 7: n.trees=104; interaction.depth=10; shrinkage=0.145; n.minobsinnode=8
+[Tune-y] 7: rmse.test.rmse=0.141; time: 0.2 min
+[Tune-x] 8: n.trees=132; interaction.depth=4; shrinkage=0.438; n.minobsinnode=6
+[Tune-y] 8: rmse.test.rmse=0.165; time: 0.1 min
+[Tune-x] 9: n.trees=20; interaction.depth=4; shrinkage=0.00989; n.minobsinnode=6
+[Tune-y] 9: rmse.test.rmse=0.351; time: 0.0 min
+[Tune-x] 10: n.trees=36; interaction.depth=5; shrinkage=0.117; n.minobsinnode=20
+[Tune-y] 10: rmse.test.rmse=0.138; time: 0.0 min
+[Tune-x] 11: n.trees=24; interaction.depth=9; shrinkage=0.58; n.minobsinnode=14
+[Tune-y] 11: rmse.test.rmse=0.183; time: 0.1 min
+[Tune-x] 12: n.trees=240; interaction.depth=5; shrinkage=0.186; n.minobsinnode=6
+[Tune-y] 12: rmse.test.rmse=0.145; time: 0.2 min
+[Tune-x] 13: n.trees=29; interaction.depth=9; shrinkage=0.24; n.minobsinnode=14
+[Tune-y] 13: rmse.test.rmse=0.141; time: 0.1 min
+[Tune-x] 14: n.trees=267; interaction.depth=3; shrinkage=0.0768; n.minobsinnode=7
+[Tune-y] 14: rmse.test.rmse=0.134; time: 0.2 min
+[Tune-x] 15: n.trees=435; interaction.depth=2; shrinkage=0.0574; n.minobsinnode=20
+[Tune-y] 15: rmse.test.rmse=0.131; time: 0.2 min
+[Tune-x] 16: n.trees=25; interaction.depth=8; shrinkage=0.238; n.minobsinnode=14
+[Tune-y] 16: rmse.test.rmse=0.144; time: 0.0 min
+[Tune-x] 17: n.trees=15; interaction.depth=10; shrinkage=0.0935; n.minobsinnode=11
+[Tune-y] 17: rmse.test.rmse=0.186; time: 0.0 min
+[Tune-x] 18: n.trees=481; interaction.depth=8; shrinkage=0.569; n.minobsinnode=22
+[Tune-y] 18: rmse.test.rmse=0.183; time: 0.7 min
+[Tune-x] 19: n.trees=883; interaction.depth=3; shrinkage=0.25; n.minobsinnode=16
+[Tune-y] 19: rmse.test.rmse=0.145; time: 0.5 min
+[Tune-x] 20: n.trees=58; interaction.depth=9; shrinkage=0.183; n.minobsinnode=5
+[Tune-y] 20: rmse.test.rmse=0.142; time: 0.1 min
+[Tune] Result: n.trees=435; interaction.depth=2; shrinkage=0.0574; n.minobsinnode=20 : rmse.test.rmse=0.131
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.gbm: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 15:30:46 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.glm no default is available.
+In addition: There were 40 warnings (use warnings() to see them)
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.glm: Error in eval(predvars, data, env) : object 'V198.dummy' not found
+
+[1] "Fri Jan 12 15:30:54 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.glmboost please install the following packages: mboost
+[Tune] Started tuning learner regr.glmnet for parameter set:
+          Type len Def   Constr Req Tunable Trafo
+alpha  numeric   -   1   0 to 1   -    TRUE     -
+lambda numeric   -   0 -10 to 3   -    TRUE     Y
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: alpha=0.256; lambda=0.939
+[Tune-y] 1: rmse.test.rmse=0.365; time: 0.0 min
+[Tune-x] 2: alpha=0.643; lambda=0.0848
+[Tune-y] 2: rmse.test.rmse=0.174; time: 0.0 min
+[Tune-x] 3: alpha=0.14; lambda=0.0121
+[Tune-y] 3: rmse.test.rmse=0.136; time: 0.0 min
+[Tune-x] 4: alpha=0.816; lambda=0.0028
+[Tune-y] 4: rmse.test.rmse=0.136; time: 0.0 min
+[Tune-x] 5: alpha=0.743; lambda=0.00121
+[Tune-y] 5: rmse.test.rmse=0.14; time: 0.0 min
+[Tune-x] 6: alpha=0.42; lambda=0.925
+[Tune-y] 6: rmse.test.rmse=0.397; time: 0.0 min
+[Tune-x] 7: alpha=0.452; lambda=4.19
+[Tune-y] 7: rmse.test.rmse=0.397; time: 0.0 min
+[Tune-x] 8: alpha=0.857; lambda=0.324
+[Tune-y] 8: rmse.test.rmse=0.363; time: 0.0 min
+[Tune-x] 9: alpha=0.00499; lambda=0.0171
+[Tune-y] 9: rmse.test.rmse=0.139; time: 0.0 min
+[Tune-x] 10: alpha=1; lambda=0.0295
+[Tune-y] 10: rmse.test.rmse=0.153; time: 0.0 min
+[Tune-x] 11: alpha=0.881; lambda=0.00103
+[Tune-y] 11: rmse.test.rmse=0.14; time: 0.0 min
+[Tune-x] 12: alpha=0.497; lambda=1.15
+[Tune-y] 12: rmse.test.rmse=0.397; time: 0.0 min
+[Tune-x] 13: alpha=0.509; lambda=4.37
+[Tune-y] 13: rmse.test.rmse=0.397; time: 0.0 min
+[Tune-x] 14: alpha=0.24; lambda=0.0049
+[Tune-y] 14: rmse.test.rmse=0.138; time: 0.0 min
+[Tune-x] 15: alpha=0.561; lambda=0.0296
+[Tune-y] 15: rmse.test.rmse=0.142; time: 0.0 min
+[Tune-x] 16: alpha=0.73; lambda=0.00197
+[Tune-y] 16: rmse.test.rmse=0.138; time: 0.0 min
+[Tune-x] 17: alpha=0.147; lambda=0.0339
+[Tune-y] 17: rmse.test.rmse=0.134; time: 0.0 min
+[Tune-x] 18: alpha=0.0148; lambda=0.00189
+[Tune-y] 18: rmse.test.rmse=0.142; time: 0.0 min
+[Tune-x] 19: alpha=0.277; lambda=0.0793
+[Tune-y] 19: rmse.test.rmse=0.148; time: 0.0 min
+[Tune-x] 20: alpha=0.193; lambda=0.829
+[Tune-y] 20: rmse.test.rmse=0.306; time: 0.0 min
+[Tune] Result: alpha=0.147; lambda=0.0339 : rmse.test.rmse=0.134
+Warning in predict.WrappedModel(m, newdata = (testing)) :
+  Could not predict with learner regr.glmnet: Error in cbind2(1, newx) %*% nbeta : 
+  Cholmod error 'X and/or Y have wrong dimensions' at file ../MatrixOps/cholmod_sdmult.c, line 90
+
+[1] "Fri Jan 12 15:31:12 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.h2o.deeplearning no default is available.
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |=====================                                                 |  30%  |                                                                              |===================================                                   |  50%  |                                                                              |=================================================                     |  70%  |                                                                              |===============================================================       |  90%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+[1] "Fri Jan 12 15:31:47 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.h2o.gbm no default is available.
+In addition: Warning messages:
+1: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V198.dummy': substituting in a column of NaN
+2: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V202.dummy': substituting in a column of NaN
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |==================                                                    |  26%  |                                                                              |==========================================                            |  60%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+[1] "Fri Jan 12 15:32:05 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.h2o.glm no default is available.
+In addition: Warning messages:
+1: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V198.dummy': substituting in a column of NaN
+2: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V202.dummy': substituting in a column of NaN
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |=                                                                     |   2%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+[1] "Fri Jan 12 15:32:19 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.h2o.randomForest no default is available.
+In addition: Warning messages:
+1: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V198.dummy': substituting in a column of NaN
+2: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V202.dummy': substituting in a column of NaN
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |=======                                                               |  10%  |                                                                              |==============                                                        |  20%  |                                                                              |====================                                                  |  28%  |                                                                              |============================                                          |  40%  |                                                                              |===================================                                   |  50%  |                                                                              |=============================================                         |  64%  |                                                                              |====================================================                  |  74%  |                                                                              |============================================================          |  86%  |                                                                              |===================================================================== |  98%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+[1] "Fri Jan 12 15:32:43 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.IBk please install the following packages: RWeka
+In addition: Warning messages:
+1: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V198.dummy': substituting in a column of NaN
+2: In doTryCatch(return(expr), name, parentenv, handler) :
+  Test/Validation dataset is missing column 'V202.dummy': substituting in a column of NaN
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.km no default is available.
+In addition: Warning message:
+package '!kknn' is not available (for R version 3.4.3) 
+
+optimisation start
+------------------
+* estimation method   : MLE 
+* optimisation method : BFGS 
+* analytical gradient : used
+* trend model : ~1
+* covariance model : 
+  - type :  matern5_2 
+  - nugget : NO
+  - parameters lower bounds :  1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 1e-10 
+  - parameters upper bounds :  6.921088 8.037717 4.8946 5.60977 24.04801 42.83385 3.99756 3.99756 4.247041 4.14941 6.604495 5.202464 8.146007 4.455497 8.890634 6.584955 7.91525 8.837383 5.537444 8.944944 9.173486 7.481885 9.114579 8.491638 8.733924 5.814787 5.394467 7.451764 6.508818 3.99869 4.343312 11.56908 12.58088 8.608444 5.812431 4.838335 5.037523 5.567975 5.588714 7.638953 4.18422 5.74317 5.731567 5.652859 6.747334 4.205231 5.851932 4.336629 4.072879 7.051768 17.67309 4.238293 4.12017 6.664383 6.110547 6.664383 4.033661 4.024729 7.16777 4.033574 4.014111 7.42458 5.518349 6.843315 7.362419 4.252496 5.530165 6.549321 4.38946 9.004517 6.868495 4.353849 9.910149 6.22627 10.57332 14.30573 3.999084 5.385471 4.392101 8.105988 8.105988 8.143407 7.143376 14.30982 9.46101 16.13 11.56269 16.75374 10.89096 7.954099 19.61318 7.91525 4.078773 3.998724 13.53519 7.91525 9.30714 3.997739 4.069193 4.143031 8.179604 4.449646 8.910589 4.585431 4.33835 4.028919 10.70499 13.00251 8.3129 7.279324 13.67494 16.51171 4.09878 1.17108 3.741657 4.901846 5.067017 4.020698 6.835681 8.13722 6.023665 7.224804 5.902923 7.878865 5.210207 7.145596 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+  - best initial criterion value(s) :  -529.8037 
+
+N = 166, M = 5 machine precision = 2.22045e-16
+At X0, 0 variables are exactly at the bounds
+At iterate     0  f=        529.8  |proj g|=       6.4552
+At iterate     1  f =       498.93  |proj g|=        2.9316
+At iterate     2  f =       453.94  |proj g|=        9.7052
+At iterate     3  f =        446.4  |proj g|=        8.3557
