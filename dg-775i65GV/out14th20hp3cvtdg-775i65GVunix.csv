@@ -3,3 +3,4 @@
 Fail,Fail,Fail,Fail,Fail,Wed Jan 10 20:52:38 2018,bag,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,16
 0.467,0.456,-1,2.381,1.917,Wed Jan 10 21:01:43 2018,bagEarthGCV,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.37714717723785,random,284,544,cv,20,3,NA,5,1
 0.467,0.456,2.385,2.38,1.917,Wed Jan 10 21:04:22 2018,bam,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.37714717723785,random,284,118,cv,20,3,NA,5,FALSE,ML
+0.473,0.461,-1,2.357,1.895,Fri Jan 12 17:33:20 2018,bayesglm,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.36911508898779,random,317,14,cv,20,3,NA,5,none
