@@ -6164,3 +6164,4 @@ Fail,Fail,Fail,Fail,PackageFail,Sat Jan 13 19:49:08 2018,regr.penalized.ridge,1,
 0.291,0.354,1.278,1.299,1.104,Sat Jan 13 19:50:45 2018,regr.svm,1,2,sparsity 2 row center,ignore,none,quantile,2.01167062102622,random,283,6,cv,20,3,NA,5,3900.62679260975,9.79253603805904e-05
 0.144,0.152,1.314,1.706,1.333,Sat Jan 13 19:52:07 2018,regr.xgboost,1,2,sparsity 2 row center,ignore,none,quantile,2.01167062102622,random,283,80,cv,20,3,NA,5,259,6,0.376652912007179,7.69335662480444,0.526863932423294,1.41201561316848,0.380331619351637
 NA,NA,-1,NA,NA,Sat Jan 13 19:52:14 2018,regr.xyf,1,2,sparsity 2 row center,ignore,none,quantile,2.01167062102622,nohyperparam,283,4,cv,20,3,NA,5
+0.775,0.769,1.023,1.018,0.811,Tue Jan 16 15:51:50 2018,regr.ksvm,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.39719785708065,random,315,64641,cv,20,3,NA,5,0.519442344028441,0.067653819221822
