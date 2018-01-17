@@ -7489,3 +7489,6 @@ Succ, Sat Jan 13 19:50:45 2018, regr.svm
 Succ, Sat Jan 13 19:52:07 2018, regr.xgboost
 Succ, Sat Jan 13 19:52:14 2018, regr.xyf
 Succ, Tue Jan 16 15:51:52 2018, regr.ksvm
+Succ, Tue Jan 16 17:30:08 2018, regr.rsm
+Succ, Tue Jan 16 17:30:14 2018, regr.rvm
+Succ, Tue Jan 16 17:41:29 2018, regr.slim
