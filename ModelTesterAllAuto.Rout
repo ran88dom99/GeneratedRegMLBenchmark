@@ -93,7 +93,6 @@ The following object is masked from 'package:base':
 +   if(last.alg==before.last.alg){print("algorithm may be broken")}
 +   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 + })
-[1] "algorithm may be broken"
 > try({
 +   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 +   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -207,7 +206,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Tue Jan 16 17:11:11 2018"
+[1] "Wed Jan 17 17:02:36 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -316,78 +315,3 @@ The following object is masked from 'package:caret':
 
     train
 
-Error in getDefaultParConfig(learner) : 
-  For the learner regr.rsm no default is available.
-In addition: Warning message:
-replacing previous import 'BBmisc::isFALSE' by 'backports::isFALSE' when loading 'mlr' 
-[1] "Tue Jan 16 17:30:08 2018"
-Error in getDefaultParConfig(learner) : 
-  For the learner regr.rvm no default is available.
-Using automatic sigma estimation (sigest) for RBF or laplace kernel 
-Warning in train(allmodel, regr.task) :
-  Could not train learner regr.rvm: Error : cannot allocate vector of size 7.0 Gb
-
-[1] "Tue Jan 16 17:30:14 2018"
-Error in getDefaultParConfig(learner) : 
-  For the learner regr.slim no default is available.
-Sparse Linear Regression with L1 Regularization.
-Square root Lasso with screening.
-
-slim options summary: 
-5 lambdas used:
-[1] 0.67600 0.22800 0.07660 0.02580 0.00868
-Method = lq 
-q = 2 loss, SQRT Lasso
-Degree of freedom: 1 -----> 8 
-Runtime: 11.17947 mins 
-
- Values of predicted responses: 
-   index             3 
-   lambda      0.07659 
-    Y 1          2.373 
-    Y 2          3.102 
-    Y 3             -4 
-    Y 4         -3.305 
-    Y 5         -2.937 
-[1] "Tue Jan 16 17:41:29 2018"
-[Tune] Started tuning learner regr.svm for parameter set:
-         Type len   Def    Constr Req Tunable Trafo
-cost  numeric   -     0 -15 to 15   -    TRUE     Y
-gamma numeric   - -3.32 -15 to 15   -    TRUE     Y
-With control class: TuneControlRandom
-Imputation value: Inf
-[Tune-x] 1: cost=0.224; gamma=0.159
-[Tune-y] 1: rmse.test.rmse=1.05; time: 13.8 min
-[Tune-x] 2: cost=2.61e+04; gamma=45.2
-[Tune-y] 2: rmse.test.rmse=3.51; time: 19.7 min
-[Tune-x] 3: cost=8.47e-05; gamma=0.00137
-[Tune-y] 3: rmse.test.rmse=4.38; time: 13.4 min
-[Tune-x] 4: cost=2.9; gamma=258
-[Tune-y] 4: rmse.test.rmse=3.51; time: 13.5 min
-[Tune-x] 5: cost=37.9; gamma=0.00269
-[Tune-y] 5: rmse.test.rmse=   1; time: 14.0 min
-[Tune-x] 6: cost=0.413; gamma=8.39e-05
-[Tune-y] 6: rmse.test.rmse=2.71; time: 12.7 min
-[Tune-x] 7: cost=0.0353; gamma=12.5
-[Tune-y] 7: rmse.test.rmse=4.33; time: 13.5 min
-[Tune-x] 8: cost=372; gamma=3.63e+03
-[Tune-y] 8: rmse.test.rmse=3.51; time: 13.6 min
-[Tune-x] 9: cost=0.000501; gamma=2.27e+03
-[Tune-y] 9: rmse.test.rmse=4.39; time: 6.8 min
-[Tune-x] 10: cost=803; gamma=1.02e+04
-[Tune-y] 10: rmse.test.rmse=3.51; time: 13.6 min
-[Tune-x] 11: cost=649; gamma=536
-[Tune-y] 11: rmse.test.rmse=3.51; time: 13.6 min
-[Tune-x] 12: cost=1.09; gamma=0.0125
-[Tune-y] 12: rmse.test.rmse=1.01; time: 10.0 min
-[Tune-x] 13: cost=5.69; gamma=86.7
-[Tune-y] 13: rmse.test.rmse=3.51; time: 15.5 min
-[Tune-x] 14: cost=2.84; gamma=0.00245
-[Tune-y] 14: rmse.test.rmse=1.09; time: 10.4 min
-[Tune-x] 15: cost=1.43; gamma=2.7e+04
-[Tune-y] 15: rmse.test.rmse=3.53; time: 12.9 min
-[Tune-x] 16: cost=0.000542; gamma=19.3
-[Tune-y] 16: rmse.test.rmse=4.39; time: 13.4 min
-[Tune-x] 17: cost=2.83e+04; gamma=0.00208
-
-WARNING: reaching max number of iterations
