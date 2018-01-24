@@ -1,6 +1,0 @@
-0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,,
-0.109,0.082,4.035,4.017,3.205,Wed Jan 10 20:52:19 2018,avNNet,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.37714717723785,random,284,3514,cv,20,3,NA,5,6,1.07464509640673,FALSE
-Fail,Fail,Fail,Fail,Fail,Wed Jan 10 20:52:38 2018,bag,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,16
-0.467,0.456,-1,2.381,1.917,Wed Jan 10 21:01:43 2018,bagEarthGCV,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.37714717723785,random,284,544,cv,20,3,NA,5,1
-0.467,0.456,2.385,2.38,1.917,Wed Jan 10 21:04:22 2018,bam,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.37714717723785,random,284,118,cv,20,3,NA,5,FALSE,ML
-0.473,0.461,-1,2.357,1.895,Fri Jan 12 17:33:20 2018,bayesglm,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.36911508898779,random,317,14,cv,20,3,NA,5,none
