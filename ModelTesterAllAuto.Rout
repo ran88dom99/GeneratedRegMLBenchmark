@@ -93,6 +93,7 @@ The following object is masked from 'package:base':
 +   if(last.alg==before.last.alg){print("algorithm may be broken")}
 +   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 + })
+[1] "algorithm may be broken"
 > try({
 +   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 +   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -206,7 +207,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Wed Jan 24 13:59:47 2018"
+[1] "Wed Jan 24 17:10:11 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -315,14 +316,52 @@ The following object is masked from 'package:caret':
 
     train
 
-[Tune] Started tuning learner regr.randomForest for parameter set:
-            Type len Def  Constr Req Tunable Trafo
-nodesize integer   -   1 1 to 10   -    TRUE     -
-mtry     integer   -   3 1 to 10   -    TRUE     -
+[Tune] Started tuning learner regr.svm for parameter set:
+         Type len   Def    Constr Req Tunable Trafo
+cost  numeric   -     0 -15 to 15   -    TRUE     Y
+gamma numeric   - -3.32 -15 to 15   -    TRUE     Y
 With control class: TuneControlRandom
 Imputation value: Inf
-[Tune-x] 1: nodesize=7; mtry=10
-[Tune-y] 1: rmse.test.rmse=1.07; time: 51.7 min
-[Tune-x] 2: nodesize=4; mtry=5
-[Tune-y] 2: rmse.test.rmse=1.06; time: 51.7 min
-[Tune-x] 3: nodesize=3; mtry=9
+[Tune-x] 1: cost=0.0795; gamma=1.28e+04
+[Tune-y] 1: rmse.test.rmse=4.25; time: 7.3 min
+[Tune-x] 2: cost=3.58; gamma=360
+[Tune-y] 2: rmse.test.rmse= 3.5; time: 13.2 min
+[Tune-x] 3: cost=0.0199; gamma=0.00879
+[Tune-y] 3: rmse.test.rmse=2.12; time: 10.8 min
+[Tune-x] 4: cost=48.8; gamma=0.272
+[Tune-y] 4: rmse.test.rmse=1.35; time: 332.3 min
+[Tune-x] 5: cost=4.57e+03; gamma=2.71e+04
+[Tune-y] 5: rmse.test.rmse= 3.5; time: 13.2 min
+[Tune-x] 6: cost=0.0171; gamma=0.000848
+[Tune-y] 6: rmse.test.rmse=3.27; time: 11.7 min
+[Tune-x] 7: cost=8.31e+03; gamma=13.5
+[Tune-y] 7: rmse.test.rmse= 3.5; time: 22.6 min
+[Tune-x] 8: cost=0.000155; gamma=2.08e+04
+[Tune-y] 8: rmse.test.rmse=4.38; time: 6.4 min
+[Tune-x] 9: cost=0.00279; gamma=9.63
+[Tune-y] 9: rmse.test.rmse=4.38; time: 12.1 min
+[Tune-x] 10: cost=0.00288; gamma=2
+[Tune-y] 10: rmse.test.rmse=4.38; time: 11.8 min
+[Tune-x] 11: cost=0.659; gamma=5.23e+03
+[Tune-y] 11: rmse.test.rmse= 3.7; time: 10.3 min
+[Tune-x] 12: cost=0.00231; gamma=7.23e-05
+[Tune-y] 12: rmse.test.rmse=4.37; time: 12.5 min
+[Tune-x] 13: cost=2.6e+04; gamma=0.000702
+
+WARNING: reaching max number of iterations
+
+WARNING: reaching max number of iterations
+
+WARNING: reaching max number of iterations
+[Tune-y] 13: rmse.test.rmse=1.01; time: 526.5 min
+[Tune-x] 14: cost=175; gamma=0.0127
+[Tune-y] 14: rmse.test.rmse=1.01; time: 133.6 min
+[Tune-x] 15: cost=0.327; gamma=1.43
+[Tune-y] 15: rmse.test.rmse=2.89; time: 15.2 min
+[Tune-x] 16: cost=0.319; gamma=2.2e+04
+[Tune-y] 16: rmse.test.rmse=3.95; time: 9.0 min
+[Tune-x] 17: cost=7.87e-05; gamma=8.18
+[Tune-y] 17: rmse.test.rmse=4.38; time: 13.1 min
+[Tune-x] 18: cost=0.0603; gamma=27.6
+[Tune-y] 18: rmse.test.rmse=4.28; time: 12.2 min
+[Tune-x] 19: cost=3.33e+03; gamma=0.0281
