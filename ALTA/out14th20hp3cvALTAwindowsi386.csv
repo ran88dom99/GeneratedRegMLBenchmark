@@ -5220,3 +5220,6 @@ NA,NA,-1,NA,NA,Sun Jan 07 15:00:30 2018,regr.rknn,1,1,OpenML 2dplanes,ignore,non
 0.469,0.458,-1,2.378,1.915,Tue Jan 09 15:21:06 2018,regr.rsm,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.38966501934533,nohyperparam,305,16,cv,20,3,NA,5
 NA,NA,-1,NA,NA,Tue Jan 09 15:21:12 2018,regr.rvm,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.38966501934533,nohyperparam,305,3,cv,20,3,NA,5
 0.454,0.445,-1,2.436,1.966,Tue Jan 09 15:42:11 2018,regr.slim,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.38966501934533,nohyperparam,305,1257,cv,20,3,NA,5
+NA,NA,1.039,NA,NA,Sun Jan 14 06:27:30 2018,regr.RRF,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.39466209611131,random,282,30068,cv,20,3,NA,5,4,0.21865125768818
+0.778,0.772,0.999,1.005,0.804,Thu Jan 18 16:40:30 2018,regr.xgboost,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.40890700593471,random,285,608,cv,20,3,NA,5,977,2,0.583754635924473,2.72308066952974,0.672994642239064,13.9155432954431,0.734872572938912
+NA,NA,-1,NA,NA,Thu Jan 18 16:40:38 2018,regr.xyf,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.40890700593471,nohyperparam,285,6,cv,20,3,NA,5

@@ -1,7 +1,7 @@
 options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 ## capture messages and errors to a file.https://rweb.crmda.ku.edu/cran/
 #zz <- file("all.Rout", open="wt")https://cran.cnr.berkeley.edu
-#sink(zz, type="message")
+#sink(zz, type="message") edit for rebaseless
 #chek for R package updates
 #try(log("a"))
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
