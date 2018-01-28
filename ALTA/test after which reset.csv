@@ -34,3 +34,5 @@ Sat Jan 13 22:02:39 2018,regr.bartMachine,OpenML 2dplanes,3,20,windows,i386,ALTA
 Sun Jan 14 19:24:32 2018,regr.svm,OpenML 2dplanes,3,20,windows,i386,ALTA
 Thu Jan 18 16:26:22 2018,regr.svm,OpenML 2dplanes,3,20,windows,i386,ALTA
 Thu Jan 18 23:43:31 2018,regr.bartMachine,OpenML 2dplanes,3,20,windows,i386,ALTA
+Sat Jan 27 20:29:24 2018,regr.bartMachine,OpenML 2dplanes,3,20,windows,i386,ALTA
+Sat Jan 27 21:51:09 2018,regr.blackboost,bas interactive latent features,3,20,windows,i386,ALTA
