@@ -9575,3 +9575,4 @@ Fail,Fail,Fail,Fail,Fail,Sat Jan 13 21:43:49 2018,BstLm,1,1,OpenML 2dplanes,igno
 0.606,0.599,1.765,1.76,1.419,Sat Jan 13 22:45:53 2018,earth,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.38966501934533,random,305,152,cv,20,3,NA,5,12,2
 0.469,0.458,2.386,2.378,1.915,Sat Jan 13 22:46:28 2018,elm,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.38966501934533,random,305,33,cv,20,3,NA,5,15,purelin
 0.463,0.454,2.407,2.398,1.934,Sat Jan 13 22:47:20 2018,enet,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.38966501934533,random,305,49,cv,20,3,NA,5,0.890618618344888,0.081769447869054
+0.664,0.658,1.485,1.502,1.211,Thu Jan 25 02:26:54 2018,bagEarth,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.39404012012906,random,246,45760,cv,20,3,NA,5,12,2
