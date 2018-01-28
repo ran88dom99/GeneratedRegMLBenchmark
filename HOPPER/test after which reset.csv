@@ -11,3 +11,15 @@ Sun Jan 07 15:45:58 2018,gcvEarth,kaggle housing,3,20,windows,x64,HOPPER
 
 Thu Jan 11 21:20:54 2018,regr.brnn,kaggle housing,3,20,windows,x64,HOPPER
 Thu Jan 11 21:28:10 2018,regr.ranger,kaggle housing,3,20,windows,x64,HOPPER
+Fri Jan 12 20:32:43 2018,regr.km,kaggle housing,3,20,windows,x64,HOPPER
+Sun Jan 14 22:32:15 2018,regr.ksvm,OpenML 2dplanes,3,20,windows,x64,HOPPER
+Mon Jan 15 14:04:41 2018,regr.ksvm,OpenML 2dplanes,3,20,windows,x64,HOPPER
+Mon Jan 15 21:32:51 2018,regr.RRF,OpenML 2dplanes,3,20,windows,x64,HOPPER
+Tue Jan 16 17:08:40 2018,regr.RRF,OpenML 2dplanes,3,20,windows,x64,HOPPER
+
+Wed Jan 17 17:09:03 2018,regr.svm,OpenML 2dplanes,3,20,windows,x64,HOPPER
+Thu Jan 18 22:39:06 2018,regr.ranger,OpenML 2dplanes,3,20,windows,x64,HOPPER
+Wed Jan 24 13:59:07 2018,regr.randomForest,OpenML 2dplanes,3,20,windows,x64,HOPPER
+
+Thu Jan 25 17:07:36 2018,regr.svm,OpenML 2dplanes,3,20,windows,x64,HOPPER
+Fri Jan 26 17:07:28 2018,regr.svm,OpenML 2dplanes,3,20,windows,x64,HOPPER

@@ -8366,3 +8366,17 @@ Fail, Wed Jan 10 20:52:38 2018, bag
 Succ, Wed Jan 10 21:01:43 2018, bagEarthGCV
 Succ, Wed Jan 10 21:04:22 2018, bam
 Succ, Fri Jan 12 17:33:20 2018, bayesglm
+Succ, Sat Jan 13 21:00:52 2018, bagEarthGCV
+Succ, Sat Jan 13 21:04:10 2018, bam
+Succ, Sat Jan 13 21:04:29 2018, bayesglm
+Succ, Sat Jan 13 21:15:40 2018, blasso
+Succ, Sat Jan 13 21:29:31 2018, blassoAveraged
+Succ, Sat Jan 13 21:43:23 2018, bridge
+Fail, Sat Jan 13 21:43:49 2018, BstLm
+Succ, Sat Jan 13 21:49:09 2018, ctree
+Succ, Sat Jan 13 21:58:13 2018, ctree2
+Succ, Sat Jan 13 22:43:17 2018, cubist
+Succ, Sat Jan 13 22:45:53 2018, earth
+Succ, Sat Jan 13 22:46:28 2018, elm
+Succ, Sat Jan 13 22:47:20 2018, enet
+Succ, Thu Jan 25 02:26:56 2018, bagEarth

@@ -1,4 +1,6 @@
+taskkill /f /im java.exe
 taskkill /f /im Rterm.exe
+
 cd "C:\Users\gvg\Desktop\Gen Test\gentest\"
 
 bunchofgits.sh
