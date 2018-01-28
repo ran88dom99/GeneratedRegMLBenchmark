@@ -93,6 +93,7 @@ The following object is masked from 'package:base':
 +   if(last.alg==before.last.alg){print("algorithm may be broken")}
 +   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 + })
+[1] "algorithm may be broken"
 > try({
 +   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 +   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -206,7 +207,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Thu Jan 25 17:08:24 2018"
+[1] "Fri Jan 26 17:08:04 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -315,26 +316,370 @@ The following object is masked from 'package:caret':
 
     train
 
-[Tune] Started tuning learner regr.svm for parameter set:
-         Type len   Def    Constr Req Tunable Trafo
-cost  numeric   -     0 -15 to 15   -    TRUE     Y
-gamma numeric   - -3.32 -15 to 15   -    TRUE     Y
+[Tune] Started tuning learner regr.randomForest for parameter set:
+            Type len Def  Constr Req Tunable Trafo
+nodesize integer   -   1 1 to 10   -    TRUE     -
+mtry     integer   -   3 1 to 10   -    TRUE     -
 With control class: TuneControlRandom
 Imputation value: Inf
-[Tune-x] 1: cost=14.4; gamma=1.6
-[Tune-y] 1: rmse.test.rmse=2.38; time: 22.0 min
-[Tune-x] 2: cost=0.0188; gamma=7.87e-05
-[Tune-y] 2: rmse.test.rmse=4.24; time: 12.7 min
-[Tune-x] 3: cost=0.000963; gamma=256
-[Tune-y] 3: rmse.test.rmse=4.39; time: 7.0 min
-[Tune-x] 4: cost=3.32e-05; gamma=182
-[Tune-y] 4: rmse.test.rmse=4.39; time: 7.0 min
-[Tune-x] 5: cost=0.00402; gamma=0.00291
-[Tune-y] 5: rmse.test.rmse=3.45; time: 12.7 min
-[Tune-x] 6: cost=0.032; gamma=52.4
-[Tune-y] 6: rmse.test.rmse=4.33; time: 8.8 min
-[Tune-x] 7: cost=54.5; gamma=17.9
-[Tune-y] 7: rmse.test.rmse=3.51; time: 22.8 min
-[Tune-x] 8: cost=4.44e+03; gamma=0.0263
+[Tune-x] 1: nodesize=7; mtry=9
+[Tune-y] 1: rmse.test.rmse=1.06; time: 42.6 min
+[Tune-x] 2: nodesize=2; mtry=4
+[Tune-y] 2: rmse.test.rmse=1.05; time: 49.9 min
+[Tune-x] 3: nodesize=2; mtry=4
+[Tune-y] 3: rmse.test.rmse=1.05; time: 49.7 min
+[Tune-x] 4: nodesize=2; mtry=9
+[Tune-y] 4: rmse.test.rmse=1.11; time: 114.4 min
+[Tune-x] 5: nodesize=3; mtry=10
+[Tune-y] 5: rmse.test.rmse= 1.1; time: 93.3 min
+[Tune-x] 6: nodesize=1; mtry=6
+[Tune-y] 6: rmse.test.rmse=1.09; time: 97.1 min
+[Tune-x] 7: nodesize=6; mtry=6
+[Tune-y] 7: rmse.test.rmse=1.05; time: 36.9 min
+[Tune-x] 8: nodesize=8; mtry=5
+[Tune-y] 8: rmse.test.rmse=1.04; time: 25.6 min
+[Tune-x] 9: nodesize=8; mtry=9
+[Tune-y] 9: rmse.test.rmse=1.06; time: 40.0 min
+[Tune-x] 10: nodesize=6; mtry=3
+[Tune-y] 10: rmse.test.rmse=1.05; time: 18.4 min
+[Tune-x] 11: nodesize=2; mtry=4
+[Tune-y] 11: rmse.test.rmse=1.05; time: 47.2 min
+[Tune-x] 12: nodesize=5; mtry=8
+[Tune-y] 12: rmse.test.rmse=1.08; time: 54.7 min
+[Tune-x] 13: nodesize=2; mtry=8
+[Tune-y] 13: rmse.test.rmse= 1.1; time: 100.6 min
+[Tune-x] 14: nodesize=4; mtry=2
+[Tune-y] 14: rmse.test.rmse=1.39; time: 10.2 min
+[Tune-x] 15: nodesize=2; mtry=1
+[Tune-y] 15: rmse.test.rmse=2.86; time: 2.0 min
+[Tune-x] 16: nodesize=4; mtry=4
+[Tune-y] 16: rmse.test.rmse=1.04; time: 33.6 min
+[Tune-x] 17: nodesize=5; mtry=4
+[Tune-y] 17: rmse.test.rmse=1.04; time: 29.4 min
+[Tune-x] 18: nodesize=4; mtry=5
+[Tune-y] 18: rmse.test.rmse=1.06; time: 42.6 min
+[Tune-x] 19: nodesize=2; mtry=10
+[Tune-y] 19: rmse.test.rmse=1.11; time: 118.0 min
+[Tune-x] 20: nodesize=9; mtry=4
+[Tune-y] 20: rmse.test.rmse=1.03; time: 18.8 min
+[Tune] Result: nodesize=9; mtry=4 : rmse.test.rmse=1.03
+[1] "Sat Jan 27 11:32:09 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+In addition: Warning message:
+replacing previous import 'BBmisc::isFALSE' by 'backports::isFALSE' when loading 'mlr' 
+[1] "Sat Jan 27 11:40:37 2018"
+[Tune] Started tuning learner regr.ranger for parameter set:
+                 Type len Def  Constr Req Tunable Trafo
+mtry          integer   -   3 1 to 10   -    TRUE     -
+min.node.size integer   -   5 1 to 10   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: mtry=7; min.node.size=9
+[Tune-y] 1: rmse.test.rmse=1.05; time: 3.9 min
+[Tune-x] 2: mtry=2; min.node.size=4
+[Tune-y] 2: rmse.test.rmse=1.39; time: 1.4 min
+[Tune-x] 3: mtry=2; min.node.size=4
+[Tune-y] 3: rmse.test.rmse= 1.4; time: 1.4 min
+[Tune-x] 4: mtry=2; min.node.size=9
+[Tune-y] 4: rmse.test.rmse=1.41; time: 1.3 min
+[Tune-x] 5: mtry=3; min.node.size=10
+[Tune-y] 5: rmse.test.rmse=1.05; time: 1.9 min
+[Tune-x] 6: mtry=1; min.node.size=6
+[Tune-y] 6: rmse.test.rmse=2.87; time: 0.6 min
+[Tune-x] 7: mtry=6; min.node.size=6
+[Tune-y] 7: rmse.test.rmse=1.06; time: 3.6 min
+[Tune-x] 8: mtry=8; min.node.size=5
+[Tune-y] 8: rmse.test.rmse=1.08; time: 4.5 min
+[Tune-x] 9: mtry=8; min.node.size=9
+[Tune-y] 9: rmse.test.rmse=1.05; time: 4.0 min
+[Tune-x] 10: mtry=6; min.node.size=3
+[Tune-y] 10: rmse.test.rmse=1.08; time: 7.6 min
+[Tune-x] 11: mtry=2; min.node.size=4
+[Tune-y] 11: rmse.test.rmse=1.38; time: 1.8 min
+[Tune-x] 12: mtry=5; min.node.size=8
+[Tune-y] 12: rmse.test.rmse=1.04; time: 3.5 min
+[Tune-x] 13: mtry=2; min.node.size=8
+[Tune-y] 13: rmse.test.rmse=1.41; time: 1.5 min
+[Tune-x] 14: mtry=4; min.node.size=2
+[Tune-y] 14: rmse.test.rmse=1.05; time: 4.2 min
+[Tune-x] 15: mtry=2; min.node.size=1
+[Tune-y] 15: rmse.test.rmse= 1.4; time: 1.9 min
+[Tune-x] 16: mtry=4; min.node.size=4
+[Tune-y] 16: rmse.test.rmse=1.04; time: 5.3 min
+[Tune-x] 17: mtry=5; min.node.size=4
+[Tune-y] 17: rmse.test.rmse=1.06; time: 5.1 min
+[Tune-x] 18: mtry=4; min.node.size=5
+[Tune-y] 18: rmse.test.rmse=1.04; time: 4.1 min
+[Tune-x] 19: mtry=2; min.node.size=10
+[Tune-y] 19: rmse.test.rmse=1.41; time: 1.5 min
+[Tune-x] 20: mtry=9; min.node.size=4
+[Tune-y] 20: rmse.test.rmse=1.09; time: 10.0 min
+[Tune] Result: mtry=5; min.node.size=8 : rmse.test.rmse=1.04
+[1] "Sat Jan 27 12:52:24 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.rknn: Error in knn.reg(train = data[, fset], test = newdata[, fset], y = y,  : 
+  too many ties in knn
 
-WARNING: reaching max number of iterations
+[1] "Sat Jan 27 12:54:03 2018"
+[Tune] Started tuning learner regr.rpart for parameter set:
+             Type len   Def   Constr Req Tunable Trafo
+cp        numeric   - -6.64 -10 to 0   -    TRUE     Y
+maxdepth  integer   -    30  3 to 30   -    TRUE     -
+minbucket integer   -     7  5 to 50   -    TRUE     -
+minsplit  integer   -    20  5 to 50   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: cp=0.0979; maxdepth=27; minbucket=11; minsplit=21
+[Tune-y] 1: rmse.test.rmse=2.44; time: 0.6 min
+[Tune-x] 2: cp=0.00273; maxdepth=12; minbucket=10; minsplit=44
+[Tune-y] 2: rmse.test.rmse=1.29; time: 0.2 min
+[Tune-x] 3: cp=0.00687; maxdepth=29; minbucket=8; minsplit=31
+[Tune-y] 3: rmse.test.rmse=1.53; time: 0.0 min
+[Tune-x] 4: cp=0.034; maxdepth=17; minbucket=39; minsplit=23
+[Tune-y] 4: rmse.test.rmse= 2.1; time: 0.1 min
+[Tune-x] 5: cp=0.139; maxdepth=27; minbucket=32; minsplit=14
+[Tune-y] 5: rmse.test.rmse=3.23; time: 0.2 min
+[Tune-x] 6: cp=0.00365; maxdepth=11; minbucket=24; minsplit=37
+[Tune-y] 6: rmse.test.rmse=1.29; time: 0.2 min
+[Tune-x] 7: cp=0.00216; maxdepth=23; minbucket=19; minsplit=13
+[Tune-y] 7: rmse.test.rmse=1.29; time: 0.4 min
+[Tune-x] 8: cp=0.00237; maxdepth=4; minbucket=20; minsplit=23
+[Tune-y] 8: rmse.test.rmse=1.46; time: 0.3 min
+[Tune-x] 9: cp=0.029; maxdepth=12; minbucket=23; minsplit=24
+[Tune-y] 9: rmse.test.rmse= 2.1; time: 0.2 min
+[Tune-x] 10: cp=0.00227; maxdepth=28; minbucket=42; minsplit=18
+[Tune-y] 10: rmse.test.rmse=1.29; time: 0.2 min
+[Tune-x] 11: cp=0.00346; maxdepth=3; minbucket=38; minsplit=42
+[Tune-y] 11: rmse.test.rmse=1.92; time: 0.0 min
+[Tune-x] 12: cp=0.02; maxdepth=12; minbucket=47; minsplit=41
+[Tune-y] 12: rmse.test.rmse= 2.1; time: 0.1 min
+[Tune-x] 13: cp=0.606; maxdepth=7; minbucket=47; minsplit=30
+[Tune-y] 13: rmse.test.rmse= 4.4; time: 0.2 min
+[Tune-x] 14: cp=0.0603; maxdepth=12; minbucket=27; minsplit=17
+[Tune-y] 14: rmse.test.rmse=2.44; time: 0.0 min
+[Tune-x] 15: cp=0.00726; maxdepth=7; minbucket=36; minsplit=15
+[Tune-y] 15: rmse.test.rmse=1.53; time: 0.0 min
+[Tune-x] 16: cp=0.686; maxdepth=29; minbucket=31; minsplit=36
+[Tune-y] 16: rmse.test.rmse= 4.4; time: 0.0 min
+[Tune-x] 17: cp=0.0433; maxdepth=22; minbucket=43; minsplit=50
+[Tune-y] 17: rmse.test.rmse=2.44; time: 0.0 min
+[Tune-x] 18: cp=0.00348; maxdepth=16; minbucket=19; minsplit=29
+[Tune-y] 18: rmse.test.rmse=1.29; time: 0.0 min
+[Tune-x] 19: cp=0.346; maxdepth=16; minbucket=43; minsplit=38
+[Tune-y] 19: rmse.test.rmse=3.23; time: 0.0 min
+[Tune-x] 20: cp=0.419; maxdepth=29; minbucket=15; minsplit=48
+[Tune-y] 20: rmse.test.rmse=3.23; time: 0.0 min
+[Tune] Result: cp=0.00348; maxdepth=16; minbucket=19; minsplit=29 : rmse.test.rmse=1.29
+[1] "Sat Jan 27 12:56:58 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+[1] "Sat Jan 27 12:57:02 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Using automatic sigma estimation (sigest) for RBF or laplace kernel 
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.rvm: Error : cannot allocate vector of size 7.0 Gb
+
+[1] "Sat Jan 27 12:57:23 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Sparse Linear Regression with L1 Regularization.
+Square root Lasso with screening.
+
+slim options summary: 
+5 lambdas used:
+[1] 0.67900 0.22800 0.07670 0.02580 0.00868
+Method = lq 
+q = 2 loss, SQRT Lasso
+Degree of freedom: 1 -----> 7 
+Runtime: 11.33547 mins 
+
+ Values of predicted responses: 
+   index             3 
+   lambda      0.07675 
+    Y 1         -1.591 
+    Y 2          3.513 
+    Y 3         -4.337 
+    Y 4         -2.082 
+    Y 5         -5.079 
+[1] "Sat Jan 27 13:08:48 2018"
+[Tune] Started tuning learner regr.xgboost for parameter set:
+                    Type len Def       Constr Req Tunable Trafo
+nrounds          numeric   -   0    0 to 8.64   -    TRUE     Y
+max_depth        integer   -   6      1 to 10   -    TRUE     -
+eta              numeric   - 0.3 0.001 to 0.6   -    TRUE     -
+gamma            numeric   -   0      0 to 10   -    TRUE     -
+colsample_bytree numeric   - 0.5   0.3 to 0.7   -    TRUE     -
+min_child_weight numeric   -   1      0 to 20   -    TRUE     -
+subsample        numeric   -   1    0.25 to 1   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: nrounds=537; max_depth=9; eta=0.0822; gamma=3.5; colsample_bytree=0.359; min_child_weight=6.53; subsample=0.34
+[Tune-y] 1: rmse.test.rmse=1.02; time: 0.4 min
+[Tune-x] 2: nrounds=1.75e+03; max_depth=3; eta=0.562; gamma=0.835; colsample_bytree=0.532; min_child_weight=10.2; subsample=0.644
+[Tune-y] 2: rmse.test.rmse=1.02; time: 0.9 min
+[Tune-x] 3: nrounds=877; max_depth=5; eta=0.429; gamma=8.59; colsample_bytree=0.539; min_child_weight=4.07; subsample=0.393
+[Tune-y] 3: rmse.test.rmse=1.01; time: 0.6 min
+[Tune-x] 4: nrounds=67; max_depth=5; eta=0.428; gamma=1.14; colsample_bytree=0.594; min_child_weight=6.4; subsample=0.396
+[Tune-y] 4: rmse.test.rmse=1.02; time: 0.1 min
+[Tune-x] 5: nrounds=22; max_depth=1; eta=0.203; gamma=3.97; colsample_bytree=0.496; min_child_weight=7.01; subsample=0.546
+[Tune-y] 5: rmse.test.rmse=2.76; time: 0.0 min
+[Tune-x] 6: nrounds=121; max_depth=2; eta=0.543; gamma=8.09; colsample_bytree=0.421; min_child_weight=3.65; subsample=0.261
+[Tune-y] 6: rmse.test.rmse=1.02; time: 0.1 min
+[Tune-x] 7: nrounds=759; max_depth=9; eta=0.262; gamma=3.29; colsample_bytree=0.667; min_child_weight=15.8; subsample=0.946
+[Tune-y] 7: rmse.test.rmse=1.05; time: 1.0 min
+[Tune-x] 8: nrounds=24; max_depth=10; eta=0.33; gamma=5.95; colsample_bytree=0.432; min_child_weight=9.67; subsample=0.449
+[Tune-y] 8: rmse.test.rmse=1.16; time: 0.0 min
+[Tune-x] 9: nrounds=57; max_depth=2; eta=0.405; gamma=2.2; colsample_bytree=0.678; min_child_weight=18.8; subsample=0.687
+[Tune-y] 9: rmse.test.rmse=1.09; time: 0.0 min
+[Tune-x] 10: nrounds=619; max_depth=6; eta=0.429; gamma=8.47; colsample_bytree=0.693; min_child_weight=3.67; subsample=0.615
+[Tune-y] 10: rmse.test.rmse=1.02; time: 0.5 min
+[Tune-x] 11: nrounds=69; max_depth=6; eta=0.508; gamma=4.92; colsample_bytree=0.637; min_child_weight=14.7; subsample=0.906
+[Tune-y] 11: rmse.test.rmse=1.02; time: 0.1 min
+[Tune-x] 12: nrounds=3.06e+03; max_depth=3; eta=0.573; gamma=8.41; colsample_bytree=0.464; min_child_weight=1; subsample=0.337
+[Tune-y] 12: rmse.test.rmse=1.01; time: 1.2 min
+[Tune-x] 13: nrounds=12; max_depth=3; eta=0.282; gamma=9.73; colsample_bytree=0.394; min_child_weight=7.85; subsample=0.318
+[Tune-y] 13: rmse.test.rmse=2.42; time: 0.0 min
+[Tune-x] 14: nrounds=36; max_depth=6; eta=0.24; gamma=8.34; colsample_bytree=0.468; min_child_weight=18.6; subsample=0.997
+[Tune-y] 14: rmse.test.rmse=1.17; time: 0.0 min
+[Tune-x] 15: nrounds=1.11e+03; max_depth=9; eta=0.347; gamma=6.5; colsample_bytree=0.304; min_child_weight=11.4; subsample=0.65
+[Tune-y] 15: rmse.test.rmse=   1; time: 0.7 min
+[Tune-x] 16: nrounds=731; max_depth=8; eta=0.146; gamma=0.0147; colsample_bytree=0.587; min_child_weight=6.32; subsample=0.91
+[Tune-y] 16: rmse.test.rmse=1.07; time: 0.9 min
+[Tune-x] 17: nrounds=1.45e+03; max_depth=3; eta=0.0377; gamma=4.66; colsample_bytree=0.513; min_child_weight=2.78; subsample=0.878
+[Tune-y] 17: rmse.test.rmse=0.999; time: 0.7 min
+[Tune-x] 18: nrounds=128; max_depth=8; eta=0.346; gamma=7.57; colsample_bytree=0.458; min_child_weight=13.4; subsample=0.332
+[Tune-y] 18: rmse.test.rmse=1.03; time: 0.1 min
+[Tune-x] 19: nrounds=17; max_depth=1; eta=0.103; gamma=0.142; colsample_bytree=0.404; min_child_weight=19.8; subsample=0.441
+[Tune-y] 19: rmse.test.rmse=3.29; time: 0.0 min
+[Tune-x] 20: nrounds=29; max_depth=3; eta=0.424; gamma=1.06; colsample_bytree=0.461; min_child_weight=9.84; subsample=0.886
+[Tune-y] 20: rmse.test.rmse=1.21; time: 0.0 min
+[Tune] Result: nrounds=1.45e+03; max_depth=3; eta=0.0377; gamma=4.66; colsample_bytree=0.513; min_child_weight=2.78; subsample=0.878 : rmse.test.rmse=0.999
+[1] "Sat Jan 27 13:16:32 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.xyf: Error in !toroidal : invalid argument type
+
+[1] "Sat Jan 27 13:16:36 2018"
+<simpleError: cannot allocate vector of size 466.4 Mb>
+Error in randomForestSRC::rfsrc(getTaskFormula(task), data = getTaskData(task),  : 
+  An error has occurred in the grow algorithm.  Please turn trace on for further analysis.
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.bartMachine please install the following packages: bartMachine
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+
+burn in:
+**GROW** @depth 0: [5,0.5], n=(20296,10280)
+**GROW** @depth 1: [4,0.5], n=(13478,6818)
+**GROW** @depth 2: [3,0], n=(4499,9090)
+**GROW** @depth 3: [2,0.5], n=(6134,2956)
+**GROW** @depth 4: [6,0], n=(2022,4112)
+**GROW** @depth 1: [1,0], n=(5064,5216)
+**GROW** @depth 3: [6,0], n=(1109,2305)
+**PRUNE** @depth 1: [5,0]
+**GROW** @depth 4: [5,0.5], n=(1537,760)
+**PRUNE** @depth 4: [4,0.5]
+**GROW** @depth 4: [5,0.5], n=(1556,748)
+**GROW** @depth 1: [3,0], n=(5248,10164)
+**GROW** @depth 4: [7,0.5], n=(379,186)
+**PRUNE** @depth 4: [3,0]
+**PRUNE** @depth 4: [2,0]
+**GROW** @depth 4: [7,0], n=(596,1077)
+r=1000 d=[0] [0] [0] [0] [0] [0] [0] [0] [0]; n=(3365,2263,1134,3338,1125,2240,1699,5248,10164)
+**GROW** @depth 4: [6,0], n=(546,579)
+**GROW** @depth 3: [7,0], n=(1182,2183)
+**GROW** @depth 5: [6,0.5], n=(556,551)
+**GROW** @depth 2: [4,0], n=(3453,6845)
+**GROW** @depth 4: [7,0], n=(1117,2221)
+r=2000 d=[0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0]; n=(2266,1099,556,1166,1675,1117,2221,1090,576,1699,1699,3453,6845,5114)
+
+Sampling @ nn=0 pred locs:
+**GROW** @depth 3: [7,0], n=(556,1143)
+**GROW** @depth 4: [5,0], n=(550,549)
+r=1000 d=[0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0]; mh=7 n=(1692,1124,549,556,1166,1675,1117,2221,1090,576,1699,556,1143,3453,6845,5114)
+**GROW** @depth 3: [2,0.5], n=(2332,1121)
+**GROW** @depth 5: [7,0.5], n=(1087,1134)
+**GROW** @depth 4: [4,0], n=(1186,1143)
+**GROW** @depth 3: [2,0], n=(1099,2328)
+**GROW** @depth 6: [6,0.5], n=(557,560)
+**GROW** @depth 4: [7,0], n=(586,1106)
+**GROW** @depth 4: [7,0], n=(579,1120)
+**GROW** @depth 4: [7,0], n=(546,544)
+**GROW** @depth 4: [2,0.5], n=(1171,1157)
+**GROW** @depth 4: [4,0], n=(2267,2275)
+r=2000 d=[0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0]; mh=8 n=(586,1106,1124,549,556,1166,1675,557,560,1087,1134,546,544,576,579,1120,556,1143,1186,1143,2267,2275,1099,1171,1157,5114)
+**GROW** @depth 6: [7,0.5], n=(575,591)
+**GROW** @depth 2: [2,0.5], n=(3454,1660)
+**GROW** @depth 3: [4,0.5], n=(2248,1206)
+**GROW** @depth 4: [7,0.5], n=(557,586)
+r=3000 d=[0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0]; mh=8 n=(586,1106,1124,549,556,575,591,1675,557,1076,560,1145,546,544,576,579,1120,556,557,586,1186,1143,2267,2275,1099,1171,1157,1121,2333,1660)
+**GROW** @depth 5: [3,0], n=(552,547)
+**GROW** @depth 5: [7,0.5], n=(1132,543)
+**GROW** @depth 5: [7,0], n=(596,528)
+r=4000 d=[0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0]; mh=8 n=(586,1106,596,528,549,556,575,591,1132,543,557,1076,560,1145,546,544,576,579,1120,556,557,586,1186,1143,2267,2275,552,547,1171,1157,542,1176,3396)
+r=5000 d=[0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0] [0]; mh=8 n=(586,1106,596,528,549,556,575,591,551,1124,557,1076,560,1145,546,544,576,579,1120,556,557,586,1186,1143,2267,2275,552,547,1171,1157,1091,627,3396)
+Grow: 9.972%, Prune: 1.156%, Change: 3.208%, Swap: 19.2%
+
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.bcart: Error : cannot allocate vector of size 792.5 Mb
+
+[1] "Sat Jan 27 13:30:36 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Warning in train(allmodel, regr.task) :
+  Could not train learner regr.bdk: Error : 'bdk' is not an exported object from 'namespace:kohonen'
+
+[1] "Sat Jan 27 13:30:39 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.blackboost please install the following packages: mboost
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+
+burn in:
+r=1000 d=[0]; n=30576
+
+Sampling @ nn=0 pred locs:
+r=1000 d=[0]; mh=1 n=30576
+r=2000 d=[0]; mh=1 n=30576
+r=3000 d=[0]; mh=1 n=30576
+
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.blm: Error : cannot allocate vector of size 792.5 Mb
+
+[1] "Sat Jan 27 13:32:48 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+Number of parameters (weights and biases) to estimate: 24 
+Nguyen-Widrow method
+Scaling factor= 0.7000159 
+gamma= 23.579 	 alpha= 0.067 	 beta= 75.4136 
+[1] "Sat Jan 27 13:36:18 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+[1] "Sat Jan 27 13:36:40 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
+
+burn in:
+r=1000 d=[0]; n=30576
+r=2000 d=[0]; n=30576
+
+Sampling @ nn=0 pred locs:
+r=1000 d=[0]; mh=1 n=30576
+r=2000 d=[0]; mh=1 n=30576
+r=3000 d=[0]; mh=1 n=30576
+r=4000 d=[0]; mh=1 n=30576
+r=5000 d=[0]; mh=1 n=30576
+Grow: 0%, 
+
+Warning in predict.WrappedModel(mod, newdata = (testing)) :
+  Could not predict with learner regr.btlm: Error : cannot allocate vector of size 792.5 Mb
+
+[1] "Sat Jan 27 13:49:14 2018"
+Error in curl::curl_fetch_memory(url, handle = handle) : 
+  Could not resolve host: mlrhyperopt.jakob-r.de
