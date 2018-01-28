@@ -30,7 +30,7 @@ write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep =
 try({
   gensTTest<-(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 })
-if(length(gensTTest)<1) gensTTest<-gensTTesto
+if(length(gensTTest)<1) gensTTest<-gensTTesto#inversion[length(inversion):1]
 
 ########packages install check######
 
