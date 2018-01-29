@@ -18,7 +18,7 @@ Type 'q()' to quit R.
 > options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 > ## capture messages and errors to a file.https://rweb.crmda.ku.edu/cran/
 > #zz <- file("all.Rout", open="wt")https://cran.cnr.berkeley.edu
-> #sink(zz, type="message")
+> #sink(zz, type="message") edit for rebaseless
 > #chek for R package updates
 > #try(log("a"))
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
@@ -47,7 +47,7 @@ Type 'q()' to quit R.
 > try({
 +   gensTTest<-(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 + })
-> if(length(gensTTest)<1) gensTTest<-gensTTesto
+> if(length(gensTTest)<1) gensTTest<-gensTTesto#inversion[length(inversion):1]
 > 
 > ########packages install check######
 > 
@@ -93,6 +93,7 @@ The following object is masked from 'package:base':
 +   if(last.alg==before.last.alg){print("algorithm may be broken")}
 +   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 + })
+[1] "algorithm may be broken"
 > try({
 +   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 +   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -206,7 +207,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Thu Jan 25 17:08:24 2018"
+[1] "Sun Jan 28 17:36:20 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -315,26 +316,49 @@ The following object is masked from 'package:caret':
 
     train
 
-[Tune] Started tuning learner regr.svm for parameter set:
-         Type len   Def    Constr Req Tunable Trafo
-cost  numeric   -     0 -15 to 15   -    TRUE     Y
-gamma numeric   - -3.32 -15 to 15   -    TRUE     Y
+Loading required package: crs
+Error: package or namespace load failed for 'crs' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'MatrixModels'
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.crs please install the following packages: crs
+In addition: Warning message:
+replacing previous import 'BBmisc::isFALSE' by 'backports::isFALSE' when loading 'mlr' 
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.ctree no default is available.
+[1] "Sun Jan 28 19:13:34 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.cubist no default is available.
+[1] "Sun Jan 28 19:13:46 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.cvglmnet no default is available.
+[1] "Sun Jan 28 19:13:52 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.earth no default is available.
+[1] "Sun Jan 28 19:13:57 2018"
+Error in getDefaultParConfig(learner) : 
+  For the learner regr.elmNN no default is available.
+Loading required package: MASS
+[1] "Sun Jan 28 19:14:01 2018"
+Error in requirePackages(package, why = stri_paste("learner", id, sep = " "),  : 
+  For learner regr.evtree please install the following packages: evtree
+[Tune] Started tuning learner regr.extraTrees for parameter set:
+                 Type len Def  Constr Req Tunable Trafo
+mtry          integer   -   3 1 to 10   -    TRUE     -
+numRandomCuts integer   -   1 1 to 25   -    TRUE     -
 With control class: TuneControlRandom
 Imputation value: Inf
-[Tune-x] 1: cost=14.4; gamma=1.6
-[Tune-y] 1: rmse.test.rmse=2.38; time: 22.0 min
-[Tune-x] 2: cost=0.0188; gamma=7.87e-05
-[Tune-y] 2: rmse.test.rmse=4.24; time: 12.7 min
-[Tune-x] 3: cost=0.000963; gamma=256
-[Tune-y] 3: rmse.test.rmse=4.39; time: 7.0 min
-[Tune-x] 4: cost=3.32e-05; gamma=182
-[Tune-y] 4: rmse.test.rmse=4.39; time: 7.0 min
-[Tune-x] 5: cost=0.00402; gamma=0.00291
-[Tune-y] 5: rmse.test.rmse=3.45; time: 12.7 min
-[Tune-x] 6: cost=0.032; gamma=52.4
-[Tune-y] 6: rmse.test.rmse=4.33; time: 8.8 min
-[Tune-x] 7: cost=54.5; gamma=17.9
-[Tune-y] 7: rmse.test.rmse=3.51; time: 22.8 min
-[Tune-x] 8: cost=4.44e+03; gamma=0.0263
+[Tune-x] 1: mtry=10; numRandomCuts=5
+Warning in predict.WrappedModel(m, task, subset = test.i) :
+  Could not predict with learner regr.extraTrees: Error in .jcall(et$jobject, "[D", "getValues", toJavaMatrix2D(newdata)) : 
+  java.lang.OutOfMemoryError: GC overhead limit exceeded
 
-WARNING: reaching max number of iterations
+Warning in predict.WrappedModel(m, task, subset = test.i) :
+  Could not predict with learner regr.extraTrees: Error in .jcall(et$jobject, "[D", "getValues", toJavaMatrix2D(newdata)) : 
+  java.lang.OutOfMemoryError: Java heap space
+
+Warning in predict.WrappedModel(m, task, subset = test.i) :
+  Could not predict with learner regr.extraTrees: Error in .jcall(et$jobject, "[D", "getValues", toJavaMatrix2D(newdata)) : 
+  java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+[Tune-y] 1: rmse.test.rmse=  NA; time: 16.9 min
+[Tune-x] 2: mtry=5; numRandomCuts=25

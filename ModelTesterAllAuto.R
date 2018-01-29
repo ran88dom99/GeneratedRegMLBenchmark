@@ -1,9 +1,9 @@
 options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 ## capture messages and errors to a file.https://rweb.crmda.ku.edu/cran/
 #zz <- file("all.Rout", open="wt")https://cran.cnr.berkeley.edu
-#sink(zz, type="message")
+#sink(zz, type="message") edit for rebaseless
 #chek for R package updates
-#try(log("a"))
+#try(log("a")) ## test --no-edit
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 
@@ -30,7 +30,7 @@ write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep =
 try({
   gensTTest<-(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 })
-if(length(gensTTest)<1) gensTTest<-gensTTesto
+if(length(gensTTest)<1) gensTTest<-gensTTesto#inversion[length(inversion):1]
 
 ########packages install check######
 
