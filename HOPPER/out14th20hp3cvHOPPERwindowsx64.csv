@@ -6353,3 +6353,6 @@ Fail,Fail,Fail,Fail,PrePackageFail,Sun Jan 28 19:13:21 2018,regr.crs,1,1,OpenML 
 0.468,0.46,-1,2.393,1.936,Sun Jan 28 19:13:57 2018,regr.earth,1,1,OpenML 2dplanes,ignore,none,centernscale,4.42945837892904,nohyperparam,273,3,cv,20,3,NA,5
 0.002,0.002,-1,4.42,3.628,Sun Jan 28 19:14:01 2018,regr.elmNN,1,1,OpenML 2dplanes,ignore,none,centernscale,4.42945837892904,nohyperparam,273,3,cv,20,3,NA,5
 Fail,Fail,Fail,Fail,PrePackageFail,Sun Jan 28 19:14:03 2018,regr.evtree,1,1,OpenML 2dplanes,ignore,none,centernscale,2
+NA,NA,NA,NA,NA,Mon Jan 29 04:08:51 2018,regr.extraTrees,1,1,OpenML 2dplanes,ignore,none,centernscale,4.40573358192026,random,234,24423,cv,20,3,NA,5,6,2
+0,0,-1,4.406,3.618,Mon Jan 29 04:09:08 2018,regr.featureless,1,1,OpenML 2dplanes,ignore,none,centernscale,4.40573358192026,nohyperparam,234,7,cv,20,3,NA,5
+0.682,0.672,-1,1.446,1.15,Mon Jan 29 04:09:13 2018,regr.fnn,1,1,OpenML 2dplanes,ignore,none,centernscale,4.40573358192026,nohyperparam,234,4,cv,20,3,NA,5
