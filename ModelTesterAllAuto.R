@@ -3,7 +3,7 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #zz <- file("all.Rout", open="wt")https://cran.cnr.berkeley.edu
 #sink(zz, type="message") edit for rebaseless
 #chek for R package updates
-#try(log("a"))
+#try(log("a")) ## test --no-edit
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 
