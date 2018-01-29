@@ -1,7 +1,7 @@
 Mon Dec 18 08:39:39 2017,regr.gamboost,3,20,just random,windows,i386,ALTA
 Mon Dec 18 08:48:29 2017,regr.bgpllm,3,20,just random,windows,i386,ALTA
 Mon Dec 18 08:48:29 2017,regr.bgpllm,3,20,just random,windows,i386,ALTA
-Mon Dec 18 13:15:01 2017,regr.extraTrees,just random,3,20,windows,i386,ALTA
+
 Mon Dec 18 14:25:31 2017,svmLinear3,just random,3,20,unix,,dg-775i65GV
 Mon Dec 18 14:25:31 2017,regr.randomForest,just random,3,20,unix,,dg-775i65GV
 Mon Dec 18 14:31:26 2017,svmLinear3,just random,3,20,unix,,dg-775i65GV
@@ -45,3 +45,6 @@ Fri Jan 12 17:32:23 2018,bartMachine,OpenML 2dplanes,3,20,unix,,dg-775i65GV
 Sat Jan 13 20:47:36 2018,blasso,OpenML 2dplanes,3,20,unix,,dg-775i65GV
 Tue Jan 16 18:11:47 2018,evtree,OpenML 2dplanes,3,20,unix,,dg-775i65GV
 Wed Jan 24 13:39:25 2018,bagEarth,OpenML 2dplanes,3,20,unix,,dg-775i65GV
+Sat Jan 27 19:05:05 2018,evtree,OpenML 2dplanes,3,20,unix,,dg-775i65GV
+Sun Jan 28 21:09:16 2018,evtree,OpenML 2dplanes,3,20,unix,,dg-775i65GV
+Sun Jan 28 21:11:12 2018,evtree,OpenML 2dplanes,3,20,unix,,dg-775i65GV
