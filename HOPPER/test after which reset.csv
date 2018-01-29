@@ -24,3 +24,4 @@ Wed Jan 24 13:59:07 2018,regr.randomForest,OpenML 2dplanes,3,20,windows,x64,HOPP
 Thu Jan 25 17:07:36 2018,regr.svm,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Fri Jan 26 17:07:28 2018,regr.svm,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Sat Jan 27 19:15:35 2018,regr.cforest,OpenML 2dplanes,3,20,windows,x64,HOPPER
+Sun Jan 28 17:34:25 2018,regr.cforest,OpenML 2dplanes,3,20,windows,x64,HOPPER
