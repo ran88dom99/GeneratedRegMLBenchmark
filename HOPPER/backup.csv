@@ -7705,3 +7705,10 @@ Succ, Thu Feb 01 02:46:14 2018, regr.nnet
 Succ, Thu Feb 01 02:50:04 2018, regr.nodeHarvest
 Succ, Thu Feb 01 02:50:09 2018, regr.pcr
 Succ, Thu Feb 01 02:50:41 2018, regr.plsr
+Succ, Fri Feb 02 15:28:41 2018, regr.randomForest
+Succ, Fri Feb 02 15:34:46 2018, regr.randomForestSRC
+Succ, Fri Feb 02 16:54:16 2018, regr.ranger
+Succ, Fri Feb 02 16:55:18 2018, regr.rknn
+Succ, Fri Feb 02 16:56:36 2018, regr.rpart
+Succ, Fri Feb 02 16:56:44 2018, regr.rsm
+Succ, Fri Feb 02 16:57:06 2018, regr.rvm

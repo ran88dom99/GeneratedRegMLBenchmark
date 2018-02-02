@@ -6436,3 +6436,10 @@ Fail,Fail,Fail,Fail,PackageFail,Thu Feb 01 02:50:20 2018,regr.penalized.fusedlas
 Fail,Fail,Fail,Fail,PackageFail,Thu Feb 01 02:50:28 2018,regr.penalized.lasso,1,2,OpenML 2dplanes,ignore,none,centernscale,7
 Fail,Fail,Fail,Fail,PackageFail,Thu Feb 01 02:50:35 2018,regr.penalized.ridge,1,2,OpenML 2dplanes,ignore,none,centernscale,7
 0.461,0.453,-1,2.408,1.948,Thu Feb 01 02:50:41 2018,regr.plsr,1,2,OpenML 2dplanes,ignore,none,centernscale,4.40176922388394,nohyperparam,318,3,cv,20,3,NA,5
+0.772,0.764,1.03,1.035,0.82,Fri Feb 02 15:28:41 2018,regr.randomForest,1,2,OpenML 2dplanes,ignore,none,centernscale,4.38282721330356,random,290,73474,cv,20,3,NA,5,10,5
+0.768,0.759,-1,1.056,0.837,Fri Feb 02 15:34:45 2018,regr.randomForestSRC,1,2,OpenML 2dplanes,ignore,none,centernscale,4.38282721330356,nohyperparam,290,348,cv,20,3,NA,5
+0.773,0.764,1.029,1.032,0.818,Fri Feb 02 16:54:13 2018,regr.ranger,1,2,OpenML 2dplanes,ignore,none,centernscale,4.38282721330356,random,290,4748,cv,20,3,NA,5,4,8
+NA,NA,-1,NA,NA,Fri Feb 02 16:55:18 2018,regr.rknn,1,2,OpenML 2dplanes,ignore,none,centernscale,4.38282721330356,nohyperparam,290,9,cv,20,3,NA,5
+0.76,0.752,1.085,1.085,0.863,Fri Feb 02 16:56:36 2018,regr.rpart,1,2,OpenML 2dplanes,ignore,none,centernscale,4.38282721330356,random,290,61,cv,20,3,NA,5,0.00106725645797928,23,37,37
+0.466,0.457,-1,2.381,1.923,Fri Feb 02 16:56:44 2018,regr.rsm,1,2,OpenML 2dplanes,ignore,none,centernscale,4.38282721330356,nohyperparam,290,4,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Fri Feb 02 16:57:06 2018,regr.rvm,1,2,OpenML 2dplanes,ignore,none,centernscale,4.38282721330356,nohyperparam,290,19,cv,20,3,NA,5
