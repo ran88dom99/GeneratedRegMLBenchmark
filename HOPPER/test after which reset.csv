@@ -40,3 +40,4 @@ Wed Feb 07 21:50:59 2018,regr.randomForest,OpenML 2dplanes,3,20,windows,x64,HOPP
 Thu Feb 08 17:08:47 2018,regr.extraTrees,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Thu Feb 08 23:21:43 2018,regr.extraTrees,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Fri Feb 09 17:08:38 2018,regr.laGP,bas interactive latent features,3,20,windows,x64,HOPPER
+Sat Feb 10 17:07:19 2018,regr.xyf,bas interactive latent features,3,20,windows,x64,HOPPER
