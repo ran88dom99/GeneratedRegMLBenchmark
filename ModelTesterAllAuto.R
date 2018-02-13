@@ -27,6 +27,7 @@ normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quan
 
 gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
+gensTTest<-gensTTesto[length(gensTTesto):1]
 try({
   gensTTest<-(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 })

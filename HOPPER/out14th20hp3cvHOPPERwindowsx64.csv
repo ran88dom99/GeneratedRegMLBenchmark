@@ -8162,3 +8162,185 @@ Fail,Fail,Fail,Fail,PackageFail,Fri Feb 09 18:17:00 2018,regr.penalized.ridge,1,
 0.925,0.895,-1,0.068,0.039,Fri Feb 09 18:20:12 2018,regr.slim,1,2,bas interactive latent features,ignore,none,quantile,0.644260144932919,nohyperparam,318,8,cv,20,3,NA,5
 0.903,0.9,0.075,0.064,0.051,Fri Feb 09 18:23:43 2018,regr.xgboost,1,2,bas interactive latent features,ignore,none,quantile,0.644260144932919,random,318,208,cv,20,3,NA,5,292,2,0.595219850718509,0.0358171248808503,0.465244329627603,12.2300799470395,0.38629984279396
 NA,NA,-1,NA,NA,Fri Feb 09 18:23:50 2018,regr.xyf,1,2,bas interactive latent features,ignore,none,quantile,0.644260144932919,nohyperparam,318,4,cv,20,3,NA,5
+0.928,0.918,-1,0.052,0.038,Mon Feb 12 23:05:38 2018,regr.cforest,1,1,bas interactive latent features,ignore,none,YeoJohnson,0.632731350766298,nohyperparam,277,30,cv,20,3,NA,5
+0.973,0.968,0.024,0.02,0.014,Mon Feb 12 23:12:52 2018,regr.extraTrees,1,1,bas interactive latent features,ignore,none,YeoJohnson,0.632731350766298,random,277,425,cv,20,3,NA,5,5,3
+0.878,0.873,-1,0.08,0.063,Mon Feb 12 23:14:32 2018,regr.frbs,1,1,bas interactive latent features,ignore,none,YeoJohnson,0.632731350766298,nohyperparam,277,94,cv,20,3,NA,5
+0.953,0.953,0.031,0.029,0.024,Mon Feb 12 23:14:57 2018,regr.ksvm,1,1,bas interactive latent features,ignore,none,YeoJohnson,0.632731350766298,random,277,14,cv,20,3,NA,5,146.844633787549,0.0389257098867205
+0.958,0.953,0.033,0.029,0.022,Mon Feb 12 23:17:12 2018,regr.randomForest,1,1,bas interactive latent features,ignore,none,YeoJohnson,0.632731350766298,random,277,118,cv,20,3,NA,5,2,4
+0.957,0.952,0.034,0.03,0.023,Mon Feb 12 23:19:34 2018,regr.RRF,1,1,bas interactive latent features,ignore,none,YeoJohnson,0.632731350766298,random,277,133,cv,20,3,NA,5,4,0.210971798747778
+0.949,0.949,0.033,0.032,0.027,Mon Feb 12 23:19:56 2018,regr.svm,1,1,bas interactive latent features,ignore,none,YeoJohnson,0.632731350766298,random,277,14,cv,20,3,NA,5,62.0488820281234,0.00338425491167886
+0.927,0.916,-1,0.054,0.039,Mon Feb 12 23:20:33 2018,regr.cforest,1,2,bas interactive latent features,ignore,none,YeoJohnson,0.643594820340773,nohyperparam,230,14,cv,20,3,NA,5
+0.974,0.969,0.026,0.02,0.014,Mon Feb 12 23:50:27 2018,regr.extraTrees,1,2,bas interactive latent features,ignore,none,YeoJohnson,0.643594820340773,random,230,1779,cv,20,3,NA,5,6,2
+0.875,0.864,-1,0.088,0.066,Mon Feb 12 23:51:50 2018,regr.frbs,1,2,bas interactive latent features,ignore,none,YeoJohnson,0.643594820340773,nohyperparam,230,76,cv,20,3,NA,5
+0.942,0.944,0.035,0.036,0.031,Mon Feb 12 23:52:28 2018,regr.ksvm,1,2,bas interactive latent features,ignore,none,YeoJohnson,0.643594820340773,random,230,11,cv,20,3,NA,5,5.25763376737419,0.00721310119660943
+0.959,0.954,0.036,0.029,0.022,Mon Feb 12 23:55:16 2018,regr.randomForest,1,2,bas interactive latent features,ignore,none,YeoJohnson,0.643594820340773,random,230,136,cv,20,3,NA,5,1,6
+0.958,0.954,0.036,0.029,0.022,Mon Feb 12 23:57:45 2018,regr.RRF,1,2,bas interactive latent features,ignore,none,YeoJohnson,0.643594820340773,random,230,135,cv,20,3,NA,5,5,0.95635104412213
+0.947,0.949,0.034,0.033,0.028,Mon Feb 12 23:58:10 2018,regr.svm,1,2,bas interactive latent features,ignore,none,YeoJohnson,0.643594820340773,random,230,13,cv,20,3,NA,5,848.926251802488,0.0187426559951691
+0.935,0.922,-1,0.049,0.034,Mon Feb 12 23:58:40 2018,regr.cforest,1,1,bas interactive latent features,ignore,none,ICA,0.627083118079293,nohyperparam,278,12,cv,20,3,NA,5
+0.975,0.972,0.024,0.018,0.013,Tue Feb 13 00:04:30 2018,regr.extraTrees,1,1,bas interactive latent features,ignore,none,ICA,0.627083118079293,random,278,340,cv,20,3,NA,5,8,1
+0.864,0.856,-1,0.09,0.07,Tue Feb 13 00:05:49 2018,regr.frbs,1,1,bas interactive latent features,ignore,none,ICA,0.627083118079293,nohyperparam,278,72,cv,20,3,NA,5
+0.943,0.947,0.035,0.034,0.03,Tue Feb 13 00:06:16 2018,regr.ksvm,1,1,bas interactive latent features,ignore,none,ICA,0.627083118079293,random,278,10,cv,20,3,NA,5,20.3579553789805,0.00247664630483372
+0.962,0.957,0.037,0.027,0.019,Tue Feb 13 00:08:59 2018,regr.randomForest,1,1,bas interactive latent features,ignore,none,ICA,0.627083118079293,random,278,142,cv,20,3,NA,5,1,5
+0.961,0.956,0.038,0.028,0.02,Tue Feb 13 00:11:04 2018,regr.RRF,1,1,bas interactive latent features,ignore,none,ICA,0.627083118079293,random,278,115,cv,20,3,NA,5,4,0.171814817003906
+0.94,0.945,0.037,0.034,0.031,Tue Feb 13 00:11:27 2018,regr.svm,1,1,bas interactive latent features,ignore,none,ICA,0.627083118079293,random,278,14,cv,20,3,NA,5,545.040649237292,0.0017585231183491
+0.93,0.916,-1,0.055,0.037,Tue Feb 13 00:12:06 2018,regr.cforest,1,2,bas interactive latent features,ignore,none,ICA,0.654750763113255,nohyperparam,274,12,cv,20,3,NA,5
+0.97,0.965,0.025,0.023,0.015,Tue Feb 13 00:21:30 2018,regr.extraTrees,1,2,bas interactive latent features,ignore,none,ICA,0.654750763113255,random,274,546,cv,20,3,NA,5,4,4
+0.886,0.883,-1,0.077,0.061,Tue Feb 13 00:22:53 2018,regr.frbs,1,2,bas interactive latent features,ignore,none,ICA,0.654750763113255,nohyperparam,274,75,cv,20,3,NA,5
+0.951,0.952,0.034,0.031,0.026,Tue Feb 13 00:23:37 2018,regr.ksvm,1,2,bas interactive latent features,ignore,none,ICA,0.654750763113255,random,274,11,cv,20,3,NA,5,52.2197930042764,0.00803969431825917
+0.959,0.954,0.034,0.03,0.021,Tue Feb 13 00:26:36 2018,regr.randomForest,1,2,bas interactive latent features,ignore,none,ICA,0.654750763113255,random,274,142,cv,20,3,NA,5,1,4
+0.957,0.952,0.035,0.031,0.022,Tue Feb 13 00:29:15 2018,regr.RRF,1,2,bas interactive latent features,ignore,none,ICA,0.654750763113255,random,274,144,cv,20,3,NA,5,4,0.128371704835445
+0.949,0.95,0.036,0.033,0.027,Tue Feb 13 00:29:43 2018,regr.svm,1,2,bas interactive latent features,ignore,none,ICA,0.654750763113255,random,274,14,cv,20,3,NA,5,8955.51212473981,0.0151273975562858
+0.936,0.927,-1,0.047,0.034,Tue Feb 13 00:30:18 2018,regr.cforest,1,1,bas interactive latent features,ignore,none,centernscale,0.642458459768891,nohyperparam,319,12,cv,20,3,NA,5
+0.976,0.973,0.041,0.017,0.013,Tue Feb 13 02:04:11 2018,regr.extraTrees,1,1,bas interactive latent features,ignore,none,centernscale,0.642458459768891,random,319,5621,cv,20,3,NA,5,6,4
+0.871,0.862,-1,0.089,0.069,Tue Feb 13 02:05:26 2018,regr.frbs,1,1,bas interactive latent features,ignore,none,centernscale,0.642458459768891,nohyperparam,319,68,cv,20,3,NA,5
+0.953,0.951,0.054,0.031,0.025,Tue Feb 13 02:05:59 2018,regr.ksvm,1,1,bas interactive latent features,ignore,none,centernscale,0.642458459768891,random,319,10,cv,20,3,NA,5,49.1932679190684,0.0473666827131239
+0.964,0.961,0.054,0.025,0.019,Tue Feb 13 02:08:19 2018,regr.randomForest,1,1,bas interactive latent features,ignore,none,centernscale,0.642458459768891,random,319,113,cv,20,3,NA,5,2,3
+0.966,0.963,0.056,0.024,0.018,Tue Feb 13 02:10:42 2018,regr.RRF,1,1,bas interactive latent features,ignore,none,centernscale,0.642458459768891,random,319,131,cv,20,3,NA,5,5,0.253124482231215
+0.948,0.95,0.054,0.032,0.028,Tue Feb 13 02:11:05 2018,regr.svm,1,1,bas interactive latent features,ignore,none,centernscale,0.642458459768891,random,319,13,cv,20,3,NA,5,57.6480493356055,0.014079050066898
+0.934,0.922,-1,0.05,0.035,Tue Feb 13 02:11:47 2018,regr.cforest,1,2,bas interactive latent features,ignore,none,centernscale,0.644735852484347,nohyperparam,225,12,cv,20,3,NA,5
+NA,NA,0.026,NA,NA,Tue Feb 13 02:31:37 2018,regr.extraTrees,1,2,bas interactive latent features,ignore,none,centernscale,0.644735852484347,random,225,1168,cv,20,3,NA,5,4,3
+0.874,0.871,-1,0.083,0.067,Tue Feb 13 02:32:58 2018,regr.frbs,1,2,bas interactive latent features,ignore,none,centernscale,0.644735852484347,nohyperparam,225,72,cv,20,3,NA,5
+0.937,0.94,0.038,0.038,0.034,Tue Feb 13 02:33:47 2018,regr.ksvm,1,2,bas interactive latent features,ignore,none,centernscale,0.644735852484347,random,225,10,cv,20,3,NA,5,1.41069381085404,0.00325122418902361
+0.962,0.957,0.037,0.028,0.02,Tue Feb 13 02:36:49 2018,regr.randomForest,1,2,bas interactive latent features,ignore,none,centernscale,0.644735852484347,random,225,140,cv,20,3,NA,5,2,2
+0.963,0.958,0.037,0.027,0.019,Tue Feb 13 02:39:14 2018,regr.RRF,1,2,bas interactive latent features,ignore,none,centernscale,0.644735852484347,random,225,128,cv,20,3,NA,5,4,0.997433159733191
+0.932,0.938,0.04,0.04,0.036,Tue Feb 13 02:39:42 2018,regr.svm,1,2,bas interactive latent features,ignore,none,centernscale,0.644735852484347,random,225,14,cv,20,3,NA,5,3943.1706540386,9.28353632486062e-05
+0.926,0.911,-1,0.056,0.039,Tue Feb 13 02:40:21 2018,regr.cforest,1,1,bas interactive latent features,ignore,none,expoTrans,0.628693131275987,nohyperparam,247,12,cv,20,3,NA,5
+NA,NA,0.025,NA,NA,Tue Feb 13 03:22:05 2018,regr.extraTrees,1,1,bas interactive latent features,ignore,none,expoTrans,0.628693131275987,random,247,2489,cv,20,3,NA,5,4,2
+0.876,0.868,-1,0.083,0.065,Tue Feb 13 03:23:28 2018,regr.frbs,1,1,bas interactive latent features,ignore,none,expoTrans,0.628693131275987,nohyperparam,247,76,cv,20,3,NA,5
+0.956,0.957,0.031,0.027,0.023,Tue Feb 13 03:24:06 2018,regr.ksvm,1,1,bas interactive latent features,ignore,none,expoTrans,0.628693131275987,random,247,10,cv,20,3,NA,5,90.1819888098718,0.000143350707454227
+0.96,0.953,0.035,0.03,0.021,Tue Feb 13 03:27:11 2018,regr.randomForest,1,1,bas interactive latent features,ignore,none,expoTrans,0.628693131275987,random,247,156,cv,20,3,NA,5,1,4
+0.958,0.952,0.036,0.031,0.022,Tue Feb 13 03:29:26 2018,regr.RRF,1,1,bas interactive latent features,ignore,none,expoTrans,0.628693131275987,random,247,122,cv,20,3,NA,5,4,0.0537787452340126
+0.944,0.948,0.033,0.033,0.03,Tue Feb 13 03:29:51 2018,regr.svm,1,1,bas interactive latent features,ignore,none,expoTrans,0.628693131275987,random,247,13,cv,20,3,NA,5,257.778804846757,0.000373360164523622
+0.925,0.911,-1,0.054,0.038,Tue Feb 13 03:30:37 2018,regr.cforest,1,2,bas interactive latent features,ignore,none,expoTrans,0.614374733520591,nohyperparam,266,12,cv,20,3,NA,5
+0.971,0.966,0.025,0.02,0.015,Tue Feb 13 05:35:47 2018,regr.extraTrees,1,2,bas interactive latent features,ignore,none,expoTrans,0.614374733520591,random,266,7486,cv,20,3,NA,5,7,1
+0.871,0.863,-1,0.084,0.065,Tue Feb 13 05:37:12 2018,regr.frbs,1,2,bas interactive latent features,ignore,none,expoTrans,0.614374733520591,nohyperparam,266,75,cv,20,3,NA,5
+0.954,0.952,0.029,0.029,0.023,Tue Feb 13 05:38:05 2018,regr.ksvm,1,2,bas interactive latent features,ignore,none,expoTrans,0.614374733520591,random,266,10,cv,20,3,NA,5,93.0742259424319,0.000168940716053578
+0.956,0.948,0.035,0.032,0.022,Tue Feb 13 05:40:51 2018,regr.randomForest,1,2,bas interactive latent features,ignore,none,expoTrans,0.614374733520591,random,266,124,cv,20,3,NA,5,3,4
+0.954,0.946,0.036,0.033,0.023,Tue Feb 13 05:43:24 2018,regr.RRF,1,2,bas interactive latent features,ignore,none,expoTrans,0.614374733520591,random,266,134,cv,20,3,NA,5,4,0.895426712231711
+0.955,0.952,0.03,0.03,0.023,Tue Feb 13 05:43:52 2018,regr.svm,1,2,bas interactive latent features,ignore,none,expoTrans,0.614374733520591,random,266,13,cv,20,3,NA,5,222.428518693124,3.7690749131908e-05
+0.931,0.916,-1,0.053,0.036,Tue Feb 13 05:44:34 2018,regr.cforest,1,1,bas interactive latent features,ignore,none,range01,0.63679857638252,nohyperparam,257,12,cv,20,3,NA,5
+0.974,0.968,0.007,0.02,0.014,Tue Feb 13 05:53:01 2018,regr.extraTrees,1,1,bas interactive latent features,ignore,none,range01,0.63679857638252,random,257,489,cv,20,3,NA,5,6,3
+0.883,0.877,-1,0.078,0.062,Tue Feb 13 05:54:22 2018,regr.frbs,1,1,bas interactive latent features,ignore,none,range01,0.63679857638252,nohyperparam,257,72,cv,20,3,NA,5
+0.935,0.941,0.012,0.037,0.034,Tue Feb 13 05:55:05 2018,regr.ksvm,1,1,bas interactive latent features,ignore,none,range01,0.63679857638252,random,257,11,cv,20,3,NA,5,97.5092796587937,0.00126665381119233
+0.96,0.954,0.01,0.029,0.021,Tue Feb 13 05:57:51 2018,regr.randomForest,1,1,bas interactive latent features,ignore,none,range01,0.63679857638252,random,257,129,cv,20,3,NA,5,3,5
+0.959,0.952,0.01,0.03,0.022,Tue Feb 13 06:00:20 2018,regr.RRF,1,1,bas interactive latent features,ignore,none,range01,0.63679857638252,random,257,134,cv,20,3,NA,5,4,0.942682853899896
+0.945,0.945,0.011,0.035,0.029,Tue Feb 13 06:00:46 2018,regr.svm,1,1,bas interactive latent features,ignore,none,range01,0.63679857638252,random,257,13,cv,20,3,NA,5,114.751942427079,0.00551680897024709
+0.932,0.92,-1,0.051,0.035,Tue Feb 13 06:01:37 2018,regr.cforest,1,2,bas interactive latent features,ignore,none,range01,0.637732438730111,nohyperparam,223,12,cv,20,3,NA,5
+NA,NA,0.027,NA,NA,Tue Feb 13 06:11:42 2018,regr.extraTrees,1,2,bas interactive latent features,ignore,none,range01,0.637732438730111,random,223,578,cv,20,3,NA,5,9,4
+0.878,0.87,-1,0.083,0.063,Tue Feb 13 06:13:04 2018,regr.frbs,1,2,bas interactive latent features,ignore,none,range01,0.637732438730111,nohyperparam,223,72,cv,20,3,NA,5
+0.954,0.951,0.033,0.031,0.024,Tue Feb 13 06:14:04 2018,regr.ksvm,1,2,bas interactive latent features,ignore,none,range01,0.637732438730111,random,223,11,cv,20,3,NA,5,3.16423345598274,0.0413246212547794
+0.962,0.957,0.034,0.027,0.02,Tue Feb 13 06:17:23 2018,regr.randomForest,1,2,bas interactive latent features,ignore,none,range01,0.637732438730111,random,223,147,cv,20,3,NA,5,2,3
+0.961,0.956,0.034,0.028,0.02,Tue Feb 13 06:19:54 2018,regr.RRF,1,2,bas interactive latent features,ignore,none,range01,0.637732438730111,random,223,131,cv,20,3,NA,5,4,0.80661530024372
+0.927,0.936,0.041,0.041,0.038,Tue Feb 13 06:20:24 2018,regr.svm,1,2,bas interactive latent features,ignore,none,range01,0.637732438730111,random,223,14,cv,20,3,NA,5,103.303220513162,0.00100105036358548
+0.938,0.931,-1,0.043,0.032,Tue Feb 13 06:21:08 2018,regr.cforest,1,1,bas interactive latent features,ignore,none,asis,0.628185318239537,nohyperparam,264,11,cv,20,3,NA,5
+NA,NA,0.024,NA,NA,Tue Feb 13 06:56:02 2018,regr.extraTrees,1,1,bas interactive latent features,ignore,none,asis,0.628185318239537,random,264,2074,cv,20,3,NA,5,5,4
+0.863,0.854,-1,0.092,0.071,Tue Feb 13 06:57:19 2018,regr.frbs,1,1,bas interactive latent features,ignore,none,asis,0.628185318239537,nohyperparam,264,69,cv,20,3,NA,5
+0.947,0.947,0.035,0.033,0.027,Tue Feb 13 06:58:05 2018,regr.ksvm,1,1,bas interactive latent features,ignore,none,asis,0.628185318239537,random,264,9,cv,20,3,NA,5,23.8805244221169,0.0562900324083723
+0.965,0.962,0.034,0.024,0.018,Tue Feb 13 07:00:45 2018,regr.randomForest,1,1,bas interactive latent features,ignore,none,asis,0.628185318239537,random,264,120,cv,20,3,NA,5,2,4
+0.964,0.961,0.035,0.025,0.019,Tue Feb 13 07:03:13 2018,regr.RRF,1,1,bas interactive latent features,ignore,none,asis,0.628185318239537,random,264,131,cv,20,3,NA,5,4,0.365852694492787
+0.952,0.951,0.032,0.031,0.025,Tue Feb 13 07:03:39 2018,regr.svm,1,1,bas interactive latent features,ignore,none,asis,0.628185318239537,random,264,12,cv,20,3,NA,5,19901.6561472623,0.0211240189662455
+0.933,0.917,-1,0.062,0.042,Tue Feb 13 07:04:25 2018,regr.cforest,1,1,bas interactive latent features,ignore,none,quantile,0.63670163183851,nohyperparam,252,12,cv,20,3,NA,5
+NA,NA,0.01,NA,NA,Tue Feb 13 07:18:08 2018,regr.extraTrees,1,1,bas interactive latent features,ignore,none,quantile,0.63670163183851,random,252,801,cv,20,3,NA,5,7,2
+0.898,0.884,-1,0.089,0.066,Tue Feb 13 07:19:45 2018,regr.frbs,1,1,bas interactive latent features,ignore,none,quantile,0.63670163183851,nohyperparam,252,87,cv,20,3,NA,5
+0.955,0.953,0.013,NA,NA,Tue Feb 13 07:20:36 2018,regr.ksvm,1,1,bas interactive latent features,ignore,none,quantile,0.63670163183851,random,252,11,cv,20,3,NA,5,14.2923695782541,0.0125699711033748
+0.96,0.951,0.015,0.042,0.028,Tue Feb 13 07:23:21 2018,regr.randomForest,1,1,bas interactive latent features,ignore,none,quantile,0.63670163183851,random,252,122,cv,20,3,NA,5,4,4
+0.959,0.95,0.015,0.043,0.028,Tue Feb 13 07:25:42 2018,regr.RRF,1,1,bas interactive latent features,ignore,none,quantile,0.63670163183851,random,252,122,cv,20,3,NA,5,4,0.106523940106854
+0.95,0.949,0.015,NA,NA,Tue Feb 13 07:26:10 2018,regr.svm,1,1,bas interactive latent features,ignore,none,quantile,0.63670163183851,random,252,13,cv,20,3,NA,5,12337.3600035122,0.00121896781629796
+0.936,0.929,-1,0.046,0.035,Tue Feb 13 07:27:06 2018,regr.cforest,1,2,bas interactive latent features,ignore,none,quantile,0.660348873377104,nohyperparam,260,12,cv,20,3,NA,5
+NA,NA,0.023,NA,NA,Tue Feb 13 09:25:08 2018,regr.extraTrees,1,2,bas interactive latent features,ignore,none,quantile,0.660348873377104,random,260,7052,cv,20,3,NA,5,6,2
+0.858,0.848,-1,0.1,0.077,Tue Feb 13 09:26:55 2018,regr.frbs,1,2,bas interactive latent features,ignore,none,quantile,0.660348873377104,nohyperparam,260,94,cv,20,3,NA,5
+0.942,0.944,0.04,0.037,0.031,Tue Feb 13 09:28:02 2018,regr.ksvm,1,2,bas interactive latent features,ignore,none,quantile,0.660348873377104,random,260,11,cv,20,3,NA,5,27.1559612324103,0.0373316993395434
+0.964,0.96,0.033,0.026,0.019,Tue Feb 13 09:31:06 2018,regr.randomForest,1,2,bas interactive latent features,ignore,none,quantile,0.660348873377104,random,260,124,cv,20,3,NA,5,1,4
+0.962,0.957,0.034,0.028,0.02,Tue Feb 13 09:33:36 2018,regr.RRF,1,2,bas interactive latent features,ignore,none,quantile,0.660348873377104,random,260,128,cv,20,3,NA,5,5,0.0951110827736557
+0.941,0.935,0.053,0.043,0.032,Tue Feb 13 09:34:08 2018,regr.svm,1,2,bas interactive latent features,ignore,none,quantile,0.660348873377104,random,260,14,cv,20,3,NA,5,6.34411862986123,0.613744161681062
+0.889,0.841,-1,0.225,0.126,Tue Feb 13 09:36:22 2018,regr.cforest,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.4148605710171,nohyperparam,228,18,cv,20,3,NA,5
+0.968,0.938,0.103,0.087,0.037,Tue Feb 13 10:37:20 2018,regr.extraTrees,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.4148605710171,random,228,3651,cv,20,3,NA,5,2,4
+0.754,0.751,-1,0.353,0.278,Tue Feb 13 10:37:35 2018,regr.frbs,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.4148605710171,nohyperparam,228,9,cv,20,3,NA,5
+0.969,0.966,0.06,0.048,0.035,Tue Feb 13 10:37:57 2018,regr.ksvm,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.4148605710171,random,228,10,cv,20,3,NA,5,4.93471037950816,0.00320729879613999
+0.945,0.914,0.138,0.121,0.063,Tue Feb 13 10:39:25 2018,regr.randomForest,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.4148605710171,random,228,72,cv,20,3,NA,5,2,2
+0.943,0.912,0.144,0.124,0.064,Tue Feb 13 10:40:44 2018,regr.RRF,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.4148605710171,random,228,70,cv,20,3,NA,5,2,0.887683308916166
+0.977,0.973,0.046,0.038,0.025,Tue Feb 13 10:41:04 2018,regr.svm,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.4148605710171,random,228,12,cv,20,3,NA,5,2.56913053748509,0.0092580638105064
+0.868,0.819,-1,0.262,0.153,Tue Feb 13 10:41:38 2018,regr.cforest,1,2,basic sum C1 + C2,ignore,none,YeoJohnson,1.44745155619384,nohyperparam,269,13,cv,20,3,NA,5
+0.973,0.954,0.12,0.067,0.031,Tue Feb 13 10:45:21 2018,regr.extraTrees,1,2,basic sum C1 + C2,ignore,none,YeoJohnson,1.44745155619384,random,269,208,cv,20,3,NA,5,2,3
+0.741,0.743,-1,0.372,0.299,Tue Feb 13 10:45:38 2018,regr.frbs,1,2,basic sum C1 + C2,ignore,none,YeoJohnson,1.44745155619384,nohyperparam,269,9,cv,20,3,NA,5
+0.977,0.976,0.039,0.035,0.027,Tue Feb 13 10:46:17 2018,regr.ksvm,1,2,basic sum C1 + C2,ignore,none,YeoJohnson,1.44745155619384,random,269,11,cv,20,3,NA,5,10.6096423619949,0.00444511495975828
+0.95,0.922,0.161,0.113,0.057,Tue Feb 13 10:47:53 2018,regr.randomForest,1,2,basic sum C1 + C2,ignore,none,YeoJohnson,1.44745155619384,random,269,65,cv,20,3,NA,5,4,2
+0.948,0.92,0.163,0.116,0.06,Tue Feb 13 10:49:21 2018,regr.RRF,1,2,basic sum C1 + C2,ignore,none,YeoJohnson,1.44745155619384,random,269,75,cv,20,3,NA,5,2,0.76043038489297
+0.973,0.972,0.042,0.04,0.031,Tue Feb 13 10:49:44 2018,regr.svm,1,2,basic sum C1 + C2,ignore,none,YeoJohnson,1.44745155619384,random,269,11,cv,20,3,NA,5,710.686688347958,0.000688026442953006
+0.86,0.808,-1,0.273,0.16,Tue Feb 13 10:50:15 2018,regr.cforest,1,1,basic sum C1 + C2,ignore,none,ICA,1.42218492091275,nohyperparam,316,13,cv,20,3,NA,5
+NA,NA,0.128,NA,NA,Tue Feb 13 11:06:12 2018,regr.extraTrees,1,1,basic sum C1 + C2,ignore,none,ICA,1.42218492091275,random,316,948,cv,20,3,NA,5,2,3
+0.746,0.741,-1,0.369,0.291,Tue Feb 13 11:06:28 2018,regr.frbs,1,1,basic sum C1 + C2,ignore,none,ICA,1.42218492091275,nohyperparam,316,9,cv,20,3,NA,5
+0.977,0.976,0.029,0.034,0.026,Tue Feb 13 11:06:55 2018,regr.ksvm,1,1,basic sum C1 + C2,ignore,none,ICA,1.42218492091275,random,316,10,cv,20,3,NA,5,182.143300816006,0.00433316266818023
+0.942,0.912,0.169,0.124,0.067,Tue Feb 13 11:08:30 2018,regr.randomForest,1,1,basic sum C1 + C2,ignore,none,ICA,1.42218492091275,random,316,73,cv,20,3,NA,5,2,2
+0.939,0.91,0.173,0.128,0.069,Tue Feb 13 11:09:55 2018,regr.RRF,1,1,basic sum C1 + C2,ignore,none,ICA,1.42218492091275,random,316,75,cv,20,3,NA,5,2,0.0950364070013165
+0.978,0.976,0.031,0.034,0.025,Tue Feb 13 11:10:16 2018,regr.svm,1,1,basic sum C1 + C2,ignore,none,ICA,1.42218492091275,random,316,11,cv,20,3,NA,5,68.3915114412795,0.00393661012089765
+0.878,0.835,-1,0.222,0.131,Tue Feb 13 11:10:55 2018,regr.cforest,1,2,basic sum C1 + C2,ignore,none,ICA,1.34469280960187,nohyperparam,235,14,cv,20,3,NA,5
+NA,NA,0.116,NA,NA,Tue Feb 13 13:18:25 2018,regr.extraTrees,1,2,basic sum C1 + C2,ignore,none,ICA,1.34469280960187,random,235,7632,cv,20,3,NA,5,2,1
+0.721,0.719,-1,0.377,0.301,Tue Feb 13 13:18:43 2018,regr.frbs,1,2,basic sum C1 + C2,ignore,none,ICA,1.34469280960187,nohyperparam,235,9,cv,20,3,NA,5
+0.987,0.986,0.031,0.018,0.013,Tue Feb 13 13:19:26 2018,regr.ksvm,1,2,basic sum C1 + C2,ignore,none,ICA,1.34469280960187,random,235,10,cv,20,3,NA,5,55.5287296225523,0.00419809924344019
+0.953,0.927,0.17,0.098,0.051,Tue Feb 13 13:21:10 2018,regr.randomForest,1,2,basic sum C1 + C2,ignore,none,ICA,1.34469280960187,random,235,66,cv,20,3,NA,5,1,2
+0.951,0.921,0.176,0.106,0.053,Tue Feb 13 13:22:41 2018,regr.RRF,1,2,basic sum C1 + C2,ignore,none,ICA,1.34469280960187,random,235,76,cv,20,3,NA,5,2,0.103057580068707
+0.975,0.974,0.044,0.034,0.027,Tue Feb 13 13:23:04 2018,regr.svm,1,2,basic sum C1 + C2,ignore,none,ICA,1.34469280960187,random,235,10,cv,20,3,NA,5,2009.72236424088,0.00107599851409404
+0.868,0.803,-1,0.272,0.148,Tue Feb 13 13:23:39 2018,regr.cforest,1,1,basic sum C1 + C2,ignore,none,centernscale,1.38311650254973,nohyperparam,317,14,cv,20,3,NA,5
+NA,NA,0.092,NA,NA,Tue Feb 13 13:28:09 2018,regr.extraTrees,1,1,basic sum C1 + C2,ignore,none,centernscale,1.38311650254973,random,317,258,cv,20,3,NA,5,2,5
+0.74,0.733,-1,0.37,0.291,Tue Feb 13 13:28:25 2018,regr.frbs,1,1,basic sum C1 + C2,ignore,none,centernscale,1.38311650254973,nohyperparam,317,9,cv,20,3,NA,5
+0.979,0.979,0.021,0.029,0.024,Tue Feb 13 13:28:58 2018,regr.ksvm,1,1,basic sum C1 + C2,ignore,none,centernscale,1.38311650254973,random,317,10,cv,20,3,NA,5,818.078002809285,0.00482597957822418
+0.949,0.907,0.117,0.129,0.058,Tue Feb 13 13:30:45 2018,regr.randomForest,1,1,basic sum C1 + C2,ignore,none,centernscale,1.38311650254973,random,317,81,cv,20,3,NA,5,3,2
+0.946,0.905,0.119,0.132,0.06,Tue Feb 13 13:32:10 2018,regr.RRF,1,1,basic sum C1 + C2,ignore,none,centernscale,1.38311650254973,random,317,73,cv,20,3,NA,5,2,0.750566572882235
+0.975,0.973,0.031,0.038,0.028,Tue Feb 13 13:32:33 2018,regr.svm,1,1,basic sum C1 + C2,ignore,none,centernscale,1.38311650254973,random,317,12,cv,20,3,NA,5,12.7172946676876,0.00360240381723696
+0.87,0.82,-1,0.26,0.15,Tue Feb 13 13:33:16 2018,regr.cforest,1,2,basic sum C1 + C2,ignore,none,centernscale,1.44745155619384,nohyperparam,269,14,cv,20,3,NA,5
+NA,NA,0.12,NA,NA,Tue Feb 13 13:37:45 2018,regr.extraTrees,1,2,basic sum C1 + C2,ignore,none,centernscale,1.44745155619384,random,269,248,cv,20,3,NA,5,2,3
+0.741,0.743,-1,0.372,0.299,Tue Feb 13 13:38:04 2018,regr.frbs,1,2,basic sum C1 + C2,ignore,none,centernscale,1.44745155619384,nohyperparam,269,9,cv,20,3,NA,5
+0.975,0.974,0.039,0.037,0.029,Tue Feb 13 13:38:52 2018,regr.ksvm,1,2,basic sum C1 + C2,ignore,none,centernscale,1.44745155619384,random,269,10,cv,20,3,NA,5,10.6096423619949,0.00444511495975828
+0.949,0.92,0.163,0.115,0.059,Tue Feb 13 13:40:39 2018,regr.randomForest,1,2,basic sum C1 + C2,ignore,none,centernscale,1.44745155619384,random,269,65,cv,20,3,NA,5,4,2
+0.947,0.918,0.165,0.118,0.061,Tue Feb 13 13:42:12 2018,regr.RRF,1,2,basic sum C1 + C2,ignore,none,centernscale,1.44745155619384,random,269,77,cv,20,3,NA,5,2,0.865831107832491
+0.972,0.972,0.044,0.041,0.032,Tue Feb 13 13:42:38 2018,regr.svm,1,2,basic sum C1 + C2,ignore,none,centernscale,1.44745155619384,random,269,11,cv,20,3,NA,5,710.686688347958,0.000688026442953006
+0.86,0.809,-1,0.273,0.161,Tue Feb 13 13:43:17 2018,regr.cforest,1,1,basic sum C1 + C2,ignore,none,expoTrans,1.42218492091275,nohyperparam,316,14,cv,20,3,NA,5
+NA,NA,0.124,NA,NA,Tue Feb 13 14:03:19 2018,regr.extraTrees,1,1,basic sum C1 + C2,ignore,none,expoTrans,1.42218492091275,random,316,1186,cv,20,3,NA,5,2,2
+0.765,0.759,-1,0.343,0.269,Tue Feb 13 14:03:36 2018,regr.frbs,1,1,basic sum C1 + C2,ignore,none,expoTrans,1.42218492091275,nohyperparam,316,9,cv,20,3,NA,5
+0.976,0.973,0.039,0.038,0.027,Tue Feb 13 14:04:14 2018,regr.ksvm,1,1,basic sum C1 + C2,ignore,none,expoTrans,1.42218492091275,random,316,10,cv,20,3,NA,5,182.143300816006,0.00433316266818023
+0.943,0.915,0.171,0.123,0.066,Tue Feb 13 14:05:53 2018,regr.randomForest,1,1,basic sum C1 + C2,ignore,none,expoTrans,1.42218492091275,random,316,69,cv,20,3,NA,5,2,2
+0.94,0.91,0.175,0.129,0.069,Tue Feb 13 14:07:14 2018,regr.RRF,1,1,basic sum C1 + C2,ignore,none,expoTrans,1.42218492091275,random,316,68,cv,20,3,NA,5,2,0.233705651713535
+0.976,0.973,0.037,0.038,0.027,Tue Feb 13 14:07:37 2018,regr.svm,1,1,basic sum C1 + C2,ignore,none,expoTrans,1.42218492091275,random,316,11,cv,20,3,NA,5,68.3915114412795,0.00393661012089765
+0.879,0.835,-1,0.222,0.131,Tue Feb 13 14:08:24 2018,regr.cforest,1,2,basic sum C1 + C2,ignore,none,expoTrans,1.34469280960187,nohyperparam,235,14,cv,20,3,NA,5
+NA,NA,0.116,NA,NA,Tue Feb 13 14:20:50 2018,regr.extraTrees,1,2,basic sum C1 + C2,ignore,none,expoTrans,1.34469280960187,random,235,722,cv,20,3,NA,5,2,1
+0.702,0.704,-1,0.398,0.322,Tue Feb 13 14:21:12 2018,regr.frbs,1,2,basic sum C1 + C2,ignore,none,expoTrans,1.34469280960187,nohyperparam,235,12,cv,20,3,NA,5
+0.961,0.967,0.048,0.044,0.042,Tue Feb 13 14:22:05 2018,regr.ksvm,1,2,basic sum C1 + C2,ignore,none,expoTrans,1.34469280960187,random,235,10,cv,20,3,NA,5,55.5287296225523,0.00419809924344019
+0.953,0.925,0.171,0.1,0.051,Tue Feb 13 14:23:51 2018,regr.randomForest,1,2,basic sum C1 + C2,ignore,none,expoTrans,1.34469280960187,random,235,62,cv,20,3,NA,5,1,2
+0.951,0.922,0.177,0.105,0.053,Tue Feb 13 14:25:21 2018,regr.RRF,1,2,basic sum C1 + C2,ignore,none,expoTrans,1.34469280960187,random,235,71,cv,20,3,NA,5,2,0.106392472982407
+0.962,0.964,0.054,0.048,0.041,Tue Feb 13 14:25:46 2018,regr.svm,1,2,basic sum C1 + C2,ignore,none,expoTrans,1.34469280960187,random,235,10,cv,20,3,NA,5,2009.72236424088,0.00107599851409404
+0.888,0.824,-1,0.262,0.13,Tue Feb 13 14:26:29 2018,regr.cforest,1,1,basic sum C1 + C2,ignore,none,range01,1.48475976736345,nohyperparam,317,15,cv,20,3,NA,5
+0.952,0.905,0.014,0.141,0.056,Tue Feb 13 14:31:10 2018,regr.extraTrees,1,1,basic sum C1 + C2,ignore,none,range01,1.48475976736345,random,317,263,cv,20,3,NA,5,2,16
+0.768,0.765,-1,0.35,0.27,Tue Feb 13 14:31:29 2018,regr.frbs,1,1,basic sum C1 + C2,ignore,none,range01,1.48475976736345,nohyperparam,317,11,cv,20,3,NA,5
+0.986,0.975,0.004,0.037,0.017,Tue Feb 13 14:32:12 2018,regr.ksvm,1,1,basic sum C1 + C2,ignore,none,range01,1.48475976736345,random,317,10,cv,20,3,NA,5,818.078002809285,0.00482597957822418
+0.947,0.901,0.016,0.147,0.061,Tue Feb 13 14:34:02 2018,regr.randomForest,1,1,basic sum C1 + C2,ignore,none,range01,1.48475976736345,random,317,73,cv,20,3,NA,5,2,2
+0.945,0.899,0.016,0.149,0.064,Tue Feb 13 14:35:26 2018,regr.RRF,1,1,basic sum C1 + C2,ignore,none,range01,1.48475976736345,random,317,69,cv,20,3,NA,5,2,0.616391833871603
+0.979,0.973,0.004,0.041,0.024,Tue Feb 13 14:35:51 2018,regr.svm,1,1,basic sum C1 + C2,ignore,none,range01,1.48475976736345,random,317,12,cv,20,3,NA,5,12.7172946676876,0.00360240381723696
+0.862,0.795,-1,0.3,0.16,Tue Feb 13 14:36:43 2018,regr.cforest,1,2,basic sum C1 + C2,ignore,none,range01,1.46800361882045,nohyperparam,231,15,cv,20,3,NA,5
+NA,NA,0.108,NA,NA,Tue Feb 13 14:46:46 2018,regr.extraTrees,1,2,basic sum C1 + C2,ignore,none,range01,1.46800361882045,random,231,577,cv,20,3,NA,5,2,1
+0.737,0.74,-1,0.381,0.306,Tue Feb 13 14:47:06 2018,regr.frbs,1,2,basic sum C1 + C2,ignore,none,range01,1.46800361882045,nohyperparam,231,9,cv,20,3,NA,5
+0.967,0.966,0.049,0.05,0.039,Tue Feb 13 14:48:06 2018,regr.ksvm,1,2,basic sum C1 + C2,ignore,none,range01,1.46800361882045,random,231,10,cv,20,3,NA,5,703.634936651171,0.000440125124214873
+0.943,0.899,0.155,0.148,0.067,Tue Feb 13 14:50:07 2018,regr.randomForest,1,2,basic sum C1 + C2,ignore,none,range01,1.46800361882045,random,231,69,cv,20,3,NA,5,3,2
+0.94,0.896,0.161,0.153,0.07,Tue Feb 13 14:51:34 2018,regr.RRF,1,2,basic sum C1 + C2,ignore,none,range01,1.46800361882045,random,231,67,cv,20,3,NA,5,2,0.585756913525984
+0.969,0.968,0.046,0.047,0.037,Tue Feb 13 14:52:02 2018,regr.svm,1,2,basic sum C1 + C2,ignore,none,range01,1.46800361882045,random,231,11,cv,20,3,NA,5,7717.06571698252,0.000721924379185513
+0.86,0.794,-1,0.31,0.167,Tue Feb 13 14:52:47 2018,regr.cforest,1,1,basic sum C1 + C2,ignore,none,asis,1.50586816141054,nohyperparam,236,14,cv,20,3,NA,5
+NA,NA,0.108,NA,NA,Tue Feb 13 15:27:18 2018,regr.extraTrees,1,1,basic sum C1 + C2,ignore,none,asis,1.50586816141054,random,236,2051,cv,20,3,NA,5,2,1
+0.779,0.787,-1,0.321,0.262,Tue Feb 13 15:27:35 2018,regr.frbs,1,1,basic sum C1 + C2,ignore,none,asis,1.50586816141054,nohyperparam,236,9,cv,20,3,NA,5
+0.962,0.96,0.059,0.06,0.045,Tue Feb 13 15:28:21 2018,regr.ksvm,1,1,basic sum C1 + C2,ignore,none,asis,1.50586816141054,random,236,9,cv,20,3,NA,5,10.5903274066123,0.00183260772393018
+0.936,0.888,0.152,0.168,0.076,Tue Feb 13 15:30:11 2018,regr.randomForest,1,1,basic sum C1 + C2,ignore,none,asis,1.50586816141054,random,236,69,cv,20,3,NA,5,1,2
+0.936,0.889,0.158,0.167,0.075,Tue Feb 13 15:31:37 2018,regr.RRF,1,1,basic sum C1 + C2,ignore,none,asis,1.50586816141054,random,236,71,cv,20,3,NA,5,2,0.751573314657435
+0.973,0.967,0.054,0.049,0.032,Tue Feb 13 15:32:00 2018,regr.svm,1,1,basic sum C1 + C2,ignore,none,asis,1.50586816141054,random,236,9,cv,20,3,NA,5,7.15703365866226,0.00344985218669989
+0.905,0.875,-1,0.321,0.172,Tue Feb 13 15:32:47 2018,regr.cforest,1,1,basic sum C1 + C2,ignore,none,quantile,1.48086689322946,nohyperparam,320,14,cv,20,3,NA,5
+NA,NA,0.02,NA,NA,Tue Feb 13 15:36:42 2018,regr.extraTrees,1,1,basic sum C1 + C2,ignore,none,quantile,1.48086689322946,random,320,213,cv,20,3,NA,5,2,5
+0.872,0.854,-1,0.281,0.194,Tue Feb 13 15:37:03 2018,regr.frbs,1,1,basic sum C1 + C2,ignore,none,quantile,1.48086689322946,nohyperparam,320,11,cv,20,3,NA,5
+0.951,0.949,0.023,0.199,0.097,Tue Feb 13 15:37:55 2018,regr.ksvm,1,1,basic sum C1 + C2,ignore,none,quantile,1.48086689322946,random,320,11,cv,20,3,NA,5,83.5741823774546,0.560761849503678
+0.962,0.951,0.026,0.172,0.08,Tue Feb 13 15:39:43 2018,regr.randomForest,1,1,basic sum C1 + C2,ignore,none,quantile,1.48086689322946,random,320,63,cv,20,3,NA,5,3,2
+0.96,0.949,0.027,0.178,0.082,Tue Feb 13 15:41:21 2018,regr.RRF,1,1,basic sum C1 + C2,ignore,none,quantile,1.48086689322946,random,320,81,cv,20,3,NA,5,2,0.523807800607756
+0.944,0.94,0.023,0.241,0.126,Tue Feb 13 15:41:52 2018,regr.svm,1,1,basic sum C1 + C2,ignore,none,quantile,1.48086689322946,random,320,16,cv,20,3,NA,5,30277.1326174016,1.64061192295858
+0.879,0.819,-1,0.244,0.133,Tue Feb 13 15:42:49 2018,regr.cforest,1,2,basic sum C1 + C2,ignore,none,quantile,1.35263290078711,nohyperparam,261,14,cv,20,3,NA,5
+NA,NA,0.143,NA,NA,Tue Feb 13 15:51:54 2018,regr.extraTrees,1,2,basic sum C1 + C2,ignore,none,quantile,1.35263290078711,random,261,514,cv,20,3,NA,5,2,5
+0.768,0.746,-1,0.344,0.255,Tue Feb 13 15:52:17 2018,regr.frbs,1,2,basic sum C1 + C2,ignore,none,quantile,1.35263290078711,nohyperparam,261,11,cv,20,3,NA,5
+0.923,0.9,0.127,0.136,0.085,Tue Feb 13 15:53:27 2018,regr.ksvm,1,2,basic sum C1 + C2,ignore,none,quantile,1.35263290078711,random,261,13,cv,20,3,NA,5,586.99865846748,0.671375379510926
+0.944,0.91,0.166,0.122,0.061,Tue Feb 13 15:55:43 2018,regr.randomForest,1,2,basic sum C1 + C2,ignore,none,quantile,1.35263290078711,random,261,77,cv,20,3,NA,5,2,2
+0.943,0.907,0.172,0.126,0.062,Tue Feb 13 15:57:20 2018,regr.RRF,1,2,basic sum C1 + C2,ignore,none,quantile,1.35263290078711,random,261,74,cv,20,3,NA,5,2,0.973069929517806
+0.917,0.899,0.164,0.137,0.091,Tue Feb 13 15:57:55 2018,regr.svm,1,2,basic sum C1 + C2,ignore,none,quantile,1.35263290078711,random,261,17,cv,20,3,NA,5,1414.3639653412,0.073030540392704
