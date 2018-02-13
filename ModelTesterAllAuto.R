@@ -244,7 +244,7 @@ for(gend.data in gensTTest){
           nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
           #nzv[nzv$nzv,][1:10,]
           if(length(nzv)>1){
-            df.toprocess = signif(df.toprocess[, -nzv])}
+            df.toprocess = (df.toprocess[, -nzv])}
           df.toprocess = signif(df.toprocess,digits = 3)
           
           seed.var =222+round(runif(1,min=0,max=100))
