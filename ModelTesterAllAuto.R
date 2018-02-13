@@ -3,7 +3,7 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #zz <- file("all.Rout", open="wt")https://cran.cnr.berkeley.edu
 #sink(zz, type="message") edit for rebaseless
 #chek for R package updates
-#try(log("a"))
+#try(log("a")) ## test --no-edit
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 
@@ -27,6 +27,7 @@ normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quan
 
 gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
+gensTTest<-gensTTesto[length(gensTTesto):1]
 try({
   gensTTest<-(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 })
@@ -245,6 +246,7 @@ for(gend.data in gensTTest){
           #nzv[nzv$nzv,][1:10,]
           if(length(nzv)>1){
             df.toprocess = (df.toprocess[, -nzv])}
+          df.toprocess = signif(df.toprocess,digits = 3)
           
           seed.var =222+round(runif(1,min=0,max=100))
           set.seed(seed.var)
