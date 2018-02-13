@@ -17,22 +17,7 @@ Wed Jan 03 20:49:26 2018,regr.xyf,kaggle housing,3,20,windows,i386,ALTA
 Wed Jan 03 20:58:03 2018,regr.h2o.gbm,kaggle housing,3,20,windows,i386,ALTA
 
 Wed Jan 03 22:20:37 2018,regr.xyf,sparsity 2 row center,3,20,windows,i386,ALTA
-Thu Jan 04 20:59:25 2018,regr.ksvm,OpenML 2dplanes,3,20,windows,i386,ALTA
-Thu Jan 04 21:24:03 2018,regr.bartMachine,OpenML 2dplanes,3,20,windows,i386,ALTA
-Thu Jan 04 21:54:47 2018,regr.ksvm,OpenML 2dplanes,3,20,windows,i386,ALTA
 
-Fri Jan 05 20:02:08 2018,regr.randomForest,OpenML 2dplanes,3,20,windows,i386,ALTA
-Fri Jan 05 21:51:04 2018,regr.ksvm,OpenML 2dplanes,3,20,windows,i386,ALTA
-Sat Jan 06 14:20:40 2018,regr.ksvm,OpenML 2dplanes,3,20,windows,i386,ALTA
-Sun Jan 07 14:56:45 2018,regr.rknn,OpenML 2dplanes,3,20,windows,i386,ALTA
-Mon Jan 08 12:45:37 2018,regr.RRF,OpenML 2dplanes,3,20,windows,i386,ALTA
-
-Tue Jan 09 15:45:53 2018,regr.svm,OpenML 2dplanes,3,20,windows,i386,ALTA
-
-Thu Jan 11 14:15:00 2018,regr.blackboost,OpenML 2dplanes,3,20,windows,i386,ALTA
-Sat Jan 13 22:02:39 2018,regr.bartMachine,OpenML 2dplanes,3,20,windows,i386,ALTA
-Sun Jan 14 19:24:32 2018,regr.svm,OpenML 2dplanes,3,20,windows,i386,ALTA
-Thu Jan 18 16:26:22 2018,regr.svm,OpenML 2dplanes,3,20,windows,i386,ALTA
-Thu Jan 18 23:43:31 2018,regr.bartMachine,OpenML 2dplanes,3,20,windows,i386,ALTA
-Sat Jan 27 20:29:24 2018,regr.bartMachine,OpenML 2dplanes,3,20,windows,i386,ALTA
 Sat Jan 27 21:51:09 2018,regr.blackboost,bas interactive latent features,3,20,windows,i386,ALTA
+Sun Jan 28 23:06:12 2018,regr.rknn,bas interactive latent features,3,20,windows,i386,ALTA
+
