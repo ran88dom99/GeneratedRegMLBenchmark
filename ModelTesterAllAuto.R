@@ -27,12 +27,11 @@ normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quan
 
 gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
-gensTTest<-gensTTesto[length(gensTTesto):1]
 try({
   gensTTest<-(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 })
-if(!exists("gensTTest")) gensTTest<-gensTTesto[length(gensTTesto):1]#inversion[length(inversion):1]
-if(length(gensTTest)<1) gensTTest<-gensTTesto[length(gensTTesto):1]#inversion[length(inversion):1]
+if(!exists("gensTTest")) gensTTest<-gensTTesto[length(gensTTesto):1]#reversion[length(reversion):1]
+if(length(gensTTest)<1) gensTTest<-gensTTesto[length(gensTTesto):1]#reversion[length(reversion):1]
 
 
 ########packages install check######
@@ -272,7 +271,7 @@ for(gend.data in gensTTest){
           
          setwd(cpout.folder)
           if(norming == normings[length(normings)]){
-            write.table( gensTTest[count.toy.data.passed],file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
+            write.table( gensTTest[-count.toy.data.passed],file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
           
         }
       }
