@@ -30,7 +30,9 @@ write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep =
 try({
   gensTTest<-(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 })
-if(length(gensTTest)<1) gensTTest<-gensTTesto#inversion[length(inversion):1]
+if(!exists("gensTTest")) gensTTest<-gensTTesto[length(gensTTesto):1]#inversion[length(inversion):1]
+if(length(gensTTest)<1) gensTTest<-gensTTesto[length(gensTTesto):1]#inversion[length(inversion):1]
+
 
 ########packages install check######
 
@@ -177,7 +179,9 @@ print(date());
 setwd(base.folder)
 if(!exists("gen.count")){gen.count=56}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
+count.toy.data.passed<-0
 for(gend.data in gensTTest){
+  count.toy.data.passed<-count.toy.data.passed+1
   setwd(base.folder)
   data.source<-as.matrix(read.csv(paste("Generats/",gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   datasource<-gens.names[gend.data,1]
@@ -267,7 +271,7 @@ for(gend.data in gensTTest){
           
          setwd(cpout.folder)
           if(norming == normings[length(normings)]){
-            write.table( gensTTest[-1],file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
+            write.table( gensTTest[count.toy.data.passed],file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
           
         }
       }
