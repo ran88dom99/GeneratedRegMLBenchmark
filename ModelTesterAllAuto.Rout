@@ -44,11 +44,271 @@ Type 'q()' to quit R.
 > 
 > gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 > write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
+> gensTTest<-gensTTesto[length(gensTTesto):1]
 > try({
 +   gensTTest<-(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 + })
-Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
-  no lines available in input
 > if(length(gensTTest)<1) gensTTest<-gensTTesto#inversion[length(inversion):1]
-Error: object 'gensTTest' not found
+> 
+> ########packages install check######
+> 
+> #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
+> #list.of.packages <- c("gower","dimRed","DEoptimR","caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
+> #new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+> #if(length(new.packages)) install.packages(new.packages, dep = TRUE)
+> 
+> 
+> #install.packages("mlr", dependencies = c("Depends", "Suggests"))
+> #install.packages("caret", dependencies = c("Depends", "Suggests"))
+> #install.packages("caret",repos = "http://cran.r-project.org",dependencies = c("Depends", "Imports", "Suggests"))
+> #install.packages("SuperLearner", dependencies = c("Depends", "Suggests"))
+> #install.packages("rattle", dependencies = c("Depends", "Suggests"))
+> 
+> # Load libraries
+> #library(mlbench)
+> 
+> library(caret)
+Loading required package: lattice
+Loading required package: ggplot2
+> #library(caretEnsemble)
+> library(MLmetrics)
+
+Attaching package: 'MLmetrics'
+
+The following objects are masked from 'package:caret':
+
+    MAE, RMSE
+
+The following object is masked from 'package:base':
+
+    Recall
+
+> 
+> ########error no repeat#########
+> 
+> 
+> try({
++   before.last.alg<-as.matrix(read.csv("beforelast algorithm.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
++   last.alg<-as.matrix(read.csv("last algorithm tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
++   #write.table(paste(date(), last.alg,.Platform$OS.type,.Platform$r_arch,which.computer,sep=" "),file = "algos after which reset.csv",  quote = F, row.names = F,col.names = F,append = T)
++   if(last.alg==before.last.alg){print("algorithm may be broken")}
++   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
++ })
+> try({
++   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
++   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
++   write.table(paste(date(),last.alg, last.tsk,cv.iters,tuneLength,.Platform$OS.type,.Platform$r_arch,which.computer,sep=","),file = "test after which reset.csv",  quote = F, row.names = F,col.names = F,append = T)
++   if(last.tsk==before.last.tsk){print("task may be broken")}
++   write.table(last.tsk,file = "beforelast task.csv",  quote = F, row.names = F,col.names = F)
++ })
+> bad.models=c("spaccceeee")
+> previous.fails<-(read.csv("test after which reset.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+> previous.fails<-previous.fails[previous.fails[,8]==which.computer,]
+> lgf<-length(previous.fails[,2])
+> for(lt in 2:lgf)  {
++   if(previous.fails[lt,2]==previous.fails[lt-1,2])  {
++     bad.models=union(bad.models,c(paste(previous.fails[lt,2])))  }}
+> 
+> #######not to redo a test function#####
+> check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextra="missing",missingdata="leaveempty",datasource="mean" ,column.to.predict=200,allmodel="ctree")
++ {
++   for(intern in 1:length(df[,1])){
++     if((any(df[intern,] == norming, na.rm=T))&&
++        (any(df[intern,] == withextra, na.rm=T))&&
++        (any(df[intern,] == missingdata, na.rm=T))&&
++        (any(df[intern,] == datasource, na.rm=T))&&
++        (any(df[intern,] == column.to.predict, na.rm=T))&&
++        (any(df[intern,] == allmodel, na.rm=T))&&
++        (  (df[intern,9] == trans.y)))
++     {return(TRUE)}
++   }
++   return(FALSE)
++ }
+> #####caret init#####
+> best.ranged <- c("avNNet", "nnet", "pcaNNet", "glm.nb")
+> best.asis <- c("svmLinear3", "relaxo", "superpc", "xgbTree")
+> best.cns <- c("gam", "bam", "svmLinear2", "msaenet", "BstLm", "gbm") 
+> 
+> cv6hp5 <- c( "BstLm", "qrnn")#earth
+> cv3hp32 <- c("Rborist", "pcaNNet", "SBC")
+> cv7x5hp32 <- c("gbm", "krlsPoly", "kknn", "xgbLinear","RRF", "cubist", "rlm" )
+> cv6hp5.avoid <- c("pcaNNet")
+> cv3hp32.avoid <- c("glm.nb", "gamboost", "ctree2","glmboost", "leapSeq","ctree","svmLinear2")
+> cv7x5hp32.avoid <- c("SBC","bagearthgcv","gcvearth","lmStepAIC","glmStepAIC","bridge","lm","glm","bayesglm","blassoAveraged","treebag","rpart1SE")
+> 
+> allmodels <- c("avNNet", "bagEarth", "bagEarthGCV",
++                "bayesglm", "bdk", "blackboost", "Boruta", "brnn", "BstLm" ,
++                "bstTree", "cforest", "ctree", "ctree2", "cubist", "DENFIS",
++                "dnn", "earth", "elm", "enet",   "evtree",
++                "extraTrees",  "gamLoess",  "gaussprLinear", "gaussprPoly", "gaussprRadial",
++                "gcvEarth","glm", "glmboost",  "icr", "kernelpls",
++                "kknn", "knn",  "krlsRadial", "lars" , "lasso",
++                "leapBackward", "leapForward", "leapSeq", "lm", "M5", "M5Rules",
++                "mlpWeightDecay", "neuralnet" , "partDSA",
++                "pcaNNet", "pcr", "penalized", "pls", "plsRglm", "ppr",
++                "qrf" , "ranger",  "rf")
+> allmodels <- c("rlm", "rpart", "rpart2",
++                "RRF", "RRFglobal",  "simpls",
++                "svmLinear", "svmPoly", "svmRadial", "svmRadialCost",
++                "widekernelpls",  "xgbLinear",
++                "xgbTree")
+> allmodels <- c("avNNet","BstLm","bstTree","cforest","ctree","ctree2",
++                "cubist","earth","enet","evtree","glmboost",
++                "icr","kernelpls","kknn","lasso","pcaNNet",
++                "pcr","pls","qrf","ranger","rf")
+> 
+> allmodels <- c("kknn", "cubist", "avNNet", "xgbLinear", "RRF", "pcaNNet","earth","nnet","gbm","enet","lasso","BstLm",
++                "foba", "leapBackward", "gcvEarth", "SBC","glm.nb","gamboost","ctree2","relaxo", 
++                "bartMachine","extraTrees","bam","gam","randomGLM")
+> #allmodels <- c("bam")
+> #allmodels <- c("rf")"rqlasso",, "xyf" "rvmPoly", "rvmRadial",    "spls", "superpc" ,   "treebag",  "svmLinear2",  "SBC",
+> #allmodels <- c("bartMachine", "xgbLinear", "pcaNNet","svmLinear","glmnet","cforest","cubist","rf","ranger")"glmnet",
+> #wow rfRules is really slow "rfRules","WM", takes 50min
+> # brak everythig "rbfDDA","ridge","rqnc",
+> # use "rf" to test all
+> library(caret)
+> allmodels <- unique(modelLookup()[modelLookup()$forReg,c(1)])
+> #allmodels <-c("avNNet", "nnet", "pcaNNet",  "glm.nb", "gam" ,
+> #              "bam","msaenet", "svmLinear2","svmLinear3",
+> #              "relaxo",  "superpc", "xgbTree", "BstLm")
+> #allmodels<- c("svmLinear","svmPoly","svmRadial")
+> #library(doParallel); cl <- makeCluster(detectCores()); registerDoParallel(cl)
+> #allmodels<-c("bartMachine","extraTrees")#,"randomGLM"
+> 
+> 
+> adaptControl <- trainControl(method = "adaptive_cv",
++                              number = 7, repeats = 5,
++                              adaptive = list(min = 4, alpha = 0.05,
++                                              method = "gls", complete = FALSE),
++                              search = "random")
+> adaptControl <-trainControl(method = "cv", number = cv.iters,  search = "random")
+> simpleControl <- trainControl(method = "cv",
++                               number = cv.iters,
++                               search = "random")
+> 
+> 
+> #########MLR init######
+> #R.utils::gcDLLs()
+> #list.of.packages <- c("ParamHelpers","devtools","mlrMBO","RJSONIO","plot3D","plotly")
+> #install.packages("mlrMBO", dependencies = c("Depends", "Suggests"))
+> list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
+> new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+> if(length(new.packages)) install.packages(new.packages, dep = TRUE)
+Warning message:
+packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.3) 
+> 
+> #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
+> #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
+> 
+> tuneLengthMLR<-tuneLength
+> mlr.iters<-cv.iters
+> #######data read process start#####
+> seed.var =222+round(runif(1,min=0,max=100))
+> column.to.predict=1
+> print(date());
+[1] "Tue Feb 13 17:11:31 2018"
+> 
+> setwd(base.folder)
+> if(!exists("gen.count")){gen.count=56}
+> gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
+> for(gend.data in gensTTest){
++   setwd(base.folder)
++   data.source<-as.matrix(read.csv(paste("Generats/",gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
++   datasource<-gens.names[gend.data,1]
++   setwd(cpout.folder)
++   missingdatas=c("ignore")
++   for(missingdata in missingdatas){
++     withextras=c("none")
++     for(withextra in withextras){
++       ################data wrestling###############
++       
++       dependant.selection=complete.cases(data.source[,column.to.predict])
++       df.previous.calcs=as.data.frame(read.csv(file=out.file, header = FALSE, sep = ",", quote = "",
++                                                dec = ".", fill = TRUE, comment.char = ""))
++       unimportant.computations<-vector(mode = "logical",length=length(df.previous.calcs[,1])  )
++       for(intern in 1:length(df.previous.calcs[,1])){
++         if((any(df.previous.calcs[intern,] == withextra, na.rm=T))&&
++            (any(df.previous.calcs[intern,] == missingdata, na.rm=T))&&
++            (any(df.previous.calcs[intern,] == datasource, na.rm=T))&&
++            (any(df.previous.calcs[intern,] == column.to.predict, na.rm=T)))
++         {unimportant.computations[intern]<-T}}
++       
++       df.previous.calcs<-df.previous.calcs[unimportant.computations,]
++       
++       
++       
++       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
++       
++       
++         for(norming in normings) {
++         for(trans.y in 1:2) {
++           df.toprocess=data.source
++           y.untransformed<-df.toprocess[,1]
++           
++           if(norming=="centernscale"){
++             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("center", "scale"))
++             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++           if(norming=="range01"){
++             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
++             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++           if(norming=="expoTrans"){
++             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("expoTrans"))
++             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++           if(norming=="YeoJohnson"){
++             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("YeoJohnson"))#"center", "scale",
++             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++           
++           if((norming=="asis")&&(trans.y==2)){next}
++           
++           
++           ################preprocess###########
++           df.toprocess=data.frame(df.toprocess[dependant.selection,])
++           y.untransformed=y.untransformed[dependant.selection]
++           if(norming=="quantile"){
++             for(Clol in trans.y:length(data.source[1,])){
++               df.toprocess[,Clol]<- (rank(df.toprocess[,Clol],na.last = "keep",ties.method = "average")-1) }
++             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
++             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++           
++           
++           loess.model<-loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
++           
++           
++           #df.toprocess = data.frame(df.toprocess,)
++           nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
++           #nzv[nzv$nzv,][1:10,]
++           if(length(nzv)>1){
++             df.toprocess = (df.toprocess[, -nzv])}
++           df.toprocess = signif(df.toprocess,digits = 3)
++           
++           seed.var =222+round(runif(1,min=0,max=100))
++           set.seed(seed.var)
++           inTrain <- createDataPartition(y = df.toprocess[,1],
++                                          p = .75,
++                                          list = FALSE)
++           training <- df.toprocess[ inTrain,]
++           testing  <- df.toprocess[-inTrain,]
++           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F,col.names = F)
++           
++           
++           
++           ###########for all models#################
++           setwd(base.folder)
++           if(max(which.computer==c("ALTA","HOPPER"))>0)
++             source("MLR part.R")
++           else
++             source("Caret part.R")
++           
++          setwd(cpout.folder)
++           if(norming == normings[length(normings)]){
++             write.table( gensTTest[-1],file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
++           
++         }
++       }
++     }
++   }
++   
++ }
+Error in file(file, "rt") : invalid 'description' argument
+Calls: as.matrix -> read.csv -> read.table -> file
 Execution halted
