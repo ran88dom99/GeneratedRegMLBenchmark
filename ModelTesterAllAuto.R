@@ -26,12 +26,13 @@ tuneLength2=8
 normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quantile")#,"centernscale"
 
 gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+gensTTest<-vector()
 write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 try({
   gensTTest<-(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 })
-if(!exists("gensTTest")) gensTTest<-gensTTesto[length(gensTTesto):1]#reversion[length(reversion):1]
-if(length(gensTTest)<1) gensTTest<-gensTTesto[length(gensTTesto):1]#reversion[length(reversion):1]
+if(!exists("gensTTest")) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
+if(length(gensTTest)<1) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
 
 
 ########packages install check######
@@ -205,10 +206,7 @@ for(gend.data in gensTTest){
       
       df.previous.calcs<-df.previous.calcs[unimportant.computations,]
       
-      
-      
       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
-      
       
         for(norming in normings) {
         for(trans.y in 1:2) {
@@ -240,10 +238,8 @@ for(gend.data in gensTTest){
             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
           
-          
           loess.model<-loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
-          
-          
+  
           #df.toprocess = data.frame(df.toprocess,)
           nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
           #nzv[nzv$nzv,][1:10,]
@@ -259,8 +255,6 @@ for(gend.data in gensTTest){
           training <- df.toprocess[ inTrain,]
           testing  <- df.toprocess[-inTrain,]
           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F,col.names = F)
-          
-          
           
           ###########for all models#################
           setwd(base.folder)

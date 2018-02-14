@@ -9250,3 +9250,15 @@ Succ, Tue Feb 13 15:53:27 2018, regr.ksvm
 Succ, Tue Feb 13 15:55:43 2018, regr.randomForest
 Succ, Tue Feb 13 15:57:20 2018, regr.RRF
 Succ, Tue Feb 13 15:57:55 2018, regr.svm
+Succ, Tue Feb 13 21:45:25 2018, regr.bcart
+Succ, Tue Feb 13 21:45:31 2018, regr.bdk
+Succ, Tue Feb 13 21:45:42 2018, regr.blm
+Succ, Tue Feb 13 21:45:50 2018, regr.brnn
+Succ, Tue Feb 13 21:45:57 2018, regr.bst
+Succ, Tue Feb 13 21:46:03 2018, regr.btlm
+Succ, Tue Feb 13 21:46:10 2018, regr.cforest
+Succ, Tue Feb 13 21:46:19 2018, regr.ctree
+Succ, Tue Feb 13 21:46:26 2018, regr.cubist
+Succ, Tue Feb 13 21:46:34 2018, regr.cvglmnet
+Succ, Tue Feb 13 21:46:41 2018, regr.earth
+Succ, Tue Feb 13 21:46:47 2018, regr.elmNN

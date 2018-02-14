@@ -8344,3 +8344,19 @@ NA,NA,0.143,NA,NA,Tue Feb 13 15:51:54 2018,regr.extraTrees,1,2,basic sum C1 + C2
 0.944,0.91,0.166,0.122,0.061,Tue Feb 13 15:55:43 2018,regr.randomForest,1,2,basic sum C1 + C2,ignore,none,quantile,1.35263290078711,random,261,77,cv,20,3,NA,5,2,2
 0.943,0.907,0.172,0.126,0.062,Tue Feb 13 15:57:20 2018,regr.RRF,1,2,basic sum C1 + C2,ignore,none,quantile,1.35263290078711,random,261,74,cv,20,3,NA,5,2,0.973069929517806
 0.917,0.899,0.164,0.137,0.091,Tue Feb 13 15:57:55 2018,regr.svm,1,2,basic sum C1 + C2,ignore,none,quantile,1.35263290078711,random,261,17,cv,20,3,NA,5,1414.3639653412,0.073030540392704
+Fail,Fail,Fail,Fail,PrePackageFail,Tue Feb 13 21:45:12 2018,regr.bartMachine,1,2,Recc sim 1,ignore,none,YeoJohnson,6
+0,0,-1,0.828,0.657,Tue Feb 13 21:45:25 2018,regr.bcart,1,2,Recc sim 1,ignore,none,YeoJohnson,0.828126047169149,nohyperparam,240,10,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Tue Feb 13 21:45:31 2018,regr.bdk,1,2,Recc sim 1,ignore,none,YeoJohnson,0.828126047169149,nohyperparam,240,4,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Tue Feb 13 21:45:35 2018,regr.blackboost,1,2,Recc sim 1,ignore,none,YeoJohnson,4
+NA,NA,-1,NA,NA,Tue Feb 13 21:45:42 2018,regr.blm,1,2,Recc sim 1,ignore,none,YeoJohnson,0.828126047169149,nohyperparam,240,4,cv,20,3,NA,5
+0.728,0.693,-1,0.254,0.179,Tue Feb 13 21:45:50 2018,regr.brnn,1,2,Recc sim 1,ignore,none,YeoJohnson,0.828126047169149,nohyperparam,240,5,cv,20,3,NA,5
+0.713,0.708,-1,0.243,0.189,Tue Feb 13 21:45:57 2018,regr.bst,1,2,Recc sim 1,ignore,none,YeoJohnson,0.828126047169149,nohyperparam,240,3,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Tue Feb 13 21:46:03 2018,regr.btlm,1,2,Recc sim 1,ignore,none,YeoJohnson,0.828126047169149,nohyperparam,240,3,cv,20,3,NA,5
+0.213,0.189,-1,0.672,0.517,Tue Feb 13 21:46:10 2018,regr.cforest,1,2,Recc sim 1,ignore,none,YeoJohnson,0.828126047169149,nohyperparam,240,4,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Tue Feb 13 21:46:13 2018,regr.crs,1,2,Recc sim 1,ignore,none,YeoJohnson,3
+0.433,0.413,-1,0.486,0.373,Tue Feb 13 21:46:19 2018,regr.ctree,1,2,Recc sim 1,ignore,none,YeoJohnson,0.828126047169149,nohyperparam,240,4,cv,20,3,NA,5
+0.537,0.518,-1,NA,NA,Tue Feb 13 21:46:26 2018,regr.cubist,1,2,Recc sim 1,ignore,none,YeoJohnson,0.828126047169149,nohyperparam,240,4,cv,20,3,NA,5
+0.777,0.768,-1,NA,NA,Tue Feb 13 21:46:34 2018,regr.cvglmnet,1,2,Recc sim 1,ignore,none,YeoJohnson,0.828126047169149,nohyperparam,240,4,cv,20,3,NA,5
+0.518,0.485,-1,NA,NA,Tue Feb 13 21:46:41 2018,regr.earth,1,2,Recc sim 1,ignore,none,YeoJohnson,0.828126047169149,nohyperparam,240,4,cv,20,3,NA,5
+-0.026,-0.019,-1,0.844,0.674,Tue Feb 13 21:46:47 2018,regr.elmNN,1,2,Recc sim 1,ignore,none,YeoJohnson,0.828126047169149,nohyperparam,240,3,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Tue Feb 13 21:46:50 2018,regr.evtree,1,2,Recc sim 1,ignore,none,YeoJohnson,3
