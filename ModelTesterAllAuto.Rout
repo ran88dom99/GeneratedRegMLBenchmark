@@ -1,11 +1,13 @@
 
-R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
+R version 3.4.1 (2017-06-30) -- "Single Candle"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
 
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
@@ -43,12 +45,13 @@ Type 'q()' to quit R.
 > normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quantile")#,"centernscale"
 > 
 > gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+> gensTTest<-vector()
 > write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 > try({
 +   gensTTest<-(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 + })
-> if(!exists("gensTTest")) gensTTest<-gensTTesto[length(gensTTesto):1]#reversion[length(reversion):1]
-> if(length(gensTTest)<1) gensTTest<-gensTTesto[length(gensTTesto):1]#reversion[length(reversion):1]
+> if(!exists("gensTTest")) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
+> if(length(gensTTest)<1) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
 > 
 > 
 > ########packages install check######
@@ -76,9 +79,9 @@ Loading required package: ggplot2
 
 Attaching package: 'MLmetrics'
 
-The following objects are masked from 'package:caret':
+The following object is masked from 'package:caret':
 
-    MAE, RMSE
+    RMSE
 
 The following object is masked from 'package:base':
 
@@ -95,7 +98,6 @@ The following object is masked from 'package:base':
 +   if(last.alg==before.last.alg){print("algorithm may be broken")}
 +   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 + })
-[1] "algorithm may be broken"
 > try({
 +   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 +   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -197,8 +199,14 @@ The following object is masked from 'package:base':
 > list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
+Installing packages into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
+(as 'lib' is unspecified)
+Warning: unable to access index for repository https://rweb.crmda.ku.edu/cran/src/contrib:
+  cannot open URL 'https://rweb.crmda.ku.edu/cran/src/contrib/PACKAGES'
+Warning: unable to access index for repository https://rweb.crmda.ku.edu/cran/bin/windows/contrib/3.4:
+  cannot open URL 'https://rweb.crmda.ku.edu/cran/bin/windows/contrib/3.4/PACKAGES'
 Warning message:
-packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.3) 
+packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1) 
 > 
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
@@ -209,7 +217,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Tue Feb 13 21:30:42 2018"
+[1] "Thu Feb 15 12:41:56 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -240,10 +248,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 +       
 +       df.previous.calcs<-df.previous.calcs[unimportant.computations,]
 +       
-+       
-+       
 +       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
-+       
 +       
 +         for(norming in normings) {
 +         for(trans.y in 1:2) {
@@ -275,10 +280,8 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 +             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
 +             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
 +           
-+           
 +           loess.model<-loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
-+           
-+           
++   
 +           #df.toprocess = data.frame(df.toprocess,)
 +           nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
 +           #nzv[nzv$nzv,][1:10,]
@@ -294,8 +297,6 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 +           training <- df.toprocess[ inTrain,]
 +           testing  <- df.toprocess[-inTrain,]
 +           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F,col.names = F)
-+           
-+           
 +           
 +           ###########for all models#################
 +           setwd(base.folder)
@@ -314,6 +315,6 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 +   }
 +   
 + }
-Error in file(file, "rt") : invalid 'description' argument
-Calls: as.matrix -> read.csv -> read.table -> file
-Execution halted
+Loading required package: evtree
+Loading required package: partykit
+Loading required package: grid

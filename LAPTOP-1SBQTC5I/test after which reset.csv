@@ -1,52 +1,8 @@
-Mon Dec 18 08:39:39 2017,regr.gamboost,3,20,just random,windows,i386,ALTA
 Mon Dec 18 08:48:29 2017,regr.bgpllm,3,20,just random,windows,i386,ALTA
 Mon Dec 18 08:48:29 2017,regr.bgpllm,3,20,just random,windows,i386,ALTA
 
-Mon Dec 18 14:25:31 2017,svmLinear3,just random,3,20,unix,,dg-775i65GV
-Mon Dec 18 14:25:31 2017,regr.randomForest,just random,3,20,unix,,dg-775i65GV
-Mon Dec 18 14:31:26 2017,svmLinear3,just random,3,20,unix,,dg-775i65GV
-Mon Dec 18 14:31:26 2017,regr.randomForest,just random,3,20,unix,,dg-775i65GV
-Mon Dec 18 17:27:29 2017,svmLinear3,Boston Housing,3,20,unix,,dg-775i65GV
-Mon Dec 18 17:28:58 2017,mlpKerasDecay,Boston Housing,3,20,unix,,dg-775i65GV
-
-Mon Dec 18 17:32:10 2017,avNNet,Boston Housing,3,20,unix,,dg-775i65GV
-Tue Dec 19 17:32:13 2017,cubist,Boston Housing,3,20,unix,,dg-775i65GV
-Wed Dec 20 17:32:14 2017,svmLinear3,Boston Housing,3,20,unix,,dg-775i65GV
-Thu Dec 21 17:32:10 2017,svmLinear3,Boston Housing,3,20,unix,,dg-775i65GV
-Fri Dec 22 17:32:16 2017,qrnn,just random,3,20,unix,,dg-775i65GV
-Sat Dec 23 17:32:16 2017,SBC,just random,3,20,unix,,dg-775i65GV
 Sun Dec 24 17:32:17 2017,qrnn,just random,3,20,unix,,dg-775i65GV
 Sun Dec 24 20:12:32 2017,qrnn,just random,3,20,unix,,dg-775i65GV
-Mon Dec 25 17:32:16 2017,SBC,just random,3,20,unix,,dg-775i65GV
-Fri Dec 29 20:08:57 2017,bridge,Friedman's 1st,3,20,unix,,dg-775i65GV
-Sat Dec 30 17:32:38 2017,cforest,kaggle housing,3,20,unix,,dg-775i65GV
-Sun Dec 31 17:32:17 2017,dnn,kaggle housing,3,20,unix,,dg-775i65GV
-Mon Jan  1 17:32:24 2018,cforest,kaggle housing,3,20,unix,,dg-775i65GV
-Tue Jan  2 17:32:20 2018,SBC,kaggle housing,3,20,unix,,dg-775i65GV
 
-Thu Jan  4 20:34:31 2018,dnn,kaggle housing,3,20,unix,,dg-775i65GV
-Fri Jan  5 16:49:59 2018,SBC,kaggle housing,3,20,unix,,dg-775i65GV
-Sat Jan  6 13:53:32 2018,testingmodability,kaggle housing,3,20,unix,,dg-775i65GV
-
-Fri Jan  5 18:02:52 2018,dnn,kaggle housing,3,20,unix,,dg-775i65GV
-Sat Jan  6 13:53:32 2018,cforest,kaggle housing,3,20,unix,,dg-775i65GV
-Sat Jan  6 14:11:08 2018,bartMachine,kaggle housing,3,20,unix,,dg-775i65GV
-
-Sat Jan  6 14:49:50 2018,cforest,kaggle housing,3,20,unix,,dg-775i65GV
-Sat Jan  6 15:47:03 2018,cforest,kaggle housing,3,20,unix,,dg-775i65GV
-Sat Jan  6 16:38:42 2018,dnn,kaggle housing,3,20,unix,,dg-775i65GV
-Sat Jan  6 17:32:21 2018,dnn,kaggle housing,3,20,unix,,dg-775i65GV
-Sun Jan  7 17:32:18 2018,cubist,kaggle housing,3,20,unix,,dg-775i65GV
-Mon Jan  8 17:32:20 2018,elm,kaggle housing,3,20,unix,,dg-775i65GV
-Tue Jan  9 17:32:19 2018,SBC,kaggle housing,3,20,unix,,dg-775i65GV
-
-Thu Jan 11 17:32:48 2018,bartMachine,OpenML 2dplanes,3,20,unix,,dg-775i65GV
-Fri Jan 12 17:32:23 2018,bartMachine,OpenML 2dplanes,3,20,unix,,dg-775i65GV
-Sat Jan 13 20:47:36 2018,blasso,OpenML 2dplanes,3,20,unix,,dg-775i65GV
-Tue Jan 16 18:11:47 2018,evtree,OpenML 2dplanes,3,20,unix,,dg-775i65GV
-Wed Jan 24 13:39:25 2018,bagEarth,OpenML 2dplanes,3,20,unix,,dg-775i65GV
-Sat Jan 27 19:05:05 2018,evtree,OpenML 2dplanes,3,20,unix,,dg-775i65GV
-
-Sun Jan 28 21:41:59 2018,extraTrees,OpenML 2dplanes,3,20,unix,,dg-775i65GV
-Wed Feb 14 14:49:45 2018,extraTrees,OpenML 2dplanes,3,20,windows,x64,LAPTOP-1SBQTC5I
 Wed Feb 14 14:50:55 2018,extraTrees,OpenML 2dplanes,3,20,windows,x64,LAPTOP-1SBQTC5I
+Thu Feb 15 12:41:28 2018,evtree,OpenML 2dplanes,3,20,windows,x64,LAPTOP-1SBQTC5I
