@@ -316,3 +316,11 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 +   }
 +   
 + }
+Loading required package: kernlab
+
+Attaching package: 'kernlab'
+
+The following object is masked from 'package:ggplot2':
+
+    alpha
+
