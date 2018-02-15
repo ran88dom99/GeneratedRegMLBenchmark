@@ -74,3 +74,128 @@ Type 'q()' to quit R.
 > library(caret)
 Loading required package: lattice
 Loading required package: ggplot2
+> #library(caretEnsemble)
+> library(MLmetrics)
+
+Attaching package: 'MLmetrics'
+
+The following object is masked from 'package:caret':
+
+    RMSE
+
+The following object is masked from 'package:base':
+
+    Recall
+
+> 
+> ########error no repeat#########
+> 
+> 
+> try({
++   before.last.alg<-as.matrix(read.csv("beforelast algorithm.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
++   last.alg<-as.matrix(read.csv("last algorithm tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
++   #write.table(paste(date(), last.alg,.Platform$OS.type,.Platform$r_arch,which.computer,sep=" "),file = "algos after which reset.csv",  quote = F, row.names = F,col.names = F,append = T)
++   if(last.alg==before.last.alg){print("algorithm may be broken")}
++   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
++ })
+[1] "algorithm may be broken"
+> try({
++   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
++   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
++   write.table(paste(date(),last.alg, last.tsk,cv.iters,tuneLength,.Platform$OS.type,.Platform$r_arch,which.computer,sep=","),file = "test after which reset.csv",  quote = F, row.names = F,col.names = F,append = T)
++   if(last.tsk==before.last.tsk){print("task may be broken")}
++   write.table(last.tsk,file = "beforelast task.csv",  quote = F, row.names = F,col.names = F)
++ })
+[1] "task may be broken"
+> bad.models=c("spaccceeee")
+> previous.fails<-(read.csv("test after which reset.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+> previous.fails<-previous.fails[previous.fails[,8]==which.computer,]
+> lgf<-length(previous.fails[,2])
+> for(lt in 2:lgf)  {
++   if(previous.fails[lt,2]==previous.fails[lt-1,2])  {
++     bad.models=union(bad.models,c(paste(previous.fails[lt,2])))  }}
+> 
+> #######not to redo a test function#####
+> check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextra="missing",missingdata="leaveempty",datasource="mean" ,column.to.predict=200,allmodel="ctree")
++ {
++   for(intern in 1:length(df[,1])){
++     if((any(df[intern,] == norming, na.rm=T))&&
++        (any(df[intern,] == withextra, na.rm=T))&&
++        (any(df[intern,] == missingdata, na.rm=T))&&
++        (any(df[intern,] == datasource, na.rm=T))&&
++        (any(df[intern,] == column.to.predict, na.rm=T))&&
++        (any(df[intern,] == allmodel, na.rm=T))&&
++        (  (df[intern,9] == trans.y)))
++     {return(TRUE)}
++   }
++   return(FALSE)
++ }
+> #####caret init#####
+> best.ranged <- c("avNNet", "nnet", "pcaNNet", "glm.nb")
+> best.asis <- c("svmLinear3", "relaxo", "superpc", "xgbTree")
+> best.cns <- c("gam", "bam", "svmLinear2", "msaenet", "BstLm", "gbm") 
+> 
+> cv6hp5 <- c( "BstLm", "qrnn")#earth
+> cv3hp32 <- c("Rborist", "pcaNNet", "SBC")
+> cv7x5hp32 <- c("gbm", "krlsPoly", "kknn", "xgbLinear","RRF", "cubist", "rlm" )
+> cv6hp5.avoid <- c("pcaNNet")
+> cv3hp32.avoid <- c("glm.nb", "gamboost", "ctree2","glmboost", "leapSeq","ctree","svmLinear2")
+> cv7x5hp32.avoid <- c("SBC","bagearthgcv","gcvearth","lmStepAIC","glmStepAIC","bridge","lm","glm","bayesglm","blassoAveraged","treebag","rpart1SE")
+> 
+> allmodels <- c("avNNet", "bagEarth", "bagEarthGCV",
++                "bayesglm", "bdk", "blackboost", "Boruta", "brnn", "BstLm" ,
++                "bstTree", "cforest", "ctree", "ctree2", "cubist", "DENFIS",
++                "dnn", "earth", "elm", "enet",   "evtree",
++                "extraTrees",  "gamLoess",  "gaussprLinear", "gaussprPoly", "gaussprRadial",
++                "gcvEarth","glm", "glmboost",  "icr", "kernelpls",
++                "kknn", "knn",  "krlsRadial", "lars" , "lasso",
++                "leapBackward", "leapForward", "leapSeq", "lm", "M5", "M5Rules",
++                "mlpWeightDecay", "neuralnet" , "partDSA",
++                "pcaNNet", "pcr", "penalized", "pls", "plsRglm", "ppr",
++                "qrf" , "ranger",  "rf")
+> allmodels <- c("rlm", "rpart", "rpart2",
++                "RRF", "RRFglobal",  "simpls",
++                "svmLinear", "svmPoly", "svmRadial", "svmRadialCost",
++                "widekernelpls",  "xgbLinear",
++                "xgbTree")
+> allmodels <- c("avNNet","BstLm","bstTree","cforest","ctree","ctree2",
++                "cubist","earth","enet","evtree","glmboost",
++                "icr","kernelpls","kknn","lasso","pcaNNet",
++                "pcr","pls","qrf","ranger","rf")
+> 
+> allmodels <- c("kknn", "cubist", "avNNet", "xgbLinear", "RRF", "pcaNNet","earth","nnet","gbm","enet","lasso","BstLm",
++                "foba", "leapBackward", "gcvEarth", "SBC","glm.nb","gamboost","ctree2","relaxo", 
++                "bartMachine","extraTrees","bam","gam","randomGLM")
+> #allmodels <- c("bam")
+> #allmodels <- c("rf")"rqlasso",, "xyf" "rvmPoly", "rvmRadial",    "spls", "superpc" ,   "treebag",  "svmLinear2",  "SBC",
+> #allmodels <- c("bartMachine", "xgbLinear", "pcaNNet","svmLinear","glmnet","cforest","cubist","rf","ranger")"glmnet",
+> #wow rfRules is really slow "rfRules","WM", takes 50min
+> # brak everythig "rbfDDA","ridge","rqnc",
+> # use "rf" to test all
+> library(caret)
+> allmodels <- unique(modelLookup()[modelLookup()$forReg,c(1)])
+> #allmodels <-c("avNNet", "nnet", "pcaNNet",  "glm.nb", "gam" ,
+> #              "bam","msaenet", "svmLinear2","svmLinear3",
+> #              "relaxo",  "superpc", "xgbTree", "BstLm")
+> #allmodels<- c("svmLinear","svmPoly","svmRadial")
+> #library(doParallel); cl <- makeCluster(detectCores()); registerDoParallel(cl)
+> #allmodels<-c("bartMachine","extraTrees")#,"randomGLM"
+> 
+> 
+> adaptControl <- trainControl(method = "adaptive_cv",
++                              number = 7, repeats = 5,
++                              adaptive = list(min = 4, alpha = 0.05,
++                                              method = "gls", complete = FALSE),
++                              search = "random")
+> adaptControl <-trainControl(method = "cv", number = cv.iters,  search = "random")
+> simpleControl <- trainControl(method = "cv",
++                               number = cv.iters,
++                               search = "random")
+> 
+> 
+> #########MLR init######
+> #R.utils::gcDLLs()
+> #list.of.packages <- c("ParamHelpers","devtools","mlrMBO","RJSONIO","plot3D","plotly")
+> #install.packages("mlrMBO", dependencies = c("Depends", "Suggests"))
+> list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
+> new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
