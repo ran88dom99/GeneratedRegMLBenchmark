@@ -201,6 +201,10 @@ The following object is masked from 'package:base':
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 Installing packages into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
 (as 'lib' is unspecified)
+Warning: unable to access index for repository https://rweb.crmda.ku.edu/cran/src/contrib:
+  cannot open URL 'https://rweb.crmda.ku.edu/cran/src/contrib/PACKAGES'
+Warning: unable to access index for repository https://rweb.crmda.ku.edu/cran/bin/windows/contrib/3.4:
+  cannot open URL 'https://rweb.crmda.ku.edu/cran/bin/windows/contrib/3.4/PACKAGES'
 Warning message:
 packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1) 
 > 
@@ -213,7 +217,7 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Thu Feb 15 14:14:37 2018"
+[1] "Thu Feb 15 18:35:23 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
