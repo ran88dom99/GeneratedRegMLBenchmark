@@ -48,10 +48,6 @@ Type 'q()' to quit R.
 > try({
 +   gensTTest<-(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 + })
-Error in file(file, "rt") : cannot open the connection
-In addition: Warning message:
-In file(file, "rt") :
-  cannot open file 'tasks to test.csv': No such file or directory
 > if(!exists("gensTTest")) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
 > if(length(gensTTest)<1) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
 > 
@@ -202,10 +198,6 @@ The following object is masked from 'package:base':
 > list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
-Warning: unable to access index for repository https://rweb.crmda.ku.edu/cran/src/contrib:
-  cannot open URL 'https://rweb.crmda.ku.edu/cran/src/contrib/PACKAGES'
-Warning: unable to access index for repository https://rweb.crmda.ku.edu/cran/bin/windows/contrib/3.4:
-  cannot open URL 'https://rweb.crmda.ku.edu/cran/bin/windows/contrib/3.4/PACKAGES'
 Warning message:
 packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.3) 
 > 
@@ -218,7 +210,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Fri Feb 16 08:53:06 2018"
+[1] "Fri Feb 16 11:52:13 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -316,44 +308,3 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 +   }
 +   
 + }
-
-Attaching package: 'mlr'
-
-The following object is masked from 'package:caret':
-
-    train
-
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
