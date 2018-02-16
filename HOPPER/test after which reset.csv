@@ -22,3 +22,5 @@ Thu Feb 15 09:15:11 2018,regr.gamboost,kaggle housing,3,20,windows,x64,HOPPER
 Thu Feb 15 17:14:12 2018,regr.RRF,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Fri Feb 16 08:50:55 2018,regr.svm,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Fri Feb 16 12:10:17 2018,regr.pcr,poly aC1^3 + bC1^2 + dC1,3,20,windows,x64,HOPPER
+Fri Feb 16 17:06:47 2018,regr.fnn,Friedman's 1st,3,20,windows,x64,HOPPER
+Fri Feb 16 17:07:04 2018,regr.fnn,Friedman's 1st,3,20,windows,x64,HOPPER
