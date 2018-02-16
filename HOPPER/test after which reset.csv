@@ -19,3 +19,4 @@ Mon Feb 12 23:03:02 2018,regr.LiblineaRL2L2SVR,bas interactive latent features,3
 Tue Feb 13 21:42:19 2018,regr.RRF,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Tue Feb 13 21:48:30 2018,regr.extraTrees,Recc sim 1,3,20,windows,x64,HOPPER
 Thu Feb 15 09:15:11 2018,regr.gamboost,kaggle housing,3,20,windows,x64,HOPPER
+Thu Feb 15 17:14:12 2018,regr.RRF,OpenML 2dplanes,3,20,windows,x64,HOPPER
