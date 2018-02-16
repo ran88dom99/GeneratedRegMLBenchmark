@@ -265,7 +265,7 @@ for(gend.data in gensTTest){
           
          setwd(cpout.folder)
           if(norming == normings[length(normings)]){
-            write.table( gensTTest[-count.toy.data.passed],file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
+            write.table( t(gensTTest[-count.toy.data.passed]),file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
           
         }
       }
