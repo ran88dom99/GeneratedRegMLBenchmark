@@ -25,3 +25,13 @@ Fail,Fail,Fail,Fail,Fail,Thu Feb 15 14:07:03 2018,gamboost,1,1,OpenML 2dplanes,i
 0.468,0.458,2.385,2.382,1.922,Thu Feb 15 14:07:38 2018,gamSpline,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.39179347387651,random,270,35,cv,20,3,1,5,0.250516729429364
 Fail,Fail,Fail,Fail,Fail,Thu Feb 15 14:08:57 2018,gaussprLinear,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,78
 Fail,Fail,Fail,Fail,Fail,Fri Feb 16 10:36:03 2018,gaussprPoly,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,3235
+Fail,Fail,Fail,Fail,Fail,Fri Feb 16 15:35:13 2018,gbm_h2o,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,265
+0.47,0.462,-1,2.376,1.923,Fri Feb 16 15:35:22 2018,gcvEarth,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41657199996114,random,314,9,cv,20,3,1,5,1
+0.47,0.462,-1,2.376,1.923,Fri Feb 16 15:35:24 2018,glm,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41657199996114,random,314,1,cv,20,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Fri Feb 16 15:37:06 2018,glm.nb,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,102
+0.467,0.459,2.4,2.391,1.933,Fri Feb 16 17:44:22 2018,glmboost,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41657199996114,random,314,7635,nohyperparameters,8,3,no rep,no min,150,no
+0.47,0.462,2.387,2.376,1.923,Fri Feb 16 17:44:36 2018,glmnet,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41657199996114,random,314,13,cv,20,3,1,5,0.618911478668451,0.00125264012810859
+Fail,Fail,Fail,Fail,Fail,Fri Feb 16 17:49:26 2018,glmnet_h2o,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,290
+0.47,0.462,-1,2.376,1.923,Fri Feb 16 17:49:39 2018,glmStepAIC,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41657199996114,random,314,12,cv,20,3,1,5,none
+0.47,0.462,2.387,2.376,1.923,Fri Feb 16 17:49:54 2018,icr,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41657199996114,random,314,13,cv,20,3,1,5,10
+0.47,0.462,2.387,2.376,1.923,Fri Feb 16 17:49:57 2018,kernelpls,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.41657199996114,random,314,2,cv,20,3,1,5,7
