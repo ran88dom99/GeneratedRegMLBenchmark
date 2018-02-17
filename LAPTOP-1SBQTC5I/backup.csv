@@ -8406,3 +8406,13 @@ Fail, Thu Feb 15 14:07:03 2018, gamboost
 Succ, Thu Feb 15 14:07:38 2018, gamSpline
 Fail, Thu Feb 15 14:08:57 2018, gaussprLinear
 Fail, Fri Feb 16 10:36:03 2018, gaussprPoly
+Fail, Fri Feb 16 15:35:13 2018, gbm_h2o
+Succ, Fri Feb 16 15:35:22 2018, gcvEarth
+Succ, Fri Feb 16 15:35:24 2018, glm
+Fail, Fri Feb 16 15:37:06 2018, glm.nb
+Succ, Fri Feb 16 17:44:23 2018, glmboost
+Succ, Fri Feb 16 17:44:36 2018, glmnet
+Fail, Fri Feb 16 17:49:26 2018, glmnet_h2o
+Succ, Fri Feb 16 17:49:39 2018, glmStepAIC
+Succ, Fri Feb 16 17:49:54 2018, icr
+Succ, Fri Feb 16 17:49:57 2018, kernelpls
