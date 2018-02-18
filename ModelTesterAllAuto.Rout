@@ -97,6 +97,7 @@ The following object is masked from 'package:base':
 +   if(last.alg==before.last.alg){print("algorithm may be broken")}
 +   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 + })
+[1] "algorithm may be broken"
 > try({
 +   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 +   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -104,6 +105,7 @@ The following object is masked from 'package:base':
 +   if(last.tsk==before.last.tsk){print("task may be broken")}
 +   write.table(last.tsk,file = "beforelast task.csv",  quote = F, row.names = F,col.names = F)
 + })
+[1] "task may be broken"
 > bad.models=c("spaccceeee")
 > previous.fails<-(read.csv("test after which reset.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 > previous.fails<-previous.fails[previous.fails[,8]==which.computer,]
@@ -209,7 +211,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Sat Feb 17 17:07:35 2018"
+[1] "Sat Feb 17 23:12:15 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -314,22 +316,24 @@ The following object is masked from 'package:caret':
 
     train
 
-[Tune] Started tuning learner regr.svm for parameter set:
-         Type len   Def    Constr Req Tunable Trafo
-cost  numeric   -     0 -15 to 15   -    TRUE     Y
-gamma numeric   - -3.32 -15 to 15   -    TRUE     Y
-With control class: TuneControlRandom
-Imputation value: Inf
-[Tune-x] 1: cost=3.19e+03; gamma=1.09e+03
-[Tune-y] 1: rmse.test.rmse=3.49; time: 13.3 min
-[Tune-x] 2: cost=0.152; gamma=0.00188
-[Tune-y] 2: rmse.test.rmse=2.27; time: 10.9 min
-[Tune-x] 3: cost=0.000321; gamma=276
-[Tune-y] 3: rmse.test.rmse=4.38; time: 6.8 min
-[Tune-x] 4: cost=0.000285; gamma=17.7
-[Tune-y] 4: rmse.test.rmse=4.38; time: 11.8 min
-[Tune-x] 5: cost=0.0196; gamma=189
-[Tune-y] 5: rmse.test.rmse=4.35; time: 6.8 min
-[Tune-x] 6: cost=0.0457; gamma=161
-[Tune-y] 6: rmse.test.rmse= 4.3; time: 7.0 min
-[Tune-x] 7: cost=2.32e+04; gamma=0.048
+Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
+  These variables have zero variances: V11, V12
+Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
+  These variables have zero variances: V11, V12
+Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
+  No variation for for: V11, V12
+Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
+  No variation for for: V11, V12
+Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
+  No variation for for: V11, V12
+Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
+  No variation for for: V11, V12
+Warning message:
+replacing previous import 'BBmisc::isFALSE' by 'backports::isFALSE' when loading 'mlr' 
+> ##########end#########
+> #stopCluster(cl)
+> ## reset message sink and close the file connection
+> sink(type="message")
+> close(zz)
+Error in close(zz) : object 'zz' not found
+Execution halted
