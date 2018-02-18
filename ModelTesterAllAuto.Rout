@@ -1,11 +1,13 @@
 
-R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
+R version 3.4.1 (2017-06-30) -- "Single Candle"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
 
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
@@ -78,9 +80,9 @@ Loading required package: ggplot2
 
 Attaching package: 'MLmetrics'
 
-The following objects are masked from 'package:caret':
+The following object is masked from 'package:caret':
 
-    MAE, RMSE
+    RMSE
 
 The following object is masked from 'package:base':
 
@@ -197,139 +199,5 @@ The following object is masked from 'package:base':
 > list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
-Warning message:
-packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.3) 
-> 
-> #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
-> #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
-> 
-> tuneLengthMLR<-tuneLength
-> mlr.iters<-cv.iters
-> #######data read process start#####
-> seed.var =222+round(runif(1,min=0,max=100))
-> column.to.predict=1
-> print(date());
-[1] "Sat Feb 17 17:07:35 2018"
-> 
-> setwd(base.folder)
-> if(!exists("gen.count")){gen.count=56}
-> gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-> count.toy.data.passed<-1
-> for(gend.data in gensTTest){
-+   count.toy.data.passed<-count.toy.data.passed+1
-+   setwd(base.folder)
-+   data.source<-as.matrix(read.csv(paste("Generats/",gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
-+   datasource<-gens.names[gend.data,1]
-+   setwd(cpout.folder)
-+   missingdatas=c("ignore")
-+   for(missingdata in missingdatas){
-+     withextras=c("none")
-+     for(withextra in withextras){
-+       ################data wrestling###############
-+       
-+       dependant.selection=complete.cases(data.source[,column.to.predict])
-+       df.previous.calcs=as.data.frame(read.csv(file=out.file, header = FALSE, sep = ",", quote = "",
-+                                                dec = ".", fill = TRUE, comment.char = ""))
-+       unimportant.computations<-vector(mode = "logical",length=length(df.previous.calcs[,1])  )
-+       for(intern in 1:length(df.previous.calcs[,1])){
-+         if((any(df.previous.calcs[intern,] == withextra, na.rm=T))&&
-+            (any(df.previous.calcs[intern,] == missingdata, na.rm=T))&&
-+            (any(df.previous.calcs[intern,] == datasource, na.rm=T))&&
-+            (any(df.previous.calcs[intern,] == column.to.predict, na.rm=T)))
-+         {unimportant.computations[intern]<-T}}
-+       
-+       df.previous.calcs<-df.previous.calcs[unimportant.computations,]
-+       
-+       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
-+       
-+         for(norming in normings) {
-+         for(trans.y in 1:2) {
-+           df.toprocess=data.source
-+           y.untransformed<-df.toprocess[,1]
-+           
-+           if(norming=="centernscale"){
-+             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("center", "scale"))
-+             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
-+           if(norming=="range01"){
-+             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
-+             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
-+           if(norming=="expoTrans"){
-+             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("expoTrans"))
-+             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
-+           if(norming=="YeoJohnson"){
-+             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("YeoJohnson"))#"center", "scale",
-+             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
-+           
-+           if((norming=="asis")&&(trans.y==2)){next}
-+           
-+           
-+           ################preprocess###########
-+           df.toprocess=data.frame(df.toprocess[dependant.selection,])
-+           y.untransformed=y.untransformed[dependant.selection]
-+           if(norming=="quantile"){
-+             for(Clol in trans.y:length(data.source[1,])){
-+               df.toprocess[,Clol]<- (rank(df.toprocess[,Clol],na.last = "keep",ties.method = "average")-1) }
-+             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
-+             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
-+           
-+           loess.model<-loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
-+   
-+           #df.toprocess = data.frame(df.toprocess,)
-+           nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
-+           #nzv[nzv$nzv,][1:10,]
-+           if(length(nzv)>1){
-+             df.toprocess = (df.toprocess[, -nzv])}
-+           df.toprocess = signif(df.toprocess,digits = 3)
-+           
-+           seed.var =222+round(runif(1,min=0,max=100))
-+           set.seed(seed.var)
-+           inTrain <- createDataPartition(y = df.toprocess[,1],
-+                                          p = .75,
-+                                          list = FALSE)
-+           training <- df.toprocess[ inTrain,]
-+           testing  <- df.toprocess[-inTrain,]
-+           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F,col.names = F)
-+           
-+           ###########for all models#################
-+           setwd(base.folder)
-+           if(max(which.computer==c("ALTA","HOPPER"))>0)
-+             source("MLR part.R")
-+           else
-+             source("Caret part.R")
-+           
-+          setwd(cpout.folder)
-+           if(norming == normings[length(normings)]){
-+             write.table( t(gensTTest[count.toy.data.passed:length(gensTTest)]),file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
-+           
-+         }
-+       }
-+     }
-+   }
-+   
-+ }
-
-Attaching package: 'mlr'
-
-The following object is masked from 'package:caret':
-
-    train
-
-[Tune] Started tuning learner regr.svm for parameter set:
-         Type len   Def    Constr Req Tunable Trafo
-cost  numeric   -     0 -15 to 15   -    TRUE     Y
-gamma numeric   - -3.32 -15 to 15   -    TRUE     Y
-With control class: TuneControlRandom
-Imputation value: Inf
-[Tune-x] 1: cost=3.19e+03; gamma=1.09e+03
-[Tune-y] 1: rmse.test.rmse=3.49; time: 13.3 min
-[Tune-x] 2: cost=0.152; gamma=0.00188
-[Tune-y] 2: rmse.test.rmse=2.27; time: 10.9 min
-[Tune-x] 3: cost=0.000321; gamma=276
-[Tune-y] 3: rmse.test.rmse=4.38; time: 6.8 min
-[Tune-x] 4: cost=0.000285; gamma=17.7
-[Tune-y] 4: rmse.test.rmse=4.38; time: 11.8 min
-[Tune-x] 5: cost=0.0196; gamma=189
-[Tune-y] 5: rmse.test.rmse=4.35; time: 6.8 min
-[Tune-x] 6: cost=0.0457; gamma=161
-[Tune-y] 6: rmse.test.rmse= 4.3; time: 7.0 min
-[Tune-x] 7: cost=2.32e+04; gamma=0.048
+Installing packages into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
+(as 'lib' is unspecified)
