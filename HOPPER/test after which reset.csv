@@ -24,8 +24,4 @@ Fri Feb 16 08:50:55 2018,regr.svm,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Fri Feb 16 12:10:17 2018,regr.pcr,poly aC1^3 + bC1^2 + dC1,3,20,windows,x64,HOPPER
 Fri Feb 16 17:06:47 2018,regr.fnn,Friedman's 1st,3,20,windows,x64,HOPPER
 
-
-Sat Feb 17 17:07:25 2018,regr.svm,OpenML 2dplanes,3,20,windows,x64,HOPPER
-Sat Feb 17 23:12:04 2018,regr.svm,OpenML 2dplanes,3,20,windows,x64,HOPPER
-Sun Feb 18 10:23:50 2018,regr.xyf,bas interactive latent features,3,20,windows,x64,HOPPER
-Sun Feb 18 12:36:00 2018,regr.penalized.lasso,bm sin(13 t C2 ^ -.2),3,20,windows,x64,HOPPER
+Sun Feb 18 22:55:57 2018,regr.ctree,Boston Housing,3,20,windows,x64,HOPPER
