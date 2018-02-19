@@ -209,7 +209,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Sun Feb 18 22:56:18 2018"
+[1] "Mon Feb 19 12:10:36 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -326,102 +326,36 @@ Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
   No variation for for: V11, V12
 Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
   No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  Expo. transform induced infinite values in several predictors and is ommitted: V175, V183, V184, V204, V237, V273
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  Expo. transform induced infinite values in several predictors and is ommitted: V175, V183, V184, V204, V237, V273
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
 [Tune] Started tuning learner regr.svm for parameter set:
          Type len   Def    Constr Req Tunable Trafo
 cost  numeric   -     0 -15 to 15   -    TRUE     Y
 gamma numeric   - -3.32 -15 to 15   -    TRUE     Y
 With control class: TuneControlRandom
 Imputation value: Inf
-[Tune-x] 1: cost=1.89e+03; gamma=0.000561
-[Tune-y] 1: rmse.test.rmse=0.999; time: 50.5 min
-[Tune-x] 2: cost=0.0888; gamma=20.3
-[Tune-y] 2: rmse.test.rmse=4.25; time: 13.8 min
-[Tune-x] 3: cost=501; gamma=0.0579
+[Tune-x] 1: cost=0.001; gamma=2.56e+04
+[Tune-y] 1: rmse.test.rmse= 4.4; time: 6.8 min
+[Tune-x] 2: cost=417; gamma=4.14e+03
+[Tune-y] 2: rmse.test.rmse= 3.5; time: 13.5 min
+[Tune-x] 3: cost=0.0123; gamma=6.36e+03
+[Tune-y] 3: rmse.test.rmse=4.38; time: 6.8 min
+[Tune-x] 4: cost=0.141; gamma=23
+[Tune-y] 4: rmse.test.rmse=4.17; time: 14.3 min
+[Tune-x] 5: cost=6.42; gamma=1.74e+03
+[Tune-y] 5: rmse.test.rmse= 3.5; time: 13.5 min
+[Tune-x] 6: cost=3.09; gamma=0.0146
+[Tune-y] 6: rmse.test.rmse=1.01; time: 11.5 min
+[Tune-x] 7: cost=0.261; gamma=0.00707
+[Tune-y] 7: rmse.test.rmse=1.17; time: 10.2 min
+[Tune-x] 8: cost=808; gamma=2.74
+[Tune-y] 8: rmse.test.rmse=3.28; time: 25.9 min
+[Tune-x] 9: cost=0.00136; gamma=0.0509
+[Tune-y] 9: rmse.test.rmse=2.64; time: 12.5 min
+[Tune-x] 10: cost=2.43; gamma=3.86e+03
+[Tune-y] 10: rmse.test.rmse= 3.5; time: 13.5 min
+[Tune-x] 11: cost=1.88e+03; gamma=26
+[Tune-y] 11: rmse.test.rmse= 3.5; time: 25.3 min
+[Tune-x] 12: cost=1.94; gamma=62.2
+[Tune-y] 12: rmse.test.rmse= 3.5; time: 16.0 min
+[Tune-x] 13: cost=16.1; gamma=4.32e+03
+[Tune-y] 13: rmse.test.rmse= 3.5; time: 13.9 min
+[Tune-x] 14: cost=1.62e+03; gamma=2.38
