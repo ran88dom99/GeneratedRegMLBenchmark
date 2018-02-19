@@ -1,13 +1,11 @@
 
-R version 3.4.1 (2017-06-30) -- "Single Candle"
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
 
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
@@ -99,7 +97,6 @@ The following object is masked from 'package:base':
 +   if(last.alg==before.last.alg){print("algorithm may be broken")}
 +   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 + })
-[1] "algorithm may be broken"
 > try({
 +   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 +   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -107,7 +104,6 @@ The following object is masked from 'package:base':
 +   if(last.tsk==before.last.tsk){print("task may be broken")}
 +   write.table(last.tsk,file = "beforelast task.csv",  quote = F, row.names = F,col.names = F)
 + })
-[1] "task may be broken"
 > bad.models=c("spaccceeee")
 > previous.fails<-(read.csv("test after which reset.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 > previous.fails<-previous.fails[previous.fails[,8]==which.computer,]
@@ -213,7 +209,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Sun Feb 18 12:37:05 2018"
+[1] "Sun Feb 18 17:07:34 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -311,31 +307,9 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 +   }
 +   
 + }
-
-Attaching package: 'mlr'
-
-The following object is masked from 'package:caret':
-
-    train
-
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning message:
-replacing previous import 'BBmisc::isFALSE' by 'backports::isFALSE' when loading 'mlr' 
-> ##########end#########
-> #stopCluster(cl)
-> ## reset message sink and close the file connection
-> sink(type="message")
-> close(zz)
-Error in close(zz) : object 'zz' not found
+Error in file(file, "rt") : cannot open the connection
+Calls: as.matrix -> read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'Generats/NA.csv': No such file or directory
 Execution halted
