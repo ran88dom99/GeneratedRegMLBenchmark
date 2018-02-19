@@ -24,5 +24,3 @@ Fri Feb 16 08:50:55 2018,regr.svm,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Fri Feb 16 12:10:17 2018,regr.pcr,poly aC1^3 + bC1^2 + dC1,3,20,windows,x64,HOPPER
 Fri Feb 16 17:06:47 2018,regr.fnn,Friedman's 1st,3,20,windows,x64,HOPPER
 
-
-Sun Feb 18 17:07:23 2018,regr.xyf,bas interactive latent features,3,20,windows,x64,HOPPER
