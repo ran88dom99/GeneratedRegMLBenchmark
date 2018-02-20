@@ -42,7 +42,7 @@ Type 'q()' to quit R.
 > tuneLength2=8
 > normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quantile")#,"centernscale"
 > 
-> gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+> gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,3,1,52)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 > gensTTest<-vector()
 > write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 > try({
@@ -97,7 +97,6 @@ The following object is masked from 'package:base':
 +   if(last.alg==before.last.alg){print("algorithm may be broken")}
 +   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 + })
-[1] "algorithm may be broken"
 > try({
 +   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 +   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -211,7 +210,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Mon Feb 19 17:07:41 2018"
+[1] "Tue Feb 20 13:33:37 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -316,96 +315,18 @@ The following object is masked from 'package:caret':
 
     train
 
-[Tune] Started tuning learner regr.ksvm for parameter set:
-         Type len  Def    Constr Req Tunable Trafo
-C     numeric   -    0  -5 to 10   -    TRUE     Y
-sigma numeric   - TRUE -15 to 15   -    TRUE     Y
+[Tune] Started tuning learner regr.svm for parameter set:
+         Type len   Def    Constr Req Tunable Trafo
+cost  numeric   -     0 -15 to 15   -    TRUE     Y
+gamma numeric   - -3.32 -15 to 15   -    TRUE     Y
 With control class: TuneControlRandom
 Imputation value: Inf
-[Tune-x] 1: C=175; sigma=2.37
-[Tune-y] 1: rmse.test.rmse=3.12; time: 24.4 min
-[Tune-x] 2: C=0.483; sigma=0.00209
-[Tune-y] 2: rmse.test.rmse=1.95; time: 9.0 min
-[Tune-x] 3: C=33.7; sigma=0.000106
-[Tune-y] 3: rmse.test.rmse= 2.3; time: 6.5 min
-[Tune-x] 4: C=0.0683; sigma=0.4
-[Tune-y] 4: rmse.test.rmse=1.31; time: 8.3 min
-[Tune-x] 5: C=29.9; sigma=0.000174
-[Tune-y] 5: rmse.test.rmse=2.18; time: 9.2 min
-[Tune-x] 6: C=2.03; sigma=9.44e-05
-[Tune-y] 6: rmse.test.rmse= 2.4; time: 6.3 min
-[Tune-x] 7: C=60.2; sigma=0.000395
-[Tune-y] 7: rmse.test.rmse=1.22; time: 6.0 min
-[Tune-x] 8: C=0.0718; sigma=0.000185
-[Tune-y] 8: rmse.test.rmse=3.33; time: 9.9 min
-[Tune-x] 9: C=0.186; sigma=20.9
-[Tune-y] 9: rmse.test.rmse= 4.1; time: 11.7 min
-[Tune-x] 10: C=1.03; sigma=3.34e-05
-[Tune-y] 10: rmse.test.rmse=2.71; time: 6.8 min
-[Tune-x] 11: C=0.0724; sigma=0.0573
-[Tune-y] 11: rmse.test.rmse=1.06; time: 5.4 min
-[Tune-x] 12: C=3.8; sigma=1.36
-[Tune-y] 12: rmse.test.rmse=   2; time: 20.8 min
-[Tune-x] 13: C=0.583; sigma=1.69e+03
-[Tune-y] 13: rmse.test.rmse=3.74; time: 7.7 min
-[Tune-x] 14: C=268; sigma=748
-[Tune-y] 14: rmse.test.rmse=3.49; time: 12.5 min
-[Tune-x] 15: C=3.18; sigma=3.63e+03
-[Tune-y] 15: rmse.test.rmse=3.49; time: 11.2 min
-[Tune-x] 16: C=1.08; sigma=0.00106
-[Tune-y] 16: rmse.test.rmse=2.12; time: 6.1 min
-[Tune-x] 17: C=29.5; sigma=9.55e+03
-[Tune-y] 17: rmse.test.rmse=3.49; time: 10.6 min
-[Tune-x] 18: C=30.2; sigma=0.000209
-[Tune-y] 18: rmse.test.rmse=2.09; time: 6.2 min
-[Tune-x] 19: C=9.79; sigma=18.8
-[Tune-y] 19: rmse.test.rmse=3.49; time: 18.9 min
-[Tune-x] 20: C=0.202; sigma=0.359
-[Tune-y] 20: rmse.test.rmse=1.12; time: 12.4 min
-[Tune] Result: C=0.0724; sigma=0.0573 : rmse.test.rmse=1.06
-[1] "Mon Feb 19 21:23:57 2018"
-[Tune] Started tuning learner regr.RRF for parameter set:
-           Type len Def  Constr Req Tunable Trafo
-mtry    integer   -   3 1 to 10   -    TRUE     -
-coefReg numeric   - 0.8  0 to 1   -    TRUE     -
-With control class: TuneControlRandom
-Imputation value: Inf
-[Tune-x] 1: mtry=4; coefReg=0.849
-[Tune-y] 1: rmse.test.rmse=1.04; time: 34.4 min
-[Tune-x] 2: mtry=4; coefReg=0.466
-[Tune-y] 2: rmse.test.rmse=1.04; time: 36.7 min
-[Tune-x] 3: mtry=5; coefReg=0.172
-[Tune-y] 3: rmse.test.rmse=1.05; time: 41.7 min
-[Tune-x] 4: mtry=9; coefReg=0.0869
-[Tune-y] 4: rmse.test.rmse=1.08; time: 65.4 min
-[Tune-x] 5: mtry=5; coefReg=0.607
-[Tune-y] 5: rmse.test.rmse=1.05; time: 41.7 min
-[Tune-x] 6: mtry=4; coefReg=0.24
-[Tune-y] 6: rmse.test.rmse=1.04; time: 33.1 min
-[Tune-x] 7: mtry=1; coefReg=0.136
-[Tune-y] 7: rmse.test.rmse=2.85; time: 2.2 min
-[Tune-x] 8: mtry=7; coefReg=0.191
-[Tune-y] 8: rmse.test.rmse=1.07; time: 54.5 min
-[Tune-x] 9: mtry=5; coefReg=0.883
-[Tune-y] 9: rmse.test.rmse=1.05; time: 41.6 min
-[Tune-x] 10: mtry=10; coefReg=0.606
-[Tune-y] 10: rmse.test.rmse=1.09; time: 70.5 min
-[Tune-x] 11: mtry=7; coefReg=0.245
-[Tune-y] 11: rmse.test.rmse=1.07; time: 54.6 min
-[Tune-x] 12: mtry=8; coefReg=0.282
-[Tune-y] 12: rmse.test.rmse=1.08; time: 60.2 min
-[Tune-x] 13: mtry=2; coefReg=0.916
-[Tune-y] 13: rmse.test.rmse=1.39; time: 11.1 min
-[Tune-x] 14: mtry=6; coefReg=0.796
-[Tune-y] 14: rmse.test.rmse=1.06; time: 48.7 min
-[Tune-x] 15: mtry=5; coefReg=0.113
-[Tune-y] 15: rmse.test.rmse=1.05; time: 41.6 min
-[Tune-x] 16: mtry=7; coefReg=0.47
-[Tune-y] 16: rmse.test.rmse=1.07; time: 54.6 min
-[Tune-x] 17: mtry=8; coefReg=0.978
-[Tune-y] 17: rmse.test.rmse=1.08; time: 62.8 min
-[Tune-x] 18: mtry=8; coefReg=0.123
-[Tune-y] 18: rmse.test.rmse=1.08; time: 61.4 min
-[Tune-x] 19: mtry=8; coefReg=0.477
-[Tune-y] 19: rmse.test.rmse=1.08; time: 60.3 min
-[Tune-x] 20: mtry=7; coefReg=0.929
+[Tune-x] 1: cost=0.000319; gamma=0.000154
+[Tune-y] 1: rmse.test.rmse=4.38; time: 11.6 min
+[Tune-x] 2: cost=0.00176; gamma=0.431
+[Tune-y] 2: rmse.test.rmse=4.06; time: 11.2 min
+[Tune-x] 3: cost=2.35e+03; gamma=12.8
+[Tune-y] 3: rmse.test.rmse= 3.5; time: 22.2 min
+[Tune-x] 4: cost=0.0774; gamma=5.31e+03
+[Tune-y] 4: rmse.test.rmse=4.26; time: 6.4 min
+[Tune-x] 5: cost=55.7; gamma=0.221
