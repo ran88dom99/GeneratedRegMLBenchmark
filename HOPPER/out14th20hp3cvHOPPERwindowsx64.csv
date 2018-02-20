@@ -11875,3 +11875,4 @@ Fail,Fail,Fail,Fail,PackageFail,Wed Feb 14 16:42:16 2018,regr.penalized.ridge,1,
 0.477,0.444,2.601,2.459,2.021,Wed Feb 14 16:47:20 2018,regr.xgboost,1,2,Friedman's 1st,ignore,none,quantile,4.43529096815781,random,294,203,cv,20,3,NA,5,3093,7,0.0559846652771812,4.59337070817128,0.645800229348242,3.15775624010712,0.654144624539185
 NA,NA,-1,NA,NA,Wed Feb 14 16:47:27 2018,regr.xyf,1,2,Friedman's 1st,ignore,none,quantile,4.43529096815781,nohyperparam,294,4,cv,20,3,NA,5
 0.771,0.764,1.038,1.036,0.826,Fri Feb 16 05:50:40 2018,regr.RRF,1,1,OpenML 2dplanes,ignore,none,YeoJohnson,4.38874397104828,random,250,45459,cv,20,3,NA,5,4,0.644682445563376
+0.77,0.764,1.063,1.039,0.831,Mon Feb 19 21:23:52 2018,regr.ksvm,1,2,OpenML 2dplanes,ignore,none,YeoJohnson,4.40101590913083,random,267,12966,cv,20,3,NA,5,0.0723916030311543,0.0573439587871388
