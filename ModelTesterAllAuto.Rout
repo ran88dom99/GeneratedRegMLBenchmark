@@ -1,11 +1,13 @@
 
-R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
+R version 3.4.1 (2017-06-30) -- "Single Candle"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
 
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
@@ -78,9 +80,9 @@ Loading required package: ggplot2
 
 Attaching package: 'MLmetrics'
 
-The following objects are masked from 'package:caret':
+The following object is masked from 'package:caret':
 
-    MAE, RMSE
+    RMSE
 
 The following object is masked from 'package:base':
 
@@ -104,6 +106,7 @@ The following object is masked from 'package:base':
 +   if(last.tsk==before.last.tsk){print("task may be broken")}
 +   write.table(last.tsk,file = "beforelast task.csv",  quote = F, row.names = F,col.names = F)
 + })
+[1] "task may be broken"
 > bad.models=c("spaccceeee")
 > previous.fails<-(read.csv("test after which reset.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 > previous.fails<-previous.fails[previous.fails[,8]==which.computer,]
@@ -197,8 +200,10 @@ The following object is masked from 'package:base':
 > list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
+Installing packages into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
+(as 'lib' is unspecified)
 Warning message:
-packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.3) 
+packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1) 
 > 
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
@@ -209,7 +214,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Sun Feb 18 22:56:18 2018"
+[1] "Mon Feb 19 15:31:47 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -307,121 +312,174 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 +   }
 +   
 + }
+Loading required package: quantregForest
+Loading required package: randomForest
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
 
-Attaching package: 'mlr'
+Attaching package: 'randomForest'
 
-The following object is masked from 'package:caret':
+The following object is masked from 'package:ggplot2':
 
-    train
+    margin
 
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  Expo. transform induced infinite values in several predictors and is ommitted: V175, V183, V184, V204, V237, V273
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  Expo. transform induced infinite values in several predictors and is ommitted: V175, V183, V184, V204, V237, V273
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-[Tune] Started tuning learner regr.svm for parameter set:
-         Type len   Def    Constr Req Tunable Trafo
-cost  numeric   -     0 -15 to 15   -    TRUE     Y
-gamma numeric   - -3.32 -15 to 15   -    TRUE     Y
-With control class: TuneControlRandom
-Imputation value: Inf
-[Tune-x] 1: cost=1.89e+03; gamma=0.000561
-[Tune-y] 1: rmse.test.rmse=0.999; time: 50.5 min
-[Tune-x] 2: cost=0.0888; gamma=20.3
-[Tune-y] 2: rmse.test.rmse=4.25; time: 13.8 min
-[Tune-x] 3: cost=501; gamma=0.0579
+Loading required package: RColorBrewer
+Quantile Random Forest 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 500, 502, 502 
+Resampling results across tuning parameters:
+
+  mtry  RMSE       Rsquared   Selected
+  1     0.5066431  0.9642180          
+  2     0.3612007  0.9758975  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was mtry = 2.
+[1] "Mon Feb 19 15:32:18 2018"
+Loading required package: qrnn
+tau=0.5
+1/1
+1 0.001322862 
+2 0.001324113 
+3 0.001323087 
+4 0.001325004 
+5 0.001322726 
+* 0.001322726 
+
+tau=0.5
+1/1
+1 0.0007710383 
+2 0.0007438773 
+3 0.0007419751 
+4 0.0007394933 
+5 0.0007419394 
+* 0.0007394933 
+
+tau=0.5
+1/1
+1 0.0007192182 
+2 0.0007192042 
+3 0.0007309307 
+4 0.000722952 
+5 0.0007297826 
+* 0.0007192042 
+
+tau=0.5
+1/1
+1 0.0006928316 
+2 0.0007171772 
+3 0.0007151311 
+4 0.0006902662 
+5 0.000712009 
+* 0.0006902662 
+
+tau=0.5
+1/1
+1 0.0006893713 
+2 0.0006967154 
+3 0.0006859446 
+4 0.0006858937 
+5 0.0006931033 
+* 0.0006858937 
+
+tau=0.5
+1/1
+1 0.0006729769 
+2 0.0006823464 
+3 0.0006892926 
+4 0.0006914284 
+5 0.0006857568 
+* 0.0006729769 
+
+tau=0.5
+1/1
+1 0.0006456799 
+2 0.0006720636 
+3 0.0006561775 
+4 0.000683143 
+5 0.000650323 
+* 0.0006456799 
+
+tau=0.5
+1/1
+1 0.0006669144 
+2 0.0006691831 
+3 0.0006615477 
+4 0.0006909356 
+5 0.0006501415 
+* 0.0006501415 
+
+tau=0.5
+1/1
+1 0.0006781024 
+2 0.0006530258 
+3 0.0006642093 
+4 0.0006457843 
+5 0.0006575108 
+* 0.0006457843 
+
+tau=0.5
+1/1
+1 0.0006557628 
+2 0.0006555717 
+3 0.0006560039 
+4 0.0006229264 
+5 0.0006456988 
+* 0.0006229264 
+
+tau=0.5
+1/1
+1 0.000644635 
+2 0.000657546 
+3 0.0006504686 
+4 0.0006362317 
+5 0.0006510932 
+* 0.0006362317 
+
+tau=0.5
+1/1
+1 0.000636929 
+2 0.0006171361 
+3 0.0006609075 
+4 0.0006615537 
+5 0.0006223478 
+* 0.0006171361 
+
+tau=0.5
+1/1
+1 0.0006260367 
+2 0.0006384682 
+3 0.0006654057 
+4 0.0006421601 
+5 0.0006265809 
+* 0.0006260367 
+
+tau=0.5
+1/1
+1 0.0006327695 
+2 0.0006221099 
+3 0.0006465434 
+4 0.0006090313 
+5 0.0006495138 
+* 0.0006090313 
+
+tau=0.5
+1/1
+1 0.0006334352 
+2 0.0006602022 
+3 0.0006353421 
+4 0.0006022515 
+5 0.0006224595 
+* 0.0006022515 
+
+tau=0.5
+1/1
+1 0.0006041824 
+2 0.0006140401 
+3 0.0006124963 
+4 0.000616632 
