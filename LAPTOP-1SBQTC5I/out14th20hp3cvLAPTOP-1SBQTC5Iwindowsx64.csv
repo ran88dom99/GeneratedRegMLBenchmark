@@ -96,3 +96,4 @@ Fail,Fail,Fail,Fail,PackageFail,Sun Feb 18 15:43:24 2018,pls,1,1,basic sum C1 + 
 0.993,0.992,0.011,0.011,0.008,Sun Feb 18 15:43:33 2018,plsRglm,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.46026913213984,random,291,9,cv,20,3,1,5,2,0.197382774343714
 0.998,0.998,0.038,0.003,0.002,Sun Feb 18 15:43:36 2018,ppr,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.46026913213984,random,291,2,cv,20,3,1,5,2
 Fail,Fail,Fail,Fail,PackageFail,Sun Feb 18 15:43:41 2018,pythonKnnReg,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,4
+0.782,0.761,0.361,0.36,0.257,Mon Feb 19 15:32:18 2018,qrf,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.50147864786943,random,301,10,cv,20,3,1,5,2
