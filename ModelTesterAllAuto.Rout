@@ -80,9 +80,9 @@ Loading required package: ggplot2
 
 Attaching package: 'MLmetrics'
 
-The following object is masked from 'package:caret':
+The following objects are masked from 'package:caret':
 
-    RMSE
+    MAE, RMSE
 
 The following object is masked from 'package:base':
 
@@ -200,10 +200,8 @@ The following object is masked from 'package:base':
 > list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
-Installing packages into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
-(as 'lib' is unspecified)
 Warning message:
-packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1) 
+packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.3) 
 > 
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
@@ -214,7 +212,7 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Tue Feb 20 15:30:57 2018"
+[1] "Tue Feb 20 13:33:37 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -312,152 +310,25 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 +   }
 +   
 + }
-Loading required package: qrnn
-tau=0.5
-1/1
-1 0.001468907 
-2 0.001469114 
-3 0.001468938 
-4 0.001468938 
-5 0.002693848 
-* 0.001468907 
 
-tau=0.5
-1/1
-1 0.0007494816 
-2 0.0007490124 
-3 0.0007491478 
-4 0.0007600752 
-5 0.0007489766 
-* 0.0007489766 
+Attaching package: 'mlr'
 
-tau=0.5
-1/1
-1 0.000737089 
-2 0.0007212877 
-3 0.0007197825 
-4 0.0007335295 
-5 0.0007226469 
-* 0.0007197825 
+The following object is masked from 'package:caret':
 
-tau=0.5
-1/1
-1 0.0006955733 
-2 0.0007079045 
-3 0.0007217227 
-4 0.0007037745 
-5 0.0007064341 
-* 0.0006955733 
+    train
 
-tau=0.5
-1/1
-1 0.0006869089 
-2 0.0006929039 
-3 0.0006821933 
-4 0.0006918008 
-5 0.0007001469 
-* 0.0006821933 
-
-tau=0.5
-1/1
-1 0.0006889841 
-2 0.0006926585 
-3 0.000687884 
-4 0.0006940891 
-5 0.0006828175 
-* 0.0006828175 
-
-tau=0.5
-1/1
-1 0.0006869624 
-2 0.000682896 
-3 0.0006712288 
-4 0.0006837959 
-5 0.0006696387 
-* 0.0006696387 
-
-tau=0.5
-1/1
-1 0.0006838951 
-2 0.0006804853 
-3 0.000680886 
-4 0.0006806265 
-5 0.0006893446 
-* 0.0006804853 
-
-tau=0.5
-1/1
-1 0.000663705 
-2 0.0006587202 
-3 0.0006759557 
-4 0.0006700677 
-5 0.0006837856 
-* 0.0006587202 
-
-tau=0.5
-1/1
-1 0.0006814096 
-2 0.000669991 
-3 0.0006691305 
-4 0.0006704097 
-5 0.0006755019 
-* 0.0006691305 
-
-tau=0.5
-1/1
-1 0.0006694816 
-2 0.0006544911 
-3 0.000670684 
-4 0.0006586512 
-5 0.0006731716 
-* 0.0006544911 
-
-tau=0.5
-1/1
-1 0.0006661942 
-2 0.0006730387 
-3 0.0006814966 
-4 0.0006807283 
-5 0.0006784556 
-* 0.0006661942 
-
-tau=0.5
-1/1
-1 0.0006856109 
-2 0.0006803089 
-3 0.0006710601 
-4 0.0006841455 
-5 0.0006732433 
-* 0.0006710601 
-
-tau=0.5
-1/1
-1 0.0006643172 
-2 0.0006754115 
-3 0.0006774399 
-4 0.00067949 
-5 0.0006550368 
-* 0.0006550368 
-
-tau=0.5
-1/1
-1 0.0006698439 
-2 0.0006823485 
-3 0.0006725606 
-4 0.0006696464 
-5 0.0006527757 
-* 0.0006527757 
-
-tau=0.5
-1/1
-1 0.000666666 
-2 0.0006714276 
-3 0.0006758278 
-4 0.0006820511 
-5 0.0006736951 
-* 0.000666666 
-
-tau=0.5
-1/1
-1 0.0006754659 
-2 0.0006539344 
+[Tune] Started tuning learner regr.svm for parameter set:
+         Type len   Def    Constr Req Tunable Trafo
+cost  numeric   -     0 -15 to 15   -    TRUE     Y
+gamma numeric   - -3.32 -15 to 15   -    TRUE     Y
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: cost=0.000319; gamma=0.000154
+[Tune-y] 1: rmse.test.rmse=4.38; time: 11.6 min
+[Tune-x] 2: cost=0.00176; gamma=0.431
+[Tune-y] 2: rmse.test.rmse=4.06; time: 11.2 min
+[Tune-x] 3: cost=2.35e+03; gamma=12.8
+[Tune-y] 3: rmse.test.rmse= 3.5; time: 22.2 min
+[Tune-x] 4: cost=0.0774; gamma=5.31e+03
+[Tune-y] 4: rmse.test.rmse=4.26; time: 6.4 min
+[Tune-x] 5: cost=55.7; gamma=0.221
