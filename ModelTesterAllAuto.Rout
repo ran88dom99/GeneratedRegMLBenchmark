@@ -1,13 +1,11 @@
 
-R version 3.4.1 (2017-06-30) -- "Single Candle"
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
 
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
@@ -44,7 +42,7 @@ Type 'q()' to quit R.
 > tuneLength2=8
 > normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quantile")#,"centernscale"
 > 
-> gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,52,1,3)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+> gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,3,1,52)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 > gensTTest<-vector()
 > write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 > try({
@@ -99,7 +97,6 @@ The following object is masked from 'package:base':
 +   if(last.alg==before.last.alg){print("algorithm may be broken")}
 +   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 + })
-[1] "algorithm may be broken"
 > try({
 +   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 +   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -213,7 +210,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Sun Feb 18 12:37:05 2018"
+[1] "Tue Feb 20 17:07:31 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -318,24 +315,123 @@ The following object is masked from 'package:caret':
 
     train
 
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  No variation for for: V11, V12
-Warning message:
+[Tune] Started tuning learner regr.svm for parameter set:
+         Type len   Def    Constr Req Tunable Trafo
+cost  numeric   -     0 -15 to 15   -    TRUE     Y
+gamma numeric   - -3.32 -15 to 15   -    TRUE     Y
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: cost=0.082; gamma=2.83
+[Tune-y] 1: rmse.test.rmse=4.23; time: 12.2 min
+[Tune-x] 2: cost=7.25; gamma=2.6e+03
+[Tune-y] 2: rmse.test.rmse=3.54; time: 12.8 min
+[Tune-x] 3: cost=0.11; gamma=6.4e+03
+[Tune-y] 3: rmse.test.rmse=4.21; time: 6.7 min
+[Tune-x] 4: cost=2.46e+04; gamma=31.6
+[Tune-y] 4: rmse.test.rmse=3.54; time: 21.4 min
+[Tune-x] 5: cost=0.124; gamma=0.000338
+[Tune-y] 5: rmse.test.rmse=2.63; time: 10.8 min
+[Tune-x] 6: cost=0.345; gamma=0.193
+[Tune-y] 6: rmse.test.rmse=1.06; time: 15.5 min
+[Tune-x] 7: cost=2.17; gamma=1.23e+03
+[Tune-y] 7: rmse.test.rmse=3.54; time: 12.7 min
+[Tune-x] 8: cost=0.000712; gamma=0.00012
+[Tune-y] 8: rmse.test.rmse=4.38; time: 11.4 min
+[Tune-x] 9: cost=7.08; gamma=0.129
+[Tune-y] 9: rmse.test.rmse=1.09; time: 129.1 min
+[Tune-x] 10: cost=7.15; gamma=1.66e+03
+[Tune-y] 10: rmse.test.rmse=3.54; time: 12.8 min
+[Tune-x] 11: cost=1.35; gamma=278
+[Tune-y] 11: rmse.test.rmse=3.56; time: 11.8 min
+[Tune-x] 12: cost=3.35e+03; gamma=2.48e+03
+[Tune-y] 12: rmse.test.rmse=3.54; time: 13.2 min
+[Tune-x] 13: cost=0.352; gamma=0.0879
+[Tune-y] 13: rmse.test.rmse=1.03; time: 12.5 min
+[Tune-x] 14: cost=0.000279; gamma=103
+[Tune-y] 14: rmse.test.rmse=4.38; time: 6.9 min
+[Tune-x] 15: cost=4.17e-05; gamma=0.0012
+[Tune-y] 15: rmse.test.rmse=4.38; time: 11.9 min
+[Tune-x] 16: cost=46.8; gamma=0.00873
+[Tune-y] 16: rmse.test.rmse=   1; time: 25.0 min
+[Tune-x] 17: cost=0.000148; gamma=1.34
+[Tune-y] 17: rmse.test.rmse=4.38; time: 11.7 min
+[Tune-x] 18: cost=0.000129; gamma=25.6
+[Tune-y] 18: rmse.test.rmse=4.38; time: 11.5 min
+[Tune-x] 19: cost=8e-05; gamma=1.17
+[Tune-y] 19: rmse.test.rmse=4.38; time: 11.4 min
+[Tune-x] 20: cost=2.18; gamma=1.04
+[Tune-y] 20: rmse.test.rmse=1.53; time: 21.4 min
+[Tune] Result: cost=46.8; gamma=0.00873 : rmse.test.rmse=   1
+[1] "Wed Feb 21 00:15:18 2018"
+Error : cannot allocate vector of size 81.0 Mb
+In addition: Warning message:
 replacing previous import 'BBmisc::isFALSE' by 'backports::isFALSE' when loading 'mlr' 
-> ##########end#########
-> #stopCluster(cl)
-> ## reset message sink and close the file connection
-> sink(type="message")
-> close(zz)
-Error in close(zz) : object 'zz' not found
-Execution halted
+[Tune] Started tuning learner regr.RRF for parameter set:
+           Type len Def  Constr Req Tunable Trafo
+mtry    integer   -   3 1 to 10   -    TRUE     -
+coefReg numeric   - 0.8  0 to 1   -    TRUE     -
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: mtry=4; coefReg=0.893
+[Tune-y] 1: rmse.test.rmse=1.04; time: 31.2 min
+[Tune-x] 2: mtry=1; coefReg=0.925
+[Tune-y] 2: rmse.test.rmse=2.89; time: 3.8 min
+[Tune-x] 3: mtry=7; coefReg=0.763
+[Tune-y] 3: rmse.test.rmse=1.07; time: 53.0 min
+[Tune-x] 4: mtry=7; coefReg=0.00713
+[Tune-y] 4: rmse.test.rmse=1.07; time: 54.4 min
+[Tune-x] 5: mtry=5; coefReg=0.623
+[Tune-y] 5: rmse.test.rmse=1.05; time: 47.4 min
+[Tune-x] 6: mtry=4; coefReg=0.272
+[Tune-y] 6: rmse.test.rmse=1.04; time: 37.1 min
+[Tune-x] 7: mtry=8; coefReg=0.598
+[Tune-y] 7: rmse.test.rmse=1.07; time: 57.3 min
+[Tune-x] 8: mtry=7; coefReg=0.441
+[Tune-y] 8: rmse.test.rmse=1.07; time: 50.0 min
+[Tune-x] 9: mtry=8; coefReg=0.441
+[Tune-y] 9: rmse.test.rmse=1.07; time: 53.2 min
+[Tune-x] 10: mtry=7; coefReg=0.424
+[Tune-y] 10: rmse.test.rmse=1.07; time: 48.4 min
+[Tune-x] 11: mtry=6; coefReg=0.125
+[Tune-y] 11: rmse.test.rmse=1.06; time: 43.7 min
+[Tune-x] 12: mtry=2; coefReg=0.0374
+[Tune-y] 12: rmse.test.rmse= 1.4; time: 10.2 min
+[Tune-x] 13: mtry=3; coefReg=0.0534
+[Tune-y] 13: rmse.test.rmse=1.06; time: 20.5 min
+[Tune-x] 14: mtry=3; coefReg=0.859
+[Tune-y] 14: rmse.test.rmse=1.05; time: 20.9 min
+[Tune-x] 15: mtry=6; coefReg=0.404
+[Tune-y] 15: rmse.test.rmse=1.06; time: 44.1 min
+[Tune-x] 16: mtry=4; coefReg=0.862
+[Tune-y] 16: rmse.test.rmse=1.04; time: 29.9 min
+[Tune-x] 17: mtry=9; coefReg=0.759
+[Tune-y] 17: rmse.test.rmse=1.08; time: 57.7 min
+[Tune-x] 18: mtry=3; coefReg=0.076
+[Tune-y] 18: rmse.test.rmse=1.05; time: 22.0 min
+[Tune-x] 19: mtry=3; coefReg=0.598
+[Tune-y] 19: rmse.test.rmse=1.06; time: 20.4 min
+[Tune-x] 20: mtry=8; coefReg=0.019
+[Tune-y] 20: rmse.test.rmse=1.07; time: 55.4 min
+[Tune] Result: mtry=4; coefReg=0.862 : rmse.test.rmse=1.04
+[1] "Wed Feb 21 13:43:38 2018"
+[Tune] Started tuning learner regr.svm for parameter set:
+         Type len   Def    Constr Req Tunable Trafo
+cost  numeric   -     0 -15 to 15   -    TRUE     Y
+gamma numeric   - -3.32 -15 to 15   -    TRUE     Y
+With control class: TuneControlRandom
+Imputation value: Inf
+[Tune-x] 1: cost=0.0185; gamma=3.54e+03
+[Tune-y] 1: rmse.test.rmse=4.36; time: 7.1 min
+[Tune-x] 2: cost=4.02e-05; gamma=6.85e+03
+[Tune-y] 2: rmse.test.rmse=4.39; time: 6.8 min
+[Tune-x] 3: cost=10.1; gamma=239
+[Tune-y] 3: rmse.test.rmse=3.51; time: 13.1 min
+[Tune-x] 4: cost=19.4; gamma=3.54e-05
+[Tune-y] 4: rmse.test.rmse=2.39; time: 10.8 min
+[Tune-x] 5: cost=0.954; gamma=12.8
+[Tune-y] 5: rmse.test.rmse=3.59; time: 19.2 min
+[Tune-x] 6: cost=0.0835; gamma=0.00864
+[Tune-y] 6: rmse.test.rmse=1.48; time: 9.7 min
+[Tune-x] 7: cost=208; gamma=7.64
+[Tune-y] 7: rmse.test.rmse=3.51; time: 23.4 min
+[Tune-x] 8: cost=25.6; gamma=0.29
