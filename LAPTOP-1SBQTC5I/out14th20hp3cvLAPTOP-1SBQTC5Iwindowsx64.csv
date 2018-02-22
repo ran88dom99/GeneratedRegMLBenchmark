@@ -97,3 +97,17 @@ Fail,Fail,Fail,Fail,PackageFail,Sun Feb 18 15:43:24 2018,pls,1,1,basic sum C1 + 
 0.998,0.998,0.038,0.003,0.002,Sun Feb 18 15:43:36 2018,ppr,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.46026913213984,random,291,2,cv,20,3,1,5,2
 Fail,Fail,Fail,Fail,PackageFail,Sun Feb 18 15:43:41 2018,pythonKnnReg,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,4
 0.782,0.761,0.361,0.36,0.257,Mon Feb 19 15:32:18 2018,qrf,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.50147864786943,random,301,10,cv,20,3,1,5,2
+0.945,0.903,0.16,0.141,0.063,Wed Feb 21 15:31:21 2018,ranger,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.45861434956592,random,271,4,cv,20,3,1,5,2
+0.943,0.909,0.172,0.133,0.066,Wed Feb 21 15:31:43 2018,Rborist,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.45861434956592,random,271,21,cv,20,3,1,5,2
+0.354,0.351,1.44,0.947,0.74,Wed Feb 21 15:31:45 2018,relaxo,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.45861434956592,random,271,2,cv,20,3,1,5,780.637736380116,0.0760237313807011
+0.944,0.903,0.162,0.141,0.064,Wed Feb 21 15:31:53 2018,rf,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.45861434956592,random,271,6,cv,20,3,1,5,2
+0.993,0.992,0.011,0.011,0.008,Wed Feb 21 15:31:55 2018,ridge,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.45861434956592,random,271,1,cv,20,3,1,5,0.00102461184041262
+0.993,0.992,0.011,0.011,0.008,Wed Feb 21 15:31:57 2018,rlm,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.45861434956592,random,271,1,cv,20,3,1,5,TRUE,psi.hampel
+0.806,0.774,0.39,0.33,0.223,Wed Feb 21 15:31:59 2018,rpart,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.45861434956592,random,271,1,cv,20,3,1,5,0.000134492447644338
+0.631,0.626,-1,0.544,0.423,Wed Feb 21 15:32:00 2018,rpart1SE,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.45861434956592,random,271,1,cv,20,3,1,5,none
+0.631,0.626,0.559,0.544,0.423,Wed Feb 21 15:32:02 2018,rpart2,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.45861434956592,random,271,1,cv,20,3,1,5,12
+0.993,0.992,0.012,0.011,0.008,Wed Feb 21 15:32:04 2018,rqlasso,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.45861434956592,random,271,2,cv,20,3,1,5,0.000627180394598934
+0.993,0.992,0.012,0.011,0.008,Wed Feb 21 15:32:06 2018,rqnc,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.45861434956592,random,271,1,cv,20,3,1,5,0.261536762226595,SCAD
+0.943,0.902,0.161,0.143,0.065,Wed Feb 21 15:33:32 2018,RRF,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.45861434956592,random,271,85,cv,20,3,1,5,2,0.787386835785583,0.359186923364177
+0.944,0.902,0.16,0.143,0.064,Wed Feb 21 15:34:13 2018,RRFglobal,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,1.45861434956592,random,271,40,cv,20,3,1,5,2,0.550901937531307
+Fail,Fail,Fail,Fail,Fail,Wed Feb 21 15:37:00 2018,rvmLinear,1,1,basic sum C1 + C2,ignore,none,YeoJohnson,166
