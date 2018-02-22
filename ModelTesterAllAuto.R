@@ -6,9 +6,9 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #try(log("a")) ## test --no-edit
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
-
-which.computer<-Sys.info()[['nodename']]
 task.subject<-"14th20hp3cv"
+pc.mlr<-c("HOPPER")#"ALTA",
+which.computer<-Sys.info()[['nodename']]
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
 
@@ -33,6 +33,7 @@ try({
   gensTTest<-as.vector(gensTTest)
 })
 if(!exists("gensTTest")) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
+gensTTesto<-c(gensTTesto[length(gensTTesto):1])
 if(length(gensTTest)<1) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
 
 
@@ -259,14 +260,17 @@ for(gend.data in gensTTest){
           
           ###########for all models#################
           setwd(base.folder)
-          if(max(which.computer==c("ALTA","HOPPER"))>0)
+          if(max(which.computer==pc.mlr)>0)
             source("MLR part.R")
           else
             source("Caret part.R")
           
          setwd(cpout.folder)
           if(norming == normings[length(normings)]){
-            write.table( t(gensTTest[count.toy.data.passed:length(gensTTest)]),file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
+            if(count.toy.data.passed>length(gensTTest)){gensTTest<-c(gensTTesto)}
+            write.table( t(gensTTest[count.toy.data.passed:length(gensTTest)]),file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
+            
+            }
           
         }
       }

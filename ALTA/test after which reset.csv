@@ -21,3 +21,7 @@ Wed Jan 03 22:20:37 2018,regr.xyf,sparsity 2 row center,3,20,windows,i386,ALTA
 Sat Jan 27 21:51:09 2018,regr.blackboost,bas interactive latent features,3,20,windows,i386,ALTA
 Sun Jan 28 23:06:12 2018,regr.rknn,bas interactive latent features,3,20,windows,i386,ALTA
 
+Sun Feb 18 22:56:14 2018,regr.xyf,basic sum C1 + C2,3,20,windows,i386,ALTA
+Mon Feb 19 16:23:51 2018,regr.bartMachine,bas interactive latent features,3,20,windows,i386,ALTA
+Tue Feb 20 08:18:19 2018,regr.xyf,bas interactive latent features,3,20,windows,i386,ALTA
+Tue Feb 20 08:24:41 2018,blassoAveraged,basic sum C1 + C2,3,20,windows,i386,ALTA

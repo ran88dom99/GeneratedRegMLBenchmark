@@ -89,7 +89,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   try({list.of.packages <-getLearnerPackages(allmodel)
   error.pack=1})
   if(error.pack==0){
-    write.table(paste("Fail","Fail","Fail","Fail","PrePackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,round(proc.time()[3]-when[3]),  sep = ","),
+    write.table(paste("Fail","Fail","Fail","Fail","PrePackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,round(proc.time()[3]-when[3]),  sep = ","),
                 file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
@@ -97,7 +97,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
   if(length(new.packages)) install.packages(new.packages, dep = TRUE)
   if(length(list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])])){
-    write.table(paste("Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,round(proc.time()[3]-when[3]),  sep = ","),
+    write.table(paste("Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,round(proc.time()[3]-when[3]),  sep = ","),
                 file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
@@ -126,7 +126,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
   RMSEp=RMSE(p[,1],p[,2])
   #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
-  RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
+  RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
   #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
   MMAAEE=MAE(p[,1],p[,2])
   
@@ -138,9 +138,9 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   
   #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
   write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
-                round(overRMSE,digits = 3),round(RMSEp,digits = 3),round(MMAAEE,digits = 3),
+                signif(overRMSE,digits = 3),signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),
                 date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
-                withextra,norming,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
+                withextra,norming,which.computer,task.subject,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
                 adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
                 adaptControl$adaptive$min,mod$x),
               file = out.file, append =TRUE, quote = F, sep = ",",
@@ -164,7 +164,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
     #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
     RMSEp=RMSE(p[,1],p[,2])
     #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
-    RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
+    RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
     #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
     MMAAEE=MAE(p[,1],p[,2])
     
@@ -177,9 +177,9 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
     
     #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
     write.table(paste(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
-                      round(overRMSE,digits = 3),round(RMSEp,digits = 3),round(MMAAEE,digits = 3),
+                      signif(overRMSE,digits = 3),signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),
                       date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
-                      withextra,norming,RMSE.mean,NoHyper,seed.var,round(proc.time()[3]-when[3]),
+                      withextra,norming,which.computer,task.subject,RMSE.mean,NoHyper,seed.var,round(proc.time()[3]-when[3]),
                       adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
                       adaptControl$adaptive$min, sep = ","),
                 file = out.file, append =TRUE, quote = F, sep = ",",
@@ -190,8 +190,8 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
     not.failed=1
   }})
   if(not.failed==0) {
-    print(c("failed","failed",date(),datasource,missingdata,withextra,norming,allmodel))
-    write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,round(proc.time()[3]-when[3]),  sep = ","),
+    print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
+    write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,round(proc.time()[3]-when[3]),  sep = ","),
                 file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
