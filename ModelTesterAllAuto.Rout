@@ -1,13 +1,11 @@
 
-R version 3.4.1 (2017-06-30) -- "Single Candle"
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
 
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
@@ -25,9 +23,9 @@ Type 'q()' to quit R.
 > #try(log("a")) ## test --no-edit
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
-> 
-> which.computer<-Sys.info()[['nodename']]
 > task.subject<-"14th20hp3cv"
+> pc.mlr<-c("HOPPER")#"ALTA",
+> which.computer<-Sys.info()[['nodename']]
 > out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 > importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
 > 
@@ -52,6 +50,7 @@ Type 'q()' to quit R.
 +   gensTTest<-as.vector(gensTTest)
 + })
 > if(!exists("gensTTest")) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
+> gensTTesto<-c(gensTTesto[length(gensTTesto):1])
 > if(length(gensTTest)<1) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
 > 
 > 
@@ -80,9 +79,9 @@ Loading required package: ggplot2
 
 Attaching package: 'MLmetrics'
 
-The following object is masked from 'package:caret':
+The following objects are masked from 'package:caret':
 
-    RMSE
+    MAE, RMSE
 
 The following object is masked from 'package:base':
 
@@ -99,7 +98,6 @@ The following object is masked from 'package:base':
 +   if(last.alg==before.last.alg){print("algorithm may be broken")}
 +   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 + })
-[1] "algorithm may be broken"
 > try({
 +   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 +   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -201,10 +199,8 @@ The following object is masked from 'package:base':
 > list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
-Installing packages into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
-(as 'lib' is unspecified)
 Warning message:
-packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1) 
+packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.3) 
 > 
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
@@ -215,7 +211,7 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Wed Feb 21 15:30:55 2018"
+[1] "Wed Feb 21 19:33:45 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -298,14 +294,17 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 +           
 +           ###########for all models#################
 +           setwd(base.folder)
-+           if(max(which.computer==c("ALTA","HOPPER"))>0)
++           if(max(which.computer==pc.mlr)>0)
 +             source("MLR part.R")
 +           else
 +             source("Caret part.R")
 +           
 +          setwd(cpout.folder)
 +           if(norming == normings[length(normings)]){
-+             write.table( t(gensTTest[count.toy.data.passed:length(gensTTest)]),file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)}
++             if(count.toy.data.passed>length(gensTTest)){gensTTest<-c(gensTTesto)}
++             write.table( t(gensTTest[count.toy.data.passed:length(gensTTest)]),file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
++             
++             }
 +           
 +         }
 +       }
@@ -313,478 +312,10 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 +   }
 +   
 + }
-Loading required package: e1071
-Loading required package: ranger
-Random Forest 
 
-752 samples
-  2 predictor
+Attaching package: 'mlr'
 
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 501, 503 
-Resampling results across tuning parameters:
+The following object is masked from 'package:caret':
 
-  mtry  RMSE       Rsquared   Selected
-  1     0.1878340  0.9877936          
-  2     0.1603756  0.9897050  *       
+    train
 
-RMSE was used to select the optimal model using  the smallest value.
-The final value used for the model was mtry = 2.
-[1] "Wed Feb 21 15:31:21 2018"
-Error in code$varImp(object$finalModel, ...) : 
-  No importance values available
-Loading required package: Rborist
-Loading required package: Rcpp
-Rborist 0.1-7
-Type RboristNews() to see new features/changes/bug fixes.
-Random Forest 
-
-752 samples
-  2 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 501, 503 
-Resampling results across tuning parameters:
-
-  predFixed  RMSE       Rsquared   Selected
-  1          0.1906540  0.9865932          
-  2          0.1721217  0.9874890  *       
-
-RMSE was used to select the optimal model using  the smallest value.
-The final value used for the model was predFixed = 2.
-[1] "Wed Feb 21 15:31:43 2018"
-Loading required package: relaxo
-Loading required package: lars
-Loaded lars 1.2
-
-Loading required package: plyr
-Relaxed Lasso 
-
-752 samples
-  2 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 501, 503 
-Resampling results across tuning parameters:
-
-  phi         lambda    RMSE      Rsquared  Selected
-  0.07602373  780.6377  1.439674  NaN       *       
-  0.23625448  782.3975  1.439674  NaN               
-  0.27904179  790.2675  1.439674  NaN               
-  0.38682288  790.9914  1.439674  NaN               
-  0.44530403  783.5905  1.439674  NaN               
-  0.47125830  791.4002  1.439674  NaN               
-  0.51400697  788.7250  1.439674  NaN               
-  0.55090194  787.7732  1.439674  NaN               
-  0.61799753  789.7447  1.439674  NaN               
-  0.65787511  787.3384  1.439674  NaN               
-  0.65803691  789.4170  1.439674  NaN               
-  0.67003378  782.8432  1.439674  NaN               
-  0.67017795  788.0609  1.439674  NaN               
-  0.67553607  780.8668  1.439674  NaN               
-  0.71817689  787.3789  1.439674  NaN               
-  0.74771223  784.0070  1.439674  NaN               
-  0.75542751  783.4418  1.439674  NaN               
-  0.76497884  782.6664  1.439674  NaN               
-  0.78738684  789.6861  1.439674  NaN               
-  0.84452530  786.5230  1.439674  NaN               
-
-RMSE was used to select the optimal model using  the smallest value.
-The final values used for the model were lambda = 780.6377 and phi = 0.07602373.
-[1] "Wed Feb 21 15:31:45 2018"
-Loading required package: randomForest
-randomForest 4.6-12
-Type rfNews() to see new features/changes/bug fixes.
-
-Attaching package: 'randomForest'
-
-The following object is masked from 'package:ranger':
-
-    importance
-
-The following object is masked from 'package:ggplot2':
-
-    margin
-
-Random Forest 
-
-752 samples
-  2 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 501, 503 
-Resampling results across tuning parameters:
-
-  mtry  RMSE       Rsquared   Selected
-  1     0.1892646  0.9878713          
-  2     0.1618872  0.9894669  *       
-
-RMSE was used to select the optimal model using  the smallest value.
-The final value used for the model was mtry = 2.
-[1] "Wed Feb 21 15:31:53 2018"
-Error in varImp[, "%IncMSE"] : subscript out of bounds
-In addition: There were 50 or more warnings (use warnings() to see the first 50)
-Loading required package: elasticnet
-Ridge Regression 
-
-752 samples
-  2 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 501, 503 
-Resampling results across tuning parameters:
-
-  lambda        RMSE        Rsquared   Selected
-  1.917762e-05  0.01131083  0.9999389          
-  2.514660e-05  0.01131082  0.9999389          
-  1.535175e-04  0.01131065  0.9999389          
-  2.108614e-04  0.01131058  0.9999389          
-  2.597684e-04  0.01131052  0.9999389          
-  5.262931e-04  0.01131017  0.9999389          
-  6.271804e-04  0.01131005  0.9999389          
-  1.024612e-03  0.01130956  0.9999389  *       
-  1.976850e-02  0.01131237  0.9999389          
-  5.148119e-02  0.01141983  0.9999389          
-  5.398721e-02  0.01143312  0.9999389          
-  8.573421e-02  0.01165077  0.9999389          
-  1.201151e-01  0.01196664  0.9999388          
-  2.615368e-01  0.01363290  0.9999388          
-  5.879860e-01  0.01733131  0.9999386          
-  8.055419e-01  0.01927269  0.9999386          
-  8.627213e-01  0.01972077  0.9999385          
-  1.589953e+00  0.02385660  0.9999384          
-  3.704155e+00  0.02889206  0.9999382          
-  5.969698e+00  0.03095950  0.9999382          
-
-RMSE was used to select the optimal model using  the smallest value.
-The final value used for the model was lambda = 0.001024612.
-[1] "Wed Feb 21 15:31:55 2018"
-Loading required package: MASS
-Robust Linear Model 
-
-752 samples
-  2 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 501, 503 
-Resampling results across tuning parameters:
-
-  intercept  psi           RMSE        Rsquared   Selected
-  FALSE      psi.huber     0.01186610  0.9999390          
-  FALSE      psi.hampel    0.01185604  0.9999390          
-  FALSE      psi.bisquare  0.01190575  0.9999389          
-   TRUE      psi.huber     0.01135946  0.9999388          
-   TRUE      psi.hampel    0.01134341  0.9999387  *       
-   TRUE      psi.bisquare  0.01144184  0.9999386          
-
-RMSE was used to select the optimal model using  the smallest value.
-The final values used for the model were intercept = TRUE and psi = psi.hampel.
-[1] "Wed Feb 21 15:31:57 2018"
-Loading required package: rpart
-CART 
-
-752 samples
-  2 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 501, 503 
-Resampling results across tuning parameters:
-
-  cp            RMSE       Rsquared   Selected
-  0.0000000000  0.3899516  0.9280654          
-  0.0001049935  0.3899516  0.9280654          
-  0.0001086443  0.3899516  0.9280654          
-  0.0001344924  0.3899516  0.9280654  *       
-  0.0004031608  0.3919630  0.9273290          
-  0.0004315092  0.3927954  0.9270346          
-  0.0004874856  0.3927954  0.9270346          
-  0.0005084532  0.3927954  0.9270346          
-  0.0006173499  0.3937021  0.9267174          
-  0.0006834477  0.3947387  0.9263830          
-  0.0007441328  0.3955900  0.9260610          
-  0.0010525347  0.4094172  0.9207416          
-  0.0014942845  0.4149916  0.9185794          
-  0.0020675603  0.4360646  0.9101916          
-  0.0023917255  0.4434985  0.9071392          
-  0.0043602229  0.4834704  0.8898070          
-  0.0052613513  0.5091031  0.8786487          
-  0.0108151294  0.5672224  0.8476351          
-  0.0139757669  0.5890059  0.8348895          
-
-RMSE was used to select the optimal model using  the smallest value.
-The final value used for the model was cp = 0.0001344924.
-[1] "Wed Feb 21 15:31:59 2018"
-CART 
-
-752 samples
-  2 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 501, 503 
-Resampling results:
-
-  RMSE      Rsquared 
-  0.559314  0.8521068
-
-[1] "Wed Feb 21 15:32:00 2018"
-CART 
-
-752 samples
-  2 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 501, 503 
-Resampling results across tuning parameters:
-
-  maxdepth  RMSE       Rsquared   Selected
-   5        0.7446458  0.7343216          
-   6        0.7152142  0.7557581          
-   9        0.6147326  0.8212007          
-  10        0.5836382  0.8380938          
-  12        0.5593140  0.8521068  *       
-  13        0.5593140  0.8521068          
-  15        0.5593140  0.8521068          
-  18        0.5593140  0.8521068          
-  21        0.5593140  0.8521068          
-  22        0.5593140  0.8521068          
-  23        0.5593140  0.8521068          
-  24        0.5593140  0.8521068          
-  25        0.5593140  0.8521068          
-  28        0.5593140  0.8521068          
-  29        0.5593140  0.8521068          
-  30        0.5593140  0.8521068          
-
-RMSE was used to select the optimal model using  the smallest value.
-The final value used for the model was maxdepth = 12.
-[1] "Wed Feb 21 15:32:02 2018"
-Loading required package: rqPen
-Loading required package: quantreg
-Loading required package: SparseM
-
-Attaching package: 'SparseM'
-
-The following object is masked from 'package:base':
-
-    backsolve
-
-Loading required package: regpro
-Loading required package: denpro
-Quantile Regression with LASSO penalty 
-
-752 samples
-  2 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 501, 503 
-Resampling results across tuning parameters:
-
-  lambda        RMSE        Rsquared   Selected
-  1.917762e-05  0.01153246  0.9999389          
-  2.514660e-05  0.01153246  0.9999389          
-  1.535175e-04  0.01153246  0.9999389          
-  2.108614e-04  0.01153246  0.9999389          
-  2.597684e-04  0.01153246  0.9999389          
-  5.262931e-04  0.01153209  0.9999389          
-  6.271804e-04  0.01153207  0.9999389  *       
-  1.024612e-03  0.01153502  0.9999389          
-  1.976850e-02  0.01160208  0.9999392          
-  5.148119e-02  0.01196147  0.9999390          
-  5.398721e-02  0.01199688  0.9999391          
-  8.573421e-02  0.01276510  0.9999393          
-  1.201151e-01  0.01386175  0.9999396          
-  2.615368e-01  0.02113907  0.9999397          
-  5.879860e-01  1.43995830        NaN          
-  8.055419e-01  1.43995832        NaN          
-  8.627213e-01  1.43995832        NaN          
-  1.589953e+00  1.43995830        NaN          
-  3.704155e+00  1.43995829        NaN          
-  5.969698e+00  1.43995829        NaN          
-
-RMSE was used to select the optimal model using  the smallest value.
-The final value used for the model was lambda = 0.0006271804.
-[1] "Wed Feb 21 15:32:04 2018"
-Non-Convex Penalized Quantile Regression 
-
-752 samples
-  2 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 501, 503 
-Resampling results across tuning parameters:
-
-  lambda        penalty  RMSE        Rsquared   Selected
-  1.917762e-05  MCP      0.01153246  0.9999389          
-  2.514660e-05  SCAD     0.01153246  0.9999389          
-  1.535175e-04  MCP      0.01153246  0.9999389          
-  2.108614e-04  SCAD     0.01153246  0.9999389          
-  2.597684e-04  SCAD     0.01153246  0.9999389          
-  5.262931e-04  SCAD     0.01153246  0.9999389          
-  6.271804e-04  MCP      0.01153246  0.9999389          
-  1.024612e-03  SCAD     0.01153246  0.9999389          
-  1.976850e-02  SCAD     0.01153246  0.9999389          
-  5.148119e-02  SCAD     0.01153246  0.9999389          
-  5.398721e-02  SCAD     0.01153246  0.9999389          
-  8.573421e-02  SCAD     0.01153246  0.9999389          
-  1.201151e-01  SCAD     0.01153246  0.9999389          
-  2.615368e-01  SCAD     0.01153246  0.9999389  *       
-  5.879860e-01  SCAD     1.43995830        NaN          
-  8.055419e-01  SCAD     1.43995832        NaN          
-  8.627213e-01  SCAD     1.43995832        NaN          
-  1.589953e+00  MCP      1.43995830        NaN          
-  3.704155e+00  MCP      1.43995829        NaN          
-  5.969698e+00  MCP      1.43995829        NaN          
-
-RMSE was used to select the optimal model using  the smallest value.
-The final values used for the model were lambda = 0.2615368 and penalty = SCAD.
-[1] "Wed Feb 21 15:32:06 2018"
-Loading required package: RRF
-RRF 1.7
-Type rrfNews() to see new features/changes/bug fixes.
-
-Attaching package: 'RRF'
-
-The following objects are masked from 'package:randomForest':
-
-    classCenter, combine, getTree, grow, importance, margin, MDSplot,
-    na.roughfix, outlier, partialPlot, treesize, varImpPlot, varUsed
-
-The following object is masked from 'package:ranger':
-
-    importance
-
-The following object is masked from 'package:ggplot2':
-
-    margin
-
-Regularized Random Forest 
-
-752 samples
-  2 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 501, 503 
-Resampling results across tuning parameters:
-
-  mtry  coefReg     coefImp     RMSE       Rsquared   Selected
-  1     0.07602373  0.77120080  0.1891039  0.9877487          
-  1     0.23625448  0.41264495  0.1900931  0.9876881          
-  1     0.44530403  0.69904417  0.1886739  0.9877693          
-  1     0.67003378  0.45035265  0.1884842  0.9879599          
-  1     0.67553607  0.64193033  0.1892502  0.9877639          
-  1     0.74771223  0.86718754  0.1892103  0.9877667          
-  1     0.75542751  0.91864684  0.1900793  0.9876679          
-  1     0.76497884  0.67620954  0.1906059  0.9876431          
-  2     0.27904179  0.55624639  0.1619628  0.9893542          
-  2     0.38682288  0.05271215  0.1627027  0.9893050          
-  2     0.47125830  0.67870316  0.1618755  0.9893531          
-  2     0.51400697  0.98596198  0.1619415  0.9894165          
-  2     0.55090194  0.47933743  0.1628233  0.9893609          
-  2     0.61799753  0.73351262  0.1614948  0.9895116          
-  2     0.65787511  0.08016599  0.1623612  0.9893705          
-  2     0.65803691  0.36614393  0.1615258  0.9895007          
-  2     0.67017795  0.07430065  0.1614494  0.9895318          
-  2     0.71817689  0.87298694  0.1614426  0.9894591          
-  2     0.78738684  0.35918692  0.1610571  0.9895044  *       
-  2     0.84452530  0.56587370  0.1631827  0.9892477          
-
-RMSE was used to select the optimal model using  the smallest value.
-The final values used for the model were mtry = 2, coefReg = 0.7873868
- and coefImp = 0.3591869.
-[1] "Wed Feb 21 15:33:32 2018"
-Error in varImp[, "%IncMSE"] : subscript out of bounds
-In addition: Warning messages:
-1: In rlm.default(x, y, weights, method = method, wt.method = wt.method,  :
-  'rlm' failed to converge in 20 steps
-2: In rlm.default(x, y, weights, method = method, wt.method = wt.method,  :
-  'rlm' failed to converge in 20 steps
-3: In nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
-  There were missing values in resampled performance measures.
-4: In nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
-  There were missing values in resampled performance measures.
-Regularized Random Forest 
-
-752 samples
-  2 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 501, 503 
-Resampling results across tuning parameters:
-
-  mtry  coefReg     RMSE       Rsquared   Selected
-  1     0.07602373  0.1928409  0.9870689          
-  1     0.23625448  0.1897218  0.9877538          
-  1     0.44530403  0.1903525  0.9876690          
-  1     0.67003378  0.1887865  0.9878431          
-  1     0.67553607  0.1900972  0.9877699          
-  1     0.74771223  0.1899423  0.9876546          
-  1     0.75542751  0.1873999  0.9882072          
-  1     0.76497884  0.1915776  0.9875211          
-  2     0.27904179  0.1611226  0.9895453          
-  2     0.38682288  0.1620833  0.9893580          
-  2     0.47125830  0.1629939  0.9892542          
-  2     0.51400697  0.1615484  0.9894875          
-  2     0.55090194  0.1599353  0.9896530  *       
-  2     0.61799753  0.1605661  0.9896417          
-  2     0.65787511  0.1616040  0.9894399          
-  2     0.65803691  0.1626621  0.9892698          
-  2     0.67017795  0.1617113  0.9894378          
-  2     0.71817689  0.1623670  0.9893465          
-  2     0.78738684  0.1617136  0.9894376          
-  2     0.84452530  0.1644477  0.9890498          
-
-RMSE was used to select the optimal model using  the smallest value.
-The final values used for the model were mtry = 2 and coefReg = 0.5509019.
-[1] "Wed Feb 21 15:34:13 2018"
-Error in varImp[, "%IncMSE"] : subscript out of bounds
-Loading required package: kernlab
-
-Attaching package: 'kernlab'
-
-The following object is masked from 'package:ggplot2':
-
-    alpha
-
-Error in .local(object, ...) : test vector does not match model !
-Error in .local(object, ...) : test vector does not match model !
-Error in .local(object, ...) : test vector does not match model !
-In addition: Warning messages:
-1: In eval(xpr, envir = envir) :
-  model fit failed for Resample05: parameter=none Error in crossprod(Kr)/var + diag(1/thetatmp) : non-conformable arrays
-
-2: In eval(xpr, envir = envir) :
-  model fit failed for Resample23: parameter=none Error in crossprod(Kr)/var + diag(1/thetatmp) : non-conformable arrays
-
-3: In max(abs(logtheta[thetavec[which(nzindex)] != 0] + log(thetavec[thetavec !=  :
-  no non-missing arguments to max; returning -Inf
-4: In nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
-  There were missing values in resampled performance measures.
-[1] "failed"                   "failed"                  
-[3] "Wed Feb 21 15:37:00 2018" "basic sum C1 + C2"       
-[5] "ignore"                   "none"                    
-[7] "YeoJohnson"               "rvmLinear"               
-Error in .local(object, ...) : test vector does not match model !
-In addition: There were 49 warnings (use warnings() to see them)
-Something is wrong; all the RMSE metric values are missing:
-      RMSE        Rsquared  
- Min.   : NA   Min.   : NA  
- 1st Qu.: NA   1st Qu.: NA  
- Median : NA   Median : NA  
- Mean   :NaN   Mean   :NaN  
- 3rd Qu.: NA   3rd Qu.: NA  
- Max.   : NA   Max.   : NA  
- NA's   :8     NA's   :8    
-Error : Stopping
-In addition: There were 25 warnings (use warnings() to see them)
