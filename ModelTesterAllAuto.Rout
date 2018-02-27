@@ -1,11 +1,13 @@
 
-R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
+R version 3.4.1 (2017-06-30) -- "Single Candle"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
 
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
@@ -79,9 +81,9 @@ Loading required package: ggplot2
 
 Attaching package: 'MLmetrics'
 
-The following objects are masked from 'package:caret':
+The following object is masked from 'package:caret':
 
-    MAE, RMSE
+    RMSE
 
 The following object is masked from 'package:base':
 
@@ -98,6 +100,7 @@ The following object is masked from 'package:base':
 +   if(last.alg==before.last.alg){print("algorithm may be broken")}
 +   write.table(last.alg,file = "beforelast algorithm.csv",  quote = F, row.names = F,col.names = F)
 + })
+[1] "algorithm may be broken"
 > try({
 +   before.last.tsk<-as.matrix(read.csv("beforelast task.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 +   last.tsk<-as.matrix(read.csv("last task tried.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -199,8 +202,10 @@ The following object is masked from 'package:base':
 > list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
+Installing packages into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
+(as 'lib' is unspecified)
 Warning message:
-packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.3) 
+packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1) 
 > 
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
@@ -211,7 +216,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Tue Feb 27 12:14:09 2018"
+[1] "Mon Feb 26 15:31:32 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -312,3 +317,75 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 +   }
 +   
 + }
+Loading required package: frbs
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+  |                                                                              |                                                                      |   0%
+Something is wrong; all the RMSE metric values are missing:
+      RMSE        Rsquared  
+ Min.   : NA   Min.   : NA  
+ 1st Qu.: NA   1st Qu.: NA  
+ Median : NA   Median : NA  
+ Mean   :NaN   Mean   :NaN  
+ 3rd Qu.: NA   3rd Qu.: NA  
+ Max.   : NA   Max.   : NA  
+ NA's   :20    NA's   :20   
+Error : Stopping
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
