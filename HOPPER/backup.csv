@@ -13762,3 +13762,6 @@ Succ, Mon Feb 26 17:04:24 2018, spls
 Succ, Mon Feb 26 17:04:35 2018, superpc
 Fail, Mon Feb 26 17:04:45 2018, svmBoundrangeString
 Fail, Mon Feb 26 17:04:55 2018, svmExpoString
+Succ, Mon Feb 26 20:50:35 2018, svmLinear
+Succ, Mon Feb 26 20:51:58 2018, svmLinear2
+Succ, Mon Feb 26 20:52:33 2018, svmLinear3

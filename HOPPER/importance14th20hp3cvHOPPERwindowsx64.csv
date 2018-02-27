@@ -2951,3 +2951,6 @@ simpls, Mon Feb 26 17:03:48 2018, 0.472, Boston Housing, Failed
 spikeslab, Mon Feb 26 17:04:11 2018, 0.475, Boston Housing, c(22.4, 14.2, 25, 0, 22, 86.3, 12.7, 5.8, 12.4, 23.3, 40.5, 18.4, 100)
 spls, Mon Feb 26 17:04:24 2018, 0.476, Boston Housing, c(22.4, 14.2, 25, 0, 22, 86.3, 12.7, 5.8, 12.4, 23.3, 40.5, 18.4, 100)
 superpc, Mon Feb 26 17:04:35 2018, 0, Boston Housing, c(22.4, 14.2, 25, 0, 22, 86.3, 12.7, 5.8, 12.4, 23.3, 40.5, 18.4, 100)
+svmLinear, Mon Feb 26 20:50:35 2018, NA, Boston Housing, Failed
+svmLinear2, Mon Feb 26 20:51:59 2018, 0.5, Boston Housing, c(31, 17.4, 32.2, 0, 31.5, 86.1, 21, 16.3, 20.8, 32.6, 31.5, 19.5, 100)
+svmLinear3, Mon Feb 26 20:52:33 2018, 0.115, Boston Housing, c(31, 17.4, 32.2, 0, 31.5, 86.1, 21, 16.3, 20.8, 32.6, 31.5, 19.5, 100)

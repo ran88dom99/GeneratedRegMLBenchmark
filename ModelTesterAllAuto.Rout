@@ -1,13 +1,11 @@
 
-R version 3.4.1 (2017-06-30) -- "Single Candle"
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
 
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
@@ -81,9 +79,9 @@ Loading required package: ggplot2
 
 Attaching package: 'MLmetrics'
 
-The following object is masked from 'package:caret':
+The following objects are masked from 'package:caret':
 
-    RMSE
+    MAE, RMSE
 
 The following object is masked from 'package:base':
 
@@ -107,7 +105,6 @@ The following object is masked from 'package:base':
 +   if(last.tsk==before.last.tsk){print("task may be broken")}
 +   write.table(last.tsk,file = "beforelast task.csv",  quote = F, row.names = F,col.names = F)
 + })
-[1] "task may be broken"
 > bad.models=c("spaccceeee")
 > previous.fails<-(read.csv("test after which reset.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
 > previous.fails<-previous.fails[previous.fails[,8]==which.computer,]
@@ -201,10 +198,8 @@ The following object is masked from 'package:base':
 > list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
-Installing packages into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
-(as 'lib' is unspecified)
 Warning message:
-packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1) 
+packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.3) 
 > 
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
@@ -215,7 +210,7 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Sun Feb 25 15:31:02 2018"
+[1] "Mon Feb 26 20:01:41 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -316,11 +311,113 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 +   }
 +   
 + }
-Loading required package: kernlab
+Support Vector Machines with Linear Kernel 
 
-Attaching package: 'kernlab'
+381 samples
+ 13 predictor
 
-The following object is masked from 'package:ggplot2':
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 255, 254, 253 
+Resampling results across tuning parameters:
 
-    alpha
+  C             RMSE      Rsquared   MAE       Selected
+    0.04333145  5.011213  0.7179067  3.236470          
+    0.04594290  5.008886  0.7176113  3.242239          
+    0.14039454  5.000098  0.7166035  3.244470          
+    0.15308353  4.997539  0.7165256  3.243453          
+    0.18669675  5.001155  0.7160500  3.244880          
+    0.43570917  4.995078  0.7164617  3.238242          
+    0.46698394  4.994355  0.7165141  3.238089  *       
+    0.66055015  5.001208  0.7160439  3.257119          
+    0.73158872  5.003676  0.7159296  3.266257          
+    2.09026373  5.002144  0.7159533  3.270827          
+    4.87136744  5.002396  0.7159607  3.270387          
+    8.13646980  4.996510  0.7166324  3.268924          
+    9.61393811  5.002220  0.7159484  3.270847          
+   15.20777853  5.001107  0.7160622  3.270286          
+   33.52257262  5.002197  0.7159519  3.270547          
+   53.18534996  5.001953  0.7160050  3.270327          
+   69.01558330  4.997907  0.7165922  3.268372          
+   83.85670800  4.997691  0.7165996  3.268327          
+  134.56731153  4.997927  0.7166001  3.268512          
+  409.75359059  4.996171  0.7167283  3.268513          
 
+RMSE was used to select the optimal model using the smallest value.
+The final value used for the model was C = 0.4669839.
+[1] "Mon Feb 26 20:50:35 2018"
+Error in if (mean.improvement < 0) { : 
+  missing value where TRUE/FALSE needed
+In addition: Warning message:
+In method$predict(modelFit = modelFit, newdata = newdata, submodels = param) :
+  kernlab prediction calculations failed; returning NAs
+Support Vector Machines with Linear Kernel 
+
+381 samples
+ 13 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 255, 254, 253 
+Resampling results across tuning parameters:
+
+  cost          RMSE      Rsquared   MAE       Selected
+    0.04333145  5.011213  0.7179067  3.236470          
+    0.04594290  5.008886  0.7176113  3.242239          
+    0.14039454  5.000098  0.7166035  3.244470          
+    0.15308353  4.997539  0.7165256  3.243453          
+    0.18669675  5.001155  0.7160500  3.244880          
+    0.43570917  4.995078  0.7164617  3.238242          
+    0.46698394  4.994355  0.7165141  3.238089  *       
+    0.66055015  5.001208  0.7160439  3.257119          
+    0.73158872  5.003676  0.7159296  3.266257          
+    2.09026373  5.002144  0.7159533  3.270827          
+    4.87136744  5.002396  0.7159607  3.270387          
+    8.13646980  4.996510  0.7166324  3.268924          
+    9.61393811  5.002220  0.7159484  3.270847          
+   15.20777853  5.001107  0.7160622  3.270286          
+   33.52257262  5.002197  0.7159519  3.270547          
+   53.18534996  5.001953  0.7160050  3.270327          
+   69.01558330  4.997907  0.7165922  3.268372          
+   83.85670800  4.997691  0.7165996  3.268327          
+  134.56731153  4.997927  0.7166001  3.268512          
+  409.75359059  4.996171  0.7167283  3.268513          
+
+RMSE was used to select the optimal model using the smallest value.
+The final value used for the model was cost = 0.4669839.
+[1] "Mon Feb 26 20:51:58 2018"
+L2 Regularized Support Vector Machine (dual) with Linear Kernel 
+
+381 samples
+ 13 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 255, 254, 253 
+Resampling results across tuning parameters:
+
+  cost          Loss  RMSE       Rsquared   MAE       Selected
+  1.509979e-03  L2     7.725356  0.3347785  5.400713          
+  1.632518e-03  L2     7.738129  0.3426118  5.378578          
+  7.239362e-03  L2     7.158357  0.4430893  4.988583          
+  8.124649e-03  L1     8.833635  0.1630846  6.506310          
+  1.058642e-02  L1     8.833635  0.1630852  6.506314          
+  3.277145e-02  L1     8.833635  0.1630865  6.506323          
+  3.594479e-02  L1     8.833635  0.1630866  6.506323          
+  5.707436e-02  L2     7.714168  0.6284037  5.633279          
+  6.540175e-02  L1     8.833635  0.1630868  6.506325          
+  2.651560e-01  L2     7.091432  0.6319210  5.314137          
+  8.192841e-01  L1     8.833635  0.1630871  6.506327          
+  1.623609e+00  L2     6.470283  0.5766358  4.874293  *       
+  2.028158e+00  L1     8.833635  0.1630871  6.506327          
+  3.738130e+00  L2     6.970465  0.6409330  5.160995          
+  1.072383e+01  L2     8.161706  0.6020857  6.335042          
+  1.984370e+01  L2    10.373809  0.5243002  8.766105          
+  2.808641e+01  L2     7.089988  0.5892335  5.071197          
+  3.641529e+01  L1     8.833635  0.1630871  6.506327          
+  6.841523e+01  L1     8.833635  0.1630871  6.506327          
+  3.019468e+02  L1     8.833635  0.1630871  6.506327          
+
+RMSE was used to select the optimal model using the smallest value.
+The final values used for the model were cost = 1.623609 and Loss = L2.
+[1] "Mon Feb 26 20:52:33 2018"

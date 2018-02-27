@@ -13596,3 +13596,6 @@ Fail,Fail,Fail,Fail,Fail,Mon Feb 26 16:55:07 2018,rvmRadial,1,1,Boston Housing,i
 -2.372,-1.612,24,NA,NA,Mon Feb 26 17:04:35 2018,superpc,1,1,Boston Housing,ignore,none,ICA,HOPPER,14th20hp3cv,9.083,random,282,3,cv,20,3,NA,5,0.474288750439882,3
 Fail,Fail,Fail,Fail,Fail,Mon Feb 26 17:04:45 2018,svmBoundrangeString,1,1,Boston Housing,ignore,none,ICA,HOPPER,14th20hp3cv,2
 Fail,Fail,Fail,Fail,Fail,Mon Feb 26 17:04:55 2018,svmExpoString,1,1,Boston Housing,ignore,none,ICA,HOPPER,14th20hp3cv,2
+NA,NA,4.99,NA,NA,Mon Feb 26 20:50:35 2018,svmLinear,1,1,Boston Housing,ignore,none,ICA,HOPPER,14th20hp3cv,8.911,random,248,76,cv,20,3,NA,5,0.466983935757359
+0.5,0.41,4.99,NA,NA,Mon Feb 26 20:51:58 2018,svmLinear2,1,1,Boston Housing,ignore,none,ICA,HOPPER,14th20hp3cv,8.911,random,248,74,cv,20,3,NA,5,0.466983935757359
+0.115,0.229,6.47,6.87,5.64,Mon Feb 26 20:52:33 2018,svmLinear3,1,1,Boston Housing,ignore,none,ICA,HOPPER,14th20hp3cv,8.911,random,248,25,cv,20,3,NA,5,1.6236087028558,L2
