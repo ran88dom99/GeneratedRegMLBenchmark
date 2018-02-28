@@ -2951,3 +2951,310 @@ simpls, Mon Feb 26 17:03:48 2018, 0.472, Boston Housing, Failed
 spikeslab, Mon Feb 26 17:04:11 2018, 0.475, Boston Housing, c(22.4, 14.2, 25, 0, 22, 86.3, 12.7, 5.8, 12.4, 23.3, 40.5, 18.4, 100)
 spls, Mon Feb 26 17:04:24 2018, 0.476, Boston Housing, c(22.4, 14.2, 25, 0, 22, 86.3, 12.7, 5.8, 12.4, 23.3, 40.5, 18.4, 100)
 superpc, Mon Feb 26 17:04:35 2018, 0, Boston Housing, c(22.4, 14.2, 25, 0, 22, 86.3, 12.7, 5.8, 12.4, 23.3, 40.5, 18.4, 100)
+svmLinear, Mon Feb 26 20:50:35 2018, NA, Boston Housing, Failed
+svmLinear2, Mon Feb 26 20:51:59 2018, 0.5, Boston Housing, c(31, 17.4, 32.2, 0, 31.5, 86.1, 21, 16.3, 20.8, 32.6, 31.5, 19.5, 100)
+svmLinear3, Mon Feb 26 20:52:33 2018, 0.115, Boston Housing, c(31, 17.4, 32.2, 0, 31.5, 86.1, 21, 16.3, 20.8, 32.6, 31.5, 19.5, 100)
+svmPoly, Mon Feb 26 22:25:55 2018, NA, Boston Housing, Failed
+svmRadial, Mon Feb 26 22:26:13 2018, NA, Boston Housing, Failed
+svmRadialCost, Mon Feb 26 22:26:29 2018, NA, Boston Housing, Failed
+svmRadialSigma, Mon Feb 26 22:26:45 2018, NA, Boston Housing, Failed
+treebag, Mon Feb 26 22:27:25 2018, 0.556, Boston Housing, c(15, 36.7, 37.5, 6.8, 100, 58.4, 0.7, 25.8, 0, 53, 78.2, 21.5, 54.3)
+widekernelpls, Mon Feb 26 22:27:51 2018, 0.457, Boston Housing, Failed
+WM, Mon Feb 26 22:53:18 2018, 0.466, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+xgbDART, Mon Feb 26 22:56:40 2018, 0.623, Boston Housing, c(100, 76.5, 58.7, 43, 25.6, 18.3, 13.4, 10.4, 10.2, 10.1, 7.5, 0.5, 0)
+xgbLinear, Mon Feb 26 22:57:14 2018, 0.642, Boston Housing, c(100, 64.3, 10.2, 7, 4.2, 1.9, 1.6, 1.4, 1.4, 0.5, 0.4, 0.1, 0)
+xgbTree, Mon Feb 26 22:59:26 2018, 0.639, Boston Housing, c(100, 80.5, 38, 30.9, 30.6, 27.2, 15.9, 8.4, 8.2, 6.3, 2, 0.4, 0)
+xyf, Mon Feb 26 22:59:59 2018, NA, Boston Housing, Failed
+avNNet, Mon Feb 26 23:00:37 2018, 0, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+bagEarth, Mon Feb 26 23:03:32 2018, 0.669, Boston Housing, c(100, 64.9, 41.6, 34.2, 28.7, 23.3, 16.8, 9.1, 4.2, 1.1, 0, 0, 0)
+bagEarthGCV, Mon Feb 26 23:04:18 2018, 0.612, Boston Housing, c(100, 62.6, 35.9, 28.2, 22.8, 18.3, 14.8, 10.8, 5.9, 1.9, 0.2, 0, 0)
+bam, Mon Feb 26 23:07:35 2018, 0.585, Boston Housing, c(0.3, 13.3, 17.7, 14.4, 35.8, 2.4, 100, 24.2, 90.6, 0, 14.9, 4.6, 8.5)
+blasso, Mon Feb 26 23:08:22 2018, 0.463, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+blassoAveraged, Mon Feb 26 23:08:41 2018, 0.463, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+bridge, Mon Feb 26 23:08:59 2018, 0.466, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+BstLm, Mon Feb 26 23:10:25 2018, 0.402, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+cforest, Mon Feb 26 23:11:26 2018, 0.59, Boston Housing, Failed
+ctree, Mon Feb 26 23:11:40 2018, 0.565, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+ctree2, Mon Feb 26 23:11:54 2018, 0.565, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+cubist, Mon Feb 26 23:13:02 2018, 0.695, Boston Housing, c(100, 86.3, 63.3, 58.3, 49.6, 47.5, 53.2, 19.4, 38.8, 36, 30.9, 7.2, 0)
+dnn, Mon Feb 26 23:13:18 2018, 0, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+earth, Mon Feb 26 23:13:33 2018, 0.585, Boston Housing, c(100, 61.4, 31.3, 29.6, 18, 14.9, 11.9, 10.8, 3.1, 0, 0, 0, 0)
+elm, Mon Feb 26 23:13:45 2018, 0.473, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+enet, Mon Feb 26 23:13:58 2018, 0.472, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+extraTrees, Mon Feb 26 23:18:17 2018, 0.666, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+foba, Mon Feb 26 23:18:30 2018, 0.471, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+gam, Mon Feb 26 23:21:53 2018, 0.585, Boston Housing, c(0.4, 13.3, 17.9, 14, 35.7, 2.4, 100, 24.1, 90.2, 0, 14.6, 4.7, 8.4)
+gamSpline, Mon Feb 26 23:22:38 2018, 0.585, Boston Housing, c(0, 0, 0, 0, 0, 0, NaN, 0, 0, 0, 0, 0, 0)
+gbm, Mon Feb 26 23:26:25 2018, 0.646, Boston Housing, Failed
+gcvEarth, Mon Feb 26 23:29:19 2018, 0.585, Boston Housing, c(100, 61.4, 31.3, 29.6, 18, 14.9, 11.9, 10.8, 3.1, 0, 0, 0, 0)
+glm, Mon Feb 26 23:29:31 2018, 0.473, Boston Housing, c(20.3, 32.7, 0, 32.1, 42.5, 100, 1, 71.4, 41.2, 30.5, 64, 30.5, 98.8)
+glm.nb, Mon Feb 26 23:29:43 2018, 0.555, Boston Housing, c(37.3, 16.6, 0, 24.2, 27.5, 63.7, 5.9, 44.5, 39.4, 24.8, 44.6, 20.8, 100)
+glmboost, Mon Feb 26 23:30:00 2018, 0.469, Boston Housing, c(0.5, 0.3, 0.4, 22, 100, 31.7, 9.4, 1.5, 0.1, 5.7, 0.1, 3.5, 0)
+glmnet, Mon Feb 26 23:30:14 2018, 0.472, Boston Housing, c(0.5, 0.3, 0.1, 18.9, 100, 26.8, 0, 8.7, 1.6, 0, 5.2, 0, 3.2)
+glmStepAIC, Mon Feb 26 23:33:06 2018, 0.475, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+icr, Mon Feb 26 23:33:23 2018, 0.473, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+kernelpls, Mon Feb 26 23:33:35 2018, 0.473, Boston Housing, Failed
+kknn, Mon Feb 26 23:34:25 2018, 0.61, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+knn, Mon Feb 26 23:34:38 2018, 0.204, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+krlsPoly, Mon Feb 26 23:35:07 2018, 0, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+krlsRadial, Mon Feb 26 23:37:10 2018, 0.655, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+lars, Mon Feb 26 23:37:23 2018, 0.473, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+lars2, Mon Feb 26 23:37:35 2018, 0.471, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+lasso, Mon Feb 26 23:37:47 2018, 0.473, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+leapBackward, Mon Feb 26 23:38:00 2018, 0.474, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+leapForward, Mon Feb 26 23:38:11 2018, 0.474, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+lm, Mon Feb 26 23:38:23 2018, 0.473, Boston Housing, c(20.3, 32.7, 0, 32.1, 42.5, 100, 1, 71.4, 41.2, 30.5, 64, 30.5, 98.8)
+lmStepAIC, Mon Feb 26 23:38:35 2018, 0.475, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+msaenet, Mon Feb 26 23:40:17 2018, 0.47, Boston Housing, 0.5
+msaenet, Mon Feb 26 23:40:17 2018, 0.47, Boston Housing, 0.3
+msaenet, Mon Feb 26 23:40:17 2018, 0.47, Boston Housing, 0.3
+msaenet, Mon Feb 26 23:40:17 2018, 0.47, Boston Housing, 22.3
+msaenet, Mon Feb 26 23:40:17 2018, 0.47, Boston Housing, 100
+msaenet, Mon Feb 26 23:40:17 2018, 0.47, Boston Housing, 30.7
+msaenet, Mon Feb 26 23:40:17 2018, 0.47, Boston Housing, 0
+msaenet, Mon Feb 26 23:40:17 2018, 0.47, Boston Housing, 9
+msaenet, Mon Feb 26 23:40:17 2018, 0.47, Boston Housing, 1.4
+msaenet, Mon Feb 26 23:40:17 2018, 0.47, Boston Housing, 0
+msaenet, Mon Feb 26 23:40:17 2018, 0.47, Boston Housing, 5.8
+msaenet, Mon Feb 26 23:40:17 2018, 0.47, Boston Housing, 0
+msaenet, Mon Feb 26 23:40:17 2018, 0.47, Boston Housing, 3.4
+nnet, Mon Feb 26 23:41:03 2018, 0, Boston Housing, c(31.3, 26.7, 100, 49.3, 30.2, 41.3, 61.6, 4, 41.3, 79.1, 62.2, 0, 78.6)
+nnls, Mon Feb 26 23:41:15 2018, 0.206, Boston Housing, c(0, 1.7, 0, 100, 0, 53.4, 0, 0, 0, 0, 0, 0.1, 0)
+null, Mon Feb 26 23:41:26 2018, 0, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+parRF, Mon Feb 26 23:42:08 2018, 0.639, Boston Housing, Failed
+pcaNNet, Mon Feb 26 23:42:26 2018, 0, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+pcr, Mon Feb 26 23:42:38 2018, 0.456, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+ppr, Mon Feb 26 23:43:28 2018, 0.579, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+qrf, Mon Feb 26 23:44:32 2018, 0.394, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+ranger, Mon Feb 26 23:45:05 2018, 0.634, Boston Housing, Failed
+Rborist, Mon Feb 26 23:49:30 2018, 0.628, Boston Housing, c(4.5, 0.5, 0.5, 0, 4.9, 24.8, 3.6, 28.8, 5, 0.9, 2, 0, 100)
+relaxo, Mon Feb 26 23:49:45 2018, 0.25, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+rf, Mon Feb 26 23:50:26 2018, 0.638, Boston Housing, Failed
+ridge, Mon Feb 26 23:50:39 2018, 0.472, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+rlm, Mon Feb 26 23:50:52 2018, 0.48, Boston Housing, c(16.1, 17, 0, 12.6, 16.4, 100, 9.2, 39.9, 16.5, 21, 41.4, 30.4, 46.1)
+rpart, Mon Feb 26 23:51:04 2018, 0.541, Boston Housing, c(26.9, 26.9, 38.9, 21.3, 100, 45.3, 4, 17.9, 63.5, 71.1, 23.3, 53.3, 0)
+rpart1SE, Mon Feb 26 23:51:16 2018, 0.491, Boston Housing, c(21.2, 35, 4.3, 100, 37.8, 16.6, 57.5, 75.3, 15.9, 43.8, 0, 0, 0)
+rpart2, Mon Feb 26 23:51:29 2018, 0.491, Boston Housing, c(21.2, 35, 4.3, 100, 37.8, 16.6, 57.5, 75.3, 15.9, 43.8, 0, 0, 0)
+RRF, Mon Feb 26 23:54:25 2018, 0.638, Boston Housing, Failed
+RRFglobal, Mon Feb 26 23:55:38 2018, 0.639, Boston Housing, Failed
+SBC, Tue Feb 27 00:17:36 2018, 0.106, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+simpls, Tue Feb 27 00:17:49 2018, 0.457, Boston Housing, Failed
+spikeslab, Tue Feb 27 00:18:14 2018, 0.471, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+spls, Tue Feb 27 00:18:30 2018, 0.473, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+superpc, Tue Feb 27 00:18:44 2018, 0, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+svmLinear, Tue Feb 27 00:22:22 2018, NA, Boston Housing, Failed
+svmLinear2, Tue Feb 27 00:25:35 2018, 0.481, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+svmLinear3, Tue Feb 27 00:26:17 2018, 0.272, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+svmPoly, Tue Feb 27 00:38:40 2018, NA, Boston Housing, Failed
+svmRadial, Tue Feb 27 00:38:58 2018, NA, Boston Housing, Failed
+svmRadialCost, Tue Feb 27 00:39:14 2018, NA, Boston Housing, Failed
+svmRadialSigma, Tue Feb 27 00:39:32 2018, NA, Boston Housing, Failed
+treebag, Tue Feb 27 00:40:14 2018, 0.556, Boston Housing, c(15, 36.7, 37.5, 6.8, 100, 58.4, 0.7, 25.8, 0, 53, 78.2, 21.5, 54.3)
+widekernelpls, Tue Feb 27 00:40:40 2018, 0.457, Boston Housing, Failed
+WM, Tue Feb 27 01:06:42 2018, 0.466, Boston Housing, c(32.3, 13, 36.2, 0, 32, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.1, 100)
+xgbDART, Tue Feb 27 01:10:07 2018, 0.623, Boston Housing, c(100, 76.5, 58.7, 43, 25.6, 18.3, 13.4, 10.4, 10.2, 10.1, 7.5, 0.5, 0)
+xgbLinear, Tue Feb 27 01:10:43 2018, 0.642, Boston Housing, c(100, 64.3, 10.2, 7, 4.2, 1.9, 1.6, 1.4, 1.4, 0.5, 0.4, 0.1, 0)
+xgbTree, Tue Feb 27 01:13:00 2018, 0.639, Boston Housing, c(100, 80.5, 38, 30.9, 30.6, 27.2, 15.9, 8.4, 8.2, 6.3, 2, 0.4, 0)
+xyf, Tue Feb 27 01:13:34 2018, NA, Boston Housing, Failed
+avNNet, Tue Feb 27 01:14:40 2018, 0.159, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+bagEarth, Tue Feb 27 01:17:29 2018, 0.618, Boston Housing, c(100, 61.6, 34.6, 27.4, 22.2, 17.2, 14.4, 11.3, 5.3, 1.4, 0.2, 0, 0)
+bagEarthGCV, Tue Feb 27 01:18:14 2018, 0.611, Boston Housing, c(100, 62.7, 36, 28.5, 22.8, 18, 14.3, 10.8, 6.5, 2.7, 0.2, 0, 0)
+blasso, Tue Feb 27 01:19:07 2018, 0.463, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+blassoAveraged, Tue Feb 27 01:19:25 2018, 0.462, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+bridge, Tue Feb 27 01:19:42 2018, 0.466, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+BstLm, Tue Feb 27 01:21:10 2018, 0.476, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+cforest, Tue Feb 27 01:22:05 2018, 0.595, Boston Housing, Failed
+ctree, Tue Feb 27 01:22:18 2018, 0.558, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+ctree2, Tue Feb 27 01:22:32 2018, 0.558, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+cubist, Tue Feb 27 01:23:42 2018, 0.684, Boston Housing, c(100, 69.6, 57.1, 55.3, 49.1, 49.1, 47.8, 35.4, 11.8, 28, 26.7, 13, 0)
+dnn, Tue Feb 27 01:23:56 2018, 0, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+earth, Tue Feb 27 01:24:09 2018, 0.587, Boston Housing, c(100, 61.6, 31.4, 29.9, 17.9, 14.8, 11.4, 10.7, 2.9, 0, 0, 0, 0)
+elm, Tue Feb 27 01:24:20 2018, 0.473, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+enet, Tue Feb 27 01:24:31 2018, 0.472, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+extraTrees, Tue Feb 27 01:30:23 2018, 0.66, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+foba, Tue Feb 27 01:30:35 2018, 0.471, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+gamSpline, Tue Feb 27 01:31:29 2018, 0.584, Boston Housing, c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NaN, 0, 0)
+gbm, Tue Feb 27 01:35:08 2018, 0.643, Boston Housing, Failed
+gcvEarth, Tue Feb 27 01:38:19 2018, 0.587, Boston Housing, c(100, 61.6, 31.4, 29.9, 17.9, 14.8, 11.4, 10.7, 2.9, 0, 0, 0, 0)
+glm, Tue Feb 27 01:38:29 2018, 0.473, Boston Housing, c(20.3, 33, 0, 32.2, 42.6, 100, 1.3, 71.5, 41.4, 30.8, 64.2, 30.4, 99.3)
+glmboost, Tue Feb 27 01:38:56 2018, 0.469, Boston Housing, c(17.5, 26.1, 10, 22.4, 46.3, 89.1, 79.5, 50.9, 41.6, 49.4, 22.2, 100, 0)
+glmnet, Tue Feb 27 01:39:08 2018, 0.471, Boston Housing, c(16.5, 26, 3.5, 20.2, 47.4, 83.7, 0, 77.8, 54.2, 45.4, 48.8, 20.6, 100)
+glmStepAIC, Tue Feb 27 01:42:18 2018, 0.475, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+icr, Tue Feb 27 01:42:32 2018, 0.473, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+kernelpls, Tue Feb 27 01:42:43 2018, 0.474, Boston Housing, Failed
+kknn, Tue Feb 27 01:43:30 2018, 0.611, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+knn, Tue Feb 27 01:43:41 2018, 0.458, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+krlsPoly, Tue Feb 27 01:44:07 2018, 0, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+krlsRadial, Tue Feb 27 01:46:08 2018, 0.663, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+lars, Tue Feb 27 01:46:18 2018, 0.472, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+lars2, Tue Feb 27 01:46:29 2018, 0.471, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+lasso, Tue Feb 27 01:46:39 2018, 0.472, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+leapBackward, Tue Feb 27 01:46:49 2018, 0.474, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+leapForward, Tue Feb 27 01:47:00 2018, 0.474, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+lm, Tue Feb 27 01:47:10 2018, 0.473, Boston Housing, c(20.3, 33, 0, 32.2, 42.6, 100, 1.3, 71.5, 41.4, 30.8, 64.2, 30.4, 99.3)
+lmStepAIC, Tue Feb 27 01:47:20 2018, 0.475, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+msaenet, Tue Feb 27 01:48:47 2018, 0.431, Boston Housing, 0
+msaenet, Tue Feb 27 01:48:47 2018, 0.431, Boston Housing, 0
+msaenet, Tue Feb 27 01:48:47 2018, 0.431, Boston Housing, 0
+msaenet, Tue Feb 27 01:48:47 2018, 0.431, Boston Housing, 0
+msaenet, Tue Feb 27 01:48:47 2018, 0.431, Boston Housing, 47.6
+msaenet, Tue Feb 27 01:48:47 2018, 0.431, Boston Housing, 81.8
+msaenet, Tue Feb 27 01:48:47 2018, 0.431, Boston Housing, 0
+msaenet, Tue Feb 27 01:48:47 2018, 0.431, Boston Housing, 54.6
+msaenet, Tue Feb 27 01:48:47 2018, 0.431, Boston Housing, 0
+msaenet, Tue Feb 27 01:48:47 2018, 0.431, Boston Housing, 0
+msaenet, Tue Feb 27 01:48:47 2018, 0.431, Boston Housing, 51.2
+msaenet, Tue Feb 27 01:48:47 2018, 0.431, Boston Housing, 0
+msaenet, Tue Feb 27 01:48:47 2018, 0.431, Boston Housing, 100
+nnet, Tue Feb 27 01:49:33 2018, 0.183, Boston Housing, c(0, 30.5, 38.8, 6, 17.9, 56.3, 33, 59, 39.6, 71.5, 45.3, 2.3, 100)
+nnls, Tue Feb 27 01:49:43 2018, 0.34, Boston Housing, c(0, 18.4, 0, 19.8, 0, 100, 0, 0, 0, 0, 0, 32.1, 0)
+null, Tue Feb 27 01:49:53 2018, 0, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+parRF, Tue Feb 27 01:50:31 2018, 0.636, Boston Housing, Failed
+pcaNNet, Tue Feb 27 01:50:53 2018, 0.15, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+pcr, Tue Feb 27 01:51:03 2018, 0.455, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+ppr, Tue Feb 27 01:51:46 2018, 0.602, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+qrf, Tue Feb 27 01:52:46 2018, 0.383, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+ranger, Tue Feb 27 01:53:15 2018, 0.637, Boston Housing, Failed
+Rborist, Tue Feb 27 01:57:34 2018, 0.628, Boston Housing, c(1.9, 0.5, 0, 0.5, 1.4, 5.8, 0.5, 25.9, 0, 4.1, 5.3, 1.7, 100)
+relaxo, Tue Feb 27 01:57:47 2018, 0.476, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+rf, Tue Feb 27 01:58:26 2018, 0.641, Boston Housing, Failed
+ridge, Tue Feb 27 01:58:37 2018, 0.47, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+rlm, Tue Feb 27 01:58:48 2018, 0.464, Boston Housing, c(14.2, 16.4, 0, 12.4, 15.9, 100, 8.2, 40.3, 16.6, 20.4, 41.5, 29.1, 44.5)
+rpart, Tue Feb 27 01:58:59 2018, 0.525, Boston Housing, c(31.8, 27.9, 47.8, 32.2, 100, 65.6, 7.1, 23.8, 72.5, 70.9, 31.3, 51.5, 0)
+rpart1SE, Tue Feb 27 01:59:09 2018, 0.494, Boston Housing, c(21.1, 34.8, 5, 100, 37.6, 16.5, 57.2, 74.8, 15.8, 43.8, 0, 0, 0)
+rpart2, Tue Feb 27 01:59:20 2018, 0.494, Boston Housing, c(21.1, 34.8, 5, 100, 37.6, 16.5, 57.2, 74.8, 15.8, 43.8, 0, 0, 0)
+RRF, Tue Feb 27 02:02:02 2018, 0.639, Boston Housing, Failed
+RRFglobal, Tue Feb 27 02:03:12 2018, 0.644, Boston Housing, Failed
+SBC, Tue Feb 27 02:25:18 2018, 0.106, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+simpls, Tue Feb 27 02:25:28 2018, 0.474, Boston Housing, Failed
+spikeslab, Tue Feb 27 02:25:49 2018, 0.471, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+spls, Tue Feb 27 02:26:02 2018, 0.473, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+superpc, Tue Feb 27 02:26:13 2018, 0.381, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+svmLinear, Tue Feb 27 02:29:28 2018, NA, Boston Housing, Failed
+svmLinear2, Tue Feb 27 02:32:23 2018, 0.48, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+svmLinear3, Tue Feb 27 02:32:46 2018, 0.46, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+svmPoly, Tue Feb 27 02:45:20 2018, NA, Boston Housing, Failed
+svmRadial, Tue Feb 27 02:45:36 2018, NA, Boston Housing, Failed
+svmRadialCost, Tue Feb 27 02:45:51 2018, NA, Boston Housing, Failed
+svmRadialSigma, Tue Feb 27 02:46:06 2018, NA, Boston Housing, Failed
+treebag, Tue Feb 27 02:46:44 2018, 0.555, Boston Housing, c(15.4, 37.4, 39.3, 8.4, 100, 57.7, 1, 25.7, 0, 54.1, 80.5, 22.2, 56.1)
+widekernelpls, Tue Feb 27 02:47:04 2018, 0.474, Boston Housing, Failed
+WM, Tue Feb 27 03:15:01 2018, 0.545, Boston Housing, c(32.3, 13, 36.2, 0, 31.9, 87.4, 22.7, 18.2, 18.9, 32.8, 31.9, 19.3, 100)
+xgbDART, Tue Feb 27 03:18:07 2018, 0.509, Boston Housing, c(100, 91.9, 30.5, 19.5, 12.7, 11, 8.1, 6.2, 4, 1.6, 1.6, 1.2, 0)
+xgbLinear, Tue Feb 27 03:18:38 2018, 0.625, Boston Housing, c(100, 84.5, 15.2, 9.3, 2.5, 2.3, 1.8, 1.5, 0.8, 0.8, 0.7, 0, 0)
+xgbTree, Tue Feb 27 03:20:52 2018, 0.577, Boston Housing, c(100, 69.1, 33, 30.3, 28, 26.3, 17.2, 1.9, 1.8, 1.3, 0.8, 0, 0)
+xyf, Tue Feb 27 03:21:24 2018, NA, Boston Housing, Failed
+avNNet, Tue Feb 27 03:21:57 2018, 0, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+bagEarth, Tue Feb 27 03:24:20 2018, 0.678, Boston Housing, c(100, 64.1, 45.5, 37.4, 30.6, 24, 18.5, 10.6, 3.6, 1.8, 0.2, 0, 0)
+bagEarthGCV, Tue Feb 27 03:25:05 2018, 0.645, Boston Housing, c(100, 60.6, 36.1, 29.7, 24, 19.4, 14.3, 10.7, 6.6, 2.1, 0, 0, 0)
+blasso, Tue Feb 27 03:25:57 2018, 0.489, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+blassoAveraged, Tue Feb 27 03:26:15 2018, 0.489, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+bridge, Tue Feb 27 03:26:32 2018, 0.489, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+BstLm, Tue Feb 27 03:28:02 2018, 0.495, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+cforest, Tue Feb 27 03:28:56 2018, 0.628, Boston Housing, Failed
+ctree, Tue Feb 27 03:29:09 2018, 0.558, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+ctree2, Tue Feb 27 03:29:22 2018, 0.558, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+cubist, Tue Feb 27 03:30:39 2018, 0.722, Boston Housing, c(100, 63.6, 50.6, 67.3, 45.7, 14.8, 42.6, 45.1, 35.8, 32.7, 32.1, 13.6, 0)
+dnn, Tue Feb 27 03:30:53 2018, 0, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+earth, Tue Feb 27 03:31:06 2018, 0.609, Boston Housing, c(100, 60.7, 29.3, 23.7, 24, 15.3, 11, 0, 0, 0, 0, 0, 0)
+elm, Tue Feb 27 03:31:17 2018, 0.489, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+enet, Tue Feb 27 03:31:28 2018, 0.492, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+extraTrees, Tue Feb 27 03:50:20 2018, 0.688, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+foba, Tue Feb 27 03:50:32 2018, 0.492, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+gamSpline, Tue Feb 27 03:51:27 2018, 0.595, Boston Housing, c(3.4, 0.8, 2.1, 1.5, 4.4, 4.4, 4.2, 0, 14.1, 16.6, 29.1, 22.4, 100)
+gbm, Tue Feb 27 03:55:11 2018, 0.655, Boston Housing, Failed
+gcvEarth, Tue Feb 27 03:58:25 2018, 0.605, Boston Housing, c(100, 61, 30.1, 24.8, 25, 16.9, 13.2, 2.7, 0, 0, 0, 0, 0)
+glm, Tue Feb 27 03:58:34 2018, 0.489, Boston Housing, c(21.9, 29.1, 0, 22.8, 40.3, 100, 3.3, 71.5, 42.7, 29.6, 57.8, 37.2, 84.4)
+glm.nb, Tue Feb 27 03:58:46 2018, 0.547, Boston Housing, c(32.4, 16.6, 0.6, 22, 34, 73.9, 0, 53.6, 43.6, 29.7, 49.7, 35.6, 100)
+glmboost, Tue Feb 27 03:59:01 2018, 0.489, Boston Housing, c(13.7, 24.2, 10.3, 12.5, 50, 98.3, 0, 93.6, 59.5, 43, 52.5, 25.3, 100)
+glmnet, Tue Feb 27 03:59:13 2018, 0.49, Boston Housing, c(16.6, 28.7, 0, 12.2, 57, 92.7, 1.9, 100, 78.1, 60.9, 54.2, 25.8, 100)
+glmStepAIC, Tue Feb 27 04:02:24 2018, 0.491, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+icr, Tue Feb 27 04:02:39 2018, 0.489, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+kernelpls, Tue Feb 27 04:02:49 2018, 0.489, Boston Housing, Failed
+kknn, Tue Feb 27 04:03:47 2018, 0.579, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+knn, Tue Feb 27 04:03:58 2018, 0.546, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+krlsPoly, Tue Feb 27 04:04:25 2018, 0, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+krlsRadial, Tue Feb 27 04:06:28 2018, 0.639, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+lars, Tue Feb 27 04:06:39 2018, 0.491, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+lars2, Tue Feb 27 04:06:49 2018, 0.473, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+lasso, Tue Feb 27 04:06:59 2018, 0.491, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+leapBackward, Tue Feb 27 04:07:10 2018, 0.491, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+leapForward, Tue Feb 27 04:07:20 2018, 0.491, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+lm, Tue Feb 27 04:07:31 2018, 0.489, Boston Housing, c(21.9, 29.1, 0, 22.8, 40.3, 100, 3.3, 71.5, 42.7, 29.6, 57.8, 37.2, 84.4)
+lmStepAIC, Tue Feb 27 04:07:41 2018, 0.491, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+msaenet, Tue Feb 27 04:09:10 2018, 0.491, Boston Housing, 12.2
+msaenet, Tue Feb 27 04:09:10 2018, 0.491, Boston Housing, 21.5
+msaenet, Tue Feb 27 04:09:10 2018, 0.491, Boston Housing, 7.2
+msaenet, Tue Feb 27 04:09:10 2018, 0.491, Boston Housing, 12.1
+msaenet, Tue Feb 27 04:09:10 2018, 0.491, Boston Housing, 46
+msaenet, Tue Feb 27 04:09:10 2018, 0.491, Boston Housing, 99.1
+msaenet, Tue Feb 27 04:09:10 2018, 0.491, Boston Housing, 0
+msaenet, Tue Feb 27 04:09:10 2018, 0.491, Boston Housing, 89.2
+msaenet, Tue Feb 27 04:09:10 2018, 0.491, Boston Housing, 53.9
+msaenet, Tue Feb 27 04:09:10 2018, 0.491, Boston Housing, 38.4
+msaenet, Tue Feb 27 04:09:10 2018, 0.491, Boston Housing, 53
+msaenet, Tue Feb 27 04:09:10 2018, 0.491, Boston Housing, 24.5
+msaenet, Tue Feb 27 04:09:10 2018, 0.491, Boston Housing, 100
+nnet, Tue Feb 27 04:09:50 2018, 0, Boston Housing, c(50.3, 11.2, 44.9, 0, 33, 83.2, 29.7, 11.5, 46.6, 63.7, 24.1, 14.3, 100)
+nnls, Tue Feb 27 04:10:00 2018, 0, Boston Housing, c(0, 22.5, 0, 24.5, 0, 100, 0, 0, 0, 0, 0, 20.2, 0)
+null, Tue Feb 27 04:10:10 2018, 0, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+parRF, Tue Feb 27 04:10:47 2018, 0.67, Boston Housing, Failed
+pcaNNet, Tue Feb 27 04:11:03 2018, 0, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+pcr, Tue Feb 27 04:11:13 2018, 0.478, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+ppr, Tue Feb 27 04:11:56 2018, 0.628, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+qrf, Tue Feb 27 04:12:55 2018, 0.404, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+ranger, Tue Feb 27 04:13:21 2018, 0.67, Boston Housing, Failed
+Rborist, Tue Feb 27 04:17:48 2018, 0.663, Boston Housing, c(15.6, 0.4, 4.1, 0, 2.9, 19.1, 2.5, 16.9, 0.9, 0.6, 9.3, 5.1, 100)
+relaxo, Tue Feb 27 04:18:01 2018, 0, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+rf, Tue Feb 27 04:18:39 2018, 0.667, Boston Housing, Failed
+ridge, Tue Feb 27 04:18:51 2018, 0.489, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+rlm, Tue Feb 27 04:19:01 2018, 0.5, Boston Housing, c(11.2, 15.4, 0, 5.7, 16.2, 100, 12.7, 40.1, 18.6, 20.9, 36.9, 33.7, 42.5)
+rpart, Tue Feb 27 04:19:12 2018, 0.599, Boston Housing, c(13.9, 64.9, 72, 46.4, 94.1, 68.3, 36.8, 63.9, 100, 31.7, 72.6, 0, 0)
+rpart1SE, Tue Feb 27 04:19:22 2018, 0.569, Boston Housing, c(3.5, 42, 61.2, 11.3, 100, 51.1, 18.4, 41.7, 95.3, 24.9, 51.1, 0, 0)
+rpart2, Tue Feb 27 04:19:33 2018, 0.569, Boston Housing, c(3.5, 42, 61.2, 11.3, 100, 51.1, 18.4, 41.7, 95.3, 24.9, 51.1, 0, 0)
+RRF, Tue Feb 27 04:22:20 2018, 0.668, Boston Housing, Failed
+RRFglobal, Tue Feb 27 04:23:32 2018, 0.67, Boston Housing, Failed
+SBC, Tue Feb 27 05:15:22 2018, 0.598, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+simpls, Tue Feb 27 05:15:32 2018, 0.489, Boston Housing, Failed
+spikeslab, Tue Feb 27 05:15:53 2018, 0.49, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+spls, Tue Feb 27 05:16:06 2018, 0.489, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+superpc, Tue Feb 27 05:16:18 2018, 0, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+svmLinear, Tue Feb 27 05:20:32 2018, NA, Boston Housing, Failed
+svmLinear2, Tue Feb 27 05:24:24 2018, 0.388, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+svmLinear3, Tue Feb 27 05:24:42 2018, 0.488, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+svmPoly, Tue Feb 27 05:26:15 2018, NA, Boston Housing, Failed
+svmRadial, Tue Feb 27 05:26:30 2018, NA, Boston Housing, Failed
+svmRadialCost, Tue Feb 27 05:26:45 2018, NA, Boston Housing, Failed
+svmRadialSigma, Tue Feb 27 05:27:00 2018, NA, Boston Housing, Failed
+treebag, Tue Feb 27 05:27:37 2018, 0.589, Boston Housing, c(6.7, 40.3, 57.7, 10.5, 100, 42.1, 0.2, 34.3, 0, 46.6, 80.3, 15.3, 34.4)
+widekernelpls, Tue Feb 27 05:27:59 2018, 0.489, Boston Housing, Failed
+WM, Tue Feb 27 05:53:25 2018, 0.526, Boston Housing, c(30.4, 15.6, 36.1, 0, 30.9, 88.3, 23.5, 18.2, 19.2, 33.4, 33.4, 22.6, 100)
+xgbDART, Tue Feb 27 05:56:56 2018, 0.682, Boston Housing, c(100, 86.9, 14.3, 13.3, 12.1, 11.3, 9.6, 7.2, 4.3, 3.7, 1.1, 1, 0)
+xgbLinear, Tue Feb 27 05:57:31 2018, 0.699, Boston Housing, c(100, 67.2, 12.7, 6.5, 4.6, 2.7, 1.9, 1.2, 0.9, 0.5, 0.3, 0, 0)
+xgbTree, Tue Feb 27 06:00:28 2018, 0.696, Boston Housing, c(100, 86.7, 20.8, 14.8, 13.1, 8.8, 8.5, 8.3, 5.3, 3.9, 1.9, 1.2, 0)
+xyf, Tue Feb 27 06:00:58 2018, NA, Boston Housing, Failed
+avNNet, Tue Feb 27 06:01:28 2018, 0, Boston Housing, c(48.2, 20.3, 41.6, 4.9, 34.3, 67.5, 30.8, 28.6, 24.9, 43, 37.3, 0, 100)
+bagEarth, Tue Feb 27 06:03:54 2018, 0.663, Boston Housing, c(100, 49.5, 44.2, 36.6, 31.4, 25.7, 21.6, 13.3, 4.5, 0.2, 0, 0, 0)
+bagEarthGCV, Tue Feb 27 06:04:39 2018, 0.639, Boston Housing, c(100, 47.6, 38.4, 32, 27.2, 23.8, 18.1, 11.6, 4.9, 0.9, 0, 0, 0)
+blasso, Tue Feb 27 06:05:31 2018, 0.542, Boston Housing, c(48.2, 20.3, 41.6, 4.9, 34.3, 67.5, 30.8, 28.6, 24.9, 43, 37.3, 0, 100)
+blassoAveraged, Tue Feb 27 06:05:48 2018, 0.542, Boston Housing, c(48.2, 20.3, 41.6, 4.9, 34.3, 67.5, 30.8, 28.6, 24.9, 43, 37.3, 0, 100)
+bridge, Tue Feb 27 06:06:05 2018, 0.543, Boston Housing, c(48.2, 20.3, 41.6, 4.9, 34.3, 67.5, 30.8, 28.6, 24.9, 43, 37.3, 0, 100)
+BstLm, Tue Feb 27 06:07:36 2018, 0.534, Boston Housing, c(48.2, 20.3, 41.6, 4.9, 34.3, 67.5, 30.8, 28.6, 24.9, 43, 37.3, 0, 100)
+cforest, Tue Feb 27 06:08:42 2018, 0.593, Boston Housing, Failed
+ctree, Tue Feb 27 06:08:55 2018, 0.534, Boston Housing, c(48.2, 20.3, 41.6, 4.9, 34.3, 67.5, 30.8, 28.6, 24.9, 43, 37.3, 0, 100)
+ctree2, Tue Feb 27 06:09:08 2018, 0.534, Boston Housing, c(48.2, 20.3, 41.6, 4.9, 34.3, 67.5, 30.8, 28.6, 24.9, 43, 37.3, 0, 100)
+dnn, Tue Feb 27 11:41:54 2018, NaN, Boston Housing, Failed
+earth, Tue Feb 27 11:42:10 2018, 0.591, Boston Housing, c(100, 47.7, 41.7, 41.7, 36.2, 31, 29.1, 21.9, 0, 0, 0, 0, 0)
+elm, Tue Feb 27 11:42:21 2018, 0.005, Boston Housing, c(45.5, 21.3, 42.9, 3.1, 35.5, 63.3, 31.2, 27.3, 25.8, 39.8, 39.6, 0, 100)
+enet, Tue Feb 27 11:42:38 2018, 0.568, Boston Housing, c(45.5, 21.3, 42.9, 3.1, 35.5, 63.3, 31.2, 27.3, 25.8, 39.8, 39.6, 0, 100)
+extraTrees, Tue Feb 27 11:48:30 2018, 0.665, Boston Housing, c(45.5, 21.3, 42.9, 3.1, 35.5, 63.3, 31.2, 27.3, 25.8, 39.8, 39.6, 0, 100)
+foba, Tue Feb 27 11:48:42 2018, 0.569, Boston Housing, c(45.5, 21.3, 42.9, 3.1, 35.5, 63.3, 31.2, 27.3, 25.8, 39.8, 39.6, 0, 100)
+gbm, Tue Feb 27 11:54:29 2018, 0.655, Boston Housing, Failed
+gcvEarth, Tue Feb 27 11:57:05 2018, 0.626, Boston Housing, c(100, 48.7, 36.2, 30.7, 24, 19.4, 16.3, 8.2, 0, 0, 0, 0, 0)
+glm, Tue Feb 27 11:57:16 2018, 0.573, Boston Housing, c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NaN, 0)
+glm.nb, Tue Feb 27 11:57:27 2018, 0.576, Boston Housing, c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NaN, 0)
+glmboost, Tue Feb 27 11:57:43 2018, 0.575, Boston Housing, c(1.6, 0, 0.1, 4.4, 100, 4.7, 0, 4.5, 1.2, 0, 0, 2.4, 0)
+glmnet, Tue Feb 27 11:57:57 2018, 0.571, Boston Housing, c(1.5, 0, 0.1, 3.8, 100, 3.9, 0, 4.1, 1.2, 0, 0, 0, 2.1)
+glmStepAIC, Tue Feb 27 12:00:32 2018, 0.579, Boston Housing, c(45.5, 21.3, 42.9, 3.1, 35.5, 63.3, 31.2, 27.3, 25.8, 39.8, 39.6, 0, 100)
+icr, Tue Feb 27 12:00:46 2018, 0.568, Boston Housing, c(45.5, 21.3, 42.9, 3.1, 35.5, 63.3, 31.2, 27.3, 25.8, 39.8, 39.6, 0, 100)
+kknn, Tue Feb 27 12:01:53 2018, 0.606, Boston Housing, c(45.5, 21.3, 42.9, 3.1, 35.5, 63.3, 31.2, 27.3, 25.8, 39.8, 39.6, 0, 100)
