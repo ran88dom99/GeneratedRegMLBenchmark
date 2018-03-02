@@ -37,7 +37,8 @@ Mon Feb 26 20:01:30 2018,svmLinear,Boston Housing,3,20,windows,x64,HOPPER
 Mon Feb 26 21:30:48 2018,svmPoly,Boston Housing,3,20,windows,x64,HOPPER
 Tue Feb 27 10:00:43 2018,cubist,Boston Housing,3,20,windows,x64,HOPPER
 Tue Feb 27 12:13:59 2018,knn,Boston Housing,3,20,windows,x64,HOPPER
-Tue Feb 27 16:11:08 2018,knn,Boston Housing,3,20,windows,x64,HOPPER
+
 Tue Feb 27 17:19:07 2018,pls,Boston Housing,3,20,windows,x64,HOPPER
-Tue Feb 27 22:53:28 2018,svmLinear3,Boston Housing,3,20,windows,x64,HOPPER
+
 Wed Feb 28 20:14:31 2018,svmLinear3,Boston Housing,3,20,windows,x64,HOPPER
+Thu Mar 01 21:39:04 2018,extraTrees,just random,3,20,windows,x64,HOPPER
