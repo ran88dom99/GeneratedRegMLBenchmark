@@ -215,7 +215,7 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Thu Mar 01 15:31:16 2018"
+[1] "Fri Mar 02 15:31:43 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -316,3 +316,2586 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 +   }
 +   
 + }
+Loading required package: KRLS
+## KRLS Package for Kernel-based Regularized Least Squares.
+
+## See Hainmueller and Hazlett (2014) for details.
+
+Loading required package: kernlab
+
+Attaching package: 'kernlab'
+
+The following object is masked from 'package:ggplot2':
+
+    alpha
+
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9967158 0.9972045 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9935381 0.9957466
+50% 0.9989359 0.9997770
+75% 1.0060170 1.0048700
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9983618 0.9984264 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9932171 0.9947567
+50% 1.0009899 1.0002390
+75% 1.0059298 1.0036559
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9948192 0.9953199 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9914395 0.9951829
+50% 1.0024802 0.9987736
+75% 1.0059327 1.0048965
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9971072 0.9970220 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9920820 0.9947412
+50% 0.9984737 0.9995654
+75% 1.0072004 1.0037702
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9704386 0.9796350 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9230994 0.9449506
+50% 1.0193101 1.0291913
+75% 1.0687668 1.0665246
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9995616 1.0002845 
+
+ Quartiles of Marginal Effects:
+ 
+           V2       V3
+25% 0.9950444 0.998281
+50% 1.0025355 1.002730
+75% 1.0068004 1.004874
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9955912 0.9963922 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9954047 0.9962444
+50% 0.9958438 0.9966275
+75% 0.9960368 0.9967896
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.5338135 0.5339723 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.5334953 0.5337565
+50% 0.5341717 0.5343808
+75% 0.5344808 0.5346288
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9908709 0.9914079 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9743529 0.9829454
+50% 1.0001975 1.0011564
+75% 1.0296173 1.0208180
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9999252 1.0003890 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9944466 0.9973247
+50% 1.0014568 1.0016484
+75% 1.0066878 1.0045747
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9267285 0.9292294 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9181788 0.9227027
+50% 0.9367136 0.9402538
+75% 0.9449104 0.9472204
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9959283 0.9963218 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9841461 0.9892396
+50% 0.9995552 0.9997965
+75% 1.0173429 1.0135174
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9981620 0.9984468 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9928241 0.9959616
+50% 0.9998030 0.9998185
+75% 1.0064818 1.0045502
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9787092 0.9795271 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9784371 0.9793328
+50% 0.9791014 0.9799148
+75% 0.9793930 0.9801962
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9960554 0.9966341 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9931755 0.9956463
+50% 0.9985685 0.9994559
+75% 1.0055537 1.0050205
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9995641 1.0003175 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9949915 0.9974825
+50% 1.0032705 1.0021159
+75% 1.0076725 1.0049646
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9609362 0.9633487 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9540511 0.9626529
+50% 1.0033960 1.0061512
+75% 1.0492417 1.0361389
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9975886 0.9975998 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9931016 0.9937984
+50% 1.0007089 0.9999024
+75% 1.0069124 1.0052019
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9995507 0.9998497 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9926656 0.9948749
+50% 0.9985200 0.9988051
+75% 1.0078722 1.0053334
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9998209 1.0000653 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9925742 0.9955075
+50% 0.9991851 0.9987367
+75% 1.0074691 1.0049174
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9979601 0.9974090 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9939574 0.9951705
+50% 0.9995656 0.9998947
+75% 1.0059264 1.0044701
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9993434 0.9988633 
+
+ Quartiles of Marginal Effects:
+ 
+          V2        V3
+25% 0.992349 0.9956618
+50% 1.002255 1.0009428
+75% 1.007010 1.0040212
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9969280 0.9960083 
+
+ Quartiles of Marginal Effects:
+ 
+          V2        V3
+25% 0.992203 0.9914976
+50% 1.001195 1.0002875
+75% 1.008944 1.0079945
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9962259 0.9957498 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9911840 0.9901910
+50% 0.9992387 0.9976002
+75% 1.0071603 1.0088932
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9700107 0.9674597 
+
+ Quartiles of Marginal Effects:
+ 
+          V2        V3
+25% 0.920460 0.9131106
+50% 1.016770 1.0185694
+75% 1.072195 1.0681336
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9995965 0.9995568 
+
+ Quartiles of Marginal Effects:
+ 
+           V2       V3
+25% 0.9951445 0.997026
+50% 1.0024637 1.001741
+75% 1.0064948 1.004507
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9952930 0.9959862 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9950501 0.9957854
+50% 0.9955271 0.9961719
+75% 0.9957352 0.9963609
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.5164645 0.5170172 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.5161931 0.5167217
+50% 0.5167783 0.5173707
+75% 0.5171101 0.5176344
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9867520 0.9861369 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9758593 0.9730795
+50% 0.9975919 0.9977141
+75% 1.0212106 1.0260662
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9999680 0.9999674 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9945763 0.9963418
+50% 1.0013341 1.0012469
+75% 1.0060566 1.0043688
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9221298 0.9223341 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9140462 0.9138619
+50% 0.9308063 0.9320205
+75% 0.9402700 0.9397333
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9937472 0.9933742 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9851678 0.9835240
+50% 0.9973727 0.9985787
+75% 1.0121497 1.0152250
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9989681 0.9987769 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9942844 0.9943131
+50% 0.9993814 1.0007897
+75% 1.0067302 1.0041446
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9772240 0.9779271 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9769334 0.9775867
+50% 0.9775824 0.9782837
+75% 0.9779081 0.9785802
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9975451 0.9969523 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9939876 0.9946533
+50% 0.9992830 0.9998650
+75% 1.0056436 1.0050018
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9995021 0.9993454 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9939442 0.9957356
+50% 1.0030540 1.0022920
+75% 1.0078216 1.0058754
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9515299 0.9512285 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9535545 0.9525443
+50% 0.9997107 0.9924171
+75% 1.0369552 1.0387237
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9988802 0.9981726 
+
+ Quartiles of Marginal Effects:
+ 
+           V2       V3
+25% 0.9924144 0.995821
+50% 1.0020928 1.000951
+75% 1.0082265 1.004810
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9995406 0.9995146 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9939992 0.9959565
+50% 0.9984271 0.9984436
+75% 1.0057618 1.0038481
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9998598 0.9998500 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9937123 0.9957185
+50% 0.9994073 0.9989837
+75% 1.0061813 1.0041702
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9969003 0.9970007 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9939177 0.9949031
+50% 0.9990529 0.9982879
+75% 1.0060979 1.0043184
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9992693 0.9984346 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9928245 0.9953602
+50% 1.0017785 0.9999812
+75% 1.0076832 1.0035939
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9960173 0.9952345 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9926861 0.9944726
+50% 1.0010458 0.9992358
+75% 1.0082129 1.0041448
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9976950 0.9969932 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9943823 0.9940364
+50% 0.9982949 0.9977348
+75% 1.0060107 1.0046501
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9750287 0.9814743 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9319942 0.9463713
+50% 1.0246346 1.0340453
+75% 1.0765290 1.0740034
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9999529 0.9997400 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9950489 0.9974153
+50% 1.0030270 1.0022091
+75% 1.0072387 1.0044699
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9965811 0.9954888 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9963699 0.9953331
+50% 0.9968213 0.9957290
+75% 0.9970343 0.9958848
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.5367450 0.5350452 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.5364547 0.5348197
+50% 0.5371018 0.5354738
+75% 0.5374464 0.5357263
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9908337 0.9905417 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9767284 0.9799869
+50% 0.9975956 0.9978656
+75% 1.0245521 1.0217569
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+1.0001795 0.9998374 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9944435 0.9969009
+50% 1.0016711 1.0011826
+75% 1.0064409 1.0039617
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9289737 0.9289952 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9202622 0.9227102
+50% 0.9383407 0.9405886
+75% 0.9481032 0.9476060
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9959683 0.9955988 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9862619 0.9872136
+50% 0.9981810 0.9977734
+75% 1.0138086 1.0137804
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9985122 0.9980803 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9933772 0.9948089
+50% 1.0000156 0.9988272
+75% 1.0071930 1.0039735
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9798778 0.9787360 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9795637 0.9784789
+50% 0.9802612 0.9791839
+75% 0.9806113 0.9794312
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9962740 0.9964684 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9945816 0.9946715
+50% 0.9988262 0.9981662
+75% 1.0060731 1.0044822
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9999321 0.9997888 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9945067 0.9971528
+50% 1.0038107 1.0020935
+75% 1.0082459 1.0046277
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9605907 0.9609649 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9527530 0.9554793
+50% 0.9995016 1.0007213
+75% 1.0417028 1.0383328
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9987859 0.9978170 
+
+ Quartiles of Marginal Effects:
+ 
+          V2        V3
+25% 0.993037 0.9944384
+50% 1.001356 0.9995894
+75% 1.009144 1.0051408
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+0.9997633 0.9991072 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9941626 0.9943592
+50% 0.9984493 0.9982754
+75% 1.0064553 1.0038597
+
+ Average Marginal Effects:
+ 
+       V2        V3 
+1.0000297 0.9993931 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9937150 0.9950660
+50% 0.9991972 0.9980547
+75% 1.0063437 1.0037016
+
+ Average Marginal Effects:
+ 
+      V2       V3 
+1.000035 1.000083 
+
+ Quartiles of Marginal Effects:
+ 
+           V2        V3
+25% 0.9944041 0.9967731
+50% 1.0015230 1.0013165
+75% 1.0065497 1.0044086
+Radial Basis Function Kernel Regularized Least Squares 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results across tuning parameters:
+
+  lambda        sigma        RMSE         Rsquared   Selected
+  1.459200e-05  2597.224144  0.003500474  0.9999943  *       
+  4.303646e-05    53.133859  0.003998047  0.9999926          
+  1.826446e-04   149.408214  0.006261245  0.9999810          
+  2.112248e-04  1000.923631  0.005017137  0.9999884          
+  2.162985e-04     4.403479  0.023417471  0.9997087          
+  2.836970e-04    39.560424  0.005833555  0.9999842          
+  4.512184e-04     2.906723  0.043356683  0.9989844          
+  4.930467e-04  9176.657274  0.010087223  0.9999707          
+  5.147453e-04     6.972245  0.019374651  0.9998081          
+  7.222721e-04     2.758981  0.049360277  0.9986880          
+  1.358693e-03     6.120652  0.026647235  0.9996389          
+  4.070444e-03     3.404122  0.053212848  0.9984980          
+  4.872143e-03  4689.307520  0.032398359  0.9999690          
+  6.748881e-03     7.695263  0.032030034  0.9994753          
+  1.509840e-02     8.484056  0.041383114  0.9991496          
+  6.488131e-02     6.007199  0.071222739  0.9974936          
+  3.543063e-01  2608.150349  0.685849757  0.9999656          
+  4.744288e-01   164.142539  0.108639719  0.9997502          
+  5.045920e-01    23.742825  0.111784691  0.9944352          
+  6.685314e-01     3.805978  0.155071414  0.9884695          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were lambda = 1.4592e-05 and sigma
+ = 2597.224.
+[1] "Fri Mar 02 15:35:37 2018"
+Loading required package: lars
+Loaded lars 1.2
+
+Least Angle Regression 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results across tuning parameters:
+
+  fraction    RMSE        Rsquared   Selected
+  0.03282297  1.40672820  0.8699987          
+  0.12676730  1.27009247  0.9915052          
+  0.25232134  1.08748351  0.9984030          
+  0.26494899  1.06911762  0.9985974          
+  0.26701069  1.06611906  0.9986262          
+  0.29057094  1.03185264  0.9989087          
+  0.33087736  0.97323050  0.9992441          
+  0.33857760  0.96203120  0.9992930          
+  0.34231848  0.95659044  0.9993154          
+  0.37174017  0.91379938  0.9994648          
+  0.42662426  0.83397612  0.9996522          
+  0.52192837  0.69536801  0.9998241          
+  0.53754401  0.67265728  0.9998416          
+  0.56584635  0.63149586  0.9998683          
+  0.63578619  0.52978117  0.9999140          
+  0.76242392  0.34562479  0.9999537          
+  0.90987577  0.13131764  0.9999679          
+  0.93523421  0.09453272  0.9999685          
+  0.94058807  0.08677705  0.9999686          
+  0.96502436  0.05149842  0.9999689  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was fraction = 0.9650244.
+[1] "Fri Mar 02 15:35:42 2018"
+Least Angle Regression 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results across tuning parameters:
+
+  step  RMSE      Rsquared   Selected
+  1     1.454315        NaN          
+  2     1.435461  0.5329869  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was step = 2.
+[1] "Fri Mar 02 15:35:45 2018"
+Loading required package: elasticnet
+The lasso 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results across tuning parameters:
+
+  fraction    RMSE        Rsquared   Selected
+  0.03282297  1.40672820  0.8699987          
+  0.12676730  1.27009247  0.9915052          
+  0.25232134  1.08748351  0.9984030          
+  0.26494899  1.06911762  0.9985974          
+  0.26701069  1.06611906  0.9986262          
+  0.29057094  1.03185264  0.9989087          
+  0.33087736  0.97323050  0.9992441          
+  0.33857760  0.96203120  0.9992930          
+  0.34231848  0.95659044  0.9993154          
+  0.37174017  0.91379938  0.9994648          
+  0.42662426  0.83397612  0.9996522          
+  0.52192837  0.69536801  0.9998241          
+  0.53754401  0.67265728  0.9998416          
+  0.56584635  0.63149586  0.9998683          
+  0.63578619  0.52978117  0.9999140          
+  0.76242392  0.34562479  0.9999537          
+  0.90987577  0.13131764  0.9999679          
+  0.93523421  0.09453272  0.9999685          
+  0.94058807  0.08677705  0.9999686          
+  0.96502436  0.05149842  0.9999689  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was fraction = 0.9650244.
+[1] "Fri Mar 02 15:35:48 2018"
+Loading required package: leaps
+Linear Regression with Backwards Selection 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results across tuning parameters:
+
+  nvmax  RMSE         Rsquared   Selected
+  1      0.999223668  0.5329869          
+  2      0.008109988  0.9999688  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was nvmax = 2.
+[1] "Fri Mar 02 15:35:51 2018"
+Linear Regression with Forward Selection 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results across tuning parameters:
+
+  nvmax  RMSE         Rsquared   Selected
+  1      0.999223668  0.5329869          
+  2      0.008109988  0.9999688  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was nvmax = 2.
+[1] "Fri Mar 02 15:35:53 2018"
+Linear Regression with Stepwise Selection 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results across tuning parameters:
+
+  nvmax  RMSE         Rsquared   Selected
+  1      0.999223668  0.5329869          
+  2      0.008109988  0.9999688  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was nvmax = 2.
+[1] "Fri Mar 02 15:35:56 2018"
+Linear Regression 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results:
+
+  RMSE         Rsquared 
+  0.008109988  0.9999688
+
+Tuning parameter 'intercept' was held constant at a value of TRUE
+[1] "Fri Mar 02 15:35:58 2018"
+Loading required package: MASS
+Start:  AIC=-4829.75
+.outcome ~ V2 + V3
+
+       Df Sum of Sq    RSS     AIC
+<none>                0.03 -4829.8
+- V2    1    500.49 500.52     2.5
+- V3    1    509.49 509.52    11.5
+Start:  AIC=-4858.48
+.outcome ~ V2 + V3
+
+       Df Sum of Sq    RSS     AIC
+<none>                0.03 -4858.5
+- V2    1    489.73 489.76    -7.4
+- V3    1    527.85 527.88    30.2
+Start:  AIC=-4829.8
+.outcome ~ V2 + V3
+
+       Df Sum of Sq    RSS     AIC
+<none>                0.03 -4829.8
+- V2    1    496.75 496.78    -0.2
+- V3    1    529.06 529.09    31.3
+Start:  AIC=-7257.06
+.outcome ~ V2 + V3
+
+       Df Sum of Sq    RSS     AIC
+<none>                0.05 -7257.1
+- V2    1    744.70 744.75    -3.3
+- V3    1    784.85 784.90    36.2
+Linear Regression with Stepwise Selection 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results:
+
+  RMSE         Rsquared 
+  0.008109988  0.9999688
+
+[1] "Fri Mar 02 15:36:01 2018"
+Loading required package: logicFS
+Loading required package: LogicReg
+Loading required package: survival
+
+Attaching package: 'survival'
+
+The following object is masked from 'package:caret':
+
+    cluster
+
+Loading required package: mcbiopi
+Something is wrong; all the RMSE metric values are missing:
+      RMSE        Rsquared  
+ Min.   : NA   Min.   : NA  
+ 1st Qu.: NA   1st Qu.: NA  
+ Median : NA   Median : NA  
+ Mean   :NaN   Mean   :NaN  
+ 3rd Qu.: NA   3rd Qu.: NA  
+ Max.   : NA   Max.   : NA  
+ NA's   :19    NA's   :19   
+Error : Stopping
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Something is wrong; all the RMSE metric values are missing:
+      RMSE        Rsquared  
+ Min.   : NA   Min.   : NA  
+ 1st Qu.: NA   1st Qu.: NA  
+ Median : NA   Median : NA  
+ Mean   :NaN   Mean   :NaN  
+ 3rd Qu.: NA   3rd Qu.: NA  
+ Max.   : NA   Max.   : NA  
+ NA's   :8     NA's   :8    
+Error : Stopping
+In addition: There were 25 warnings (use warnings() to see them)
+Something is wrong; all the RMSE metric values are missing:
+      RMSE        Rsquared  
+ Min.   : NA   Min.   : NA  
+ 1st Qu.: NA   1st Qu.: NA  
+ Median : NA   Median : NA  
+ Mean   :NaN   Mean   :NaN  
+ 3rd Qu.: NA   3rd Qu.: NA  
+ Max.   : NA   Max.   : NA  
+ NA's   :9     NA's   :9    
+Error : Stopping
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+ [1] "failed"                   "failed"                  
+ [3] "Fri Mar 02 15:36:07 2018" "basic sum C1 + C2"       
+ [5] "ignore"                   "none"                    
+ [7] "YeoJohnson"               "LAPTOP-1SBQTC5I"         
+ [9] "14th20hp3cv"              "logicBag"                
+Something is wrong; all the RMSE metric values are missing:
+      RMSE        Rsquared  
+ Min.   : NA   Min.   : NA  
+ 1st Qu.: NA   1st Qu.: NA  
+ Median : NA   Median : NA  
+ Mean   :NaN   Mean   :NaN  
+ 3rd Qu.: NA   3rd Qu.: NA  
+ Max.   : NA   Max.   : NA  
+ NA's   :20    NA's   :20   
+Error : Stopping
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Something is wrong; all the RMSE metric values are missing:
+      RMSE        Rsquared  
+ Min.   : NA   Min.   : NA  
+ 1st Qu.: NA   1st Qu.: NA  
+ Median : NA   Median : NA  
+ Mean   :NaN   Mean   :NaN  
+ 3rd Qu.: NA   3rd Qu.: NA  
+ Max.   : NA   Max.   : NA  
+ NA's   :8     NA's   :8    
+Error : Stopping
+In addition: There were 25 warnings (use warnings() to see them)
+Something is wrong; all the RMSE metric values are missing:
+      RMSE        Rsquared  
+ Min.   : NA   Min.   : NA  
+ 1st Qu.: NA   1st Qu.: NA  
+ Median : NA   Median : NA  
+ Mean   :NaN   Mean   :NaN  
+ 3rd Qu.: NA   3rd Qu.: NA  
+ Max.   : NA   Max.   : NA  
+ NA's   :9     NA's   :9    
+Error : Stopping
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+ [1] "failed"                   "failed"                  
+ [3] "Fri Mar 02 15:36:12 2018" "basic sum C1 + C2"       
+ [5] "ignore"                   "none"                    
+ [7] "YeoJohnson"               "LAPTOP-1SBQTC5I"         
+ [9] "14th20hp3cv"              "logreg"                  
+Loading required package: RWeka
+Error: package or namespace load failed for 'RWeka':
+ .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+Error : package or namespace load failed for 'RWeka':
+ .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+Loading required package: RWeka
+Error: package or namespace load failed for 'RWeka':
+ .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+Error : package or namespace load failed for 'RWeka':
+ .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+Loading required package: RWeka
+Error: package or namespace load failed for 'RWeka':
+ .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+Error : package or namespace load failed for 'RWeka':
+ .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+ [1] "failed"                   "failed"                  
+ [3] "Fri Mar 02 15:36:14 2018" "basic sum C1 + C2"       
+ [5] "ignore"                   "none"                    
+ [7] "YeoJohnson"               "LAPTOP-1SBQTC5I"         
+ [9] "14th20hp3cv"              "M5"                      
+Loading required package: RWeka
+Error: package or namespace load failed for 'RWeka':
+ .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+Error : package or namespace load failed for 'RWeka':
+ .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+Loading required package: RWeka
+Error: package or namespace load failed for 'RWeka':
+ .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+Error : package or namespace load failed for 'RWeka':
+ .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+Loading required package: RWeka
+Error: package or namespace load failed for 'RWeka':
+ .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+Error : package or namespace load failed for 'RWeka':
+ .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+ [1] "failed"                   "failed"                  
+ [3] "Fri Mar 02 15:36:17 2018" "basic sum C1 + C2"       
+ [5] "ignore"                   "none"                    
+ [7] "YeoJohnson"               "LAPTOP-1SBQTC5I"         
+ [9] "14th20hp3cv"              "M5Rules"                 
+Loading required package: msaenet
+Multi-Step Adaptive MCP-Net 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results across tuning parameters:
+
+  alphas      nsteps  scale      RMSE         Rsquared   Selected
+  0.07954067   3      3.9858552  0.018806349  0.9999688          
+  0.16409057   7      1.4393520  0.011058536  0.9999688          
+  0.27708921   6      1.2366030  0.008980170  0.9999688          
+  0.28845409   4      0.3504410  0.008892010  0.9999688          
+  0.29030962   9      3.0592270  0.008878550  0.9999688          
+  0.31151385   7      3.1816831  0.008743279  0.9999688          
+  0.34778962   9      0.7845832  0.008570559  0.9999688          
+  0.35471984   2      3.9532375  0.008544130  0.9999688          
+  0.35808663   9      2.3540882  0.008531825  0.9999688          
+  0.38456615  10      2.1807584  0.008447785  0.9999688          
+  0.43396184   9      3.7778608  0.008335810  0.9999688          
+  0.51973553   9      2.0947993  0.008223775  0.9999688          
+  0.53378961   2      0.9632706  0.008211601  0.9999688          
+  0.55926171   9      1.8590833  0.008192758  0.9999688          
+  0.62220757   8      2.2087898  0.008159060  0.9999688          
+  0.73618153   9      2.2331587  0.008126922  0.9999688          
+  0.86888819   3      2.8477679  0.008112883  0.9999688          
+  0.89171079   6      1.4339363  0.008111815  0.9999688          
+  0.89652926   7      1.4464037  0.008111630  0.9999688          
+  0.91852192   9      1.4069834  0.008110928  0.9999688  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were alphas = 0.9185219, nsteps = 9
+ and scale = 1.406983.
+[1] "Fri Mar 02 15:36:28 2018"
+Loading required package: nnet
+# weights:  29
+initial  value 1224.193923 
+iter  10 value 786.839981
+iter  20 value 776.529513
+iter  30 value 775.742181
+iter  40 value 775.675602
+final  value 775.675462 
+converged
+# weights:  29
+initial  value 1128.125723 
+iter  10 value 835.404954
+iter  20 value 737.543003
+iter  30 value 724.670641
+iter  40 value 723.760697
+iter  50 value 723.675243
+iter  60 value 723.560050
+final  value 723.560029 
+converged
+# weights:  45
+initial  value 1167.999030 
+iter  10 value 765.761603
+iter  20 value 758.810164
+iter  30 value 757.853045
+iter  40 value 757.786487
+iter  50 value 757.769425
+iter  50 value 757.769418
+iter  50 value 757.769418
+final  value 757.769418 
+converged
+# weights:  49
+initial  value 1294.728828 
+iter  10 value 784.461794
+iter  20 value 719.939916
+iter  30 value 715.476069
+iter  40 value 715.377628
+iter  50 value 715.359385
+final  value 715.354603 
+converged
+# weights:  77
+initial  value 1092.990397 
+iter  10 value 704.141217
+iter  20 value 695.195114
+iter  30 value 694.659985
+iter  40 value 694.617466
+iter  50 value 694.616144
+iter  50 value 694.616139
+iter  50 value 694.616139
+final  value 694.616139 
+converged
+# weights:  25
+initial  value 1346.771445 
+iter  10 value 1074.396245
+iter  20 value 1073.565926
+iter  30 value 1073.542932
+iter  40 value 1073.537747
+iter  50 value 1073.513790
+iter  60 value 724.972726
+iter  70 value 689.294771
+iter  80 value 688.069894
+iter  90 value 687.944373
+iter 100 value 687.917855
+final  value 687.917855 
+stopped after 100 iterations
+# weights:  29
+initial  value 1403.101440 
+iter  10 value 1073.552564
+final  value 1073.529209 
+converged
+# weights:  77
+initial  value 1472.464949 
+iter  10 value 1073.686323
+iter  20 value 1073.536650
+iter  30 value 1073.526568
+iter  40 value 1073.524080
+iter  50 value 1073.515372
+iter  60 value 1069.551845
+iter  70 value 692.264499
+iter  80 value 688.079005
+iter  90 value 687.717372
+iter 100 value 687.692223
+final  value 687.692223 
+stopped after 100 iterations
+# weights:  65
+initial  value 1139.711658 
+iter  10 value 745.101993
+iter  20 value 724.193347
+iter  30 value 723.754519
+iter  40 value 723.645069
+iter  50 value 723.631640
+final  value 723.631114 
+converged
+# weights:  5
+initial  value 1143.809609 
+iter  10 value 1073.570117
+iter  20 value 1073.541876
+iter  30 value 1073.541697
+iter  40 value 1073.541512
+iter  50 value 1073.541320
+iter  60 value 1073.541120
+iter  70 value 1073.540912
+iter  80 value 1073.540693
+iter  90 value 1073.540464
+iter 100 value 1073.540223
+final  value 1073.540223 
+stopped after 100 iterations
+# weights:  77
+initial  value 1260.676417 
+iter  10 value 720.932109
+iter  20 value 689.362691
+iter  30 value 689.084709
+iter  40 value 689.018100
+iter  50 value 688.997179
+iter  60 value 688.988542
+iter  70 value 688.983713
+iter  80 value 688.981701
+iter  90 value 688.980241
+iter 100 value 688.978052
+final  value 688.978052 
+stopped after 100 iterations
+# weights:  53
+initial  value 1269.884547 
+iter  10 value 873.471540
+iter  20 value 713.462034
+iter  30 value 712.154224
+iter  40 value 712.072549
+iter  50 value 712.049444
+final  value 712.049407 
+converged
+# weights:  25
+initial  value 1269.506001 
+iter  10 value 863.314371
+iter  20 value 758.099718
+iter  30 value 745.623676
+iter  40 value 744.379026
+iter  50 value 744.156677
+final  value 744.143989 
+converged
+# weights:  45
+initial  value 1255.247960 
+iter  10 value 1073.670270
+iter  20 value 1073.529099
+final  value 1073.529076 
+converged
+# weights:  33
+initial  value 1395.200191 
+iter  10 value 865.243708
+iter  20 value 793.211035
+iter  30 value 783.441645
+iter  40 value 778.696350
+iter  50 value 778.384334
+iter  60 value 778.322600
+final  value 778.322512 
+converged
+# weights:  25
+initial  value 1246.875564 
+iter  10 value 1074.601942
+iter  20 value 691.017965
+iter  30 value 689.511748
+iter  40 value 689.374011
+iter  50 value 689.284372
+iter  60 value 689.230653
+iter  70 value 689.208527
+iter  80 value 689.205538
+final  value 689.205277 
+converged
+# weights:  81
+initial  value 1136.188477 
+iter  10 value 748.911052
+iter  20 value 747.605801
+iter  30 value 747.469432
+iter  40 value 747.425477
+final  value 747.424690 
+converged
+# weights:  37
+initial  value 1134.306272 
+iter  10 value 739.051384
+iter  20 value 725.626079
+iter  30 value 724.938181
+iter  40 value 724.871869
+final  value 724.871438 
+converged
+# weights:  25
+initial  value 1195.115957 
+iter  10 value 1079.642828
+iter  20 value 796.916705
+iter  30 value 696.254701
+iter  40 value 692.562369
+iter  50 value 692.387673
+iter  60 value 692.311512
+iter  70 value 692.292398
+final  value 692.288734 
+converged
+# weights:  13
+initial  value 1101.430190 
+iter  10 value 694.887942
+iter  20 value 692.075826
+iter  30 value 691.972808
+iter  40 value 691.950842
+final  value 691.950702 
+converged
+# weights:  29
+initial  value 1162.266700 
+iter  10 value 740.461956
+iter  20 value 725.939116
+iter  30 value 725.708458
+final  value 725.706703 
+converged
+# weights:  29
+initial  value 1053.568945 
+iter  10 value 708.484299
+iter  20 value 673.119267
+iter  30 value 671.938237
+iter  40 value 671.926735
+final  value 671.926630 
+converged
+# weights:  45
+initial  value 1039.623071 
+iter  10 value 717.034939
+iter  20 value 709.698018
+iter  30 value 709.539515
+iter  40 value 709.533902
+iter  50 value 709.531429
+final  value 709.531406 
+converged
+# weights:  49
+initial  value 1111.642816 
+iter  10 value 781.352867
+iter  20 value 669.828214
+iter  30 value 667.011924
+iter  40 value 666.752421
+iter  50 value 666.727096
+iter  60 value 666.697983
+iter  70 value 666.690111
+final  value 666.689484 
+converged
+# weights:  77
+initial  value 1265.651688 
+iter  10 value 891.093946
+iter  20 value 656.517226
+iter  30 value 646.910002
+iter  40 value 646.052425
+iter  50 value 645.858345
+iter  60 value 645.800662
+iter  70 value 645.781902
+iter  80 value 645.777689
+iter  90 value 645.773617
+iter 100 value 645.770435
+final  value 645.770435 
+stopped after 100 iterations
+# weights:  25
+initial  value 1163.697423 
+iter  10 value 1008.966814
+iter  20 value 1008.221675
+iter  30 value 641.956685
+iter  40 value 639.428943
+iter  50 value 639.079065
+iter  60 value 639.030492
+iter  70 value 639.016084
+iter  80 value 639.004297
+iter  90 value 638.992854
+iter 100 value 638.979362
+final  value 638.979362 
+stopped after 100 iterations
+# weights:  29
+initial  value 1267.386119 
+iter  10 value 1008.244468
+final  value 1008.200699 
+converged
+# weights:  77
+initial  value 1147.402085 
+iter  10 value 1008.463021
+final  value 1008.202600 
+converged
+# weights:  65
+initial  value 1267.562516 
+iter  10 value 769.829426
+iter  20 value 676.278241
+iter  30 value 674.951846
+iter  40 value 674.904344
+final  value 674.904082 
+converged
+# weights:  5
+initial  value 1067.706110 
+iter  10 value 1008.253261
+iter  20 value 1008.218400
+iter  30 value 1008.218211
+iter  40 value 1008.218016
+iter  50 value 1008.217813
+iter  60 value 1008.217599
+iter  70 value 1008.217373
+iter  80 value 1008.217136
+iter  90 value 1008.216885
+iter 100 value 1008.216618
+final  value 1008.216618 
+stopped after 100 iterations
+# weights:  77
+initial  value 1272.211660 
+iter  10 value 1009.790040
+iter  20 value 663.698436
+iter  30 value 655.063516
+iter  40 value 646.227009
+iter  50 value 641.826188
+iter  60 value 640.618546
+iter  70 value 640.273810
+iter  80 value 640.181742
+iter  90 value 640.133343
+iter 100 value 640.101773
+final  value 640.101773 
+stopped after 100 iterations
+# weights:  53
+initial  value 990.340483 
+iter  10 value 693.509364
+iter  20 value 663.751645
+iter  30 value 663.482984
+iter  40 value 663.474975
+final  value 663.474733 
+converged
+# weights:  25
+initial  value 1118.968152 
+iter  10 value 775.866846
+iter  20 value 700.412822
+iter  30 value 699.017790
+final  value 699.007580 
+converged
+# weights:  45
+initial  value 1153.707380 
+iter  10 value 1008.289828
+final  value 1008.203291 
+converged
+# weights:  33
+initial  value 1099.203546 
+iter  10 value 732.914573
+iter  20 value 729.704268
+iter  30 value 729.694997
+final  value 729.694964 
+converged
+# weights:  25
+initial  value 1123.375790 
+iter  10 value 1009.167850
+iter  20 value 722.193622
+iter  30 value 648.806911
+iter  40 value 641.877662
+iter  50 value 640.443578
+iter  60 value 640.316061
+iter  70 value 640.299420
+iter  80 value 640.296029
+iter  90 value 640.290133
+iter 100 value 640.288248
+final  value 640.288248 
+stopped after 100 iterations
+# weights:  81
+initial  value 1216.406362 
+iter  10 value 950.558867
+iter  20 value 744.121470
+iter  30 value 704.594493
+iter  40 value 700.073931
+iter  50 value 698.853178
+iter  60 value 698.776619
+iter  70 value 698.742928
+iter  80 value 698.715166
+final  value 698.713738 
+converged
+# weights:  37
+initial  value 1034.670918 
+iter  10 value 679.134040
+iter  20 value 676.610408
+iter  30 value 675.739171
+iter  40 value 675.707726
+final  value 675.707670 
+converged
+# weights:  25
+initial  value 1130.179490 
+iter  10 value 1014.541518
+iter  20 value 656.474290
+iter  30 value 643.880930
+iter  40 value 643.523741
+iter  50 value 643.392358
+iter  60 value 643.379897
+iter  70 value 643.379077
+final  value 643.378552 
+converged
+# weights:  13
+initial  value 1044.271889 
+iter  10 value 704.704969
+iter  20 value 644.041367
+iter  30 value 643.198521
+iter  40 value 643.096052
+iter  50 value 643.089804
+final  value 643.089763 
+converged
+# weights:  29
+initial  value 1258.327278 
+iter  10 value 891.998501
+iter  20 value 825.870352
+iter  30 value 814.748951
+iter  40 value 810.855892
+iter  50 value 810.741784
+final  value 810.667072 
+converged
+# weights:  29
+initial  value 1345.052411 
+iter  10 value 905.860770
+iter  20 value 764.058413
+iter  30 value 758.175314
+iter  40 value 757.492786
+iter  50 value 757.481248
+iter  60 value 757.477744
+final  value 757.477729 
+converged
+# weights:  45
+initial  value 1332.605242 
+iter  10 value 798.501210
+iter  20 value 794.036336
+iter  30 value 794.026923
+final  value 794.026878 
+converged
+# weights:  49
+initial  value 1227.776766 
+iter  10 value 789.223405
+iter  20 value 754.912504
+iter  30 value 752.159602
+iter  40 value 751.696284
+iter  50 value 751.682870
+final  value 751.681940 
+converged
+# weights:  77
+initial  value 1124.279110 
+iter  10 value 1095.898002
+iter  20 value 733.513416
+iter  30 value 732.041171
+iter  40 value 731.561644
+iter  50 value 731.375800
+iter  60 value 731.274722
+iter  70 value 731.263297
+iter  80 value 731.261662
+iter  90 value 731.260679
+iter 100 value 731.255664
+final  value 731.255664 
+stopped after 100 iterations
+# weights:  25
+initial  value 1238.706727 
+iter  10 value 1103.629386
+iter  20 value 1102.898841
+iter  30 value 763.427098
+iter  40 value 725.512724
+iter  50 value 724.576653
+iter  60 value 724.401527
+iter  70 value 724.391984
+iter  80 value 724.383889
+iter  90 value 724.379022
+iter 100 value 724.374461
+final  value 724.374461 
+stopped after 100 iterations
+# weights:  29
+initial  value 1326.351623 
+iter  10 value 1102.921327
+final  value 1102.870872 
+converged
+# weights:  77
+initial  value 1356.775757 
+iter  10 value 1103.578506
+iter  20 value 1102.877463
+final  value 1102.873319 
+converged
+# weights:  65
+initial  value 1381.794335 
+iter  10 value 836.595443
+iter  20 value 763.499706
+iter  30 value 760.883495
+iter  40 value 760.281744
+iter  50 value 760.227999
+iter  60 value 760.207614
+iter  70 value 760.192829
+final  value 760.192568 
+converged
+# weights:  5
+initial  value 1183.342153 
+iter  10 value 1102.915521
+final  value 1102.889002 
+converged
+# weights:  77
+initial  value 1214.791992 
+iter  10 value 1104.491211
+iter  20 value 760.059367
+iter  30 value 732.592766
+iter  40 value 726.279763
+iter  50 value 725.754506
+iter  60 value 725.622740
+iter  70 value 725.571500
+iter  80 value 725.547283
+iter  90 value 725.540727
+iter 100 value 725.536820
+final  value 725.536820 
+stopped after 100 iterations
+# weights:  53
+initial  value 1465.321079 
+iter  10 value 827.461672
+iter  20 value 750.920375
+iter  30 value 749.013591
+iter  40 value 748.837911
+iter  50 value 748.835944
+iter  60 value 748.835141
+final  value 748.835039 
+converged
+# weights:  25
+initial  value 1244.838500 
+iter  10 value 871.428814
+iter  20 value 783.415774
+iter  30 value 780.788365
+iter  40 value 780.563119
+final  value 780.531652 
+converged
+# weights:  45
+initial  value 1197.852799 
+iter  10 value 1102.985716
+final  value 1102.872302 
+converged
+# weights:  33
+initial  value 1447.479965 
+iter  10 value 972.933943
+iter  20 value 831.868497
+iter  30 value 817.877409
+iter  40 value 816.484715
+iter  50 value 816.448748
+final  value 816.442920 
+converged
+# weights:  25
+initial  value 1388.997818 
+iter  10 value 1103.712228
+iter  20 value 727.819706
+iter  30 value 725.911476
+iter  40 value 725.815555
+iter  50 value 725.774734
+iter  60 value 725.743351
+iter  70 value 725.737945
+iter  80 value 725.735442
+final  value 725.735197 
+converged
+# weights:  81
+initial  value 1266.938002 
+iter  10 value 788.642377
+iter  20 value 784.011109
+iter  30 value 783.879302
+iter  40 value 783.850922
+final  value 783.850670 
+converged
+# weights:  37
+initial  value 1419.712943 
+iter  10 value 823.455234
+iter  20 value 761.538375
+iter  30 value 761.010986
+iter  40 value 761.002260
+iter  40 value 761.002257
+iter  40 value 761.002257
+final  value 761.002257 
+converged
+# weights:  25
+initial  value 1276.436128 
+iter  10 value 799.981324
+iter  20 value 731.577094
+iter  30 value 729.116254
+iter  40 value 728.816186
+iter  50 value 728.806192
+iter  60 value 728.805409
+final  value 728.805355 
+converged
+# weights:  13
+initial  value 1153.557235 
+iter  10 value 1074.278206
+iter  20 value 738.522522
+iter  30 value 730.182228
+iter  40 value 729.088723
+iter  50 value 728.527463
+iter  60 value 728.517225
+iter  70 value 728.515313
+final  value 728.515300 
+converged
+# weights:  25
+initial  value 1743.228091 
+iter  10 value 1593.422532
+iter  20 value 1592.337329
+iter  30 value 1038.035379
+iter  40 value 1029.845755
+iter  50 value 1028.244650
+iter  60 value 1027.564830
+iter  70 value 1026.970155
+iter  80 value 1026.466350
+iter  90 value 1026.282907
+iter 100 value 1025.785766
+final  value 1025.785766 
+stopped after 100 iterations
+Neural Network 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results across tuning parameters:
+
+  size  decay         RMSE      Rsquared   Selected
+   1    7.555024e-05  1.454127  0.5884419          
+   3    2.581921e-02  1.167577  0.7126961          
+   6    3.157902e-04  1.166161  0.7223999  *       
+   6    5.475683e-03  1.166596  0.7202021          
+   6    4.018913e-02  1.167401  0.7184794          
+   6    1.082197e+00  1.179050  0.7956297          
+   7    1.137557e-05  1.454129  0.4662230          
+   7    5.431766e-01  1.172977  0.7707117          
+   7    2.017877e+00  1.187572  0.8252789          
+   8    2.182112e+00  1.188946  0.8297901          
+   9    6.603945e-01  1.173495  0.7789807          
+  11    3.114131e-05  1.454129  0.5624769          
+  11    1.592181e+00  1.182318  0.8161272          
+  12    4.684517e-01  1.171326  0.7685487          
+  13    4.046641e-01  1.170654  0.7642504          
+  16    6.791911e-01  1.173213  0.7820001          
+  19    7.507599e-05  1.361358  0.8545268          
+  19    4.755194e-03  1.166845  0.7149994          
+  19    8.643735e-02  1.167468  0.7312453          
+  20    1.346792e+00  1.179311  0.8100002          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were size = 6 and decay = 0.0003157902.
+[1] "Fri Mar 02 15:36:36 2018"
+Loading required package: nnls
+Something is wrong; all the RMSE metric values are missing:
+      RMSE        Rsquared  
+ Min.   : NA   Min.   : NA  
+ 1st Qu.: NA   1st Qu.: NA  
+ Median : NA   Median : NA  
+ Mean   :NaN   Mean   :NaN  
+ 3rd Qu.: NA   3rd Qu.: NA  
+ Max.   : NA   Max.   : NA  
+ NA's   :1     NA's   :1    
+Error : Stopping
+In addition: Warning messages:
+1: In eval(xpr, envir = envir) :
+  predictions failed for Fold1: parameter=none Error in newdata %*% modelFit$x : 
+  requires numeric/complex matrix/vector arguments
+
+2: In eval(xpr, envir = envir) :
+  predictions failed for Fold2: parameter=none Error in newdata %*% modelFit$x : 
+  requires numeric/complex matrix/vector arguments
+
+3: In eval(xpr, envir = envir) :
+  predictions failed for Fold3: parameter=none Error in newdata %*% modelFit$x : 
+  requires numeric/complex matrix/vector arguments
+
+4: In nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
+  There were missing values in resampled performance measures.
+Something is wrong; all the RMSE metric values are missing:
+      RMSE        Rsquared  
+ Min.   : NA   Min.   : NA  
+ 1st Qu.: NA   1st Qu.: NA  
+ Median : NA   Median : NA  
+ Mean   :NaN   Mean   :NaN  
+ 3rd Qu.: NA   3rd Qu.: NA  
+ Max.   : NA   Max.   : NA  
+ NA's   :1     NA's   :1    
+Error : Stopping
+In addition: Warning messages:
+1: In eval(xpr, envir = envir) :
+  predictions failed for Fold1: parameter=none Error in newdata %*% modelFit$x : 
+  requires numeric/complex matrix/vector arguments
+
+2: In eval(xpr, envir = envir) :
+  predictions failed for Fold2: parameter=none Error in newdata %*% modelFit$x : 
+  requires numeric/complex matrix/vector arguments
+
+3: In eval(xpr, envir = envir) :
+  predictions failed for Fold3: parameter=none Error in newdata %*% modelFit$x : 
+  requires numeric/complex matrix/vector arguments
+
+4: In nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
+  There were missing values in resampled performance measures.
+Something is wrong; all the RMSE metric values are missing:
+      RMSE        Rsquared  
+ Min.   : NA   Min.   : NA  
+ 1st Qu.: NA   1st Qu.: NA  
+ Median : NA   Median : NA  
+ Mean   :NaN   Mean   :NaN  
+ 3rd Qu.: NA   3rd Qu.: NA  
+ Max.   : NA   Max.   : NA  
+ NA's   :1     NA's   :1    
+Error : Stopping
+In addition: There were 26 warnings (use warnings() to see them)
+ [1] "failed"                   "failed"                  
+ [3] "Fri Mar 02 15:36:40 2018" "basic sum C1 + C2"       
+ [5] "ignore"                   "none"                    
+ [7] "YeoJohnson"               "LAPTOP-1SBQTC5I"         
+ [9] "14th20hp3cv"              "nnls"                    
+Loading required package: ordinalNet
+Loading required package: plyr
+Error : The tuning parameter grid should have columns alpha, criteria, link
+Error : The tuning parameter grid should have columns alpha, criteria, link
+Something is wrong; all the RMSE metric values are missing:
+      RMSE        Rsquared  
+ Min.   : NA   Min.   : NA  
+ 1st Qu.: NA   1st Qu.: NA  
+ Median : NA   Median : NA  
+ Mean   :NaN   Mean   :NaN  
+ 3rd Qu.: NA   3rd Qu.: NA  
+ Max.   : NA   Max.   : NA  
+ NA's   :12    NA's   :12   
+Error : Stopping
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+ [1] "failed"                   "failed"                  
+ [3] "Fri Mar 02 15:36:44 2018" "basic sum C1 + C2"       
+ [5] "ignore"                   "none"                    
+ [7] "YeoJohnson"               "LAPTOP-1SBQTC5I"         
+ [9] "14th20hp3cv"              "ordinalNet"              
+Loading required package: e1071
+Loading required package: randomForest
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: 'randomForest'
+
+The following object is masked from 'package:ggplot2':
+
+    margin
+
+Loading required package: foreach
+Parallel Random Forest 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results across tuning parameters:
+
+  mtry  RMSE       Rsquared   Selected
+  1     0.2029821  0.9858961          
+  2     0.1716894  0.9885077  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was mtry = 2.
+[1] "Fri Mar 02 15:36:53 2018"
+Error in varImp[, "%IncMSE"] : subscript out of bounds
+In addition: Warning message:
+executing %dopar% sequentially: no parallel backend registered 
+# weights:  29
+initial  value 1289.503154 
+iter  10 value 818.318120
+iter  20 value 778.910772
+iter  30 value 776.346600
+iter  40 value 776.081493
+final  value 776.078101 
+converged
+# weights:  29
+initial  value 1170.039467 
+iter  10 value 750.934640
+iter  20 value 724.361634
+iter  30 value 723.693102
+final  value 723.672705 
+converged
+# weights:  45
+initial  value 1060.529674 
+iter  10 value 760.443399
+iter  20 value 758.027226
+iter  30 value 758.011586
+final  value 758.010064 
+converged
+# weights:  49
+initial  value 1325.752708 
+iter  10 value 847.319639
+iter  20 value 723.586933
+iter  30 value 715.490629
+iter  40 value 715.263122
+final  value 715.255471 
+converged
+# weights:  77
+initial  value 1102.251576 
+iter  10 value 695.421055
+iter  20 value 694.694371
+iter  30 value 694.624978
+iter  40 value 694.621580
+final  value 694.621527 
+converged
+# weights:  25
+initial  value 1392.431196 
+iter  10 value 1074.138374
+iter  20 value 1073.589131
+iter  30 value 1073.572440
+iter  40 value 1073.552041
+iter  50 value 1073.538205
+iter  60 value 1073.416552
+iter  70 value 693.634564
+iter  80 value 688.524747
+iter  90 value 688.160719
+iter 100 value 687.939942
+final  value 687.939942 
+stopped after 100 iterations
+# weights:  29
+initial  value 1317.859938 
+iter  10 value 1073.566003
+final  value 1073.527961 
+converged
+# weights:  77
+initial  value 1260.313742 
+iter  10 value 1074.335130
+iter  20 value 1073.535260
+iter  30 value 1073.527450
+iter  40 value 1073.521913
+iter  50 value 1073.471128
+iter  60 value 702.167692
+iter  70 value 697.347188
+iter  80 value 696.777489
+iter  90 value 696.063553
+iter 100 value 693.753069
+final  value 693.753069 
+stopped after 100 iterations
+# weights:  65
+initial  value 1214.896723 
+iter  10 value 731.872967
+iter  20 value 724.107292
+iter  30 value 723.854355
+iter  40 value 723.845594
+final  value 723.845576 
+converged
+# weights:  5
+initial  value 1142.635225 
+iter  10 value 1073.571158
+iter  20 value 1073.542244
+iter  30 value 1073.542059
+iter  40 value 1073.541868
+iter  50 value 1073.541669
+iter  60 value 1073.541461
+iter  70 value 1073.541244
+iter  80 value 1073.541017
+iter  90 value 1073.540779
+iter 100 value 1073.540528
+final  value 1073.540528 
+stopped after 100 iterations
+# weights:  77
+initial  value 1210.789190 
+iter  10 value 961.337286
+iter  20 value 725.006521
+iter  30 value 695.063831
+iter  40 value 690.658597
+iter  50 value 689.484767
+iter  60 value 689.241168
+iter  70 value 689.187989
+iter  80 value 689.145203
+iter  90 value 689.097721
+iter 100 value 689.078296
+final  value 689.078296 
+stopped after 100 iterations
+# weights:  53
+initial  value 1125.813361 
+iter  10 value 941.384142
+iter  20 value 733.110091
+iter  30 value 715.524693
+iter  40 value 713.453415
+iter  50 value 712.352821
+iter  60 value 712.172409
+iter  70 value 712.139110
+iter  80 value 712.113418
+iter  90 value 712.104175
+final  value 712.103816 
+converged
+# weights:  25
+initial  value 1243.798703 
+iter  10 value 990.672645
+iter  20 value 755.910468
+iter  30 value 747.588340
+iter  40 value 746.962694
+iter  50 value 745.367929
+iter  60 value 744.580963
+iter  70 value 744.570277
+iter  70 value 744.570273
+iter  70 value 744.570273
+final  value 744.570273 
+converged
+# weights:  45
+initial  value 1207.611735 
+iter  10 value 1073.629434
+final  value 1073.528606 
+converged
+# weights:  33
+initial  value 1330.348455 
+iter  10 value 793.227685
+iter  20 value 780.833990
+iter  30 value 778.951123
+iter  40 value 778.758776
+iter  50 value 778.744484
+final  value 778.744446 
+converged
+# weights:  25
+initial  value 1151.610977 
+iter  10 value 1074.344026
+iter  20 value 719.116500
+iter  30 value 692.503388
+iter  40 value 689.773130
+iter  50 value 689.438879
+iter  60 value 689.381776
+iter  70 value 689.362514
+iter  80 value 689.324591
+iter  90 value 689.313339
+iter 100 value 689.305885
+final  value 689.305885 
+stopped after 100 iterations
+# weights:  81
+initial  value 1162.768099 
+iter  10 value 754.931878
+iter  20 value 748.045332
+iter  30 value 747.890577
+iter  40 value 747.878309
+final  value 747.878148 
+converged
+# weights:  37
+initial  value 1272.048805 
+iter  10 value 967.460368
+iter  20 value 748.389326
+iter  30 value 727.123613
+iter  40 value 725.175911
+iter  50 value 724.894939
+iter  60 value 724.769625
+iter  70 value 724.681977
+iter  80 value 724.654006
+final  value 724.647164 
+converged
+# weights:  25
+initial  value 1203.427251 
+iter  10 value 1074.999570
+iter  20 value 696.644687
+iter  30 value 694.327887
+iter  40 value 694.203733
+iter  50 value 694.198266
+final  value 694.198249 
+converged
+# weights:  13
+initial  value 1129.593159 
+iter  10 value 1051.849865
+iter  20 value 715.476611
+iter  30 value 706.659770
+iter  40 value 693.818326
+iter  50 value 693.172969
+iter  60 value 693.079921
+iter  70 value 693.047884
+final  value 693.047815 
+converged
+# weights:  29
+initial  value 1217.327214 
+iter  10 value 761.828007
+iter  20 value 729.154273
+iter  30 value 727.968018
+iter  40 value 726.354835
+iter  50 value 726.213637
+final  value 726.213531 
+converged
+# weights:  29
+initial  value 1091.072694 
+iter  10 value 694.868676
+iter  20 value 672.617860
+iter  30 value 671.811588
+iter  40 value 671.713373
+final  value 671.713231 
+converged
+# weights:  45
+initial  value 1052.694853 
+iter  10 value 717.612613
+iter  20 value 710.110964
+iter  30 value 709.740888
+iter  40 value 709.473028
+iter  50 value 709.466552
+iter  50 value 709.466551
+iter  50 value 709.466551
+final  value 709.466551 
+converged
+# weights:  49
+initial  value 1138.760521 
+iter  10 value 764.706987
+iter  20 value 670.133859
+iter  30 value 666.964530
+iter  40 value 666.547766
+iter  50 value 666.522672
+iter  60 value 666.519223
+final  value 666.519191 
+converged
+# weights:  77
+initial  value 1240.584501 
+iter  10 value 848.194696
+iter  20 value 648.412954
+iter  30 value 646.540998
+iter  40 value 646.122599
+iter  50 value 645.935608
+iter  60 value 645.870820
+iter  70 value 645.857958
+iter  80 value 645.857051
+final  value 645.857028 
+converged
+# weights:  25
+initial  value 1117.734382 
+iter  10 value 1009.072708
+iter  20 value 1008.215677
+iter  30 value 1008.207824
+iter  40 value 1008.130439
+iter  50 value 650.308926
+iter  60 value 649.384524
+iter  70 value 640.898601
+iter  80 value 640.388620
+iter  90 value 639.846937
+iter 100 value 639.650812
+final  value 639.650812 
+stopped after 100 iterations
+# weights:  29
+initial  value 1245.267827 
+iter  10 value 1008.239100
+final  value 1008.200724 
+converged
+# weights:  77
+initial  value 1120.914127 
+iter  10 value 1008.448548
+iter  20 value 1008.197733
+iter  30 value 1008.192388
+iter  40 value 1008.103631
+iter  50 value 646.518036
+iter  60 value 639.832343
+iter  70 value 638.911867
+iter  80 value 638.904883
+iter  90 value 638.895854
+iter 100 value 638.877905
+final  value 638.877905 
+stopped after 100 iterations
+# weights:  65
+initial  value 1236.333891 
+iter  10 value 755.304135
+iter  20 value 681.436226
+iter  30 value 676.625706
+iter  40 value 675.582664
+iter  50 value 675.252919
+iter  60 value 675.135480
+iter  70 value 675.070764
+iter  80 value 675.067780
+final  value 675.067643 
+converged
+# weights:  5
+initial  value 1069.499575 
+iter  10 value 1008.250145
+iter  20 value 1008.217203
+iter  30 value 1008.217022
+iter  40 value 1008.216833
+iter  50 value 1008.216637
+iter  60 value 1008.216430
+iter  70 value 1008.216214
+iter  80 value 1008.215986
+iter  90 value 1008.215746
+iter 100 value 1008.215492
+final  value 1008.215492 
+stopped after 100 iterations
+# weights:  77
+initial  value 1297.636931 
+iter  10 value 1009.888667
+iter  20 value 650.353105
+iter  30 value 640.534929
+iter  40 value 640.259386
+iter  50 value 640.183164
+iter  60 value 640.149025
+iter  70 value 640.130774
+iter  80 value 640.121814
+iter  90 value 640.118466
+iter 100 value 640.116156
+final  value 640.116156 
+stopped after 100 iterations
+# weights:  53
+initial  value 1011.902212 
+iter  10 value 667.959046
+iter  20 value 663.508657
+iter  30 value 663.398968
+iter  40 value 663.388862
+final  value 663.388845 
+converged
+# weights:  25
+initial  value 1158.284990 
+iter  10 value 802.644226
+iter  20 value 708.183908
+iter  30 value 699.431463
+iter  40 value 699.332347
+final  value 699.332189 
+converged
+# weights:  45
+initial  value 1130.927971 
+iter  10 value 1008.286434
+final  value 1008.202448 
+converged
+# weights:  33
+initial  value 1121.441674 
+iter  10 value 773.414045
+iter  20 value 732.515667
+iter  30 value 730.458610
+iter  40 value 730.096312
+iter  50 value 730.089181
+iter  50 value 730.089180
+iter  50 value 730.089180
+final  value 730.089180 
+converged
+# weights:  25
+initial  value 1100.560605 
+iter  10 value 1009.105312
+iter  20 value 720.370673
+iter  30 value 650.158991
+iter  40 value 642.384788
+iter  50 value 641.052614
+iter  60 value 640.858542
+iter  70 value 640.626831
+iter  80 value 640.471490
+iter  90 value 640.436225
+iter 100 value 640.433828
+final  value 640.433828 
+stopped after 100 iterations
+# weights:  81
+initial  value 1323.388992 
+iter  10 value 745.980722
+iter  20 value 700.012246
+iter  30 value 699.159073
+iter  40 value 699.113583
+final  value 699.104110 
+converged
+# weights:  37
+initial  value 1030.848717 
+iter  10 value 676.945068
+iter  20 value 676.052311
+iter  30 value 675.946922
+final  value 675.946750 
+converged
+# weights:  25
+initial  value 1141.006583 
+iter  10 value 1017.417510
+iter  20 value 728.982558
+iter  30 value 647.959268
+iter  40 value 643.941035
+iter  50 value 643.657158
+iter  60 value 643.585760
+iter  70 value 643.515609
+iter  80 value 643.454428
+final  value 643.454134 
+converged
+# weights:  13
+initial  value 1049.453069 
+iter  10 value 651.172123
+iter  20 value 644.646684
+iter  30 value 643.391918
+iter  40 value 643.109604
+iter  50 value 643.099704
+final  value 643.099688 
+converged
+# weights:  29
+initial  value 1292.393803 
+iter  10 value 870.142710
+iter  20 value 822.705630
+iter  30 value 819.189298
+iter  40 value 818.397909
+final  value 818.376451 
+converged
+# weights:  29
+initial  value 1373.320281 
+iter  10 value 976.819131
+iter  20 value 779.810199
+iter  30 value 762.165626
+iter  40 value 758.948632
+iter  50 value 757.929525
+iter  60 value 757.859992
+iter  70 value 757.836398
+final  value 757.833989 
+converged
+# weights:  45
+initial  value 1317.335393 
+iter  10 value 807.751461
+iter  20 value 794.858864
+iter  30 value 794.799986
+final  value 794.792948 
+converged
+# weights:  49
+initial  value 1210.467182 
+iter  10 value 955.243355
+iter  20 value 759.739583
+iter  30 value 752.462145
+iter  40 value 752.208984
+iter  50 value 752.204260
+final  value 752.203585 
+converged
+# weights:  77
+initial  value 1109.619058 
+iter  10 value 732.799923
+iter  20 value 731.320617
+iter  30 value 731.275032
+iter  40 value 731.270469
+iter  50 value 731.269375
+final  value 731.269277 
+converged
+# weights:  25
+initial  value 1241.896582 
+iter  10 value 1103.737208
+iter  20 value 1102.896755
+iter  30 value 1102.862106
+iter  40 value 752.629504
+iter  50 value 724.839112
+iter  60 value 724.567525
+iter  70 value 724.533719
+iter  80 value 724.508824
+iter  90 value 724.483105
+iter 100 value 724.457790
+final  value 724.457790 
+stopped after 100 iterations
+# weights:  29
+initial  value 1347.235697 
+iter  10 value 1102.916003
+iter  20 value 1102.870938
+iter  20 value 1102.870937
+iter  20 value 1102.870936
+final  value 1102.870936 
+converged
+# weights:  77
+initial  value 1379.650002 
+iter  10 value 1103.482983
+iter  20 value 1102.876361
+final  value 1102.873583 
+converged
+# weights:  65
+initial  value 1363.370472 
+iter  10 value 775.239102
+iter  20 value 760.956265
+iter  30 value 760.623555
+final  value 760.617039 
+converged
+# weights:  5
+initial  value 1180.524907 
+iter  10 value 1102.907007
+final  value 1102.885824 
+converged
+# weights:  77
+initial  value 1203.255219 
+iter  10 value 1104.441535
+iter  20 value 835.567497
+iter  30 value 742.561506
+iter  40 value 733.838950
+iter  50 value 727.571501
+iter  60 value 726.125594
+iter  70 value 725.813742
+iter  80 value 725.695358
+iter  90 value 725.632817
+iter 100 value 725.594016
+final  value 725.594016 
+stopped after 100 iterations
+# weights:  53
+initial  value 1463.967566 
+iter  10 value 824.919315
+iter  20 value 751.050322
+iter  30 value 749.078246
+iter  40 value 748.895939
+iter  50 value 748.889902
+iter  60 value 748.884030
+final  value 748.883952 
+converged
+# weights:  25
+initial  value 1218.253999 
+iter  10 value 824.936961
+iter  20 value 781.887014
+iter  30 value 781.147661
+iter  40 value 781.126228
+final  value 781.123539 
+converged
+# weights:  45
+initial  value 1229.721022 
+iter  10 value 1102.973670
+final  value 1102.871579 
+converged
+# weights:  33
+initial  value 1437.377176 
+iter  10 value 968.113234
+iter  20 value 830.275573
+iter  30 value 818.541661
+iter  40 value 815.812548
+iter  50 value 815.464788
+iter  60 value 815.357707
+final  value 815.350357 
+converged
+# weights:  25
+initial  value 1391.933839 
+iter  10 value 1103.898291
+iter  20 value 1103.037139
+iter  30 value 791.406322
+iter  40 value 729.978874
+iter  50 value 726.277175
+iter  60 value 725.858469
+iter  70 value 725.789443
+iter  80 value 725.760624
+iter  90 value 725.752388
+iter 100 value 725.749885
+final  value 725.749885 
+stopped after 100 iterations
+# weights:  81
+initial  value 1186.762464 
+iter  10 value 786.737006
+iter  20 value 784.662747
+iter  30 value 784.489221
+iter  40 value 784.461054
+iter  50 value 784.459309
+final  value 784.459222 
+converged
+# weights:  37
+initial  value 1425.237621 
+iter  10 value 785.365324
+iter  20 value 762.430733
+iter  30 value 761.796995
+final  value 761.786196 
+converged
+# weights:  25
+initial  value 1273.043986 
+iter  10 value 796.505443
+iter  20 value 731.857140
+iter  30 value 729.023092
+iter  40 value 728.936658
+iter  50 value 728.899228
+iter  60 value 728.898738
+final  value 728.898714 
+converged
+# weights:  13
+initial  value 1138.552105 
+iter  10 value 1064.687097
+iter  20 value 747.283601
+iter  30 value 730.544840
+iter  40 value 729.654842
+iter  50 value 729.631189
+iter  60 value 729.630443
+iter  60 value 729.630438
+iter  60 value 729.630438
+final  value 729.630438 
+converged
+# weights:  25
+initial  value 1639.856192 
+iter  10 value 1593.298678
+iter  20 value 1592.338079
+iter  30 value 1592.335135
+iter  40 value 1592.320568
+iter  50 value 1028.194821
+iter  60 value 1025.954433
+iter  70 value 1025.616036
+iter  80 value 1025.560904
+iter  90 value 1025.542465
+iter 100 value 1025.523280
+final  value 1025.523280 
+stopped after 100 iterations
+Neural Networks with Feature Extraction 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results across tuning parameters:
+
+  size  decay         RMSE      Rsquared   Selected
+   1    7.555024e-05  1.454127  0.6360244          
+   3    2.581921e-02  1.167745  0.7130300          
+   6    3.157902e-04  1.166188  0.7215844  *       
+   6    5.475683e-03  1.166647  0.7195336          
+   6    4.018913e-02  1.167543  0.7191032          
+   6    1.082197e+00  1.179238  0.7963025          
+   7    1.137557e-05  1.454129  0.4921785          
+   7    5.431766e-01  1.173007  0.7712633          
+   7    2.017877e+00  1.188872  0.8259553          
+   8    2.182112e+00  1.188840  0.8307147          
+   9    6.603945e-01  1.173563  0.7794624          
+  11    3.114131e-05  1.454129  0.5063015          
+  11    1.592181e+00  1.182433  0.8167983          
+  12    4.684517e-01  1.171354  0.7690467          
+  13    4.046641e-01  1.170645  0.7648349          
+  16    6.791911e-01  1.173285  0.7824692          
+  19    7.507599e-05  1.268294  0.7476350          
+  19    4.755194e-03  1.166800  0.7157414          
+  19    8.643735e-02  1.167464  0.7314576          
+  20    1.346792e+00  1.179463  0.8104302          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were size = 6 and decay = 0.0003157902.
+[1] "Fri Mar 02 15:37:02 2018"
+Loading required package: pls
+
+Attaching package: 'pls'
+
+The following object is masked from 'package:caret':
+
+    R2
+
+The following object is masked from 'package:stats':
+
+    loadings
+
+Principal Component Analysis 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 501, 501 
+Resampling results:
+
+  RMSE       Rsquared 
+  0.5179444  0.7975317
+
+Tuning parameter 'ncomp' was held constant at a value of 1
+[1] "Fri Mar 02 15:37:06 2018"
+Installing package into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
+(as 'lib' is unspecified)

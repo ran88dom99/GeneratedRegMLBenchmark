@@ -131,3 +131,18 @@ icr, Wed Feb 28 15:47:36 2018, 0.995, basic sum C1 + C2, c(0, 100)
 kernelpls, Wed Feb 28 15:47:38 2018, 0.995, basic sum C1 + C2, c(0, 100)
 knn, Wed Feb 28 15:47:42 2018, 0.907, basic sum C1 + C2, c(0, 100)
 krlsPoly, Wed Feb 28 15:48:48 2018, 0.064, basic sum C1 + C2, c(0, 100)
+krlsRadial, Fri Mar 02 15:35:37 2018, 0.998, basic sum C1 + C2, c(0, 100)
+lars, Fri Mar 02 15:35:43 2018, 0.964, basic sum C1 + C2, c(0, 100)
+lars2, Fri Mar 02 15:35:45 2018, 0.013, basic sum C1 + C2, c(0, 100)
+lasso, Fri Mar 02 15:35:48 2018, 0.964, basic sum C1 + C2, c(0, 100)
+leapBackward, Fri Mar 02 15:35:51 2018, 0.995, basic sum C1 + C2, c(0, 100)
+leapForward, Fri Mar 02 15:35:54 2018, 0.995, basic sum C1 + C2, c(0, 100)
+leapSeq, Fri Mar 02 15:35:56 2018, 0.995, basic sum C1 + C2, c(0, 100)
+lm, Fri Mar 02 15:35:59 2018, 0.995, basic sum C1 + C2, c(0, 100)
+lmStepAIC, Fri Mar 02 15:36:01 2018, 0.995, basic sum C1 + C2, c(0, 100)
+msaenet, Fri Mar 02 15:36:28 2018, 0.995, basic sum C1 + C2, 0
+msaenet, Fri Mar 02 15:36:28 2018, 0.995, basic sum C1 + C2, 100
+nnet, Fri Mar 02 15:36:36 2018, 0.312, basic sum C1 + C2, c(0, 100)
+parRF, Fri Mar 02 15:36:54 2018, 0.943, basic sum C1 + C2, Failed
+pcaNNet, Fri Mar 02 15:37:03 2018, 0.313, basic sum C1 + C2, c(0, 100)
+pcr, Fri Mar 02 15:37:06 2018, 0.72, basic sum C1 + C2, c(0, 100)
