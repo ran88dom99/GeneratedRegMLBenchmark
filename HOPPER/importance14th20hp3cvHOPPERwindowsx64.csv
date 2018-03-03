@@ -4253,3 +4253,52 @@ foba, Sat Mar 03 10:41:33 2018, 0, just random, c(5.7, 20, 100, 39, 0, 23.6, 60.
 gamboost, Sat Mar 03 11:00:06 2018, 0, just random, c(5.7, 20, 100, 39, 0, 23.6, 60.7, 73.6, 13.9)
 gamSpline, Sat Mar 03 11:00:31 2018, 0, just random, c(55.8, 85.1, 100, 76.4, 66.9, 68.1, 82.4, 56.7, 0)
 gbm, Sat Mar 03 11:13:29 2018, 0, just random, Failed
+gcvEarth, Sat Mar 03 14:04:30 2018, 0, just random, c(100, 69.6, 0, 0, 0, 0, 0, 0, 0)
+glm, Sat Mar 03 14:04:45 2018, 0, just random, c(20.5, 38.3, 100, 0, 5.1, 28.5, 24.3, 1.6, 7.8)
+glmboost, Sat Mar 03 14:05:29 2018, 0, just random, c(17.7, 100, 0, 0, 0, 0, 0, 0, 0)
+glmnet, Sat Mar 03 14:05:46 2018, 0, just random, c(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN)
+glmStepAIC, Sat Mar 03 14:08:45 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+icr, Sat Mar 03 14:09:07 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+kernelpls, Sat Mar 03 14:09:22 2018, 0, just random, Failed
+kknn, Sat Mar 03 14:17:17 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+knn, Sat Mar 03 14:17:37 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+krlsPoly, Sat Mar 03 14:20:35 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+krlsRadial, Sat Mar 03 14:30:58 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+lars, Sat Mar 03 14:31:14 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+lars2, Sat Mar 03 14:31:28 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+lasso, Sat Mar 03 14:31:44 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+leapBackward, Sat Mar 03 14:32:00 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+leapForward, Sat Mar 03 14:32:14 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+lm, Sat Mar 03 14:32:29 2018, 0, just random, c(20.5, 38.3, 100, 0, 5.1, 28.5, 24.3, 1.6, 7.8)
+lmStepAIC, Sat Mar 03 14:32:44 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+msaenet, Sat Mar 03 14:34:52 2018, 0, just random, 0
+msaenet, Sat Mar 03 14:34:52 2018, 0, just random, 0
+msaenet, Sat Mar 03 14:34:52 2018, 0, just random, 100
+msaenet, Sat Mar 03 14:34:52 2018, 0, just random, 0
+msaenet, Sat Mar 03 14:34:52 2018, 0, just random, 0
+msaenet, Sat Mar 03 14:34:52 2018, 0, just random, 0
+msaenet, Sat Mar 03 14:34:52 2018, 0, just random, 0
+msaenet, Sat Mar 03 14:34:52 2018, 0, just random, 0
+msaenet, Sat Mar 03 14:34:52 2018, 0, just random, 0
+nnet, Sat Mar 03 14:36:00 2018, 0, just random, c(30.5, 49.2, 100, 6.6, 0, 25.7, 14.9, 0.1, 4.9)
+nnls, Sat Mar 03 14:36:15 2018, 0, just random, c(0, 0, 0, 0, 3.2, 0, 0, 100, 0)
+null, Sat Mar 03 14:36:30 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+parRF, Sat Mar 03 14:38:07 2018, 0, just random, Failed
+pcaNNet, Sat Mar 03 14:38:39 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+pcr, Sat Mar 03 14:38:55 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+plsRglm, Sat Mar 03 14:39:49 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+ppr, Sat Mar 03 14:40:19 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+qrf, Sat Mar 03 14:42:35 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+ranger, Sat Mar 03 14:43:21 2018, 0, just random, Failed
+Rborist, Sat Mar 03 14:55:51 2018, 0, just random, c(13.5, 45.7, 31.9, 0, 3.1, 25.4, 100, 32.7, 48.5)
+relaxo, Sat Mar 03 14:56:08 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+rf, Sat Mar 03 14:57:45 2018, 0, just random, Failed
+ridge, Sat Mar 03 14:58:02 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+rlm, Sat Mar 03 14:58:18 2018, 0, just random, c(15.6, 41.2, 100, 4.7, 5.3, 28.6, 27.2, 0, 5.8)
+rpart, Sat Mar 03 14:58:34 2018, 0, just random, c(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN)
+rpart1SE, Sat Mar 03 14:58:49 2018, 0, just random, c(0, 47.8, 4.2, 100, 78.3, 17.5, 91.2, 34.3, 2.3)
+rpart2, Sat Mar 03 14:59:05 2018, 0.005, just random, c(100, 97.7, 48.1, 34.9, 31, 0, 0, 0, 0)
+rqlasso, Sat Mar 03 14:59:22 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+rqnc, Sat Mar 03 14:59:40 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
+RRF, Sat Mar 03 15:07:04 2018, 0, just random, Failed
+RRFglobal, Sat Mar 03 15:10:32 2018, 0, just random, Failed
