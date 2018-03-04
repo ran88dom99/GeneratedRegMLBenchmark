@@ -1,11 +1,13 @@
 
-R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
+R version 3.4.1 (2017-06-30) -- "Single Candle"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
 
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
@@ -79,9 +81,9 @@ Loading required package: ggplot2
 
 Attaching package: 'MLmetrics'
 
-The following objects are masked from 'package:caret':
+The following object is masked from 'package:caret':
 
-    MAE, RMSE
+    RMSE
 
 The following object is masked from 'package:base':
 
@@ -199,8 +201,10 @@ The following object is masked from 'package:base':
 > list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
+Installing packages into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
+(as 'lib' is unspecified)
 Warning message:
-packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.3) 
+packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1) 
 > 
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
@@ -211,7 +215,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Sun Mar 04 14:58:01 2018"
+[1] "Sat Mar 03 15:31:26 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -312,7 +316,1618 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 +   }
 +   
 + }
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
-Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
-  These variables have zero variances: V11, V12
+Installing package into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
+(as 'lib' is unspecified)
+Loading required package: plsRglm
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+No more significant predictors (<0.102588314702734) found
+Warning only 1 components were thus extracted
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+No more significant predictors (<0.0355403031688184) found
+Warning only 1 components were thus extracted
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+No more significant predictors (<0.149924602732062) found
+Warning only 1 components were thus extracted
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+No more significant predictors (<0.134733079653233) found
+Warning only 1 components were thus extracted
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+No more significant predictors (<0.141169808944687) found
+Warning only 1 components were thus extracted
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+____************************************************____
+
+Family: gaussian 
+Link function: identity 
+
+____Component____ 1 ____
+____Component____ 2 ____
+____Predicting X without NA neither in X nor in Y____
+****________________________________________________****
+
+Partial Least Squares Generalized Linear Models  
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  nt  alpha.pvals.expli  RMSE         Rsquared   Selected
+  1   0.01941864         0.008253387  0.9999671          
+  1   0.02676530         0.008253387  0.9999671          
+  1   0.03648227         0.008253387  0.9999671          
+  1   0.03697273         0.008253387  0.9999671          
+  1   0.08063452         0.008253387  0.9999671          
+  1   0.11839467         0.008253387  0.9999671          
+  1   0.13485836         0.008253387  0.9999671          
+  1   0.15272528         0.008253387  0.9999671          
+  1   0.15584652         0.008253387  0.9999671          
+  1   0.15667107         0.008253387  0.9999671          
+  1   0.17291162         0.008253387  0.9999671          
+  2   0.03554030         0.007860601  0.9999706          
+  2   0.10258831         0.007860601  0.9999706          
+  2   0.13473308         0.007860601  0.9999706          
+  2   0.14116981         0.007860601  0.9999706          
+  2   0.14992460         0.007860601  0.9999706          
+  2   0.15561886         0.007829745  0.9999708          
+  2   0.17013318         0.007829745  0.9999708          
+  2   0.18933709         0.007829745  0.9999708          
+  2   0.19759264         0.007829745  0.9999708  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were nt = 2 and alpha.pvals.expli
+ = 0.1975926.
+[1] "Sat Mar 03 15:33:52 2018"
+Projection Pursuit Regression 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  nterms  RMSE        Rsquared   Selected
+   1      0.03304097  0.9989412          
+   2      0.03114822  0.9989465  *       
+   3      0.03118932  0.9989434          
+   4      0.03115385  0.9989473          
+   5      0.03118120  0.9989449          
+   6      0.03117442  0.9989471          
+   7      0.03118977  0.9989467          
+   8      0.03118569  0.9989459          
+   9      0.03118184  0.9989462          
+  10      0.03118511  0.9989461          
+  11      0.03118511  0.9989461          
+  12      0.03118511  0.9989461          
+  13      0.03118511  0.9989461          
+  14      0.03118511  0.9989461          
+  15      0.03118511  0.9989461          
+  16      0.03118511  0.9989461          
+  17      0.03118511  0.9989461          
+  18      0.03118511  0.9989461          
+  19      0.03118511  0.9989461          
+  20      0.03118511  0.9989461          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was nterms = 2.
+[1] "Sat Mar 03 15:33:57 2018"
+Installing package into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
+(as 'lib' is unspecified)
+Loading required package: quantregForest
+Loading required package: randomForest
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: 'randomForest'
+
+The following object is masked from 'package:ggplot2':
+
+    margin
+
+Loading required package: RColorBrewer
+Quantile Random Forest 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  mtry  RMSE       Rsquared   Selected
+  1     0.5232293  0.9590263          
+  2     0.3643700  0.9751014  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was mtry = 2.
+[1] "Sat Mar 03 15:34:14 2018"
+Loading required package: e1071
+Loading required package: ranger
+
+Attaching package: 'ranger'
+
+The following object is masked from 'package:randomForest':
+
+    importance
+
+Random Forest 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  mtry  RMSE       Rsquared   Selected
+  1     0.2084215  0.9839806          
+  2     0.1763023  0.9870467  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was mtry = 2.
+[1] "Sat Mar 03 15:34:19 2018"
+Error in code$varImp(object$finalModel, ...) : 
+  No importance values available
+In addition: Warning messages:
+1: package 'gpls' is not available (for R version 3.4.1) 
+2: package 'rPython' is not available (for R version 3.4.1) 
+Loading required package: Rborist
+Loading required package: Rcpp
+Rborist 0.1-7
+Type RboristNews() to see new features/changes/bug fixes.
+Random Forest 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  predFixed  RMSE       Rsquared   Selected
+  1          0.2063337  0.9830382          
+  2          0.1823787  0.9853419  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was predFixed = 2.
+[1] "Sat Mar 03 15:34:42 2018"
+Loading required package: relaxo
+Loading required package: lars
+Loaded lars 1.2
+
+Loading required package: plyr
+Relaxed Lasso 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  phi        lambda    RMSE      Rsquared  Selected
+  0.0970932  781.4360  1.430199  NaN       *       
+  0.1338265  774.1671  1.430199  NaN               
+  0.1777015  784.4116  1.430199  NaN               
+  0.1824114  771.3937  1.430199  NaN               
+  0.1848637  775.9302  1.430199  NaN               
+  0.4031726  774.2342  1.430199  NaN               
+  0.5129416  783.5486  1.430199  NaN               
+  0.5919733  776.0475  1.430199  NaN               
+  0.6736654  782.6013  1.430199  NaN               
+  0.6742918  775.6226  1.430199  NaN               
+  0.7058490  784.1626  1.430199  NaN               
+  0.7496230  783.3197  1.430199  NaN               
+  0.7636264  775.2429  1.430199  NaN               
+  0.7780943  789.2000  1.430199  NaN               
+  0.7792326  781.6792  1.430199  NaN               
+  0.7833553  772.2568  1.430199  NaN               
+  0.8506659  782.2413  1.430199  NaN               
+  0.8645581  779.5303  1.430199  NaN               
+  0.9466855  782.2263  1.430199  NaN               
+  0.9879632  788.0269  1.430199  NaN               
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were lambda = 781.436 and phi = 0.0970932.
+[1] "Sat Mar 03 15:34:45 2018"
+Random Forest 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  mtry  RMSE       Rsquared   Selected
+  1     0.2084034  0.9838545          
+  2     0.1768699  0.9869761  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was mtry = 2.
+[1] "Sat Mar 03 15:34:53 2018"
+Error in varImp[, "%IncMSE"] : subscript out of bounds
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Loading required package: elasticnet
+Ridge Regression 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  lambda        RMSE         Rsquared   Selected
+  2.674179e-05  0.007829678  0.9999708          
+  4.404835e-05  0.007829635  0.9999708          
+  1.326821e-04  0.007829415  0.9999708          
+  1.379178e-04  0.007829402  0.9999708          
+  2.465869e-04  0.007829136  0.9999708          
+  3.068218e-04  0.007828990  0.9999708          
+  3.662181e-04  0.007828847  0.9999708          
+  3.917821e-04  0.007828786  0.9999708          
+  2.890595e-03  0.007823868  0.9999708          
+  8.595162e-03  0.007820325  0.9999708  *       
+  9.875823e-03  0.007820978  0.9999708          
+  1.349541e-02  0.007825648  0.9999708          
+  1.361157e-02  0.007825867  0.9999708          
+  1.671428e-02  0.007833255  0.9999708          
+  2.517274e-02  0.007868265  0.9999708          
+  2.867923e-02  0.007888944  0.9999708          
+  4.068159e-02  0.007985407  0.9999708          
+  4.687447e-02  0.008049740  0.9999707          
+  3.649514e-01  0.015295124  0.9999703          
+  7.088771e-01  0.021959024  0.9999699          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was lambda = 0.008595162.
+[1] "Sat Mar 03 15:34:57 2018"
+Loading required package: MASS
+Robust Linear Model 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  intercept  psi           RMSE         Rsquared   Selected
+  FALSE      psi.huber     0.011501100  0.9999705          
+  FALSE      psi.hampel    0.011498006  0.9999706          
+  FALSE      psi.bisquare  0.011535181  0.9999704          
+   TRUE      psi.huber     0.007875220  0.9999708          
+   TRUE      psi.hampel    0.007838950  0.9999708  *       
+   TRUE      psi.bisquare  0.007895066  0.9999708          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were intercept = TRUE and psi = psi.hampel.
+[1] "Sat Mar 03 15:35:01 2018"
+Loading required package: rpart
+CART 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  cp            RMSE       Rsquared   Selected
+  5.086324e-05  0.3709543  0.9332545          
+  1.014936e-04  0.3709543  0.9332545  *       
+  5.850736e-04  0.3767771  0.9311291          
+  6.982827e-04  0.3772358  0.9309618          
+  7.023764e-04  0.3772358  0.9309618          
+  8.389377e-04  0.3810280  0.9295986          
+  9.119627e-04  0.3835778  0.9285747          
+  1.023977e-03  0.3843860  0.9281907          
+  1.168003e-03  0.3866326  0.9274756          
+  1.281251e-03  0.3962289  0.9236634          
+  2.711156e-03  0.4444953  0.9023143          
+  3.128451e-03  0.4526095  0.8988315          
+  5.273189e-03  0.5164658  0.8695103          
+  5.322447e-03  0.5164658  0.8695103          
+  5.445589e-03  0.5219228  0.8666775          
+  7.423675e-03  0.5515584  0.8518635          
+  1.341536e-02  0.5728105  0.8399057          
+  1.541088e-02  0.6049959  0.8219246          
+  4.141865e-02  0.7682806  0.7127923          
+  6.757215e-02  0.8842166  0.6194977          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was cp = 0.0001014936.
+[1] "Sat Mar 03 15:35:04 2018"
+CART 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results:
+
+  RMSE       Rsquared 
+  0.5584096  0.8480973
+
+[1] "Sat Mar 03 15:35:07 2018"
+CART 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  maxdepth  RMSE       Rsquared   Selected
+   2        1.0448489  0.4707711          
+   3        0.8842166  0.6194977          
+   5        0.7452483  0.7294168          
+   6        0.7032943  0.7585044          
+   7        0.6667467  0.7826960          
+   8        0.6393814  0.8006699          
+   9        0.6153790  0.8154298          
+  10        0.5856397  0.8323930          
+  11        0.5584096  0.8480973  *       
+  12        0.5584096  0.8480973          
+  17        0.5584096  0.8480973          
+  18        0.5584096  0.8480973          
+  20        0.5584096  0.8480973          
+  21        0.5584096  0.8480973          
+  22        0.5584096  0.8480973          
+  24        0.5584096  0.8480973          
+  29        0.5584096  0.8480973          
+  30        0.5584096  0.8480973          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was maxdepth = 11.
+[1] "Sat Mar 03 15:35:10 2018"
+Loading required package: rqPen
+Loading required package: quantreg
+Loading required package: SparseM
+
+Attaching package: 'SparseM'
+
+The following object is masked from 'package:base':
+
+    backsolve
+
+Loading required package: regpro
+Loading required package: denpro
+Quantile Regression with LASSO penalty 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  lambda        RMSE         Rsquared   Selected
+  2.674179e-05  0.008171821  0.9999708          
+  4.404835e-05  0.008171821  0.9999708          
+  1.326821e-04  0.008171822  0.9999708          
+  1.379178e-04  0.008171821  0.9999708          
+  2.465869e-04  0.008171821  0.9999708          
+  3.068218e-04  0.008171821  0.9999708          
+  3.662181e-04  0.008171821  0.9999708          
+  3.917821e-04  0.008171821  0.9999708          
+  2.890595e-03  0.008173616  0.9999708          
+  8.595162e-03  0.008107035  0.9999708          
+  9.875823e-03  0.008102308  0.9999708  *       
+  1.349541e-02  0.008131730  0.9999708          
+  1.361157e-02  0.008131730  0.9999708          
+  1.671428e-02  0.008145421  0.9999708          
+  2.517274e-02  0.008207198  0.9999708          
+  2.867923e-02  0.008227851  0.9999708          
+  4.068159e-02  0.008262817  0.9999707          
+  4.687447e-02  0.008313745  0.9999708          
+  3.649514e-01  1.431092416        NaN          
+  7.088771e-01  1.431090275        NaN          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was lambda = 0.009875823.
+[1] "Sat Mar 03 15:35:14 2018"
+Non-Convex Penalized Quantile Regression 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  lambda        penalty  RMSE         Rsquared   Selected
+  2.674179e-05  MCP      0.008171821  0.9999708          
+  4.404835e-05  SCAD     0.008171821  0.9999708          
+  1.326821e-04  MCP      0.008171821  0.9999708          
+  1.379178e-04  MCP      0.008171821  0.9999708          
+  2.465869e-04  SCAD     0.008171821  0.9999708          
+  3.068218e-04  SCAD     0.008171821  0.9999708          
+  3.662181e-04  MCP      0.008171821  0.9999708          
+  3.917821e-04  SCAD     0.008171821  0.9999708          
+  2.890595e-03  SCAD     0.008171821  0.9999708          
+  8.595162e-03  MCP      0.008171821  0.9999708          
+  9.875823e-03  SCAD     0.008171821  0.9999708          
+  1.349541e-02  SCAD     0.008171821  0.9999708          
+  1.361157e-02  SCAD     0.008171821  0.9999708          
+  1.671428e-02  SCAD     0.008171821  0.9999708          
+  2.517274e-02  SCAD     0.008171821  0.9999708          
+  2.867923e-02  SCAD     0.008171821  0.9999708          
+  4.068159e-02  SCAD     0.008171821  0.9999708          
+  4.687447e-02  MCP      0.008171821  0.9999708  *       
+  3.649514e-01  SCAD     1.431092416        NaN          
+  7.088771e-01  SCAD     1.431090275        NaN          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were lambda = 0.04687447 and penalty = MCP.
+[1] "Sat Mar 03 15:35:17 2018"
+Loading required package: RRF
+RRF 1.7
+Type rrfNews() to see new features/changes/bug fixes.
+
+Attaching package: 'RRF'
+
+The following object is masked from 'package:ranger':
+
+    importance
+
+The following objects are masked from 'package:randomForest':
+
+    classCenter, combine, getTree, grow, importance, margin, MDSplot,
+    na.roughfix, outlier, partialPlot, treesize, varImpPlot, varUsed
+
+The following object is masked from 'package:ggplot2':
+
+    margin
+
+Regularized Random Forest 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  mtry  coefReg    coefImp     RMSE       Rsquared   Selected
+  1     0.0970932  0.28032777  0.2109512  0.9834724          
+  1     0.1338265  0.05793800  0.2084664  0.9841294          
+  1     0.1824114  0.30333217  0.2078061  0.9838255          
+  1     0.1848637  0.54390287  0.2098041  0.9837506          
+  1     0.4031726  0.11877700  0.2088094  0.9839959          
+  1     0.5919733  0.73060010  0.2078486  0.9840524          
+  1     0.6742918  0.31147712  0.2093479  0.9837551          
+  1     0.7636264  0.45241389  0.2078359  0.9839587          
+  1     0.7792326  0.18181055  0.2085869  0.9838834          
+  1     0.7833553  0.10473406  0.2091019  0.9836920          
+  1     0.8645581  0.28487926  0.2103496  0.9834617          
+  2     0.1777015  0.63211001  0.1773701  0.9869534          
+  2     0.5129416  0.80470416  0.1765504  0.9870423  *       
+  2     0.6736654  0.41442768  0.1765802  0.9870307          
+  2     0.7058490  0.62126772  0.1774503  0.9869397          
+  2     0.7496230  0.26707010  0.1768690  0.9870019          
+  2     0.7780943  0.07474281  0.1772391  0.9869814          
+  2     0.8506659  0.28556897  0.1779153  0.9867241          
+  2     0.9466855  0.20856460  0.1782739  0.9867501          
+  2     0.9879632  0.99811657  0.1781523  0.9867550          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were mtry = 2, coefReg = 0.5129416
+ and coefImp = 0.8047042.
+[1] "Sat Mar 03 15:36:43 2018"
+Error in varImp[, "%IncMSE"] : subscript out of bounds
+In addition: Warning messages:
+1: In nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
+  There were missing values in resampled performance measures.
+2: In nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
+  There were missing values in resampled performance measures.
+Regularized Random Forest 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  mtry  coefReg    RMSE       Rsquared   Selected
+  1     0.0970932  0.2068868  0.9841001          
+  1     0.1338265  0.2101010  0.9834854          
+  1     0.1824114  0.2102065  0.9835904          
+  1     0.1848637  0.2105646  0.9835331          
+  1     0.4031726  0.2080355  0.9839023          
+  1     0.5919733  0.2089387  0.9837830          
+  1     0.6742918  0.2085375  0.9837286          
+  1     0.7636264  0.2115139  0.9833862          
+  1     0.7792326  0.2084397  0.9837315          
+  1     0.7833553  0.2095138  0.9835822          
+  1     0.8645581  0.2106837  0.9834816          
+  2     0.1777015  0.1781715  0.9867678          
+  2     0.5129416  0.1773608  0.9869553          
+  2     0.6736654  0.1754695  0.9872213  *       
+  2     0.7058490  0.1767731  0.9869599          
+  2     0.7496230  0.1770203  0.9869557          
+  2     0.7780943  0.1765811  0.9870523          
+  2     0.8506659  0.1769895  0.9869864          
+  2     0.9466855  0.1768741  0.9869768          
+  2     0.9879632  0.1781602  0.9867971          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were mtry = 2 and coefReg = 0.6736654.
+[1] "Sat Mar 03 15:37:25 2018"
+Error in varImp[, "%IncMSE"] : subscript out of bounds
+Loading required package: kernlab
+
+Attaching package: 'kernlab'
+
+The following object is masked from 'package:ggplot2':
+
+    alpha
+
+Error in .local(object, ...) : test vector does not match model !
+Error in .local(object, ...) : test vector does not match model !
+Error in .local(object, ...) : test vector does not match model !
+In addition: Warning messages:
+1: In max(abs(logtheta[thetavec[which(nzindex)] != 0] + log(thetavec[thetavec !=  :
+  no non-missing arguments to max; returning -Inf
+2: In eval(xpr, envir = envir) :
+  model fit failed for Resample19: parameter=none Error in crossprod(Kr)/var + diag(1/thetatmp) : non-conformable arrays
+
+3: In nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
+  There were missing values in resampled performance measures.
+ [1] "failed"                   "failed"                  
+ [3] "Sat Mar 03 15:40:09 2018" "basic sum C1 + C2"       
+ [5] "ignore"                   "none"                    
+ [7] "YeoJohnson"               "LAPTOP-1SBQTC5I"         
+ [9] "14th20hp3cv"              "rvmLinear"               
+Loading required package: pls
+
+Attaching package: 'pls'
+
+The following object is masked from 'package:caret':
+
+    R2
+
+The following object is masked from 'package:stats':
+
+    loadings
+
+Partial Least Squares 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results:
+
+  RMSE        Rsquared 
+  0.04458618  0.9987588
+
+Tuning parameter 'ncomp' was held constant at a value of 1
+[1] "Sat Mar 03 15:40:12 2018"
+Loading required package: spikeslab
+Loading required package: parallel
+
+ spikeslab 1.1.5 
+ 
+ Type spikeslab.news() to see new features, changes, and bug fixes. 
+ 
+
+Spike and Slab Regression 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  vars  RMSE         Rsquared   Selected
+  1     1.409003709  0.5261121          
+  2     0.007829557  0.9999708  *       
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was vars = 2.
+[1] "Sat Mar 03 15:40:18 2018"
+Loading required package: spls
+Sparse Partial Least Squares (SPLS) Regression and
+Classification (version 2.2-1)
+
+
+Attaching package: 'spls'
+
+The following object is masked from 'package:caret':
+
+    splsda
+
+Sparse Partial Least Squares 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  kappa       eta        K  RMSE         Rsquared   Selected
+  0.03559920  0.1824114  1  0.008253387  0.9999671          
+  0.05366081  0.7833553  1  0.008253387  0.9999671          
+  0.09356769  0.1338265  1  0.008253387  0.9999671          
+  0.09496835  0.4031726  1  0.008253387  0.9999671          
+  0.11599750  0.7636264  1  0.008253387  0.9999671          
+  0.12390718  0.6742918  1  0.008253387  0.9999671          
+  0.13031165  0.1848637  2  0.007829745  0.9999708          
+  0.13275372  0.5919733  2  0.007829745  0.9999708          
+  0.20508227  0.8645581  1  0.008253387  0.9999671          
+  0.24452117  0.0970932  1  0.008253387  0.9999671          
+  0.24954778  0.7792326  1  0.008253387  0.9999671          
+  0.26084885  0.9466855  1  0.008253387  0.9999671          
+  0.26115901  0.8506659  1  0.008253387  0.9999671          
+  0.26859065  0.6736654  1  0.008253387  0.9999671          
+  0.28341088  0.7496230  1  0.008253387  0.9999671          
+  0.28813063  0.5129416  2  0.007829745  0.9999708          
+  0.30078316  0.7058490  2  0.007829745  0.9999708          
+  0.30591136  0.1777015  2  0.007829745  0.9999708          
+  0.38018626  0.9879632  2  0.007829745  0.9999708  *       
+  0.40421425  0.7780943  1  0.008253387  0.9999671          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were K = 2, eta = 0.9879632 and kappa
+ = 0.3801863.
+[1] "Sat Mar 03 15:40:21 2018"
+Loading required package: superpc
+Loading required package: survival
+
+Attaching package: 'survival'
+
+The following object is masked from 'package:quantreg':
+
+    untangle.specials
+
+The following object is masked from 'package:caret':
+
+    cluster
+
+Supervised Principal Component Analysis 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  threshold   n.components  RMSE        Rsquared   Selected
+  0.07119841  1             0.69799925  0.6919304          
+  0.10732161  3             0.02424524  0.9999708  *       
+  0.18713538  1             0.69799925  0.6919304          
+  0.18993670  2             0.02424524  0.9999708          
+  0.23199500  3             0.02424524  0.9999708          
+  0.24781436  3             0.02424524  0.9999708          
+  0.26062329  1             0.69799925  0.6919304          
+  0.26550744  2             0.02424524  0.9999708          
+  0.41016454  3             0.02424524  0.9999708          
+  0.48904235  1             0.69799925  0.6919304          
+  0.49909555  3             0.02424524  0.9999708          
+  0.52169769  3             0.02424524  0.9999708          
+  0.52231803  3             0.02424524  0.9999708          
+  0.53718129  3             0.02424524  0.9999708          
+  0.56682176  3             0.02424524  0.9999708          
+  0.57626125  2             0.02424524  0.9999708          
+  0.60156632  3             0.02424524  0.9999708          
+  0.61182273  1             0.69799925  0.6919304          
+  0.76037251  3             0.02424524  0.9999708          
+  0.80842849  3             0.02424524  0.9999708          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were threshold = 0.1073216 and
+ n.components = 3.
+[1] "Sat Mar 03 15:40:25 2018"
+Error : 'x' should be a character matrix with a single column for string kernel methods
+Error : 'x' should be a character matrix with a single column for string kernel methods
+Error : 'x' should be a character matrix with a single column for string kernel methods
+ [1] "failed"                   "failed"                  
+ [3] "Sat Mar 03 15:40:27 2018" "basic sum C1 + C2"       
+ [5] "ignore"                   "none"                    
+ [7] "YeoJohnson"               "LAPTOP-1SBQTC5I"         
+ [9] "14th20hp3cv"              "svmBoundrangeString"     
+Error : 'x' should be a character matrix with a single column for string kernel methods
+Error : 'x' should be a character matrix with a single column for string kernel methods
+Error : 'x' should be a character matrix with a single column for string kernel methods
+ [1] "failed"                   "failed"                  
+ [3] "Sat Mar 03 15:40:30 2018" "basic sum C1 + C2"       
+ [5] "ignore"                   "none"                    
+ [7] "YeoJohnson"               "LAPTOP-1SBQTC5I"         
+ [9] "14th20hp3cv"              "svmExpoString"           
+Support Vector Machines with Linear Kernel 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  C             RMSE        Rsquared   Selected
+    0.06551532  0.06073656  0.9999296          
+    0.09537958  0.05815116  0.9999277          
+    0.21870084  0.05511384  0.9998488  *       
+    0.22516438  0.05511384  0.9998488          
+    0.34866779  0.05511384  0.9998488          
+    0.41100147  0.05511384  0.9998488          
+    0.46954958  0.05511384  0.9998488          
+    0.49400979  0.05511384  0.9998488          
+    2.22293857  0.05511384  0.9998488          
+    5.04773158  0.05511384  0.9998488          
+    5.60390810  0.05511384  0.9998488          
+    7.08842630  0.05511384  0.9998488          
+    7.13429257  0.05511384  0.9998488          
+    8.32655301  0.05511384  0.9998488          
+   11.33196675  0.05511384  0.9998488          
+   12.50054215  0.05511384  0.9998488          
+   16.26269942  0.05511384  0.9998488          
+   18.09276395  0.05511384  0.9998488          
+   84.77621860  0.05511384  0.9998488          
+  139.72315955  0.05511384  0.9998488          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was C = 0.2187008.
+[1] "Sat Mar 03 15:40:35 2018"
+Error in if (mean.improvement < 0) { : 
+  missing value where TRUE/FALSE needed
+In addition: Warning message:
+In method$predict(modelFit = modelFit, newdata = newdata, submodels = param) :
+  kernlab prediction calculations failed; returning NAs
+Support Vector Machines with Linear Kernel 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  cost          RMSE        Rsquared   Selected
+    0.06551532  0.06073656  0.9999296          
+    0.09537958  0.05815116  0.9999277          
+    0.21870084  0.05511384  0.9998488  *       
+    0.22516438  0.05511384  0.9998488          
+    0.34866779  0.05511384  0.9998488          
+    0.41100147  0.05511384  0.9998488          
+    0.46954958  0.05511384  0.9998488          
+    0.49400979  0.05511384  0.9998488          
+    2.22293857  0.05511384  0.9998488          
+    5.04773158  0.05511384  0.9998488          
+    5.60390810  0.05511384  0.9998488          
+    7.08842630  0.05511384  0.9998488          
+    7.13429257  0.05511384  0.9998488          
+    8.32655301  0.05511384  0.9998488          
+   11.33196675  0.05511384  0.9998488          
+   12.50054215  0.05511384  0.9998488          
+   16.26269942  0.05511384  0.9998488          
+   18.09276395  0.05511384  0.9998488          
+   84.77621860  0.05511384  0.9998488          
+  139.72315955  0.05511384  0.9998488          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was cost = 0.2187008.
+[1] "Sat Mar 03 15:40:38 2018"
+Loading required package: LiblineaR
+L2 Regularized Support Vector Machine (dual) with Linear Kernel 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  cost          Loss  RMSE        Rsquared   Selected
+   0.002620337  L1    0.44766834  0.9997761          
+   0.004323550  L2    0.12620731  0.9999608          
+   0.013072760  L1    0.17363194  0.9998727          
+   0.013590422  L1    0.17014566  0.9998706          
+   0.024347206  L2    0.05252985  0.9999453          
+   0.030317346  L2    0.05147107  0.9999480          
+   0.036208341  L1    0.11205300  0.9998256          
+   0.038744859  L2    0.05222568  0.9999656          
+   0.287830379  L2    0.04582870  0.9999172          
+   0.859069601  L1    0.06345505  0.9995505          
+   0.987539980  L2    0.04513483  0.9999329          
+   1.350930849  L2    0.04412974  0.9999301          
+   1.362598484  L2    0.04357842  0.9999177  *       
+   1.674378671  L2    0.04618987  0.9999302          
+   2.525265643  L2    0.04497472  0.9999373          
+   2.878316052  L2    0.04451058  0.9999209          
+   4.087805226  L2    0.04467795  0.9999189          
+   4.712375660  L1    0.06178121  0.9995461          
+  36.948663691  L2    0.04452627  0.9999096          
+  71.932399029  L2    0.04576922  0.9999102          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were cost = 1.362598 and Loss = L2.
+[1] "Sat Mar 03 15:40:42 2018"
+Support Vector Machines with Polynomial Kernel 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  degree  scale         C             RMSE        Rsquared   Selected
+  1       5.121749e-05  5.707766e-02  1.42867710  0.9996798          
+  1       9.267618e-05  7.320340e-01  1.39069374  0.9996796          
+  1       9.549217e-05  8.929275e+00  0.93484729  0.9995061          
+  1       1.371608e-03  1.074439e-01  1.34429676  0.9996780          
+  1       1.374259e-02  6.220685e+01  0.05513957  0.9998486          
+  1       3.753541e-02  7.967267e-01  0.06742004  0.9999417          
+  1       1.116880e-01  3.449072e+00  0.05503666  0.9998496  *       
+  1       1.420987e-01  9.284776e-02  0.07681506  0.9999554          
+  2       3.271101e-05  5.763098e-01  1.40831596  0.9996796          
+  2       8.749859e-05  2.234144e+01  0.13534251  0.9999576          
+  2       5.237435e-03  1.344161e+02  0.06300661  0.9998551          
+  2       3.724950e-02  2.323686e+00  0.06948402  0.9999080          
+  2       5.517305e-02  1.995967e+01  0.06882828  0.9999159          
+  2       9.413998e-02  5.021017e-01  0.07347936  0.9998780          
+  2       1.351249e-01  2.069219e-01  0.07450453  0.9999168          
+  2       3.231509e-01  6.085866e-01  0.06810832  0.9998767          
+  2       3.828674e-01  6.042380e-01  0.06825468  0.9998716          
+  2       1.043297e+00  2.732833e-01  0.06702841  0.9998397          
+  3       1.332604e-01  6.797472e-02  0.09097339  0.9990410          
+  3       1.726722e+00  1.004143e+03  0.09587601  0.9973834          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were degree = 1, scale = 0.111688 and C
+ = 3.449072.
+[1] "Sat Mar 03 15:40:46 2018"
+Error in if (mean.improvement < 0) { : 
+  missing value where TRUE/FALSE needed
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Support Vector Machines with Radial Basis Function Kernel 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  sigma        C            RMSE        Rsquared   Selected
+   0.01855787    0.9004433  0.08100593  0.9977190  *       
+   0.02216699   57.4523774  0.08636229  0.9979512          
+   0.03740004  263.1776380  0.08783669  0.9977554          
+   0.04307230   37.4709969  0.08805365  0.9976959          
+   0.06056918  426.5478214  0.08874827  0.9975161          
+   0.08605807    0.2276766  0.18965035  0.9828350          
+   0.09749162  735.0002842  0.09155744  0.9967814          
+   0.12002822    0.2655271  0.18791638  0.9827595          
+   0.16463579    5.3576301  0.11414753  0.9938618          
+   0.21427698    1.3124015  0.14263983  0.9899485          
+   0.76848165    3.8129819  0.21285564  0.9794192          
+   1.05947718    2.9487951  0.24488461  0.9730272          
+   1.47761005    1.2896604  0.29001321  0.9630766          
+   1.87360663   76.8278581  0.30088686  0.9595186          
+   2.11186209   23.3204776  0.31429122  0.9561305          
+   2.64388193   59.2350249  0.34123153  0.9492883          
+   2.87709921  776.0879094  0.35201798  0.9463524          
+   4.88973181   47.1534653  0.42793455  0.9231365          
+  15.71275412   88.7494094  0.64993562  0.8163397          
+  19.45614517    0.2800426  0.93159535  0.6303219          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were sigma = 0.01855787 and C = 0.9004433.
+[1] "Sat Mar 03 15:40:51 2018"
+Error in if (mean.improvement < 0) { : 
+  missing value where TRUE/FALSE needed
+In addition: Warning message:
+In method$predict(modelFit = modelFit, newdata = newdata, submodels = param) :
+  kernlab prediction calculations failed; returning NAs
+Support Vector Machines with Radial Basis Function Kernel 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  C             RMSE       Rsquared   Selected
+    0.06551532  0.5725873  0.8776209          
+    0.09537958  0.5271782  0.8940024          
+    0.21870084  0.3932062  0.9370027          
+    0.22516438  0.3726262  0.9428642          
+    0.34866779  0.3591832  0.9464878          
+    0.41100147  0.3401129  0.9510902          
+    0.46954958  0.3272699  0.9548677          
+    0.49400979  0.3195603  0.9559181          
+    2.22293857  0.2621250  0.9688598          
+    5.04773158  0.2569379  0.9699187          
+    5.60390810  0.2552172  0.9715073          
+    7.08842630  0.2446874  0.9745474          
+    7.13429257  0.2519811  0.9722849          
+    8.32655301  0.2705336  0.9664552          
+   11.33196675  0.2552293  0.9714938          
+   12.50054215  0.2414493  0.9736617  *       
+   16.26269942  0.2490859  0.9727443          
+   18.09276395  0.2524474  0.9720343          
+   84.77621860  0.2677096  0.9675422          
+  139.72315955  0.2489928  0.9737290          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final value used for the model was C = 12.50054.
+[1] "Sat Mar 03 15:40:55 2018"
+Error in if (mean.improvement < 0) { : 
+  missing value where TRUE/FALSE needed
+In addition: Warning message:
+In method$predict(modelFit = modelFit, newdata = newdata, submodels = param) :
+  kernlab prediction calculations failed; returning NAs
+Support Vector Machines with Radial Basis Function Kernel 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results across tuning parameters:
+
+  sigma        C            RMSE        Rsquared   Selected
+   0.01855787    0.9004433  0.08100593  0.9977190  *       
+   0.02216699   57.4523774  0.08636229  0.9979512          
+   0.03740004  263.1776380  0.08783669  0.9977554          
+   0.04307230   37.4709969  0.08805365  0.9976959          
+   0.06056918  426.5478214  0.08874827  0.9975161          
+   0.08605807    0.2276766  0.18965035  0.9828350          
+   0.09749162  735.0002842  0.09155744  0.9967814          
+   0.12002822    0.2655271  0.18791638  0.9827595          
+   0.16463579    5.3576301  0.11414753  0.9938618          
+   0.21427698    1.3124015  0.14263983  0.9899485          
+   0.76848165    3.8129819  0.21285564  0.9794192          
+   1.05947718    2.9487951  0.24488461  0.9730272          
+   1.47761005    1.2896604  0.29001321  0.9630766          
+   1.87360663   76.8278581  0.30088686  0.9595186          
+   2.11186209   23.3204776  0.31429122  0.9561305          
+   2.64388193   59.2350249  0.34123153  0.9492883          
+   2.87709921  776.0879094  0.35201798  0.9463524          
+   4.88973181   47.1534653  0.42793455  0.9231365          
+  15.71275412   88.7494094  0.64993562  0.8163397          
+  19.45614517    0.2800426  0.93159535  0.6303219          
+
+RMSE was used to select the optimal model using  the smallest value.
+The final values used for the model were sigma = 0.01855787 and C = 0.9004433.
+[1] "Sat Mar 03 15:40:59 2018"
+Error in if (mean.improvement < 0) { : 
+  missing value where TRUE/FALSE needed
+In addition: Warning message:
+In method$predict(modelFit = modelFit, newdata = newdata, submodels = param) :
+  kernlab prediction calculations failed; returning NAs
+Error : 'x' should be a character matrix with a single column for string kernel methods
+Error : 'x' should be a character matrix with a single column for string kernel methods
+Error : 'x' should be a character matrix with a single column for string kernel methods
+ [1] "failed"                   "failed"                  
+ [3] "Sat Mar 03 15:41:01 2018" "basic sum C1 + C2"       
+ [5] "ignore"                   "none"                    
+ [7] "YeoJohnson"               "LAPTOP-1SBQTC5I"         
+ [9] "14th20hp3cv"              "svmSpectrumString"       
+Loading required package: ipred
+Bagged CART 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results:
+
+  RMSE       Rsquared
+  0.4011718  0.931456
+
+[1] "Sat Mar 03 15:41:05 2018"
+Partial Least Squares 
+
+752 samples
+  2 predictor
+
+No pre-processing
+Resampling: Cross-Validated (3 fold) 
+Summary of sample sizes: 502, 502, 500 
+Resampling results:
+
+  RMSE        Rsquared 
+  0.04458618  0.9987588
+
+Tuning parameter 'ncomp' was held constant at a value of 1
+[1] "Sat Mar 03 15:41:14 2018"
+Loading required package: frbs
