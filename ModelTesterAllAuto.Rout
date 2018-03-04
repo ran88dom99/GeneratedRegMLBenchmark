@@ -211,7 +211,7 @@ packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Sun Mar 04 09:26:02 2018"
+[1] "Sun Mar 04 14:58:01 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -316,633 +316,3 @@ Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
   These variables have zero variances: V11, V12
 Warning in preProcess.default(df.toprocess[, trans.y:length(df.toprocess[1,  :
   These variables have zero variances: V11, V12
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%  |                                                                              |                                                                      |   1%  |                                                                              |=                                                                     |   1%  |                                                                              |=                                                                     |   2%  |                                                                              |==                                                                    |   2%  |                                                                              |==                                                                    |   3%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%  |                                                                              |                                                                      |   1%  |                                                                              |=                                                                     |   1%  |                                                                              |=                                                                     |   2%  |                                                                              |==                                                                    |   2%  |                                                                              |==                                                                    |   3%  |                                                                              |===                                                                   |   4%  |                                                                              |===                                                                   |   5%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%
-  |                                                                              |                                                                      |   0%  |                                                                              |                                                                      |   1%  |                                                                              |=                                                                     |   1%
-Subtractive Clustering and Fuzzy c-Means Rules 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 502, 502 
-Resampling results across tuning parameters:
-
-  r.a  eps.high   eps.low     RMSE       Rsquared    MAE        Selected
-   1   0.6581081  0.52137677  0.9971893  0.00369842  0.7918337  *       
-   2   0.8918974  0.23449369        NaN         NaN        NaN          
-   3   0.5877048  0.40144294        NaN         NaN        NaN          
-   4   0.3917778  0.07079205        NaN         NaN        NaN          
-   4   0.7717709  0.18749815        NaN         NaN        NaN          
-   7   0.3646978  0.11624719        NaN         NaN        NaN          
-   7   0.8314910  0.03794224        NaN         NaN        NaN          
-   7   0.9255981  0.23893233        NaN         NaN        NaN          
-   9   0.8765656  0.56333403        NaN         NaN        NaN          
-   9   0.8767678  0.59696827        NaN         NaN        NaN          
-  10   0.7580194  0.45303753        NaN         NaN        NaN          
-  11   0.6300060  0.11888873        NaN         NaN        NaN          
-  13   0.4640409  0.09073943        NaN         NaN        NaN          
-  14   0.5302835  0.38610285        NaN         NaN        NaN          
-  14   0.9506044  0.26696859        NaN         NaN        NaN          
-  15   0.5403294  0.20010636        NaN         NaN        NaN          
-  15   0.7987344  0.29269463        NaN         NaN        NaN          
-  17   0.7376933  0.47696899        NaN         NaN        NaN          
-  19   0.7114095  0.69918753        NaN         NaN        NaN          
-  20   0.6596413  0.00830906        NaN         NaN        NaN          
-
-RMSE was used to select the optimal model using the smallest value.
-The final values used for the model were r.a = 1, eps.high = 0.6581081
- and eps.low = 0.5213768.
-[1] "Sun Mar 04 11:36:32 2018"
-Partial Least Squares 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 502, 502 
-Resampling results across tuning parameters:
-
-  ncomp  RMSE      Rsquared     MAE        Selected
-  1      1.014702  0.005805111  0.8072890  *       
-  2      1.014932  0.005877327  0.8073662          
-  3      1.014896  0.005830482  0.8073206          
-  4      1.014893  0.005824223  0.8073182          
-  5      1.014893  0.005823926  0.8073180          
-  6      1.014893  0.005823878  0.8073180          
-  7      1.014893  0.005823875  0.8073180          
-  8      1.014893  0.005823875  0.8073180          
-
-RMSE was used to select the optimal model using the smallest value.
-The final value used for the model was ncomp = 1.
-[1] "Sun Mar 04 11:36:51 2018"
-Error in mvrValstats(object = object, estimate = "train") : 
-  could not find function "mvrValstats"
-In addition: There were 50 or more warnings (use warnings() to see the first 50)
-Loading required package: spikeslab
-Loading required package: lars
-Loaded lars 1.2
-
-Loading required package: randomForest
-randomForest 4.6-12
-Type rfNews() to see new features/changes/bug fixes.
-
-Attaching package: 'randomForest'
-
-The following object is masked from 'package:ggplot2':
-
-    margin
-
-Loading required package: parallel
-
- spikeslab 1.1.5 
- 
- Type spikeslab.news() to see new features, changes, and bug fixes. 
- 
-
-Spike and Slab Regression 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 502, 502 
-Resampling results across tuning parameters:
-
-  vars  RMSE      Rsquared     MAE        Selected
-  1     1.003667  0.006194372  0.7969357  *       
-  2     1.004192  0.004836025  0.7974892          
-  3     1.004521  0.004791719  0.7977421          
-  4     1.005032  0.004977656  0.7981587          
-  5     1.005678  0.005245500  0.7989518          
-  6     1.006109  0.005193493  0.7992841          
-  7     1.006241  0.005179778  0.7994558          
-  8     1.006275  0.005193570  0.7994933          
-  9     1.006994  0.005349388  0.8000478          
-
-RMSE was used to select the optimal model using the smallest value.
-The final value used for the model was vars = 1.
-[1] "Sun Mar 04 11:37:20 2018"
-Sparse Partial Least Squares 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 502, 502 
-Resampling results across tuning parameters:
-
-  kappa       eta         K  RMSE      Rsquared     MAE        Selected
-  0.04478901  0.78515213  4  1.014302  0.005194744  0.8069832          
-  0.07208218  0.46678087  7  1.014893  0.005823875  0.8073180          
-  0.07730851  0.59825769  1  1.011489  0.004784144  0.8033401  *       
-  0.08572245  0.93484003  7  1.014537  0.005414082  0.8074209          
-  0.09268303  0.24393853  5  1.014893  0.005823895  0.8073180          
-  0.09676117  0.45405690  3  1.014794  0.005744200  0.8072788          
-  0.11705780  0.76172919  5  1.014913  0.005847577  0.8074308          
-  0.15978905  0.51245459  6  1.014893  0.005823878  0.8073180          
-  0.20070797  0.48014274  6  1.014893  0.005823878  0.8073180          
-  0.21391215  0.99441244  8  1.014454  0.005149738  0.8071458          
-  0.21903126  0.55348535  7  1.014893  0.005823875  0.8073180          
-  0.24328503  0.58654046  7  1.014893  0.005823875  0.8073180          
-  0.30185310  0.33570003  5  1.014893  0.005823895  0.8073180          
-  0.34225955  0.35192251  6  1.014893  0.005823878  0.8073180          
-  0.35788852  0.30429788  2  1.014626  0.005641079  0.8071432          
-  0.36109075  0.30283651  9  1.014893  0.005823877  0.8073180          
-  0.40716876  0.23501388  8  1.014893  0.005823875  0.8073180          
-  0.41761944  0.54750743  8  1.014893  0.005823875  0.8073180          
-  0.43981933  0.17633238  6  1.014893  0.005823878  0.8073180          
-  0.46571950  0.01342495  1  1.014731  0.005699807  0.8072833          
-
-RMSE was used to select the optimal model using the smallest value.
-The final values used for the model were K = 1, eta = 0.5982577 and kappa
- = 0.07730851.
-[1] "Sun Mar 04 11:37:39 2018"
-Something is wrong; all the RMSE metric values are missing:
-      RMSE        Rsquared        MAE     
- Min.   : NA   Min.   : NA   Min.   : NA  
- 1st Qu.: NA   1st Qu.: NA   1st Qu.: NA  
- Median : NA   Median : NA   Median : NA  
- Mean   :NaN   Mean   :NaN   Mean   :NaN  
- 3rd Qu.: NA   3rd Qu.: NA   3rd Qu.: NA  
- Max.   : NA   Max.   : NA   Max.   : NA  
- NA's   :20    NA's   :20    NA's   :20   
-Error : Stopping
-In addition: Warning messages:
-1: predictions failed for Fold1: threshold=0.4278, n.components=3 Error in rowMeans(x) : 'x' must be an array of at least two dimensions
- 
-2: predictions failed for Fold2: threshold=0.4278, n.components=3 Error in rowMeans(x) : 'x' must be an array of at least two dimensions
- 
-3: predictions failed for Fold3: threshold=0.4278, n.components=3 Error in svd(x, LINPACK = TRUE) : a dimension is zero
- 
-4: In nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
-  There were missing values in resampled performance measures.
-Something is wrong; all the RMSE metric values are missing:
-      RMSE        Rsquared        MAE     
- Min.   : NA   Min.   : NA   Min.   : NA  
- 1st Qu.: NA   1st Qu.: NA   1st Qu.: NA  
- Median : NA   Median : NA   Median : NA  
- Mean   :NaN   Mean   :NaN   Mean   :NaN  
- 3rd Qu.: NA   3rd Qu.: NA   3rd Qu.: NA  
- Max.   : NA   Max.   : NA   Max.   : NA  
- NA's   :8     NA's   :8     NA's   :8    
-Error : Stopping
-In addition: Warning messages:
-1: predictions failed for Fold1: threshold=0.853, n.components=3 Error in svd(x, LINPACK = TRUE) : a dimension is zero
- 
-2: predictions failed for Fold2: threshold=0.853, n.components=3 Error in svd(x, LINPACK = TRUE) : a dimension is zero
- 
-3: predictions failed for Fold3: threshold=0.853, n.components=3 Error in svd(x, LINPACK = TRUE) : a dimension is zero
- 
-4: In nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
-  There were missing values in resampled performance measures.
-Supervised Principal Component Analysis 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Bootstrapped (25 reps) 
-Summary of sample sizes: 752, 752, 752, 752, 752, 752, ... 
-Resampling results across tuning parameters:
-
-  n.components  threshold  RMSE      Rsquared     MAE        Selected
-  1             0.1        1.015612  0.003615704  0.8113864  *       
-  1             0.5        1.018672  0.008040490  0.8142335          
-  1             0.9        1.021950  0.009866836  0.8179514          
-  2             0.1        1.018262  0.006483858  0.8135073          
-  2             0.5        1.024421  0.009415541  0.8190050          
-  2             0.9        1.025667  0.008461339  0.8205529          
-  3             0.1        1.020626  0.007160076  0.8157032          
-  3             0.5        1.027381  0.008326569  0.8227380          
-  3             0.9        1.030243  0.008333223  0.8231460          
-
-RMSE was used to select the optimal model using the smallest value.
-The final values used for the model were threshold = 0.1 and n.components = 1.
-[1] "Sun Mar 04 11:38:01 2018"
-Error : 'x' should be a character matrix with a single column for string kernel methods
-In addition: There were 13 warnings (use warnings() to see them)
-Error : 'x' should be a character matrix with a single column for string kernel methods
-Error : 'x' should be a character matrix with a single column for string kernel methods
- [1] "failed"                   "failed"                  
- [3] "Sun Mar 04 11:38:17 2018" "just random"             
- [5] "ignore"                   "none"                    
- [7] "centernscale"             "HOPPER"                  
- [9] "14th20hp3cv"              "svmBoundrangeString"     
-Error : 'x' should be a character matrix with a single column for string kernel methods
-Error : 'x' should be a character matrix with a single column for string kernel methods
-Error : 'x' should be a character matrix with a single column for string kernel methods
- [1] "failed"                   "failed"                  
- [3] "Sun Mar 04 11:38:33 2018" "just random"             
- [5] "ignore"                   "none"                    
- [7] "centernscale"             "HOPPER"                  
- [9] "14th20hp3cv"              "svmExpoString"           
-Support Vector Machines with Linear Kernel 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 502, 502 
-Resampling results across tuning parameters:
-
-  C            RMSE      Rsquared    MAE        Selected
-    0.0793113  1.020766  0.01064994  0.8137779  *       
-    0.1398998  1.021397  0.01054152  0.8143155          
-    0.1559608  1.021434  0.01049385  0.8143559          
-    0.1857808  1.021410  0.01053743  0.8143404          
-    0.2147144  1.021427  0.01051587  0.8143488          
-    0.2337171  1.021475  0.01051555  0.8144003          
-    0.3564407  1.021501  0.01050425  0.8144304          
-    0.8667401  1.021655  0.01045734  0.8145962          
-    2.0296615  1.022020  0.01025338  0.8149595          
-    2.6709715  1.022000  0.01023076  0.8149408          
-    2.9709780  1.022051  0.01024772  0.8149830          
-    4.9196340  1.021873  0.01028028  0.8147926          
-   16.6285787  1.022020  0.01028693  0.8149448          
-   38.5266932  1.021863  0.01028222  0.8147921          
-   53.3218768  1.021825  0.01031663  0.8147589          
-   56.9933815  1.021998  0.01023942  0.8149287          
-  148.5765765  1.021862  0.01034139  0.8147662          
-  184.6415121  1.021999  0.01029891  0.8149232          
-  292.9640386  1.021882  0.01030686  0.8148086          
-  502.0144385  1.021916  0.01036188  0.8148302          
-
-RMSE was used to select the optimal model using the smallest value.
-The final value used for the model was C = 0.0793113.
-[1] "Sun Mar 04 11:41:39 2018"
-Error in if (mean.improvement < 0) { : 
-  missing value where TRUE/FALSE needed
-In addition: Warning message:
-In method$predict(modelFit = modelFit, newdata = newdata, submodels = param) :
-  kernlab prediction calculations failed; returning NAs
-Support Vector Machines with Linear Kernel 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 502, 502 
-Resampling results across tuning parameters:
-
-  cost         RMSE      Rsquared    MAE        Selected
-    0.0793113  1.020766  0.01064994  0.8137779  *       
-    0.1398998  1.021397  0.01054152  0.8143155          
-    0.1559608  1.021434  0.01049385  0.8143559          
-    0.1857808  1.021410  0.01053743  0.8143404          
-    0.2147144  1.021427  0.01051587  0.8143488          
-    0.2337171  1.021475  0.01051555  0.8144003          
-    0.3564407  1.021501  0.01050425  0.8144304          
-    0.8667401  1.021655  0.01045734  0.8145962          
-    2.0296615  1.022020  0.01025338  0.8149595          
-    2.6709715  1.022000  0.01023076  0.8149408          
-    2.9709780  1.022051  0.01024772  0.8149830          
-    4.9196340  1.021873  0.01028028  0.8147926          
-   16.6285787  1.022020  0.01028693  0.8149448          
-   38.5266932  1.021863  0.01028222  0.8147921          
-   53.3218768  1.021825  0.01031663  0.8147589          
-   56.9933815  1.021998  0.01023942  0.8149287          
-  148.5765765  1.021862  0.01034139  0.8147662          
-  184.6415121  1.021999  0.01029891  0.8149232          
-  292.9640386  1.021882  0.01030686  0.8148086          
-  502.0144385  1.021916  0.01036188  0.8148302          
-
-RMSE was used to select the optimal model using the smallest value.
-The final value used for the model was cost = 0.0793113.
-[1] "Sun Mar 04 11:44:46 2018"
-L2 Regularized Support Vector Machine (dual) with Linear Kernel 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 502, 502 
-Resampling results across tuning parameters:
-
-  cost          Loss  RMSE      Rsquared     MAE        Selected
-  3.380753e-03  L2    1.009893  0.007770485  0.8043211  *       
-  7.205365e-03  L1    1.012447  0.005626697  0.8052094          
-  8.328893e-03  L2    1.014207  0.008998547  0.8082208          
-  1.051723e-02  L2    1.015489  0.008161969  0.8091877          
-  1.275601e-02  L1    1.013389  0.005622896  0.8059049          
-  1.428304e-02  L1    1.013532  0.005622295  0.8060101          
-  2.507358e-02  L2    1.018315  0.009154136  0.8111027          
-  8.198830e-02  L2    1.020392  0.009835844  0.8131665          
-  2.549558e-01  L1    1.014778  0.005615220  0.8070070          
-  3.676707e-01  L2    1.026092  0.014582314  0.8191609          
-  4.237398e-01  L2    1.020137  0.006968019  0.8125878          
-  8.301255e-01  L2    1.020946  0.012656388  0.8107376          
-  4.210886e+00  L1    1.014855  0.005614755  0.8070678          
-  1.290969e+01  L1    1.014858  0.005614735  0.8070705          
-  1.991165e+01  L1    1.014859  0.005614732  0.8070709          
-  2.176035e+01  L1    1.014859  0.005614731  0.8070710          
-  7.807293e+01  L1    1.014860  0.005614727  0.8070715          
-  1.043132e+02  L2    1.100743  0.006802652  0.8890874          
-  1.930423e+02  L1    1.014860  0.005614726  0.8070717          
-  3.958418e+02  L1    1.014860  0.005614726  0.8070717          
-
-RMSE was used to select the optimal model using the smallest value.
-The final values used for the model were cost = 0.003380753 and Loss = L2.
-[1] "Sun Mar 04 11:45:09 2018"
-Support Vector Machines with Polynomial Kernel 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 502, 502 
-Resampling results across tuning parameters:
-
-  degree  scale         C             RMSE      Rsquared      MAE      
-  1       1.963927e-04    4.45109597  1.005147  0.0065495978  0.7974326
-  1       2.552520e-03    0.45115726  1.005824  0.0061580986  0.7984341
-  1       2.981394e-03   52.01915937  1.021396  0.0105269989  0.8143231
-  1       5.206396e-03   28.51067315  1.021381  0.0105276862  0.8143096
-  1       1.483823e-02    0.07758405  1.005826  0.0061599783  0.7984361
-  1       1.091313e-01    6.66351563  1.021480  0.0104988894  0.8144092
-  1       1.452496e-01    2.14278207  1.021469  0.0104960832  0.8143945
-  1       9.028489e-01   64.86889053  1.022004  0.0102401573  0.8149421
-  2       6.019437e-04    3.67158681  1.011062  0.0078862770  0.8043517
-  2       3.509547e-03   29.14167100  1.024325  0.0045918083  0.8145194
-  2       8.590975e-03   76.04940352  1.067862  0.0019596019  0.8390985
-  2       1.286082e-02   62.03301567  1.076552  0.0019579893  0.8437567
-  2       1.868143e+00  113.29208174  1.148993  0.0004927232  0.9018979
-  3       1.178056e-05    0.03472408  1.002481  0.0080872307  0.7938520
-  3       8.604849e-05   20.37307168  1.012170  0.0081441102  0.8053682
-  3       1.761228e-04  156.35348242  1.020985  0.0101314423  0.8138280
-  3       4.030375e-04  478.20217749  1.021519  0.0052050985  0.8136224
-  3       4.102912e-04    0.21258388  1.003211  0.0066008942  0.7950744
-  3       7.337562e-04   25.97010537  1.019992  0.0093875944  0.8130609
-  3       7.986441e-03  106.29079596  1.082415  0.0015309290  0.8497604
-  Selected
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-  *       
-          
-          
-          
-          
-          
-          
-
-RMSE was used to select the optimal model using the smallest value.
-The final values used for the model were degree = 3, scale = 1.178056e-05 and
- C = 0.03472408.
-[1] "Sun Mar 04 11:53:28 2018"
-Error in if (mean.improvement < 0) { : 
-  missing value where TRUE/FALSE needed
-In addition: There were 50 or more warnings (use warnings() to see the first 50)
-Support Vector Machines with Radial Basis Function Kernel 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 502, 502 
-Resampling results across tuning parameters:
-
-  sigma       C             RMSE      Rsquared      MAE        Selected
-  0.01473761    0.21362513  1.011191  0.0059852463  0.8030449          
-  0.01524554  935.29615915  1.405251  0.0029814682  1.0490025          
-  0.01741100  557.15850958  1.374750  0.0024602542  1.0307565          
-  0.02078086   79.26373157  1.162208  0.0006150735  0.9047285          
-  0.02560046  505.39993317  1.442822  0.0015675357  1.0790264          
-  0.03363197   48.44071311  1.228116  0.0008473372  0.9470786          
-  0.03396211    0.10414940  1.009307  0.0029898906  0.8011371          
-  0.03927869    1.85882788  1.041929  0.0003497242  0.8219261          
-  0.04136153    0.55134786  1.024342  0.0006529113  0.8119575          
-  0.04242518   19.47435410  1.167792  0.0002826499  0.9090684          
-  0.07614593  442.33548713  1.846244  0.0018156343  1.4210865          
-  0.12178690    0.03647759  1.004160  0.0011906204  0.7955746  *       
-  0.12403633    0.05646881  1.004989  0.0009765976  0.7961387          
-  0.17642084  934.22776299  1.385261  0.0021885307  1.1096178          
-  0.18055495  528.34376067  1.372407  0.0021624431  1.0996754          
-  0.21303743    8.07623669  1.186094  0.0008555943  0.9459649          
-  0.22532770   31.56503357  1.264093  0.0019215786  1.0132017          
-  0.23899503   46.95347423  1.243264  0.0017869397  0.9966126          
-  0.28755948    8.76206768  1.157237  0.0011230685  0.9194896          
-  0.30920658    0.65053268  1.026251  0.0015527788  0.8123862          
-
-RMSE was used to select the optimal model using the smallest value.
-The final values used for the model were sigma = 0.1217869 and C = 0.03647759.
-[1] "Sun Mar 04 11:54:24 2018"
-Error in if (mean.improvement < 0) { : 
-  missing value where TRUE/FALSE needed
-In addition: Warning message:
-In method$predict(modelFit = modelFit, newdata = newdata, submodels = param) :
-  kernlab prediction calculations failed; returning NAs
-Support Vector Machines with Radial Basis Function Kernel 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 502, 502 
-Resampling results across tuning parameters:
-
-  C            RMSE      Rsquared      MAE        Selected
-    0.0793113  1.007670  0.0008430833  0.7982038  *       
-    0.1398998  1.011245  0.0005365358  0.8010375          
-    0.1559608  1.012267  0.0005161434  0.8018944          
-    0.1857808  1.013914  0.0003556551  0.8032532          
-    0.2147144  1.015024  0.0004970180  0.8038334          
-    0.2337171  1.015922  0.0003698833  0.8047320          
-    0.3564407  1.021100  0.0005155654  0.8085665          
-    0.8667401  1.039245  0.0002439469  0.8219376          
-    2.0296615  1.066005  0.0003468711  0.8392291          
-    2.6709715  1.078090  0.0001951734  0.8480030          
-    2.9709780  1.083662  0.0001802972  0.8513814          
-    4.9196340  1.125003  0.0003597950  0.8803078          
-   16.6285787  1.235735  0.0011028690  0.9561565          
-   38.5266932  1.322335  0.0006796759  1.0253027          
-   53.3218768  1.377874  0.0010199462  1.0681521          
-   56.9933815  1.371086  0.0008821144  1.0613243          
-  148.5765765  1.589188  0.0006089974  1.2263828          
-  184.6415121  1.626404  0.0005814962  1.2510520          
-  292.9640386  1.735692  0.0009138199  1.3360235          
-  502.0144385  1.892379  0.0024769483  1.4596033          
-
-RMSE was used to select the optimal model using the smallest value.
-The final value used for the model was C = 0.0793113.
-[1] "Sun Mar 04 11:55:08 2018"
-Error in if (mean.improvement < 0) { : 
-  missing value where TRUE/FALSE needed
-In addition: Warning message:
-In method$predict(modelFit = modelFit, newdata = newdata, submodels = param) :
-  kernlab prediction calculations failed; returning NAs
-Support Vector Machines with Radial Basis Function Kernel 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 502, 502 
-Resampling results across tuning parameters:
-
-  sigma       C             RMSE      Rsquared      MAE        Selected
-  0.01473761    0.21362513  1.011191  0.0059852463  0.8030449          
-  0.01524554  935.29615915  1.405251  0.0029814682  1.0490025          
-  0.01741100  557.15850958  1.374750  0.0024602542  1.0307565          
-  0.02078086   79.26373157  1.162208  0.0006150735  0.9047285          
-  0.02560046  505.39993317  1.442822  0.0015675357  1.0790264          
-  0.03363197   48.44071311  1.228116  0.0008473372  0.9470786          
-  0.03396211    0.10414940  1.009307  0.0029898906  0.8011371          
-  0.03927869    1.85882788  1.041929  0.0003497242  0.8219261          
-  0.04136153    0.55134786  1.024342  0.0006529113  0.8119575          
-  0.04242518   19.47435410  1.167792  0.0002826499  0.9090684          
-  0.07614593  442.33548713  1.846244  0.0018156343  1.4210865          
-  0.12178690    0.03647759  1.004160  0.0011906204  0.7955746  *       
-  0.12403633    0.05646881  1.004989  0.0009765976  0.7961387          
-  0.17642084  934.22776299  1.385261  0.0021885307  1.1096178          
-  0.18055495  528.34376067  1.372407  0.0021624431  1.0996754          
-  0.21303743    8.07623669  1.186094  0.0008555943  0.9459649          
-  0.22532770   31.56503357  1.264093  0.0019215786  1.0132017          
-  0.23899503   46.95347423  1.243264  0.0017869397  0.9966126          
-  0.28755948    8.76206768  1.157237  0.0011230685  0.9194896          
-  0.30920658    0.65053268  1.026251  0.0015527788  0.8123862          
-
-RMSE was used to select the optimal model using the smallest value.
-The final values used for the model were sigma = 0.1217869 and C = 0.03647759.
-[1] "Sun Mar 04 11:56:05 2018"
-Error in if (mean.improvement < 0) { : 
-  missing value where TRUE/FALSE needed
-In addition: Warning message:
-In method$predict(modelFit = modelFit, newdata = newdata, submodels = param) :
-  kernlab prediction calculations failed; returning NAs
-Error : 'x' should be a character matrix with a single column for string kernel methods
-Error : 'x' should be a character matrix with a single column for string kernel methods
-Error : 'x' should be a character matrix with a single column for string kernel methods
- [1] "failed"                   "failed"                  
- [3] "Sun Mar 04 11:56:21 2018" "just random"             
- [5] "ignore"                   "none"                    
- [7] "centernscale"             "HOPPER"                  
- [9] "14th20hp3cv"              "svmSpectrumString"       
-Bagged CART 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 502, 502 
-Resampling results:
-
-  RMSE      Rsquared     MAE      
-  1.039184  0.003910489  0.8268369
-
-[1] "Sun Mar 04 11:56:39 2018"
-Partial Least Squares 
-
-752 samples
-  9 predictor
-
-No pre-processing
-Resampling: Cross-Validated (3 fold) 
-Summary of sample sizes: 500, 502, 502 
-Resampling results across tuning parameters:
-
-  ncomp  RMSE      Rsquared     MAE        Selected
-  1      1.014702  0.005805111  0.8072890  *       
-  2      1.014932  0.005877327  0.8073662          
-  3      1.014896  0.005830482  0.8073206          
-  4      1.014893  0.005824223  0.8073182          
-  5      1.014893  0.005823926  0.8073180          
-  6      1.014893  0.005823833  0.8073180          
-  7      1.014895  0.005825743  0.8073192          
-  8      1.016149  0.006718053  0.8083394          
-
-RMSE was used to select the optimal model using the smallest value.
-The final value used for the model was ncomp = 1.
-[1] "Sun Mar 04 11:58:06 2018"
-Error in mvrValstats(object = object, estimate = "train") : 
-  could not find function "mvrValstats"
-In addition: Warning messages:
-1: In fitFunc(X, Y, ncomp, Y.add = Y.add, ...) :
-  No convergence in100iterations
-
-2: In fitFunc(X, Y, ncomp, Y.add = Y.add, ...) :
-  No convergence in100iterations
-
-3: In fitFunc(X, Y, ncomp, Y.add = Y.add, ...) :
-  No convergence in100iterations
-
