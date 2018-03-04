@@ -4302,3 +4302,17 @@ rqlasso, Sat Mar 03 14:59:22 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8
 rqnc, Sat Mar 03 14:59:40 2018, 0, just random, c(3.8, 83, 100, 95.2, 0, 47.8, 48.7, 25.4, 19.1)
 RRF, Sat Mar 03 15:07:04 2018, 0, just random, Failed
 RRFglobal, Sat Mar 03 15:10:32 2018, 0, just random, Failed
+SBC, Sun Mar 04 11:36:32 2018, 0, just random, c(13.3, 74.2, 100, 6.6, 0, 15, 93.8, 62, 9.9)
+simpls, Sun Mar 04 11:36:51 2018, 0, just random, Failed
+spikeslab, Sun Mar 04 11:37:20 2018, 0, just random, c(13.3, 74.2, 100, 6.6, 0, 15, 93.8, 62, 9.9)
+spls, Sun Mar 04 11:37:40 2018, 0.004, just random, c(13.3, 74.2, 100, 6.6, 0, 15, 93.8, 62, 9.9)
+superpc, Sun Mar 04 11:38:01 2018, 0, just random, c(13.3, 74.2, 100, 6.6, 0, 15, 93.8, 62, 9.9)
+svmLinear, Sun Mar 04 11:41:39 2018, NA, just random, Failed
+svmLinear2, Sun Mar 04 11:44:46 2018, 0, just random, c(13.3, 74.2, 100, 6.6, 0, 15, 93.8, 62, 9.9)
+svmLinear3, Sun Mar 04 11:45:09 2018, 0.001, just random, c(13.3, 74.2, 100, 6.6, 0, 15, 93.8, 62, 9.9)
+svmPoly, Sun Mar 04 11:53:28 2018, NA, just random, Failed
+svmRadial, Sun Mar 04 11:54:24 2018, NA, just random, Failed
+svmRadialCost, Sun Mar 04 11:55:08 2018, NA, just random, Failed
+svmRadialSigma, Sun Mar 04 11:56:05 2018, NA, just random, Failed
+treebag, Sun Mar 04 11:56:59 2018, 0, just random, c(85.6, 52.4, 100, 12.2, 0, 37.6, 76.3, 76.6, 71.9)
+widekernelpls, Sun Mar 04 11:58:07 2018, 0, just random, Failed

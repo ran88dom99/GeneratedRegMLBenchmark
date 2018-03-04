@@ -15303,3 +15303,20 @@ Fail,Fail,Fail,Fail,PackageFail,Sat Mar 03 14:40:38 2018,pythonKnnReg,1,2,just r
 Fail,Fail,Fail,Fail,Fail,Sat Mar 03 15:15:48 2018,rvmLinear,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,303
 Fail,Fail,Fail,Fail,Fail,Sat Mar 03 16:23:37 2018,rvmPoly,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,4056
 Fail,Fail,Fail,Fail,Fail,Sat Mar 03 16:38:45 2018,rvmRadial,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,894
+-0.003,-0.001,0.997,1.01,0.803,Sun Mar 04 11:36:32 2018,SBC,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.009,random,239,1538,cv,20,3,NA,5,1,0.658108099130914,0.521376768127084
+-0.003,0,1.01,1.01,0.803,Sun Mar 04 11:36:51 2018,simpls,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.009,random,239,5,cv,20,3,NA,5,1
+0,0.001,1,1.01,0.8,Sun Mar 04 11:37:20 2018,spikeslab,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.009,random,239,15,cv,20,3,NA,5,1
+0.004,0.003,1.01,1.01,0.798,Sun Mar 04 11:37:39 2018,spls,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.009,random,239,5,cv,20,3,NA,5,1,0.598257690668106,0.0773085117107257
+-0.003,0,1.02,1.01,0.803,Sun Mar 04 11:38:01 2018,superpc,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.00915667545396,random,239,7,nohyperparameters,8,3,no rep,no min,0.1,1
+Fail,Fail,Fail,Fail,Fail,Sun Mar 04 11:38:17 2018,svmBoundrangeString,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Sun Mar 04 11:38:33 2018,svmExpoString,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,2
+NA,NA,1.02,NA,NA,Sun Mar 04 11:41:39 2018,svmLinear,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.009,random,239,172,cv,20,3,NA,5,0.0793113012579594
+-0.002,-0.001,1.02,1.01,0.802,Sun Mar 04 11:44:46 2018,svmLinear2,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.009,random,239,173,cv,20,3,NA,5,0.0793113012579594
+0.001,0.001,1.01,1.01,0.799,Sun Mar 04 11:45:09 2018,svmLinear3,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.009,random,239,9,cv,20,3,NA,5,0.00338075304841754,L2
+NA,NA,1,NA,NA,Sun Mar 04 11:53:28 2018,svmPoly,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.009,random,239,485,cv,20,3,NA,5,3,1.17805641440961e-05,0.0347240758547221
+NA,NA,1,NA,NA,Sun Mar 04 11:54:24 2018,svmRadial,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.009,random,239,43,cv,20,3,NA,5,0.121786902562083,0.0364775907844837
+NA,NA,1.01,NA,NA,Sun Mar 04 11:55:08 2018,svmRadialCost,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.009,random,239,30,cv,20,3,NA,5,0.0793113012579594
+NA,NA,1,NA,NA,Sun Mar 04 11:56:05 2018,svmRadialSigma,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.009,random,239,43,cv,20,3,NA,5,0.121786902562083,0.0364775907844837
+Fail,Fail,Fail,Fail,Fail,Sun Mar 04 11:56:21 2018,svmSpectrumString,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,2
+-0.057,-0.041,-1,1.05,0.846,Sun Mar 04 11:56:39 2018,treebag,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.009,random,239,4,cv,20,3,NA,5,none
+-0.003,0,1.01,1.01,0.803,Sun Mar 04 11:58:06 2018,widekernelpls,1,2,just random,ignore,none,centernscale,HOPPER,14th20hp3cv,1.009,random,239,54,cv,20,3,NA,5,1
