@@ -4532,3 +4532,247 @@ rlm, Tue Mar 06 05:00:35 2018, 0, just random, c(98.7, 100, 66.9, 14, 9.4, 0.5, 
 rpart, Tue Mar 06 05:00:50 2018, 0, just random, c(33.9, 100, 36.2, 26.3, 26.8, 0, 0, 0, 0)
 rpart1SE, Tue Mar 06 05:01:05 2018, 0, just random, c(100, 59.4, 18.1, 0, 18.7, 13.1, 20.4, 6.7, 34.9)
 rpart2, Tue Mar 06 05:01:19 2018, 0, just random, c(33.9, 100, 36.2, 26.3, 26.8, 0, 0, 0, 0)
+SBC, Tue Mar 06 23:29:54 2018, 0, just random, c(31.5, 73.4, 71.6, 47.9, 0, 100, 71.6, 13.5, 11.5)
+simpls, Tue Mar 06 23:30:10 2018, 0.004, just random, Failed
+spikeslab, Tue Mar 06 23:30:35 2018, 0.001, just random, c(31.5, 73.4, 71.6, 47.9, 0, 100, 71.6, 13.5, 11.5)
+spls, Tue Mar 06 23:30:52 2018, 0.002, just random, c(31.5, 73.4, 71.6, 47.9, 0, 100, 71.6, 13.5, 11.5)
+superpc, Tue Mar 06 23:31:10 2018, 0, just random, c(31.5, 73.4, 71.6, 47.9, 0, 100, 71.6, 13.5, 11.5)
+svmLinear, Tue Mar 06 23:36:58 2018, NA, just random, Failed
+svmLinear2, Tue Mar 06 23:42:13 2018, 0.004, just random, c(31.5, 73.4, 71.6, 47.9, 0, 100, 71.6, 13.5, 11.5)
+svmLinear3, Tue Mar 06 23:43:00 2018, 0.007, just random, c(31.5, 73.4, 71.6, 47.9, 0, 100, 71.6, 13.5, 11.5)
+svmPoly, Wed Mar 07 00:01:14 2018, NA, just random, Failed
+svmRadial, Wed Mar 07 00:01:48 2018, NA, just random, Failed
+svmRadialCost, Wed Mar 07 00:02:39 2018, NA, just random, Failed
+svmRadialSigma, Wed Mar 07 00:03:14 2018, NA, just random, Failed
+treebag, Wed Mar 07 00:04:02 2018, 0, just random, c(79.5, 84.9, 100, 0, 79.6, 34.2, 13.6, 84.1, 65.5)
+widekernelpls, Wed Mar 07 00:05:07 2018, 0.004, just random, Failed
+xgbDART, Wed Mar 07 00:10:16 2018, 0, just random, Failed
+xgbLinear, Wed Mar 07 00:10:54 2018, 0, just random, c(100, 68.1, 61.5, 59.4, 47.8, 39.6, 14.3, 8.5, 0)
+xgbTree, Wed Mar 07 00:14:29 2018, 0, just random, Failed
+xyf, Wed Mar 07 00:15:18 2018, 0.001, just random, c(31.5, 73.4, 71.6, 47.9, 0, 100, 71.6, 13.5, 11.5)
+avNNet, Wed Mar 07 00:16:21 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+bagEarth, Wed Mar 07 00:18:51 2018, 0, just random, c(100, 44.9, 0, 0, 0, 0, 0, 0, 0)
+bagEarthGCV, Wed Mar 07 00:19:41 2018, 0, just random, c(100, 77.9, 59.9, 40, 22.7, 8.4, 1.8, 0.4, 0)
+bam, Wed Mar 07 00:21:20 2018, 0, just random, c(0, 1.5, 9.6, 6.8, 1.1, 65.4, 16.6, 100, 0.6)
+bartMachine, Wed Mar 07 00:31:02 2018, 0, just random, Failed
+blasso, Wed Mar 07 00:31:40 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+blassoAveraged, Wed Mar 07 00:32:04 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+bridge, Wed Mar 07 00:32:27 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+BstLm, Wed Mar 07 00:33:42 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+cforest, Wed Mar 07 00:34:58 2018, 0, just random, Failed
+ctree, Wed Mar 07 00:35:16 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+ctree2, Wed Mar 07 00:35:32 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+cubist, Wed Mar 07 00:37:14 2018, 0, just random, c(100, 4, 0, 0, 0, 0, 0, 0, 0)
+dnn, Wed Mar 07 00:37:37 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+earth, Wed Mar 07 00:37:55 2018, 0, just random, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+elm, Wed Mar 07 00:38:11 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+enet, Wed Mar 07 00:38:27 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+extraTrees, Wed Mar 07 00:46:32 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+foba, Wed Mar 07 00:46:49 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+gam, Wed Mar 07 00:47:46 2018, 0, just random, c(0, 2.3, 11.5, 7.3, 2.5, 65.7, 17.9, 100, 0.7)
+gamboost, Wed Mar 07 01:02:15 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+gamSpline, Wed Mar 07 01:02:42 2018, 0, just random, c(0, 16.1, 13.9, 14.7, 8.9, 6.6, 1.7, 100, 8.8)
+gbm, Wed Mar 07 01:14:45 2018, 0, just random, Failed
+gcvEarth, Wed Mar 07 01:18:12 2018, 0, just random, c(100, 46.9, 0, 0, 0, 0, 0, 0, 0)
+glm, Wed Mar 07 01:18:26 2018, 0, just random, c(37.9, 60.6, 100, 1.1, 19.4, 10.7, 10.9, 0, 11.8)
+glmboost, Wed Mar 07 01:19:06 2018, 0, just random, c(38.6, 100, 0, 0, 0, 0, 0, 0, 0)
+glmnet, Wed Mar 07 01:19:23 2018, 0, just random, c(9.7, 39.2, 100, 0, 0, 0, 0, 0, 0)
+glmStepAIC, Wed Mar 07 01:22:51 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+icr, Wed Mar 07 01:23:11 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+kernelpls, Wed Mar 07 01:23:26 2018, 0, just random, Failed
+kknn, Wed Mar 07 01:26:35 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+knn, Wed Mar 07 01:26:53 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+krlsPoly, Wed Mar 07 01:29:24 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+krlsRadial, Wed Mar 07 01:39:23 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+lars, Wed Mar 07 01:39:38 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+lars2, Wed Mar 07 01:39:54 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+lasso, Wed Mar 07 01:40:10 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+leapBackward, Wed Mar 07 01:40:27 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+leapForward, Wed Mar 07 01:40:42 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+lm, Wed Mar 07 01:40:57 2018, 0, just random, c(37.9, 60.6, 100, 1.1, 19.4, 10.7, 10.9, 0, 11.8)
+lmStepAIC, Wed Mar 07 01:41:13 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+msaenet, Wed Mar 07 01:43:17 2018, 0, just random, 0
+msaenet, Wed Mar 07 01:43:17 2018, 0, just random, 0
+msaenet, Wed Mar 07 01:43:17 2018, 0, just random, 100
+msaenet, Wed Mar 07 01:43:17 2018, 0, just random, 0
+msaenet, Wed Mar 07 01:43:17 2018, 0, just random, 0
+msaenet, Wed Mar 07 01:43:17 2018, 0, just random, 0
+msaenet, Wed Mar 07 01:43:17 2018, 0, just random, 0
+msaenet, Wed Mar 07 01:43:17 2018, 0, just random, 0
+msaenet, Wed Mar 07 01:43:17 2018, 0, just random, 0
+nnet, Wed Mar 07 01:44:20 2018, 0, just random, c(32.2, 100, 11.9, 15.6, 36.9, 12.3, 36.1, 0, 49.5)
+nnls, Wed Mar 07 01:44:34 2018, 0, just random, c(0, 0, 0, 0, 0, 0, 0, 45.1, 100)
+null, Wed Mar 07 01:44:49 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+parRF, Wed Mar 07 01:45:51 2018, 0, just random, Failed
+pcaNNet, Wed Mar 07 01:46:19 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+pcr, Wed Mar 07 01:46:34 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+plsRglm, Wed Mar 07 01:47:25 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+ppr, Wed Mar 07 01:47:53 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+qrf, Wed Mar 07 01:49:26 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+ranger, Wed Mar 07 01:50:12 2018, 0, just random, Failed
+Rborist, Wed Mar 07 01:58:27 2018, 0, just random, c(34.8, 56, 56.6, 0, 79.1, 12.2, 19.4, 67.9, 100)
+relaxo, Wed Mar 07 01:58:46 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+rf, Wed Mar 07 01:59:52 2018, 0, just random, Failed
+ridge, Wed Mar 07 02:00:10 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+rlm, Wed Mar 07 02:00:27 2018, 0, just random, c(27.6, 55.8, 100, 4.4, 21, 0, 16, 9.5, 3.1)
+rpart, Wed Mar 07 02:00:44 2018, 0, just random, c(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN)
+rpart1SE, Wed Mar 07 02:01:00 2018, 0, just random, c(10.6, 27.8, 5, 100, 36.5, 21.9, 7.4, 14.9, 0)
+rpart2, Wed Mar 07 02:01:17 2018, 0, just random, c(28.6, 54.1, 100, 94.3, 48.4, 0, 0, 0, 0)
+simpls, Wed Mar 07 06:15:26 2018, 0, just random, Failed
+spikeslab, Wed Mar 07 06:15:52 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+spls, Wed Mar 07 06:16:10 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+superpc, Wed Mar 07 06:16:31 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+svmLinear, Wed Mar 07 06:17:54 2018, NA, just random, Failed
+svmLinear2, Wed Mar 07 06:18:49 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+svmLinear3, Wed Mar 07 06:19:11 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+svmPoly, Wed Mar 07 06:33:14 2018, NA, just random, Failed
+svmRadial, Wed Mar 07 06:33:45 2018, NA, just random, Failed
+svmRadialCost, Wed Mar 07 06:34:14 2018, NA, just random, Failed
+svmRadialSigma, Wed Mar 07 06:34:45 2018, NA, just random, Failed
+treebag, Wed Mar 07 06:35:36 2018, 0, just random, c(96, 51.9, 100, 53.1, 48.7, 17.6, 0, 45.5, 67.3)
+widekernelpls, Wed Mar 07 06:36:36 2018, 0, just random, Failed
+xgbDART, Wed Mar 07 06:39:41 2018, 0, just random, c(100, 57.6, 27, 0, 0, 0, 0, 0, 0)
+xgbLinear, Wed Mar 07 06:40:22 2018, 0, just random, c(100, 99.7, 56.9, 51.6, 48.4, 45.5, 30.6, 27.6, 0)
+xgbTree, Wed Mar 07 06:42:36 2018, 0, just random, c(100, 94.7, 0, 0, 0, 0, 0, 0, 0)
+xyf, Wed Mar 07 06:43:18 2018, 0, just random, c(20.2, 100, 51.5, 31.2, 9.4, 0.7, 43.6, 0, 13.7)
+avNNet, Wed Mar 07 06:45:11 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+bagEarth, Wed Mar 07 06:47:37 2018, 0, just random, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+bagEarthGCV, Wed Mar 07 06:48:26 2018, 0, just random, c(100, 76.3, 56.8, 39.8, 19.5, 8.8, 1, 0, 0)
+bartMachine, Wed Mar 07 07:03:40 2018, 0, just random, Failed
+blasso, Wed Mar 07 07:04:14 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+blassoAveraged, Wed Mar 07 07:04:34 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+bridge, Wed Mar 07 07:04:54 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+BstLm, Wed Mar 07 07:06:49 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+cforest, Wed Mar 07 07:08:10 2018, 0, just random, Failed
+ctree, Wed Mar 07 07:08:25 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+ctree2, Wed Mar 07 07:08:39 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+cubist, Wed Mar 07 07:10:28 2018, 0, just random, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+dnn, Wed Mar 07 07:10:47 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+earth, Wed Mar 07 07:11:03 2018, 0, just random, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+elm, Wed Mar 07 07:11:16 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+enet, Wed Mar 07 07:11:30 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+extraTrees, Wed Mar 07 07:30:12 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+foba, Wed Mar 07 07:30:31 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+gamboost, Wed Mar 07 07:47:31 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+gamSpline, Wed Mar 07 07:47:56 2018, 0, just random, c(85, 94.9, 100, 99, 81.5, 86.3, 75.6, 86.9, 0)
+gbm, Wed Mar 07 08:01:05 2018, 0, just random, Failed
+gcvEarth, Wed Mar 07 08:04:51 2018, 0, just random, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+glm, Wed Mar 07 08:05:04 2018, 0, just random, c(30.8, 35.6, 100, 40.1, 31.5, 0, 2.1, 2.5, 33.9)
+glmboost, Wed Mar 07 08:05:39 2018, 0, just random, c(100, 6, 5.9, 0, 0, 0, 0, 0, 0)
+glmnet, Wed Mar 07 08:05:53 2018, 0, just random, c(0, 0, 100, 0, 0, 0, 0, 0, 0)
+glmStepAIC, Wed Mar 07 08:09:41 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+icr, Wed Mar 07 08:09:59 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+kernelpls, Wed Mar 07 08:10:11 2018, 0, just random, Failed
+kknn, Wed Mar 07 08:16:34 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+knn, Wed Mar 07 08:16:52 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+krlsPoly, Wed Mar 07 08:19:19 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+krlsRadial, Wed Mar 07 08:29:05 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+lars, Wed Mar 07 08:29:18 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+lars2, Wed Mar 07 08:29:31 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+lasso, Wed Mar 07 08:29:43 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+leapBackward, Wed Mar 07 08:29:56 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+leapForward, Wed Mar 07 08:30:09 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+lm, Wed Mar 07 08:30:21 2018, 0, just random, c(30.8, 35.6, 100, 40.1, 31.5, 0, 2.1, 2.5, 33.9)
+lmStepAIC, Wed Mar 07 08:30:35 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+msaenet, Wed Mar 07 08:32:16 2018, 0, just random, 0
+msaenet, Wed Mar 07 08:32:16 2018, 0, just random, 0
+msaenet, Wed Mar 07 08:32:16 2018, 0, just random, 100
+msaenet, Wed Mar 07 08:32:16 2018, 0, just random, 0
+msaenet, Wed Mar 07 08:32:16 2018, 0, just random, 0
+msaenet, Wed Mar 07 08:32:16 2018, 0, just random, 0
+msaenet, Wed Mar 07 08:32:16 2018, 0, just random, 0
+msaenet, Wed Mar 07 08:32:16 2018, 0, just random, 0
+msaenet, Wed Mar 07 08:32:16 2018, 0, just random, 0
+nnet, Wed Mar 07 08:33:19 2018, 0, just random, c(37.6, 29.4, 100, 20.6, 2.2, 20, 0, 31.1, 16.9)
+nnls, Wed Mar 07 08:33:31 2018, 0, just random, c(0, 0, 0, 0, 0, 12.3, 22.5, 0, 100)
+null, Wed Mar 07 08:33:44 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+parRF, Wed Mar 07 08:34:52 2018, 0, just random, Failed
+pcaNNet, Wed Mar 07 08:35:25 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+pcr, Wed Mar 07 08:35:38 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+plsRglm, Wed Mar 07 08:36:17 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+ppr, Wed Mar 07 08:36:43 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+qrf, Wed Mar 07 08:38:18 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+ranger, Wed Mar 07 08:38:57 2018, 0, just random, Failed
+Rborist, Wed Mar 07 08:46:38 2018, 0, just random, c(81.4, 38.6, 31.1, 0, 49.9, 77.2, 55.9, 1.5, 100)
+relaxo, Wed Mar 07 08:46:52 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+rf, Wed Mar 07 08:48:02 2018, 0, just random, Failed
+ridge, Wed Mar 07 08:48:16 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+rlm, Wed Mar 07 08:48:29 2018, 0, just random, c(26.3, 45.2, 100, 25.8, 21.1, 8.3, 0, 3.5, 33.5)
+rpart, Wed Mar 07 08:48:42 2018, 0, just random, c(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN)
+rpart1SE, Wed Mar 07 08:48:55 2018, 0, just random, c(0, 50, 75, 32.6, 100, 22.9, 29, 61.6, 23.8)
+rpart2, Wed Mar 07 08:49:08 2018, 0, just random, c(0, 50, 75, 32.6, 100, 22.9, 29, 61.6, 23.8)
+simpls, Wed Mar 07 12:24:53 2018, 0, just random, Failed
+spikeslab, Wed Mar 07 12:25:16 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+spls, Wed Mar 07 12:25:31 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+superpc, Wed Mar 07 12:25:49 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+svmLinear, Wed Mar 07 12:33:00 2018, NA, just random, Failed
+svmLinear2, Wed Mar 07 12:39:43 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+svmLinear3, Wed Mar 07 12:40:12 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+svmPoly, Wed Mar 07 12:49:04 2018, NA, just random, Failed
+svmRadial, Wed Mar 07 12:49:33 2018, NA, just random, Failed
+svmRadialCost, Wed Mar 07 12:50:25 2018, NA, just random, Failed
+svmRadialSigma, Wed Mar 07 12:50:54 2018, NA, just random, Failed
+treebag, Wed Mar 07 12:51:37 2018, 0, just random, c(74.8, 78.7, 8.1, 100, 60.8, 0, 89.6, 32.3, 37.9)
+widekernelpls, Wed Mar 07 12:52:40 2018, 0, just random, Failed
+xgbDART, Wed Mar 07 12:58:26 2018, 0, just random, c(100, 94.2, 72.1, 54, 25.1, 14.2, 8.2, 7.3, 0)
+xgbLinear, Wed Mar 07 12:59:06 2018, 0, just random, c(100, 84.9, 70.6, 53.3, 53.3, 39.3, 20.4, 2.9, 0)
+xgbTree, Wed Mar 07 13:02:57 2018, 0, just random, c(100, 74.3, 0, 0, 0, 0, 0, 0, 0)
+xyf, Wed Mar 07 13:03:45 2018, 0, just random, c(15.5, 15.5, 100, 36.3, 0, 17.6, 36, 0.4, 22.8)
+avNNet, Wed Mar 07 13:04:57 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+bagEarth, Wed Mar 07 13:07:28 2018, 0, just random, c(100, 63.3, 0, 0, 0, 0, 0, 0, 0)
+bagEarthGCV, Wed Mar 07 13:08:18 2018, 0, just random, c(100, 82.3, 66.6, 49.2, 31.4, 12.4, 4.7, 0, 0)
+bartMachine, Wed Mar 07 13:20:33 2018, 0, just random, Failed
+blasso, Wed Mar 07 13:21:10 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+blassoAveraged, Wed Mar 07 13:21:32 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+bridge, Wed Mar 07 13:21:53 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+BstLm, Wed Mar 07 13:23:15 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+cforest, Wed Mar 07 13:24:51 2018, 0, just random, Failed
+ctree, Wed Mar 07 13:25:08 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+ctree2, Wed Mar 07 13:25:24 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+cubist, Wed Mar 07 13:27:13 2018, 0, just random, c(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN)
+dnn, Wed Mar 07 13:27:34 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+earth, Wed Mar 07 13:27:50 2018, 0.003, just random, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+elm, Wed Mar 07 13:28:05 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+enet, Wed Mar 07 13:28:21 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+extraTrees, Wed Mar 07 13:41:31 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+foba, Wed Mar 07 13:41:52 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+gamboost, Wed Mar 07 13:56:41 2018, 0.001, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+gamSpline, Wed Mar 07 13:57:09 2018, 0, just random, c(80.7, 100, 80.2, 86.5, 98.9, 98.3, 75.2, 10, 0)
+gbm, Wed Mar 07 14:09:38 2018, 0, just random, Failed
+gcvEarth, Wed Mar 07 14:13:29 2018, 0.003, just random, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+glm, Wed Mar 07 14:13:42 2018, 0, just random, c(14.8, 50.5, 57.9, 22.9, 100, 3.8, 0, 5.8, 26.9)
+glm.nb, Wed Mar 07 14:13:57 2018, 0, just random, c(14.6, 50.6, 57.9, 22.9, 100, 3.5, 0, 5.4, 26.8)
+glmboost, Wed Mar 07 14:14:18 2018, 0, just random, c(10.3, 22.6, 100, 0, 0, 0, 0, 0, 0)
+glmnet, Wed Mar 07 14:14:34 2018, 0, just random, c(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN)
+glmStepAIC, Wed Mar 07 14:18:26 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+icr, Wed Mar 07 14:18:41 2018, 0.001, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+kernelpls, Wed Mar 07 14:18:55 2018, 0, just random, Failed
+kknn, Wed Mar 07 14:21:49 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+knn, Wed Mar 07 14:22:06 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+krlsPoly, Wed Mar 07 14:24:30 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+krlsRadial, Wed Mar 07 14:34:22 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+lars, Wed Mar 07 14:34:37 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+lars2, Wed Mar 07 14:34:51 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+lasso, Wed Mar 07 14:35:05 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+leapBackward, Wed Mar 07 14:35:20 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+leapForward, Wed Mar 07 14:35:34 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+lm, Wed Mar 07 14:35:48 2018, 0, just random, c(14.8, 50.5, 57.9, 22.9, 100, 3.8, 0, 5.8, 26.9)
+lmStepAIC, Wed Mar 07 14:36:03 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+nnet, Wed Mar 07 14:40:05 2018, 0, just random, c(22.2, 40.9, 50.8, 4, 100, 5.6, 0, 1.5, 3.4)
+nnls, Wed Mar 07 14:40:18 2018, 0, just random, c(100, 49.3, 41.5, 39.8, 0, 60.6, 62.1, 75, 57.3)
+null, Wed Mar 07 14:40:32 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+parRF, Wed Mar 07 14:41:50 2018, 0, just random, Failed
+pcaNNet, Wed Mar 07 14:42:17 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+pcr, Wed Mar 07 14:42:31 2018, 0.001, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+plsRglm, Wed Mar 07 14:43:13 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+ppr, Wed Mar 07 14:43:38 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+qrf, Wed Mar 07 14:45:30 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+ranger, Wed Mar 07 14:46:16 2018, 0, just random, Failed
+Rborist, Wed Mar 07 14:53:29 2018, 0, just random, c(53.8, 100, 73.5, 28, 60.5, 68.6, 73.9, 53.8, 0)
+relaxo, Wed Mar 07 14:53:45 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+rf, Wed Mar 07 14:55:04 2018, 0, just random, Failed
+ridge, Wed Mar 07 14:55:19 2018, 0, just random, c(9.9, 100, 17.1, 53, 34.4, 42, 57.7, 36.3, 0)
+rlm, Wed Mar 07 14:55:33 2018, 0, just random, c(14.8, 50.5, 57.9, 22.9, 100, 3.8, 0, 5.8, 26.9)
+rpart, Wed Mar 07 14:55:48 2018, 0, just random, c(NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN)
+rpart1SE, Wed Mar 07 14:56:03 2018, 0, just random, c(23.2, 53.5, 9, 64.1, 100, 79.8, 56.9, 53.9, 0)
+rpart2, Wed Mar 07 14:56:18 2018, 0.003, just random, c(100, 52.9, 45.3, 57.6, 47.7, 0, 0, 0, 0)
