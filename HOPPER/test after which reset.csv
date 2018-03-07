@@ -27,4 +27,23 @@ Fri Feb 16 17:06:47 2018,regr.fnn,Friedman's 1st,3,20,windows,x64,HOPPER
 Sun Feb 18 22:55:57 2018,regr.ctree,Boston Housing,3,20,windows,x64,HOPPER
 
 Tue Feb 20 13:33:23 2018,regr.RRF,OpenML 2dplanes,3,20,windows,x64,HOPPER
-Tue Feb 20 17:07:21 2018,regr.svm,OpenML 2dplanes,3,20,windows,x64,HOPPER
+
+Wed Feb 21 19:39:35 2018,regr.ksvm,OpenML 2dplanes,3,20,windows,x64,HOPPER
+Thu Feb 22 22:39:17 2018,leapSeq,Recc sim 1,3,20,windows,x64,HOPPER
+Fri Feb 23 18:50:58 2018,leapSeq,Recc sim 1,3,20,windows,x64,HOPPER
+Sun Feb 25 15:22:18 2018,qrnn,Recc sim 1,3,20,windows,x64,HOPPER
+Sun Feb 25 19:30:55 2018,qrnn,Recc sim 1,3,20,windows,x64,HOPPER
+Mon Feb 26 20:01:30 2018,svmLinear,Boston Housing,3,20,windows,x64,HOPPER
+Mon Feb 26 21:30:48 2018,svmPoly,Boston Housing,3,20,windows,x64,HOPPER
+Tue Feb 27 10:00:43 2018,cubist,Boston Housing,3,20,windows,x64,HOPPER
+Tue Feb 27 12:13:59 2018,knn,Boston Housing,3,20,windows,x64,HOPPER
+
+Tue Feb 27 17:19:07 2018,pls,Boston Housing,3,20,windows,x64,HOPPER
+
+Wed Feb 28 20:14:31 2018,svmLinear3,Boston Housing,3,20,windows,x64,HOPPER
+Thu Mar 01 21:39:04 2018,extraTrees,just random,3,20,windows,x64,HOPPER
+Fri Mar 02 18:01:47 2018,rvmPoly,just random,3,20,windows,x64,HOPPER
+Sat Mar 03 12:28:34 2018,gbm_h2o,just random,3,20,windows,x64,HOPPER
+Sun Mar 04 09:25:49 2018,SBC,just random,3,20,windows,x64,HOPPER
+Sun Mar 04 14:57:26 2018,WM,just random,3,20,windows,x64,HOPPER
+Mon Mar 05 05:53:42 2018,WM,just random,3,20,windows,x64,HOPPER
