@@ -223,3 +223,4 @@ NA,NA,0.081,NA,NA,Sat Mar 03 15:40:59 2018,svmRadialSigma,1,2,basic sum C1 + C2,
 Fail,Fail,Fail,Fail,Fail,Sat Mar 03 15:41:01 2018,svmSpectrumString,1,2,basic sum C1 + C2,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,0
 0.75,0.713,-1,0.427,0.287,Sat Mar 03 15:41:05 2018,treebag,1,2,basic sum C1 + C2,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,1.486,random,307,2,cv,20,3,1,5,none
 0.971,0.971,-1,0.0433,0.0336,Sat Mar 03 15:41:14 2018,widekernelpls,1,2,basic sum C1 + C2,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,1.486,random,307,5,cv,20,3,1,5,1
+0.937,0.929,0.147,0.103,0.0734,Wed Mar 07 15:35:18 2018,xgbLinear,1,2,basic sum C1 + C2,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,1.447,random,223,12,cv,20,3,1,5,63,0.419369151926701,0.0116613328933817,0.983258248306811

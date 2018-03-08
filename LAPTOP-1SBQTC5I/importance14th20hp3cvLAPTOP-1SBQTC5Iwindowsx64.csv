@@ -175,3 +175,4 @@ svmRadialCost, Sat Mar 03 15:40:55 2018, NA, basic sum C1 + C2, Failed
 svmRadialSigma, Sat Mar 03 15:40:59 2018, NA, basic sum C1 + C2, Failed
 treebag, Sat Mar 03 15:41:07 2018, 0.75, basic sum C1 + C2, c(0, 100)
 widekernelpls, Sat Mar 03 15:41:14 2018, 0.971, basic sum C1 + C2, c(0, 100)
+xgbLinear, Wed Mar 07 15:35:19 2018, 0.937, basic sum C1 + C2, c(100, 0)
