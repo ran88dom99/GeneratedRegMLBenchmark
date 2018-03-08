@@ -25,3 +25,11 @@ Sun Feb 18 22:56:14 2018,regr.xyf,basic sum C1 + C2,3,20,windows,i386,ALTA
 Mon Feb 19 16:23:51 2018,regr.bartMachine,bas interactive latent features,3,20,windows,i386,ALTA
 Tue Feb 20 08:18:19 2018,regr.xyf,bas interactive latent features,3,20,windows,i386,ALTA
 Tue Feb 20 08:24:41 2018,blassoAveraged,basic sum C1 + C2,3,20,windows,i386,ALTA
+Wed Feb 21 18:30:52 2018,SBC,basic sum C1 + C2,3,20,windows,i386,ALTA
+Thu Feb 22 19:36:06 2018,rvmLinear,basic sum C1 + C2,3,20,windows,i386,ALTA
+Sun Feb 25 06:45:35 2018,SBC,basic sum C1 + C2,3,20,windows,i386,ALTA
+Tue Feb 27 12:49:20 2018,ranger,basic sum C1 + C2,3,20,windows,i386,ALTA
+Tue Feb 27 16:21:01 2018,svmRadial,basic sum C1 + C2,3,20,windows,i386,ALTA
+Thu Mar 01 10:43:05 2018,bartMachine,basic sum C1 + C2,3,20,windows,i386,ALTA
+Mon Mar 05 22:50:31 2018,ranger,basic sum C1 + C2,3,20,windows,i386,ALTA
+Tue Mar 06 22:43:32 2018,bartMachine,basic sum C1 + C2,3,20,windows,i386,ALTA
