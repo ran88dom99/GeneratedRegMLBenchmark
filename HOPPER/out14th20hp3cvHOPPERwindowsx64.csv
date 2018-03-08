@@ -15945,3 +15945,903 @@ Fail,Fail,Fail,Fail,Fail,Wed Mar 07 14:57:15 2018,RRFglobal,1,1,just random,igno
 Fail,Fail,Fail,Fail,Fail,Wed Mar 07 15:05:05 2018,rvmLinear,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,459
 Fail,Fail,Fail,Fail,Fail,Wed Mar 07 16:51:00 2018,rvmPoly,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,6344
 Fail,Fail,Fail,Fail,Fail,Wed Mar 07 17:02:34 2018,rvmRadial,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,652
+0,0,0.287,1.02,0.818,Thu Mar 08 02:19:39 2018,SBC,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,1335,cv,20,3,NA,5,2,0.939965912606567,0.310738402651623
+-0.005,-0.004,0.29,1.02,0.821,Thu Mar 08 02:19:56 2018,simpls,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,5,cv,20,3,NA,5,1
+-0.002,-0.002,0.287,1.02,0.819,Thu Mar 08 02:20:23 2018,spikeslab,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,14,cv,20,3,NA,5,1
+-0.003,-0.003,0.289,1.02,0.82,Thu Mar 08 02:20:41 2018,spls,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,4,cv,20,3,NA,5,1,0.785128055606037,0.460750067257322
+-0.951,-0.986,0.583,NA,NA,Thu Mar 08 02:21:01 2018,superpc,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.01477727967979,random,267,6,nohyperparameters,8,3,no rep,no min,0.1,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 02:21:16 2018,svmBoundrangeString,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 02:21:30 2018,svmExpoString,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+NA,NA,0.293,NA,NA,Thu Mar 08 02:26:31 2018,svmLinear,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,287,cv,20,3,NA,5,0.0635038173517841
+-0.014,-0.017,0.293,1.02,0.827,Thu Mar 08 02:31:28 2018,svmLinear2,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,283,cv,20,3,NA,5,0.0635038173517841
+-0.015,-0.016,0.291,1.02,0.827,Thu Mar 08 02:32:08 2018,svmLinear3,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,27,cv,20,3,NA,5,4.46830914546749,L2
+NA,NA,0.287,NA,NA,Thu Mar 08 02:40:20 2018,svmPoly,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,478,cv,20,3,NA,5,1,0.00013007522001515,0.0588652702244886
+NA,NA,0.29,NA,NA,Thu Mar 08 02:40:48 2018,svmRadial,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,16,cv,20,3,NA,5,0.0435641366647265,0.121026445965956
+NA,NA,0.289,NA,NA,Thu Mar 08 02:41:39 2018,svmRadialCost,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,38,cv,20,3,NA,5,0.0635038173517841
+NA,NA,0.29,NA,NA,Thu Mar 08 02:42:08 2018,svmRadialSigma,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,16,cv,20,3,NA,5,0.0435641366647265,0.121026445965956
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 02:42:22 2018,svmSpectrumString,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+-0.018,-0.035,-1,1.03,0.83,Thu Mar 08 02:42:39 2018,treebag,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,4,cv,20,3,NA,5,none
+-0.005,-0.004,0.29,1.02,0.821,Thu Mar 08 02:44:03 2018,widekernelpls,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,54,cv,20,3,NA,5,1
+-0.007,-0.009,0.287,1.02,0.822,Thu Mar 08 02:48:57 2018,xgbDART,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,280,cv,20,3,NA,5,922,8,0.0602036430977751,1.17075385991484,0.801152745028958,0.619563447870314,0.19125307230046,0.492229375615716,8
+-0.019,-0.033,0.294,1.03,0.83,Thu Mar 08 02:49:33 2018,xgbLinear,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,21,cv,20,3,NA,5,3,0.0915160841197647,0.0351455342926281,2.71034292597324
+0,0,0.287,1.02,0.818,Thu Mar 08 02:53:11 2018,xgbTree,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,204,cv,20,3,NA,5,896,4,0.357720035937382,7.20608528004959,0.345989572629332,6,0.263806106522679
+-0.016,-0.024,0.3,1.03,0.828,Thu Mar 08 02:54:02 2018,xyf,1,1,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.015,random,267,36,cv,20,3,NA,5,3,7,0.507719844612293,hexagonal
+0.001,0.001,0.999,1,0.8,Thu Mar 08 02:55:16 2018,avNNet,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,60,cv,20,3,NA,5,4,3.72325699080993e-05,TRUE
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 02:55:33 2018,bag,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,3
+-0.005,-0.002,1.01,1,0.804,Thu Mar 08 02:57:32 2018,bagEarth,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,106,cv,20,3,NA,5,3,2
+-0.026,-0.02,-1,1.02,0.821,Thu Mar 08 02:58:23 2018,bagEarthGCV,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,8,cv,20,3,NA,5,1
+-0.005,-0.001,1,1,0.805,Thu Mar 08 03:00:58 2018,bam,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,112,cv,20,3,NA,5,TRUE,REML
+-0.009,-0.006,1.01,1.01,0.808,Thu Mar 08 03:12:29 2018,bartMachine,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,677,cv,20,3,NA,5,19,4.35969830607064,0.934104363364168,3.96996735781431,4.68315589125268
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 03:12:45 2018,bayesglm,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+-0.001,0,1,1,0.802,Thu Mar 08 03:13:09 2018,blasso,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,11,cv,20,3,NA,5,0.417759045260027
+-0.001,0,-1,1,0.802,Thu Mar 08 03:13:32 2018,blassoAveraged,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,10,cv,20,3,NA,5,none
+-0.001,0,-1,1,0.801,Thu Mar 08 03:13:56 2018,bridge,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,10,cv,20,3,NA,5,none
+-0.004,-0.001,1,1,0.804,Thu Mar 08 03:15:27 2018,BstLm,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,77,cv,20,3,NA,5,84,0.0579971475256607
+-0.006,-0.002,1,1.01,0.805,Thu Mar 08 03:17:00 2018,cforest,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,79,cv,20,3,NA,5,7
+-0.001,0,1,1,0.801,Thu Mar 08 03:17:18 2018,ctree,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,4,cv,20,3,NA,5,0.87476523197256
+-0.001,0,1,1,0.801,Thu Mar 08 03:17:36 2018,ctree2,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,4,cv,20,3,NA,5,2,0.871939661214128
+-0.074,-0.068,1.03,1.07,0.86,Thu Mar 08 03:19:41 2018,cubist,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,111,cv,20,3,NA,5,10,8
+-0.029,-0.024,1.01,1.03,0.824,Thu Mar 08 03:20:04 2018,dnn,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,9,cv,20,3,NA,5,8,20,6,0.543520130496472,0.577511154906824
+-0.003,0,1.01,1,0.803,Thu Mar 08 03:20:24 2018,earth,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,6,cv,20,3,NA,5,3,2
+-0.018,-0.012,0.999,1.01,0.815,Thu Mar 08 03:20:41 2018,elm,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,3,cv,20,3,NA,5,8,radbas
+-0.002,0.001,1,1,0.802,Thu Mar 08 03:20:59 2018,enet,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,4,cv,20,3,NA,5,0.158034358406439,0.512252002097201
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 03:21:15 2018,evtree,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+-0.034,-0.036,0.992,1.04,0.828,Thu Mar 08 03:27:36 2018,extraTrees,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,367,cv,20,3,NA,5,3,14
+-0.007,-0.003,1,1.01,0.806,Thu Mar 08 03:27:54 2018,foba,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,4,cv,20,3,NA,5,3,0.00477039037160844
+-0.005,-0.001,1,1,0.805,Thu Mar 08 03:29:04 2018,gam,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,55,cv,20,3,NA,5,TRUE,ML
+-0.001,0,1,1,0.801,Thu Mar 08 03:46:26 2018,gamboost,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,1027,cv,20,3,NA,5,139,yes
+-0.012,-0.008,1.01,1.01,0.81,Thu Mar 08 03:46:57 2018,gamSpline,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,16,cv,20,3,NA,5,0.531265732133761
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 03:48:00 2018,gaussprLinear,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,48
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 03:55:07 2018,gaussprPoly,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,413
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 03:57:01 2018,gaussprRadial,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,98
+-0.086,-0.079,1.06,1.08,0.87,Thu Mar 08 03:59:31 2018,gbm,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,136,cv,20,3,NA,5,1231,6,0.00813858030340634,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:02:44 2018,gbm_h2o,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,179
+-0.007,0.001,-1,1,0.806,Thu Mar 08 04:03:01 2018,gcvEarth,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,1
+-0.012,-0.008,-1,1.01,0.81,Thu Mar 08 04:03:17 2018,glm,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:03:36 2018,glm.nb,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,4
+-0.004,-0.001,1,1,0.804,Thu Mar 08 04:04:01 2018,glmboost,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,11,cv,20,3,NA,5,139,yes
+-0.003,0,1,1,0.803,Thu Mar 08 04:04:20 2018,glmnet,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,4,cv,20,3,NA,5,0.246111946878955,0.13873173034509
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:07:34 2018,glmnet_h2o,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,180
+-0.003,0.003,-1,0.999,0.803,Thu Mar 08 04:07:51 2018,glmStepAIC,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,3,cv,20,3,NA,5,none
+-0.012,-0.006,1,1.01,0.81,Thu Mar 08 04:08:09 2018,icr,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,4,cv,20,3,NA,5,2
+-0.012,-0.008,1.01,1.01,0.81,Thu Mar 08 04:08:26 2018,kernelpls,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,1
+-0.027,-0.02,1,1.02,0.822,Thu Mar 08 04:12:40 2018,kknn,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,240,cv,20,3,NA,5,190,1.77738035540096,triweight
+-0.025,-0.023,1,1.03,0.82,Thu Mar 08 04:13:00 2018,knn,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,5,cv,20,3,NA,5,62
+-3.465,-3.388,3.6,NA,NA,Thu Mar 08 04:15:31 2018,krlsPoly,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,137,cv,20,3,NA,5,0.179195803008577,2
+-0.046,-0.029,1,1.03,0.837,Thu Mar 08 04:25:30 2018,krlsRadial,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,584,cv,20,3,NA,5,0.00616308199728288,1.30991572893562
+-0.002,0.001,1,1,0.802,Thu Mar 08 04:25:48 2018,lars,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,0.167388351168483
+-0.003,0,1,1,0.803,Thu Mar 08 04:26:04 2018,lars2,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,5
+-0.002,0.001,1,1,0.802,Thu Mar 08 04:26:21 2018,lasso,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,0.167388351168483
+-0.007,-0.003,1,1.01,0.806,Thu Mar 08 04:26:39 2018,leapBackward,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,3,cv,20,3,NA,5,3
+-0.007,-0.003,1,1.01,0.806,Thu Mar 08 04:26:55 2018,leapForward,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,3
+-0.012,-0.008,-1,1.01,0.81,Thu Mar 08 04:27:11 2018,lm,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,TRUE
+-0.003,0.003,-1,0.999,0.803,Thu Mar 08 04:27:28 2018,lmStepAIC,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,3,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 04:27:47 2018,logicBag,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,5
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:28:09 2018,logreg,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,7
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:28:25 2018,M5,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:28:41 2018,M5Rules,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:28:59 2018,mlpKerasDecay,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:29:15 2018,mlpKerasDropout,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:31:21 2018,msaenet,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,112
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 04:31:41 2018,mxnet,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 04:32:00 2018,mxnetAdam,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,5
+-0.003,-0.001,1,1,0.803,Thu Mar 08 04:32:28 2018,nnet,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,14,cv,20,3,NA,5,14,2.83012701454527e-05
+-0.003,-0.002,-1,1,0.803,Thu Mar 08 04:32:44 2018,nnls,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,none
+-0.001,0,-1,1,0.801,Thu Mar 08 04:33:01 2018,null,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,none
+-0.026,-0.027,1.02,1.03,0.822,Thu Mar 08 04:34:16 2018,parRF,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,60,cv,20,3,NA,5,1
+-0.003,-0.001,1,1,0.803,Thu Mar 08 04:34:46 2018,pcaNNet,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,16,cv,20,3,NA,5,16,8.87577226264614e-05
+-0.001,-0.001,1,1,0.802,Thu Mar 08 04:35:03 2018,pcr,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 04:35:23 2018,pls,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,5
+-0.002,0.003,1.01,1,0.802,Thu Mar 08 04:35:57 2018,plsRglm,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,19,cv,20,3,NA,5,6,0.194137832149863
+-0.057,-0.059,1.02,1.06,0.846,Thu Mar 08 04:36:27 2018,ppr,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,14,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 04:36:48 2018,pythonKnnReg,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,6
+-0.757,-0.668,1.67,1.67,1.41,Thu Mar 08 04:38:16 2018,qrf,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,72,cv,20,3,NA,5,1
+-0.008,-0.005,1,1.01,0.807,Thu Mar 08 04:39:03 2018,ranger,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,32,cv,20,3,NA,5,1,extratrees,18
+-0.011,-0.018,1.01,1.02,0.81,Thu Mar 08 04:47:09 2018,Rborist,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,471,cv,20,3,NA,5,1,18
+-0.004,0,1,1,0.803,Thu Mar 08 04:47:29 2018,relaxo,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,4,cv,20,3,NA,5,14.256984839816,0.253268995787948
+-0.026,-0.025,1.02,1.03,0.821,Thu Mar 08 04:48:43 2018,rf,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,59,cv,20,3,NA,5,1
+-0.013,-0.008,1.01,1.01,0.811,Thu Mar 08 04:49:01 2018,ridge,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,3,cv,20,3,NA,5,1.77252101074149
+-0.012,-0.006,1.01,1.01,0.81,Thu Mar 08 04:49:19 2018,rlm,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,FALSE,psi.hampel
+-0.001,0,1.1,1,0.801,Thu Mar 08 04:49:36 2018,rpart,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,3,cv,20,3,NA,5,0.0125156108527743
+-0.053,-0.039,-1,1.04,0.843,Thu Mar 08 04:49:53 2018,rpart1SE,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,none
+-0.014,-0.007,1.02,1.01,0.811,Thu Mar 08 04:50:11 2018,rpart2,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:50:28 2018,rqlasso,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:50:44 2018,rqnc,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:51:01 2018,RRF,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:51:18 2018,RRFglobal,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 04:57:14 2018,rvmLinear,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,342
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 06:17:52 2018,rvmPoly,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,4823
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 06:31:34 2018,rvmRadial,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,807
+-0.001,0,1,1,0.801,Thu Mar 08 06:59:38 2018,SBC,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,1670,cv,20,3,NA,5,2,0.490161838708445,0.365318688564003
+-0.012,-0.008,1.01,1.01,0.81,Thu Mar 08 06:59:55 2018,simpls,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,2,cv,20,3,NA,5,1
+-0.008,-0.004,1,1.01,0.807,Thu Mar 08 07:00:22 2018,spikeslab,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,12,cv,20,3,NA,5,5
+-0.012,-0.008,1,1.01,0.81,Thu Mar 08 07:00:41 2018,spls,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,4,cv,20,3,NA,5,3,0.949931056471542,0.172389991465025
+-0.011,-0.008,1,1.01,0.809,Thu Mar 08 07:01:02 2018,superpc,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.00282295536784,random,313,7,nohyperparameters,8,3,no rep,no min,0.1,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:01:19 2018,svmBoundrangeString,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:01:36 2018,svmExpoString,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+NA,NA,1.02,NA,NA,Thu Mar 08 07:03:37 2018,svmLinear,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,106,cv,20,3,NA,5,0.09432586245533
+-0.009,-0.006,1.02,1.01,0.808,Thu Mar 08 07:05:40 2018,svmLinear2,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,109,cv,20,3,NA,5,0.09432586245533
+-0.006,-0.003,1,1.01,0.805,Thu Mar 08 07:06:07 2018,svmLinear3,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,12,cv,20,3,NA,5,0.00663291196365733,L1
+NA,NA,1,NA,NA,Thu Mar 08 07:06:58 2018,svmPoly,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,36,cv,20,3,NA,5,1,0.000220083023441492,2.48434088942926
+NA,NA,1,NA,NA,Thu Mar 08 07:07:31 2018,svmRadial,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,18,cv,20,3,NA,5,0.188575969521955,0.0413316508012219
+NA,NA,1.01,NA,NA,Thu Mar 08 07:08:13 2018,svmRadialCost,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,26,cv,20,3,NA,5,0.09432586245533
+NA,NA,1,NA,NA,Thu Mar 08 07:08:47 2018,svmRadialSigma,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,18,cv,20,3,NA,5,0.188575969521955,0.0413316508012219
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:09:05 2018,svmSpectrumString,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,2
+-0.033,-0.031,-1,1.03,0.827,Thu Mar 08 07:09:23 2018,treebag,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,4,cv,20,3,NA,5,none
+-0.012,-0.008,1.01,1.01,0.81,Thu Mar 08 07:10:41 2018,widekernelpls,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,47,cv,20,3,NA,5,1
+-0.018,-0.015,1.01,1.02,0.815,Thu Mar 08 07:14:53 2018,xgbDART,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,236,cv,20,3,NA,5,325,7,0.0165682511327323,7.10602423176169,0.798166381719057,0.449836281035095,0.0235293772211298,0.904704501619563,18
+-0.046,-0.049,1.05,1.05,0.838,Thu Mar 08 07:15:32 2018,xgbLinear,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,23,cv,20,3,NA,5,4,0.0113941003722584,1.88041547697901e-05,0.433786073466763
+-0.018,-0.013,1.01,1.02,0.815,Thu Mar 08 07:18:24 2018,xgbTree,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,157,cv,20,3,NA,5,325,7,0.0165682511327323,7.10602423176169,0.592355403583497,7,0.270708230440505
+0,-0.002,1.01,1.01,0.8,Thu Mar 08 07:19:11 2018,xyf,1,2,just random,ignore,none,quantile,HOPPER,14th20hp3cv,1.003,random,313,31,cv,20,3,NA,5,2,3,0.150704055712558,hexagonal
+0,-0.014,0.709,0.733,0.673,Thu Mar 08 07:23:10 2018,avNNet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,11,cv,20,3,NA,5,7,1.27143498562821e-05,TRUE
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:23:21 2018,bag,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,3
+0.733,0.648,0.4,0.254,0.18,Thu Mar 08 07:24:14 2018,bagEarth,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,47,cv,20,3,NA,5,3,1
+0.718,0.646,-1,0.256,0.189,Thu Mar 08 07:24:56 2018,bagEarthGCV,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,6,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:25:36 2018,bam,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,5
+0.462,0.459,0.463,0.391,0.362,Thu Mar 08 07:27:23 2018,bartMachine,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,99,cv,20,3,NA,5,50,0.461342245107517,0.934057827363722,3.83415820356458,2.9484298825264
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:27:32 2018,bayesglm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+0.007,-0.003,0.664,0.725,0.668,Thu Mar 08 07:27:42 2018,blasso,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,0.511771865189075
+0.004,-0.004,-1,0.726,0.67,Thu Mar 08 07:27:53 2018,blassoAveraged,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,none
+0.001,-0.008,-1,0.729,0.672,Thu Mar 08 07:28:03 2018,bridge,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,none
+-0.005,-0.016,0.723,0.734,0.676,Thu Mar 08 07:29:12 2018,BstLm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,62,cv,20,3,NA,5,164,0.0114120333991013
+0.333,0.292,0.632,0.512,0.449,Thu Mar 08 07:29:24 2018,cforest,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,4,cv,20,3,NA,5,8
+0,-0.01,0.665,0.73,0.673,Thu Mar 08 07:29:35 2018,ctree,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,4,cv,20,3,NA,5,0.946862002136186
+0,-0.01,0.665,0.73,0.673,Thu Mar 08 07:29:46 2018,ctree2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,4,cv,20,3,NA,5,2,0.865906208520755
+0.854,0.769,0.365,0.167,0.098,Thu Mar 08 07:30:09 2018,cubist,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,16,cv,20,3,NA,5,2,3
+0,-0.009,0.665,0.729,0.673,Thu Mar 08 07:30:19 2018,dnn,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,7,6,13,0.0569446530891582,0.471462882892229
+0.644,0.623,0.353,NA,NA,Thu Mar 08 07:30:30 2018,earth,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,4,cv,20,3,NA,5,3,1
+0.007,0.001,0.683,0.722,0.668,Thu Mar 08 07:30:39 2018,elm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,2,tansig
+0.007,-0.003,0.665,0.725,0.668,Thu Mar 08 07:30:50 2018,enet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,0.017382359597832,0.000914633191321214
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:30:59 2018,evtree,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+0.805,0.739,0.296,0.189,0.131,Thu Mar 08 07:31:15 2018,extraTrees,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,9,cv,20,3,NA,5,9,8
+0.033,0.024,0.692,0.705,0.65,Thu Mar 08 07:31:25 2018,foba,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,2,1.15990428650722
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:31:36 2018,gam,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,4
+0.742,0.648,0.39,0.255,0.174,Thu Mar 08 07:32:02 2018,gamboost,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,18,cv,20,3,NA,5,96,yes
+0.541,0.462,0.615,0.389,0.308,Thu Mar 08 07:32:17 2018,gamSpline,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,8,cv,20,3,NA,5,3.12965439166874
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:32:30 2018,gaussprLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,5
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:32:49 2018,gaussprPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,12
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:33:03 2018,gaussprRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,7
+0.686,0.623,0.501,NA,NA,Thu Mar 08 07:33:13 2018,gbm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,1316,3,0.369469559913268,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:36:33 2018,gbm_h2o,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,193
+0.683,0.541,-1,NA,NA,Thu Mar 08 07:36:42 2018,gcvEarth,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,1
+0.069,0.037,-1,0.696,0.626,Thu Mar 08 07:36:52 2018,glm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:37:03 2018,glm.nb,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,4
+0.06,0.036,0.759,0.696,0.632,Thu Mar 08 07:37:14 2018,glmboost,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,4,cv,20,3,NA,5,96,yes
+0.004,-0.005,0.664,0.727,0.67,Thu Mar 08 07:37:25 2018,glmnet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,4,cv,20,3,NA,5,0.0742272213101387,2.38961916068406
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:40:44 2018,glmnet_h2o,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,193
+0.12,0.053,-1,0.685,0.592,Thu Mar 08 07:40:54 2018,glmStepAIC,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,none
+0.021,0.011,0.663,0.715,0.658,Thu Mar 08 07:41:06 2018,icr,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,5,cv,20,3,NA,5,1
+-0.06,-0.043,0.943,0.754,0.713,Thu Mar 08 07:41:16 2018,kernelpls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,1
+0.231,0.19,0.596,0.586,0.517,Thu Mar 08 07:41:26 2018,kknn,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,4,cv,20,3,NA,5,5,0.0521470787934959,epanechnikov
+-0.068,-0.047,0.689,0.757,0.718,Thu Mar 08 07:41:36 2018,knn,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,13
+0.001,-0.011,0.665,0.731,0.672,Thu Mar 08 07:41:45 2018,krlsPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,0.43879833034405,3
+0.005,-0.01,0.666,0.73,0.669,Thu Mar 08 07:41:56 2018,krlsRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,4.33752111499642e-05,1.00631610389977
+0.029,0.015,0.672,0.712,0.653,Thu Mar 08 07:42:05 2018,lars,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,0.0742272213101387
+0,-0.01,0.665,0.73,0.673,Thu Mar 08 07:42:14 2018,lars2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,1
+0.029,0.015,0.672,0.712,0.653,Thu Mar 08 07:42:23 2018,lasso,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,0.0742272213101387
+0.115,0.055,0.793,0.683,0.595,Thu Mar 08 07:42:32 2018,leapBackward,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,2
+0.115,0.055,0.776,0.683,0.595,Thu Mar 08 07:42:42 2018,leapForward,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,2
+0.069,0.037,-1,0.696,0.626,Thu Mar 08 07:42:51 2018,lm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,TRUE
+0.12,0.053,-1,0.685,0.592,Thu Mar 08 07:43:01 2018,lmStepAIC,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 07:43:14 2018,logicBag,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:43:27 2018,logreg,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:43:37 2018,M5,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:43:46 2018,M5Rules,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:43:56 2018,mlpKerasDecay,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:44:06 2018,mlpKerasDropout,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:44:48 2018,msaenet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,35
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 07:45:02 2018,mxnet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 07:45:15 2018,mxnetAdam,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,6
+-0.007,-0.009,0.71,0.73,0.678,Thu Mar 08 07:45:27 2018,nnet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,4,cv,20,3,NA,5,19,0.454898344025446
+-0.122,-0.092,-1,0.789,0.754,Thu Mar 08 07:45:37 2018,nnls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,none
+0,-0.01,-1,0.73,0.673,Thu Mar 08 07:45:46 2018,null,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,none
+0.709,0.663,0.344,0.244,0.196,Thu Mar 08 07:45:58 2018,parRF,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,4,cv,20,3,NA,5,9
+0,-0.003,0.688,0.725,0.673,Thu Mar 08 07:46:10 2018,pcaNNet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,5,cv,20,3,NA,5,19,0.454898344025446
+0.002,-0.009,0.681,0.729,0.671,Thu Mar 08 07:46:19 2018,pcr,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 07:46:33 2018,pls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,6
+-0.001,-0.015,0.71,0.734,0.674,Thu Mar 08 07:46:51 2018,plsRglm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,10,cv,20,3,NA,5,1,0.185039059817791
+0.608,0.534,1.07,0.337,0.264,Thu Mar 08 07:47:01 2018,ppr,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 07:47:15 2018,pythonKnnReg,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,6
+0.276,0.176,0.654,0.596,0.487,Thu Mar 08 07:47:29 2018,qrf,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,8,cv,20,3,NA,5,9
+0.713,0.666,0.354,0.241,0.193,Thu Mar 08 07:47:43 2018,ranger,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,6,cv,20,3,NA,5,9,variance,5
+0.726,0.649,0.317,0.254,0.185,Thu Mar 08 07:49:16 2018,Rborist,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,86,cv,20,3,NA,5,9,6
+0.075,0.031,0.673,0.7,0.622,Thu Mar 08 07:49:26 2018,relaxo,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,10.7109460010025,0.216149715241045
+0.709,0.665,0.351,0.242,0.196,Thu Mar 08 07:49:37 2018,rf,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,9
+0.002,-0.019,0.908,0.737,0.672,Thu Mar 08 07:49:48 2018,ridge,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,4.79923496287857
+-0.041,-0.067,1.13,0.772,0.7,Thu Mar 08 07:49:58 2018,rlm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,FALSE,psi.hampel
+0.481,0.395,0.425,0.438,0.349,Thu Mar 08 07:50:08 2018,rpart,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,0.172182444131781
+0.556,0.528,-1,0.341,0.299,Thu Mar 08 07:50:17 2018,rpart1SE,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,none
+0.481,0.395,0.425,0.438,0.349,Thu Mar 08 07:50:27 2018,rpart2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:50:37 2018,rqlasso,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:50:47 2018,rqnc,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:50:56 2018,RRF,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:51:06 2018,RRFglobal,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:52:29 2018,rvmLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,76
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:53:04 2018,rvmPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,25
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:53:20 2018,rvmRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,9
+-0.001,-0.025,0.717,0.741,0.673,Thu Mar 08 07:53:37 2018,SBC,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,10,cv,20,3,NA,5,2,0.984691238030791,0.369127751793712
+-0.06,-0.043,0.943,0.754,0.713,Thu Mar 08 07:53:48 2018,simpls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,1
+-0.015,-0.015,0.665,0.734,0.683,Thu Mar 08 07:54:11 2018,spikeslab,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,16,cv,20,3,NA,5,1
+0.12,0.053,0.747,0.685,0.592,Thu Mar 08 07:54:22 2018,spls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,4,cv,20,3,NA,5,1,0.865906208520755,0.0371136106550694
+0,0.001,0.702,0.722,0.673,Thu Mar 08 07:54:36 2018,superpc,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.722818768587412,random,260,7,nohyperparameters,8,3,no rep,no min,0.1,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:54:46 2018,svmBoundrangeString,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:54:56 2018,svmExpoString,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+NA,NA,0.933,NA,NA,Thu Mar 08 07:55:14 2018,svmLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,11,cv,20,3,NA,5,0.0676113057414599
+-0.035,-0.093,0.933,NA,NA,Thu Mar 08 07:55:32 2018,svmLinear2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,11,cv,20,3,NA,5,0.0676113057414599
+-0.022,-0.018,0.79,0.736,0.687,Thu Mar 08 07:55:46 2018,svmLinear3,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,7,cv,20,3,NA,5,0.00366639052162037,L1
+NA,NA,0.665,NA,NA,Thu Mar 08 07:55:57 2018,svmPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,4,cv,20,3,NA,5,1,1.23635847339186e-05,1.27399464879028
+NA,NA,0.68,NA,NA,Thu Mar 08 07:56:08 2018,svmRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,0.077609548207911,0.072808089646035
+NA,NA,0.679,NA,NA,Thu Mar 08 07:56:19 2018,svmRadialCost,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,0.0676113057414599
+NA,NA,0.68,NA,NA,Thu Mar 08 07:56:29 2018,svmRadialSigma,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,3,cv,20,3,NA,5,0.077609548207911,0.072808089646035
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 07:56:39 2018,svmSpectrumString,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+0.61,0.57,-1,0.311,0.262,Thu Mar 08 07:56:50 2018,treebag,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,4,cv,20,3,NA,5,none
+-0.06,-0.043,0.943,0.754,0.713,Thu Mar 08 07:57:18 2018,widekernelpls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,2,cv,20,3,NA,5,1
+0.449,0.374,0.46,0.452,0.371,Thu Mar 08 07:58:43 2018,xgbDART,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,77,cv,20,3,NA,5,929,8,0.568534866538597,3.14275130629539,0.735623447399121,0.311487603280693,0.28566322394181,0.822319188364781,0
+0.809,0.779,0.257,0.16,0.129,Thu Mar 08 07:59:25 2018,xgbLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,21,cv,20,3,NA,5,69,2.63865525226416e-05,0.422645739535742,1.32979587558657
+0.459,0.409,0.458,0.427,0.364,Thu Mar 08 08:00:41 2018,xgbTree,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,65,cv,20,3,NA,5,707,4,0.269040179200005,1.94870163220912,0.658565336838365,4,0.670231705182232
+-0.255,-0.42,0.833,1.03,0.844,Thu Mar 08 08:00:52 2018,xyf,1,1,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.7228,random,260,4,cv,20,3,NA,5,1,8,0.20181368987076,rectangular
+-0.004,-0.038,0.709,0.71,0.63,Thu Mar 08 08:01:13 2018,avNNet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,12,cv,20,3,NA,5,19,1.21103518262249,FALSE
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:01:23 2018,bag,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,3
+0.775,0.707,0.404,0.201,0.141,Thu Mar 08 08:02:13 2018,bagEarth,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,42,cv,20,3,NA,5,3,1
+0.724,0.668,-1,NA,NA,Thu Mar 08 08:04:23 2018,bagEarthGCV,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,6,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:05:05 2018,bam,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,4
+0.672,0.659,0.474,NA,NA,Thu Mar 08 08:06:51 2018,bartMachine,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,99,cv,20,3,NA,5,36,1.10115796676837,0.902410562383011,3.90543413162231,0.936045327689499
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:07:01 2018,bayesglm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+0,-0.002,0.677,0.685,0.628,Thu Mar 08 08:07:11 2018,blasso,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,0.932186056161299
+-0.005,0,-1,0.684,0.631,Thu Mar 08 08:07:22 2018,blassoAveraged,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,none
+-0.001,-0.001,-1,0.685,0.629,Thu Mar 08 08:07:32 2018,bridge,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,none
+-0.014,-0.01,0.684,0.691,0.637,Thu Mar 08 08:08:53 2018,BstLm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,74,cv,20,3,NA,5,7,0.0312424283365253
+0.225,0.262,0.623,0.505,0.486,Thu Mar 08 08:09:05 2018,cforest,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,9
+0.566,0.535,0.611,0.318,0.272,Thu Mar 08 08:09:16 2018,ctree,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,0.0628018598072231
+0.51,0.453,0.611,0.374,0.308,Thu Mar 08 08:09:27 2018,ctree2,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,1,0.0504881942179054
+0.825,0.767,0.319,NA,NA,Thu Mar 08 08:09:48 2018,cubist,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,14,cv,20,3,NA,5,32,7
+0,0,0.672,0.684,0.628,Thu Mar 08 08:09:59 2018,dnn,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,18,15,13,0.652732979925349,0.114688327955082
+0.845,0.784,0.383,NA,NA,Thu Mar 08 08:10:10 2018,earth,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,3,1
+-0.012,-0.031,0.673,0.706,0.635,Thu Mar 08 08:10:19 2018,elm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,2,sin
+0.002,0.003,0.678,0.682,0.626,Thu Mar 08 08:10:29 2018,enet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,0.00488362461328506,0.00107428027759702
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:10:38 2018,evtree,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+0.816,0.805,0.323,0.134,0.116,Thu Mar 08 08:10:56 2018,extraTrees,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,10,cv,20,3,NA,5,9,7
+0.066,0.071,0.789,0.636,0.586,Thu Mar 08 08:11:11 2018,foba,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.684203201419968,random,309,8,nohyperparameters,8,3,no rep,no min,2,0.1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:11:22 2018,gam,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,4
+0.726,0.679,0.391,0.22,0.172,Thu Mar 08 08:11:47 2018,gamboost,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,18,cv,20,3,NA,5,63,yes
+0.324,0.3,0.802,0.479,0.424,Thu Mar 08 08:12:04 2018,gamSpline,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,10,cv,20,3,NA,5,1.76794440019876
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:12:17 2018,gaussprLinear,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,5
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:12:35 2018,gaussprPoly,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,11
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:12:50 2018,gaussprRadial,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,7
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:13:04 2018,gbm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,7
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:16:26 2018,gbm_h2o,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,196
+0.864,0.837,-1,NA,NA,Thu Mar 08 08:16:35 2018,gcvEarth,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,1
+0.013,-0.012,-1,0.693,0.62,Thu Mar 08 08:16:45 2018,glm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:16:56 2018,glm.nb,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,4
+0.019,0.038,0.696,0.658,0.616,Thu Mar 08 08:17:07 2018,glmboost,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,14,yes
+0,-0.001,0.678,0.685,0.628,Thu Mar 08 08:17:19 2018,glmnet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,0.620107581373304,5.61990520173267
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:20:40 2018,glmnet_h2o,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,194
+0.094,0.102,-1,0.615,0.569,Thu Mar 08 08:20:50 2018,glmStepAIC,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,none
+-0.069,-0.087,0.697,0.744,0.671,Thu Mar 08 08:21:02 2018,icr,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,5,cv,20,3,NA,5,3
+-0.138,-0.117,0.823,0.764,0.714,Thu Mar 08 08:21:11 2018,kernelpls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,1
+0.303,0.257,0.641,0.508,0.437,Thu Mar 08 08:21:22 2018,kknn,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,5,0.0146508738398552,rectangular
+-0.033,-0.024,0.706,0.7,0.649,Thu Mar 08 08:21:31 2018,knn,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,13
+0.002,0.002,0.678,0.683,0.626,Thu Mar 08 08:21:41 2018,krlsPoly,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,0.457525689416468,3
+-0.011,0.002,0.683,0.683,0.635,Thu Mar 08 08:21:51 2018,krlsRadial,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,0.458068345095925,1068.88127306794
+0.006,0.008,0.678,0.678,0.624,Thu Mar 08 08:22:01 2018,lars,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,0.013552128104493
+0,-0.001,0.678,0.685,0.628,Thu Mar 08 08:22:10 2018,lars2,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,1
+0.006,0.008,0.678,0.678,0.624,Thu Mar 08 08:22:19 2018,lasso,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,0.013552128104493
+0.073,0.073,0.743,0.634,0.582,Thu Mar 08 08:22:28 2018,leapBackward,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,2
+0.073,0.073,0.743,0.634,0.582,Thu Mar 08 08:22:37 2018,leapForward,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,2
+0.013,-0.012,-1,0.693,0.62,Thu Mar 08 08:22:46 2018,lm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,TRUE
+0.094,0.102,-1,0.615,0.569,Thu Mar 08 08:22:55 2018,lmStepAIC,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 08:23:10 2018,logicBag,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,7
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:23:22 2018,logreg,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,5
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:23:31 2018,M5,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:23:40 2018,M5Rules,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:23:49 2018,mlpKerasDecay,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:23:58 2018,mlpKerasDropout,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:24:38 2018,msaenet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,33
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 08:24:51 2018,mxnet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 08:25:04 2018,mxnetAdam,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,6
+0.084,0.043,0.68,0.655,0.575,Thu Mar 08 08:25:14 2018,nnet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,7,2.18056291757667e-05
+-0.197,-0.194,-1,0.817,0.751,Thu Mar 08 08:25:23 2018,nnls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,none
+0,-0.001,-1,0.685,0.628,Thu Mar 08 08:25:32 2018,null,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,none
+0.766,0.74,0.387,0.178,0.147,Thu Mar 08 08:25:43 2018,parRF,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,9
+0,-0.013,0.667,0.693,0.628,Thu Mar 08 08:25:55 2018,pcaNNet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,15,1.68224155415805e-05
+0,-0.002,0.692,0.685,0.628,Thu Mar 08 08:26:03 2018,pcr,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 08:26:17 2018,pls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,6
+-0.086,-0.071,0.775,0.733,0.681,Thu Mar 08 08:26:33 2018,plsRglm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,10,cv,20,3,NA,5,5,0.0975424554664642
+-0.161,-0.264,0.926,0.865,0.729,Thu Mar 08 08:26:43 2018,ppr,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 08:26:56 2018,pythonKnnReg,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,6
+0.223,0.154,0.679,0.579,0.487,Thu Mar 08 08:27:10 2018,qrf,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,7,cv,20,3,NA,5,9
+0.631,0.639,0.403,0.247,0.231,Thu Mar 08 08:27:23 2018,ranger,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,5,cv,20,3,NA,5,9,maxstat,11
+0.759,0.743,0.339,0.176,0.151,Thu Mar 08 08:29:24 2018,Rborist,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,114,cv,20,3,NA,5,9,5
+0.018,0.023,0.698,0.669,0.616,Thu Mar 08 08:29:35 2018,relaxo,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,4.65546938673927,0.142150108003989
+0.759,0.73,0.383,0.185,0.151,Thu Mar 08 08:29:45 2018,rf,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,9
+-0.073,-0.061,0.81,0.726,0.673,Thu Mar 08 08:29:55 2018,ridge,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,2.33892842227849
+0.013,-0.012,0.945,0.693,0.62,Thu Mar 08 08:30:05 2018,rlm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,TRUE,psi.hampel
+0.51,0.453,0.433,0.374,0.308,Thu Mar 08 08:30:14 2018,rpart,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,0.141959960367628
+0.566,0.535,-1,0.318,0.272,Thu Mar 08 08:30:24 2018,rpart1SE,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,none
+0.51,0.453,0.433,0.374,0.308,Thu Mar 08 08:30:33 2018,rpart2,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:30:43 2018,rqlasso,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:30:52 2018,rqnc,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:31:01 2018,RRF,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:31:10 2018,RRFglobal,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:31:29 2018,rvmLinear,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,12
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:31:51 2018,rvmPoly,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,16
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:32:07 2018,rvmRadial,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,9
+-0.03,-0.023,0.8,0.7,0.647,Thu Mar 08 08:32:22 2018,SBC,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,9,cv,20,3,NA,5,2,0.480810879496858,0.0446700884494931
+-0.138,-0.117,0.823,0.764,0.714,Thu Mar 08 08:32:31 2018,simpls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,1
+0.041,0.053,0.69,0.648,0.602,Thu Mar 08 08:32:53 2018,spikeslab,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,14,cv,20,3,NA,5,1
+0.094,0.102,0.719,0.615,0.569,Thu Mar 08 08:33:04 2018,spls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,1,0.95734027470462,0.447418077616021
+-0.001,-0.013,0.709,0.693,0.628,Thu Mar 08 08:33:18 2018,superpc,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.684203201419968,random,309,6,nohyperparameters,8,3,no rep,no min,0.1,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:33:27 2018,svmBoundrangeString,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:33:37 2018,svmExpoString,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+NA,NA,0.782,NA,NA,Thu Mar 08 08:33:51 2018,svmLinear,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,7,cv,20,3,NA,5,0.0359785766037048
+-0.006,0.019,0.782,0.671,0.631,Thu Mar 08 08:34:05 2018,svmLinear2,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,7,cv,20,3,NA,5,0.0359785766037048
+-0.044,-0.017,0.704,0.696,0.655,Thu Mar 08 08:34:17 2018,svmLinear3,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,0.00117839796719191,L1
+NA,NA,0.678,NA,NA,Thu Mar 08 08:34:27 2018,svmPoly,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,2,1.06142238027059e-05,0.0969317090921427
+NA,NA,0.683,NA,NA,Thu Mar 08 08:34:38 2018,svmRadial,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,0.033315553782125,0.0401511287805939
+NA,NA,0.683,NA,NA,Thu Mar 08 08:34:48 2018,svmRadialCost,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,0.0359785766037048
+NA,NA,0.683,NA,NA,Thu Mar 08 08:34:58 2018,svmRadialSigma,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,0.033315553782125,0.0401511287805939
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:35:07 2018,svmSpectrumString,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,2
+0.638,0.631,-1,0.253,0.227,Thu Mar 08 08:35:18 2018,treebag,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,none
+-0.138,-0.117,0.823,0.764,0.714,Thu Mar 08 08:35:44 2018,widekernelpls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,2,cv,20,3,NA,5,1
+0.204,0.164,0.575,0.572,0.5,Thu Mar 08 08:37:04 2018,xgbDART,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,72,cv,20,3,NA,5,332,1,0.127903510127449,2.16407270403579,0.3638805905357,0.615569903794676,0.329528562279884,0.390918115386739,5
+0.766,0.719,0.298,0.192,0.147,Thu Mar 08 08:37:23 2018,xgbLinear,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,12,cv,20,3,NA,5,63,0.012604856530528,0.636877747541936,1.78319542296231
+0.405,0.383,0.48,0.422,0.373,Thu Mar 08 08:38:43 2018,xgbTree,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,73,cv,20,3,NA,5,339,1,0.0662156258036848,2.21578696509823,0.624454300105572,4,0.650148311222438
+-0.049,-0.039,0.753,0.711,0.658,Thu Mar 08 08:38:55 2018,xyf,1,2,bm sin(13 t C2 ^ -.2),ignore,none,YeoJohnson,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,1,3,0.836687210490927,rectangular
+-0.032,0.016,0.675,0.671,0.61,Thu Mar 08 08:39:15 2018,avNNet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,12,cv,20,3,NA,5,8,1.67363572814743e-05,FALSE
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:39:26 2018,bag,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,3
+0.587,0.458,0.35,0.369,0.245,Thu Mar 08 08:40:17 2018,bagEarth,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,44,cv,20,3,NA,5,3,1
+0.51,0.456,-1,NA,NA,Thu Mar 08 08:40:59 2018,bagEarthGCV,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,6,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:41:40 2018,bam,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,5
+0.496,0.472,0.38,0.36,0.298,Thu Mar 08 08:43:29 2018,bartMachine,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,102,cv,20,3,NA,5,47,1.28733004443347,0.976955781527795,3.46949620824307,1.58205345040187
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:43:38 2018,bayesglm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+0,0.004,0.676,0.679,0.592,Thu Mar 08 08:43:49 2018,blasso,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,0.424505062401295
+0.001,0.003,-1,0.68,0.591,Thu Mar 08 08:44:00 2018,blassoAveraged,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,none
+0,-0.002,-1,0.683,0.591,Thu Mar 08 08:44:10 2018,bridge,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,none
+0.002,-0.011,0.695,0.689,0.59,Thu Mar 08 08:45:28 2018,BstLm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,71,cv,20,3,NA,5,190,0.0233288170211017
+0.275,0.311,0.514,0.47,0.429,Thu Mar 08 08:45:39 2018,cforest,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,4,cv,20,3,NA,5,9
+0.43,0.417,0.398,0.398,0.337,Thu Mar 08 08:45:50 2018,ctree,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,4,cv,20,3,NA,5,0.231981660472229
+0.43,0.417,0.398,0.398,0.337,Thu Mar 08 08:46:01 2018,ctree2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,4,cv,20,3,NA,5,6,0.0372768230736256
+0.797,0.717,0.269,NA,NA,Thu Mar 08 08:46:24 2018,cubist,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,16,cv,20,3,NA,5,8,4
+-0.017,-0.019,0.679,0.695,0.602,Thu Mar 08 08:46:35 2018,dnn,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,4,cv,20,3,NA,5,6,20,14,0.262840297119692,0.276329729543068
+0.544,0.491,0.365,NA,NA,Thu Mar 08 08:46:45 2018,earth,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,3,1
+-0.043,-0.02,0.69,0.696,0.617,Thu Mar 08 08:46:55 2018,elm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,2,radbas
+-0.007,0.013,0.648,0.673,0.596,Thu Mar 08 08:47:05 2018,enet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,0.178150563733652,7.56142984037866
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:47:14 2018,evtree,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+0.656,0.618,0.272,0.26,0.203,Thu Mar 08 08:47:32 2018,extraTrees,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,10,cv,20,3,NA,5,9,5
+-0.052,-0.015,0.789,0.692,0.622,Thu Mar 08 08:47:47 2018,foba,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.681960327943561,random,271,7,nohyperparameters,8,3,no rep,no min,2,0.1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:47:58 2018,gam,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,4
+0.559,0.456,0.403,0.371,0.261,Thu Mar 08 08:48:24 2018,gamboost,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,18,cv,20,3,NA,5,57,no
+0.306,0.307,0.55,NA,NA,Thu Mar 08 08:48:39 2018,gamSpline,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,8,cv,20,3,NA,5,2.12252531200647
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:48:52 2018,gaussprLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:49:10 2018,gaussprPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,11
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:49:24 2018,gaussprRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,7
+0.321,0.335,0.521,0.454,0.402,Thu Mar 08 08:49:34 2018,gbm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,4484,5,0.0607426879298873,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:52:59 2018,gbm_h2o,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,197
+0.643,0.526,-1,NA,NA,Thu Mar 08 08:53:08 2018,gcvEarth,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,1
+-0.122,-0.115,-1,0.76,0.664,Thu Mar 08 08:53:17 2018,glm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:53:28 2018,glm.nb,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,4
+-0.023,0.001,0.651,0.681,0.605,Thu Mar 08 08:53:40 2018,glmboost,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,5,cv,20,3,NA,5,83,yes
+-0.032,0.001,0.651,0.681,0.61,Thu Mar 08 08:53:51 2018,glmnet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,4,cv,20,3,NA,5,0.896894584642723,0.0742774329841709
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:57:14 2018,glmnet_h2o,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,195
+-0.036,-0.038,-1,0.708,0.613,Thu Mar 08 08:57:23 2018,glmStepAIC,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,none
+-0.023,0.002,0.674,0.68,0.606,Thu Mar 08 08:57:36 2018,icr,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,5,cv,20,3,NA,5,4
+-0.095,-0.025,0.683,0.699,0.648,Thu Mar 08 08:57:45 2018,kernelpls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,1
+0.202,0.166,0.57,0.569,0.472,Thu Mar 08 08:57:56 2018,kknn,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,4,cv,20,3,NA,5,5,0.111830469220877,cos
+-0.132,-0.096,0.666,0.748,0.67,Thu Mar 08 08:58:05 2018,knn,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,12
+-0.016,-0.019,0.678,0.695,0.601,Thu Mar 08 08:58:15 2018,krlsPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,2.59273915134522e-05,2
+-0.123,-0.105,0.606,0.753,0.664,Thu Mar 08 08:58:26 2018,krlsRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,4,cv,20,3,NA,5,0.00499862567317132,6.23993355194492
+-0.021,0.003,0.653,0.68,0.604,Thu Mar 08 08:58:35 2018,lars,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,0.231981660472229
+-0.024,0.002,0.64,0.681,0.606,Thu Mar 08 08:58:44 2018,lars2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,4
+-0.021,0.003,0.653,0.68,0.604,Thu Mar 08 08:58:54 2018,lasso,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,0.231981660472229
+-0.05,-0.039,0.671,0.709,0.621,Thu Mar 08 08:59:04 2018,leapBackward,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,2
+-0.059,-0.027,0.671,0.701,0.627,Thu Mar 08 08:59:13 2018,leapForward,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,2
+-0.122,-0.115,-1,0.76,0.664,Thu Mar 08 08:59:22 2018,lm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,TRUE
+-0.036,-0.038,-1,0.708,0.613,Thu Mar 08 08:59:31 2018,lmStepAIC,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 08:59:45 2018,logicBag,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 08:59:57 2018,logreg,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,5
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:00:05 2018,M5,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:00:14 2018,M5Rules,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:00:23 2018,mlpKerasDecay,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:00:33 2018,mlpKerasDropout,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+-0.036,-0.037,0.71,0.708,0.613,Thu Mar 08 09:00:45 2018,msaenet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,5,cv,20,3,NA,5,0.124476588633843,5,0.874740584753454
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 09:00:58 2018,mxnet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 09:01:10 2018,mxnetAdam,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,6
+0.008,0.03,0.651,0.662,0.587,Thu Mar 08 09:01:21 2018,nnet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,4,cv,20,3,NA,5,9,0.000350587197933786
+-0.025,0.007,-1,0.677,0.607,Thu Mar 08 09:01:31 2018,nnls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,none
+0,-0.002,-1,0.684,0.592,Thu Mar 08 09:01:40 2018,null,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,none
+0.565,0.544,0.306,0.311,0.257,Thu Mar 08 09:01:50 2018,parRF,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,9
+-0.122,-0.051,0.624,0.717,0.664,Thu Mar 08 09:02:02 2018,pcaNNet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,4,cv,20,3,NA,5,18,0.00765923021256552
+-0.021,-0.003,0.679,0.684,0.604,Thu Mar 08 09:02:11 2018,pcr,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,4
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 09:02:24 2018,pls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,6
+-0.109,-0.053,0.677,0.718,0.656,Thu Mar 08 09:02:41 2018,plsRglm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,10,cv,20,3,NA,5,3,0.193974414933473
+0.44,0.321,0.554,0.463,0.331,Thu Mar 08 09:02:50 2018,ppr,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 09:03:03 2018,pythonKnnReg,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,6
+0.313,0.243,0.63,0.516,0.406,Thu Mar 08 09:03:17 2018,qrf,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,7,cv,20,3,NA,5,9
+0.517,0.517,0.322,0.329,0.286,Thu Mar 08 09:03:30 2018,ranger,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,6,cv,20,3,NA,5,8,variance,11
+0.627,0.587,0.259,0.281,0.22,Thu Mar 08 09:05:00 2018,Rborist,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,82,cv,20,3,NA,5,9,4
+0.011,-0.023,0.647,0.698,0.585,Thu Mar 08 09:05:10 2018,relaxo,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,6.92988422410516,0.0779366157948971
+0.564,0.55,0.302,0.307,0.258,Thu Mar 08 09:05:21 2018,rf,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,9
+-0.111,-0.061,0.686,0.723,0.657,Thu Mar 08 09:05:31 2018,ridge,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,7.56142984037866
+-0.122,-0.115,0.801,0.76,0.664,Thu Mar 08 09:05:41 2018,rlm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,TRUE,psi.hampel
+0.266,0.236,0.398,0.521,0.434,Thu Mar 08 09:05:51 2018,rpart,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,0.106369129990009
+0.43,0.417,-1,0.398,0.337,Thu Mar 08 09:06:00 2018,rpart1SE,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,none
+0.266,0.236,0.398,0.521,0.434,Thu Mar 08 09:06:09 2018,rpart2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:06:19 2018,rqlasso,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:06:28 2018,rqnc,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:06:37 2018,RRF,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:06:45 2018,RRFglobal,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:07:05 2018,rvmLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,12
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:07:34 2018,rvmPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,22
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:07:49 2018,rvmRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,9
+0.02,-0.037,0.819,0.707,0.58,Thu Mar 08 09:08:32 2018,SBC,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.681960327943561,random,271,36,nohyperparameters,8,3,no rep,no min,1,0.5,0
+-0.095,-0.025,0.683,0.699,0.648,Thu Mar 08 09:08:42 2018,simpls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,1
+-0.009,0.012,0.66,0.674,0.597,Thu Mar 08 09:09:02 2018,spikeslab,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,13,cv,20,3,NA,5,1
+-0.036,-0.038,0.648,0.708,0.613,Thu Mar 08 09:09:14 2018,spls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,4,cv,20,3,NA,5,1,0.48069752054289,0.448447292321362
+-0.043,-0.033,0.702,0.705,0.617,Thu Mar 08 09:09:28 2018,superpc,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.681960327943561,random,271,7,nohyperparameters,8,3,no rep,no min,0.1,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:09:37 2018,svmBoundrangeString,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:09:45 2018,svmExpoString,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+NA,NA,0.684,NA,NA,Thu Mar 08 09:09:57 2018,svmLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,5,cv,20,3,NA,5,0.056108894485857
+-0.16,-0.148,0.684,0.783,0.686,Thu Mar 08 09:10:09 2018,svmLinear2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,4,cv,20,3,NA,5,0.056108894485857
+-0.031,0.004,0.664,0.679,0.61,Thu Mar 08 09:10:19 2018,svmLinear3,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,0.00307549704044838,L1
+NA,NA,0.683,NA,NA,Thu Mar 08 09:10:29 2018,svmPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,4,cv,20,3,NA,5,3,8.79794985021078e-05,165.339159977687
+NA,NA,0.596,NA,NA,Thu Mar 08 09:10:40 2018,svmRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,0.121991714330845,265.796690997291
+NA,NA,0.594,NA,NA,Thu Mar 08 09:10:50 2018,svmRadialCost,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,180.67962280461
+NA,NA,0.596,NA,NA,Thu Mar 08 09:11:00 2018,svmRadialSigma,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,0.121991714330845,265.796690997291
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:11:09 2018,svmSpectrumString,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+0.426,0.401,-1,0.409,0.339,Thu Mar 08 09:11:20 2018,treebag,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,3,cv,20,3,NA,5,none
+-0.095,-0.025,0.683,0.699,0.648,Thu Mar 08 09:11:46 2018,widekernelpls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,2,cv,20,3,NA,5,1
+0.269,0.294,0.404,0.482,0.432,Thu Mar 08 09:12:54 2018,xgbDART,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,62,cv,20,3,NA,5,425,8,0.579131357918261,1.54884408228099,0.828269248479046,0.585471112187952,0.0960101947421208,0.432063890248537,7
+0.746,0.657,0.233,0.234,0.15,Thu Mar 08 09:13:14 2018,xgbLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,13,cv,20,3,NA,5,83,0.792203224387668,7.77593852824005e-05,1.2786042583175
+0.341,0.34,0.433,0.45,0.39,Thu Mar 08 09:14:21 2018,xgbTree,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,59,cv,20,3,NA,5,526,7,0.399866470201174,1.0890927631408,0.440971884131432,9,0.715767799178138
+-0.008,-0.026,0.702,0.699,0.597,Thu Mar 08 09:14:32 2018,xyf,1,1,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.682,random,271,4,cv,20,3,NA,5,1,2,0.893350617899559,hexagonal
+0.005,0,0.713,0.666,0.56,Thu Mar 08 09:14:53 2018,avNNet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,13,cv,20,3,NA,5,8,4.59994796956749e-05,TRUE
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:15:04 2018,bag,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,3
+0.512,0.377,0.343,0.415,0.275,Thu Mar 08 09:15:48 2018,bagEarth,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,36,cv,20,3,NA,5,5,1
+0.42,0.306,-1,0.463,0.327,Thu Mar 08 09:16:29 2018,bagEarthGCV,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,6,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:17:10 2018,bam,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,5
+0.434,0.44,0.452,0.373,0.318,Thu Mar 08 09:18:54 2018,bartMachine,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,97,cv,20,3,NA,5,30,1.28860030788928,0.961805698741227,3.42794852610677,2.14685417944565
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:19:04 2018,bayesglm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+0,-0.002,0.683,0.667,0.563,Thu Mar 08 09:19:14 2018,blasso,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,0.979171734303236
+0.009,0.009,-1,0.66,0.558,Thu Mar 08 09:19:25 2018,blassoAveraged,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,none
+0.001,0,-1,0.666,0.562,Thu Mar 08 09:19:36 2018,bridge,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,none
+0.017,0.014,0.77,0.657,0.553,Thu Mar 08 09:20:58 2018,BstLm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,75,cv,20,3,NA,5,75,0.0405501105678268
+0.131,0.166,0.636,0.555,0.489,Thu Mar 08 09:21:09 2018,cforest,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,4,cv,20,3,NA,5,6
+0,0,0.655,0.666,0.563,Thu Mar 08 09:21:20 2018,ctree,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,4,cv,20,3,NA,5,0.967962071998045
+0.152,0.124,0.655,0.583,0.477,Thu Mar 08 09:21:30 2018,ctree2,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,4,cv,20,3,NA,5,3,0.481537929037586
+0.811,0.762,0.25,NA,NA,Thu Mar 08 09:21:52 2018,cubist,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,15,cv,20,3,NA,5,5,4
+-0.006,-0.009,0.682,0.672,0.566,Thu Mar 08 09:22:03 2018,dnn,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,4,cv,20,3,NA,5,19,16,6,0.479461642354727,0.104557397891767
+0.517,0.428,0.312,NA,NA,Thu Mar 08 09:22:14 2018,earth,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,4,cv,20,3,NA,5,4,1
+-0.011,0.001,0.686,0.666,0.569,Thu Mar 08 09:22:24 2018,elm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,5,sin
+0.019,0.025,0.701,0.65,0.552,Thu Mar 08 09:22:34 2018,enet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,0.0491867265664041,0.00261726979950767
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:22:43 2018,evtree,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+0.721,0.591,0.336,0.272,0.157,Thu Mar 08 09:23:00 2018,extraTrees,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,10,cv,20,3,NA,5,9,8
+0.028,0.028,0.805,0.647,0.547,Thu Mar 08 09:23:15 2018,foba,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.666090626132978,random,264,8,nohyperparameters,8,3,no rep,no min,2,0.1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:23:27 2018,gam,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,4
+0.331,0.309,0.375,0.46,0.376,Thu Mar 08 09:23:55 2018,gamboost,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,20,cv,20,3,NA,5,148,yes
+0.194,0.175,0.541,NA,NA,Thu Mar 08 09:24:11 2018,gamSpline,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,9,cv,20,3,NA,5,2.27689736289904
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:24:24 2018,gaussprLinear,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:24:42 2018,gaussprPoly,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,12
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:24:57 2018,gaussprRadial,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,7
+0.371,0.344,0.49,NA,NA,Thu Mar 08 09:25:07 2018,gbm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,1252,3,0.333282851448515,5
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:28:32 2018,gbm_h2o,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,197
+0.517,0.428,-1,NA,NA,Thu Mar 08 09:28:41 2018,gcvEarth,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,1
+-0.134,-0.12,-1,NA,NA,Thu Mar 08 09:28:51 2018,glm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:29:02 2018,glm.nb,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,4
+0.032,0.056,0.82,0.629,0.545,Thu Mar 08 09:29:14 2018,glmboost,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,5,cv,20,3,NA,5,148,yes
+0,0,0.683,0.666,0.563,Thu Mar 08 09:29:25 2018,glmnet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,4,cv,20,3,NA,5,0.647993312915787,3.80920547285592
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:32:48 2018,glmnet_h2o,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,196
+0.051,0.067,-1,0.621,0.534,Thu Mar 08 09:32:58 2018,glmStepAIC,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,none
+0.008,-0.001,0.759,0.667,0.558,Thu Mar 08 09:33:10 2018,icr,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,5,cv,20,3,NA,5,2
+-0.132,-0.119,0.873,NA,NA,Thu Mar 08 09:33:19 2018,kernelpls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,4
+0.484,0.488,0.614,0.341,0.29,Thu Mar 08 09:33:30 2018,kknn,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,4,cv,20,3,NA,5,6,0.147560179699212,triangular
+0.019,-0.018,0.736,0.678,0.552,Thu Mar 08 09:33:40 2018,knn,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,13
+0.017,0.008,0.683,0.661,0.553,Thu Mar 08 09:33:50 2018,krlsPoly,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,0.786789710246367,2
+-0.036,0.005,0.682,0.663,0.583,Thu Mar 08 09:34:01 2018,krlsRadial,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,4,cv,20,3,NA,5,0.0173766704425923,2.13494975353958
+0.031,0.054,0.72,0.63,0.545,Thu Mar 08 09:34:10 2018,lars,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,0.147932737134397
+0.031,0.047,0.769,0.635,0.545,Thu Mar 08 09:34:20 2018,lars2,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,2
+0.031,0.054,0.72,0.63,0.545,Thu Mar 08 09:34:29 2018,lasso,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,0.147932737134397
+-0.032,-0.123,0.864,0.748,0.581,Thu Mar 08 09:34:39 2018,leapBackward,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,3
+-0.032,-0.123,0.865,0.748,0.581,Thu Mar 08 09:34:48 2018,leapForward,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,3
+-0.134,-0.12,-1,NA,NA,Thu Mar 08 09:34:57 2018,lm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,TRUE
+0.051,0.067,-1,0.621,0.534,Thu Mar 08 09:35:06 2018,lmStepAIC,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 09:35:20 2018,logicBag,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:35:32 2018,logreg,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,5
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:35:41 2018,M5,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:35:50 2018,M5Rules,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:35:59 2018,mlpKerasDecay,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:36:08 2018,mlpKerasDropout,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:36:52 2018,msaenet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,37
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 09:37:05 2018,mxnet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 09:37:18 2018,mxnetAdam,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,6
+0.082,0.027,0.694,0.648,0.517,Thu Mar 08 09:37:29 2018,nnet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,4,cv,20,3,NA,5,4,0.000156558642000562
+-0.027,-0.014,-1,0.675,0.578,Thu Mar 08 09:37:38 2018,nnls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,none
+0,0,-1,0.666,0.563,Thu Mar 08 09:37:47 2018,null,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,none
+0.631,0.536,0.347,0.309,0.207,Thu Mar 08 09:37:57 2018,parRF,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,9
+-0.015,-0.076,0.69,0.717,0.571,Thu Mar 08 09:38:09 2018,pcaNNet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,4,cv,20,3,NA,5,7,0.0651563275389273
+0.007,-0.002,0.74,0.667,0.559,Thu Mar 08 09:38:18 2018,pcr,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,2
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 09:38:31 2018,pls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,6
+-0.004,0.025,0.862,0.649,0.565,Thu Mar 08 09:38:48 2018,plsRglm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,10,cv,20,3,NA,5,9,0.136596835963428
+0.314,0.212,0.59,0.525,0.386,Thu Mar 08 09:38:58 2018,ppr,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 09:39:11 2018,pythonKnnReg,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,6
+0.568,0.496,0.647,0.336,0.243,Thu Mar 08 09:39:24 2018,qrf,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,6,cv,20,3,NA,5,9
+0.543,0.488,0.337,0.341,0.257,Thu Mar 08 09:39:36 2018,ranger,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,5,cv,20,3,NA,5,9,variance,13
+0.599,0.522,0.328,0.318,0.226,Thu Mar 08 09:41:13 2018,Rborist,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,88,cv,20,3,NA,5,9,8
+0.043,0.019,0.767,0.653,0.539,Thu Mar 08 09:41:23 2018,relaxo,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,19.5568856549912,0.484420643653721
+0.631,0.539,0.344,0.307,0.208,Thu Mar 08 09:41:34 2018,rf,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,9
+-0.052,-0.049,0.857,0.699,0.592,Thu Mar 08 09:41:44 2018,ridge,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,0.158861230874159
+-0.035,-0.041,0.865,0.694,0.582,Thu Mar 08 09:41:54 2018,rlm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,FALSE,psi.hampel
+0.294,0.298,0.42,0.468,0.397,Thu Mar 08 09:42:03 2018,rpart,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,0.153666832051914
+0.352,0.353,-1,0.431,0.364,Thu Mar 08 09:42:13 2018,rpart1SE,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,none
+0.294,0.298,0.42,0.468,0.397,Thu Mar 08 09:42:23 2018,rpart2,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:42:33 2018,rqlasso,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:42:42 2018,rqnc,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:42:52 2018,RRF,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:43:01 2018,RRFglobal,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:43:36 2018,rvmLinear,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,28
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:44:07 2018,rvmPoly,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,23
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:44:23 2018,rvmRadial,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,9
+-0.047,-0.103,0.828,0.735,0.589,Thu Mar 08 09:45:09 2018,SBC,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.666090626132978,random,264,38,nohyperparameters,8,3,no rep,no min,1,0.5,0
+-0.132,-0.119,0.873,NA,NA,Thu Mar 08 09:45:19 2018,simpls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,4
+0.018,0.029,0.781,0.647,0.553,Thu Mar 08 09:45:41 2018,spikeslab,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,15,cv,20,3,NA,5,2
+-0.032,-0.123,0.865,0.748,0.581,Thu Mar 08 09:45:53 2018,spls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,4,cv,20,3,NA,5,3,0.917653085431084,0.323996656457894
+-0.01,-0.002,0.685,0.668,0.568,Thu Mar 08 09:46:09 2018,superpc,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.666090626132978,random,264,8,nohyperparameters,8,3,no rep,no min,0.1,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:46:18 2018,svmBoundrangeString,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:46:28 2018,svmExpoString,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+NA,NA,0.857,NA,NA,Thu Mar 08 09:46:49 2018,svmLinear,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,14,cv,20,3,NA,5,0.14548991493398
+-0.021,-0.043,0.857,0.695,0.575,Thu Mar 08 09:47:11 2018,svmLinear2,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,14,cv,20,3,NA,5,0.14548991493398
+0.024,0.032,0.762,0.645,0.549,Thu Mar 08 09:47:24 2018,svmLinear3,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,6,cv,20,3,NA,5,0.0075917844298871,L1
+NA,NA,0.699,NA,NA,Thu Mar 08 09:47:35 2018,svmPoly,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,2,1.82280542695354e-05,0.411062194572182
+NA,NA,0.687,NA,NA,Thu Mar 08 09:47:46 2018,svmRadial,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,0.226999270652371,0.22850213265582
+NA,NA,0.701,NA,NA,Thu Mar 08 09:47:57 2018,svmRadialCost,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,0.146577293013079
+NA,NA,0.687,NA,NA,Thu Mar 08 09:48:07 2018,svmRadialSigma,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,0.226999270652371,0.22850213265582
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:48:17 2018,svmSpectrumString,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,2
+0.421,0.417,-1,0.388,0.326,Thu Mar 08 09:48:28 2018,treebag,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,3,cv,20,3,NA,5,none
+-0.132,-0.119,0.873,NA,NA,Thu Mar 08 09:48:55 2018,widekernelpls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,2,cv,20,3,NA,5,4
+0.264,0.299,0.49,0.467,0.414,Thu Mar 08 09:50:16 2018,xgbDART,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,73,cv,20,3,NA,5,369,6,0.432552467842121,2.03882318222895,0.625043280306272,0.666090686433017,0.0553325258777477,0.258532766136341,2
+0.671,0.537,0.318,0.309,0.185,Thu Mar 08 09:50:36 2018,xgbLinear,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,12,cv,20,3,NA,5,28,0.0173766704425923,0.387494396979041,1.71901442133822
+0.305,0.358,0.49,0.428,0.391,Thu Mar 08 09:51:45 2018,xgbTree,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,62,cv,20,3,NA,5,456,6,0.262520809227368,2.43856126675382,0.379100011661649,6,0.727080352895427
+-0.178,-0.194,0.877,0.795,0.663,Thu Mar 08 09:51:57 2018,xyf,1,2,bm sin(13 t C2 ^ -.2),ignore,none,ICA,HOPPER,14th20hp3cv,0.6661,random,264,4,cv,20,3,NA,5,1,3,0.917688009585254,rectangular
+0,-0.001,1.02,0.617,0.527,Thu Mar 08 09:52:19 2018,avNNet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,14,cv,20,3,NA,5,13,1.03360602064257e-05,FALSE
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:52:30 2018,bag,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,3
+0.646,0.553,0.545,0.275,0.186,Thu Mar 08 09:53:20 2018,bagEarth,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,42,cv,20,3,NA,5,13,2
+0.573,0.513,-1,NA,NA,Thu Mar 08 09:54:01 2018,bagEarthGCV,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,6,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:54:42 2018,bam,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,5
+0.438,0.408,0.681,0.364,0.296,Thu Mar 08 09:56:39 2018,bartMachine,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,109,cv,20,3,NA,5,12,2.10272965021431,0.90963393850252,3.18209415860474,3.51920020999387
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 09:56:48 2018,bayesglm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+0,0,1.01,0.616,0.527,Thu Mar 08 09:56:59 2018,blasso,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,0.571102979127318
+-0.011,-0.009,-1,0.621,0.533,Thu Mar 08 09:57:10 2018,blassoAveraged,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,none
+-0.003,-0.003,-1,0.618,0.528,Thu Mar 08 09:57:21 2018,bridge,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,none
+-0.036,-0.031,1.06,0.635,0.546,Thu Mar 08 09:58:52 2018,BstLm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,85,cv,20,3,NA,5,318,0.00243311053258367
+0.243,0.229,0.929,0.475,0.399,Thu Mar 08 09:59:03 2018,cforest,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,4,cv,20,3,NA,5,9
+0,-0.002,0.955,0.617,0.527,Thu Mar 08 09:59:15 2018,ctree,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,4,cv,20,3,NA,5,0.681762462249026
+0,-0.002,0.955,0.617,0.527,Thu Mar 08 09:59:25 2018,ctree2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,4,cv,20,3,NA,5,1,0.669462762307376
+0.635,0.556,0.433,NA,NA,Thu Mar 08 09:59:48 2018,cubist,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,15,cv,20,3,NA,5,43,0
+0,0,1.01,0.616,0.527,Thu Mar 08 09:59:58 2018,dnn,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,4,cv,20,3,NA,5,18,11,10,0.200642936211079,0.531756646209396
+0.677,0.549,0.553,NA,NA,Thu Mar 08 10:00:09 2018,earth,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,6,1
+-0.117,-0.143,1.01,0.704,0.588,Thu Mar 08 10:00:19 2018,elm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,1,tansig
+0.001,-0.001,1.02,0.616,0.526,Thu Mar 08 10:00:29 2018,enet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,0.00239250506274402,0.0654357225140984
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:00:38 2018,evtree,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+0.649,0.588,0.396,0.254,0.185,Thu Mar 08 10:00:54 2018,extraTrees,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,9,cv,20,3,NA,5,9,14
+-0.02,-0.007,1.02,0.62,0.537,Thu Mar 08 10:01:04 2018,foba,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,5,1.68584321096779
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:01:16 2018,gam,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,5
+0.482,0.444,0.484,0.342,0.273,Thu Mar 08 10:01:42 2018,gamboost,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,19,cv,20,3,NA,5,332,yes
+0.28,0.299,0.787,0.432,0.379,Thu Mar 08 10:02:01 2018,gamSpline,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,11,cv,20,3,NA,5,2.85551489563659
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:02:14 2018,gaussprLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:02:32 2018,gaussprPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,12
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:02:47 2018,gaussprRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,7
+0.378,0.363,0.748,0.392,0.328,Thu Mar 08 10:02:57 2018,gbm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,2225,1,0.00645888434816152,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:06:25 2018,gbm_h2o,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,201
+0.677,0.549,-1,NA,NA,Thu Mar 08 10:06:34 2018,gcvEarth,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,1
+-0.376,-0.283,-1,0.79,0.725,Thu Mar 08 10:06:43 2018,glm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:06:55 2018,glm.nb,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,4
+0.006,0.017,1.04,0.605,0.524,Thu Mar 08 10:07:06 2018,glmboost,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,5,cv,20,3,NA,5,7,no
+0,-0.002,1.01,0.617,0.527,Thu Mar 08 10:07:18 2018,glmnet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,4,cv,20,3,NA,5,0.847003678558394,1.26628606818918
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:10:44 2018,glmnet_h2o,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,199
+-0.265,-0.194,-1,0.735,0.666,Thu Mar 08 10:10:54 2018,glmStepAIC,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,none
+-0.02,-0.02,1.03,0.628,0.537,Thu Mar 08 10:11:06 2018,icr,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,5,cv,20,3,NA,5,1
+-0.335,-0.271,1.23,0.783,0.703,Thu Mar 08 10:11:15 2018,kernelpls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,1
+0.357,0.196,0.846,0.495,0.339,Thu Mar 08 10:11:27 2018,kknn,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,4,cv,20,3,NA,5,9,0.00717751518823206,triweight
+-0.114,-0.152,1.05,0.709,0.587,Thu Mar 08 10:11:37 2018,knn,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,13
+0.004,0,1.02,0.616,0.525,Thu Mar 08 10:11:46 2018,krlsPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,0.171798114378242,3
+-0.002,-0.004,1.02,0.618,0.528,Thu Mar 08 10:11:58 2018,krlsRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,4,cv,20,3,NA,5,0.636434373933173,9047.88667184285
+0.002,0.001,1.02,0.615,0.526,Thu Mar 08 10:12:07 2018,lars,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,0.00642368011176586
+0,-0.002,1.01,0.617,0.527,Thu Mar 08 10:12:16 2018,lars2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,1
+0.002,0.001,1.02,0.615,0.526,Thu Mar 08 10:12:26 2018,lasso,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,0.00642368011176586
+-0.265,-0.194,1.06,0.735,0.666,Thu Mar 08 10:12:35 2018,leapBackward,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,3
+-0.265,-0.194,1.09,0.735,0.666,Thu Mar 08 10:12:45 2018,leapForward,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,3
+-0.376,-0.283,-1,0.79,0.725,Thu Mar 08 10:12:54 2018,lm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,TRUE
+-0.265,-0.194,-1,0.735,0.666,Thu Mar 08 10:13:03 2018,lmStepAIC,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 10:13:17 2018,logicBag,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,7
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:13:30 2018,logreg,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,5
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:13:39 2018,M5,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:13:48 2018,M5Rules,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:13:57 2018,mlpKerasDecay,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:14:07 2018,mlpKerasDropout,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+-0.263,-0.193,0.975,0.734,0.665,Thu Mar 08 10:14:21 2018,msaenet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,7,cv,20,3,NA,5,0.354138726601377,2,2.081401680829
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 10:14:34 2018,mxnet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 10:14:46 2018,mxnetAdam,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,6
+0,-0.001,1.01,0.617,0.527,Thu Mar 08 10:14:58 2018,nnet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,4,cv,20,3,NA,5,13,1.03360602064257e-05
+-0.127,-0.152,-1,0.71,0.594,Thu Mar 08 10:15:06 2018,nnls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,none
+0,-0.002,-1,0.617,0.527,Thu Mar 08 10:15:16 2018,null,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,none
+0.621,0.571,0.446,0.264,0.199,Thu Mar 08 10:15:26 2018,parRF,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,9
+0.127,0.118,0.967,0.543,0.46,Thu Mar 08 10:15:38 2018,pcaNNet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,5,cv,20,3,NA,5,5,0.0826627340252155
+-0.008,-0.008,1.01,0.621,0.531,Thu Mar 08 10:15:47 2018,pcr,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 10:16:00 2018,pls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,6
+-0.328,-0.255,1.1,0.773,0.7,Thu Mar 08 10:16:17 2018,plsRglm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,10,cv,20,3,NA,5,1,0.168816448934376
+0.609,0.491,1.32,0.313,0.206,Thu Mar 08 10:16:27 2018,ppr,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,2
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 10:16:40 2018,pythonKnnReg,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,6
+0.346,0.291,0.964,0.437,0.345,Thu Mar 08 10:16:54 2018,qrf,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,7,cv,20,3,NA,5,9
+0.591,0.554,0.488,0.275,0.215,Thu Mar 08 10:17:07 2018,ranger,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,5,cv,20,3,NA,5,8,variance,1
+0.66,0.631,0.427,0.227,0.179,Thu Mar 08 10:18:55 2018,Rborist,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,100,cv,20,3,NA,5,9,1
+-0.024,-0.029,0.995,0.633,0.539,Thu Mar 08 10:19:05 2018,relaxo,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,14.0837407013316,0.177268962142989
+0.608,0.558,0.455,0.272,0.207,Thu Mar 08 10:19:16 2018,rf,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,9
+-0.328,-0.243,1.23,0.765,0.7,Thu Mar 08 10:19:26 2018,ridge,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,1.20787521916956
+-0.376,-0.283,1.29,0.79,0.725,Thu Mar 08 10:19:36 2018,rlm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,TRUE,psi.hampel
+0.368,0.348,0.62,0.402,0.332,Thu Mar 08 10:19:45 2018,rpart,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,0.162309563714557
+0.49,0.435,-1,0.348,0.268,Thu Mar 08 10:19:55 2018,rpart1SE,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,none
+0.368,0.348,0.62,0.402,0.332,Thu Mar 08 10:20:04 2018,rpart2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:20:14 2018,rqlasso,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:20:23 2018,rqnc,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:20:32 2018,RRF,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:20:41 2018,RRFglobal,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:20:54 2018,rvmLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:21:19 2018,rvmPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,17
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:21:35 2018,rvmRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,9
+0.008,-0.004,1.05,0.618,0.522,Thu Mar 08 10:21:53 2018,SBC,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,11,cv,20,3,NA,5,2,0.819457578472793,0.388455513166264
+-0.335,-0.271,1.23,0.783,0.703,Thu Mar 08 10:22:03 2018,simpls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,1
+0.052,0.057,1.03,0.581,0.499,Thu Mar 08 10:22:25 2018,spikeslab,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,14,cv,20,3,NA,5,1
+-0.101,-0.099,1.08,0.676,0.58,Thu Mar 08 10:22:36 2018,spls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,4,cv,20,3,NA,5,1,0.652884960873052,0.120629781857133
+-0.005,-0.003,1.04,0.618,0.529,Thu Mar 08 10:22:49 2018,superpc,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.615720964037733,random,242,6,nohyperparameters,8,3,no rep,no min,0.1,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:22:59 2018,svmBoundrangeString,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:23:07 2018,svmExpoString,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+NA,NA,1.16,NA,NA,Thu Mar 08 10:23:22 2018,svmLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,7,cv,20,3,NA,5,0.0334084115990036
+-0.214,-0.181,1.16,0.727,0.64,Thu Mar 08 10:23:35 2018,svmLinear2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,6,cv,20,3,NA,5,0.0334084115990036
+-0.006,-0.006,1.02,0.619,0.53,Thu Mar 08 10:23:46 2018,svmLinear3,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,4,cv,20,3,NA,5,0.00106751614331377,L2
+NA,NA,1.02,NA,NA,Thu Mar 08 10:23:57 2018,svmPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,2,3.22380355317651e-05,0.0343558584404226
+NA,NA,1.03,NA,NA,Thu Mar 08 10:24:08 2018,svmRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,0.0120429054427504,0.0668421168454104
+NA,NA,1.03,NA,NA,Thu Mar 08 10:24:18 2018,svmRadialCost,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,0.0334084115990036
+NA,NA,1.03,NA,NA,Thu Mar 08 10:24:28 2018,svmRadialSigma,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,0.0120429054427504,0.0668421168454104
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:24:37 2018,svmSpectrumString,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+0.486,0.451,-1,0.338,0.271,Thu Mar 08 10:24:48 2018,treebag,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,3,cv,20,3,NA,5,none
+-0.335,-0.271,1.23,0.783,0.703,Thu Mar 08 10:25:13 2018,widekernelpls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,2,cv,20,3,NA,5,1
+0.306,0.263,0.637,0.454,0.365,Thu Mar 08 10:26:44 2018,xgbDART,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,83,cv,20,3,NA,5,848,8,0.291945383653045,2.44693777058274,0.878336233494338,0.470506837125868,0.301494162378367,0.519453698839061,1
+0.691,0.619,0.419,0.235,0.163,Thu Mar 08 10:27:02 2018,xgbLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,11,cv,20,3,NA,5,9,0.442551754376732,0.00577202838109032,1.03035678109154
+0.423,0.422,0.647,0.356,0.304,Thu Mar 08 10:28:15 2018,xgbTree,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,65,cv,20,3,NA,5,332,2,0.589975779726403,3.52907021995634,0.329978268034756,7,0.890362301957794
+-0.433,-0.51,1.1,0.93,0.755,Thu Mar 08 10:28:27 2018,xyf,1,1,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.6157,random,242,5,cv,20,3,NA,5,1,6,0.0516173898056149,rectangular
+0.01,0.006,0.701,0.669,0.572,Thu Mar 08 10:28:46 2018,avNNet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,11,cv,20,3,NA,5,10,1.10831753551877e-05,TRUE
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:28:57 2018,bag,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,3
+0.543,0.423,0.35,NA,NA,Thu Mar 08 10:29:41 2018,bagEarth,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,36,cv,20,3,NA,5,10,2
+0.572,0.475,-1,NA,NA,Thu Mar 08 10:30:23 2018,bagEarthGCV,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,6,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:31:04 2018,bam,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,5
+0.678,0.62,0.47,NA,NA,Thu Mar 08 10:32:44 2018,bartMachine,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,93,cv,20,3,NA,5,30,1.17712221690454,0.934730517119169,3.064243436791,0.357505573192611
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:32:54 2018,bayesglm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+0,0,0.683,0.673,0.578,Thu Mar 08 10:33:05 2018,blasso,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,0.934229342034087
+-0.01,0.001,-1,0.672,0.584,Thu Mar 08 10:33:15 2018,blassoAveraged,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,none
+-0.003,-0.001,-1,0.674,0.58,Thu Mar 08 10:33:25 2018,bridge,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,none
+-0.006,-0.002,0.71,0.674,0.582,Thu Mar 08 10:34:41 2018,BstLm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,69,cv,20,3,NA,5,18,0.0164765674527735
+0.204,0.227,0.632,0.52,0.46,Thu Mar 08 10:34:52 2018,cforest,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,4,cv,20,3,NA,5,9
+0.326,0.222,0.598,0.524,0.39,Thu Mar 08 10:35:04 2018,ctree,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,4,cv,20,3,NA,5,0.633694186341017
+0,-0.001,0.683,0.674,0.578,Thu Mar 08 10:35:15 2018,ctree2,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,4,cv,20,3,NA,5,2,0.662040039664134
+0.666,0.576,0.325,NA,NA,Thu Mar 08 10:35:37 2018,cubist,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,15,cv,20,3,NA,5,2,6
+0,-0.005,0.678,0.676,0.578,Thu Mar 08 10:35:48 2018,dnn,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,4,cv,20,3,NA,5,19,7,10,0.371208941424265,0.324056627857499
+0.49,0.399,0.301,NA,NA,Thu Mar 08 10:35:58 2018,earth,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,3,2
+0.013,-0.015,0.652,0.683,0.571,Thu Mar 08 10:36:08 2018,elm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,5,sin
+0,0.003,0.686,0.671,0.578,Thu Mar 08 10:36:18 2018,enet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,0.00744403409771621,0.00513595020256299
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:36:27 2018,evtree,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+0.737,0.648,0.315,0.237,0.152,Thu Mar 08 10:36:44 2018,extraTrees,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,10,cv,20,3,NA,5,8,22
+-0.054,-0.004,0.767,0.676,0.61,Thu Mar 08 10:36:54 2018,foba,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,8,0.83043919387401
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:37:05 2018,gam,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,4
+0.484,0.4,0.366,0.404,0.298,Thu Mar 08 10:37:31 2018,gamboost,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,19,cv,20,3,NA,5,36,yes
+0.422,0.362,0.6,0.429,0.334,Thu Mar 08 10:37:47 2018,gamSpline,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,8,cv,20,3,NA,5,2.58321788627654
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:38:00 2018,gaussprLinear,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:38:19 2018,gaussprPoly,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,12
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:38:34 2018,gaussprRadial,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,7
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:38:48 2018,gbm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,8
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:42:15 2018,gbm_h2o,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,200
+0.554,0.51,-1,NA,NA,Thu Mar 08 10:42:25 2018,gcvEarth,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,1
+-0.165,-0.099,-1,NA,NA,Thu Mar 08 10:42:34 2018,glm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:42:45 2018,glm.nb,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,4
+-0.045,0.021,0.762,0.659,0.604,Thu Mar 08 10:42:57 2018,glmboost,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,5,cv,20,3,NA,5,36,yes
+0,-0.001,0.683,0.674,0.578,Thu Mar 08 10:43:08 2018,glmnet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,4,cv,20,3,NA,5,0.661101550795138,6.12812752920467
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:46:34 2018,glmnet_h2o,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,199
+-0.124,-0.064,-1,0.716,0.65,Thu Mar 08 10:46:44 2018,glmStepAIC,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,none
+0.002,0.001,0.713,0.672,0.577,Thu Mar 08 10:46:56 2018,icr,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,5,cv,20,3,NA,5,1
+-0.225,-0.123,0.895,0.756,0.708,Thu Mar 08 10:47:05 2018,kernelpls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,1
+0.333,0.263,0.583,0.496,0.385,Thu Mar 08 10:47:17 2018,kknn,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,4,cv,20,3,NA,5,9,0.0521270697936416,inv
+-0.01,0.009,0.734,0.667,0.584,Thu Mar 08 10:47:27 2018,knn,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,13
+0.001,-0.002,0.683,0.674,0.577,Thu Mar 08 10:47:38 2018,krlsPoly,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,0.125725449930672,3
+-0.018,-0.004,0.679,0.675,0.589,Thu Mar 08 10:47:49 2018,krlsRadial,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,4,cv,20,3,NA,5,0.0202072751012073,1.31317984667004
+-0.001,0.015,0.696,0.663,0.578,Thu Mar 08 10:47:59 2018,lars,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,0.0355282202363014
+0,-0.001,0.683,0.674,0.578,Thu Mar 08 10:48:08 2018,lars2,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,1
+-0.001,0.015,0.696,0.663,0.578,Thu Mar 08 10:48:18 2018,lasso,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,0.0355282202363014
+-0.032,0.037,0.795,0.648,0.596,Thu Mar 08 10:48:28 2018,leapBackward,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,2
+-0.124,-0.064,0.832,0.716,0.65,Thu Mar 08 10:48:37 2018,leapForward,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,3
+-0.165,-0.099,-1,NA,NA,Thu Mar 08 10:48:47 2018,lm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,TRUE
+-0.124,-0.064,-1,0.716,0.65,Thu Mar 08 10:48:56 2018,lmStepAIC,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 10:49:10 2018,logicBag,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:49:22 2018,logreg,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,5
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:49:31 2018,M5,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:49:40 2018,M5Rules,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:49:49 2018,mlpKerasDecay,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:49:59 2018,mlpKerasDropout,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:50:42 2018,msaenet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,36
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 10:50:55 2018,mxnet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 10:51:08 2018,mxnetAdam,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,6
+0.032,0.034,0.688,0.65,0.56,Thu Mar 08 10:51:19 2018,nnet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,4,cv,20,3,NA,5,10,1.10831753551877e-05
+-0.089,-0.03,-1,0.693,0.629,Thu Mar 08 10:51:28 2018,nnls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,none
+0,-0.001,-1,0.674,0.578,Thu Mar 08 10:51:37 2018,null,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,none
+0.634,0.542,0.365,0.308,0.212,Thu Mar 08 10:51:47 2018,parRF,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,4,cv,20,3,NA,5,9
+-0.003,-0.034,0.673,0.696,0.58,Thu Mar 08 10:51:59 2018,pcaNNet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,4,cv,20,3,NA,5,11,6.13710521179404e-05
+-0.001,-0.002,0.701,0.674,0.579,Thu Mar 08 10:52:08 2018,pcr,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 10:52:21 2018,pls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,6
+-0.197,-0.084,0.813,0.729,0.692,Thu Mar 08 10:52:38 2018,plsRglm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,10,cv,20,3,NA,5,1,0.132408007932827
+-0.146,-0.345,0.837,NA,NA,Thu Mar 08 10:52:48 2018,ppr,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,2
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 10:53:01 2018,pythonKnnReg,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,6
+0.459,0.359,0.581,0.432,0.313,Thu Mar 08 10:53:15 2018,qrf,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,7,cv,20,3,NA,5,9
+0.62,0.556,0.365,0.299,0.22,Thu Mar 08 10:53:28 2018,ranger,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,6,cv,20,3,NA,5,9,variance,14
+0.646,0.548,0.342,0.304,0.204,Thu Mar 08 10:55:15 2018,Rborist,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,100,cv,20,3,NA,5,9,6
+-0.161,-0.127,0.709,NA,NA,Thu Mar 08 10:55:26 2018,relaxo,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,5.45775626339417,0.874177481746301
+0.651,0.557,0.368,0.298,0.202,Thu Mar 08 10:55:37 2018,rf,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,9
+-0.177,-0.075,0.892,0.723,0.68,Thu Mar 08 10:55:47 2018,ridge,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,0.83043919387401
+-0.165,-0.099,0.913,NA,NA,Thu Mar 08 10:55:57 2018,rlm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,TRUE,psi.hampel
+0.317,0.337,0.431,0.446,0.395,Thu Mar 08 10:56:07 2018,rpart,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,0.140189166338778
+0.517,0.499,-1,0.337,0.279,Thu Mar 08 10:56:16 2018,rpart1SE,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,none
+0.317,0.337,0.431,0.446,0.395,Thu Mar 08 10:56:26 2018,rpart2,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:56:35 2018,rqlasso,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:56:45 2018,rqnc,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:56:54 2018,RRF,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:57:04 2018,RRFglobal,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:57:18 2018,rvmLinear,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:57:41 2018,rvmPoly,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,17
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:57:58 2018,rvmRadial,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,9
+0.132,-0.025,0.896,0.69,0.502,Thu Mar 08 10:58:14 2018,SBC,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,9,cv,20,3,NA,5,1,0.650731193833053,0.535743422806263
+-0.225,-0.123,0.895,0.756,0.708,Thu Mar 08 10:58:23 2018,simpls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,1
+-0.003,0.049,0.702,0.64,0.58,Thu Mar 08 10:58:44 2018,spikeslab,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,13,cv,20,3,NA,5,1
+-0.004,0.059,0.798,0.633,0.581,Thu Mar 08 10:58:55 2018,spls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,4,cv,20,3,NA,5,1,0.809800911461934,0.172411793610081
+-0.001,-0.009,0.699,0.679,0.579,Thu Mar 08 10:59:09 2018,superpc,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.672971783088514,random,312,7,nohyperparameters,8,3,no rep,no min,0.1,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:59:19 2018,svmBoundrangeString,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 10:59:28 2018,svmExpoString,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+NA,NA,0.821,NA,NA,Thu Mar 08 10:59:40 2018,svmLinear,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,5,cv,20,3,NA,5,0.0452143114394162
+-0.093,-0.066,0.821,0.717,0.632,Thu Mar 08 10:59:52 2018,svmLinear2,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,5,cv,20,3,NA,5,0.0452143114394162
+-0.019,-0.006,0.698,0.677,0.589,Thu Mar 08 11:00:02 2018,svmLinear3,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,0.00159809003350577,L1
+NA,NA,0.689,NA,NA,Thu Mar 08 11:00:13 2018,svmPoly,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,2,1.09511832957904e-05,0.27090203700428
+NA,NA,0.705,NA,NA,Thu Mar 08 11:00:23 2018,svmRadial,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,0.128531533417047,0.133727446679679
+NA,NA,0.697,NA,NA,Thu Mar 08 11:00:34 2018,svmRadialCost,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,0.0452143114394162
+NA,NA,0.705,NA,NA,Thu Mar 08 11:00:45 2018,svmRadialSigma,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,0.128531533417047,0.133727446679679
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:00:54 2018,svmSpectrumString,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,2
+0.494,0.495,-1,0.34,0.293,Thu Mar 08 11:01:04 2018,treebag,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,3,cv,20,3,NA,5,none
+-0.225,-0.123,0.895,0.756,0.708,Thu Mar 08 11:01:30 2018,widekernelpls,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,2,cv,20,3,NA,5,1
+0.392,0.413,0.503,0.395,0.351,Thu Mar 08 11:02:32 2018,xgbDART,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,55,cv,20,3,NA,5,91,7,0.252635449228808,1.54636419843882,0.734439574298449,0.663732047006488,0.155678364583291,0.370574059989303,1
+0.711,0.545,0.312,0.306,0.167,Thu Mar 08 11:02:53 2018,xgbLinear,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,13,cv,20,3,NA,5,31,0.125725449930672,0.234902375519908,1.92834477382712
+0.256,0.292,0.491,0.476,0.43,Thu Mar 08 11:03:59 2018,xgbTree,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,59,cv,20,3,NA,5,262,3,0.214604000294115,3.29737181775272,0.679496443178505,7,0.673633170023095
+-0.104,-0.132,0.889,0.762,0.638,Thu Mar 08 11:04:10 2018,xyf,1,2,bm sin(13 t C2 ^ -.2),ignore,none,centernscale,HOPPER,14th20hp3cv,0.673,random,312,4,cv,20,3,NA,5,2,4,0.791557404347695,hexagonal
+-0.071,-0.076,0.737,0.659,0.573,Thu Mar 08 11:04:32 2018,avNNet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,13,cv,20,3,NA,5,19,1.08034069601766,FALSE
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:04:43 2018,bag,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,4
+0.686,0.585,0.389,0.282,0.178,Thu Mar 08 11:05:38 2018,bagEarth,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,48,cv,20,3,NA,5,5,2
+0.547,0.523,-1,NA,NA,Thu Mar 08 11:06:21 2018,bagEarthGCV,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,6,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:07:02 2018,bam,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,5
+0.507,0.472,0.403,NA,NA,Thu Mar 08 11:08:54 2018,bartMachine,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,104,cv,20,3,NA,5,63,0.880834229756147,0.915391176845878,2.34240548498929,0.760746769374236
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:09:04 2018,bayesglm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+0.004,-0.004,0.704,0.624,0.532,Thu Mar 08 11:09:15 2018,blasso,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,0.441117853857577
+0.007,-0.001,-1,0.622,0.531,Thu Mar 08 11:09:26 2018,blassoAveraged,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,none
+0.002,-0.002,-1,0.623,0.533,Thu Mar 08 11:09:36 2018,bridge,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,none
+-0.016,-0.032,0.708,0.642,0.543,Thu Mar 08 11:11:00 2018,BstLm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,77,cv,20,3,NA,5,1,0.320556902061915
+0.247,0.274,0.627,0.449,0.402,Thu Mar 08 11:11:11 2018,cforest,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,4,cv,20,3,NA,5,9
+0.391,0.357,0.644,0.392,0.323,Thu Mar 08 11:11:22 2018,ctree,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,4,cv,20,3,NA,5,0.313152501126751
+0.391,0.357,0.644,0.392,0.323,Thu Mar 08 11:11:34 2018,ctree2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,4,cv,20,3,NA,5,9,0.176166845951229
+0.76,0.755,0.354,NA,NA,Thu Mar 08 11:11:59 2018,cubist,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,18,cv,20,3,NA,5,54,0
+0,-0.003,0.704,0.624,0.534,Thu Mar 08 11:12:09 2018,dnn,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,4,cv,20,3,NA,5,18,8,14,0.0854656018083915,0.358645422756672
+0.753,0.674,0.342,NA,NA,Thu Mar 08 11:12:20 2018,earth,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,3,2
+-0.031,-0.048,0.721,0.645,0.551,Thu Mar 08 11:12:30 2018,elm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,1,tansig
+0.033,0.002,0.703,0.618,0.516,Thu Mar 08 11:12:40 2018,enet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,0.153472614940256,0.275477921374238
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:12:49 2018,evtree,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+0.762,0.686,0.224,0.216,0.137,Thu Mar 08 11:13:07 2018,extraTrees,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,11,cv,20,3,NA,5,8,15
+0.018,0.001,0.685,0.62,0.524,Thu Mar 08 11:13:17 2018,foba,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,8,3.68484359671212
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:13:29 2018,gam,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,4
+0.577,0.538,0.335,0.298,0.228,Thu Mar 08 11:13:56 2018,gamboost,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,20,cv,20,3,NA,5,67,yes
+0.215,0.225,0.512,NA,NA,Thu Mar 08 11:14:12 2018,gamSpline,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,9,cv,20,3,NA,5,2.20558926928788
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:14:24 2018,gaussprLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:14:43 2018,gaussprPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,12
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:14:58 2018,gaussprRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,7
+0.201,0.204,0.639,0.497,0.428,Thu Mar 08 11:15:08 2018,gbm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,6,6,0.048321690998273,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:18:34 2018,gbm_h2o,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,200
+0.74,0.606,-1,NA,NA,Thu Mar 08 11:18:44 2018,gcvEarth,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,1
+-0.366,-0.275,-1,NA,NA,Thu Mar 08 11:18:53 2018,glm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:19:05 2018,glm.nb,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,4
+0.026,0.018,0.706,0.61,0.52,Thu Mar 08 11:19:16 2018,glmboost,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,5,cv,20,3,NA,5,2,no
+0.012,-0.004,0.702,0.623,0.528,Thu Mar 08 11:19:27 2018,glmnet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,4,cv,20,3,NA,5,0.0200371139217168,2.37442061668382
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:22:54 2018,glmnet_h2o,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,200
+-0.295,-0.284,-1,NA,NA,Thu Mar 08 11:23:03 2018,glmStepAIC,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,none
+0.02,0.008,0.723,0.618,0.524,Thu Mar 08 11:23:16 2018,icr,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,6,cv,20,3,NA,5,1
+-0.221,-0.235,0.776,0.763,0.649,Thu Mar 08 11:23:26 2018,kernelpls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,1
+0.312,0.294,0.602,0.446,0.37,Thu Mar 08 11:23:37 2018,kknn,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,4,cv,20,3,NA,5,8,0.528500537853688,triangular
+-0.126,-0.151,0.716,0.715,0.604,Thu Mar 08 11:23:47 2018,knn,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,5
+0.01,-0.006,0.701,0.629,0.529,Thu Mar 08 11:23:57 2018,krlsPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,0.081014382237863,2
+-0.185,-0.227,0.645,0.759,0.638,Thu Mar 08 11:24:07 2018,krlsRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,0.00822147167216334,15.1595113524231
+0.001,-0.002,0.704,0.623,0.534,Thu Mar 08 11:24:16 2018,lars,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,0.00119834113866091
+0.023,-0.004,0.702,0.621,0.521,Thu Mar 08 11:24:25 2018,lars2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,4
+0.001,-0.002,0.704,0.623,0.534,Thu Mar 08 11:24:35 2018,lasso,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,0.00119834113866091
+-0.152,-0.136,0.753,NA,NA,Thu Mar 08 11:24:45 2018,leapBackward,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,3
+-0.152,-0.136,0.753,NA,NA,Thu Mar 08 11:24:54 2018,leapForward,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,3
+-0.366,-0.275,-1,NA,NA,Thu Mar 08 11:25:03 2018,lm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,TRUE
+-0.295,-0.284,-1,NA,NA,Thu Mar 08 11:25:13 2018,lmStepAIC,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 11:25:26 2018,logicBag,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:25:38 2018,logreg,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,5
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:25:47 2018,M5,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:25:57 2018,M5Rules,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:26:06 2018,mlpKerasDecay,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:26:15 2018,mlpKerasDropout,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:26:55 2018,msaenet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,33
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 11:27:08 2018,mxnet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 11:27:20 2018,mxnetAdam,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,6
+-0.071,-0.076,0.737,0.659,0.573,Thu Mar 08 11:27:32 2018,nnet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,4,cv,20,3,NA,5,19,1.08034069601766
+-0.184,-0.222,-1,0.756,0.634,Thu Mar 08 11:27:41 2018,nnls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,none
+0,-0.003,-1,0.624,0.534,Thu Mar 08 11:27:50 2018,null,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,none
+0.639,0.603,0.284,0.258,0.197,Thu Mar 08 11:28:00 2018,parRF,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,4,cv,20,3,NA,5,9
+-0.157,-0.133,0.677,0.7,0.627,Thu Mar 08 11:28:12 2018,pcaNNet,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,5,cv,20,3,NA,5,16,0.0298276032424521
+-0.022,-0.024,0.706,0.636,0.546,Thu Mar 08 11:28:21 2018,pcr,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 11:28:34 2018,pls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,6
+-0.089,-0.06,0.758,0.651,0.578,Thu Mar 08 11:28:52 2018,plsRglm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,10,cv,20,3,NA,5,6,0.140965739870444
+-0.152,-0.176,0.724,NA,NA,Thu Mar 08 11:29:02 2018,ppr,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 08 11:29:14 2018,pythonKnnReg,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,6
+0.204,0.123,0.559,NA,NA,Thu Mar 08 11:29:28 2018,qrf,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,7,cv,20,3,NA,5,9
+0.639,0.614,0.301,0.249,0.195,Thu Mar 08 11:29:41 2018,ranger,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,6,cv,20,3,NA,5,8,variance,6
+0.688,0.66,0.298,0.222,0.168,Thu Mar 08 11:31:00 2018,Rborist,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,72,cv,20,3,NA,5,7,4
+-0.036,-0.062,0.716,0.649,0.547,Thu Mar 08 11:31:11 2018,relaxo,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,17.2498109216727,0.354719697963446
+0.632,0.595,0.286,0.262,0.2,Thu Mar 08 11:31:22 2018,rf,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,9
+-0.164,-0.152,0.759,0.706,0.616,Thu Mar 08 11:31:32 2018,ridge,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,1.70085254411437
+-0.366,-0.275,0.843,NA,NA,Thu Mar 08 11:31:42 2018,rlm,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,TRUE,psi.hampel
+0.381,0.367,0.44,0.385,0.325,Thu Mar 08 11:31:51 2018,rpart,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,0.194033122755197
+0.391,0.357,-1,0.392,0.323,Thu Mar 08 11:32:01 2018,rpart1SE,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,none
+0.381,0.367,0.44,0.385,0.325,Thu Mar 08 11:32:10 2018,rpart2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:32:19 2018,rqlasso,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:32:30 2018,rqnc,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:32:39 2018,RRF,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:32:48 2018,RRFglobal,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:33:20 2018,rvmLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,25
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:34:10 2018,rvmPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,26
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:34:28 2018,rvmRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,10
+-0.045,-0.064,0.864,0.67,0.568,Thu Mar 08 11:35:11 2018,SBC,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.623901100602758,random,234,36,nohyperparameters,8,3,no rep,no min,1,0.5,0
+-0.221,-0.235,0.776,0.763,0.649,Thu Mar 08 11:35:21 2018,simpls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,1
+0.036,0.019,0.696,0.607,0.515,Thu Mar 08 11:35:43 2018,spikeslab,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,14,cv,20,3,NA,5,3
+-0.089,-0.06,0.711,0.651,0.578,Thu Mar 08 11:35:55 2018,spls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,4,cv,20,3,NA,5,1,0.700826685177162,0.156576250563376
+-0.038,-0.054,0.738,0.651,0.555,Thu Mar 08 11:36:09 2018,superpc,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.623901100602758,random,234,6,nohyperparameters,8,3,no rep,no min,0.1,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:36:19 2018,svmBoundrangeString,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:36:28 2018,svmExpoString,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+NA,NA,0.749,NA,NA,Thu Mar 08 11:36:43 2018,svmLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,8,cv,20,3,NA,5,0.0316417919823697
+-0.096,-0.089,0.749,0.672,0.587,Thu Mar 08 11:36:56 2018,svmLinear2,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,6,cv,20,3,NA,5,0.0316417919823697
+-0.007,-0.035,0.709,0.638,0.537,Thu Mar 08 11:37:09 2018,svmLinear3,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,5,cv,20,3,NA,5,0.00246910151523172,L1
+NA,NA,0.707,NA,NA,Thu Mar 08 11:37:19 2018,svmPoly,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,2,8.58747992129913e-05,0.154821370138115
+NA,NA,0.642,NA,NA,Thu Mar 08 11:37:30 2018,svmRadial,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,4,cv,20,3,NA,5,0.0895490586673862,509.288432656944
+NA,NA,0.632,NA,NA,Thu Mar 08 11:37:41 2018,svmRadialCost,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,4,cv,20,3,NA,5,13.3866013001756
+NA,NA,0.642,NA,NA,Thu Mar 08 11:37:52 2018,svmRadialSigma,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,3,cv,20,3,NA,5,0.0895490586673862,509.288432656944
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:38:01 2018,svmSpectrumString,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+0.576,0.554,-1,0.282,0.228,Thu Mar 08 11:38:12 2018,treebag,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,4,cv,20,3,NA,5,none
+-0.221,-0.235,0.776,0.763,0.649,Thu Mar 08 11:38:39 2018,widekernelpls,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,2,cv,20,3,NA,5,1
+0.484,0.525,0.428,0.295,0.275,Thu Mar 08 11:40:18 2018,xgbDART,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,92,cv,20,3,NA,5,872,4,0.409797893441282,1.22093716869131,0.634262952953577,0.500366033706814,0.154346987595782,0.573151132510975,6
+0.778,0.751,0.219,0.164,0.123,Thu Mar 08 11:40:38 2018,xgbLinear,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,12,cv,20,3,NA,5,13,0.000263724572947914,0.258550550913739,1.80651415418833
+0.4,0.414,0.509,0.363,0.322,Thu Mar 08 11:42:02 2018,xgbTree,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,76,cv,20,3,NA,5,548,3,0.228606273454148,3.4657002822496,0.641941109392792,4,0.520580410549883
+0.066,-0.016,0.726,0.634,0.499,Thu Mar 08 11:42:13 2018,xyf,1,1,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6239,random,234,4,cv,20,3,NA,5,1,2,0.266827012305148,hexagonal
+0.004,-0.009,0.708,0.69,0.625,Thu Mar 08 11:42:33 2018,avNNet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,12,cv,20,3,NA,5,1,2.00876515045226e-05,FALSE
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:42:44 2018,bag,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,4
+0.76,0.697,0.401,0.207,0.151,Thu Mar 08 11:43:31 2018,bagEarth,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,39,cv,20,3,NA,5,3,1
+0.681,0.65,-1,NA,NA,Thu Mar 08 11:44:14 2018,bagEarthGCV,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,6,cv,20,3,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:44:55 2018,bam,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,5
+0.654,0.645,0.433,NA,NA,Thu Mar 08 11:47:11 2018,bartMachine,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,128,cv,20,3,NA,5,36,1.10115796676837,0.902410562383011,3.90543413162231,0.936045327689499
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:47:21 2018,bayesglm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+0,-0.002,0.678,0.685,0.628,Thu Mar 08 11:47:32 2018,blasso,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,0.932186056161299
+-0.006,0,-1,0.685,0.632,Thu Mar 08 11:47:42 2018,blassoAveraged,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,none
+0,0,-1,0.685,0.628,Thu Mar 08 11:47:53 2018,bridge,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,none
+-0.014,-0.01,0.686,0.691,0.637,Thu Mar 08 11:49:16 2018,BstLm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,76,cv,20,3,NA,5,7,0.0312424283365253
+0.215,0.254,0.627,0.511,0.493,Thu Mar 08 11:49:27 2018,cforest,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,9
+0.566,0.535,0.611,0.318,0.272,Thu Mar 08 11:49:38 2018,ctree,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,0.0628018598072231
+0.51,0.453,0.611,0.374,0.308,Thu Mar 08 11:49:49 2018,ctree2,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,1,0.0504881942179054
+0.88,0.847,0.333,NA,NA,Thu Mar 08 11:50:10 2018,cubist,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,13,cv,20,3,NA,5,8,0
+0,0,0.672,0.684,0.628,Thu Mar 08 11:50:20 2018,dnn,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,4,cv,20,3,NA,5,18,15,13,0.652732979925349,0.114688327955082
+0.844,0.783,0.382,NA,NA,Thu Mar 08 11:50:30 2018,earth,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,3,1
+-0.003,-0.026,0.675,0.702,0.629,Thu Mar 08 11:50:40 2018,elm,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,2,sin
+0.002,0.003,0.678,0.682,0.626,Thu Mar 08 11:50:51 2018,enet,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,3,cv,20,3,NA,5,0.00488362461328506,0.00107428027759702
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:51:01 2018,evtree,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,2
+0.807,0.794,0.32,0.141,0.121,Thu Mar 08 11:51:18 2018,extraTrees,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.6842,random,309,10,cv,20,3,NA,5,9,7
+0.061,0.067,0.795,0.638,0.59,Thu Mar 08 11:51:34 2018,foba,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,0.684203201419968,random,309,8,nohyperparameters,8,3,no rep,no min,2,0.1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 08 11:51:46 2018,gam,1,2,bm sin(13 t C2 ^ -.2),ignore,none,expoTrans,HOPPER,14th20hp3cv,5
