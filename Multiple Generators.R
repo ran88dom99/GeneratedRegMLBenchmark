@@ -326,6 +326,23 @@ write.table(round(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
+######poly C3^.1 t (C2^1.6+ C2^.6)########
+gen.count=gen.count+1
+gens.names[gen.count]="poly C3^.1 t C2"
+max.out[gen.count]=1
+varim=c(1,1)
+varimport[gen.count,1:length(varim)]=varim
+for(Row in 1:Rows){
+  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+  simScores[Row,3]=simScores[Row,3]*10
+}
+for(Row in 1:Rows){
+  simScores[Row,1]=(simScores[Row,2]^.6+simScores[Row,2]^1.6)*(simScores[Row,3]^.1)
+}
+write.table(round(simScores,digits  = 3),
+            file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
 ######poly C1 ^ C2######
 gen.count=gen.count+1
 gens.names[gen.count]="poly C1 ^ C2"
