@@ -421,3 +421,15 @@ pcaNNet, Thu Feb 01 16:23:49 2018, 0.403, bas interactive latent features, c(92.
 pcr, Thu Feb 01 16:23:52 2018, 0.996, bas interactive latent features, c(92.2, 100, 76, 29.1, 42.4, 42.9, 0, 58.4, 94)
 ppr, Thu Feb 01 16:24:22 2018, 0.999, bas interactive latent features, c(92.2, 100, 76, 29.1, 42.4, 42.9, 0, 58.4, 94)
 qrf, Thu Feb 01 16:25:31 2018, 0.863, bas interactive latent features, c(92.2, 100, 76, 29.1, 42.4, 42.9, 0, 58.4, 94)
+ranger, Sat Mar 10 17:01:23 2018, 0.973, bas interactive latent features, Failed
+Rborist, Sat Mar 10 17:03:25 2018, 0.96, bas interactive latent features, c(100, 58.4, 4.2, 0.5, 0.4, 0, 0.1, 1, 0.4)
+relaxo, Sat Mar 10 17:03:32 2018, 0.992, bas interactive latent features, c(92.2, 100, 75.7, 28.7, 42.4, 42.8, 0, 59.1, 93.8)
+rf, Sat Mar 10 17:04:13 2018, 0.961, bas interactive latent features, Failed
+ridge, Sat Mar 10 17:04:19 2018, 0.995, bas interactive latent features, c(92.2, 100, 75.7, 28.7, 42.4, 42.8, 0, 59.1, 93.8)
+rlm, Sat Mar 10 17:04:24 2018, 0.996, bas interactive latent features, c(92.2, 100, 75.7, 28.7, 42.4, 42.8, 0, 59.1, 93.8)
+rpart, Sat Mar 10 17:04:29 2018, 0.891, bas interactive latent features, c(87.7, 82.8, 100, 96.8, 13.1, 20, 0, 8.8, 0.4)
+rpart1SE, Sat Mar 10 17:04:34 2018, 0.746, bas interactive latent features, c(88.2, 85.9, 100, 49.1, 28.7, 25.2, 35.2, 0, 0)
+rpart2, Sat Mar 10 17:04:39 2018, 0.746, bas interactive latent features, c(88.2, 85.9, 100, 49.1, 28.7, 25.2, 35.2, 0, 0)
+rqlasso, Sat Mar 10 17:04:46 2018, 0.996, bas interactive latent features, c(92.2, 100, 75.7, 28.7, 42.4, 42.8, 0, 59.1, 93.8)
+rqnc, Sat Mar 10 17:04:53 2018, 0.996, bas interactive latent features, c(92.2, 100, 75.7, 28.7, 42.4, 42.8, 0, 59.1, 93.8)
+RRF, Sat Mar 10 17:08:41 2018, 0.96, bas interactive latent features, Failed

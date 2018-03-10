@@ -511,3 +511,15 @@ Fail,Fail,Fail,Fail,Fail,Thu Feb 01 16:24:07 2018,plsRglm,1,1,bas interactive la
 0.999,0.999,0.006,NA,NA,Thu Feb 01 16:24:22 2018,ppr,1,1,bas interactive latent features,ignore,none,centernscale,0.641272567811252,random,284,14,cv,20,3,NA,5,17
 Fail,Fail,Fail,Fail,PackageFail,Thu Feb 01 16:24:28 2018,pythonKnnReg,1,1,bas interactive latent features,ignore,none,centernscale,6
 0.863,0.873,0.151,0.082,0.073,Thu Feb 01 16:25:31 2018,qrf,1,1,bas interactive latent features,ignore,none,centernscale,0.641272567811252,random,284,62,cv,20,3,NA,5,9
+0.973,0.97,0.0425,0.0189,0.0143,Sat Mar 10 17:01:23 2018,ranger,1,1,bas interactive latent features,ignore,none,centernscale,ACEREBOUT,14th20hp3cv,0.6235,random,231,35,cv,20,3,NA,5,7,extratrees
+0.96,0.956,0.0573,0.0274,0.0208,Sat Mar 10 17:03:25 2018,Rborist,1,1,bas interactive latent features,ignore,none,centernscale,ACEREBOUT,14th20hp3cv,0.6235,random,231,119,cv,20,3,NA,5,4
+0.992,0.992,0.0104,0.00506,0.00385,Sat Mar 10 17:03:32 2018,relaxo,1,1,bas interactive latent features,ignore,none,centernscale,ACEREBOUT,14th20hp3cv,0.6235,random,231,4,cv,20,3,NA,5,0.0357026396554635,0.917214742396027
+0.961,0.957,0.0548,0.027,0.0201,Sat Mar 10 17:04:13 2018,rf,1,1,bas interactive latent features,ignore,none,centernscale,ACEREBOUT,14th20hp3cv,0.6235,random,231,38,cv,20,3,NA,5,4
+0.995,0.995,0.0055,0.0031,0.00245,Sat Mar 10 17:04:19 2018,ridge,1,1,bas interactive latent features,ignore,none,centernscale,ACEREBOUT,14th20hp3cv,0.6235,random,231,3,cv,20,3,NA,5,1.15448594022312e-05
+0.996,0.995,0.00535,0.00285,0.0022,Sat Mar 10 17:04:24 2018,rlm,1,1,bas interactive latent features,ignore,none,centernscale,ACEREBOUT,14th20hp3cv,0.6235,random,231,2,cv,20,3,NA,5,TRUE,psi.hampel
+0.891,0.885,0.134,0.0717,0.0563,Sat Mar 10 17:04:29 2018,rpart,1,1,bas interactive latent features,ignore,none,centernscale,ACEREBOUT,14th20hp3cv,0.6235,random,231,2,cv,20,3,NA,5,1.29983787101445e-05
+0.746,0.746,-1,0.158,0.131,Sat Mar 10 17:04:34 2018,rpart1SE,1,1,bas interactive latent features,ignore,none,centernscale,ACEREBOUT,14th20hp3cv,0.6235,random,231,1,cv,20,3,NA,5,none
+0.746,0.746,0.261,0.158,0.131,Sat Mar 10 17:04:39 2018,rpart2,1,1,bas interactive latent features,ignore,none,centernscale,ACEREBOUT,14th20hp3cv,0.6235,random,231,3,cv,20,3,NA,5,7
+0.996,0.995,0.0056,0.00291,0.00216,Sat Mar 10 17:04:46 2018,rqlasso,1,1,bas interactive latent features,ignore,none,centernscale,ACEREBOUT,14th20hp3cv,0.6235,random,231,4,cv,20,3,NA,5,1.15448594022312e-05
+0.996,0.995,0.00561,0.00291,0.00216,Sat Mar 10 17:04:52 2018,rqnc,1,1,bas interactive latent features,ignore,none,centernscale,ACEREBOUT,14th20hp3cv,0.6235,random,231,4,cv,20,3,NA,5,0.000241450385506676,MCP
+0.96,0.956,0.0546,0.0277,0.0208,Sat Mar 10 17:08:41 2018,RRF,1,1,bas interactive latent features,ignore,none,centernscale,ACEREBOUT,14th20hp3cv,0.6235,random,231,225,cv,20,3,NA,5,5,0.950554467504844,0.664157536113635
