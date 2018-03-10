@@ -6596,3 +6596,422 @@ xyf, Fri Mar 09 06:25:33 2018, 0.023, poly aC1^3 + bC1^2 + dC1, c(100, 0, 3.5, 3
 avNNet, Fri Mar 09 06:25:54 2018, 0.332, poly aC1^3 + bC1^2 + dC1, c(100, 0.2, 1.9, 4, 0, 1.9, 11.3, 9.7, 8.4)
 bagEarth, Fri Mar 09 06:27:19 2018, 0.879, poly aC1^3 + bC1^2 + dC1, c(100, 0.7, 0, 0, 0, 0, 0, 0, 0)
 bagEarthGCV, Fri Mar 09 06:28:04 2018, 0.866, poly aC1^3 + bC1^2 + dC1, c(100, 5.8, 3.3, 1.6, 0.6, 0.1, 0.1, 0, 0)
+bartMachine, Sat Mar 10 01:00:59 2018, 0.761, poly aC1^3 + bC1^2 + dC1, Failed
+blasso, Sat Mar 10 01:01:34 2018, 0.475, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+blassoAveraged, Sat Mar 10 01:01:50 2018, 0.468, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+bridge, Sat Mar 10 01:02:05 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+BstLm, Sat Mar 10 01:03:26 2018, 0.33, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+cforest, Sat Mar 10 01:03:47 2018, 0.54, poly aC1^3 + bC1^2 + dC1, Failed
+ctree, Sat Mar 10 01:04:04 2018, 0.441, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+ctree2, Sat Mar 10 01:04:22 2018, 0.441, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+cubist, Sat Mar 10 01:05:08 2018, 0.911, poly aC1^3 + bC1^2 + dC1, c(100, 1.5, 2.5, 1.5, 0, 0, 0, 0, 0)
+dnn, Sat Mar 10 01:05:25 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+earth, Sat Mar 10 01:05:44 2018, 0.852, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+elm, Sat Mar 10 01:06:00 2018, 0.45, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+enet, Sat Mar 10 01:06:16 2018, 0.481, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+extraTrees, Sat Mar 10 01:07:06 2018, 0.811, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+foba, Sat Mar 10 01:07:23 2018, 0.482, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+gamboost, Sat Mar 10 01:08:23 2018, 0.936, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+gamSpline, Sat Mar 10 01:08:46 2018, 0.818, poly aC1^3 + bC1^2 + dC1, c(0, NaN, 0, 0, 0, 0, 0, 0, 0)
+gbm, Sat Mar 10 01:10:12 2018, 0.503, poly aC1^3 + bC1^2 + dC1, Failed
+gcvEarth, Sat Mar 10 01:13:21 2018, 0.883, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+glm, Sat Mar 10 01:13:37 2018, 0.45, poly aC1^3 + bC1^2 + dC1, c(100, 10.2, 0.5, 1.3, 3, 0.2, 1.6, 5.3, 0)
+glmboost, Sat Mar 10 01:14:13 2018, 0.471, poly aC1^3 + bC1^2 + dC1, c(100, 7, 0.9, 0.6, 3.8, 0, 0, 0, 0)
+glmnet, Sat Mar 10 01:14:31 2018, 0.473, poly aC1^3 + bC1^2 + dC1, c(100, 5.7, 0, 0, 0.8, 0, 1.7, 4, 0)
+glmStepAIC, Sat Mar 10 01:17:41 2018, 0.453, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+icr, Sat Mar 10 01:17:59 2018, 0.392, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+kernelpls, Sat Mar 10 01:18:16 2018, 0.45, poly aC1^3 + bC1^2 + dC1, Failed
+kknn, Sat Mar 10 01:18:34 2018, 0.257, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+knn, Sat Mar 10 01:18:50 2018, 0.245, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+krlsPoly, Sat Mar 10 01:19:08 2018, 0.001, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+krlsRadial, Sat Mar 10 01:19:25 2018, 0.463, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+lars, Sat Mar 10 01:19:42 2018, 0.484, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+lars2, Sat Mar 10 01:19:58 2018, 0.475, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+lasso, Sat Mar 10 01:20:14 2018, 0.484, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+leapBackward, Sat Mar 10 01:20:30 2018, 0.453, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+leapForward, Sat Mar 10 01:20:47 2018, 0.453, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+lm, Sat Mar 10 01:21:02 2018, 0.45, poly aC1^3 + bC1^2 + dC1, c(100, 10.2, 0.5, 1.3, 3, 0.2, 1.6, 5.3, 0)
+lmStepAIC, Sat Mar 10 01:21:19 2018, 0.453, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+msaenet, Sat Mar 10 01:23:26 2018, 0.48, poly aC1^3 + bC1^2 + dC1, 100
+msaenet, Sat Mar 10 01:23:26 2018, 0.48, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 01:23:26 2018, 0.48, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 01:23:26 2018, 0.48, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 01:23:26 2018, 0.48, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 01:23:26 2018, 0.48, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 01:23:26 2018, 0.48, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 01:23:26 2018, 0.48, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 01:23:26 2018, 0.48, poly aC1^3 + bC1^2 + dC1, 0
+nnet, Sat Mar 10 01:24:23 2018, 0, poly aC1^3 + bC1^2 + dC1, c(18.1, 37.7, 37.2, 53, 11.3, 61.4, 97, 100, 0)
+nnls, Sat Mar 10 01:24:39 2018, 0.016, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+null, Sat Mar 10 01:24:55 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+parRF, Sat Mar 10 01:25:15 2018, 0.763, poly aC1^3 + bC1^2 + dC1, Failed
+pcaNNet, Sat Mar 10 01:25:34 2018, 0.224, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+pcr, Sat Mar 10 01:25:51 2018, 0.236, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+plsRglm, Sat Mar 10 01:26:43 2018, 0.439, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+ppr, Sat Mar 10 01:27:00 2018, 0.844, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+qrf, Sat Mar 10 01:27:42 2018, 0.543, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+ranger, Sat Mar 10 01:28:03 2018, 0.765, poly aC1^3 + bC1^2 + dC1, Failed
+Rborist, Sat Mar 10 01:31:08 2018, 0.832, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 4.1, 0, 0, 0)
+relaxo, Sat Mar 10 01:31:26 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+rf, Sat Mar 10 01:31:45 2018, 0.756, poly aC1^3 + bC1^2 + dC1, Failed
+ridge, Sat Mar 10 01:32:02 2018, 0.45, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+rlm, Sat Mar 10 01:32:19 2018, 0.453, poly aC1^3 + bC1^2 + dC1, c(100, 4.8, 0.5, 0, 4.8, 3.9, 7.7, 3.6, 3.5)
+rpart, Sat Mar 10 01:32:36 2018, 0.461, poly aC1^3 + bC1^2 + dC1, c(10, 100, 4.5, 7.5, 6.4, 1.3, 4.9, 0, 7.1)
+rpart1SE, Sat Mar 10 01:32:52 2018, 0.438, poly aC1^3 + bC1^2 + dC1, c(10.2, 100, 0.8, 6.9, 8.1, 1.6, 6.2, 0, 3.9)
+rpart2, Sat Mar 10 01:33:09 2018, 0.438, poly aC1^3 + bC1^2 + dC1, c(10.2, 100, 0.8, 6.9, 8.1, 1.6, 6.2, 0, 3.9)
+rqlasso, Sat Mar 10 01:33:27 2018, 0.418, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+rqnc, Sat Mar 10 01:33:44 2018, 0.418, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+RRF, Sat Mar 10 01:34:16 2018, 0.78, poly aC1^3 + bC1^2 + dC1, Failed
+RRFglobal, Sat Mar 10 01:34:38 2018, 0.782, poly aC1^3 + bC1^2 + dC1, Failed
+SBC, Sat Mar 10 01:38:07 2018, 0.328, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+simpls, Sat Mar 10 01:38:23 2018, 0.45, poly aC1^3 + bC1^2 + dC1, Failed
+spikeslab, Sat Mar 10 01:38:53 2018, 0.469, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+spls, Sat Mar 10 01:39:11 2018, 0.479, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+superpc, Sat Mar 10 01:39:28 2018, 0.461, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+svmLinear, Sat Mar 10 01:40:37 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmLinear2, Sat Mar 10 01:41:12 2018, 0.441, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+svmLinear3, Sat Mar 10 01:41:31 2018, 0.448, poly aC1^3 + bC1^2 + dC1, c(100, 0.4, 7.9, 3.9, 0, 1.2, 6.4, 7.6, 8)
+svmPoly, Sat Mar 10 01:41:49 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmRadial, Sat Mar 10 01:42:07 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmRadialCost, Sat Mar 10 01:42:25 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmRadialSigma, Sat Mar 10 01:42:43 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+treebag, Sat Mar 10 01:43:35 2018, 0.522, poly aC1^3 + bC1^2 + dC1, c(8, 100, 1.9, 3.3, 10.1, 0.7, 0.8, 0, 3.7)
+widekernelpls, Sat Mar 10 01:43:51 2018, 0.45, poly aC1^3 + bC1^2 + dC1, Failed
+avNNet, Sat Mar 10 01:45:21 2018, 0.296, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+bagEarth, Sat Mar 10 01:46:41 2018, 0.779, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+bagEarthGCV, Sat Mar 10 01:47:26 2018, 0.864, poly aC1^3 + bC1^2 + dC1, c(100, 4.4, 2.2, 1.1, 0.4, 0, 0, 0, 0)
+bartMachine, Sat Mar 10 01:49:55 2018, 0.777, poly aC1^3 + bC1^2 + dC1, Failed
+blasso, Sat Mar 10 01:50:22 2018, 0.454, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+blassoAveraged, Sat Mar 10 01:50:35 2018, 0.439, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+bridge, Sat Mar 10 01:50:48 2018, 0.439, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+BstLm, Sat Mar 10 01:52:00 2018, 0.453, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+cforest, Sat Mar 10 01:52:17 2018, 0.647, poly aC1^3 + bC1^2 + dC1, Failed
+ctree, Sat Mar 10 01:52:32 2018, 0.601, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+ctree2, Sat Mar 10 01:52:45 2018, 0.601, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+cubist, Sat Mar 10 01:53:26 2018, 0.934, poly aC1^3 + bC1^2 + dC1, c(100, 0.5, 2, 2, 2, 1, 0, 0, 0)
+dnn, Sat Mar 10 01:53:40 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+earth, Sat Mar 10 01:53:54 2018, 0.848, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+elm, Sat Mar 10 01:54:07 2018, 0.4, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+enet, Sat Mar 10 01:54:20 2018, 0.474, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+extraTrees, Sat Mar 10 01:55:02 2018, 0.814, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+foba, Sat Mar 10 01:55:19 2018, 0.408, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+gamboost, Sat Mar 10 01:56:06 2018, 0.965, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+gamSpline, Sat Mar 10 01:56:24 2018, 0.818, poly aC1^3 + bC1^2 + dC1, c(NaN, 0, 0, 0, 0, 0, 0, 0, 0)
+gbm, Sat Mar 10 01:57:36 2018, 0.159, poly aC1^3 + bC1^2 + dC1, Failed
+gcvEarth, Sat Mar 10 02:01:09 2018, 0.892, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+glm, Sat Mar 10 02:01:22 2018, 0.4, poly aC1^3 + bC1^2 + dC1, c(100, 8.6, 2.2, 11.6, 0.2, 0, 4.7, 8.9, 8.1)
+glmboost, Sat Mar 10 02:01:51 2018, 0.459, poly aC1^3 + bC1^2 + dC1, c(100, 2.3, 1.3, 0, 0, 0, 0, 0, 0)
+glmnet, Sat Mar 10 02:02:05 2018, 0.477, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+glmStepAIC, Sat Mar 10 02:05:38 2018, 0.421, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+icr, Sat Mar 10 02:05:54 2018, 0.4, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+kernelpls, Sat Mar 10 02:06:07 2018, 0.4, poly aC1^3 + bC1^2 + dC1, Failed
+kknn, Sat Mar 10 02:06:22 2018, 0.206, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+knn, Sat Mar 10 02:06:35 2018, 0.166, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+krlsPoly, Sat Mar 10 02:06:48 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+krlsRadial, Sat Mar 10 02:07:03 2018, 0.427, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+lars, Sat Mar 10 02:07:15 2018, 0.449, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+lars2, Sat Mar 10 02:07:28 2018, 0.446, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+lasso, Sat Mar 10 02:07:40 2018, 0.449, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+leapBackward, Sat Mar 10 02:07:52 2018, 0.392, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+leapForward, Sat Mar 10 02:08:04 2018, 0.392, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+lm, Sat Mar 10 02:08:16 2018, 0.4, poly aC1^3 + bC1^2 + dC1, c(100, 8.6, 2.2, 11.6, 0.2, 0, 4.7, 8.9, 8.1)
+lmStepAIC, Sat Mar 10 02:08:29 2018, 0.421, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+msaenet, Sat Mar 10 02:10:16 2018, 0.449, poly aC1^3 + bC1^2 + dC1, 100
+msaenet, Sat Mar 10 02:10:16 2018, 0.449, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:10:16 2018, 0.449, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:10:16 2018, 0.449, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:10:16 2018, 0.449, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:10:16 2018, 0.449, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:10:16 2018, 0.449, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:10:16 2018, 0.449, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:10:16 2018, 0.449, poly aC1^3 + bC1^2 + dC1, 0
+nnet, Sat Mar 10 02:11:02 2018, 0.297, poly aC1^3 + bC1^2 + dC1, c(100, 3.7, 1.6, 0.9, 6.8, 0, 0.7, 5.9, 3.8)
+nnls, Sat Mar 10 02:11:14 2018, 0.409, poly aC1^3 + bC1^2 + dC1, c(100, 6.5, 3.2, 10.5, 0, 0, 0, 0, 0)
+null, Sat Mar 10 02:11:26 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+parRF, Sat Mar 10 02:11:43 2018, 0.773, poly aC1^3 + bC1^2 + dC1, Failed
+pcaNNet, Sat Mar 10 02:11:58 2018, 0.296, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+pcr, Sat Mar 10 02:12:11 2018, 0.17, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+plsRglm, Sat Mar 10 02:12:48 2018, 0.41, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+ppr, Sat Mar 10 02:13:01 2018, 0.887, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+qrf, Sat Mar 10 02:13:36 2018, 0.325, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+ranger, Sat Mar 10 02:13:53 2018, 0.774, poly aC1^3 + bC1^2 + dC1, Failed
+Rborist, Sat Mar 10 02:16:36 2018, 0.909, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+relaxo, Sat Mar 10 02:16:50 2018, 0.485, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+rf, Sat Mar 10 02:17:06 2018, 0.778, poly aC1^3 + bC1^2 + dC1, Failed
+ridge, Sat Mar 10 02:17:19 2018, 0.423, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+rlm, Sat Mar 10 02:17:32 2018, 0.477, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0.5, 7.1, 5.9, 2.2, 2.7, 4.2, 0.5)
+rpart, Sat Mar 10 02:17:45 2018, 0.601, poly aC1^3 + bC1^2 + dC1, c(12.3, 100, 5.5, 0.7, 10.3, 3.1, 2.6, 0, 11)
+rpart1SE, Sat Mar 10 02:17:57 2018, 0.578, poly aC1^3 + bC1^2 + dC1, c(14.8, 100, 11, 5.1, 12.3, 8.1, 7.5, 8.6, 0)
+rpart2, Sat Mar 10 02:18:10 2018, 0.578, poly aC1^3 + bC1^2 + dC1, c(14.8, 100, 11, 5.1, 12.3, 8.1, 7.5, 8.6, 0)
+rqlasso, Sat Mar 10 02:18:23 2018, 0.41, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+rqnc, Sat Mar 10 02:18:36 2018, 0.494, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+RRF, Sat Mar 10 02:19:01 2018, 0.783, poly aC1^3 + bC1^2 + dC1, Failed
+RRFglobal, Sat Mar 10 02:19:20 2018, 0.778, poly aC1^3 + bC1^2 + dC1, Failed
+SBC, Sat Mar 10 02:21:07 2018, 0.281, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+simpls, Sat Mar 10 02:21:19 2018, 0.4, poly aC1^3 + bC1^2 + dC1, Failed
+spikeslab, Sat Mar 10 02:21:43 2018, 0.428, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+spls, Sat Mar 10 02:21:57 2018, 0.446, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+superpc, Sat Mar 10 02:22:16 2018, 0.495, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+svmLinear, Sat Mar 10 02:23:25 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmLinear2, Sat Mar 10 02:24:09 2018, 0.48, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+svmLinear3, Sat Mar 10 02:24:24 2018, 0.503, poly aC1^3 + bC1^2 + dC1, c(100, 5.1, 0, 8.3, 0.3, 2, 11.1, 12.3, 4.3)
+svmPoly, Sat Mar 10 02:24:39 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmRadial, Sat Mar 10 02:24:52 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmRadialCost, Sat Mar 10 02:25:05 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmRadialSigma, Sat Mar 10 02:25:20 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+treebag, Sat Mar 10 02:26:02 2018, 0.64, poly aC1^3 + bC1^2 + dC1, c(11.3, 100, 4.5, 1.4, 8, 10.8, 2.4, 0, 6.6)
+widekernelpls, Sat Mar 10 02:26:14 2018, 0.4, poly aC1^3 + bC1^2 + dC1, Failed
+avNNet, Sat Mar 10 02:27:29 2018, 0.936, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+bagEarth, Sat Mar 10 02:28:41 2018, 0.998, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+bagEarthGCV, Sat Mar 10 02:29:27 2018, 0.998, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+bartMachine, Sat Mar 10 02:32:06 2018, 0.934, poly aC1^3 + bC1^2 + dC1, Failed
+blasso, Sat Mar 10 02:32:35 2018, 0.995, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+blassoAveraged, Sat Mar 10 02:32:49 2018, 0.995, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+bridge, Sat Mar 10 02:33:04 2018, 0.992, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+BstLm, Sat Mar 10 02:34:38 2018, 0.658, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+cforest, Sat Mar 10 02:34:55 2018, 0.878, poly aC1^3 + bC1^2 + dC1, Failed
+ctree, Sat Mar 10 02:35:12 2018, 0.791, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+ctree2, Sat Mar 10 02:35:28 2018, 0.776, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+cubist, Sat Mar 10 02:35:50 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+dnn, Sat Mar 10 02:36:06 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+earth, Sat Mar 10 02:36:20 2018, 0.998, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+elm, Sat Mar 10 02:36:34 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+enet, Sat Mar 10 02:36:49 2018, 0.95, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+extraTrees, Sat Mar 10 02:37:39 2018, 0.982, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+foba, Sat Mar 10 02:37:54 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+gamboost, Sat Mar 10 02:38:44 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+gamSpline, Sat Mar 10 02:39:04 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(10, 3.4, 0, 6.6, 67.3, 2.6, 100, 43.3, 1.7)
+gbm, Sat Mar 10 02:40:23 2018, 0.883, poly aC1^3 + bC1^2 + dC1, Failed
+gcvEarth, Sat Mar 10 02:44:01 2018, 0.998, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+glm, Sat Mar 10 02:44:15 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0.1, 0, 0, 0, 0)
+glmboost, Sat Mar 10 02:44:52 2018, 0.998, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0.1, 0, 0, 0, 0, 0, 0)
+glmnet, Sat Mar 10 02:45:08 2018, 0.968, poly aC1^3 + bC1^2 + dC1, c(100, 0.1, 0, 0, 0, 0, 0, 0, 0.2)
+glmStepAIC, Sat Mar 10 02:48:45 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+icr, Sat Mar 10 02:49:02 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+kernelpls, Sat Mar 10 02:49:16 2018, 0.997, poly aC1^3 + bC1^2 + dC1, Failed
+kknn, Sat Mar 10 02:49:33 2018, 0.497, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+knn, Sat Mar 10 02:49:48 2018, 0.474, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+krlsPoly, Sat Mar 10 02:50:03 2018, 0.017, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+krlsRadial, Sat Mar 10 02:50:19 2018, 0.995, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+lars, Sat Mar 10 02:50:33 2018, 0.996, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+lars2, Sat Mar 10 02:50:47 2018, 0.998, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+lasso, Sat Mar 10 02:51:01 2018, 0.996, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+leapBackward, Sat Mar 10 02:51:15 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+leapForward, Sat Mar 10 02:51:28 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+lm, Sat Mar 10 02:51:42 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0.1, 0, 0, 0, 0)
+lmStepAIC, Sat Mar 10 02:51:57 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+msaenet, Sat Mar 10 02:53:44 2018, 0.998, poly aC1^3 + bC1^2 + dC1, 100
+msaenet, Sat Mar 10 02:53:44 2018, 0.998, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:53:44 2018, 0.998, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:53:44 2018, 0.998, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:53:44 2018, 0.998, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:53:44 2018, 0.998, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:53:44 2018, 0.998, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:53:44 2018, 0.998, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 02:53:44 2018, 0.998, poly aC1^3 + bC1^2 + dC1, 0
+nnet, Sat Mar 10 02:54:35 2018, 0.951, poly aC1^3 + bC1^2 + dC1, c(100, 5.4, 8.7, 4.2, 2.3, 10, 0.4, 3.8, 0)
+nnls, Sat Mar 10 02:54:48 2018, 0.998, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+null, Sat Mar 10 02:55:01 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+parRF, Sat Mar 10 02:55:18 2018, 0.962, poly aC1^3 + bC1^2 + dC1, Failed
+pcaNNet, Sat Mar 10 02:55:35 2018, 0.865, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+pcr, Sat Mar 10 02:55:48 2018, 0.472, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+plsRglm, Sat Mar 10 02:56:35 2018, 0.998, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+ppr, Sat Mar 10 02:56:49 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+qrf, Sat Mar 10 02:57:27 2018, 0.808, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+ranger, Sat Mar 10 02:57:46 2018, 0.958, poly aC1^3 + bC1^2 + dC1, Failed
+Rborist, Sat Mar 10 02:59:25 2018, 0.928, poly aC1^3 + bC1^2 + dC1, c(100, 14.2, 0, 0, 0, 0, 0, 0, 24.4)
+relaxo, Sat Mar 10 02:59:40 2018, 0.998, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+rf, Sat Mar 10 02:59:57 2018, 0.959, poly aC1^3 + bC1^2 + dC1, Failed
+ridge, Sat Mar 10 03:00:12 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+rlm, Sat Mar 10 03:00:26 2018, 0.998, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+rpart, Sat Mar 10 03:00:39 2018, 0.776, poly aC1^3 + bC1^2 + dC1, c(0.7, 100, 0, 4.4, 12.3, 7, 3.9, 6.9, 8)
+rpart1SE, Sat Mar 10 03:00:54 2018, 0.801, poly aC1^3 + bC1^2 + dC1, c(0, 100, 9.3, 6.3, 14.4, 4.6, 6.8, 4.6, 5.4)
+rpart2, Sat Mar 10 03:01:08 2018, 0.801, poly aC1^3 + bC1^2 + dC1, c(0, 100, 9.3, 6.3, 14.4, 4.6, 6.8, 4.6, 5.4)
+rqlasso, Sat Mar 10 03:01:22 2018, 0.998, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+rqnc, Sat Mar 10 03:01:37 2018, 0.998, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+RRF, Sat Mar 10 03:02:03 2018, 0.965, poly aC1^3 + bC1^2 + dC1, Failed
+RRFglobal, Sat Mar 10 03:02:22 2018, 0.967, poly aC1^3 + bC1^2 + dC1, Failed
+SBC, Sat Mar 10 03:05:44 2018, 0.48, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+simpls, Sat Mar 10 03:05:59 2018, 0.997, poly aC1^3 + bC1^2 + dC1, Failed
+spikeslab, Sat Mar 10 03:06:24 2018, 0.997, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+spls, Sat Mar 10 03:06:39 2018, 0.998, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+svmLinear, Sat Mar 10 03:07:40 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmLinear2, Sat Mar 10 03:07:55 2018, 0.933, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+svmLinear3, Sat Mar 10 03:08:09 2018, 0.764, poly aC1^3 + bC1^2 + dC1, c(100, 3.5, 4.8, 7.1, 2.4, 1.7, 2.5, 0, 4.2)
+svmPoly, Sat Mar 10 03:08:23 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmRadial, Sat Mar 10 03:08:39 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmRadialCost, Sat Mar 10 03:08:54 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmRadialSigma, Sat Mar 10 03:09:08 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+treebag, Sat Mar 10 03:09:54 2018, 0.887, poly aC1^3 + bC1^2 + dC1, c(0, 100, 3.6, 3.7, 8, 4.9, 8.5, 0, 4.8)
+widekernelpls, Sat Mar 10 03:10:08 2018, 0.997, poly aC1^3 + bC1^2 + dC1, Failed
+avNNet, Sat Mar 10 03:11:31 2018, 0.133, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+bagEarth, Sat Mar 10 03:13:20 2018, 0.668, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+bagEarthGCV, Sat Mar 10 03:14:07 2018, 0.66, poly aC1^3 + bC1^2 + dC1, c(100, 10.8, 7.2, 4.8, 2.7, 1.4, 0.3, 0, 0)
+bartMachine, Sat Mar 10 03:16:49 2018, 0.601, poly aC1^3 + bC1^2 + dC1, Failed
+blasso, Sat Mar 10 03:17:19 2018, 0.103, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+blassoAveraged, Sat Mar 10 03:17:35 2018, 0.105, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+bridge, Sat Mar 10 03:17:49 2018, 0.102, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+BstLm, Sat Mar 10 03:19:14 2018, 0.148, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+cforest, Sat Mar 10 03:19:32 2018, 0.617, poly aC1^3 + bC1^2 + dC1, Failed
+ctree, Sat Mar 10 03:19:49 2018, 0.524, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+ctree2, Sat Mar 10 03:20:05 2018, 0.524, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+cubist, Sat Mar 10 03:20:52 2018, 0.79, poly aC1^3 + bC1^2 + dC1, c(100, 6.5, 1.5, 1, 1, 1, 1, 0, 0)
+dnn, Sat Mar 10 03:21:08 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+earth, Sat Mar 10 03:21:24 2018, 0.483, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+elm, Sat Mar 10 03:21:39 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+enet, Sat Mar 10 03:21:54 2018, 0.223, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+extraTrees, Sat Mar 10 03:22:42 2018, 0.714, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+foba, Sat Mar 10 03:22:56 2018, 0.171, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+gamboost, Sat Mar 10 03:23:45 2018, 0.602, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+gamSpline, Sat Mar 10 03:24:04 2018, 0.34, poly aC1^3 + bC1^2 + dC1, c(4.8, 0, 100, 6, 0.7, 5.6, 7.5, 6.8, 1.9)
+gbm, Sat Mar 10 03:25:23 2018, 0.159, poly aC1^3 + bC1^2 + dC1, Failed
+gcvEarth, Sat Mar 10 03:29:03 2018, 0.622, poly aC1^3 + bC1^2 + dC1, c(100, 9.2, 2.4, 0, 0, 0, 0, 0, 0)
+glm, Sat Mar 10 03:29:17 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 10.7, 8.6, 7.1, 13, 1.3, 0, 11.8, 5.3)
+glmboost, Sat Mar 10 03:29:50 2018, 0.138, poly aC1^3 + bC1^2 + dC1, c(100, 2.9, 1.9, 0.8, 7, 5.7, 1.8, 0, 0)
+glmnet, Sat Mar 10 03:30:06 2018, 0.278, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+glmStepAIC, Sat Mar 10 03:33:43 2018, 0.053, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+icr, Sat Mar 10 03:34:00 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+kernelpls, Sat Mar 10 03:34:13 2018, 0, poly aC1^3 + bC1^2 + dC1, Failed
+kknn, Sat Mar 10 03:34:30 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+knn, Sat Mar 10 03:34:44 2018, 0.223, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+krlsPoly, Sat Mar 10 03:34:58 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+krlsRadial, Sat Mar 10 03:35:14 2018, 0.104, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+lars, Sat Mar 10 03:35:28 2018, 0.323, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+lars2, Sat Mar 10 03:35:42 2018, 0.232, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+lasso, Sat Mar 10 03:35:56 2018, 0.323, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+leapBackward, Sat Mar 10 03:36:10 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+leapForward, Sat Mar 10 03:36:24 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+lm, Sat Mar 10 03:36:37 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 10.7, 8.6, 7.1, 13, 1.3, 0, 11.8, 5.3)
+lmStepAIC, Sat Mar 10 03:36:51 2018, 0.053, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+msaenet, Sat Mar 10 03:38:41 2018, 0.127, poly aC1^3 + bC1^2 + dC1, 100
+msaenet, Sat Mar 10 03:38:41 2018, 0.127, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 03:38:41 2018, 0.127, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 03:38:41 2018, 0.127, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 03:38:41 2018, 0.127, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 03:38:41 2018, 0.127, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 03:38:41 2018, 0.127, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 03:38:41 2018, 0.127, poly aC1^3 + bC1^2 + dC1, 0
+msaenet, Sat Mar 10 03:38:41 2018, 0.127, poly aC1^3 + bC1^2 + dC1, 0
+nnet, Sat Mar 10 03:39:32 2018, 0.042, poly aC1^3 + bC1^2 + dC1, c(100, 13.9, 4.9, 3.7, 6.9, 8.1, 6.8, 6.3, 0)
+nnls, Sat Mar 10 03:39:45 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+null, Sat Mar 10 03:39:59 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+parRF, Sat Mar 10 03:40:15 2018, 0.695, poly aC1^3 + bC1^2 + dC1, Failed
+pcaNNet, Sat Mar 10 03:40:32 2018, 0.014, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+pcr, Sat Mar 10 03:40:46 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+plsRglm, Sat Mar 10 03:41:27 2018, 0.088, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+ppr, Sat Mar 10 03:41:42 2018, 0.609, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+qrf, Sat Mar 10 03:42:19 2018, 0.507, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+ranger, Sat Mar 10 03:42:37 2018, 0.698, poly aC1^3 + bC1^2 + dC1, Failed
+Rborist, Sat Mar 10 03:45:20 2018, 0.707, poly aC1^3 + bC1^2 + dC1, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+relaxo, Sat Mar 10 03:45:36 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+rf, Sat Mar 10 03:45:52 2018, 0.688, poly aC1^3 + bC1^2 + dC1, Failed
+ridge, Sat Mar 10 03:46:07 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+rlm, Sat Mar 10 03:46:22 2018, 0.211, poly aC1^3 + bC1^2 + dC1, c(100, 5.9, 6.7, 3.2, 10.1, 2, 0, 7.6, 4.2)
+rpart, Sat Mar 10 03:46:37 2018, 0.502, poly aC1^3 + bC1^2 + dC1, c(7, 100, 8.3, 7.2, 17.3, 3.8, 2.1, 11.3, 0)
+rpart1SE, Sat Mar 10 03:46:50 2018, 0.502, poly aC1^3 + bC1^2 + dC1, c(7, 100, 8.3, 7.2, 17.3, 3.8, 2.1, 11.3, 0)
+rpart2, Sat Mar 10 03:47:05 2018, 0.502, poly aC1^3 + bC1^2 + dC1, c(7, 100, 8.3, 7.2, 17.3, 3.8, 2.1, 11.3, 0)
+rqlasso, Sat Mar 10 03:47:20 2018, 0.431, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+rqnc, Sat Mar 10 03:47:35 2018, 0.426, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+RRF, Sat Mar 10 03:48:02 2018, 0.714, poly aC1^3 + bC1^2 + dC1, Failed
+RRFglobal, Sat Mar 10 03:48:22 2018, 0.702, poly aC1^3 + bC1^2 + dC1, Failed
+SBC, Sat Mar 10 03:50:10 2018, 0, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+simpls, Sat Mar 10 03:50:25 2018, 0, poly aC1^3 + bC1^2 + dC1, Failed
+spikeslab, Sat Mar 10 03:50:49 2018, 0.163, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+spls, Sat Mar 10 03:51:05 2018, 0.121, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+superpc, Sat Mar 10 03:51:20 2018, 0.078, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+svmLinear, Sat Mar 10 03:52:18 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmLinear2, Sat Mar 10 03:52:48 2018, 0.355, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+svmLinear3, Sat Mar 10 03:53:04 2018, 0.348, poly aC1^3 + bC1^2 + dC1, c(100, 3, 8.4, 3.9, 3.9, 0, 7.7, 4.6, 12.7)
+svmPoly, Sat Mar 10 03:53:20 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmRadial, Sat Mar 10 03:53:36 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmRadialCost, Sat Mar 10 03:53:51 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+svmRadialSigma, Sat Mar 10 03:54:07 2018, NA, poly aC1^3 + bC1^2 + dC1, Failed
+treebag, Sat Mar 10 03:54:52 2018, 0.603, poly aC1^3 + bC1^2 + dC1, c(14.3, 100, 4.8, 8.6, 14.5, 7.7, 1.4, 0, 5.7)
+widekernelpls, Sat Mar 10 03:55:05 2018, 0, poly aC1^3 + bC1^2 + dC1, Failed
+avNNet, Sat Mar 10 04:00:41 2018, 0, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+bagEarth, Sat Mar 10 04:01:49 2018, 0.925, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+bagEarthGCV, Sat Mar 10 04:02:32 2018, 0.924, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 1.8, 0.4, 0.1, 0, 0, 0, 0, 0)
+bartMachine, Sat Mar 10 04:04:22 2018, 0.835, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+blasso, Sat Mar 10 04:04:43 2018, 0.849, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+blassoAveraged, Sat Mar 10 04:04:53 2018, 0.827, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+bridge, Sat Mar 10 04:05:03 2018, 0.839, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+BstLm, Sat Mar 10 04:06:05 2018, 0, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+cforest, Sat Mar 10 04:06:17 2018, 0.644, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+ctree, Sat Mar 10 04:06:28 2018, 0.577, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+ctree2, Sat Mar 10 04:06:39 2018, 0.511, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+cubist, Sat Mar 10 04:07:00 2018, 0.978, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+dnn, Sat Mar 10 04:07:12 2018, 0, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+earth, Sat Mar 10 04:07:22 2018, 0.926, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+elm, Sat Mar 10 04:07:32 2018, 0.8, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+enet, Sat Mar 10 04:07:42 2018, 0.889, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+extraTrees, Sat Mar 10 04:08:09 2018, 0.903, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+foba, Sat Mar 10 04:08:20 2018, 0.845, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+gamboost, Sat Mar 10 04:08:58 2018, 0.99, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+gamSpline, Sat Mar 10 04:09:13 2018, 0.955, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+gbm, Sat Mar 10 04:10:11 2018, 0.291, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+gcvEarth, Sat Mar 10 04:13:41 2018, 0.926, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+glm, Sat Mar 10 04:13:51 2018, 0.8, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 2.2, 2.8, 1.1, 3.3, 0.6, 0.7, 0, 1.7)
+glm.nb, Sat Mar 10 04:14:00 2018, 0.812, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 1.5, 0.9, 1.4, 0.6, 2.3, 1.1, 2.4, 0)
+glmboost, Sat Mar 10 04:14:12 2018, 0.816, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 0.6, 0.9, 1.5, 0, 0, 0, 0, 0)
+glmnet, Sat Mar 10 04:14:24 2018, 0.868, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 1.7, 0.1, 0, 0.6, 0, 0, 0.3, 0)
+glmStepAIC, Sat Mar 10 04:17:54 2018, 0.77, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+icr, Sat Mar 10 04:18:06 2018, 0.8, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+kernelpls, Sat Mar 10 04:18:15 2018, 0.8, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+kknn, Sat Mar 10 04:18:27 2018, 0, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+knn, Sat Mar 10 04:18:36 2018, 0, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+krlsPoly, Sat Mar 10 04:18:46 2018, 0, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+krlsRadial, Sat Mar 10 04:18:56 2018, 0.89, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+lars, Sat Mar 10 04:19:06 2018, 0.885, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+lars2, Sat Mar 10 04:19:16 2018, 0.844, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+lasso, Sat Mar 10 04:19:25 2018, 0.885, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+leapBackward, Sat Mar 10 04:19:34 2018, 0.77, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+leapForward, Sat Mar 10 04:19:44 2018, 0.77, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+lm, Sat Mar 10 04:19:53 2018, 0.8, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 2.2, 2.8, 1.1, 3.3, 0.6, 0.7, 0, 1.7)
+lmStepAIC, Sat Mar 10 04:20:03 2018, 0.77, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+msaenet, Sat Mar 10 04:21:21 2018, 0.854, poly aC1^1.3 + bC1^2.1 + dC1^.7, 100
+msaenet, Sat Mar 10 04:21:21 2018, 0.854, poly aC1^1.3 + bC1^2.1 + dC1^.7, 0
+msaenet, Sat Mar 10 04:21:21 2018, 0.854, poly aC1^1.3 + bC1^2.1 + dC1^.7, 0
+msaenet, Sat Mar 10 04:21:21 2018, 0.854, poly aC1^1.3 + bC1^2.1 + dC1^.7, 0
+msaenet, Sat Mar 10 04:21:21 2018, 0.854, poly aC1^1.3 + bC1^2.1 + dC1^.7, 0
+msaenet, Sat Mar 10 04:21:21 2018, 0.854, poly aC1^1.3 + bC1^2.1 + dC1^.7, 0
+msaenet, Sat Mar 10 04:21:21 2018, 0.854, poly aC1^1.3 + bC1^2.1 + dC1^.7, 0
+msaenet, Sat Mar 10 04:21:21 2018, 0.854, poly aC1^1.3 + bC1^2.1 + dC1^.7, 0
+msaenet, Sat Mar 10 04:21:21 2018, 0.854, poly aC1^1.3 + bC1^2.1 + dC1^.7, 0
+nnet, Sat Mar 10 04:21:57 2018, 0, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 0.3, 0, 11.1, 14.8, 34.9, 8.9, 18.1, 15.8)
+nnls, Sat Mar 10 04:22:06 2018, 0.832, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 3.6, 1.9, 1, 0, 0, 1.4, 1, 0)
+null, Sat Mar 10 04:22:15 2018, 0, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+parRF, Sat Mar 10 04:22:26 2018, 0.898, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+pcaNNet, Sat Mar 10 04:22:37 2018, 0.028, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+pcr, Sat Mar 10 04:22:47 2018, 0.368, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+plsRglm, Sat Mar 10 04:23:21 2018, 0.85, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+ppr, Sat Mar 10 04:23:31 2018, 0.911, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+qrf, Sat Mar 10 04:23:58 2018, 0.57, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+ranger, Sat Mar 10 04:24:10 2018, 0.816, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+Rborist, Sat Mar 10 04:25:57 2018, 0.934, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+relaxo, Sat Mar 10 04:26:08 2018, 0.79, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+rf, Sat Mar 10 04:26:18 2018, 0.889, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+ridge, Sat Mar 10 04:26:29 2018, 0.8, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+rlm, Sat Mar 10 04:26:39 2018, 0.856, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 0.6, 0, 1.1, 0.4, 0.7, 0.5, 0.2, 0.3)
+rpart, Sat Mar 10 04:26:48 2018, 0.511, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(20.1, 100, 26.6, 8.2, 15.8, 10.3, 10.1, 0, 0)
+rpart1SE, Sat Mar 10 04:26:58 2018, 0.577, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(12.7, 100, 12.5, 0, 10.7, 8.3, 0.8, 1.4, 1.3)
+rpart2, Sat Mar 10 04:27:07 2018, 0.511, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(20.1, 100, 26.6, 8.2, 15.8, 10.3, 10.1, 0, 0)
+rqlasso, Sat Mar 10 04:27:17 2018, 0.875, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+rqnc, Sat Mar 10 04:27:28 2018, 0.875, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+RRF, Sat Mar 10 04:27:42 2018, 0.934, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+RRFglobal, Sat Mar 10 04:27:53 2018, 0.931, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+SBC, Sat Mar 10 04:29:31 2018, 0, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+simpls, Sat Mar 10 04:29:40 2018, 0.8, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+spikeslab, Sat Mar 10 04:30:01 2018, 0.808, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+spls, Sat Mar 10 04:30:12 2018, 0.845, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+svmLinear, Sat Mar 10 04:31:02 2018, NA, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+svmLinear2, Sat Mar 10 04:31:18 2018, 0.812, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+svmLinear3, Sat Mar 10 04:31:28 2018, 0.75, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 17, 16.1, 4.5, 0, 10.6, 7.8, 10.4, 15)
+svmPoly, Sat Mar 10 04:31:39 2018, NA, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+svmRadial, Sat Mar 10 04:31:50 2018, NA, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+svmRadialCost, Sat Mar 10 04:32:00 2018, NA, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+svmRadialSigma, Sat Mar 10 04:32:10 2018, NA, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+treebag, Sat Mar 10 04:32:47 2018, 0.66, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(14.3, 100, 12.4, 2, 3.3, 4.5, 0, 4.8, 7.8)
+widekernelpls, Sat Mar 10 04:32:56 2018, 0.8, poly aC1^1.3 + bC1^2.1 + dC1^.7, Failed
+avNNet, Sat Mar 10 04:33:53 2018, 0, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 12.3, 2.9, 2, 2.9, 5.5, 3.3, 0, 10.1)
+bagEarth, Sat Mar 10 04:34:59 2018, 0.915, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 0, 0, 0, 0, 0, 0, 0, 0)
+bagEarthGCV, Sat Mar 10 04:35:43 2018, 0.917, poly aC1^1.3 + bC1^2.1 + dC1^.7, c(100, 1.7, 0.2, 0, 0, 0, 0, 0, 0)
