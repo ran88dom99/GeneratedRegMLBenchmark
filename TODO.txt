@@ -1,6 +1,4 @@
-DOC  
-mil/km per degree 10k km 6.25k mi
-lots
+
 
 + simple bestest friend finder
 
