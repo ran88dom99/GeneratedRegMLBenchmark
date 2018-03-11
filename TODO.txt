@@ -20,10 +20,15 @@
  
  run r scripts from inside R
  an all transformations
- Symbolic Execution Debugger eclipse and omniscient
  get glossary machine
 
-
+cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
+set isodate=%date:~10,4%-%date:~4,2%-%date:~7,2%
+ren ModelTesterAllAuto.Rout rout%isodate%.txt
+move rout%isodate%.txt "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark\ACEREBOUT"
+cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
+ 
+ 
 + simple bestest friend finder
 
 + and why does column median work so poorly  in the other computer?

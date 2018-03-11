@@ -301,7 +301,7 @@ max.out[gen.count]=1
 varim=c(1,0)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
-  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+  simScores[Row,1:10]=rnorm(10, mean = 4, sd = 1)
   for(Col in 1:10){
     if(simScores[Row,Col]<0)
       simScores[Row,Col]<-simScores[Row,Col]*-1
@@ -342,8 +342,12 @@ max.out[gen.count]=1
 varim=c(1,1)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
-  simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+  simScores[Row,1:10]=rnorm(10, mean = 4, sd = 1)
   simScores[Row,3]=simScores[Row,3]*10
+  for(Col in 1:10){
+    if(simScores[Row,Col]<0)
+      simScores[Row,Col]<-simScores[Row,Col]*-1
+  }
 }
 for(Row in 1:Rows){
   simScores[Row,1]=(simScores[Row,2]^.6+simScores[Row,2]^1.6)*(simScores[Row,3]^.1)
