@@ -71,7 +71,7 @@ simGames<-matrix(data = 0, nrow = Rows, ncol = 3, byrow = FALSE,dimnames = NULL)
 for(Col in 1:10)
 {simPubs[Col,1:3]=runif(3, min = 0, max = 2)}
 for(Row in 1:Rows)
-{simGames[Row,1:3]=runif(3, min = 0, max = 2)} 
+{simGames[Row,1:3]=runif(3, min = 0, max = 2)}
 
 for(Col in 1:10){
   for(Row in 1:Rows){
@@ -278,6 +278,10 @@ varim=c(1,0)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+  for(Col in 1:10){
+    if(simScores[Row,Col]<0)
+      simScores[Row,Col]<-simScores[Row,Col]*-1
+  }
 }
 coef1<-rnorm(1, mean = 0, sd = 1);coef2<-rnorm(1, mean = 0, sd = 1);
 coef3<-rnorm(1, mean = 0, sd = 1);
@@ -298,7 +302,12 @@ varim=c(1,0)
 varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
+  for(Col in 1:10){
+    if(simScores[Row,Col]<0)
+      simScores[Row,Col]<-simScores[Row,Col]*-1
+  }
 }
+
 coef1<-rnorm(1, mean = 0, sd = 1);coef2<-rnorm(1, mean = 0, sd = 1);
 coef3<-rnorm(1, mean = 0, sd = 1);
 
@@ -562,7 +571,7 @@ write.table(round(simScores,digits  = 3),
 ######ifs C1&C2 on random#####
 gen.count=gen.count+1
 gens.names[gen.count]="ifs C1&C2 on random"
-max.out[gen.count]=.6#.24 err.sqd 
+max.out[gen.count]=.6#.24 err.sqd
 max.out.sq[gen.count]=.24
 varim=c(1,1)
 varimport[gen.count,1:length(varim)]=varim

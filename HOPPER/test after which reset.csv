@@ -47,3 +47,11 @@ Sat Mar 03 12:28:34 2018,gbm_h2o,just random,3,20,windows,x64,HOPPER
 Sun Mar 04 09:25:49 2018,SBC,just random,3,20,windows,x64,HOPPER
 Sun Mar 04 14:57:26 2018,WM,just random,3,20,windows,x64,HOPPER
 Mon Mar 05 05:53:42 2018,WM,just random,3,20,windows,x64,HOPPER
+Mon Mar 05 20:04:43 2018,rvmLinear,just random,3,20,windows,x64,HOPPER
+Tue Mar 06 14:47:12 2018,SBC,just random,3,20,windows,x64,HOPPER
+Tue Mar 06 20:38:54 2018,glm.nb,just random,3,20,windows,x64,HOPPER
+Wed Mar 07 22:30:57 2018,SBC,just random,3,20,windows,x64,HOPPER
+Thu Mar 08 14:03:00 2018,gamboost,bm sin(13 t C2 ^ -.2),3,20,windows,x64,HOPPER
+Thu Mar 08 18:18:59 2018,plsRglm,bm sin(13 t C2 ^ -.2),3,20,windows,x64,HOPPER
+Fri Mar 09 22:16:35 2018,bartMachine,poly aC1^3 + bC1^2 + dC1,3,20,windows,x64,HOPPER
+Sat Mar 10 16:39:32 2018,bartMachine,poly aC1^1.3 + bC1^2.1 + dC1^.7,3,20,windows,x64,HOPPER
