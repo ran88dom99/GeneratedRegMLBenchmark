@@ -12,6 +12,7 @@ which.computer<-Sys.info()[['nodename']]
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
 
+if(exists("base.folder")){setwd(base.folder)}
 base.folder<-getwd()
 cpout.folder<-paste(base.folder,"/",which.computer,sep = "")
 setwd(cpout.folder)
@@ -101,7 +102,7 @@ check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextr
 #####caret init#####
 best.ranged <- c("avNNet", "nnet", "pcaNNet", "glm.nb")
 best.asis <- c("svmLinear3", "relaxo", "superpc", "xgbTree")
-best.cns <- c("gam", "bam", "svmLinear2", "msaenet", "BstLm", "gbm") 
+best.cns <- c("gam", "bam", "svmLinear2", "msaenet", "BstLm", "gbm")
 
 cv6hp5 <- c( "BstLm", "qrnn")#earth
 cv3hp32 <- c("Rborist", "pcaNNet", "SBC")
@@ -132,7 +133,7 @@ allmodels <- c("avNNet","BstLm","bstTree","cforest","ctree","ctree2",
                "pcr","pls","qrf","ranger","rf")
 
 allmodels <- c("kknn", "cubist", "avNNet", "xgbLinear", "RRF", "pcaNNet","earth","nnet","gbm","enet","lasso","BstLm",
-               "foba", "leapBackward", "gcvEarth", "SBC","glm.nb","gamboost","ctree2","relaxo", 
+               "foba", "leapBackward", "gcvEarth", "SBC","glm.nb","gamboost","ctree2","relaxo",
                "bartMachine","extraTrees","bam","gam","randomGLM")
 #allmodels <- c("bam")
 #allmodels <- c("rf")"rqlasso",, "xyf" "rvmPoly", "rvmRadial",    "spls", "superpc" ,   "treebag",  "svmLinear2",  "SBC",
@@ -194,7 +195,7 @@ for(gend.data in gensTTest){
     withextras=c("none")
     for(withextra in withextras){
       ################data wrestling###############
-      
+
       dependant.selection=complete.cases(data.source[,column.to.predict])
       df.previous.calcs=as.data.frame(read.csv(file=out.file, header = FALSE, sep = ",", quote = "",
                                                dec = ".", fill = TRUE, comment.char = ""))
@@ -205,16 +206,16 @@ for(gend.data in gensTTest){
            (any(df.previous.calcs[intern,] == datasource, na.rm=T))&&
            (any(df.previous.calcs[intern,] == column.to.predict, na.rm=T)))
         {unimportant.computations[intern]<-T}}
-      
+
       df.previous.calcs<-df.previous.calcs[unimportant.computations,]
-      
+
       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
-      
+
         for(norming in normings) {
         for(trans.y in 1:2) {
           df.toprocess=data.source
           y.untransformed<-df.toprocess[,1]
-          
+
           if(norming=="centernscale"){
             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("center", "scale"))
             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
@@ -227,10 +228,10 @@ for(gend.data in gensTTest){
           if(norming=="YeoJohnson"){
             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("YeoJohnson"))#"center", "scale",
             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
-          
+
           if((norming=="asis")&&(trans.y==2)){next}
-          
-          
+
+
           ################preprocess###########
           df.toprocess=data.frame(df.toprocess[dependant.selection,])
           y.untransformed=y.untransformed[dependant.selection]
@@ -239,16 +240,16 @@ for(gend.data in gensTTest){
               df.toprocess[,Clol]<- (rank(df.toprocess[,Clol],na.last = "keep",ties.method = "average")-1) }
             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
-          
+
           loess.model<-loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
-  
+
           #df.toprocess = data.frame(df.toprocess,)
           nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
           #nzv[nzv$nzv,][1:10,]
           if(length(nzv)>1){
             df.toprocess = (df.toprocess[, -nzv])}
           df.toprocess = signif(df.toprocess,digits = 3)
-          
+
           seed.var =222+round(runif(1,min=0,max=100))
           set.seed(seed.var)
           inTrain <- createDataPartition(y = df.toprocess[,1],
@@ -257,26 +258,26 @@ for(gend.data in gensTTest){
           training <- df.toprocess[ inTrain,]
           testing  <- df.toprocess[-inTrain,]
           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F,col.names = F)
-          
+
           ###########for all models#################
           setwd(base.folder)
           if(max(which.computer==pc.mlr)>0)
             source("MLR part.R")
           else
             source("Caret part.R")
-          
+
          setwd(cpout.folder)
           if(norming == normings[length(normings)]){
             if(count.toy.data.passed>length(gensTTest)){gensTTest<-c(gensTTesto)}
             write.table( t(gensTTest[count.toy.data.passed:length(gensTTest)]),file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
-            
+
             }
-          
+
         }
       }
     }
   }
-  
+
 }
 ##########end#########
 #stopCluster(cl)
