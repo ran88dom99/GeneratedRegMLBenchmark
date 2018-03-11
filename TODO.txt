@@ -1,3 +1,27 @@
+ mvo -- only when out?
+ 	cross validation in this situ
+ 	video
+ 	all simple datasets
+ 	speech
+	basic classification?
+ friedman's 2dplanes is too big.
+ outline
+ feed the computator
+ 	combine
+ 	ad a few more problems
+ 	redo with variable data amount, centers anc distributions,
+ only 300mb?
+ keep rout files for debuging
+ make header for csv outputs
+ howabout lubridate
+ min of pMAE must be > -1
+ rmse,NA,seed, before last when outputing to file
+ correlation and categorical cousin
+ 
+ run r scripts from inside R
+ an all transformations
+ Symbolic Execution Debugger eclipse and omniscient
+ get glossary machine
 
 
 + simple bestest friend finder
