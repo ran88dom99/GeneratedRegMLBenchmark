@@ -7,6 +7,6 @@ ren ModelTesterAllAuto.Rout rout%isodate%.txt
 move rout%isodate%.txt "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark\ACEREBOUT"
 cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
 
+bunchofgitstheirsauto.sh
 
-
-"C:\Program Files\R\R-3.4.2\bin\x64\R.exe" CMD BATCH --max-mem-size=2000M ModelTesterAllAuto.R 
+"C:\Program Files\R\R-3.4.2\bin\x64\R.exe" CMD BATCH --max-mem-size=3000 ModelTesterAllAuto.R 
