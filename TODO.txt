@@ -17,6 +17,7 @@
 	single function while we are at it
  rmse,NA,seed, before last when outputing to file
  correlation and categorical cousin
+ gitignore and delet histories of all sanity check files
  
  run r scripts from inside R
  an all transformations
