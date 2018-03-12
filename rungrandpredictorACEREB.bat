@@ -9,4 +9,4 @@ cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
 
 
 
-"C:\Program Files\R\R-3.4.2\bin\x64\R.exe" CMD BATCH --max-mem-size=2000 ModelTesterAllAuto.R 
+"C:\Program Files\R\R-3.4.2\bin\x64\R.exe" CMD BATCH --max-mem-size=2000M ModelTesterAllAuto.R 

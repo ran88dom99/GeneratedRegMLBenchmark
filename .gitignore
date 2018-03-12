@@ -6,3 +6,6 @@ ghbm
 ghbm.pub
 .Rproj.user
 .Rhistory
+**.Rout
+rout*
+**sanity check 1.csv
