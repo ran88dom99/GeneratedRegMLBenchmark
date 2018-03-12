@@ -6,6 +6,7 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #try(log("a")) ## test --no-edit
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
+memory.limit()
 task.subject<-"14th20hp3cv"
 pc.mlr<-c("ACE")#"ALTA","HOPPER"
 which.computer<-Sys.info()[['nodename']]
