@@ -11337,3 +11337,5 @@ gcvEarth, Mon Mar 12 16:23:35 2018, 0.615, Friedman's 1st, c(100, 76.4, 59, 45.7
 glm, Mon Mar 12 16:23:47 2018, 0.456, Friedman's 1st, c(67.1, 100, 0, 76.6, 58.6, 16.3, 3.8, 4.7, 0.5, 7)
 glm.nb, Mon Mar 12 16:23:59 2018, 0.437, Friedman's 1st, c(59.7, 100, 0.1, 80.5, 63.4, 13.7, 0, 2.2, 6, 5.3)
 glmnet, Mon Mar 12 16:24:26 2018, 0.481, Friedman's 1st, c(51.5, 100, 0, 76.8, 51.2, 5.6, 0, 1.9, 0, 0)
+bartMachine, Mon Mar 12 16:44:06 2018, 0.581, Friedman's 1st, Failed
+bartMachine, Mon Mar 12 16:59:15 2018, 0.552, Friedman's 1st, Failed

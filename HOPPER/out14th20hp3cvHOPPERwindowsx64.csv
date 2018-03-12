@@ -25038,3 +25038,5 @@ Fail,Fail,Fail,Fail,Fail,Mon Mar 12 16:23:23 2018,gbm_h2o,1,1,Friedman's 1st,ign
 0.437,0.462,3.52,2.42,2.06,Mon Mar 12 16:23:59 2018,glm.nb,1,1,Friedman's 1st,ignore,none,expoTrans,HOPPER,14th20hp3cv,4.507,random,250,2,cv,20,3,NA,5,identity
 Fail,Fail,Fail,Fail,Fail,Mon Mar 12 16:24:12 2018,glmboost,1,1,Friedman's 1st,ignore,none,expoTrans,HOPPER,14th20hp3cv,3
 0.481,0.488,3.32,2.34,1.91,Mon Mar 12 16:24:26 2018,glmnet,1,1,Friedman's 1st,ignore,none,expoTrans,HOPPER,14th20hp3cv,4.507,random,250,4,cv,20,3,NA,5,0.842678248649463,0.296487511705508
+0.581,0.561,2.34,2.15,1.72,Mon Mar 12 16:44:06 2018,bartMachine,1,1,Friedman's 1st,ignore,none,YeoJohnson,HOPPER,14th20hp3cv,4.896,random,260,114,cv,20,3,NA,5,66,1.87053517438471,0.938215908408165,2.80077630002052,4.61897212313488
+0.552,0.544,2.39,2.19,1.8,Mon Mar 12 16:59:15 2018,bartMachine,1,2,Friedman's 1st,ignore,none,YeoJohnson,HOPPER,14th20hp3cv,4.795,random,249,149,cv,20,3,NA,5,87,2.39163830410689,0.932258262624964,2.18526788428426,2.85491069080308
