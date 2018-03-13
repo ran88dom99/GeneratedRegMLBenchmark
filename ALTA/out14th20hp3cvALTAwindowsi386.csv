@@ -8276,3 +8276,7 @@ Fail,Fail,Fail,Fail,PackageFail,Fri Mar 09 20:08:11 2018,pls,1,2,bas interactive
 0.994,0.994,0.00568,0.00259,0.00202,Fri Mar 09 20:10:26 2018,ppr,1,2,bas interactive latent features,ignore,none,YeoJohnson,ALTA,14th20hp3cv,0.6527,random,244,40,cv,20,3,NA,5,6
 Fail,Fail,Fail,Fail,PackageFail,Fri Mar 09 20:10:51 2018,pythonKnnReg,1,2,bas interactive latent features,ignore,none,YeoJohnson,ALTA,14th20hp3cv,5
 0.863,0.868,0.094,0.0859,0.0737,Fri Mar 09 20:12:44 2018,qrf,1,2,bas interactive latent features,ignore,none,YeoJohnson,ALTA,14th20hp3cv,0.6527,random,244,94,cv,20,3,NA,5,9
+-0.189,-0.285,0.823,0.852,0.645,Tue Mar 13 11:07:48 2018,avNNet,1,1,bas interactive latent features,ignore,none,all,ALTA,14th20hp3cv,0.6632,random,272,687,cv,20,3,NA,5,18,0.000363701364602256,FALSE
+Fail,Fail,Fail,Fail,Fail,Tue Mar 13 11:08:03 2018,bag,1,1,bas interactive latent features,ignore,none,all,ALTA,14th20hp3cv,7
+0.97,0.968,0.0214,NA,NA,Tue Mar 13 11:10:51 2018,bagEarth,1,1,bas interactive latent features,ignore,none,all,ALTA,14th20hp3cv,0.6632,random,272,161,cv,20,3,NA,5,7,1
+0.97,0.968,-1,NA,NA,Tue Mar 13 12:16:26 2018,bagEarthGCV,1,1,bas interactive latent features,ignore,none,all,ALTA,14th20hp3cv,0.6632,random,272,3886,cv,20,3,NA,5,1
