@@ -4,31 +4,50 @@
  	all simple datasets
  	speech
 	basic classification?
- friedman's 2dplanes is too big.
+ friedman's 2dplanes is too big. its a test so leave it
  feed the computator
  	combine
  	ad a few more problems
  	redo with variable data amount, centers anc distributions,
  only 300mb?
- keep rout files for debuging
+<<<<<<< HEAD
+<<<<<<< HEAD
  make header for csv outputs
+=======
+>>>>>>> 358d3a6093ec0cf21820b6c5687a1bc3fb0fcbbe
+=======
+>>>>>>> 358d3a6093ec0cf21820b6c5687a1bc3fb0fcbbe
  howabout lubridate
+ run r scripts from inside R
+ get glossary machine 
+ correlation and categorical cousin 
+ spliting after transform is not ok?
+ 
+ make header for csv outputs
  min of pMAE must be > -1
 	single function while we are at it
+	print each model algo to rout
  rmse,NA,seed, before last when outputing to file
+<<<<<<< HEAD
+<<<<<<< HEAD
  correlation and categorical cousin
- gitignore and delet histories of all sanity check files
  
  run r scripts from inside R
+=======
+>>>>>>> 358d3a6093ec0cf21820b6c5687a1bc3fb0fcbbe
+=======
+>>>>>>> 358d3a6093ec0cf21820b6c5687a1bc3fb0fcbbe
  an all transformations
- get glossary machine
+ ICA
+ 
+
 
 cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
 set isodate=%date:~10,4%-%date:~4,2%-%date:~7,2%
 ren ModelTesterAllAuto.Rout rout%isodate%.txt
 move rout%isodate%.txt "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark\ACEREBOUT"
 cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
- 
+ "C:\Users\gvg\Documents\R\R-3.4.3\bin\x64\R.exe" CMD BATCH --max-mem-size=3000 ModelTesterAllAuto.R
  
 + simple bestest friend finder
 
