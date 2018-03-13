@@ -4,39 +4,25 @@
  	all simple datasets
  	speech
 	basic classification?
- friedman's 2dplanes is too big. its a test so leave it
+
  feed the computator
  	combine
  	ad a few more problems
  	redo with variable data amount, centers anc distributions,
+	
+ friedman's 2dplanes is too big. its a test so leave it
  only 300mb?
-<<<<<<< HEAD
-<<<<<<< HEAD
- make header for csv outputs
-=======
->>>>>>> 358d3a6093ec0cf21820b6c5687a1bc3fb0fcbbe
-=======
->>>>>>> 358d3a6093ec0cf21820b6c5687a1bc3fb0fcbbe
  howabout lubridate
  run r scripts from inside R
- get glossary machine 
- correlation and categorical cousin 
+ get glossary machine (exists on learn programming)
+ correlation and categorical cousin
  spliting after transform is not ok?
  
  make header for csv outputs
  min of pMAE must be > -1
 	single function while we are at it
 	print each model algo to rout
- rmse,NA,seed, before last when outputing to file
-<<<<<<< HEAD
-<<<<<<< HEAD
- correlation and categorical cousin
- 
- run r scripts from inside R
-=======
->>>>>>> 358d3a6093ec0cf21820b6c5687a1bc3fb0fcbbe
-=======
->>>>>>> 358d3a6093ec0cf21820b6c5687a1bc3fb0fcbbe
+	rmse,NA,seed, before last when outputing to file
  an all transformations
  ICA
  
