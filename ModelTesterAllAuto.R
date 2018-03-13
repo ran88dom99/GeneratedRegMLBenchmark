@@ -1,3 +1,4 @@
+
 options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 ## capture messages and errors to a file.https://rweb.crmda.ku.edu/cran/
 #zz <- file("all.Rout", open="wt")https://cran.cnr.berkeley.edu
@@ -25,7 +26,7 @@ if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) wri
 cv.iters=3
 tuneLength=20
 tuneLength2=8
-normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quantile")#,"centernscale"
+normings=c("all","ICA", "centernscale","expoTrans","range01","asis","quantile","YeoJohnson")#,"centernscale"
 
 gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,3,1,52)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
@@ -229,9 +230,21 @@ for(gend.data in gensTTest){
           if(norming=="YeoJohnson"){
             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("YeoJohnson"))#"center", "scale",
             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
-
+          if(norming=="all"){
+            preProcValueYJ= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("YeoJohnson")) 
+            preProcValueET= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("expoTrans"))
+            preProcValue01= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("range")) 
+            preProcValuecns= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("center", "scale")) 
+            df.toprocess<-cbind( df.toprocess,
+                                 predict(preProcValueYJ, df.toprocess[,2:length(df.toprocess[1,])]),
+                                 predict(preProcValueET, df.toprocess[,2:length(df.toprocess[1,])]),
+                                 predict(preProcValue01, df.toprocess[,2:length(df.toprocess[1,])]),
+                                 predict(preProcValuecns, df.toprocess[,2:length(df.toprocess[1,])]),
+                                 deparse.level = 1)
+            }
+          
           if((norming=="asis")&&(trans.y==2)){next}
-
+          if((norming=="all")&&(trans.y==2)){next}
 
           ################preprocess###########
           df.toprocess=data.frame(df.toprocess[dependant.selection,])
@@ -252,13 +265,13 @@ for(gend.data in gensTTest){
           df.toprocess = signif(df.toprocess,digits = 3)
 
           seed.var =222+round(runif(1,min=0,max=100))
-          set.seed(seed.var)
+          set.seed(seed.var)#spliting after transform is not ok?
           inTrain <- createDataPartition(y = df.toprocess[,1],
                                          p = .75,
                                          list = FALSE)
           training <- df.toprocess[ inTrain,]
           testing  <- df.toprocess[-inTrain,]
-          write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F,col.names = F)
+          write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F, col.names = T)
 
           ###########for all models#################
           setwd(base.folder)
