@@ -1,5 +1,5 @@
 
-R version 3.4.2 (2017-09-28) -- "Short Summer"
+R version 3.4.1 (2017-06-30) -- "Single Candle"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
@@ -26,7 +26,7 @@ Type 'q()' to quit R.
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 > memory.limit()
-[1] 7626
+[1] 6056
 > task.subject<-"14th20hp3cv"
 > pc.mlr<-c("ACE")#"ALTA","HOPPER"
 > which.computer<-Sys.info()[['nodename']]
@@ -204,10 +204,10 @@ The following object is masked from 'package:base':
 > list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
-Installing packages into 'C:/Users/John/Documents/R/win-library/3.4'
+Installing packages into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
 (as 'lib' is unspecified)
 Warning message:
-packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.2) 
+packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1) 
 > 
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
@@ -218,7 +218,7 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.2)
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Sun Mar 11 18:26:45 2018"
+[1] "Mon Mar 12 15:31:43 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
