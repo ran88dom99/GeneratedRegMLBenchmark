@@ -24,7 +24,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=simScores[Row,2]+simScores[Row,3]
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -51,7 +51,7 @@ for(Col in 1:10){
     simScores[Row,Col]=sum(simPubs[Col,1]*simGames[Row,1],simPubs[Col,2]*simGames[Row,2],simPubs[Col,3]*simGames[Row,3])
   }}
 
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv", sep = ""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -78,7 +78,7 @@ for(Col in 1:10){
     simScores[Row,Col]=(simPubs[Col,1]^simGames[Row,1])+(simGames[Row,2]^simPubs[Col,2])*(simPubs[Col,3]^simGames[Row,3])
   }}
 
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv", sep = ""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -94,7 +94,7 @@ varimport[gen.count,1:length(varim)]=varim
 for(Row in 1:Rows){
   simScores[Row,1:10]=rnorm(10, mean = 0, sd = 1)
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -112,7 +112,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=(simScores[Row,2]-simScores[Row,3])*3
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -130,7 +130,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=simScores[Row,2]*simScores[Row,2]
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -147,7 +147,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=sqrt(simScores[Row,2])
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -163,7 +163,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=simScores[Row,2]^.5
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -179,7 +179,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=1/(simScores[Row,2])
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -196,7 +196,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=simScores[Row,2]^-2
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -213,7 +213,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=log(simScores[Row,2])
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -229,7 +229,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=sin(simScores[Row,2])
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -246,7 +246,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=sin(13*simScores[Row,2]^-.2)
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -266,7 +266,7 @@ coef3<-rnorm(1, mean = 0, sd = 1);
 for(Row in 1:Rows){
   simScores[Row,1]=coef1*simScores[Row,2]^3+coef2*simScores[Row,2]^2+coef3*simScores[Row,2]
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -289,7 +289,7 @@ coef3<-rnorm(1, mean = 0, sd = 1);
 for(Row in 1:Rows){
   simScores[Row,1]=coef1*simScores[Row,2]^1.3+coef2*simScores[Row,2]^2.1+coef3*simScores[Row,2]^.7
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -314,7 +314,7 @@ coef3<-rnorm(1, mean = 0, sd = 1);
 for(Row in 1:Rows){
   simScores[Row,1]=coef1*simScores[Row,2]^1.3+coef2*simScores[Row,3]^2.1+coef3*simScores[Row,4]^1.7
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -331,7 +331,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=simScores[Row,2]*simScores[Row,3]
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -352,7 +352,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=(simScores[Row,2]^.6+simScores[Row,2]^1.6)*(simScores[Row,3]^.1)
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -368,7 +368,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=simScores[Row,3]^simScores[Row,2]
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -384,7 +384,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=simScores[Row,2]*simScores[Row,4]*simScores[Row,3]
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -400,7 +400,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=simScores[Row,2]*simScores[Row,4]*simScores[Row,3]^(1/3)
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -417,7 +417,7 @@ for(Row in 1:Rows){
 for(Row in 1:Rows){
   simScores[Row,1]=simScores[Row,2]*simScores[Row,4]^simScores[Row,3]
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -438,7 +438,7 @@ for(Row in 1:Rows){
     simScores[Row,1]=1
   }
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -459,7 +459,7 @@ for(Row in 1:Rows){
     simScores[Row,1]=simScores[Row,2]
   }
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -479,7 +479,7 @@ for(Row in 1:Rows){
     simScores[Row,1]=simScores[Row,5]+simScores[Row,6]
   }
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -506,7 +506,7 @@ for(Row in 1:Rows){
     simScores[Row,1]=simScores[Row,2]*.1+simScores[Row,3]*.1
   }
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -526,7 +526,7 @@ for(Row in 1:Rows){
     simScores[Row,1]=simScores[Row,2]+simScores[Row,3]
   }
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -546,7 +546,7 @@ for(Row in 1:Rows){
     simScores[Row,1]=simScores[Row,4]#####error was here
   }
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -567,7 +567,7 @@ for(Row in 1:Rows){
     simScores[Row,1]=simScores[Row,2]
   }
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -589,7 +589,7 @@ for(Row in 1:Rows){
     simScores[Row,1]=simScores[Row,2]
   }
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
@@ -618,7 +618,7 @@ for(Row in 1:Rows){
     }
   }
 }
-write.table(round(simScores,digits  = 3),
+write.table(signif(simScores,digits  = 3),
             file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
