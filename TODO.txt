@@ -10,12 +10,12 @@
  	ad a few more problems
  	redo with variable data amount, centers anc distributions,
 	
- friedman's 2dplanes is too big. its a test so leave it
- only 300mb?
+ friedman's 2dplanes is too big. (its a test so leave it)
+ only 300mb? seems not to be a problem on acerebout
  howabout lubridate
  run r scripts from inside R
  get glossary machine (exists on learn programming)
- correlation and categorical cousin
+ correlation and categorical cousin(mvo really)
  spliting after transform is not ok?
  
  make header for csv outputs
@@ -23,8 +23,8 @@
 	single function while we are at it
 	print each model algo to rout
 	rmse,NA,seed, before last when outputing to file
- an all transformations
- ICA
+ an all transformations with pca ica
+
  
 
 

@@ -467,3 +467,80 @@ rqlasso, Tue Mar 13 16:37:19 2018, 0.998, basic sum C1 + C2, c(0, 100)
 rqnc, Tue Mar 13 16:37:22 2018, 0.998, basic sum C1 + C2, c(0, 100)
 RRF, Tue Mar 13 16:38:44 2018, 0.943, basic sum C1 + C2, Failed
 RRFglobal, Tue Mar 13 16:39:24 2018, 0.943, basic sum C1 + C2, Failed
+avNNet, Wed Mar 14 15:33:29 2018, 0.342, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+bagEarth, Wed Mar 14 15:33:50 2018, 0.98, basic sum C1 + C2, c(100, 0, 0, 0)
+bagEarthGCV, Wed Mar 14 15:33:55 2018, 0.98, basic sum C1 + C2, c(100, 0, 0, 0)
+bam, Wed Mar 14 15:34:28 2018, 0.998, basic sum C1 + C2, c(86.7, 100, 0, 68.5)
+bayesglm, Wed Mar 14 15:34:33 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+blasso, Wed Mar 14 15:34:36 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+blassoAveraged, Wed Mar 14 15:34:39 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+bridge, Wed Mar 14 15:34:42 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+BstLm, Wed Mar 14 15:35:22 2018, 0.994, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+cforest, Wed Mar 14 15:35:52 2018, 0.971, basic sum C1 + C2, c(0, 0, 100, 0)
+ctree, Wed Mar 14 15:35:56 2018, 0.955, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+ctree2, Wed Mar 14 15:35:59 2018, 0.956, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+cubist, Wed Mar 14 15:36:26 2018, 0.998, basic sum C1 + C2, c(100, 81.4, 8, 0)
+dnn, Wed Mar 14 15:36:31 2018, 0, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+earth, Wed Mar 14 15:36:34 2018, 0.98, basic sum C1 + C2, c(100, 0, 0, 0)
+elm, Wed Mar 14 15:36:37 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+enet, Wed Mar 14 15:36:40 2018, 0.99, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+foba, Wed Mar 14 15:36:44 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+gam, Wed Mar 14 15:36:55 2018, 0.998, basic sum C1 + C2, c(86.8, 100, 0, 68.8)
+gamSpline, Wed Mar 14 15:37:02 2018, 0.998, basic sum C1 + C2, c(88.4, 100, 0, 16.1)
+gcvEarth, Wed Mar 14 15:38:40 2018, 0.98, basic sum C1 + C2, c(100, 0, 0, 0)
+glm, Wed Mar 14 15:38:43 2018, 0.998, basic sum C1 + C2, c(71.1, 82.1, 100, 0)
+glmboost, Wed Mar 14 15:38:53 2018, 0.998, basic sum C1 + C2, c(0, 2.7, 100, 0)
+glmnet, Wed Mar 14 15:38:56 2018, 0.971, basic sum C1 + C2, c(0, 2.6, 100, 0)
+glmStepAIC, Wed Mar 14 15:40:14 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+icr, Wed Mar 14 15:40:17 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+kernelpls, Wed Mar 14 15:40:20 2018, 0.998, basic sum C1 + C2, c(66.7, 73.7, 100, 0)
+knn, Wed Mar 14 15:40:23 2018, 0.945, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+krlsPoly, Wed Mar 14 15:41:24 2018, 0.183, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+krlsRadial, Wed Mar 14 15:43:59 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+lars, Wed Mar 14 15:44:02 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+lars2, Wed Mar 14 15:44:04 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+lasso, Wed Mar 14 15:44:07 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+leapBackward, Wed Mar 14 15:44:10 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+leapForward, Wed Mar 14 15:44:12 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+leapSeq, Wed Mar 14 15:44:14 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+lm, Wed Mar 14 15:44:16 2018, 0.998, basic sum C1 + C2, c(71.1, 82.1, 100, 0)
+lmStepAIC, Wed Mar 14 15:44:19 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+msaenet, Wed Mar 14 15:44:41 2018, 0.998, basic sum C1 + C2, 73.9
+msaenet, Wed Mar 14 15:44:41 2018, 0.998, basic sum C1 + C2, 76.6
+msaenet, Wed Mar 14 15:44:41 2018, 0.998, basic sum C1 + C2, 100
+msaenet, Wed Mar 14 15:44:41 2018, 0.998, basic sum C1 + C2, 0
+nnet, Wed Mar 14 15:44:51 2018, 0.342, basic sum C1 + C2, c(62.3, 73.7, 100, 0)
+parRF, Wed Mar 14 15:45:11 2018, 0.984, basic sum C1 + C2, Failed
+pcaNNet, Wed Mar 14 15:45:16 2018, 0, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+pcr, Wed Mar 14 15:45:18 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+plsRglm, Wed Mar 14 15:46:00 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+ppr, Wed Mar 14 15:46:05 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+qrf, Wed Mar 14 15:46:25 2018, 0.965, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+ranger, Wed Mar 14 15:46:34 2018, 0.984, basic sum C1 + C2, Failed
+Rborist, Wed Mar 14 15:47:09 2018, 0.984, basic sum C1 + C2, c(0, 0.1, 100, 0)
+relaxo, Wed Mar 14 15:47:12 2018, 0.997, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+rf, Wed Mar 14 15:47:24 2018, 0.984, basic sum C1 + C2, Failed
+ridge, Wed Mar 14 15:47:27 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+rlm, Wed Mar 14 15:47:29 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+rpart, Wed Mar 14 15:47:32 2018, 0.957, basic sum C1 + C2, c(100, 0, 5.2, 8.8)
+rpart1SE, Wed Mar 14 15:47:34 2018, 0.808, basic sum C1 + C2, c(100, 0, 25.1, 28.9)
+rpart2, Wed Mar 14 15:47:37 2018, 0.808, basic sum C1 + C2, c(100, 0, 25.1, 28.9)
+rqlasso, Wed Mar 14 15:47:40 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+rqnc, Wed Mar 14 15:47:43 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+RRF, Wed Mar 14 15:49:25 2018, 0.984, basic sum C1 + C2, Failed
+RRFglobal, Wed Mar 14 15:50:14 2018, 0.984, basic sum C1 + C2, Failed
+simpls, Wed Mar 14 15:53:44 2018, 0.998, basic sum C1 + C2, c(66.7, 73.7, 100, 0)
+spikeslab, Wed Mar 14 15:53:50 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+spls, Wed Mar 14 15:53:53 2018, 0.998, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+superpc, Wed Mar 14 15:53:57 2018, 0.992, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+svmLinear, Wed Mar 14 15:54:05 2018, NA, basic sum C1 + C2, Failed
+svmLinear2, Wed Mar 14 15:54:08 2018, 0.967, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+svmLinear3, Wed Mar 14 15:54:11 2018, 0.979, basic sum C1 + C2, c(50.7, 55.5, 100, 0)
+svmPoly, Wed Mar 14 15:54:15 2018, NA, basic sum C1 + C2, Failed
+svmRadial, Wed Mar 14 15:54:19 2018, NA, basic sum C1 + C2, Failed
+svmRadialCost, Wed Mar 14 15:54:22 2018, NA, basic sum C1 + C2, Failed
+svmRadialSigma, Wed Mar 14 15:54:26 2018, NA, basic sum C1 + C2, Failed
+treebag, Wed Mar 14 15:54:33 2018, 0.868, basic sum C1 + C2, c(100, 0, 26.9, 31.1)
+widekernelpls, Wed Mar 14 15:54:45 2018, 0.998, basic sum C1 + C2, c(66.7, 73.7, 100, 0)
+xgbLinear, Wed Mar 14 15:54:57 2018, 0.984, basic sum C1 + C2, c(100, 0, 0, 0)
+xgbTree, Wed Mar 14 15:56:15 2018, 0.93, basic sum C1 + C2, c(100, 27.6, 22.4, 0)
