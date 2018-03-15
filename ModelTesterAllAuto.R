@@ -26,7 +26,7 @@ if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) wri
 cv.iters=3
 tuneLength=20
 tuneLength2=8
-normings=c("all","ICA", "centernscale","expoTrans","range01","asis","quantile","YeoJohnson")#,"centernscale"
+normings=c("PCA","ICA","all", "centernscale","expoTrans","range01","asis","quantile","YeoJohnson")#,"centernscale"
 
 gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,3,1,52)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
@@ -86,7 +86,8 @@ for(lt in 2:lgf)  {
   if(previous.fails[lt,2]==previous.fails[lt-1,2])  {
     bad.models=union(bad.models,c(paste(previous.fails[lt,2])))  }}
 
-#######not to redo a test function#####
+#source(functionsallautotest.R)
+#######not to redo a test function in functions source#####
 check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextra="missing",missingdata="leaveempty",datasource="mean" ,column.to.predict=200,allmodel="ctree")
 {
   for(intern in 1:length(df[,1])){
@@ -214,10 +215,21 @@ for(gend.data in gensTTest){
       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
 
         for(norming in normings) {
-        for(trans.y in 1:2) {
+        for(trans.y in 2) {#1:
           df.toprocess=data.source
-          y.untransformed<-df.toprocess[,1]
 
+          #df.toprocess = data.frame(df.toprocess,)
+          nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
+          #nzv[nzv$nzv,][1:10,]
+          if(length(nzv)>1){
+            df.toprocess <- df.toprocess[, -nzv]
+            }
+          if((norming=="asis")&&(trans.y==1)){next}
+          if((norming=="all")&&(trans.y==1)){next}
+          if((norming=="ICA")&&(trans.y==1)){next}
+          if((norming=="PCA")&&(trans.y==1)){next}
+
+          y.untransformed<-df.toprocess[,1]
           if(norming=="centernscale"){
             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("center", "scale"))
             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
@@ -231,38 +243,69 @@ for(gend.data in gensTTest){
             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("YeoJohnson"))#"center", "scale",
             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
           if(norming=="all"){
-            preProcValueYJ= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("YeoJohnson")) 
+            df.toprocessFA<-df.toprocess[,2:length(df.toprocess[1,])]
+            preProcValueYJ= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("YeoJohnson"))
             preProcValueET= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("expoTrans"))
-            preProcValue01= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("range")) 
-            preProcValuecns= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("center", "scale")) 
+            preProcValue01= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("range"))
+            preProcValuecns= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("center", "scale"))
             df.toprocess<-cbind( df.toprocess,
                                  predict(preProcValueYJ, df.toprocess[,2:length(df.toprocess[1,])]),
                                  predict(preProcValueET, df.toprocess[,2:length(df.toprocess[1,])]),
                                  predict(preProcValue01, df.toprocess[,2:length(df.toprocess[1,])]),
                                  predict(preProcValuecns, df.toprocess[,2:length(df.toprocess[1,])]),
                                  deparse.level = 1)
-            }
-          
-          if((norming=="asis")&&(trans.y==2)){next}
-          if((norming=="all")&&(trans.y==2)){next}
+          }
+
+          Q_Fail<-T #I expect ICA to crash horribly so testing for fail and NA
+          try({
+            if(norming=="ICA"){
+              preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("ica"),n.comp=3)#"center", "scale",
+              df.toprocess<-cbind(df.toprocess,predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])]))}
+            Q_Fail<-F
+          })
+          if(norming=="ICA"){
+            if(Q_Fail || anyNA(df.toprocess)){next;print("icafail")}}
+
+          Q_Fail<-T #I expect ICA to crash horribly so testing for fail and NA
+          try({
+            if(norming=="PCA"){
+              preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("pca"))#"center", "scale",
+              df.toprocess <-cbind(df.toprocess,predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])]))
+              }
+            Q_Fail<-F
+          })
+          if(norming=="PCA"){
+            if(Q_Fail || anyNA(df.toprocess)){next}}
 
           ################preprocess###########
           df.toprocess=data.frame(df.toprocess[dependant.selection,])
           y.untransformed=y.untransformed[dependant.selection]
           if(norming=="quantile"){
-            for(Clol in trans.y:length(data.source[1,])){
-              df.toprocess[,Clol]<- (rank(df.toprocess[,Clol],na.last = "keep",ties.method = "average")-1) }
+            for(Clol in trans.y:length(df.toprocess[1,])){
+              df.toprocess[,Clol]<- (rank(df.toprocess[,Clol],na.last = "keep",ties.method = "average")-1)
+              }
             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
-            df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
+            df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])
+            }
 
-          loess.model<-loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
+          if(norming=="all"){
+            df.toprocessFA=data.frame(df.toprocessFA[dependant.selection,])
+            for(Clol in trans.y:(length(df.toprocessFA[1,]))){
+              df.toprocessFA[,Clol]<- (rank(df.toprocessFA[,Clol],na.last = "keep",ties.method = "average")-1)
+              }
+            preProcValues= preProcess(df.toprocessFA[,trans.y:length(df.toprocessFA[1,])],method = c("range"))
+            df.toprocessFA[,trans.y:length(df.toprocessFA[1,])]<- predict(preProcValues, df.toprocessFA[,trans.y:length(df.toprocessFA[1,])])
+            df.toprocess<-cbind( df.toprocess,df.toprocessFA,deparse.level = 1)
+          }
+          df.toprocess = signif(df.toprocess,digits = 3)
 
           #df.toprocess = data.frame(df.toprocess,)
           nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
           #nzv[nzv$nzv,][1:10,]
           if(length(nzv)>1){
             df.toprocess = (df.toprocess[, -nzv])}
-          df.toprocess = signif(df.toprocess,digits = 3)
+
+          loess.model<-loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
 
           seed.var =222+round(runif(1,min=0,max=100))
           set.seed(seed.var)#spliting after transform is not ok?
