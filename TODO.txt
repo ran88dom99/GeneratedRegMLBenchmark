@@ -21,12 +21,7 @@
  make header for csv outputs
  min of pMAE must be > -1
 	single function while we are at it
-	print each model algo to rout
 	rmse,NA,seed, before last when outputing to file
- an all transformations with pca ica
-
- 
-
 
 cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
 set isodate=%date:~10,4%-%date:~4,2%-%date:~7,2%

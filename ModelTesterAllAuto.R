@@ -19,14 +19,17 @@ base.folder<-getwd()
 cpout.folder<-paste(base.folder,"/",which.computer,sep = "")
 setwd(cpout.folder)
 
-if(length(which(list.files() == out.file))<1) write.table( "0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,," ,file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
+if(length(which(list.files() == out.file))<1){
+  write.table("pMAE,pRMSE,ocvRMSE,RMSEutrans,MAEutrans,date,algomodel,trgCol,transTarg,task,missing,append,transform,pc,expirament,RMSEofMean,hpGen,randomseed,time,validmethod,tuneLength,cvcount,ignrepeats,adaptivemin,bestTune,,,,,,,,,,,," ,file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
+  write.table("0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,bac latent features,ignore,none,asis,1.127,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,," ,file =,out.file,append=T,quote = F, sep = ",", row.names = F,col.names = F)
+  }
 if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,".csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 
 cv.iters=3
 tuneLength=20
 tuneLength2=8
-normings=c("PCA","ICA","all", "centernscale","expoTrans","range01","asis","quantile","YeoJohnson")#,"centernscale"
+normings=c("all","PCA","ICA","centernscale","expoTrans","range01","asis","quantile","YeoJohnson")#,"centernscale"
 
 gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,3,1,52)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
@@ -200,7 +203,7 @@ for(gend.data in gensTTest){
       ################data wrestling###############
 
       dependant.selection=complete.cases(data.source[,column.to.predict])
-      df.previous.calcs=as.data.frame(read.csv(file=out.file, header = FALSE, sep = ",", quote = "",
+      df.previous.calcs=as.data.frame(read.csv(file=out.file, header = TRUE, sep = ",", quote = "",
                                                dec = ".", fill = TRUE, comment.char = ""))
       unimportant.computations<-vector(mode = "logical",length=length(df.previous.calcs[,1])  )
       for(intern in 1:length(df.previous.calcs[,1])){
@@ -228,77 +231,102 @@ for(gend.data in gensTTest){
           if((norming=="all")&&(trans.y==1)){next}
           if((norming=="ICA")&&(trans.y==1)){next}
           if((norming=="PCA")&&(trans.y==1)){next}
-
           y.untransformed<-df.toprocess[,1]
+          l.df.tp<-length(df.toprocess[1,])
+
           if(norming=="centernscale"){
-            preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("center", "scale"))
-            df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
+            preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("center", "scale"))
+            df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])}
           if(norming=="range01"){
-            preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
-            df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
+            preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("range"))
+            df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])}
           if(norming=="expoTrans"){
-            preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("expoTrans"))
-            df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
+            preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("expoTrans"))
+            df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])}
           if(norming=="YeoJohnson"){
-            preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("YeoJohnson"))#"center", "scale",
-            df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
+            preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("YeoJohnson"))#"center", "scale",
+            df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])}
           if(norming=="all"){
-            df.toprocessFA<-df.toprocess[,2:length(df.toprocess[1,])]
-            preProcValueYJ= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("YeoJohnson"))
-            preProcValueET= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("expoTrans"))
-            preProcValue01= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("range"))
-            preProcValuecns= preProcess(df.toprocess[,2:length(df.toprocess[1,])],method = c("center", "scale"))
+            df.toprocessFA<-df.toprocess[,2:l.df.tp]
+            preProcValueYJ= preProcess(df.toprocess[,2:l.df.tp],method = c("YeoJohnson"))
+            preProcValueET= preProcess(df.toprocess[,2:l.df.tp],method = c("expoTrans"))
+            preProcValue01= preProcess(df.toprocess[,2:l.df.tp],method = c("range"))
+            preProcValuecns= preProcess(df.toprocess[,2:l.df.tp],method = c("center", "scale"))
+
+            Q_Fail<-T #I expect ICA to crash horribly so testing for fail and NA
+            try({
+              preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("ica"),n.comp=3)#"center", "scale",
+              df.ica<-predict(preProcValues, df.toprocess[,2:l.df.tp])
+              Q_Fail<-F
+            })
+            if(Q_Fail || anyNA(df.ica)){
+              print("icafail")}
+            else{
+              df.toprocess<-cbind(df.toprocess,df.ica)}
+            Q_Fail<-T #I expect PCA to crash horribly so testing for fail and NA
+            try({
+              preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("pca"))#"center", "scale",
+              df.pca<-predict(preProcValues, df.toprocess[,2:l.df.tp])
+              Q_Fail<-F
+            })
+            if(Q_Fail || anyNA(df.pca)){
+              print("pcafail")}
+            else{
+              df.toprocess<-cbind(df.toprocess,df.pca)}
+
             df.toprocess<-cbind( df.toprocess,
-                                 predict(preProcValueYJ, df.toprocess[,2:length(df.toprocess[1,])]),
-                                 predict(preProcValueET, df.toprocess[,2:length(df.toprocess[1,])]),
-                                 predict(preProcValue01, df.toprocess[,2:length(df.toprocess[1,])]),
-                                 predict(preProcValuecns, df.toprocess[,2:length(df.toprocess[1,])]),
+                                 predict(preProcValueYJ, df.toprocess[,2:l.df.tp]),
+                                 predict(preProcValueET, df.toprocess[,2:l.df.tp]),
+                                 predict(preProcValue01, df.toprocess[,2:l.df.tp]),
+                                 predict(preProcValuecns, df.toprocess[,2:l.df.tp]),
                                  deparse.level = 1)
           }
 
           Q_Fail<-T #I expect ICA to crash horribly so testing for fail and NA
           try({
             if(norming=="ICA"){
-              preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("ica"),n.comp=3)#"center", "scale",
-              df.toprocess<-cbind(df.toprocess,predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])]))}
+              preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("ica"),n.comp=3)#"center", "scale",
+              df.toprocess<-cbind(df.toprocess,predict(preProcValues, df.toprocess[,trans.y:l.df.tp]))}
             Q_Fail<-F
           })
           if(norming=="ICA"){
             if(Q_Fail || anyNA(df.toprocess)){next;print("icafail")}}
 
-          Q_Fail<-T #I expect ICA to crash horribly so testing for fail and NA
+          Q_Fail<-T #I expect PCA to crash horribly so testing for fail and NA
           try({
             if(norming=="PCA"){
-              preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("pca"))#"center", "scale",
-              df.toprocess <-cbind(df.toprocess,predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])]))
+              preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("pca"))#"center", "scale",
+              df.toprocess <-cbind(df.toprocess,predict(preProcValues, df.toprocess[,trans.y:l.df.tp]))
               }
             Q_Fail<-F
           })
           if(norming=="PCA"){
             if(Q_Fail || anyNA(df.toprocess)){next}}
 
+
           ################preprocess###########
           df.toprocess=data.frame(df.toprocess[dependant.selection,])
           y.untransformed=y.untransformed[dependant.selection]
           if(norming=="quantile"){
-            for(Clol in trans.y:length(df.toprocess[1,])){
+            for(Clol in trans.y:l.df.tp){
               df.toprocess[,Clol]<- (rank(df.toprocess[,Clol],na.last = "keep",ties.method = "average")-1)
               }
-            preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
-            df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])
+            preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("range"))
+            df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])
             }
 
           if(norming=="all"){
             df.toprocessFA=data.frame(df.toprocessFA[dependant.selection,])
-            for(Clol in trans.y:(length(df.toprocessFA[1,]))){
+            l.df.tpfa<-length(df.toprocessFA[1,])
+            for(Clol in 1:(l.df.tpfa)){
               df.toprocessFA[,Clol]<- (rank(df.toprocessFA[,Clol],na.last = "keep",ties.method = "average")-1)
               }
-            preProcValues= preProcess(df.toprocessFA[,trans.y:length(df.toprocessFA[1,])],method = c("range"))
-            df.toprocessFA[,trans.y:length(df.toprocessFA[1,])]<- predict(preProcValues, df.toprocessFA[,trans.y:length(df.toprocessFA[1,])])
+            preProcValues= preProcess(df.toprocessFA[,1:l.df.tpfa],method = c("range"))
+            df.toprocessFA[,1:l.df.tpfa]<- predict(preProcValues, df.toprocessFA[,1:l.df.tpfa])
             df.toprocess<-cbind( df.toprocess,df.toprocessFA,deparse.level = 1)
           }
-          df.toprocess = signif(df.toprocess,digits = 3)
 
+          df.toprocess = signif(df.toprocess,digits = 3)
           #df.toprocess = data.frame(df.toprocess,)
           nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
           #nzv[nzv$nzv,][1:10,]

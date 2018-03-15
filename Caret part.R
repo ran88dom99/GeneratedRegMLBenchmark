@@ -23,7 +23,8 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
 
   #seed.var=seed.var+1
   if(length(df.previous.calcs[,1])>0){
-    if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel)){next}}
+    if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel))
+      {next}}
 
   if(F){
   # unloading the NS 'object'
@@ -32,9 +33,10 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   lapply(pkgs,  detach, character.only = TRUE, unload = TRUE)
   library(caret)
   #library(caretEnsemble)
-  library(MLmetrics)}
-  gc()
+  library(MLmetrics)
+  }
 
+  gc()
   when<-proc.time()
   list.of.packages <-getModelInfo(allmodel)[[1]]$library
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
