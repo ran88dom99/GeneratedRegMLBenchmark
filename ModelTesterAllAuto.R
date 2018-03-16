@@ -14,7 +14,7 @@ which.computer<-Sys.info()[['nodename']]
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
 
-if(exists("base.folder")){setwd(base.folder)}
+#if(exists("base.folder")){setwd(base.folder)}
 base.folder<-getwd()
 cpout.folder<-paste(base.folder,"/",which.computer,sep = "")
 setwd(cpout.folder)
@@ -29,9 +29,9 @@ if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) wri
 cv.iters=3
 tuneLength=20
 tuneLength2=8
-normings=c("all","PCA","ICA","centernscale","expoTrans","range01","asis","quantile","YeoJohnson")#,"centernscale"
+normings=c("asis","centernscale","expoTrans","range01","quantile","YeoJohnson","all","PCA","ICA")#,"centernscale"
 
-gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,3,1,52)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,3,1,52,57)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
 write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 try({
@@ -117,33 +117,6 @@ cv6hp5.avoid <- c("pcaNNet")
 cv3hp32.avoid <- c("glm.nb", "gamboost", "ctree2","glmboost", "leapSeq","ctree","svmLinear2")
 cv7x5hp32.avoid <- c("SBC","bagearthgcv","gcvearth","lmStepAIC","glmStepAIC","bridge","lm","glm","bayesglm","blassoAveraged","treebag","rpart1SE")
 
-allmodels <- c("avNNet", "bagEarth", "bagEarthGCV",
-               "bayesglm", "bdk", "blackboost", "Boruta", "brnn", "BstLm" ,
-               "bstTree", "cforest", "ctree", "ctree2", "cubist", "DENFIS",
-               "dnn", "earth", "elm", "enet",   "evtree",
-               "extraTrees",  "gamLoess",  "gaussprLinear", "gaussprPoly", "gaussprRadial",
-               "gcvEarth","glm", "glmboost",  "icr", "kernelpls",
-               "kknn", "knn",  "krlsRadial", "lars" , "lasso",
-               "leapBackward", "leapForward", "leapSeq", "lm", "M5", "M5Rules",
-               "mlpWeightDecay", "neuralnet" , "partDSA",
-               "pcaNNet", "pcr", "penalized", "pls", "plsRglm", "ppr",
-               "qrf" , "ranger",  "rf")
-allmodels <- c("rlm", "rpart", "rpart2",
-               "RRF", "RRFglobal",  "simpls",
-               "svmLinear", "svmPoly", "svmRadial", "svmRadialCost",
-               "widekernelpls",  "xgbLinear",
-               "xgbTree")
-allmodels <- c("avNNet","BstLm","bstTree","cforest","ctree","ctree2",
-               "cubist","earth","enet","evtree","glmboost",
-               "icr","kernelpls","kknn","lasso","pcaNNet",
-               "pcr","pls","qrf","ranger","rf")
-
-allmodels <- c("kknn", "cubist", "avNNet", "xgbLinear", "RRF", "pcaNNet","earth","nnet","gbm","enet","lasso","BstLm",
-               "foba", "leapBackward", "gcvEarth", "SBC","glm.nb","gamboost","ctree2","relaxo",
-               "bartMachine","extraTrees","bam","gam","randomGLM")
-#allmodels <- c("bam")
-#allmodels <- c("rf")"rqlasso",, "xyf" "rvmPoly", "rvmRadial",    "spls", "superpc" ,   "treebag",  "svmLinear2",  "SBC",
-#allmodels <- c("bartMachine", "xgbLinear", "pcaNNet","svmLinear","glmnet","cforest","cubist","rf","ranger")"glmnet",
 #wow rfRules is really slow "rfRules","WM", takes 50min
 # brak everythig "rbfDDA","ridge","rqnc",
 # use "rf" to test all
@@ -345,6 +318,8 @@ for(gend.data in gensTTest){
           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F, col.names = T)
 
           ###########for all models#################
+          gc()
+          
           setwd(base.folder)
           if(max(which.computer==pc.mlr)>0)
             source("MLR part.R")
