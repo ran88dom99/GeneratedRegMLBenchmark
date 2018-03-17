@@ -63,4 +63,12 @@ Wed Mar 14 09:23:14 2018,gam,bas interactive latent features,3,20,windows,x64,AC
 Wed Mar 14 10:30:12 2018,gam,bas interactive latent features,3,20,windows,x64,ACEREBOUT
 Wed Mar 14 12:56:40 2018,leapSeq,bas interactive latent features,3,20,windows,x64,ACEREBOUT
 Wed Mar 14 13:12:45 2018,leapSeq,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-
+Thu Mar 15 23:25:18 2018,extraTrees,4thbooker,3,20,windows,x64,ACEREBOUT
+Fri Mar 16 11:26:44 2018,cforest,4thbooker,3,20,windows,x64,ACEREBOUT
+Fri Mar 16 12:07:30 2018,bagEarth,4thbooker0,3,20,windows,x64,ACEREBOUT
+Fri Mar 16 16:59:12 2018,bagEarth,4thbookerhlf0,3,20,windows,x64,ACEREBOUT
+Fri Mar 16 17:10:07 2018,bagEarthGCV,4thbookerqrt0,3,20,windows,x64,ACEREBOUT
+Fri Mar 16 17:10:07 2018,bagEarthGCV,4thbookerqrt0,3,20,windows,x64,ACEREBOUT
+Fri Mar 16 17:12:08 2018,avNNet,4thbookerqrt0,3,20,windows,x64,ACEREBOUT
+Fri Mar 16 17:12:08 2018,avNNet,4thbookerqrt0,3,20,windows,x64,ACEREBOUT
+Fri Mar 16 17:12:45 2018,avNNet,4thbookerqrt0,3,20,windows,x64,ACEREBOUT
