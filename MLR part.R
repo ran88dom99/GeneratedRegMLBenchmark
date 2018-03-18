@@ -123,7 +123,11 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
   #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
   mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
-  p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
+  if(trans.y==2){
+    p<- data.frame(predicted.outcomes$data[,2],y.untransformed[-inTrain])
+  }else{
+    p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
+  }
   #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
   RMSEp=RMSE(p[,1],p[,2])
   #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
@@ -161,8 +165,11 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
     Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
     #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
     mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
-    p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
-    #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
+    if(trans.y==2){
+      p<- data.frame(predicted.outcomes$data[,2],y.untransformed[-inTrain])
+    }else{
+      p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
+    }    #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
     RMSEp=RMSE(p[,1],p[,2])
     #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
     RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)

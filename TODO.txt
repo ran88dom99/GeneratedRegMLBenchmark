@@ -29,6 +29,10 @@ move rout%isodate%.txt "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark\A
 cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
  "C:\Users\gvg\Documents\R\R-3.4.3\bin\x64\R.exe" CMD BATCH --max-mem-size=3000 ModelTesterAllAuto.R
  
++ please automate dataset generation
++ loess seems terrible; reversing transformation is still a majo problem
++ should transform be done over all data points?
+
 + simple bestest friend finder
 
 + and why does column median work so poorly  in the other computer?
