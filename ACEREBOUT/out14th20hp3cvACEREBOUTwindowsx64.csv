@@ -1323,17 +1323,3 @@ NA,NA,0.351,NA,NA,Thu Mar 15 09:57:45 2018,svmRadialSigma,1,2,bas interactive la
 Fail,Fail,Fail,Fail,Fail,Thu Mar 15 09:57:55 2018,svmSpectrumString,1,2,bas interactive latent features,ignore,none,all,ACEREBOUT,14th20hp3cv,2
 0.793,0.79,-1,0.134,0.109,Thu Mar 15 09:58:09 2018,treebag,1,2,bas interactive latent features,ignore,none,all,ACEREBOUT,14th20hp3cv,0.6411,random,290,6,cv,20,3,NA,5,none
 0.972,0.969,0.0224,0.0198,0.0147,Thu Mar 15 10:14:02 2018,widekernelpls,1,2,bas interactive latent features,ignore,none,all,ACEREBOUT,14th20hp3cv,0.641070052751867,random,290,930,nohyperparameters,8,3,no rep,no min,3
-
-Fail,Fail,Fail,Fail,Fail,Fri Mar 16 03:19:07 2018,avNNet,1,2,4thbooker,ignore,none,asis,ACEREBOUT,14th20hp3cv,13944
-Fail,Fail,Fail,Fail,Fail,Fri Mar 16 03:19:22 2018,bag,1,2,4thbooker,ignore,none,asis,ACEREBOUT,14th20hp3cv,13
-Fail,Fail,Fail,Fail,Fail,Fri Mar 16 03:21:28 2018,bagEarth,1,2,4thbooker,ignore,none,asis,ACEREBOUT,14th20hp3cv,126
-Fail,Fail,Fail,Fail,Fail,Fri Mar 16 03:22:07 2018,bagEarthGCV,1,2,4thbooker,ignore,none,asis,ACEREBOUT,14th20hp3cv,38
-Fail,Fail,Fail,Fail,Fail,Fri Mar 16 04:07:16 2018,bartMachine,1,2,4thbooker,ignore,none,asis,ACEREBOUT,14th20hp3cv,2709
-Fail,Fail,Fail,Fail,Fail,Fri Mar 16 07:51:40 2018,bayesglm,1,2,4thbooker,ignore,none,asis,ACEREBOUT,14th20hp3cv,13464
-Fail,Fail,Fail,Fail,Fail,Fri Mar 16 07:52:08 2018,blasso,1,2,4thbooker,ignore,none,asis,ACEREBOUT,14th20hp3cv,26
-Fail,Fail,Fail,Fail,Fail,Fri Mar 16 07:52:33 2018,blassoAveraged,1,2,4thbooker,ignore,none,asis,ACEREBOUT,14th20hp3cv,25
-Fail,Fail,Fail,Fail,Fail,Fri Mar 16 07:52:56 2018,bridge,1,2,4thbooker,ignore,none,asis,ACEREBOUT,14th20hp3cv,23
-Fail,Fail,Fail,Fail,Fail,Fri Mar 16 07:52:59 2018,BstLm,1,2,4thbooker,ignore,none,asis,ACEREBOUT,14th20hp3cv,3
-Fail,Fail,Fail,Fail,Fail,Fri Mar 16 11:29:03 2018,bag,1,2,4thbooker0,ignore,none,asis,ACEREBOUT,14th20hp3cv,15
-Fail,Fail,Fail,Fail,Fail,Fri Mar 16 12:08:15 2018,bag,1,2,4thbookerhlf0,ignore,none,asis,ACEREBOUT,14th20hp3cv,7
-Fail,Fail,Fail,Fail,Fail,Fri Mar 16 16:59:58 2018,bag,1,2,4thbookerqrt0,ignore,none,asis,ACEREBOUT,14th20hp3cv,6
