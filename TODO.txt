@@ -28,10 +28,39 @@ ren ModelTesterAllAuto.Rout rout%isodate%.txt
 move rout%isodate%.txt "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark\ACEREBOUT"
 cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
  "C:\Users\gvg\Documents\R\R-3.4.3\bin\x64\R.exe" CMD BATCH --max-mem-size=3000 ModelTesterAllAuto.R
+
+ 
+propper folder structure
+remove duplicates & most useless users?
+PCA cent asis  and count
+EDA
+
+select a target column
+basic correl to basic select duplicates
+###MUST I REDO PCA IF ITS JUST A DROPIN THE LAKE?
+EDA resticted:are you and yours odd?
+content based dataset
+	&attached PCA
+	miss and reg
+	Fold
+		correls & reclab 
+		and ML
+	
+FOR EACH asis cent-.1 & min in common & fold
+	correls 
+		every kind including negative
+		ML
+	reclab
+		ML
+	stack correls
+		with MLs
+	
+###CORREL DEPENDS ON number of items rated in common reproduce
+###RECLAB ADD 3rd TO ML sheet
  
 + please automate dataset generation
 + loess seems terrible; reversing transformation is still a majo problem
-+ should transform be done over all data points?
+
 
 + simple bestest friend finder
 
