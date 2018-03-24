@@ -2684,3 +2684,337 @@ Fail,Fail,Fail,Fail,Fail,Sat Mar 17 16:26:35 2018,svmSpectrumString,1,2,sparsity
 0.523,0.482,1,0.93,0.702,Sat Mar 17 16:26:39 2018,widekernelpls,1,2,sparsity 2 row center,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,1.793,random,267,1,cv,20,3,1,5,7
 0.256,0.215,1.57,1.41,1.1,Sat Mar 17 16:26:46 2018,xgbLinear,1,2,sparsity 2 row center,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,1.793,random,267,7,cv,20,3,1,5,48,0.0843956870296962,0.423408189126174,2.50787277356721
 0.34,0.308,1.6,1.24,0.972,Sat Mar 17 16:27:36 2018,xgbTree,1,2,sparsity 2 row center,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,1.793,random,267,50,cv,20,3,1,5,604,5,0.323837664965773,7.15110430726781,0.590333636291325,0,0.646609782008454
+-0.8,-1.181,-1,4.45,2.87,Thu Mar 22 15:35:02 2018,lm,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,1,cv,20,3,1,5,TRUE
+-0.718,-0.996,-1,4.07,2.74,Thu Mar 22 15:35:31 2018,lmStepAIC,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.03689036380623,random,223,28,nohyperparameters,8,3,no rep,no min,none
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:35:36 2018,logicBag,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:35:40 2018,logreg,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:35:42 2018,M5,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:35:44 2018,M5Rules,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.568,0.562,1.07,0.891,0.686,Thu Mar 22 15:35:52 2018,msaenet,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,6,cv,20,3,1,5,0.910464968136512,2,2.39929755777121
+-3.484,-2.645,7.43,7.43,7.14,Thu Mar 22 15:35:58 2018,nnet,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,5,cv,20,3,1,5,12,1.02457417731551e-05
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:36:02 2018,nnls,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:36:05 2018,ordinalNet,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.276,0.294,1.33,1.44,1.15,Thu Mar 22 15:36:19 2018,parRF,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,12,cv,20,3,1,5,48
+-3.484,-2.645,7.43,7.43,7.14,Thu Mar 22 15:36:23 2018,pcaNNet,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,3,cv,20,3,1,5,9,1.36519413935417e-05
+0.216,0.162,1.74,1.71,1.25,Thu Mar 22 15:36:27 2018,pcr,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.03689036380623,random,223,2,nohyperparameters,8,3,no rep,no min,3
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 22 15:36:32 2018,pls,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.479,0.496,1.06,1.02,0.828,Thu Mar 22 15:37:15 2018,plsRglm,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,41,cv,20,3,1,5,64,0.0207958938553929
+0.228,0.233,2.19,1.56,1.23,Thu Mar 22 15:37:25 2018,ppr,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,8,cv,20,3,1,5,2
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 22 15:37:30 2018,pythonKnnReg,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,3
+-0.16,-0.108,2.34,2.26,1.85,Thu Mar 22 15:37:48 2018,qrf,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,17,cv,20,3,1,5,64
+0.277,0.297,1.34,1.43,1.15,Thu Mar 22 15:37:59 2018,ranger,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,9,cv,20,3,1,5,52
+0.279,0.294,1.32,1.44,1.15,Thu Mar 22 15:39:23 2018,Rborist,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,82,cv,20,3,1,5,43
+-4.13,-3.117,1.28,8.39,8.17,Thu Mar 22 15:39:30 2018,relaxo,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,5,cv,20,3,1,5,133.094540957964,0.182497255969793
+0.277,0.295,1.34,1.43,1.15,Thu Mar 22 15:39:44 2018,rf,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,12,cv,20,3,1,5,48
+0.482,0.518,1.16,0.981,0.824,Thu Mar 22 15:39:50 2018,ridge,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,4,cv,20,3,1,5,0.0675633033405413
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:39:56 2018,rlm,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,4
+0.08,0.127,1.62,1.78,1.46,Thu Mar 22 15:39:59 2018,rpart,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,1,cv,20,3,1,5,0.140499558017791
+0.134,0.194,-1,1.64,1.38,Thu Mar 22 15:40:02 2018,rpart1SE,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,1,cv,20,3,1,5,none
+0.061,0.086,1.62,1.86,1.49,Thu Mar 22 15:40:04 2018,rpart2,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,1,cv,20,3,1,5,2
+0.587,0.571,1.01,0.872,0.657,Thu Mar 22 15:40:09 2018,rqlasso,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,2,cv,20,3,1,5,0.0523018519928474
+0.591,0.591,1,0.833,0.649,Thu Mar 22 15:40:12 2018,rqnc,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,1,cv,20,3,1,5,0.0675633033405413,SCAD
+0.32,0.339,1.28,1.35,1.08,Thu Mar 22 15:40:44 2018,RRF,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,30,cv,20,3,1,5,46,0.182497255969793,0.871829697629437
+0.275,0.296,1.33,1.43,1.15,Thu Mar 22 15:41:04 2018,RRFglobal,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,17,cv,20,3,1,5,41,0.720259443856776
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:41:12 2018,rvmLinear,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,5
+0.536,0.553,1.09,0.909,0.737,Thu Mar 22 15:41:18 2018,simpls,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.03689036380623,random,223,3,nohyperparameters,8,3,no rep,no min,3
+0.5,0.535,1.1,0.947,0.794,Thu Mar 22 15:41:31 2018,spikeslab,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,10,cv,20,3,1,5,38
+0.458,0.493,1.1,1.03,0.862,Thu Mar 22 15:41:43 2018,spls,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,9,cv,20,3,1,5,5,0.625261859502643,0.242411601357162
+-4.198,-3.16,8.3,8.48,8.28,Thu Mar 22 15:41:48 2018,superpc,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,2,cv,20,3,1,5,0.432433375623077,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:41:51 2018,svmBoundrangeString,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:41:54 2018,svmExpoString,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,1.16,NA,NA,Thu Mar 22 15:42:57 2018,svmLinear,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,61,cv,20,3,1,5,0.0360053320614585
+0.521,0.563,1.16,0.889,0.762,Thu Mar 22 15:43:54 2018,svmLinear2,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,54,cv,20,3,1,5,0.0360053320614585
+0.544,0.548,1.06,0.919,0.725,Thu Mar 22 15:43:59 2018,svmLinear3,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,3,cv,20,3,1,5,0.0781648377335966,L1
+NA,NA,1.12,NA,NA,Thu Mar 22 15:44:06 2018,svmPoly,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,5,cv,20,3,1,5,1,0.0340749528703651,0.428956272341932
+NA,NA,1.15,NA,NA,Thu Mar 22 15:44:10 2018,svmRadial,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,2,cv,20,3,1,5,0.00248038263753589,4.49397142268822
+NA,NA,1.39,NA,NA,Thu Mar 22 15:44:14 2018,svmRadialCost,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,2,cv,20,3,1,5,0.836245054024873
+NA,NA,1.15,NA,NA,Thu Mar 22 15:44:17 2018,svmRadialSigma,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,2,cv,20,3,1,5,0.00248038263753589,4.49397142268822
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:44:20 2018,svmSpectrumString,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.241,0.264,-1,1.5,1.21,Thu Mar 22 15:44:24 2018,treebag,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,3,cv,20,3,1,5,none
+0.536,0.553,1.09,0.909,0.737,Thu Mar 22 15:44:30 2018,widekernelpls,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.03689036380623,random,223,2,nohyperparameters,8,3,no rep,no min,3
+0.183,0.189,1.37,1.65,1.3,Thu Mar 22 15:44:45 2018,xgbLinear,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,13,cv,20,3,1,5,96,1.16981753658357e-05,0.0404765566573158,0.921252625063062
+0.384,0.407,1.25,1.21,0.979,Thu Mar 22 15:45:44 2018,xgbTree,1,2,sparsity 2 row center,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,2.037,random,223,56,cv,20,3,1,5,267,1,0.214006090258714,6.7454316909425,0.400309955421835,0,0.512800706434064
+-3.598,-2.704,7.35,7.67,7.39,Thu Mar 22 15:45:54 2018,avNNet,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,7,cv,20,3,1,5,9,1.09678508814469e-05,FALSE
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:45:57 2018,bag,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.515,0.542,1.24,0.946,0.776,Thu Mar 22 15:46:42 2018,bagEarth,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,44,cv,20,3,1,5,11,1
+0.465,0.493,-1,1.05,0.857,Thu Mar 22 15:46:50 2018,bagEarthGCV,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,4,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:48:14 2018,bam,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,80
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:48:16 2018,bartMachine,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.478,0.503,-1,1.03,0.837,Thu Mar 22 15:48:20 2018,bayesglm,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,none
+0.482,0.515,1.05,1,0.832,Thu Mar 22 15:48:26 2018,blasso,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,5,cv,20,3,1,5,0.372432626318187
+0.48,0.514,-1,1,0.836,Thu Mar 22 15:48:31 2018,blassoAveraged,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,3,cv,20,3,1,5,none
+0.479,0.513,-1,1.01,0.837,Thu Mar 22 15:48:36 2018,bridge,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,3,cv,20,3,1,5,none
+0.479,0.503,1.04,1.03,0.837,Thu Mar 22 15:49:20 2018,BstLm,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,42,cv,20,3,1,5,394,0.59192378146993
+0.252,0.262,1.38,1.53,1.2,Thu Mar 22 15:49:29 2018,cforest,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,8,cv,20,3,1,5,17
+0.109,0.154,1.57,1.75,1.43,Thu Mar 22 15:49:34 2018,ctree,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,0.4225505865179
+0.109,0.154,1.57,1.75,1.43,Thu Mar 22 15:49:38 2018,ctree2,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,4,0.0349010813515633
+0.462,0.487,1.05,1.06,0.86,Thu Mar 22 15:49:51 2018,cubist,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,12,cv,20,3,1,5,16,5
+-0.005,-0.002,1.77,2.07,1.62,Thu Mar 22 15:49:55 2018,dnn,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,5,3,2,0.0500053863972426,0.0657647070242092
+0.455,0.481,1.55,1.07,0.876,Thu Mar 22 15:50:00 2018,earth,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,7,1
+0.482,0.502,1.05,1.03,0.833,Thu Mar 22 15:50:03 2018,elm,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,11,purelin
+0.479,0.503,1.04,1.03,0.837,Thu Mar 22 15:50:06 2018,enet,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,0.901465660426766,0.00290618276305258
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:50:09 2018,extraTrees,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.47,0.5,1.04,1.03,0.852,Thu Mar 22 15:50:12 2018,foba,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,12,0.0386563168023231
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:50:23 2018,gam,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,9
+0.492,0.531,1.16,0.969,0.816,Thu Mar 22 15:50:35 2018,gamSpline,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,10,cv,20,3,1,5,1.26754880999215
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:50:40 2018,gaussprLinear,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:52:11 2018,gbm_h2o,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,89
+0.392,0.428,-1,1.19,0.98,Thu Mar 22 15:52:13 2018,gcvEarth,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,1
+0.486,0.518,-1,0.996,0.827,Thu Mar 22 15:52:16 2018,glm,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,none
+0.484,0.521,1.18,0.991,0.83,Thu Mar 22 15:52:19 2018,glm.nb,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,identity
+0.478,0.502,1.04,1.03,0.838,Thu Mar 22 15:52:25 2018,glmboost,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,4,cv,20,3,1,5,904,no
+0.473,0.504,1.04,1.03,0.847,Thu Mar 22 15:52:29 2018,glmnet,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,0.0170496883802116,0.172454969496433
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:54:00 2018,glmnet_h2o,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,89
+0.44,0.489,-1,1.06,0.898,Thu Mar 22 15:54:03 2018,glmStepAIC,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,none
+0.468,0.494,1.04,1.05,0.854,Thu Mar 22 15:54:11 2018,icr,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,5,cv,20,3,1,5,10
+0.478,0.502,1.04,1.03,0.837,Thu Mar 22 15:54:14 2018,kernelpls,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,8
+0.157,0.18,1.41,1.7,1.35,Thu Mar 22 15:54:17 2018,knn,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,2
+-0.007,-0.009,1.77,2.09,1.62,Thu Mar 22 15:54:20 2018,krlsPoly,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,0.00112919540484091,3
+0.494,0.52,1.03,0.993,0.809,Thu Mar 22 15:54:25 2018,krlsRadial,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,0.00698054845954853,480.208769146002
+0.478,0.503,1.04,1.03,0.838,Thu Mar 22 15:54:28 2018,lars,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,0.0170496883802116
+0.478,0.502,1.04,1.03,0.838,Thu Mar 22 15:54:31 2018,lars2,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,14
+0.478,0.503,1.04,1.03,0.838,Thu Mar 22 15:54:34 2018,lasso,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,0.0170496883802116
+0.486,0.518,-1,0.996,0.827,Thu Mar 22 15:54:36 2018,lm,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,TRUE
+0.44,0.489,-1,1.06,0.898,Thu Mar 22 15:54:40 2018,lmStepAIC,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:54:45 2018,logicBag,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:54:49 2018,logreg,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:54:52 2018,M5,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:54:54 2018,M5Rules,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.535,0.558,1.04,0.914,0.746,Thu Mar 22 15:55:02 2018,msaenet,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,5,cv,20,3,1,5,0.43029552786611,2,3.55254337110091
+-3.598,-2.704,7.35,7.67,7.39,Thu Mar 22 15:55:06 2018,nnet,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,9,1.09678508814469e-05
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:55:10 2018,nnls,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:55:14 2018,ordinalNet,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.288,0.294,1.34,1.46,1.14,Thu Mar 22 15:55:22 2018,parRF,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,6,cv,20,3,1,5,12
+-3.598,-2.704,7.35,7.67,7.39,Thu Mar 22 15:55:28 2018,pcaNNet,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,3,cv,20,3,1,5,9,1.09678508814469e-05
+0.479,0.502,1.04,1.03,0.837,Thu Mar 22 15:55:34 2018,pcr,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,9
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 22 15:56:16 2018,pls,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,38
+0.465,0.493,1.08,1.05,0.86,Thu Mar 22 15:56:31 2018,plsRglm,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,13,cv,20,3,1,5,4,0.0174959689378738
+0.41,0.423,1.3,1.19,0.947,Thu Mar 22 15:56:35 2018,ppr,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,2
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 22 15:56:41 2018,pythonKnnReg,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+-0.325,-0.252,2.42,2.59,2.13,Thu Mar 22 15:56:51 2018,qrf,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,9,cv,20,3,1,5,15
+0.272,0.294,1.34,1.46,1.17,Thu Mar 22 15:56:58 2018,ranger,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,5,cv,20,3,1,5,13
+0.266,0.284,1.34,1.48,1.18,Thu Mar 22 15:58:03 2018,Rborist,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,63,cv,20,3,1,5,11
+0.438,0.496,1.1,1.04,0.904,Thu Mar 22 15:58:07 2018,relaxo,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,218.200123821859,0.151597285177559
+0.285,0.302,1.34,1.44,1.15,Thu Mar 22 15:58:14 2018,rf,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,5,cv,20,3,1,5,11
+0.479,0.502,1.04,1.03,0.837,Thu Mar 22 15:58:17 2018,ridge,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,0.00171631009887745
+0.473,0.509,1.17,1.02,0.848,Thu Mar 22 15:58:21 2018,rlm,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,TRUE,psi.hampel
+0.19,0.215,1.66,1.63,1.3,Thu Mar 22 15:58:23 2018,rpart,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,0.0338684202540692
+0.18,0.182,-1,1.69,1.32,Thu Mar 22 15:58:26 2018,rpart1SE,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,none
+0.18,0.182,1.66,1.69,1.32,Thu Mar 22 15:58:29 2018,rpart2,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,4
+0.493,0.54,0.999,0.95,0.814,Thu Mar 22 15:58:32 2018,rqlasso,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,0.000139666479885642
+0.494,0.541,1,0.949,0.813,Thu Mar 22 15:58:36 2018,rqnc,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,0.00343007423336443,MCP
+0.254,0.312,1.3,1.42,1.2,Thu Mar 22 15:58:52 2018,RRF,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,14,cv,20,3,1,5,13,0.21825717552565,0.941957748262212
+0.279,0.319,1.33,1.41,1.16,Thu Mar 22 15:59:01 2018,RRFglobal,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,7,cv,20,3,1,5,16,0.419887820957229
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:59:07 2018,rvmLinear,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,4
+0.478,0.502,1.04,1.03,0.837,Thu Mar 22 15:59:10 2018,simpls,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,8
+0.479,0.508,1.05,1.02,0.838,Thu Mar 22 15:59:20 2018,spikeslab,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,8,cv,20,3,1,5,17
+0.476,0.5,1.04,1.03,0.841,Thu Mar 22 15:59:25 2018,spls,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,3,cv,20,3,1,5,7,0.151597285177559,0.264656832558103
+-4.158,-3.105,8.24,8.5,8.29,Thu Mar 22 15:59:28 2018,superpc,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,0.903936368878931,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:59:30 2018,svmBoundrangeString,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 15:59:32 2018,svmExpoString,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,1.03,NA,NA,Thu Mar 22 15:59:47 2018,svmLinear,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,13,cv,20,3,1,5,0.398863908125964
+0.489,0.539,1.03,0.953,0.82,Thu Mar 22 16:00:03 2018,svmLinear2,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,13,cv,20,3,1,5,0.398863908125964
+0.512,0.546,1.01,0.939,0.783,Thu Mar 22 16:00:07 2018,svmLinear3,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,4.68656103658849,L2
+NA,NA,1.03,NA,NA,Thu Mar 22 16:00:10 2018,svmPoly,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,3,0.000143544922195361,560.032298757398
+NA,NA,1.04,NA,NA,Thu Mar 22 16:00:14 2018,svmRadial,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,0.00899099663788016,9.83198361363757
+NA,NA,1.24,NA,NA,Thu Mar 22 16:00:17 2018,svmRadialCost,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,2.23195401944684
+NA,NA,1.04,NA,NA,Thu Mar 22 16:00:21 2018,svmRadialSigma,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,0.00899099663788016,9.83198361363757
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:00:23 2018,svmSpectrumString,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.278,0.291,-1,1.47,1.16,Thu Mar 22 16:00:27 2018,treebag,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,2,cv,20,3,1,5,none
+0.478,0.502,1.04,1.03,0.837,Thu Mar 22 16:00:31 2018,widekernelpls,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,1,cv,20,3,1,5,8
+0.323,0.311,1.38,1.43,1.09,Thu Mar 22 16:00:42 2018,xgbLinear,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,9,cv,20,3,1,5,9,0.206775872134708,0.00125730054783621,0.389211555244401
+0.213,0.284,1.12,1.48,1.26,Thu Mar 22 16:01:36 2018,xgbTree,1,2,sparsity 2 row center,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2.07,random,229,52,cv,20,3,1,5,904,10,0.546137181007769,0.890148323960602,0.457224820926785,10,0.756226884317584
+-3.908,-2.802,7.41,7.48,7.22,Thu Mar 22 16:01:45 2018,avNNet,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,6,cv,20,3,1,5,11,1.32887924827602e-05,FALSE
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:01:49 2018,bag,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.376,0.377,1.28,1.23,0.919,Thu Mar 22 16:02:19 2018,bagEarth,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,28,cv,20,3,1,5,8,1
+0.354,0.372,-1,1.24,0.952,Thu Mar 22 16:02:26 2018,bagEarthGCV,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,3,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:02:33 2018,bam,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:02:35 2018,bartMachine,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.508,0.54,-1,0.902,0.722,Thu Mar 22 16:02:38 2018,bayesglm,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,none
+0.478,0.506,1.09,0.969,0.767,Thu Mar 22 16:02:42 2018,blasso,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,0.27712911227718
+0.477,0.506,-1,0.968,0.768,Thu Mar 22 16:02:46 2018,blassoAveraged,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,none
+0.494,0.521,-1,0.938,0.743,Thu Mar 22 16:02:50 2018,bridge,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,none
+0.404,0.434,1.07,1.11,0.877,Thu Mar 22 16:03:39 2018,BstLm,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,48,cv,20,3,1,5,399,0.460131858576322
+0.177,0.209,1.54,1.55,1.21,Thu Mar 22 16:03:45 2018,cforest,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,3,cv,20,3,1,5,10
+-0.139,-0.01,1.84,1.98,1.67,Thu Mar 22 16:03:49 2018,ctree,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,0.994960512034595
+0.208,0.138,1.85,1.69,1.16,Thu Mar 22 16:03:53 2018,ctree2,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,4,0.0387456382159144
+0.43,0.46,1.08,1.06,0.837,Thu Mar 22 16:04:03 2018,cubist,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,8,cv,20,3,1,5,18,9
+0,0,1.81,1.97,1.47,Thu Mar 22 16:04:07 2018,dnn,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,12,8,8,0.0140494276303798,0.0517592821503058
+0.349,0.357,1.21,1.27,0.961,Thu Mar 22 16:04:11 2018,earth,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,10,1
+0.496,0.524,1.04,0.932,0.741,Thu Mar 22 16:04:14 2018,elm,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,13,purelin
+0.454,0.489,0.995,1,0.803,Thu Mar 22 16:04:17 2018,enet,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,0.750965652987361,0.0157857443104289
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:04:20 2018,extraTrees,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.394,0.44,0.999,1.1,0.891,Thu Mar 22 16:04:23 2018,foba,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,5,0.0239185048038365
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:04:27 2018,gam,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.5,0.525,1.04,0.931,0.735,Thu Mar 22 16:04:35 2018,gamSpline,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,6,cv,20,3,1,5,1.04789033415727
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:04:40 2018,gaussprLinear,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:06:14 2018,gbm_h2o,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,92
+0.349,0.357,-1,1.27,0.961,Thu Mar 22 16:06:17 2018,gcvEarth,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,1
+0.496,0.524,-1,0.932,0.741,Thu Mar 22 16:06:20 2018,glm,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,none
+0.493,0.52,1.04,0.94,0.745,Thu Mar 22 16:06:23 2018,glm.nb,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,identity
+0.457,0.49,0.997,1,0.799,Thu Mar 22 16:06:31 2018,glmboost,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,5,cv,20,3,1,5,151,no
+0.467,0.499,0.994,0.982,0.784,Thu Mar 22 16:06:42 2018,glmnet,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,5,cv,20,3,1,5,0.513234912184998,0.0705633474828259
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:08:21 2018,glmnet_h2o,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,96
+0.513,0.55,-1,0.883,0.716,Thu Mar 22 16:08:24 2018,glmStepAIC,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,none
+0.158,0.237,1.21,1.5,1.24,Thu Mar 22 16:08:29 2018,icr,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,3,cv,20,3,1,5,10
+0.452,0.495,1,0.992,0.806,Thu Mar 22 16:08:32 2018,kernelpls,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,3
+0.093,0.104,1.64,1.76,1.33,Thu Mar 22 16:08:35 2018,knn,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,20
+-0.003,0,1.82,1.97,1.47,Thu Mar 22 16:08:39 2018,krlsPoly,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,0.0994597835308288,3
+0.488,0.517,1,0.946,0.752,Thu Mar 22 16:08:43 2018,krlsRadial,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,0.00430536127458807,1569.83841237097
+0.508,0.539,1.03,0.903,0.722,Thu Mar 22 16:08:47 2018,lars,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,0.102397941285744
+0.442,0.478,1,1.02,0.82,Thu Mar 22 16:08:50 2018,lars2,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,10
+0.508,0.539,1.03,0.903,0.722,Thu Mar 22 16:08:53 2018,lasso,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,0.102397941285744
+0.496,0.524,-1,0.932,0.741,Thu Mar 22 16:08:56 2018,lm,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,TRUE
+0.513,0.55,-1,0.883,0.716,Thu Mar 22 16:08:59 2018,lmStepAIC,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:09:04 2018,logicBag,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:09:08 2018,logreg,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:09:11 2018,M5,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:09:13 2018,M5Rules,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.486,0.52,0.983,0.94,0.755,Thu Mar 22 16:09:20 2018,msaenet,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,5,cv,20,3,1,5,0.529739759606309,8,3.40742836508434
+-3.908,-2.802,7.41,7.48,7.22,Thu Mar 22 16:09:24 2018,nnet,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,20,2.71227869094619e-05
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:09:28 2018,nnls,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:09:32 2018,ordinalNet,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.146,0.162,1.59,1.65,1.26,Thu Mar 22 16:09:38 2018,parRF,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,3,cv,20,3,1,5,5
+-3.908,-2.802,7.41,7.48,7.22,Thu Mar 22 16:09:42 2018,pcaNNet,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,20,3.74654684704203e-05
+0.508,0.54,1.03,0.901,0.722,Thu Mar 22 16:09:45 2018,pcr,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,9
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 22 16:10:08 2018,pls,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,21
+0.472,0.517,0.962,0.947,0.776,Thu Mar 22 16:10:20 2018,plsRglm,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,10,cv,20,3,1,5,3,0.0719488862901926
+0.448,0.441,1.11,1.1,0.811,Thu Mar 22 16:10:24 2018,ppr,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 22 16:10:29 2018,pythonKnnReg,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+-0.522,-0.389,2.48,2.73,2.24,Thu Mar 22 16:10:37 2018,qrf,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,5,cv,20,3,1,5,11
+0.129,0.168,1.6,1.64,1.28,Thu Mar 22 16:10:41 2018,ranger,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,3
+0.152,0.165,1.57,1.64,1.25,Thu Mar 22 16:11:24 2018,Rborist,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,42,cv,20,3,1,5,5
+0.509,0.541,1.29,0.9,0.721,Thu Mar 22 16:11:28 2018,relaxo,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,10.4866292586181,0.798120260238647
+0.161,0.169,1.59,1.63,1.23,Thu Mar 22 16:11:33 2018,rf,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,3,cv,20,3,1,5,5
+0.496,0.526,1,0.929,0.741,Thu Mar 22 16:11:36 2018,ridge,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,0.0891665647518966
+0.453,0.493,1.02,0.994,0.804,Thu Mar 22 16:11:39 2018,rlm,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,FALSE,psi.bisquare
+-0.101,-0.073,1.77,2.11,1.62,Thu Mar 22 16:11:42 2018,rpart,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,0.148254032337428
+-0.129,-0.046,-1,2.06,1.66,Thu Mar 22 16:11:45 2018,rpart1SE,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,none
+-0.165,-0.042,1.77,2.05,1.71,Thu Mar 22 16:11:48 2018,rpart2,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,2
+0.449,0.49,0.989,1,0.81,Thu Mar 22 16:11:51 2018,rqlasso,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,7.94929092169843e-05
+0.426,0.47,0.969,1.04,0.844,Thu Mar 22 16:11:55 2018,rqnc,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,7.94929092169843e-05,SCAD
+0.173,0.19,1.53,1.59,1.22,Thu Mar 22 16:12:08 2018,RRF,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,11,cv,20,3,1,5,7,0.0205809199251235,0.932919465471059
+0.148,0.17,1.59,1.63,1.25,Thu Mar 22 16:12:16 2018,RRFglobal,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,6,cv,20,3,1,5,4,0.798120260238647
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:12:21 2018,rvmLinear,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.452,0.495,1,0.992,0.806,Thu Mar 22 16:12:24 2018,simpls,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,3
+0.493,0.525,0.993,0.931,0.744,Thu Mar 22 16:12:34 2018,spikeslab,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,8,cv,20,3,1,5,11
+0.452,0.485,0.989,1.01,0.806,Thu Mar 22 16:12:38 2018,spls,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,2,0.483496888540685,0.0511989706428722
+-4.665,-3.32,8.27,8.5,8.34,Thu Mar 22 16:12:41 2018,superpc,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,0.513234912184998,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:12:44 2018,svmBoundrangeString,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:12:46 2018,svmExpoString,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,0.975,NA,NA,Thu Mar 22 16:13:17 2018,svmLinear,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,30,cv,20,3,1,5,0.276178133332368
+0.488,0.513,0.975,0.955,0.753,Thu Mar 22 16:13:48 2018,svmLinear2,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,29,cv,20,3,1,5,0.276178133332368
+0.443,0.495,0.979,0.992,0.819,Thu Mar 22 16:13:52 2018,svmLinear3,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,0.19602817292695,L1
+NA,NA,0.961,NA,NA,Thu Mar 22 16:13:56 2018,svmPoly,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,2,0.00329620991517338,43.9691062733631
+NA,NA,1.09,NA,NA,Thu Mar 22 16:13:59 2018,svmRadial,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,0.0058287880730383,4.77271115533511
+NA,NA,1.44,NA,NA,Thu Mar 22 16:14:03 2018,svmRadialCost,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,1.35820267174977
+NA,NA,1.09,NA,NA,Thu Mar 22 16:14:06 2018,svmRadialSigma,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,0.0058287880730383,4.77271115533511
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:14:09 2018,svmSpectrumString,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.15,0.175,-1,1.62,1.25,Thu Mar 22 16:14:12 2018,treebag,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,2,cv,20,3,1,5,none
+0.452,0.495,1,0.992,0.806,Thu Mar 22 16:14:16 2018,widekernelpls,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,1,cv,20,3,1,5,3
+0.102,0.136,1.6,1.7,1.32,Thu Mar 22 16:14:27 2018,xgbLinear,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,9,cv,20,3,1,5,12,0.284406376141764,0.000392862750475812,2.03242271882482
+0.135,0.202,1.54,1.57,1.27,Thu Mar 22 16:15:08 2018,xgbTree,1,2,sparsity 2 row center,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1.965,random,250,39,cv,20,3,1,5,103,5,0.0752068827250041,5.8313827868551,0.451943923532963,3,0.635611598554533
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:23:01 2018,avNNet,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,22
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:23:03 2018,bag,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:23:05 2018,bagEarth,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:23:07 2018,bagEarthGCV,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:23:35 2018,bam,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,27
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:23:36 2018,bartMachine,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:23:41 2018,bayesglm,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:23:43 2018,blasso,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:23:46 2018,blassoAveraged,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:23:48 2018,bridge,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.638,0.596,0.146,0.162,0.11,Thu Mar 22 16:24:53 2018,BstLm,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0.4021,random,313,64,cv,20,3,1,5,313,0.50568521851697
+0.651,0.605,0.163,0.157,0.104,Thu Mar 22 16:40:13 2018,cforest,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0.4021,random,313,918,cv,20,3,1,5,49
+0.55,0.514,0.194,0.193,0.136,Thu Mar 22 16:40:31 2018,ctree,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0.4021,random,313,16,cv,20,3,1,5,0.388841977110133
+0.549,0.515,0.193,0.192,0.136,Thu Mar 22 16:40:45 2018,ctree2,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0.4021,random,313,13,cv,20,3,1,5,7,0.347533980151638
+0.686,0.64,0.131,0.141,0.0935,Thu Mar 22 16:50:50 2018,cubist,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0.4021,random,313,603,cv,20,3,1,5,54,9
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:54:02 2018,dnn,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,191
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:54:03 2018,earth,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:54:09 2018,elm,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:54:13 2018,enet,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:54:14 2018,extraTrees,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:55:35 2018,foba,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,80
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:55:55 2018,gam,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,20
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:56:39 2018,gamSpline,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,44
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:56:42 2018,gaussprLinear,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:59:26 2018,gbm_h2o,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,164
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:59:42 2018,gcvEarth,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,17
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:59:45 2018,glm,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:59:49 2018,glm.nb,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:59:55 2018,glmboost,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 16:59:58 2018,glmnet,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:02:38 2018,glmnet_h2o,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,160
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:02:40 2018,glmStepAIC,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:02:55 2018,icr,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,14
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:02:57 2018,kernelpls,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:04:09 2018,knn,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,72
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:04:12 2018,krlsPoly,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:04:15 2018,krlsRadial,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:04:17 2018,lars,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:04:19 2018,lars2,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:04:21 2018,lasso,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:04:23 2018,lm,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:04:26 2018,lmStepAIC,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:04:30 2018,logicBag,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:04:35 2018,logreg,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,5
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:04:36 2018,M5,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:04:37 2018,M5Rules,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:04:47 2018,msaenet,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,10
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:05:00 2018,nnet,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,12
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:05:02 2018,nnls,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:05:06 2018,ordinalNet,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:05:10 2018,parRF,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:05:19 2018,pcaNNet,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,9
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:05:22 2018,pcr,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 22 17:05:46 2018,pls,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,24
+0.586,0.569,0.163,0.17,0.124,Thu Mar 22 17:13:47 2018,plsRglm,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0.402072138712102,random,313,480,nohyperparameters,8,3,no rep,no min,3,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:13:50 2018,ppr,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,PackageFail,Thu Mar 22 17:13:54 2018,pythonKnnReg,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:13:57 2018,qrf,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:14:00 2018,ranger,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:14:03 2018,Rborist,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:14:03 2018,relaxo,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:14:06 2018,rf,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:14:09 2018,ridge,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:14:15 2018,rlm,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,6
+0.544,0.524,0.197,0.189,0.14,Thu Mar 22 17:14:18 2018,rpart,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0.4021,random,313,2,cv,20,3,1,5,0.000108425217387716
+0.477,0.456,-1,0.216,0.16,Thu Mar 22 17:14:20 2018,rpart1SE,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0.4021,random,313,2,cv,20,3,1,5,none
+0.477,0.456,0.227,0.216,0.16,Thu Mar 22 17:14:22 2018,rpart2,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0.4021,random,313,2,cv,20,3,1,5,12
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:14:27 2018,rqlasso,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:14:35 2018,rqnc,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,7
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:19:13 2018,RRF,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,278
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:19:18 2018,RRFglobal,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:19:20 2018,rvmLinear,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:19:22 2018,simpls,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:19:25 2018,spikeslab,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:21:28 2018,spls,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,122
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:21:31 2018,superpc,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:21:32 2018,svmBoundrangeString,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:21:32 2018,svmExpoString,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:21:36 2018,svmLinear,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:21:40 2018,svmLinear2,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:21:45 2018,svmLinear3,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:22:03 2018,svmPoly,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,18
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:22:04 2018,svmRadial,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:22:08 2018,svmRadialCost,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:22:09 2018,svmRadialSigma,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:22:09 2018,svmSpectrumString,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.578,0.545,-1,0.182,0.128,Thu Mar 22 17:22:15 2018,treebag,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0.4021,random,313,5,cv,20,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:22:19 2018,widekernelpls,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.658,0.624,0.15,0.148,0.102,Thu Mar 22 17:22:41 2018,xgbLinear,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0.4021,random,313,21,cv,20,3,1,5,54,0.00909908714559546,0.0872137928805239,1.81091082072817
+0.635,0.592,0.169,0.162,0.109,Thu Mar 22 17:25:02 2018,xgbTree,1,2,kaggle housing,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,0.4021,random,313,141,cv,20,3,1,5,484,1,0.0809025770761073,1.03273913031444,0.369244386162609,6,0.322197038040031
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:25:28 2018,avNNet,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,20
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:25:30 2018,bag,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:25:31 2018,bagEarth,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:25:34 2018,bagEarthGCV,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:25:56 2018,bam,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,22
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:25:57 2018,bartMachine,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:25:59 2018,bayesglm,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:26:01 2018,blasso,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:26:03 2018,blassoAveraged,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Thu Mar 22 17:26:05 2018,bridge,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.59,0.544,0.172,0.18,0.127,Thu Mar 22 17:26:55 2018,BstLm,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,0.3989,random,267,49,cv,20,3,1,5,392,0.517244145935867
+0.632,0.58,0.159,0.165,0.11,Thu Mar 22 17:37:57 2018,cforest,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,0.3989,random,267,661,cv,20,3,1,5,43
+0.54,0.498,0.191,0.197,0.138,Thu Mar 22 17:38:11 2018,ctree,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,0.3989,random,267,14,cv,20,3,1,5,0.070104843005538
+0.541,0.499,0.191,0.196,0.138,Thu Mar 22 17:38:25 2018,ctree2,1,2,kaggle housing,ignore,none,YeoJohnson,LAPTOP-1SBQTC5I,14th20hp3cv,0.3989,random,267,12,cv,20,3,1,5,13,0.305479078087956

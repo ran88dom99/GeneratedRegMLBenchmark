@@ -43,3 +43,8 @@ Wed Mar 14 15:30:54 2018,rvmLinear,basic sum C1 + C2,3,20,windows,x64,LAPTOP-1SB
 Thu Mar 15 15:31:38 2018,xyf,basic sum C1 + C2,3,20,windows,x64,LAPTOP-1SBQTC5I
 Fri Mar 16 15:30:45 2018,xyf,bas interactive latent features,3,20,windows,x64,LAPTOP-1SBQTC5I
 Sat Mar 17 15:30:47 2018,leapBackward,sparsity 2 row center,3,20,windows,x64,LAPTOP-1SBQTC5I
+Sun Mar 18 15:30:49 2018,leapBackward,sparsity 2 row center,3,20,windows,x64,LAPTOP-1SBQTC5I
+Mon Mar 19 15:30:42 2018,leapForward,sparsity 2 row center,3,20,windows,x64,LAPTOP-1SBQTC5I
+Tue Mar 20 15:34:09 2018,leapForward,sparsity 2 row center,3,20,windows,x64,LAPTOP-1SBQTC5I
+Wed Mar 21 15:31:29 2018,leapSeq,sparsity 2 row center,3,20,windows,x64,LAPTOP-1SBQTC5I
+Thu Mar 22 15:30:39 2018,leapSeq,sparsity 2 row center,3,20,windows,x64,LAPTOP-1SBQTC5I
