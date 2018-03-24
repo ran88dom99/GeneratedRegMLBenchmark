@@ -5,13 +5,17 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #sink(zz, type="message") edit for rebaseless
 #chek for R package updates
 #try(log("a")) ## test --no-edit
+#WHEN INSTALLING RTOOLS MAKE SURE TO "Select Additional Tasks" dialog box I checked "Edit the system PATH. ...". 
+#install.packages("devtools")
+##devtools::install_github("r-lib/devtools")
+#
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 memory.limit()
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"14th20hp3cv"
-if(which.computer=="ACEREBOUT") task.subject<-"recc20hp3cv"
-pc.mlr<-c("ACE")#"ALTA","HOPPER"
+if(which.computer=="ACEREBOUT") task.subject<-"rerecc20hp3cv"
+pc.mlr<-c("ACEREBOUT")#T"ALTA","HOPPER"
 
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
@@ -32,7 +36,7 @@ cv.iters=3
 if(which.computer=="ACEREBOUT") cv.iters<-20
 tuneLength=20
 tuneLength2=8
-normings=c("quantile","YeoJohnson","all","PCA","ICA","asis","centernscale","expoTrans","range01")#,"centernscale"
+normings=c("asis","quantile","YeoJohnson","all","PCA","ICA","centernscale","expoTrans","range01")#,"centernscale"
 
 gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,3,1,52,57)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
@@ -49,7 +53,7 @@ if(length(gensTTest)<1) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
 ########packages install check######
 
 #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
-#list.of.packages <- c("gower","dimRed","DEoptimR","caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
+#list.of.packages <- c("gower","dimRed","DEoptimR","caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees","fda.usc","FDboost","LiblineaR")
 #new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 #if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
@@ -194,7 +198,7 @@ for(gend.data in gensTTest){
       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
 
         for(norming in normings) {
-        for(trans.y in 2) {#1:
+        for(trans.y in 1:2) {#1:
           df.toprocess=data.source
 
           #df.toprocess = data.frame(df.toprocess,)
