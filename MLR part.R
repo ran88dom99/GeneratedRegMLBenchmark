@@ -6,7 +6,7 @@
 #  pkgs = paste('package:', pkgs, sep = "")
 #  lapply(pkgs, detach, character.only = TRUE, unload = TRUE)
 #}
-
+library(e1071)
 library(ParamHelpers)
 library(mlr)
 library(mlbench)
@@ -64,7 +64,11 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
    bad.models=union(bad.models,c("regr.bgpllm","regr.btg","regr.bgp","regr.btgp","regr.btgpllm", "regr.GPfit",
                                  "neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn","gamLoess",
                                  "ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay","mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS"))
-  #too slow neuralnet# dnfis useless and just stops on huge datasets
+#   bad.models=union(bad.models,c("regr.nodeHarvest"  ,            
+#                   "regr.penalized"     ,   "regr.plsr"        ,     "regr.randomForest"  ,  
+#                                  "regr.randomForestSRC",  "regr.ranger" ,          "regr.rknn"   ,         
+ #                                         "regr.RRF"          ,    "regr.slim"     , "regr.svm"   ,  "regr.xgboost" )) #skip model
+   #too slow neuralnet# dnfis useless and just stops on huge datasets
   if(allmodel %in% bad.models) {next()} #gamLoess crashes. the capitals are slow and terrible
   library(caret) #mlp...s creat some bizzare problem that breaks caret::train ##nodeHarvest is SLOW ##"rbf"crash R "rbfDDA" crash train and really bad #rfRules is REALLY slow.##"pythonKnnReg",pythonKnnReg can not install
   pass.sometimes<-c("regr.LiblineaRL2L2SVR")
@@ -123,7 +127,11 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
   #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
   mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
-  p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
+  if(trans.y==2){
+    p<- data.frame(predicted.outcomes$data[,2],y.untransformed[-inTrain])
+  }else{
+    p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
+  }
   #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
   RMSEp=RMSE(p[,1],p[,2])
   #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
@@ -161,8 +169,11 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
     Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
     #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
     mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
-    p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
-    #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
+    if(trans.y==2){
+      p<- data.frame(predicted.outcomes$data[,2],y.untransformed[-inTrain])
+    }else{
+      p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
+    }    #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
     RMSEp=RMSE(p[,1],p[,2])
     #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
     RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)

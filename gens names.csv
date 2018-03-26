@@ -54,20 +54,20 @@
 54,Friedman's 1st,1,1
 55,kaggle housing,0.75,0.75
 56,Recc sim 1,1,1
-57,FALSE,0,0
-58,FALSE,0,0
-59,FALSE,0,0
-60,FALSE,0,0
-61,FALSE,0,0
-62,FALSE,0,0
-63,FALSE,0,0
-64,FALSE,0,0
-65,FALSE,0,0
-66,FALSE,0,0
-67,FALSE,0,0
-68,FALSE,0,0
-69,FALSE,0,0
-70,FALSE,0,0
+57,4thbooker,0,0
+58,4thbooker0,0,0
+59,4thbookerhlf,0,0
+60,4thbookerhlf0,0,0
+61,4thbookerqrt,0,0
+62,4thbookerqrt0,0,0
+63,4thbookercenteredqrt,0,0
+64,4thbookercenteredqrt0,0,0
+65,4thbookerbooks,0,0
+66,4thbookercenterbooks,0,0
+67,4thbookqrtshad,0,0
+68,4thbookcentqrtshad,0,0
+69,4thbookrPCA,0,0
+70,4thbookrcentPCA,0,0
 71,FALSE,0,0
 72,FALSE,0,0
 73,FALSE,0,0

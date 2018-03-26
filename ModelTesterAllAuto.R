@@ -5,16 +5,22 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #sink(zz, type="message") edit for rebaseless
 #chek for R package updates
 #try(log("a")) ## test --no-edit
+#WHEN INSTALLING RTOOLS MAKE SURE TO "Select Additional Tasks" dialog box I checked "Edit the system PATH. ...". 
+#install.packages("devtools")
+##devtools::install_github("r-lib/devtools")
+#
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 memory.limit()
-task.subject<-"14th20hp3cv"
-pc.mlr<-c("ACE")#"ALTA","HOPPER"
 which.computer<-Sys.info()[['nodename']]
+task.subject<-"14th20hp3cv"
+if(which.computer=="ACEREBOUT") task.subject<-"rerecc20hp3cv"
+pc.mlr<-c("ACEREBOUT")#T"ALTA","HOPPER"
+
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
 
-if(exists("base.folder")){setwd(base.folder)}
+#if(exists("base.folder")){setwd(base.folder)}
 base.folder<-getwd()
 cpout.folder<-paste(base.folder,"/",which.computer,sep = "")
 setwd(cpout.folder)
@@ -27,11 +33,12 @@ if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.
 if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 
 cv.iters=3
+if(which.computer=="ACEREBOUT") cv.iters<-20
 tuneLength=20
 tuneLength2=8
-normings=c("all","PCA","ICA","centernscale","expoTrans","range01","asis","quantile","YeoJohnson")#,"centernscale"
+normings=c("asis","quantile","YeoJohnson","all","PCA","ICA","centernscale","expoTrans","range01")#,"centernscale"
 
-gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,3,1,52)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,3,1,52,57)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
 write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 try({
@@ -46,7 +53,7 @@ if(length(gensTTest)<1) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
 ########packages install check######
 
 #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
-#list.of.packages <- c("gower","dimRed","DEoptimR","caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
+#list.of.packages <- c("gower","dimRed","DEoptimR","caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees","fda.usc","FDboost","LiblineaR")
 #new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 #if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
@@ -117,33 +124,6 @@ cv6hp5.avoid <- c("pcaNNet")
 cv3hp32.avoid <- c("glm.nb", "gamboost", "ctree2","glmboost", "leapSeq","ctree","svmLinear2")
 cv7x5hp32.avoid <- c("SBC","bagearthgcv","gcvearth","lmStepAIC","glmStepAIC","bridge","lm","glm","bayesglm","blassoAveraged","treebag","rpart1SE")
 
-allmodels <- c("avNNet", "bagEarth", "bagEarthGCV",
-               "bayesglm", "bdk", "blackboost", "Boruta", "brnn", "BstLm" ,
-               "bstTree", "cforest", "ctree", "ctree2", "cubist", "DENFIS",
-               "dnn", "earth", "elm", "enet",   "evtree",
-               "extraTrees",  "gamLoess",  "gaussprLinear", "gaussprPoly", "gaussprRadial",
-               "gcvEarth","glm", "glmboost",  "icr", "kernelpls",
-               "kknn", "knn",  "krlsRadial", "lars" , "lasso",
-               "leapBackward", "leapForward", "leapSeq", "lm", "M5", "M5Rules",
-               "mlpWeightDecay", "neuralnet" , "partDSA",
-               "pcaNNet", "pcr", "penalized", "pls", "plsRglm", "ppr",
-               "qrf" , "ranger",  "rf")
-allmodels <- c("rlm", "rpart", "rpart2",
-               "RRF", "RRFglobal",  "simpls",
-               "svmLinear", "svmPoly", "svmRadial", "svmRadialCost",
-               "widekernelpls",  "xgbLinear",
-               "xgbTree")
-allmodels <- c("avNNet","BstLm","bstTree","cforest","ctree","ctree2",
-               "cubist","earth","enet","evtree","glmboost",
-               "icr","kernelpls","kknn","lasso","pcaNNet",
-               "pcr","pls","qrf","ranger","rf")
-
-allmodels <- c("kknn", "cubist", "avNNet", "xgbLinear", "RRF", "pcaNNet","earth","nnet","gbm","enet","lasso","BstLm",
-               "foba", "leapBackward", "gcvEarth", "SBC","glm.nb","gamboost","ctree2","relaxo",
-               "bartMachine","extraTrees","bam","gam","randomGLM")
-#allmodels <- c("bam")
-#allmodels <- c("rf")"rqlasso",, "xyf" "rvmPoly", "rvmRadial",    "spls", "superpc" ,   "treebag",  "svmLinear2",  "SBC",
-#allmodels <- c("bartMachine", "xgbLinear", "pcaNNet","svmLinear","glmnet","cforest","cubist","rf","ranger")"glmnet",
 #wow rfRules is really slow "rfRules","WM", takes 50min
 # brak everythig "rbfDDA","ridge","rqnc",
 # use "rf" to test all
@@ -218,7 +198,7 @@ for(gend.data in gensTTest){
       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
 
         for(norming in normings) {
-        for(trans.y in 2) {#1:
+        for(trans.y in 1:2) {#1:
           df.toprocess=data.source
 
           #df.toprocess = data.frame(df.toprocess,)
@@ -345,6 +325,8 @@ for(gend.data in gensTTest){
           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F, col.names = T)
 
           ###########for all models#################
+          gc()
+          
           setwd(base.folder)
           if(max(which.computer==pc.mlr)>0)
             source("MLR part.R")

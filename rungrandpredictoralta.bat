@@ -7,5 +7,6 @@ ren ModelTesterAllAuto.Rout rout%isodate%.txt
 move rout%isodate%.txt "C:\Users\Dm\Desktop\generated data test\ALTA"
 cd "C:\Users\Dm\Desktop\generated data test"
 
+bunchofgitstheirsauto.sh
 
-"C:\Program Files\R\R-3.4.2\bin\i386\R.exe" CMD BATCH ModelTesterAllAuto.R
+"C:\Program Files\R\R-3.4.2\bin\i386\R.exe" CMD BATCH --max-mem-size=3000 ModelTesterAllAuto.R
