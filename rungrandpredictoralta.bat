@@ -1,12 +1,11 @@
 taskkill /f /im java.exe
 taskkill /f /im Rterm.
 
-bunchofgits.sh
-
-cd "C:\Users\gvg\Desktop\Gen Test\gentest\"
+cd "C:\Users\Dm\Desktop\generated data test"
 set isodate=%date:~11,3%-%date:~3,2%-%date:~0,2%
 ren ModelTesterAllAuto.Rout rout%isodate%.txt
-move rout%isodate%.txt "C:\Users\gvg\Desktop\Gen Test\gentest\ALTA"
-cd "C:\Users\gvg\Desktop\Gen Test\gentest\"
+move rout%isodate%.txt "C:\Users\Dm\Desktop\generated data test\ALTA"
+cd "C:\Users\Dm\Desktop\generated data test"
 
-"C:\Users\gvg\Documents\R\R-3.4.1\bin\x64\R.exe" CMD BATCH ModelTesterAllAuto.R
+
+"C:\Program Files\R\R-3.4.2\bin\i386\R.exe" CMD BATCH ModelTesterAllAuto.R

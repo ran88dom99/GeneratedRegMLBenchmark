@@ -1,13 +1,11 @@
 
-R version 3.4.1 (2017-06-30) -- "Single Candle"
+R version 3.4.2 (2017-09-28) -- "Short Summer"
 Copyright (C) 2017 The R Foundation for Statistical Computing
-Platform: x86_64-w64-mingw32/x64 (64-bit)
+Platform: i386-w64-mingw32/i386 (32-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
 
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
@@ -17,6 +15,9 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
+[Previously saved workspace restored]
+
+> 
 > options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 > ## capture messages and errors to a file.https://rweb.crmda.ku.edu/cran/
 > #zz <- file("all.Rout", open="wt")https://cran.cnr.berkeley.edu
@@ -26,7 +27,7 @@ Type 'q()' to quit R.
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 > memory.limit()
-[1] 6056
+[1] 1535
 > task.subject<-"14th20hp3cv"
 > pc.mlr<-c("ACE")#"ALTA","HOPPER"
 > which.computer<-Sys.info()[['nodename']]
@@ -38,14 +39,17 @@ Type 'q()' to quit R.
 > cpout.folder<-paste(base.folder,"/",which.computer,sep = "")
 > setwd(cpout.folder)
 > 
-> if(length(which(list.files() == out.file))<1) write.table( "0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,basic latent features,ignore,none,asis,1.12784979099243,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,," ,file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
+> if(length(which(list.files() == out.file))<1){
++   write.table("pMAE,pRMSE,ocvRMSE,RMSEutrans,MAEutrans,date,algomodel,trgCol,transTarg,task,missing,append,transform,pc,expirament,RMSEofMean,hpGen,randomseed,time,validmethod,tuneLength,cvcount,ignrepeats,adaptivemin,bestTune,,,,,,,,,,,," ,file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
++   write.table("0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,bac latent features,ignore,none,asis,1.127,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,," ,file =,out.file,append=T,quote = F, sep = ",", row.names = F,col.names = F)
++   }
 > if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,".csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 > if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 > 
 > cv.iters=3
 > tuneLength=20
 > tuneLength2=8
-> normings=c("YeoJohnson","ICA", "centernscale","expoTrans","range01","asis","quantile")#,"centernscale"
+> normings=c("all","PCA","ICA","centernscale","expoTrans","range01","asis","quantile","YeoJohnson")#,"centernscale"
 > 
 > gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,3,1,52)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 > gensTTest<-vector()
@@ -84,9 +88,9 @@ Loading required package: ggplot2
 
 Attaching package: 'MLmetrics'
 
-The following object is masked from 'package:caret':
+The following objects are masked from 'package:caret':
 
-    RMSE
+    MAE, RMSE
 
 The following object is masked from 'package:base':
 
@@ -119,7 +123,8 @@ The following object is masked from 'package:base':
 +   if(previous.fails[lt,2]==previous.fails[lt-1,2])  {
 +     bad.models=union(bad.models,c(paste(previous.fails[lt,2])))  }}
 > 
-> #######not to redo a test function#####
+> #source(functionsallautotest.R)
+> #######not to redo a test function in functions source#####
 > check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextra="missing",missingdata="leaveempty",datasource="mean" ,column.to.predict=200,allmodel="ctree")
 + {
 +   for(intern in 1:length(df[,1])){
@@ -204,10 +209,10 @@ The following object is masked from 'package:base':
 > list.of.packages <- c("caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees")
 > new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 > if(length(new.packages)) install.packages(new.packages, dep = TRUE)
-Installing packages into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
+Installing packages into 'C:/Users/Dm/Documents/R/win-library/3.4'
 (as 'lib' is unspecified)
 Warning message:
-packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1) 
+packages 'logicFS', ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.2) 
 > 
 > #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 > #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
@@ -218,7 +223,7 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 > seed.var =222+round(runif(1,min=0,max=100))
 > column.to.predict=1
 > print(date());
-[1] "Mon Mar 12 15:31:43 2018"
+[1] "Mon Mar 26 11:27:31 2018"
 > 
 > setwd(base.folder)
 > if(!exists("gen.count")){gen.count=56}
@@ -237,7 +242,7 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 +       ################data wrestling###############
 + 
 +       dependant.selection=complete.cases(data.source[,column.to.predict])
-+       df.previous.calcs=as.data.frame(read.csv(file=out.file, header = FALSE, sep = ",", quote = "",
++       df.previous.calcs=as.data.frame(read.csv(file=out.file, header = TRUE, sep = ",", quote = "",
 +                                                dec = ".", fill = TRUE, comment.char = ""))
 +       unimportant.computations<-vector(mode = "logical",length=length(df.previous.calcs[,1])  )
 +       for(intern in 1:length(df.previous.calcs[,1])){
@@ -252,52 +257,131 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 +       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
 + 
 +         for(norming in normings) {
-+         for(trans.y in 1:2) {
++         for(trans.y in 2) {#1:
 +           df.toprocess=data.source
++ 
++           #df.toprocess = data.frame(df.toprocess,)
++           nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
++           #nzv[nzv$nzv,][1:10,]
++           if(length(nzv)>1){
++             df.toprocess <- df.toprocess[, -nzv]
++             }
++           if((norming=="asis")&&(trans.y==1)){next}
++           if((norming=="all")&&(trans.y==1)){next}
++           if((norming=="ICA")&&(trans.y==1)){next}
++           if((norming=="PCA")&&(trans.y==1)){next}
 +           y.untransformed<-df.toprocess[,1]
++           l.df.tp<-length(df.toprocess[1,])
 + 
 +           if(norming=="centernscale"){
-+             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("center", "scale"))
-+             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++             preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("center", "scale"))
++             df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])}
 +           if(norming=="range01"){
-+             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
-+             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++             preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("range"))
++             df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])}
 +           if(norming=="expoTrans"){
-+             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("expoTrans"))
-+             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++             preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("expoTrans"))
++             df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])}
 +           if(norming=="YeoJohnson"){
-+             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("YeoJohnson"))#"center", "scale",
-+             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++             preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("YeoJohnson"))#"center", "scale",
++             df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])}
++           if(norming=="all"){
++             df.toprocessFA<-df.toprocess[,2:l.df.tp]
++             preProcValueYJ= preProcess(df.toprocess[,2:l.df.tp],method = c("YeoJohnson"))
++             preProcValueET= preProcess(df.toprocess[,2:l.df.tp],method = c("expoTrans"))
++             preProcValue01= preProcess(df.toprocess[,2:l.df.tp],method = c("range"))
++             preProcValuecns= preProcess(df.toprocess[,2:l.df.tp],method = c("center", "scale"))
 + 
-+           if((norming=="asis")&&(trans.y==2)){next}
++             Q_Fail<-T #I expect ICA to crash horribly so testing for fail and NA
++             try({
++               preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("ica"),n.comp=3)#"center", "scale",
++               df.ica<-predict(preProcValues, df.toprocess[,2:l.df.tp])
++               Q_Fail<-F
++             })
++             if(Q_Fail || anyNA(df.ica)){
++               print("icafail")}
++             else{
++               df.toprocess<-cbind(df.toprocess,df.ica)}
++             Q_Fail<-T #I expect PCA to crash horribly so testing for fail and NA
++             try({
++               preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("pca"))#"center", "scale",
++               df.pca<-predict(preProcValues, df.toprocess[,2:l.df.tp])
++               Q_Fail<-F
++             })
++             if(Q_Fail || anyNA(df.pca)){
++               print("pcafail")}
++             else{
++               df.toprocess<-cbind(df.toprocess,df.pca)}
++ 
++             df.toprocess<-cbind( df.toprocess,
++                                  predict(preProcValueYJ, df.toprocess[,2:l.df.tp]),
++                                  predict(preProcValueET, df.toprocess[,2:l.df.tp]),
++                                  predict(preProcValue01, df.toprocess[,2:l.df.tp]),
++                                  predict(preProcValuecns, df.toprocess[,2:l.df.tp]),
++                                  deparse.level = 1)
++           }
++ 
++           Q_Fail<-T #I expect ICA to crash horribly so testing for fail and NA
++           try({
++             if(norming=="ICA"){
++               preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("ica"),n.comp=3)#"center", "scale",
++               df.toprocess<-cbind(df.toprocess,predict(preProcValues, df.toprocess[,trans.y:l.df.tp]))}
++             Q_Fail<-F
++           })
++           if(norming=="ICA"){
++             if(Q_Fail || anyNA(df.toprocess)){next;print("icafail")}}
++ 
++           Q_Fail<-T #I expect PCA to crash horribly so testing for fail and NA
++           try({
++             if(norming=="PCA"){
++               preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("pca"))#"center", "scale",
++               df.toprocess <-cbind(df.toprocess,predict(preProcValues, df.toprocess[,trans.y:l.df.tp]))
++               }
++             Q_Fail<-F
++           })
++           if(norming=="PCA"){
++             if(Q_Fail || anyNA(df.toprocess)){next}}
 + 
 + 
 +           ################preprocess###########
 +           df.toprocess=data.frame(df.toprocess[dependant.selection,])
 +           y.untransformed=y.untransformed[dependant.selection]
 +           if(norming=="quantile"){
-+             for(Clol in trans.y:length(data.source[1,])){
-+               df.toprocess[,Clol]<- (rank(df.toprocess[,Clol],na.last = "keep",ties.method = "average")-1) }
-+             preProcValues= preProcess(df.toprocess[,trans.y:length(df.toprocess[1,])],method = c("range"))
-+             df.toprocess[,trans.y:length(df.toprocess[1,])]<- predict(preProcValues, df.toprocess[,trans.y:length(df.toprocess[1,])])}
++             for(Clol in trans.y:l.df.tp){
++               df.toprocess[,Clol]<- (rank(df.toprocess[,Clol],na.last = "keep",ties.method = "average")-1)
++               }
++             preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("range"))
++             df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])
++             }
 + 
-+           loess.model<-loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
++           if(norming=="all"){
++             df.toprocessFA=data.frame(df.toprocessFA[dependant.selection,])
++             l.df.tpfa<-length(df.toprocessFA[1,])
++             for(Clol in 1:(l.df.tpfa)){
++               df.toprocessFA[,Clol]<- (rank(df.toprocessFA[,Clol],na.last = "keep",ties.method = "average")-1)
++               }
++             preProcValues= preProcess(df.toprocessFA[,1:l.df.tpfa],method = c("range"))
++             df.toprocessFA[,1:l.df.tpfa]<- predict(preProcValues, df.toprocessFA[,1:l.df.tpfa])
++             df.toprocess<-cbind( df.toprocess,df.toprocessFA,deparse.level = 1)
++           }
 + 
++           df.toprocess = signif(df.toprocess,digits = 3)
 +           #df.toprocess = data.frame(df.toprocess,)
 +           nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
 +           #nzv[nzv$nzv,][1:10,]
 +           if(length(nzv)>1){
 +             df.toprocess = (df.toprocess[, -nzv])}
-+           df.toprocess = signif(df.toprocess,digits = 3)
++ 
++           loess.model<-loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
 + 
 +           seed.var =222+round(runif(1,min=0,max=100))
-+           set.seed(seed.var)
++           set.seed(seed.var)#spliting after transform is not ok?
 +           inTrain <- createDataPartition(y = df.toprocess[,1],
 +                                          p = .75,
 +                                          list = FALSE)
 +           training <- df.toprocess[ inTrain,]
 +           testing  <- df.toprocess[-inTrain,]
-+           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F,col.names = F)
++           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F, col.names = T)
 + 
 +           ###########for all models#################
 +           setwd(base.folder)
@@ -319,3 +403,108 @@ packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.1)
 +   }
 + 
 + }
+[1] "avNNet"
+[1] "bag"
+[1] "bagEarth"
+[1] "bagEarthGCV"
+[1] "bartMachine"
+[1] "bayesglm"
+[1] "blasso"
+[1] "blassoAveraged"
+[1] "bridge"
+[1] "BstLm"
+[1] "cforest"
+[1] "ctree"
+[1] "ctree2"
+[1] "cubist"
+[1] "dnn"
+[1] "earth"
+[1] "elm"
+[1] "enet"
+[1] "evtree"
+[1] "extraTrees"
+[1] "foba"
+[1] "gam"
+[1] "gamboost"
+[1] "gamSpline"
+[1] "gaussprLinear"
+[1] "gaussprPoly"
+[1] "gaussprRadial"
+[1] "gbm"
+[1] "gbm_h2o"
+[1] "gcvEarth"
+[1] "glm"
+[1] "glm.nb"
+[1] "glmboost"
+[1] "glmnet"
+[1] "glmnet_h2o"
+[1] "glmStepAIC"
+[1] "icr"
+[1] "kernelpls"
+[1] "kknn"
+[1] "knn"
+[1] "krlsPoly"
+[1] "krlsRadial"
+[1] "lars"
+[1] "lars2"
+[1] "lasso"
+[1] "leapBackward"
+[1] "leapForward"
+[1] "leapSeq"
+[1] "lm"
+[1] "lmStepAIC"
+[1] "logicBag"
+[1] "logreg"
+[1] "M5"
+[1] "M5Rules"
+[1] "mlpKerasDecay"
+[1] "mlpKerasDropout"
+[1] "msaenet"
+[1] "mxnet"
+[1] "mxnetAdam"
+[1] "nnet"
+[1] "nnls"
+[1] "null"
+[1] "ordinalNet"
+[1] "parRF"
+[1] "pcaNNet"
+[1] "pcr"
+[1] "pls"
+[1] "plsRglm"
+[1] "ppr"
+[1] "pythonKnnReg"
+[1] "qrf"
+[1] "ranger"
+[1] "Rborist"
+[1] "relaxo"
+[1] "rf"
+[1] "ridge"
+[1] "rlm"
+[1] "rpart"
+[1] "rpart1SE"
+[1] "rpart2"
+[1] "rqlasso"
+[1] "rqnc"
+[1] "RRF"
+[1] "RRFglobal"
+[1] "rvmLinear"
+[1] "rvmPoly"
+[1] "rvmRadial"
+[1] "SBC"
+[1] "simpls"
+[1] "spikeslab"
+[1] "spls"
+[1] "superpc"
+[1] "svmBoundrangeString"
+[1] "svmExpoString"
+[1] "svmLinear"
+[1] "svmLinear2"
+[1] "svmLinear3"
+[1] "svmPoly"
+[1] "svmRadial"
+[1] "svmRadialCost"
+[1] "svmRadialSigma"
+[1] "svmSpectrumString"
+[1] "treebag"
+[1] "widekernelpls"
+[1] "WM"
