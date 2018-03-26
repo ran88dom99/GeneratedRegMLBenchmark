@@ -29,14 +29,20 @@ move rout%isodate%.txt "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark\A
 cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
  "C:\Users\gvg\Documents\R\R-3.4.3\bin\x64\R.exe" CMD BATCH --max-mem-size=3000 ModelTesterAllAuto.R
 
+include mean rmse of test set to see original's benefit
+
  
-propper folder structure
+~propper folder structure
 remove duplicates & most useless users?
-PCA cent asis  and count
 EDA
+	including that silly curve
+processing each dataset's content info
+
+PCA cent asis  and count
 
 select a target column
 basic correl to basic select duplicates
+finding friends most important
 ###MUST I REDO PCA IF ITS JUST A DROPIN THE LAKE?
 EDA resticted:are you and yours odd?
 content based dataset
