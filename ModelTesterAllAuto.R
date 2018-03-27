@@ -14,7 +14,7 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 memory.limit()
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"14th20hp3cv"
-if(which.computer=="ACEREBOUT") task.subject<-"rerecc20hp3cv"
+if(which.computer=="ACEREBOUT") task.subject<-"rerecc20hp20cv"
 pc.mlr<-c("ACEREBOUT","HOPPER")#T"ALTA","HOPPER"
 
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
