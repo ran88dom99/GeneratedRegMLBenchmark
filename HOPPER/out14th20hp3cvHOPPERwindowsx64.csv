@@ -26582,3 +26582,5 @@ NA,NA,-1,NA,NA,Mon Mar 26 22:59:10 2018,regr.bartMachine,1,2,kaggle housing,igno
 NA,NA,-1,NA,NA,Mon Mar 26 23:00:02 2018,regr.bcart,1,2,kaggle housing,ignore,none,all,HOPPER,14th20hp3cv,0.4046,nohyperparam,265,40,cv,20,3,NA,5
 NA,NA,-1,NA,NA,Mon Mar 26 23:00:26 2018,regr.bdk,1,2,kaggle housing,ignore,none,all,HOPPER,14th20hp3cv,0.4046,nohyperparam,265,13,cv,20,3,NA,5
 NA,NA,0.147,NA,NA,Mon Mar 26 23:33:05 2018,regr.blackboost,1,2,kaggle housing,ignore,none,all,HOPPER,14th20hp3cv,0.4046,random,265,1949,cv,20,3,NA,5,5,489
+NA,NA,-1,NA,NA,Wed Mar 28 18:33:11 2018,regr.brnn,1,2,kaggle housing,ignore,none,all,HOPPER,14th20hp3cv,0.415,nohyperparam,318,2015,cv,20,3,NA,5
+0.606,0.597,-1,0.164,0.121,Wed Mar 28 18:33:36 2018,regr.bst,1,2,kaggle housing,ignore,none,all,HOPPER,14th20hp3cv,0.415,nohyperparam,318,14,cv,20,3,NA,5
