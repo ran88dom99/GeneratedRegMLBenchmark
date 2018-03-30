@@ -136,6 +136,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   RMSEp=RMSE(p[,1],p[,2])
   #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
   RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
+  RMSE.mean.train=signif(RMSE(training[,1],mean(training[,1], na.rm = T)), digits = 4)
   #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
   MMAAEE=MAE(p[,1],p[,2])
 
@@ -149,7 +150,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
                 signif(overRMSE,digits = 3),signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),
                 date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
-                withextra,norming,which.computer,task.subject,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
+                withextra,norming,which.computer,task.subject,RMSE.mean,RMSE.mean.train,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
                 adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
                 adaptControl$adaptive$min,mod$x),
               file = out.file, append =TRUE, quote = F, sep = ",",
@@ -177,6 +178,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
     RMSEp=RMSE(p[,1],p[,2])
     #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
     RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
+    RMSE.mean.train=signif(RMSE(training[,1],mean(training[,1], na.rm = T)), digits = 4)
     #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
     MMAAEE=MAE(p[,1],p[,2])
 
@@ -191,7 +193,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
     write.table(paste(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
                       signif(overRMSE,digits = 3),signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),
                       date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
-                      withextra,norming,which.computer,task.subject,RMSE.mean,NoHyper,seed.var,round(proc.time()[3]-when[3]),
+                      withextra,norming,which.computer,task.subject,RMSE.mean,RMSE.mean.train,NoHyper,seed.var,round(proc.time()[3]-when[3]),
                       adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
                       adaptControl$adaptive$min, sep = ","),
                 file = out.file, append =TRUE, quote = F, sep = ",",
@@ -213,9 +215,6 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
                 col.names = F, qmethod = "double")
   }
   if(not.failed==1) {
-    write.table(paste("Succ",date(),allmodel,  sep = ", "),
-                file = "backup.csv", append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")}
+    }
 }
 setwd(base.folder)
