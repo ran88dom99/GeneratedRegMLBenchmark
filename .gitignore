@@ -11,3 +11,4 @@ rout*
 **sanity check 1.csv
 tree_m0_1.out
 tree_m0_posts.out
+xgboost.model
