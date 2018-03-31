@@ -28,15 +28,21 @@ ren ModelTesterAllAuto.Rout rout%isodate%.txt
 move rout%isodate%.txt "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark\ACEREBOUT"
 cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
  "C:\Users\gvg\Documents\R\R-3.4.3\bin\x64\R.exe" CMD BATCH --max-mem-size=3000 ModelTesterAllAuto.R
-
-include mean rmse of test set to see original's benefit
-
+ 
+~OUTPUT FILE EDITS REMEBER:
+	include mean rmse of test set to see original's benefit
+	TASK
+	more?
+	
+ big.pca
  
 ~propper folder structure
-remove duplicates & most useless users?
+~remove duplicates & most useless users?
 EDA
 	including that silly curve
 processing each dataset's content info
+
+condorecet-cluster-dimensionality reduction bests
 
 PCA cent asis  and count
 
