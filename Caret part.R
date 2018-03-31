@@ -72,6 +72,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   RMSEp=RMSE(p[,1],p[,2])
   #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
   RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
+  RMSE.mean.train=signif(RMSE(training[,1],mean(training[,1], na.rm = T)), digits = 4)
   #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
   MMAAEE=MAE(p[,1],p[,2])
 
@@ -87,7 +88,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
                 signif(overRMSE,digits = 3),signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),
                 date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
-                withextra,norming,which.computer,task.subject,RMSE.mean,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
+                withextra,norming,which.computer,task.subject,RMSE.mean,RMSE.mean.train,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
                 adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
                 adaptControl$adaptive$min,trainedmodel$bestTune),
               file = out.file, append =TRUE, quote = F, sep = ",",
@@ -119,6 +120,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     RMSEp=RMSE(p[,1],p[,2])
     #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
     RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
+    RMSE.mean.train=signif(RMSE(training[,1],mean(training[,1], na.rm = T)), digits = 4)
     #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
     MMAAEE=MAE(p[,1],p[,2])
     print(confusionMatrix(p[,1],p[,2]))
@@ -134,7 +136,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
     write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                   signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
-                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,RMSE.mean,simpleControl$search,
+                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,RMSE.mean,RMSE.mean.train,simpleControl$search,
                   seed.var,round(proc.time()[3]-when[3]),simpleControl$method,tuneLength2,
                   simpleControl$number,"no rep","no min",trainedmodel$bestTune),
                 file = out.file, append =TRUE, quote = F, sep = ",",
@@ -164,7 +166,8 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
     RMSEp=RMSE(p[,1],p[,2])
     #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
-    RMSE.mean=RMSE(p[,2],mean(p[,2], na.rm = T))
+    RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
+    RMSE.mean.train=signif(RMSE(training[,1],mean(training[,1], na.rm = T)), digits = 4)
     #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
     MMAAEE=MAE(p[,1],p[,2])
 
@@ -180,7 +183,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
     write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                   signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
-                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,RMSE.mean,simpleControl$search,
+                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,RMSE.mean,RMSE.mean.train,simpleControl$search,
                   seed.var,round(proc.time()[3]-when[3]),"nohyperparameters",tuneLength2,
                   simpleControl$number,"no rep","no min",trainedmodel$bestTune),
                 file = out.file, append =TRUE, quote = F, sep = ",",
@@ -202,10 +205,6 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
                 col.names = F, qmethod = "double")
   }
   if(not.failed==1) {
-    write.table(paste("Succ",date(),allmodel,  sep = ", "),
-                file = "backup.csv", append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
     fail.try=T
     try({
       #noVarImp.models=c("parRF")#var imp crashes with these models
