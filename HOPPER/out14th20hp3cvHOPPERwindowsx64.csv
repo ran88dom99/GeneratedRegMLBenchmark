@@ -26608,3 +26608,6 @@ NA,NA,0.187,NA,NA,Sat Mar 31 06:28:31 2018,regr.glmnet,1,2,kaggle housing,ignore
 0.67,0.64,-1,0.145,0.0994,Sat Mar 31 06:33:01 2018,regr.h2o.randomForest,1,2,kaggle housing,ignore,none,all,HOPPER,14th20hp3cv,0.4092,nohyperparam,263,58,cv,20,3,NA,5
 Fail,Fail,Fail,Fail,PrePackageFail,Sat Mar 31 06:33:13 2018,regr.IBk,1,2,kaggle housing,ignore,none,all,HOPPER,14th20hp3cv,12
 Fail,Fail,Fail,Fail,PackageFail,Sat Mar 31 06:33:42 2018,regr.kknn,1,2,kaggle housing,ignore,none,all,HOPPER,14th20hp3cv,29
+NA,NA,NA,NA,NA,Sat Mar 31 20:49:12 2018,regr.ksvm,1,2,kaggle housing,ignore,none,all,HOPPER,14th20hp3cv,0.408,0.3966,random,240,133,cv,20,3,NA,5,2.24027784274658,21.2723844669266
+NA,NA,-1,NA,NA,Sat Mar 31 20:49:41 2018,regr.laGP,1,2,kaggle housing,ignore,none,all,HOPPER,14th20hp3cv,0.408,0.3966,nohyperparam,240,19,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Sat Mar 31 20:50:06 2018,regr.LiblineaRL2L1SVR,1,2,kaggle housing,ignore,none,all,HOPPER,14th20hp3cv,0.408,0.3966,nohyperparam,240,16,cv,20,3,NA,5
