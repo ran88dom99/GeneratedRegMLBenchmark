@@ -64,3 +64,5 @@ Mon Mar 26 17:07:37 2018,glmnet_h2o,kaggle housing,3,20,windows,x64,HOPPER
 Tue Mar 27 17:08:32 2018,regr.blm,kaggle housing,3,20,windows,x64,HOPPER
 Wed Mar 28 17:07:47 2018,regr.blm,kaggle housing,3,20,windows,x64,HOPPER
 Thu Mar 29 17:07:40 2018,regr.btlm,kaggle housing,3,20,windows,x64,HOPPER
+Fri Mar 30 17:07:32 2018,regr.btlm,kaggle housing,3,20,windows,x64,HOPPER
+Sat Mar 31 17:07:31 2018,regr.km,kaggle housing,3,20,windows,x64,HOPPER
