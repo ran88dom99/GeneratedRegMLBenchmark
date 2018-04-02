@@ -20830,3 +20830,11 @@ Fail, Sun Apr 01 01:13:29 2018, bartMachine
 Fail, Sun Apr 01 01:32:32 2018, cforest
 Fail, Sun Apr 01 01:32:48 2018, ctree
 Fail, Sun Apr 01 01:33:13 2018, ctree2
+Fail, Sun Apr 01 15:43:08 2018, cubist
+Fail, Sun Apr 01 15:44:48 2018, enet
+Fail, Sun Apr 01 15:44:50 2018, extraTrees
+Fail, Sun Apr 01 15:45:37 2018, gamSpline
+Fail, Sun Apr 01 15:45:45 2018, gaussprLinear
+Fail, Sun Apr 01 15:47:20 2018, gbm_h2o
+Fail, Sun Apr 01 15:49:25 2018, glmnet_h2o
+Fail, Sun Apr 01 15:51:35 2018, kernelpls
