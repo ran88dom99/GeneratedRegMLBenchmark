@@ -9681,3 +9681,7 @@ Fail,Fail,Fail,Fail,Fail,Tue Apr 03 10:17:40 2018,svmSpectrumString,1,2,bas inte
 0.954,0.95,0.0369,0.0326,0.0247,Tue Apr 03 10:24:03 2018,xgbLinear,1,2,bas interactive latent features,ignore,none,range01,ALTA,14th20hp3cv,0.6436,random,230,22,cv,20,3,NA,5,39,0.356996109451929,0.00206780465134334,1.42499211849645
 0.825,0.816,0.12,0.118,0.0924,Tue Apr 03 10:27:19 2018,xgbTree,1,2,bas interactive latent features,ignore,none,range01,ALTA,14th20hp3cv,0.6436,random,230,167,cv,20,3,NA,5,351,7,0.39025316608022,1.15761128021404,0.42823050795123,11,0.384999300760683
 NA,NA,0.0908,NA,NA,Tue Apr 03 10:28:59 2018,xyf,1,2,bas interactive latent features,ignore,none,range01,ALTA,14th20hp3cv,0.6436,random,230,72,cv,20,3,NA,5,16,19,0.136402847659774,rectangular
+0.109,0.083,4.03,4.02,3.21,Wed Apr 04 00:50:14 2018,avNNet,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.382,random,269,4138,cv,20,3,NA,5,14,0.229627740152957,FALSE
+Fail,Fail,Fail,Fail,Fail,Wed Apr 04 00:50:33 2018,bag,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,14
+0.665,0.659,1.52,1.49,1.21,Wed Apr 04 02:13:40 2018,bagEarth,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.382,random,269,4986,cv,20,3,NA,5,12,2
+0.469,0.458,-1,2.37,1.91,Wed Apr 04 02:18:46 2018,bagEarthGCV,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.382,random,269,256,cv,20,3,NA,5,1

@@ -2446,3 +2446,6 @@ widekernelpls, Tue Apr 03 10:23:13 2018, 0.994, bas interactive latent features,
 xgbLinear, Tue Apr 03 10:24:04 2018, 0.954, bas interactive latent features, c(100, 2.4, 1.9, 1, 0.1, 0, 0, 0, 0)
 xgbTree, Tue Apr 03 10:27:19 2018, 0.825, bas interactive latent features, c(100, 26.2, 6.8, 1.2, 1.1, 0, 0, 0, 0)
 xyf, Tue Apr 03 10:28:59 2018, NA, bas interactive latent features, Failed
+avNNet, Wed Apr 04 00:50:18 2018, 0.109, OpenML 2dplanes, c(100, 17.4, 7.4, 2.4, 16.4, 7.4, 2.2, 0, 0, 0)
+bagEarth, Wed Apr 04 02:14:29 2018, 0.665, OpenML 2dplanes, c(100, 67.4, 59, 44, 35.9, 0, 0, 0, 0, 0)
+bagEarthGCV, Wed Apr 04 02:19:33 2018, 0.469, OpenML 2dplanes, c(100, 59.1, 51, 42.6, 37.5, 18, 12.9, 0, 0, 0)
