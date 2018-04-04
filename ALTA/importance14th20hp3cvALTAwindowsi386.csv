@@ -2285,3 +2285,164 @@ earth, Sun Apr 01 18:57:00 2018, 0.968, bas interactive latent features, c(100, 
 elm, Sun Apr 01 18:57:28 2018, 0.995, bas interactive latent features, c(92.1, 100, 75.9, 28.4, 43.1, 43.7, 0, 59.5, 93.7)
 enet, Sun Apr 01 18:57:57 2018, 0.989, bas interactive latent features, c(92.1, 100, 75.9, 28.4, 43.1, 43.7, 0, 59.5, 93.7)
 evtree, Sun Apr 01 19:43:10 2018, 0.853, bas interactive latent features, c(92.1, 100, 75.9, 28.4, 43.1, 43.7, 0, 59.5, 93.7)
+extraTrees, Mon Apr 02 13:53:48 2018, 0.975, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+foba, Mon Apr 02 13:54:17 2018, 0.993, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+gam, Mon Apr 02 13:58:40 2018, 0.998, bas interactive latent features, c(0, 0, 0, 0, NaN, 0, 0, NaN, 0)
+gamboost, Mon Apr 02 14:33:07 2018, 0.983, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+gamSpline, Mon Apr 02 14:34:38 2018, 0.997, bas interactive latent features, c(NaN, 0, 0, NaN, NaN, 0, NaN, NaN, 0)
+gbm, Mon Apr 02 14:55:21 2018, 0.971, bas interactive latent features, c(5, 100, 17.3, 0.1, 0, 0, 0.1, 0, 4.9)
+gcvEarth, Mon Apr 02 14:58:29 2018, 0.969, bas interactive latent features, c(100, 20.2, 8.4, 0, 0, 0, 0, 0, 0)
+glm, Mon Apr 02 14:58:55 2018, 0.995, bas interactive latent features, c(54.9, 100, 38.3, 85.4, 4.1, 0.1, 0, 22.9, 79.6)
+glmboost, Mon Apr 02 15:00:12 2018, 0.967, bas interactive latent features, c(27.1, 100, 43.3, 4, 10.4, 0.3, 4.8, 0, 0)
+glmnet, Mon Apr 02 15:00:41 2018, 0.973, bas interactive latent features, c(100, 55.4, 59.3, 29.7, 0, 0, 0, 0, 27.4)
+glmStepAIC, Mon Apr 02 15:03:48 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+icr, Mon Apr 02 15:04:21 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+kernelpls, Mon Apr 02 15:04:48 2018, 0.995, bas interactive latent features, c(100, 89.3, 44.3, 34.5, 14, 15.8, 0, 44.7, 90.7)
+kknn, Mon Apr 02 15:11:22 2018, 0.947, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+knn, Mon Apr 02 15:11:55 2018, 0.924, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+krlsPoly, Mon Apr 02 15:16:55 2018, 0.025, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+krlsRadial, Mon Apr 02 15:33:26 2018, 0.998, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+lars, Mon Apr 02 15:33:54 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+lars2, Mon Apr 02 15:34:20 2018, 0.984, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+lasso, Mon Apr 02 15:34:48 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+leapBackward, Mon Apr 02 15:35:15 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+leapForward, Mon Apr 02 15:35:42 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+leapSeq, Mon Apr 02 15:36:09 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+lm, Mon Apr 02 15:36:35 2018, 0.995, bas interactive latent features, c(54.9, 100, 38.3, 85.4, 4.1, 0.1, 0, 22.9, 79.6)
+lmStepAIC, Mon Apr 02 15:37:01 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+M5, Mon Apr 02 15:38:53 2018, 0.994, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+M5Rules, Mon Apr 02 15:39:42 2018, 0.994, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+msaenet, Mon Apr 02 15:41:25 2018, 0.834, bas interactive latent features, 0
+msaenet, Mon Apr 02 15:41:25 2018, 0.834, bas interactive latent features, 100
+msaenet, Mon Apr 02 15:41:25 2018, 0.834, bas interactive latent features, 0
+msaenet, Mon Apr 02 15:41:25 2018, 0.834, bas interactive latent features, 0
+msaenet, Mon Apr 02 15:41:25 2018, 0.834, bas interactive latent features, 0
+msaenet, Mon Apr 02 15:41:25 2018, 0.834, bas interactive latent features, 0
+msaenet, Mon Apr 02 15:41:25 2018, 0.834, bas interactive latent features, 0
+msaenet, Mon Apr 02 15:41:25 2018, 0.834, bas interactive latent features, 0
+msaenet, Mon Apr 02 15:41:25 2018, 0.834, bas interactive latent features, 0
+nnet, Mon Apr 02 15:43:13 2018, 0.99, bas interactive latent features, c(100, 35.8, 33.8, 88.4, 0, 1.9, 9.4, 32.4, 61.9)
+null, Mon Apr 02 15:44:10 2018, 0, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+parRF, Mon Apr 02 15:46:33 2018, 0.959, bas interactive latent features, Failed
+pcaNNet, Mon Apr 02 15:47:26 2018, 0.991, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+pcr, Mon Apr 02 15:47:54 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+plsRglm, Mon Apr 02 15:49:48 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+ppr, Mon Apr 02 15:50:56 2018, 0.996, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+qrf, Mon Apr 02 15:53:30 2018, 0.872, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+ranger, Mon Apr 02 15:55:01 2018, 0.97, bas interactive latent features, Failed
+Rborist, Mon Apr 02 15:58:39 2018, 0.958, bas interactive latent features, c(25.7, 1.4, 16.9, 8.9, 0.6, 1.4, 0, 0.4, 100)
+relaxo, Mon Apr 02 15:59:11 2018, 0.938, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+rf, Mon Apr 02 16:00:53 2018, 0.958, bas interactive latent features, Failed
+ridge, Mon Apr 02 16:01:23 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+rlm, Mon Apr 02 16:01:53 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+rpart, Mon Apr 02 16:02:22 2018, 0.89, bas interactive latent features, c(78.1, 68.1, 97.3, 100, 4.4, 15.8, 0, 4.9, 7.7)
+rpart1SE, Mon Apr 02 16:02:51 2018, 0.779, bas interactive latent features, c(85.4, 73.3, 100, 53.1, 28.6, 27.8, 2.2, 30.6, 0)
+rpart2, Mon Apr 02 16:03:20 2018, 0.779, bas interactive latent features, c(85.4, 73.3, 100, 53.1, 28.6, 27.8, 2.2, 30.6, 0)
+RRFglobal, Mon Apr 02 17:37:11 2018, 0.958, bas interactive latent features, Failed
+SBC, Mon Apr 02 20:43:32 2018, 0.833, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+simpls, Mon Apr 02 20:44:02 2018, 0.995, bas interactive latent features, c(100, 89.3, 44.3, 34.5, 14, 15.8, 0, 44.7, 90.7)
+spikeslab, Mon Apr 02 20:44:56 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+spls, Mon Apr 02 20:45:29 2018, 0.995, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+superpc, Mon Apr 02 20:46:00 2018, 0, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+svmLinear, Mon Apr 02 20:47:35 2018, NA, bas interactive latent features, Failed
+svmLinear2, Mon Apr 02 20:48:08 2018, 0.928, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+svmLinear3, Mon Apr 02 20:48:40 2018, 0.772, bas interactive latent features, c(92.4, 100, 76.3, 27.8, 41.1, 41.6, 0, 59.4, 94)
+svmPoly, Mon Apr 02 20:49:14 2018, NA, bas interactive latent features, Failed
+svmRadial, Mon Apr 02 20:49:50 2018, NA, bas interactive latent features, Failed
+svmRadialCost, Mon Apr 02 20:50:27 2018, NA, bas interactive latent features, Failed
+svmRadialSigma, Mon Apr 02 20:51:04 2018, NA, bas interactive latent features, Failed
+treebag, Mon Apr 02 20:52:35 2018, 0.805, bas interactive latent features, c(84.6, 78, 100, 57.1, 1.6, 27.2, 18.4, 0, 31.6)
+widekernelpls, Mon Apr 02 20:57:01 2018, 0.995, bas interactive latent features, c(100, 89.3, 44.3, 34.5, 14, 15.8, 0, 44.7, 90.7)
+xgbLinear, Mon Apr 02 20:57:49 2018, 0.955, bas interactive latent features, c(100, 2.4, 1.2, 0.7, 0.1, 0, 0, 0, 0)
+xgbTree, Mon Apr 02 21:01:37 2018, 0.611, bas interactive latent features, c(100, 69.9, 36.9, 33.1, 5.7, 4.6, 4.3, 0, 0)
+xyf, Mon Apr 02 21:03:28 2018, NA, bas interactive latent features, Failed
+avNNet, Mon Apr 02 21:05:08 2018, 0, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+bagEarth, Mon Apr 02 21:08:23 2018, 0.966, bas interactive latent features, c(100, 18.8, 7.8, 0, 0, 0, 0, 0, 0)
+bagEarthGCV, Mon Apr 02 21:09:53 2018, 0.966, bas interactive latent features, c(100, 19.2, 7.5, 0, 0, 0, 0, 0, 0)
+bartMachine, Mon Apr 02 21:24:39 2018, 0.969, bas interactive latent features, c(100, 67.9, 24.6, 55.4, 17.7, 12.1, 0, 3, 10.5)
+bayesglm, Mon Apr 02 21:25:12 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+blasso, Mon Apr 02 21:26:00 2018, 0.993, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+blassoAveraged, Mon Apr 02 21:26:47 2018, 0.993, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+bridge, Mon Apr 02 21:27:35 2018, 0.993, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+BstLm, Mon Apr 02 21:30:06 2018, 0.537, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+cforest, Mon Apr 02 21:32:52 2018, 0.938, bas interactive latent features, c(22.7, 100, 11.9, 1.5, 0.1, 0.2, 0, 2.7, 43.3)
+ctree, Mon Apr 02 21:33:30 2018, 0.889, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+ctree2, Mon Apr 02 21:34:06 2018, 0.888, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+cubist, Mon Apr 02 21:40:13 2018, 0.995, bas interactive latent features, c(100, 74.4, 75, 64.7, 21.8, 14.7, 6.4, 6.4, 0)
+dnn, Mon Apr 02 21:40:59 2018, 0, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+earth, Mon Apr 02 21:41:36 2018, 0.966, bas interactive latent features, c(100, 20.1, 8.3, 0, 0, 0, 0, 0, 0)
+elm, Mon Apr 02 21:42:09 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+enet, Mon Apr 02 21:42:42 2018, 0.992, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+evtree, Mon Apr 02 22:35:11 2018, 0.844, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+extraTrees, Tue Apr 03 02:27:53 2018, 0.973, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+foba, Tue Apr 03 02:28:26 2018, 0.992, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+gamboost, Tue Apr 03 03:44:13 2018, 0.981, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+gamSpline, Tue Apr 03 03:45:45 2018, 0.994, bas interactive latent features, c(NaN, 0, 0, 0, NaN, 0, 0, 0, 0)
+gbm, Tue Apr 03 04:05:39 2018, 0.97, bas interactive latent features, c(6.1, 100, 9, 0.1, 0, 0, 0.1, 0.1, 1.8)
+gcvEarth, Tue Apr 03 04:09:45 2018, 0.966, bas interactive latent features, c(100, 20.1, 8.3, 0, 0, 0, 0, 0, 0)
+glm, Tue Apr 03 04:10:17 2018, 0.994, bas interactive latent features, c(63.4, 100, 44.7, 90.2, 6.4, 2.3, 0, 25.3, 83.7)
+glm.nb, Tue Apr 03 04:10:52 2018, 0.994, bas interactive latent features, c(55.3, 100, 40.4, 78.8, 8.5, 4.5, 0, 25.9, 72.8)
+glmboost, Tue Apr 03 04:11:48 2018, 0.963, bas interactive latent features, c(26.3, 100, 44.8, 3.5, 10, 0.6, 4.6, 0, 0)
+glmnet, Tue Apr 03 04:12:22 2018, 0.969, bas interactive latent features, c(100, 63.9, 65.1, 28.3, 0, 0, 0, 0, 27.2)
+glmStepAIC, Tue Apr 03 04:16:24 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+icr, Tue Apr 03 04:17:01 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+kernelpls, Tue Apr 03 04:17:33 2018, 0.994, bas interactive latent features, c(100, 89.7, 45.5, 36.7, 14.1, 15.9, 0, 45.3, 90.9)
+kknn, Tue Apr 03 04:23:06 2018, 0.943, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+knn, Tue Apr 03 04:23:44 2018, 0.906, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+krlsPoly, Tue Apr 03 04:28:43 2018, 0, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+krlsRadial, Tue Apr 03 04:45:10 2018, 0.996, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+lars, Tue Apr 03 04:45:43 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+lars2, Tue Apr 03 04:46:15 2018, 0.982, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+lasso, Tue Apr 03 04:46:47 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+leapBackward, Tue Apr 03 04:47:19 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+leapForward, Tue Apr 03 04:47:50 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+leapSeq, Tue Apr 03 04:48:22 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+lm, Tue Apr 03 04:48:54 2018, 0.994, bas interactive latent features, c(63.4, 100, 44.7, 90.2, 6.4, 2.3, 0, 25.3, 83.7)
+lmStepAIC, Tue Apr 03 04:49:26 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+M5, Tue Apr 03 04:51:34 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+M5Rules, Tue Apr 03 04:52:31 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+msaenet, Tue Apr 03 04:54:26 2018, 0.967, bas interactive latent features, 100
+msaenet, Tue Apr 03 04:54:26 2018, 0.967, bas interactive latent features, 84.7
+msaenet, Tue Apr 03 04:54:26 2018, 0.967, bas interactive latent features, 63.9
+msaenet, Tue Apr 03 04:54:26 2018, 0.967, bas interactive latent features, 23.7
+msaenet, Tue Apr 03 04:54:26 2018, 0.967, bas interactive latent features, 0
+msaenet, Tue Apr 03 04:54:26 2018, 0.967, bas interactive latent features, 0
+msaenet, Tue Apr 03 04:54:26 2018, 0.967, bas interactive latent features, 0
+msaenet, Tue Apr 03 04:54:26 2018, 0.967, bas interactive latent features, 0
+msaenet, Tue Apr 03 04:54:26 2018, 0.967, bas interactive latent features, 0
+nnet, Tue Apr 03 04:56:14 2018, 0, bas interactive latent features, c(100, 28.2, 39.8, 57.2, 1.6, 0, 23.8, 49, 32.3)
+null, Tue Apr 03 04:57:20 2018, 0, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+parRF, Tue Apr 03 04:59:28 2018, 0.958, bas interactive latent features, Failed
+pcaNNet, Tue Apr 03 05:00:19 2018, 0, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+pcr, Tue Apr 03 05:00:51 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+plsRglm, Tue Apr 03 05:02:41 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+ppr, Tue Apr 03 05:03:46 2018, 0.995, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+qrf, Tue Apr 03 05:06:09 2018, 0.869, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+ranger, Tue Apr 03 05:07:30 2018, 0.969, bas interactive latent features, Failed
+Rborist, Tue Apr 03 05:10:30 2018, 0.957, bas interactive latent features, c(1.2, 100, 2.9, 0.5, 0, 0, 0, 0, 2.2)
+relaxo, Tue Apr 03 05:11:05 2018, 0.98, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+rf, Tue Apr 03 05:12:35 2018, 0.957, bas interactive latent features, Failed
+ridge, Tue Apr 03 05:13:09 2018, 0.992, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+rlm, Tue Apr 03 05:13:42 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+rpart, Tue Apr 03 05:14:15 2018, 0.895, bas interactive latent features, c(77.1, 76.2, 94.3, 100, 16, 18.3, 7.6, 0, 0.1)
+rpart1SE, Tue Apr 03 05:14:47 2018, 0.769, bas interactive latent features, c(88.2, 86.1, 100, 49.3, 28.6, 25.8, 34.5, 0, 0)
+rpart2, Tue Apr 03 05:15:20 2018, 0.769, bas interactive latent features, c(88.2, 86.1, 100, 49.3, 28.6, 25.8, 34.5, 0, 0)
+RRF, Tue Apr 03 06:43:42 2018, 0.958, bas interactive latent features, Failed
+RRFglobal, Tue Apr 03 06:46:44 2018, 0.959, bas interactive latent features, Failed
+SBC, Tue Apr 03 10:09:05 2018, 0.483, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+simpls, Tue Apr 03 10:09:37 2018, 0.994, bas interactive latent features, c(100, 89.7, 45.5, 36.7, 14.1, 15.9, 0, 45.3, 90.9)
+spikeslab, Tue Apr 03 10:10:34 2018, 0.992, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+spls, Tue Apr 03 10:11:10 2018, 0.994, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+superpc, Tue Apr 03 10:11:43 2018, 0, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+svmLinear, Tue Apr 03 10:13:22 2018, NA, bas interactive latent features, Failed
+svmLinear2, Tue Apr 03 10:13:58 2018, 0.932, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+svmLinear3, Tue Apr 03 10:14:32 2018, 0.918, bas interactive latent features, c(92.1, 100, 76, 28, 42.1, 42.6, 0, 60.2, 93.7)
+svmPoly, Tue Apr 03 10:15:08 2018, NA, bas interactive latent features, Failed
+svmRadial, Tue Apr 03 10:15:48 2018, NA, bas interactive latent features, Failed
+svmRadialCost, Tue Apr 03 10:16:29 2018, NA, bas interactive latent features, Failed
+svmRadialSigma, Tue Apr 03 10:17:09 2018, NA, bas interactive latent features, Failed
+treebag, Tue Apr 03 10:18:47 2018, 0.805, bas interactive latent features, c(85.7, 81.3, 100, 58.7, 3.9, 26.1, 16.6, 0, 32.5)
+widekernelpls, Tue Apr 03 10:23:13 2018, 0.994, bas interactive latent features, c(100, 89.7, 45.5, 36.7, 14.1, 15.9, 0, 45.3, 90.9)
+xgbLinear, Tue Apr 03 10:24:04 2018, 0.954, bas interactive latent features, c(100, 2.4, 1.9, 1, 0.1, 0, 0, 0, 0)
+xgbTree, Tue Apr 03 10:27:19 2018, 0.825, bas interactive latent features, c(100, 26.2, 6.8, 1.2, 1.1, 0, 0, 0, 0)
+xyf, Tue Apr 03 10:28:59 2018, NA, bas interactive latent features, Failed
