@@ -70,3 +70,4 @@ Sat Mar 31 19:59:12 2018,regr.km,kaggle housing,3,20,windows,x64,HOPPER
 Sun Apr 01 17:07:21 2018,regr.LiblineaRL2L2SVR,kaggle housing,3,20,windows,x64,HOPPER
 Mon Apr 02 17:07:23 2018,regr.LiblineaRL2L2SVR,kaggle housing,3,20,windows,x64,HOPPER
 Tue Apr 03 17:08:03 2018,regr.blackboost,OpenML 2dplanes,3,20,windows,x64,HOPPER
+Wed Apr 04 17:07:17 2018,regr.cforest,OpenML 2dplanes,3,20,windows,x64,HOPPER
