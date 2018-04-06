@@ -14,8 +14,8 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 memory.limit()
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"14th20hp3cv"
-if(which.computer=="ACEREBOUT") task.subject<-"rerecc20hp3cv"
-pc.mlr<-c("ACEREBOUT")#T"ALTA","HOPPER"
+if(which.computer=="ACEREBOUT") task.subject<-"rerecc20hp20cv"
+pc.mlr<-c("ACEREBOU","HOPPER")#T"ALTA","HOPPER"
 
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
@@ -38,7 +38,7 @@ tuneLength=20
 tuneLength2=8
 normings=c("asis","quantile","YeoJohnson","all","PCA","ICA","centernscale","expoTrans","range01")#,"centernscale"
 
-gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55, 44,3,1,52,57)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55,44,3,1,52,57)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
 write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 try({
