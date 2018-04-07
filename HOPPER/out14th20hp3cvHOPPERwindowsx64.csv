@@ -27131,3 +27131,17 @@ NA,NA,-1,NA,NA,Tue Apr 03 09:39:06 2018,regr.xyf,1,2,bas interactive latent feat
 NA,NA,-1,NA,NA,Tue Apr 03 10:34:25 2018,regr.bartMachine,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.372,4.399,nohyperparam,282,200,cv,20,3,NA,5
 0.639,0.613,-1,1.69,1.3,Tue Apr 03 10:53:19 2018,regr.bcart,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.372,4.399,nohyperparam,282,1105,cv,20,3,NA,5
 NA,NA,-1,NA,NA,Tue Apr 03 10:53:55 2018,regr.bdk,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.372,4.399,nohyperparam,282,16,cv,20,3,NA,5
+0.776,0.771,1.01,1.01,0.805,Tue Apr 03 19:45:40 2018,regr.blackboost,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.388,4.394,random,246,8133,cv,20,3,NA,5,3,84
+0.777,0.772,-1,1,0.802,Tue Apr 03 19:52:11 2018,regr.brnn,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.388,4.394,nohyperparam,246,316,cv,20,3,NA,5
+0.404,0.397,-1,2.65,2.15,Tue Apr 03 19:52:57 2018,regr.bst,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.388,4.394,nohyperparam,246,37,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Apr 05 04:05:36 2018,regr.cforest,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.414,4.386,nohyperparam,318,38134,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Apr 05 04:15:12 2018,regr.crs,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,576
+0.778,0.771,-1,1.01,0.803,Thu Apr 05 04:17:25 2018,regr.ctree,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.414,4.386,nohyperparam,318,66,cv,20,3,NA,5
+0.778,0.771,-1,1.01,0.803,Thu Apr 05 04:17:49 2018,regr.cubist,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.414,4.386,nohyperparam,318,16,cv,20,3,NA,5
+NA,NA,-1,NA,NA,Thu Apr 05 05:11:01 2018,regr.cvglmnet,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.414,4.386,nohyperparam,318,3182,cv,20,3,NA,5
+0.468,0.46,-1,2.38,1.93,Thu Apr 05 05:20:29 2018,regr.earth,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.414,4.386,nohyperparam,318,336,cv,20,3,NA,5
+0.015,0.011,-1,4.36,3.56,Thu Apr 05 05:31:24 2018,regr.elmNN,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.414,4.386,nohyperparam,318,267,cv,20,3,NA,5
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Apr 05 05:36:44 2018,regr.evtree,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,320
+NA,NA,NA,NA,NA,Thu Apr 05 23:40:43 2018,regr.extraTrees,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.378,4.397,random,303,22192,cv,20,3,NA,5,3,13
+0,0,-1,4.38,3.6,Thu Apr 05 23:40:54 2018,regr.featureless,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.378,4.397,nohyperparam,303,6,cv,20,3,NA,5
+0.709,0.699,-1,1.32,1.05,Thu Apr 05 23:41:04 2018,regr.fnn,1,2,OpenML 2dplanes,ignore,none,asis,HOPPER,14th20hp3cv,4.378,4.397,nohyperparam,303,6,cv,20,3,NA,5
