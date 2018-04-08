@@ -235,7 +235,7 @@ for(gend.data in gensTTest){
 
             Q_Fail<-T #I expect ICA to crash horribly so testing for fail and NA
             try({
-              preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("ica"),n.comp=3)#"center", "scale",
+              preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("ica"),n.comp=10)#"center", "scale",
               df.ica<-predict(preProcValues, df.toprocess[,2:l.df.tp])
               Q_Fail<-F
             })
