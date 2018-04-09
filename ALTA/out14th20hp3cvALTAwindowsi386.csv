@@ -9685,3 +9685,16 @@ NA,NA,0.0908,NA,NA,Tue Apr 03 10:28:59 2018,xyf,1,2,bas interactive latent featu
 Fail,Fail,Fail,Fail,Fail,Wed Apr 04 00:50:33 2018,bag,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,14
 0.665,0.659,1.52,1.49,1.21,Wed Apr 04 02:13:40 2018,bagEarth,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.382,random,269,4986,cv,20,3,NA,5,12,2
 0.469,0.458,-1,2.37,1.91,Wed Apr 04 02:18:46 2018,bagEarthGCV,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.382,random,269,256,cv,20,3,NA,5,1
+0.467,0.457,-1,2.38,1.93,Thu Apr 05 23:03:35 2018,bayesglm,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.392,4.393,random,255,12,cv,20,3,NA,5,none
+0.466,0.457,2.38,2.38,1.93,Thu Apr 05 23:11:38 2018,blasso,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.392,4.393,random,255,478,cv,20,3,NA,5,0.993240637006238
+0.466,0.457,-1,2.38,1.93,Thu Apr 05 23:19:45 2018,blassoAveraged,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.392,4.393,random,255,483,cv,20,3,NA,5,none
+0.466,0.457,-1,2.38,1.93,Thu Apr 05 23:27:45 2018,bridge,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.392,4.393,random,255,476,cv,20,3,NA,5,none
+Fail,Fail,Fail,Fail,Fail,Thu Apr 05 23:27:55 2018,BstLm,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,5
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:51:30 2018,cforest,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,242614
+0.777,0.771,0.996,1,0.803,Sun Apr 08 18:53:15 2018,ctree,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.392,4.393,random,255,104,cv,20,3,NA,5,0.993240637006238
+0.777,0.771,0.996,1,0.803,Sun Apr 08 18:54:34 2018,ctree2,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.392,4.393,random,255,74,cv,20,3,NA,5,15,0.913106279680505
+0.778,0.771,0.995,1,0.803,Sun Apr 08 21:10:03 2018,cubist,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.392,4.393,random,255,8125,cv,20,3,NA,5,90,0
+0.446,0.443,2.14,2.45,2,Sun Apr 08 21:17:32 2018,dnn,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.392,4.393,random,255,448,cv,20,3,NA,5,20,7,20,0.207949731359258,0.0923380848020315
+0.608,0.595,1.76,1.78,1.41,Sun Apr 08 21:20:20 2018,earth,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.392,4.393,random,255,163,cv,20,3,NA,5,12,2
+0.467,0.457,2.38,2.38,1.93,Sun Apr 08 21:20:44 2018,elm,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.392,4.393,random,255,23,cv,20,3,NA,5,14,purelin
+0.464,0.455,2.4,2.4,1.94,Sun Apr 08 21:21:21 2018,enet,1,2,OpenML 2dplanes,ignore,none,asis,ALTA,14th20hp3cv,4.392,4.393,random,255,32,cv,20,3,NA,5,0.913106279680505,9.01911433212888
