@@ -36,6 +36,10 @@ cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
 	
  big.pca
  
+ attacks:https://www.aaai.org/Papers/AAAI/2005/AAAI05-053.pdf "Recommender Systems for Self-Actualization"
+recsys bias and unfairness and bubbling:http://coen.boisestate.edu/piret/projects/recsys-bias/, http://ceur-ws.org/Vol-1253/paper1.pdf
+ self selection bias: https://arxiv.org/pdf/1602.05352v1.pdf https://en.wikipedia.org/wiki/Missing_data
+ 
 ~propper folder structure
 ~remove duplicates & most useless users?
 EDA
@@ -43,7 +47,11 @@ EDA
 processing each dataset's content info
 
 condorecet-cluster-dimensionality reduction bests
-
+ ndcg, no-naysayers, popularity modifier. methods to inout . maybe ndcg is optimized by most 5 ratings. 
+ First most top5s then most top5s of those not mentioned then repeat untill everyone is satisfied.
+ Check condorcet in BGG etc.
+ RBM probability based clustering
+ 
 PCA cent asis  and count
 
 select a target column
