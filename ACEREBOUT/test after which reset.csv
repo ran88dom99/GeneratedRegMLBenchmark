@@ -89,4 +89,17 @@ Thu Mar 22 16:02:24 2018,regr.h2o.glm,4thbookrPCA,20,20,windows,x64,ACEREBOUT
 Thu Mar 22 16:05:12 2018,regr.blackboost,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
 Thu Mar 22 21:14:33 2018,regr.blackboost,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
 Thu Mar 22 21:15:00 2018,regr.blackboost,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT 
-
+Tue Apr 03 22:39:43 2018,bridge,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT  
+Wed Apr 04 22:05:42 2018,cforest,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT
+Thu Apr 05 12:11:12 2018,gamSpline,4thbookercenterbooks,20,20,windows,x64,ACEREBOUT
+Thu Apr 05 23:12:54 2018,regr.btlm,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT
+Fri Apr 06 22:49:06 2018,regr.extraTrees,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT
+Fri Apr 06 23:32:41 2018,bagEarth,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT 
+Fri Apr 06 23:32:41 2018,bagEarth,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT 
+Sat Apr 07 22:16:06 2018,regr.brnn,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT
+Sat Apr 07 22:22:26 2018,regr.brnn,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT
+Sat Apr 07 22:24:35 2018,regr.brnn,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT
+Sun Apr 08 09:09:58 2018,regr.brnn,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT
+Sun Apr 08 09:16:52 2018,regr.brnn,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT
+Sun Apr 08 10:24:25 2018,bagEarth,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT
+Sun Apr 08 11:26:50 2018,bagEarth,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT

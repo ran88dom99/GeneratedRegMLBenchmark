@@ -73,3 +73,5 @@ Tue Apr 03 17:08:03 2018,regr.blackboost,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Wed Apr 04 17:07:17 2018,regr.cforest,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Thu Apr 05 17:07:13 2018,regr.extraTrees,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Fri Apr 06 17:07:40 2018,regr.frbs,OpenML 2dplanes,3,20,windows,x64,HOPPER
+Sat Apr 07 17:07:35 2018,regr.frbs,OpenML 2dplanes,3,20,windows,x64,HOPPER
+Sun Apr 08 17:08:30 2018,regr.ranger,OpenML 2dplanes,3,20,windows,x64,HOPPER
