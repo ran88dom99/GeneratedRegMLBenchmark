@@ -21296,3 +21296,16 @@ Fail, Sun Apr 08 22:59:31 2018, svmSpectrumString
 Fail, Sun Apr 08 23:01:46 2018, xyf
 Fail, Tue Apr 10 14:40:11 2018, bag
 Fail, Tue Apr 10 15:15:06 2018, bartMachine
+Fail, Wed Apr 11 03:22:18 2018, extraTrees
+Fail, Wed Apr 11 03:23:18 2018, gaussprLinear
+Fail, Wed Apr 11 03:27:42 2018, gbm_h2o
+Fail, Wed Apr 11 03:28:01 2018, glm.nb
+Fail, Wed Apr 11 03:32:53 2018, glmnet_h2o
+Fail, Wed Apr 11 03:34:42 2018, krlsPoly
+Fail, Wed Apr 11 03:57:06 2018, krlsRadial
+Fail, Wed Apr 11 03:57:48 2018, logicBag
+Fail, Wed Apr 11 03:58:10 2018, logreg
+Fail, Wed Apr 11 03:58:12 2018, M5
+Fail, Wed Apr 11 03:58:13 2018, M5Rules
+Fail, Wed Apr 11 04:05:47 2018, nnls
+Fail, Wed Apr 11 04:06:10 2018, ordinalNet
