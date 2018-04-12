@@ -77,3 +77,4 @@ Sat Apr 07 17:07:35 2018,regr.frbs,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Sun Apr 08 17:08:30 2018,regr.ranger,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Mon Apr 09 17:07:47 2018,regr.svm,OpenML 2dplanes,3,20,windows,x64,HOPPER
 Tue Apr 10 17:07:32 2018,regr.svm,OpenML 2dplanes,3,20,windows,x64,HOPPER
+Wed Apr 11 17:08:39 2018,regr.cforest,OpenML 2dplanes,3,20,windows,x64,HOPPER
