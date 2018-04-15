@@ -15764,3 +15764,4 @@ Fail,Fail,Fail,Fail,Fail,Thu Apr 12 11:11:59 2018,rvmLinear,1,2,OpenML 2dplanes,
 0.265,0.272,3.14,3.21,2.65,Thu Apr 12 11:13:10 2018,superpc,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.405,4.389,random,290,8,cv,20,3,1,5,0.565870405640453,3
 Fail,Fail,Fail,Fail,Fail,Thu Apr 12 11:13:12 2018,svmBoundrangeString,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,0
 Fail,Fail,Fail,Fail,Fail,Thu Apr 12 11:13:14 2018,svmExpoString,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,0.997,NA,NA,Sat Apr 14 22:30:42 2018,svmPoly,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.411,4.386,random,249,16689,cv,20,3,1,5,2,0.225484097664019,0.0559519948161159
