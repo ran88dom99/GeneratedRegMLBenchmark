@@ -15344,3 +15344,4 @@ simpls, Thu Apr 12 11:12:13 2018, 0.466, OpenML 2dplanes, c(100, 34.3, 22.5, 13,
 spikeslab, Thu Apr 12 11:12:32 2018, 0.466, OpenML 2dplanes, c(100, 17.5, 7.4, 2.5, 17.5, 7.6, 2.3, 0, 0, 0)
 spls, Thu Apr 12 11:13:00 2018, 0.465, OpenML 2dplanes, c(100, 17.5, 7.4, 2.5, 17.5, 7.6, 2.3, 0, 0, 0)
 superpc, Thu Apr 12 11:13:11 2018, 0.265, OpenML 2dplanes, c(100, 17.5, 7.4, 2.5, 17.5, 7.6, 2.3, 0, 0, 0)
+svmPoly, Sat Apr 14 22:30:43 2018, NA, OpenML 2dplanes, Failed
