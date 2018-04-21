@@ -36,9 +36,14 @@ cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
 	
  big.pca
  
+ For more see self selection bias: https://arxiv.org/pdf/1602.05352v1.pdf https://en.wikipedia.org/wiki/Missing_data
  attacks:https://www.aaai.org/Papers/AAAI/2005/AAAI05-053.pdf "Recommender Systems for Self-Actualization"
 recsys bias and unfairness and bubbling:http://coen.boisestate.edu/piret/projects/recsys-bias/, http://ceur-ws.org/Vol-1253/paper1.pdf
- self selection bias: https://arxiv.org/pdf/1602.05352v1.pdf https://en.wikipedia.org/wiki/Missing_data
+ 
+  shilling promote attacks https://www.youtube.com/watch?v=RZAUBBmhKFU
+
+
+ nuke bury anchor demote attacks
  
 ~propper folder structure
 ~remove duplicates & most useless users?
