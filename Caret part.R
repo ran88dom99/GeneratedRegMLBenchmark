@@ -23,7 +23,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
 
   #seed.var=seed.var+1
   if(length(df.previous.calcs[,1])>0){
-    if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel))
+    if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel,FN=FN))
       {next}}
 
   if(F){
@@ -42,7 +42,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
   if(length(new.packages)) install.packages(new.packages, dep = TRUE)
   if(length(list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])])){
-    write.table(paste("Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,round(proc.time()[3]-when[3]),  sep = ","),
+    write.table(paste("Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,round(proc.time()[3]-when[3]),  sep = ","),
                 file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
@@ -52,7 +52,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   not.failed=0
   set.seed(seed.var)
   try({trainedmodel <- train(x=data.frame(training[,2:length(training[1,])]),
-                             y = df.toprocess[inTrain,1],
+                             y = df.toprocess[-foldTrain[[FN]],1],
                              method = allmodel,
                              trControl = adaptControl,
                              tuneLength = tuneLength)
@@ -64,9 +64,9 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
   mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
   if(trans.y==2){
-    p<- data.frame(predicted.outcomes,y.untransformed[-inTrain])
+    p<- data.frame(predicted.outcomes,y.untransformed[foldTrain[[FN]]])
   }else{
-    p<- data.frame(predict(loess.model,predicted.outcomes),y.untransformed[-inTrain])
+    p<- data.frame(predict(loess.model,predicted.outcomes),y.untransformed[foldTrain[[FN]]])
   }
   #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
   RMSEp=RMSE(p[,1],p[,2])
@@ -88,7 +88,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
                 signif(overRMSE,digits = 3),signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),
                 date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
-                withextra,norming,which.computer,task.subject,RMSE.mean,RMSE.mean.train,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
+                withextra,norming,which.computer,task.subject,FN,RMSE.mean,RMSE.mean.train,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
                 adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
                 adaptControl$adaptive$min,trainedmodel$bestTune),
               file = out.file, append =TRUE, quote = F, sep = ",",
@@ -100,7 +100,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
 
   if(not.failed==0) {
     try({trainedmodel <- train(x=data.frame(training[,2:length(training[1,])]),
-                               y =  df.toprocess[inTrain,1],
+                               y =  df.toprocess[-foldTrain[[FN]],1],
                                method = allmodel,
                                trControl = simpleControl,
                                tuneLength = tuneLength2)
@@ -112,9 +112,9 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
     mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
     if(trans.y==2){
-      p<- data.frame(predicted.outcomes,y.untransformed[-inTrain])
+      p<- data.frame(predicted.outcomes,y.untransformed[foldTrain[[FN]]])
     }else{
-      p<- data.frame(predict(loess.model,predicted.outcomes),y.untransformed[-inTrain])
+      p<- data.frame(predict(loess.model,predicted.outcomes),y.untransformed[foldTrain[[FN]]])
     }
     #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
     RMSEp=RMSE(p[,1],p[,2])
@@ -136,7 +136,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
     write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                   signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
-                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,RMSE.mean,RMSE.mean.train,simpleControl$search,
+                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,RMSE.mean,RMSE.mean.train,simpleControl$search,
                   seed.var,round(proc.time()[3]-when[3]),simpleControl$method,tuneLength2,
                   simpleControl$number,"no rep","no min",trainedmodel$bestTune),
                 file = out.file, append =TRUE, quote = F, sep = ",",
@@ -149,7 +149,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   ########no hp&cv  goes here
   if(not.failed==0) {
     try({trainedmodel <- train(x=data.frame(training[,2:length(training[1,])]),
-                               y =  df.toprocess[inTrain,1],
+                               y =  df.toprocess[-foldTrain[[FN]],1],
                                method = allmodel)
 
     predicted.outcomes<-predict(trainedmodel, newdata=(testing))
@@ -159,9 +159,9 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
     mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
     if(trans.y==2){
-      p<- data.frame(predicted.outcomes,y.untransformed[-inTrain])
+      p<- data.frame(predicted.outcomes,y.untransformed[foldTrain[[FN]]])
     }else{
-      p<- data.frame(predict(loess.model,predicted.outcomes),y.untransformed[-inTrain])
+      p<- data.frame(predict(loess.model,predicted.outcomes),y.untransformed[foldTrain[[FN]]])
     }
     #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
     RMSEp=RMSE(p[,1],p[,2])
@@ -183,7 +183,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
     write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                   signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
-                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,RMSE.mean,RMSE.mean.train,simpleControl$search,
+                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,RMSE.mean,RMSE.mean.train,simpleControl$search,
                   seed.var,round(proc.time()[3]-when[3]),"nohyperparameters",tuneLength2,
                   simpleControl$number,"no rep","no min",trainedmodel$bestTune),
                 file = out.file, append =TRUE, quote = F, sep = ",",
@@ -195,12 +195,8 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   }
   if(not.failed==0) {
     print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
-    write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,round(proc.time()[3]-when[3]),  sep = ","),
+    write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,round(proc.time()[3]-when[3]),  sep = ","),
                 file = out.file, append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
-    write.table(paste("Fail",date(),allmodel,  sep = ", "),
-                file = "backup.csv", append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
   }

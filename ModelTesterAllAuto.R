@@ -5,8 +5,8 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #sink(zz, type="message") edit for rebaseless
 #chek for R package updates
 #try(log("a")) ## test --no-edit
-#WHEN INSTALLING RTOOLS MAKE SURE TO "Select Additional Tasks" dialog box I checked "Edit the system PATH. ...". 
-#install.packages("devtools")
+#WHEN INSTALLING RTOOLS MAKE SURE TO "Select Additional Tasks" dialog box I checked "Edit the system PATH. ...".
+#install.packages("devtools")+++++
 ##devtools::install_github("r-lib/devtools")
 #
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
@@ -14,9 +14,8 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 memory.limit()
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"14th20hp3cv"
-if(which.computer=="ACEREBOUT") task.subject<-"rerecc20hp20cv"
 pc.mlr<-c("ACEREBOU","HOPPER")#T"ALTA","HOPPER"
-
+if(which.computer=="ACEREBOUT") task.subject<-"ffoldrecc20hp20cv"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
 
@@ -32,11 +31,15 @@ if(length(which(list.files() == out.file))<1){
 if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,".csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 
+
+high.fold=5
+min.high.fold=1
 cv.iters=3
-if(which.computer=="ACEREBOUT") cv.iters<-20
 tuneLength=20
 tuneLength2=8
 normings=c("asis","quantile","YeoJohnson","all","PCA","ICA","centernscale","expoTrans","range01")#,"centernscale"
+
+if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=5}
 
 gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55,44,3,1,52,57)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
@@ -98,15 +101,16 @@ for(lt in 2:lgf)  {
 
 #source(functionsallautotest.R)
 #######not to redo a test function in functions source#####
-check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextra="missing",missingdata="leaveempty",datasource="mean" ,column.to.predict=200,allmodel="ctree")
+check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextra="missing",missingdata="leaveempty",datasource="mean" ,column.to.predict=200,allmodel="ctree",FN=5)
 {
   for(intern in 1:length(df[,1])){
-    if((any(df[intern,] == norming, na.rm=T))&&
-       (any(df[intern,] == withextra, na.rm=T))&&
-       (any(df[intern,] == missingdata, na.rm=T))&&
-       (any(df[intern,] == datasource, na.rm=T))&&
-       (any(df[intern,] == column.to.predict, na.rm=T))&&
-       (any(df[intern,] == allmodel, na.rm=T))&&
+    if((any(df[intern,11:16] == norming, na.rm=T))&&
+       (any(df[intern,10:16] == withextra, na.rm=T))&&
+       (any(df[intern,10:16] == missingdata, na.rm=T))&&
+       (any(df[intern,9:16] == datasource, na.rm=T))&&
+       (any(df[intern,6:9] == column.to.predict, na.rm=T))&&
+       (any(df[intern,5:9] == allmodel, na.rm=T))&&
+       (any(df[intern,15:17] == FN, na.rm=T))&&
        (  (df[intern,9] == trans.y)))
     {return(TRUE)}
   }
@@ -317,16 +321,18 @@ for(gend.data in gensTTest){
 
           seed.var =222+round(runif(1,min=0,max=100))
           set.seed(seed.var)#spliting after transform is not ok?
-          inTrain <- createDataPartition(y = df.toprocess[,1],
-                                         p = .75,
-                                         list = FALSE)
-          training <- df.toprocess[ inTrain,]
-          testing  <- df.toprocess[-inTrain,]
+          foldTrain<-createFolds(y = df.toprocess[,1], k = high.fold, list = TRUE, returnTrain = FALSE)
+          #inTrain <- createDataPartition(y = df.toprocess[,1],p = .75,list = FALSE)
+
+          for(FN in 1:high.fold){
+            if(min.high.fold<FN){next()}
+          training <- df.toprocess[-foldTrain[[FN]],]
+          testing  <- df.toprocess[foldTrain[[FN]],]
           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F, col.names = T)
 
           ###########for all models#################
           gc()
-          
+
           setwd(base.folder)
           if(max(which.computer==pc.mlr)>0)
             source("MLR part.R")
@@ -337,8 +343,8 @@ for(gend.data in gensTTest){
           if(norming == normings[length(normings)]){
             if(count.toy.data.passed>length(gensTTest)){gensTTest<-c(gensTTesto)}
             write.table( t(gensTTest[count.toy.data.passed:length(gensTTest)]),file = "tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
-
             }
+          }
 
         }
       }
