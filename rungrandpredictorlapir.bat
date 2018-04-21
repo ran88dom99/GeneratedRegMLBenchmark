@@ -2,10 +2,10 @@
 taskkill /f /im java.exe
 taskkill /f /im Rterm.exe
 
-cd "C:\Users\irina grishina\Desktop\generated data test"
+cd "C:\GenRegMLBench"
 ren ModelTesterAllAuto.Rout rout.txt
-move rout.txt "C:\Users\irina grishina\Desktop\generated data test\LAPTOP-1SBQTC5I"
-cd "C:\Users\irina grishina\Desktop\generated data test"
+move rout.txt "C:\GenRegMLBench\LAPTOP-1SBQTC5I"
+cd "C:\GenRegMLBench"
 
 bunchofgitstheirsauto.sh
 

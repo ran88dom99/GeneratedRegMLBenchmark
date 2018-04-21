@@ -14954,3 +14954,814 @@ Fail,Fail,Fail,Fail,Fail,Fri Apr 06 21:40:56 2018,glmnet_h2o,1,2,Recc sim 1,igno
 Fail,Fail,Fail,Fail,Fail,Sat Apr 07 00:28:59 2018,lars2,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,11
 0.839,0.813,0.184,0.158,0.111,Sat Apr 07 00:29:01 2018,lasso,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.8406,0.7442,random,305,2,cv,20,3,1,5,0.50858440878801
 -0.568,-0.576,-1,1.32,1.08,Sat Apr 07 00:29:05 2018,lm,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.8406,0.7442,random,305,1,cv,20,3,1,5,TRUE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 15:41:32 2018,logicBag,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,8
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 15:41:40 2018,logreg,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,6
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 15:41:42 2018,M5,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 15:41:44 2018,M5Rules,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.887,0.859,0.175,0.113,0.0727,Sun Apr 08 15:42:03 2018,msaenet,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,18,cv,20,3,1,5,0.330199992703274,4,1.82734796550358
+0.34,0.245,0.576,0.599,0.422,Sun Apr 08 15:42:57 2018,nnet,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,53,nohyperparameters,8,3,no rep,no min,1,0.1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 15:43:02 2018,nnls,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 15:43:09 2018,ordinalNet,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,6
+0.812,0.792,0.252,0.164,0.12,Sun Apr 08 15:45:00 2018,parRF,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,109,cv,20,3,1,5,632
+-0.108,-0.156,0.762,0.916,0.708,Sun Apr 08 15:45:20 2018,pcaNNet,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,18,cv,20,3,1,5,20,0.000140017338477231
+0.856,0.826,0.239,0.138,0.0922,Sun Apr 08 15:45:31 2018,pcr,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,8,nohyperparameters,8,3,no rep,no min,3
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 15:45:37 2018,pls,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.872,0.855,0.201,0.115,0.0819,Sun Apr 08 16:50:19 2018,plsRglm,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,3880,cv,20,3,1,5,587,0.00374909611418843
+-1.834,-1.501,1.8,1.98,1.81,Sun Apr 08 17:54:37 2018,ppr,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,3854,cv,20,3,1,5,3
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 17:54:44 2018,pythonKnnReg,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.509,0.505,0.474,0.391,0.313,Sun Apr 08 17:56:39 2018,qrf,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,114,cv,20,3,1,5,632
+0.823,0.789,0.257,0.167,0.113,Sun Apr 08 17:57:13 2018,ranger,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,31,cv,20,3,1,5,590
+0.813,0.786,0.267,0.17,0.119,Sun Apr 08 18:00:26 2018,Rborist,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,191,cv,20,3,1,5,590
+0.893,0.864,0.184,0.108,0.0689,Sun Apr 08 18:00:44 2018,relaxo,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,16,cv,20,3,1,5,76.4648208582211,0.459369913674891
+0.814,0.789,0.249,0.167,0.119,Sun Apr 08 18:02:35 2018,rf,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,108,cv,20,3,1,5,632
+0.702,0.684,0.254,0.251,0.191,Sun Apr 08 18:07:24 2018,ridge,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,287,cv,20,3,1,5,2.39985772335335e-05
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:08:01 2018,rlm,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,33
+0.693,0.697,0.319,0.24,0.196,Sun Apr 08 18:08:06 2018,rpart,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,3,cv,20,3,1,5,0.0253030463837857
+0.738,0.733,-1,0.211,0.167,Sun Apr 08 18:08:09 2018,rpart1SE,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,1,cv,20,3,1,5,none
+0.738,0.733,0.319,0.211,0.167,Sun Apr 08 18:08:13 2018,rpart2,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,3,cv,20,3,1,5,3
+0.902,0.871,0.174,0.103,0.0633,Sun Apr 08 18:09:21 2018,rqlasso,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,67,cv,20,3,1,5,0.237994321465592
+0.902,0.871,0.174,0.103,0.0633,Sun Apr 08 18:10:21 2018,rqnc,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,56,cv,20,3,1,5,0.237994321465592,SCAD
+0.83,0.806,0.218,0.154,0.108,Sun Apr 08 18:14:22 2018,RRF,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,237,cv,20,3,1,5,632,0.191030303016305,0.674521487671882
+0.848,0.84,0.218,0.126,0.097,Sun Apr 08 18:16:25 2018,RRFglobal,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,121,cv,20,3,1,5,632,0.191030303016305
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:16:33 2018,rvmLinear,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,6
+0.86,0.832,0.22,0.133,0.0892,Sun Apr 08 18:16:43 2018,simpls,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,7,nohyperparameters,8,3,no rep,no min,3
+0.779,0.778,0.188,0.176,0.141,Sun Apr 08 18:18:32 2018,spikeslab,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,108,cv,20,3,1,5,42
+0.702,0.685,0.254,0.25,0.191,Sun Apr 08 18:18:53 2018,spls,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,17,cv,20,3,1,5,46,0.530924362596124,0.270070316037163
+0.86,0.83,0.187,0.135,0.0894,Sun Apr 08 18:18:59 2018,superpc,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,2,cv,20,3,1,5,0.88823879044503,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:19:02 2018,svmBoundrangeString,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:19:04 2018,svmExpoString,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,0.218,NA,NA,Sun Apr 08 18:19:13 2018,svmLinear,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,7,cv,20,3,1,5,0.0603904292513332
+0.792,0.771,0.218,0.182,0.134,Sun Apr 08 18:19:21 2018,svmLinear2,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,7,cv,20,3,1,5,0.0603904292513332
+NA,NA,0.204,NA,NA,Sun Apr 08 18:19:30 2018,svmPoly,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,6,cv,20,3,1,5,2,2.33727392236056e-05,20.9834245929033
+NA,NA,0.221,NA,NA,Sun Apr 08 18:19:37 2018,svmRadial,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,6,cv,20,3,1,5,0.00023386236982642,30.766957565529
+NA,NA,0.347,NA,NA,Sun Apr 08 18:19:45 2018,svmRadialCost,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,6,cv,20,3,1,5,7.73936046790353
+NA,NA,0.221,NA,NA,Sun Apr 08 18:19:52 2018,svmRadialSigma,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,6,cv,20,3,1,5,0.00023386236982642,30.766957565529
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:19:54 2018,svmSpectrumString,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.8,0.782,-1,0.172,0.127,Sun Apr 08 18:20:12 2018,treebag,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,16,cv,20,3,1,5,none
+0.86,0.832,0.22,0.133,0.0892,Sun Apr 08 18:20:23 2018,widekernelpls,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,8,nohyperparameters,8,3,no rep,no min,3
+0.768,0.749,0.253,0.198,0.148,Sun Apr 08 18:20:43 2018,xgbLinear,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,18,cv,20,3,1,5,32,0.179949647919503,0.0498746378996055,2.37249269150198
+0.645,0.619,0.344,0.302,0.227,Sun Apr 08 18:23:50 2018,xgbTree,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,0.7921,0.7628,random,238,185,cv,20,3,1,5,973,2,0.405038371115457,2.4069781973958,0.68507469939068,10,0.727112317981664
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:24:31 2018,xyf,1,2,Recc sim 1,ignore,none,all,LAPTOP-1SBQTC5I,14th20hp3cv,39
+0.318,0.219,0.577,0.53,0.386,Sun Apr 08 18:24:51 2018,avNNet,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,18,cv,20,3,1,5,4,0.000615768534235381,FALSE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:24:54 2018,bag,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.789,0.783,0.156,0.147,0.119,Sun Apr 08 18:27:55 2018,bagEarth,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,180,cv,20,3,1,5,4,2
+0.769,0.765,-1,0.159,0.13,Sun Apr 08 18:28:13 2018,bagEarthGCV,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,14,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:28:17 2018,bartMachine,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.647,0.6,-1,0.271,0.2,Sun Apr 08 18:28:21 2018,bayesglm,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,2,cv,20,3,1,5,none
+0.758,0.751,0.214,0.168,0.137,Sun Apr 08 18:31:37 2018,blasso,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,195,cv,20,3,1,5,0.240072255022824
+0.756,0.749,-1,0.169,0.138,Sun Apr 08 18:34:52 2018,blassoAveraged,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,192,cv,20,3,1,5,none
+0.735,0.71,-1,0.196,0.15,Sun Apr 08 18:38:12 2018,bridge,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,199,cv,20,3,1,5,none
+0.778,0.776,0.173,0.152,0.125,Sun Apr 08 18:38:53 2018,BstLm,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,38,cv,20,3,1,5,12,0.540634067947976
+0.765,0.755,0.261,0.166,0.133,Sun Apr 08 18:39:18 2018,cforest,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,23,cv,20,3,1,5,145
+0.731,0.719,0.313,0.19,0.153,Sun Apr 08 18:39:26 2018,ctree,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,7,cv,20,3,1,5,0.958889719098806
+0.731,0.719,0.313,0.19,0.153,Sun Apr 08 18:39:34 2018,ctree2,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,6,cv,20,3,1,5,3,0.298236248781905
+0.822,0.8,0.16,0.135,0.101,Sun Apr 08 18:40:24 2018,cubist,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,49,cv,20,3,1,5,6,7
+0,-0.006,0.782,0.683,0.567,Sun Apr 08 18:40:29 2018,dnn,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,3,cv,20,3,1,5,6,20,19,0.0803375539137051,0.0359444744652137
+0.772,0.766,0.191,0.158,0.129,Sun Apr 08 18:40:37 2018,earth,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,5,cv,20,3,1,5,4,2
+0.497,0.504,0.412,0.336,0.285,Sun Apr 08 18:40:39 2018,elm,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,2,cv,20,3,1,5,15,purelin
+0.755,0.759,0.189,0.163,0.139,Sun Apr 08 18:40:52 2018,enet,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,11,cv,20,3,1,5,0.429819943383336,0.00419314821024469
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:40:55 2018,extraTrees,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.685,0.652,0.253,0.235,0.178,Sun Apr 08 18:41:02 2018,foba,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,6,cv,20,3,1,5,140,0.0266620064385387
+-42.976,-43.034,16.4,29.9,24.9,Sun Apr 08 18:41:34 2018,gamSpline,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,30,cv,20,3,1,5,4.47686249972321
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:41:39 2018,gaussprLinear,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:43:14 2018,gbm_h2o,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,94
+0.728,0.716,-1,0.192,0.154,Sun Apr 08 18:43:17 2018,gcvEarth,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,1,cv,20,3,1,5,1
+-0.503,-0.509,-1,1.02,0.852,Sun Apr 08 18:43:20 2018,glm,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,1,cv,20,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:43:25 2018,glm.nb,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,4
+0.806,0.794,0.166,0.14,0.109,Sun Apr 08 18:43:35 2018,glmboost,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,8,cv,20,3,1,5,23,no
+0.804,0.792,0.164,0.141,0.111,Sun Apr 08 18:43:40 2018,glmnet,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,3,cv,20,3,1,5,0.958889719098806,0.0669163507894659
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:45:16 2018,glmnet_h2o,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,95
+-0.503,-0.509,-1,1.02,0.852,Sun Apr 08 18:46:38 2018,glmStepAIC,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,81,cv,20,3,1,5,none
+0.813,0.807,0.183,0.131,0.106,Sun Apr 08 18:46:56 2018,icr,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,16,cv,20,3,1,5,4
+0.753,0.752,0.182,0.168,0.139,Sun Apr 08 18:47:01 2018,kernelpls,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,3,nohyperparameters,8,3,no rep,no min,3
+0.001,-0.007,0.787,0.683,0.566,Sun Apr 08 18:47:05 2018,krlsPoly,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,3,cv,20,3,1,5,0.299821311617767,1
+0.768,0.754,0.247,0.166,0.131,Sun Apr 08 18:47:16 2018,krlsRadial,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,9,cv,20,3,1,5,0.0183664789304439,1311.852931192
+0.773,0.776,0.176,0.151,0.128,Sun Apr 08 18:47:20 2018,lars,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,1,cv,20,3,1,5,0.469667796045542
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:47:24 2018,lars2,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.773,0.776,0.176,0.151,0.128,Sun Apr 08 18:47:27 2018,lasso,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,1,cv,20,3,1,5,0.469667796045542
+-0.503,-0.509,-1,1.02,0.852,Sun Apr 08 18:47:29 2018,lm,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,1,cv,20,3,1,5,TRUE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:47:34 2018,logicBag,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:47:39 2018,logreg,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:47:41 2018,M5,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:47:43 2018,M5Rules,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.811,0.793,0.15,0.14,0.107,Sun Apr 08 18:47:52 2018,msaenet,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,8,cv,20,3,1,5,0.472701016440988,8,3.21853124134941
+0.337,0.22,0.59,0.529,0.376,Sun Apr 08 18:47:59 2018,nnet,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,6,cv,20,3,1,5,4,0.098608561374303
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:48:02 2018,nnls,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 18:48:07 2018,ordinalNet,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.775,0.771,0.254,0.155,0.128,Sun Apr 08 18:48:34 2018,parRF,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,26,cv,20,3,1,5,145
+-0.341,-0.324,0.787,0.898,0.76,Sun Apr 08 18:48:41 2018,pcaNNet,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,5,cv,20,3,1,5,4,0.000615768534235381
+0.801,0.792,0.195,0.141,0.112,Sun Apr 08 18:48:46 2018,pcr,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,3,nohyperparameters,8,3,no rep,no min,3
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 18:49:18 2018,pls,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,30
+0.744,0.753,0.189,0.167,0.145,Sun Apr 08 18:57:31 2018,plsRglm,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,491,cv,20,3,1,5,117,0.0119234471116215
+0.658,0.611,1.2,0.263,0.194,Sun Apr 08 18:59:29 2018,ppr,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,115,nohyperparameters,8,3,no rep,no min,1
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 18:59:34 2018,pythonKnnReg,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.537,0.534,0.464,0.317,0.263,Sun Apr 08 19:00:06 2018,qrf,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,30,cv,20,3,1,5,145
+0.769,0.767,0.245,0.158,0.131,Sun Apr 08 19:00:16 2018,ranger,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,8,cv,20,3,1,5,145
+0.767,0.762,0.246,0.162,0.132,Sun Apr 08 19:01:48 2018,Rborist,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,90,cv,20,3,1,5,145
+0.805,0.784,0.152,0.147,0.111,Sun Apr 08 19:01:55 2018,relaxo,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,6,cv,20,3,1,5,21.7034251155531,0.0596172355581075
+0.769,0.763,0.252,0.16,0.131,Sun Apr 08 19:02:22 2018,rf,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,25,cv,20,3,1,5,145
+0.703,0.678,0.23,0.218,0.168,Sun Apr 08 19:02:35 2018,ridge,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,11,cv,20,3,1,5,0.0967347154886478
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:02:43 2018,rlm,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,6
+0.651,0.647,0.309,0.239,0.198,Sun Apr 08 19:02:45 2018,rpart,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,1,cv,20,3,1,5,0.0247092521797425
+0.731,0.719,-1,0.19,0.153,Sun Apr 08 19:02:48 2018,rpart1SE,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,1,cv,20,3,1,5,none
+0.731,0.719,0.309,0.19,0.153,Sun Apr 08 19:02:51 2018,rpart2,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,1,cv,20,3,1,5,3
+0.82,0.8,0.152,0.135,0.102,Sun Apr 08 19:02:57 2018,rqlasso,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,5,cv,20,3,1,5,0.366395912565139
+0.82,0.8,0.152,0.135,0.102,Sun Apr 08 19:03:01 2018,rqnc,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,3,cv,20,3,1,5,0.366395912565139,SCAD
+0.79,0.788,0.213,0.144,0.119,Sun Apr 08 19:04:00 2018,RRF,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,56,cv,20,3,1,5,136,0.161546147661284,0.197092534741387
+0.789,0.772,0.214,0.154,0.119,Sun Apr 08 19:04:30 2018,RRFglobal,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,29,cv,20,3,1,5,136,0.161546147661284
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:04:35 2018,rvmLinear,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.753,0.752,0.182,0.168,0.139,Sun Apr 08 19:04:39 2018,simpls,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,3,nohyperparameters,8,3,no rep,no min,3
+0.802,0.781,0.149,0.148,0.112,Sun Apr 08 19:04:52 2018,spikeslab,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,12,cv,20,3,1,5,23
+0.71,0.663,0.253,0.228,0.164,Sun Apr 08 19:05:01 2018,spls,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,6,cv,20,3,1,5,8,0.469115583226085,0.479444859549403
+0.842,0.819,0.187,0.123,0.0898,Sun Apr 08 19:05:04 2018,superpc,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,1,cv,20,3,1,5,0.958889719098806,2
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:05:06 2018,svmBoundrangeString,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:05:08 2018,svmExpoString,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,0.229,NA,NA,Sun Apr 08 19:05:11 2018,svmLinear,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,2,cv,20,3,1,5,0.039302880329084
+0.756,0.735,0.229,0.179,0.138,Sun Apr 08 19:05:15 2018,svmLinear2,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,2,cv,20,3,1,5,0.039302880329084
+NA,NA,0.229,NA,NA,Sun Apr 08 19:05:20 2018,svmPoly,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,2,cv,20,3,1,5,1,0.000381030113917335,845.71185856488
+NA,NA,0.283,NA,NA,Sun Apr 08 19:05:23 2018,svmRadial,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,2,cv,20,3,1,5,0.00126505240035658,423.109731205018
+NA,NA,0.398,NA,NA,Sun Apr 08 19:05:27 2018,svmRadialCost,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,2,cv,20,3,1,5,28.3359598562347
+NA,NA,0.283,NA,NA,Sun Apr 08 19:05:31 2018,svmRadialSigma,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,2,cv,20,3,1,5,0.00126505240035658,423.109731205018
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:05:32 2018,svmSpectrumString,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.772,0.768,-1,0.158,0.13,Sun Apr 08 19:05:37 2018,treebag,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,3,cv,20,3,1,5,none
+0.753,0.752,0.182,0.168,0.139,Sun Apr 08 19:05:43 2018,widekernelpls,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,3,nohyperparameters,8,3,no rep,no min,3
+0.717,0.712,0.24,0.196,0.161,Sun Apr 08 19:06:01 2018,xgbLinear,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,17,cv,20,3,1,5,92,0.000116417345121174,0.583527447066235,2.41012661741115
+0.619,0.638,0.32,0.246,0.216,Sun Apr 08 19:07:09 2018,xgbTree,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,0.6782,0.7954,random,249,67,cv,20,3,1,5,310,3,0.462109143763082,2.03513688407838,0.684767740126699,4,0.897193763114046
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:07:25 2018,xyf,1,2,Recc sim 1,ignore,none,PCA,LAPTOP-1SBQTC5I,14th20hp3cv,14
+0.292,0.269,0.575,0.58,0.45,Sun Apr 08 19:07:44 2018,avNNet,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,17,cv,20,3,1,5,6,0.0119157844455693,TRUE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:07:48 2018,bag,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.777,0.718,0.163,0.224,0.141,Sun Apr 08 19:10:08 2018,bagEarth,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,138,cv,20,3,1,5,16,2
+0.782,0.741,-1,0.206,0.138,Sun Apr 08 19:10:23 2018,bagEarthGCV,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,11,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:10:27 2018,bartMachine,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.636,0.617,-1,0.304,0.231,Sun Apr 08 19:10:29 2018,bayesglm,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,1,cv,20,3,1,5,none
+0.71,0.662,0.171,0.268,0.184,Sun Apr 08 19:12:40 2018,blasso,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,128,cv,20,3,1,5,0.25364909786731
+0.711,0.663,-1,0.268,0.183,Sun Apr 08 19:14:51 2018,blassoAveraged,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,129,cv,20,3,1,5,none
+0.71,0.676,-1,0.257,0.184,Sun Apr 08 19:17:00 2018,bridge,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,128,cv,20,3,1,5,none
+0.695,0.609,0.173,0.31,0.194,Sun Apr 08 19:17:47 2018,BstLm,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,44,cv,20,3,1,5,232,0.0733909324086271
+0.435,0.346,0.487,0.519,0.359,Sun Apr 08 19:18:05 2018,cforest,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,16,cv,20,3,1,5,102
+0.258,0.163,0.56,0.665,0.472,Sun Apr 08 19:18:12 2018,ctree,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,5,cv,20,3,1,5,0.829335833434016
+0.226,0.119,0.56,0.7,0.492,Sun Apr 08 19:18:18 2018,ctree2,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,4,cv,20,3,1,5,4,0.160717005841434
+0.758,0.713,0.164,0.228,0.154,Sun Apr 08 19:18:48 2018,cubist,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,28,cv,20,3,1,5,25,9
+0,-0.002,0.76,0.795,0.636,Sun Apr 08 19:18:52 2018,dnn,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,2,cv,20,3,1,5,17,13,5,0.0551956192357466,0.0026326650287956
+0.813,0.796,0.148,0.162,0.119,Sun Apr 08 19:18:58 2018,earth,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,4,cv,20,3,1,5,6,2
+0.463,0.446,0.288,0.44,0.342,Sun Apr 08 19:19:01 2018,elm,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,1,cv,20,3,1,5,17,purelin
+0.656,0.611,0.176,0.309,0.218,Sun Apr 08 19:19:08 2018,enet,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,6,cv,20,3,1,5,0.512687106383964,0.000332578819322547
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:19:11 2018,extraTrees,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.667,0.609,0.207,0.31,0.212,Sun Apr 08 19:19:16 2018,foba,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,4,cv,20,3,1,5,32,0.111405945854973
+-0.667,-0.842,16.3,1.46,1.06,Sun Apr 08 19:19:37 2018,gamSpline,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,19,cv,20,3,1,5,4.42914271261543
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:19:41 2018,gaussprLinear,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:21:16 2018,gbm_h2o,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,93
+0.746,0.709,-1,0.231,0.161,Sun Apr 08 19:21:18 2018,gcvEarth,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,1,cv,20,3,1,5,1
+-16.136,-16.723,-1,14.1,10.9,Sun Apr 08 19:21:20 2018,glm,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,1,cv,20,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:21:25 2018,glm.nb,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.683,0.594,0.168,0.322,0.202,Sun Apr 08 19:21:29 2018,glmboost,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,3,cv,20,3,1,5,218,yes
+0.777,0.726,0.167,0.218,0.141,Sun Apr 08 19:21:33 2018,glmnet,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,2,cv,20,3,1,5,0.0186921027489007,0.0568431776431553
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:23:06 2018,glmnet_h2o,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,92
+-16.136,-16.723,-1,14.1,10.9,Sun Apr 08 19:23:32 2018,glmStepAIC,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,24,cv,20,3,1,5,none
+0.693,0.689,0.232,0.247,0.195,Sun Apr 08 19:23:44 2018,icr,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,10,cv,20,3,1,5,40
+0.724,0.681,0.192,0.253,0.175,Sun Apr 08 19:23:48 2018,kernelpls,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,3,nohyperparameters,8,3,no rep,no min,3
+0.003,0.003,0.762,0.792,0.634,Sun Apr 08 19:23:52 2018,krlsPoly,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,2,cv,20,3,1,5,0.000122863146061419,1
+0.788,0.733,0.165,0.212,0.135,Sun Apr 08 19:24:00 2018,krlsRadial,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,6,cv,20,3,1,5,0.0106140486840398,9042.88114215976
+0.681,0.646,0.173,0.281,0.203,Sun Apr 08 19:24:03 2018,lars,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,1,cv,20,3,1,5,0.674484728369862
+0.664,0.609,0.196,0.31,0.214,Sun Apr 08 19:24:08 2018,lars2,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,3,nohyperparameters,8,3,no rep,no min,52
+0.681,0.646,0.173,0.281,0.203,Sun Apr 08 19:24:10 2018,lasso,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,1,cv,20,3,1,5,0.674484728369862
+-16.136,-16.723,-1,14.1,10.9,Sun Apr 08 19:24:13 2018,lm,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,1,cv,20,3,1,5,TRUE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:24:17 2018,logicBag,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:24:22 2018,logreg,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:24:24 2018,M5,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:24:26 2018,M5Rules,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.798,0.757,0.233,0.193,0.128,Sun Apr 08 19:24:33 2018,msaenet,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,6,cv,20,3,1,5,0.468336070585065,3,3.67839771532454
+0.265,0.24,0.573,0.603,0.467,Sun Apr 08 19:24:40 2018,nnet,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,5,cv,20,3,1,5,6,0.0119157844455693
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:24:43 2018,nnls,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:24:47 2018,ordinalNet,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.493,0.435,0.388,0.449,0.322,Sun Apr 08 19:25:08 2018,parRF,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,19,cv,20,3,1,5,62
+0.342,0.28,0.57,0.572,0.418,Sun Apr 08 19:25:40 2018,pcaNNet,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,31,nohyperparameters,8,3,no rep,no min,5,0.1
+0.777,0.757,0.224,0.193,0.142,Sun Apr 08 19:25:45 2018,pcr,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,3,nohyperparameters,8,3,no rep,no min,3
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 19:26:16 2018,pls,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,30
+0.788,0.736,0.159,0.209,0.134,Sun Apr 08 19:32:00 2018,plsRglm,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,342,cv,20,3,1,5,2,0.0902020156383515
+0.662,0.636,1.44,0.289,0.215,Sun Apr 08 19:32:53 2018,ppr,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,51,nohyperparameters,8,3,no rep,no min,2
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 19:32:58 2018,pythonKnnReg,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+-0.003,0.029,0.783,0.771,0.638,Sun Apr 08 19:33:22 2018,qrf,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,23,cv,20,3,1,5,81
+0.479,0.422,0.385,0.459,0.331,Sun Apr 08 19:33:32 2018,ranger,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,9,cv,20,3,1,5,85
+0.498,0.447,0.393,0.439,0.319,Sun Apr 08 19:35:04 2018,Rborist,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,90,cv,20,3,1,5,22
+0.697,0.634,0.178,0.291,0.192,Sun Apr 08 19:35:11 2018,relaxo,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,5,cv,20,3,1,5,1.27102161989008,0.748929415363818
+0.467,0.422,0.384,0.459,0.339,Sun Apr 08 19:35:31 2018,rf,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,18,cv,20,3,1,5,85
+0.706,0.68,0.197,0.254,0.186,Sun Apr 08 19:35:39 2018,ridge,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,6,cv,20,3,1,5,0.111405945854973
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:35:45 2018,rlm,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,5
+0.354,0.337,0.534,0.526,0.41,Sun Apr 08 19:35:48 2018,rpart,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,1,cv,20,3,1,5,0
+0.354,0.337,-1,0.526,0.41,Sun Apr 08 19:35:51 2018,rpart1SE,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,1,cv,20,3,1,5,none
+0.354,0.337,0.534,0.526,0.41,Sun Apr 08 19:35:53 2018,rpart2,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,1,cv,20,3,1,5,5
+0.676,0.617,0.239,0.304,0.206,Sun Apr 08 19:35:57 2018,rqlasso,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,2,cv,20,3,1,5,0.111405945854973
+0.676,0.617,0.239,0.304,0.206,Sun Apr 08 19:36:00 2018,rqnc,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,2,cv,20,3,1,5,0.111405945854973,MCP
+0.488,0.418,0.31,0.462,0.325,Sun Apr 08 19:36:44 2018,RRF,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,42,cv,20,3,1,5,102,0.237481456482783,0.835985294077545
+0.472,0.431,0.327,0.451,0.335,Sun Apr 08 19:37:07 2018,RRFglobal,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,21,cv,20,3,1,5,102,0.243113411590457
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:37:12 2018,rvmLinear,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.724,0.681,0.192,0.253,0.175,Sun Apr 08 19:37:15 2018,simpls,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,3,nohyperparameters,8,3,no rep,no min,3
+0.756,0.692,0.148,0.245,0.155,Sun Apr 08 19:37:27 2018,spikeslab,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,10,cv,20,3,1,5,102
+0.66,0.641,0.212,0.284,0.216,Sun Apr 08 19:37:34 2018,spls,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,6,cv,20,3,1,5,25,0.451010078191757,0.00934605137445033
+0.773,0.756,0.206,0.194,0.145,Sun Apr 08 19:37:37 2018,superpc,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,2,cv,20,3,1,5,0.909683431498706,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:37:39 2018,svmBoundrangeString,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:37:41 2018,svmExpoString,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,0.169,NA,NA,Sun Apr 08 19:37:44 2018,svmLinear,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,2,cv,20,3,1,5,0.0379536261867343
+0.732,0.696,0.169,0.241,0.17,Sun Apr 08 19:37:48 2018,svmLinear2,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,2,cv,20,3,1,5,0.0379536261867343
+NA,NA,0.165,NA,NA,Sun Apr 08 19:37:52 2018,svmPoly,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,2,cv,20,3,1,5,2,1.14262760219306e-05,327.711242844083
+NA,NA,0.189,NA,NA,Sun Apr 08 19:37:55 2018,svmRadial,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,2,cv,20,3,1,5,0.00103927412019513,13.6447770744672
+NA,NA,0.369,NA,NA,Sun Apr 08 19:37:59 2018,svmRadialCost,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,2,cv,20,3,1,5,111.643017620117
+NA,NA,0.189,NA,NA,Sun Apr 08 19:38:02 2018,svmRadialSigma,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,2,cv,20,3,1,5,0.00103927412019513,13.6447770744672
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:38:04 2018,svmSpectrumString,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.439,0.384,-1,0.489,0.357,Sun Apr 08 19:38:08 2018,treebag,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,3,cv,20,3,1,5,none
+0.724,0.681,0.192,0.253,0.175,Sun Apr 08 19:38:13 2018,widekernelpls,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,3,nohyperparameters,8,3,no rep,no min,3
+0.481,0.434,0.351,0.449,0.33,Sun Apr 08 19:38:29 2018,xgbLinear,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,15,cv,20,3,1,5,93,0.973898602347928,0.000164273328902281,2.47348614851944
+0.495,0.425,0.397,0.457,0.321,Sun Apr 08 19:40:02 2018,xgbTree,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,0.7939,0.762,random,272,91,cv,20,3,1,5,520,9,0.335900249645114,0.704222428612411,0.301655853819102,12,0.523212277155835
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:40:15 2018,xyf,1,2,Recc sim 1,ignore,none,ICA,LAPTOP-1SBQTC5I,14th20hp3cv,11
+0.315,0.176,0.756,0.658,0.44,Sun Apr 08 19:40:40 2018,avNNet,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,23,cv,20,3,1,5,5,0.000886317570231072,FALSE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:40:43 2018,bag,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.727,0.726,0.372,NA,NA,Sun Apr 08 19:43:12 2018,bagEarth,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,147,cv,20,3,1,5,15,2
+0.701,0.701,-1,0.239,0.192,Sun Apr 08 19:43:26 2018,bagEarthGCV,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,11,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:43:31 2018,bartMachine,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.636,0.618,-1,NA,NA,Sun Apr 08 19:43:34 2018,bayesglm,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,1,cv,20,3,1,5,none
+0.718,0.716,0.293,NA,NA,Sun Apr 08 19:45:48 2018,blasso,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,132,cv,20,3,1,5,0.369988307124004
+0.719,0.715,-1,NA,NA,Sun Apr 08 19:48:02 2018,blassoAveraged,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,132,cv,20,3,1,5,none
+0.746,0.735,-1,NA,NA,Sun Apr 08 19:50:08 2018,bridge,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,125,cv,20,3,1,5,none
+0.718,0.699,0.374,NA,NA,Sun Apr 08 19:50:49 2018,BstLm,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,39,cv,20,3,1,5,390,0.0404124715926591
+0.404,0.378,0.74,0.497,0.383,Sun Apr 08 19:51:08 2018,cforest,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,17,cv,20,3,1,5,84
+0.254,0.282,0.866,0.574,0.479,Sun Apr 08 19:51:15 2018,ctree,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,5,cv,20,3,1,5,0.909676320385188
+0.237,0.26,0.866,0.591,0.49,Sun Apr 08 19:51:21 2018,ctree2,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,4,cv,20,3,1,5,4,0.324598226463422
+0.678,0.655,0.379,0.276,0.207,Sun Apr 08 19:51:49 2018,cubist,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,26,cv,20,3,1,5,49,6
+0,-0.001,0.981,0.8,0.642,Sun Apr 08 19:51:52 2018,dnn,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,2,cv,20,3,1,5,10,6,17,0.0408648249227554,0.0124013687716797
+0.522,0.501,0.726,0.399,0.307,Sun Apr 08 19:51:59 2018,earth,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,5,cv,20,3,1,5,13,1
+0.474,0.463,0.597,NA,NA,Sun Apr 08 19:52:02 2018,elm,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,1,cv,20,3,1,5,16,purelin
+0.732,0.717,0.29,NA,NA,Sun Apr 08 19:52:09 2018,enet,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,6,cv,20,3,1,5,0.768584426026791,0.0586294650588465
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:52:12 2018,extraTrees,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.731,0.719,0.327,NA,NA,Sun Apr 08 19:52:17 2018,foba,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,4,cv,20,3,1,5,77,0.0586294650588465
+-1.548,-1.812,1.74,NA,NA,Sun Apr 08 19:52:37 2018,gamSpline,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,18,cv,20,3,1,5,4.08465430489741
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:52:41 2018,gaussprLinear,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:54:18 2018,gbm_h2o,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,94
+0.509,0.502,-1,NA,NA,Sun Apr 08 19:54:20 2018,gcvEarth,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,1,cv,20,3,1,5,1
+-4.909,-5.819,-1,NA,NA,Sun Apr 08 19:54:23 2018,glm,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,1,cv,20,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:54:27 2018,glm.nb,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.71,0.682,0.393,NA,NA,Sun Apr 08 19:54:32 2018,glmboost,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,3,cv,20,3,1,5,153,no
+0.787,0.78,0.262,NA,NA,Sun Apr 08 19:54:36 2018,glmnet,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,3,cv,20,3,1,5,0.0403886563144624,0.016819916457603
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:56:10 2018,glmnet_h2o,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,93
+-4.909,-5.819,-1,NA,NA,Sun Apr 08 19:56:33 2018,glmStepAIC,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,21,cv,20,3,1,5,none
+0.843,0.833,0.219,0.133,0.101,Sun Apr 08 19:56:45 2018,icr,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,10,cv,20,3,1,5,4
+0.817,0.816,0.259,NA,NA,Sun Apr 08 19:56:49 2018,kernelpls,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,3,nohyperparameters,8,3,no rep,no min,3
+0.005,0.002,0.984,0.797,0.639,Sun Apr 08 19:56:52 2018,krlsPoly,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,2,cv,20,3,1,5,0.353493637947479,1
+0.766,0.757,0.272,NA,NA,Sun Apr 08 19:57:01 2018,krlsRadial,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,7,cv,20,3,1,5,0.00134606666089301,9096.99103372982
+0.668,0.636,0.331,NA,NA,Sun Apr 08 19:57:03 2018,lars,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,1,cv,20,3,1,5,0.780804482987151
+0.723,0.713,0.361,NA,NA,Sun Apr 08 19:57:06 2018,lars2,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,1,cv,20,3,1,5,52
+0.668,0.636,0.331,NA,NA,Sun Apr 08 19:57:09 2018,lasso,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,1,cv,20,3,1,5,0.780804482987151
+-4.909,-5.819,-1,NA,NA,Sun Apr 08 19:57:11 2018,lm,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,1,cv,20,3,1,5,TRUE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:57:16 2018,logicBag,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:57:20 2018,logreg,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:57:22 2018,M5,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:57:24 2018,M5Rules,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.534,0.504,0.565,0.396,0.299,Sun Apr 08 19:57:32 2018,msaenet,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,6,cv,20,3,1,5,0.486164054670371,10,0.318932652065996
+0.241,0.149,0.757,0.68,0.487,Sun Apr 08 19:57:39 2018,nnet,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,6,cv,20,3,1,5,7,0.000166913797873679
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:57:43 2018,nnls,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 19:57:47 2018,ordinalNet,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.528,0.492,0.564,0.406,0.303,Sun Apr 08 19:58:06 2018,parRF,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,18,cv,20,3,1,5,4
+0.308,0.172,0.789,0.662,0.444,Sun Apr 08 19:58:36 2018,pcaNNet,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,28,nohyperparameters,8,3,no rep,no min,5,0.1
+0.802,0.798,0.284,0.161,0.127,Sun Apr 08 19:58:41 2018,pcr,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,3,nohyperparameters,8,3,no rep,no min,3
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 19:59:12 2018,pls,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,29
+0.822,0.814,0.232,0.149,0.114,Sun Apr 08 20:03:04 2018,plsRglm,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,231,cv,20,3,1,5,43,0.00205511166714132
+0.646,0.629,2.04,0.296,0.227,Sun Apr 08 20:03:22 2018,ppr,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,16,cv,20,3,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 20:03:27 2018,pythonKnnReg,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,3
+-0.005,0.112,1.06,0.709,0.645,Sun Apr 08 20:03:51 2018,qrf,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,23,cv,20,3,1,5,84
+0.529,0.496,0.553,0.403,0.303,Sun Apr 08 20:04:03 2018,ranger,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,9,cv,20,3,1,5,5
+0.515,0.483,0.564,0.413,0.312,Sun Apr 08 20:05:47 2018,Rborist,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,103,cv,20,3,1,5,5
+0.703,0.706,0.32,NA,NA,Sun Apr 08 20:05:53 2018,relaxo,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,5,cv,20,3,1,5,0.755017761778382,0.517769145546481
+0.517,0.492,0.559,0.406,0.31,Sun Apr 08 20:06:13 2018,rf,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,17,cv,20,3,1,5,5
+0.732,0.716,0.302,NA,NA,Sun Apr 08 20:06:20 2018,ridge,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,6,cv,20,3,1,5,0.0586294650588465
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:06:26 2018,rlm,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,4
+0.229,0.149,0.823,0.68,0.495,Sun Apr 08 20:06:29 2018,rpart,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,1,cv,20,3,1,5,0.0110825258942705
+0.237,0.173,-1,0.661,0.49,Sun Apr 08 20:06:31 2018,rpart1SE,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,1,cv,20,3,1,5,none
+0.199,0.096,0.823,0.722,0.514,Sun Apr 08 20:06:34 2018,rpart2,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,1,cv,20,3,1,5,5
+0.766,0.755,0.356,NA,NA,Sun Apr 08 20:06:37 2018,rqlasso,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,2,cv,20,3,1,5,0.0514284603788891
+0.766,0.755,0.356,NA,NA,Sun Apr 08 20:06:41 2018,rqnc,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,2,cv,20,3,1,5,0.0514284603788891,MCP
+0.551,0.519,0.538,0.384,0.288,Sun Apr 08 20:07:21 2018,RRF,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,38,cv,20,3,1,5,5,0.116875582374632,0.901415469357744
+0.509,0.508,0.532,0.393,0.316,Sun Apr 08 20:07:43 2018,RRFglobal,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,21,cv,20,3,1,5,30,0.203748706495389
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:07:48 2018,rvmLinear,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.817,0.816,0.259,NA,NA,Sun Apr 08 20:07:52 2018,simpls,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,3,nohyperparameters,8,3,no rep,no min,3
+0.744,0.74,0.357,NA,NA,Sun Apr 08 20:08:04 2018,spikeslab,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,10,cv,20,3,1,5,91
+0.709,0.684,0.326,NA,NA,Sun Apr 08 20:08:11 2018,spls,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,5,cv,20,3,1,5,12,0.0445280557032675,0.184994153562002
+0.805,0.8,0.26,0.16,0.125,Sun Apr 08 20:08:14 2018,superpc,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,1,cv,20,3,1,5,0.152369621908292,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:08:16 2018,svmBoundrangeString,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:08:17 2018,svmExpoString,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,0.27,NA,NA,Sun Apr 08 20:08:21 2018,svmLinear,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,2,cv,20,3,1,5,0.0475579337114857
+0.773,0.758,0.27,NA,NA,Sun Apr 08 20:08:24 2018,svmLinear2,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,2,cv,20,3,1,5,0.0475579337114857
+NA,NA,0.243,NA,NA,Sun Apr 08 20:08:28 2018,svmPoly,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,2,cv,20,3,1,5,3,2.23250519242293e-05,72.1925897172496
+NA,NA,0.314,NA,NA,Sun Apr 08 20:08:31 2018,svmRadial,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,2,cv,20,3,1,5,0.00202515940176304,11.4552163010949
+NA,NA,0.507,NA,NA,Sun Apr 08 20:08:35 2018,svmRadialCost,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,2,cv,20,3,1,5,1.4639077130932
+NA,NA,0.314,NA,NA,Sun Apr 08 20:08:38 2018,svmRadialSigma,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,2,cv,20,3,1,5,0.00202515940176304,11.4552163010949
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:08:40 2018,svmSpectrumString,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.484,0.44,-1,0.448,0.332,Sun Apr 08 20:08:44 2018,treebag,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,3,cv,20,3,1,5,none
+0.817,0.816,0.259,NA,NA,Sun Apr 08 20:08:49 2018,widekernelpls,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,3,nohyperparameters,8,3,no rep,no min,3
+0.542,0.549,0.588,0.361,0.294,Sun Apr 08 20:09:05 2018,xgbLinear,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,14,cv,20,3,1,5,31,0.121521831103298,0.00382623621637478,1.52220712671988
+0.367,0.367,0.752,0.506,0.406,Sun Apr 08 20:10:10 2018,xgbTree,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.7992,0.9816,random,228,63,cv,20,3,1,5,712,4,0.422309670037124,3.76673977356404,0.337627018149942,3,0.718359160935506
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:10:23 2018,xyf,1,1,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,11
+0.308,0.236,0.592,0.478,0.359,Sun Apr 08 20:10:52 2018,avNNet,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,27,cv,20,3,1,5,8,0.00163810997246458,FALSE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:10:55 2018,bag,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.655,0.603,0.245,0.249,0.179,Sun Apr 08 20:13:17 2018,bagEarth,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,140,cv,20,3,1,5,17,2
+0.659,0.608,-1,0.245,0.176,Sun Apr 08 20:13:32 2018,bagEarthGCV,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,10,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:13:36 2018,bartMachine,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.646,0.604,-1,0.249,0.184,Sun Apr 08 20:13:39 2018,bayesglm,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,1,cv,20,3,1,5,none
+0.68,0.648,0.181,0.22,0.166,Sun Apr 08 20:15:53 2018,blasso,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,132,cv,20,3,1,5,0.236077145673335
+0.675,0.645,-1,0.222,0.168,Sun Apr 08 20:18:06 2018,blassoAveraged,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,132,cv,20,3,1,5,none
+0.698,0.66,-1,0.213,0.157,Sun Apr 08 20:20:13 2018,bridge,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,125,cv,20,3,1,5,none
+0.69,0.637,0.278,0.228,0.161,Sun Apr 08 20:20:47 2018,BstLm,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,32,cv,20,3,1,5,405,0.115538674162002
+0.45,0.379,0.593,0.389,0.285,Sun Apr 08 20:21:03 2018,cforest,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,14,cv,20,3,1,5,98
+0.203,0.137,0.635,0.541,0.414,Sun Apr 08 20:21:09 2018,ctree,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,5,cv,20,3,1,5,0.66877586953342
+0.207,0.148,0.626,0.534,0.411,Sun Apr 08 20:21:16 2018,ctree2,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,4,cv,20,3,1,5,4,0.33343012817204
+0.63,0.579,0.261,0.264,0.192,Sun Apr 08 20:21:46 2018,cubist,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,28,cv,20,3,1,5,96,8
+-0.004,-0.001,0.794,0.627,0.521,Sun Apr 08 20:21:50 2018,dnn,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,2,cv,20,3,1,5,4,15,17,0.0665984680876136,0.0421142718056217
+0.154,0.098,0.456,0.565,0.439,Sun Apr 08 20:21:55 2018,earth,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,4,cv,20,3,1,5,17,1
+-0.001,0.017,0.537,0.617,0.519,Sun Apr 08 20:21:58 2018,elm,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,1,cv,20,3,1,5,17,tansig
+0.708,0.669,0.2,0.207,0.151,Sun Apr 08 20:22:06 2018,enet,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,6,cv,20,3,1,5,0.898376338882372,0.102956843003912
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:22:08 2018,extraTrees,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.58,0.551,0.222,0.282,0.218,Sun Apr 08 20:22:15 2018,foba,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,5,cv,20,3,1,5,77,0.00050161152376649
+-25.744,-29.513,4.9,19.1,13.9,Sun Apr 08 20:22:36 2018,gamSpline,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,19,cv,20,3,1,5,0.251320141833276
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:22:40 2018,gaussprLinear,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:24:18 2018,gbm_h2o,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,96
+0.154,0.098,-1,0.565,0.439,Sun Apr 08 20:24:21 2018,gcvEarth,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,1,cv,20,3,1,5,1
+-5.357,-5.301,-1,3.95,3.3,Sun Apr 08 20:24:23 2018,glm,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,1,cv,20,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:24:27 2018,glm.nb,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.69,0.629,0.263,0.233,0.16,Sun Apr 08 20:24:32 2018,glmboost,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,3,cv,20,3,1,5,989,no
+0.729,0.683,0.182,0.198,0.14,Sun Apr 08 20:24:36 2018,glmnet,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,2,cv,20,3,1,5,0.0502640283666551,0.00358044171518824
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:26:15 2018,glmnet_h2o,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,98
+-5.357,-5.301,-1,3.95,3.3,Sun Apr 08 20:26:38 2018,glmStepAIC,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,21,cv,20,3,1,5,none
+0.755,0.726,0.145,0.172,0.127,Sun Apr 08 20:26:49 2018,icr,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,8,cv,20,3,1,5,5
+0.717,0.688,0.17,0.196,0.146,Sun Apr 08 20:26:53 2018,kernelpls,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,3,nohyperparameters,8,3,no rep,no min,3
+0.004,0.003,0.801,0.625,0.517,Sun Apr 08 20:26:57 2018,krlsPoly,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,2,cv,20,3,1,5,0.832179818713894,1
+0.711,0.665,0.199,0.21,0.15,Sun Apr 08 20:27:05 2018,krlsRadial,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,7,cv,20,3,1,5,0.00092290753001106,2592.56447737857
+0.618,0.612,0.205,0.243,0.198,Sun Apr 08 20:27:08 2018,lars,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,1,cv,20,3,1,5,0.770944198826328
+0.682,0.647,0.203,0.221,0.165,Sun Apr 08 20:27:11 2018,lars2,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,1,cv,20,3,1,5,50
+0.618,0.612,0.205,0.243,0.198,Sun Apr 08 20:27:13 2018,lasso,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,1,cv,20,3,1,5,0.770944198826328
+-5.357,-5.301,-1,3.95,3.3,Sun Apr 08 20:27:16 2018,lm,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,1,cv,20,3,1,5,TRUE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:27:21 2018,logicBag,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:27:25 2018,logreg,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:27:27 2018,M5,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:27:29 2018,M5Rules,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.482,0.403,0.339,0.374,0.268,Sun Apr 08 20:27:37 2018,msaenet,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,6,cv,20,3,1,5,0.197456421656534,2,0.763505347480532
+0.235,0.194,0.58,0.505,0.397,Sun Apr 08 20:27:46 2018,nnet,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,7,cv,20,3,1,5,8,7.57540141576252e-05
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:27:49 2018,nnls,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:27:53 2018,ordinalNet,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.637,0.579,0.44,0.263,0.188,Sun Apr 08 20:28:08 2018,parRF,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,14,cv,20,3,1,5,6
+0.304,0.231,0.576,0.482,0.361,Sun Apr 08 20:28:20 2018,pcaNNet,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,10,cv,20,3,1,5,16,0.00593447626073105
+0.75,0.72,0.189,0.176,0.129,Sun Apr 08 20:28:24 2018,pcr,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,3,nohyperparameters,8,3,no rep,no min,3
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 20:29:25 2018,pls,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,59
+0.697,0.663,0.178,0.211,0.157,Sun Apr 08 20:33:52 2018,plsRglm,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,265,cv,20,3,1,5,19,0.0190627777948976
+0.646,0.604,1.4,0.249,0.184,Sun Apr 08 20:34:19 2018,ppr,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,25,cv,20,3,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 20:34:48 2018,pythonKnnReg,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,27
+-0.286,-0.117,0.85,0.7,0.667,Sun Apr 08 20:35:11 2018,qrf,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,21,cv,20,3,1,5,98
+0.641,0.584,0.44,0.26,0.186,Sun Apr 08 20:35:29 2018,ranger,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,15,cv,20,3,1,5,9
+0.632,0.577,0.448,0.265,0.191,Sun Apr 08 20:37:12 2018,Rborist,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,101,cv,20,3,1,5,10
+0.654,0.626,0.194,0.234,0.179,Sun Apr 08 20:37:19 2018,relaxo,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,6,cv,20,3,1,5,2.49674637005837,0.342439048457891
+0.63,0.559,0.443,0.276,0.192,Sun Apr 08 20:37:35 2018,rf,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,14,cv,20,3,1,5,10
+0.686,0.649,0.212,0.22,0.163,Sun Apr 08 20:37:43 2018,ridge,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,7,cv,20,3,1,5,0.102956843003912
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:37:50 2018,rlm,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,5
+0.205,0.188,0.586,0.509,0.412,Sun Apr 08 20:37:53 2018,rpart,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,1,cv,20,3,1,5,0.00838217181326679
+0.205,0.188,-1,0.509,0.412,Sun Apr 08 20:37:56 2018,rpart1SE,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,1,cv,20,3,1,5,none
+0.116,0.106,0.586,0.561,0.459,Sun Apr 08 20:37:58 2018,rpart2,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,1,cv,20,3,1,5,5
+0.616,0.609,0.226,0.245,0.199,Sun Apr 08 20:38:03 2018,rqlasso,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,2,cv,20,3,1,5,0.000132817222280306
+0.616,0.609,0.226,0.245,0.199,Sun Apr 08 20:38:06 2018,rqnc,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,2,cv,20,3,1,5,0.000132817222280306,MCP
+0.674,0.599,0.416,0.251,0.169,Sun Apr 08 20:38:43 2018,RRF,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,35,cv,20,3,1,5,19,0.0953138889744878,0.074561684159562
+0.606,0.529,0.436,0.295,0.204,Sun Apr 08 20:39:03 2018,RRFglobal,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,18,cv,20,3,1,5,9,0.031041793525219
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:39:09 2018,rvmLinear,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,4
+0.717,0.688,0.17,0.196,0.146,Sun Apr 08 20:39:13 2018,simpls,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,3,nohyperparameters,8,3,no rep,no min,3
+0.642,0.601,0.241,0.25,0.186,Sun Apr 08 20:39:26 2018,spikeslab,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,11,cv,20,3,1,5,98
+0.688,0.66,0.197,0.213,0.162,Sun Apr 08 20:39:36 2018,spls,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,7,cv,20,3,1,5,5,0.462230399483815,0.385472099413164
+0.725,0.698,0.167,0.189,0.143,Sun Apr 08 20:39:40 2018,superpc,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,2,cv,20,3,1,5,0.151840787380934,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:39:42 2018,svmBoundrangeString,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:39:43 2018,svmExpoString,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,0.183,NA,NA,Sun Apr 08 20:39:47 2018,svmLinear,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,2,cv,20,3,1,5,0.0527004987458888
+0.718,0.673,0.183,0.205,0.146,Sun Apr 08 20:39:51 2018,svmLinear2,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,2,cv,20,3,1,5,0.0527004987458888
+NA,NA,0.176,NA,NA,Sun Apr 08 20:39:55 2018,svmPoly,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,2,cv,20,3,1,5,1,0.00858268269507976,0.424793537398046
+NA,NA,0.202,NA,NA,Sun Apr 08 20:39:59 2018,svmRadial,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,2,cv,20,3,1,5,0.00121039354116623,287.415494675445
+NA,NA,0.389,NA,NA,Sun Apr 08 20:40:03 2018,svmRadialCost,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,2,cv,20,3,1,5,249.135431865959
+NA,NA,0.202,NA,NA,Sun Apr 08 20:40:07 2018,svmRadialSigma,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,2,cv,20,3,1,5,0.00121039354116623,287.415494675445
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:40:09 2018,svmSpectrumString,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.498,0.41,-1,0.37,0.26,Sun Apr 08 20:40:13 2018,treebag,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,3,cv,20,3,1,5,none
+0.717,0.688,0.17,0.196,0.146,Sun Apr 08 20:40:19 2018,widekernelpls,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,3,nohyperparameters,8,3,no rep,no min,3
+0.438,0.376,0.46,0.391,0.291,Sun Apr 08 20:40:35 2018,xgbLinear,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,14,cv,20,3,1,5,53,0.832179818713894,1.82413634404416e-05,1.2879231213592
+0.362,0.356,0.501,0.404,0.331,Sun Apr 08 20:41:39 2018,xgbTree,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,0.6266,0.8095,random,309,62,cv,20,3,1,5,865,10,0.370361082180403,0.944474982097745,0.612164850346744,7,0.637624097522348
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:41:54 2018,xyf,1,2,Recc sim 1,ignore,none,centernscale,LAPTOP-1SBQTC5I,14th20hp3cv,13
+0.279,0.244,0.554,0.622,0.457,Sun Apr 08 20:42:38 2018,avNNet,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,40,cv,20,3,1,5,9,0.00184635671070365,TRUE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:42:42 2018,bag,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.73,0.723,0.247,0.226,0.171,Sun Apr 08 20:45:11 2018,bagEarth,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,147,cv,20,3,1,5,17,1
+0.692,0.67,-1,0.264,0.194,Sun Apr 08 20:45:28 2018,bagEarthGCV,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,12,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:45:33 2018,bartMachine,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.668,0.62,-1,NA,NA,Sun Apr 08 20:45:36 2018,bayesglm,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,1,cv,20,3,1,5,none
+0.776,0.766,0.209,0.188,0.141,Sun Apr 08 20:48:17 2018,blasso,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,160,cv,20,3,1,5,0.320517066400498
+0.777,0.768,-1,0.187,0.141,Sun Apr 08 20:50:43 2018,blassoAveraged,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,142,cv,20,3,1,5,none
+0.782,0.77,-1,0.186,0.138,Sun Apr 08 20:53:04 2018,bridge,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,138,cv,20,3,1,5,none
+0.735,0.713,0.248,0.226,0.166,Sun Apr 08 20:53:54 2018,BstLm,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,47,cv,20,3,1,5,494,0.0305157303679734
+0.454,0.408,0.555,0.476,0.345,Sun Apr 08 20:54:12 2018,cforest,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,16,cv,20,3,1,5,66
+0.311,0.387,0.612,0.489,0.433,Sun Apr 08 20:54:19 2018,ctree,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,5,cv,20,3,1,5,0.702862147474661
+0.312,0.358,0.612,0.513,0.433,Sun Apr 08 20:54:26 2018,ctree2,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,5,cv,20,3,1,5,5,0.466698335949332
+0.702,0.659,0.264,0.268,0.185,Sun Apr 08 20:55:02 2018,cubist,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,34,cv,20,3,1,5,90,0
+0,0,0.755,0.806,0.631,Sun Apr 08 20:55:07 2018,dnn,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,3,cv,20,3,1,5,19,15,16,0.037617494398728,0.0883946495130658
+0.396,0.318,0.482,0.543,0.381,Sun Apr 08 20:55:13 2018,earth,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,4,cv,20,3,1,5,13,1
+0.483,0.468,0.423,0.43,0.327,Sun Apr 08 20:55:16 2018,elm,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,2,cv,20,3,1,5,13,purelin
+0.812,0.797,0.208,0.165,0.119,Sun Apr 08 20:55:24 2018,enet,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,7,cv,20,3,1,5,0.658157927449793,0.0932394597581964
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:55:27 2018,extraTrees,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.761,0.756,0.207,0.2,0.152,Sun Apr 08 20:55:33 2018,foba,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,4,cv,20,3,1,5,54,0.0875924472730558
+-3.934,-4.015,3.08,NA,NA,Sun Apr 08 20:55:56 2018,gamSpline,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,21,cv,20,3,1,5,1.60258533200249
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:56:02 2018,gaussprLinear,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:57:56 2018,gbm_h2o,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,113
+0.396,0.318,-1,0.543,0.381,Sun Apr 08 20:57:59 2018,gcvEarth,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,1,cv,20,3,1,5,1
+-0.706,-0.771,-1,NA,NA,Sun Apr 08 20:58:02 2018,glm,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,1,cv,20,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 20:58:07 2018,glm.nb,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.756,0.741,0.253,0.206,0.154,Sun Apr 08 20:58:13 2018,glmboost,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,4,cv,20,3,1,5,702,yes
+0.788,0.791,0.181,0.169,0.134,Sun Apr 08 20:58:17 2018,glmnet,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,3,cv,20,3,1,5,0.0250561137218028,0.440771248166566
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:00:02 2018,glmnet_h2o,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,103
+-0.706,-0.771,-1,NA,NA,Sun Apr 08 21:00:28 2018,glmStepAIC,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,25,cv,20,3,1,5,none
+0.843,0.833,0.148,0.134,0.0986,Sun Apr 08 21:00:40 2018,icr,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,9,cv,20,3,1,5,3
+0.827,0.828,0.206,0.139,0.11,Sun Apr 08 21:00:44 2018,kernelpls,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,3,nohyperparameters,8,3,no rep,no min,2
+0.003,0.002,0.756,0.805,0.629,Sun Apr 08 21:00:48 2018,krlsPoly,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,2,cv,20,3,1,5,2.30542451249373e-05,1
+0.771,0.781,0.195,0.177,0.145,Sun Apr 08 21:00:57 2018,krlsRadial,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,7,cv,20,3,1,5,0.0320228110964513,7840.99722227217
+0.734,0.755,0.219,0.196,0.168,Sun Apr 08 21:01:01 2018,lars,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,1,cv,20,3,1,5,0.750968217616901
+0.762,0.746,0.252,0.204,0.15,Sun Apr 08 21:01:04 2018,lars2,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,1,cv,20,3,1,5,41
+0.734,0.755,0.219,0.196,0.168,Sun Apr 08 21:01:07 2018,lasso,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,1,cv,20,3,1,5,0.750968217616901
+-0.706,-0.771,-1,NA,NA,Sun Apr 08 21:01:09 2018,lm,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,1,cv,20,3,1,5,TRUE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:01:14 2018,logicBag,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:01:19 2018,logreg,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:01:22 2018,M5,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:01:24 2018,M5Rules,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.357,0.234,0.451,0.624,0.408,Sun Apr 08 21:01:32 2018,msaenet,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,7,cv,20,3,1,5,0.680982701620087,2,0.754849833669141
+0.28,0.242,0.563,0.623,0.457,Sun Apr 08 21:01:43 2018,nnet,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,9,cv,20,3,1,5,7,0.00631233465950167
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:01:47 2018,nnls,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:01:51 2018,ordinalNet,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.563,0.517,0.428,0.392,0.277,Sun Apr 08 21:02:10 2018,parRF,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,17,cv,20,3,1,5,8
+0.346,0.268,0.54,0.604,0.417,Sun Apr 08 21:02:26 2018,pcaNNet,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,13,cv,20,3,1,5,14,0.0186129326379283
+0.794,0.797,0.221,0.163,0.13,Sun Apr 08 21:02:31 2018,pcr,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,3,nohyperparameters,8,3,no rep,no min,3
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 21:03:03 2018,pls,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,30
+0.833,0.827,0.157,0.139,0.105,Sun Apr 08 21:08:33 2018,plsRglm,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,328,cv,20,3,1,5,1,0.179309687064961
+0.68,0.623,1.61,0.309,0.205,Sun Apr 08 21:09:00 2018,ppr,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,25,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 21:09:06 2018,pythonKnnReg,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,4
+-0.046,0.031,0.829,0.773,0.661,Sun Apr 08 21:09:29 2018,qrf,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,21,cv,20,3,1,5,91
+0.565,0.523,0.426,0.386,0.276,Sun Apr 08 21:09:43 2018,ranger,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,11,cv,20,3,1,5,8
+0.564,0.514,0.424,0.394,0.276,Sun Apr 08 21:11:19 2018,Rborist,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,94,cv,20,3,1,5,8
+0.784,0.776,0.221,0.182,0.137,Sun Apr 08 21:11:26 2018,relaxo,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,5,cv,20,3,1,5,0.471499077206449,0.807972200680524
+0.567,0.52,0.425,0.389,0.274,Sun Apr 08 21:11:45 2018,rf,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,17,cv,20,3,1,5,8
+0.739,0.729,0.227,NA,NA,Sun Apr 08 21:11:54 2018,ridge,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,7,cv,20,3,1,5,0.0875924472730558
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:12:03 2018,rlm,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,7
+0.336,0.278,0.654,0.575,0.418,Sun Apr 08 21:12:07 2018,rpart,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,2,cv,20,3,1,5,0.00618396668088184
+0.336,0.278,-1,0.575,0.418,Sun Apr 08 21:12:11 2018,rpart1SE,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,1,cv,20,3,1,5,none
+0.338,0.26,0.654,0.589,0.417,Sun Apr 08 21:12:14 2018,rpart2,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,1,cv,20,3,1,5,5
+0.628,0.61,0.255,NA,NA,Sun Apr 08 21:12:18 2018,rqlasso,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,2,cv,20,3,1,5,0.00268910275357904
+0.628,0.61,0.255,NA,NA,Sun Apr 08 21:12:22 2018,rqnc,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,2,cv,20,3,1,5,0.00268910275357904,SCAD
+0.597,0.536,0.396,0.374,0.255,Sun Apr 08 21:13:09 2018,RRF,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,45,cv,20,3,1,5,14,0.267173891887069,0.675399451516569
+0.586,0.563,0.413,0.351,0.261,Sun Apr 08 21:13:34 2018,RRFglobal,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,23,cv,20,3,1,5,70,0.0264071749988943
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:13:39 2018,rvmLinear,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.827,0.828,0.206,0.139,0.11,Sun Apr 08 21:13:44 2018,simpls,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,3,nohyperparameters,8,3,no rep,no min,2
+0.797,0.786,0.227,0.172,0.127,Sun Apr 08 21:13:57 2018,spikeslab,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,11,cv,20,3,1,5,98
+0.731,0.713,0.226,0.234,0.171,Sun Apr 08 21:14:05 2018,spls,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,6,cv,20,3,1,5,11,0.0264071749988943,0.350545945344493
+0.773,0.762,0.212,0.191,0.143,Sun Apr 08 21:14:09 2018,superpc,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,1,cv,20,3,1,5,0.00149315060116351,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:14:11 2018,svmBoundrangeString,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:14:13 2018,svmExpoString,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,0.194,NA,NA,Sun Apr 08 21:14:17 2018,svmLinear,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,2,cv,20,3,1,5,0.0317389290477615
+0.754,0.757,0.194,0.197,0.156,Sun Apr 08 21:14:20 2018,svmLinear2,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,2,cv,20,3,1,5,0.0317389290477615
+NA,NA,0.177,NA,NA,Sun Apr 08 21:14:25 2018,svmPoly,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,2,cv,20,3,1,5,3,1.82477070673147e-05,102.068956754604
+NA,NA,0.198,NA,NA,Sun Apr 08 21:14:28 2018,svmRadial,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,2,cv,20,3,1,5,0.00114367897770316,441.121999372159
+NA,NA,0.383,NA,NA,Sun Apr 08 21:14:32 2018,svmRadialCost,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,2,cv,20,3,1,5,46.6217809766755
+NA,NA,0.198,NA,NA,Sun Apr 08 21:14:36 2018,svmRadialSigma,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,2,cv,20,3,1,5,0.00114367897770316,441.121999372159
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:14:38 2018,svmSpectrumString,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.449,0.403,-1,0.478,0.348,Sun Apr 08 21:14:43 2018,treebag,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,3,cv,20,3,1,5,none
+0.827,0.828,0.206,0.139,0.11,Sun Apr 08 21:14:50 2018,widekernelpls,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,3,nohyperparameters,8,3,no rep,no min,2
+0.66,0.574,0.473,0.334,0.212,Sun Apr 08 21:15:08 2018,xgbLinear,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,17,cv,20,3,1,5,98,0.0203235603013885,0.0195339304570399,1.99138974188827
+0.289,0.323,0.458,0.55,0.451,Sun Apr 08 21:16:33 2018,xgbTree,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.8061,0.759,random,268,82,cv,20,3,1,5,685,9,0.552058983890805,0.52287625381723,0.37016797978431,4,0.719986326177604
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:16:48 2018,xyf,1,1,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,13
+0.333,0.251,0.598,0.536,0.389,Sun Apr 08 21:17:17 2018,avNNet,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,26,cv,20,3,1,5,6,0.00495671266182267,FALSE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:17:21 2018,bag,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.72,0.679,0.274,0.23,0.163,Sun Apr 08 21:20:14 2018,bagEarth,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,171,cv,20,3,1,5,11,1
+0.729,0.717,-1,0.202,0.158,Sun Apr 08 21:20:31 2018,bagEarthGCV,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,12,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:20:36 2018,bartMachine,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.644,0.662,-1,0.242,0.207,Sun Apr 08 21:20:39 2018,bayesglm,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,1,cv,20,3,1,5,none
+0.687,0.677,0.22,0.231,0.182,Sun Apr 08 21:23:10 2018,blasso,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,149,cv,20,3,1,5,0.261379532748833
+0.683,0.675,-1,0.233,0.185,Sun Apr 08 21:25:37 2018,blassoAveraged,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,145,cv,20,3,1,5,none
+0.705,0.684,-1,0.226,0.172,Sun Apr 08 21:27:59 2018,bridge,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,140,cv,20,3,1,5,none
+0.736,0.744,0.258,0.183,0.154,Sun Apr 08 21:28:44 2018,BstLm,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,42,cv,20,3,1,5,123,0.0872599633845966
+0.469,0.426,0.566,0.41,0.309,Sun Apr 08 21:29:04 2018,cforest,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,17,cv,20,3,1,5,67
+0.478,0.5,0.629,0.357,0.304,Sun Apr 08 21:29:11 2018,ctree,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,5,cv,20,3,1,5,0.813986918190494
+0.273,0.305,0.629,0.497,0.424,Sun Apr 08 21:29:18 2018,ctree2,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,5,cv,20,3,1,5,4,0.144006616668776
+0.764,0.746,0.291,0.181,0.137,Sun Apr 08 21:29:52 2018,cubist,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,32,cv,20,3,1,5,90,8
+0,-0.015,0.784,0.725,0.583,Sun Apr 08 21:29:56 2018,dnn,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,3,cv,20,3,1,5,14,10,7,0.0563483167206869,0.043101274734363
+0.556,0.545,0.447,0.325,0.259,Sun Apr 08 21:30:03 2018,earth,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,5,cv,20,3,1,5,14,1
+0.384,0.375,0.5,0.447,0.359,Sun Apr 08 21:30:06 2018,elm,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,2,cv,20,3,1,5,18,purelin
+0.694,0.695,0.188,0.218,0.179,Sun Apr 08 21:30:15 2018,enet,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,7,cv,20,3,1,5,0.741758067626506,0.147735314814467
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:30:17 2018,extraTrees,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.606,0.592,0.22,0.292,0.23,Sun Apr 08 21:30:24 2018,foba,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,5,cv,20,3,1,5,89,0.000414974810664685
+-6.779,-7.556,2.18,6.12,4.53,Sun Apr 08 21:30:47 2018,gamSpline,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,20,cv,20,3,1,5,4.71882677520625
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:30:53 2018,gaussprLinear,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:32:44 2018,gbm_h2o,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,109
+0.655,0.617,-1,0.273,0.201,Sun Apr 08 21:32:47 2018,gcvEarth,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,1,cv,20,3,1,5,1
+-3.262,-3.482,-1,3.2,2.48,Sun Apr 08 21:32:50 2018,glm,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,1,cv,20,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:32:55 2018,glm.nb,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.735,0.744,0.261,0.183,0.154,Sun Apr 08 21:33:00 2018,glmboost,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,4,cv,20,3,1,5,125,yes
+0.744,0.726,0.18,0.196,0.149,Sun Apr 08 21:33:05 2018,glmnet,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,3,cv,20,3,1,5,0.0391850527375937,0.00702163171941201
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:34:50 2018,glmnet_h2o,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,104
+-3.262,-3.482,-1,3.2,2.48,Sun Apr 08 21:35:17 2018,glmStepAIC,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,25,cv,20,3,1,5,none
+0.796,0.788,0.148,0.152,0.119,Sun Apr 08 21:35:29 2018,icr,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,10,cv,20,3,1,5,11
+0.768,0.772,0.198,0.163,0.135,Sun Apr 08 21:35:34 2018,kernelpls,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,3,nohyperparameters,8,3,no rep,no min,3
+0.002,0.001,0.788,0.714,0.581,Sun Apr 08 21:35:38 2018,krlsPoly,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,2,cv,20,3,1,5,1.5700925890034e-05,1
+0.719,0.688,0.17,0.223,0.164,Sun Apr 08 21:35:47 2018,krlsRadial,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,7,cv,20,3,1,5,0.00376758080574173,2386.83496744003
+0.693,0.676,0.236,0.232,0.179,Sun Apr 08 21:35:51 2018,lars,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,1,cv,20,3,1,5,0.799862402491271
+0.667,0.65,0.214,0.25,0.195,Sun Apr 08 21:35:56 2018,lars2,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,3,nohyperparameters,8,3,no rep,no min,99
+0.693,0.676,0.236,0.232,0.179,Sun Apr 08 21:35:59 2018,lasso,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,1,cv,20,3,1,5,0.799862402491271
+-3.262,-3.482,-1,3.2,2.48,Sun Apr 08 21:36:01 2018,lm,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,1,cv,20,3,1,5,TRUE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:36:07 2018,logicBag,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:36:12 2018,logreg,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:36:14 2018,M5,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:36:16 2018,M5Rules,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.548,0.531,0.438,0.335,0.263,Sun Apr 08 21:36:26 2018,msaenet,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,8,cv,20,3,1,5,0.292703260318376,10,0.90117582998937
+0.319,0.246,0.6,0.539,0.397,Sun Apr 08 21:36:34 2018,nnet,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,7,cv,20,3,1,5,6,0.00495671266182267
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:36:38 2018,nnls,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:36:42 2018,ordinalNet,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.577,0.505,0.436,0.353,0.246,Sun Apr 08 21:37:01 2018,parRF,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,17,cv,20,3,1,5,4
+0.365,0.265,0.599,0.525,0.37,Sun Apr 08 21:37:36 2018,pcaNNet,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,32,nohyperparameters,8,3,no rep,no min,5,0.1
+0.797,0.808,0.234,0.137,0.118,Sun Apr 08 21:37:41 2018,pcr,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,3,nohyperparameters,8,3,no rep,no min,3
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 21:38:14 2018,pls,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,31
+0.661,0.628,0.155,0.266,0.197,Sun Apr 08 21:43:56 2018,plsRglm,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,340,cv,20,3,1,5,81,0.178586137481034
+0.643,0.66,1.49,0.243,0.208,Sun Apr 08 21:44:41 2018,ppr,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,43,nohyperparameters,8,3,no rep,no min,2
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 21:44:47 2018,pythonKnnReg,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,4
+-0.042,0.028,0.841,0.695,0.607,Sun Apr 08 21:45:11 2018,qrf,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,22,cv,20,3,1,5,80
+0.597,0.52,0.434,0.343,0.235,Sun Apr 08 21:45:24 2018,ranger,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,10,cv,20,3,1,5,11
+0.584,0.513,0.435,0.348,0.242,Sun Apr 08 21:47:11 2018,Rborist,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,105,cv,20,3,1,5,16
+0.683,0.671,0.245,0.236,0.185,Sun Apr 08 21:47:18 2018,relaxo,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,5,cv,20,3,1,5,1.71899268981382,0.422679512994364
+0.605,0.52,0.435,0.343,0.23,Sun Apr 08 21:47:37 2018,rf,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,16,cv,20,3,1,5,11
+0.675,0.64,0.178,0.258,0.19,Sun Apr 08 21:47:48 2018,ridge,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,8,cv,20,3,1,5,0.0713354932578423
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:47:55 2018,rlm,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,5
+0.213,0.196,0.675,0.574,0.459,Sun Apr 08 21:47:58 2018,rpart,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,1,cv,20,3,1,5,0.0238665795902392
+0.301,0.281,-1,0.513,0.407,Sun Apr 08 21:48:01 2018,rpart1SE,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,1,cv,20,3,1,5,none
+0.213,0.196,0.675,0.574,0.459,Sun Apr 08 21:48:03 2018,rpart2,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,1,cv,20,3,1,5,5
+0.784,0.789,0.293,0.151,0.126,Sun Apr 08 21:48:08 2018,rqlasso,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,3,cv,20,3,1,5,0.0713354932578423
+0.784,0.789,0.293,0.151,0.126,Sun Apr 08 21:48:11 2018,rqnc,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,2,cv,20,3,1,5,0.0713354932578423,SCAD
+0.632,0.537,0.4,0.331,0.214,Sun Apr 08 21:48:52 2018,RRF,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,39,cv,20,3,1,5,13,0.425473212497309,0.966279196552932
+0.586,0.512,0.416,0.349,0.241,Sun Apr 08 21:49:14 2018,RRFglobal,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,20,cv,20,3,1,5,22,0.362191984197125
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:49:19 2018,rvmLinear,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.768,0.772,0.198,0.163,0.135,Sun Apr 08 21:49:24 2018,simpls,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,3,nohyperparameters,8,3,no rep,no min,3
+0.743,0.713,0.231,0.206,0.15,Sun Apr 08 21:49:37 2018,spikeslab,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,12,cv,20,3,1,5,94
+0.743,0.744,0.154,0.184,0.15,Sun Apr 08 21:49:46 2018,spls,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,7,cv,20,3,1,5,2,0.218924772692844,0.0195925263687968
+0.792,0.79,0.229,0.15,0.121,Sun Apr 08 21:49:50 2018,superpc,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,2,cv,20,3,1,5,0.10679392144084,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:49:52 2018,svmBoundrangeString,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:49:54 2018,svmExpoString,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,0.175,NA,NA,Sun Apr 08 21:49:58 2018,svmLinear,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,2,cv,20,3,1,5,0.0469664965688887
+0.713,0.691,0.175,0.221,0.167,Sun Apr 08 21:50:02 2018,svmLinear2,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,2,cv,20,3,1,5,0.0469664965688887
+NA,NA,0.174,NA,NA,Sun Apr 08 21:50:06 2018,svmPoly,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,2,cv,20,3,1,5,1,0.000451234659963654,8.37094845769775
+NA,NA,0.289,NA,NA,Sun Apr 08 21:50:10 2018,svmRadial,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,2,cv,20,3,1,5,0.00351832388192076,15.000614790764
+NA,NA,0.373,NA,NA,Sun Apr 08 21:50:14 2018,svmRadialCost,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,2,cv,20,3,1,5,42.9239460240861
+NA,NA,0.289,NA,NA,Sun Apr 08 21:50:18 2018,svmRadialSigma,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,2,cv,20,3,1,5,0.00351832388192076,15.000614790764
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:50:20 2018,svmSpectrumString,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.467,0.407,-1,0.424,0.311,Sun Apr 08 21:50:24 2018,treebag,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,3,cv,20,3,1,5,none
+0.768,0.772,0.198,0.163,0.135,Sun Apr 08 21:50:30 2018,widekernelpls,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,3,nohyperparameters,8,3,no rep,no min,3
+0.574,0.522,0.495,0.342,0.248,Sun Apr 08 21:50:46 2018,xgbLinear,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,15,cv,20,3,1,5,94,0.115427163063323,0.291509986291099,0.542913619196042
+0.479,0.367,0.526,0.452,0.304,Sun Apr 08 21:52:00 2018,xgbTree,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,0.7144,0.7862,random,269,71,cv,20,3,1,5,217,4,0.515316321092658,1.26412468263879,0.54038304341957,6,0.76076198881492
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:52:15 2018,xyf,1,2,Recc sim 1,ignore,none,expoTrans,LAPTOP-1SBQTC5I,14th20hp3cv,13
+0.644,0.619,0.0559,0.286,0.207,Sun Apr 08 21:52:42 2018,avNNet,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,24,cv,20,3,1,5,5,0.00012842910734296,TRUE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:52:46 2018,bag,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.737,0.689,0.0779,0.234,0.152,Sun Apr 08 21:55:32 2018,bagEarth,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,164,cv,20,3,1,5,13,2
+0.774,0.718,-1,0.212,0.132,Sun Apr 08 21:55:48 2018,bagEarthGCV,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,12,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 21:55:54 2018,bartMachine,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,2
+0.598,0.591,-1,0.307,0.233,Sun Apr 08 21:55:57 2018,bayesglm,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,1,cv,20,3,1,5,none
+0.721,0.714,0.0596,0.215,0.162,Sun Apr 08 21:58:24 2018,blasso,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,146,cv,20,3,1,5,0.22269144281745
+0.713,0.711,-1,0.217,0.166,Sun Apr 08 22:00:51 2018,blassoAveraged,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,144,cv,20,3,1,5,none
+0.731,0.725,-1,0.207,0.156,Sun Apr 08 22:03:12 2018,bridge,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,138,cv,20,3,1,5,none
+0.643,0.567,0.081,0.325,0.207,Sun Apr 08 22:04:05 2018,BstLm,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,51,cv,20,3,1,5,398,0.592946067478741
+0.464,0.411,0.159,0.442,0.311,Sun Apr 08 22:04:26 2018,cforest,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,18,cv,20,3,1,5,40
+0.376,0.445,0.186,0.417,0.362,Sun Apr 08 22:04:33 2018,ctree,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,5,cv,20,3,1,5,0.870444966712967
+0.392,0.454,0.185,0.41,0.353,Sun Apr 08 22:04:41 2018,ctree2,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,6,cv,20,3,1,5,4,0.184777243994176
+0.741,0.691,0.078,0.232,0.15,Sun Apr 08 22:05:19 2018,cubist,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,36,cv,20,3,1,5,76,4
+-0.113,-0.106,0.214,0.83,0.645,Sun Apr 08 22:05:24 2018,dnn,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,3,cv,20,3,1,5,9,16,4,0.0137130952207372,0.0861218412406743
+0.521,0.409,0.118,NA,NA,Sun Apr 08 22:05:30 2018,earth,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,4,cv,20,3,1,5,14,1
+0.365,0.342,0.135,NA,NA,Sun Apr 08 22:05:33 2018,elm,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,2,cv,20,3,1,5,18,purelin
+0.708,0.709,0.0615,0.218,0.169,Sun Apr 08 22:05:42 2018,enet,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,7,cv,20,3,1,5,0.836873632157221,0.0347532552262205
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:05:45 2018,extraTrees,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.734,0.722,0.067,0.209,0.155,Sun Apr 08 22:05:50 2018,foba,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,4,cv,20,3,1,5,85,0.282812638126394
+-2.421,-2.411,0.708,NA,NA,Sun Apr 08 22:06:13 2018,gamSpline,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,21,cv,20,3,1,5,4.9025765596889
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:06:18 2018,gaussprLinear,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:08:12 2018,gbm_h2o,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,112
+0.516,0.393,-1,NA,NA,Sun Apr 08 22:08:15 2018,gcvEarth,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,1,cv,20,3,1,5,1
+-3.32,-2.93,-1,NA,NA,Sun Apr 08 22:08:18 2018,glm,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,1,cv,20,3,1,5,none
+-4.023,-3.569,1.64,NA,NA,Sun Apr 08 22:08:21 2018,glm.nb,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,1,cv,20,3,1,5,sqrt
+0.714,0.666,0.0659,0.251,0.166,Sun Apr 08 22:08:26 2018,glmboost,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,4,cv,20,3,1,5,981,yes
+0.715,0.703,0.0605,0.223,0.165,Sun Apr 08 22:08:31 2018,glmnet,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,3,cv,20,3,1,5,0.739817432593554,0.00433577032586174
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:10:18 2018,glmnet_h2o,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,106
+-3.32,-2.93,-1,NA,NA,Sun Apr 08 22:10:44 2018,glmStepAIC,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,24,cv,20,3,1,5,none
+0.796,0.778,0.0411,0.167,0.119,Sun Apr 08 22:10:57 2018,icr,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,10,cv,20,3,1,5,4
+0.733,0.682,0.0478,0.239,0.155,Sun Apr 08 22:11:02 2018,kernelpls,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,3,nohyperparameters,8,3,no rep,no min,3
+0.008,0.009,0.211,0.744,0.575,Sun Apr 08 22:11:06 2018,krlsPoly,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,2,cv,20,3,1,5,0.0500134902054786,1
+0.751,0.707,0.0446,0.22,0.145,Sun Apr 08 22:11:15 2018,krlsRadial,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,7,cv,20,3,1,5,0.0114446757628954,2335.14254911489
+0.617,0.635,0.0636,NA,NA,Sun Apr 08 22:11:18 2018,lars,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,1,cv,20,3,1,5,0.756335245678201
+0.744,0.716,0.0564,0.214,0.148,Sun Apr 08 22:11:21 2018,lars2,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,1,cv,20,3,1,5,40
+0.617,0.635,0.0636,NA,NA,Sun Apr 08 22:11:24 2018,lasso,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,1,cv,20,3,1,5,0.756335245678201
+-3.32,-2.93,-1,NA,NA,Sun Apr 08 22:11:27 2018,lm,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,1,cv,20,3,1,5,TRUE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:11:32 2018,logicBag,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:11:37 2018,logreg,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:11:40 2018,M5,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:11:42 2018,M5Rules,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:12:33 2018,msaenet,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,50
+0.693,0.681,0.0593,0.24,0.179,Sun Apr 08 22:12:42 2018,nnet,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,6,cv,20,3,1,5,4,0.0315041552542669
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:12:45 2018,nnls,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:12:50 2018,ordinalNet,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.546,0.487,0.12,0.385,0.263,Sun Apr 08 22:13:11 2018,parRF,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,20,cv,20,3,1,5,4
+0.633,0.647,0.0601,0.265,0.213,Sun Apr 08 22:13:50 2018,pcaNNet,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,37,nohyperparameters,8,3,no rep,no min,5,0.1
+0.767,0.753,0.0557,0.185,0.135,Sun Apr 08 22:13:55 2018,pcr,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,3,nohyperparameters,8,3,no rep,no min,3
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 22:14:28 2018,pls,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,30
+0.737,0.694,0.0453,0.23,0.152,Sun Apr 08 22:19:17 2018,plsRglm,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,287,cv,20,3,1,5,61,0.0315843301359564
+0.588,0.582,0.487,0.314,0.239,Sun Apr 08 22:19:30 2018,ppr,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,11,cv,20,3,1,5,3
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 22:20:02 2018,pythonKnnReg,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,29
+-0.27,-0.113,0.239,0.836,0.737,Sun Apr 08 22:20:28 2018,qrf,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,24,cv,20,3,1,5,42
+0.564,0.487,0.118,0.385,0.253,Sun Apr 08 22:20:42 2018,ranger,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,11,cv,20,3,1,5,6
+0.575,0.492,0.118,0.382,0.247,Sun Apr 08 22:22:26 2018,Rborist,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,103,cv,20,3,1,5,6
+-1.927,-1.564,0.557,NA,NA,Sun Apr 08 22:22:34 2018,relaxo,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,6,cv,20,3,1,5,14.8849830704612,0.705607855459675
+0.564,0.503,0.118,0.373,0.253,Sun Apr 08 22:22:54 2018,rf,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,19,cv,20,3,1,5,4
+0.708,0.707,0.0602,0.22,0.169,Sun Apr 08 22:23:03 2018,ridge,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,7,cv,20,3,1,5,0.102060133848119
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:23:10 2018,rlm,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,5
+0.238,0.217,0.2,0.587,0.442,Sun Apr 08 22:23:13 2018,rpart,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,1,cv,20,3,1,5,0.067653039482363
+0.262,0.284,-1,0.537,0.428,Sun Apr 08 22:23:16 2018,rpart1SE,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,1,cv,20,3,1,5,none
+0.238,0.217,0.2,0.587,0.442,Sun Apr 08 22:23:19 2018,rpart2,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,1,cv,20,3,1,5,3
+0.679,0.673,0.08,0.245,0.186,Sun Apr 08 22:23:23 2018,rqlasso,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,2,cv,20,3,1,5,0.00325880017948039
+0.679,0.673,0.08,0.245,0.186,Sun Apr 08 22:23:26 2018,rqnc,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,2,cv,20,3,1,5,0.00325880017948039,MCP
+0.588,0.502,0.116,0.374,0.239,Sun Apr 08 22:24:13 2018,RRF,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,45,cv,20,3,1,5,6,0.823868017410859,0.967263576574624
+0.55,0.49,0.118,0.383,0.261,Sun Apr 08 22:24:38 2018,RRFglobal,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,23,cv,20,3,1,5,4,0.705607855459675
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:24:45 2018,rvmLinear,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,4
+0.733,0.682,0.0478,0.239,0.155,Sun Apr 08 22:24:49 2018,simpls,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,3,nohyperparameters,8,3,no rep,no min,3
+0.758,0.721,0.0639,0.21,0.14,Sun Apr 08 22:25:02 2018,spikeslab,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,11,cv,20,3,1,5,98
+0.756,0.706,0.0458,0.221,0.141,Sun Apr 08 22:25:10 2018,spls,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,6,cv,20,3,1,5,3,0.357505486113951,0.49025765596889
+-2.321,-1.578,0.527,NA,NA,Sun Apr 08 22:25:13 2018,superpc,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,1,cv,20,3,1,5,0.668142688926309,2
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:25:16 2018,svmBoundrangeString,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:25:17 2018,svmExpoString,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,0.0495,NA,NA,Sun Apr 08 22:25:21 2018,svmLinear,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,2,cv,20,3,1,5,0.0430884190480359
+0.741,0.715,0.0495,0.214,0.15,Sun Apr 08 22:25:25 2018,svmLinear2,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,2,cv,20,3,1,5,0.0430884190480359
+NA,NA,0.0484,NA,NA,Sun Apr 08 22:25:30 2018,svmPoly,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,3,cv,20,3,1,5,3,0.00130799789846434,3.03991093264183
+NA,NA,0.0608,NA,NA,Sun Apr 08 22:25:34 2018,svmRadial,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,2,cv,20,3,1,5,0.00247893202454367,432.432936989551
+NA,NA,0.095,NA,NA,Sun Apr 08 22:25:38 2018,svmRadialCost,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,2,cv,20,3,1,5,836.214748825576
+NA,NA,0.0608,NA,NA,Sun Apr 08 22:25:42 2018,svmRadialSigma,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,2,cv,20,3,1,5,0.00247893202454367,432.432936989551
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:25:44 2018,svmSpectrumString,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.472,0.423,-1,0.433,0.307,Sun Apr 08 22:25:48 2018,treebag,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,3,cv,20,3,1,5,none
+0.733,0.682,0.0478,0.239,0.155,Sun Apr 08 22:25:54 2018,widekernelpls,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,3,nohyperparameters,8,3,no rep,no min,3
+0.507,0.46,0.141,0.405,0.286,Sun Apr 08 22:26:08 2018,xgbLinear,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,13,cv,20,3,1,5,97,1.97314281796233e-05,0.13162551610024,1.26514327386394
+0.463,0.377,0.143,0.468,0.312,Sun Apr 08 22:27:40 2018,xgbTree,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.7504,0.2125,random,282,89,cv,20,3,1,5,871,5,0.170026442074217,0.0672602793201804,0.503739549219608,3,0.451318522740621
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:27:55 2018,xyf,1,1,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,13
+0.333,0.219,0.544,0.624,0.422,Sun Apr 08 22:28:17 2018,avNNet,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,19,cv,20,3,1,5,4,0.00115084117119461,TRUE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:28:21 2018,bag,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.754,0.747,0.289,0.202,0.155,Sun Apr 08 22:30:34 2018,bagEarth,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,131,cv,20,3,1,5,13,1
+0.75,0.735,-1,0.212,0.158,Sun Apr 08 22:30:51 2018,bagEarthGCV,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,12,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:30:56 2018,bartMachine,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.678,0.664,-1,0.268,0.204,Sun Apr 08 22:30:59 2018,bayesglm,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,1,cv,20,3,1,5,none
+0.778,0.769,0.212,0.184,0.14,Sun Apr 08 22:33:25 2018,blasso,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,145,cv,20,3,1,5,0.265030952170491
+0.779,0.767,-1,0.186,0.139,Sun Apr 08 22:35:53 2018,blassoAveraged,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,145,cv,20,3,1,5,none
+0.785,0.767,-1,0.186,0.135,Sun Apr 08 22:38:13 2018,bridge,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,137,cv,20,3,1,5,none
+0.724,0.732,0.302,0.213,0.174,Sun Apr 08 22:39:09 2018,BstLm,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,53,cv,20,3,1,5,418,0.503403846537927
+0.459,0.448,0.56,0.442,0.342,Sun Apr 08 22:39:30 2018,cforest,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,19,cv,20,3,1,5,71
+0.42,0.434,0.593,0.453,0.366,Sun Apr 08 22:39:37 2018,ctree,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,5,cv,20,3,1,5,0.84039611951448
+0.42,0.434,0.593,0.453,0.366,Sun Apr 08 22:39:44 2018,ctree2,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,5,cv,20,3,1,5,13,0.83873764029704
+0.767,0.762,0.297,0.19,0.147,Sun Apr 08 22:40:16 2018,cubist,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,30,cv,20,3,1,5,21,7
+0,-0.001,0.758,0.801,0.632,Sun Apr 08 22:40:21 2018,dnn,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,3,cv,20,3,1,5,14,10,20,0.0622524229343981,0.0888682370539755
+0.482,0.438,0.478,0.449,0.327,Sun Apr 08 22:40:27 2018,earth,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,4,cv,20,3,1,5,12,1
+0.315,0.257,0.48,0.594,0.432,Sun Apr 08 22:40:30 2018,elm,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,2,cv,20,3,1,5,13,purelin
+0.728,0.727,0.199,0.217,0.172,Sun Apr 08 22:40:38 2018,enet,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,6,cv,20,3,1,5,0.604598919861019,0.464842340339762
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:40:41 2018,extraTrees,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.723,0.724,0.215,0.221,0.175,Sun Apr 08 22:40:47 2018,foba,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,4,cv,20,3,1,5,42,0.0574799732317914
+-0.335,-0.495,3.41,1.2,0.844,Sun Apr 08 22:41:09 2018,gamSpline,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,21,cv,20,3,1,5,4.09372907015495
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:41:15 2018,gaussprLinear,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:43:09 2018,gbm_h2o,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,112
+0.54,0.546,-1,0.363,0.291,Sun Apr 08 22:43:12 2018,gcvEarth,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,1,cv,20,3,1,5,1
+-0.392,-0.368,-1,1.09,0.881,Sun Apr 08 22:43:15 2018,glm,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,1,cv,20,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:43:20 2018,glm.nb,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.776,0.769,0.254,0.184,0.141,Sun Apr 08 22:43:25 2018,glmboost,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,4,cv,20,3,1,5,197,yes
+0.777,0.769,0.211,0.184,0.14,Sun Apr 08 22:43:29 2018,glmnet,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,2,cv,20,3,1,5,0.130790589144453,0.00870557872783987
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:45:18 2018,glmnet_h2o,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,107
+-0.392,-0.368,-1,1.09,0.881,Sun Apr 08 22:45:44 2018,glmStepAIC,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,25,cv,20,3,1,5,none
+0.808,0.803,0.173,0.157,0.121,Sun Apr 08 22:45:57 2018,icr,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,10,cv,20,3,1,5,13
+0.796,0.796,0.204,0.163,0.128,Sun Apr 08 22:46:02 2018,kernelpls,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,3,nohyperparameters,8,3,no rep,no min,2
+0.005,0.003,0.759,0.798,0.629,Sun Apr 08 22:46:06 2018,krlsPoly,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,2,cv,20,3,1,5,4.50767862785052e-05,1
+0.816,0.806,0.189,0.155,0.115,Sun Apr 08 22:46:15 2018,krlsRadial,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,7,cv,20,3,1,5,0.0379748798402911,1660.77463020601
+0.674,0.683,0.246,0.254,0.206,Sun Apr 08 22:46:20 2018,lars,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,3,cv,20,3,1,5,0.825495850061998
+0.727,0.741,0.208,0.207,0.172,Sun Apr 08 22:46:27 2018,lars2,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,1,cv,20,3,1,5,71
+0.674,0.683,0.246,0.254,0.206,Sun Apr 08 22:46:32 2018,lasso,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,1,cv,20,3,1,5,0.825495850061998
+-0.392,-0.368,-1,1.09,0.881,Sun Apr 08 22:46:35 2018,lm,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,1,cv,20,3,1,5,TRUE
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:46:41 2018,logicBag,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,4
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:46:48 2018,logreg,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,5
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:47:08 2018,M5,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,19
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:47:11 2018,M5Rules,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.474,0.418,0.405,0.466,0.333,Sun Apr 08 22:47:21 2018,msaenet,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,8,cv,20,3,1,5,0.227202832931653,5,1.14414257585304
+0.341,0.221,0.544,0.623,0.417,Sun Apr 08 22:47:28 2018,nnet,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,6,cv,20,3,1,5,6,0.00481135731989037
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:47:33 2018,nnls,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,2
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:47:38 2018,ordinalNet,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.592,0.539,0.444,0.369,0.258,Sun Apr 08 22:48:00 2018,parRF,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,20,cv,20,3,1,5,13
+0.36,0.227,0.548,0.618,0.405,Sun Apr 08 22:48:17 2018,pcaNNet,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,16,cv,20,3,1,5,16,0.0424222324345327
+0.806,0.794,0.214,0.164,0.122,Sun Apr 08 22:48:23 2018,pcr,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,4,nohyperparameters,8,3,no rep,no min,3
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 22:48:58 2018,pls,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,33
+0.72,0.729,0.188,0.216,0.176,Sun Apr 08 22:53:06 2018,plsRglm,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,246,cv,20,3,1,5,83,0.167747528059408
+0.663,0.66,1.32,0.272,0.213,Sun Apr 08 22:53:29 2018,ppr,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,21,cv,20,3,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Sun Apr 08 22:53:35 2018,pythonKnnReg,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,3
+-0.033,0.102,0.835,0.719,0.653,Sun Apr 08 22:54:02 2018,qrf,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,26,cv,20,3,1,5,84
+0.594,0.55,0.446,0.36,0.257,Sun Apr 08 22:54:16 2018,ranger,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,11,cv,20,3,1,5,27
+0.597,0.549,0.44,0.361,0.255,Sun Apr 08 22:56:03 2018,Rborist,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,106,cv,20,3,1,5,13
+0.52,0.543,0.27,0.366,0.304,Sun Apr 08 22:56:10 2018,relaxo,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,5,cv,20,3,1,5,0.88947160703707,0.353624054929242
+0.594,0.54,0.444,0.368,0.257,Sun Apr 08 22:56:33 2018,rf,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,20,cv,20,3,1,5,13
+0.755,0.751,0.218,0.198,0.154,Sun Apr 08 22:56:41 2018,ridge,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,6,cv,20,3,1,5,0.0574799732317914
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:56:48 2018,rlm,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,5
+0.331,0.282,0.682,0.575,0.423,Sun Apr 08 22:56:52 2018,rpart,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,1,cv,20,3,1,5,0.0522821198483699
+0.349,0.323,-1,0.542,0.412,Sun Apr 08 22:56:54 2018,rpart1SE,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,1,cv,20,3,1,5,none
+0.35,0.315,0.683,0.549,0.411,Sun Apr 08 22:56:58 2018,rpart2,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,1,cv,20,3,1,5,5
+0.65,0.647,0.265,0.282,0.221,Sun Apr 08 22:57:02 2018,rqlasso,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,2,cv,20,3,1,5,0.000389211544069304
+0.65,0.647,0.265,0.282,0.221,Sun Apr 08 22:57:06 2018,rqnc,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,2,cv,20,3,1,5,0.000389211544069304,SCAD
+0.598,0.57,0.418,0.344,0.254,Sun Apr 08 22:57:56 2018,RRF,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,48,cv,20,3,1,5,64,0.53604593523778,0.728394814534113
+0.612,0.576,0.421,0.339,0.246,Sun Apr 08 22:58:22 2018,RRFglobal,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,25,cv,20,3,1,5,63,0.421110007446259
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:58:29 2018,rvmLinear,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,4
+0.796,0.796,0.204,0.163,0.128,Sun Apr 08 22:58:34 2018,simpls,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,3,nohyperparameters,8,3,no rep,no min,2
+0.751,0.757,0.229,0.194,0.157,Sun Apr 08 22:58:47 2018,spikeslab,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,12,cv,20,3,1,5,84
+0.769,0.774,0.177,0.18,0.145,Sun Apr 08 22:58:58 2018,spls,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,9,cv,20,3,1,5,2,0.421110007446259,0.31329304643441
+0.774,0.77,0.192,0.184,0.143,Sun Apr 08 22:59:01 2018,superpc,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,1,cv,20,3,1,5,0.3434188736137,3
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:59:04 2018,svmBoundrangeString,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:59:05 2018,svmExpoString,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,0.194,NA,NA,Sun Apr 08 22:59:09 2018,svmLinear,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,2,cv,20,3,1,5,0.121738621272531
+0.783,0.777,0.194,0.178,0.136,Sun Apr 08 22:59:13 2018,svmLinear2,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,2,cv,20,3,1,5,0.121738621272531
+NA,NA,0.183,NA,NA,Sun Apr 08 22:59:18 2018,svmPoly,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,2,cv,20,3,1,5,2,0.000115912629920316,16.6016405244686
+NA,NA,0.23,NA,NA,Sun Apr 08 22:59:22 2018,svmRadial,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,2,cv,20,3,1,5,0.00195635534411259,5.36779984737807
+NA,NA,0.373,NA,NA,Sun Apr 08 22:59:25 2018,svmRadialCost,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,2,cv,20,3,1,5,186.141108147057
+NA,NA,0.23,NA,NA,Sun Apr 08 22:59:29 2018,svmRadialSigma,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,2,cv,20,3,1,5,0.00195635534411259,5.36779984737807
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 22:59:31 2018,svmSpectrumString,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0
+0.473,0.466,-1,0.427,0.333,Sun Apr 08 22:59:36 2018,treebag,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,3,cv,20,3,1,5,none
+0.796,0.796,0.204,0.163,0.128,Sun Apr 08 22:59:41 2018,widekernelpls,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,3,nohyperparameters,8,3,no rep,no min,2
+0.535,0.515,0.474,0.388,0.294,Sun Apr 08 22:59:57 2018,xgbLinear,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,14,cv,20,3,1,5,57,0.134115585622813,0.00050384149882566,1.1175166843459
+0.589,0.511,0.493,0.391,0.26,Sun Apr 08 23:01:31 2018,xgbTree,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,0.8005,0.7593,random,247,91,cv,20,3,1,5,695,4,0.368253718027845,0.200982333626598,0.449101674184203,3,0.855461315135472
+Fail,Fail,Fail,Fail,Fail,Sun Apr 08 23:01:46 2018,xyf,1,2,Recc sim 1,ignore,none,range01,LAPTOP-1SBQTC5I,14th20hp3cv,13
+0.108,0.083,4.04,4.01,3.2,Tue Apr 10 14:38:53 2018,avNNet,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.37,4.4,random,233,1821,cv,20,3,1,5,6,0.446441850515322,TRUE
+Fail,Fail,Fail,Fail,Fail,Tue Apr 10 14:40:11 2018,bag,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,11
+0.664,0.658,1.51,1.49,1.21,Tue Apr 10 15:12:39 2018,bagEarth,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.37,4.4,random,233,1948,cv,20,3,1,5,12,2
+0.462,0.451,-1,2.4,1.93,Tue Apr 10 15:14:56 2018,bagEarthGCV,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.37,4.4,random,233,88,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,Fail,Tue Apr 10 15:15:06 2018,bartMachine,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,5
+0.462,0.451,-1,2.4,1.93,Tue Apr 10 15:15:22 2018,bayesglm,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.37,4.4,random,233,14,cv,20,3,1,5,none
+0.462,0.451,2.38,2.4,1.93,Tue Apr 10 15:17:46 2018,blasso,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.37,4.4,random,233,143,cv,20,3,1,5,0.98791229701601
+0.462,0.451,-1,2.4,1.93,Tue Apr 10 15:20:11 2018,blassoAveraged,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.37,4.4,random,233,143,cv,20,3,1,5,none
+0.462,0.451,-1,2.4,1.93,Tue Apr 10 15:22:28 2018,bridge,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.37,4.4,random,233,135,cv,20,3,1,5,none
+0.462,0.451,2.38,2.4,1.93,Tue Apr 10 15:26:27 2018,BstLm,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.37,4.4,random,233,237,cv,20,3,1,5,487,0.0841456611286849
+0.777,0.771,0.999,1.01,0.803,Wed Apr 11 02:40:58 2018,cforest,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,39873,cv,20,3,1,5,10
+0.777,0.771,0.996,1.01,0.802,Wed Apr 11 02:46:48 2018,ctree,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,43,cv,20,3,1,5,0.914750012569129
+0.777,0.771,0.996,1.01,0.803,Wed Apr 11 02:47:22 2018,ctree2,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,32,cv,20,3,1,5,14,0.831710012862459
+0.768,0.762,1.04,1.05,0.836,Wed Apr 11 03:19:17 2018,cubist,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,1914,cv,20,3,1,5,84,9
+0.73,0.722,1.21,1.22,0.975,Wed Apr 11 03:21:01 2018,dnn,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,104,cv,20,3,1,5,10,7,5,0.00383817760739476,0.0155722580151632
+0.607,0.599,1.77,1.76,1.42,Wed Apr 11 03:21:55 2018,earth,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,53,cv,20,3,1,5,12,2
+0.466,0.458,2.38,2.38,1.93,Wed Apr 11 03:22:03 2018,elm,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,7,cv,20,3,1,5,13,purelin
+0.466,0.458,2.39,2.38,1.93,Wed Apr 11 03:22:16 2018,enet,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,12,cv,20,3,1,5,0.970581829780713,0.000248541645627039
+Fail,Fail,Fail,Fail,Fail,Wed Apr 11 03:22:18 2018,extraTrees,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.466,0.458,2.38,2.38,1.93,Wed Apr 11 03:22:26 2018,foba,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,8,cv,20,3,1,5,9,0.000111904122493695
+0.466,0.458,2.38,2.38,1.93,Wed Apr 11 03:22:58 2018,gamSpline,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,30,cv,20,3,1,5,0.771467335289344
+Fail,Fail,Fail,Fail,Fail,Wed Apr 11 03:23:18 2018,gaussprLinear,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,20
+Fail,Fail,Fail,Fail,Fail,Wed Apr 11 03:27:42 2018,gbm_h2o,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,263
+0.466,0.458,-1,2.38,1.93,Wed Apr 11 03:27:49 2018,gcvEarth,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,7,cv,20,3,1,5,1
+0.466,0.458,-1,2.38,1.93,Wed Apr 11 03:27:51 2018,glm,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,1,cv,20,3,1,5,none
+Fail,Fail,Fail,Fail,Fail,Wed Apr 11 03:28:01 2018,glm.nb,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,9
+0.466,0.458,2.38,2.38,1.93,Wed Apr 11 03:28:24 2018,glmboost,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,22,cv,20,3,1,5,485,no
+0.466,0.458,2.38,2.38,1.93,Wed Apr 11 03:28:30 2018,glmnet,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,6,cv,20,3,1,5,0.871915383031592,0.00106048664671902
+Fail,Fail,Fail,Fail,Fail,Wed Apr 11 03:32:53 2018,glmnet_h2o,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,262
+0.466,0.458,-1,2.38,1.93,Wed Apr 11 03:33:02 2018,glmStepAIC,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,8,cv,20,3,1,5,none
+0.466,0.458,2.38,2.38,1.93,Wed Apr 11 03:33:17 2018,icr,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,14,cv,20,3,1,5,10
+0.466,0.458,2.38,2.38,1.93,Wed Apr 11 03:33:20 2018,kernelpls,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,2,cv,20,3,1,5,3
+Fail,Fail,Fail,Fail,Fail,Wed Apr 11 03:34:42 2018,krlsPoly,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,81
+Fail,Fail,Fail,Fail,Fail,Wed Apr 11 03:57:06 2018,krlsRadial,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1344
+0.463,0.456,2.4,2.39,1.93,Wed Apr 11 03:57:11 2018,lars,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,5,cv,20,3,1,5,0.914750012569129
+0.466,0.458,2.38,2.38,1.93,Wed Apr 11 03:57:16 2018,lars2,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,2,cv,20,3,1,5,10
+0.463,0.456,2.4,2.39,1.93,Wed Apr 11 03:57:19 2018,lasso,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,2,cv,20,3,1,5,0.914750012569129
+0.466,0.458,-1,2.38,1.93,Wed Apr 11 03:57:23 2018,lm,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,1,cv,20,3,1,5,TRUE
+Fail,Fail,Fail,Fail,Fail,Wed Apr 11 03:57:48 2018,logicBag,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,25
+Fail,Fail,Fail,Fail,Fail,Wed Apr 11 03:58:10 2018,logreg,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,22
+Fail,Fail,Fail,Fail,Fail,Wed Apr 11 03:58:12 2018,M5,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1
+Fail,Fail,Fail,Fail,Fail,Wed Apr 11 03:58:13 2018,M5Rules,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1
+0.466,0.458,2.38,2.38,1.93,Wed Apr 11 04:00:25 2018,msaenet,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,131,cv,20,3,1,5,0.873275011312217,9,2.84778734005522
+0.098,0.078,4.03,4.05,3.25,Wed Apr 11 04:05:42 2018,nnet,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,316,cv,20,3,1,5,10,0.0241983426309294
+Fail,Fail,Fail,Fail,Fail,Wed Apr 11 04:05:47 2018,nnls,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,5
+Fail,Fail,Fail,Fail,Fail,Wed Apr 11 04:06:10 2018,ordinalNet,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,22
+0.769,0.762,1.04,1.04,0.832,Wed Apr 11 07:41:53 2018,parRF,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,12942,cv,20,3,1,5,4
+0.108,0.082,4.03,4.04,3.22,Wed Apr 11 07:47:40 2018,pcaNNet,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,347,cv,20,3,1,5,12,0.565196061518697
+0.447,0.439,2.48,2.47,1.99,Wed Apr 11 07:47:43 2018,pcr,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,2,cv,20,3,1,5,9
+Fail,Fail,Fail,Fail,PackageFail,Wed Apr 11 07:48:20 2018,pls,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,35
+0.466,0.458,2.38,2.38,1.93,Wed Apr 11 07:50:41 2018,plsRglm,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,140,cv,20,3,1,5,3,0.194116365956143
+0.777,0.77,1,1.01,0.804,Wed Apr 11 07:51:19 2018,ppr,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,37,cv,20,3,1,5,5
+Fail,Fail,Fail,Fail,PackageFail,Wed Apr 11 07:51:24 2018,pythonKnnReg,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,3
+0.634,0.634,1.61,1.61,1.32,Wed Apr 11 11:20:39 2018,qrf,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,12554,cv,20,3,1,5,10
+0.769,0.762,1.04,1.05,0.832,Wed Apr 11 11:25:51 2018,ranger,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,310,cv,20,3,1,5,4
+0.765,0.757,1.07,1.07,0.848,Wed Apr 11 11:40:45 2018,Rborist,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,893,cv,20,3,1,5,7
+0.466,0.458,2.38,2.38,1.93,Wed Apr 11 11:40:59 2018,relaxo,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,14,cv,20,3,1,5,1475.69104319934,0.136256825644523
+0.769,0.762,1.04,1.05,0.832,Wed Apr 11 15:05:02 2018,rf,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,12241,cv,20,3,1,5,4
+0.466,0.458,2.38,2.38,1.93,Wed Apr 11 15:06:38 2018,ridge,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,90,cv,20,3,1,5,8.42870399681927e-05
+0.466,0.458,2.38,2.38,1.93,Wed Apr 11 15:06:55 2018,rlm,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,15,cv,20,3,1,5,FALSE,psi.hampel
+0.776,0.769,1.03,1.01,0.807,Wed Apr 11 15:07:57 2018,rpart,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,60,cv,20,3,1,5,7.53040709522503e-06
+0.657,0.651,-1,1.53,1.24,Wed Apr 11 15:08:04 2018,rpart1SE,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,4,cv,20,3,1,5,none
+0.657,0.651,1.54,1.53,1.24,Wed Apr 11 15:08:09 2018,rpart2,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,5,cv,20,3,1,5,11
+0.466,0.457,2.39,2.39,1.93,Wed Apr 11 15:08:29 2018,rqlasso,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,19,cv,20,3,1,5,0.000556100377770749
+0.466,0.457,2.39,2.39,1.93,Wed Apr 11 15:09:16 2018,rqnc,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.394,4.392,random,278,45,cv,20,3,1,5,0.00112430573413676,MCP
+0.773,0.766,1.04,1.03,0.821,Thu Apr 12 05:10:09 2018,RRF,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.405,4.389,random,290,48856,cv,20,3,1,5,4,0.69325773185119,0.992832672549412
+0.773,0.766,1.04,1.03,0.82,Thu Apr 12 11:10:05 2018,RRFglobal,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.405,4.389,random,290,21593,cv,20,3,1,5,4,0.0677903483156115
+Fail,Fail,Fail,Fail,Fail,Thu Apr 12 11:11:59 2018,rvmLinear,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,112
+0.466,0.457,2.38,2.39,1.93,Thu Apr 12 11:12:13 2018,simpls,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.405,4.389,random,290,12,cv,20,3,1,5,3
+0.466,0.457,2.38,2.39,1.93,Thu Apr 12 11:12:31 2018,spikeslab,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.405,4.389,random,290,16,cv,20,3,1,5,9
+0.465,0.457,2.38,2.39,1.93,Thu Apr 12 11:12:59 2018,spls,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.405,4.389,random,290,26,cv,20,3,1,5,4,0.92670057551004,0.282935202820227
+0.265,0.272,3.14,3.21,2.65,Thu Apr 12 11:13:10 2018,superpc,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.405,4.389,random,290,8,cv,20,3,1,5,0.565870405640453,3
+Fail,Fail,Fail,Fail,Fail,Thu Apr 12 11:13:12 2018,svmBoundrangeString,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,0
+Fail,Fail,Fail,Fail,Fail,Thu Apr 12 11:13:14 2018,svmExpoString,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,0
+NA,NA,0.997,NA,NA,Sat Apr 14 22:30:42 2018,svmPoly,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,4.411,4.386,random,249,16689,cv,20,3,1,5,2,0.225484097664019,0.0559519948161159
