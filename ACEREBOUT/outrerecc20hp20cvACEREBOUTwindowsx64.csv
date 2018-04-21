@@ -4235,3 +4235,7 @@ Fail,Fail,Fail,Fail,PackageFail,Thu Apr 05 23:17:51 2018,regr.crs,1,2,4thbookerc
 0.029,0.032,-1,0.89,0.663,Thu Apr 05 23:19:26 2018,regr.elmNN,1,2,4thbookercenteredqrt0,ignore,none,asis,ACEREBOUT,rerecc20hp20cv,0.9195,0.8804,nohyperparam,321,1,cv,20,20,NA,5
 -0.014,0.046,-1,0.877,0.692,Thu Apr 05 23:19:35 2018,regr.evtree,1,2,4thbookercenteredqrt0,ignore,none,asis,ACEREBOUT,rerecc20hp20cv,0.9195,0.8804,nohyperparam,321,8,cv,20,20,NA,5
 -0.102,-0.069,-1,0.749,0.615,Sun Apr 08 15:54:30 2018,blassoAveraged,1,2,4thbookercenteredqrt0,ignore,none,asis,ACEREBOUT,rerecc20hp20cv,0.7009,0.9375,random,251,15977,cv,20,20,NA,5,none
+0.013,0.004,0.782,0.951,0.698,Mon Apr 09 08:50:58 2018,cforest,1,2,4thbookercenteredqrt0,ignore,none,asis,ACEREBOUT,rerecc20hp20cv,0.9551,0.8683,random,272,36214,cv,20,20,NA,5,1499
+0.005,-0.007,0.899,0.778,0.639,Tue Apr 10 04:22:47 2018,regr.extraTrees,1,2,4thbookercenteredqrt0,ignore,none,asis,ACEREBOUT,rerecc20hp20cv,0.7725,0.9173,random,302,106143,cv,20,20,NA,5,1471,24
+-0.006,0,0.862,0.978,0.705,Tue Apr 10 06:51:15 2018,ctree,1,2,4thbookercenteredqrt0,ignore,none,asis,ACEREBOUT,rerecc20hp20cv,0.978,0.8604,random,242,21568,cv,20,20,NA,5,0.960750725585967
+-0.18,-0.108,0.864,0.888,0.687,Wed Apr 11 05:06:29 2018,ctree2,1,2,4thbookercenteredqrt0,ignore,none,asis,ACEREBOUT,rerecc20hp20cv,0.8016,0.9158,random,269,20778,cv,20,20,NA,5,5,0.1163658965379
