@@ -98,14 +98,11 @@ Wed Apr 11 23:01:41 2018,regr.extraTrees,4thbookrcentPCA,20,20,windows,x64,ACERE
 Thu Apr 12 11:09:05 2018,regr.nnet,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
 Thu Apr 12 22:02:45 2018,gbm_h2o,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT 
 Sat Apr 14 18:11:54 2018,regr.xgboost,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-  Sun Apr 15 12:06:20 2018,regr.extraTrees,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
+Sun Apr 15 12:06:20 2018,regr.extraTrees,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
 Sun Apr 15 22:08:42 2018,regr.svm,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
 Sun Apr 15 22:13:10 2018,regr.rsm,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
 
 Tue Apr 17 23:11:39 2018,gamSpline,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
 Wed Apr 18 23:11:29 2018,regr.FDboost,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
 Fri Apr 20 21:00:46 2018,regr.nnet,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Fri Apr 20 21:01:03 2018,regr.nnet,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Fri Apr 20 21:01:58 2018,regr.nnet,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Fri Apr 20 21:02:35 2018,regr.nnet,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Fri Apr 20 21:03:50 2018,avNNet,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+
