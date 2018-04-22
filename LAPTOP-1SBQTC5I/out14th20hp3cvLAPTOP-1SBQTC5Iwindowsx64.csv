@@ -15824,3 +15824,14 @@ Fail,Fail,Fail,Fail,PackageFail,Sat Apr 21 13:28:46 2018,pls,1,1,OpenML 2dplanes
 0.5,0.464,0.156,NA,NA,Sat Apr 21 13:31:52 2018,plsRglm,1,1,OpenML 2dplanes,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,4.424,0.2883,random,322,185,cv,20,3,1,5,1,0.00355359320528805
 0.801,0.774,0.066,NA,NA,Sat Apr 21 13:34:25 2018,ppr,1,1,OpenML 2dplanes,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,4.424,0.2883,random,322,151,cv,20,3,1,5,9
 Fail,Fail,Fail,Fail,PackageFail,Sat Apr 21 13:34:32 2018,pythonKnnReg,1,1,OpenML 2dplanes,ignore,none,quantile,LAPTOP-1SBQTC5I,14th20hp3cv,4
+0.107,0.082,4.03,4.04,3.23,Sat Apr 21 16:03:27 2018,avNNet,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,4.405,4.389,random,307,1659,cv,20,3,1,5,6,0.213321908732576,FALSE
+Fail,Fail,Fail,Fail,Fail,Sat Apr 21 16:03:37 2018,bag,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,7
+0.493,0.493,2.22,2.23,1.84,Sat Apr 21 16:30:04 2018,bagEarth,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,4.405,4.389,random,307,1586,cv,20,3,1,5,6,2
+0.468,0.459,-1,2.38,1.93,Sat Apr 21 16:31:54 2018,bagEarthGCV,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,4.405,4.389,random,307,105,cv,20,3,1,5,1
+Fail,Fail,Fail,Fail,Fail,Sat Apr 21 16:32:00 2018,bartMachine,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,2
+0.468,0.459,-1,2.38,1.93,Sat Apr 21 16:32:05 2018,bayesglm,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,4.405,4.389,random,307,5,cv,20,3,1,5,none
+0.468,0.459,2.38,2.38,1.93,Sat Apr 21 16:35:24 2018,blasso,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,4.405,4.389,random,307,196,cv,20,3,1,5,0.0485147640574723
+0.468,0.459,-1,2.38,1.93,Sat Apr 21 16:38:37 2018,blassoAveraged,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,4.405,4.389,random,307,191,cv,20,3,1,5,none
+0.468,0.459,-1,2.38,1.93,Sat Apr 21 16:42:05 2018,bridge,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,4.405,4.389,random,307,205,cv,20,3,1,5,none
+0.468,0.459,2.38,2.38,1.93,Sat Apr 21 16:48:19 2018,BstLm,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,4.405,4.389,random,307,373,cv,20,3,1,5,107,0.335691503040725
+0.78,0.774,1,0.997,0.795,Sun Apr 22 15:18:28 2018,cforest,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,4.405,4.389,random,307,81006,cv,20,3,1,5,10
