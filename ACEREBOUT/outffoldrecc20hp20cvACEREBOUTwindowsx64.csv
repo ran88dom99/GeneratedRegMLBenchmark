@@ -5276,3 +5276,14 @@ Fail,Fail,Fail,Fail,Fail,Mon Apr 23 13:13:08 2018,svmSpectrumString,1,2,4thbookr
 -0.123,-0.05,0.941,0.873,0.707,Mon Apr 23 13:13:53 2018,widekernelpls,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,4,0.8315,1.026,random,245,14,cv,20,20,NA,5,2
 -0.297,-0.205,1.03,1,0.817,Mon Apr 23 13:29:56 2018,WM,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,4,0.8315,1.026,random,245,961,cv,20,20,NA,5,3,TRIANGLE
 -0.18,-0.125,0.844,0.936,0.743,Mon Apr 23 13:43:41 2018,xgbDART,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,4,0.8315,1.026,random,245,823,cv,20,20,NA,5,234,8,0.59873225001106,0.776355527341366,0.775350677315146,0.41774216722697,0.052717252864968,0.836899407929741,13
+-0.432,-0.185,0.955,1.13,0.955,Mon Apr 23 13:59:18 2018,xgbLinear,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,4,0.9558,1.001,random,319,147,cv,20,20,NA,5,85,0.837308053591799,5.96529417143363e-05,1.13037913595326
+-0.157,0.021,0.886,0.935,0.772,Mon Apr 23 14:13:31 2018,xgbTree,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,4,0.9558,1.001,random,319,850,cv,20,20,NA,5,980,3,0.216836317495443,8.70936909224838,0.366146194934845,10,0.569472303555813
+-0.075,0.035,0.898,0.923,0.717,Mon Apr 23 14:14:59 2018,xyf,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,4,0.9558,1.001,random,319,85,cv,20,20,NA,5,1,12,0.864211005968973,rectangular
+-2.227,-1.424,2.95,2.89,2.63,Mon Apr 23 14:18:40 2018,avNNet,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,5,1.191,0.9317,random,319,218,cv,20,20,NA,5,8,3.36667286144895e-05,FALSE
+Fail,Fail,Fail,Fail,Fail,Mon Apr 23 14:18:46 2018,bag,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,5,3
+0.014,0.04,0.765,1.14,0.804,Mon Apr 23 15:04:28 2018,bagEarth,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,5,1.191,0.9317,random,319,2739,cv,20,20,NA,5,14,2
+0.025,0.049,-1,1.13,0.794,Mon Apr 23 15:06:00 2018,bagEarthGCV,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,5,1.191,0.9317,random,319,65,cv,20,20,NA,5,1
+0.023,0.052,0.78,1.13,0.796,Mon Apr 23 15:23:38 2018,bartMachine,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,5,1.191,0.9317,random,319,1032,cv,20,20,NA,5,100,2.16593595803715,0.970023321150802,0.856797058135271,0.842856742674485
+-0.049,0.007,-1,1.18,0.855,Mon Apr 23 15:23:54 2018,bayesglm,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,5,1.191,0.9317,random,319,12,cv,20,20,NA,5,none
+-0.012,0.019,0.879,1.17,0.825,Mon Apr 23 15:34:09 2018,blasso,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,5,1.191,0.9317,random,319,612,cv,20,20,NA,5,0.528393474640325
+-0.014,0.018,-1,1.17,0.827,Mon Apr 23 15:45:37 2018,blassoAveraged,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,ffoldrecc20hp20cv,5,1.191,0.9317,random,319,684,cv,20,20,NA,5,none
