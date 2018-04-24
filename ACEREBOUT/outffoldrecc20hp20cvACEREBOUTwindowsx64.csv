@@ -5677,3 +5677,4 @@ Fail,Fail,Fail,Fail,Fail,Tue Apr 24 13:39:48 2018,spikeslab,1,1,4thbookrPCA,igno
 -1.372,-1.042,0.621,NA,NA,Tue Apr 24 13:42:07 2018,superpc,1,1,4thbookrPCA,ignore,none,quantile,ACEREBOUT,ffoldrecc20hp20cv,3,0.9042,0.3196,random,314,6,cv,20,20,NA,5,0.391226311214268,1
 Fail,Fail,Fail,Fail,Fail,Tue Apr 24 13:42:10 2018,svmBoundrangeString,1,1,4thbookrPCA,ignore,none,quantile,ACEREBOUT,ffoldrecc20hp20cv,3,2
 Fail,Fail,Fail,Fail,Fail,Tue Apr 24 13:42:13 2018,svmExpoString,1,1,4thbookrPCA,ignore,none,quantile,ACEREBOUT,ffoldrecc20hp20cv,3,2
+NA,NA,0.332,NA,NA,Tue Apr 24 15:00:33 2018,svmLinear,1,1,4thbookrPCA,ignore,none,quantile,ACEREBOUT,ffoldrecc20hp20cv,3,1.101,0.3133,random,279,3282,cv,20,20,NA,5,0.0604558365053891
