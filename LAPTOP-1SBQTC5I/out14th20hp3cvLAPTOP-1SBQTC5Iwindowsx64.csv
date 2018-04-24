@@ -15886,3 +15886,4 @@ Fail,Fail,Fail,Fail,PackageFail,Mon Apr 23 06:44:53 2018,pythonKnnReg,1,2,OpenML
 0.66,0.652,1.53,1.53,1.23,Mon Apr 23 13:00:48 2018,rpart2,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,4.399,4.391,random,257,5,cv,20,3,1,5,18
 0.472,0.459,2.4,2.38,1.91,Mon Apr 23 13:01:08 2018,rqlasso,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,4.399,4.391,random,257,19,cv,20,3,1,5,0.00160904990401743
 0.472,0.459,2.4,2.38,1.91,Mon Apr 23 13:01:48 2018,rqnc,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,4.399,4.391,random,257,38,cv,20,3,1,5,0.00904225291160684,SCAD
+0.771,0.764,1.04,1.04,0.829,Tue Apr 24 09:27:10 2018,RRF,1,2,OpenML 2dplanes,ignore,none,asis,LAPTOP-1SBQTC5I,14th20hp3cv,1,4.407,4.389,random,248,64375,cv,20,3,1,5,4,0.942971341311932,0.277253196341917
