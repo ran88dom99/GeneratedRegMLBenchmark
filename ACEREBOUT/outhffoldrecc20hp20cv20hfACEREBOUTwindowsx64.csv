@@ -1,0 +1,6 @@
+pMAE,pRMSE,ocvRMSE,RMSEutrans,MAEutrans,date,algomodel,trgCol,transTarg,task,missing,append,transform,pc,expirament,RMSEofMean,hpGen,randomseed,time,validmethod,tuneLength,cvcount,ignrepeats,adaptivemin,bestTune,,,,,,,,,,,,
+0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,bac latent features,ignore,none,asis,1.127,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,,
+-2,-1.224,2.94,2.8,2.5,Thu Apr 26 13:02:47 2018,avNNet,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,1.258,0.9758,random,320,282,cv,20,20,NA,5,15,1.85453342829825e-05,TRUE
+Fail,Fail,Fail,Fail,Fail,Thu Apr 26 13:02:52 2018,bag,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,4
+-0.111,-0.024,0.878,1.14,0.972,Thu Apr 26 14:39:50 2018,bagEarth,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,1.111,0.9831,random,308,3137,cv,20,20,NA,5,12,2
+-0.189,-0.123,-1,1.25,1.04,Thu Apr 26 14:41:29 2018,bagEarthGCV,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,1.111,0.9831,random,308,74,cv,20,20,NA,5,1
