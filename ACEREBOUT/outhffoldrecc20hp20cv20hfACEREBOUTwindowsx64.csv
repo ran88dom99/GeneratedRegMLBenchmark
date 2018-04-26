@@ -71,3 +71,17 @@ Fail,Fail,Fail,Fail,PackageFail,Thu Apr 26 18:18:10 2018,pythonKnnReg,1,2,4thboo
 -0.392,-0.2,0.872,0.907,0.796,Thu Apr 26 18:28:31 2018,ranger,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7559,1.002,random,304,113,cv,20,20,NA,5,42,extratrees,2
 -0.38,-0.196,0.871,0.904,0.789,Thu Apr 26 18:50:14 2018,Rborist,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7559,1.002,random,304,1302,cv,20,20,NA,5,15,2
 -6.969,-5.312,3.82,4.77,4.55,Thu Apr 26 18:51:01 2018,relaxo,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7559,1.002,random,304,45,cv,20,20,NA,5,4.40925178792601,0.213136877864599
+0.247,0.327,0.906,0.504,0.452,Thu Apr 26 19:00:30 2018,rf,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7483,1,random,264,404,cv,20,20,NA,5,16
+-0.3,-0.447,0.883,1.08,0.78,Thu Apr 26 19:01:08 2018,ridge,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7483,1,random,264,37,cv,20,20,NA,5,0.158861230874159
+-4.559,-8.007,2.89,6.74,3.34,Thu Apr 26 19:01:17 2018,rlm,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7483,1,random,264,8,cv,20,20,NA,5,TRUE,psi.huber
+-0.091,-0.008,1.06,0.754,0.655,Thu Apr 26 19:01:22 2018,rpart,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7483,1,random,264,5,cv,20,20,NA,5,0.0523161499639509
+-0.26,-0.162,-1,0.87,0.756,Thu Apr 26 19:01:26 2018,rpart1SE,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7483,1,random,264,2,cv,20,20,NA,5,none
+-0.361,-0.209,1.05,0.905,0.816,Thu Apr 26 19:01:31 2018,rpart2,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7483,1,random,264,5,cv,20,20,NA,5,4
+0.27,0.31,0.898,0.516,0.438,Thu Apr 26 19:18:02 2018,RRF,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7483,1,random,264,991,cv,20,20,NA,5,9,0.481537929037586,0.213905406882986
+-0.06,-0.038,0.897,0.776,0.636,Thu Apr 26 19:25:43 2018,RRFglobal,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7483,1,random,264,458,cv,20,20,NA,5,22,0.11045881989412
+Fail,Fail,Fail,Fail,Fail,Thu Apr 26 19:26:02 2018,rvmLinear,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,18
+Fail,Fail,Fail,Fail,Fail,Thu Apr 26 19:29:12 2018,rvmPoly,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,189
+Fail,Fail,Fail,Fail,Fail,Thu Apr 26 19:31:32 2018,rvmRadial,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,140
+0.159,-0.191,1.07,0.892,0.505,Thu Apr 26 19:44:31 2018,SBC,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7483,1,random,264,777,nohyperparameters,8,20,no rep,no min,0.5,0.5,0
+-8.121,-13.553,2.4,10.9,5.47,Thu Apr 26 19:44:35 2018,simpls,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7483,1,random,264,3,cv,20,20,NA,5,14
+0.127,0.228,0.946,0.577,0.524,Thu Apr 26 19:45:25 2018,spikeslab,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,1,0.7483,1,random,264,49,cv,20,20,NA,5,9
