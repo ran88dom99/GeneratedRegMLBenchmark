@@ -15,7 +15,7 @@ memory.limit()
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"14th20hp3cv"
 pc.mlr<-c("ACEREBOU","HOPPER")#T"ALTA","HOPPER"
-if(which.computer=="ACEREBOUT") task.subject<-"ffoldrecc20hp20cv"
+if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
 
@@ -39,7 +39,7 @@ tuneLength=20
 tuneLength2=8
 normings=c("asis","quantile","YeoJohnson","all","PCA","ICA","centernscale","expoTrans","range01")#,"centernscale"
 
-if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=5}
+if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=20;high.fold=20}
 
 gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55,44,3,1,52,57)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
