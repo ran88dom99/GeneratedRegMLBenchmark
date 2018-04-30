@@ -1,3 +1,6 @@
+!!! looks like quantiling target column causes algorithms to guess missing datum. some are amazing at this.
+this is mean median repeated all over again.
+
  mvo -- only when out?
  	cross validation in this situ
  	video
