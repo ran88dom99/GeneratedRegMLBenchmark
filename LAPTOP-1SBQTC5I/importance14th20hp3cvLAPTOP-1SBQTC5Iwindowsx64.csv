@@ -15571,3 +15571,15 @@ pcr, Mon Apr 30 11:20:58 2018, 0.454, OpenML 2dplanes, c(100, 17.7, 7.5, 2.1, 16
 plsRglm, Mon Apr 30 11:24:31 2018, 0.475, OpenML 2dplanes, c(100, 17.7, 7.5, 2.1, 16.8, 7.6, 2.3, 0, 0, 0)
 ppr, Mon Apr 30 11:25:53 2018, 0.778, OpenML 2dplanes, c(100, 17.7, 7.5, 2.1, 16.8, 7.6, 2.3, 0, 0, 0)
 qrf, Mon Apr 30 15:25:23 2018, 0.637, OpenML 2dplanes, c(100, 17.7, 7.5, 2.1, 16.8, 7.6, 2.3, 0, 0, 0)
+ranger, Mon Apr 30 15:45:21 2018, 0.771, OpenML 2dplanes, Failed
+Rborist, Mon Apr 30 15:59:32 2018, 0.765, OpenML 2dplanes, c(100, 29.4, 14.1, 2.9, 29.9, 13.7, 2.9, 0, 0, 0)
+relaxo, Mon Apr 30 15:59:48 2018, 0.138, OpenML 2dplanes, c(100, 17.5, 7.5, 2.3, 17.1, 7.4, 2, 0, 0, 0)
+rf, Mon Apr 30 20:04:50 2018, 0.771, OpenML 2dplanes, Failed
+ridge, Mon Apr 30 20:05:12 2018, 0.469, OpenML 2dplanes, c(100, 17.5, 7.5, 2.3, 17.1, 7.4, 2, 0, 0, 0)
+rlm, Mon Apr 30 20:05:18 2018, 0.469, OpenML 2dplanes, c(100, 17.5, 7.5, 2.3, 17.1, 7.4, 2, 0, 0, 0)
+rpart, Mon Apr 30 20:05:35 2018, 0.776, OpenML 2dplanes, c(25.2, 34.4, 0, 16.2, 54.2, 90.6, 41.5, 65.1, 100, 36.9)
+rpart1SE, Mon Apr 30 20:05:39 2018, 0.658, OpenML 2dplanes, c(0, 0, 23.3, 42.7, 100, 26.9, 42.5, 99.3, 26.3, 0)
+rpart2, Mon Apr 30 20:05:45 2018, 0.658, OpenML 2dplanes, c(0, 0, 23.3, 42.7, 100, 26.9, 42.5, 99.3, 26.3, 0)
+rqlasso, Mon Apr 30 20:06:06 2018, 0.468, OpenML 2dplanes, c(100, 17.5, 7.5, 2.3, 17.1, 7.4, 2, 0, 0, 0)
+rqnc, Mon Apr 30 20:06:45 2018, 0.468, OpenML 2dplanes, c(100, 17.5, 7.5, 2.3, 17.1, 7.4, 2, 0, 0, 0)
+RRF, Tue May 01 10:59:21 2018, 0.771, OpenML 2dplanes, Failed
