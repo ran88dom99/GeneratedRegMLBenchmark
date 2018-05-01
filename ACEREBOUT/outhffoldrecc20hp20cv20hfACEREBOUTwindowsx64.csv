@@ -1209,3 +1209,4 @@ Fail,Fail,Fail,Fail,Fail,Mon Apr 30 22:49:34 2018,rvmRadial,1,2,4thbookrPCA,igno
 -5.297,-4.137,3.86,4.01,3.94,Mon Apr 30 23:06:18 2018,superpc,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,0.7806,1.003,random,296,6,cv,20,20,NA,5,0.920941300457343,2
 Fail,Fail,Fail,Fail,Fail,Mon Apr 30 23:06:25 2018,svmBoundrangeString,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,2
 Fail,Fail,Fail,Fail,Fail,Mon Apr 30 23:06:32 2018,svmExpoString,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,2
+NA,NA,1.17,NA,NA,Tue May 01 01:31:24 2018,svmLinear,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,1.258,0.9758,random,294,3270,cv,20,20,NA,5,0.127714256310951
