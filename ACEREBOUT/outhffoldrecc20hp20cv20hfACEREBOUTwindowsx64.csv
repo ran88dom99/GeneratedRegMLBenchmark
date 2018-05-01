@@ -1198,3 +1198,14 @@ Fail,Fail,Fail,Fail,PackageFail,Mon Apr 30 20:50:58 2018,pythonKnnReg,1,2,4thboo
 -1.072,-0.896,-1,1.43,1.18,Mon Apr 30 21:28:19 2018,rpart1SE,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,0.7559,1.002,random,237,2,cv,20,20,NA,5,none
 -0.434,-0.45,0.913,1.1,0.819,Mon Apr 30 21:28:28 2018,rpart2,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,0.7559,1.002,random,237,4,cv,20,20,NA,5,2
 -0.235,-0.097,0.859,0.829,0.706,Mon Apr 30 21:43:17 2018,RRF,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,0.7559,1.002,random,237,883,cv,20,20,NA,5,30,0.314711285289377,0.0266000754199922
+0.184,0.198,0.904,0.626,0.51,Mon Apr 30 22:44:03 2018,RRFglobal,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,0.7806,1.003,random,296,471,cv,20,20,NA,5,4,0.76523930253461
+Fail,Fail,Fail,Fail,Fail,Mon Apr 30 22:44:28 2018,rvmLinear,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,19
+Fail,Fail,Fail,Fail,Fail,Mon Apr 30 22:47:15 2018,rvmPoly,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,162
+Fail,Fail,Fail,Fail,Fail,Mon Apr 30 22:49:34 2018,rvmRadial,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,134
+-0.017,-0.107,1.02,0.864,0.636,Mon Apr 30 23:01:41 2018,SBC,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,0.7806,1.003,random,296,722,nohyperparameters,8,20,no rep,no min,0.5,0.5,0
+-0.642,-0.783,1.36,1.39,1.03,Mon Apr 30 23:01:50 2018,simpls,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,0.7806,1.003,random,296,4,cv,20,20,NA,5,4
+0.215,0.231,0.932,0.6,0.49,Mon Apr 30 23:02:45 2018,spikeslab,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,0.7806,1.003,random,296,49,cv,20,20,NA,5,4
+-5.659,-6.448,2.27,5.81,4.16,Mon Apr 30 23:06:06 2018,spls,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,0.7806,1.003,random,296,195,cv,20,20,NA,5,25,0.937827316112816,0.396846065646969
+-5.297,-4.137,3.86,4.01,3.94,Mon Apr 30 23:06:18 2018,superpc,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,0.7806,1.003,random,296,6,cv,20,20,NA,5,0.920941300457343,2
+Fail,Fail,Fail,Fail,Fail,Mon Apr 30 23:06:25 2018,svmBoundrangeString,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,2
+Fail,Fail,Fail,Fail,Fail,Mon Apr 30 23:06:32 2018,svmExpoString,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,2
