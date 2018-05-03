@@ -15630,3 +15630,21 @@ msaenet, Wed May 02 15:05:13 2018, 0.464, OpenML 2dplanes, 0.5
 msaenet, Wed May 02 15:05:13 2018, 0.464, OpenML 2dplanes, 0
 msaenet, Wed May 02 15:05:13 2018, 0.464, OpenML 2dplanes, 0
 nnet, Wed May 02 15:10:42 2018, 0.095, OpenML 2dplanes, c(100, 52.3, 28.2, 13.3, 0.8, 0.5, 11.8, 0, 4.1, 16.5)
+parRF, Wed May 02 18:38:35 2018, 0.773, OpenML 2dplanes, Failed
+pcaNNet, Wed May 02 18:44:43 2018, 0.11, OpenML 2dplanes, c(100, 18.2, 7.7, 2.3, 16.5, 7.5, 2.1, 0, 0, 0)
+pcr, Wed May 02 18:44:47 2018, 0.469, OpenML 2dplanes, c(100, 18.2, 7.7, 2.3, 16.5, 7.5, 2.1, 0, 0, 0)
+plsRglm, Wed May 02 18:47:42 2018, 0.469, OpenML 2dplanes, c(100, 18.2, 7.7, 2.3, 16.5, 7.5, 2.1, 0, 0, 0)
+ppr, Wed May 02 18:48:31 2018, 0.778, OpenML 2dplanes, c(100, 18.2, 7.7, 2.3, 16.5, 7.5, 2.1, 0, 0, 0)
+qrf, Wed May 02 22:09:49 2018, 0.637, OpenML 2dplanes, c(100, 18.2, 7.7, 2.3, 16.5, 7.5, 2.1, 0, 0, 0)
+ranger, Wed May 02 22:15:30 2018, 0.773, OpenML 2dplanes, Failed
+Rborist, Wed May 02 22:26:32 2018, 0.764, OpenML 2dplanes, c(100, 26.6, 12.3, 2.5, 27.3, 11.9, 2.4, 0, 0, 0)
+relaxo, Wed May 02 22:26:47 2018, 0.469, OpenML 2dplanes, c(100, 18.2, 7.7, 2.3, 16.5, 7.5, 2.1, 0, 0, 0)
+rf, Thu May 03 01:22:05 2018, 0.773, OpenML 2dplanes, Failed
+ridge, Thu May 03 01:23:03 2018, 0.469, OpenML 2dplanes, c(100, 18.2, 7.7, 2.3, 16.5, 7.5, 2.1, 0, 0, 0)
+rlm, Thu May 03 01:23:10 2018, 0.469, OpenML 2dplanes, c(100, 18.2, 7.7, 2.3, 16.5, 7.5, 2.1, 0, 0, 0)
+rpart, Thu May 03 01:23:26 2018, 0.779, OpenML 2dplanes, c(1.5, 0, 0, 10.5, 48.7, 95.5, 12.3, 57.5, 100, 0.4)
+rpart1SE, Thu May 03 01:23:29 2018, 0.654, OpenML 2dplanes, c(0.2, 0, 23.4, 42.9, 100, 26.8, 42.9, 99, 26, 0.1)
+rpart2, Thu May 03 01:23:35 2018, 0.654, OpenML 2dplanes, c(0.2, 0, 23.4, 42.9, 100, 26.8, 42.9, 99, 26, 0.1)
+rqlasso, Thu May 03 01:23:54 2018, 0.469, OpenML 2dplanes, c(100, 18.2, 7.7, 2.3, 16.5, 7.5, 2.1, 0, 0, 0)
+rqnc, Thu May 03 01:24:31 2018, 0.469, OpenML 2dplanes, c(100, 18.2, 7.7, 2.3, 16.5, 7.5, 2.1, 0, 0, 0)
+RRF, Thu May 03 13:57:27 2018, 0.773, OpenML 2dplanes, Failed
