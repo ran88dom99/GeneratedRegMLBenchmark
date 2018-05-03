@@ -1621,3 +1621,12 @@ Fail,Fail,Fail,Fail,Fail,Wed May 02 12:44:22 2018,rvmRadial,1,2,4thbookrPCA,igno
 -6.076,-4.447,3.87,4.12,4.04,Wed May 02 13:04:44 2018,superpc,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,16,0.7559,1.002,random,286,6,cv,20,20,NA,5,0.968598580686375,2
 Fail,Fail,Fail,Fail,Fail,Wed May 02 13:04:52 2018,svmBoundrangeString,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,16,2
 Fail,Fail,Fail,Fail,Fail,Wed May 02 13:05:01 2018,svmExpoString,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,16,2
+-0.288,-0.163,0.891,0.879,0.736,Wed May 02 21:15:42 2018,svmLinear3,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,16,0.7559,1.002,random,229,23,cv,20,20,NA,5,2.95815996187241,L1
+NA,NA,0.87,NA,NA,Wed May 02 21:16:10 2018,svmPoly,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,16,0.7559,1.002,random,229,20,cv,20,20,NA,5,1,0.00868911629530649,1.31425119556935
+NA,NA,0.87,NA,NA,Wed May 02 21:16:33 2018,svmRadial,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,16,0.7559,1.002,random,229,16,cv,20,20,NA,5,0.00147352074756495,6.55452282753615
+NA,NA,0.896,NA,NA,Wed May 02 21:16:57 2018,svmRadialCost,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,16,0.7559,1.002,random,229,16,cv,20,20,NA,5,2.91752821622906
+NA,NA,0.87,NA,NA,Wed May 02 21:17:20 2018,svmRadialSigma,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,16,0.7559,1.002,random,229,16,cv,20,20,NA,5,0.00147352074756495,6.55452282753615
+Fail,Fail,Fail,Fail,Fail,Wed May 02 21:17:28 2018,svmSpectrumString,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,16,2
+-0.176,-0.163,-1,0.879,0.672,Wed May 02 21:17:49 2018,treebag,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,16,0.7559,1.002,random,229,14,cv,20,20,NA,5,none
+-0.311,-0.164,0.867,0.88,0.749,Wed May 02 21:18:31 2018,widekernelpls,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,16,0.7559,1.002,random,229,21,cv,20,20,NA,5,1
+-0.127,-0.185,0.971,0.896,0.644,Wed May 02 21:39:46 2018,WM,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,16,0.7559,1.002,random,229,1268,cv,20,20,NA,5,20,GAUSSIAN
