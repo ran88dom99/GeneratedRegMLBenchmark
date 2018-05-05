@@ -2125,3 +2125,17 @@ Fail,Fail,Fail,Fail,Fail,Fri May 04 23:27:42 2018,bam,1,2,4thbookrPCA,ignore,non
 Fail,Fail,Fail,Fail,Fail,Fri May 04 23:30:40 2018,gam,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,9,111
 -0.903,-0.757,1.04,1.33,1.09,Fri May 04 23:32:30 2018,leapSeq,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,9,0.7559,1.002,random,268,15,cv,20,20,NA,5,8
 Fail,Fail,Fail,Fail,Fail,Fri May 04 23:43:43 2018,bam,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,10,444
+Fail,Fail,Fail,Fail,Fail,Sat May 05 00:23:12 2018,gam,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,10,114
+0.325,0.369,1.31,0.477,0.386,Sat May 05 00:25:15 2018,leapSeq,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,10,0.7559,1.002,random,249,16,cv,20,20,NA,5,20
+Fail,Fail,Fail,Fail,Fail,Sat May 05 00:37:34 2018,bam,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,11,478
+Fail,Fail,Fail,Fail,Fail,Sat May 05 00:40:46 2018,gam,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,11,111
+-0.549,-0.614,1.13,1.69,1.33,Sat May 05 00:42:59 2018,leapSeq,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,11,1.05,0.9852,random,249,16,cv,20,20,NA,5,30
+Fail,Fail,Fail,Fail,Fail,Sat May 05 00:55:47 2018,bam,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,479
+Fail,Fail,Fail,Fail,Fail,Sat May 05 00:59:06 2018,gam,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,111
+-0.487,-0.427,1.26,1.08,0.85,Sat May 05 01:01:29 2018,leapSeq,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,12,0.7559,1.002,random,249,15,cv,20,20,NA,5,15
+Fail,Fail,Fail,Fail,Fail,Sat May 05 01:14:37 2018,bam,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,13,478
+Fail,Fail,Fail,Fail,Fail,Sat May 05 01:18:03 2018,gam,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,13,111
+-0.668,-1.209,1.01,1.72,1.04,Sat May 05 01:20:36 2018,leapSeq,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,13,0.7806,1.003,random,249,15,cv,20,20,NA,5,15
+Fail,Fail,Fail,Fail,Fail,Sat May 05 01:34:15 2018,bam,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,14,479
+Fail,Fail,Fail,Fail,Fail,Sat May 05 01:37:49 2018,gam,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,14,112
+-0.024,0.089,1.16,0.902,0.732,Sat May 05 01:40:33 2018,leapSeq,1,2,4thbookrPCA,ignore,none,asis,ACEREBOUT,hffoldrecc20hp20cv20hf,14,0.9897,0.9918,random,249,15,cv,20,20,NA,5,21
