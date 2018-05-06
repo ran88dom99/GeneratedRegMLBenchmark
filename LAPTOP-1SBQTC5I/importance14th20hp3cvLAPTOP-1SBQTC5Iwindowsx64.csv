@@ -15701,3 +15701,15 @@ pcaNNet, Sat May 05 15:19:56 2018, 0.11, OpenML 2dplanes, c(100, 17.6, 7.3, 2.2,
 pcr, Sat May 05 15:20:04 2018, 0.465, OpenML 2dplanes, c(100, 17.6, 7.3, 2.2, 17.3, 7.3, 2.1, 0, 0, 0)
 plsRglm, Sat May 05 15:23:46 2018, 0.471, OpenML 2dplanes, c(100, 17.6, 7.3, 2.2, 17.3, 7.3, 2.1, 0, 0, 0)
 ppr, Sat May 05 15:24:42 2018, 0.776, OpenML 2dplanes, c(100, 17.6, 7.3, 2.2, 17.3, 7.3, 2.1, 0, 0, 0)
+qrf, Sat May 05 20:03:35 2018, 0.638, OpenML 2dplanes, c(100, 17.5, 7.5, 2.3, 17.1, 7.4, 2, 0, 0, 0)
+ranger, Sat May 05 20:11:51 2018, 0.771, OpenML 2dplanes, Failed
+Rborist, Sat May 05 20:26:11 2018, 0.765, OpenML 2dplanes, c(100, 29.4, 14.1, 2.9, 29.9, 13.7, 2.9, 0, 0, 0)
+relaxo, Sat May 05 20:26:31 2018, 0.469, OpenML 2dplanes, c(100, 17.5, 7.5, 2.3, 17.1, 7.4, 2, 0, 0, 0)
+rf, Sun May 06 00:26:15 2018, 0.771, OpenML 2dplanes, Failed
+ridge, Sun May 06 00:26:45 2018, 0.469, OpenML 2dplanes, c(100, 17.5, 7.5, 2.3, 17.1, 7.4, 2, 0, 0, 0)
+rlm, Sun May 06 00:26:52 2018, 0.469, OpenML 2dplanes, c(100, 17.5, 7.5, 2.3, 17.1, 7.4, 2, 0, 0, 0)
+rpart, Sun May 06 00:27:12 2018, 0.776, OpenML 2dplanes, c(25.2, 34.4, 0, 16.2, 54.2, 90.6, 41.5, 65.1, 100, 36.9)
+rpart1SE, Sun May 06 00:27:16 2018, 0.658, OpenML 2dplanes, c(0, 0, 23.3, 42.7, 100, 26.9, 42.5, 99.3, 26.3, 0)
+rpart2, Sun May 06 00:27:22 2018, 0.658, OpenML 2dplanes, c(0, 0, 23.3, 42.7, 100, 26.9, 42.5, 99.3, 26.3, 0)
+rqlasso, Sun May 06 00:27:44 2018, 0.468, OpenML 2dplanes, c(100, 17.5, 7.5, 2.3, 17.1, 7.4, 2, 0, 0, 0)
+rqnc, Sun May 06 00:28:21 2018, 0.468, OpenML 2dplanes, c(100, 17.5, 7.5, 2.3, 17.1, 7.4, 2, 0, 0, 0)
