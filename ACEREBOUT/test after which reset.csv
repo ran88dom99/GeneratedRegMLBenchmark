@@ -41,10 +41,5 @@ Sun Jan 28 15:32:42 2018,regr.rknn,bas interactive latent features,3,20,windows,
 Thu Feb 22 14:33:54 2018,qrnn,bas interactive latent features,3,20,windows,x64,ACEREBOUT
 Sat Mar 10 16:42:32 2018,qrnn,bas interactive latent features,3,20,windows,x64,ACEREBOUT
 
-Fri May 04 13:47:57 2018,pcaNNet,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Fri May 04 15:46:06 2018,rqlasso,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Fri May 04 17:46:06 2018,rqlasso,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Fri May 04 19:46:08 2018,rqnc,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Fri May 04 21:46:02 2018,rqnc,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Fri May 04 23:46:03 2018,gam,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sat May 05 01:45:55 2018,xgbLinear,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+
+Sat May 05 13:46:50 2018,rf,4thbookrPCA,20,20,windows,x64,ACEREBOUT
