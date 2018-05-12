@@ -1,5 +1,14 @@
-!!! looks like quantiling target column causes algorithms to guess missing datum. some are amazing at this.
-this is mean median repeated all over again.
+quantiling now over entire dataset and y removed. 
+	Should I make a fold based quantiling preprocessor?
+	BC looks like quantiling target column causes algorithms to guess missing datum. some are amazing at this.
+why did testing not include testing[,-1]????
+####WHY MOD NOT M!!! in mlr and hyperopt 
+
+NDR? isomap?
+
+cns & range on y 's percent RMSE is actualy interchangble with non ys. YeoJ Exp and Quant are not. Get back to this on de-transform?
+all explan var transforms are based on entire dataset. maybe should make cns on only data algo should know?
+Caret has this right? but what about mlr?
 
  mvo -- only when out?
  	cross validation in this situ
@@ -7,6 +16,29 @@ this is mean median repeated all over again.
  	all simple datasets
  	speech
 	basic classification?
+
+Left over failures:
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:15:30 2018,gam,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,11
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:18:15 2018,gaussprLinear,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,7
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:18:33 2018,gaussprRadial,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,10
+-Fail,Fail,Fail,Fail,Fail,Thu May 03 07:22:39 2018,gbm_h2o,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,1,222,209
+-Fail,Fail,Fail,Fail,Fail,Thu May 03 07:26:57 2018,glmnet_h2o,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,1,222,207
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:22:59 2018,glm.nb,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,9
+Fail,Fail,Fail,Fail,PackageFail,Thu May 03 07:29:19 2018,logicBag,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,12
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:29:23 2018,logreg,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,3,222,4
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:30:10 2018,mlpKerasDecay,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,3,222,3
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:30:14 2018,mlpKerasDropout,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,6,222,4
+Fail,Fail,Fail,Fail,PackageFail,Thu May 03 07:30:51 2018,mxnet,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,12
+Fail,Fail,Fail,Fail,PackageFail,Thu May 03 07:31:05 2018,mxnetAdam,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,12
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:31:28 2018,nnls,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,7
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:31:42 2018,ordinalNet,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,9
+Fail,Fail,Fail,Fail,PackageFail,Thu May 03 07:32:37 2018,pls,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,12
+Fail,Fail,Fail,Fail,PackageFail,Thu May 03 07:33:36 2018,pythonKnnReg,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,12
+-Thu May 03 13:58:37 2018,svmBoundrangeString,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,3,222,3
+-Thu May 03 13:58:42 2018,svmExpoString,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,6,222,3
+-Thu May 03 14:05:14 2018,svmSpectrumString,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,3,222,4
+
+sd of 3 or 4 columns as gentest
 
  feed the computator
  	combine
@@ -37,7 +69,9 @@ cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
 	TASK
 	more?
 	
- big.pca
+ big.pca. online pca
+ educationality score ? 
+ 
  
  For more see self selection bias: https://arxiv.org/pdf/1602.05352v1.pdf https://en.wikipedia.org/wiki/Missing_data
  attacks:https://www.aaai.org/Papers/AAAI/2005/AAAI05-053.pdf "Recommender Systems for Self-Actualization"
@@ -83,6 +117,8 @@ FOR EACH asis cent-.1 & min in common & fold
 	stack correls
 		with MLs
 	
+RMSE.mean.train=signif(RMSE(training[,1],train.based.mean), digits = 4) is useless? or just complete juxtaposition to RMSE.mean
+
 ###CORREL DEPENDS ON number of items rated in common reproduce
 ###RECLAB ADD 3rd TO ML sheet
  
