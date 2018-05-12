@@ -4,6 +4,8 @@ quantiling now over entire dataset and y removed.
 why did testing not include testing[,-1]????
 ####WHY MOD NOT M!!! in mlr and hyperopt 
 
+NDR? isomap?
+
 cns & range on y 's percent RMSE is actualy interchangble with non ys. YeoJ Exp and Quant are not. Get back to this on de-transform?
 all explan var transforms are based on entire dataset. maybe should make cns on only data algo should know?
 Caret has this right? but what about mlr?

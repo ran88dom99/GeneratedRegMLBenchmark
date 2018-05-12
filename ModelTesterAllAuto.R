@@ -41,7 +41,7 @@ normings=c("YeoJohnson","quantile","all","asis","PCA","ICA","centernscale","expo
 
 if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=20;high.fold=20}
 
-gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55,44,3,1,52,57)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55,44,3,1,57)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
 write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 try({
