@@ -40,99 +40,16 @@ Sun Jan 28 15:31:52 2018,regr.rknn,bas interactive latent features,3,20,windows,
 Sun Jan 28 15:32:42 2018,regr.rknn,bas interactive latent features,3,20,windows,x64,ACEREBOUT
 Thu Feb 22 14:33:54 2018,qrnn,bas interactive latent features,3,20,windows,x64,ACEREBOUT
 Sat Mar 10 16:42:32 2018,qrnn,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Sat Mar 10 23:19:00 2018,RRFglobal,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Sat Mar 10 23:20:10 2018,nnet,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Sun Mar 11 17:07:27 2018,extraTrees,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Sun Mar 11 18:12:55 2018,kknn,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Sun Mar 11 18:14:24 2018,rf,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Sun Mar 11 18:18:25 2018,spikeslab,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Sun Mar 11 18:26:37 2018,plsRglm,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Sun Mar 11 18:44:40 2018,bridge,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Mon Mar 12 16:05:22 2018,extraTrees,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Mon Mar 12 16:45:44 2018,superpc,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Mon Mar 12 16:48:56 2018,nnls,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Mon Mar 12 16:56:02 2018,svmPoly,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Tue Mar 13 17:30:00 2018,bam,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Tue Mar 13 18:31:34 2018,cubist,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Tue Mar 13 18:46:41 2018,bam,bas interactive latent features,3,20,windows,x64,ACEREBOUT
 
-Tue Mar 13 19:00:53 2018,evtree,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Tue Mar 13 22:25:21 2018,bam,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Tue Mar 13 23:19:59 2018,bam,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Wed Mar 14 09:23:14 2018,gam,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Wed Mar 14 10:30:12 2018,gam,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Wed Mar 14 12:56:40 2018,leapSeq,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Wed Mar 14 13:12:45 2018,leapSeq,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Sat Mar 17 20:08:19 2018,avNNet,4thbookercenteredqrt0,3,20,windows,x64,ACEREBOUT
-Sat Mar 17 21:04:12 2018,enet,4thbookercenteredqrt0,3,20,windows,x64,ACEREBOUT
-Sat Mar 17 21:45:07 2018,gbm_h2o,4thbookerbooks,3,20,windows,x64,ACEREBOUT
-Sat Mar 17 23:02:45 2018,spikeslab,4thbookercenterbooks,20,20,windows,x64,ACEREBOUT
-Sat Mar 17 23:18:04 2018,svmLinear2,4thbookercenterbooks,20,20,windows,x64,ACEREBOUT
-Sun Mar 18 14:06:40 2018,pls,4thbookercenterbooks,20,20,windows,x64,ACEREBOUT
-Sun Mar 18 14:11:50 2018,avNNet,4thbookercenterbooks,20,20,windows,x64,ACEREBOUT
-Sun Mar 18 15:41:49 2018,svmBoundrangeString,4thbookercenterbooks,20,20,windows,x64,ACEREBOUT
-Sun Mar 18 21:44:59 2018,cubist,4thbookercenterbooks,20,20,windows,x64,ACEREBOUT
-Mon Mar 19 15:54:22 2018,svmLinear2,4thbookerbooks,20,20,windows,x64,ACEREBOUT
-Mon Mar 19 16:03:05 2018,regr.btlm,4thbookerbooks,20,20,windows,x64,ACEREBOUT
-Tue Mar 20 11:18:54 2018,rqlasso,4thbookerbooks,20,20,windows,x64,ACEREBOUT
-Tue Mar 20 14:47:52 2018,regr.brnn,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT
-Tue Mar 20 16:32:00 2018,SBC,4thbookercenterbooks,20,20,windows,x64,ACEREBOUT
-Tue Mar 20 18:03:09 2018,nnet,4thbookercenterbooks,20,20,windows,x64,ACEREBOUT
-Wed Mar 21 17:05:25 2018,Rborist,4thbookercenterbooks,20,20,windows,x64,ACEREBOUT
-Wed Mar 21 17:06:24 2018,regr.bcart,4thbookercenterbooks,20,20,windows,x64,ACEREBOUT
-Thu Mar 22 11:32:08 2018,svmLinear,4thbookercenterbooks,20,20,windows,x64,ACEREBOUT
-Thu Mar 22 14:16:20 2018,regr.xgboost,4thbookercenterbooks,20,20,windows,x64,ACEREBOUT
-Thu Mar 22 14:36:41 2018,regr.h2o.glm,4thbookerbooks,20,20,windows,x64,ACEREBOUT
-Thu Mar 22 14:38:43 2018,blassoAveraged,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu Mar 22 14:40:52 2018,kernelpls,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu Mar 22 16:02:24 2018,regr.h2o.glm,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu Mar 22 16:05:12 2018,regr.blackboost,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-Thu Mar 22 21:14:33 2018,regr.blackboost,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-Thu Mar 22 21:15:00 2018,regr.blackboost,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT 
-Wed Apr 11 18:02:10 2018,cubist,4thbookercenteredqrt0,20,20,windows,x64,ACEREBOUT
-Wed Apr 11 18:08:11 2018,regr.extraTrees,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-Wed Apr 11 19:22:09 2018,regr.nodeHarvest,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-Wed Apr 11 19:23:29 2018,regr.randomForestSRC,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-Wed Apr 11 20:15:02 2018,regr.bartMachine,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-Wed Apr 11 23:01:41 2018,regr.extraTrees,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-Thu Apr 12 11:09:05 2018,regr.nnet,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-Thu Apr 12 22:02:45 2018,gbm_h2o,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT 
-Sat Apr 14 18:11:54 2018,regr.xgboost,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-Sun Apr 15 12:06:20 2018,regr.extraTrees,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-Sun Apr 15 22:08:42 2018,regr.svm,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-Sun Apr 15 22:13:10 2018,regr.rsm,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
 
-Tue Apr 17 23:11:39 2018,gamSpline,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-Wed Apr 18 23:11:29 2018,regr.FDboost,4thbookrcentPCA,20,20,windows,x64,ACEREBOUT
-Fri Apr 20 21:00:46 2018,regr.nnet,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sat Apr 21 13:46:03 2018,rqnc,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sat Apr 21 19:46:17 2018,rqlasso,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sun Apr 22 13:46:36 2018,rqlasso,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sun Apr 22 15:46:13 2018,rqnc,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sun Apr 22 17:46:13 2018,rqnc,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Mon Apr 23 13:47:27 2018,xgbLinear,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Mon Apr 23 15:46:15 2018,bridge,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Mon Apr 23 17:46:16 2018,krlsRadial,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Mon Apr 23 19:46:03 2018,svmLinear,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Mon Apr 23 21:46:03 2018,xgbTree,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Tue Apr 24 13:47:07 2018,svmLinear,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Tue Apr 24 15:46:22 2018,svmLinear2,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Tue Apr 24 17:46:11 2018,bagEarth,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu Apr 26 12:56:20 2018,extraTrees,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu Apr 26 13:46:47 2018,bagEarth,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu Apr 26 14:53:22 2018,bartMachine,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu Apr 26 15:46:11 2018,BstLm,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu Apr 26 16:53:23 2018,gamSpline,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu Apr 26 17:46:03 2018,krlsRadial,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu Apr 26 18:53:22 2018,rf,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu Apr 26 19:46:02 2018,spls,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu Apr 26 21:46:08 2018,svmLinear2,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu Apr 26 23:46:29 2018,bagEarth,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Fri Apr 27 13:47:36 2018,svmLinear,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sat Apr 28 13:47:11 2018,xyf,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sat Apr 28 15:46:06 2018,blasso,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sat Apr 28 17:46:03 2018,gbm,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sat Apr 28 19:46:04 2018,RRF,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sat Apr 28 21:46:02 2018,svmLinear2,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sat Apr 28 23:46:03 2018,xgbTree,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sun Apr 29 01:45:56 2018,bagEarth,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+Sat May 05 13:46:50 2018,rf,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+Sun May 06 13:48:31 2018,xgbTree,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+Sun May 06 23:14:10 2018,rqlasso,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+Mon May 07 13:46:18 2018,rqlasso,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+Tue May 08 13:46:08 2018,ppr,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+Tue May 08 15:46:24 2018,Rborist,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+Wed May 09 13:46:21 2018,krlsRadial,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+Wed May 09 15:46:10 2018,rqnc,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+Thu May 10 13:46:04 2018,rqnc,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+Thu May 10 15:46:18 2018,Rborist,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+Fri May 11 13:46:44 2018,xgbTree,4thbookrPCA,20,20,windows,x64,ACEREBOUT
