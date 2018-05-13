@@ -4269,3 +4269,6 @@ Succ, Wed Apr 04 02:13:40 2018, bagEarth
 Succ, Wed Apr 04 02:18:46 2018, bagEarthGCV
 Fail, Thu Apr 05 23:27:55 2018, BstLm
 Fail, Sun Apr 08 18:51:30 2018, cforest
+Fail, Sat May 12 14:40:04 2018, regr.bartMachine
+Fail, Sat May 12 14:40:08 2018, regr.bcart
+Fail, Sat May 12 14:40:09 2018, regr.bdk

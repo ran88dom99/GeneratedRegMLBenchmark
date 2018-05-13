@@ -13,8 +13,8 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 memory.limit()
 which.computer<-Sys.info()[['nodename']]
-task.subject<-"14th20hp3cv"
-pc.mlr<-c("ACEREBOU","HOPPER")#T"ALTA","HOPPER"
+task.subject<-"15th10hp10cvml"
+pc.mlr<-c("ACEREBOU","HOPPER","ALTA")#T,"HOPPER"
 if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
@@ -25,8 +25,8 @@ cpout.folder<-paste(base.folder,"/",which.computer,sep = "")
 setwd(cpout.folder)
 
 if(length(which(list.files() == out.file))<1){
-  write.table("pMAE,pRMSE,ocvRMSE,RMSEutrans,MAEutrans,date,algomodel,trgCol,transTarg,task,missing,append,transform,pc,expirament,RMSEofMean,hpGen,randomseed,time,validmethod,tuneLength,cvcount,ignrepeats,adaptivemin,bestTune,,,,,,,,,,,," ,file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
-  write.table("0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,bac latent features,ignore,none,asis,1.127,random,333,53,adaptive_cv,16,5,2,2,19,0.0107744822639878,FALSE,,,,,,,,,," ,file =,out.file,append=T,quote = F, sep = ",", row.names = F,col.names = F)
+  write.table("pMAE,pRMSE,ocvRMSE,RMSEutrans,MAEutrans,date,algomodel,trgCol,transTarg,task,missing,append,transform,pc,expirament,fold,maxfold,seed,seedit,foldseed,RMSEmean,RMSEmeantrain,hpGen,time,validmethod,tuneLength,cvcount,ignrepeats,adaptivemin,bestTuneparams,btp1,btp2,btp3,btp4,btp5,btp6,btp7,btp8,btp9,btp10,btp11 ",file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
+  write.table("0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,bac latent features,ignore,none,asis,CLOUD,10hp10cv,1,5,403,624,222,0.9,0.9284,random,434,cv,10,10,NA,5,15,1.3312352844514,0.968602964049205,1.30087468028069,1.36411243351176,,," ,file =,out.file,append=T,quote = F, sep = ",", row.names = F,col.names = F)
   }
 if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,".csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
@@ -34,14 +34,14 @@ if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) wri
 
 high.fold=5
 min.high.fold=1
-cv.iters=3
-tuneLength=20
-tuneLength2=8
-normings=c("asis","quantile","YeoJohnson","all","PCA","ICA","centernscale","expoTrans","range01")#,"centernscale"
+cv.iters=10
+tuneLength=10
+tuneLength2=4
+normings=c("YeoJohnson","quantile","all","asis","PCA","ICA","centernscale","expoTrans","range01")#,"centernscale"
 
 if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=20;high.fold=20}
 
-gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55,44,3,1,52,57)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55,44,3,1,57)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
 write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 try({
@@ -166,7 +166,7 @@ if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 tuneLengthMLR<-tuneLength
 mlr.iters<-cv.iters
 #######data read process start#####
-seed.var =222+round(runif(1,min=0,max=100))
+seed.var =222 #folds must be kept the same so no +round(runif(1,min=0,max=100)) for main
 column.to.predict=1
 print(date());
 
@@ -187,8 +187,9 @@ for(gend.data in gensTTest){
       ################data wrestling###############
 
       dependant.selection=complete.cases(data.source[,column.to.predict])
-      df.previous.calcs=as.data.frame(read.csv(file=out.file, header = TRUE, sep = ",", quote = "",
-                                               dec = ".", fill = TRUE, comment.char = ""))
+      
+      
+      df.previous.calcs=as.data.frame(read.csv(file=out.file, header = T, sep = ",", quote = "",   dec = ".", fill = TRUE, comment.char = ""))
       unimportant.computations<-vector(mode = "logical",length=length(df.previous.calcs[,1])  )
       for(intern in 1:length(df.previous.calcs[,1])){
         if((any(df.previous.calcs[intern,] == withextra, na.rm=T))&&
@@ -196,7 +197,6 @@ for(gend.data in gensTTest){
            (any(df.previous.calcs[intern,] == datasource, na.rm=T))&&
            (any(df.previous.calcs[intern,] == column.to.predict, na.rm=T)))
         {unimportant.computations[intern]<-T}}
-
       df.previous.calcs<-df.previous.calcs[unimportant.computations,]
 
       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
@@ -215,28 +215,53 @@ for(gend.data in gensTTest){
           if((norming=="all")&&(trans.y==1)){next}
           if((norming=="ICA")&&(trans.y==1)){next}
           if((norming=="PCA")&&(trans.y==1)){next}
-          y.untransformed<-df.toprocess[,1]
+          #the three below are all TODOs
+          if((norming=="quantile")&&(trans.y==1)){next}
+          if((norming=="YeoJohnson")&&(trans.y==1)){next}
+          if((norming=="expoTrans")&&(trans.y==1)){next}
+          y.untransformed<-df.toprocess[dependant.selection,1]
           l.df.tp<-length(df.toprocess[1,])
 
           if(norming=="centernscale"){
-            preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("center", "scale"))
-            df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])}
+            preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("center", "scale"))
+            df.toprocess[,2:l.df.tp]<- predict(preProcValues, df.toprocess[,2:l.df.tp])}
           if(norming=="range01"){
-            preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("range"))
-            df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])}
+            preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("range"))
+            df.toprocess[,2:l.df.tp]<- predict(preProcValues, df.toprocess[,2:l.df.tp])}
           if(norming=="expoTrans"){
-            preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("expoTrans"))
-            df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])}
+            preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("expoTrans"))
+            df.toprocess[,2:l.df.tp]<- predict(preProcValues, df.toprocess[,2:l.df.tp])}
           if(norming=="YeoJohnson"){
-            preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("YeoJohnson"))#"center", "scale",
-            df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])}
+            preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("YeoJohnson"))#"center", "scale",
+            df.toprocess[,2:l.df.tp]<- predict(preProcValues, df.toprocess[,2:l.df.tp])}
+          Q_Fail<-T #I expect ICA to crash horribly so testing for fail and NA
+          try({
+            if(norming=="ICA"){
+              preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("ica"),n.comp=8)#"center", "scale",
+              df.toprocess<-cbind(df.toprocess,predict(preProcValues, df.toprocess[,2:l.df.tp]))}
+            Q_Fail<-F
+          })
+          if(norming=="ICA"){
+            if(Q_Fail || anyNA(df.toprocess)){next;print("icafail")}}
+          
+          Q_Fail<-T #I expect PCA to crash horribly so testing for fail and NA
+          try({
+            if(norming=="PCA"){
+              preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("pca"))#"center", "scale",
+              df.toprocess <-cbind(df.toprocess,predict(preProcValues, df.toprocess[,2:l.df.tp]))
+            }
+            Q_Fail<-F
+          })
+          if(norming=="PCA"){
+            if(Q_Fail || anyNA(df.toprocess)){next}}
+          
+          ###### ALL
           if(norming=="all"){
             df.toprocessFA<-df.toprocess[,2:l.df.tp]
             preProcValueYJ= preProcess(df.toprocess[,2:l.df.tp],method = c("YeoJohnson"))
             preProcValueET= preProcess(df.toprocess[,2:l.df.tp],method = c("expoTrans"))
             preProcValue01= preProcess(df.toprocess[,2:l.df.tp],method = c("range"))
             preProcValuecns= preProcess(df.toprocess[,2:l.df.tp],method = c("center", "scale"))
-
             Q_Fail<-T #I expect ICA to crash horribly so testing for fail and NA
             try({
               preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("ica"),n.comp=10)#"center", "scale",
@@ -266,68 +291,94 @@ for(gend.data in gensTTest){
                                  deparse.level = 1)
           }
 
-          Q_Fail<-T #I expect ICA to crash horribly so testing for fail and NA
-          try({
-            if(norming=="ICA"){
-              preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("ica"),n.comp=3)#"center", "scale",
-              df.toprocess<-cbind(df.toprocess,predict(preProcValues, df.toprocess[,trans.y:l.df.tp]))}
-            Q_Fail<-F
-          })
-          if(norming=="ICA"){
-            if(Q_Fail || anyNA(df.toprocess)){next;print("icafail")}}
-
-          Q_Fail<-T #I expect PCA to crash horribly so testing for fail and NA
-          try({
-            if(norming=="PCA"){
-              preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("pca"))#"center", "scale",
-              df.toprocess <-cbind(df.toprocess,predict(preProcValues, df.toprocess[,trans.y:l.df.tp]))
-              }
-            Q_Fail<-F
-          })
-          if(norming=="PCA"){
-            if(Q_Fail || anyNA(df.toprocess)){next}}
-
+          if(norming=="quantile"){
+            for(Clol in 2:l.df.tp){
+              df.toprocess[,Clol]<- (rank(df.toprocess[,Clol],na.last = "keep",ties.method = "average")-1)
+            }
+            preProcValues= preProcess(df.toprocess[,2:l.df.tp],method = c("range"))
+            df.toprocess[,2:l.df.tp]<- predict(preProcValues, df.toprocess[,2:l.df.tp])
+          } 
 
           ################preprocess###########
           df.toprocess=data.frame(df.toprocess[dependant.selection,])
-          y.untransformed=y.untransformed[dependant.selection]
-          if(norming=="quantile"){
-            for(Clol in trans.y:l.df.tp){
-              df.toprocess[,Clol]<- (rank(df.toprocess[,Clol],na.last = "keep",ties.method = "average")-1)
-              }
-            preProcValues= preProcess(df.toprocess[,trans.y:l.df.tp],method = c("range"))
-            df.toprocess[,trans.y:l.df.tp]<- predict(preProcValues, df.toprocess[,trans.y:l.df.tp])
-            }
-
-          if(norming=="all"){
+          #quantile takes a while so it runs after dataset is reduced to usable y values
+          # no. quantile is too error prone so its not used in "all" or as y transformer. 
+          #But is used regularily and with ALL data on explanatories like the others. 
+          #There is just not enough time to do this properly
+          if(norming=="all" && F){
             df.toprocessFA=data.frame(df.toprocessFA[dependant.selection,])
             l.df.tpfa<-length(df.toprocessFA[1,])
             for(Clol in 1:(l.df.tpfa)){
               df.toprocessFA[,Clol]<- (rank(df.toprocessFA[,Clol],na.last = "keep",ties.method = "average")-1)
-              }
+            }
             preProcValues= preProcess(df.toprocessFA[,1:l.df.tpfa],method = c("range"))
             df.toprocessFA[,1:l.df.tpfa]<- predict(preProcValues, df.toprocessFA[,1:l.df.tpfa])
             df.toprocess<-cbind( df.toprocess,df.toprocessFA,deparse.level = 1)
           }
 
-          df.toprocess = signif(df.toprocess,digits = 3)
-          #df.toprocess = data.frame(df.toprocess,)
-          nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
-          #nzv[nzv$nzv,][1:10,]
-          if(length(nzv)>1){
-            df.toprocess = (df.toprocess[, -nzv])}
+      
+          
 
-          loess.model<-loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
-
-          seed.var =222+round(runif(1,min=0,max=100))
+          #####second folding
           set.seed(seed.var)#spliting after transform is not ok?
           foldTrain<-createFolds(y = df.toprocess[,1], k = high.fold, list = TRUE, returnTrain = FALSE)
           #inTrain <- createDataPartition(y = df.toprocess[,1],p = .75,list = FALSE)
-
           for(FN in 1:high.fold){
             if(min.high.fold<FN){next()}
-          training <- df.toprocess[-foldTrain[[FN]],]
-          testing  <- df.toprocess[foldTrain[[FN]],]
+            training <- df.toprocess[-foldTrain[[FN]],]
+            
+            if(trans.y==1){
+
+            if(norming=="quantile" && trans.y==1){ #quantilization leaves holes for algos to detect
+              training[,1]<- (rank(training[,1],na.last = "keep",ties.method = "average")-1)
+              mintrain<-min(training[,1],na.rm =F);maxtrain<-max(training[,1],na.rm =F);rangtrain<-maxtrain-mintrain
+              training[,1]<-(training[,1]-mintrain)/rangtrain
+              df.toprocess[,1]<- (rank(df.toprocess[,1],na.last = "keep",ties.method = "average")-1)
+              df.toprocess[,1]<-(df.toprocess[,1]-mintrain)/rangtrain
+            }
+            
+              library(data.table)
+          if(norming=="centernscale"){
+            preProcValues= preProcess(training[,1:2],method = c("center", "scale"))
+            df.toprocess[,1]<- predict(preProcValues, df.toprocess[,1:2])[,1]}
+          if(norming=="range01"){
+            preProcValues= preProcess(training[,1:2],method = c("range"))
+            df.toprocess[,1]<- predict(preProcValues, df.toprocess[,1:2])[,1]}
+          if(norming=="expoTrans"){
+            preProcValues= preProcess(training[,1:2],method = c("expoTrans"))
+            df.toprocess[,1]<- predict(preProcValues, df.toprocess[,1:2])[,1]}
+          if(norming=="YeoJohnson"){
+            preProcValues= preProcess((training[,1:2]),method = c("YeoJohnson"))#"center", "scale",
+            df.toprocess[,1]<- predict(preProcValues, df.toprocess[,1:2])[,1]
+            }
+            }
+            
+            df.toprocess = signif(df.toprocess,digits = 3)
+            #df.toprocess = data.frame(df.toprocess,)
+            nzv <- nearZeroVar(df.toprocess[,])#, saveMetrics= TRUE
+            #nzv[nzv$nzv,][1:10,]
+            if(length(nzv)>1){
+              df.toprocess = (df.toprocess[, -nzv])}
+            
+            loess.model<-loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
+            
+            training <- df.toprocess[-foldTrain[[FN]],]            
+            testing  <- df.toprocess[foldTrain[[FN]],]
+            
+            train.based.mean<-signif(mean(training[,1], na.rm = T), digits = 4)
+            test.based.mean<-signif(mean(testing[,1], na.rm = T), digits = 4)
+            train.based.med<-signif(median(training[,1], na.rm = T), digits = 4)
+            test.based.med<-signif(median(testing[,1], na.rm = T), digits = 4)
+            
+              un.train.based.mean<-signif(mean(y.untransformed[-foldTrain[[FN]]], na.rm = T), digits = 4)
+              un.test.based.mean<-signif(mean(y.untransformed[foldTrain[[FN]]], na.rm = T), digits = 4)
+              un.train.based.med<-signif(median(y.untransformed[-foldTrain[[FN]]], na.rm = T), digits = 4)
+              un.test.based.med<-signif(median(y.untransformed[foldTrain[[FN]]], na.rm = T), digits = 4)
+
+              RMSE.mean=signif(RMSE(y.untransformed[foldTrain[[FN]]],un.train.based.mean), digits = 4)
+              RMSE.mean.train=signif(RMSE(training[,1],train.based.mean), digits = 4)
+              #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
+            
           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F, col.names = T)
 
           ###########for all models#################
