@@ -42,7 +42,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
   if(length(new.packages)) install.packages(new.packages, dep = TRUE)
   if(length(list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])])){
-    write.table(paste("Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,round(proc.time()[3]-when[3]),  sep = ","),
+    write.table(paste("Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
                 file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
@@ -50,19 +50,21 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
 
 
   not.failed=0
-  set.seed(seed.var)
+ 
   try({trainedmodel <- train(x=data.frame(training[,2:length(training[1,])]),
                              y = df.toprocess[-foldTrain[[FN]],1],
                              method = allmodel,
                              trControl = adaptControl,
                              tuneLength = tuneLength)
 
-  predicted.outcomes<-predict(trainedmodel, newdata=(testing))
-  p <- data.frame(predicted.outcomes,testing)
+
+  predicted.outcomes<-predict(trainedmodel, newdata=(testing[,-1]))
+  p <- data.frame(predicted.outcomes,testing[,1])
   #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
-  Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
+  Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],train.based.mean)
   #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-  mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
+  mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],train.based.med)
+  
   if(trans.y==2){
     p<- data.frame(predicted.outcomes,y.untransformed[foldTrain[[FN]]])
   }else{
@@ -70,12 +72,10 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   }
   #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
   RMSEp=RMSE(p[,1],p[,2])
-  #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
-  RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
-  RMSE.mean.train=signif(RMSE(training[,1],mean(training[,1], na.rm = T)), digits = 4)
-  #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
   MMAAEE=MAE(p[,1],p[,2])
+  #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)  
 
+  #get trainer function's metrics
   wut=print(trainedmodel,selectCol=TRUE)
   overRMSE=-1
   try({overRMSE=as.numeric(wut[wut[,length(wut[1,])]=="*","RMSE"])})#length(wut[1,])-3]
@@ -88,7 +88,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
                 signif(overRMSE,digits = 3),signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),
                 date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
-                withextra,norming,which.computer,task.subject,FN,RMSE.mean,RMSE.mean.train,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
+                withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1:2],seed.var,RMSE.mean,RMSE.mean.train,adaptControl$search,round(proc.time()[3]-when[3]),
                 adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
                 adaptControl$adaptive$min,trainedmodel$bestTune),
               file = out.file, append =TRUE, quote = F, sep = ",",
@@ -105,12 +105,14 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
                                trControl = simpleControl,
                                tuneLength = tuneLength2)
 
-    predicted.outcomes<-predict(trainedmodel, newdata=(testing))
-    p <- data.frame(predicted.outcomes,testing)
+    
+    predicted.outcomes<-predict(trainedmodel, newdata=(testing[,-1]))
+    p <- data.frame(predicted.outcomes,testing[,1])
     #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
-    Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
+    Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],train.based.mean)
     #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-    mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
+    mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],train.based.med)
+    
     if(trans.y==2){
       p<- data.frame(predicted.outcomes,y.untransformed[foldTrain[[FN]]])
     }else{
@@ -118,12 +120,8 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     }
     #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
     RMSEp=RMSE(p[,1],p[,2])
-    #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
-    RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
-    RMSE.mean.train=signif(RMSE(training[,1],mean(training[,1], na.rm = T)), digits = 4)
-    #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
     MMAAEE=MAE(p[,1],p[,2])
-    print(confusionMatrix(p[,1],p[,2]))
+    #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
 
     overRMSE=-1
     wut=print(trainedmodel,selectCol=TRUE)
@@ -136,8 +134,8 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
     write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                   signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
-                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,RMSE.mean,RMSE.mean.train,simpleControl$search,
-                  seed.var,round(proc.time()[3]-when[3]),simpleControl$method,tuneLength2,
+                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1:2],seed.var,RMSE.mean,RMSE.mean.train,simpleControl$search,
+                  round(proc.time()[3]-when[3]),simpleControl$method,tuneLength2,
                   simpleControl$number,"no rep","no min",trainedmodel$bestTune),
                 file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
@@ -151,13 +149,14 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     try({trainedmodel <- train(x=data.frame(training[,2:length(training[1,])]),
                                y =  df.toprocess[-foldTrain[[FN]],1],
                                method = allmodel)
-
-    predicted.outcomes<-predict(trainedmodel, newdata=(testing))
-    p <- data.frame(predicted.outcomes,testing)
+    
+    predicted.outcomes<-predict(trainedmodel, newdata=(testing[,-1]))
+    p <- data.frame(predicted.outcomes,testing[,1])
     #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
-    Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
+    Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],train.based.mean)
     #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-    mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
+    mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],train.based.med)
+    
     if(trans.y==2){
       p<- data.frame(predicted.outcomes,y.untransformed[foldTrain[[FN]]])
     }else{
@@ -165,14 +164,12 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     }
     #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
     RMSEp=RMSE(p[,1],p[,2])
-    #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
-    RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
-    RMSE.mean.train=signif(RMSE(training[,1],mean(training[,1], na.rm = T)), digits = 4)
-    #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
     MMAAEE=MAE(p[,1],p[,2])
+    #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T) 
 
+    
     overRMSE=-1
-
+    wut=print(trainedmodel,selectCol=TRUE)
     try({wut=print(trainedmodel,selectCol=TRUE)
       overRMSE=as.numeric(wut[wut[,length(wut[1,])]=="*","RMSE"])})#length(wut[1,])-
     replace.overRMSE=1
@@ -183,8 +180,8 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
     write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                   signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
-                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,RMSE.mean,RMSE.mean.train,simpleControl$search,
-                  seed.var,round(proc.time()[3]-when[3]),"nohyperparameters",tuneLength2,
+                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1:2],seed.var,RMSE.mean,RMSE.mean.train,simpleControl$search,
+                  round(proc.time()[3]-when[3]),"nohyperparameters",tuneLength2,
                   simpleControl$number,"no rep","no min",trainedmodel$bestTune),
                 file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
@@ -195,7 +192,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   }
   if(not.failed==0) {
     print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
-    write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,round(proc.time()[3]-when[3]),  sep = ","),
+    write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
                 file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
