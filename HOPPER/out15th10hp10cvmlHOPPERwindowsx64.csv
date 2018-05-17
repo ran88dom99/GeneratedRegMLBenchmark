@@ -1630,3 +1630,5 @@ NA,NA,0.141,NA,NA,Tue May 15 07:12:29 2018,regr.randomForest,1,2,kaggle housing,
 NA,NA,0.141,NA,NA,Tue May 15 08:14:37 2018,regr.RRF,1,2,kaggle housing,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,568,222,0.424,0.3937,random,3726,cv,10,10,NA,5,57,0.804918351583183
 NA,NA,0.141,NA,NA,Tue May 15 08:19:56 2018,regr.svm,1,2,kaggle housing,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,426,222,0.424,0.3937,random,318,cv,10,10,NA,5,27.8222866122136,6.03841574489056e-05
 NA,NA,0.149,NA,NA,Tue May 15 09:07:00 2018,regr.blackboost,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,405,222,0.424,0.3937,random,2572,cv,10,10,NA,5,4,650
+NA,NA,-1,NA,NA,Tue May 15 18:13:55 2018,regr.brnn,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,300,222,0.424,0.3937,nohyperparam,3565,cv,10,10,NA,5,
+0.626,0.558,-1,0.187,0.123,Tue May 15 18:13:58 2018,regr.bst,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,300,222,0.424,0.3937,nohyperparam,3,cv,10,10,NA,5,
