@@ -158,3 +158,6 @@ Fail,Fail,Fail,Fail,Fail,Sat May 19 14:06:05 2018,bag,1,2,OpenML 2dplanes,ignore
 0.591,0.578,-1,1.86,1.48,Sun May 20 02:35:55 2018,bagEarthGCV,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,188,222,4.405,4.39,random,1968,cv,10,10,1,5,1
 Fail,Fail,Fail,Fail,Fail,Sun May 20 02:36:05 2018,bartMachine,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,182,222,6
 0.468,0.457,-1,2.39,1.93,Sun May 20 02:38:27 2018,bayesglm,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,624,222,4.405,4.39,random,141,cv,10,10,1,5,none
+0.468,0.457,2.38,2.39,1.93,Sun May 20 23:56:52 2018,blasso,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,390,222,4.405,4.39,random,30254,cv,10,10,1,5,0.375453508459032
+0.468,0.457,-1,2.39,1.93,Mon May 21 07:30:31 2018,blassoAveraged,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,200,222,4.405,4.39,random,27210,cv,10,10,1,5,none
+0.468,0.457,-1,2.39,1.93,Mon May 21 15:28:27 2018,bridge,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,202,222,4.405,4.39,random,28667,cv,10,10,1,5,none
