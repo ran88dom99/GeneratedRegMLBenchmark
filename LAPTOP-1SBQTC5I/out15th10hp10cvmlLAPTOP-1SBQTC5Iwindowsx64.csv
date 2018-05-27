@@ -205,3 +205,10 @@ Fail,Fail,Fail,Fail,PackageFail,Thu May 24 17:39:28 2018,pythonKnnReg,1,2,OpenML
 0.767,0.76,1.07,1.06,0.845,Thu May 24 21:13:58 2018,ranger,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,2,222,4.405,4.39,random,12870,cv,10,10,1,5,4
 0.761,0.753,1.1,1.09,0.865,Fri May 25 03:04:13 2018,Rborist,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,378,222,4.405,4.39,random,21014,cv,10,10,1,5,13
 0.467,0.457,2.56,2.39,1.93,Fri May 25 03:15:21 2018,relaxo,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,624,222,4.405,4.39,random,667,cv,10,10,1,5,188.715904056562,0.247536605922505
+0.468,0.457,2.38,2.39,1.93,Sat May 26 15:41:39 2018,ridge,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,624,222,4.405,4.39,random,526,cv,10,10,1,5,0.000159579407919337
+Fail,Fail,Fail,Fail,Fail,Sat May 26 15:43:53 2018,rlm,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,624,222,126
+0.774,0.765,1.06,1.03,0.821,Sat May 26 15:44:48 2018,rpart,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,624,222,4.405,4.39,random,54,cv,10,10,1,5,1.15633286637584e-05
+0.66,0.65,-1,1.54,1.23,Sat May 26 15:45:46 2018,rpart1SE,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,166,222,4.405,4.39,random,57,cv,10,10,1,5,none
+0.66,0.65,1.55,1.54,1.23,Sat May 26 15:46:16 2018,rpart2,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,624,222,4.405,4.39,random,29,cv,10,10,1,5,13
+0.468,0.457,2.39,2.39,1.93,Sat May 26 15:49:08 2018,rqlasso,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,624,222,4.405,4.39,random,172,cv,10,10,1,5,0.000635999800381164
+0.468,0.457,2.39,2.39,1.93,Sat May 26 16:05:52 2018,rqnc,1,2,OpenML 2dplanes,ignore,none,all,LAPTOP-1SBQTC5I,15th10hp10cvml,1,5,403,624,222,4.405,4.39,random,995,cv,10,10,1,5,4.47103085315848e-05,MCP
