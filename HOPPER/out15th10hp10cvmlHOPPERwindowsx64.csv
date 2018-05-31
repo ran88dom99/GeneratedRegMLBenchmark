@@ -1632,3 +1632,11 @@ NA,NA,0.141,NA,NA,Tue May 15 08:19:56 2018,regr.svm,1,2,kaggle housing,ignore,no
 NA,NA,0.149,NA,NA,Tue May 15 09:07:00 2018,regr.blackboost,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,405,222,0.424,0.3937,random,2572,cv,10,10,NA,5,4,650
 NA,NA,-1,NA,NA,Tue May 15 18:13:55 2018,regr.brnn,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,300,222,0.424,0.3937,nohyperparam,3565,cv,10,10,NA,5,
 0.626,0.558,-1,0.187,0.123,Tue May 15 18:13:58 2018,regr.bst,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,300,222,0.424,0.3937,nohyperparam,3,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu May 17 17:14:48 2018,regr.cforest,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,178,222,0.424,0.3937,nohyperparam,25,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Thu May 17 17:14:54 2018,regr.crs,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,7
+NA,NA,-1,NA,NA,Thu May 17 17:15:05 2018,regr.ctree,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,178,222,0.424,0.3937,nohyperparam,11,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu May 17 17:15:11 2018,regr.cubist,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,182,222,0.424,0.3937,nohyperparam,5,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu May 17 17:15:52 2018,regr.cvglmnet,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,101,222,0.424,0.3937,nohyperparam,40,cv,10,10,NA,5,
+0.698,0.643,-1,0.149,0.0973,Thu May 17 17:15:56 2018,regr.earth,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,101,222,0.424,0.3937,nohyperparam,4,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu May 17 17:15:58 2018,regr.elmNN,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,303,222,0.424,0.3937,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Thu May 17 17:15:58 2018,regr.evtree,1,2,kaggle housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,0
