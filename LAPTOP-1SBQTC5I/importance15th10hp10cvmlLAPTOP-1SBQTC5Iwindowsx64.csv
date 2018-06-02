@@ -567,3 +567,156 @@ bayesglm, Fri Jun 01 14:57:39 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.
 blasso, Fri Jun 01 15:07:24 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
 blassoAveraged, Fri Jun 01 15:17:00 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
 bridge, Fri Jun 01 15:26:40 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+BstLm, Fri Jun 01 17:59:18 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+ctree, Fri Jun 01 18:02:31 2018, 0.783, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+ctree2, Fri Jun 01 18:04:06 2018, 0.783, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+cubist, Fri Jun 01 19:38:38 2018, 0.783, OpenML 2dplanes, c(100, 50, 50, 50, 50, 50, 50, 0, 0, 0)
+dnn, Fri Jun 01 19:43:41 2018, 0.676, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+earth, Fri Jun 01 19:46:43 2018, 0.585, OpenML 2dplanes, c(100, 66.7, 54.5, 39.4, 34.9, 0, 0, 0, 0, 0)
+elm, Fri Jun 01 19:46:57 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+enet, Fri Jun 01 19:47:27 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+foba, Fri Jun 01 19:47:48 2018, 0.423, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+gamSpline, Fri Jun 01 19:49:05 2018, 0.468, OpenML 2dplanes, Failed
+gcvEarth, Fri Jun 01 19:56:31 2018, 0.468, OpenML 2dplanes, c(100, 59.4, 51.5, 42.9, 37.9, 16.5, 12.7, 0, 0, 0)
+glm, Fri Jun 01 19:56:34 2018, 0.468, OpenML 2dplanes, c(100, 41.9, 28.4, 14.4, 40.9, 27.6, 14.4, 0, 0.1, 0.6)
+glmboost, Fri Jun 01 19:58:33 2018, 0.468, OpenML 2dplanes, c(100, 51.2, 34.8, 17.7, 50.1, 33.8, 17.7, 0.1, 0.7, 0)
+glmnet, Fri Jun 01 19:58:48 2018, 0.468, OpenML 2dplanes, c(100, 51.1, 34.6, 17.5, 49.9, 33.7, 17.5, 0, 0, 0.5)
+glmStepAIC, Fri Jun 01 20:05:52 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+icr, Fri Jun 01 20:06:28 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+kernelpls, Fri Jun 01 20:06:32 2018, 0.468, OpenML 2dplanes, c(100, 34.2, 22.5, 12.4, 34.4, 22.4, 11.7, 0.4, 0, 1.2)
+lars, Fri Jun 01 20:08:40 2018, 0.452, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+lars2, Fri Jun 01 20:08:44 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+lasso, Fri Jun 01 20:08:50 2018, 0.461, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+lm, Fri Jun 01 20:08:52 2018, 0.468, OpenML 2dplanes, c(100, 41.9, 28.4, 14.4, 40.9, 27.6, 14.4, 0, 0.1, 0.6)
+msaenet, Fri Jun 01 20:16:16 2018, 0.468, OpenML 2dplanes, 100
+msaenet, Fri Jun 01 20:16:16 2018, 0.468, OpenML 2dplanes, 51.3
+msaenet, Fri Jun 01 20:16:16 2018, 0.468, OpenML 2dplanes, 34.9
+msaenet, Fri Jun 01 20:16:16 2018, 0.468, OpenML 2dplanes, 17.8
+msaenet, Fri Jun 01 20:16:16 2018, 0.468, OpenML 2dplanes, 50.1
+msaenet, Fri Jun 01 20:16:16 2018, 0.468, OpenML 2dplanes, 33.9
+msaenet, Fri Jun 01 20:16:16 2018, 0.468, OpenML 2dplanes, 17.8
+msaenet, Fri Jun 01 20:16:16 2018, 0.468, OpenML 2dplanes, 0
+msaenet, Fri Jun 01 20:16:16 2018, 0.468, OpenML 2dplanes, 0
+msaenet, Fri Jun 01 20:16:16 2018, 0.468, OpenML 2dplanes, 0.8
+nnet, Fri Jun 01 20:29:50 2018, 0.11, OpenML 2dplanes, c(100, 45.1, 19.6, 0.6, 31.7, 48, 7.8, 5.8, 8.7, 0)
+pcaNNet, Fri Jun 01 20:44:22 2018, 0.109, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+pcr, Fri Jun 01 20:44:27 2018, 0.457, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+plsRglm, Fri Jun 01 20:50:14 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+ppr, Fri Jun 01 20:51:52 2018, 0.781, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+ranger, Fri Jun 01 21:18:31 2018, 0.771, OpenML 2dplanes, Failed
+Rborist, Fri Jun 01 21:44:12 2018, 0.769, OpenML 2dplanes, c(100, 30.4, 14.1, 2.9, 30.2, 13.4, 2.9, 0, 0, 0)
+relaxo, Fri Jun 01 21:44:56 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+ridge, Fri Jun 01 21:45:24 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+rlm, Fri Jun 01 21:45:41 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+rpart, Fri Jun 01 21:45:58 2018, 0.774, OpenML 2dplanes, c(68.9, 95.5, 0, 45.1, 61.8, 100, 43.8, 69.9, 95, 86.6)
+rpart1SE, Fri Jun 01 21:46:08 2018, 0.663, OpenML 2dplanes, c(0, 0, 23.4, 42.7, 100, 26.5, 43.3, 99, 27, 0.1)
+rpart2, Fri Jun 01 21:46:16 2018, 0.663, OpenML 2dplanes, c(0, 0, 23.4, 42.7, 100, 26.5, 43.3, 99, 27, 0.1)
+rqlasso, Fri Jun 01 21:46:58 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+rqnc, Fri Jun 01 21:48:32 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+simpls, Fri Jun 01 21:49:09 2018, 0.468, OpenML 2dplanes, c(100, 34.2, 22.5, 12.4, 34.4, 22.4, 11.7, 0.4, 0, 1.2)
+spikeslab, Fri Jun 01 21:49:36 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+spls, Fri Jun 01 21:50:49 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+superpc, Fri Jun 01 21:51:04 2018, 0.304, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+treebag, Fri Jun 01 21:51:48 2018, 0.687, OpenML 2dplanes, c(0, 0, 23.4, 44.9, 99.5, 26.7, 43.5, 100, 26.8, 0)
+xgbLinear, Fri Jun 01 21:54:05 2018, 0.782, OpenML 2dplanes, c(100, 34.8, 34.4, 15.6, 15.2, 3.9, 3.9, 0, 0, 0)
+xgbTree, Fri Jun 01 22:10:28 2018, 0.783, OpenML 2dplanes, c(100, 29.7, 23.1, 12.7, 12, 3.5, 3.4, 0, 0, 0)
+avNNet, Sat Jun 02 00:31:40 2018, 0.783, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+bagEarth, Sat Jun 02 01:47:49 2018, 0.704, OpenML 2dplanes, c(100, 70, 59.9, 49, 36.8, 0, 0, 0, 0, 0)
+bagEarthGCV, Sat Jun 02 01:52:05 2018, 0.468, OpenML 2dplanes, c(100, 59.4, 51.5, 42.9, 37.8, 18.2, 13.1, 0, 0, 0)
+bayesglm, Sat Jun 02 01:52:17 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+blasso, Sat Jun 02 02:00:40 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+blassoAveraged, Sat Jun 02 02:08:59 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+bridge, Sat Jun 02 02:17:04 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+BstLm, Sat Jun 02 03:40:09 2018, 0.257, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+ctree, Sat Jun 02 03:44:26 2018, 0.783, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+ctree2, Sat Jun 02 03:47:00 2018, 0.783, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+cubist, Sat Jun 02 04:58:30 2018, 0.783, OpenML 2dplanes, c(100, 50, 50, 50, 50, 50, 50, 0, 0, 0)
+dnn, Sat Jun 02 05:03:36 2018, 0, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+earth, Sat Jun 02 05:06:09 2018, 0.686, OpenML 2dplanes, c(100, 70, 59.8, 47.5, 34.9, 0, 0, 0, 0, 0)
+elm, Sat Jun 02 05:06:22 2018, 0.442, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+enet, Sat Jun 02 05:06:46 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+foba, Sat Jun 02 05:07:06 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+gamSpline, Sat Jun 02 05:08:14 2018, 0.468, OpenML 2dplanes, Failed
+gcvEarth, Sat Jun 02 05:15:06 2018, 0.468, OpenML 2dplanes, c(100, 59.4, 51.5, 42.9, 37.9, 16.5, 12.7, 0, 0, 0)
+glm, Sat Jun 02 05:15:10 2018, 0.468, OpenML 2dplanes, c(100, 41.9, 28.4, 14.4, 40.8, 27.6, 14.4, 0, 0.1, 0.6)
+glm.nb, Sat Jun 02 05:16:56 2018, 0.463, OpenML 2dplanes, c(100, 31.3, 21.3, 10.7, 51.2, 34.8, 18.1, 0, 0, 0.5)
+glmboost, Sat Jun 02 05:18:06 2018, 0.468, OpenML 2dplanes, c(100, 51.3, 34.8, 17.6, 50, 33.8, 17.7, 0.1, 0.7, 0)
+glmnet, Sat Jun 02 05:18:16 2018, 0.468, OpenML 2dplanes, c(100, 51.4, 34.8, 17.6, 50, 33.8, 17.7, 0, 0.1, 0.7)
+glmStepAIC, Sat Jun 02 05:24:37 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+icr, Sat Jun 02 05:25:17 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+kernelpls, Sat Jun 02 05:25:20 2018, 0.468, OpenML 2dplanes, c(100, 34.1, 22.6, 12.4, 34.4, 22.4, 11.7, 0.4, 0, 1.2)
+lars, Sat Jun 02 05:27:35 2018, 0.467, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+lars2, Sat Jun 02 05:27:39 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+lasso, Sat Jun 02 05:27:44 2018, 0.464, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+lm, Sat Jun 02 05:27:47 2018, 0.468, OpenML 2dplanes, c(100, 41.9, 28.4, 14.4, 40.8, 27.6, 14.4, 0, 0.1, 0.6)
+msaenet, Sat Jun 02 05:33:38 2018, 0.468, OpenML 2dplanes, 100
+msaenet, Sat Jun 02 05:33:38 2018, 0.468, OpenML 2dplanes, 51.4
+msaenet, Sat Jun 02 05:33:38 2018, 0.468, OpenML 2dplanes, 34.9
+msaenet, Sat Jun 02 05:33:38 2018, 0.468, OpenML 2dplanes, 17.7
+msaenet, Sat Jun 02 05:33:38 2018, 0.468, OpenML 2dplanes, 50.1
+msaenet, Sat Jun 02 05:33:38 2018, 0.468, OpenML 2dplanes, 33.9
+msaenet, Sat Jun 02 05:33:38 2018, 0.468, OpenML 2dplanes, 17.8
+msaenet, Sat Jun 02 05:33:38 2018, 0.468, OpenML 2dplanes, 0
+msaenet, Sat Jun 02 05:33:38 2018, 0.468, OpenML 2dplanes, 0
+msaenet, Sat Jun 02 05:33:38 2018, 0.468, OpenML 2dplanes, 0
+nnet, Sat Jun 02 06:02:55 2018, 0.782, OpenML 2dplanes, c(100, 32.4, 18.7, 10.4, 21.9, 6.9, 3.4, 2.6, 7.4, 0)
+pcaNNet, Sat Jun 02 06:29:37 2018, 0.783, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+pcr, Sat Jun 02 06:29:41 2018, 0.458, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+plsRglm, Sat Jun 02 06:35:03 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+ppr, Sat Jun 02 06:36:24 2018, 0.78, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+ranger, Sat Jun 02 06:56:45 2018, 0.774, OpenML 2dplanes, Failed
+Rborist, Sat Jun 02 07:57:02 2018, 0.769, OpenML 2dplanes, c(100, 29, 13.8, 2.9, 29.4, 13.3, 2.9, 0, 0, 0)
+relaxo, Sat Jun 02 07:57:37 2018, 0.36, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+ridge, Sat Jun 02 07:58:00 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+rlm, Sat Jun 02 07:58:15 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+rpart, Sat Jun 02 07:58:34 2018, 0.783, OpenML 2dplanes, c(0.3, 0, 7.2, 14.1, 52.8, 97, 14.3, 52.7, 100, 0.5)
+rpart1SE, Sat Jun 02 07:58:43 2018, 0.663, OpenML 2dplanes, c(0, 0, 23.4, 42.6, 100, 26.5, 43.3, 99, 27, 0.1)
+rpart2, Sat Jun 02 07:58:49 2018, 0.663, OpenML 2dplanes, c(0, 0, 23.4, 42.6, 100, 26.5, 43.3, 99, 27, 0.1)
+rqlasso, Sat Jun 02 07:59:22 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+rqnc, Sat Jun 02 08:01:09 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+simpls, Sat Jun 02 08:01:43 2018, 0.468, OpenML 2dplanes, c(100, 34.1, 22.6, 12.4, 34.4, 22.4, 11.7, 0.4, 0, 1.2)
+spikeslab, Sat Jun 02 08:02:05 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+spls, Sat Jun 02 08:03:21 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+superpc, Sat Jun 02 08:03:35 2018, 0, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+treebag, Sat Jun 02 08:04:15 2018, 0.683, OpenML 2dplanes, c(0, 0, 23.3, 42.6, 100, 26.6, 43.2, 99.9, 26.6, 0)
+xgbLinear, Sat Jun 02 08:06:21 2018, 0.782, OpenML 2dplanes, c(100, 34.8, 34.4, 15.6, 15.2, 3.9, 3.9, 0, 0, 0)
+xgbTree, Sat Jun 02 08:14:48 2018, 0.773, OpenML 2dplanes, c(100, 28.6, 26.7, 13.3, 12.4, 3.5, 3.3, 0, 0, 0)
+avNNet, Sat Jun 02 10:09:20 2018, 0.11, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+bagEarth, Sat Jun 02 11:19:25 2018, 0.704, OpenML 2dplanes, c(100, 70, 59.8, 49.6, 37.3, 0, 0, 0, 0, 0)
+bagEarthGCV, Sat Jun 02 11:23:57 2018, 0.468, OpenML 2dplanes, c(100, 59.4, 51.5, 42.8, 37.7, 17.6, 12.7, 0, 0, 0)
+bayesglm, Sat Jun 02 11:24:08 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+blasso, Sat Jun 02 11:33:50 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+blassoAveraged, Sat Jun 02 11:43:25 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+bridge, Sat Jun 02 11:52:51 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+BstLm, Sat Jun 02 12:54:40 2018, 0.257, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+ctree, Sat Jun 02 12:56:48 2018, 0.783, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+ctree2, Sat Jun 02 12:58:57 2018, 0.783, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+cubist, Sat Jun 02 14:26:20 2018, 0.783, OpenML 2dplanes, c(100, 50, 50, 50, 50, 50, 50, 0, 0, 0)
+dnn, Sat Jun 02 14:31:42 2018, 0.252, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+earth, Sat Jun 02 14:34:10 2018, 0.686, OpenML 2dplanes, c(100, 70, 59.8, 47.5, 34.9, 0, 0, 0, 0, 0)
+elm, Sat Jun 02 14:34:25 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+enet, Sat Jun 02 14:34:51 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+foba, Sat Jun 02 14:35:11 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+gamSpline, Sat Jun 02 14:36:25 2018, 0.468, OpenML 2dplanes, Failed
+gcvEarth, Sat Jun 02 14:44:09 2018, 0.468, OpenML 2dplanes, c(100, 59.4, 51.5, 42.9, 37.9, 16.5, 12.7, 0, 0, 0)
+glm, Sat Jun 02 14:44:13 2018, 0.468, OpenML 2dplanes, c(100, 41.9, 28.4, 14.4, 40.8, 27.6, 14.4, 0, 0.1, 0.6)
+glmboost, Sat Jun 02 14:46:02 2018, 0.468, OpenML 2dplanes, c(100, 51.4, 34.8, 17.6, 50, 33.8, 17.7, 0, 0.1, 0.7)
+glmnet, Sat Jun 02 14:46:20 2018, 0.468, OpenML 2dplanes, c(100, 51.2, 34.6, 17.5, 49.9, 33.7, 17.5, 0, 0, 0.5)
+glmStepAIC, Sat Jun 02 14:53:30 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+icr, Sat Jun 02 14:54:18 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+kernelpls, Sat Jun 02 14:54:22 2018, 0.468, OpenML 2dplanes, c(100, 34.1, 22.6, 12.4, 34.4, 22.4, 11.7, 0.4, 0, 1.2)
+lars, Sat Jun 02 14:57:01 2018, 0.42, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+lars2, Sat Jun 02 14:57:06 2018, 0.468, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+lasso, Sat Jun 02 14:57:11 2018, 0.466, OpenML 2dplanes, c(100, 17.3, 7.5, 2.3, 17.6, 7.5, 2.1, 0, 0, 0)
+lm, Sat Jun 02 14:57:14 2018, 0.468, OpenML 2dplanes, c(100, 41.9, 28.4, 14.4, 40.8, 27.6, 14.4, 0, 0.1, 0.6)
+msaenet, Sat Jun 02 15:03:55 2018, 0.468, OpenML 2dplanes, 100
+msaenet, Sat Jun 02 15:03:55 2018, 0.468, OpenML 2dplanes, 51.4
+msaenet, Sat Jun 02 15:03:55 2018, 0.468, OpenML 2dplanes, 34.9
+msaenet, Sat Jun 02 15:03:55 2018, 0.468, OpenML 2dplanes, 17.7
+msaenet, Sat Jun 02 15:03:55 2018, 0.468, OpenML 2dplanes, 50.1
+msaenet, Sat Jun 02 15:03:55 2018, 0.468, OpenML 2dplanes, 33.9
+msaenet, Sat Jun 02 15:03:55 2018, 0.468, OpenML 2dplanes, 17.8
+msaenet, Sat Jun 02 15:03:55 2018, 0.468, OpenML 2dplanes, 0
+msaenet, Sat Jun 02 15:03:55 2018, 0.468, OpenML 2dplanes, 0
+msaenet, Sat Jun 02 15:03:55 2018, 0.468, OpenML 2dplanes, 0.8
+nnet, Sat Jun 02 15:25:58 2018, 0.11, OpenML 2dplanes, c(76.4, 77.4, 51.4, 29.8, 100, 53, 25.9, 20.6, 10.8, 0)
