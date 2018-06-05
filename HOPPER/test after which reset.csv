@@ -62,12 +62,6 @@ Mon Mar 12 17:07:25 2018,msaenet,Friedman's 1st,3,20,windows,x64,HOPPER
 
 Mon Mar 26 17:07:37 2018,glmnet_h2o,kaggle housing,3,20,windows,x64,HOPPER
 
-Mon May 14 17:07:37 2018,regr.blm,kaggle housing,10,10,windows,x64,HOPPER
-Tue May 15 17:07:29 2018,regr.blm,kaggle housing,10,10,windows,x64,HOPPER
-Wed May 16 17:07:24 2018,regr.btlm,kaggle housing,10,10,windows,x64,HOPPER
-Thu May 17 17:07:21 2018,regr.btlm,kaggle housing,10,10,windows,x64,HOPPER
-Thu May 31 06:07:40 2018,regr.extraTrees,kaggle housing,10,10,windows,x64,HOPPER
-Thu May 31 17:07:32 2018,regr.extraTrees,kaggle housing,10,10,windows,x64,HOPPER
-Fri Jun 01 17:07:28 2018,regr.LiblineaRL2L2SVR,kaggle housing,10,10,windows,x64,HOPPER
-Sat Jun 02 17:07:18 2018,regr.LiblineaRL2L2SVR,kaggle housing,10,10,windows,x64,HOPPER
+
 Sun Jun 03 17:07:40 2018,regr.randomForest,kaggle housing,10,10,windows,x64,HOPPER
+Mon Jun 04 17:08:11 2018,regr.blackboost,Friedman's 1st,10,10,windows,x64,HOPPER
