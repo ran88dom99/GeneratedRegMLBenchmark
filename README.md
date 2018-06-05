@@ -1,3 +1,4 @@
+This project is licensed under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE license.
 # GeneratedRegMLBenchmark
 Testing what the machine learning algorithms of R-caret can detect.
 
