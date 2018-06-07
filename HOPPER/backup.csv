@@ -26146,3 +26146,4 @@ Succ, Sat Mar 31 06:30:22 2018, regr.h2o.deeplearning
 Succ, Sat Mar 31 06:31:11 2018, regr.h2o.gbm
 Succ, Sat Mar 31 06:31:51 2018, regr.h2o.glm
 Succ, Sat Mar 31 06:33:01 2018, regr.h2o.randomForest
+Fail, Tue Jun 05 19:12:59 2018, regr.fnn
