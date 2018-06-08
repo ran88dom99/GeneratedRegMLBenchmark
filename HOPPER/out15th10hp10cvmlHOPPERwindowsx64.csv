@@ -6566,3 +6566,1127 @@ Fail,Fail,Fail,Fail,PackageFail,Tue Jun 05 19:21:59 2018,regr.kknn,1,2,Boston Ho
 0.638,0.601,3.13,3.8,2.43,Tue Jun 05 19:29:47 2018,regr.ksvm,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,11,222,9.534,9.099,random,35,cv,10,10,NA,5,60.6994187535862,0.00754748231162254
 NA,NA,-1,NA,NA,Tue Jun 05 19:29:49 2018,regr.laGP,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,11,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
 -3.27840368458534e+157,-Inf,-1,Inf,2.2e+158,Tue Jun 05 19:29:52 2018,regr.LiblineaRL2L1SVR,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,283,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+0.577,0.523,-1,4.55,2.85,Thu Jun 07 17:10:15 2018,regr.lm,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,350,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+0.613,0.579,-1,4.02,2.6,Thu Jun 07 17:10:21 2018,regr.mars,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,350,222,9.534,9.099,nohyperparam,5,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu Jun 07 17:10:24 2018,regr.mob,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,350,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.047,0.037,9.01,9.18,6.4,Thu Jun 07 17:11:02 2018,regr.nnet,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,601,222,9.534,9.099,random,37,cv,10,10,NA,5,3,0.524482559180824
+0.492,0.522,-1,4.56,3.41,Thu Jun 07 17:11:14 2018,regr.nodeHarvest,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,605,222,9.534,9.099,nohyperparam,12,cv,10,10,NA,5,
+-0.015,-0.001,-1,9.55,6.82,Thu Jun 07 17:11:16 2018,regr.pcr,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,605,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 17:11:22 2018,regr.penalized.fusedlasso,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 17:11:27 2018,regr.penalized.lasso,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 17:11:33 2018,regr.penalized.ridge,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,6
+NaN,NaN,-1,NaN,NaN,Thu Jun 07 17:11:35 2018,regr.plsr,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,605,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.652,0.616,3.4,3.66,2.34,Thu Jun 07 17:26:59 2018,regr.randomForest,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,108,222,9.534,9.099,random,924,cv,10,10,NA,5,5,17
+0.663,0.626,-1,3.56,2.27,Thu Jun 07 17:27:07 2018,regr.randomForestSRC,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,110,222,9.534,9.099,nohyperparam,7,cv,10,10,NA,5,
+0.657,0.606,3.23,3.76,2.31,Thu Jun 07 17:36:41 2018,regr.ranger,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,516,222,9.534,9.099,random,574,cv,10,10,NA,5,26,2
+0.541,0.547,-1,4.32,3.08,Thu Jun 07 17:36:46 2018,regr.rknn,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,132,222,9.534,9.099,nohyperparam,4,cv,10,10,NA,5,
+0.484,0.489,4.96,4.87,3.47,Thu Jun 07 17:36:55 2018,regr.rpart,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,356,222,9.534,9.099,random,9,cv,10,10,NA,5,0.0118203992464691,19,13,22
+0.649,0.608,3.36,3.73,2.36,Thu Jun 07 17:50:43 2018,regr.RRF,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,54,222,9.534,9.099,random,827,cv,10,10,NA,5,20,0.355876480927691
+0.577,0.523,-1,4.55,2.85,Thu Jun 07 17:50:45 2018,regr.rsm,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,54,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu Jun 07 17:50:46 2018,regr.rvm,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,458,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.388,0.41,-1,5.62,4.12,Thu Jun 07 17:51:08 2018,regr.slim,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,458,222,9.534,9.099,nohyperparam,21,cv,10,10,NA,5,
+0.646,0.599,3.7,3.82,2.38,Thu Jun 07 17:51:40 2018,regr.svm,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,38,222,9.534,9.099,random,32,cv,10,10,NA,5,4452.72624938743,4.30825098627035e-05
+0.664,0.62,2.9,3.62,2.26,Thu Jun 07 18:05:15 2018,regr.xgboost,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,585,222,9.534,9.099,random,814,cv,10,10,NA,5,85,5,0.102280996027403,0.234346087090671,0.432442691735923,0.442186747677624,0.869490784360096
+NA,NA,-1,NA,NA,Thu Jun 07 18:05:17 2018,regr.xyf,1,2,Boston Housing,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,585,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.651,0.609,-1,3.73,2.34,Thu Jun 07 18:05:40 2018,regr.bartMachine,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,34,222,9.534,9.099,nohyperparam,13,cv,10,10,NA,5,
+0.336,0.239,-1,7.26,4.46,Thu Jun 07 18:05:43 2018,regr.bcart,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,40,222,9.534,9.099,nohyperparam,3,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu Jun 07 18:05:44 2018,regr.bdk,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,40,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.667,0.601,3.06,3.8,2.24,Thu Jun 07 18:12:46 2018,regr.blackboost,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,273,222,9.534,9.099,random,421,cv,10,10,NA,5,5,580
+0.385,0.289,-1,6.78,4.13,Thu Jun 07 18:12:51 2018,regr.blm,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,279,222,9.534,9.099,nohyperparam,5,cv,10,10,NA,5,
+0.631,0.605,-1,3.77,2.48,Thu Jun 07 18:12:53 2018,regr.brnn,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,309,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.251,0.21,-1,7.53,5.03,Thu Jun 07 18:12:54 2018,regr.bst,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,309,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.043,-2.116,-1,29.7,6.43,Thu Jun 07 18:13:01 2018,regr.btlm,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,315,222,9.534,9.099,nohyperparam,6,cv,10,10,NA,5,
+0.592,0.598,-1,3.84,2.74,Thu Jun 07 18:13:04 2018,regr.cforest,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,452,222,9.534,9.099,nohyperparam,3,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 18:13:19 2018,regr.crs,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,14
+0.566,0.555,-1,4.25,2.91,Thu Jun 07 18:13:19 2018,regr.ctree,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,452,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.618,0.536,-1,4.43,2.57,Thu Jun 07 18:13:21 2018,regr.cubist,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,456,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.487,0.494,-1,4.82,3.45,Thu Jun 07 18:13:23 2018,regr.cvglmnet,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,236,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 18:13:23 2018,regr.earth,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,1
+-0.014,0,-1,9.53,6.81,Thu Jun 07 18:13:24 2018,regr.elmNN,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,250,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 18:13:25 2018,regr.evtree,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+0.648,0.604,2.96,3.77,2.36,Thu Jun 07 21:23:24 2018,regr.extraTrees,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,234,222,9.534,9.099,random,11399,cv,10,10,NA,5,7,5
+-0.014,0,-1,9.53,6.81,Thu Jun 07 21:23:27 2018,regr.featureless,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,234,222,9.534,9.099,nohyperparam,3,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 21:23:28 2018,regr.fnn,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+0.441,0.417,-1,5.56,3.76,Thu Jun 07 21:24:18 2018,regr.frbs,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,234,222,9.534,9.099,nohyperparam,50,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu Jun 07 21:24:20 2018,regr.gamboost,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,234,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+0.615,0.604,-1,3.77,2.58,Thu Jun 07 21:24:21 2018,regr.gausspr,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,14,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.639,0.611,3.18,3.71,2.43,Thu Jun 07 21:24:43 2018,regr.gbm,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,62,222,9.534,9.099,random,21,cv,10,10,NA,5,932,2,0.265983807030832,9
+0.467,0.492,-1,4.84,3.58,Thu Jun 07 21:24:43 2018,regr.glm,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,62,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.474,0.495,4.91,4.82,3.54,Thu Jun 07 21:24:49 2018,regr.glmboost,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,266,222,9.534,9.099,random,6,cv,10,10,NA,5,74,0.953957555349916
+0.473,0.495,4.92,4.81,3.54,Thu Jun 07 21:24:54 2018,regr.glmnet,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,470,222,9.534,9.099,random,5,cv,10,10,NA,5,0.13136125006713,0.0591753020260526
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 21:24:55 2018,regr.h2o.deeplearning,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 21:24:55 2018,regr.h2o.gbm,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 21:24:55 2018,regr.h2o.glm,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 21:24:55 2018,regr.h2o.randomForest,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 21:24:56 2018,regr.IBk,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 21:24:56 2018,regr.kknn,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 21:24:56 2018,regr.km,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+0.654,0.614,3.37,3.68,2.32,Thu Jun 07 21:25:12 2018,regr.ksvm,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,456,222,9.534,9.099,random,16,cv,10,10,NA,5,857.778939428827,0.00280612814490106
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 21:25:12 2018,regr.laGP,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 21:25:13 2018,regr.LiblineaRL2L1SVR,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+0.467,0.492,-1,4.84,3.58,Thu Jun 07 21:25:13 2018,regr.lm,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,456,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.577,0.526,-1,4.52,2.84,Thu Jun 07 21:25:15 2018,regr.mars,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,456,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.331,-0.931,-1,18.4,4.5,Thu Jun 07 21:25:18 2018,regr.mob,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,456,222,9.534,9.099,nohyperparam,3,cv,10,10,NA,5,
+0.52,0.482,5.36,4.94,3.23,Thu Jun 07 21:25:52 2018,regr.nnet,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,548,222,9.534,9.099,random,34,cv,10,10,NA,5,9,9.08592002940365
+0.544,0.554,-1,4.25,3.06,Thu Jun 07 21:26:08 2018,regr.nodeHarvest,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,164,222,9.534,9.099,nohyperparam,16,cv,10,10,NA,5,
+0.467,0.492,-1,4.84,3.58,Thu Jun 07 21:26:09 2018,regr.pcr,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,164,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 21:26:15 2018,regr.penalized.fusedlasso,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 21:26:20 2018,regr.penalized.lasso,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 21:26:26 2018,regr.penalized.ridge,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,6
+0.467,0.492,-1,4.84,3.58,Thu Jun 07 21:26:27 2018,regr.plsr,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,164,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.654,0.626,3.01,3.56,2.32,Thu Jun 07 21:29:29 2018,regr.randomForest,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,203,222,9.534,9.099,random,181,cv,10,10,NA,5,1,9
+0.655,0.655,-1,3.29,2.32,Thu Jun 07 21:29:33 2018,regr.randomForestSRC,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,205,222,9.534,9.099,nohyperparam,4,cv,10,10,NA,5,
+0.646,0.601,3.07,3.8,2.38,Thu Jun 07 21:32:08 2018,regr.ranger,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,611,222,9.534,9.099,random,155,cv,10,10,NA,5,12,1
+NA,NA,-1,NA,NA,Thu Jun 07 21:32:10 2018,regr.rknn,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,66,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.441,0.48,4.76,4.96,3.76,Thu Jun 07 21:32:15 2018,regr.rpart,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,290,222,9.534,9.099,random,5,cv,10,10,NA,5,0.00110375339220656,20,25,9
+0.645,0.605,3.09,3.77,2.38,Thu Jun 07 21:34:46 2018,regr.RRF,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,177,222,9.534,9.099,random,151,cv,10,10,NA,5,12,0.446616319706663
+0.467,0.492,-1,4.84,3.58,Thu Jun 07 21:34:48 2018,regr.rsm,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,177,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+0.352,0.367,-1,6.03,4.36,Thu Jun 07 21:34:54 2018,regr.rvm,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,581,222,9.534,9.099,nohyperparam,6,cv,10,10,NA,5,
+0.377,0.396,-1,5.76,4.19,Thu Jun 07 21:34:59 2018,regr.slim,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,581,222,9.534,9.099,nohyperparam,5,cv,10,10,NA,5,
+0.659,0.629,3.23,3.54,2.29,Thu Jun 07 21:35:19 2018,regr.svm,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,161,222,9.534,9.099,random,20,cv,10,10,NA,5,17.0205794181701,0.0469453074382222
+0.66,0.605,2.99,3.76,2.29,Thu Jun 07 21:38:49 2018,regr.xgboost,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,511,222,9.534,9.099,random,210,cv,10,10,NA,5,237,3,0.196793016532902,7.39069022703916,0.534205301571637,4.50487496796995,0.907118279254064
+NA,NA,-1,NA,NA,Thu Jun 07 21:38:51 2018,regr.xyf,1,2,Boston Housing,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,511,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.659,0.631,-1,3.52,2.29,Thu Jun 07 21:39:07 2018,regr.bartMachine,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,476,222,9.534,9.099,nohyperparam,11,cv,10,10,NA,5,
+0.278,0.205,-1,7.58,4.85,Thu Jun 07 21:39:09 2018,regr.bcart,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,482,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu Jun 07 21:39:18 2018,regr.bdk,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,482,222,9.534,9.099,nohyperparam,8,cv,10,10,NA,5,
+0.617,0.585,3.23,3.96,2.58,Thu Jun 07 21:43:11 2018,regr.blackboost,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,91,222,9.534,9.099,random,233,cv,10,10,NA,5,2,364
+0.346,0.27,-1,6.96,4.4,Thu Jun 07 21:43:18 2018,regr.blm,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,97,222,9.534,9.099,nohyperparam,7,cv,10,10,NA,5,
+0.638,0.61,-1,3.72,2.43,Thu Jun 07 21:43:19 2018,regr.brnn,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,145,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.422,0.428,-1,5.46,3.89,Thu Jun 07 21:43:21 2018,regr.bst,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,145,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+0.387,0.27,-1,6.96,4.12,Thu Jun 07 21:43:37 2018,regr.btlm,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,151,222,9.534,9.099,nohyperparam,15,cv,10,10,NA,5,
+0.58,0.595,-1,3.87,2.82,Thu Jun 07 21:43:41 2018,regr.cforest,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,154,222,9.534,9.099,nohyperparam,4,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 21:43:46 2018,regr.crs,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,6
+0.532,0.518,-1,4.6,3.14,Thu Jun 07 21:43:47 2018,regr.ctree,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,154,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.601,0.538,-1,4.4,2.68,Thu Jun 07 21:43:49 2018,regr.cubist,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,158,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+0.484,0.493,-1,4.84,3.47,Thu Jun 07 21:43:51 2018,regr.cvglmnet,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,562,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 21:43:51 2018,regr.earth,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+-0.05,-0.017,-1,9.69,7.06,Thu Jun 07 21:43:52 2018,regr.elmNN,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,585,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 21:43:52 2018,regr.evtree,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+0.66,0.624,3.28,3.58,2.29,Thu Jun 07 22:13:10 2018,regr.extraTrees,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,569,222,9.534,9.099,random,1758,cv,10,10,NA,5,8,6
+-0.014,0,-1,9.53,6.81,Thu Jun 07 22:13:12 2018,regr.featureless,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,569,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:13:12 2018,regr.fnn,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+0.421,0.388,-1,5.84,3.89,Thu Jun 07 22:14:15 2018,regr.frbs,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,569,222,9.534,9.099,nohyperparam,63,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu Jun 07 22:14:17 2018,regr.gamboost,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,569,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.603,0.593,-1,3.88,2.67,Thu Jun 07 22:14:19 2018,regr.gausspr,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,349,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+0.591,0.548,3.35,4.31,2.75,Thu Jun 07 22:14:54 2018,regr.gbm,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,169,222,9.534,9.099,random,35,cv,10,10,NA,5,77,3,0.199959720321465,8
+0.44,0.48,-1,4.95,3.76,Thu Jun 07 22:14:55 2018,regr.glm,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,169,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.472,0.494,4.86,4.82,3.55,Thu Jun 07 22:15:05 2018,regr.glmboost,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,373,222,9.534,9.099,random,10,cv,10,10,NA,5,507,0.281229588901624
+0.471,0.494,5.03,4.82,3.56,Thu Jun 07 22:15:11 2018,regr.glmnet,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,577,222,9.534,9.099,random,5,cv,10,10,NA,5,0.356957672862336,0.0281545084865507
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:15:11 2018,regr.h2o.deeplearning,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:15:11 2018,regr.h2o.gbm,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:15:11 2018,regr.h2o.glm,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:15:11 2018,regr.h2o.randomForest,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:15:12 2018,regr.IBk,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:15:12 2018,regr.kknn,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:15:12 2018,regr.km,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+0.631,0.595,3.88,3.86,2.48,Thu Jun 07 22:15:27 2018,regr.ksvm,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,563,222,9.534,9.099,random,15,cv,10,10,NA,5,367.399171194824,0.000524349853906016
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:15:27 2018,regr.laGP,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:15:28 2018,regr.LiblineaRL2L1SVR,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+0.44,0.48,-1,4.95,3.76,Thu Jun 07 22:15:29 2018,regr.lm,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,563,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.535,0.431,-1,5.42,3.13,Thu Jun 07 22:15:29 2018,regr.mars,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,563,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu Jun 07 22:15:34 2018,regr.mob,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,563,222,9.534,9.099,nohyperparam,4,cv,10,10,NA,5,
+0.311,0.379,5.63,5.92,4.63,Thu Jun 07 22:16:06 2018,regr.nnet,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,580,222,9.534,9.099,random,31,cv,10,10,NA,5,8,0.485283687301986
+0.516,0.54,-1,4.39,3.25,Thu Jun 07 22:16:25 2018,regr.nodeHarvest,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,397,222,9.534,9.099,nohyperparam,19,cv,10,10,NA,5,
+0.44,0.48,-1,4.95,3.76,Thu Jun 07 22:16:25 2018,regr.pcr,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,397,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 22:16:31 2018,regr.penalized.fusedlasso,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 22:16:37 2018,regr.penalized.lasso,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 22:16:42 2018,regr.penalized.ridge,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,6
+0.44,0.48,-1,4.95,3.76,Thu Jun 07 22:16:44 2018,regr.plsr,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,397,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.649,0.603,3.24,3.78,2.36,Thu Jun 07 22:20:14 2018,regr.randomForest,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,378,222,9.534,9.099,random,210,cv,10,10,NA,5,5,16
+0.647,0.637,-1,3.46,2.37,Thu Jun 07 22:20:17 2018,regr.randomForestSRC,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,380,222,9.534,9.099,nohyperparam,3,cv,10,10,NA,5,
+0.655,0.637,3.35,3.46,2.32,Thu Jun 07 22:23:25 2018,regr.ranger,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,162,222,9.534,9.099,random,187,cv,10,10,NA,5,8,1
+0.55,0.563,-1,4.17,3.03,Thu Jun 07 22:23:28 2018,regr.rknn,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,128,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+0.543,0.528,4.65,4.5,3.07,Thu Jun 07 22:23:33 2018,regr.rpart,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,352,222,9.534,9.099,random,5,cv,10,10,NA,5,0.00107365415424429,12,10,42
+0.65,0.598,3.23,3.83,2.35,Thu Jun 07 22:28:24 2018,regr.RRF,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,456,222,9.534,9.099,random,291,cv,10,10,NA,5,20,0.234451825963333
+0.44,0.48,-1,4.95,3.76,Thu Jun 07 22:28:26 2018,regr.rsm,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,456,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.345,0.343,-1,6.26,4.4,Thu Jun 07 22:28:32 2018,regr.rvm,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,236,222,9.534,9.099,nohyperparam,6,cv,10,10,NA,5,
+0.369,0.389,-1,5.82,4.24,Thu Jun 07 22:28:39 2018,regr.slim,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,236,222,9.534,9.099,nohyperparam,8,cv,10,10,NA,5,
+0.648,0.598,3.53,3.83,2.36,Thu Jun 07 22:28:57 2018,regr.svm,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,440,222,9.534,9.099,random,18,cv,10,10,NA,5,1781.41101167385,0.000816327015351577
+0.64,0.606,3.28,3.75,2.42,Thu Jun 07 22:33:05 2018,regr.xgboost,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,471,222,9.534,9.099,random,248,cv,10,10,NA,5,1057,7,0.013365185884526,0.0918328389525414,0.54885327424854,15.1817036699504,0.751324029930402
+NA,NA,-1,NA,NA,Thu Jun 07 22:33:06 2018,regr.xyf,1,2,Boston Housing,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,471,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.655,0.646,-1,3.38,2.32,Thu Jun 07 22:33:22 2018,regr.bartMachine,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,427,222,9.534,9.099,nohyperparam,10,cv,10,10,NA,5,
+0.195,0.188,-1,7.74,5.41,Thu Jun 07 22:33:24 2018,regr.bcart,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,433,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu Jun 07 22:33:24 2018,regr.bdk,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,433,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.642,0.596,2.94,3.85,2.41,Thu Jun 07 22:36:32 2018,regr.blackboost,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,42,222,9.534,9.099,random,187,cv,10,10,NA,5,5,801
+0.392,0.293,-1,6.74,4.09,Thu Jun 07 22:36:38 2018,regr.blm,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,48,222,9.534,9.099,nohyperparam,6,cv,10,10,NA,5,
+0.637,0.609,-1,3.72,2.44,Thu Jun 07 22:36:39 2018,regr.brnn,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,94,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.43,0.434,-1,5.39,3.83,Thu Jun 07 22:36:40 2018,regr.bst,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,94,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.302,0.216,-1,7.47,4.69,Thu Jun 07 22:36:54 2018,regr.btlm,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,100,222,9.534,9.099,nohyperparam,14,cv,10,10,NA,5,
+0.592,0.592,-1,3.89,2.74,Thu Jun 07 22:36:58 2018,regr.cforest,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,13,222,9.534,9.099,nohyperparam,3,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 22:37:04 2018,regr.crs,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,6
+0.574,0.548,-1,4.31,2.86,Thu Jun 07 22:37:05 2018,regr.ctree,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,13,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.623,0.557,-1,4.22,2.53,Thu Jun 07 22:37:06 2018,regr.cubist,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,17,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.476,0.489,-1,4.87,3.52,Thu Jun 07 22:37:08 2018,regr.cvglmnet,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,421,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:37:08 2018,regr.earth,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+-2.353,-1.566,-1,24.5,22.5,Thu Jun 07 22:37:09 2018,regr.elmNN,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,443,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:37:09 2018,regr.evtree,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+NA,NA,3.08,NA,NA,Thu Jun 07 22:55:22 2018,regr.extraTrees,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,427,222,9.534,9.099,random,1093,cv,10,10,NA,5,11,3
+-0.014,0,-1,9.53,6.81,Thu Jun 07 22:55:24 2018,regr.featureless,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,427,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:55:25 2018,regr.fnn,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+0.467,0.444,-1,5.3,3.58,Thu Jun 07 22:56:21 2018,regr.frbs,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,427,222,9.534,9.099,nohyperparam,56,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu Jun 07 22:56:22 2018,regr.gamboost,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,427,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.606,0.583,-1,3.97,2.65,Thu Jun 07 22:56:23 2018,regr.gausspr,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,207,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.644,0.589,3.13,3.92,2.39,Thu Jun 07 22:57:15 2018,regr.gbm,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,119,222,9.534,9.099,random,51,cv,10,10,NA,5,516,8,0.0815181606051046,11
+0.471,0.497,-1,4.8,3.55,Thu Jun 07 22:57:16 2018,regr.glm,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,119,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.467,0.492,4.93,4.84,3.58,Thu Jun 07 22:57:27 2018,regr.glmboost,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,323,222,9.534,9.099,random,11,cv,10,10,NA,5,936,0.460027680266649
+0.467,0.492,4.9,4.84,3.58,Thu Jun 07 22:57:32 2018,regr.glmnet,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,527,222,9.534,9.099,random,5,cv,10,10,NA,5,0.936063490109518,0.00132836133816059
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:57:32 2018,regr.h2o.deeplearning,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:57:33 2018,regr.h2o.gbm,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:57:33 2018,regr.h2o.glm,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:57:33 2018,regr.h2o.randomForest,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:57:33 2018,regr.IBk,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:57:34 2018,regr.kknn,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:57:34 2018,regr.km,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+0.623,0.609,3.91,3.73,2.53,Thu Jun 07 22:57:45 2018,regr.ksvm,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,513,222,9.534,9.099,random,11,cv,10,10,NA,5,22.9121820814884,0.0741380722312351
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:57:45 2018,regr.laGP,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 22:57:45 2018,regr.LiblineaRL2L1SVR,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+0.471,0.497,-1,4.8,3.55,Thu Jun 07 22:57:46 2018,regr.lm,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,513,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.575,0.559,-1,4.2,2.85,Thu Jun 07 22:57:47 2018,regr.mars,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,513,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu Jun 07 22:57:54 2018,regr.mob,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,513,222,9.534,9.099,nohyperparam,7,cv,10,10,NA,5,
+0.383,0.398,5.68,5.74,4.14,Thu Jun 07 22:58:36 2018,regr.nnet,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,278,222,9.534,9.099,random,42,cv,10,10,NA,5,16,0.119293299855214
+0.533,0.557,-1,4.23,3.14,Thu Jun 07 22:58:51 2018,regr.nodeHarvest,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,102,222,9.534,9.099,nohyperparam,15,cv,10,10,NA,5,
+0.471,0.497,-1,4.8,3.55,Thu Jun 07 22:58:52 2018,regr.pcr,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,102,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 22:58:57 2018,regr.penalized.fusedlasso,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 22:59:03 2018,regr.penalized.lasso,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 22:59:09 2018,regr.penalized.ridge,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,6
+0.471,0.497,-1,4.8,3.55,Thu Jun 07 22:59:10 2018,regr.plsr,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,102,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.668,0.618,3.15,3.64,2.23,Thu Jun 07 23:03:39 2018,regr.randomForest,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,487,222,9.534,9.099,random,269,cv,10,10,NA,5,2,20
+0.659,0.643,-1,3.4,2.29,Thu Jun 07 23:03:42 2018,regr.randomForestSRC,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,489,222,9.534,9.099,nohyperparam,3,cv,10,10,NA,5,
+0.663,0.613,3.26,3.69,2.27,Thu Jun 07 23:07:54 2018,regr.ranger,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,271,222,9.534,9.099,random,251,cv,10,10,NA,5,20,5
+0.544,0.548,-1,4.31,3.06,Thu Jun 07 23:07:56 2018,regr.rknn,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,128,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+0.544,0.527,4.48,4.51,3.06,Thu Jun 07 23:08:02 2018,regr.rpart,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,352,222,9.534,9.099,random,5,cv,10,10,NA,5,0.00343479534142847,15,7,16
+0.664,0.614,3.42,3.68,2.26,Thu Jun 07 23:12:13 2018,regr.RRF,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,80,222,9.534,9.099,random,251,cv,10,10,NA,5,19,0.467323046643287
+0.471,0.497,-1,4.8,3.55,Thu Jun 07 23:12:14 2018,regr.rsm,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,80,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.37,0.393,-1,5.79,4.23,Thu Jun 07 23:12:20 2018,regr.rvm,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,484,222,9.534,9.099,nohyperparam,6,cv,10,10,NA,5,
+0.368,0.388,-1,5.84,4.25,Thu Jun 07 23:12:29 2018,regr.slim,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,484,222,9.534,9.099,nohyperparam,9,cv,10,10,NA,5,
+0.67,0.632,3.58,3.51,2.22,Thu Jun 07 23:12:43 2018,regr.svm,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,64,222,9.534,9.099,random,14,cv,10,10,NA,5,3.37858989965527,0.0443043120007699
+0.644,0.596,3.09,3.85,2.39,Thu Jun 07 23:15:30 2018,regr.xgboost,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,470,222,9.534,9.099,random,166,cv,10,10,NA,5,576,7,0.0482761504736263,3.04044893942773,0.344623049907386,6.29637527745217,0.726332550053485
+NA,NA,-1,NA,NA,Thu Jun 07 23:15:31 2018,regr.xyf,1,2,Boston Housing,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,470,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.651,0.629,-1,3.54,2.34,Thu Jun 07 23:15:44 2018,regr.bartMachine,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,34,222,9.534,0.9991,nohyperparam,9,cv,10,10,NA,5,
+0.418,0.316,-1,6.52,3.91,Thu Jun 07 23:15:46 2018,regr.bcart,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,40,222,9.534,0.9991,nohyperparam,2,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Thu Jun 07 23:15:47 2018,regr.bdk,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,40,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.674,0.609,0.342,3.73,2.19,Thu Jun 07 23:22:52 2018,regr.blackboost,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,273,222,9.534,0.9991,random,424,cv,10,10,NA,5,4,178
+0.385,0.289,-1,6.78,4.13,Thu Jun 07 23:22:55 2018,regr.blm,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,279,222,9.534,0.9991,nohyperparam,3,cv,10,10,NA,5,
+0.63,0.605,-1,NA,NA,Thu Jun 07 23:22:56 2018,regr.brnn,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,309,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.464,0.473,-1,5.02,3.6,Thu Jun 07 23:22:57 2018,regr.bst,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,309,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.431,0.318,-1,NA,NA,Thu Jun 07 23:23:04 2018,regr.btlm,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,315,222,9.534,0.9991,nohyperparam,7,cv,10,10,NA,5,
+0.596,0.597,-1,3.84,2.71,Thu Jun 07 23:23:08 2018,regr.cforest,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,542,222,9.534,0.9991,nohyperparam,4,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Thu Jun 07 23:23:14 2018,regr.crs,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,6
+0.558,0.554,-1,4.25,2.96,Thu Jun 07 23:23:15 2018,regr.ctree,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,542,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.622,0.545,-1,4.34,2.54,Thu Jun 07 23:23:16 2018,regr.cubist,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,546,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.474,0.484,-1,4.92,3.53,Thu Jun 07 23:23:17 2018,regr.cvglmnet,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,326,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 23:23:17 2018,regr.earth,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.04,0.012,-1,9.42,6.45,Thu Jun 07 23:23:18 2018,regr.elmNN,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,340,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Jun 07 23:23:18 2018,regr.evtree,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+NA,NA,0.337,NA,NA,Fri Jun 08 00:30:08 2018,regr.extraTrees,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,324,222,9.534,0.9991,random,4009,cv,10,10,NA,5,5,3
+-0.014,0,-1,9.53,6.82,Fri Jun 08 00:30:10 2018,regr.featureless,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,324,222,9.534,0.9991,nohyperparam,2,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 00:30:10 2018,regr.fnn,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.44,0.416,-1,5.57,3.76,Fri Jun 08 00:30:45 2018,regr.frbs,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,324,222,9.534,0.9991,nohyperparam,34,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 00:30:46 2018,regr.gamboost,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,324,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.616,0.604,-1,3.77,2.58,Fri Jun 08 00:30:47 2018,regr.gausspr,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,104,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.65,0.603,0.323,3.79,2.35,Fri Jun 08 00:31:14 2018,regr.gbm,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,372,222,9.534,0.9991,random,27,cv,10,10,NA,5,208,9,0.0620123002023902,6
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 00:31:14 2018,regr.glm,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,372,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.468,0.492,0.543,4.84,3.58,Fri Jun 08 00:31:26 2018,regr.glmboost,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,576,222,9.534,0.9991,random,12,cv,10,10,NA,5,185,0.819640410598367
+0.472,0.494,0.536,4.82,3.55,Fri Jun 08 00:31:31 2018,regr.glmnet,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,156,222,9.534,0.9991,random,5,cv,10,10,NA,5,0.531654685735703,0.00313307740411521
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 00:31:32 2018,regr.h2o.deeplearning,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 00:31:32 2018,regr.h2o.gbm,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 00:31:32 2018,regr.h2o.glm,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 00:31:32 2018,regr.h2o.randomForest,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 00:31:33 2018,regr.IBk,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 00:31:33 2018,regr.kknn,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 00:31:33 2018,regr.km,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.652,0.612,0.409,NA,NA,Fri Jun 08 00:31:42 2018,regr.ksvm,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,142,222,9.534,0.9991,random,9,cv,10,10,NA,5,22.3999222539187,0.00523350342021587
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 00:31:43 2018,regr.laGP,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 00:31:43 2018,regr.LiblineaRL2L1SVR,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 00:31:44 2018,regr.lm,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,142,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.578,0.523,-1,NA,NA,Fri Jun 08 00:31:45 2018,regr.mars,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,142,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.332,-0.944,-1,NA,NA,Fri Jun 08 00:31:49 2018,regr.mob,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,142,222,9.534,0.9991,nohyperparam,5,cv,10,10,NA,5,
+0.654,0.67,0.379,NA,NA,Fri Jun 08 00:32:30 2018,regr.nnet,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,618,222,9.534,0.9991,random,40,cv,10,10,NA,5,13,0.645572803368168
+0.535,0.55,-1,4.29,3.12,Fri Jun 08 00:32:45 2018,regr.nodeHarvest,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,274,222,9.534,0.9991,nohyperparam,15,cv,10,10,NA,5,
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 00:32:45 2018,regr.pcr,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,274,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 00:32:51 2018,regr.penalized.fusedlasso,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 00:32:57 2018,regr.penalized.lasso,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 00:33:02 2018,regr.penalized.ridge,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,6
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 00:33:04 2018,regr.plsr,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,274,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.651,0.637,0.364,3.46,2.35,Fri Jun 08 00:35:34 2018,regr.randomForest,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,219,222,9.534,0.9991,random,150,cv,10,10,NA,5,1,6
+0.657,0.654,-1,3.3,2.3,Fri Jun 08 00:35:37 2018,regr.randomForestSRC,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,221,222,9.534,0.9991,nohyperparam,3,cv,10,10,NA,5,
+0.65,0.605,0.335,3.77,2.35,Fri Jun 08 00:37:26 2018,regr.ranger,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,3,222,9.534,0.9991,random,109,cv,10,10,NA,5,12,1
+NA,NA,-1,NA,NA,Fri Jun 08 00:37:28 2018,regr.rknn,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,321,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.535,0.523,0.507,4.55,3.12,Fri Jun 08 00:37:33 2018,regr.rpart,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,545,222,9.534,0.9991,random,5,cv,10,10,NA,5,0.00316007115795382,28,11,5
+0.646,0.603,0.356,3.78,2.38,Fri Jun 08 00:40:44 2018,regr.RRF,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,590,222,9.534,0.9991,random,192,cv,10,10,NA,5,12,0.743340051267296
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 00:40:46 2018,regr.rsm,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,590,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.637,0.646,-1,3.38,2.44,Fri Jun 08 00:40:50 2018,regr.rvm,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,370,222,9.534,0.9991,nohyperparam,4,cv,10,10,NA,5,
+0.382,0.4,-1,5.72,4.15,Fri Jun 08 00:40:51 2018,regr.slim,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,370,222,9.534,0.9991,nohyperparam,2,cv,10,10,NA,5,
+0.655,0.604,0.387,NA,NA,Fri Jun 08 00:41:05 2018,regr.svm,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,574,222,9.534,0.9991,random,13,cv,10,10,NA,5,133.180588645976,0.0033940882548077
+0.549,0.534,0.429,NA,NA,Fri Jun 08 00:43:28 2018,regr.xgboost,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,184,222,9.534,0.9991,random,143,cv,10,10,NA,5,767,10,0.425410780385602,2.72934147156775,0.412811946775764,10.8740654448047,0.560523789317813
+NA,NA,-1,NA,NA,Fri Jun 08 00:43:29 2018,regr.xyf,1,1,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,184,222,9.534,0.9991,nohyperparam,1,cv,10,10,NA,5,
+0.615,0.581,-1,3.99,2.58,Fri Jun 08 00:43:42 2018,regr.bartMachine,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,34,222,9.534,9.099,nohyperparam,9,cv,10,10,NA,5,
+0.412,0.307,-1,6.61,3.95,Fri Jun 08 00:43:44 2018,regr.bcart,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,40,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 00:43:45 2018,regr.bdk,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,40,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.682,0.616,3.07,3.67,2.14,Fri Jun 08 00:50:51 2018,regr.blackboost,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,273,222,9.534,9.099,random,426,cv,10,10,NA,5,4,178
+0.385,0.289,-1,6.78,4.13,Fri Jun 08 00:50:55 2018,regr.blm,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,279,222,9.534,9.099,nohyperparam,4,cv,10,10,NA,5,
+0.631,0.605,-1,3.77,2.48,Fri Jun 08 00:50:56 2018,regr.brnn,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,309,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.464,0.473,-1,5.02,3.6,Fri Jun 08 00:50:57 2018,regr.bst,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,309,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.417,0.303,-1,6.64,3.92,Fri Jun 08 00:51:04 2018,regr.btlm,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,315,222,9.534,9.099,nohyperparam,6,cv,10,10,NA,5,
+0.598,0.6,-1,3.81,2.7,Fri Jun 08 00:51:07 2018,regr.cforest,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,352,222,9.534,9.099,nohyperparam,3,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 00:51:13 2018,regr.crs,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,6
+0.559,0.554,-1,4.25,2.97,Fri Jun 08 00:51:14 2018,regr.ctree,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,352,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.616,0.529,-1,4.49,2.58,Fri Jun 08 00:51:15 2018,regr.cubist,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,356,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.49,0.497,-1,4.8,3.43,Fri Jun 08 00:51:16 2018,regr.cvglmnet,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,136,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 00:51:16 2018,regr.earth,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+-0.331,-0.191,-1,11.4,8.94,Fri Jun 08 00:51:17 2018,regr.elmNN,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,150,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 00:51:17 2018,regr.evtree,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+NA,NA,2.85,NA,NA,Fri Jun 08 01:22:59 2018,regr.extraTrees,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,134,222,9.534,9.099,random,1901,cv,10,10,NA,5,7,4
+-0.014,0,-1,9.53,6.81,Fri Jun 08 01:23:03 2018,regr.featureless,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,134,222,9.534,9.099,nohyperparam,4,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 01:23:03 2018,regr.fnn,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.438,0.415,-1,5.58,3.78,Fri Jun 08 01:23:37 2018,regr.frbs,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,134,222,9.534,9.099,nohyperparam,34,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 01:23:38 2018,regr.gamboost,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,134,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.615,0.602,-1,3.8,2.59,Fri Jun 08 01:23:39 2018,regr.gausspr,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,538,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.662,0.616,2.97,3.66,2.27,Fri Jun 08 01:24:08 2018,regr.gbm,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,326,222,9.534,9.099,random,29,cv,10,10,NA,5,922,3,0.140730091025122,5
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 01:24:09 2018,regr.glm,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,326,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.467,0.492,4.99,4.84,3.58,Fri Jun 08 01:24:21 2018,regr.glmboost,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,530,222,9.534,9.099,random,12,cv,10,10,NA,5,582,0.442253054585308
+0.469,0.493,4.91,4.83,3.57,Fri Jun 08 01:24:26 2018,regr.glmnet,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,110,222,9.534,9.099,random,5,cv,10,10,NA,5,0.356422221986577,0.0131079124781934
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 01:24:26 2018,regr.h2o.deeplearning,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 01:24:26 2018,regr.h2o.gbm,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 01:24:27 2018,regr.h2o.glm,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 01:24:27 2018,regr.h2o.randomForest,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 01:24:27 2018,regr.IBk,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 01:24:27 2018,regr.kknn,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 01:24:27 2018,regr.km,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.663,0.624,3.39,3.59,2.26,Fri Jun 08 01:24:40 2018,regr.ksvm,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,96,222,9.534,9.099,random,12,cv,10,10,NA,5,528.129535646851,0.00396641141554152
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 01:24:40 2018,regr.laGP,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 01:24:40 2018,regr.LiblineaRL2L1SVR,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 01:24:41 2018,regr.lm,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,96,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.579,0.523,-1,4.55,2.83,Fri Jun 08 01:24:42 2018,regr.mars,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,96,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.332,-0.942,-1,18.5,4.49,Fri Jun 08 01:24:46 2018,regr.mob,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,96,222,9.534,9.099,nohyperparam,4,cv,10,10,NA,5,
+0.637,0.568,2.91,4.12,2.44,Fri Jun 08 01:25:40 2018,regr.nnet,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,503,222,9.534,9.099,random,54,cv,10,10,NA,5,18,1.49877000384396
+0.529,0.553,-1,4.27,3.17,Fri Jun 08 01:25:56 2018,regr.nodeHarvest,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,139,222,9.534,9.099,nohyperparam,17,cv,10,10,NA,5,
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 01:25:57 2018,regr.pcr,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,139,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 01:26:06 2018,regr.penalized.fusedlasso,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,9
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 01:26:12 2018,regr.penalized.lasso,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 01:26:17 2018,regr.penalized.ridge,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,6
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 01:26:18 2018,regr.plsr,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,139,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.657,0.644,3.55,3.4,2.31,Fri Jun 08 01:29:23 2018,regr.randomForest,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,177,222,9.534,9.099,random,184,cv,10,10,NA,5,1,6
+0.656,0.655,-1,3.29,2.31,Fri Jun 08 01:29:26 2018,regr.randomForestSRC,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,179,222,9.534,9.099,nohyperparam,4,cv,10,10,NA,5,
+0.65,0.603,3.01,3.78,2.35,Fri Jun 08 01:31:07 2018,regr.ranger,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,585,222,9.534,9.099,random,101,cv,10,10,NA,5,13,5
+NA,NA,-1,NA,NA,Fri Jun 08 01:31:08 2018,regr.rknn,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,12,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.543,0.528,4.4,4.5,3.07,Fri Jun 08 01:31:13 2018,regr.rpart,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,236,222,9.534,9.099,random,5,cv,10,10,NA,5,0.00252062476666083,30,9,29
+0.642,0.601,3.06,3.8,2.41,Fri Jun 08 01:33:49 2018,regr.RRF,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,566,222,9.534,9.099,random,156,cv,10,10,NA,5,11,0.946705110836774
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 01:33:50 2018,regr.rsm,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,566,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.626,0.639,-1,3.44,2.51,Fri Jun 08 01:33:56 2018,regr.rvm,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,346,222,9.534,9.099,nohyperparam,5,cv,10,10,NA,5,
+0.377,0.396,-1,5.76,4.18,Fri Jun 08 01:34:00 2018,regr.slim,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,346,222,9.534,9.099,nohyperparam,4,cv,10,10,NA,5,
+0.667,0.612,3.37,3.7,2.24,Fri Jun 08 01:34:16 2018,regr.svm,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,550,222,9.534,9.099,random,16,cv,10,10,NA,5,88.1076116046783,0.00897672415772659
+0.643,0.601,3.01,3.8,2.4,Fri Jun 08 01:40:35 2018,regr.xgboost,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,212,222,9.534,9.099,random,379,cv,10,10,NA,5,490,10,0.0326338809260633,0.85820096777752,0.671201761532575,4.55051219090819,0.625661243102513
+NA,NA,-1,NA,NA,Fri Jun 08 01:40:37 2018,regr.xyf,1,2,Boston Housing,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,212,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.636,0.569,-1,4.11,2.45,Fri Jun 08 01:40:51 2018,regr.bartMachine,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,34,222,9.534,9.099,nohyperparam,9,cv,10,10,NA,5,
+0.255,0.179,-1,7.83,5.01,Fri Jun 08 01:40:53 2018,regr.bcart,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,40,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 01:40:54 2018,regr.bdk,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,40,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.63,0.578,2.9,4.02,2.49,Fri Jun 08 01:48:06 2018,regr.blackboost,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,273,222,9.534,9.099,random,432,cv,10,10,NA,5,5,506
+NA,NA,-1,NA,NA,Fri Jun 08 01:48:08 2018,regr.blm,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,273,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.624,0.554,-1,4.26,2.53,Fri Jun 08 01:48:09 2018,regr.brnn,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,303,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.221,0.19,-1,7.73,5.23,Fri Jun 08 01:48:10 2018,regr.bst,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,303,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 01:48:11 2018,regr.btlm,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,303,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.598,0.6,-1,3.82,2.7,Fri Jun 08 01:48:14 2018,regr.cforest,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,555,222,9.534,9.099,nohyperparam,3,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 01:48:34 2018,regr.crs,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,19
+0.527,0.536,-1,4.42,3.18,Fri Jun 08 01:48:34 2018,regr.ctree,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,555,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 01:48:35 2018,regr.cubist,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,559,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.462,0.478,-1,4.97,3.61,Fri Jun 08 01:48:37 2018,regr.cvglmnet,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,339,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 01:48:37 2018,regr.earth,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+-0.014,0,-1,9.53,6.81,Fri Jun 08 01:48:38 2018,regr.elmNN,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,353,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 01:48:38 2018,regr.evtree,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+NA,NA,3.18,NA,NA,Fri Jun 08 02:11:21 2018,regr.extraTrees,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,337,222,9.534,9.099,random,1363,cv,10,10,NA,5,6,15
+-0.014,0,-1,9.53,6.81,Fri Jun 08 02:11:24 2018,regr.featureless,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,337,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 02:11:24 2018,regr.fnn,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+0.426,0.476,-1,4.99,3.86,Fri Jun 08 02:12:01 2018,regr.frbs,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,337,222,9.534,9.099,nohyperparam,36,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 02:12:02 2018,regr.gamboost,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,337,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.631,0.607,-1,3.74,2.48,Fri Jun 08 02:12:03 2018,regr.gausspr,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,117,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.638,0.606,2.9,3.76,2.44,Fri Jun 08 02:12:56 2018,regr.gbm,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,441,222,9.534,9.099,random,53,cv,10,10,NA,5,449,10,0.0957877822618466,5
+0.45,0.479,-1,4.97,3.7,Fri Jun 08 02:12:57 2018,regr.glm,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,441,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.439,0.473,4.56,5.03,3.77,Fri Jun 08 02:13:04 2018,regr.glmboost,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,21,222,9.534,9.099,random,7,cv,10,10,NA,5,543,0.390808274270967
+0.441,0.474,4.64,5.02,3.76,Fri Jun 08 02:13:10 2018,regr.glmnet,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,225,222,9.534,9.099,random,5,cv,10,10,NA,5,0.00689532281830907,0.0267220364620774
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 02:13:10 2018,regr.h2o.deeplearning,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 02:13:10 2018,regr.h2o.gbm,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 02:13:10 2018,regr.h2o.glm,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 02:13:11 2018,regr.h2o.randomForest,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 02:13:11 2018,regr.IBk,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 02:13:11 2018,regr.kknn,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 02:13:11 2018,regr.km,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+0.678,0.649,3.31,3.35,2.16,Fri Jun 08 02:13:21 2018,regr.ksvm,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,211,222,9.534,9.099,random,10,cv,10,10,NA,5,74.7281124109936,0.0120457472418843
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 02:13:22 2018,regr.laGP,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 02:13:22 2018,regr.LiblineaRL2L1SVR,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+0.45,0.479,-1,4.97,3.7,Fri Jun 08 02:13:23 2018,regr.lm,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,211,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.576,0.533,-1,4.45,2.85,Fri Jun 08 02:13:24 2018,regr.mars,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,211,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.45,0.479,-1,4.97,3.7,Fri Jun 08 02:13:24 2018,regr.mob,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,211,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.016,0.013,9.07,9.41,6.61,Fri Jun 08 02:13:41 2018,regr.nnet,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,105,222,9.534,9.099,random,16,cv,10,10,NA,5,1,7.79006790775731
+0.507,0.527,-1,4.51,3.31,Fri Jun 08 02:13:54 2018,regr.nodeHarvest,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,313,222,9.534,9.099,nohyperparam,13,cv,10,10,NA,5,
+NaN,NaN,-1,NaN,NaN,Fri Jun 08 02:13:55 2018,regr.pcr,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,313,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 02:14:22 2018,regr.penalized.fusedlasso,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,27
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 02:14:27 2018,regr.penalized.lasso,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 02:14:33 2018,regr.penalized.ridge,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,6
+NaN,NaN,-1,NaN,NaN,Fri Jun 08 02:14:34 2018,regr.plsr,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,313,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.654,0.631,3.19,3.52,2.32,Fri Jun 08 02:17:20 2018,regr.randomForest,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,461,222,9.534,9.099,random,166,cv,10,10,NA,5,2,8
+0.657,0.652,-1,3.31,2.3,Fri Jun 08 02:17:24 2018,regr.randomForestSRC,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,463,222,9.534,9.099,nohyperparam,4,cv,10,10,NA,5,
+0.652,0.617,3.11,3.65,2.34,Fri Jun 08 02:19:21 2018,regr.ranger,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,245,222,9.534,9.099,random,117,cv,10,10,NA,5,10,3
+NA,NA,-1,NA,NA,Fri Jun 08 02:19:22 2018,regr.rknn,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,9,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.487,0.504,4.98,4.73,3.45,Fri Jun 08 02:19:27 2018,regr.rpart,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,233,222,9.534,9.099,random,5,cv,10,10,NA,5,0.0211467235500863,15,20,5
+0.653,0.61,3.06,3.72,2.33,Fri Jun 08 02:22:25 2018,regr.RRF,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,150,222,9.534,9.099,random,178,cv,10,10,NA,5,13,0.467784798936918
+0.45,0.479,-1,4.97,3.7,Fri Jun 08 02:22:26 2018,regr.rsm,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,150,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 02:22:28 2018,regr.rvm,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,554,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.391,0.406,-1,5.66,4.09,Fri Jun 08 02:22:32 2018,regr.slim,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,554,222,9.534,9.099,nohyperparam,4,cv,10,10,NA,5,
+0.664,0.632,3.74,3.5,2.26,Fri Jun 08 02:22:47 2018,regr.svm,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,134,222,9.534,9.099,random,15,cv,10,10,NA,5,1.42086524922919,0.156159745258799
+0.596,0.54,3.22,4.39,2.72,Fri Jun 08 02:26:57 2018,regr.xgboost,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,132,222,9.534,9.099,random,250,cv,10,10,NA,5,646,3,0.395142402251018,1.85543925268576,0.664849339611828,10.3873802209273,0.720893655146938
+NA,NA,-1,NA,NA,Fri Jun 08 02:26:58 2018,regr.xyf,1,2,Boston Housing,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,132,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.663,0.644,-1,3.4,2.27,Fri Jun 08 02:27:15 2018,regr.bartMachine,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,34,222,9.534,0.2022,nohyperparam,12,cv,10,10,NA,5,
+0.303,0.237,-1,7.28,4.68,Fri Jun 08 02:27:17 2018,regr.bcart,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,40,222,9.534,0.2022,nohyperparam,2,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 02:27:17 2018,regr.bdk,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,40,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.669,0.598,0.0679,3.83,2.22,Fri Jun 08 02:34:30 2018,regr.blackboost,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,273,222,9.534,0.2022,random,432,cv,10,10,NA,5,5,580
+0.386,0.289,-1,6.78,4.13,Fri Jun 08 02:34:34 2018,regr.blm,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,279,222,9.534,0.2022,nohyperparam,3,cv,10,10,NA,5,
+0.631,0.605,-1,NA,NA,Fri Jun 08 02:34:35 2018,regr.brnn,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,309,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.28,0.267,-1,6.99,4.84,Fri Jun 08 02:34:36 2018,regr.bst,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,309,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.433,0.301,-1,6.67,3.81,Fri Jun 08 02:34:43 2018,regr.btlm,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,315,222,9.534,0.2022,nohyperparam,6,cv,10,10,NA,5,
+0.593,0.597,-1,3.85,2.74,Fri Jun 08 02:34:46 2018,regr.cforest,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,157,222,9.534,0.2022,nohyperparam,4,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 02:34:53 2018,regr.crs,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,6
+0.535,0.539,-1,4.39,3.12,Fri Jun 08 02:34:54 2018,regr.ctree,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,157,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.628,0.539,-1,NA,NA,Fri Jun 08 02:34:55 2018,regr.cubist,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,161,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.475,0.484,-1,4.92,3.53,Fri Jun 08 02:34:56 2018,regr.cvglmnet,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,565,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 02:34:56 2018,regr.earth,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+-0.216,-0.188,-1,11.3,8.17,Fri Jun 08 02:34:57 2018,regr.elmNN,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,579,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 02:34:57 2018,regr.evtree,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.652,0.609,0.0642,3.73,2.34,Fri Jun 08 02:59:03 2018,regr.extraTrees,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,563,222,9.534,0.2022,random,1445,cv,10,10,NA,5,7,5
+-0.014,0,-1,9.53,6.81,Fri Jun 08 02:59:05 2018,regr.featureless,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,563,222,9.534,0.2022,nohyperparam,2,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 02:59:05 2018,regr.fnn,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.441,0.417,-1,5.56,3.76,Fri Jun 08 02:59:39 2018,regr.frbs,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,563,222,9.534,0.2022,nohyperparam,34,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 02:59:40 2018,regr.gamboost,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,563,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.612,0.594,-1,3.87,2.61,Fri Jun 08 02:59:41 2018,regr.gausspr,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,343,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.573,0.541,0.0784,NA,NA,Fri Jun 08 02:59:58 2018,regr.gbm,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,267,222,9.534,0.2022,random,16,cv,10,10,NA,5,168,6,0.181414712605532,21
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 03:00:06 2018,regr.glm,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,267,222,9.534,0.2022,nohyperparam,8,cv,10,10,NA,5,
+0.468,0.493,0.109,4.84,3.58,Fri Jun 08 03:00:12 2018,regr.glmboost,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,471,222,9.534,0.2022,random,7,cv,10,10,NA,5,225,0.879219104303047
+0.48,0.488,0.116,4.88,3.5,Fri Jun 08 03:00:17 2018,regr.glmnet,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,51,222,9.534,0.2022,random,5,cv,10,10,NA,5,0.032254938967526,0.0605092762489799
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:00:17 2018,regr.h2o.deeplearning,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:00:18 2018,regr.h2o.gbm,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:00:18 2018,regr.h2o.glm,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:00:18 2018,regr.h2o.randomForest,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:00:18 2018,regr.IBk,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:00:19 2018,regr.kknn,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:00:19 2018,regr.km,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.675,0.616,0.0726,NA,NA,Fri Jun 08 03:00:35 2018,regr.ksvm,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,37,222,9.534,0.2022,random,16,cv,10,10,NA,5,57.6051435577495,0.0127148030237784
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:00:35 2018,regr.laGP,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:00:36 2018,regr.LiblineaRL2L1SVR,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 03:00:36 2018,regr.lm,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,37,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.583,0.531,-1,NA,NA,Fri Jun 08 03:00:37 2018,regr.mars,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,37,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.331,-0.928,-1,NA,NA,Fri Jun 08 03:00:41 2018,regr.mob,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,37,222,9.534,0.2022,nohyperparam,3,cv,10,10,NA,5,
+0.627,0.576,0.0721,NA,NA,Fri Jun 08 03:01:17 2018,regr.nnet,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,222,222,9.534,0.2022,random,36,cv,10,10,NA,5,20,0.00267306066180301
+0.534,0.561,-1,4.18,3.13,Fri Jun 08 03:01:31 2018,regr.nodeHarvest,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,406,222,9.534,0.2022,nohyperparam,14,cv,10,10,NA,5,
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 03:01:38 2018,regr.pcr,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,406,222,9.534,0.2022,nohyperparam,6,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 03:01:45 2018,regr.penalized.fusedlasso,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,7
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 03:01:50 2018,regr.penalized.lasso,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 03:01:56 2018,regr.penalized.ridge,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,6
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 03:01:57 2018,regr.plsr,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,406,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.65,0.632,0.0745,3.51,2.35,Fri Jun 08 03:04:54 2018,regr.randomForest,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,615,222,9.534,0.2022,random,177,cv,10,10,NA,5,1,7
+0.654,0.654,-1,3.3,2.33,Fri Jun 08 03:04:57 2018,regr.randomForestSRC,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,617,222,9.534,0.2022,nohyperparam,3,cv,10,10,NA,5,
+0.654,0.645,0.0693,3.38,2.32,Fri Jun 08 03:06:33 2018,regr.ranger,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,399,222,9.534,0.2022,random,96,cv,10,10,NA,5,6,3
+NA,NA,-1,NA,NA,Fri Jun 08 03:06:34 2018,regr.rknn,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,30,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.584,0.565,0.111,4.15,2.79,Fri Jun 08 03:06:39 2018,regr.rpart,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,254,222,9.534,0.2022,random,5,cv,10,10,NA,5,0.00142730775585747,24,6,49
+0.645,0.605,0.0686,3.77,2.39,Fri Jun 08 03:09:30 2018,regr.RRF,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,240,222,9.534,0.2022,random,171,cv,10,10,NA,5,13,0.477807730901986
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 03:09:31 2018,regr.rsm,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,240,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.651,0.66,-1,3.24,2.35,Fri Jun 08 03:09:35 2018,regr.rvm,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,20,222,9.534,0.2022,nohyperparam,4,cv,10,10,NA,5,
+0.383,0.4,-1,5.72,4.15,Fri Jun 08 03:09:37 2018,regr.slim,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,20,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.643,0.609,0.0857,NA,NA,Fri Jun 08 03:09:49 2018,regr.svm,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,224,222,9.534,0.2022,random,12,cv,10,10,NA,5,91.7776139080842,0.00182570142146531
+0.46,0.494,0.115,4.82,3.63,Fri Jun 08 03:16:46 2018,regr.xgboost,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,338,222,9.534,0.2022,random,416,cv,10,10,NA,5,77,6,0.320889713319484,0.708359859418124,0.52476632418111,11.3640850223601,0.704517966369167
+NA,NA,-1,NA,NA,Fri Jun 08 03:16:47 2018,regr.xyf,1,1,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,338,222,9.534,0.2022,nohyperparam,1,cv,10,10,NA,5,
+0.641,0.595,-1,3.87,2.41,Fri Jun 08 03:17:00 2018,regr.bartMachine,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,34,222,9.534,9.099,nohyperparam,9,cv,10,10,NA,5,
+0.376,0.267,-1,6.99,4.19,Fri Jun 08 03:17:02 2018,regr.bcart,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,40,222,9.534,9.099,nohyperparam,2,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 03:17:03 2018,regr.bdk,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,40,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.667,0.593,3.08,3.88,2.24,Fri Jun 08 03:24:15 2018,regr.blackboost,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,273,222,9.534,9.099,random,431,cv,10,10,NA,5,5,580
+0.385,0.289,-1,6.78,4.13,Fri Jun 08 03:24:18 2018,regr.blm,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,279,222,9.534,9.099,nohyperparam,4,cv,10,10,NA,5,
+0.631,0.605,-1,3.76,2.48,Fri Jun 08 03:24:19 2018,regr.brnn,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,309,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.28,0.267,-1,6.99,4.84,Fri Jun 08 03:24:21 2018,regr.bst,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,309,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.357,-0.043,-1,9.94,4.32,Fri Jun 08 03:24:27 2018,regr.btlm,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,315,222,9.534,9.099,nohyperparam,6,cv,10,10,NA,5,
+0.595,0.6,-1,3.82,2.72,Fri Jun 08 03:24:30 2018,regr.cforest,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,387,222,9.534,9.099,nohyperparam,3,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 03:24:36 2018,regr.crs,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,6
+0.535,0.539,-1,4.39,3.12,Fri Jun 08 03:24:37 2018,regr.ctree,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,387,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.605,0.536,-1,4.43,2.65,Fri Jun 08 03:24:38 2018,regr.cubist,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,391,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.49,0.497,-1,4.8,3.43,Fri Jun 08 03:24:39 2018,regr.cvglmnet,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,171,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:24:39 2018,regr.earth,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+-0.526,-0.493,-1,14.2,10.3,Fri Jun 08 03:24:40 2018,regr.elmNN,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,185,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:24:40 2018,regr.evtree,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.656,0.627,2.82,3.56,2.31,Fri Jun 08 03:49:07 2018,regr.extraTrees,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,169,222,9.534,9.099,random,1466,cv,10,10,NA,5,6,7
+-0.014,0,-1,9.53,6.81,Fri Jun 08 03:49:08 2018,regr.featureless,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,169,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:49:08 2018,regr.fnn,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.441,0.417,-1,5.56,3.76,Fri Jun 08 03:49:43 2018,regr.frbs,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,169,222,9.534,9.099,nohyperparam,34,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 03:49:44 2018,regr.gamboost,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,169,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.617,0.607,-1,3.74,2.58,Fri Jun 08 03:49:45 2018,regr.gausspr,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,573,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.656,0.61,3.14,3.72,2.31,Fri Jun 08 03:50:20 2018,regr.gbm,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,441,222,9.534,9.099,random,35,cv,10,10,NA,5,893,8,0.197954035624163,10
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 03:50:21 2018,regr.glm,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,441,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.483,0.497,4.9,4.79,3.47,Fri Jun 08 03:50:28 2018,regr.glmboost,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,21,222,9.534,9.099,random,7,cv,10,10,NA,5,121,0.51061597908847
+0.472,0.495,5.02,4.82,3.55,Fri Jun 08 03:50:33 2018,regr.glmnet,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,225,222,9.534,9.099,random,5,cv,10,10,NA,5,0.547718910966069,0.0218729667475582
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:50:34 2018,regr.h2o.deeplearning,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:50:34 2018,regr.h2o.gbm,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:50:34 2018,regr.h2o.glm,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:50:34 2018,regr.h2o.randomForest,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:50:34 2018,regr.IBk,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:50:35 2018,regr.kknn,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:50:35 2018,regr.km,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.655,0.601,3.62,3.8,2.32,Fri Jun 08 03:50:45 2018,regr.ksvm,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,211,222,9.534,9.099,random,10,cv,10,10,NA,5,529.986536724483,0.00168867044027847
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:50:45 2018,regr.laGP,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 03:50:45 2018,regr.LiblineaRL2L1SVR,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 03:50:46 2018,regr.lm,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,211,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.583,0.531,-1,4.47,2.8,Fri Jun 08 03:50:47 2018,regr.mars,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,211,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.331,-0.928,-1,18.4,4.49,Fri Jun 08 03:50:50 2018,regr.mob,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,211,222,9.534,9.099,nohyperparam,3,cv,10,10,NA,5,
+0.602,0.484,3.17,4.92,2.67,Fri Jun 08 03:51:22 2018,regr.nnet,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,138,222,9.534,9.099,random,31,cv,10,10,NA,5,10,0.213332059739614
+0.525,0.552,-1,4.27,3.19,Fri Jun 08 03:51:34 2018,regr.nodeHarvest,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,426,222,9.534,9.099,nohyperparam,12,cv,10,10,NA,5,
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 03:51:35 2018,regr.pcr,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,426,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 03:51:40 2018,regr.penalized.fusedlasso,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 03:51:46 2018,regr.penalized.lasso,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 03:51:52 2018,regr.penalized.ridge,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,6
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 03:51:53 2018,regr.plsr,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,426,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.649,0.629,3.35,3.54,2.36,Fri Jun 08 03:54:51 2018,regr.randomForest,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,552,222,9.534,9.099,random,178,cv,10,10,NA,5,3,7
+0.655,0.654,-1,3.3,2.32,Fri Jun 08 03:54:53 2018,regr.randomForestSRC,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,554,222,9.534,9.099,nohyperparam,3,cv,10,10,NA,5,
+0.646,0.614,3.12,3.68,2.38,Fri Jun 08 03:56:44 2018,regr.ranger,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,336,222,9.534,9.099,random,110,cv,10,10,NA,5,10,4
+NA,NA,-1,NA,NA,Fri Jun 08 03:56:45 2018,regr.rknn,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,81,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.552,0.521,4.46,4.57,3.01,Fri Jun 08 03:56:50 2018,regr.rpart,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,305,222,9.534,9.099,random,5,cv,10,10,NA,5,0.00152352381358989,11,15,30
+0.641,0.594,3.06,3.87,2.41,Fri Jun 08 03:59:35 2018,regr.RRF,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,456,222,9.534,9.099,random,165,cv,10,10,NA,5,12,0.292044571368024
+0.467,0.492,-1,4.84,3.58,Fri Jun 08 03:59:36 2018,regr.rsm,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,456,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.651,0.658,-1,3.26,2.34,Fri Jun 08 03:59:41 2018,regr.rvm,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,236,222,9.534,9.099,nohyperparam,5,cv,10,10,NA,5,
+0.378,0.396,-1,5.76,4.18,Fri Jun 08 03:59:45 2018,regr.slim,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,236,222,9.534,9.099,nohyperparam,4,cv,10,10,NA,5,
+0.598,0.503,4.06,4.74,2.7,Fri Jun 08 04:00:35 2018,regr.svm,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,440,222,9.534,9.099,random,49,cv,10,10,NA,5,2988.38723785925,0.0122297517005721
+0.635,0.588,2.92,3.93,2.46,Fri Jun 08 04:03:31 2018,regr.xgboost,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,254,222,9.534,9.099,random,176,cv,10,10,NA,5,1046,9,0.0530088019708637,5.51170371472836,0.644549661502242,8.88716441113502,0.842794817057438
+NA,NA,-1,NA,NA,Fri Jun 08 04:03:33 2018,regr.xyf,1,2,Boston Housing,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,254,222,9.534,9.099,nohyperparam,1,cv,10,10,NA,5,
+0.728,0.701,-1,0.257,0.183,Fri Jun 08 04:05:14 2018,regr.bartMachine,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,471,222,0.8596,0.7458,nohyperparam,3,cv,10,10,NA,5,
+0,0,-1,0.86,0.671,Fri Jun 08 04:05:15 2018,regr.bcart,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 04:05:15 2018,regr.bdk,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.591,0.59,0.371,0.353,0.275,Fri Jun 08 04:07:31 2018,regr.blackboost,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,random,136,cv,10,10,NA,5,1,389
+NA,NA,-1,NA,NA,Fri Jun 08 04:07:32 2018,regr.blm,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.782,0.779,-1,0.191,0.146,Fri Jun 08 04:07:33 2018,regr.brnn,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.724,0.716,-1,0.244,0.185,Fri Jun 08 04:07:34 2018,regr.bst,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 04:07:35 2018,regr.btlm,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.222,0.199,-1,0.688,0.522,Fri Jun 08 04:07:36 2018,regr.cforest,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,133,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 04:07:41 2018,regr.crs,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,6
+0.363,0.409,-1,0.508,0.427,Fri Jun 08 04:07:42 2018,regr.ctree,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,133,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.483,0.485,-1,0.442,0.346,Fri Jun 08 04:07:43 2018,regr.cubist,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,137,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.726,0.742,-1,0.222,0.184,Fri Jun 08 04:07:44 2018,regr.cvglmnet,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,217,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:07:44 2018,regr.earth,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,0
+0.009,0.032,-1,0.832,0.665,Fri Jun 08 04:07:44 2018,regr.elmNN,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,317,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:07:44 2018,regr.evtree,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,0
+0.607,0.548,0.335,0.389,0.264,Fri Jun 08 04:18:01 2018,regr.extraTrees,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.7458,random,617,cv,10,10,NA,5,63,1
+0,0,-1,0.86,0.671,Fri Jun 08 04:18:02 2018,regr.featureless,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:18:02 2018,regr.fnn,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,0
+0.276,0.293,-1,0.608,0.486,Fri Jun 08 04:18:16 2018,regr.frbs,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.7458,nohyperparam,13,cv,10,10,NA,5,
+0.742,0.756,-1,0.209,0.173,Fri Jun 08 04:18:20 2018,regr.gamboost,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.7458,nohyperparam,4,cv,10,10,NA,5,
+0.515,0.434,-1,0.486,0.325,Fri Jun 08 04:18:21 2018,regr.gausspr,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,357,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.609,0.55,0.415,0.387,0.262,Fri Jun 08 04:18:46 2018,regr.gbm,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,285,222,0.8596,0.7458,random,26,cv,10,10,NA,5,77,3,0.189079821265303,9
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 04:18:47 2018,regr.glm,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,285,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.761,0.765,0.32,0.202,0.16,Fri Jun 08 04:19:03 2018,regr.glmboost,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,465,222,0.8596,0.7458,random,16,cv,10,10,NA,5,631,0.1949808744248
+0.773,0.758,0.28,0.208,0.152,Fri Jun 08 04:19:09 2018,regr.glmnet,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,21,222,0.8596,0.7458,random,6,cv,10,10,NA,5,0.65132148610428,0.0082652483879266
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:19:09 2018,regr.h2o.deeplearning,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:19:09 2018,regr.h2o.gbm,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:19:09 2018,regr.h2o.glm,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:19:09 2018,regr.h2o.randomForest,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:19:09 2018,regr.IBk,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:19:09 2018,regr.kknn,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:19:09 2018,regr.km,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,0
+0.808,0.8,0.202,0.172,0.128,Fri Jun 08 04:19:20 2018,regr.ksvm,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.7458,random,10,cv,10,10,NA,5,21.7365520867938,0.000947611735376502
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:19:20 2018,regr.laGP,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:19:20 2018,regr.LiblineaRL2L1SVR,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,0
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 04:19:20 2018,regr.lm,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.423,0.474,-1,0.452,0.387,Fri Jun 08 04:19:21 2018,regr.mars,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 04:19:22 2018,regr.mob,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.798,0.817,0.265,0.158,0.136,Fri Jun 08 04:19:52 2018,regr.nnet,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,454,222,0.8596,0.7458,random,30,cv,10,10,NA,5,8,0.646561109903955
+0.268,0.278,-1,0.621,0.491,Fri Jun 08 04:20:11 2018,regr.nodeHarvest,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,543,222,0.8596,0.7458,nohyperparam,19,cv,10,10,NA,5,
+0.739,0.74,-1,0.224,0.175,Fri Jun 08 04:20:12 2018,regr.pcr,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,543,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 04:20:17 2018,regr.penalized.fusedlasso,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,5
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 04:20:23 2018,regr.penalized.lasso,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 04:20:28 2018,regr.penalized.ridge,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,5
+0.739,0.74,-1,0.224,0.175,Fri Jun 08 04:20:29 2018,regr.plsr,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,543,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.546,0.504,0.399,0.427,0.305,Fri Jun 08 04:22:15 2018,regr.randomForest,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,92,222,0.8596,0.7458,random,106,cv,10,10,NA,5,7,15
+0.521,0.484,-1,0.444,0.321,Fri Jun 08 04:22:17 2018,regr.randomForestSRC,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,94,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.529,0.495,0.404,0.434,0.316,Fri Jun 08 04:23:38 2018,regr.ranger,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,476,222,0.8596,0.7458,random,81,cv,10,10,NA,5,18,3
+0.461,0.456,-1,0.468,0.361,Fri Jun 08 04:23:40 2018,regr.rknn,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,132,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.3,0.302,0.732,0.601,0.47,Fri Jun 08 04:23:49 2018,regr.rpart,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,332,222,0.8596,0.7458,random,9,cv,10,10,NA,5,0.00327189910997266,9,14,38
+0.554,0.503,0.39,0.427,0.299,Fri Jun 08 04:25:31 2018,regr.RRF,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,582,222,0.8596,0.7458,random,103,cv,10,10,NA,5,36,0.280803405446932
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 04:25:32 2018,regr.rsm,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,582,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.565,0.488,-1,0.44,0.292,Fri Jun 08 04:25:33 2018,regr.rvm,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,38,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.683,0.688,-1,0.268,0.213,Fri Jun 08 04:25:35 2018,regr.slim,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,38,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.79,0.781,0.208,0.188,0.14,Fri Jun 08 04:25:47 2018,regr.svm,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,218,222,0.8596,0.7458,random,12,cv,10,10,NA,5,1574.10657654287,0.00033781771157697
+0.433,0.39,0.449,0.524,0.38,Fri Jun 08 04:28:27 2018,regr.xgboost,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,382,222,0.8596,0.7458,random,160,cv,10,10,NA,5,279,3,0.335121801308589,1.36044417507946,0.624073399696499,9.97619074303657,0.578398696379736
+NA,NA,-1,NA,NA,Fri Jun 08 04:28:28 2018,regr.xyf,1,2,Recc sim 1,ignore,none,YeoJohnson,HOPPER,15th10hp10cvml,1,5,403,382,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.712,0.677,-1,0.278,0.194,Fri Jun 08 04:28:39 2018,regr.bartMachine,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,471,222,0.8596,0.7458,nohyperparam,3,cv,10,10,NA,5,
+0,0,-1,0.86,0.671,Fri Jun 08 04:28:40 2018,regr.bcart,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 04:28:40 2018,regr.bdk,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.586,0.596,0.365,0.348,0.278,Fri Jun 08 04:30:57 2018,regr.blackboost,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,random,137,cv,10,10,NA,5,1,389
+NA,NA,-1,NA,NA,Fri Jun 08 04:30:58 2018,regr.blm,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.525,0.595,-1,0.348,0.319,Fri Jun 08 04:31:03 2018,regr.brnn,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,4,cv,10,10,NA,5,
+0.212,0.2,-1,0.688,0.529,Fri Jun 08 04:31:04 2018,regr.bst,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 04:31:05 2018,regr.btlm,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.225,0.207,-1,0.682,0.52,Fri Jun 08 04:31:06 2018,regr.cforest,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,522,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 04:31:11 2018,regr.crs,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,6
+0.241,0.308,-1,0.595,0.509,Fri Jun 08 04:31:13 2018,regr.ctree,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,522,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.559,0.511,-1,0.42,0.296,Fri Jun 08 04:31:13 2018,regr.cubist,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,526,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.634,0.618,-1,0.329,0.246,Fri Jun 08 04:31:14 2018,regr.cvglmnet,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,606,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:31:14 2018,regr.earth,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,0
+-0.013,0,-1,0.86,0.679,Fri Jun 08 04:31:15 2018,regr.elmNN,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,82,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:31:15 2018,regr.evtree,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,0
+0.581,0.533,0.358,0.401,0.281,Fri Jun 08 04:40:07 2018,regr.extraTrees,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,42,222,0.8596,0.7458,random,531,cv,10,10,NA,5,8,19
+0,0,-1,0.86,0.671,Fri Jun 08 04:40:08 2018,regr.featureless,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,42,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:40:08 2018,regr.fnn,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,0
+0.47,0.484,-1,0.443,0.355,Fri Jun 08 04:40:20 2018,regr.frbs,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,42,222,0.8596,0.7458,nohyperparam,13,cv,10,10,NA,5,
+0.696,0.708,-1,0.251,0.204,Fri Jun 08 04:40:25 2018,regr.gamboost,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,42,222,0.8596,0.7458,nohyperparam,4,cv,10,10,NA,5,
+0.562,0.536,-1,0.399,0.294,Fri Jun 08 04:40:25 2018,regr.gausspr,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,122,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.61,0.613,0.388,0.333,0.262,Fri Jun 08 04:40:56 2018,regr.gbm,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,322,222,0.8596,0.7458,random,31,cv,10,10,NA,5,75,8,0.151852589717833,6
+-22.074,-22.083,-1,19.8,15.5,Fri Jun 08 04:40:57 2018,regr.glm,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,322,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.62,0.626,0.385,0.322,0.255,Fri Jun 08 04:41:07 2018,regr.glmboost,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,502,222,0.8596,0.7458,random,11,cv,10,10,NA,5,174,0.186844167532399
+0.716,0.691,0.364,0.266,0.191,Fri Jun 08 04:41:14 2018,regr.glmnet,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,58,222,0.8596,0.7458,random,6,cv,10,10,NA,5,0.576043177396059,0.0261192117042958
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:41:14 2018,regr.h2o.deeplearning,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:41:14 2018,regr.h2o.gbm,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:41:14 2018,regr.h2o.glm,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:41:14 2018,regr.h2o.randomForest,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:41:14 2018,regr.IBk,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:41:14 2018,regr.kknn,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:41:14 2018,regr.km,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,0
+0.729,0.699,0.326,0.259,0.182,Fri Jun 08 04:41:25 2018,regr.ksvm,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,320,222,0.8596,0.7458,random,11,cv,10,10,NA,5,97.466474897972,0.00013521905646343
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:41:25 2018,regr.laGP,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 04:41:25 2018,regr.LiblineaRL2L1SVR,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,0
+-22.074,-22.083,-1,19.8,15.5,Fri Jun 08 04:41:26 2018,regr.lm,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,320,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.41,0.451,-1,0.472,0.395,Fri Jun 08 04:41:26 2018,regr.mars,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,320,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 04:41:27 2018,regr.mob,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,320,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.682,0.68,0.352,0.276,0.214,Fri Jun 08 04:42:22 2018,regr.nnet,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,346,222,0.8596,0.7458,random,55,cv,10,10,NA,5,7,0.220740491964043
+0.238,0.267,-1,0.63,0.511,Fri Jun 08 04:42:44 2018,regr.nodeHarvest,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,204,222,0.8596,0.7458,nohyperparam,22,cv,10,10,NA,5,
+0.375,0.411,-1,0.507,0.42,Fri Jun 08 04:42:45 2018,regr.pcr,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,204,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 04:42:51 2018,regr.penalized.fusedlasso,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 04:42:56 2018,regr.penalized.lasso,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,5
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 04:43:02 2018,regr.penalized.ridge,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,6
+0.375,0.411,-1,0.507,0.42,Fri Jun 08 04:43:02 2018,regr.plsr,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,204,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.548,0.511,0.389,0.421,0.303,Fri Jun 08 04:44:55 2018,regr.randomForest,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,38,222,0.8596,0.7458,random,112,cv,10,10,NA,5,8,13
+0.526,0.488,-1,0.441,0.318,Fri Jun 08 04:44:56 2018,regr.randomForestSRC,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,40,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.543,0.501,0.406,0.429,0.307,Fri Jun 08 04:45:52 2018,regr.ranger,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,422,222,0.8596,0.7458,random,56,cv,10,10,NA,5,9,6
+0.418,0.376,-1,0.537,0.391,Fri Jun 08 04:45:53 2018,regr.rknn,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,132,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.254,0.283,0.7,0.617,0.5,Fri Jun 08 04:46:02 2018,regr.rpart,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,332,222,0.8596,0.7458,random,9,cv,10,10,NA,5,0.0287656384392294,19,13,33
+0.52,0.489,0.377,0.439,0.322,Fri Jun 08 04:47:29 2018,regr.RRF,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,126,222,0.8596,0.7458,random,87,cv,10,10,NA,5,13,0.0614271466620266
+-22.074,-22.083,-1,19.8,15.5,Fri Jun 08 04:47:30 2018,regr.rsm,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,126,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.666,0.638,-1,0.311,0.224,Fri Jun 08 04:47:31 2018,regr.rvm,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,206,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.444,0.44,-1,0.482,0.373,Fri Jun 08 04:47:33 2018,regr.slim,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,206,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.468,0.45,0.45,0.473,0.357,Fri Jun 08 04:47:45 2018,regr.svm,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,386,222,0.8596,0.7458,random,12,cv,10,10,NA,5,0.357926309650993,0.00157755035712801
+0.405,0.39,0.502,0.524,0.399,Fri Jun 08 04:49:51 2018,regr.xgboost,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,216,222,0.8596,0.7458,random,126,cv,10,10,NA,5,82,4,0.0591902761901729,1.24199846060947,0.624615850951522,1.58659073058516,0.804471961397212
+NA,NA,-1,NA,NA,Fri Jun 08 04:49:52 2018,regr.xyf,1,2,Recc sim 1,ignore,none,quantile,HOPPER,15th10hp10cvml,1,5,403,216,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.723,0.69,-1,0.267,0.186,Fri Jun 08 04:50:33 2018,regr.bartMachine,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,290,222,0.8596,0.7458,nohyperparam,4,cv,10,10,NA,5,
+0,0,-1,0.86,0.671,Fri Jun 08 04:50:39 2018,regr.bcart,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,296,222,0.8596,0.7458,nohyperparam,5,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 04:50:39 2018,regr.bdk,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,296,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.783,0.781,0.206,0.189,0.146,Fri Jun 08 04:57:44 2018,regr.blackboost,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,505,222,0.8596,0.7458,random,425,cv,10,10,NA,5,3,38
+NA,NA,-1,NA,NA,Fri Jun 08 04:57:46 2018,regr.blm,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,505,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+-0.025,-0.026,-1,0.881,0.687,Fri Jun 08 06:42:12 2018,regr.brnn,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,375,222,0.8596,0.7458,nohyperparam,6267,cv,10,10,NA,5,
+0.816,0.82,-1,0.155,0.123,Fri Jun 08 06:42:15 2018,regr.bst,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,375,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 06:42:16 2018,regr.btlm,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,375,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.241,0.209,-1,0.68,0.509,Fri Jun 08 06:42:21 2018,regr.cforest,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,124,222,0.8596,0.7458,nohyperparam,5,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 06:42:27 2018,regr.crs,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,6
+0.743,0.741,-1,0.223,0.173,Fri Jun 08 06:42:29 2018,regr.ctree,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,124,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.828,0.82,-1,0.155,0.115,Fri Jun 08 06:42:32 2018,regr.cubist,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,128,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.797,0.795,-1,0.176,0.136,Fri Jun 08 06:42:44 2018,regr.cvglmnet,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,208,222,0.8596,0.7458,nohyperparam,12,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 06:42:44 2018,regr.earth,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,0
+-0.022,-0.005,-1,0.863,0.685,Fri Jun 08 06:42:46 2018,regr.elmNN,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,142,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 06:42:46 2018,regr.evtree,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,0
+0.78,0.776,0.221,0.193,0.147,Fri Jun 08 07:50:29 2018,regr.extraTrees,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,102,222,0.8596,0.7458,random,4063,cv,10,10,NA,5,537,14
+0,0,-1,0.86,0.671,Fri Jun 08 07:50:32 2018,regr.featureless,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,102,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 07:50:33 2018,regr.fnn,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,0
+0.116,0.099,-1,0.775,0.593,Fri Jun 08 07:52:57 2018,regr.frbs,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,102,222,0.8596,0.7458,nohyperparam,144,cv,10,10,NA,5,
+0.785,0.773,-1,0.195,0.144,Fri Jun 08 07:53:19 2018,regr.gamboost,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,102,222,0.8596,0.7458,nohyperparam,22,cv,10,10,NA,5,
+0.394,0.31,-1,0.594,0.407,Fri Jun 08 07:53:20 2018,regr.gausspr,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,182,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.75,0.741,0.23,0.223,0.168,Fri Jun 08 07:56:15 2018,regr.gbm,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,238,222,0.8596,0.7458,random,175,cv,10,10,NA,5,96,3,0.044753426267067,5
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 07:56:17 2018,regr.glm,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,238,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.816,0.813,0.16,0.16,0.123,Fri Jun 08 07:56:58 2018,regr.glmboost,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,418,222,0.8596,0.7458,random,41,cv,10,10,NA,5,4,0.486378852277994
+0.81,0.817,0.173,0.157,0.127,Fri Jun 08 07:57:14 2018,regr.glmnet,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,598,222,0.8596,0.7458,random,15,cv,10,10,NA,5,0.930625891545787,0.0146831386477775
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 07:57:14 2018,regr.h2o.deeplearning,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 07:57:14 2018,regr.h2o.gbm,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 07:57:14 2018,regr.h2o.glm,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 07:57:14 2018,regr.h2o.randomForest,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 07:57:14 2018,regr.IBk,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 07:57:14 2018,regr.kknn,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 07:57:14 2018,regr.km,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,0
+0.114,0.057,0.696,0.81,0.595,Fri Jun 08 07:58:02 2018,regr.ksvm,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,236,222,0.8596,0.7458,random,47,cv,10,10,NA,5,45.3874292421339,0.00482547213281727
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 07:58:02 2018,regr.laGP,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 07:58:02 2018,regr.LiblineaRL2L1SVR,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,0
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 07:58:03 2018,regr.lm,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,236,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.656,0.675,-1,0.279,0.231,Fri Jun 08 07:58:04 2018,regr.mars,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,236,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 07:58:10 2018,regr.mob,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,236,222,0.8596,0.7458,nohyperparam,6,cv,10,10,NA,5,
+NA,NA,NA,NA,NA,Fri Jun 08 07:58:34 2018,regr.nnet,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,417,222,0.8596,0.7458,random,24,cv,10,10,NA,5,6,3.9678233556432
+0.714,0.716,-1,0.245,0.192,Fri Jun 08 07:58:47 2018,regr.nodeHarvest,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,136,222,0.8596,0.7458,nohyperparam,13,cv,10,10,NA,5,
+0.753,0.723,-1,0.238,0.166,Fri Jun 08 07:58:48 2018,regr.pcr,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,136,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 07:58:54 2018,regr.penalized.fusedlasso,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 07:58:59 2018,regr.penalized.lasso,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,5
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 07:59:04 2018,regr.penalized.ridge,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,5
+0.753,0.723,-1,0.238,0.166,Fri Jun 08 07:59:06 2018,regr.plsr,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,136,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.743,0.742,0.212,0.222,0.172,Fri Jun 08 08:06:04 2018,regr.randomForest,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,375,222,0.8596,0.7458,random,418,cv,10,10,NA,5,2,534
+0.651,0.602,-1,0.342,0.234,Fri Jun 08 08:06:09 2018,regr.randomForestSRC,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,377,222,0.8596,0.7458,nohyperparam,5,cv,10,10,NA,5,
+0.736,0.733,0.227,0.23,0.177,Fri Jun 08 08:11:06 2018,regr.ranger,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,135,222,0.8596,0.7458,random,297,cv,10,10,NA,5,507,3
+0.453,0.45,-1,0.473,0.367,Fri Jun 08 08:11:08 2018,regr.rknn,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,268,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.716,0.717,0.257,0.243,0.191,Fri Jun 08 08:11:45 2018,regr.rpart,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,468,222,0.8596,0.7458,random,38,cv,10,10,NA,5,0.0164449151104487,23,8,7
+0.776,0.764,0.179,0.204,0.151,Fri Jun 08 08:20:17 2018,regr.RRF,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,606,222,0.8596,0.7458,random,511,cv,10,10,NA,5,551,0.193502546288073
+NA,NA,-1,NA,NA,Fri Jun 08 08:20:19 2018,regr.rsm,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,606,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.557,0.477,-1,0.45,0.297,Fri Jun 08 08:20:19 2018,regr.rvm,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.798,0.795,-1,0.176,0.136,Fri Jun 08 08:20:23 2018,regr.slim,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,nohyperparam,3,cv,10,10,NA,5,
+0.591,0.536,0.384,0.399,0.274,Fri Jun 08 08:21:16 2018,regr.svm,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,242,222,0.8596,0.7458,random,53,cv,10,10,NA,5,0.437346617371385,0.000732448712913541
+0.451,0.452,0.396,0.471,0.368,Fri Jun 08 08:30:13 2018,regr.xgboost,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,88,222,0.8596,0.7458,random,537,cv,10,10,NA,5,894,7,0.489461176493438,2.77816466521472,0.373298187088221,2.69221113529056,0.68994734226726
+NA,NA,-1,NA,NA,Fri Jun 08 08:30:14 2018,regr.xyf,1,2,Recc sim 1,ignore,none,all,HOPPER,15th10hp10cvml,1,5,403,88,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.753,0.721,-1,0.24,0.166,Fri Jun 08 08:30:30 2018,regr.bartMachine,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,471,222,0.8596,0.7458,nohyperparam,8,cv,10,10,NA,5,
+0,0,-1,0.86,0.671,Fri Jun 08 08:30:32 2018,regr.bcart,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 08:30:32 2018,regr.bdk,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.591,0.59,0.371,0.353,0.275,Fri Jun 08 08:32:48 2018,regr.blackboost,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,random,136,cv,10,10,NA,5,1,389
+NA,NA,-1,NA,NA,Fri Jun 08 08:32:49 2018,regr.blm,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.782,0.779,-1,0.191,0.146,Fri Jun 08 08:32:50 2018,regr.brnn,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.724,0.716,-1,0.244,0.185,Fri Jun 08 08:32:51 2018,regr.bst,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 08:32:51 2018,regr.btlm,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.222,0.199,-1,0.688,0.522,Fri Jun 08 08:32:52 2018,regr.cforest,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,133,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 08:32:58 2018,regr.crs,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,6
+0.363,0.409,-1,0.508,0.427,Fri Jun 08 08:32:59 2018,regr.ctree,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,133,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.483,0.485,-1,0.442,0.346,Fri Jun 08 08:32:59 2018,regr.cubist,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,137,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.726,0.742,-1,0.222,0.184,Fri Jun 08 08:33:00 2018,regr.cvglmnet,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,217,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:33:01 2018,regr.earth,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+0.009,0.032,-1,0.832,0.665,Fri Jun 08 08:33:01 2018,regr.elmNN,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,317,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:33:01 2018,regr.evtree,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+0.607,0.548,0.335,0.389,0.264,Fri Jun 08 08:43:28 2018,regr.extraTrees,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.7458,random,627,cv,10,10,NA,5,63,1
+0,0,-1,0.86,0.671,Fri Jun 08 08:43:29 2018,regr.featureless,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:43:29 2018,regr.fnn,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+0.276,0.293,-1,0.608,0.486,Fri Jun 08 08:43:42 2018,regr.frbs,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.7458,nohyperparam,13,cv,10,10,NA,5,
+0.742,0.756,-1,0.209,0.173,Fri Jun 08 08:43:47 2018,regr.gamboost,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.7458,nohyperparam,5,cv,10,10,NA,5,
+0.515,0.434,-1,0.486,0.325,Fri Jun 08 08:43:48 2018,regr.gausspr,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,357,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.609,0.55,0.415,0.387,0.262,Fri Jun 08 08:44:14 2018,regr.gbm,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,285,222,0.8596,0.7458,random,26,cv,10,10,NA,5,77,3,0.189079821265303,9
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 08:44:15 2018,regr.glm,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,285,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.761,0.765,0.32,0.202,0.16,Fri Jun 08 08:44:31 2018,regr.glmboost,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,465,222,0.8596,0.7458,random,16,cv,10,10,NA,5,631,0.1949808744248
+0.773,0.758,0.28,0.208,0.152,Fri Jun 08 08:44:39 2018,regr.glmnet,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,21,222,0.8596,0.7458,random,8,cv,10,10,NA,5,0.65132148610428,0.0082652483879266
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:44:39 2018,regr.h2o.deeplearning,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:44:39 2018,regr.h2o.gbm,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:44:39 2018,regr.h2o.glm,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:44:39 2018,regr.h2o.randomForest,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:44:39 2018,regr.IBk,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:44:39 2018,regr.kknn,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:44:39 2018,regr.km,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+0.808,0.8,0.202,0.172,0.128,Fri Jun 08 08:44:50 2018,regr.ksvm,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.7458,random,11,cv,10,10,NA,5,21.7365520867938,0.000947611735376502
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:44:50 2018,regr.laGP,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:44:50 2018,regr.LiblineaRL2L1SVR,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,0
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 08:44:51 2018,regr.lm,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.423,0.474,-1,0.452,0.387,Fri Jun 08 08:44:52 2018,regr.mars,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 08:44:53 2018,regr.mob,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.798,0.817,0.265,0.158,0.136,Fri Jun 08 08:45:24 2018,regr.nnet,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,454,222,0.8596,0.7458,random,31,cv,10,10,NA,5,8,0.646561109903955
+0.268,0.278,-1,0.621,0.491,Fri Jun 08 08:45:44 2018,regr.nodeHarvest,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,543,222,0.8596,0.7458,nohyperparam,20,cv,10,10,NA,5,
+0.739,0.74,-1,0.224,0.175,Fri Jun 08 08:45:44 2018,regr.pcr,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,543,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 08:45:56 2018,regr.penalized.fusedlasso,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,11
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 08:46:01 2018,regr.penalized.lasso,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,5
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 08:46:06 2018,regr.penalized.ridge,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,5
+0.739,0.74,-1,0.224,0.175,Fri Jun 08 08:46:07 2018,regr.plsr,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,543,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.546,0.504,0.399,0.427,0.305,Fri Jun 08 08:47:54 2018,regr.randomForest,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,92,222,0.8596,0.7458,random,107,cv,10,10,NA,5,7,15
+0.521,0.484,-1,0.444,0.321,Fri Jun 08 08:47:56 2018,regr.randomForestSRC,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,94,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.529,0.495,0.404,0.434,0.316,Fri Jun 08 08:49:18 2018,regr.ranger,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,476,222,0.8596,0.7458,random,83,cv,10,10,NA,5,18,3
+0.456,0.45,-1,0.473,0.365,Fri Jun 08 08:49:20 2018,regr.rknn,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,132,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.325,0.372,0.555,0.54,0.453,Fri Jun 08 08:49:29 2018,regr.rpart,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,332,222,0.8596,0.7458,random,9,cv,10,10,NA,5,0.00119636951354813,25,5,10
+0.517,0.485,0.391,0.443,0.324,Fri Jun 08 08:51:11 2018,regr.RRF,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,253,222,0.8596,0.7458,random,102,cv,10,10,NA,5,14,0.0549624741543084
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 08:51:12 2018,regr.rsm,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,253,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.618,0.553,-1,0.385,0.256,Fri Jun 08 08:51:12 2018,regr.rvm,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,333,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.683,0.688,-1,0.268,0.213,Fri Jun 08 08:51:14 2018,regr.slim,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,333,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.781,0.77,0.216,0.198,0.147,Fri Jun 08 08:51:26 2018,regr.svm,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,513,222,0.8596,0.7458,random,12,cv,10,10,NA,5,18246.127533601,4.16281809055974e-05
+0.414,0.421,0.544,0.498,0.393,Fri Jun 08 08:53:58 2018,regr.xgboost,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,569,222,0.8596,0.7458,random,151,cv,10,10,NA,5,1965,3,0.448204150896287,1.86333390185609,0.591061000339687,4.19765031896532,0.824299708532635
+NA,NA,-1,NA,NA,Fri Jun 08 08:53:58 2018,regr.xyf,1,2,Recc sim 1,ignore,none,asis,HOPPER,15th10hp10cvml,1,5,403,569,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.743,0.717,-1,0.244,0.172,Fri Jun 08 08:54:17 2018,regr.bartMachine,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,527,222,0.8596,0.7458,nohyperparam,7,cv,10,10,NA,5,
+0,0,-1,0.86,0.671,Fri Jun 08 08:54:19 2018,regr.bcart,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,533,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 08:54:19 2018,regr.bdk,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,533,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.727,0.724,0.223,0.238,0.184,Fri Jun 08 08:55:11 2018,regr.blackboost,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,118,222,0.8596,0.7458,random,52,cv,10,10,NA,5,9,21
+NA,NA,-1,NA,NA,Fri Jun 08 08:55:12 2018,regr.blm,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,118,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.761,0.766,-1,0.202,0.16,Fri Jun 08 08:55:16 2018,regr.brnn,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,424,222,0.8596,0.7458,nohyperparam,4,cv,10,10,NA,5,
+0.819,0.822,-1,0.153,0.121,Fri Jun 08 08:55:16 2018,regr.bst,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,424,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 08:55:17 2018,regr.btlm,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,424,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.258,0.22,-1,0.67,0.497,Fri Jun 08 08:55:18 2018,regr.cforest,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,387,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 08:55:24 2018,regr.crs,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,6
+0.743,0.741,-1,0.223,0.173,Fri Jun 08 08:55:24 2018,regr.ctree,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,387,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.828,0.82,-1,0.155,0.115,Fri Jun 08 08:55:25 2018,regr.cubist,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,391,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.797,0.795,-1,0.176,0.136,Fri Jun 08 08:55:26 2018,regr.cvglmnet,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,471,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:55:27 2018,regr.earth,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+-0.016,0.054,-1,0.814,0.681,Fri Jun 08 08:55:27 2018,regr.elmNN,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,623,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 08:55:27 2018,regr.evtree,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+0.771,0.756,0.21,0.21,0.154,Fri Jun 08 09:06:59 2018,regr.extraTrees,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,583,222,0.8596,0.7458,random,692,cv,10,10,NA,5,101,10
+0,0,-1,0.86,0.671,Fri Jun 08 09:07:00 2018,regr.featureless,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,583,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:07:00 2018,regr.fnn,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+0.153,0.114,-1,0.761,0.568,Fri Jun 08 09:07:21 2018,regr.frbs,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,583,222,0.8596,0.7458,nohyperparam,21,cv,10,10,NA,5,
+0.812,0.802,-1,0.17,0.126,Fri Jun 08 09:07:27 2018,regr.gamboost,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,583,222,0.8596,0.7458,nohyperparam,6,cv,10,10,NA,5,
+0.484,0.422,-1,0.497,0.346,Fri Jun 08 09:07:28 2018,regr.gausspr,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,39,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.742,0.736,0.283,0.228,0.174,Fri Jun 08 09:08:00 2018,regr.gbm,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,591,222,0.8596,0.7458,random,33,cv,10,10,NA,5,932,2,0.281792566374643,6
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 09:08:01 2018,regr.glm,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,591,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.806,0.82,0.189,0.155,0.13,Fri Jun 08 09:08:22 2018,regr.glmboost,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,147,222,0.8596,0.7458,random,21,cv,10,10,NA,5,47,0.345320464810356
+0.796,0.797,0.181,0.175,0.137,Fri Jun 08 09:08:30 2018,regr.glmnet,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,327,222,0.8596,0.7458,random,8,cv,10,10,NA,5,0.804793553892523,0.0924679085729483
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:08:31 2018,regr.h2o.deeplearning,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:08:31 2018,regr.h2o.gbm,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:08:31 2018,regr.h2o.glm,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:08:31 2018,regr.h2o.randomForest,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:08:31 2018,regr.IBk,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:08:31 2018,regr.kknn,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:08:31 2018,regr.km,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+0.776,0.752,0.236,0.213,0.15,Fri Jun 08 09:08:45 2018,regr.ksvm,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,589,222,0.8596,0.7458,random,14,cv,10,10,NA,5,261.759660795789,5.20781191182315e-05
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:08:45 2018,regr.laGP,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:08:45 2018,regr.LiblineaRL2L1SVR,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,0
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 09:08:46 2018,regr.lm,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,589,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.683,0.649,-1,0.301,0.212,Fri Jun 08 09:08:47 2018,regr.mars,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,589,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 09:08:48 2018,regr.mob,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,589,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.55,0.543,0.592,0.393,0.303,Fri Jun 08 09:09:00 2018,regr.nnet,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,213,222,0.8596,0.7458,random,12,cv,10,10,NA,5,3,0.00186236583766402
+0.72,0.72,-1,0.241,0.188,Fri Jun 08 09:09:18 2018,regr.nodeHarvest,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,109,222,0.8596,0.7458,nohyperparam,17,cv,10,10,NA,5,
+0.722,0.704,-1,0.254,0.187,Fri Jun 08 09:09:18 2018,regr.pcr,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,109,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 09:09:24 2018,regr.penalized.fusedlasso,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,5
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 09:09:29 2018,regr.penalized.lasso,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,5
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 09:09:34 2018,regr.penalized.ridge,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,5
+0.722,0.704,-1,0.254,0.187,Fri Jun 08 09:09:35 2018,regr.plsr,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,109,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.731,0.724,0.22,0.238,0.181,Fri Jun 08 09:11:59 2018,regr.randomForest,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,600,222,0.8596,0.7458,random,144,cv,10,10,NA,5,2,128
+0.666,0.605,-1,0.34,0.224,Fri Jun 08 09:12:01 2018,regr.randomForestSRC,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,602,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.743,0.739,0.223,0.225,0.172,Fri Jun 08 09:13:47 2018,regr.ranger,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,360,222,0.8596,0.7458,random,106,cv,10,10,NA,5,144,10
+0.381,0.39,-1,0.525,0.415,Fri Jun 08 09:13:48 2018,regr.rknn,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,384,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.611,0.631,0.305,0.318,0.261,Fri Jun 08 09:14:00 2018,regr.rpart,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,584,222,0.8596,0.7458,random,12,cv,10,10,NA,5,0.0120100180203721,26,15,10
+0.793,0.773,0.2,0.195,0.139,Fri Jun 08 09:16:43 2018,regr.RRF,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,133,222,0.8596,0.7458,random,162,cv,10,10,NA,5,140,0.189079317962751
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 09:16:43 2018,regr.rsm,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,133,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.57,0.492,-1,0.437,0.289,Fri Jun 08 09:16:44 2018,regr.rvm,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,213,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.801,0.799,-1,0.173,0.133,Fri Jun 08 09:16:46 2018,regr.slim,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,213,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.724,0.709,0.284,0.25,0.185,Fri Jun 08 09:17:02 2018,regr.svm,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,393,222,0.8596,0.7458,random,16,cv,10,10,NA,5,4932.83957643689,0.00196802577934718
+0.504,0.466,0.387,0.46,0.333,Fri Jun 08 09:25:07 2018,regr.xgboost,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,331,222,0.8596,0.7458,random,485,cv,10,10,NA,5,3100,8,0.402053465699311,4.59180333651602,0.692261265404522,7.46084481943399,0.450729203526862
+NA,NA,-1,NA,NA,Fri Jun 08 09:25:08 2018,regr.xyf,1,2,Recc sim 1,ignore,none,PCA,HOPPER,15th10hp10cvml,1,5,403,331,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.704,0.638,-1,0.311,0.199,Fri Jun 08 09:25:24 2018,regr.bartMachine,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,266,222,0.8596,0.7458,nohyperparam,7,cv,10,10,NA,5,
+0,0,-1,0.86,0.671,Fri Jun 08 09:25:25 2018,regr.bcart,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,272,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 09:25:26 2018,regr.bdk,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,272,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.605,0.604,0.4,0.341,0.265,Fri Jun 08 09:27:03 2018,regr.blackboost,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,481,222,0.8596,0.7458,random,98,cv,10,10,NA,5,9,110
+NA,NA,-1,NA,NA,Fri Jun 08 09:27:04 2018,regr.blm,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,481,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.781,0.776,-1,0.193,0.147,Fri Jun 08 09:27:07 2018,regr.brnn,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,75,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.724,0.716,-1,0.244,0.185,Fri Jun 08 09:27:08 2018,regr.bst,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,75,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 09:27:10 2018,regr.btlm,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,75,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.243,0.207,-1,0.682,0.508,Fri Jun 08 09:27:11 2018,regr.cforest,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,408,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 09:27:20 2018,regr.crs,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,9
+0.363,0.409,-1,0.508,0.427,Fri Jun 08 09:27:20 2018,regr.ctree,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,408,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.657,0.676,-1,0.278,0.229,Fri Jun 08 09:27:22 2018,regr.cubist,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,412,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.73,0.745,-1,0.219,0.181,Fri Jun 08 09:27:23 2018,regr.cvglmnet,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,492,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:27:23 2018,regr.earth,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+0.002,0.059,-1,0.809,0.67,Fri Jun 08 09:27:24 2018,regr.elmNN,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,600,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:27:24 2018,regr.evtree,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+0.573,0.532,0.357,0.403,0.286,Fri Jun 08 09:38:51 2018,regr.extraTrees,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,560,222,0.8596,0.7458,random,687,cv,10,10,NA,5,33,4
+0,0,-1,0.86,0.671,Fri Jun 08 09:38:52 2018,regr.featureless,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,560,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:38:52 2018,regr.fnn,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+0.368,0.395,-1,0.521,0.424,Fri Jun 08 09:39:06 2018,regr.frbs,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,560,222,0.8596,0.7458,nohyperparam,14,cv,10,10,NA,5,
+0.746,0.758,-1,0.207,0.17,Fri Jun 08 09:39:10 2018,regr.gamboost,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,560,222,0.8596,0.7458,nohyperparam,5,cv,10,10,NA,5,
+0.505,0.418,-1,0.5,0.332,Fri Jun 08 09:39:12 2018,regr.gausspr,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,16,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.62,0.565,0.499,0.374,0.255,Fri Jun 08 09:39:30 2018,regr.gbm,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,360,222,0.8596,0.7458,random,18,cv,10,10,NA,5,27,9,0.366525466860505,5
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 09:39:30 2018,regr.glm,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,360,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.719,0.687,0.3,0.269,0.189,Fri Jun 08 09:39:43 2018,regr.glmboost,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,540,222,0.8596,0.7458,random,13,cv,10,10,NA,5,117,0.671100527280942
+0.792,0.755,0.263,0.211,0.139,Fri Jun 08 09:39:50 2018,regr.glmnet,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,96,222,0.8596,0.7458,random,7,cv,10,10,NA,5,0.03662836458534,0.0180235930837532
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:39:50 2018,regr.h2o.deeplearning,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:39:50 2018,regr.h2o.gbm,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:39:50 2018,regr.h2o.glm,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:39:50 2018,regr.h2o.randomForest,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:39:50 2018,regr.IBk,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:39:50 2018,regr.kknn,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:39:50 2018,regr.km,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+0.778,0.789,0.195,0.181,0.149,Fri Jun 08 09:40:02 2018,regr.ksvm,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,358,222,0.8596,0.7458,random,11,cv,10,10,NA,5,84.4477678925655,3.69148990868258e-05
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:40:02 2018,regr.laGP,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:40:02 2018,regr.LiblineaRL2L1SVR,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,0
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 09:40:02 2018,regr.lm,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,358,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.534,0.528,-1,0.405,0.312,Fri Jun 08 09:40:03 2018,regr.mars,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,358,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 09:40:04 2018,regr.mob,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,358,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.687,0.663,0.281,0.29,0.21,Fri Jun 08 09:40:56 2018,regr.nnet,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,514,222,0.8596,0.7458,random,52,cv,10,10,NA,5,7,8.91957097354143
+0.293,0.274,-1,0.624,0.474,Fri Jun 08 09:41:14 2018,regr.nodeHarvest,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,196,222,0.8596,0.7458,nohyperparam,18,cv,10,10,NA,5,
+0.737,0.734,-1,0.229,0.177,Fri Jun 08 09:41:15 2018,regr.pcr,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,196,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 09:41:21 2018,regr.penalized.fusedlasso,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 09:41:26 2018,regr.penalized.lasso,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,5
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 09:41:31 2018,regr.penalized.ridge,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,5
+0.737,0.734,-1,0.229,0.177,Fri Jun 08 09:41:32 2018,regr.plsr,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,196,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.505,0.457,0.417,0.467,0.332,Fri Jun 08 09:43:29 2018,regr.randomForest,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,274,222,0.8596,0.7458,random,117,cv,10,10,NA,5,1,8
+0.501,0.45,-1,0.473,0.335,Fri Jun 08 09:43:31 2018,regr.randomForestSRC,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,276,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.513,0.465,0.433,0.46,0.326,Fri Jun 08 09:44:49 2018,regr.ranger,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,34,222,0.8596,0.7458,random,78,cv,10,10,NA,5,13,1
+0.479,0.467,-1,0.458,0.349,Fri Jun 08 09:44:51 2018,regr.rknn,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,8,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.279,0.201,0.725,0.687,0.484,Fri Jun 08 09:45:00 2018,regr.rpart,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,208,222,0.8596,0.7458,random,9,cv,10,10,NA,5,0.00208988553656505,27,14,37
+0.509,0.462,0.419,0.463,0.33,Fri Jun 08 09:46:37 2018,regr.RRF,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,358,222,0.8596,0.7458,random,97,cv,10,10,NA,5,5,0.369217269355431
+-0.373,-0.384,-1,1.19,0.92,Fri Jun 08 09:46:38 2018,regr.rsm,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,358,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.598,0.522,-1,0.411,0.27,Fri Jun 08 09:46:39 2018,regr.rvm,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,438,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.682,0.686,-1,0.27,0.213,Fri Jun 08 09:46:41 2018,regr.slim,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,438,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.693,0.648,0.297,0.303,0.206,Fri Jun 08 09:46:53 2018,regr.svm,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,618,222,0.8596,0.7458,random,12,cv,10,10,NA,5,98.0148472278415,0.00344410005908019
+0.411,0.426,0.588,0.493,0.395,Fri Jun 08 09:54:23 2018,regr.xgboost,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,410,222,0.8596,0.7458,random,450,cv,10,10,NA,5,725,3,0.596968533868669,3.08427603915334,0.542544287536293,4.35164708644152,0.651872362359427
+NA,NA,-1,NA,NA,Fri Jun 08 09:54:24 2018,regr.xyf,1,2,Recc sim 1,ignore,none,ICA,HOPPER,15th10hp10cvml,1,5,403,410,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.729,0.706,-1,0.252,0.182,Fri Jun 08 09:54:35 2018,regr.bartMachine,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,471,222,0.8596,0.9936,nohyperparam,3,cv,10,10,NA,5,
+0,0,-1,0.86,0.671,Fri Jun 08 09:54:36 2018,regr.bcart,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 09:54:37 2018,regr.bdk,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.9936,nohyperparam,0,cv,10,10,NA,5,
+0.571,0.579,0.497,0.363,0.288,Fri Jun 08 09:56:54 2018,regr.blackboost,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.9936,random,137,cv,10,10,NA,5,1,389
+NA,NA,-1,NA,NA,Fri Jun 08 09:56:55 2018,regr.blm,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+0.781,0.777,-1,0.192,0.147,Fri Jun 08 09:56:56 2018,regr.brnn,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+0.72,0.719,-1,0.242,0.188,Fri Jun 08 09:56:57 2018,regr.bst,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 09:56:57 2018,regr.btlm,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.9936,nohyperparam,0,cv,10,10,NA,5,
+0.219,0.198,-1,0.69,0.524,Fri Jun 08 09:56:58 2018,regr.cforest,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,153,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 09:57:04 2018,regr.crs,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,6
+0.363,0.409,-1,0.508,0.427,Fri Jun 08 09:57:05 2018,regr.ctree,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,153,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+0.483,0.486,-1,NA,NA,Fri Jun 08 09:57:05 2018,regr.cubist,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,157,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+0.758,0.769,-1,NA,NA,Fri Jun 08 09:57:07 2018,regr.cvglmnet,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,237,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:57:07 2018,regr.earth,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.024,0.001,-1,0.858,0.655,Fri Jun 08 09:57:08 2018,regr.elmNN,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,337,222,0.8596,0.9936,nohyperparam,0,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 09:57:08 2018,regr.evtree,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.596,0.549,0.443,0.388,0.271,Fri Jun 08 10:08:30 2018,regr.extraTrees,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,297,222,0.8596,0.9936,random,682,cv,10,10,NA,5,11,21
+0,0,-1,0.86,0.671,Fri Jun 08 10:08:34 2018,regr.featureless,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,297,222,0.8596,0.9936,nohyperparam,3,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:08:36 2018,regr.fnn,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,2
+0.287,0.304,-1,0.598,0.478,Fri Jun 08 10:08:58 2018,regr.frbs,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,297,222,0.8596,0.9936,nohyperparam,23,cv,10,10,NA,5,
+0.743,0.758,-1,NA,NA,Fri Jun 08 10:09:08 2018,regr.gamboost,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,297,222,0.8596,0.9936,nohyperparam,9,cv,10,10,NA,5,
+0.529,0.449,-1,0.473,0.316,Fri Jun 08 10:09:11 2018,regr.gausspr,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,377,222,0.8596,0.9936,nohyperparam,4,cv,10,10,NA,5,
+0.478,0.484,0.601,0.443,0.35,Fri Jun 08 10:09:32 2018,regr.gbm,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,577,222,0.8596,0.9936,random,20,cv,10,10,NA,5,66,2,0.257039767568,6
+-0.39,-0.395,-1,NA,NA,Fri Jun 08 10:09:33 2018,regr.glm,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,577,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+0.754,0.764,0.401,NA,NA,Fri Jun 08 10:09:45 2018,regr.glmboost,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,133,222,0.8596,0.9936,random,12,cv,10,10,NA,5,298,0.234436133177951
+0.791,0.793,0.306,NA,NA,Fri Jun 08 10:09:54 2018,regr.glmnet,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,313,222,0.8596,0.9936,random,8,cv,10,10,NA,5,0.134701288305223,0.0966174634212813
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:09:56 2018,regr.h2o.deeplearning,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,3
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:09:56 2018,regr.h2o.gbm,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:09:56 2018,regr.h2o.glm,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:09:56 2018,regr.h2o.randomForest,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:09:57 2018,regr.IBk,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:09:57 2018,regr.kknn,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,1
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:09:58 2018,regr.km,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.785,0.775,0.266,NA,NA,Fri Jun 08 10:10:09 2018,regr.ksvm,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,575,222,0.8596,0.9936,random,11,cv,10,10,NA,5,600.799281121671,0.00017863914858585
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:10:09 2018,regr.laGP,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:10:09 2018,regr.LiblineaRL2L1SVR,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+-0.39,-0.395,-1,NA,NA,Fri Jun 08 10:10:10 2018,regr.lm,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,575,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+0.578,0.603,-1,NA,NA,Fri Jun 08 10:10:11 2018,regr.mars,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,575,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 10:10:13 2018,regr.mob,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,575,222,0.8596,0.9936,nohyperparam,2,cv,10,10,NA,5,
+0.738,0.747,0.335,0.217,0.176,Fri Jun 08 10:10:47 2018,regr.nnet,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,616,222,0.8596,0.9936,random,34,cv,10,10,NA,5,2,0.673480040866863
+0.32,0.315,-1,0.589,0.456,Fri Jun 08 10:11:11 2018,regr.nodeHarvest,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,507,222,0.8596,0.9936,nohyperparam,24,cv,10,10,NA,5,
+0.738,0.687,-1,NA,NA,Fri Jun 08 10:11:12 2018,regr.pcr,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,507,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 10:11:34 2018,regr.penalized.fusedlasso,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,22
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 10:11:39 2018,regr.penalized.lasso,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 10:11:45 2018,regr.penalized.ridge,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,6
+0.738,0.687,-1,NA,NA,Fri Jun 08 10:11:45 2018,regr.plsr,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,507,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+0.538,0.499,0.547,0.431,0.31,Fri Jun 08 10:13:24 2018,regr.randomForest,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,524,222,0.8596,0.9936,random,99,cv,10,10,NA,5,7,17
+0.522,0.488,-1,0.44,0.32,Fri Jun 08 10:13:27 2018,regr.randomForestSRC,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,526,222,0.8596,0.9936,nohyperparam,3,cv,10,10,NA,5,
+0.518,0.491,0.522,0.438,0.323,Fri Jun 08 10:14:15 2018,regr.ranger,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,284,222,0.8596,0.9936,random,48,cv,10,10,NA,5,7,4
+0.434,0.433,-1,0.487,0.379,Fri Jun 08 10:14:17 2018,regr.rknn,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,132,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+0.298,0.351,0.833,0.558,0.471,Fri Jun 08 10:14:26 2018,regr.rpart,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,332,222,0.8596,0.9936,random,9,cv,10,10,NA,5,0.00239023465408533,5,5,7
+0.51,0.48,0.521,0.447,0.329,Fri Jun 08 10:16:13 2018,regr.RRF,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,500,222,0.8596,0.9936,random,107,cv,10,10,NA,5,19,0.252711624372751
+-0.39,-0.395,-1,NA,NA,Fri Jun 08 10:16:14 2018,regr.rsm,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,500,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+0.617,0.545,-1,0.391,0.256,Fri Jun 08 10:16:16 2018,regr.rvm,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,580,222,0.8596,0.9936,nohyperparam,2,cv,10,10,NA,5,
+0.682,0.688,-1,NA,NA,Fri Jun 08 10:16:30 2018,regr.slim,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,580,222,0.8596,0.9936,nohyperparam,14,cv,10,10,NA,5,
+0.72,0.693,0.377,0.263,0.188,Fri Jun 08 10:16:42 2018,regr.svm,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,136,222,0.8596,0.9936,random,12,cv,10,10,NA,5,16988.5082625615,0.00331963018686112
+0.496,0.438,0.654,0.483,0.338,Fri Jun 08 10:24:52 2018,regr.xgboost,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,524,222,0.8596,0.9936,random,490,cv,10,10,NA,5,3185,9,0.491289840489859,0.877061190549284,0.558413899317384,5.90094971004874,0.587824914837256
+NA,NA,-1,NA,NA,Fri Jun 08 10:24:53 2018,regr.xyf,1,1,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,524,222,0.8596,0.9936,nohyperparam,1,cv,10,10,NA,5,
+0.719,0.701,-1,0.258,0.188,Fri Jun 08 10:25:09 2018,regr.bartMachine,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,471,222,0.8596,0.7458,nohyperparam,7,cv,10,10,NA,5,
+0,0,-1,0.86,0.671,Fri Jun 08 10:25:11 2018,regr.bcart,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 10:25:11 2018,regr.bdk,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.59,0.593,0.366,0.35,0.276,Fri Jun 08 10:27:28 2018,regr.blackboost,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,random,137,cv,10,10,NA,5,1,389
+NA,NA,-1,NA,NA,Fri Jun 08 10:27:29 2018,regr.blm,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.782,0.778,-1,0.191,0.147,Fri Jun 08 10:27:31 2018,regr.brnn,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.737,0.728,-1,0.234,0.177,Fri Jun 08 10:27:31 2018,regr.bst,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 10:27:32 2018,regr.btlm,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.22,0.198,-1,0.689,0.523,Fri Jun 08 10:27:33 2018,regr.cforest,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,153,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 10:27:39 2018,regr.crs,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,6
+0.363,0.409,-1,0.508,0.427,Fri Jun 08 10:27:39 2018,regr.ctree,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,153,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.588,0.583,-1,0.357,0.276,Fri Jun 08 10:27:40 2018,regr.cubist,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,157,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.758,0.769,-1,0.198,0.162,Fri Jun 08 10:27:42 2018,regr.cvglmnet,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,237,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:27:42 2018,regr.earth,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.015,-0.004,-1,0.863,0.661,Fri Jun 08 10:27:42 2018,regr.elmNN,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,337,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:27:42 2018,regr.evtree,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.597,0.55,0.333,0.387,0.27,Fri Jun 08 10:39:04 2018,regr.extraTrees,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,297,222,0.8596,0.7458,random,682,cv,10,10,NA,5,11,21
+0,0,-1,0.86,0.671,Fri Jun 08 10:39:05 2018,regr.featureless,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,297,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:39:05 2018,regr.fnn,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.283,0.3,-1,0.602,0.481,Fri Jun 08 10:39:19 2018,regr.frbs,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,297,222,0.8596,0.7458,nohyperparam,14,cv,10,10,NA,5,
+0.736,0.754,-1,0.211,0.177,Fri Jun 08 10:39:24 2018,regr.gamboost,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,297,222,0.8596,0.7458,nohyperparam,5,cv,10,10,NA,5,
+0.529,0.45,-1,0.473,0.316,Fri Jun 08 10:39:25 2018,regr.gausspr,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,377,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.466,0.486,0.467,0.443,0.359,Fri Jun 08 10:39:43 2018,regr.gbm,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,577,222,0.8596,0.7458,random,18,cv,10,10,NA,5,66,2,0.257039767568,6
+-0.388,-0.394,-1,1.2,0.931,Fri Jun 08 10:39:44 2018,regr.glm,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,577,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.753,0.762,0.305,0.204,0.165,Fri Jun 08 10:39:56 2018,regr.glmboost,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,133,222,0.8596,0.7458,random,12,cv,10,10,NA,5,298,0.234436133177951
+0.789,0.794,0.226,0.177,0.141,Fri Jun 08 10:40:02 2018,regr.glmnet,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,313,222,0.8596,0.7458,random,6,cv,10,10,NA,5,0.134701288305223,0.0966174634212813
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:40:02 2018,regr.h2o.deeplearning,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:40:02 2018,regr.h2o.gbm,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:40:03 2018,regr.h2o.glm,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:40:03 2018,regr.h2o.randomForest,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:40:03 2018,regr.IBk,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:40:03 2018,regr.kknn,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:40:03 2018,regr.km,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+0.785,0.774,0.2,0.194,0.144,Fri Jun 08 10:40:14 2018,regr.ksvm,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,575,222,0.8596,0.7458,random,11,cv,10,10,NA,5,600.799281121671,0.00017863914858585
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:40:14 2018,regr.laGP,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:40:14 2018,regr.LiblineaRL2L1SVR,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,0
+-0.388,-0.394,-1,1.2,0.931,Fri Jun 08 10:40:14 2018,regr.lm,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,575,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.422,0.474,-1,0.452,0.387,Fri Jun 08 10:40:15 2018,regr.mars,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,575,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 10:40:16 2018,regr.mob,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,575,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.749,0.755,0.245,0.211,0.169,Fri Jun 08 10:40:40 2018,regr.nnet,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,616,222,0.8596,0.7458,random,24,cv,10,10,NA,5,2,0.673480040866863
+0.295,0.301,-1,0.601,0.473,Fri Jun 08 10:41:00 2018,regr.nodeHarvest,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,507,222,0.8596,0.7458,nohyperparam,20,cv,10,10,NA,5,
+0.737,0.686,-1,0.27,0.176,Fri Jun 08 10:41:01 2018,regr.pcr,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,507,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 10:41:06 2018,regr.penalized.fusedlasso,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 10:41:12 2018,regr.penalized.lasso,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,5
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 10:41:17 2018,regr.penalized.ridge,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,5
+0.737,0.686,-1,0.27,0.176,Fri Jun 08 10:41:18 2018,regr.plsr,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,507,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.54,0.504,0.409,0.427,0.309,Fri Jun 08 10:42:57 2018,regr.randomForest,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,498,222,0.8596,0.7458,random,98,cv,10,10,NA,5,7,17
+0.525,0.489,-1,0.44,0.319,Fri Jun 08 10:42:59 2018,regr.randomForestSRC,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,500,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.537,0.503,0.408,0.428,0.311,Fri Jun 08 10:44:10 2018,regr.ranger,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,258,222,0.8596,0.7458,random,71,cv,10,10,NA,5,20,2
+0.441,0.436,-1,0.485,0.375,Fri Jun 08 10:44:12 2018,regr.rknn,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,132,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.266,0.287,0.674,0.613,0.492,Fri Jun 08 10:44:21 2018,regr.rpart,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,332,222,0.8596,0.7458,random,9,cv,10,10,NA,5,0.00944686825750657,6,13,20
+0.465,0.496,0.382,0.433,0.359,Fri Jun 08 10:46:02 2018,regr.RRF,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,575,222,0.8596,0.7458,random,101,cv,10,10,NA,5,96,0.197681108722463
+-0.388,-0.394,-1,1.2,0.931,Fri Jun 08 10:46:03 2018,regr.rsm,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,575,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.611,0.535,-1,0.4,0.261,Fri Jun 08 10:46:03 2018,regr.rvm,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,31,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.683,0.688,-1,0.268,0.213,Fri Jun 08 10:46:05 2018,regr.slim,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,31,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.794,0.786,0.202,0.184,0.138,Fri Jun 08 10:46:17 2018,regr.svm,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,211,222,0.8596,0.7458,random,12,cv,10,10,NA,5,2863.35977467719,0.000444962883676377
+0.461,0.438,0.473,0.483,0.361,Fri Jun 08 10:48:23 2018,regr.xgboost,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,189,222,0.8596,0.7458,random,126,cv,10,10,NA,5,140,2,0.125739878178108,0.943146438803524,0.541096138395369,7.0820245379582,0.783311875129584
+NA,NA,-1,NA,NA,Fri Jun 08 10:48:24 2018,regr.xyf,1,2,Recc sim 1,ignore,none,centernscale,HOPPER,15th10hp10cvml,1,5,403,189,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.692,0.668,-1,0.285,0.206,Fri Jun 08 10:48:40 2018,regr.bartMachine,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,471,222,0.8596,0.7458,nohyperparam,7,cv,10,10,NA,5,
+0,0,-1,0.86,0.671,Fri Jun 08 10:48:41 2018,regr.bcart,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 10:48:41 2018,regr.bdk,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.586,0.579,0.371,0.362,0.278,Fri Jun 08 10:51:00 2018,regr.blackboost,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,random,138,cv,10,10,NA,5,8,484
+NA,NA,-1,NA,NA,Fri Jun 08 10:51:01 2018,regr.blm,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.783,0.784,-1,0.186,0.146,Fri Jun 08 10:51:02 2018,regr.brnn,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.715,0.71,-1,0.249,0.191,Fri Jun 08 10:51:03 2018,regr.bst,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 10:51:04 2018,regr.btlm,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.229,0.21,-1,0.679,0.517,Fri Jun 08 10:51:05 2018,regr.cforest,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,168,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 10:51:11 2018,regr.crs,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,6
+0.396,0.418,-1,0.5,0.405,Fri Jun 08 10:51:11 2018,regr.ctree,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,168,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.636,0.619,-1,0.327,0.244,Fri Jun 08 10:51:12 2018,regr.cubist,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,172,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.715,0.729,-1,0.233,0.191,Fri Jun 08 10:51:13 2018,regr.cvglmnet,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,252,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:51:13 2018,regr.earth,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+-0.001,0.013,-1,0.848,0.671,Fri Jun 08 10:51:14 2018,regr.elmNN,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,352,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 10:51:14 2018,regr.evtree,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+0.593,0.54,0.346,0.396,0.273,Fri Jun 08 11:03:08 2018,regr.extraTrees,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,312,222,0.8596,0.7458,random,714,cv,10,10,NA,5,5,1
+0,0,-1,0.86,0.671,Fri Jun 08 11:03:10 2018,regr.featureless,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,312,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:03:10 2018,regr.fnn,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+0.283,0.293,-1,0.608,0.481,Fri Jun 08 11:03:24 2018,regr.frbs,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,312,222,0.8596,0.7458,nohyperparam,14,cv,10,10,NA,5,
+0.745,0.759,-1,0.207,0.171,Fri Jun 08 11:03:34 2018,regr.gamboost,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,312,222,0.8596,0.7458,nohyperparam,10,cv,10,10,NA,5,
+0.519,0.445,-1,0.478,0.323,Fri Jun 08 11:03:36 2018,regr.gausspr,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,392,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.579,0.565,0.403,0.374,0.283,Fri Jun 08 11:03:57 2018,regr.gbm,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,368,222,0.8596,0.7458,random,21,cv,10,10,NA,5,146,9,0.181261206076248,8
+-0.84,-0.721,-1,1.48,1.23,Fri Jun 08 11:03:58 2018,regr.glm,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,368,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.683,0.679,0.407,0.276,0.212,Fri Jun 08 11:04:08 2018,regr.glmboost,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,548,222,0.8596,0.7458,random,10,cv,10,10,NA,5,139,0.628081497503445
+0.784,0.784,0.225,0.185,0.144,Fri Jun 08 11:04:15 2018,regr.glmnet,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,104,222,0.8596,0.7458,random,7,cv,10,10,NA,5,0.117660234216601,0.26246592996942
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:04:17 2018,regr.h2o.deeplearning,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,2
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:04:17 2018,regr.h2o.gbm,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:04:18 2018,regr.h2o.glm,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:04:18 2018,regr.h2o.randomForest,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:04:18 2018,regr.IBk,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:04:18 2018,regr.kknn,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,1
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:04:19 2018,regr.km,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+0.788,0.795,0.19,0.176,0.142,Fri Jun 08 11:04:30 2018,regr.ksvm,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,366,222,0.8596,0.7458,random,11,cv,10,10,NA,5,22.5217261828656,4.04985468830833e-05
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:04:30 2018,regr.laGP,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:04:30 2018,regr.LiblineaRL2L1SVR,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,0
+-0.84,-0.721,-1,1.48,1.23,Fri Jun 08 11:04:31 2018,regr.lm,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,366,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.342,0.408,-1,0.509,0.442,Fri Jun 08 11:04:31 2018,regr.mars,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,366,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 11:04:32 2018,regr.mob,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,366,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.801,0.804,0.279,0.169,0.134,Fri Jun 08 11:05:11 2018,regr.nnet,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,527,222,0.8596,0.7458,random,38,cv,10,10,NA,5,8,0.102611561521098
+0.264,0.272,-1,0.626,0.494,Fri Jun 08 11:05:29 2018,regr.nodeHarvest,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,91,222,0.8596,0.7458,nohyperparam,19,cv,10,10,NA,5,
+0.792,0.781,-1,0.189,0.14,Fri Jun 08 11:05:30 2018,regr.pcr,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,91,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 11:05:36 2018,regr.penalized.fusedlasso,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 11:05:42 2018,regr.penalized.lasso,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 11:05:47 2018,regr.penalized.ridge,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,6
+0.792,0.781,-1,0.189,0.14,Fri Jun 08 11:05:48 2018,regr.plsr,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,91,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.526,0.499,0.397,0.431,0.318,Fri Jun 08 11:07:10 2018,regr.randomForest,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,555,222,0.8596,0.7458,random,82,cv,10,10,NA,5,4,9
+0.533,0.492,-1,0.437,0.313,Fri Jun 08 11:07:13 2018,regr.randomForestSRC,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,557,222,0.8596,0.7458,nohyperparam,3,cv,10,10,NA,5,
+0.534,0.491,0.419,0.438,0.313,Fri Jun 08 11:08:46 2018,regr.ranger,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,315,222,0.8596,0.7458,random,93,cv,10,10,NA,5,32,5
+0.474,0.465,-1,0.46,0.353,Fri Jun 08 11:08:47 2018,regr.rknn,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,132,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.111,0.142,0.71,0.738,0.596,Fri Jun 08 11:08:57 2018,regr.rpart,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,332,222,0.8596,0.7458,random,9,cv,10,10,NA,5,0.159531391576767,7,6,31
+0.466,0.497,0.397,0.432,0.358,Fri Jun 08 11:11:10 2018,regr.RRF,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,383,222,0.8596,0.7458,random,133,cv,10,10,NA,5,91,0.401913435198367
+-0.84,-0.721,-1,1.48,1.23,Fri Jun 08 11:11:10 2018,regr.rsm,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,383,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.618,0.544,-1,0.392,0.256,Fri Jun 08 11:11:11 2018,regr.rvm,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,463,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.697,0.703,-1,0.255,0.203,Fri Jun 08 11:11:13 2018,regr.slim,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,463,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0,0.001,0.761,0.859,0.671,Fri Jun 08 11:11:25 2018,regr.svm,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,19,222,0.8596,0.7458,random,12,cv,10,10,NA,5,0.0728751718093328,6052.02401494078
+0.467,0.424,0.479,0.496,0.358,Fri Jun 08 11:16:26 2018,regr.xgboost,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,109,222,0.8596,0.7458,random,301,cv,10,10,NA,5,194,9,0.0405952939211857,1.29131134599447,0.389125239476562,0.538674462586641,0.53944613575004
+NA,NA,-1,NA,NA,Fri Jun 08 11:16:27 2018,regr.xyf,1,2,Recc sim 1,ignore,none,expoTrans,HOPPER,15th10hp10cvml,1,5,403,109,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.771,0.743,-1,0.22,0.153,Fri Jun 08 11:16:42 2018,regr.bartMachine,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,471,222,0.8596,0.2098,nohyperparam,7,cv,10,10,NA,5,
+0,0,-1,0.86,0.671,Fri Jun 08 11:16:43 2018,regr.bcart,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 11:16:44 2018,regr.bdk,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.2098,nohyperparam,0,cv,10,10,NA,5,
+0.609,0.602,0.104,0.341,0.262,Fri Jun 08 11:19:01 2018,regr.blackboost,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.2098,random,137,cv,10,10,NA,5,1,389
+NA,NA,-1,NA,NA,Fri Jun 08 11:19:01 2018,regr.blm,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.784,0.781,-1,0.189,0.145,Fri Jun 08 11:19:03 2018,regr.brnn,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.181,0.202,-1,0.686,0.549,Fri Jun 08 11:19:04 2018,regr.bst,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 11:19:04 2018,regr.btlm,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.2098,nohyperparam,0,cv,10,10,NA,5,
+0.217,0.195,-1,0.692,0.525,Fri Jun 08 11:19:05 2018,regr.cforest,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,133,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 11:19:11 2018,regr.crs,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,6
+0.363,0.408,-1,0.508,0.427,Fri Jun 08 11:19:12 2018,regr.ctree,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,133,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.521,0.532,-1,0.402,0.32,Fri Jun 08 11:19:13 2018,regr.cubist,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,137,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.726,0.742,-1,NA,NA,Fri Jun 08 11:19:14 2018,regr.cvglmnet,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,217,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:19:14 2018,regr.earth,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+-0.13,-0.084,-1,0.931,0.758,Fri Jun 08 11:19:14 2018,regr.elmNN,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,317,222,0.8596,0.2098,nohyperparam,0,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:19:14 2018,regr.evtree,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.607,0.547,0.0945,0.388,0.263,Fri Jun 08 11:29:37 2018,regr.extraTrees,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.2098,random,622,cv,10,10,NA,5,63,1
+0,0,-1,0.86,0.671,Fri Jun 08 11:29:38 2018,regr.featureless,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:29:38 2018,regr.fnn,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.282,0.299,-1,0.602,0.482,Fri Jun 08 11:29:53 2018,regr.frbs,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.2098,nohyperparam,15,cv,10,10,NA,5,
+0.742,0.757,-1,NA,NA,Fri Jun 08 11:29:58 2018,regr.gamboost,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.2098,nohyperparam,5,cv,10,10,NA,5,
+0.514,0.433,-1,0.487,0.325,Fri Jun 08 11:29:59 2018,regr.gausspr,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,357,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.629,0.581,0.121,0.359,0.248,Fri Jun 08 11:30:27 2018,regr.gbm,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,285,222,0.8596,0.2098,random,28,cv,10,10,NA,5,77,3,0.189079821265303,9
+-0.374,-0.38,-1,NA,NA,Fri Jun 08 11:30:27 2018,regr.glm,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,285,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.744,0.752,0.0899,NA,NA,Fri Jun 08 11:30:43 2018,regr.glmboost,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,465,222,0.8596,0.2098,random,16,cv,10,10,NA,5,631,0.1949808744248
+0.764,0.752,0.0793,NA,NA,Fri Jun 08 11:30:50 2018,regr.glmnet,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,21,222,0.8596,0.2098,random,6,cv,10,10,NA,5,0.523735189810395,0.00197053766096245
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:30:50 2018,regr.h2o.deeplearning,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:30:50 2018,regr.h2o.gbm,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:30:50 2018,regr.h2o.glm,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:30:50 2018,regr.h2o.randomForest,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:30:50 2018,regr.IBk,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:30:50 2018,regr.kknn,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:30:50 2018,regr.km,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.808,0.8,0.0569,0.172,0.128,Fri Jun 08 11:31:23 2018,regr.ksvm,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.2098,random,33,cv,10,10,NA,5,21.7365520867938,0.000947611735376502
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:31:23 2018,regr.laGP,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:31:24 2018,regr.LiblineaRL2L1SVR,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+-0.374,-0.38,-1,NA,NA,Fri Jun 08 11:31:24 2018,regr.lm,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.45,0.474,-1,0.451,0.369,Fri Jun 08 11:31:25 2018,regr.mars,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 11:31:26 2018,regr.mob,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.781,0.79,0.058,0.18,0.146,Fri Jun 08 11:31:55 2018,regr.nnet,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,151,222,0.8596,0.2098,random,29,cv,10,10,NA,5,5,0.166561694958748
+0.303,0.303,-1,0.598,0.468,Fri Jun 08 11:32:15 2018,regr.nodeHarvest,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,306,222,0.8596,0.2098,nohyperparam,20,cv,10,10,NA,5,
+0.75,0.711,-1,NA,NA,Fri Jun 08 11:32:15 2018,regr.pcr,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,306,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 11:32:22 2018,regr.penalized.fusedlasso,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,7
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 11:32:27 2018,regr.penalized.lasso,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,5
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 11:32:33 2018,regr.penalized.ridge,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,6
+0.75,0.711,-1,NA,NA,Fri Jun 08 11:32:34 2018,regr.plsr,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,306,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.535,0.497,0.116,0.431,0.312,Fri Jun 08 11:34:24 2018,regr.randomForest,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,558,222,0.8596,0.2098,random,110,cv,10,10,NA,5,4,38
+0.523,0.482,-1,0.444,0.319,Fri Jun 08 11:34:26 2018,regr.randomForestSRC,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,560,222,0.8596,0.2098,nohyperparam,2,cv,10,10,NA,5,
+0.532,0.498,0.11,0.43,0.314,Fri Jun 08 11:35:15 2018,regr.ranger,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,318,222,0.8596,0.2098,random,49,cv,10,10,NA,5,7,6
+0.446,0.438,-1,0.483,0.372,Fri Jun 08 11:35:16 2018,regr.rknn,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,132,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.324,0.375,0.168,0.537,0.454,Fri Jun 08 11:35:25 2018,regr.rpart,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,332,222,0.8596,0.2098,random,9,cv,10,10,NA,5,0.00409349232631835,26,7,40
+0.507,0.502,0.114,0.428,0.33,Fri Jun 08 11:37:34 2018,regr.RRF,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,188,222,0.8596,0.2098,random,129,cv,10,10,NA,5,32,0.337115027476102
+-0.374,-0.38,-1,NA,NA,Fri Jun 08 11:37:35 2018,regr.rsm,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,188,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.373,0.202,-1,0.685,0.42,Fri Jun 08 11:37:36 2018,regr.rvm,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,268,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.684,0.688,-1,NA,NA,Fri Jun 08 11:37:37 2018,regr.slim,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,268,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.787,0.777,0.0651,0.191,0.143,Fri Jun 08 11:37:49 2018,regr.svm,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,448,222,0.8596,0.2098,random,12,cv,10,10,NA,5,24847.4130246495,0.0017590929181322
+0.251,0.241,0.164,0.652,0.502,Fri Jun 08 11:43:17 2018,regr.xgboost,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,20,222,0.8596,0.2098,random,328,cv,10,10,NA,5,253,7,0.0434658412078861,0.231091659516096,0.42989942310378,5.40120736230165,0.323538038297556
+NA,NA,-1,NA,NA,Fri Jun 08 11:43:19 2018,regr.xyf,1,1,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,20,222,0.8596,0.2098,nohyperparam,1,cv,10,10,NA,5,
+0.724,0.675,-1,0.279,0.185,Fri Jun 08 11:43:35 2018,regr.bartMachine,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,471,222,0.8596,0.7458,nohyperparam,7,cv,10,10,NA,5,
+0,0,-1,0.86,0.671,Fri Jun 08 11:43:36 2018,regr.bcart,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 11:43:37 2018,regr.bdk,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,477,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.604,0.605,0.367,0.34,0.266,Fri Jun 08 11:45:54 2018,regr.blackboost,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,random,137,cv,10,10,NA,5,1,389
+NA,NA,-1,NA,NA,Fri Jun 08 11:45:54 2018,regr.blm,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,62,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.782,0.779,-1,0.19,0.146,Fri Jun 08 11:45:56 2018,regr.brnn,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.181,0.202,-1,0.686,0.549,Fri Jun 08 11:45:57 2018,regr.bst,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 11:45:57 2018,regr.btlm,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,264,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+0.218,0.196,-1,0.691,0.524,Fri Jun 08 11:45:58 2018,regr.cforest,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,133,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 11:46:05 2018,regr.crs,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,7
+0.363,0.409,-1,0.508,0.427,Fri Jun 08 11:46:05 2018,regr.ctree,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,133,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.589,0.584,-1,0.357,0.275,Fri Jun 08 11:46:06 2018,regr.cubist,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,137,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.726,0.742,-1,0.222,0.184,Fri Jun 08 11:46:07 2018,regr.cvglmnet,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,217,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:46:08 2018,regr.earth,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0,0.003,-1,0.857,0.671,Fri Jun 08 11:46:08 2018,regr.elmNN,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,317,222,0.8596,0.7458,nohyperparam,0,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:46:08 2018,regr.evtree,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.606,0.545,0.336,0.391,0.265,Fri Jun 08 11:56:26 2018,regr.extraTrees,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.7458,random,618,cv,10,10,NA,5,63,1
+0,0,-1,0.86,0.671,Fri Jun 08 11:56:27 2018,regr.featureless,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:56:27 2018,regr.fnn,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.28,0.297,-1,0.604,0.483,Fri Jun 08 11:56:40 2018,regr.frbs,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.7458,nohyperparam,13,cv,10,10,NA,5,
+0.744,0.759,-1,0.207,0.171,Fri Jun 08 11:56:45 2018,regr.gamboost,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,277,222,0.8596,0.7458,nohyperparam,5,cv,10,10,NA,5,
+0.515,0.434,-1,0.487,0.325,Fri Jun 08 11:56:46 2018,regr.gausspr,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,357,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.621,0.58,0.426,0.361,0.254,Fri Jun 08 11:57:12 2018,regr.gbm,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,285,222,0.8596,0.7458,random,26,cv,10,10,NA,5,77,3,0.189079821265303,9
+-0.362,-0.369,-1,1.18,0.914,Fri Jun 08 11:57:12 2018,regr.glm,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,285,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.756,0.76,0.32,0.206,0.164,Fri Jun 08 11:57:27 2018,regr.glmboost,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,465,222,0.8596,0.7458,random,15,cv,10,10,NA,5,631,0.1949808744248
+0.773,0.759,0.28,0.208,0.152,Fri Jun 08 11:57:33 2018,regr.glmnet,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,21,222,0.8596,0.7458,random,6,cv,10,10,NA,5,0.65132148610428,0.0082652483879266
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:57:33 2018,regr.h2o.deeplearning,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:57:33 2018,regr.h2o.gbm,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:57:33 2018,regr.h2o.glm,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:57:33 2018,regr.h2o.randomForest,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:57:33 2018,regr.IBk,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:57:33 2018,regr.kknn,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:57:34 2018,regr.km,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+0.808,0.8,0.202,0.172,0.128,Fri Jun 08 11:57:44 2018,regr.ksvm,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.7458,random,11,cv,10,10,NA,5,21.7365520867938,0.000947611735376502
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:57:44 2018,regr.laGP,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+Fail,Fail,Fail,Fail,PrePackageFail,Fri Jun 08 11:57:44 2018,regr.LiblineaRL2L1SVR,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,0
+-0.362,-0.369,-1,1.18,0.914,Fri Jun 08 11:57:45 2018,regr.lm,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.403,0.459,-1,0.465,0.401,Fri Jun 08 11:57:46 2018,regr.mars,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+NA,NA,-1,NA,NA,Fri Jun 08 11:57:47 2018,regr.mob,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,283,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.813,0.821,0.209,0.154,0.125,Fri Jun 08 11:58:16 2018,regr.nnet,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,151,222,0.8596,0.7458,random,30,cv,10,10,NA,5,5,0.166561694958748
+0.305,0.303,-1,0.599,0.466,Fri Jun 08 11:58:36 2018,regr.nodeHarvest,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,306,222,0.8596,0.7458,nohyperparam,19,cv,10,10,NA,5,
+0.75,0.711,-1,0.249,0.168,Fri Jun 08 11:58:37 2018,regr.pcr,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,306,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 11:58:42 2018,regr.penalized.fusedlasso,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,6
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 11:58:48 2018,regr.penalized.lasso,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,5
+Fail,Fail,Fail,Fail,PackageFail,Fri Jun 08 11:58:53 2018,regr.penalized.ridge,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,6
+0.75,0.711,-1,0.249,0.168,Fri Jun 08 11:58:54 2018,regr.plsr,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,306,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.546,0.506,0.41,0.425,0.305,Fri Jun 08 12:00:44 2018,regr.randomForest,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,129,222,0.8596,0.7458,random,110,cv,10,10,NA,5,4,24
+0.533,0.493,-1,0.436,0.314,Fri Jun 08 12:00:48 2018,regr.randomForestSRC,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,131,222,0.8596,0.7458,nohyperparam,3,cv,10,10,NA,5,
+0.553,0.508,0.406,0.423,0.3,Fri Jun 08 12:01:50 2018,regr.ranger,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,513,222,0.8596,0.7458,random,62,cv,10,10,NA,5,15,6
+0.447,0.437,-1,0.484,0.371,Fri Jun 08 12:01:51 2018,regr.rknn,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,132,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.324,0.375,0.643,0.537,0.454,Fri Jun 08 12:02:01 2018,regr.rpart,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,332,222,0.8596,0.7458,random,9,cv,10,10,NA,5,0.0386726107600243,18,5,33
+0.538,0.508,0.398,0.423,0.31,Fri Jun 08 12:03:57 2018,regr.RRF,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,276,222,0.8596,0.7458,random,116,cv,10,10,NA,5,8,0.474780720891431
+-0.362,-0.369,-1,1.18,0.914,Fri Jun 08 12:03:58 2018,regr.rsm,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,276,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.626,0.567,-1,0.372,0.251,Fri Jun 08 12:03:59 2018,regr.rvm,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,356,222,0.8596,0.7458,nohyperparam,1,cv,10,10,NA,5,
+0.683,0.688,-1,0.268,0.213,Fri Jun 08 12:04:01 2018,regr.slim,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,356,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
+0.782,0.771,0.198,0.197,0.146,Fri Jun 08 12:04:13 2018,regr.svm,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,536,222,0.8596,0.7458,random,12,cv,10,10,NA,5,10829.9282610079,0.000129525163642009
+0.385,0.316,0.535,0.588,0.412,Fri Jun 08 12:17:14 2018,regr.xgboost,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,538,222,0.8596,0.7458,random,781,cv,10,10,NA,5,3150,8,0.112154904788127,2.15330490842462,0.588149010110646,4.35613899491727,0.345793310320005
+NA,NA,-1,NA,NA,Fri Jun 08 12:17:16 2018,regr.xyf,1,2,Recc sim 1,ignore,none,range01,HOPPER,15th10hp10cvml,1,5,403,538,222,0.8596,0.7458,nohyperparam,2,cv,10,10,NA,5,
