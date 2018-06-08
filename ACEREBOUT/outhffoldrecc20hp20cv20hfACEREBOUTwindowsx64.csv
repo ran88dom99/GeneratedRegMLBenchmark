@@ -7478,3 +7478,8 @@ Fail,Fail,Fail,Fail,Fail,Thu Jun 07 12:34:22 2018,svmSpectrumString,1,2,4thbookr
 -0.25,-0.263,0.848,0.872,0.625,Thu Jun 07 13:04:21 2018,xyf,1,2,4thbookrPCA,ignore,none,quantile,ACEREBOUT,hffoldrecc20hp20cv20hf,19,20,403,339,222,0.6905,1.004,random,68,cv,10,20,NA,5,5,10,0.752565619731322,rectangular
 -4.29,-2.923,2.95,3.12,3.02,Thu Jun 07 13:22:48 2018,avNNet,1,2,4thbookrPCA,ignore,none,all,ACEREBOUT,hffoldrecc20hp20cv20hf,1,20,403,242,222,0.7943,1.002,random,76,cv,10,20,NA,5,2,5.30802525745685,TRUE
 Fail,Fail,Fail,Fail,Fail,Thu Jun 07 13:23:00 2018,bag,1,2,4thbookrPCA,ignore,none,all,ACEREBOUT,hffoldrecc20hp20cv20hf,1,20,403,624,222,3
+-0.538,-0.275,0.849,1.01,0.879,Fri Jun 08 10:59:46 2018,bagEarth,1,2,4thbookrPCA,ignore,none,all,ACEREBOUT,hffoldrecc20hp20cv20hf,1,20,403,110,222,0.7943,1.002,random,8481,cv,10,20,NA,5,15,2
+0.002,0.124,-1,0.696,0.57,Fri Jun 08 11:06:39 2018,bagEarthGCV,1,2,4thbookrPCA,ignore,none,all,ACEREBOUT,hffoldrecc20hp20cv20hf,1,20,403,110,222,0.7943,1.002,random,384,cv,10,20,NA,5,1
+Fail,Fail,Fail,Fail,Fail,Fri Jun 08 11:25:38 2018,bam,1,2,4thbookrPCA,ignore,none,all,ACEREBOUT,hffoldrecc20hp20cv20hf,1,20,403,624,222,1110
+-0.715,-0.357,0.843,1.08,0.98,Fri Jun 08 11:35:47 2018,bartMachine,1,2,4thbookrPCA,ignore,none,all,ACEREBOUT,hffoldrecc20hp20cv20hf,1,20,403,380,222,0.7943,1.002,random,603,cv,10,20,NA,5,81,0.964868799783289,0.930913423327729,0.146758801303804,4.51691970811225
+-0.818,-0.811,-1,1.44,1.04,Fri Jun 08 11:41:14 2018,bayesglm,1,2,4thbookrPCA,ignore,none,all,ACEREBOUT,hffoldrecc20hp20cv20hf,1,20,403,624,222,0.7943,1.002,random,315,cv,10,20,NA,5,none
