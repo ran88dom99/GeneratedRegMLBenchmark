@@ -7484,3 +7484,4 @@ Fail,Fail,Fail,Fail,Fail,Fri Jun 08 11:25:38 2018,bam,1,2,4thbookrPCA,ignore,non
 -0.715,-0.357,0.843,1.08,0.98,Fri Jun 08 11:35:47 2018,bartMachine,1,2,4thbookrPCA,ignore,none,all,ACEREBOUT,hffoldrecc20hp20cv20hf,1,20,403,380,222,0.7943,1.002,random,603,cv,10,20,NA,5,81,0.964868799783289,0.930913423327729,0.146758801303804,4.51691970811225
 -0.818,-0.811,-1,1.44,1.04,Fri Jun 08 11:41:14 2018,bayesglm,1,2,4thbookrPCA,ignore,none,all,ACEREBOUT,hffoldrecc20hp20cv20hf,1,20,403,624,222,0.7943,1.002,random,315,cv,10,20,NA,5,none
 -0.049,0.069,0.919,0.74,0.599,Sat Jun 09 12:02:54 2018,blasso,1,2,4thbookrPCA,ignore,none,all,ACEREBOUT,hffoldrecc20hp20cv20hf,1,20,403,584,222,0.7943,1.002,random,33639,cv,10,20,NA,5,0.0580692591611296
+-0.049,0.068,-1,0.74,0.599,Sun Jun 10 12:41:11 2018,blassoAveraged,1,2,4thbookrPCA,ignore,none,all,ACEREBOUT,hffoldrecc20hp20cv20hf,1,20,403,226,222,0.7943,1.002,random,34437,cv,10,20,NA,5,none
