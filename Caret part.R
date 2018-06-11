@@ -59,22 +59,6 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
 
 
   predicted.outcomes<-predict(trainedmodel, newdata=(testing[,-1]))
-  p <- data.frame(predicted.outcomes,testing[,1])
-  #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
-  Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],train.based.mean)
-  #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-  mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],train.based.med)
-  
-  if(trans.y==2){
-    p<- data.frame(predicted.outcomes,y.untransformed[foldTrain[[FN]]])
-  }else{
-    p<- data.frame(predict(loess.model,predicted.outcomes),y.untransformed[foldTrain[[FN]]])
-  }
-  #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
-  RMSEp=RMSE(p[,1],p[,2])
-  MMAAEE=MAE(p[,1],p[,2])
-  #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)  
-
   #get trainer function's metrics
   wut=print(trainedmodel,selectCol=TRUE)
   overRMSE=-1
@@ -83,18 +67,9 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   try({if(is.numeric(overRMSE)){replace.overRMSE=0}})
   if(replace.overRMSE==1){overRMSE=-1}
   if(length(overRMSE)<1){overRMSE=-1}
-
-  #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
-  write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
-                signif(overRMSE,digits = 3),signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),
-                date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
-                withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1:2],seed.var,RMSE.mean,RMSE.mean.train,adaptControl$search,round(proc.time()[3]-when[3]),
-                adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
-                adaptControl$adaptive$min,trainedmodel$bestTune),
-              file = out.file, append =TRUE, quote = F, sep = ",",
-              eol = "\n", na = "NA", dec = ".", row.names = F,
-              col.names = F, qmethod = "double")
-  print(date())
+  
+  printPredMets(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,hypercount="full")
+  
   not.failed=1
   })
 
@@ -107,22 +82,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
 
     
     predicted.outcomes<-predict(trainedmodel, newdata=(testing[,-1]))
-    p <- data.frame(predicted.outcomes,testing[,1])
-    #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
-    Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],train.based.mean)
-    #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-    mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],train.based.med)
     
-    if(trans.y==2){
-      p<- data.frame(predicted.outcomes,y.untransformed[foldTrain[[FN]]])
-    }else{
-      p<- data.frame(predict(loess.model,predicted.outcomes),y.untransformed[foldTrain[[FN]]])
-    }
-    #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
-    RMSEp=RMSE(p[,1],p[,2])
-    MMAAEE=MAE(p[,1],p[,2])
-    #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
-
     overRMSE=-1
     wut=print(trainedmodel,selectCol=TRUE)
     try({overRMSE=as.numeric(wut[wut[,length(wut[1,])]=="*","RMSE"])})#length(wut[1,])-
@@ -130,17 +90,9 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     try({if(is.numeric(overRMSE)){replace.overRMSE=0}})
     if(replace.overRMSE==1){overRMSE=-1}
     if(length(overRMSE)<1){overRMSE=-1}
-
-    #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
-    write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
-                  signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
-                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1:2],seed.var,RMSE.mean,RMSE.mean.train,simpleControl$search,
-                  round(proc.time()[3]-when[3]),simpleControl$method,tuneLength2,
-                  simpleControl$number,"no rep","no min",trainedmodel$bestTune),
-                file = out.file, append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
-    print(date())
+ 
+    printPredMets(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,hypercount="part")
+    
     not.failed=1
     })
   }
@@ -151,42 +103,19 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
                                method = allmodel)
     
     predicted.outcomes<-predict(trainedmodel, newdata=(testing[,-1]))
-    p <- data.frame(predicted.outcomes,testing[,1])
-    #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
-    Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],train.based.mean)
-    #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-    mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],train.based.med)
     
-    if(trans.y==2){
-      p<- data.frame(predicted.outcomes,y.untransformed[foldTrain[[FN]]])
-    }else{
-      p<- data.frame(predict(loess.model,predicted.outcomes),y.untransformed[foldTrain[[FN]]])
-    }
-    #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
-    RMSEp=RMSE(p[,1],p[,2])
-    MMAAEE=MAE(p[,1],p[,2])
-    #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T) 
-
     
     overRMSE=-1
     wut=print(trainedmodel,selectCol=TRUE)
     try({wut=print(trainedmodel,selectCol=TRUE)
-      overRMSE=as.numeric(wut[wut[,length(wut[1,])]=="*","RMSE"])})#length(wut[1,])-
+    overRMSE=as.numeric(wut[wut[,length(wut[1,])]=="*","RMSE"])})#length(wut[1,])-
     replace.overRMSE=1
     try({if(is.numeric(overRMSE)){replace.overRMSE=0}})
     if(replace.overRMSE==1){overRMSE=-1}
     if(length(overRMSE)<1){overRMSE=-1}
-
-    #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
-    write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
-                  signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
-                  trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1:2],seed.var,RMSE.mean,RMSE.mean.train,simpleControl$search,
-                  round(proc.time()[3]-when[3]),"nohyperparameters",tuneLength2,
-                  simpleControl$number,"no rep","no min",trainedmodel$bestTune),
-                file = out.file, append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
-    print(date())
+    
+    printPredMets(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,hypercount="none")
+    
     not.failed=1
     })
   }
@@ -199,19 +128,32 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   }
   if(not.failed==1) {
     fail.try=T
-    try({
+    ########VARIEBLE IMPORTANCE
+    try({ 
       #noVarImp.models=c("parRF")#var imp crashes with these models
       #if(allmodel %in% noVarImp.models){next()}#
       if(mean.improvement<0){mean.improvement=0}
+      Rseed<-.Random.seed[1]
+      Cseed<-.Random.seed[2]
       varimportant<-varImp(trainedmodel)
-      write.table(paste(allmodel,date(),round(mean.improvement,digits=3),datasource,round(varimportant$importance,digits=1),  sep = ", "),
+      colNms<-row.names.data.frame(as.data.frame(varimportant$importance))
+      colImpor<-signif(varimportant$importance$Overall,digits = 3)
+      varImpMix<-""#varImpMix<-vector(mode="character",length = length(colNms)*2)
+      for(i in 1:length(colNms)){
+        #varImpMix[i*2]<-colNms[i] ; varImpMix[i*2+1]<-colImpor[i]
+        varImpMix<-paste(varImpMix,colNms[i],colImpor[i], sep = ",")
+      }
+       write.table(paste("caret",allmodel,date(),round(mean.improvement,digits=3),trans.y,
+                         datasource,missingdata,withextra,norming,which.computer,task.subject,
+                         FN,high.fold,Rseed,Cseed,seed.var,
+                         varImpMix,  sep = ","),
                   file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
                   eol = "\n", na = "NA", dec = ".", row.names = F,
                   col.names = F, qmethod = "double")
       fail.try=F
     })
     if(fail.try==T){
-      write.table(paste(allmodel,date(),round(mean.improvement,digits=3),datasource,"Failed",  sep = ", "),
+      write.table(paste("caret",allmodel,date(),round(mean.improvement,digits=3),datasource,"Failed",  sep = ","),
                   file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
                   eol = "\n", na = "NA", dec = ".", row.names = F,
                   col.names = F, qmethod = "double")

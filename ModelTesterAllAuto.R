@@ -13,27 +13,28 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 memory.limit()
 which.computer<-Sys.info()[['nodename']]
-task.subject<-"15th10hp10cvml"
+task.subject<-"outg15th10hp10cv"#"functionwraptest3"#
 pc.mlr<-c("ACEREBOU","HOPPER","ALTA")#T,"HOPPER"
 if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
 
+source("predEncapFu.R")
 #if(exists("base.folder")){setwd(base.folder)}
 base.folder<-getwd()
 cpout.folder<-paste(base.folder,"/",which.computer,sep = "")
 setwd(cpout.folder)
 
 if(length(which(list.files() == out.file))<1){
-  write.table("pMAE,pRMSE,ocvRMSE,RMSEutrans,MAEutrans,date,algomodel,trgCol,transTarg,task,missing,append,transform,pc,expirament,fold,maxfold,seed,seedit,foldseed,RMSEmean,RMSEmeantrain,hpGen,time,validmethod,tuneLength,cvcount,ignrepeats,adaptivemin,bestTuneparams,btp1,btp2,btp3,btp4,btp5,btp6,btp7,btp8,btp9,btp10,btp11 ",file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
+  write.table("pMAE,pRMSE,ocvRMSE,RMSEutrans,MAEutrans,date,algomodel,trgCol,transTarg,task,missing,append,transform,pc,expirament,fold,maxfold,seed,seedit,foldseed,RMSEmean,RMSEmeantrain,hpGen,time,validmethod,tuneLength,cvcount,ignrepeats,adaptivemin,bestTuneparams,btp1,btp2,btp3,btp4,btp5,btp6,btp7,btp8,btp9,btp10,btp11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
   write.table("0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,bac latent features,ignore,none,asis,CLOUD,10hp10cv,1,5,403,624,222,0.9,0.9284,random,434,cv,10,10,NA,5,15,1.3312352844514,0.968602964049205,1.30087468028069,1.36411243351176,,," ,file =,out.file,append=T,quote = F, sep = ",", row.names = F,col.names = F)
   }
 if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,".csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
-if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
+#if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 
 
 high.fold=5
-min.high.fold=1
+min.high.fold=2
 cv.iters=10
 tuneLength=10
 tuneLength2=4
@@ -99,23 +100,8 @@ for(lt in 2:lgf)  {
   if(previous.fails[lt,2]==previous.fails[lt-1,2])  {
     bad.models=union(bad.models,c(paste(previous.fails[lt,2])))  }}
 
-#source(functionsallautotest.R)
-#######not to redo a test function in functions source#####
-check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextra="missing",missingdata="leaveempty",datasource="mean" ,column.to.predict=200,allmodel="ctree",FN=5)
-{
-  for(intern in 1:length(df[,1])){
-    if((any(df[intern,11:16] == norming, na.rm=T))&&
-       (any(df[intern,10:16] == withextra, na.rm=T))&&
-       (any(df[intern,10:16] == missingdata, na.rm=T))&&
-       (any(df[intern,9:16] == datasource, na.rm=T))&&
-       (any(df[intern,6:9] == column.to.predict, na.rm=T))&&
-       (any(df[intern,5:9] == allmodel, na.rm=T))&&
-       (any(df[intern,15:17] == FN, na.rm=T))&&
-       (  (df[intern,9] == trans.y)))
-    {return(TRUE)}
-  }
-  return(FALSE)
-}
+
+
 #####caret init#####
 best.ranged <- c("avNNet", "nnet", "pcaNNet", "glm.nb")
 best.asis <- c("svmLinear3", "relaxo", "superpc", "xgbTree")
