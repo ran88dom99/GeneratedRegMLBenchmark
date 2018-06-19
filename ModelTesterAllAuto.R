@@ -77,6 +77,10 @@ library(MLmetrics)
 
 ########error no repeat#########
 
+#if you decide to stop ading colnames--#NAMES <- read.table("candidates.txt", nrow = 1, stringsAsFactors = FALSE, sep = ",")
+#DATA <- read.table("candidates.txt", skip = 1, stringsAsFactors = FALSE, sep = ",")
+#DATA <- DATA[, 1:24]
+#names(DATA) <- NAMES 
 
 try({
   before.last.alg<-as.matrix(read.csv("beforelast algorithm.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
@@ -175,7 +179,7 @@ for(gend.data in gensTTest){
       dependant.selection=complete.cases(data.source[,column.to.predict])
       
       
-      df.previous.calcs=as.data.frame(read.csv(file=out.file, header = T, sep = ",", quote = "",   dec = ".", fill = TRUE, comment.char = ""))
+      df.previous.calcs=as.data.frame(read.csv(file=out.file, header = T, sep = ",", quote = "",   dec = ".", fill = TRUE,check.names = T, comment.char = ""))
       unimportant.computations<-vector(mode = "logical",length=length(df.previous.calcs[,1])  )
       for(intern in 1:length(df.previous.calcs[,1])){
         if((any(df.previous.calcs[intern,] == withextra, na.rm=T))&&
