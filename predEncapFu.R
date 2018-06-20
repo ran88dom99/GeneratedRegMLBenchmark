@@ -16,6 +16,7 @@ check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextr
   }
   return(FALSE)
 }
+
 #The discussion in this section is somewhat more technical than in other parts of this document.
 #However, it details one of the major differences between S-Plus and R.
 #The symbols which occur in the body of a function can be divided into three classes; formal
