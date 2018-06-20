@@ -1,0 +1,12 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+caret,avNNet,Mon Jun 11 09:55:53 2018,0.127,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,carEnstest3,1,5,403,177,222,,V2,2.22,V3,74.7,V4,100,V5,18.6,V6,50.7,V7,9.33,V8,0,V9,1.67,V10,14.6
+caret,bagEarthGCV,Mon Jun 11 20:41:02 2018,0.151,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,carEnstest3,1,5,403,256,222,,V4,100,V3,73.9,V6,42.2,V8,31.6,V5,21.9,V2,8.42,V7,2.26,V9,0.164,V10,0
+caret,blasso,Tue Jun 12 12:13:02 2018,0.153,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,carEnstest3,1,5,403,471,222,,V2,2.22,V3,74.7,V4,100,V5,18.6,V6,50.7,V7,9.33,V8,0,V9,1.67,V10,14.6
+caret,bridge,Tue Jun 12 19:53:04 2018,0.134,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,carEnstest3,1,5,403,291,222,,V2,2.22,V3,74.7,V4,100,V5,18.6,V6,50.7,V7,9.33,V8,0,V9,1.67,V10,14.6
+caret,BstLm,Wed Jun 13 12:53:46 2018,0.152,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,carEnstest3,1,5,403,624,222,,V2,2.22,V3,74.7,V4,100,V5,18.6,V6,50.7,V7,9.33,V8,0,V9,1.67,V10,14.6
+caret,cforest,Wed Jun 13 12:54:17 2018,0.412,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,carEnstest3,1,5,403,492,222,,V2,29.5,V3,29.7,V4,100,V5,2.35,V6,1.96,V7,2.33,V8,2.31,V9,0,V10,1.36
+caret,ctree,Wed Jun 13 12:54:28 2018,0.433,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,carEnstest3,1,5,403,624,222,,V2,2.22,V3,74.7,V4,100,V5,18.6,V6,50.7,V7,9.33,V8,0,V9,1.67,V10,14.6
+caret,ctree2,Wed Jun 13 12:54:38 2018,0.433,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,carEnstest3,1,5,403,624,222,,V2,2.22,V3,74.7,V4,100,V5,18.6,V6,50.7,V7,9.33,V8,0,V9,1.67,V10,14.6
+caret,cubist,Wed Jun 13 12:56:19 2018,0.74,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,carEnstest3,1,5,403,1,222,,V2,62,V4,100,V3,40,V5,0.667,V6,0,V7,0,V8,0,V9,0,V10,0
+caret,dnn,Wed Jun 13 12:56:32 2018,0,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,carEnstest3,1,5,403,270,222,,V2,2.22,V3,74.7,V4,100,V5,18.6,V6,50.7,V7,9.33,V8,0,V9,1.67,V10,14.6
+caret,earth,Wed Jun 13 12:56:47 2018,0.753,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,carEnstest3,1,5,403,624,222,,V4,100,V2,88.3,V3,78,V5,0,V6,0,V7,0,V8,0,V9,0,V10,0

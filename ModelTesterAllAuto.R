@@ -13,8 +13,8 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 memory.limit()
 which.computer<-Sys.info()[['nodename']]
-task.subject<-"outg15th10hp10cv"#"functionwraptest3"#
-pc.mlr<-c("ACEREBOU","HOPPER","ALTA")#T,"HOPPER"
+task.subject<-"carEnstest3"#"outg15th10hp10cv"#
+pc.mlr<-c("ACEREBOU","HOPPER","ALTAa")#T,"HOPPER"
 if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
