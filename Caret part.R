@@ -57,8 +57,8 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
                              trControl = adaptControl,
                              tuneLength = tuneLength)
 
-
   predicted.outcomes<-predict(trainedmodel, newdata=(testing[,-1]))
+  
   #get trainer function's metrics
   wut=print(trainedmodel,selectCol=TRUE)
   overRMSE=-1

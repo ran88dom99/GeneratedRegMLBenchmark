@@ -13,8 +13,9 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 memory.limit()
 which.computer<-Sys.info()[['nodename']]
-task.subject<-"outg15th10hp10cv"#"functionwraptest3"#
-pc.mlr<-c("ACEREBOU","HOPPER","ALTA")#T,"HOPPER"
+task.subject<-"outg15th10hp10cv"#"carEnstest3"#
+if(which.computer=="ALTA") {task.subject<-"carEnstest3"}
+pc.mlr<-c("ACEREBOU","HOPPER","ALTAa")#T,"HOPPER"
 if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
@@ -26,22 +27,23 @@ cpout.folder<-paste(base.folder,"/",which.computer,sep = "")
 setwd(cpout.folder)
 
 if(length(which(list.files() == out.file))<1){
-  write.table("pMAE,pRMSE,ocvRMSE,RMSEutrans,MAEutrans,date,algomodel,trgCol,transTarg,task,missing,append,transform,pc,expirament,fold,maxfold,seed,seedit,foldseed,RMSEmean,RMSEmeantrain,hpGen,time,validmethod,tuneLength,cvcount,ignrepeats,adaptivemin,bestTuneparams,btp1,btp2,btp3,btp4,btp5,btp6,btp7,btp8,btp9,btp10,btp11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
+  write.table("pMAE,pRMSE,ocvRMSE,RMSEutrans,MAEutrans,date,algomodel,trgCol,transTarg,task,missing,append,transform,pc,expirament,fold,maxfold,seed,seedit,foldseed,RMSEmean,RMSEmeantrain,hpGen,time,validmethod,tuneLength,cvcount,ignrepeats,adaptivemin,bestTuneparams,btp1,btp2,btp3,btp4,btp5,btp6,btp7,btp8,btp9,btp10,btp11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
   write.table("0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,bac latent features,ignore,none,asis,CLOUD,10hp10cv,1,5,403,624,222,0.9,0.9284,random,434,cv,10,10,NA,5,15,1.3312352844514,0.968602964049205,1.30087468028069,1.36411243351176,,," ,file =,out.file,append=T,quote = F, sep = ",", row.names = F,col.names = F)
   }
 if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,".csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
-#if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
-
+#if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F
 
 high.fold=5
 min.high.fold=2
 cv.iters=10
 tuneLength=10
 tuneLength2=4
-normings=c("YeoJohnson","quantile","all","asis","PCA","ICA","centernscale","expoTrans","range01")#,"centernscale"
+normings=c("asis","all","YeoJohnson","quantile","PCA","ICA","centernscale","expoTrans","range01")#,"centernscale"
 
 if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=20;high.fold=20}
 
+
+pram.cycle<-T
 gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55,44,3,1)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
 write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
@@ -53,6 +55,15 @@ if(!exists("gensTTest")) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
 gensTTesto<-c(gensTTesto[length(gensTTesto):1])
 if(length(gensTTest)<1) gensTTest<-c(gensTTesto)#reversion[length(reversion):1]
 
+#if item not in last.parameters then next()
+#every full for loop write down last.parameters
+#if last.parameters does not exist, write first parameters
+#first.pram<-c("56","ignore","none","asis","1","1")#preve.pram<-first.pram
+try({
+  preve.pram<-t(read.csv("previous parameters.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+  preve.pram<-as.vector(preve.pram)
+})
+if(!exists("preve.pram")) pram.cycle<-F
 
 ########packages install check######
 
@@ -99,7 +110,6 @@ lgf<-length(previous.fails[,2])
 for(lt in 2:lgf)  {
   if(previous.fails[lt,2]==previous.fails[lt-1,2])  {
     bad.models=union(bad.models,c(paste(previous.fails[lt,2])))  }}
-
 
 
 #####caret init#####
@@ -187,8 +197,18 @@ for(gend.data in gensTTest){
 
       #data.source=data.frame( data.source[,column.to.predict],data.source[,1:2], data.source[,4:(column.to.predict-1)], data.source[,(column.to.predict+1):length( data.source[1,])])
 
-        for(norming in normings) {
+        for(norming in normings) { 
         for(trans.y in 1:2) {#1:
+          
+          if(pram.cycle){
+            sum<-0
+            sum<-sum+(trans.y %in% preve.pram)
+            sum<-sum+(norming %in% preve.pram)
+            sum<-sum+(withextra %in% preve.pram)
+            sum<-sum+(missingdata %in% preve.pram)
+          if(sum<4) next()
+            }
+          
           df.toprocess=data.source
 
           #df.toprocess = data.frame(df.toprocess,)
@@ -313,6 +333,20 @@ for(gend.data in gensTTest){
             if(min.high.fold<FN){next()}
             training <- df.toprocess[-foldTrain[[FN]],]
             
+            if(pram.cycle){
+              sum<-0
+              sum<-sum+(trans.y %in% preve.pram)
+              sum<-sum+(norming %in% preve.pram)
+              sum<-sum+(withextra %in% preve.pram)
+              sum<-sum+(missingdata %in% preve.pram)
+              sum<-sum+(FN %in% preve.pram)
+              if(sum<5) next()
+            }
+            
+            pram.cycle<-F
+            preve.pram<-c(trans.y,norming,withextra,missingdata,FN)
+            (write.table(c(preve.pram),file="previous parameters.csv", quote = F,row.names = F))
+            
             if(trans.y==1){
 
             if(norming=="quantile" && trans.y==1){ #quantilization leaves holes for algos to detect
@@ -366,7 +400,9 @@ for(gend.data in gensTTest){
               #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
             
           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F, col.names = T)
-
+          allmodel<-"perfect"; when<-0
+          printPredMets(predicted.outcomes= testing[,1],overRMSE=-1,hypercount="none",libpack="ignore")
+          
           ###########for all models#################
           gc()
 
