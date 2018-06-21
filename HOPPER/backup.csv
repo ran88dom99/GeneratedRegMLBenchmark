@@ -26147,3 +26147,15 @@ Succ, Sat Mar 31 06:31:11 2018, regr.h2o.gbm
 Succ, Sat Mar 31 06:31:51 2018, regr.h2o.glm
 Succ, Sat Mar 31 06:33:01 2018, regr.h2o.randomForest
 Fail, Tue Jun 05 19:12:59 2018, regr.fnn
+Fail, Wed Jun 20 17:10:18 2018, regr.bartMachine
+Fail, Wed Jun 20 17:10:29 2018, regr.bcart
+Fail, Wed Jun 20 17:10:30 2018, regr.bdk
+Fail, Wed Jun 20 17:13:54 2018, regr.blackboost
+Fail, Wed Jun 20 17:14:02 2018, regr.brnn
+Fail, Wed Jun 20 17:14:04 2018, regr.bst
+Fail, Wed Jun 20 17:14:33 2018, regr.cforest
+Fail, Wed Jun 20 17:14:53 2018, regr.ctree
+Fail, Wed Jun 20 17:14:59 2018, regr.cubist
+Fail, Wed Jun 20 17:15:03 2018, regr.cvglmnet
+Fail, Wed Jun 20 17:15:06 2018, regr.earth
+Fail, Wed Jun 20 17:15:07 2018, regr.elmNN
