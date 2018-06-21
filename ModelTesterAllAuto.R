@@ -14,6 +14,7 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 memory.limit()
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"outg15th10hp10cv"#"carEnstest3"#
+if(which.computer=="ALTA") {task.subject<-"carEnstest3"}
 pc.mlr<-c("ACEREBOU","HOPPER","ALTAa")#T,"HOPPER"
 if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
@@ -40,6 +41,7 @@ tuneLength2=4
 normings=c("asis","all","YeoJohnson","quantile","PCA","ICA","centernscale","expoTrans","range01")#,"centernscale"
 
 if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=20;high.fold=20}
+
 
 pram.cycle<-T
 gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55,44,3,1)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
@@ -398,7 +400,9 @@ for(gend.data in gensTTest){
               #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
             
           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F, col.names = T)
-
+          allmodel<-"perfect"; when<-0
+          printPredMets(predicted.outcomes= testing[,1],overRMSE=-1,hypercount="none",libpack="ignore")
+          
           ###########for all models#################
           gc()
 
