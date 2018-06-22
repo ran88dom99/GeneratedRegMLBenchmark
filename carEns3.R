@@ -8,7 +8,11 @@ library("caretEnsemble")#"extraTrees","gbm",
 stackmodels<-c( "rpart","glm","cubist","earth","bagEarth",
                 "lasso","Rborist","rlm","nnet","pcaNNet","avNNet","pcr","ppr",
                 "enet",	"blassoAveraged",	"leapBackward","BstLm","gamboost","xgbTree","svmLinear2")
-    
+
+allmodel<-"caretPreEns"
+write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
+write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
+
     try({
       set.seed(222)
       model_list <- caretList(
@@ -22,8 +26,14 @@ stackmodels<-c( "rpart","glm","cubist","earth","bagEarth",
       #xyplot(resamples(model_list))
       #modelCor(resamples(model_list))
     })
+    
+    allmodel<-"caretEnsGreedyGlm"
+    write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
+    write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
+
     failed<-1
     try({
+      if(allmodel %in% bad.models) {next()} #does next() exit try({})
       greedy_ensemble <- caretEnsemble(
         model_list
       )
@@ -47,6 +57,11 @@ stackmodels<-c( "rpart","glm","cubist","earth","bagEarth",
     #caTools::colAUC(model_preds, testing$Class)
     
     for (i in stackmodels) {
+      allmodel<-paste("caretEnstk",i,sep = " ")
+      write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
+      write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
+      if(allmodel %in% bad.models) {next()}
+      
       failed<-1
       try({
         stack_ensemble <- caretStack(
@@ -58,7 +73,6 @@ stackmodels<-c( "rpart","glm","cubist","earth","bagEarth",
         #$ens_model$finalModel
         ens_preds <- predict(stack_ensemble, newdata=testing[,-1], type="raw")
         overRMSE<-(-1)#min(stack_ensemble$error$RMSE, na.rm = T)
-        allmodel<-paste("caretEnstk",i,sep = " ")
         printPredMets(predicted.outcomes=ens_preds,overRMSE=overRMSE,hypercount="full")
         failed<-0
       })
