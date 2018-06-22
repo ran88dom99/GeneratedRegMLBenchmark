@@ -7,7 +7,7 @@ library("caTools")
 library("caretEnsemble")#"extraTrees","gbm",
 stackmodels<-c( "rpart","glm","cubist","earth","bagEarth",
                 "lasso","Rborist","rlm","nnet","pcaNNet","avNNet","pcr","ppr",
-                "enet",	"blassoAveraged",	"leapBackward","BstLm","gamboost","xgbTree","svmLinear2")
+                "enet",	"blassoAveraged",	"BstLm","leapBackward","gamboost","xgbTree","svmLinear2")
     
     try({
       set.seed(222)
