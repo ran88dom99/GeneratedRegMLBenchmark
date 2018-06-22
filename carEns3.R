@@ -3,6 +3,7 @@
 #update.packages(oldPkgs="caret", ask=FALSE)
 #sessionInfo()
 #adaptControl <-trainControl(method = "cv", number = 10,  search = "random")
+#todo varimp
 library("caTools")
 library("caretEnsemble")#"extraTrees","gbm",
 stackmodels<-c( "rpart","glm","cubist","earth","bagEarth",
