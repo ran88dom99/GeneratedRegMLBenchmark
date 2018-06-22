@@ -175,3 +175,16 @@ caret,SBC,Fri Jun 22 15:47:13 2018,0.377,2,Friedman's 1st,ignore,none,asis,HOPPE
 caret,simpls,Fri Jun 22 15:47:17 2018,0.522,Friedman's 1st,Failed
 caret,spls,Fri Jun 22 15:47:28 2018,0.51,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,624,222,,V2,48.7,V3,100,V4,17.7,V5,95.3,V6,32.3,V7,1.78,V8,3.13,V9,9.16,V10,7.56,V11,0
 caret,superpc,Fri Jun 22 15:47:33 2018,0,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,624,222,,V2,48.7,V3,100,V4,17.7,V5,95.3,V6,32.3,V7,1.78,V8,3.13,V9,9.16,V10,7.56,V11,0
+caret,svmLinear,Fri Jun 22 16:31:39 2018,0.516,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,624,222,,V2,48.7,V3,100,V4,17.7,V5,95.3,V6,32.3,V7,1.78,V8,3.13,V9,9.16,V10,7.56,V11,0
+caret,svmLinear2,Fri Jun 22 16:32:57 2018,0.533,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,624,222,,V2,48.7,V3,100,V4,17.7,V5,95.3,V6,32.3,V7,1.78,V8,3.13,V9,9.16,V10,7.56,V11,0
+caret,svmLinear3,Fri Jun 22 16:33:14 2018,0.526,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,292,222,,V2,48.7,V3,100,V4,17.7,V5,95.3,V6,32.3,V7,1.78,V8,3.13,V9,9.16,V10,7.56,V11,0
+caret,svmPoly,Fri Jun 22 16:34:01 2018,0.618,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,624,222,,V2,48.7,V3,100,V4,17.7,V5,95.3,V6,32.3,V7,1.78,V8,3.13,V9,9.16,V10,7.56,V11,0
+caret,svmRadial,Fri Jun 22 16:34:08 2018,0.515,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,624,222,,V2,48.7,V3,100,V4,17.7,V5,95.3,V6,32.3,V7,1.78,V8,3.13,V9,9.16,V10,7.56,V11,0
+caret,svmRadialCost,Fri Jun 22 16:34:15 2018,0.565,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,80,222,,V2,48.7,V3,100,V4,17.7,V5,95.3,V6,32.3,V7,1.78,V8,3.13,V9,9.16,V10,7.56,V11,0
+caret,svmRadialSigma,Fri Jun 22 16:34:22 2018,0.56,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,624,222,,V2,48.7,V3,100,V4,17.7,V5,95.3,V6,32.3,V7,1.78,V8,3.13,V9,9.16,V10,7.56,V11,0
+caret,treebag,Fri Jun 22 16:34:54 2018,0.348,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,128,222,,V10,0,V11,7.64,V2,60.7,V3,62,V4,22,V5,100,V6,48.5,V7,4.2,V8,17.9,V9,15.5
+caret,widekernelpls,Fri Jun 22 16:35:00 2018,0.522,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,624,222,,V2,67.7,V3,99,V4,3.11,V5,100,V6,58,V7,12.7,V8,17.7,V9,5.91,V10,0,V11,13.3
+caret,xgbDART,Fri Jun 22 16:38:30 2018,0.593,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,549,222,,V3,100,V5,96.4,V2,38.7,V6,7.14,V8,0.958,V10,0.872,V11,0.774,V9,0.491,V7,0.329,V4,0
+caret,xgbLinear,Fri Jun 22 16:39:05 2018,0.462,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,495,222,,V5,100,V3,57.7,V2,14.7,V6,9.98,V4,2.16,V10,1.92,V7,0.902,V9,0.386,V8,0.216,V11,0
+caret,xgbTree,Fri Jun 22 16:43:39 2018,0.597,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,265,222,,V5,100,V3,98.6,V2,71.8,V6,44,V8,14.9,V4,12.8,V10,9.19,V9,6.02,V11,0.558,V7,0
+caret,xyf,Fri Jun 22 16:43:52 2018,0.269,2,Friedman's 1st,ignore,none,asis,HOPPER,outg15th10hp10cv,2,5,403,532,222,,V2,48.7,V3,100,V4,17.7,V5,95.3,V6,32.3,V7,1.78,V8,3.13,V9,9.16,V10,7.56,V11,0
