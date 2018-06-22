@@ -12,7 +12,7 @@ stackmodels<-c( "rpart","glm","cubist","earth","bagEarth",
 allmodel<-"caretPreEns"
 write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
 write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
-
+print("carens first")
     try({
       set.seed(222)
       model_list <- caretList(
@@ -30,7 +30,8 @@ write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.
     allmodel<-"caretEnsGreedyGlm"
     write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
     write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
-
+    print("carens sec")
+    
     failed<-1
     try({
       if(allmodel %in% bad.models) {next()} #does next() exit try({})
@@ -53,6 +54,7 @@ write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.
       failed<-0
     })
     if(failed==1) write.table(paste("greedy",sep = ","),file = "carensfails.csv",  quote = F, sep = ",", row.names = F,col.names = F,append = T)
+    print("carens 3")
     
     #caTools::colAUC(model_preds, testing$Class)
     
