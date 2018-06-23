@@ -103,7 +103,8 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   #seed.var=seed.var+1
 
   if(length(df.previous.calcs[,1])>0){
-    if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel,FN=FN)){next}}
+    if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel,FN=FN))
+      {next}}
 
 
 

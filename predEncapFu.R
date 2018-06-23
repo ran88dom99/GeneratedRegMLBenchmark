@@ -52,7 +52,7 @@ check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextr
 #only output is printing
 
 
-printPredMets<-function(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,hypercount="none",libpack="caret")
+printPredMets<-function(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,hypercount="none",libpack="notune")
 {
   #hypercount=c("full","part","none")
   p <- data.frame(predicted.outcomes,testing[,1])
