@@ -31,10 +31,15 @@ print("carens first")
     write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
     write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
     print("carens sec")
+
     
     failed<-1
     try({
+      if(length(df.previous.calcs[,1])>0){
+      if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel,FN=FN))
+      {next()}}
       if(allmodel %in% bad.models) {next()} #does next() exit try({})
+      
       greedy_ensemble <- caretEnsemble(
         model_list
       )
@@ -46,10 +51,9 @@ print("carens first")
       #model_preds$ensemble <- ens_preds
       #model_preds
       
-      varImp(greedy_ensemble)
+      print(varImp(greedy_ensemble))
       
       overRMSE<-(-1)#greedy_ensemble$error$RMSE
-      allmodel<-"caretEnsGreedyGlm"
       printPredMets(predicted.outcomes=ens_preds,overRMSE=overRMSE,hypercount="full")
       failed<-0
     })
@@ -59,10 +63,14 @@ print("carens first")
     #caTools::colAUC(model_preds, testing$Class)
     
     for (i in stackmodels) {
-      allmodel<-paste("caretEnstk",i,sep = " ")
+      allmodel<-paste("caretEnstk",i,sep = "")
       write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
       write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
       if(allmodel %in% bad.models) {next()}
+      print(i)
+      if(length(df.previous.calcs[,1])>0){
+        if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel,FN=FN))
+        {next}}
       
       failed<-1
       try({
@@ -80,4 +88,3 @@ print("carens first")
       })
     }
     if(failed==1) write.table(paste(i,sep = ","),file = "carensfails.csv",  quote = F, sep = ",", row.names = F,col.names = F,append = T)
-
