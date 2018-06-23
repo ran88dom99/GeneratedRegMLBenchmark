@@ -15,14 +15,17 @@ x <- setdiff(names(train), y)
 #train[,y] <- as.factor(train[,y])
 #test[,y] <- as.factor(test[,y])
 
-aml <- h2o.automl(x = x, y = y,
-                  training_frame = train )
+aml <- h2o.automl( y = y,
+                  training_frame = train,
+                  max_runtime_secs = 0,
+                  max_models = 200,
+                  nfolds=cv.iters, seed=seed.var)
 
 # View the AutoML Leaderboard, keep_cross_validation_models=FALSE
 lb <- aml@leaderboard
-print(lb)
 
-
+lbdf<-as.data.frame(lb)
+print(lbdf)
 aml@leader
 
 # If you need to generate predictions on a test set, you can make
