@@ -16,7 +16,7 @@ which.computer<-Sys.info()[['nodename']]
 task.subject<-"outg15th10hp10cv"#"carEnstest3"#
 if(which.computer=="ALTA") {task.subject<-"carEnstest3"}
 pc.mlr<-c("ACEREBOU","HOPPERt","ALTAa")#T,"HOPPER"
-pc.carems<-c("HOPPER")
+pc.carems<-c("HOPPER","ALTA","ACEREBOUT")
 if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
@@ -408,13 +408,15 @@ for(gend.data in gensTTest){
           gc()
 
           setwd(base.folder)
+
+          if(max(which.computer==pc.mlr)>0){
+            source("MLR part.R")
+          }else{
+            source("Caret part.R")
+            setwd(base.folder)
           if(max(which.computer==pc.carems)>0)
             source("carEns3.R")
-          if(max(which.computer==pc.mlr)>0)
-            source("MLR part.R")
-          else
-            source("Caret part.R")
-
+          }
          setwd(cpout.folder)
           if(norming == normings[length(normings)]){
             if(count.toy.data.passed>length(gensTTest)){gensTTest<-c(gensTTesto)}
