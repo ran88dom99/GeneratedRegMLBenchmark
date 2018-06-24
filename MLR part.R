@@ -138,7 +138,9 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   #keep rmse but train new model on mod$x's parameters
   
   predicted.outcomes<-predict(m, newdata=(testing[,-1]))
-
+  #predicted.outcomes<-predict(mod, newdata=(testing[,-1]))
+  
+  
   overRMSE=-1
   overRMSE<-mod$y ####WHY MOD NOT M!!!
   #if(replace.overRMSE==1){overRMSE=-1}
