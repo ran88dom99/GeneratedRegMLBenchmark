@@ -38,7 +38,10 @@ lb <- aml@leaderboard
 
 lbdf<-as.data.frame(lb)
 print(lbdf)
+
 aml@leader
+
+
 lbdf[1,3]
 # If you need to generate predictions on a test set, you can make
 # predictions directly on the `"H2OAutoML"` object, or on the leader
@@ -52,6 +55,39 @@ print(preddf)
 
 overRMSE<-lbdf[1,3]
 printPredMets(predicted.outcomes=preddf,overRMSE=overRMSE,hypercount="full")
+
+########VARIEBLE IMPORTANCE
+fail.try=T
+try({ 
+  #noVarImp.models=c("parRF")#var imp crashes with these models
+  #if(allmodel %in% noVarImp.models){next()}#
+  if(mean.improvement<0){mean.improvement=0}
+  Rseed<-.Random.seed[1]
+  Cseed<-.Random.seed[2]
+  varimportant<-as.data.frame(h2o.varimp(aml@leader))
+  print(varimportant)
+  colNms<-as.vector(varimportant$variable)
+  colImpor<-signif(varimportant$scaled_importance,digits = 3)
+  varImpMix<-""#varImpMix<-vector(mode="character",length = length(colNms)*2)
+  for(i in 1:length(colNms)){
+    #varImpMix[i*2]<-colNms[i] ; varImpMix[i*2+1]<-colImpor[i]
+    varImpMix<-paste(varImpMix,colNms[i],colImpor[i], sep = ",")
+  }
+  write.table(paste("h2oa",allmodel,date(),round(mean.improvement,digits=3),trans.y,
+                    datasource,missingdata,withextra,norming,which.computer,task.subject,
+                    FN,high.fold,Rseed,Cseed,seed.var,
+                    varImpMix,  sep = ","),
+              file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
+              eol = "\n", na = "NA", dec = ".", row.names = F,
+              col.names = F, qmethod = "double")
+  fail.try=F
+})
+if (fail.try==T) {
+  write.table(paste("h2oa",allmodel,date(),"FAIL",  sep = ","),
+              file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
+              eol = "\n", na = "NA", dec = ".", row.names = F,
+              col.names = F, qmethod = "double")
+}
 }
 fail.try=F
 })
