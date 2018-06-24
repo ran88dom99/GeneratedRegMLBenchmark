@@ -1,4 +1,5 @@
 #autoH2O for all auto models
+setwd(cpout.folder)
 library(h2o)
 
 h2o.init()
@@ -15,11 +16,17 @@ x <- setdiff(names(train), y)
 #train[,y] <- as.factor(train[,y])
 #test[,y] <- as.factor(test[,y])
 
-aml <- h2o.automl( y = y,
-                  training_frame = train,
-                  max_runtime_secs = 0,
-                  max_models = 200,
-                  nfolds=cv.iters, seed=seed.var)
+fail.try=T
+try({
+  allmodel<-"h2oAutoml"
+  if(!CrashNRep(allmodel)) {
+aml <- h2o.automl( x=x, y = y,
+                   max_runtime_secs = 300,
+                  training_frame = train)
+
+#                  max_runtime_secs = 0,
+#                  max_models = 20,
+#                  nfolds=cv.iters, seed=seed.var)
 
 # View the AutoML Leaderboard, keep_cross_validation_models=FALSE
 lb <- aml@leaderboard
@@ -33,6 +40,11 @@ aml@leader
 # model object directly
 
 pred <- h2o.predict(aml, test)  # predict(aml, test) also works
-
+preddf<-as.data.frame(pred)
 # or:
-pred <- h2o.predict(aml@leader, test)
+#pred <- h2o.predict(aml@leader, test)
+overRMSE<-(-1)#greedy_ensemble$error$RMSE
+printPredMets(predicted.outcomes=preddf,overRMSE=overRMSE,hypercount="full")
+}
+fail.try=F
+})
