@@ -73,7 +73,9 @@ printPredMets<-function(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,
   Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],train.based.mean)
   #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
   mean.improvement<<-1-MAE(p[,1],p[,2])/MAE(p[,2],train.based.med)
-  
+
+  if(is.data.frame(predicted.outcomes))
+    predicted.outcomes<-as.vector(predicted.outcomes[,1])  
   testIndex<-foldTrain[[FN]]
   
   if(trans.y==2){
@@ -135,8 +137,8 @@ if(hypercount=="none")
   outCtrl$adaptivemin<-"no min"
 }
 
-if(length(testIndex)!= length(signif(predicted.outcomes,digits = 3))){
-  warning("test index and length of predicstions do not match", call. = TRUE, immediate. = FALSE, noBreaks. = FALSE,
+if(length(testIndex)!= length(as.vector(predicted.outcomes))){
+  warning("test index and length of predictions do not match", call. = TRUE, immediate. = FALSE, noBreaks. = FALSE,
         domain = NULL)
 } 
 InxdPred<-vector(mode="double",length = length(testIndex)*2)
