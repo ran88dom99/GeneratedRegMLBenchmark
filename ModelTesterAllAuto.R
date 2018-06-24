@@ -15,7 +15,7 @@ memory.limit()
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"outg15th10hp10cv"#"carEnstest3"#
 if(which.computer=="ALTA") {task.subject<-"carEnstest3"}
-pc.mlr<-c("ACEREBOUT","HOPPERt","ALTAa")#T,"HOPPER"
+pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTAa")#T,"HOPPER"
 pc.carems<-c("HOPPER","ALTA","ACEREBOUTf")
 if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
