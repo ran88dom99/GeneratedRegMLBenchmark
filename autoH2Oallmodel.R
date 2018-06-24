@@ -56,3 +56,4 @@ printPredMets(predicted.outcomes=preddf,overRMSE=overRMSE,hypercount="full")
 fail.try=F
 })
 }
+h2o.shutdown(prompt = F)
