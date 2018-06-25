@@ -408,7 +408,7 @@ for(gend.data in gensTTest){
           gc()
 
           setwd(base.folder)
-          stop()
+          #stop()
           if(max(which.computer==pc.mlr)>0){
             source("MLR part.R")
           }else{
