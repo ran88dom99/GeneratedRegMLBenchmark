@@ -47,6 +47,19 @@ check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextr
 #in R and evaluation in S-Plus is that S-Plus looks for a global variable called n while R first
 #looks for a variable called n in the environment created when cube was invoked.
 
+CrashNRep<-function(allmodeli=allmodel){
+#check if model crashes, or model with these params been done, 
+#first write crash 
+  write.table(allmodeli,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
+write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
+if(allmodeli %in% bad.models) {return(T)}
+if(length(df.previous.calcs[,1])>0){
+  if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodeli,FN=FN))
+  {return(T)}
+}
+return(F)
+}
+
 #Input: predictions,  overrmse, hyperparams or not
 #Input thats just envirnoment: Many precalculated scores, y.untrans, loess.model, foldtrain & FN
 #only output is printing
@@ -60,7 +73,9 @@ printPredMets<-function(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,
   Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],train.based.mean)
   #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
   mean.improvement<<-1-MAE(p[,1],p[,2])/MAE(p[,2],train.based.med)
-  
+
+  if(is.data.frame(predicted.outcomes))
+    predicted.outcomes<-as.vector(predicted.outcomes[,1])  
   testIndex<-foldTrain[[FN]]
   
   if(trans.y==2){
@@ -76,8 +91,6 @@ printPredMets<-function(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,
   #RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
   #RMSE.mean.train=signif(RMSE(training[,1],mean(training[,1], na.rm = T)), digits = 4)
   #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
-
-
 
 Rseed<-.Random.seed[1]
 Cseed<-.Random.seed[2]
@@ -124,8 +137,8 @@ if(hypercount=="none")
   outCtrl$adaptivemin<-"no min"
 }
 
-if(length(testIndex)!= length(signif(predicted.outcomes,digits = 3))){
-  warning("test index and length of predicstions do not match", call. = TRUE, immediate. = FALSE, noBreaks. = FALSE,
+if(length(testIndex)!= length(as.vector(predicted.outcomes))){
+  warning("test index and length of predictions do not match", call. = TRUE, immediate. = FALSE, noBreaks. = FALSE,
         domain = NULL)
 } 
 InxdPred<-vector(mode="double",length = length(testIndex)*2)
@@ -153,6 +166,9 @@ write.table( writeout[1],
             col.names = F, qmethod = "double")
 print(date())
 }
+
+
+############bunch of scraps kept just in case########
 if(F){
   libpack="mlr"
   hypercount="none"
