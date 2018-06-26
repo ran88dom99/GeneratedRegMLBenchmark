@@ -1,4 +1,7 @@
 #caretEnsamble script for allmodel tester
+#which models stack better?
+
+
 #devtools::install_github("zachmayer/caretEnsemble")
 #update.packages(oldPkgs="caret", ask=FALSE)
 #sessionInfo()

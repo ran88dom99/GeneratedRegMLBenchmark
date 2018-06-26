@@ -41,7 +41,6 @@ print(lbdf)
 
 aml@leader
 
-
 lbdf[1,3]
 # If you need to generate predictions on a test set, you can make
 # predictions directly on the `"H2OAutoML"` object, or on the leader
