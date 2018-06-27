@@ -1,5 +1,7 @@
 #autoH2O for all auto models
-#conversion to h2o data frame drops row names and this is worrying
+#worrying: conversion to h2o data frame drops row names 
+#put winning models as hyperparams of model 
+#fail printout
 #
 setwd(cpout.folder)
 library(h2o)
@@ -55,40 +57,23 @@ print(preddf)
 overRMSE<-lbdf[1,3]
 printPredMets(predicted.outcomes=preddf,overRMSE=overRMSE,hypercount="full")
 
-########VARIEBLE IMPORTANCE
-fail.try=T
-try({ 
-  #noVarImp.models=c("parRF")#var imp crashes with these models
-  #if(allmodel %in% noVarImp.models){next()}#
-  if(mean.improvement<0){mean.improvement=0}
-  Rseed<-.Random.seed[1]
-  Cseed<-.Random.seed[2]
-  varimportant<-as.data.frame(h2o.varimp(aml@leader))
-  print(varimportant)
-  colNms<-as.vector(varimportant$variable)
-  colImpor<-signif(varimportant$scaled_importance,digits = 3)
-  varImpMix<-""#varImpMix<-vector(mode="character",length = length(colNms)*2)
-  for(i in 1:length(colNms)){
-    #varImpMix[i*2]<-colNms[i] ; varImpMix[i*2+1]<-colImpor[i]
-    varImpMix<-paste(varImpMix,colNms[i],colImpor[i], sep = ",")
-  }
-  write.table(paste("h2oa",allmodel,date(),round(mean.improvement,digits=3),trans.y,
-                    datasource,missingdata,withextra,norming,which.computer,task.subject,
-                    FN,high.fold,Rseed,Cseed,seed.var,
-                    varImpMix,  sep = ","),
-              file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
-              eol = "\n", na = "NA", dec = ".", row.names = F,
-              col.names = F, qmethod = "double")
-  fail.try=F
-})
-if (fail.try==T) {
-  write.table(paste("h2oa",allmodel,date(),"FAIL",  sep = ","),
-              file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
-              eol = "\n", na = "NA", dec = ".", row.names = F,
-              col.names = F, qmethod = "double")
-}
+
+varimportant<-as.data.frame(h2o.varimp(aml@leader))
+print(varimportant)
+colNms<-as.vector(varimportant$variable)
+colImpor<-signif(varimportant$scaled_importance,digits = 3)
 }
 fail.try=F
 })
+
+if(fail.try){    
+  print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
+  write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
+              file = out.file, append =TRUE, quote = F, sep = ",",
+              eol = "\n", na = "NA", dec = ".", row.names = F,
+              col.names = F, qmethod = "double")
+} else {
+  varimprint(metpack="h2oa",colNms=colNms,colImpor=colImpor)
+}
 }
 h2o.shutdown(prompt = F)
