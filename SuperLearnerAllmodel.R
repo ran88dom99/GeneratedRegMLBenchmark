@@ -1,16 +1,20 @@
-#superlearner example
-#install.packages("SuperLearner")
-#install.packages(c( "RhpcBLASctl"))
+#superlearner for allmodel
+#no varimp
+#no hyperparams
+#superlearner has ensembling but must save models for it.
+
+
+list.of.packages<-c("SuperLearner","RhpcBLASctl","biglasso","dbarts","sva","LogicReg","speedglm","KernelKnn")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 #For XGBoost we need to tweak the install command a bit; Windows users may need to install Rtools first.
 #install.packages("xgboost", repos=c("http://dmlc.ml/drat/", getOption("repos")), type="source")
 library(SuperLearner)
-SuperLearner::listWrappers()
 
-
+setwd(cpout.folder)
 
 ############################
 # Setup example dataset.
-
 
 set.seed(seed = seed.var)
 
@@ -28,88 +32,48 @@ X_holdout = testing[,x]
 Y_train = training[,y]
 Y_holdout = testing[,y]
 
-# Review the outcome variable distribution.
-table(Y_train, useNA = "ifany")
+problemms<-c("SL.template","SL.qda","SL.mean", "SL.lda","SL.knn")
+super<-(SuperLearner::listWrappers())[69:110]
+#super<-setdiff(super,problemms)
 
 ######
 
+for(itr in super){
+# Review the outcome variable distribution.
+table(Y_train, useNA = "ifany")
+allmodel<-itr
+if(CrashNRep(allmodel)) {next()}
+
+fail.try.main<-T
+try({
 # Set the seed for reproducibility.
-set.seed(22)
+set.seed(seed = seed.var)
 
 #Let’s fit 2 separate models: lasso (sparse, penalized OLS) and randomForest. We specify family = binomial() because we are predicting a binary outcome, aka classification. With a continuous outcome we would specify family = gaussian().
 # Fit lasso model.
-sl_lasso = SuperLearner(Y = Y_train, X = X_train, family = binomial(),
-                        SL.library = "SL.glmnet")
+sl_lasso = SuperLearner(Y = Y_train, X = X_train, family = gaussian(),
+                        SL.library = itr,cvControl = list(V = cv.iters))
 
 print(sl_lasso)
 # Review the elements in the SuperLearner object.
 names(sl_lasso)
 
 # Here is the risk of the best model (discrete SuperLearner winner).
-sl_lasso$cvRisk[which.min(sl_lasso$cvRisk)]
+overRMSE<-sl_lasso$cvRisk[which.min(sl_lasso$cvRisk)]
 
 ## SL.glmnet_All 
 ##     0.1330516
-
+predics<- predict(sl_lasso, X_holdout, onlySL = T)$pred
 # Here is the raw glmnet result object:
-str(sl_lasso$fitLibrary$SL.glmnet_All$object, max.level = 1)
 
-
-
-#SuperLearner is using cross-validation to estimate the risk on future data. By default it uses 10 folds; use the cvControl argument to customize.
-######stack ensemble?
-set.seed(1)
-sl = SuperLearner(Y = Y_train, X = X_train, family = binomial(),
-                  SL.library = c("SL.mean", "SL.glmnet", "SL.randomForest"))
-print(sl)
-# Review how long it took to run the SuperLearner:
-sl$times$everything
-
-
-######predict
-# Predict back on the holdout dataset.
-# onlySL is set to TRUE so we don't fit algorithms that had weight = 0, saving computation.
-pred = predict(sl, X_holdout, onlySL = T)
-
-# Check the structure of this prediction object.
-str(pred)
-
-## List of 2
-##  $ pred           : num [1:356, 1] 0.95 0.693 0.931 0.957 0.952 ...
-##  $ library.predict: num [1:356, 1:3] 0 0 0 0 0 0 0 0 0 0 ...
-
-# Review the columns of $library.predict.
-summary(pred$library.predict)
-
-##        V1          V2                  V3        
-##  Min.   :0   Min.   :0.0003921   Min.   :0.0090  
-##  1st Qu.:0   1st Qu.:0.1382133   1st Qu.:0.1400  
-##  Median :0   Median :0.4268453   Median :0.4190  
-##  Mean   :0   Mean   :0.4743975   Mean   :0.4907  
-##  3rd Qu.:0   3rd Qu.:0.8353414   3rd Qu.:0.8668  
-##  Max.   :0   Max.   :0.9922678   Max.   :0.9990
-
-# Histogram of our predicted values.
-library(ggplot2)
-
-## 
-## Attaching package: 'ggplot2'
-
-## The following object is masked from 'package:randomForest':
-## 
-##     margin
-
-qplot(pred$pred[, 1]) + theme_minimal()
-
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-
-# Scatterplot of original values (0, 1) and predicted values.
-# Ideally we would use jitter or slight transparency to deal with overlap.
-qplot(Y_holdout, pred$pred[, 1]) + theme_minimal()
-
-# Review AUC - Area Under Curve
-pred_rocr = ROCR::prediction(pred$pred, Y_holdout)
-auc = ROCR::performance(pred_rocr, measure = "auc", x.measure = "cutoff")@y.values[[1]]
-auc
-
-## [1] 0.9659829
+printPredMets(predicted.outcomes=predics,overRMSE=overRMSE,hypercount="none")
+fail.try.main<-F  
+})
+  if(fail.try.main){    
+    print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
+    write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
+                file = out.file, append =TRUE, quote = F, sep = ",",
+                eol = "\n", na = "NA", dec = ".", row.names = F,
+                col.names = F, qmethod = "double")
+  }
+}

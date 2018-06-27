@@ -14,7 +14,7 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 memory.limit()
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"outg15th10hp10cv"#"carEnstest3"#
-if(which.computer=="ALTA") {task.subject<-"carEnstest3"}
+if(which.computer=="ALTA") {task.subject<-"carEnstest4"}
 pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTAa")#T,"HOPPER"
 pc.carems<-c("HOPPERt","ALTA","ACEREBOUTf")
 if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
@@ -408,6 +408,7 @@ for(gend.data in gensTTest){
           gc()
 
           setwd(base.folder)
+          source("SuperLearnerAllmodel.R")
           #stop()
           if(max(which.computer==pc.mlr)>0){
             source("MLR part.R")

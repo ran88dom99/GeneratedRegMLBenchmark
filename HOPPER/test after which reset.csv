@@ -85,3 +85,5 @@ Thu Jun 21 22:45:10 2018,bam,kaggle housing,10,10,windows,x64,HOPPER
 
 Sat Jun 23 22:48:01 2018,xgbTree,sparsity 2 col center,10,10,windows,x64,HOPPER
 Sun Jun 24 17:07:30 2018,lm,poly aC1^1.3 + bC2^2.1 + dC3^.7,10,10,windows,x64,HOPPER
+Mon Jun 25 17:07:25 2018,lm,poly aC1^1.3 + bC2^2.1 + dC3^.7,10,10,windows,x64,HOPPER
+Tue Jun 26 17:07:47 2018,cforest,poly aC1^3 + bC1^2 + dC1,10,10,windows,x64,HOPPER
