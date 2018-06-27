@@ -415,7 +415,7 @@ for(gend.data in gensTTest){
             setwd(base.folder)
             
           } else {
-          if(max(which.computer==pc.smallR)>0)
+          if(max(which.computer==pc.smallR)>0){
             source("carEns3.R")
             setwd(base.folder)
             source("SuperLearnerAllmodel.R")
@@ -427,7 +427,6 @@ for(gend.data in gensTTest){
             setwd(base.folder)
             }
           }
-
          setwd(cpout.folder)
           if(norming == normings[length(normings)]){
             if(count.toy.data.passed>length(gensTTest)){gensTTest<-c(gensTTesto)}
