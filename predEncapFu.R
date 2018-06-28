@@ -129,6 +129,7 @@ Cseed<-.Random.seed[2]
 outCtrl<-adaptControl
 
 for(i in 1:5){outCtrl$bestune[i]<-""}
+if(libpack=="autoH2O") {outCtrl$bestune[1]<-lbdf[1,1] }
 if(libpack=="caret"){
   for(i in 1:5){
     if(length(trainedmodel$bestTune)==(i-1)){break}

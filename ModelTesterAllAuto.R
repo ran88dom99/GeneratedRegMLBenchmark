@@ -15,8 +15,8 @@ memory.limit()
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"outg15th10hp10cv"#"carEnstest3"#
 if(which.computer=="ALTA") {task.subject<-"carEnstest4"}
-pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTA")#T,"HOPPER"
-pc.smallR<-c("HOPPER","ALTAf","ACEREBOUTf")
+pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTAF")#T,"HOPPER"
+pc.smallR<-c("HOPPER","ALTA","ACEREBOUTf")
 if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
@@ -421,6 +421,7 @@ for(gend.data in gensTTest){
             source("SuperLearnerAllmodel.R")
             setwd(base.folder)
             source("autoH2Oallmodel.R")
+            setwd(base.folder)
             
           } else {
             source("Caret part.R")
