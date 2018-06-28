@@ -1,10 +1,15 @@
 #autoH2O for all auto models
-#conversion to h2o data frame drops row names and this is worrying
+#worrying: conversion to h2o data frame drops row names 
+#put winning models as hyperparams of model 
+#fail printout
 #
 setwd(cpout.folder)
 library(h2o)
 
 for(itr in c(.1,1,10,30)){
+  fail.try=T
+  
+try({
 h2o.init()
 
 # Import a sample binary outcome train/test set into H2O
@@ -19,8 +24,8 @@ x <- setdiff(names(train), y)
 #train[,y] <- as.factor(train[,y])
 #test[,y] <- as.factor(test[,y])
 
-fail.try=T
-try({
+
+
   maxrun<-itr*tuneLength
   allmodel<-paste("h2oAutoml",as.character(maxrun),sep = " ")
   if(!CrashNRep(allmodel)) {
@@ -42,6 +47,7 @@ print(lbdf)
 aml@leader
 
 lbdf[1,3]
+lbdf[1,1]
 # If you need to generate predictions on a test set, you can make
 # predictions directly on the `"H2OAutoML"` object, or on the leader
 # model object directly
@@ -53,42 +59,25 @@ row.names(preddf) <- row.names(testing)
 print(preddf)
 
 overRMSE<-lbdf[1,3]
-printPredMets(predicted.outcomes=preddf,overRMSE=overRMSE,hypercount="full")
+printPredMets(predicted.outcomes=preddf,overRMSE=overRMSE,hypercount="full",libpack="autoH2O")
 
-########VARIEBLE IMPORTANCE
-fail.try=T
-try({ 
-  #noVarImp.models=c("parRF")#var imp crashes with these models
-  #if(allmodel %in% noVarImp.models){next()}#
-  if(mean.improvement<0){mean.improvement=0}
-  Rseed<-.Random.seed[1]
-  Cseed<-.Random.seed[2]
-  varimportant<-as.data.frame(h2o.varimp(aml@leader))
-  print(varimportant)
-  colNms<-as.vector(varimportant$variable)
-  colImpor<-signif(varimportant$scaled_importance,digits = 3)
-  varImpMix<-""#varImpMix<-vector(mode="character",length = length(colNms)*2)
-  for(i in 1:length(colNms)){
-    #varImpMix[i*2]<-colNms[i] ; varImpMix[i*2+1]<-colImpor[i]
-    varImpMix<-paste(varImpMix,colNms[i],colImpor[i], sep = ",")
-  }
-  write.table(paste("h2oa",allmodel,date(),round(mean.improvement,digits=3),trans.y,
-                    datasource,missingdata,withextra,norming,which.computer,task.subject,
-                    FN,high.fold,Rseed,Cseed,seed.var,
-                    varImpMix,  sep = ","),
-              file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
-              eol = "\n", na = "NA", dec = ".", row.names = F,
-              col.names = F, qmethod = "double")
-  fail.try=F
-})
-if (fail.try==T) {
-  write.table(paste("h2oa",allmodel,date(),"FAIL",  sep = ","),
-              file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
-              eol = "\n", na = "NA", dec = ".", row.names = F,
-              col.names = F, qmethod = "double")
-}
+
+varimportant<-as.data.frame(h2o.varimp(aml@leader))
+print(varimportant)
+colNms<-as.vector(varimportant$variable)
+colImpor<-signif(varimportant$scaled_importance,digits = 3)
 }
 fail.try=F
 })
+
+if(fail.try){    
+  print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
+  write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
+              file = out.file, append =TRUE, quote = F, sep = ",",
+              eol = "\n", na = "NA", dec = ".", row.names = F,
+              col.names = F, qmethod = "double")
+} else {
+  try({varimprint(metpack="h2oa",colNms=colNms,colImpor=colImpor)})
 }
-h2o.shutdown(prompt = F)
+}
+try({h2o.shutdown(prompt = F)})

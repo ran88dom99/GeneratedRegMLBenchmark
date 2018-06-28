@@ -1,4 +1,4 @@
-
+try({library(lintr)})
 options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 ## capture messages and errors to a file.https://rweb.crmda.ku.edu/cran/
 #zz <- file("all.Rout", open="wt")https://cran.cnr.berkeley.edu
@@ -15,8 +15,8 @@ memory.limit()
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"outg15th10hp10cv"#"carEnstest3"#
 if(which.computer=="ALTA") {task.subject<-"carEnstest4"}
-pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTAa")#T,"HOPPER"
-pc.carems<-c("HOPPERt","ALTA","ACEREBOUTf")
+pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTAF")#T,"HOPPER"
+pc.smallR<-c("HOPPER","ALTA","ACEREBOUTf")
 if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
@@ -408,15 +408,25 @@ for(gend.data in gensTTest){
           gc()
 
           setwd(base.folder)
-          source("SuperLearnerAllmodel.R")
+          
           #stop()
           if(max(which.computer==pc.mlr)>0){
             source("MLR part.R")
-          }else{
+            setwd(base.folder)
+            
+          } else {
+          if(max(which.computer==pc.smallR)>0){
+            source("carEns3.R")
+            setwd(base.folder)
+            source("SuperLearnerAllmodel.R")
+            setwd(base.folder)
+            source("autoH2Oallmodel.R")
+            setwd(base.folder)
+            
+          } else {
             source("Caret part.R")
             setwd(base.folder)
-          if(max(which.computer==pc.carems)>0)
-            source("carEns3.R")
+            }
           }
          setwd(cpout.folder)
           if(norming == normings[length(normings)]){
