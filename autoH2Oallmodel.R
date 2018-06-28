@@ -7,6 +7,8 @@ setwd(cpout.folder)
 library(h2o)
 
 for(itr in c(.1,1,10,30)){
+  fail.try=T
+  
 try({
 h2o.init()
 
@@ -22,7 +24,7 @@ x <- setdiff(names(train), y)
 #train[,y] <- as.factor(train[,y])
 #test[,y] <- as.factor(test[,y])
 
-fail.try=T
+
 
   maxrun<-itr*tuneLength
   allmodel<-paste("h2oAutoml",as.character(maxrun),sep = " ")
@@ -45,6 +47,7 @@ print(lbdf)
 aml@leader
 
 lbdf[1,3]
+lbdf[1,1]
 # If you need to generate predictions on a test set, you can make
 # predictions directly on the `"H2OAutoML"` object, or on the leader
 # model object directly
@@ -56,7 +59,7 @@ row.names(preddf) <- row.names(testing)
 print(preddf)
 
 overRMSE<-lbdf[1,3]
-printPredMets(predicted.outcomes=preddf,overRMSE=overRMSE,hypercount="full")
+printPredMets(predicted.outcomes=preddf,overRMSE=overRMSE,hypercount="full",libpack="autoH2O")
 
 
 varimportant<-as.data.frame(h2o.varimp(aml@leader))
