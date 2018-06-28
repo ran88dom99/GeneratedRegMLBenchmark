@@ -1,7 +1,7 @@
 #superlearner for allmodel
-#no varimp
-#no hyperparams
-#superlearner has ensembling but must save models for it.
+#no varimp #own, later
+#no hyperparams 
+#superlearner has special ensembling methods ? but must save models for it. 
 
 
 list.of.packages<-c("SuperLearner","RhpcBLASctl","biglasso","dbarts","sva","LogicReg","speedglm","KernelKnn")
@@ -69,6 +69,7 @@ predics<- predict(sl_lasso, X_holdout, onlySL = T)$pred
 printPredMets(predicted.outcomes=predics,overRMSE=overRMSE,hypercount="none")
 fail.try.main<-F  
 })
+
   if(fail.try.main){    
     print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
     write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),

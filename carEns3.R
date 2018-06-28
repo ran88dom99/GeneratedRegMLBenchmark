@@ -1,5 +1,7 @@
 #caretEnsamble script for allmodel tester
 #which models stack better?
+#little varimp
+#ensembles out only; main models not
 
 
 #devtools::install_github("zachmayer/caretEnsemble")
@@ -55,44 +57,22 @@ fail.try=T
       #model_preds
       overRMSE<-(-1)#greedy_ensemble$error$RMSE
       printPredMets(predicted.outcomes=ens_preds,overRMSE=overRMSE,hypercount="full")
+
+      varimportant<-varImp(greedy_ensemble)
+      print(varimportant)
+      colNms<-row.names.data.frame(as.data.frame(varimportant))
+      colImpor<-signif(varimportant$overall,digits = 3)
+      varimprint(metpack="caretEns",colNms=colNms,colImpor=colImpor)
+      }
       failed<-0
-
-      ########VARIEBLE IMPORTANCE
-      fail.try=T
-      try({ 
-        #noVarImp.models=c("parRF")#var imp crashes with these models
-        #if(allmodel %in% noVarImp.models){next()}#
-        if(mean.improvement<0){mean.improvement=0}
-        Rseed<-.Random.seed[1]
-        Cseed<-.Random.seed[2]
-        varimportant<-varImp(greedy_ensemble)
-        print(varimportant)
-        colNms<-row.names.data.frame(as.data.frame(varimportant))
-        colImpor<-signif(varimportant$overall,digits = 3)
-        varImpMix<-""#varImpMix<-vector(mode="character",length = length(colNms)*2)
-        for(i in 1:length(colNms)){
-          #varImpMix[i*2]<-colNms[i] ; varImpMix[i*2+1]<-colImpor[i]
-          varImpMix<-paste(varImpMix,colNms[i],colImpor[i], sep = ",")
-        }
-        write.table(paste("caretEns",allmodel,date(),round(mean.improvement,digits=3),trans.y,
-                          datasource,missingdata,withextra,norming,which.computer,task.subject,
-                          FN,high.fold,Rseed,Cseed,seed.var,
-                          varImpMix,  sep = ","),
-                    file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
-                    eol = "\n", na = "NA", dec = ".", row.names = F,
-                    col.names = F, qmethod = "double")
-        fail.try=F
-      })
-      if (fail.try==T) {
-        write.table(paste("caretEns",allmodel,date(),"FAIL",  sep = ","),
-                                           file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
-                                           eol = "\n", na = "NA", dec = ".", row.names = F,
-                                           col.names = F, qmethod = "double")
-      }
-      }
-
     })
-    if(failed==1) write.table(paste("greedy",sep = ","),file = "carensfails.csv",  quote = F, sep = ",", row.names = F,col.names = F,append = T)
+    if(failed==1) {
+        print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
+        write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
+                    file = out.file, append =TRUE, quote = F, sep = ",",
+                    eol = "\n", na = "NA", dec = ".", row.names = F,
+                    col.names = F, qmethod = "double")    
+        }  
     print("carens 3")
     
     #caTools::colAUC(model_preds, testing$Class)
@@ -117,5 +97,12 @@ fail.try=T
         printPredMets(predicted.outcomes=ens_preds,overRMSE=overRMSE,hypercount="full")
         failed<-0
       })
+      
+      if(failed==1) {
+        print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
+        write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
+                    file = out.file, append =TRUE, quote = F, sep = ",",
+                    eol = "\n", na = "NA", dec = ".", row.names = F,
+                    col.names = F, qmethod = "double")    
+      }
     }
-    if(failed==1) write.table(paste(i,sep = ","),file = "carensfails.csv",  quote = F, sep = ",", row.names = F,col.names = F,append = T)
