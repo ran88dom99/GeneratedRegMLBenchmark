@@ -6063,3 +6063,7 @@ h2oa,h2oAutoml 10,Wed Jun 27 20:27:11 2018,0.73,2,poly aC1^3 + bC1^2 + dC1,ignor
 h2oa,h2oAutoml 1,Thu Jun 28 10:29:53 2018,FAIL
 h2oa,h2oAutoml 10,Thu Jun 28 10:29:58 2018,FAIL
 h2oa,h2oAutoml 100,Thu Jun 28 10:30:03 2018,FAIL
+h2oa,h2oAutoml 1,Thu Jun 28 15:45:02 2018,FAIL
+h2oa,h2oAutoml 10,Thu Jun 28 15:45:10 2018,FAIL
+h2oa,h2oAutoml 100,Thu Jun 28 15:45:14 2018,FAIL
+caretEns,caretEnsGreedyGlm,Thu Jun 28 18:49:35 2018,0.95,2,poly aC1^3 + bC1^2 + dC1,ignore,none,YeoJohnson,HOPPER,outg15th10hp10cv,1,5,403,624,222,,V7,0.264,V5,0.479,V3,2.08,V6,2.16,V4,2.52,V10,2.87,V8,3.69,V9,5.97,V2,80
