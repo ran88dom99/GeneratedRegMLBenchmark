@@ -7,6 +7,7 @@ setwd(cpout.folder)
 library(h2o)
 
 for(itr in c(.1,1,10,30)){
+try({
 h2o.init()
 
 # Import a sample binary outcome train/test set into H2O
@@ -22,7 +23,7 @@ x <- setdiff(names(train), y)
 #test[,y] <- as.factor(test[,y])
 
 fail.try=T
-try({
+
   maxrun<-itr*tuneLength
   allmodel<-paste("h2oAutoml",as.character(maxrun),sep = " ")
   if(!CrashNRep(allmodel)) {
@@ -73,7 +74,7 @@ if(fail.try){
               eol = "\n", na = "NA", dec = ".", row.names = F,
               col.names = F, qmethod = "double")
 } else {
-  varimprint(metpack="h2oa",colNms=colNms,colImpor=colImpor)
+  try({varimprint(metpack="h2oa",colNms=colNms,colImpor=colImpor)})
 }
 }
-h2o.shutdown(prompt = F)
+try({h2o.shutdown(prompt = F)})
