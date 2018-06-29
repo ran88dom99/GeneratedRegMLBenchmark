@@ -21,6 +21,7 @@ allmodel<-"caretPreEns"
 write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
 write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
 print("carens first")
+for(dummy in 1){
 fail.try=T
     try({
       
@@ -38,7 +39,7 @@ fail.try=T
       #modelCor(resamples(model_list))
     })
     print("carens sec")
-    if(fail.try) {print("MAJOR FAIL in CARET.ENS")}
+    if(fail.try) {print("MAJOR FAIL in CARET.ENS");next()}
  
     failed<-1
     try({
@@ -106,3 +107,4 @@ fail.try=T
                     col.names = F, qmethod = "double")    
       }
     }
+}
