@@ -28,6 +28,9 @@ x <- setdiff(names(train), y)
 
   maxrun<-itr*tuneLength
   allmodel<-paste("h2oAutoml",as.character(maxrun),sep = " ")
+  write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
+  write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
+  
   if(!CrashNRep(allmodel)) {
 aml <- h2o.automl( x=x, y = y,
                    max_runtime_secs = maxrun*60,
