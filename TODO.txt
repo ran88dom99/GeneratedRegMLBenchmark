@@ -1,5 +1,4 @@
-folding ends at 19 not 20
-h2o does not place model name in crash file? 
+folding ends at 19 not 20 
 h2o maybe needs validation picker? 
 --tpot autosklearn 
 --then the 2 main attaractions for surprise oddity
