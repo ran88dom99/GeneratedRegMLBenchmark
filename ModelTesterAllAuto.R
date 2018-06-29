@@ -340,7 +340,7 @@ for(gend.data in gensTTest){
               sum<-sum+(norming %in% preve.pram)
               sum<-sum+(withextra %in% preve.pram)
               sum<-sum+(missingdata %in% preve.pram)
-              sum<-sum+(FN %in% preve.pram)
+              sum<-sum+(FN %in% preve.pram[3:length(preve.pram)])
               if(sum<5) next()
             }
             

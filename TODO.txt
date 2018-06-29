@@ -1,3 +1,11 @@
+folding ends at 19 not 20
+h2o does not place model name in crash file? 
+h2o maybe needs validation picker? 
+--tpot autosklearn 
+--then the 2 main attaractions for surprise oddity
+svmstring and bag are not applicable remove them from sets, sevral SL like that
+sum<-sum+(FN %in% preve.pram)
+
 quantiling now over entire dataset and y removed. 
 	Should I make a fold based quantiling preprocessor?
 	BC looks like quantiling target column causes algorithms to guess missing datum. some are amazing at this.
@@ -5,6 +13,7 @@ why did testing not include testing[,-1]????
 ####WHY MOD NOT M!!! in mlr and hyperopt 
 
 NDR? isomap?https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction
+oh so many dimensionality reductions
 
 cns & range on y 's percent RMSE is actualy interchangble with non ys. YeoJ Exp and Quant are not. Get back to this on de-transform?
 all explan var transforms are based on entire dataset. maybe should make cns on only data algo should know?
@@ -17,7 +26,12 @@ Caret has this right? but what about mlr?
  	speech
 	basic classification?
 
-Left over failures:
+long term model selection requires several runs from several datasets and several metalearners to boot
+and a serious dueling model
+and a re-evaluation of stacking cuts
+and good varimp with eval first
+
+Left over failures:! no try processing because each update breaks things.. 
 Fail,Fail,Fail,Fail,Fail,Thu May 03 07:15:30 2018,gam,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,11
 Fail,Fail,Fail,Fail,Fail,Thu May 03 07:18:15 2018,gaussprLinear,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,7
 Fail,Fail,Fail,Fail,Fail,Thu May 03 07:18:33 2018,gaussprRadial,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,10
@@ -47,9 +61,7 @@ sd of 3 or 4 columns as gentest
 	
  friedman's 2dplanes is too big. (its a test so leave it)
  only 300mb? seems not to be a problem on acerebout
- howabout lubridate
- run r scripts from inside R
- get glossary machine (hackerterms.com, stats?)
+ run r scripts from inside R?)
  correlation and categorical cousin(mvo really)
  spliting after transform is not ok?
  
