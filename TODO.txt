@@ -1,10 +1,9 @@
-folding ends at 19 not 20
-h2o does not place model name in crash file? 
+folding ends at 19 not 20? 
 h2o maybe needs validation picker? 
 --tpot autosklearn 
 --then the 2 main attaractions for surprise oddity
 svmstring and bag are not applicable remove them from sets, sevral SL like that
-sum<-sum+(FN %in% preve.pram)
+
 
 quantiling now over entire dataset and y removed. 
 	Should I make a fold based quantiling preprocessor?
