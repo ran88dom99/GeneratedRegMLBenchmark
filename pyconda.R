@@ -1,18 +1,48 @@
 #http://proceedings.mlr.press/v64/olson_tpot_2016.pdf
 library(reticulate)
 
-when <- proc.time()
-dummy<-"dummy"
-generationcount<-r_to_py(generationcount)
-dummy<-r_to_py(dummy)
-source_python("tpot xmpl2.py")
+# Load a dataset from the MASS package.
+data(Boston, package = "MASS")
 
-oveRMSE <- RMSE(trainpred,y_train)
-predicttt <- RMSE(predictions,y_test)
-print(predicttt)
-print(oveRMSE)
-getwd()
-setwd(base.folder)
+# Review info on the Boston dataset.
+?Boston
+
+## No documentation for 'Boston' in specified packages and libraries:
+## you could try '??Boston'
+
+# Check for any missing data - looks like we don't have any.
+colSums(is.na(Boston))
+
+##    crim      zn   indus    chas     nox      rm     age     dis     rad 
+##       0       0       0       0       0       0       0       0       0 
+##     tax ptratio   black   lstat    medv 
+##       0       0       0       0       0
+
+# Extract our outcome variable from the dataframe.
+outcome = Boston$medv
+
+# Create a dataframe to contain our explanatory variables.
+data = subset(Boston, select = -medv)
+
+
+when <- proc.time()
+
+
+
+if(T){
+  generationcount = r_to_py(3)
+  retainpopulation = r_to_py(50)
+  offspring_size = r_to_py(100)
+  cv = r_to_py(10)
+  random_state = r_to_py(222)
+  early_stop = r_to_py(3)
+  mins_onapipe = r_to_py(15)
+  checkpoint_folder = r_to_py("tpot")
+  pipefile = r_to_py('tpot_boston_pipeline.py')
+}
+
+
+
 tpot <- import("tpot")
 ztpot<-tpot$TPOTRegressor(generations=generationcount, population_size=retainpopulation,
                    offspring_size=offspring_size,early_stop=early_stop,max_eval_time_mins=mins_onapipe,
@@ -21,56 +51,22 @@ ztpot<-tpot$TPOTRegressor(generations=generationcount, population_size=retainpop
 data<-r_to_py(data)
 outcome<-r_to_py(outcome)
 ztpot$fit(data, outcome)
+prde<-ztpot$predict(data)
+RMSE(prde,py_to_r(outcome))
+SE <- RMSE(trainpred,y_train)
+predicttt <- RMSE(predictions,y_test)
+print(predicttt)
+print(oveRMSE)
+getwd()
+setwd(base.folder)
 
-if(F){
-# create a new environment 
-conda_create("r-reticulate")
-
+if(F){ 
 # install SciPy
-conda_install("r-reticulate",c( "scipy", "numpy", "scikit-learn", "pandas"))
-use_condaenv("r-reticulate")
-
-py_list_attributes(pip)
-
-#py_install(c( "deap", "update_checker", "tqdm", "stopit", "xgboost"))
-#conda_install("r-reticulate",c( "scikit-mdr", "skrebate"))
-#conda_install("r-reticulate","tpot")
-
-#curl https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt | xargs -n 1 -L 1 pip install
-#pip install auto-sklearn
-#conda install gxx_linux-64 gcc_linux-64 swig
-}
-
-if(T){
-  generationcount = as.integer(3)
-  retainpopulation = as.integer(50)
-  offspring_size = as.integer(100)
-  cv = as.integer(10)
-  random_state = as.integer(222)
-  early_stop = as.integer(3)
-  mins_onapipe = as.integer(15)
-  checkpoint_folder = "tpot"
-  pipefile = 'tpot_boston_pipeline.py'
-}
-
-
-library(reticulate)
-os <- import("os")
-pip <- import("pip")
-#os$chdir("tests")
-os$getcwd()
-main <- py_run_string("x = 10")
-main$x
-py_run_string("x = 10")
-
+conda_install(c( "scipy", "numpy", "scikit-learn", "pandas"))
 
 # indicate that we want to use a specific condaenv
+
 use_condaenv("base")
 use_condaenv("ANACONDA")
 conda_list()
-
-#conda_remove("r-reticulate")
-
-# import SciPy (will use "r-reticulate" as per call to use_condaenv)
-scipy <- import("scipy")
-tpot <- import("tpot")
+}
