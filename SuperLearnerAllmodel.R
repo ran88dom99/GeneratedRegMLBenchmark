@@ -51,6 +51,8 @@ set.seed(seed = seed.var)
 
 #Let’s fit 2 separate models: lasso (sparse, penalized OLS) and randomForest. We specify family = binomial() because we are predicting a binary outcome, aka classification. With a continuous outcome we would specify family = gaussian().
 # Fit lasso model.
+when<-proc.time()
+
 sl_lasso = SuperLearner(Y = Y_train, X = X_train, family = gaussian(),
                         SL.library = itr,cvControl = list(V = cv.iters))
 

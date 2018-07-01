@@ -45,7 +45,8 @@ fail.try=T
     try({
       allmodel<-"caretEnsGreedyGlm"
       if(!CrashNRep(allmodel)) { #does next() exit try({})
-      
+        when<-proc.time()
+        
       greedy_ensemble <- caretEnsemble(
         model_list
       )
@@ -85,6 +86,8 @@ fail.try=T
  
       failed<-1
       try({
+        when<-proc.time()
+        
         stack_ensemble <- caretStack(
           model_list,
           method=i, 

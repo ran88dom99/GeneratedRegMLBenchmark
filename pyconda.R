@@ -1,5 +1,26 @@
+#http://proceedings.mlr.press/v64/olson_tpot_2016.pdf
+library(reticulate)
 
- ### how has time worked in all previous small Rs?
+when <- proc.time()
+dummy<-"dummy"
+generationcount<-r_to_py(generationcount)
+dummy<-r_to_py(dummy)
+source_python("tpot xmpl2.py")
+
+oveRMSE <- RMSE(trainpred,y_train)
+predicttt <- RMSE(predictions,y_test)
+print(predicttt)
+print(oveRMSE)
+getwd()
+setwd(base.folder)
+tpot <- import("tpot")
+ztpot<-tpot$TPOTRegressor(generations=generationcount, population_size=retainpopulation,
+                   offspring_size=offspring_size,early_stop=early_stop,max_eval_time_mins=mins_onapipe,
+                   periodic_checkpoint_folder=checkpoint_folder,verbosity=2)
+
+data<-r_to_py(data)
+outcome<-r_to_py(outcome)
+ztpot$fit(data, outcome)
 
 if(F){
 # create a new environment 
@@ -20,6 +41,19 @@ py_list_attributes(pip)
 #conda install gxx_linux-64 gcc_linux-64 swig
 }
 
+if(T){
+  generationcount = as.integer(3)
+  retainpopulation = as.integer(50)
+  offspring_size = as.integer(100)
+  cv = as.integer(10)
+  random_state = as.integer(222)
+  early_stop = as.integer(3)
+  mins_onapipe = as.integer(15)
+  checkpoint_folder = "tpot"
+  pipefile = 'tpot_boston_pipeline.py'
+}
+
+
 library(reticulate)
 os <- import("os")
 pip <- import("pip")
@@ -28,8 +62,7 @@ os$getcwd()
 main <- py_run_string("x = 10")
 main$x
 py_run_string("x = 10")
-source_python("tpot xmpl.py")
-library(reticulate)
+
 
 # indicate that we want to use a specific condaenv
 use_condaenv("base")

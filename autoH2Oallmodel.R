@@ -10,6 +10,7 @@ for(itr in c(.1,1,10,30)){
   fail.try=T
   
 try({
+  when<-proc.time()
 h2o.init()
 
 # Import a sample binary outcome train/test set into H2O
