@@ -130,6 +130,11 @@ outCtrl<-adaptControl
 
 for(i in 1:5){outCtrl$bestune[i]<-""}
 if(libpack=="autoH2O") {outCtrl$bestune[1]<-lbdf[1,1] }
+if(libpack=="tpot") {
+lhyp<-min(length(hyparams),5)
+outCtrl$bestune[1:lhyp]<-hyparams[1:lhyp] 
+}
+
 if(libpack=="caret"){
   for(i in 1:5){
     if(length(trainedmodel$bestTune)==(i-1)){break}
