@@ -97,3 +97,4 @@ Thu Jun 28 10:01:15 2018,h2oAutoml 100,poly aC1^3 + bC1^2 + dC1,10,10,windows,x6
 Thu Jun 28 18:11:57 2018,caretPreEns,poly aC1^3 + bC1^2 + dC1,10,10,windows,x64,HOPPER
 Thu Jun 28 19:36:42 2018,caretEnstk knn,poly aC1^3 + bC1^2 + dC1,10,10,windows,x64,HOPPER
 Fri Jun 29 11:48:02 2018,SL.caret,poly aC1^3 + bC1^2 + dC1,10,10,windows,x64,HOPPER
+Fri Jun 29 17:07:34 2018,caretEnstk Rborist,poly aC1^3 + bC1^2 + dC1,10,10,windows,x64,HOPPER
