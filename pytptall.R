@@ -1,24 +1,24 @@
 #http://proceedings.mlr.press/v64/olson_tpot_2016.pdf
 
 setwd(cpout.folder)
-for(itr in c(1)){
+for(itr in c(3,4,5,6,8,10,12,15,18,21,25,29,33,38)){
   fail.try=T
   
   try({
 when <- proc.time()
 library(reticulate)
 
-allmodel<-"TPOT"#paste("h2oAutoml",as.character(maxrun),sep = " ")
+allmodel<-paste("TPOT",as.character(itr),sep = " ")
 write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
 write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
-cv.iters<-30
+adaptControl$number<-itr
 seed.var
 if(T){
-  generationcount = r_to_py(as.integer(100))
   retainpopulation = r_to_py(as.integer(50))
-  offspring_size = r_to_py(as.integer(100))
+  offspring_size = r_to_py(as.integer(300))
   cv = r_to_py(as.integer(cv.iters))
   random_state = r_to_py(as.integer(seed.var))
+  generationcount = r_to_py(as.integer(1000))
   early_stop = r_to_py(as.integer(5))
   mins_onapipe = r_to_py(as.integer(40))
   checkpoint_folder = r_to_py("tpot")
@@ -27,7 +27,8 @@ if(T){
 
 
 if(!CrashNRep(allmodel)) {
-
+  print("preimport")
+  
 tpot <- import("tpot")
 ztpot<-tpot$TPOTRegressor(generations=generationcount, population_size=retainpopulation,
                           offspring_size=offspring_size,early_stop=early_stop,max_eval_time_mins=mins_onapipe,
@@ -65,5 +66,6 @@ printPredMets(predicted.outcomes=predictions,overRMSE=oveRMSE,hypercount="full",
 
     }
   })
+  adaptControl$number<-cv.iters
 }
  
