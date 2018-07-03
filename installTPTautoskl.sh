@@ -7,7 +7,6 @@ pip install xgboost
 pip install scikit-mdr skrebate
 pip install tpot
 
-curl https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt | xargs -n 1 -L 1 pip install
-pip install auto-sklearn
-conda install gxx_linux-64 gcc_linux-64 swig
- source activate r-reticulate
+pip install auto_ml
+pip install stacked_generalization
+pip install mlens
