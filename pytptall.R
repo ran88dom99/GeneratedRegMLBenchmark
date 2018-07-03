@@ -1,7 +1,7 @@
 #http://proceedings.mlr.press/v64/olson_tpot_2016.pdf
 
 setwd(cpout.folder)
-for(itr in c(3,4,5,6,8,10,12,15,18,21,25,29,33,38)){
+for(itr in c(5,7,9,11,42)){#c(3,4,5,6,8,10,12,15,18,21,25,29,33,38)
   fail.try=T
   
   try({
@@ -27,7 +27,7 @@ if(T){
 
 
 if(!CrashNRep(allmodel)) {
-  print("preimport")
+  print(date())
   
 tpot <- import("tpot")
 ztpot<-tpot$TPOTRegressor(generations=generationcount, population_size=retainpopulation,
@@ -60,6 +60,7 @@ hyparams <- vector(mode = "character")
 hyparams <- gDat[(start+1):(end-1),1]
 hyparams <- gsub("StackingEstimator.estimator=", "Stacking", hyparams)
 hyparams <- gsub("\\(.*$", "", hyparams)
+hyparams <- gsub("\\).*$", "", hyparams)
 hyparams <- gsub("[ ]+", "", hyparams)
 
 printPredMets(predicted.outcomes=predictions,overRMSE=oveRMSE,hypercount="full",libpack="tpot")
