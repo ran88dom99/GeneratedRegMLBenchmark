@@ -35,7 +35,7 @@ if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.
 #if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F
 
 high.fold=5
-min.high.fold=2
+min.high.fold=3
 cv.iters=10
 tuneLength=10
 tuneLength2=4
@@ -202,12 +202,12 @@ for(gend.data in gensTTest){
         for(trans.y in 1:2) {#1:
           
           if(pram.cycle){
-            sum<-0
-            sum<-sum+(trans.y %in% preve.pram)
-            sum<-sum+(norming %in% preve.pram)
-            sum<-sum+(withextra %in% preve.pram)
-            sum<-sum+(missingdata %in% preve.pram)
-          if(sum<4) next()
+            ppsum<-0
+            ppsum<-ppsum+(trans.y %in% preve.pram)
+            ppsum<-ppsum+(norming %in% preve.pram)
+            ppsum<-ppsum+(withextra %in% preve.pram)
+            ppsum<-ppsum+(missingdata %in% preve.pram)
+          if(ppsum<4) next()
             }
           
           df.toprocess=data.source
@@ -335,13 +335,13 @@ for(gend.data in gensTTest){
             training <- df.toprocess[-foldTrain[[FN]],]
             
             if(pram.cycle){
-              sum<-0
-              sum<-sum+(trans.y %in% preve.pram)
-              sum<-sum+(norming %in% preve.pram)
-              sum<-sum+(withextra %in% preve.pram)
-              sum<-sum+(missingdata %in% preve.pram)
-              sum<-sum+(FN %in% preve.pram[3:length(preve.pram)])
-              if(sum<5) next()
+              ppsum<-0
+              ppsum<-ppsum+(trans.y %in% preve.pram)
+              ppsum<-ppsum+(norming %in% preve.pram)
+              ppsum<-ppsum+(withextra %in% preve.pram)
+              ppsum<-ppsum+(missingdata %in% preve.pram)
+              ppsum<-ppsum+(FN %in% preve.pram[3:length(preve.pram)])
+              if(ppsum<5) next()
             }
             
             pram.cycle<-F
