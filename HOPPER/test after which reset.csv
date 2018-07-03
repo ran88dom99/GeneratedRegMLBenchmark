@@ -99,3 +99,4 @@ Thu Jun 28 19:36:42 2018,caretEnstk knn,poly aC1^3 + bC1^2 + dC1,10,10,windows,x
 Fri Jun 29 11:48:02 2018,SL.caret,poly aC1^3 + bC1^2 + dC1,10,10,windows,x64,HOPPER
 Fri Jun 29 17:07:34 2018,caretEnstk Rborist,poly aC1^3 + bC1^2 + dC1,10,10,windows,x64,HOPPER
 Sat Jun 30 17:07:52 2018,h2oAutoml 100,bm sin(13 t C2 ^ -.2),10,10,windows,x64,HOPPER
+Sun Jul 01 17:07:42 2018,caretEnstk xgbTree,bm sin(13 t C2 ^ -.2),10,10,windows,x64,HOPPER
