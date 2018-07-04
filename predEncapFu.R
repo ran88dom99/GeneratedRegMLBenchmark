@@ -57,6 +57,9 @@ if(length(df.previous.calcs[,1])>0){
   if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodeli,FN=FN))
   {return(T)}
 }
+write.table(allmodeli,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
+write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
+
 return(F)
 }
 

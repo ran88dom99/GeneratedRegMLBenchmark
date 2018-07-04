@@ -81,3 +81,5 @@ Mon Jun 25 17:58:33 2018,caretEnstk knn,ifs C1 & C2 on C1,10,10,windows,i386,ALT
 Wed Jun 27 22:21:40 2018,SL.xgboost,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
 Thu Jun 28 11:57:02 2018,SL.bartMachine,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
 Thu Jun 28 12:51:51 2018,h2oAutoml 100,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
+Tue Jul 03 14:29:36 2018,h2oAutoml 500,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
+Tue Jul 03 19:10:24 2018,SL.bartMachine1subs,ifs C1 & C2 on C1,10,10,windows,i386,ALTA

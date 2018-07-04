@@ -8,7 +8,7 @@ SuperLearner::listWrappers()
 
 
 
-############################
+#############Boston Data###############
 # Setup example dataset.
 
 # Load a dataset from the MASS package.
@@ -72,7 +72,7 @@ Y_holdout = outcome_bin[-train_obs]
 # Review the outcome variable distribution.
 table(Y_train, useNA = "ifany")
 
-######
+########### Run simpler SL ######
 
 # Set the seed for reproducibility.
 set.seed(1)
@@ -367,3 +367,118 @@ review_weights(cv_sl)
 #Finally, plot the performance for the different settings.
 
 plot(cv_sl) + theme_bw()
+
+##### recalc #####
+# Binary outcome example adapted from SuperLearner examples
+
+set.seed(1)
+N <- 200
+X <- matrix(rnorm(N*10), N, 10)
+X <- as.data.frame(X)
+Y <- rbinom(N, 1, plogis(.2*X[, 1] + .1*X[, 2] - .2*X[, 3] + 
+                           .1*X[, 3]*X[, 4] - .2*abs(X[, 4])))
+
+SL.library <- c("SL.glmnet", "SL.glm", "SL.knn", "SL.gam", "SL.mean")
+
+# least squares loss function
+set.seed(1) # for reproducibility
+fit_nnls <- SuperLearner(Y = Y, X = X, SL.library = SL.library, 
+                         verbose = TRUE, method = "method.NNLS", family = binomial())
+fit_nnls
+#                    Risk       Coef
+# SL.glmnet_All 0.2439433 0.01293059
+# SL.glm_All    0.2461245 0.08408060
+# SL.knn_All    0.2604000 0.09600353
+# SL.gam_All    0.2471651 0.40761918
+# SL.mean_All   0.2486049 0.39936611
+
+
+# negative log binomial likelihood loss function
+fit_nnloglik <- recombineSL(fit_nnls, Y = Y, method = "method.NNloglik")
+fit_nnloglik
+#                    Risk      Coef
+# SL.glmnet_All 0.6815911 0.1577228
+# SL.glm_All    0.6918926 0.0000000
+# SL.knn_All          Inf 0.0000000
+# SL.gam_All    0.6935383 0.6292881
+# SL.mean_All   0.6904050 0.2129891
+
+# If we use the same seed as the original `fit_nnls`, then
+# the recombineSL and SuperLearner results will be identical
+# however, the recombineSL version will be much faster since
+# it doesn't have to re-fit all the base learners.
+set.seed(1)
+fit_nnloglik2 <- SuperLearner(Y = Y, X = X, SL.library = SL.library,
+                              verbose = TRUE, method = "method.NNloglik", family = binomial())
+fit_nnloglik2
+#                    Risk      Coef
+# SL.glmnet_All 0.6815911 0.1577228
+# SL.glm_All    0.6918926 0.0000000
+# SL.knn_All          Inf 0.0000000
+# SL.gam_All    0.6935383 0.6292881
+# SL.mean_All   0.6904050 0.2129891
+##### recalc with CV #####
+# Binary outcome example adapted from SuperLearner examples
+
+set.seed(1)
+N <- 200
+X <- matrix(rnorm(N*10), N, 10)
+X <- as.data.frame(X)
+Y <- rbinom(N, 1, plogis(.2*X[, 1] + .1*X[, 2] - .2*X[, 3] + 
+                           .1*X[, 3]*X[, 4] - .2*abs(X[, 4])))
+
+SL.library <- c("SL.glmnet", "SL.glm", "SL.knn", "SL.gam", "SL.mean")
+
+# least squares loss function
+set.seed(1) # for reproducibility
+cvfit_nnls <- CV.SuperLearner(Y = Y, X = X, V = 10, SL.library = SL.library, 
+                              verbose = TRUE, method = "method.NNLS", family = binomial())
+cvfit_nnls$coef
+#    SL.glmnet_All SL.glm_All  SL.knn_All SL.gam_All SL.mean_All
+# 1      0.0000000 0.00000000 0.000000000  0.4143862   0.5856138
+# 2      0.0000000 0.00000000 0.304802397  0.3047478   0.3904498
+# 3      0.0000000 0.00000000 0.002897533  0.5544075   0.4426950
+# 4      0.0000000 0.20322642 0.000000000  0.1121891   0.6845845
+# 5      0.1743973 0.00000000 0.032471026  0.3580624   0.4350693
+# 6      0.0000000 0.00000000 0.099881535  0.3662309   0.5338876
+# 7      0.0000000 0.00000000 0.234876082  0.2942472   0.4708767
+# 8      0.0000000 0.06424676 0.113988158  0.5600208   0.2617443
+# 9      0.0000000 0.00000000 0.338030342  0.2762604   0.3857093
+# 10     0.3022442 0.00000000 0.294226204  0.1394534   0.2640762
+
+
+# negative log binomial likelihood loss function
+cvfit_nnloglik <- recombineCVSL(cvfit_nnls, method = "method.NNloglik")
+cvfit_nnloglik$coef
+#    SL.glmnet_All SL.glm_All SL.knn_All SL.gam_All SL.mean_All
+# 1      0.0000000  0.0000000 0.00000000  0.5974799  0.40252010
+# 2      0.0000000  0.0000000 0.31177345  0.6882266  0.00000000
+# 3      0.0000000  0.0000000 0.01377469  0.8544238  0.13180152
+# 4      0.0000000  0.1644188 0.00000000  0.2387919  0.59678930
+# 5      0.2142254  0.0000000 0.00000000  0.3729426  0.41283197
+# 6      0.0000000  0.0000000 0.00000000  0.5847150  0.41528502
+# 7      0.0000000  0.0000000 0.47538172  0.5080311  0.01658722
+# 8      0.0000000  0.0000000 0.00000000  1.0000000  0.00000000
+# 9      0.0000000  0.0000000 0.45384961  0.2923480  0.25380243
+# 10     0.3977816  0.0000000 0.27927906  0.1606384  0.16230097
+
+# If we use the same seed as the original `cvfit_nnls`, then
+# the recombineCVSL and CV.SuperLearner results will be identical
+# however, the recombineCVSL version will be much faster since
+# it doesn't have to re-fit all the base learners, V times each.
+set.seed(1)
+cvfit_nnloglik2 <- CV.SuperLearner(Y = Y, X = X, V = 10, SL.library = SL.library,
+                                   verbose = TRUE, method = "method.NNloglik", family = binomial())
+cvfit_nnloglik2$coef
+#    SL.glmnet_All SL.glm_All SL.knn_All SL.gam_All SL.mean_All
+# 1      0.0000000  0.0000000 0.00000000  0.5974799  0.40252010
+# 2      0.0000000  0.0000000 0.31177345  0.6882266  0.00000000
+# 3      0.0000000  0.0000000 0.01377469  0.8544238  0.13180152
+# 4      0.0000000  0.1644188 0.00000000  0.2387919  0.59678930
+# 5      0.2142254  0.0000000 0.00000000  0.3729426  0.41283197
+# 6      0.0000000  0.0000000 0.00000000  0.5847150  0.41528502
+# 7      0.0000000  0.0000000 0.47538172  0.5080311  0.01658722
+# 8      0.0000000  0.0000000 0.00000000  1.0000000  0.00000000
+# 9      0.0000000  0.0000000 0.45384961  0.2923480  0.25380243
+# 10     0.3977816  0.0000000 0.27927906  0.1606384  0.16230097
+
