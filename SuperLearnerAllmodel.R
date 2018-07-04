@@ -19,7 +19,7 @@ setwd(cpout.folder)
 set.seed(seed = seed.var)
 
 # Identify predictors and response
-y <- "V1"
+y <- names(testing)[1]
 x <- setdiff(names(training), y)
 
 # X is our training sample.
@@ -43,6 +43,9 @@ for(itr in super){
 table(Y_train, useNA = "ifany")
 allmodel<-itr
 if(CrashNRep(allmodel)) {next()}
+write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
+write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
+
 
 fail.try.main<-T
 try({

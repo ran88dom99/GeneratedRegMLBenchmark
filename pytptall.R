@@ -15,10 +15,10 @@ adaptControl$number<-itr
 seed.var
 if(T){
   retainpopulation = r_to_py(as.integer(50))
-  offspring_size = r_to_py(as.integer(300))
+  offspring_size = r_to_py(as.integer(100))
   cv = r_to_py(as.integer(cv.iters))
   random_state = r_to_py(as.integer(seed.var))
-  generationcount = r_to_py(as.integer(1000))
+  generationcount = r_to_py(as.integer(300))
   early_stop = r_to_py(as.integer(5))
   mins_onapipe = r_to_py(as.integer(40))
   checkpoint_folder = r_to_py("tpot")
