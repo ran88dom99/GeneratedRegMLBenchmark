@@ -482,3 +482,78 @@ cvfit_nnloglik2$coef
 # 9      0.0000000  0.0000000 0.45384961  0.2923480  0.25380243
 # 10     0.3977816  0.0000000 0.27927906  0.1606384  0.16230097
 
+#We run summary on the cv_sl object rather than simply printing the object.
+cv_sl<-fit_nnls
+summary(cv_sl)
+
+
+# Review the distribution of the best single learner as external CV folds.
+table(simplify2array(cv_sl$whichDiscreteSL))
+
+# Plot the performance with 95% CIs (use a better ggplot theme).
+plot(cv_sl) + theme_bw()
+
+# Save plot to a file.
+ggsave("SuperLearner.png")
+
+
+inCV<-c(3,5,10)
+for(intCVitr in inCV){
+  for(itr in methodsz){
+    # Review the outcome variable distribution.
+    table(Y_train, useNA = "ifany")
+    allmodel <- paste0(itr,intCVitr)
+    if(CrashNRep(allmodel)) {next()}
+    
+    
+    fail.try.main <- T 
+    try({
+      # Set the seed for reproducibility.
+      set.seed(seed = seed.var)
+      
+      #Let’s fit 2 separate models: lasso (sparse, penalized OLS) and randomForest. We specify family = binomial() because we are predicting a binary outcome, aka classification. With a continuous outcome we would specify family = gaussian().
+      # Fit lasso model.
+      when<-proc.time()
+      
+      #cvControl	
+      #A list of parameters to control the outer cross-validation process. The outer cross-validation is the sample spliting for evaluating the SuperLearner. Parameters include V, stratifyCV, shuffle and validRows. See SuperLearner.CV.control for details.
+      #innerCvControl	
+      #A list of lists of parameters to control the inner cross-validation process. It should have V elements in the list, each a valid cvControl list. If only a single value, then replicated across all folds. The inner cross-validation are the values passed to each of the V SuperLearner calls. Parameters include V, stratifyCV, shuffle and validRows. See SuperLearner.CV.control for details.
+      
+      if(itr=="method.NNLS"){
+        fit_nnls <- CV.SuperLearner(Y = Y_train, X = X_train,  SL.library = super, 
+                                    verbose = TRUE, method = "method.NNLS",
+                                    control = list(saveFitLibrary = TRUE),
+                                    innerCvControl = list(list(V = intCVitr)),
+                                    V = cv.iters)
+      } else {
+        fit_nnls<- recombineCVSL(fit_nnls, Y = Y_train, method = itr)
+      }
+      
+      summary(fit_nnls)
+      print(fit_nnls)
+      fit_nnls$coef
+      fit_nnls$control
+      fit_nnls$cvControl
+      names(fit_nnls)
+      fit_nnls$SL.predict
+      table(simplify2array(fit_nnls$whichDiscreteSL))
+      predictions<-predict(fit_nnls$AllSL, X_holdout)
+      for(itt in names(predictions)) print(RMSE(Y_holdout,predictions[,c(as.character(itt))]))
+      #, onlySL = T
+      predics<- predict(fit_nnls, X_holdout)$pred
+      trainpred<- predict(fit_nnls, X_train, onlySL = T)$pred 
+      
+      printPredMets(predicted.outcomes=predics,trainpred =trainpred ,hypercount="none")
+      fail.try.main<-F  
+    })
+    
+    if(fail.try.main){    
+      print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
+      write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
+                  file = out.file, append =TRUE, quote = F, sep = ",",
+                  eol = "\n", na = "NA", dec = ".", row.names = F,
+                  col.names = F, qmethod = "double")
+    }
+  }
+}

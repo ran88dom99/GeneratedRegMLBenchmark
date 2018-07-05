@@ -6151,3 +6151,25 @@ h2oa,h2oAutoml 1,Tue Jul 03 13:30:52 2018,FAIL
 h2oa,h2oAutoml 10,Tue Jul 03 13:30:55 2018,FAIL
 h2oa,h2oAutoml 100,Tue Jul 03 13:31:00 2018,FAIL
 h2oa,h2oAutoml 100,Tue Jul 03 16:23:43 2018,FAIL
+h2oa,h2oAutoml 1,Tue Jul 03 17:41:05 2018,FAIL
+h2oa,h2oAutoml 10,Tue Jul 03 17:41:12 2018,FAIL
+h2oa,h2oAutoml 100,Tue Jul 03 17:41:14 2018,FAIL
+h2oa,h2oAutoml 100,Tue Jul 03 23:27:23 2018,FAIL
+h2oa,h2oAutoml 1,Wed Jul 04 17:40:21 2018,FAIL
+h2oa,h2oAutoml 10,Wed Jul 04 17:40:24 2018,FAIL
+h2oa,h2oAutoml 100,Wed Jul 04 17:40:25 2018,FAIL
+h2oa,h2oAutoml 300,Wed Jul 04 17:40:30 2018,FAIL
+h2oa,h2oAutoml 100,Wed Jul 04 18:27:14 2018,FAIL
+h2oa,h2oAutoml 300,Wed Jul 04 18:27:15 2018,FAIL
+h2oa,h2oAutoml 1,Wed Jul 04 19:00:22 2018,0.666,1,Boston Housing,ignore,none,centernscale,HOPPER,outg15th10hp10cv,3,5,403,124,222,,V14,1,V7,0.894,V6,0.134,V12,0.128,V2,0.119,V9,0.115,V13,0.0722,V11,0.0395,V8,0.0387,V4,0.0322,V10,0.0157,V3,0.00417,V5,0.00254
+h2oa,h2oAutoml 10,Wed Jul 04 19:11:06 2018,0.658,1,Boston Housing,ignore,none,centernscale,HOPPER,outg15th10hp10cv,3,5,403,124,222,,V7,1,V14,0.877,V12,0.417,V6,0.196,V2,0.183,V9,0.155,V4,0.142,V13,0.141,V8,0.0901,V11,0.0801,V10,0.0291,V5,0.0138,V3,0.00661
+h2oa,h2oAutoml 100,Wed Jul 04 19:11:10 2018,0.658,1,Boston Housing,ignore,none,centernscale,HOPPER,outg15th10hp10cv,3,5,403,124,222,,V7,1,V14,0.877,V12,0.417,V6,0.196,V2,0.183,V9,0.155,V4,0.142,V13,0.141,V8,0.0901,V11,0.0801,V10,0.0291,V5,0.0138,V3,0.00661
+h2oa,h2oAutoml 300,Wed Jul 04 19:11:12 2018,0.658,1,Boston Housing,ignore,none,centernscale,HOPPER,outg15th10hp10cv,3,5,403,124,222,,V7,1,V14,0.877,V12,0.417,V6,0.196,V2,0.183,V9,0.155,V4,0.142,V13,0.141,V8,0.0901,V11,0.0801,V10,0.0291,V5,0.0138,V3,0.00661
+h2oa,h2oAutoml 100,Wed Jul 04 19:56:40 2018,0.641,2,Boston Housing,ignore,none,centernscale,HOPPER,outg15th10hp10cv,1,5,403,122,222,,,1,,
+h2oa,h2oAutoml 300,Wed Jul 04 19:56:42 2018,0.641,2,Boston Housing,ignore,none,centernscale,HOPPER,outg15th10hp10cv,1,5,403,122,222,,,1,,
+h2oa,h2oAutoml 100,Wed Jul 04 20:42:18 2018,0.721,2,Boston Housing,ignore,none,centernscale,HOPPER,outg15th10hp10cv,2,5,403,123,222,,,1,,
+h2oa,h2oAutoml 300,Wed Jul 04 20:42:19 2018,0.721,2,Boston Housing,ignore,none,centernscale,HOPPER,outg15th10hp10cv,2,5,403,123,222,,,1,,
+h2oa,h2oAutoml 1,Wed Jul 04 21:15:07 2018,0.656,2,Boston Housing,ignore,none,centernscale,HOPPER,outg15th10hp10cv,3,5,403,124,222,,V14,1,V7,0.905,V6,0.14,V2,0.131,V12,0.127,V9,0.114,V13,0.0654,V11,0.0512,V8,0.037,V10,0.0212,V4,0.0197,V3,0.00205,V5,0.000667
+h2oa,h2oAutoml 10,Wed Jul 04 21:26:08 2018,0.656,2,Boston Housing,ignore,none,centernscale,HOPPER,outg15th10hp10cv,3,5,403,124,222,,V7,1,V14,0.859,V12,0.406,V6,0.216,V2,0.196,V9,0.157,V4,0.136,V13,0.114,V8,0.0841,V11,0.0796,V10,0.0339,V5,0.0148,V3,0.0078
+h2oa,h2oAutoml 100,Wed Jul 04 21:26:11 2018,0.656,2,Boston Housing,ignore,none,centernscale,HOPPER,outg15th10hp10cv,3,5,403,124,222,,V7,1,V14,0.859,V12,0.406,V6,0.216,V2,0.196,V9,0.157,V4,0.136,V13,0.114,V8,0.0841,V11,0.0796,V10,0.0339,V5,0.0148,V3,0.0078
+h2oa,h2oAutoml 300,Wed Jul 04 21:26:15 2018,0.656,2,Boston Housing,ignore,none,centernscale,HOPPER,outg15th10hp10cv,3,5,403,124,222,,V7,1,V14,0.859,V12,0.406,V6,0.216,V2,0.196,V9,0.157,V4,0.136,V13,0.114,V8,0.0841,V11,0.0796,V10,0.0339,V5,0.0148,V3,0.0078
