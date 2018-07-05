@@ -1,7 +1,20 @@
-#superlearner for allmodel
-#no varimp #own, later
-#no hyperparams 
-#superlearner has special ensembling methods ? but must save models for it. 
+#superlearner' for allmodel's actual superlearner instead of just SL's models
+#does not seem to produce exact same results for same seeds
+#no automatic hyperparams 
+
+#cv.iters<-11
+#every auto package-library R script must automate 
+#installation
+#
+#func(check for existence of crash or prevent repeat
+#   set timer and write to task&algo crash files)
+#
+#randomseed in sometimes
+#tune cv seed in
+# 
+#write to out results hyperparams also  oveRmse, !!prediction cycled
+#write to out on fail
+#varimp, func(internal, fail,)  
 
 
 list.of.packages<-c("SuperLearner","RhpcBLASctl","biglasso","dbarts","sva","LogicReg","speedglm","KernelKnn")
@@ -32,22 +45,19 @@ X_holdout = testing[,x]
 Y_train = training[,y]
 Y_holdout = testing[,y]
 
-problemms<-c("SL.template","SL.qda","SL.mean", "SL.lda","SL.knn")
-super<-(SuperLearner::listWrappers())[69:110]
-#super<-setdiff(super,problemms)
-
+problemms <- c("SL.template","SL.qda","SL.mean", "SL.lda","SL.knn","SL.leekasso","SL.logreg","SL.qda","SL.dbarts","SL.gbm")
+super <- (SuperLearner::listWrappers())[69:110]
+super <- setdiff(super,problemms)
+methodsz <- c("method.NNLS"  , "method.NNLS2", "method.NNloglik", "method.CC_LS", "method.CC_nloglik")
 ######
 
-for(itr in super){
+for(itr in methodsz){
   # Review the outcome variable distribution.
   table(Y_train, useNA = "ifany")
-  allmodel<-itr
+  allmodel <- itr
   if(CrashNRep(allmodel)) {next()}
-  write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
-  write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
-  
-  
-  fail.try.main<-T
+
+  fail.try.main<-T 
   try({
     # Set the seed for reproducibility.
     set.seed(seed = seed.var)
@@ -56,22 +66,21 @@ for(itr in super){
     # Fit lasso model.
     when<-proc.time()
     
-    sl_lasso = SuperLearner(Y = Y_train, X = X_train, family = gaussian(),
-                            SL.library = itr,cvControl = list(V = cv.iters))
+    if(itr=="method.NNLS"){
+      fit_nnls <- SuperLearner(Y = Y_train, X = X_train, SL.library = super, 
+                             verbose = TRUE, method = "method.NNLS",cvControl = list(V = cv.iters))
+    } else {
+      fit_nnls<- recombineSL(fit_nnls, Y = Y_train, method = itr)
+    }
     
-    print(sl_lasso)
-    # Review the elements in the SuperLearner object.
-    names(sl_lasso)
+    summary(fit_nnls)
+    print(fit_nnls)
+    fit_nnls$coef
+ 
+    predics<- predict(fit_nnls, X_holdout, onlySL = T)$pred
+    trainpred<- predict(fit_nnls, X_train, onlySL = T)$pred 
     
-    # Here is the risk of the best model (discrete SuperLearner winner).
-    overRMSE<-sl_lasso$cvRisk[which.min(sl_lasso$cvRisk)]
-    
-    ## SL.glmnet_All 
-    ##     0.1330516
-    predics<- predict(sl_lasso, X_holdout, onlySL = T)$pred
-    # Here is the raw glmnet result object:
-    
-    printPredMets(predicted.outcomes=predics,overRMSE=overRMSE,hypercount="none")
+    printPredMets(predicted.outcomes=predics,trainpred =trainpred ,hypercount="none")
     fail.try.main<-F  
   })
   
@@ -83,3 +92,4 @@ for(itr in super){
                 col.names = F, qmethod = "double")
   }
 }
+

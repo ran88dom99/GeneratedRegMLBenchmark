@@ -59,7 +59,8 @@ if(length(df.previous.calcs[,1])>0){
 }
 write.table(allmodeli,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
 write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
-
+when<-proc.time()
+set.seed(seed=seed.var)
 return(F)
 }
 
@@ -99,7 +100,7 @@ varimprint<-function(metpack="unk",colNms=colNms,colImpor=colImpor){
 #only output is printing
 
 
-printPredMets<-function(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,hypercount="none",libpack="notune")
+printPredMets<-function(predicted.outcomes=predicted.outcomes,trainpred="none",overRMSE=overRMSE,hypercount="none",libpack="notune")
 {
   #hypercount=c("full","part","none")
   p <- data.frame(predicted.outcomes,testing[,1])
@@ -126,6 +127,12 @@ printPredMets<-function(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,
   #RMSE.mean.train=signif(RMSE(training[,1],mean(training[,1], na.rm = T)), digits = 4)
   #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
 
+  if(!(trainpred=="none")){
+    overRMSE<-RMSE(trainpred,training[,1])
+    
+  }
+  
+  
 Rseed<-.Random.seed[1]
 Cseed<-.Random.seed[2]
 
