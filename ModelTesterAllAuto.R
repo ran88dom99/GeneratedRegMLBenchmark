@@ -418,10 +418,15 @@ for(gend.data in gensTTest){
           if(max(which.computer==pc.smallR)>0){
             source("carEns3.R")
             setwd(base.folder)
-            source("SuperLearnerAllmodel.R")
-            setwd(base.folder)
             source("autoH2Oallmodel.R")
             setwd(base.folder)
+            source("SuperLearnerAllmodel.R")
+            setwd(base.folder)
+            source("subsemble.R")
+            setwd(base.folder)
+            source("SuperSuperAll.R")
+            setwd(base.folder)
+            
             
           } else {
             source("Caret part.R")
