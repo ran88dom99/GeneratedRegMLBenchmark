@@ -381,7 +381,7 @@ for(gend.data in gensTTest){
             if(length(nzv)>1){
               df.toprocess = (df.toprocess[, -nzv])}
             
-            loess.model<-loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
+            loess.model<-stats::loess(y.untransformed~ df.toprocess[,1],span = 0.21, degree = 1)
             
             training <- df.toprocess[-foldTrain[[FN]],]            
             testing  <- df.toprocess[foldTrain[[FN]],]

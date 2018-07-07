@@ -9,7 +9,7 @@ require("RWeka")
 ###################################################
 ### code chunk number 2: RWeka.Rnw:62-63 (eval = FALSE)
 ###################################################
- WPM("refresh-cache")
+# WPM("refresh-cache")
 
 
 ###################################################
@@ -27,10 +27,10 @@ require("RWeka")
 ###################################################
 ### code chunk number 5: RWeka.Rnw:99-103 (eval = FALSE)
 ###################################################
-## LBR <-
-##     make_Weka_classifier("weka/classifiers/lazy/LBR",
-##                          c("LBR", "Weka_lazy"),
-##                          package = "lazyBayesianRules")
+ LBR <-
+     make_Weka_classifier("weka/classifiers/lazy/LBR",
+                          c("LBR", "Weka_lazy"),
+                          package = "lazyBayesianRules")
 
 
 ###################################################
