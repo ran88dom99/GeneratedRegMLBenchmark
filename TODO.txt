@@ -8,7 +8,7 @@ aurosklearn#https://github.com/automl/auto-sklearn/issues/431
 Xcessive#need to learn docker#https://github.com/reiinakano/xcessiv/tree/master/docker
 slightly incomplete:https://github.com/hibayesian/awesome-automl-papers
 
-Rweka  
+ why loess so bad/ pass a formula to a function
 
 maybe 
 MLBox
@@ -24,7 +24,7 @@ autokeras
 autodeepnet
 keras itself
 
-
+Rweka  (java interface is complicated)
 reclab
 (py recommender systems libraries?)
 LIBREC
