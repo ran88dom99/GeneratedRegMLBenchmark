@@ -9,3 +9,31 @@ h2oa,h2oAutoml 10,Thu Jun 28 12:21:26 2018,0.34,1,ifs C1 & C2 on C1,ignore,none,
 h2oa,h2oAutoml 1,Thu Jun 28 12:56:56 2018,FAIL
 h2oa,h2oAutoml 10,Thu Jun 28 12:57:06 2018,FAIL
 h2oa,h2oAutoml 100,Thu Jun 28 14:37:24 2018,0.068,1,ifs C1 & C2 on C1,ignore,none,range01,ALTA,carEnstest4,1,5,403,73,222,,V4,1,V3,0.881,V8,0.818,V5,0.775,V2,0.774,V7,0.763,V6,0.705,V10,0.642,V9,0.563
+h2oa,h2oAutoml 1,Wed Jul 04 22:37:24 2018,FAIL
+h2oa,h2oAutoml 10,Wed Jul 04 22:37:35 2018,FAIL
+h2oa,h2oAutoml 100,Wed Jul 04 22:37:41 2018,FAIL
+h2oa,h2oAutoml 300,Thu Jul 05 03:38:06 2018,0.285,1,ifs C1 & C2 on C1,ignore,none,range01,ALTA,carEnstest4,1,5,403,624,222,,V4,1,V2,0.936,V3,0.932,V8,0.883,V7,0.858,V5,0.837,V10,0.815,V9,0.779,V6,0.757
+h2oa,h2oAutoml 1,Thu Jul 05 22:58:19 2018,FAIL
+h2oa,h2oAutoml 10,Thu Jul 05 22:58:23 2018,FAIL
+h2oa,h2oAutoml 100,Thu Jul 05 22:58:27 2018,FAIL
+h2oa,h2oAutoml 300,Thu Jul 05 22:58:31 2018,FAIL
+h2oa,h2oAutoml 1,Thu Jul 05 23:53:15 2018,0.535,1,ifs C1 & C2 on C1,ignore,none,range01,ALTA,carEnstest4,2,5,403,624,222,,V4,1,V2,0.847,V7,0.458,V3,0.446,V9,0.144,V5,0.0962,V6,0.0818,V8,0.0803,V10,0.0704
+h2oa,h2oAutoml 10,Fri Jul 06 00:03:36 2018,0.516,1,ifs C1 & C2 on C1,ignore,none,range01,ALTA,carEnstest4,2,5,403,624,222,,V4,1,V3,0.747,V2,0.592,V9,0.193,V7,0.176,V8,0.0557,V5,0.0312,V6,0.0242,V10,0.0208
+h2oa,h2oAutoml 100,Fri Jul 06 01:44:08 2018,0.517,1,ifs C1 & C2 on C1,ignore,none,range01,ALTA,carEnstest4,2,5,403,624,222,,V2,1,V3,0.834,V8,0.782,V6,0.771,V7,0.765,V4,0.751,V5,0.729,V9,0.708,V10,0.655
+h2oa,h2oAutoml 300,Fri Jul 06 06:44:59 2018,0.118,1,ifs C1 & C2 on C1,ignore,none,range01,ALTA,carEnstest4,2,5,403,624,222,,V2,1,V4,0.932,V9,0.859,V3,0.814,V6,0.755,V5,0.75,V10,0.735,V7,0.714,V8,0.679
+caretEns,caretEnsGreedyGlm,Fri Jul 06 07:14:33 2018,0.707,1,ifs C1 & C2 on C1,ignore,none,range01,ALTA,carEnstest4,3,5,403,624,222,,V7,1.43,V8,1.68,V10,2.91,V5,3.45,V9,6.13,V2,10.2,V6,11.4,V3,15.1,V4,47.7
+h2oa,h2oAutoml 1,Fri Jul 06 07:53:45 2018,0.224,1,ifs C1 & C2 on C1,ignore,none,range01,ALTA,carEnstest4,3,5,403,624,222,,V4,1,V2,0.337,V6,0.324,V3,0.222,V8,0.139,V10,0.0829,V9,0.0816,V5,0.0669,V7,0.039
+h2oa,h2oAutoml 10,Fri Jul 06 08:04:19 2018,0.472,1,ifs C1 & C2 on C1,ignore,none,range01,ALTA,carEnstest4,3,5,403,624,222,,V4,1,V3,0.488,V2,0.402,V7,0.0866,V9,0.0121,V6,0.0046,V8,0.00453,V5,0.00415,V10,0.00368
+h2oa,h2oAutoml 100,Fri Jul 06 09:56:25 2018,0.472,1,ifs C1 & C2 on C1,ignore,none,range01,ALTA,carEnstest4,3,5,403,624,222,,V4,1,V3,0.488,V2,0.402,V7,0.0866,V9,0.0121,V6,0.0046,V8,0.00453,V5,0.00415,V10,0.00368
+h2oa,h2oAutoml 1,Fri Jul 06 23:06:39 2018,0.376,1,ifs C1 & C2 on C1,ignore,none,centernscale,ALTA,carEnstest4,1,5,403,624,222,,V4,1,V2,0.343,V3,0.31,V5,0.269,V8,0.0967,V7,0.0851,V6,0.0497,V10,0.0434,V9,0.0352
+h2oa,h2oAutoml 10,Fri Jul 06 23:17:01 2018,0.257,1,ifs C1 & C2 on C1,ignore,none,centernscale,ALTA,carEnstest4,1,5,403,624,222,,V2,1,V3,0.998,V4,0.992,V8,0.887,V7,0.848,V5,0.803,V10,0.79,V6,0.786,V9,0.723
+h2oa,h2oAutoml 100,Sat Jul 07 00:57:25 2018,0.287,1,ifs C1 & C2 on C1,ignore,none,centernscale,ALTA,carEnstest4,1,5,403,624,222,,V4,1,V3,0.965,V2,0.956,V8,0.852,V5,0.785,V6,0.775,V7,0.773,V10,0.771,V9,0.718
+h2oa,h2oAutoml 300,Sat Jul 07 05:57:51 2018,0.156,1,ifs C1 & C2 on C1,ignore,none,centernscale,ALTA,carEnstest4,1,5,403,624,222,,V4,1,V2,0.966,V3,0.877,V8,0.861,V5,0.796,V6,0.753,V7,0.743,V10,0.726,V9,0.717
+caretEns,caretEnsGreedyGlm,Sat Jul 07 06:18:21 2018,0.706,1,ifs C1 & C2 on C1,ignore,none,centernscale,ALTA,carEnstest4,2,5,403,624,222,,V9,0.913,V8,1.31,V2,5.32,V5,6.17,V10,6.43,V7,8.58,V3,15.1,V6,15.9,V4,40.3
+h2oa,h2oAutoml 1,Sat Jul 07 06:56:49 2018,0.536,1,ifs C1 & C2 on C1,ignore,none,centernscale,ALTA,carEnstest4,2,5,403,624,222,,V4,1,V2,0.838,V7,0.431,V3,0.407,V9,0.155,V5,0.0647,V10,0.041,V8,0.0401,V6,0.0252
+h2oa,h2oAutoml 10,Sat Jul 07 07:07:12 2018,0.455,1,ifs C1 & C2 on C1,ignore,none,centernscale,ALTA,carEnstest4,2,5,403,624,222,,V2,1,V9,0.8,V8,0.775,V4,0.735,V7,0.733,V5,0.724,V3,0.713,V6,0.707,V10,0.707
+h2oa,h2oAutoml 100,Sat Jul 07 08:47:33 2018,0.452,1,ifs C1 & C2 on C1,ignore,none,centernscale,ALTA,carEnstest4,2,5,403,624,222,,V2,1,V8,0.836,V7,0.811,V5,0.779,V4,0.772,V3,0.754,V6,0.724,V9,0.72,V10,0.671
+h2oa,h2oAutoml 300,Sat Jul 07 13:48:05 2018,0.52,1,ifs C1 & C2 on C1,ignore,none,centernscale,ALTA,carEnstest4,2,5,403,624,222,,V2,1,V3,0.832,V5,0.785,V6,0.775,V4,0.773,V9,0.761,V7,0.75,V10,0.689,V8,0.646
+caretEns,caretEnsGreedyGlm,Sat Jul 07 14:09:46 2018,0.716,1,ifs C1 & C2 on C1,ignore,none,centernscale,ALTA,carEnstest4,3,5,403,624,222,,V8,0.884,V7,0.903,V5,3.27,V10,3.3,V9,5.64,V6,12.8,V2,13.7,V3,17.2,V4,42.4
+h2oa,h2oAutoml 1,Sat Jul 07 14:49:19 2018,0.239,1,ifs C1 & C2 on C1,ignore,none,centernscale,ALTA,carEnstest4,3,5,403,624,222,,V4,1,V6,0.328,V2,0.302,V3,0.219,V8,0.153,V10,0.118,V9,0.0885,V5,0.0618,V7,0.0393
+h2oa,h2oAutoml 10,Sat Jul 07 15:00:10 2018,0.484,1,ifs C1 & C2 on C1,ignore,none,centernscale,ALTA,carEnstest4,3,5,403,624,222,,V4,1,V3,0.447,V2,0.399,V7,0.0918,V8,0.025,V9,0.0135,V10,0.00747,V6,0.00588,V5,0.00471

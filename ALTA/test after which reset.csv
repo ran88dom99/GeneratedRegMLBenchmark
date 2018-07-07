@@ -44,39 +44,5 @@ Sun Jun 10 18:01:07 2018,regr.svm,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
 Sun Jun 10 18:04:32 2018,regr.earth,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
 Sun Jun 10 18:12:26 2018,regr.nnet,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
 Sun Jun 10 18:14:41 2018,regr.gbm,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sun Jun 10 18:31:43 2018,regr.elmNN,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sun Jun 10 18:51:53 2018,rpart2,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sun Jun 10 19:05:36 2018,SBC,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sun Jun 10 19:07:15 2018,SBC,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sun Jun 10 19:22:33 2018,bayesglm,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sun Jun 10 19:24:05 2018,bayesglm,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sun Jun 10 19:28:59 2018,ctree,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sun Jun 10 19:37:36 2018,evtree,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Mon Jun 11 09:54:31 2018,regr.cubist,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Mon Jun 11 11:39:52 2018,bag,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Mon Jun 11 20:39:19 2018,bagEarth,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Tue Jun 12 09:45:28 2018,bartMachine,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Tue Jun 12 12:12:08 2018,bartMachine,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Tue Jun 12 13:34:55 2018,blassoAveraged,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Tue Jun 12 13:50:38 2018,blassoAveraged,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Tue Jun 12 19:39:04 2018,bagEarth,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Tue Jun 12 19:52:29 2018,bridge,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Wed Jun 13 12:50:50 2018,BstLm,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Wed Jun 20 12:21:28 2018,elm,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Wed Jun 20 14:25:42 2018,elm,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Wed Jun 20 14:37:06 2018,elm,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Wed Jun 20 15:36:59 2018,bagEarth,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Wed Jun 20 19:29:44 2018,bagEarth,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Wed Jun 20 19:37:44 2018,bagEarth,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Fri Jun 22 21:43:36 2018,leapSeq,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Fri Jun 22 21:47:26 2018,caretEnstk enet,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sat Jun 23 12:30:51 2018,caretEnstk Rborist,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sat Jun 23 15:32:39 2018,caretEnstkcubist,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sat Jun 23 17:38:48 2018,caretEnstkcubist,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sun Jun 24 17:58:59 2018,caretEnstk knn,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sun Jun 24 21:41:58 2018,SL.kernelKnn,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Sun Jun 24 21:44:58 2018,SL.knn,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Mon Jun 25 15:17:34 2018,SL.svm,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Mon Jun 25 17:58:33 2018,caretEnstk knn,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Wed Jun 27 22:21:40 2018,SL.xgboost,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Thu Jun 28 11:57:02 2018,SL.bartMachine,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
+Sun Jun 10 18:31:43 2018,regr.elmNN,ifs C1 & C2 on C1,10,10,windows,i386,ALTA 
+Fri Jul 06 22:49:17 2018,SL.caret.rpart,ifs C1 & C2 on C1,10,10,windows,i386,ALTA

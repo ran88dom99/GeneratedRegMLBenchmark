@@ -1,15 +1,6 @@
 #THIS IS SLOW 
 #subset * models ^  2
-
-#every auto package-library R script must automate 
-#installation
-#write to task&algo crash files
-#func(check for existence of crash or prevent repeat
-#tune cv seed in
-#write to out on fail
-#write to out results including  oveRmse, hyperparams
-#varimp, func(internal, fail,) prediction cycled 
-#set timer
+#also broken. 2 or more subsets cause crashing possibly cause too few rows for only one algo
 
 #install.packages("subsemble")
 
@@ -54,7 +45,7 @@ learner <- setdiff(super,problemms)
 cv <- cv.iters
 
 ######
-for(subsets in c(1,2,5)){
+for(subsets in c(1)){ #,2,5
 for(itr in super){
   # Review the outcome variable distribution.
   table(Y_train, useNA = "ifany")
@@ -74,7 +65,7 @@ for(itr in super){
     
 
     metalearner <- itr
-    fit <- subsemble(x=X_train, y=Y_train, 
+    fit <- subsemble(x=X_train, y=Y_train, verbose=T,
                      learner = learner, metalearner = metalearner,
                      subsets = subsets, seed = seed.var, cvControl = list(V=cv))
     
