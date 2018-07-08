@@ -6176,3 +6176,7 @@ h2oa,h2oAutoml 300,Wed Jul 04 21:26:15 2018,0.656,2,Boston Housing,ignore,none,c
 h2oa,h2oAutoml 1,Thu Jul 05 17:33:33 2018,FAIL
 h2oa,h2oAutoml 10,Thu Jul 05 17:33:38 2018,FAIL
 h2oa,h2oAutoml 100,Thu Jul 05 17:33:42 2018,FAIL
+h2oa,h2oAutoml 1,Fri Jul 06 17:33:49 2018,FAIL
+h2oa,h2oAutoml 10,Fri Jul 06 17:33:52 2018,FAIL
+h2oa,h2oAutoml 100,Fri Jul 06 17:33:58 2018,FAIL
+h2oa,h2oAutoml 300,Fri Jul 06 17:34:00 2018,FAIL
