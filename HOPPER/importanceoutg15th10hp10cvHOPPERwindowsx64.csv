@@ -6194,3 +6194,7 @@ h2oa,h2oAutoml 1,Tue Jul 10 17:33:56 2018,FAIL
 h2oa,h2oAutoml 10,Tue Jul 10 17:34:01 2018,FAIL
 h2oa,h2oAutoml 100,Tue Jul 10 17:34:06 2018,FAIL
 h2oa,h2oAutoml 300,Tue Jul 10 17:34:09 2018,FAIL
+h2oa,h2oAutoml 1,Wed Jul 11 17:38:27 2018,FAIL
+h2oa,h2oAutoml 10,Wed Jul 11 17:38:36 2018,FAIL
+h2oa,h2oAutoml 100,Wed Jul 11 17:38:40 2018,FAIL
+h2oa,h2oAutoml 300,Wed Jul 11 17:38:44 2018,FAIL
