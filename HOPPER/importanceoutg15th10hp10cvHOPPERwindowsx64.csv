@@ -6190,3 +6190,7 @@ h2oa,h2oAutoml 1,Mon Jul 09 17:33:20 2018,FAIL
 h2oa,h2oAutoml 10,Mon Jul 09 17:33:24 2018,FAIL
 h2oa,h2oAutoml 100,Mon Jul 09 17:33:30 2018,FAIL
 h2oa,h2oAutoml 300,Mon Jul 09 17:33:33 2018,FAIL
+h2oa,h2oAutoml 1,Tue Jul 10 17:33:56 2018,FAIL
+h2oa,h2oAutoml 10,Tue Jul 10 17:34:01 2018,FAIL
+h2oa,h2oAutoml 100,Tue Jul 10 17:34:06 2018,FAIL
+h2oa,h2oAutoml 300,Tue Jul 10 17:34:09 2018,FAIL
