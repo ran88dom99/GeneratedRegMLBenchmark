@@ -30,7 +30,9 @@ maybe Keras regression NO TOO BLACK
 autokeras
 autodeepnet
 keras itself
+devol
 
+suprise python and crab?
 Rweka  (java interface is complicated)
 reclab
 (py recommender systems libraries?)

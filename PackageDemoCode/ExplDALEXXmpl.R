@@ -1,4 +1,5 @@
 #https://pbiecek.github.io/DALEX/
+#https://github.com/pbiecek/DALEX
 #install.packages("DALEX")
 library(DALEX)
 library(mlr)
@@ -26,6 +27,12 @@ data(apartmentsTest)
 custom_predict <- function(object, newdata) {pred <- predict(object, newdata=newdata)
 response <- pred$data$response
 return(response)}
+
+testpredict<-custom_predict(regr_rf,apartmentsTest)
+str(apartmentsTest)
+RMSE(testpredict,apartmentsTest$m2.price)
+RMSE(mean(apartmentsTest$m2.price),apartmentsTest$m2.price)
+RMSE(testpredict,mean(testpredict))
 
 explainer_regr_rf <- DALEX::explain(regr_rf, data=apartmentsTest, y=apartmentsTest$m2.price, predict_function = custom_predict, label="rf")
 explainer_regr_nn <- DALEX::explain(regr_nn, data=apartmentsTest, y=apartmentsTest$m2.price,

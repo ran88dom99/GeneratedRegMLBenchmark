@@ -83,7 +83,16 @@ for(itr in methodsz){
     printPredMets(predicted.outcomes=predics,trainpred =trainpred ,hypercount="none")
     fail.try.main<-F  
   })
-  
+  if(!fail.try.main){
+    custom_predict <- function(object, newdata) {
+      pred <- predict(object, newdata, onlySL = T)$pred
+      return(pred)
+    }
+    varimperm(custom_predict=custom_predict, modeltp=fit_nnls,
+              X=X_holdout, Y=Y_holdout, metpack = "SLS_hold")
+    varimperm(custom_predict=custom_predict, modeltp=fit_nnls,
+              X=X_train, Y=Y_train, metpack = "SLS_train")
+  }
   if(fail.try.main){    
     print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
     write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),

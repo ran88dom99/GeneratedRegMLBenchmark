@@ -153,6 +153,18 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
                   col.names = F, qmethod = "double")
       fail.try=F
     })
+    if(fail.try==F){
+      try({
+        #object=sl_lasso; newdata=X_holdout
+        custom_predict <- function(object, newdata) {
+          pred <- predict(object, newdata) 
+          return(pred)
+        }
+        varimperm(custom_predict=custom_predict, modeltp=trainedmodel,
+                  X=testing[,-1], Y=testing[,1],, metpack = "caret_hold")
+        #varimperm(custom_predict=custom_predict, modeltp=sl_lasso, X=X_train, Y=Y_train, metpack = "SL1_train")
+      })
+    }
     if(fail.try==T){
       write.table(paste("caret",allmodel,date(),round(mean.improvement,digits=3),datasource,"Failed",  sep = ","),
                   file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",

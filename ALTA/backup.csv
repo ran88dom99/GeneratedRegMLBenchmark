@@ -4343,3 +4343,6 @@ Fail, Sun Jun 10 17:56:31 2018, regr.lm
 Fail, Sun Jun 10 17:56:35 2018, regr.mars
 Fail, Sun Jun 10 17:57:29 2018, regr.randomForestSRC
 Fail, Sun Jun 10 17:58:22 2018, regr.rsm
+Fail, Sun Jul 15 18:07:29 2018, regr.bartMachine
+Fail, Sun Jul 15 18:07:55 2018, regr.bcart
+Fail, Sun Jul 15 18:08:26 2018, regr.blm
