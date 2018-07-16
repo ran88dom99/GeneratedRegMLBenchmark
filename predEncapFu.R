@@ -57,46 +57,20 @@ if(length(df.previous.calcs[,1])>0){
   if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodeli,FN=FN))
   {return(T)}
 }
+write.table(allmodeli,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
+write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
+when<-proc.time()
+set.seed(seed=seed.var)
 return(F)
 }
 
-varimprint<-function(metpack="unk",colNms=colNms,colImpor=colImpor){
-  ########VARIEBLE IMPORTANCE
-  fail.try.vif=T
-  try({ 
-    #noVarImp.models=c("parRF")#var imp crashes with these models
-    #if(allmodel %in% noVarImp.models){next()}#
-    if(mean.improvement<0){mean.improvement=0}
-    Rseed<-.Random.seed[1]
-    Cseed<-.Random.seed[2]
 
-    varImpMix<-""#varImpMix<-vector(mode="character",length = length(colNms)*2)
-    for(i in 1:length(colNms)){
-      #varImpMix[i*2]<-colNms[i] ; varImpMix[i*2+1]<-colImpor[i]
-      varImpMix<-paste(varImpMix,colNms[i],colImpor[i], sep = ",")
-    }
-    write.table(paste(metpack,allmodel,date(),round(mean.improvement,digits=3),trans.y,
-                      datasource,missingdata,withextra,norming,which.computer,task.subject,
-                      FN,high.fold,Rseed,Cseed,seed.var,
-                      varImpMix,  sep = ","),
-                file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
-    fail.try.vif=F
-  })
-  if (fail.try.vif==T) {
-    write.table(paste(metpack,allmodel,date(),"FAIL",  sep = ","),
-                file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
-  }
-}
 #Input: predictions,  overrmse, hyperparams or not
 #Input thats just envirnoment: Many precalculated scores, y.untrans, loess.model, foldtrain & FN
 #only output is printing
 
 
-printPredMets<-function(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,hypercount="none",libpack="notune")
+printPredMets<-function(predicted.outcomes=predicted.outcomes,trainpred="none",overRMSE=overRMSE,hypercount="none",libpack="notune")
 {
   #hypercount=c("full","part","none")
   p <- data.frame(predicted.outcomes,testing[,1])
@@ -123,6 +97,12 @@ printPredMets<-function(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,
   #RMSE.mean.train=signif(RMSE(training[,1],mean(training[,1], na.rm = T)), digits = 4)
   #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
 
+  if(!(trainpred=="none")){
+    overRMSE<-RMSE(trainpred,training[,1])
+    
+  }
+  
+  
 Rseed<-.Random.seed[1]
 Cseed<-.Random.seed[2]
 

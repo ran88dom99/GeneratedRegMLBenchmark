@@ -25,7 +25,7 @@ for(dummy in 1){
 fail.try=T
     try({
       
-      set.seed(222)
+      set.seed(seed.var)
       model_list <- caretList(
         x=training[,-1],
         y=training[,1],
@@ -39,7 +39,16 @@ fail.try=T
       #modelCor(resamples(model_list))
     })
     print("carens sec")
-    if(fail.try) {print("MAJOR FAIL in CARET.ENS");next()}
+    if(fail.try) {
+      allmodel<-"MAJOR FAIL in CARET.ENS"
+      print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
+      write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
+                  file = out.file, append =TRUE, quote = F, sep = ",",
+                  eol = "\n", na = "NA", dec = ".", row.names = F,
+                  col.names = F, qmethod = "double") 
+      print(allmodel)
+      next()
+      }
  
     failed<-1
     try({
@@ -89,10 +98,8 @@ fail.try=T
         when<-proc.time()
         
         stack_ensemble <- caretStack(
-          model_list,
-          method=i, 
-          tuneLength=tuneLength,
-          trControl=adaptControl
+          model_list, method=i, 
+          tuneLength=tuneLength,  trControl=adaptControl
         )
         
         #$ens_model$finalModel
@@ -101,6 +108,17 @@ fail.try=T
         printPredMets(predicted.outcomes=ens_preds,overRMSE=overRMSE,hypercount="full")
         failed<-0
       })
+      if(failed==0){
+        try({ 
+        custom_predict <- function(object, newdata) {
+          pred <- predict(object, newdata, type="raw") 
+          return(pred)
+        }
+        varimperm(custom_predict=custom_predict, modeltp=stack_ensemble,
+                  X=testing[,-1], Y=testing[,1], metpack = "carEns_hold")
+        #varimperm(custom_predict=custom_predict, modeltp=sl_lasso, X=X_train, Y=Y_train, metpack = "SL1_train")
+        })
+      }
       
       if(failed==1) {
         print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))

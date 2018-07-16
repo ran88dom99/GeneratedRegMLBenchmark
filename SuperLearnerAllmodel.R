@@ -19,7 +19,7 @@ setwd(cpout.folder)
 set.seed(seed = seed.var)
 
 # Identify predictors and response
-y <- "V1"
+y <- names(testing)[1]
 x <- setdiff(names(training), y)
 
 # X is our training sample.
@@ -43,6 +43,9 @@ for(itr in super){
 table(Y_train, useNA = "ifany")
 allmodel<-itr
 if(CrashNRep(allmodel)) {next()}
+write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
+write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
+
 
 fail.try.main<-T
 try({
@@ -66,11 +69,22 @@ overRMSE<-sl_lasso$cvRisk[which.min(sl_lasso$cvRisk)]
 ## SL.glmnet_All 
 ##     0.1330516
 predics<- predict(sl_lasso, X_holdout, onlySL = T)$pred
+
 # Here is the raw glmnet result object:
 
 printPredMets(predicted.outcomes=predics,overRMSE=overRMSE,hypercount="none")
 fail.try.main<-F  
 })
+if(!fail.try.main){
+  #object=sl_lasso; newdata=X_holdout
+  custom_predict <- function(object, newdata) {
+    pred <- predict(object, newdata, onlySL = T)$pred
+    return(pred)
+  }
+  varimperm(custom_predict=custom_predict, modeltp=sl_lasso,
+            X=X_holdout, Y=Y_holdout, metpack = "SL1_hold")
+  #varimperm(custom_predict=custom_predict, modeltp=sl_lasso, X=X_train, Y=Y_train, metpack = "SL1_train")
+}
 
   if(fail.try.main){    
     print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
