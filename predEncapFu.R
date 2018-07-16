@@ -64,37 +64,7 @@ set.seed(seed=seed.var)
 return(F)
 }
 
-varimprint<-function(metpack="unk",colNms=colNms,colImpor=colImpor){
-  ########VARIEBLE IMPORTANCE
-  fail.try.vif=T
-  try({ 
-    #noVarImp.models=c("parRF")#var imp crashes with these models
-    #if(allmodel %in% noVarImp.models){next()}#
-    if(mean.improvement<0){mean.improvement=0}
-    Rseed<-.Random.seed[1]
-    Cseed<-.Random.seed[2]
 
-    varImpMix<-""#varImpMix<-vector(mode="character",length = length(colNms)*2)
-    for(i in 1:length(colNms)){
-      #varImpMix[i*2]<-colNms[i] ; varImpMix[i*2+1]<-colImpor[i]
-      varImpMix<-paste(varImpMix,colNms[i],colImpor[i], sep = ",")
-    }
-    write.table(paste(metpack,allmodel,date(),round(mean.improvement,digits=3),trans.y,
-                      datasource,missingdata,withextra,norming,which.computer,task.subject,
-                      FN,high.fold,Rseed,Cseed,seed.var,
-                      varImpMix,  sep = ","),
-                file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
-    fail.try.vif=F
-  })
-  if (fail.try.vif==T) {
-    write.table(paste(metpack,allmodel,date(),"FAIL",  sep = ","),
-                file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
-  }
-}
 #Input: predictions,  overrmse, hyperparams or not
 #Input thats just envirnoment: Many precalculated scores, y.untrans, loess.model, foldtrain & FN
 #only output is printing
@@ -193,8 +163,6 @@ for(i in 1:length(testIndex)){
   InxdPred[i*2]<-testIndex[i] 
   InxdPred[i*2+1]<-signif(predicted.outcomes[i],digits = 3)
 }
-
-
 
 writeout<- paste(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                    signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,

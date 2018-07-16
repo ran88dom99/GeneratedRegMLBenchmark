@@ -1,5 +1,10 @@
 This project is licensed under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE license.
 # GeneratedRegMLBenchmark
+For expiraments see wiki and folders containing [number]th. Files named minnrec especially. 
+
+To regress on your own data add your data with target column 1 to Generats folder and name of file to More Generators.R. Then run Multiple Generators.R. Look up number of your file in gensnames and make that the only number in ModelTesterAllAuto.R 's line 51. There are any options and no documentation soo good luck. 
+
+old:
 Testing what the machine learning algorithms of R-caret can detect.
 
 First run completed. R version 332, 100 datapoints, 5x3 repeated cv , 16 random hyper-parameter tests. 

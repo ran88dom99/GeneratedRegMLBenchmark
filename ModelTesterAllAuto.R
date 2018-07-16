@@ -1,4 +1,4 @@
-try({library(lintr)})
+#try({library(lintr)})
 options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 ## capture messages and errors to a file.https://rweb.crmda.ku.edu/cran/
 #zz <- file("all.Rout", open="wt")https://cran.cnr.berkeley.edu
@@ -14,14 +14,20 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 memory.limit()
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"outg15th10hp10cv"#"carEnstest3"#
-if(which.computer=="ALTA") {task.subject<-"carEnstest4"}
-pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTAF")#T,"HOPPER"
-pc.smallR<-c("HOPPER","ALTA","ACEREBOUTf")
-if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
+#next iteration requires spearman correlation, regeneration including same 100, reselection to testrun  
+pc.tpot=F
+pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTA")#T,"HOPPER"
+pc.smallR<-c("HOPPER","ALTAt","ACEREBOUTf")
+if(which.computer=="ALTA") 
+  {task.subject<-"carEnstest4";.libPaths("D:/R library/3.4")}
+if(which.computer=="ACEREBOUT") 
+  {task.subject<-"hffoldreccTPOT";pc.tpot=T}
+
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
 
 source("predEncapFu.R")
+source("VarImpFunc.R")
 #if(exists("base.folder")){setwd(base.folder)}
 base.folder<-getwd()
 cpout.folder<-paste(base.folder,"/",which.computer,sep = "")
@@ -69,9 +75,13 @@ if(!exists("preve.pram")) pram.cycle<-F
 ########packages install check######
 
 #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
-#list.of.packages <- c("gower","dimRed","DEoptimR","caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees","fda.usc","FDboost","LiblineaR")
-#new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-#if(length(new.packages)) install.packages(new.packages, dep = TRUE)
+list.of.packages <- c("AlgDesign","LearnBayes","httpuv","DALEX","gower","dimRed","DEoptimR","caretEnsemble","logicFS",
+                      " RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn",
+                      "foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred",
+                      "elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm",
+                      "quantregForest","ranger","inTrees","fda.usc","FDboost","LiblineaR")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
 
 #install.packages("mlr", dependencies = c("Depends", "Suggests"))
@@ -408,7 +418,10 @@ for(gend.data in gensTTest){
           gc()
 
           setwd(base.folder)
-          
+          if((pc.tpot==T)){
+            source("pytptall.R")
+            setwd(base.folder)
+            }
           #stop()
           if(max(which.computer==pc.mlr)>0){
             source("MLR part.R")
@@ -420,14 +433,14 @@ for(gend.data in gensTTest){
             setwd(base.folder)
             source("autoH2Oallmodel.R")
             setwd(base.folder)
+            
             source("SuperLearnerAllmodel.R")
             setwd(base.folder)
             source("subsemble.R")
             setwd(base.folder)
             source("SuperSuperAll.R")
             setwd(base.folder)
-            
-            
+
           } else {
             source("Caret part.R")
             setwd(base.folder)
