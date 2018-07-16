@@ -17,8 +17,10 @@ task.subject<-"outg15th10hp10cv"#"carEnstest3"#
 #next iteration requires spearman correlation, regeneration including same 100, reselection to testrun  
 pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTA")#T,"HOPPER"
 pc.smallR<-c("HOPPER","ALTAt","ACEREBOUTf")
-if(which.computer=="ALTA") {task.subject<-"carEnstest4";.libPaths("D:/R library/3.4")}
-if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
+if(which.computer=="ALTA") 
+  {task.subject<-"carEnstest4";.libPaths("D:/R library/3.4")}
+if(which.computer=="ACEREBOUT") 
+  {task.subject<-"hffoldreccTPOT";pc.tpot=T}
 
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
@@ -72,9 +74,9 @@ if(!exists("preve.pram")) pram.cycle<-F
 ########packages install check######
 
 #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
-#list.of.packages <- c("gower","dimRed","DEoptimR","caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees","fda.usc","FDboost","LiblineaR")
-#new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-#if(length(new.packages)) install.packages(new.packages, dep = TRUE)
+list.of.packages <- c("httpuv","DALEX","gower","dimRed","DEoptimR","caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees","fda.usc","FDboost","LiblineaR")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
 
 #install.packages("mlr", dependencies = c("Depends", "Suggests"))
@@ -411,7 +413,10 @@ for(gend.data in gensTTest){
           gc()
 
           setwd(base.folder)
-          
+          if((pc.tpot==T)){
+            source("pytptall.R")
+            setwd(base.folder)
+            }
           #stop()
           if(max(which.computer==pc.mlr)>0){
             source("MLR part.R")

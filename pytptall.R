@@ -6,7 +6,7 @@ tuneLengthBack<-tuneLength
 setwd(cpout.folder)
 for(retpop in c(25,75)){
   for(offsprig in c(50,300)){
-    for(itr in c(3,4,5,6,8,10,12,15,18,21,25,29,33,38)){#c(3,4,5,6,8,10,12,15,18,21,25,29,33,38),100,300)
+    for(itr in c(5,8,12,18,25,33,41)){#c(3,4,5,6,8,10,12,15,18,21,25,29,33,38),100,300)
   earlystop<-10
   #onepipmin<-40
   
@@ -32,7 +32,7 @@ for(retpop in c(25,75)){
       offspring_size = r_to_py(as.integer(offsprig))
       cv = r_to_py(as.integer(itr))
       random_state = r_to_py(as.integer(seed.var))
-      generationcount = r_to_py(as.integer(300))
+      generationcount = r_to_py(as.integer(300))#)early_stop=early_stop,
       early_stop = r_to_py(as.integer(earlystop))
       mins_onapipe = r_to_py(as.integer(40))
       checkpoint_folder = r_to_py("tpot")
@@ -47,7 +47,7 @@ for(retpop in c(25,75)){
       ztpot <- tpot$TPOTRegressor(generations=generationcount, population_size=retainpopulation,cv=cv,
                                 offspring_size=offspring_size,early_stop=early_stop,max_eval_time_mins=mins_onapipe,
                                 periodic_checkpoint_folder=checkpoint_folder,random_state =random_state,verbosity=2)
-      
+      print(ztpot)
       
       X_train <- r_to_py(training[,-1])
       Y_train <- r_to_py(training[,1])
@@ -96,7 +96,20 @@ for(retpop in c(25,75)){
       fail.try<-F
     }
   })
-  
+  if(fail.try==F) {
+    #X_holdout <- r_to_py(testing[,-1])
+    #predictions <- ztpot$predict(X_holdout)
+    try({ 
+      custom_predict <- function(object, newdata) {
+        newdata2 <- r_to_py(newdata)
+        pred <- object$predict(newdata2) 
+        return(pred)
+      }
+      varimperm(custom_predict=custom_predict, modeltp=ztpot,
+                X=testing[,-1], Y=testing[,1], metpack = "TPOT_hold",
+                n_sample = 10000)
+  })
+  }
   if(fail.try==T) {
     print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
     write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
@@ -109,4 +122,4 @@ for(retpop in c(25,75)){
  }
 }
 adaptControl <- adContBack
-tuneLengthBack -> tuneLength
+tuneLength <- tuneLengthBack
