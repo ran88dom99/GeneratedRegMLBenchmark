@@ -15,8 +15,8 @@ memory.limit()
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"outg15th10hp10cv"#"carEnstest3"#
 #next iteration requires spearman correlation, regeneration including same 100, reselection to testrun  
-pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTA")#T,"HOPPER"
-pc.smallR<-c("HOPPER","ALTAt","ACEREBOUTf")
+pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTAt")#T,"HOPPER"
+pc.smallR<-c("HOPPER","ALTA","ACEREBOUTf")
 if(which.computer=="ALTA") {task.subject<-"carEnstest4";.libPaths("D:/R library/3.4")}
 if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
 
