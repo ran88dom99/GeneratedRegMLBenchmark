@@ -17,7 +17,7 @@ task.subject<-"outg15th10hp10cv"#"carEnstest3"#
 if(which.computer=="ALTA") {task.subject<-"carEnstest4"}
 pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTAF")#T,"HOPPER"
 pc.smallR<-c("HOPPER","ALTA","ACEREBOUTf")
-if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecc20hp20cv20hf"
+if(which.computer=="ACEREBOUT") task.subject<-"hffoldrecctpot"
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
 
