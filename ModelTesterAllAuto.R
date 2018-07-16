@@ -15,6 +15,7 @@ memory.limit()
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"outg15th10hp10cv"#"carEnstest3"#
 #next iteration requires spearman correlation, regeneration including same 100, reselection to testrun  
+pc.tpot=F
 pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTA")#T,"HOPPER"
 pc.smallR<-c("HOPPER","ALTAt","ACEREBOUTf")
 if(which.computer=="ALTA") 
@@ -74,7 +75,11 @@ if(!exists("preve.pram")) pram.cycle<-F
 ########packages install check######
 
 #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
-list.of.packages <- c("httpuv","DALEX","gower","dimRed","DEoptimR","caretEnsemble","logicFS"," RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn","foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred","elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm","quantregForest","ranger","inTrees","fda.usc","FDboost","LiblineaR")
+list.of.packages <- c("AlgDesign","LearnBayes","httpuv","DALEX","gower","dimRed","DEoptimR","caretEnsemble","logicFS",
+                      " RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn",
+                      "foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred",
+                      "elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm",
+                      "quantregForest","ranger","inTrees","fda.usc","FDboost","LiblineaR")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
