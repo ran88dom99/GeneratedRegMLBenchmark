@@ -82,6 +82,17 @@ if(fail.try){
               col.names = F, qmethod = "double")
 } else {
   try({varimprint(metpack="h2oa",colNms=colNms,colImpor=colImpor)})
+    try({ 
+      custom_predict <- function(object, newdata) {
+        test <- as.h2o(newdata)
+        pred <- h2o.predict(object, test)
+        preddf<-as.data.frame(pred) 
+        return(preddf)
+      }
+      varimperm(custom_predict=custom_predict, modeltp=aml,
+               X=testing[,-1], Y=testing[,1], metpack = "h2oa_hold",n_sample = 1000)
+      #  varimperm(custom_predict=custom_predict, modeltp=sl_lasso, X=X_train, Y=Y_train, metpack = "SL1_train")
+    })
 }
 }
 try({h2o.shutdown(prompt = F)})
