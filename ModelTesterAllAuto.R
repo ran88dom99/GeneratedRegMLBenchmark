@@ -16,13 +16,15 @@ which.computer<-Sys.info()[['nodename']]
 task.subject<-"outg15th10hp10cv"#"carEnstest3"#
 #next iteration requires spearman correlation, regeneration including same 100, reselection to testrun  
 pc.tpot=F
-pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTA")#T,"HOPPER"
+pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTAy")#T,"HOPPER"
 pc.smallR<-c("HOPPER","ALTAt","ACEREBOUTf")
 if(which.computer=="ALTA") 
-  {task.subject<-"carEnstest4";.libPaths("D:/R library/3.4")}
+  {.libPaths("D:/R library/3.4");task.subject<-"carEnstest4";pc.tpot=T}
 if(which.computer=="ACEREBOUT") 
   {task.subject<-"hffoldreccTPOT";pc.tpot=T}
-
+if(which.computer=="HOPPER")
+  {pc.tpot=T}
+  
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
 
@@ -75,7 +77,7 @@ if(!exists("preve.pram")) pram.cycle<-F
 ########packages install check######
 
 #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
-list.of.packages <- c("AlgDesign","LearnBayes","httpuv","DALEX","gower","dimRed","DEoptimR","caretEnsemble","logicFS",
+list.of.packages <- c("reticulate","AlgDesign","LearnBayes","httpuv","DALEX","gower","dimRed","DEoptimR","caretEnsemble","logicFS",
                       " RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn",
                       "foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred",
                       "elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm",
