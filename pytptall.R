@@ -1,4 +1,5 @@
 library(reticulate)
+fail.try=T
 tpot <- import("tpot")
 #http://proceedings.mlr.press/v64/olson_tpot_2016.pdf
 adContBack<-adaptControl
