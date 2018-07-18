@@ -164,9 +164,9 @@ InxdPred<-vector(mode="double",length = length(testIndex)*2)
 for(i in 1:length(testIndex)){
   InxdPred[i*2]<-testIndex[i] 
   InxdPred[i*2+1]<-signif(predicted.outcomes[i],digits = 3)
-}
+}spearmanrho
 
-writeout<- paste(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
+writeout<- paste(c(round(spearmanrho,digits = 3),round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                    signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
                    trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,
                    Rseed,Cseed,seed.var,RMSE.mean,RMSE.mean.train,outCtrl$search,
@@ -184,6 +184,14 @@ write.table( writeout[1],
 print(date())
 }
 
+failfail<-function()
+{
+  print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,allmodel))
+  write.table(paste("Fail","Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
+              file = out.file, append =TRUE, quote = F, sep = ",",
+              eol = "\n", na = "NA", dec = ".", row.names = F,
+              col.names = F, qmethod = "double")  
+}
 
 ############bunch of scraps kept just in case########
 if(F){

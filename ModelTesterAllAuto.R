@@ -13,17 +13,17 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 memory.limit()
 which.computer<-Sys.info()[['nodename']]
-task.subject<-"firstfullPCAs"#"carEnstest3"#
-#next iteration requires spearman correlation, regeneration including same 100, reselection to testrun  
+task.subject<-"firstfullPCAs4bk"#"carEnstest3"#
+# regeneration including same 100, reselection to testrun  
 pc.tpot=F
-pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTAy")#T,"HOPPER"
-pc.smallR<-c("HOPPER","ALTAt","ACEREBOUTf")
+pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTA")#T,"HOPPER"
+pc.smallR<-c("HOPPER","ALTAt","ACEREBOUT")
 if(which.computer=="ALTA") 
-  {.libPaths("D:/R library/3.4");task.subject<-"carEnstest4";pc.tpot=T}
+  {.libPaths("D:/R library/3.4");pc.tpot=T}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
   {task.subject<-"hffoldreccTPOT";pc.tpot=T}
-if(which.computer=="HOPPER")
-  {pc.tpot=T}
+if(which.computer=="HOPPER"){pc.tpot=T}
+  
   
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
@@ -431,19 +431,17 @@ for(gend.data in gensTTest){
             
           } else {
           if(max(which.computer==pc.smallR)>0){
-            source("carEns3.R")
-            setwd(base.folder)
             source("autoH2Oallmodel.R")
             setwd(base.folder)
-            
             source("SuperLearnerAllmodel.R")
             setwd(base.folder)
             source("subsemble.R")
             setwd(base.folder)
             source("SuperSuperAll.R")
             setwd(base.folder)
-
           } else {
+            source("carEns3.R")
+            setwd(base.folder)
             source("Caret part.R")
             setwd(base.folder)
             }
