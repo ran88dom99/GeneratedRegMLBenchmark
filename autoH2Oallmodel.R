@@ -6,7 +6,7 @@
 setwd(cpout.folder)
 library(h2o)
 
-for(itr in c(.1,1,10,30)){
+for(itr in c(.1,1,10)){#,30
   fail.try=T
   
 try({

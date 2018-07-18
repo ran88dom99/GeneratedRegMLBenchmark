@@ -1,10 +1,11 @@
 library(reticulate)
+fail.try=T
 tpot <- import("tpot")
 #http://proceedings.mlr.press/v64/olson_tpot_2016.pdf
 adContBack<-adaptControl
 tuneLengthBack<-tuneLength
 setwd(cpout.folder)
-for(retpop in c(25,75)){
+for(retpop in c(75)){#25,
   for(offsprig in c(50,300)){
     for(itr in c(18,25,33,41)){#c(3,4,5,8,12,5,6,8,10,12,15,18,21,25,29,33,38),100,300)
   earlystop<-10
