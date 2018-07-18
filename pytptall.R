@@ -4,9 +4,9 @@ tpot <- import("tpot")
 adContBack<-adaptControl
 tuneLengthBack<-tuneLength
 setwd(cpout.folder)
-for(retpop in c(25,75)){
+for(retpop in c(25,1000)){
   for(offsprig in c(50,300)){
-    for(itr in c(5,8,12,18,25,33,41)){#c(3,4,5,6,8,10,12,15,18,21,25,29,33,38),100,300)
+    for(itr in c(18,25,33,41)){#5,8,12,c(3,4,5,6,8,10,12,15,18,21,25,29,33,38),100,300)
   earlystop<-10
   #onepipmin<-40
   
@@ -16,7 +16,8 @@ for(retpop in c(25,75)){
   adaptControl$adaptive$min <- earlystop
   adaptControl$number <- itr
   #<-onepipmin
-
+  fail.try=T
+  
   try({
     when <- proc.time()
     
@@ -38,8 +39,8 @@ for(retpop in c(25,75)){
       checkpoint_folder = r_to_py("tpot")
       pipefile = r_to_py(paste("tpot","pipe",".py",sep = ""))
     }
-    
-    if(!CrashNRep(allmodel)) {
+    CrashNRep(allmodel)
+    if(!F) {
       print(date())
       fail.try=T
 
