@@ -75,11 +75,7 @@ fail.try=F
 })
 
 if(fail.try){    
-  print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
-  write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
-              file = out.file, append =TRUE, quote = F, sep = ",",
-              eol = "\n", na = "NA", dec = ".", row.names = F,
-              col.names = F, qmethod = "double")
+failfail()
 } else {
   try({varimprint(metpack="h2oa",colNms=colNms,colImpor=colImpor)})
     try({ 
@@ -91,8 +87,9 @@ if(fail.try){
       }
       varimperm(custom_predict=custom_predict, modeltp=aml,
                X=testing[,-1], Y=testing[,1], metpack = "h2oa_hold",n_sample = 1000)
-      #  varimperm(custom_predict=custom_predict, modeltp=sl_lasso, X=X_train, Y=Y_train, metpack = "SL1_train")
-    })
+      varimperm(custom_predict=custom_predict, modeltp=aml,
+                X=training[,-1], Y=training[,1], metpack = "h2oa_train",n_sample = 1000)
+          })
 }
 }
 try({h2o.shutdown(prompt = F)})

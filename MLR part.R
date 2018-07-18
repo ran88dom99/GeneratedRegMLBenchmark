@@ -184,19 +184,12 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
       }
       varimperm(custom_predict=custom_predict, modeltp=m,
                 X=testing[,-1], Y=testing[,1], metpack = "mlr_hold")
-      #varimperm(custom_predict=custom_predict, modeltp=sl_lasso, X=X_train, Y=Y_train, metpack = "SL1_train")
+      varimperm(custom_predict=custom_predict, modeltp=m,
+                X=training[,-1], Y=training[,1], metpack = "mlr_train")
     })
   }
   if(not.failed==0) {
-    print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,allmodel))
-    write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1:2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
-                file = out.file, append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
-    write.table(paste("Fail",date(),allmodel,  sep = ", "),
-                file = "backup.csv", append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
+  failfail()
   }
  
 }
