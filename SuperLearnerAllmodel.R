@@ -83,14 +83,11 @@ if(!fail.try.main){
   }
   varimperm(custom_predict=custom_predict, modeltp=sl_lasso,
             X=X_holdout, Y=Y_holdout, metpack = "SL1_hold")
-  #varimperm(custom_predict=custom_predict, modeltp=sl_lasso, X=X_train, Y=Y_train, metpack = "SL1_train")
-}
+  varimperm(custom_predict=custom_predict, modeltp=sl_lasso,
+            X=X_train, Y=Y_train, metpack = "SL1_train")
+  }
 
   if(fail.try.main){    
-    print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
-    write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
-                file = out.file, append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
+failfail()
   }
 }

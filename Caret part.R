@@ -121,11 +121,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     })
   }
   if(not.failed==0) {
-    print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
-    write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
-                file = out.file, append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
+failfail()
   }
   if(not.failed==1) {
     fail.try=T
@@ -161,8 +157,9 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
           return(pred)
         }
         varimperm(custom_predict=custom_predict, modeltp=trainedmodel,
-                  X=testing[,-1], Y=testing[,1],, metpack = "caret_hold")
-        #varimperm(custom_predict=custom_predict, modeltp=sl_lasso, X=X_train, Y=Y_train, metpack = "SL1_train")
+                  X=testing[,-1], Y=testing[,1], metpack = "caret_hold")
+        varimperm(custom_predict=custom_predict, modeltp=trainedmodel,
+                  X=training[,-1], Y=training[,1], metpack = "caret_train")
       })
     }
     if(fail.try==T){

@@ -13,17 +13,17 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 memory.limit()
 which.computer<-Sys.info()[['nodename']]
-task.subject<-"outg15th10hp10cv"#"carEnstest3"#
-#next iteration requires spearman correlation, regeneration including same 100, reselection to testrun  
+task.subject<-"firstfullPCAs4bk"#"carEnstest3"#
+# regeneration including same 100, reselection to testrun  
 pc.tpot=F
-pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTAy")#T,"HOPPER"
-pc.smallR<-c("HOPPER","ALTAt","ACEREBOUTf")
+pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTA")#T,"HOPPER"
+pc.smallR<-c("HOPPER","ALTAt","ACEREBOUT")
 if(which.computer=="ALTA") 
-  {.libPaths("D:/R library/3.4");task.subject<-"carEnstest4";pc.tpot=T}
+  {.libPaths("D:/R library/3.4");pc.tpot=T}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
   {task.subject<-"hffoldreccTPOT";pc.tpot=T}
-if(which.computer=="HOPPER")
-  {pc.tpot=T}
+if(which.computer=="HOPPER"){pc.tpot=T}
+  
   
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
@@ -42,9 +42,9 @@ if(length(which(list.files() == out.file))<1){
 if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,".csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 #if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F
 
-high.fold=5
-min.high.fold=3
-cv.iters=10
+high.fold=20
+min.high.fold=5
+cv.iters=20
 tuneLength=10
 tuneLength2=4
 normings=c("asis","range01","centernscale","all","YeoJohnson","quantile","PCA","ICA","expoTrans")#,"centernscale"
@@ -53,7 +53,7 @@ if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=20;high.fold=20}
 
 
 pram.cycle<-T
-gensTTesto<-c(56,53,4,12,13,14,15,20,45,54,55,44,3,1)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+gensTTesto<-c(71,72)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
 write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 try({
@@ -431,19 +431,17 @@ for(gend.data in gensTTest){
             
           } else {
           if(max(which.computer==pc.smallR)>0){
-            source("carEns3.R")
-            setwd(base.folder)
             source("autoH2Oallmodel.R")
             setwd(base.folder)
-            
             source("SuperLearnerAllmodel.R")
             setwd(base.folder)
             source("subsemble.R")
             setwd(base.folder)
             source("SuperSuperAll.R")
             setwd(base.folder)
-
           } else {
+            source("carEns3.R")
+            setwd(base.folder)
             source("Caret part.R")
             setwd(base.folder)
             }
