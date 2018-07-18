@@ -91,6 +91,8 @@ printPredMets<-function(predicted.outcomes=predicted.outcomes,trainpred="none",o
   #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
   RMSEp=RMSE(p[,1],p[,2])
   MMAAEE=MAE(p[,1],p[,2])
+  spearmanrho<-NA_integer_
+  spearmanrho<-cor(x=p[,1],y=p[,2],use="complete.obs",method = "spearman")
   #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)  
   #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
   #RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
