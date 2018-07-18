@@ -164,7 +164,7 @@ InxdPred<-vector(mode="double",length = length(testIndex)*2)
 for(i in 1:length(testIndex)){
   InxdPred[i*2]<-testIndex[i] 
   InxdPred[i*2+1]<-signif(predicted.outcomes[i],digits = 3)
-}spearmanrho
+} 
 
 writeout<- paste(c(round(spearmanrho,digits = 3),round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                    signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
