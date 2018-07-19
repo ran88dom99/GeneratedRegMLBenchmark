@@ -1,12 +1,13 @@
 #ExplDALEX for allmodel
 library("DALEX")
 
-varimperm<-function(custom_predict, modeltp, X, Y, n_sample = 1000, metpack = "unk")
+varimperm<-function(custom_predict, modeltp, X, Y, n_sample = 200, metpack = "unk")
   {
   ###VARIEBLE IMPORTANCE USING FRIEDMANS PERMUTE
   #n_sample : time to spend 
   #metpack is just an addition to name
   fail.try.vif=T
+  if(mean.improvement<.05){return(NULL)}
   try({ 
     when<-proc.time()
     set.seed(seed=seed.var)
@@ -18,7 +19,7 @@ varimperm<-function(custom_predict, modeltp, X, Y, n_sample = 1000, metpack = "u
 
     #noVarImp.models=c("parRF")#var imp crashes with these models
     #if(allmodel %in% noVarImp.models){next()}#
-    if(mean.improvement<0){mean.improvement=0}
+
     Rseed<-.Random.seed[1]
     Cseed<-.Random.seed[2]
     metpack<-paste(metpack,"permute",sep = "_")
