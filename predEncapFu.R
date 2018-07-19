@@ -4,14 +4,14 @@
 check.redundant<-function(df=df.previous.calcs,norming="asis",trans.y=1,withextra="missing",missingdata="leaveempty",datasource="mean" ,column.to.predict=200,allmodel="ctree",FN=1)
 {
   for(intern in 1:length(df[,1])){
-    if((any(df[intern,11:16] == norming, na.rm=T))&&
-       (any(df[intern,10:16] == withextra, na.rm=T))&&
-       (any(df[intern,10:16] == missingdata, na.rm=T))&&
-       (any(df[intern,9:16] == datasource, na.rm=T))&&
-       (any(df[intern,6:9] == column.to.predict, na.rm=T))&&
-       (any(df[intern,5:9] == allmodel, na.rm=T))&&
-       (any(df[intern,15:17] == FN, na.rm=T))&&
-       (  (df[intern,9] == trans.y)))
+    if((any(df[intern,11:17] == norming, na.rm=T))&&
+       (any(df[intern,10:17] == withextra, na.rm=T))&&
+       (any(df[intern,10:17] == missingdata, na.rm=T))&&
+       (any(df[intern,9:17] == datasource, na.rm=T))&&
+       (any(df[intern,6:10] == column.to.predict, na.rm=T))&&
+       (any(df[intern,5:10] == allmodel, na.rm=T))&&
+       (any(df[intern,15:18] == FN, na.rm=T))&&
+       (  (df[intern,10] == trans.y)))
     {return(TRUE)}
   }
   return(FALSE)
@@ -92,7 +92,7 @@ printPredMets<-function(predicted.outcomes=predicted.outcomes,trainpred="none",o
   RMSEp=RMSE(p[,1],p[,2])
   MMAAEE=MAE(p[,1],p[,2])
   spearmanrhosqrd<-NA_integer_
-  spearmanrhosqrd<-(cor(x=p[,1],y=p[,2],use="complete.obs",method = "spearman"))^2
+  spearmanrhosqrd<-(cor(x=p[,1],y=p[,2],use="complete.obs",method = "spearman"))*abs(cor(x=p[,1],y=p[,2],use="complete.obs",method = "spearman"))
   #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)  
   #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
   #RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
