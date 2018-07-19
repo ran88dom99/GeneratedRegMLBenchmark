@@ -70,8 +70,9 @@ varimportant<-as.data.frame(h2o.varimp(aml@leader))
 print(varimportant)
 colNms<-as.vector(varimportant$variable)
 colImpor<-signif(varimportant$scaled_importance,digits = 3)
-}
 fail.try=F
+}
+
 })
 
 if(fail.try){    

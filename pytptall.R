@@ -1,13 +1,12 @@
 library(reticulate)
-fail.try=T
 tpot <- import("tpot")
 #http://proceedings.mlr.press/v64/olson_tpot_2016.pdf
 adContBack<-adaptControl
 tuneLengthBack<-tuneLength
 setwd(cpout.folder)
-for(retpop in c(75)){#25,
+for(retpop in c(25,1000)){
   for(offsprig in c(50,300)){
-    for(itr in c(18,25,33,41)){#c(3,4,5,8,12,5,6,8,10,12,15,18,21,25,29,33,38),100,300)
+    for(itr in c(18,25,33,41)){#5,8,12,c(3,4,5,6,8,10,12,15,18,21,25,29,33,38),100,300)
   earlystop<-10
   #onepipmin<-40
   
@@ -17,7 +16,8 @@ for(retpop in c(75)){#25,
   adaptControl$adaptive$min <- earlystop
   adaptControl$number <- itr
   #<-onepipmin
-
+  fail.try=T
+  
   try({
     when <- proc.time()
     
@@ -39,8 +39,8 @@ for(retpop in c(75)){#25,
       checkpoint_folder = r_to_py("tpot")
       pipefile = r_to_py(paste("tpot","pipe",".py",sep = ""))
     }
-    
-    if(!CrashNRep(allmodel)) {
+    CrashNRep(allmodel)
+    if(!F) {
       print(date())
       fail.try=T
 
@@ -109,13 +109,14 @@ for(retpop in c(75)){#25,
       varimperm(custom_predict=custom_predict, modeltp=ztpot,
                 X=testing[,-1], Y=testing[,1], metpack = "TPOT_hold",
                 n_sample = 10000)
-      varimperm(custom_predict=custom_predict, modeltp=ztpot,
-                X=training[,-1], Y=training[,1], metpack = "TPOT_train",
-                n_sample = 10000)
   })
   }
   if(fail.try==T) {
-  failfail()  
+    print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
+    write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
+                file = out.file, append =TRUE, quote = F, sep = ",",
+                eol = "\n", na = "NA", dec = ".", row.names = F,
+                col.names = F, qmethod = "double")    
   }
 
   }
