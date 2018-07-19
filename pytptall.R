@@ -35,7 +35,7 @@ for(retpop in c(25,1000)){
       random_state = r_to_py(as.integer(seed.var))
       generationcount = r_to_py(as.integer(300))#)early_stop=early_stop,
       early_stop = r_to_py(as.integer(earlystop))
-      mins_onapipe = r_to_py(as.integer(40))
+      mins_onapipe = r_to_py(as.integer(20))
       checkpoint_folder = r_to_py("tpot")
       pipefile = r_to_py(paste("tpot","pipe",".py",sep = ""))
     }

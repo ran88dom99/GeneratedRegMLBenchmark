@@ -16,8 +16,9 @@ which.computer<-Sys.info()[['nodename']]
 task.subject<-"firstfullPCAs4bk"#"carEnstest3"#
 # regeneration including same 100, reselection to testrun  
 pc.tpot=F
-pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTAt")#T,"HOPPER"
-pc.smallR<-c("HOPPER","ALTA","ACEREBOUT")
+skip.caret=F
+pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTA")#T,"HOPPER"
+pc.smallR<-c("HOPPER","ALTAt","ACEREBOUT")
 if(which.computer=="ALTA") 
   {.libPaths("D:/R library/3.4");pc.tpot=T}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
@@ -436,10 +437,12 @@ for(gend.data in gensTTest){
             source("SuperSuperAll.R")
             setwd(base.folder)
           } else {
-            source("carEns3.R")
-            setwd(base.folder)
-            source("Caret part.R")
-            setwd(base.folder)
+            if(skip.caret){
+             source("carEns3.R")
+             setwd(base.folder)
+             source("Caret part.R")
+             setwd(base.folder)
+            }
             }
           }
           if((pc.tpot==T)){

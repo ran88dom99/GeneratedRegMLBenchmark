@@ -91,8 +91,8 @@ printPredMets<-function(predicted.outcomes=predicted.outcomes,trainpred="none",o
   #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
   RMSEp=RMSE(p[,1],p[,2])
   MMAAEE=MAE(p[,1],p[,2])
-  spearmanrho<-NA_integer_
-  spearmanrho<-cor(x=p[,1],y=p[,2],use="complete.obs",method = "spearman")
+  spearmanrhosqrd<-NA_integer_
+  spearmanrhosqrd<-(cor(x=p[,1],y=p[,2],use="complete.obs",method = "spearman"))^2
   #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)  
   #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
   #RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
@@ -164,9 +164,9 @@ InxdPred<-vector(mode="double",length = length(testIndex)*2)
 for(i in 1:length(testIndex)){
   InxdPred[i*2]<-testIndex[i] 
   InxdPred[i*2+1]<-signif(predicted.outcomes[i],digits = 3)
-} 
+}
 
-writeout<- paste(c(round(spearmanrho,digits = 3),round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
+writeout<- paste(c(round(spearmanrhosqrd,digits = 3),round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                    signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
                    trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,
                    Rseed,Cseed,seed.var,RMSE.mean,RMSE.mean.train,outCtrl$search,
