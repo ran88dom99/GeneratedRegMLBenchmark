@@ -25,8 +25,6 @@ x <- setdiff(names(train), y)
 #train[,y] <- as.factor(train[,y])
 #test[,y] <- as.factor(test[,y])
 
-
-
   maxrun<-itr*tuneLength
   allmodel<-paste("h2oAutoml",as.character(maxrun),sep = " ")
   write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
@@ -68,8 +66,8 @@ printPredMets(predicted.outcomes=preddf,overRMSE=overRMSE,hypercount="full",libp
 
 varimportant<-as.data.frame(h2o.varimp(aml@leader))
 print(varimportant)
-colNms<-as.vector(varimportant$variable)
-colImpor<-signif(varimportant$scaled_importance,digits = 3)
+colNms<-as.vector(varimportant$names)
+colImpor<-signif(varimportant$coefficients,digits = 3)
 fail.try=F
 }
 
