@@ -1,14 +1,21 @@
- try the newest R Exploratory for recanyend (there are multiple) 
+Imputation/normalization -> nothing, row; mean median, subtract this center?,  
+Various PCA factorization and other PP   ->
+column selection via mars cubist tree etc. ->
+tpot so long as it can V2*V3 and ifs V5 on V3 V4 
+
+Alt. Let Tpot pick the columns with built in feature selection
+Alt. Stack tpot on top of pca of correlated.pearson/spearman and mean like before but up the correl search
+ 
+ 
+ 
  onlinePCA finaly try every PCA (selected, similar, absolutely all)
  
- predicitions dataset
- encap each ending 
- GSG - GNU site
+ GSG - GNU site?
 
 SKIP
 #explains well the few models it can run. not worth it imho
 #install.packages("CORElearn")
-# too old not easy enough
+#too old not easy enough
 #install.packages("rminer")
 NEED DOCKER OR LINUX OR WIN10
 aurosklearn#https://github.com/automl/auto-sklearn/issues/431
