@@ -6,20 +6,13 @@
 setwd(cpout.folder)
 library(h2o)
 
+
+fail.try=F
 for(itr in c(.1,1,10)){#,30
-  fail.try=T
+
   
 try({
   when<-proc.time()
-h2o.init()
-
-# Import a sample binary outcome train/test set into H2O
-train <- as.h2o(training)
-test <- as.h2o(testing)
-
-# Identify predictors and response
-y <- "V1"
-x <- setdiff(names(train), y)
 
 # For binary classification, response should be a factor
 #train[,y] <- as.factor(train[,y])
@@ -29,8 +22,21 @@ x <- setdiff(names(train), y)
   allmodel<-paste("h2oAutoml",as.character(maxrun),sep = " ")
   write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
   write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
-  
+
   if(!CrashNRep(allmodel)) {
+    fail.try=T
+    h2o.init()
+    
+    # Import a sample binary outcome train/test set into H2O
+    train <- as.h2o(training)
+    test <- as.h2o(testing)
+    
+    # Identify predictors and response
+    y <- "V1"
+    x <- setdiff(names(train), y)
+    
+    
+    
 aml <- h2o.automl( x=x, y = y,
                    max_runtime_secs = maxrun*60,
                    nfolds=cv.iters, seed=seed.var,
@@ -69,9 +75,6 @@ print(varimportant)
 colNms<-as.vector(varimportant$names)
 colImpor<-signif(varimportant$coefficients,digits = 3)
 fail.try=F
-}
-
-})
 
 if(fail.try){    
 failfail()
@@ -90,5 +93,10 @@ failfail()
                 X=training[,-1], Y=training[,1], metpack = "h2oa_train",n_sample = 1000)
           })
 }
+}
+
+})
+
+
 }
 try({h2o.shutdown(prompt = F)})

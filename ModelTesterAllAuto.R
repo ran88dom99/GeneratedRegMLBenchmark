@@ -16,14 +16,14 @@ which.computer<-Sys.info()[['nodename']]
 task.subject<-"firstfullPCAs4bk"#"carEnstest3"#
 # regeneration including same 100, reselection to testrun  
 pc.tpot=F
-skip.caret=F
+pc.caret=T
 pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTA")#T,"HOPPER"
 pc.smallR<-c("HOPPER","ALTAt","ACEREBOUT")
 if(which.computer=="ALTA") 
-  {.libPaths("D:/R library/3.4");pc.tpot=T}#;task.subject<-"carEnstest4"
+  {.libPaths("D:/R library/3.4");pc.tpot=T;pc.caret=F}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
-  {pc.tpot=T}#task.subject<-"hffoldreccTPOT";
-if(which.computer=="HOPPER"){pc.tpot=T}
+  {pc.tpot=T;pc.caret=F}#task.subject<-"hffoldreccTPOT";
+if(which.computer=="HOPPER"){pc.tpot=T;pc.caret=F}
   
   
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
@@ -421,6 +421,10 @@ for(gend.data in gensTTest){
           gc()
 
           setwd(base.folder)
+          if((pc.tpot==T)){
+            source("pytptall.R")
+            setwd(base.folder)
+          }
           #stop()
           if(max(which.computer==pc.mlr)>0){
             source("MLR part.R")
@@ -432,12 +436,12 @@ for(gend.data in gensTTest){
             setwd(base.folder)
             source("SuperLearnerAllmodel.R")
             setwd(base.folder)
-            source("subsemble.R")
+            #source("subsemble.R")
             setwd(base.folder)
             source("SuperSuperAll.R")
             setwd(base.folder)
           } else {
-            if(skip.caret){
+            if(pc.caret){
              source("carEns3.R")
              setwd(base.folder)
              source("Caret part.R")
@@ -445,10 +449,8 @@ for(gend.data in gensTTest){
             }
             }
           }
-          if((pc.tpot==T)){
-            source("pytptall.R")
-            setwd(base.folder)
-          }
+          
+
          setwd(cpout.folder)
           if(norming == normings[length(normings)]){
             if(count.toy.data.passed>length(gensTTest)){gensTTest<-c(gensTTesto)}
