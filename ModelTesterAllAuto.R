@@ -20,7 +20,7 @@ skip.caret=F
 pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTA")#T,"HOPPER"
 pc.smallR<-c("HOPPER","ALTAt","ACEREBOUT")
 if(which.computer=="ALTA") 
-  {.libPaths("D:/R library/3.4");pc.tpot=T}#;task.subject<-"carEnstest4"
+  {.libPaths("D:/R library/3.4");pc.tpot=F}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
   {pc.tpot=T}#task.subject<-"hffoldreccTPOT";
 if(which.computer=="HOPPER"){pc.tpot=T}
