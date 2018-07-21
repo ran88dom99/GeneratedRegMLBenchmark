@@ -188,6 +188,7 @@ for(gend.data in gensTTest){
   count.toy.data.passed<-count.toy.data.passed+1
   setwd(base.folder)
   data.source<-as.matrix(read.csv(paste("Generats/",gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+  head(data.source)
   datasource<-gens.names[gend.data,1]
   setwd(cpout.folder)
   missingdatas=c("ignore")

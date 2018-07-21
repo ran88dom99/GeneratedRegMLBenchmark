@@ -27,3 +27,5 @@ Thu Jul 19 15:14:22 2018,SL.glm.interaction,4thPCALL,20,10,windows,i386,ALTA
 Thu Jul 19 15:58:56 2018,h2oAutoml 100,4thPCALL,20,10,windows,i386,ALTA
 Thu Jul 19 16:07:02 2018,h2oAutoml 10,4thPCALL,20,10,windows,i386,ALTA
 Fri Jul 20 00:48:58 2018,regr.xgboost,4thPCALL,20,10,windows,i386,ALTA
+Fri Jul 20 11:49:06 2018,regr.extraTrees,4thPCALL,20,10,windows,i386,ALTA
+Fri Jul 20 11:56:17 2018,regr.extraTrees,4thPCALL,20,10,windows,i386,ALTA
