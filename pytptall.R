@@ -8,43 +8,42 @@ for(retpop in c(25,1000)){
   for(offsprig in c(50,300)){
     for(itr in c(5,12,21,41)){#5,8,12,c(3,4,5,6,8,10,12,15,18,21,25,29,33,38),100,300)
   earlystop<-10
-  #onepipmin<-40
+  onepipmin<-40
   
   adaptControl$search <- "genetic"
   tuneLength <- retpop
   adaptControl$repeats <- offsprig
   adaptControl$adaptive$min <- earlystop
   adaptControl$number <- itr
-  #<-onepipmin
+  adaptControl$method <- onepipmin
   fail.try=T
   
   try({
     when <- proc.time()
     
-    allmodel<-paste("TPOT",as.character(itr),sep = " ")
+    timechecksum<-((retpop+offsprig*earlystop)*itr*onepipmin)/((25+25*2)*3*5)
+    timechecksum<-round(timechecksum)
+    allmodel<-paste(as.character(timechecksum),"TPOT",sep = "")
     write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
     write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
 
-
-    
     seed.var
     if(T){
       retainpopulation = r_to_py(as.integer(retpop))
       offspring_size = r_to_py(as.integer(offsprig))
       cv = r_to_py(as.integer(itr))
       random_state = r_to_py(as.integer(seed.var))
-      generationcount = r_to_py(as.integer(300))#)early_stop=early_stop,
+      generationcount = r_to_py(as.integer(400))#)early_stop=early_stop,
       early_stop = r_to_py(as.integer(earlystop))
-      mins_onapipe = r_to_py(as.integer(20))
+      mins_onapipe = r_to_py(as.integer(onepipmin))
       checkpoint_folder = r_to_py("tpot")
       pipefile = r_to_py(paste("tpot","pipe",".py",sep = ""))
     }
-    CrashNRep(allmodel)
-    if(!F) {
+    if(CrashNRep(allmodel)) next()
+
       print(date())
       fail.try=T
 
-      
       ztpot <- tpot$TPOTRegressor(generations=generationcount, population_size=retainpopulation,cv=cv,
                                 offspring_size=offspring_size,early_stop=early_stop,max_eval_time_mins=mins_onapipe,
                                 periodic_checkpoint_folder=checkpoint_folder,random_state =random_state,verbosity=2)
@@ -62,11 +61,13 @@ for(retpop in c(25,1000)){
       predictions <- ztpot$predict(X_holdout)
       predicttt <- RMSE(predictions,py_to_r(Y_holdout))
       print(predicttt)
+      print(prde)
+      print(predictions)
       
       fail.grep<-T
       try({
       ztpot$export(pipefile)
-      movethepot <- paste0("tpot/",round((predicttt)*100),datasource,".py")
+      movethepot <- paste("tpot/",round((predicttt)*100),datasource,timechecksum,".py",sep = "_")
       file.copy(as.character(pipefile),as.character(movethepot[1]))
       
 
@@ -95,7 +96,7 @@ for(retpop in c(25,1000)){
       }
       
       fail.try<-F
-    }
+    
   })
   if(fail.try==F) {
     #X_holdout <- r_to_py(testing[,-1])
@@ -112,11 +113,7 @@ for(retpop in c(25,1000)){
   })
   }
   if(fail.try==T) {
-    print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
-    write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
-                file = out.file, append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")    
+    failfail() 
   }
 
   }
