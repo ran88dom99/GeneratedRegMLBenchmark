@@ -344,3 +344,8 @@ NA,-0.156,0,1,0.691,0.578,Fri Jul 20 10:45:43 2018,regr.cvglmnet,1,2,4thPCALL,ig
 Fail,Fail,Fail,Fail,PrePackageFail,Fri Jul 20 10:45:48 2018,regr.earth,1,2,4thPCALL,ignore,none,asis,ALTA,firstfullPCAs4bk,5,20,5
 0.42,-0.181,0.056,1.16,0.652,0.59,Fri Jul 20 10:45:51 2018,regr.elmNN,1,2,4thPCALL,ignore,none,asis,ALTA,firstfullPCAs4bk,5,20,403,178,222,0.6905,1.004,random,0,nohyperparameters,1,20,no rep,no min,,,,,,0,15,3.92,55,3.82,60,4.71,98,3.58,109,3.65,116,3.5
 Fail,Fail,Fail,Fail,PrePackageFail,Fri Jul 20 10:45:53 2018,regr.evtree,1,2,4thPCALL,ignore,none,asis,ALTA,firstfullPCAs4bk,5,20,2
+1,1,1,-1,0,0,Fri Jul 20 11:50:07 2018,perfect,1,2,4thPCALL,ignore,none,asis,ALTA,firstfullPCAs4bk,5,20,403,168,222,0.6905,1.004,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,0,15,5,55,4,60,4,98,4,109,3,116,3
+1,1,1,-1,0,0,Fri Jul 20 11:57:19 2018,perfect,1,2,4thPCALL,ignore,none,asis,ALTA,firstfullPCAs4bk,5,20,403,168,222,0.6905,1.004,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,0,15,5,55,4,60,4,98,4,109,3,116,3
+0.5,0.026,0.287,0.933,0.492,0.487,Fri Jul 20 14:58:00 2018,TPOT 18,1,2,4thPCALL,ignore,none,asis,ALTA,firstfullPCAs4bk,5,20,403,624,222,0.6905,1.004,genetic,10335,cv,25,18,50,10,,,,,,0,15,4.5,55,3.58,60,3.58,98,3.58,109,3.58,116,3.58
+0.5,0.026,0.287,0.933,0.492,0.487,Fri Jul 20 16:53:26 2018,TPOT 25,1,2,4thPCALL,ignore,none,asis,ALTA,firstfullPCAs4bk,5,20,403,624,222,0.6905,1.004,genetic,6926,cv,25,25,50,10,,,,,,0,15,4.5,55,3.58,60,3.58,98,3.58,109,3.58,116,3.58
+0.5,0.026,0.287,0.933,0.492,0.487,Fri Jul 20 19:51:18 2018,TPOT 33,1,2,4thPCALL,ignore,none,asis,ALTA,firstfullPCAs4bk,5,20,403,624,222,0.6905,1.004,genetic,10672,cv,25,33,50,10,,,,,,0,15,4.5,55,3.58,60,3.58,98,3.58,109,3.58,116,3.58
