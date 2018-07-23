@@ -9,10 +9,11 @@ oveRMSE.cou<-0
 predicttt<-100
 predicttt.cou<- 0
 
-earlystop<-14
+earlystop<-7
 onepipmin<-40
 max.generations<-300
-varimp.every<-10
+varimp.every<-3
+gensperitr<-2
 #not set up yet, waiting for black opt
 Xover.rt<-.1
 mutation.rt<-.9
@@ -45,7 +46,7 @@ for(retpop in c(25,1000)){
       offspring_size = r_to_py(as.integer(offsprig))
       cv = r_to_py(as.integer(itr))
       random_state = r_to_py(as.integer(seed.var))
-      generationcount = r_to_py(as.integer(1))#)early_stop=early_stop,
+      generationcount = r_to_py(as.integer(gensperitr))#)early_stop=early_stop,
       early_stop = r_to_py(as.integer(earlystop))
       mins_onapipe = r_to_py(as.integer(onepipmin))
       checkpoint_folder = r_to_py("tpot")
@@ -58,6 +59,7 @@ for(retpop in c(25,1000)){
       print(date())
       
       for(itr.genr in 1:max.generations){
+        try({
         #I want RMSE of every generation for reaserch
       #set tpot to use previous calcs to print each generation
       if(itr.genr==2){
@@ -157,8 +159,9 @@ for(retpop in c(25,1000)){
                     n_sample = 1000)
         })
       }
-      
+        })
       if(predicttt.cou >= earlystop && oveRMSE.cou >= earlystop) {break()}
+      
       }
       fail.try<-F
   })
