@@ -7,7 +7,7 @@ varimperm<-function(custom_predict, modeltp, X, Y, n_sample = 200, metpack = "un
   #n_sample : time to spend 
   #metpack is just an addition to name
   fail.try.vif=T
-  if(mean.improvement<.05){return(NULL)}
+  if((mean.improvement<.05) && (Rsqd<.05)){return(NULL)}
   try({ 
     when<-proc.time()
     set.seed(seed=seed.var)

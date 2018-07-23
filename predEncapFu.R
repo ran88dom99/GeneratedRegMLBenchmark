@@ -75,9 +75,9 @@ printPredMets<-function(predicted.outcomes=predicted.outcomes,trainpred="none",o
   #hypercount=c("full","part","none")
   p <- data.frame(predicted.outcomes,testing[,1])
   #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
-  Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],train.based.mean)
+  Rsqd <<- 1-RMSE(p[,1],p[,2])/RMSE(p[,2],train.based.mean)
   #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-  mean.improvement<<-1-MAE(p[,1],p[,2])/MAE(p[,2],train.based.med)
+  mean.improvement <<- 1-MAE(p[,1],p[,2])/MAE(p[,2],train.based.med)
 
   if(is.data.frame(predicted.outcomes))
     predicted.outcomes<-as.vector(predicted.outcomes[,1])  
@@ -91,8 +91,7 @@ printPredMets<-function(predicted.outcomes=predicted.outcomes,trainpred="none",o
   #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
   RMSEp=RMSE(p[,1],p[,2])
   MMAAEE=MAE(p[,1],p[,2])
-  spearmanrhosqrd<-NA_integer_
-  spearmanrhosqrd<-(cor(x=p[,1],y=p[,2],use="complete.obs",method = "spearman"))*abs(cor(x=p[,1],y=p[,2],use="complete.obs",method = "spearman"))
+
   #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)  
   #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
   #RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
@@ -108,22 +107,33 @@ printPredMets<-function(predicted.outcomes=predicted.outcomes,trainpred="none",o
 Rseed<-.Random.seed[1]
 Cseed<-.Random.seed[2]
 
+ for1tea<-""
+ for2tea<-""
+ for3tea<-""
+
 outCtrl<-adaptControl
 
-for(i in 1:5){outCtrl$bestune[i]<-""}
+for(i in 1:6){outCtrl$bestune[i]<-""}
 if(libpack=="autoH2O") {outCtrl$bestune[1]<-lbdf[1,1] }
 if(libpack=="tpot") {
-lhyp<-min(length(hyparams),5)
+lhyp<-min(length(hyparams),6)
 outCtrl$bestune[1:lhyp]<-hyparams[1:lhyp] 
+for3tea<-itr.genr
+for2tea<-Xover.rt
+for1tea<-mutation.rt
 }
-
+if(libpack=="emptpot") { 
+  for3tea<-itr.genr
+  for2tea<-Xover.rt
+  for1tea<-mutation.rt
+}
 if(libpack=="caret"){
-  for(i in 1:5){
+  for(i in 1:6){
     if(length(trainedmodel$bestTune)==(i-1)){break}
     try({outCtrl$bestune[i]<-signif(trainedmodel$bestTune[i],digits = 3)})
 } } 
 if(libpack=="mlr"){
-  for(i in 1:5){
+  for(i in 1:6){
     if(length(mod$x)==(i-1)){break}
     try({outCtrl$bestune[i]<-signif(as.numeric(mod$x[i]),digits = 3)})
  } }
@@ -165,6 +175,9 @@ for(i in 1:length(testIndex)){
   InxdPred[i*2]<-testIndex[i] 
   InxdPred[i*2+1]<-signif(predicted.outcomes[i],digits = 3)
 }
+spearmanrhosqrd<-NA_integer_
+spearmanrhosqrd<-cor(x=p[,1],y=p[,2],use="complete.obs",method = "spearman")
+spearmanrhosqrd<-(spearmanrhosqrd)*abs(spearmanrhosqrd)
 
 writeout<- paste(c(round(spearmanrhosqrd,digits = 3),round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                    signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
@@ -172,7 +185,8 @@ writeout<- paste(c(round(spearmanrhosqrd,digits = 3),round(mean.improvement,digi
                    Rseed,Cseed,seed.var,RMSE.mean,RMSE.mean.train,outCtrl$search,
                    round(proc.time()[3]-when[3]),outCtrl$method,outCtrl$tuneLength,
                    outCtrl$number,outCtrl$repeats,outCtrl$adaptivemin,
-                   outCtrl$bestune[1:5],InxdPred))
+                   for1tea,for2tea,for3tea,
+                   outCtrl$bestune[1:6],InxdPred))
 for(i in 2:length(writeout)){
   writeout[1]<-paste(writeout[1],writeout[i],sep=",")}
 
@@ -205,7 +219,7 @@ if(F){
     Rseed,Cseed,seed.var,RMSE.mean,RMSE.mean.train,outCtrl$search,
     round(proc.time()[3]-when[3]),outCtrl$method,outCtrl$tuneLength,
     outCtrl$number,outCtrl$repeats,outCtrl$adaptivemin,
-    outCtrl$bestune[1:5],signif(predicted.outcomes,digits = 3)))
+    outCtrl$bestune[1:6],signif(predicted.outcomes,digits = 3)))
  for(i in 2:length(writeout)){
    writeout[1]<-paste(writeout[1],writeout[i],sep=",")}
 
