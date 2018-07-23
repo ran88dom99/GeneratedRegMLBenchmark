@@ -9,7 +9,7 @@ oveRMSE.cou<-0
 predicttt<-100
 predicttt.cou<- 0
 
-earlystop<-12
+earlystop<-14
 onepipmin<-40
 max.generations<-300
 varimp.every<-10
@@ -19,7 +19,7 @@ mutation.rt<-.9
 
 for(retpop in c(25,1000)){
   for(offsprig in c(50,300)){
-    for(itr in c(5,12,21,41)){#5,8,12,c(3,4,5,6,8,10,12,15,18,21,25,29,33,38),100,300)
+    for(itr in c(5,11,21,41)){#5,8,12,c(3,4,5,6,8,10,12,15,18,21,25,29,33,38),100,300)
 
   
   adaptControl$search <- "genetic"
@@ -59,8 +59,10 @@ for(retpop in c(25,1000)){
       
       for(itr.genr in 1:max.generations){
         #I want RMSE of every generation for reaserch
-      #use previous calcs to print each generation
-      if(which.computer!="ALTA"){ ztpot <- tpot$TPOTRegressor(generations=generationcount, population_size=retainpopulation,cv=cv,
+      #set tpot to use previous calcs to print each generation
+      if(itr.genr==2){
+      if(which.computer!="ALTA"){ 
+        ztpot <- tpot$TPOTRegressor(generations=generationcount, population_size=retainpopulation,cv=cv,
                                 offspring_size=offspring_size,early_stop=early_stop,max_eval_time_mins=mins_onapipe,
                                 periodic_checkpoint_folder=checkpoint_folder,random_state =random_state,verbosity=2,memory=memfile, warm_start=warm)
       } else {
@@ -68,9 +70,11 @@ for(retpop in c(25,1000)){
                                     offspring_size=offspring_size,early_stop=early_stop,max_eval_time_mins=mins_onapipe,
                                     periodic_checkpoint_folder=checkpoint_folder,random_state =random_state,verbosity=2, warm_start=warm)
       }
+      }
       #cold start
       if(itr.genr==1){
-        if(which.computer!="ALTA"){ ztpot <- tpot$TPOTRegressor(generations=generationcount, population_size=retainpopulation,cv=cv,
+        if(which.computer!="ALTA"){ 
+          ztpot <- tpot$TPOTRegressor(generations=generationcount, population_size=retainpopulation,cv=cv,
                                                                 offspring_size=offspring_size,early_stop=early_stop,max_eval_time_mins=mins_onapipe,
                                                                 periodic_checkpoint_folder=checkpoint_folder,random_state =random_state,verbosity=2,memory=memfile)
         } else {
