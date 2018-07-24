@@ -1,8 +1,8 @@
 #ggplot: how  label, print to file
-exp.name.main<-"random hunt"
+exp.name.main<-"acefoldbadpca"
 mainDir<-getwd()
 
-expiramentresultsmain<-read.csv("gen test out random hunt.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+expiramentresultsmain<-read.csv("acefoldbadpca.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
 gene.expect<-matrix(data = NA, nrow = 100, ncol = 100, byrow = FALSE,
                     dimnames = NULL)#gene.expect<-read.csv("gens names.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
 library(ggplot2)    
@@ -11,7 +11,7 @@ library(reshape2)
 runstoanalyis<-c("asis","range01","centernscale")
 for(runn in runstoanalyis){
   selections<-(runn==expiramentresultsmain[,2])
-  expiramentresults<-expiramentresultsmain[selections,c(1,3:59)]
+  expiramentresults<-expiramentresultsmain[selections,c(1,3:37)]
   exp.name<-paste(exp.name.main,runn)
   subDir<-exp.name
   dir.create(file.path(mainDir, subDir))
