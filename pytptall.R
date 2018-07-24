@@ -9,7 +9,7 @@ oveRMSE.cou<-0
 predicttt<-100
 predicttt.cou<- 0
 
-earlystop<-7
+earlystop<-7 # works propperly even with warm_start, now early_stop passed to TPOT is this times gensperitr
 onepipmin<-40
 max.generations<-300
 varimp.every<-3
@@ -47,11 +47,11 @@ for(retpop in c(25,1000)){
       cv = r_to_py(as.integer(itr))
       random_state = r_to_py(as.integer(seed.var))
       generationcount = r_to_py(as.integer(gensperitr))#)early_stop=early_stop,
-      early_stop = r_to_py(as.integer(earlystop))
+      early_stop = r_to_py(as.integer((earlystop-1)*gensperitr))
       mins_onapipe = r_to_py(as.integer(onepipmin))
       checkpoint_folder = r_to_py("tpot")
       pipefile = r_to_py(paste("tpot","pipe",".py",sep = ""))
-      memfile =  r_to_py(paste("/tpot","memcache/",sep = ""))
+      memfile =  r_to_py(paste("/tpot/","memcache/",sep = ""))
       memfile = r_to_py("auto")
       warm = r_to_py("True")
     }
@@ -116,7 +116,7 @@ for(retpop in c(25,1000)){
       fail.grep<-T
       try({
       ztpot$export(pipefile)
-      movethepot <- paste("tpot/",datasource,round((predicttt)*100),timechecksum,".py",sep = "_")
+      movethepot <- paste("tpot/",datasource,timechecksum,round((predicttt)*100),".py",sep = "_")
       file.copy(as.character(pipefile),as.character(movethepot[1]))
       
 
