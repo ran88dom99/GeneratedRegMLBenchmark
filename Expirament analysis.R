@@ -1,13 +1,16 @@
 #ggplot: how  label, print to file
-exp.name<-"9th ex center and scale"
+exp.name<-"acefoldbadpca"
 mainDir<-getwd()
 subDir<-exp.name
-expiramentresults<-read.csv("gen t o cts of range asis learners and gens.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
+expiramentresults<-read.csv("acefoldbadpca.csv", sep = ",",fill=TRUE, header =T,quote="",dec=".")
 gene.expect<-matrix(data = NA, nrow = 100, ncol = 100, byrow = FALSE,
                     dimnames = NULL)#gene.expect<-read.csv("gens names.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
 dir.create(file.path(mainDir, subDir))
 setwd(file.path(mainDir, subDir))
 
+#for highfold
+expiramentresults[,10] <- paste(expiramentresults[,10],expiramentresults[,16],sep="_")
+expiramentresults<-expiramentresults[(expiramentresults[,7]!="perfect"),]
 
 library(ggplot2)    
 library(reshape2) 
@@ -48,10 +51,10 @@ for(algo in unique(expiramentresults[,7]))
   countr=countr+1
   only.algo<-(expiramentresults[,7]==algo)
   time.df[countr,1]<-algo
-  time.df[countr,2]<-min(expiramentresults[only.algo,17],na.rm = T)
-  time.df[countr,3]<-median(expiramentresults[only.algo,17],na.rm = T)
-  time.df[countr,4]<-mean(expiramentresults[only.algo,17],na.rm = T)
-  time.df[countr,5]<-max(expiramentresults[only.algo,17],na.rm = T)
+  time.df[countr,2]<-min(expiramentresults[only.algo,21],na.rm = T)
+  time.df[countr,3]<-median(expiramentresults[only.algo,21],na.rm = T)
+  time.df[countr,4]<-mean(expiramentresults[only.algo,21],na.rm = T)
+  time.df[countr,5]<-max(expiramentresults[only.algo,21],na.rm = T)
 }
 iti <- order(time.df[,3],time.df[,4])
 time.df<-rbind(time.df)[iti,]
@@ -355,7 +358,7 @@ write.table(algPower.df,
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
 #algPower.df<-data.frame(algPower.df, row.names = 1:length(algPower.df[,1]))
-not.interesting<-(algPower.df[,6]<20)+(algPower.df[,4]<.2)+ is.na(algPower.df[,6]) 
+not.interesting<-(algPower.df[,6]<5)+(algPower.df[,4]<0)+ is.na(algPower.df[,6]) 
 I.power.df<-algPower.df[!not.interesting,]
 
 z<-ggplot(I.power.df, aes(y = I.power.df[,2], x = reorder(I.power.df[,1], I.power.df[,2]))) + 

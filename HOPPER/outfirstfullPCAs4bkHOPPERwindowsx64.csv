@@ -276,3 +276,231 @@ Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 16:47:57 2018,SL.step.interaction,1,2,4
 0.857,-0.276,-0.039,1.06,0.718,0.638,Sun Jul 22 16:49:18 2018,SL.svm,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,128,222,0.6905,1.004,random,3,nohyperparameters,1,20,no rep,no min,,,,,,0,15,3.63,55,3.54,60,3.5,98,3.5,109,3.5,116,3.5
 Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 16:49:21 2018,SL.template,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,128,222,0
 0.644,0.182,0.251,1.24,0.517,0.409,Sun Jul 22 16:51:33 2018,SL.xgboost,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,200,222,0.6905,1.004,random,130,nohyperparameters,1,20,no rep,no min,,,,,,0,15,3.94,55,4.09,60,3.77,98,3.5,109,3.33,116,3.24
+1,1,1,-1,0,0,Sun Jul 22 17:08:24 2018,perfect,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,168,222,0.6905,1.004,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,0,15,5,55,4,60,4,98,4,109,3,116,3
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:09:41 2018,TPOT 5,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,8
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:09:43 2018,TPOT 12,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,2
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:09:45 2018,TPOT 21,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,2
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:09:45 2018,TPOT 41,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:09:48 2018,TPOT 5,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,2
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:09:50 2018,TPOT 12,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,2
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:09:52 2018,TPOT 21,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,2
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:09:52 2018,TPOT 41,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:09:54 2018,TPOT 5,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,2
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:09:56 2018,TPOT 12,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,2
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:09:58 2018,TPOT 21,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,2
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:09:58 2018,TPOT 41,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:10:00 2018,TPOT 5,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,2
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:10:02 2018,TPOT 12,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,2
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:10:05 2018,TPOT 21,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,2
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:10:05 2018,TPOT 41,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:42 2018,method.NNLS2,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:45 2018,method.NNloglik,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:47 2018,method.CC_LS,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:49 2018,method.CC_nloglik,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,5,20,403,624,222,0
+NA,1,1,-1,4.07,4,Sun Jul 22 17:11:52 2018,perfect,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,168,222,0.7943,0.9972,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,0,21,-0.752,28,0.243,32,0.243,47,1.24,65,0.243,66,-0.752,125,1.24
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:53 2018,TPOT 5,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:54 2018,TPOT 12,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:54 2018,TPOT 21,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:54 2018,TPOT 41,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:55 2018,TPOT 5,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:55 2018,TPOT 12,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:56 2018,TPOT 21,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,1
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:56 2018,TPOT 41,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:56 2018,TPOT 5,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:57 2018,TPOT 12,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,1
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:57 2018,TPOT 21,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,1
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:57 2018,TPOT 41,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:58 2018,TPOT 5,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,1
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:58 2018,TPOT 12,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:59 2018,TPOT 21,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:11:59 2018,TPOT 41,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+NA,-0.22,-0.021,1.09,4.07,4,Sun Jul 22 17:13:34 2018,h2oAutoml 1,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,6,222,0.7943,0.9972,random,95,cv,10,20,NA,5,StackedEnsemble_BestOfFamily_0_AutoML_20180722_171224,,,,,0,21,-0.0498,28,-0.0498,32,-0.0498,47,-0.0498,65,-0.0498,66,-0.0498,125,-0.0498
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:17:58 2018,bridge,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,592,222,79220
+0.336,-0.004,0.026,0.931,0.903,0.717,Sun Jul 22 17:23:52 2018,BstLm,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,353,cv,10,20,NA,5,,,,,,0,20,4.3,48,3.8,63,3.82,67,3.86,82,3.59,115,3.8,122,3.81
+NA,-0.171,-0.032,1.07,4.07,4,Sun Jul 22 17:24:10 2018,h2oAutoml 10,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0.7943,0.9972,random,635,cv,10,20,NA,5,GBM_grid_0_AutoML_20180722_171339_model_7,,,,,0,21,-0.163,28,-0.133,32,-0.0144,47,-0.0929,65,0.13,66,-0.159,125,-0.164
+0.255,-0.188,-0.06,0.931,0.983,0.849,Sun Jul 22 17:33:32 2018,cforest,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,326,222,0.9273,0.9954,random,576,cv,10,20,NA,5,,,,,,0,20,3.74,48,3.82,63,3.58,67,3.82,82,3.97,115,3.5,122,3.79
+NA,-0.084,0.026,0.908,0.904,0.774,Sun Jul 22 17:34:44 2018,ctree,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,68,cv,10,20,NA,5,,,,,,0,20,3.58,48,3.58,63,3.58,67,3.58,82,3.58,115,3.58,122,3.58
+NA,-0.084,0.026,0.915,0.904,0.774,Sun Jul 22 17:35:58 2018,ctree2,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,71,cv,10,20,NA,5,,,,,,0,20,3.58,48,3.58,63,3.58,67,3.58,82,3.58,115,3.58,122,3.58
+0.169,-0.11,-0.021,0.955,0.946,0.793,Sun Jul 22 17:48:19 2018,cubist,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,1,222,0.9273,0.9954,random,737,cv,10,20,NA,5,,,,,,0,20,3.98,48,3.68,63,3.5,67,3.67,82,3.68,115,3.5,122,3.83
+NA,-0.037,-0.009,0.986,0.936,0.741,Sun Jul 22 17:48:54 2018,dnn,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,157,222,0.9273,0.9954,random,35,cv,10,20,NA,5,,,,,,0,20,3.82,48,3.82,63,3.82,67,3.82,82,3.82,115,3.82,122,3.82
+0.49,-0.056,0.048,0.905,0.883,0.754,Sun Jul 22 17:50:33 2018,earth,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,95,cv,10,20,NA,5,,,,,,0,20,3.63,48,3.6,63,3.6,67,3.69,82,3.6,115,3.6,122,3.6
+0.05,0.074,0.068,0.994,0.865,0.661,Sun Jul 22 17:50:45 2018,elm,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,540,222,0.9273,0.9954,random,11,cv,10,20,NA,5,,,,,,0,20,3.66,48,3.26,63,3.96,67,3.49,82,4.09,115,3.81,122,3.2
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 17:51:07 2018,enet,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,13
+NA,-0.084,0.026,0.877,0.904,0.774,Sun Jul 22 17:58:37 2018,evtree,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,89,222,0.9273,0.9954,random,449,cv,10,20,NA,5,,,,,,0,20,3.58,48,3.58,63,3.58,67,3.58,82,3.58,115,3.58,122,3.58
+NA,-0.171,-0.032,1.07,4.07,4,Sun Jul 22 19:05:27 2018,h2oAutoml 100,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0.7943,0.9972,random,6077,cv,10,20,NA,5,GBM_grid_0_AutoML_20180722_171339_model_7,,,,,0,21,-0.163,28,-0.133,32,-0.0144,47,-0.0929,65,0.13,66,-0.159,125,-0.164
+0.694,-1.454,-1.182,10.6,NA,NA,Sun Jul 22 19:07:26 2018,SL.bayesglm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,0.7943,0.9972,random,101,nohyperparameters,1,20,no rep,no min,,,,,,0,21,-0.427,28,2.14,32,-1.37,47,1.26,65,-0.353,66,1.93,125,-1.41
+NA,-0.117,-0.009,1.06,4.07,4,Sun Jul 22 19:14:28 2018,SL.biglasso,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,579,222,0.7943,0.9972,random,421,nohyperparameters,1,20,no rep,no min,,,,,,0,21,0.0739,28,0.148,32,-0.0491,47,-0.0432,65,0.138,66,-0.224,125,-0.0806
+0.454,-0.485,-0.357,0.946,1.26,1.06,Sun Jul 22 19:24:13 2018,extraTrees,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,4,222,0.9273,0.9954,random,5134,cv,10,20,NA,5,,,,,,0,20,3.65,48,4.34,63,3.6,67,3.97,82,4.21,115,3.5,122,4.59
+0.05,-0.012,0.005,0.908,0.923,0.723,Sun Jul 22 19:27:36 2018,foba,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,201,cv,10,20,NA,5,,,,,,0,20,3.87,48,3.8,63,3.84,67,3.73,82,3.72,115,3.68,122,3.66
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 19:37:29 2018,gam,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,591
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 19:38:35 2018,gamboost,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,65
+0.009,-26853.402,-54510.717,3590,50500,19200,Sun Jul 22 19:47:55 2018,gamSpline,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,559,cv,10,20,NA,5,,,,,,0,20,-335,48,-134000,63,-1.13,67,-139,82,7.73,115,3.5,122,-40.9
+0.113,-0.313,-0.197,-1,1.11,0.938,Sun Jul 22 19:48:01 2018,gaussprLinear,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,5,cv,10,20,NA,5,,,,,,0,20,4.3,48,4.12,63,3.48,67,3.92,82,4.35,115,3.58,122,3.77
+0.678,-0.087,-0.014,0.953,0.941,0.777,Sun Jul 22 19:48:26 2018,gaussprPoly,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,23,cv,10,20,NA,5,,,,,,0,20,3.75,48,3.76,63,3.69,67,3.73,82,3.83,115,3.73,122,3.75
+0.001,-0.091,-0.008,1,0.934,0.779,Sun Jul 22 19:48:51 2018,gaussprRadial,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,23,cv,10,20,NA,5,,,,,,0,20,3.47,48,3.71,63,3.81,67,3.77,82,3.83,115,3.84,122,3.81
+NA,-0.135,-0.001,1.02,4.07,4,Sun Jul 22 20:00:40 2018,SL.caret,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,505,222,0.7943,0.9972,random,2772,nohyperparameters,1,20,no rep,no min,,,,,,0,21,0.176,28,0.0122,32,0.164,47,0.101,65,-0.000375,66,-0.19,125,-0.1
+NA,-0.183,0,0.988,4.07,4,Sun Jul 22 20:02:06 2018,SL.caret.rpart,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0.7943,0.9972,random,86,nohyperparameters,1,20,no rep,no min,,,,,,0,21,0.000559,28,0.000559,32,0.000559,47,0.000559,65,0.000559,66,0.000559,125,0.000559
+NA,-0.021,0.025,0.949,4.07,4,Sun Jul 22 20:05:05 2018,SL.cforest,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,613,222,0.7943,0.9972,random,179,nohyperparameters,1,20,no rep,no min,,,,,,0,21,-0.0798,28,0.141,32,0.164,47,0.0555,65,0.21,66,-0.141,125,-0.145
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 20:06:21 2018,SL.dbarts,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,370,222,75
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 20:06:53 2018,SL.earth,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,31
+NA,0.001,0.063,1.03,4.07,4,Sun Jul 22 20:07:34 2018,SL.extraTrees,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,211,222,0.7943,0.9972,random,40,nohyperparameters,1,20,no rep,no min,,,,,,0,21,0.123,28,0.196,32,0.0911,47,0.0979,65,0.239,66,-0.193,125,0.0398
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 20:09:11 2018,SL.gam,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,97
+0.56,-0.81,-0.78,1.1,1.65,1.29,Sun Jul 22 20:14:56 2018,gbm,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,78,222,0.9273,0.9954,random,1562,cv,10,20,NA,5,,,,,,0,20,4.12,48,4.94,63,3.63,67,4.06,82,5.47,115,3.55,122,4.75
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 20:20:58 2018,gbm_h2o,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,1,222,361
+0.154,-0.434,-0.291,-1,1.2,1.02,Sun Jul 22 20:21:12 2018,gcvEarth,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,12,cv,10,20,NA,5,,,,,,0,20,3.06,48,4.46,63,2.97,67,4.41,82,3.76,115,3.57,122,3.97
+0.381,-2228202643518411,-2571009563186831,-1,2.38e+15,1.59e+15,Sun Jul 22 20:21:19 2018,glm,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,6,cv,10,20,NA,5,,,,,,0,20,-1.66e+15,48,3.91e+15,63,-4.56e+15,67,-9.97e+14,82,-5.66e+12,115,-11.9,122,-1.53e+13
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 20:23:04 2018,glm.nb,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,105
+0.001,-0.053,0.001,0.977,0.926,0.752,Sun Jul 22 20:23:45 2018,glmboost,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,40,cv,10,20,NA,5,,,,,,0,20,3.78,48,3.76,63,3.78,67,3.74,82,3.76,115,3.69,122,3.73
+0.405,-0.024,0.022,0.959,0.907,0.731,Sun Jul 22 20:24:17 2018,glmnet,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,31,cv,10,20,NA,5,,,,,,0,20,3.8,48,3.74,63,3.76,67,3.78,82,3.72,115,3.77,122,3.77
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 20:30:19 2018,glmnet_h2o,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,1,222,361
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 20:33:56 2018,SL.gbm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,356,222,1485
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 20:34:05 2018,SL.glm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,8
+0.185,-1621.3,-1924.496,-1,1790,1160,Sun Jul 22 23:05:41 2018,glmStepAIC,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,9321,cv,10,20,NA,5,,,,,,0,20,-3020,48,-2.84,63,2170,67,2920,82,4.93,115,3.5,122,6.02
+0.05,-0.178,-0.313,0.996,1.22,0.841,Sun Jul 22 23:15:38 2018,icr,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,50,222,0.9273,0.9954,random,547,cv,10,20,NA,5,,,,,,0,20,3.94,48,4.78,63,3.8,67,3.73,82,3.59,115,3.77,122,3.75
+0.255,-0.694,-0.636,1.64,1.52,1.21,Sun Jul 22 23:16:00 2018,kernelpls,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,17,cv,4,20,no rep,no min,,,,,,0,20,7.14,48,3.09,63,4.01,67,6.08,82,4.61,115,3.47,122,4.02
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 23:16:11 2018,kknn,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,3,222,9
+0.165,-0.111,-0.017,0.986,0.943,0.794,Sun Jul 22 23:16:22 2018,knn,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,9,cv,10,20,NA,5,,,,,,0,20,3.61,48,3.76,63,3.54,67,3.62,82,3.68,115,3.65,122,3.54
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 23:16:44 2018,krlsPoly,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,19
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 23:17:05 2018,krlsRadial,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,20
+0.013,-0.177,-0.069,1.25,0.992,0.84,Sun Jul 22 23:18:24 2018,lars,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,79,cv,10,20,NA,5,,,,,,0,20,4.12,48,3.83,63,3.49,67,4.09,82,4.26,115,3.54,122,3.79
+0.113,0.003,0.029,0.971,0.901,0.712,Sun Jul 22 23:19:26 2018,lars2,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,57,cv,10,20,NA,5,,,,,,0,20,3.97,48,3.75,63,3.7,67,3.82,82,3.69,115,3.73,122,3.76
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 23:19:36 2018,lasso,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,6
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 23:19:40 2018,leapBackward,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,3,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 22 23:19:44 2018,leapForward,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,6,222,3
+0.185,-1773.523,-1945.943,-1,1810,1270,Sun Jul 22 23:19:51 2018,lm,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,6,cv,10,20,NA,5,,,,,,0,20,-3160,48,-805,63,2160,67,2740,82,5.09,115,3.5,122,5.81
+0.185,-1621.3,-1924.496,-1,1790,1160,Mon Jul 23 00:07:10 2018,lmStepAIC,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,2837,cv,10,20,NA,5,,,,,,0,20,-3020,48,-2.84,63,2170,67,2920,82,4.93,115,3.5,122,6.02
+Fail,Fail,Fail,Fail,PackageFail,Mon Jul 23 00:08:54 2018,logicBag,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,72
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:09:13 2018,logreg,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,3,222,17
+0.042,-0.195,-0.006,1.01,0.933,0.854,Mon Jul 23 00:12:26 2018,M5,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,192,cv,10,20,NA,5,,,,,,0,20,4.39,48,3.61,63,3.16,67,3.99,82,3.92,115,3.56,122,3.75
+0.079,-0.034,0.061,1.21,0.87,0.739,Mon Jul 23 00:14:00 2018,M5Rules,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,84,cv,10,20,NA,5,,,,,,0,20,4,48,3.6,63,3.56,67,4.25,82,3.94,115,3.48,122,3.92
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:14:06 2018,mlpKerasDecay,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,3,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:14:09 2018,mlpKerasDropout,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,6,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:14:13 2018,msaenet,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,9,222,3
+Fail,Fail,Fail,Fail,PackageFail,Mon Jul 23 00:14:48 2018,mxnet,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,9,222,34
+Fail,Fail,Fail,Fail,PackageFail,Mon Jul 23 00:15:02 2018,mxnetAdam,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,9,222,13
+NA,-2.6,-1.939,2.94,2.73,2.57,Mon Jul 23 00:15:33 2018,nnet,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,405,222,0.9273,0.9954,random,31,cv,10,20,NA,5,,,,,,0,20,1,48,1,63,1,67,1,82,1,115,1,122,1
+0.479,-0.264,-0.111,-1,1.03,0.903,Mon Jul 23 00:15:38 2018,nnls,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,3,cv,10,20,NA,5,,,,,,0,20,3.55,48,3.85,63,3.36,67,3.7,82,3.95,115,3.73,122,3.85
+NA,-0.044,0,-1,0.927,0.746,Mon Jul 23 00:15:41 2018,null,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,2,cv,10,20,NA,5,,,,,,0,20,3.78,48,3.78,63,3.78,67,3.78,82,3.78,115,3.78,122,3.78
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:15:46 2018,parRF,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,3,222,3
+0.006,-2.6,-1.939,2.95,2.73,2.57,Mon Jul 23 00:16:50 2018,pcaNNet,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,313,222,0.9273,0.9954,random,63,cv,10,20,NA,5,,,,,,0,20,1,48,1,63,1,67,1,82,1,115,1,122,1
+0.479,0.032,0.091,0.937,0.843,0.691,Mon Jul 23 00:17:02 2018,pcr,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,9,cv,4,20,no rep,no min,,,,,,0,20,3.87,48,3.51,63,3.69,67,3.72,82,3.72,115,3.69,122,3.58
+Fail,Fail,Fail,Fail,PackageFail,Mon Jul 23 00:17:19 2018,pls,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,13
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:17:24 2018,plsRglm,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,3,222,4
+0.044,-0.809,-0.707,2,1.58,1.29,Mon Jul 23 00:18:51 2018,ppr,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,87,cv,10,20,NA,5,,,,,,0,20,5.01,48,0.974,63,0.974,67,5.01,82,5.01,115,3.44,122,4.39
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:18:57 2018,qrf,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,3,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:19:01 2018,ranger,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,6,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:19:04 2018,Rborist,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,9,222,3
+0.042,-2.141,-1.627,3.17,2.44,2.24,Mon Jul 23 00:24:02 2018,relaxo,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,296,cv,10,20,NA,5,,,,,,0,20,1.22,48,1.54,63,1.34,67,1.43,82,1.29,115,1.19,122,1.29
+0.381,-0.31,-0.178,0.949,1.09,0.935,Mon Jul 23 00:31:53 2018,rf,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,298,222,0.9273,0.9954,random,451,cv,10,20,NA,5,,,,,,0,20,3.7,48,4.01,63,3.67,67,3.87,82,4.12,115,3.5,122,4.15
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:32:28 2018,ridge,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,26
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:33:06 2018,rlm,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,37
+NA,-0.044,0,0.979,0.927,0.746,Mon Jul 23 00:33:20 2018,rpart,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,13,cv,10,20,NA,5,,,,,,0,20,3.78,48,3.78,63,3.78,67,3.78,82,3.78,115,3.78,122,3.78
+0.008,-0.651,-0.465,-1,1.36,1.18,Mon Jul 23 00:33:29 2018,rpart1SE,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,127,222,0.9273,0.9954,random,7,cv,10,20,NA,5,,,,,,0,20,4.5,48,4.44,63,2.64,67,4.5,82,4.44,115,3.5,122,4.5
+NA,-0.084,0.026,0.88,0.904,0.774,Mon Jul 23 00:33:41 2018,rpart2,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,10,cv,10,20,NA,5,,,,,,0,20,3.58,48,3.58,63,3.58,67,3.58,82,3.58,115,3.58,122,3.58
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:33:47 2018,rqlasso,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,3,222,4
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:33:51 2018,rqnc,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,6,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:33:55 2018,RRF,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,9,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:33:59 2018,RRFglobal,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,12,222,3
+0.807,-0.254,-0.179,-1,1.09,0.896,Mon Jul 23 00:34:09 2018,rvmLinear,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,9,cv,10,20,NA,5,,,,,,0,20,3.72,48,4.03,63,3.64,67,3.54,82,4.14,115,3.73,122,3.73
+0.035,-0.063,0.048,0.939,0.883,0.759,Mon Jul 23 00:35:40 2018,rvmPoly,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,88,cv,4,20,no rep,no min,,,,,,0,20,3.6,48,3.64,63,3.62,67,3.89,82,3.7,115,3.73,122,3.82
+0.009,-0.074,-0.004,1.03,0.931,0.767,Mon Jul 23 00:37:12 2018,rvmRadial,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,79,cv,10,20,NA,5,,,,,,0,20,3.32,48,3.68,63,3.93,67,3.67,82,3.71,115,3.78,122,3.68
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:38:04 2018,SBC,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,48
+0.069,-0.038,0.048,1,0.883,0.741,Mon Jul 23 00:38:19 2018,simpls,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,13,nohyperparameters,1,20,no rep,no min,,,,,,0,20,3.79,48,3.55,63,3.7,67,3.69,82,3.8,115,3.63,122,3.65
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:38:24 2018,spikeslab,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,3,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:42:39 2018,spls,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,254
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:42:50 2018,superpc,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,10
+0.05,-0.108,-0.121,0.94,1.04,0.792,Mon Jul 23 00:43:33 2018,svmLinear,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,41,cv,10,20,NA,5,,,,,,0,20,4.17,48,4.09,63,4.05,67,3.95,82,4.14,115,3.82,122,3.85
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:43:39 2018,svmLinear2,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,3,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:43:43 2018,svmLinear3,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,6,222,2
+0.05,-0.184,-0.205,0.928,1.12,0.846,Mon Jul 23 00:44:10 2018,svmPoly,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,26,cv,10,20,NA,5,,,,,,0,20,3.9,48,4.28,63,3.78,67,4.1,82,4.47,115,3.67,122,3.61
+0.042,-0.056,-0.067,0.95,0.99,0.755,Mon Jul 23 00:44:41 2018,svmRadial,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,26,cv,10,20,NA,5,,,,,,0,20,4.12,48,4,63,3.9,67,3.91,82,3.96,115,3.82,122,3.83
+0.09,-0.278,-0.26,0.913,1.17,0.913,Mon Jul 23 00:45:11 2018,svmRadialCost,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,126,222,0.9273,0.9954,random,26,cv,10,20,NA,5,,,,,,0,20,4.18,48,4.37,63,3.6,67,3.86,82,4.42,115,3.46,122,3.33
+0.154,-0.241,-0.203,0.932,1.12,0.887,Mon Jul 23 00:45:40 2018,svmRadialSigma,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,26,cv,10,20,NA,5,,,,,,0,20,4.04,48,4.19,63,3.48,67,4.02,82,4.45,115,3.31,122,3.35
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:45:46 2018,treebag,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,3,222,2
+0.069,-0.038,0.048,0.996,0.883,0.741,Mon Jul 23 00:46:02 2018,widekernelpls,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,624,222,0.9273,0.9954,random,15,nohyperparameters,1,20,no rep,no min,,,,,,0,20,3.79,48,3.55,63,3.7,67,3.69,82,3.8,115,3.63,122,3.65
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:46:06 2018,xgbDART,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,3,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:46:11 2018,xgbLinear,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,6,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:46:15 2018,xgbTree,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,9,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 00:46:19 2018,xyf,1,2,4thPCALL,ignore,none,range01,HOPPER,firstfullPCAs4bk,3,20,403,12,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 04:29:29 2018,SL.glm.interaction,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,28523
+NA,-0.209,-0.026,1.04,4.07,4,Mon Jul 23 04:32:19 2018,SL.glmnet,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,171,222,0.7943,0.9972,random,125,nohyperparameters,1,20,no rep,no min,,,,,,0,21,0.0118,28,-0.0819,32,-0.116,47,-0.0414,65,0.0919,66,-0.138,125,-0.083
+NA,-0.1,-0.007,1.01,4.07,4,Mon Jul 23 04:35:23 2018,SL.ipredbagg,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,159,222,0.7943,0.9972,random,183,nohyperparameters,1,20,no rep,no min,,,,,,0,21,-0.103,28,-0.161,32,0.143,47,-0.0585,65,0.316,66,-0.285,125,-0.152
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 04:35:27 2018,SL.kernelKnn,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,4
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 04:35:32 2018,SL.knn,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,4
+NA,-0.014,0.051,1.02,4.07,4,Mon Jul 23 04:35:43 2018,SL.ksvm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,157,222,0.7943,0.9972,random,10,nohyperparameters,1,20,no rep,no min,,,,,,0,21,0.354,28,0.364,32,0.325,47,0.379,65,0.126,66,-0.33,125,-0.0912
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 04:35:48 2018,SL.lda,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,4
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 04:35:49 2018,SL.leekasso,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 04:35:53 2018,SL.lm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,3
+NA,-0.312,-0.144,0.932,4.07,4,Mon Jul 23 04:35:54 2018,SL.loess,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,0.7943,0.9972,random,1,nohyperparameters,1,20,no rep,no min,,,,,,0,21,0.23,28,0.18,32,0.11,47,0.181,65,-0.117,66,0.409,125,-0.226
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 04:35:59 2018,SL.logreg,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,4
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 04:36:00 2018,SL.mean,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,1
+NA,-0.775,-0.41,2.63,NA,NA,Mon Jul 23 04:36:34 2018,SL.nnet,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,520,222,0.7943,0.9972,random,34,nohyperparameters,1,20,no rep,no min,,,,,,0,21,-0.15,28,1.96,32,0.42,47,0.123,65,1.65,66,0.123,125,0.06
+NA,-0.243,-0.053,1.01,4.07,4,Mon Jul 23 04:36:36 2018,SL.nnls,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,0.7943,0.9972,random,1,nohyperparameters,1,20,no rep,no min,,,,,,0,21,0.236,28,0.053,32,-0.092,47,-0.0345,65,0.035,66,-0.0479,125,-0.012
+NA,-0.396,-0.239,1.58,NA,NA,Mon Jul 23 04:36:56 2018,SL.polymars,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,0.7943,0.9972,random,20,nohyperparameters,1,20,no rep,no min,,,,,,0,21,0.626,28,1.9,32,0.364,47,1.03,65,-0.215,66,-0.262,125,-0.00794
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 04:37:01 2018,SL.qda,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,4
+NA,0.007,0.083,1.04,4.07,4,Mon Jul 23 04:39:22 2018,SL.randomForest,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,230,222,0.7943,0.9972,random,140,nohyperparameters,1,20,no rep,no min,,,,,,0,21,-0.172,28,-0.0143,32,0.177,47,0.0217,65,0.155,66,-0.244,125,0.00264
+NA,-0.05,0.051,1.04,4.07,4,Mon Jul 23 04:39:43 2018,SL.ranger,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,170,222,0.7943,0.9972,random,21,nohyperparameters,1,20,no rep,no min,,,,,,0,21,-0.0532,28,0.0529,32,0.183,47,0.0566,65,0.00709,66,-0.24,125,-0.0649
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 04:39:46 2018,SL.ridge,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,2
+-0.375,-0.889,-0.552,1.43,3.66,3.41,Mon Jul 23 04:39:50 2018,SL.rpart,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,0.7943,0.9972,random,3,nohyperparameters,1,20,no rep,no min,,,,,,0,21,-1.32,28,-1.32,32,0.575,47,-0.863,65,1.24,66,-1.32,125,-0.155
+NA,-0.357,-0.114,0.934,4.07,4,Mon Jul 23 04:39:55 2018,SL.rpartPrune,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,171,222,0.7943,0.9972,random,5,nohyperparameters,1,20,no rep,no min,,,,,,0,21,-0.2,28,-0.2,32,-0.2,47,-0.2,65,0.78,66,-0.2,125,-0.2
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 04:40:39 2018,SL.speedglm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,605,222,44
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 04:41:23 2018,SL.speedlm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,605,222,43
+NA,1,1,-1,4.07,4,Mon Jul 23 17:08:55 2018,perfect,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,168,222,0.7943,0.9972,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,21,-0.752,28,0.243,32,0.243,47,1.24,65,0.243,66,-0.752,125,1.24
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:14 2018,129_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,6
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:15 2018,284_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:17 2018,541_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:19 2018,1057_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:20 2018,751_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:21 2018,1652_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:23 2018,3155_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:24 2018,6159_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:26 2018,302_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:27 2018,665_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:29 2018,1269_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:30 2018,2478_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:32 2018,924_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:33 2018,2034_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:34 2018,3883_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 23 17:10:36 2018,7580_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,376,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:19:46 2018,SL.step,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,54514
+NA,-1.644,-1.472,10,NA,NA,Tue Jul 24 08:27:39 2018,SL.step.forward,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,0.7943,0.9972,random,472,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,21,3.08,28,3.25,32,0.746,47,2.32,65,-0.654,66,-0.334,125,0.446
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:27:55 2018,SL.step.interaction,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,15
+NA,-0.116,0.025,0.996,4.07,4,Tue Jul 24 08:28:58 2018,SL.stepAIC,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,0.7943,0.9972,random,62,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,21,-0.00219,28,0.313,32,-0.319,47,0.0481,65,0.376,66,-0.289,125,-0.0376
+NA,-0.09,-0.008,0.988,4.07,4,Tue Jul 24 08:29:02 2018,SL.svm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,0.7943,0.9972,random,3,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,21,0.316,28,0.314,32,0.161,47,0.284,65,0.0496,66,-0.209,125,-0.192
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:29:03 2018,SL.template,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,127,222,0
+NA,-0.01,0.169,1.11,4.07,4,Tue Jul 24 08:31:07 2018,SL.xgboost,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,199,222,0.7943,0.9972,random,123,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,21,0.107,28,0.266,32,0.647,47,0.375,65,0.706,66,-0.342,125,0.242
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:31:42 2018,method.NNLS2,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:31:43 2018,method.NNloglik,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:31:44 2018,method.CC_LS,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:31:45 2018,method.CC_nloglik,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,1,20,403,624,222,0
+-0.484,1,1,-1,3.7,3.33,Tue Jul 24 08:31:46 2018,perfect,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,624,222,0.9488,0.9963,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,36,0.226,40,1.23,69,-1.78,80,0.226,83,-0.775,91,0.226
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:31:48 2018,129_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:31:50 2018,284_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:31:52 2018,541_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:31:53 2018,1057_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:31:55 2018,751_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:31:57 2018,1652_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:31:59 2018,3155_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:32:01 2018,6159_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:32:02 2018,302_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:32:04 2018,665_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:32:06 2018,1269_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:32:08 2018,2478_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:32:10 2018,924_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:32:11 2018,2034_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:32:13 2018,3883_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 08:32:15 2018,7580_TPOT,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,376,222,2
+NA,-0.094,-0.005,1.04,3.79,3.67,Tue Jul 24 08:33:49 2018,h2oAutoml 1,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,6,222,0.9488,0.9963,random,94,cv,10,20,NA,5,,,,StackedEnsemble_AllModels_0_AutoML_20180724_083241,,,,,,0,36,0.0369,40,0.0369,69,0.0369,80,0.0369,83,0.0369,91,0.0369
+NA,-0.094,-0.005,1.04,3.79,3.67,Tue Jul 24 08:44:20 2018,h2oAutoml 10,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,624,222,0.9488,0.9963,random,631,cv,10,20,NA,5,,,,StackedEnsemble_AllModels_0_AutoML_20180724_083241,,,,,,0,36,0.0369,40,0.0369,69,0.0369,80,0.0369,83,0.0369,91,0.0369
+NA,-0.094,-0.005,1.04,3.79,3.67,Tue Jul 24 10:25:07 2018,h2oAutoml 100,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,624,222,0.9488,0.9963,random,6048,cv,10,20,NA,5,,,,StackedEnsemble_AllModels_0_AutoML_20180724_083241,,,,,,0,36,0.0369,40,0.0369,69,0.0369,80,0.0369,83,0.0369,91,0.0369
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 10:27:00 2018,SL.bayesglm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,128,222,101
+NA,-0.072,0.049,1.07,3.79,3.67,Tue Jul 24 10:33:57 2018,SL.biglasso,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,600,222,0.9488,0.9963,random,415,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,36,-0.197,40,0.257,69,0.01,80,0.0211,83,-0.0675,91,0.0267
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 11:19:48 2018,SL.caret,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,455,222,2750
+NA,-0.113,0,0.983,3.79,3.67,Tue Jul 24 11:21:13 2018,SL.caret.rpart,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,624,222,0.9488,0.9963,random,84,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,36,-0.000352,40,-0.000352,69,-0.000352,80,-0.000352,83,-0.000352,91,-0.000352
+NA,0.023,0.069,0.968,3.79,3.67,Tue Jul 24 11:24:08 2018,SL.cforest,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,318,222,0.9488,0.9963,random,174,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,36,0.255,40,0.0824,69,-0.0853,80,-0.0761,83,-0.124,91,0.132
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 11:44:06 2018,SL.dbarts,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,390,222,72
+NA,0.085,0.136,1.73,3.79,3.67,Tue Jul 24 11:44:38 2018,SL.earth,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,128,222,0.9488,0.9963,random,30,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,36,0.228,40,0.518,69,-0.0625,80,-0.14,83,-0.127,91,-0.000278
+NA,-0.094,-0.043,1.04,3.79,3.67,Tue Jul 24 11:45:47 2018,SL.extraTrees,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,212,222,0.9488,0.9963,random,46,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,36,0.359,40,-0.0274,69,0.126,80,0.0683,83,0.0222,91,0.0881
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 11:47:21 2018,SL.gam,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,128,222,93
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 12:10:07 2018,SL.gbm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,73,222,1365
+Fail,Fail,Fail,Fail,Fail,Fail,Tue Jul 24 12:10:17 2018,SL.glm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,2,20,403,128,222,9
