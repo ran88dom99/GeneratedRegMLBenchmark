@@ -358,7 +358,7 @@ write.table(algPower.df,
             eol = "\n", na = "", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
 #algPower.df<-data.frame(algPower.df, row.names = 1:length(algPower.df[,1]))
-not.interesting<-(algPower.df[,6]<20)+(algPower.df[,4]<.2)+ is.na(algPower.df[,6]) 
+not.interesting<-(algPower.df[,6]<5)+(algPower.df[,4]<0)+ is.na(algPower.df[,6]) 
 I.power.df<-algPower.df[!not.interesting,]
 
 z<-ggplot(I.power.df, aes(y = I.power.df[,2], x = reorder(I.power.df[,1], I.power.df[,2]))) + 
