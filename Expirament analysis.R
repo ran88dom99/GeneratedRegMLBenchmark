@@ -1,4 +1,5 @@
 #ggplot: how  label, print to file
+.libPaths("D:/R library/3.4")
 exp.name<-"acefoldbadpca"
 mainDir<-getwd()
 subDir<-exp.name
@@ -11,6 +12,7 @@ setwd(file.path(mainDir, subDir))
 #for highfold
 expiramentresults[,10] <- paste(expiramentresults[,10],expiramentresults[,16],sep="_")
 expiramentresults<-expiramentresults[(expiramentresults[,7]!="perfect"),]
+expiramentresults[,13] <- paste(expiramentresults[,13],expiramentresults[,9],sep="_")
 
 library(ggplot2)    
 library(reshape2) 
