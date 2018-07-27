@@ -72,16 +72,26 @@ return(F)
 
 printPredMets<-function(predicted.outcomes=predicted.outcomes,trainpred="none",overRMSE=overRMSE,hypercount="none",libpack="notune")
 {
+  #is the overmse from a model = mean RMSE of models made on CV folds or just RMSE of training set? 
+  
+  #Add these  with next major output reworking.
+  #MPEtes <- mean(p[,1])/mean(p[,2])
+  #MPEtra <- mean(????)/mean(training[,1])
+  #these are not accuracy scores but model failure chekers, put next to RMSE of mean not first columns. 
+  #MPE train may be relevant but test? 
+  
   #hypercount=c("full","part","none")
   p <- data.frame(predicted.outcomes,testing[,1])
   #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
   Rsqd <<- 1-RMSE(p[,1],p[,2])/RMSE(p[,2],train.based.mean)
   #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
   mean.improvement <<- 1-MAE(p[,1],p[,2])/MAE(p[,2],train.based.med)
-
+  
+  
   if(is.data.frame(predicted.outcomes))
     predicted.outcomes<-as.vector(predicted.outcomes[,1])  
   testIndex<-foldTrain[[FN]]
+  
   
   if(trans.y==2){
     p<- data.frame(predicted.outcomes,y.untransformed[testIndex])
