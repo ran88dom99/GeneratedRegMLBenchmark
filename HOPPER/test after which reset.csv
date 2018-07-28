@@ -86,17 +86,3 @@ Thu Jun 21 22:45:10 2018,bam,kaggle housing,10,10,windows,x64,HOPPER
 Wed Jul 18 17:25:24 2018,h2oAutoml 10,kaggle housing,20,10,windows,x64,HOPPER
 Wed Jul 18 17:27:16 2018,TPOT 41,kaggle housing,20,10,windows,x64,HOPPER
 Wed Jul 18 17:32:03 2018,TPOT 41,kaggle housing,20,10,windows,x64,HOPPER
-Wed Jul 18 17:36:41 2018,SL.bartMachine,4thPCALL,20,10,windows,x64,HOPPER
-Wed Jul 18 23:52:31 2018,SL.bartMachine,4thPCALL,20,10,windows,x64,HOPPER
-Thu Jul 19 11:07:20 2018,SL.bartMachine,4thPCALL,20,10,windows,x64,HOPPER
-Thu Jul 19 12:29:16 2018,SL.bartMachine,4thPCALL,20,10,windows,x64,HOPPER
-Thu Jul 19 14:00:39 2018,SL.bartMachine,4thPCALL,20,10,windows,x64,HOPPER
-Thu Jul 19 17:07:55 2018,SL.gbm,4thPCALL,20,10,windows,x64,HOPPER
-Thu Jul 19 18:57:08 2018,SL.glm.interaction,4thPCALL,20,10,windows,x64,HOPPER
-Fri Jul 20 17:07:54 2018,h2oAutoml 100,4thPCALL,20,10,windows,x64,HOPPER
-Sat Jul 21 17:08:11 2018,method.NNLS,4thPCALL,20,10,windows,x64,HOPPER
-Sun Jul 22 17:07:55 2018,method.NNLS,4thPCALL,20,10,windows,x64,HOPPER
-Mon Jul 23 17:08:13 2018,SL.step,4thPCALL,20,10,windows,x64,HOPPER
-Tue Jul 24 17:07:51 2018,SL.glm.interaction,4thPCALL,20,10,windows,x64,HOPPER
-Wed Jul 25 17:08:51 2018,SL.step,4thPCALL,20,10,windows,x64,HOPPER
-Thu Jul 26 17:07:50 2018,SL.glm.interaction,4thPCALL,20,10,windows,x64,HOPPER
