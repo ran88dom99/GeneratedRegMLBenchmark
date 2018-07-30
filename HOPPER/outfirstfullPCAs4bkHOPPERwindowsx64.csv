@@ -631,3 +631,11 @@ Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 29 09:20:43 2018,SL.rpart,1,1,4thPCALL,ign
 NA,-0.121,0,1.05,4.08,4,Sun Jul 29 09:20:50 2018,SL.rpartPrune,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,192,222,0.8516,0.9955,random,5,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,27,0.000547,39,0.000547,90,0.000547,103,0.000547,112,0.000547,123,0.000547
 Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 29 09:21:35 2018,SL.speedglm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,20,222,43
 Fail,Fail,Fail,Fail,Fail,Fail,Sun Jul 29 09:22:20 2018,SL.speedlm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,20,222,42
+NA,1,1,-1,4.08,4,Sun Jul 29 17:08:49 2018,perfect,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,168,222,0.8516,0.9955,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,27,0.242,39,1.24,90,0.242,103,-0.756,112,1.24,123,-0.756
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 30 08:00:39 2018,SL.step,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,128,222,53414
+0,-0.484,-0.282,3.72,4.08,4,Mon Jul 30 08:06:22 2018,SL.step.forward,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,128,222,0.8516,0.9955,random,341,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,27,-0.808,39,-0.364,90,-0.0824,103,0.0215,112,-0.283,123,-0.109
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 30 08:06:40 2018,SL.step.interaction,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,128,222,16
+NA,-0.208,-0.068,1.05,4.08,4,Mon Jul 30 08:07:49 2018,SL.stepAIC,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,128,222,0.8516,0.9955,random,67,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,27,-0.0991,39,0.132,90,-0.024,103,0.107,112,-0.246,123,0.00292
+NA,-0.037,-0.016,0.999,4.08,4,Mon Jul 30 08:07:54 2018,SL.svm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,128,222,0.8516,0.9955,random,3,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,27,0.252,39,0.0132,90,-0.133,103,-0.268,112,-0.285,123,-0.24
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 30 08:07:57 2018,SL.template,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,128,222,0
+Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 30 08:10:06 2018,SL.xgboost,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,200,222,126
