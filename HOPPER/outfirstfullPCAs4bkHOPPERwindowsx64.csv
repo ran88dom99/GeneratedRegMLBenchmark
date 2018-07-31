@@ -639,3 +639,4 @@ NA,-0.208,-0.068,1.05,4.08,4,Mon Jul 30 08:07:49 2018,SL.stepAIC,1,1,4thPCALL,ig
 NA,-0.037,-0.016,0.999,4.08,4,Mon Jul 30 08:07:54 2018,SL.svm,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,128,222,0.8516,0.9955,random,3,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,27,0.252,39,0.0132,90,-0.133,103,-0.268,112,-0.285,123,-0.24
 Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 30 08:07:57 2018,SL.template,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,128,222,0
 Fail,Fail,Fail,Fail,Fail,Fail,Mon Jul 30 08:10:06 2018,SL.xgboost,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,200,222,126
+NA,1,1,-1,4.08,4,Mon Jul 30 17:08:43 2018,perfect,1,1,4thPCALL,ignore,none,centernscale,HOPPER,firstfullPCAs4bk,4,20,403,168,222,0.8516,0.9955,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,27,0.242,39,1.24,90,0.242,103,-0.756,112,1.24,123,-0.756
