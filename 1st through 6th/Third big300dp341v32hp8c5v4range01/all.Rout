@@ -1,6 +1,0 @@
-Error in .Primitive("log")(x, ...) : 
-  non-numeric argument to mathematical function
-Error in file(file, "rt") : cannot open the connection
-In addition: Warning message:
-In file(file, "rt") :
-  cannot open file 'beforelast algorithm.csv': No such file or directory
