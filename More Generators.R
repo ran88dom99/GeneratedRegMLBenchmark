@@ -274,6 +274,60 @@ write.table(signif(simScores,digits  = 3),
             col.names = F, qmethod = "double")
 simScores<-matrix(data = 0, nrow = Rows, ncol = 12, byrow = FALSE,dimnames = NULL);
 simScores[,11]<-1
+######needles in haystack if A B else C######
+gen.count=gen.count+1
+gens.names[gen.count]="needles in haystack if A B else C"
+max.out[gen.count]=1
+simScores<-matrix(data = 0, nrow = Rows, ncol = 1000, byrow = FALSE,dimnames = NULL);
+for(Row in 1:Rows){
+  simScores[Row,1:1000]=rnorm(1000, mean = 0, sd = 1)
+}
+a<-signif(runif(10, min = 0, max = 1000))
+
+
+for(Row in 1:Rows){
+  if(simScores[Row,a[1]] > 0) {
+    simScores[Row,1]=simScores[Row,a[2]]
+  }
+    if(simScores[Row,a[1]] <= 0){
+    simScores[Row,1]=simScores[Row,a[3]]
+  }
+  if(simScores[Row,a[4]] > 0) {
+    simScores[Row,1]=simScores[Row,a[5]]+simScores[Row,1]
+  } else {
+    simScores[Row,1]=simScores[Row,a[6]]+simScores[Row,1]
+  }    
+}
+varim=vector(mode ="numeric",length = 999)
+varim[a]<-1
+varimport[gen.count,1:length(varim)]=varim #EXPECT ERRORS HERE
+write.table(signif(simScores,digits  = 3),
+            file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+simScores<-matrix(data = 0, nrow = Rows, ncol = 12, byrow = FALSE,dimnames = NULL);
+simScores[,11]<-1
+######needles in big haystack A t B######
+gen.count=gen.count+1
+gens.names[gen.count]="needles in big haystack A t B"
+max.out[gen.count]=1
+simScores<-matrix(data = 0, nrow = Rows, ncol = 10000, byrow = FALSE,dimnames = NULL);
+for(Row in 1:Rows){
+  simScores[Row,1:10000]=rnorm(10000, mean = 0, sd = 1)
+}
+a<-signif(runif(10, min = 0, max = 10000))
+for(Row in 1:Rows){
+  simScores[Row,1]=.1*simScores[Row,a[1]]*.1*simScores[Row,a[2]]+.1*simScores[Row,a[3]]*.1*simScores[Row,a[4]]+.1*simScores[Row,a[5]]*.1*simScores[Row,a[6]]+.1*simScores[Row,a[7]]*.1*simScores[Row,a[8]]
+}
+varim=vector(mode ="numeric",length = 9999)
+varim[a]<-1
+varimport[gen.count,1:length(varim)]=varim #EXPECT ERRORS HERE
+write.table(signif(simScores,digits  = 3),
+            file = paste("Generats/",gens.names[gen.count],".csv",sep=""), append =F, quote = F, sep = ",",
+            eol = "\n", na = "", dec = ".", row.names = F,
+            col.names = F, qmethod = "double")
+simScores<-matrix(data = 0, nrow = Rows, ncol = 12, byrow = FALSE,dimnames = NULL);
+simScores[,11]<-1
 ######needles in haystack A t B t C######
 gen.count=gen.count+1
 gens.names[gen.count]="needles in haystack A t B t C"
