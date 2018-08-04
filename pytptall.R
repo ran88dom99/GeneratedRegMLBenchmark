@@ -103,7 +103,7 @@ for(retpop in c(25,1000)){
       X_holdout <- r_to_py(testing[,-1])
       Y_holdout <- r_to_py(testing[,1])
       predictions <- ztpot$predict(X_holdout)
-      old.predicttt<-predicttt
+      old.predicttt <- predicttt
       predicttt <- RMSE(predictions,py_to_r(Y_holdout))
       if(old.predicttt==predicttt) {
         predicttt.cou=predicttt.cou+1
@@ -116,7 +116,7 @@ for(retpop in c(25,1000)){
       fail.grep<-T
       try({
       ztpot$export(pipefile)
-      movethepot <- paste("tpot/",datasource,timechecksum,round((predicttt)*100),".py",sep = "_")
+      movethepot <- paste("tpot/",datasource,round((predicttt)*100),timechecksum,".py",sep = "_")
       file.copy(as.character(pipefile),as.character(movethepot[1]))
       
 
