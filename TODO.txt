@@ -1,3 +1,16 @@
+Algos: (every model, 30 times per dataset, every dataset, thinly cut?)
+Someone to play with, something to read 
+Similarity of every other type (abs(RMSE,MAE) cosine spearman pearson kendall) (normalize?,how many 0s?,keep 0s in prediction?) (1/10? certainty) (use mean -.2)
+LIBREC (write predictions for entire dataset)(write model to file) (predict new rows and columns from previous model without modifying model) (all models and then a bunch of variations) (and then learn all about model compositing including uncertainty)
+too much computer time; release and switch tasks possibly never to stack ever.
+SUPERSSTACKER (oh wow so many combinations and actions...)
+ 
+WHEN HAVE Mim's LAPTOP CHECK TPOT vs interactions and check every ML algo on detecting interations in haystacks
+ 
+onlinePCA finaly try every PCA (selected, similar, absolutely all)
+ 
+GSG - GNU site?
+
 Imputation/normalization -> nothing, row; mean median, subtract this center?, colmean? 
 Reduce to correl set?
 Various PCA factorization and other PP   ->
@@ -6,12 +19,6 @@ tpot so long as it can V2*V3 and ifs V5 on V3 V4
 
 Alt. Let Tpot pick the columns with built in feature selection
 Alt. Stack tpot on top of pca of correlated.pearson/spearman and mean like before but up the correl search
- 
- WHEN HAVE Mim's LAPTOP CHECK TPOT vs interactions and check every ML algo on detecting interations in haystacks
- 
- onlinePCA finaly try every PCA (selected, similar, absolutely all)
- 
- GSG - GNU site?
 
 SKIP
 #explains well the few models it can run. not worth it imho

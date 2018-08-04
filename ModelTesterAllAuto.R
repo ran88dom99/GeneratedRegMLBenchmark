@@ -12,7 +12,15 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 memory.limit()
-which.computer<-Sys.info()[['nodename']]
+fail.try<-T
+try({
+which.computer<-names(read.csv("thispc.txt"))
+fail.try<-F
+})
+if(fail.try==T){
+  which.computer<-Sys.info()[['nodename']]
+  write(which.computer,"thispc.txt")
+}
 task.subject<-"firstfullPCAs4bk"#"carEnstest3"#
 # regeneration including same 100, reselection to testrun  
 pc.tpot=F

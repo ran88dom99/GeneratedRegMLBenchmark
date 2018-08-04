@@ -189,6 +189,7 @@ spearmanrhosqrd<-NA_integer_
 spearmanrhosqrd<-cor(x=p[,1],y=p[,2],use="complete.obs",method = "spearman")
 spearmanrhosqrd<-(spearmanrhosqrd)*abs(spearmanrhosqrd)
 
+JUST USE CAT
 writeout<- paste(c(round(spearmanrhosqrd,digits = 3),round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                    signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
                    trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,
