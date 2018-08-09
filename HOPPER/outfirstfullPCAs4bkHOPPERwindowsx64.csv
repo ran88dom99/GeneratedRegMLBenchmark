@@ -992,3 +992,4 @@ Fail,Fail,Fail,Fail,Fail,Fail,Wed Aug 08 01:28:48 2018,SL.qda,1,2,4thPCALL,ignor
 0,-0.357,-0.114,0.977,0.885,0.776,Wed Aug 08 01:57:34 2018,SL.rpartPrune,1,2,4thPCALL,ignore,none,all,HOPPER,firstfullPCAs4bk,1,20,403,171,222,0.7943,1.002,random,26,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,21,3.55,28,3.55,32,3.55,47,3.55,65,4.54,66,3.55,125,3.55
 Fail,Fail,Fail,Fail,Fail,Fail,Wed Aug 08 08:16:46 2018,SL.speedglm,1,2,4thPCALL,ignore,none,all,HOPPER,firstfullPCAs4bk,1,20,403,61,222,22750
 Fail,Fail,Fail,Fail,Fail,Fail,Wed Aug 08 14:17:58 2018,SL.speedlm,1,2,4thPCALL,ignore,none,all,HOPPER,firstfullPCAs4bk,1,20,403,61,222,21617
+1,1,1,-1,0,0,Wed Aug 08 17:09:21 2018,perfect,1,2,4thPCALL,ignore,none,all,HOPPER,firstfullPCAs4bk,1,20,403,168,222,0.7943,1.002,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,21,3,28,4,32,4,47,5,65,4,66,3,125,5
