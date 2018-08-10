@@ -12,11 +12,11 @@ features = tpot_data.drop('target', axis=1).values
 training_features, testing_features, training_target, testing_target = \
             train_test_split(features, tpot_data['target'].values, random_state=42)
 
-# Score on the training set was:-0.845933922625692
+# Score on the training set was:-0.7418020570997684
 exported_pipeline = make_pipeline(
-    Normalizer(norm="max"),
-    SelectPercentile(score_func=f_regression, percentile=53),
-    LassoLarsCV(normalize=False)
+    Normalizer(norm="l2"),
+    SelectPercentile(score_func=f_regression, percentile=26),
+    LassoLarsCV(normalize=True)
 )
 
 exported_pipeline.fit(training_features, training_target)
