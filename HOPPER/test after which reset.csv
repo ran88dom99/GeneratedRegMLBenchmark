@@ -99,3 +99,4 @@ Tue Aug 07 17:07:41 2018,h2oAutoml 100,4thPCALL,20,10,windows,x64,HOPPER
 Wed Aug 08 17:07:59 2018,SL.step,4thPCALL,20,10,windows,x64,HOPPER
 Thu Aug 09 10:58:03 2018,SL.step,4thPCALL,20,10,windows,x64,HOPPER
 Thu Aug 09 17:08:09 2018,SL.biglasso,4thPCALL,20,10,windows,x64,HOPPER
+Fri Aug 10 17:08:09 2018,SL.step.forward,4thPCALL,20,10,windows,x64,HOPPER
