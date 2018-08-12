@@ -7,7 +7,7 @@ setwd(cpout.folder)
 oveRMSE<-100
 oveRMSE.cou<-0
 predicttt<-100
-predicttt.cou<- 0
+
 
 earlystop<-7 # works propperly even with warm_start, now early_stop passed to TPOT is this times gensperitr
 onepipmin<-40
@@ -30,6 +30,7 @@ for(retpop in c(25,1000)){
   adaptControl$number <- itr
   adaptControl$method <- onepipmin
   fail.try=T
+  predicttt.cou <- 0
   
   try({
     when <- proc.time()
