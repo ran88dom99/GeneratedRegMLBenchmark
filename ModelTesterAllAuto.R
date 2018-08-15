@@ -12,6 +12,26 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 memory.limit()
+
+########packages install check######
+
+#list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
+list.of.packages <- c("ddalpha","dplyr","gtools","reticulate","AlgDesign","LearnBayes","httpuv","DALEX","gower","dimRed","DEoptimR","caretEnsemble","logicFS",
+                      " RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn",
+                      "foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred",
+                      "elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm",
+                      "quantregForest","ranger","inTrees","fda.usc","FDboost","LiblineaR")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, dep = TRUE)
+
+
+#install.packages("mlr", dependencies = c("Depends", "Suggests"))
+#install.packages("caret", dependencies = c("Depends", "Suggests"))
+#install.packages("caret",repos = "http://cran.r-project.org",dependencies = c("Depends", "Imports", "Suggests"))
+#install.packages("SuperLearner", dependencies = c("Depends", "Suggests"))
+#install.packages("rattle", dependencies = c("Depends", "Suggests"))
+
+
 which.computer<-Sys.info()[['nodename']]
 task.subject<-"firstfullPCAs4bk"#"carEnstest3"#
 # regeneration including same 100, reselection to testrun  
@@ -75,23 +95,6 @@ try({
 })
 if(!exists("preve.pram")) pram.cycle<-F
 
-########packages install check######
-
-#list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
-list.of.packages <- c("ddalpha","dplyr","gtools","reticulate","AlgDesign","LearnBayes","httpuv","DALEX","gower","dimRed","DEoptimR","caretEnsemble","logicFS",
-                      " RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn",
-                      "foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred",
-                      "elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm",
-                      "quantregForest","ranger","inTrees","fda.usc","FDboost","LiblineaR")
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages, dep = TRUE)
-
-
-#install.packages("mlr", dependencies = c("Depends", "Suggests"))
-#install.packages("caret", dependencies = c("Depends", "Suggests"))
-#install.packages("caret",repos = "http://cran.r-project.org",dependencies = c("Depends", "Imports", "Suggests"))
-#install.packages("SuperLearner", dependencies = c("Depends", "Suggests"))
-#install.packages("rattle", dependencies = c("Depends", "Suggests"))
 
 # Load libraries
 #library(mlbench)
