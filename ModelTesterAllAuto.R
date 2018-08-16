@@ -44,7 +44,8 @@ if(which.computer=="ALTA")
 if(which.computer=="ACEREBOUT") 
   {pc.tpot=T;pc.caret=F}#task.subject<-"hffoldreccTPOT";
 if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F}
-  
+if(which.computer=="LAPTOP-1SBQTC5I"){pc.tpot=F;pc.caret=T}
+
   
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
 importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
