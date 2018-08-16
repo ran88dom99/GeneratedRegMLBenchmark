@@ -1147,3 +1147,4 @@ Fail,Fail,Fail,Fail,Fail,Fail,Wed Aug 15 10:51:39 2018,SL.step.interaction,1,2,4
 0.057,0.032,0.057,1.04,0.803,0.645,Wed Aug 15 11:05:37 2018,SL.svm,1,2,4thPCALL,ignore,none,all,HOPPER,firstfullPCAs4bk,4,20,403,128,222,0.8516,0.998,random,13,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,27,4.03,39,4.06,90,3.63,103,3.49,112,3.47,123,3.52
 Fail,Fail,Fail,Fail,Fail,Fail,Wed Aug 15 11:12:33 2018,SL.template,1,2,4thPCALL,ignore,none,all,HOPPER,firstfullPCAs4bk,4,20,403,128,222,0
 0,-0.01,-0.081,1.19,0.92,0.673,Wed Aug 15 11:21:55 2018,SL.xgboost,1,2,4thPCALL,ignore,none,all,HOPPER,firstfullPCAs4bk,4,20,403,416,222,0.8516,0.998,random,558,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,27,3.74,39,3.5,90,4.08,103,3.06,112,3.45,123,3.58
+1,1,1,-1,0,0,Wed Aug 15 17:10:08 2018,perfect,1,2,4thPCALL,ignore,none,all,HOPPER,firstfullPCAs4bk,4,20,403,168,222,0.8516,0.998,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,27,4,39,5,90,4,103,3,112,5,123,3
