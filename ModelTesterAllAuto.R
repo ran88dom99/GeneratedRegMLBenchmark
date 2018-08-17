@@ -20,7 +20,7 @@ list.of.packages <- c("DALEX","ddalpha","dplyr","gtools","reticulate","AlgDesign
                       " RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn",
                       "foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred",
                       "elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm",
-                      "quantregForest","ranger","inTrees","fda.usc","FDboost","LiblineaR","questionr")
+                      "quantregForest","ranger","inTrees","fda.usc","FDboost","LiblineaR","questionr","import")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
