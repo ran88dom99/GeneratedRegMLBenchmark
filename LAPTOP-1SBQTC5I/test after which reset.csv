@@ -166,3 +166,4 @@ Wed Aug 15 12:38:50 2018,bayesglm,poly aC1^1.3 + bC1^2.1 + dC1^.7,20,10,windows,
 Thu Aug 16 00:11:42 2018,Rborist,poly aC1^3 + bC1^2 + dC1,20,10,windows,x64,LAPTOP-1SBQTC5I
 Thu Aug 16 00:27:00 2018,67_TPOT,poly aC1^3 + bC1^2 + dC1,20,10,windows,x64,LAPTOP-1SBQTC5I
 Thu Aug 16 10:51:30 2018,147_TPOT,poly aC1^3 + bC1^2 + dC1,20,10,windows,x64,LAPTOP-1SBQTC5I
+Fri Aug 17 00:02:24 2018,Rborist,poly aC1^3 + bC1^2 + dC1,20,10,windows,x64,LAPTOP-1SBQTC5I
