@@ -102,3 +102,6 @@ Mon Aug 13 17:09:38 2018,h2oAutoml 100,4thPCALL,20,10,windows,x64,HOPPER
 Tue Aug 14 17:08:10 2018,h2oAutoml 100,4thPCALL,20,10,windows,x64,HOPPER
 Wed Aug 15 17:08:29 2018,method.NNLS,4thPCALL,20,10,windows,x64,HOPPER
 Thu Aug 16 17:08:24 2018,method.NNLS,4thPCALL,20,10,windows,x64,HOPPER
+Fri Aug 17 17:08:05 2018,SL.speedglm,4thPCALL,20,10,windows,x64,HOPPER
+Sat Aug 18 17:08:10 2018,SL.step.forward,4thPCALL,20,10,windows,x64,HOPPER
+Sun Aug 19 17:08:13 2018,h2oAutoml 10,4thPCALL,20,10,windows,x64,HOPPER
