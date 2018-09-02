@@ -31,8 +31,16 @@ if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 #install.packages("SuperLearner", dependencies = c("Depends", "Suggests"))
 #install.packages("rattle", dependencies = c("Depends", "Suggests"))
 
-
+fail.try<-T
+try({
+which.computer<-names(read.csv("thispc.txt"))
+fail.try<-F
+})
+ if(fail.try==T){
 which.computer<-Sys.info()[['nodename']]
+write(which.computer,"thispc.txt")
+}
+
 task.subject<-"firstfullPCAs4bk"#"carEnstest3"#
 # regeneration including same 100, reselection to testrun  
 pc.tpot=F
