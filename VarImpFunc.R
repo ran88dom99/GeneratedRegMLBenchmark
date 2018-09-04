@@ -20,9 +20,9 @@ varimperm<-function(custom_predict, modeltp, X, Y, n_sample = 200, metpack = "un
     #noVarImp.models=c("parRF")#var imp crashes with these models
     #if(allmodel %in% noVarImp.models){next()}#
 
-    Rseed<-.Random.seed[1]
-    Cseed<-.Random.seed[2]
-    metpack<-paste(metpack,"permute",sep = "_")
+    Rseed <- .Random.seed[1]
+    Cseed <- .Random.seed[2]
+    metpack <- paste(metpack,"permute",sep = "_")
     
     varImpMix<-as.character(round(proc.time()[3]-when[3]))#varImpMix<-vector(mode="character",length = length(colNms)*2)
     for(i in 2:(length(vi_reg[,2])-1)){
