@@ -1148,3 +1148,11 @@ Fail,Fail,Fail,Fail,PrePackageFail,Thu Jul 26 17:35:50 2018,regr.extraTrees,1,2,
 Fail,Fail,Fail,Fail,Fail,Fail,Thu Jul 26 17:37:36 2018,regr.FDboost,1,2,4thPCALL,ignore,none,all,ALTA,firstfullPCAs4bk,3,20,403,458,222,101
 NA,-0.044,0,0.995,0.927,0.746,Thu Jul 26 17:37:43 2018,regr.featureless,1,2,4thPCALL,ignore,none,all,ALTA,firstfullPCAs4bk,3,20,403,458,222,0.9273,0.9954,random,1,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,20,3.78,48,3.78,63,3.78,67,3.78,82,3.78,115,3.78,122,3.78
 -0.047,-0.467,-0.275,0.8,1.18,1.05,Thu Jul 26 17:37:48 2018,regr.fnn,1,2,4thPCALL,ignore,none,all,ALTA,firstfullPCAs4bk,3,20,403,458,222,0.9273,0.9954,random,1,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,20,4.67,48,4.33,63,3.33,67,4,82,4,115,3,122,3.67
+1,1,1,-1,0,0,Wed Sep 05 21:44:48 2018,perfect,1,2,4thPCALL,ignore,none,all,ALTA,firstfullPCAs4bk,3,20,403,168,222,0.9273,0.9954,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,20,4,48,2,63,4,67,5,82,3,115,4,122,3
+-0.169,-0.211,-0.113,0.731,1.03,0.865,Wed Sep 05 21:48:04 2018,regr.bartMachine,1,2,4thPCALL,ignore,none,all,ALTA,firstfullPCAs4bk,3,20,403,190,222,0.9273,0.9954,random,30,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,20,3.81,48,3.96,63,3.62,67,3.92,82,4.21,115,3.53,122,3.76
+NA,-0.044,0,0.995,0.927,0.746,Wed Sep 05 21:49:29 2018,regr.bcart,1,2,4thPCALL,ignore,none,all,ALTA,firstfullPCAs4bk,3,20,403,199,222,0.9273,0.9954,random,78,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,20,3.78,48,3.78,63,3.78,67,3.78,82,3.78,115,3.78,122,3.78
+Fail,Fail,Fail,Fail,Fail,Fail,Wed Sep 05 21:49:54 2018,regr.blm,1,2,4thPCALL,ignore,none,all,ALTA,firstfullPCAs4bk,3,20,403,199,222,12
+Fail,Fail,Fail,Fail,Fail,Fail,Wed Sep 05 21:50:26 2018,regr.brnn,1,2,4thPCALL,ignore,none,all,ALTA,firstfullPCAs4bk,3,20,403,341,222,25
+0.079,0.003,0.027,0.816,0.903,0.712,Wed Sep 05 21:50:41 2018,regr.bst,1,2,4thPCALL,ignore,none,all,ALTA,firstfullPCAs4bk,3,20,403,341,222,0.9273,0.9954,random,7,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,20,3.98,48,3.77,63,3.68,67,3.82,82,3.68,115,3.72,122,3.74
+Fail,Fail,Fail,Fail,Fail,Fail,Wed Sep 05 21:51:10 2018,regr.btlm,1,2,4thPCALL,ignore,none,all,ALTA,firstfullPCAs4bk,3,20,403,341,222,21
+Fail,Fail,Fail,Fail,PackageFail,Wed Sep 05 21:51:44 2018,regr.crs,1,2,4thPCALL,ignore,none,all,ALTA,firstfullPCAs4bk,3,20,29
