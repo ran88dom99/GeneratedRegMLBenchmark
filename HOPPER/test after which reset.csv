@@ -129,3 +129,4 @@ Wed Sep 12 17:08:02 2018,regr.h2o.deeplearning,4thPCALL,20,10,windows,x64,HOPPER
 Thu Sep 13 17:08:10 2018,regr.gamboost,4thPCALL,20,10,windows,x64,HOPPER
 Fri Sep 14 15:06:22 2018,regr.nnet,4thPCALL,20,10,windows,x64,HOPPER
 Fri Sep 14 17:07:38 2018,regr.nnet,4thPCALL,20,10,windows,x64,HOPPER
+Sat Sep 15 17:07:46 2018,regr.xgboost,4thPCALL2,20,10,windows,x64,HOPPER
