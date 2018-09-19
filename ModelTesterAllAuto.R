@@ -168,7 +168,7 @@ adaptControl <- trainControl(method = "adaptive_cv",
                              adaptive = list(min = 4, alpha = 0.05,
                                              method = "gls", complete = FALSE),
                              search = "random")
-adaptControl <-trainControl(method = "cv", number = cv.iters,  search = "random")
+adaptControl <- trainControl(method = "cv", number = cv.iters,  search = "random")
 simpleControl <- trainControl(method = "cv",
                               number = cv.iters,
                               search = "random")
@@ -229,10 +229,10 @@ for(gend.data in gensTTest){
           
           if(pram.cycle){
             ppsum<-0
-            ppsum<-ppsum+(trans.y %in% preve.pram)
-            ppsum<-ppsum+(norming %in% preve.pram)
-            ppsum<-ppsum+(withextra %in% preve.pram)
-            ppsum<-ppsum+(missingdata %in% preve.pram)
+            ppsum<-ppsum + (trans.y %in% preve.pram)
+            ppsum<-ppsum + (norming %in% preve.pram)
+            ppsum<-ppsum + (withextra %in% preve.pram)
+            ppsum<-ppsum + (missingdata %in% preve.pram)
           if(ppsum<4) next()
             }
           
