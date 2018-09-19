@@ -45,13 +45,13 @@ task.subject<-"firstfullPCAs4bk"#"carEnstest3"#
 # regeneration including same 100, reselection to testrun  
 pc.tpot=F
 pc.caret=T
-pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTA")#T,"HOPPER"
+pc.mlr<-c("ACEREBOUTt","HOPPER","ALTA")#T,"HOPPER"
 pc.smallR<-c("HOPPER","ALTAt","ACEREBOUT")
 if(which.computer=="ALTA") 
   {.libPaths("D:/R library/3.4");pc.tpot=F;pc.caret=F}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
   {pc.tpot=T;pc.caret=F}#task.subject<-"hffoldreccTPOT";
-if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F}
+if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F;task.subject<-"firstfullPCAs4bk10"}
 if(which.computer=="LAPTOP-1SBQTC5I"){pc.tpot=F;pc.caret=T}
 
   
@@ -73,14 +73,14 @@ if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.
 #if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F
 
 high.fold=20
-min.high.fold=5
+min.high.fold=10
 cv.iters=20
 tuneLength=10
 tuneLength2=4
 normings=c("asis","range01","centernscale","all","YeoJohnson","quantile","PCA","ICA","expoTrans")#,"centernscale"
 
 if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=20;high.fold=20}
-
+if(which.computer=="HOPPER"){high.fold=10}
 
 pram.cycle<-T
 gensTTesto<-c(71,72)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
