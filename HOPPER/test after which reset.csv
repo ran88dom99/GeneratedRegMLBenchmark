@@ -112,3 +112,25 @@ Thu Aug 23 15:19:14 2018,SL.step.interaction,4thPCALL2,20,10,windows,x64,HOPPER
 Thu Aug 23 17:08:00 2018,SL.biglasso,4thPCALL2,20,10,windows,x64,HOPPER
 Fri Aug 24 17:07:37 2018,SL.caret,4thPCALL2,20,10,windows,x64,HOPPER
 Sat Aug 25 17:08:25 2018,SL.biglasso,4thPCALL2,20,10,windows,x64,HOPPER
+Sun Aug 26 17:07:56 2018,SL.caret,4thPCALL2,20,10,windows,x64,HOPPER
+Mon Aug 27 17:08:12 2018,SL.step.forward,4thPCALL2,20,10,windows,x64,HOPPER
+Tue Aug 28 17:08:20 2018,h2oAutoml 1,4thPCALL2,20,10,windows,x64,HOPPER
+Wed Aug 29 17:09:10 2018,SL.gbm,4thPCALL2,20,10,windows,x64,HOPPER
+Sun Sep 02 12:16:35 2018,SL.caret,4thPCALL2,20,10,windows,x64,HOPPER
+Sun Sep 02 20:22:15 2018,SL.gbm,4thPCALL2,20,10,windows,x64,HOPPER
+Sun Sep 02 21:17:50 2018,h2oAutoml 100,4thPCALL2,20,10,windows,x64,HOPPER
+Mon Sep 03 17:08:15 2018,SL.caret,4thPCALL2,20,10,windows,x64,HOPPER
+Tue Sep 04 17:13:35 2018,SL.gbm,4thPCALL2,20,10,windows,x64,HOPPER
+Wed Sep 05 17:13:51 2018,SL.biglasso,4thPCALL2,20,10,windows,x64,HOPPER
+Sun Sep 09 17:09:32 2018,regr.rpart,4thPCALL,20,10,windows,x64,HOPPER
+Mon Sep 10 17:07:54 2018,regr.frbs,4thPCALL,20,10,windows,x64,HOPPER
+Tue Sep 11 17:07:49 2018,regr.frbs,4thPCALL,20,10,windows,x64,HOPPER
+Wed Sep 12 17:08:02 2018,regr.h2o.deeplearning,4thPCALL,20,10,windows,x64,HOPPER
+Thu Sep 13 17:08:10 2018,regr.gamboost,4thPCALL,20,10,windows,x64,HOPPER
+Fri Sep 14 15:06:22 2018,regr.nnet,4thPCALL,20,10,windows,x64,HOPPER
+Fri Sep 14 17:07:38 2018,regr.nnet,4thPCALL,20,10,windows,x64,HOPPER
+Sat Sep 15 17:07:46 2018,regr.xgboost,4thPCALL2,20,10,windows,x64,HOPPER
+Sun Sep 16 17:08:03 2018,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
+Mon Sep 17 17:07:48 2018,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
+Tue Sep 18 15:07:26 2018,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
+Tue Sep 18 17:07:49 2018,regr.ranger,4thPCALL,20,10,windows,x64,HOPPER
