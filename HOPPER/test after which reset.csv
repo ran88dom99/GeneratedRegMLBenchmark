@@ -134,3 +134,4 @@ Sun Sep 16 17:08:03 2018,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
 Mon Sep 17 17:07:48 2018,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
 Tue Sep 18 15:07:26 2018,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
 Tue Sep 18 17:07:49 2018,regr.ranger,4thPCALL,20,10,windows,x64,HOPPER
+Wed Sep 19 17:08:08 2018,regr.gbm,4thPCALL2,20,10,windows,x64,HOPPER
