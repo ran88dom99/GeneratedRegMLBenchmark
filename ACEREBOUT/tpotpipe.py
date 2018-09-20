@@ -11,10 +11,10 @@ features = tpot_data.drop('target', axis=1).values
 training_features, testing_features, training_target, testing_target = \
             train_test_split(features, tpot_data['target'].values, random_state=42)
 
-# Score on the training set was:-0.821681703551337
+# Score on the training set was:-0.885715918501953
 exported_pipeline = make_pipeline(
     Normalizer(norm="l2"),
-    ElasticNetCV(l1_ratio=0.65, tol=0.001)
+    ElasticNetCV(l1_ratio=0.5, tol=0.0001)
 )
 
 exported_pipeline.fit(training_features, training_target)
