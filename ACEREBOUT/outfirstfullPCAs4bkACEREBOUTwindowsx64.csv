@@ -4017,3 +4017,4 @@ NA,-0.114,0,1.02,1.28,0.955,Wed Oct 17 09:11:04 2018,SL.rpartPrune,1,2,4thPCALL2
 0.405,0.031,0.11,0.886,1.14,0.831,Wed Oct 17 09:23:57 2018,SL.svm,1,2,4thPCALL2,ignore,none,asis,ACEREBOUT,firstfullPCAs4bk,9,20,403,127,222,1.279,0.9736,random,2,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,16,3.88,29,3.77,49,3.8,71,3.64,127,3.39,128,3.33,131,3.82
 Fail,Fail,Fail,Fail,Fail,Fail,Wed Oct 17 09:24:21 2018,SL.template,1,2,4thPCALL2,ignore,none,asis,ACEREBOUT,firstfullPCAs4bk,9,20,403,127,222,0
 Fail,Fail,Fail,Fail,Fail,Fail,Wed Oct 17 09:24:40 2018,SL.xgboost,1,2,4thPCALL2,ignore,none,asis,ACEREBOUT,firstfullPCAs4bk,9,20,403,127,222,1
+1,1,1,-1,0,0,Wed Oct 17 13:50:39 2018,perfect,1,2,4thPCALL2,ignore,none,asis,ACEREBOUT,firstfullPCAs4bk,9,20,403,168,222,1.279,0.9736,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,16,5,29,4,49,4,71,5,127,1,128,3,131,4
