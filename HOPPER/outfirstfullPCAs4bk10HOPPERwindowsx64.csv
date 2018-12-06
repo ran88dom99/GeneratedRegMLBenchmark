@@ -9576,3 +9576,76 @@ NA,-0.112,0,0.975,1.14,0.855,Thu Sep 20 13:00:30 2018,regr.cvglmnet,1,2,4thPCALL
 
 
 
+1,1,1,-1,0,0,Thu Dec 06 15:51:54 2018,perfect,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,1,10,403,148,222,1.032,0.9871,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,24,5,29,4,34,3,39,5,54,4,60,4,61,4,72,3,88,4,100,3,110,4,111,3,127,1,133,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 15:52:35 2018,regr.crs,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,1,10,18
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 15:52:56 2018,regr.kknn,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,1,10,12
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 15:53:29 2018,regr.penalized,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,1,10,12
+1,1,1,-1,0,0,Thu Dec 06 15:53:48 2018,perfect,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,403,213,222,0.8677,1.004,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,16,5,19,3,31,4,37,5,46,5,48,2,64,4,74,4,87,4,117,3,121,4,128,3,129,4
+0.053,-0.129,0.033,0.763,0.839,0.695,Thu Dec 06 15:54:27 2018,regr.bartMachine,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,403,373,222,0.8677,1.004,random,10,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,16,3.94,19,3.89,31,3.81,37,3.81,46,4.12,48,3.89,64,3.83,74,3.58,87,3.82,117,3.67,121,3.53,128,3.53,129,3.53
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 15:54:39 2018,regr.blackboost,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,8
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 15:54:46 2018,regr.brnn,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 15:54:52 2018,regr.bst,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 15:54:58 2018,regr.cforest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 15:55:10 2018,regr.crs,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,13
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 15:55:17 2018,regr.ctree,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 15:55:29 2018,regr.gbm,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 15:55:51 2018,regr.kknn,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,12
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 15:56:19 2018,regr.mob,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,6
+Fail,Fail,Fail,Fail,Fail,Fail,Thu Dec 06 15:56:32 2018,regr.nodeHarvest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,403,331,222,7
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 15:56:45 2018,regr.penalized,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,12
+0,-0.198,-0.012,1.02,0.878,0.737,Thu Dec 06 16:12:15 2018,regr.randomForest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,2,10,403,46,222,0.8677,1.004,random,922,cv,10,20,NA,5,,,,7,2,,,,,0,16,3.89,19,3.88,31,3.7,37,3.86,46,3.94,48,3.91,64,3.9,74,3.58,87,3.76,117,3.95,121,3.52,128,3.52,129,3.52
+1,1,1,-1,0,0,Thu Dec 06 16:12:34 2018,perfect,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,403,46,222,1.09,0.9817,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,4,4,6,5,25,4,41,1,43,3,84,4,101,4,104,3,105,3,107,5,120,4,134,5
+0.004,-0.083,-0.016,0.733,1.11,0.812,Thu Dec 06 16:13:03 2018,regr.bartMachine,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,403,575,222,1.09,0.9817,random,7,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,4,3.99,6,3.77,25,4.19,41,3.75,43,3.93,84,3.88,101,3.72,104,3.46,105,3.48,107,3.49,120,3.51,134,3.72
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:13:15 2018,regr.blackboost,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:13:21 2018,regr.brnn,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,7
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:13:27 2018,regr.bst,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:13:33 2018,regr.cforest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 16:13:46 2018,regr.crs,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,13
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:13:52 2018,regr.ctree,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:14:07 2018,regr.gbm,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 16:14:30 2018,regr.kknn,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,12
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:15:00 2018,regr.mob,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,7
+Fail,Fail,Fail,Fail,Fail,Fail,Thu Dec 06 16:15:11 2018,regr.nodeHarvest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,403,506,222,5
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 16:15:24 2018,regr.penalized,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,12
+0.004,-0.098,-0.004,0.996,1.09,0.824,Thu Dec 06 16:27:03 2018,regr.randomForest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,3,10,403,226,222,1.09,0.9817,random,692,cv,10,20,NA,5,,,,2,2,,,,,0,4,3.85,6,3.79,25,3.97,41,3.76,43,3.84,84,4.4,101,3.73,104,3.53,105,3.57,107,3.68,120,3.51,134,3.68
+1,1,1,-1,0,0,Thu Dec 06 16:27:25 2018,perfect,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,403,226,222,1.032,0.9871,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,2,4,9,3,10,5,13,1,18,5,52,4,53,4,57,4,66,3,89,3,106,4,119,5,123,3,126,4
+0.117,0.013,0.039,0.746,0.992,0.705,Thu Dec 06 16:27:54 2018,regr.bartMachine,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,403,85,222,1.032,0.9871,random,7,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,2,3.96,9,3.8,10,3.94,13,3.82,18,4.23,52,3.94,53,3.77,57,3.88,66,3.48,89,3.58,106,3.61,119,3.57,123,3.58,126,3.49
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:28:05 2018,regr.blackboost,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:28:11 2018,regr.brnn,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:28:17 2018,regr.bst,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:28:23 2018,regr.cforest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 16:28:36 2018,regr.crs,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,13
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:28:42 2018,regr.ctree,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:28:59 2018,regr.gbm,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 16:29:25 2018,regr.kknn,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,12
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:29:54 2018,regr.mob,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,6
+Fail,Fail,Fail,Fail,Fail,Fail,Thu Dec 06 16:30:05 2018,regr.nodeHarvest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,403,457,222,4
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 16:30:18 2018,regr.penalized,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,12
+0.164,-0.041,0.039,1.01,0.991,0.744,Thu Dec 06 16:45:26 2018,regr.randomForest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,4,10,403,517,222,1.032,0.9871,random,901,cv,10,20,NA,5,,,,7,20,,,,,0,2,3.85,9,3.63,10,3.8,13,3.6,18,3.94,52,3.83,53,3.78,57,3.84,66,3.6,89,3.62,106,3.73,119,3.46,123,3.62,126,3.45
+1,1,1,-1,0,0,Thu Dec 06 16:45:49 2018,perfect,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,403,517,222,0.7937,1.014,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,5,4,14,5,17,3,33,4,44,3,62,4,80,4,81,3,95,3,99,5,103,3,112,5,114,4,118,5,131,4
+0.044,-0.124,-0.01,0.77,0.801,0.674,Thu Dec 06 16:46:17 2018,regr.bartMachine,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,403,595,222,0.7937,1.014,random,7,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,5,3.67,14,4.07,17,3.89,33,4.04,44,3.82,62,3.95,80,3.45,81,3.61,95,3.52,99,3.66,103,3.35,112,3.63,114,3.59,118,3.57,131,3.52
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:46:29 2018,regr.blackboost,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:46:35 2018,regr.brnn,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:46:41 2018,regr.bst,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:46:47 2018,regr.cforest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 16:47:00 2018,regr.crs,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,13
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:47:06 2018,regr.ctree,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:47:25 2018,regr.gbm,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 16:47:52 2018,regr.kknn,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,12
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 16:48:22 2018,regr.mob,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,6
+Fail,Fail,Fail,Fail,Fail,Fail,Thu Dec 06 16:48:33 2018,regr.nodeHarvest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,403,462,222,4
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 16:48:47 2018,regr.penalized,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,12
+-0.003,-0.223,-0.073,1.01,0.852,0.734,Thu Dec 06 17:02:39 2018,regr.randomForest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,5,10,403,349,222,0.7937,1.014,random,823,cv,10,20,NA,5,,,,7,139,,,,,0,5,3.35,14,4.3,17,3.88,33,3.65,44,4.2,62,3.8,80,3.54,81,3.68,95,3.55,99,3.51,103,3.26,112,3.56,114,3.7,118,3.6,131,3.55
+1,1,1,-1,0,0,Thu Dec 06 17:03:02 2018,perfect,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,6,10,403,349,222,0.8603,1.006,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,1,5,28,4,32,4,38,4,56,2,70,3,76,5,78,3,79,4,86,5,98,4,113,3,115,4,122,3
+0.089,-0.082,0.019,0.747,0.844,0.695,Thu Dec 06 17:03:32 2018,regr.bartMachine,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,6,10,403,241,222,0.8603,1.006,random,7,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,1,3.66,28,3.98,32,4.06,38,3.62,56,3.54,70,3.65,76,3.73,78,3.52,79,3.69,86,3.65,98,3.51,113,3.44,115,3.51,122,3.87
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 17:03:44 2018,regr.blackboost,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,6,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 17:03:50 2018,regr.brnn,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,6,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 17:03:56 2018,regr.bst,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,6,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 17:04:02 2018,regr.cforest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,6,10,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 17:04:15 2018,regr.crs,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,6,10,13
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 17:04:21 2018,regr.ctree,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,6,10,6
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 17:04:42 2018,regr.gbm,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,6,10,6
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 17:05:11 2018,regr.kknn,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,6,10,13
+Fail,Fail,Fail,Fail,PrePackageFail,Thu Dec 06 17:05:42 2018,regr.mob,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,6,10,6
+Fail,Fail,Fail,Fail,Fail,Fail,Thu Dec 06 17:05:53 2018,regr.nodeHarvest,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,6,10,403,248,222,4
+Fail,Fail,Fail,Fail,PackageFail,Thu Dec 06 17:06:07 2018,regr.penalized,1,2,4thPCALL,ignore,none,asis,HOPPER,firstfullPCAs4bk10,6,10,12
