@@ -171,3 +171,4 @@ Wed Dec 05 15:04:38 2018,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
 Wed Dec 05 17:07:45 2018,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
 Thu Dec 06 15:46:37 2018,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
 Thu Dec 06 17:07:35 2018,regr.randomForest,4thPCALL,20,10,windows,x64,HOPPER
+Fri Dec 07 17:07:37 2018,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER

@@ -11247,3 +11247,7 @@ Fail,Fail,Fail,Fail,PrePackageFail,Fri Dec 07 00:36:28 2018,regr.slim,1,2,4thPCA
 Fail,Fail,Fail,Fail,PackageFail,Fri Dec 07 00:36:58 2018,regr.crs,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,13
 Fail,Fail,Fail,Fail,PackageFail,Fri Dec 07 00:38:03 2018,regr.kknn,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,13
 Fail,Fail,Fail,Fail,PackageFail,Fri Dec 07 00:38:36 2018,regr.penalized,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,12
+1,1,1,-1,0,0,Fri Dec 07 17:14:39 2018,perfect,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,403,148,222,1.139,0.9748,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,15,5,23,5,27,4,30,4,40,5,42,4,50,4,58,1,65,4,69,2,83,3,94,4,116,3
+Fail,Fail,Fail,Fail,PackageFail,Fri Dec 07 17:15:20 2018,regr.crs,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,20
+Fail,Fail,Fail,Fail,PackageFail,Fri Dec 07 17:16:25 2018,regr.kknn,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,15
+Fail,Fail,Fail,Fail,PackageFail,Fri Dec 07 17:17:00 2018,regr.penalized,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,16
