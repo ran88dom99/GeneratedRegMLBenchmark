@@ -11185,3 +11185,14 @@ Fail,Fail,Fail,Fail,PrePackageFail,Wed Jan 09 00:25:57 2019,regr.penalized,1,2,4
 Fail,Fail,Fail,Fail,PrePackageFail,Wed Jan 09 00:26:03 2019,regr.ranger,1,2,4thPCALL2,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,5
 Fail,Fail,Fail,Fail,PrePackageFail,Wed Jan 09 00:26:08 2019,regr.rknn,1,2,4thPCALL2,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,5
 Fail,Fail,Fail,Fail,PrePackageFail,Wed Jan 09 00:26:13 2019,regr.slim,1,2,4thPCALL2,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,5
+1,1,1,-1,0,0,Wed Jan 09 17:14:36 2019,perfect,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,403,148,222,1.139,0.9748,random,NA,nohyperparameters,1,20,no rep,no min,,,,,,,,,,0,15,5,23,5,27,4,30,4,40,5,42,4,50,4,58,1,65,4,69,2,83,3,94,4,116,3
+Fail,Fail,Fail,Fail,Fail,Fail,Wed Jan 09 17:16:24 2019,regr.blackboost,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,403,310,222,72
+Fail,Fail,Fail,Fail,Fail,Fail,Wed Jan 09 17:16:36 2019,regr.brnn,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,403,90,222,3
+Fail,Fail,Fail,Fail,PackageFail,Wed Jan 09 17:16:56 2019,regr.crs,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,20
+Fail,Fail,Fail,Fail,Fail,Fail,Wed Jan 09 17:17:34 2019,regr.FDboost,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,403,90,222,11
+Fail,Fail,Fail,Fail,Fail,Fail,Wed Jan 09 17:17:58 2019,regr.gamboost,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,403,90,222,10
+Fail,Fail,Fail,Fail,PackageFail,Wed Jan 09 17:18:35 2019,regr.kknn,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,14
+Fail,Fail,Fail,Fail,Fail,Fail,Wed Jan 09 17:18:46 2019,regr.km,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,403,90,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Wed Jan 09 17:19:06 2019,regr.mob,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,403,90,222,2
+Fail,Fail,Fail,Fail,PackageFail,Wed Jan 09 17:19:36 2019,regr.penalized,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,16
+Fail,Fail,Fail,Fail,PrePackageFail,Wed Jan 09 17:19:59 2019,regr.slim,1,2,4thPCALL,ignore,none,expoTrans,HOPPER,firstfullPCAs4bk10,10,10,9
