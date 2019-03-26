@@ -1,0 +1,6 @@
+most use 4ths common ordering; 544445443525
+some center on rows; 4thbookercentPCA 4thbookercentereqrt 4thbookercentereqrt0
+4thbookerbooks uses bizare unaltered ordering
+4thbookercenterbooks is probably centered but with bizzare ordering again
+4thbookqrtshad.csv 4thbookcentqrtshad.csv ;   are tilted useless
+ 9th are obviously a different thing entierly
