@@ -51,7 +51,7 @@ if(which.computer=="ALTA")
   {.libPaths("D:/R library/3.4");pc.tpot=F;pc.caret=F}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
   {pc.tpot=T;pc.caret=F}#task.subject<-"hffoldreccTPOT";
-if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F;task.subject<-"firstfullPCAs4bk10"}
+if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F;task.subject<-"fullPCAs9bk10"}
 if(which.computer=="LAPTOP-1SBQTC5I"){pc.tpot=F;pc.caret=T}
 
   
@@ -85,7 +85,7 @@ if(which.computer=="HOPPER"){high.fold=10}
 pram.cycle<-T
 gensTTesto<-c(71,72)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
-write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
+#write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 try({
   gensTTest<-t(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   gensTTest<-as.vector(gensTTest)

@@ -218,3 +218,6 @@ Sat Mar 23 17:08:15 2019,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
 Sun Mar 24 17:08:19 2019,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
 Mon Mar 25 17:08:28 2019,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
 Tue Mar 26 17:08:21 2019,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
+Tue Mar 26 18:27:37 2019,regr.xgboost,4thPCALL,20,10,windows,x64,HOPPER
+Tue Mar 26 18:31:37 2019,regr.bartMachine,4thPCALL2,20,10,windows,x64,HOPPER
+Tue Mar 26 18:35:07 2019,regr.bartMachine,4thPCALL2,20,10,windows,x64,HOPPER
