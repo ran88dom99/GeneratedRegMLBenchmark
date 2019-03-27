@@ -52,7 +52,7 @@ if(which.computer=="ALTA")
 if(which.computer=="ACEREBOUT") 
   {pc.tpot=F;pc.caret=F; }#task.subject<-"hffoldreccTPOT";
 if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F;task.subject<-"fullPCAs9bk10"}
-if(which.computer=="LAPTOP-1SBQTC5I"){pc.tpot=F;pc.caret=T}
+if(which.computer=="LAPTOPBBQ"){pc.tpot=F;pc.caret=T}
 
   
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
@@ -72,14 +72,14 @@ if(length(which(list.files() == out.file))<1){
 if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,".csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 #if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F
 
-high.fold=20
+high.fold=10
 min.high.fold=10
-cv.iters=20
+cv.iters=10
 tuneLength=10
 tuneLength2=4
 normings=c("asis","range01","centernscale","all","YeoJohnson","quantile","PCA","ICA","expoTrans")#,"centernscale"
 
-if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=20;high.fold=20}
+#if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=20;high.fold=20}
 if(which.computer=="HOPPER"){high.fold=10}
 
 pram.cycle<-T

@@ -1,0 +1,95 @@
+WARNING: --max-mem-size= 0.0M: too small and ignored
+
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> #try({library(lintr)})
+> options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
+> ## capture messages and errors to a file.https://rweb.crmda.ku.edu/cran/
+> #zz <- file("all.Rout", open="wt")https://cran.cnr.berkeley.edu
+> #sink(zz, type="message") edit for rebaseless
+> #chek for R package updates
+> #try(log("a")) ## test --no-edit
+> #WHEN INSTALLING RTOOLS MAKE SURE TO "Select Additional Tasks" dialog box I checked "Edit the system PATH. ...".
+> #install.packages("devtools")+++++
+> ##devtools::install_github("r-lib/devtools")
+> #
+> #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
+> #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
+> memory.limit()
+[1] 6056
+> 
+> ########packages install check######
+> 
+> #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
+> list.of.packages <- c("DALEX","ddalpha","dplyr","gtools","reticulate","AlgDesign","LearnBayes","httpuv","gower","dimRed","DEoptimR","caretEnsemble","logicFS",
++                       " RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn",
++                       "foba","logicFS","rPython","qrnn","randomGLM","msaenet","Rborist","relaxo","ordinalNet","rrf","frbs","extraTrees","ipred",
++                       "elasticnet","bst","brnn","Boruta","arm","elmNN","evtree","extraTrees","deepnet","kknn","KRLS","RSNNS","partDSA","plsRglm",
++                       "quantregForest","ranger","inTrees","fda.usc","FDboost","LiblineaR","questionr","import")
+> new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+> if(length(new.packages)) install.packages(new.packages, dep = TRUE)
+Installing packages into 'C:/Users/irina grishina/Documents/R/win-library/3.4'
+(as 'lib' is unspecified)
+Warning message:
+packages ' RWeka', 'rPython', 'rrf' are not available (for R version 3.4.4) 
+> 
+> 
+> #install.packages("mlr", dependencies = c("Depends", "Suggests"))
+> #install.packages("caret", dependencies = c("Depends", "Suggests"))
+> #install.packages("caret",repos = "http://cran.r-project.org",dependencies = c("Depends", "Imports", "Suggests"))
+> #install.packages("SuperLearner", dependencies = c("Depends", "Suggests"))
+> #install.packages("rattle", dependencies = c("Depends", "Suggests"))
+> 
+> fail.try<-T
+> try({
++ which.computer<-names(read.csv("thispc.txt"))
++ fail.try<-F
++ })
+>  if(fail.try==T){
++ which.computer<-Sys.info()[['nodename']]
++ write(which.computer,"thispc.txt")
++ }
+> 
+> task.subject<-"fullPCAs9bk10"#"carEnstest3"#
+> # regeneration including same 100, reselection to testrun  
+> pc.tpot=F
+> pc.caret=T
+> pc.mlr<-c("ACEREBOUTt","HOPPER","ALTA")#T,"HOPPER"
+> pc.smallR<-c("HOPPER","ALTAt","ACEREBOUT")
+> if(which.computer=="ALTA") 
++   {.libPaths("D:/R library/3.4");pc.tpot=F;pc.caret=F}#;task.subject<-"carEnstest4"
+> if(which.computer=="ACEREBOUT") 
++   {pc.tpot=T;pc.caret=F}#task.subject<-"hffoldreccTPOT";
+> if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F;task.subject<-"fullPCAs9bk10"}
+> if(which.computer=="LAPTOPBBQ"){pc.tpot=F;pc.caret=T}
+> 
+>   
+> out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
+> importance.file<-paste("importance",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,sep="")
+> 
+> source("predEncapFu.R")
+> source("VarImpFunc.R")
+Welcome to DALEX (version: 0.2.4).
+> #if(exists("base.folder")){setwd(base.folder)}
+> base.folder<-getwd()
+> cpout.folder<-paste(base.folder,"/",which.computer,sep = "")
+> setwd(cpout.folder)
+Error in setwd(cpout.folder) : cannot change working directory
+Execution halted
