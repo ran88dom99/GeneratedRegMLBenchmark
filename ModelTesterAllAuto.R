@@ -41,7 +41,7 @@ which.computer<-Sys.info()[['nodename']]
 write(which.computer,"thispc.txt")
 }
 
-task.subject<-"firstfullPCAs4bk"#"carEnstest3"#
+task.subject<-"fullPCAs9bk10"#"carEnstest3"#
 # regeneration including same 100, reselection to testrun  
 pc.tpot=F
 pc.caret=T
@@ -50,7 +50,7 @@ pc.smallR<-c("HOPPER","ALTAt","ACEREBOUT")
 if(which.computer=="ALTA") 
   {.libPaths("D:/R library/3.4");pc.tpot=F;pc.caret=F}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
-  {pc.tpot=T;pc.caret=F}#task.subject<-"hffoldreccTPOT";
+  {pc.tpot=F;pc.caret=F; }#task.subject<-"hffoldreccTPOT";
 if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F;task.subject<-"fullPCAs9bk10"}
 if(which.computer=="LAPTOP-1SBQTC5I"){pc.tpot=F;pc.caret=T}
 
