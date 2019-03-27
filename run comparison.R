@@ -1,9 +1,9 @@
 #load data
-exp.name<-"9th asis vs range vs centerscale"
+exp.name<-"acefoldbadpca"
 mainDir<-getwd()
 subDir<-exp.name
 expiramentresults<-data.frame()
-expiramentresults<-(read.csv("9th asis vs range vs centerscale.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".",stringsAsFactors=F))
+expiramentresults<-(read.csv("acefoldbadpca.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".",stringsAsFactors=F))
 dir.create(file.path(mainDir, subDir))#10th asis vs range mlr.csv
 setwd(file.path(mainDir, subDir))
 

@@ -41,16 +41,33 @@ hyper.control.rand<-makeHyperControl(mlr.control = makeTuneControlRandom(maxit=t
 
 
 try({
+  methods = c("mrmr","randomForestSRC.rfsrc", "univariate.model.score")
 fv = generateFilterValuesData(regr.task,
-                              method = c("mrmr","randomForestSRC.rfsrc",
-                                         "univariate.model.score"),
+                              method = c("mrmr","randomForestSRC.rfsrc", "univariate.model.score"),
                               nselect<-10)#,,"permutation.importance","randomForestSRC.var.select"
 plotFilterValues(fv)#issues errors"cforest.importance",,more.args = list(imp.learner<-"regr.cubist")
+restr.df<-data.frame()
+for(i in 1:length(fv$data[,1])){
+  restr.df[i,1]<-paste(fv$data[i,1], signif(fv$data[i,3],digits = 3),sep = ",")
+  restr.df[i,2]<-paste(fv$data[i,1], signif(fv$data[i,4],digits = 3),sep = ",")
+  restr.df[i,3]<-paste(fv$data[i,1], signif(fv$data[i,5],digits = 3),sep = ",")
+}
 
-write.table(paste("mlr",date(),datasource,fv$data,  sep = ", "),
-            file = paste(importance.file,"mlr.csv",sep=""), append =TRUE, quote = F, sep = ",",
+for(n in 1:3){
+for(i in 2:length(restr.df[,n])){
+  restr.df[1,n]<-paste(restr.df[1,n],restr.df[i,n],sep=",")
+}
+  
+  Rseed<-.Random.seed[1]
+  Cseed<-.Random.seed[2]
+  
+write.table(paste("mlr",methods[n],date(),"",trans.y,datasource,missingdata,withextra,norming,
+                  which.computer,task.subject,FN,high.fold,
+                  Rseed,Cseed,seed.var,"",restr.df[1,n],  sep = ","),
+            file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
             eol = "\n", na = "NA", dec = ".", row.names = F,
             col.names = F, qmethod = "double")
+}
 })
 
 
@@ -86,7 +103,8 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   #seed.var=seed.var+1
 
   if(length(df.previous.calcs[,1])>0){
-    if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel)){next}}
+    if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel,FN=FN))
+      {next}}
 
 
 
@@ -94,7 +112,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   try({list.of.packages <-getLearnerPackages(allmodel)
   error.pack=1})
   if(error.pack==0){
-    write.table(paste("Fail","Fail","Fail","Fail","PrePackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,round(proc.time()[3]-when[3]),  sep = ","),
+    write.table(paste("Fail","Fail","Fail","Fail","PrePackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,round(proc.time()[3]-when[3]),  sep = ","),
                 file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
@@ -102,7 +120,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
   if(length(new.packages)) install.packages(new.packages, dep = TRUE)
   if(length(list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])])){
-    write.table(paste("Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,round(proc.time()[3]-when[3]),  sep = ","),
+    write.table(paste("Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,round(proc.time()[3]-when[3]),  sep = ","),
                 file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
@@ -110,111 +128,69 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
 
 
   when<-proc.time()
-  if(length(df.previous.calcs[,1])>0){
-    if(check.redundant(df=df.previous.calcs,norming=norming,trans.y=trans.y,withextra=withextra,missingdata=missingdata,datasource=datasource ,column.to.predict=column.to.predict,allmodel=allmodel)){next}}
-  not.failed=0
-  set.seed(seed.var)
-  try({mod<-hyperopt(regr.task, learner = allmodel, hyper.control =hyper.control.rand)
 
-  lrn = setHyperPars(makeLearner(allmodel), par.vals = mod$x)
-  m = train(lrn, regr.task)
+  not.failed=0
+  try({
+    mod<-hyperopt(regr.task, learner = allmodel, hyper.control =hyper.control.rand)
+    lrn = setHyperPars(makeLearner(allmodel), par.vals = mod$x)
+    m = train(lrn, regr.task)
 
   #keep rmse but train new model on mod$x's parameters
-
-  predicted.outcomes<-predict(m, newdata=(testing))
-  p <- data.frame(predicted.outcomes$data[,2],testing[,1])
-  #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
-  Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
-  #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-  mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
-  if(trans.y==2){
-    p<- data.frame(predicted.outcomes$data[,2],y.untransformed[-inTrain])
-  }else{
-    p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
-  }
-  #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
-  RMSEp=RMSE(p[,1],p[,2])
-  #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
-  RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
-  RMSE.mean.train=signif(RMSE(training[,1],mean(training[,1], na.rm = T)), digits = 4)
-  #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
-  MMAAEE=MAE(p[,1],p[,2])
-
-
+  
+  predicted.outcomes<-predict(m, newdata=(testing[,-1]))
+  #predicted.outcomes<-predict(mod, newdata=(testing[,-1]))
+  
+  
   overRMSE=-1
-  overRMSE<-mod$y
+  overRMSE<-mod$y ####WHY MOD NOT M!!!
   #if(replace.overRMSE==1){overRMSE=-1}
   if(length(overRMSE)<1){overRMSE=-1}
-
-  #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
-  write.table(c(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
-                signif(overRMSE,digits = 3),signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),
-                date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
-                withextra,norming,which.computer,task.subject,RMSE.mean,RMSE.mean.train,adaptControl$search,seed.var,round(proc.time()[3]-when[3]),
-                adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
-                adaptControl$adaptive$min,mod$x),
-              file = out.file, append =TRUE, quote = F, sep = ",",
-              eol = "\n", na = "NA", dec = ".", row.names = F,
-              col.names = F, qmethod = "double")
-  print(date())
+  
+  printPredMets(predicted.outcomes=predicted.outcomes$data[,1],overRMSE=overRMSE,hypercount="full",libpack="mlr")
+  
   not.failed=1
   })
 
   #if hyperopt failed just use no hypering
   try({if(not.failed==0) {
     mod<-  train(allmodel, regr.task)
-
-    predicted.outcomes<-predict(mod, newdata=(testing))
-    p <- data.frame(predicted.outcomes$data[,2],testing[,1])
-    #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
-    Rsqd=1-RMSE(p[,1],p[,2])/RMSE(p[,2],mean(p[,2], na.rm = T))
-    #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
-    mean.improvement=1-MAE(p[,1],p[,2])/MAE(p[,2],median(p[,2], na.rm = T))
-    if(trans.y==2){
-      p<- data.frame(predicted.outcomes$data[,2],y.untransformed[-inTrain])
-    }else{
-      p<- data.frame(predict(loess.model,predicted.outcomes$data[,2]),y.untransformed[-inTrain])
-    }    #RMSE=(sqrt(mean((p[,1]-p[,2])^2, na.rm = T)))
-    RMSEp=RMSE(p[,1],p[,2])
-    #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
-    RMSE.mean=signif(RMSE(p[,2],mean(p[,2], na.rm = T)), digits = 4)
-    RMSE.mean.train=signif(RMSE(training[,1],mean(training[,1], na.rm = T)), digits = 4)
-    #MMAAEE=mean(abs(p[,2]-p[,1]), na.rm = T)
-    MMAAEE=MAE(p[,1],p[,2])
-
-
-    overRMSE=-1
-    #if(replace.overRMSE==1){overRMSE=-1}
-    if(length(overRMSE)<1){overRMSE=-1}
-    NoAp<-"NoAp"
-    NoHyper<-"nohyperparam"
-
-    #print(c(Rsqd,RMSE,overRMSE,date(),allmodel,column.to.predict,datasource,missingdata,withextra,norming,adaptControl$search,seed.const,adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,adaptControl$adaptive$min,trainedmodel$bestTune))
-    write.table(paste(round(mean.improvement,digits = 3),round(Rsqd,digits = 3),
-                      signif(overRMSE,digits = 3),signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),
-                      date(),allmodel,column.to.predict,trans.y,datasource,missingdata,
-                      withextra,norming,which.computer,task.subject,RMSE.mean,RMSE.mean.train,NoHyper,seed.var,round(proc.time()[3]-when[3]),
-                      adaptControl$method,tuneLength,adaptControl$number,adaptControl$repeats,
-                      adaptControl$adaptive$min, sep = ","),
-                file = out.file, append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
-
-    print(date())
+    
+    predicted.outcomes<-predict(mod, newdata=(testing[,-1]))
+    train.outcomes<-predict(mod, newdata=(training[,-1]))
+  
+  overRMSE=-1
+  try({overRMSE<-mod$learner.model$rmse_train 
+  if(length(overRMSE)<1){overRMSE=-1}
+  if( overRMSE==-1) {
+  if(trans.y==2){
+    overRMSE<-RMSE(train.outcomes$data[,1],y.untransformed[-foldTrain[[FN]]])
+  }else{
+    overRMSE<-RMSE(predict(loess.model,train.outcomes$data[,1]),y.untransformed[-foldTrain[[FN]]])
+  }
+  }})
+  #if(replace.overRMSE==1){overRMSE=-1}
+  if(length(overRMSE)<1){overRMSE=-1}
+  
+  printPredMets(predicted.outcomes=predicted.outcomes$data[,1],overRMSE=overRMSE,hypercount="none",libpack="mlr")
+  
+  m<-mod
     not.failed=1
   }})
-  if(not.failed==0) {
-    print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
-    write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,round(proc.time()[3]-when[3]),  sep = ","),
-                file = out.file, append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
-    write.table(paste("Fail",date(),allmodel,  sep = ", "),
-                file = "backup.csv", append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
+  if(not.failed==1){
+    try({ 
+      custom_predict <- function(object, newdata) {
+        pred <- predict(object, newdata=newdata)$data 
+        return(pred)
+      }
+      varimperm(custom_predict=custom_predict, modeltp=m,
+                X=testing[,-1], Y=testing[,1], metpack = "mlr_hold")
+      varimperm(custom_predict=custom_predict, modeltp=m,
+                X=training[,-1], Y=training[,1], metpack = "mlr_train")
+    })
   }
-  if(not.failed==1) {
-    }
+  if(not.failed==0) {
+  failfail()
+  }
+ 
 }
 setwd(base.folder)

@@ -1,9 +1,116 @@
+Algos: (every model, 30 times per dataset, every dataset, thinly cut?)
+Someone to play with, something to read 
+Similarity of every other type (abs(RMSE,MAE) cosine spearman pearson kendall) (normalize?,how many 0s?,keep 0s in prediction?) (1/10? certainty) (use mean -.2)
+LIBREC (write predictions for entire dataset)(write model to file) (predict new rows and columns from previous model without modifying model) (all models and then a bunch of variations) (and then learn all about model compositing including uncertainty)
+too much computer time; release and switch tasks possibly never to stack ever.
+SUPERSSTACKER (oh wow so many combinations and actions...)
+ 
+WHEN HAVE Mim's LAPTOP CHECK TPOT vs interactions and check every ML algo on detecting interations in haystacks
+ 
+onlinePCA finaly try every PCA (selected, similar, absolutely all)
+ 
+GSG - GNU site?
+
+Imputation/normalization -> nothing, row; mean median, subtract this center?, colmean? 
+Reduce to correl set?
+Various PCA factorization and other PP   ->
+column selection via mars cubist tree etc. ->
+tpot so long as it can V2*V3 and ifs V5 on V3 V4 
+
+Alt. Let Tpot pick the columns with built in feature selection
+Alt. Stack tpot on top of pca of correlated.pearson/spearman and mean like before but up the correl search
+
+SKIP
+#explains well the few models it can run. not worth it imho
+#install.packages("CORElearn")
+#too old not easy enough
+#install.packages("rminer")
+NEED DOCKER OR LINUX OR WIN10
+aurosklearn#https://github.com/automl/auto-sklearn/issues/431
+Xcessive#need to learn docker#https://github.com/reiinakano/xcessiv/tree/master/docker
+slightly incomplete:https://github.com/hibayesian/awesome-automl-papers
+
+ why loess so bad/ pass a formula to a function
+
+maybe 
+MLBox
+ATM (only classifier?)
+climbsrocks/auto_ml
+ML-Ensemble mlens (looks hard)
+
+add models to TPOT and eval more?
+gplearn(genetic programing symbolic regression)
+
+maybe Keras regression NO TOO BLACK
+autokeras
+autodeepnet
+keras itself
+devol
+
+suprise python and crab?
+Rweka  (java interface is complicated)
+reclab
+(py recommender systems libraries?)
+LIBREC
+
+featuretools 
+
+folding ends at 19 not 20? 
+h2o maybe needs validation picker? 
+--tpot autosklearn 
+--then the 2 main attaractions for surprise oddity
+svmstring and bag are not applicable remove them from sets, sevral SL like that
+
+
+quantiling now over entire dataset and y removed. 
+	Should I make a fold based quantiling preprocessor?
+	BC looks like quantiling target column causes algorithms to guess missing datum. some are amazing at this.
+why did testing not include testing[,-1]????
+####WHY MOD NOT M!!! in mlr and hyperopt 
+
+2 category heatmap logs is actual - expected logged
+
+NDR? isomap?https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction
+oh so many dimensionality reductions
+
+cns & range on y 's percent RMSE is actualy interchangble with non ys. YeoJ Exp and Quant are not. Get back to this on de-transform?
+all explan var transforms are based on entire dataset. maybe should make cns on only data algo should know?
+Caret has this right? but what about mlr?
+
  mvo -- only when out?
  	cross validation in this situ
  	video
  	all simple datasets
  	speech
 	basic classification?
+
+long term model selection requires several runs from several datasets and several metalearners to boot
+and a serious dueling model
+and a re-evaluation of stacking cuts
+and good varimp with eval first
+
+Left over failures:! no try processing because each update breaks things.. 
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:15:30 2018,gam,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,11
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:18:15 2018,gaussprLinear,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,7
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:18:33 2018,gaussprRadial,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,10
+-Fail,Fail,Fail,Fail,Fail,Thu May 03 07:22:39 2018,gbm_h2o,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,1,222,209
+-Fail,Fail,Fail,Fail,Fail,Thu May 03 07:26:57 2018,glmnet_h2o,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,1,222,207
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:22:59 2018,glm.nb,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,9
+Fail,Fail,Fail,Fail,PackageFail,Thu May 03 07:29:19 2018,logicBag,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,12
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:29:23 2018,logreg,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,3,222,4
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:30:10 2018,mlpKerasDecay,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,3,222,3
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:30:14 2018,mlpKerasDropout,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,6,222,4
+Fail,Fail,Fail,Fail,PackageFail,Thu May 03 07:30:51 2018,mxnet,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,12
+Fail,Fail,Fail,Fail,PackageFail,Thu May 03 07:31:05 2018,mxnetAdam,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,12
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:31:28 2018,nnls,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,7
+Fail,Fail,Fail,Fail,Fail,Thu May 03 07:31:42 2018,ordinalNet,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,9
+Fail,Fail,Fail,Fail,PackageFail,Thu May 03 07:32:37 2018,pls,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,12
+Fail,Fail,Fail,Fail,PackageFail,Thu May 03 07:33:36 2018,pythonKnnReg,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,624,222,12
+-Thu May 03 13:58:37 2018,svmBoundrangeString,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,3,222,3
+-Thu May 03 13:58:42 2018,svmExpoString,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,6,222,3
+-Thu May 03 14:05:14 2018,svmSpectrumString,1,2,ifs C1 & C2 on C1,ignore,none,YeoJohnson,ALTA,15th10hp10cv,1,5,403,3,222,4
+
+sd of 3 or 4 columns as gentest
 
  feed the computator
  	combine
@@ -12,9 +119,7 @@
 	
  friedman's 2dplanes is too big. (its a test so leave it)
  only 300mb? seems not to be a problem on acerebout
- howabout lubridate
- run r scripts from inside R
- get glossary machine (hackerterms.com, stats?)
+ run r scripts from inside R?)
  correlation and categorical cousin(mvo really)
  spliting after transform is not ok?
  
@@ -34,11 +139,18 @@ cd "C:\Users\John\Documents\GitHub\GeneratedRegMLBenchmark"
 	TASK
 	more?
 	
- big.pca
+ big.pca. online pca
+ educationality score ? 
  
+ 
+ For more see self selection bias: https://arxiv.org/pdf/1602.05352v1.pdf https://en.wikipedia.org/wiki/Missing_data
  attacks:https://www.aaai.org/Papers/AAAI/2005/AAAI05-053.pdf "Recommender Systems for Self-Actualization"
 recsys bias and unfairness and bubbling:http://coen.boisestate.edu/piret/projects/recsys-bias/, http://ceur-ws.org/Vol-1253/paper1.pdf
- self selection bias: https://arxiv.org/pdf/1602.05352v1.pdf https://en.wikipedia.org/wiki/Missing_data
+ 
+  shilling promote attacks https://www.youtube.com/watch?v=RZAUBBmhKFU
+
+
+ nuke bury anchor demote attacks
  
 ~propper folder structure
 ~remove duplicates & most useless users?
@@ -75,6 +187,8 @@ FOR EACH asis cent-.1 & min in common & fold
 	stack correls
 		with MLs
 	
+RMSE.mean.train=signif(RMSE(training[,1],train.based.mean), digits = 4) is useless? or just complete juxtaposition to RMSE.mean
+
 ###CORREL DEPENDS ON number of items rated in common reproduce
 ###RECLAB ADD 3rd TO ML sheet
  

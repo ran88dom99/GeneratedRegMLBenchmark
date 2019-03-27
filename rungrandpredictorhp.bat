@@ -9,4 +9,4 @@ cd "C:\Users\gvg\Desktop\Gen Test\gentest\"
 
 bunchofgitstheirsauto.sh
 
-"C:\Users\gvg\Documents\R\R-3.4.3\bin\x64\R.exe" CMD BATCH --max-mem-size=3000 ModelTesterAllAuto.R
+"C:\Users\gvg\Documents\R\R-3.4.4\bin\x64\R.exe" CMD BATCH --max-mem-size=3000 ModelTesterAllAuto.R
