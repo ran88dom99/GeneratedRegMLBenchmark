@@ -223,3 +223,4 @@ Tue Mar 26 18:31:37 2019,regr.bartMachine,4thPCALL2,20,10,windows,x64,HOPPER
 Tue Mar 26 18:35:07 2019,regr.bartMachine,4thPCALL2,20,10,windows,x64,HOPPER
 Tue Mar 26 19:17:18 2019,regr.randomForest,9thbadbooksPCAincRpca_unsort_every_blanket_only100,20,10,windows,x64,HOPPER
 Wed Mar 27 17:07:55 2019,regr.h2o.deeplearning,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,HOPPER
+Thu Mar 28 17:09:28 2019,regr.h2o.gbm,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,HOPPER
