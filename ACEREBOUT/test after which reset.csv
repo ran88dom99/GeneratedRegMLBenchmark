@@ -221,3 +221,6 @@ Fri Mar 22 21:46:13 2019,SL.biglasso,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Mon Mar 25 13:48:42 2019,SL.randomForest,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Tue Mar 26 20:02:57 2019,SL.glm.interaction,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Tue Mar 26 20:08:32 2019,SL.glm.interaction,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Wed Mar 27 00:11:59 2019,SL.caret,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
+Thu Mar 28 13:46:25 2019,SL.biglasso,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
+Thu Mar 28 15:46:13 2019,SL.caret,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
