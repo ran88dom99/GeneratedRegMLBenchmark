@@ -232,3 +232,4 @@ Mon Apr 01 17:08:55 2019,regr.ctree,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_
 Tue Apr 02 17:08:27 2019,regr.gbm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,HOPPER
 Wed Apr 03 17:10:18 2019,regr.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,HOPPER
 Thu Apr 04 17:08:18 2019,regr.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,HOPPER
+Fri Apr 05 17:08:04 2019,regr.gausspr,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
