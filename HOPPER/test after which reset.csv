@@ -235,3 +235,4 @@ Thu Apr 04 17:08:18 2019,regr.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_du
 Fri Apr 05 17:08:04 2019,regr.gausspr,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
 Sat Apr 06 17:08:30 2019,regr.gamboost,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
 Sun Apr 07 16:06:31 2019,regr.cubist,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
+Sun Apr 07 17:10:11 2019,regr.FDboost,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
