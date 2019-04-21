@@ -240,3 +240,4 @@ Fri Apr 12 13:53:13 2019,h2oAutoml 10,9thbadbooksPCAprcomp_irlba_unsort_notag_du
 Mon Apr 15 13:52:02 2019,SL.gbm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Thu Apr 18 18:29:30 2019,SL.xgboost,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Sun Apr 21 13:50:58 2019,SL.bartMachine,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Sun Apr 21 15:51:52 2019,SL.extraTrees,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
