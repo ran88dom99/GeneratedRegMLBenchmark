@@ -269,3 +269,4 @@ Wed Jun 19 17:08:33 2019,regr.gausspr,9thbadbooksPCAincRpca_unsort_first3000_nob
 Thu Jun 20 17:09:51 2019,regr.gbm,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
 Fri Jun 21 17:09:43 2019,regr.h2o.randomForest,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
 Sat Jun 22 17:09:09 2019,regr.laGP,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
+Sun Jun 23 17:10:05 2019,regr.glmboost,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
