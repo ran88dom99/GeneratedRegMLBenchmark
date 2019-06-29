@@ -274,3 +274,4 @@ Mon Jun 24 17:11:44 2019,regr.h2o.deeplearning,9thbadbooksPCAincRpca_unsort_firs
 Tue Jun 25 17:09:29 2019,regr.cubist,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
 Wed Jun 26 17:09:48 2019,regr.gbm,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
 Thu Jun 27 17:08:13 2019,regr.h2o.randomForest,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
+Fri Jun 28 17:10:59 2019,regr.IBk,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
