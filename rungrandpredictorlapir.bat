@@ -4,7 +4,7 @@ taskkill /f /im Rterm.exe
 
 cd "C:\GenRegMLBench"
 ren ModelTesterAllAuto.Rout rout.txt
-move rout.txt "C:\GenRegMLBench\LAPTOP-1SBQTC5I"
+move rout.txt "C:\GenRegMLBench\LAPTOPBBQ"
 cd "C:\GenRegMLBench"
 
 bunchofgitstheirsauto.sh

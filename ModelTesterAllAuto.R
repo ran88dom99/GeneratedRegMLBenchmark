@@ -42,7 +42,7 @@ which.computer<-Sys.info()[['nodename']]
 write(which.computer,"thispc.txt")
 }
 
-task.subject<-"firstfullPCAs4bk"#"carEnstest3"#
+task.subject<-"fullPCAs9bk10"#"carEnstest3"#
 # regeneration including same 100, reselection to testrun  
 pc.tpot=F
 pc.caret=T
@@ -51,9 +51,9 @@ pc.smallR<-c("HOPPER","ALTAf","ACEREBOUT")
 if(which.computer=="ALTA") 
   {.libPaths("D:/R library/3.4");pc.tpot=F;pc.caret=T}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
-  {pc.tpot=T;pc.caret=F}#task.subject<-"hffoldreccTPOT";
-if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F;task.subject<-"firstfullPCAs4bk10"}
-if(which.computer=="LAPTOP-1SBQTC5I"){pc.tpot=F;pc.caret=T}
+  {pc.tpot=F;pc.caret=F; }#task.subject<-"hffoldreccTPOT";
+if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F;task.subject<-"fullPCAs9bk10"}
+if(which.computer=="LAPTOPBBQ"){pc.tpot=F;pc.caret=T}
 
   
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")
@@ -74,21 +74,20 @@ if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.
 #if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F
 #popularity for NDCG comparison must be loaded from preprocessed file 
 
-predictNDCG<-T
-high.fold=20
+high.fold=10
 min.high.fold=10
-cv.iters=20
+cv.iters=10
 tuneLength=10
 tuneLength2=4
 normings=c("asis","range01","centernscale","all","YeoJohnson","quantile","PCA","ICA","expoTrans")#,"centernscale"
 
-if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=20;high.fold=20}
+#if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=20;high.fold=20}
 if(which.computer=="HOPPER"){high.fold=10}
 
 pram.cycle<-T
 gensTTesto<-c(71,72)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
-write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
+#write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 try({
   gensTTest<-t(read.csv("tasks to test.csv", sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
   gensTTest<-as.vector(gensTTest)
