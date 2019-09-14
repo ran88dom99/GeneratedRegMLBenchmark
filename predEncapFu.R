@@ -69,8 +69,18 @@ return(F)
 #Input thats just envirnoment: Many precalculated scores, y.untrans, loess.model, foldtrain & FN
 #only output is printing
 
-
-printPredMets<-function(predicted.outcomes=predicted.outcomes,trainpred="none",overRMSE=overRMSE,hypercount="none",libpack="notune")
+if(F){ #for testing
+ trainpred="none"
+ overRMSE=overRMSE
+ hypercount="none"
+ libpack="notune"
+ predicted.outcomes=preddf
+ overRMSE=overRMSE
+ hypercount="full"
+ libpack="autoH2O"
+ 
+}
+printPredMets<-function(predicted.outcomes=predicted.outcomes,trainpred="none",overRMSE=overRMSE,hypercount="none",libpack="notune",RANKSforNDCG=NULL)
 {
   #is the overmse from a model = mean RMSE of models made on CV folds or just RMSE of training set? 
   
@@ -189,8 +199,28 @@ spearmanrhosqrd<-NA_integer_
 spearmanrhosqrd<-cor(x=p[,1],y=p[,2],use="complete.obs",method = "spearman")
 spearmanrhosqrd<-(spearmanrhosqrd)*abs(spearmanrhosqrd)
 
+##NDCG and rank means 
+meanFavRank<-0
+NDCG50<-NA
+try({
+worth.p<-vector(mode = "logical", length = 0)
+good.cut<-quantile(training[,1],probs = .75)
+worth.p<-(p[,2]>=good.cut)
+ln.worth.p<-length(worth.p)
+if(sum(worth.p)>0 && !is.null(RANKSforNDCG)){
+  ratings.ofav<-p[worth.p,1]
+  #ratings.ofav<-c(5,3,4.4)
+  #RANKSforNDCG<-c(3.3,.3,4.4,.4,4,3,2.3)
+  #notice, ofav already has relevant items inside it!!
+  RANKSforNDCG<-append(RANKSforNDCG,ratings.ofav) 
+  if(sum(RANKSforNDCG %in% ratings.ofav)<(ln.worth.p*2)) warning("fewer than twice number of favorite ratings in RANKSforNDCG ; predict of specified row changes based on other rows")
+  ranks.ofav<-rank(na.omit(-RANKSforNDCG))[(length(RANKSforNDCG)-ln.worth.p+1):length(RANKSforNDCG)]
+  NDCG50<- round((sum( ranks.ofav<=50 ) / ln.worth.p),digits=3)
+  meanFavRank<-round(mean(ranks.ofav),digits=3)
+}
+})  
 #JUST USE CAT
-writeout<- paste(c(round(spearmanrhosqrd,digits = 3),round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
+writeout<- paste(c(meanFavRank,NDCG50,round(spearmanrhosqrd,digits = 3),round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                    signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
                    trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,
                    Rseed,Cseed,seed.var,RMSE.mean,RMSE.mean.train,outCtrl$search,

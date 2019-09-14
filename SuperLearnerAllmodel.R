@@ -69,10 +69,12 @@ overRMSE<-sl_lasso$cvRisk[which.min(sl_lasso$cvRisk)]
 ## SL.glmnet_All 
 ##     0.1330516
 predics<- predict(sl_lasso, X_holdout, onlySL = T)$pred
-
+bigpredict<-proc.time()
+if(predictNDCG) NDCGpredics<- predict(sl_lasso, df.forNDCG[,x], onlySL = T)$pred
+print(proc.time()-bigpredict)
 # Here is the raw glmnet result object:
 
-printPredMets(predicted.outcomes=predics,overRMSE=overRMSE,hypercount="none")
+printPredMets(predicted.outcomes=predics,overRMSE=overRMSE,hypercount="none",RANKSforNDCG=NDCGpredics)
 fail.try.main<-F  
 })
 if(!fail.try.main){

@@ -78,9 +78,10 @@ for(itr in methodsz){
     fit_nnls$coef
  
     predics<- predict(fit_nnls, X_holdout, onlySL = T)$pred
-    trainpred<- predict(fit_nnls, X_train, onlySL = T)$pred 
+    trainpred<- predict(fit_nnls, X_train, onlySL = T)$pred
+    if(predictNDCG) NDCGpredics<- predict(fit_nnls, df.forNDCG[,x], onlySL = T)$pred
     
-    printPredMets(predicted.outcomes=predics,trainpred =trainpred ,hypercount="none")
+    printPredMets(predicted.outcomes=predics,trainpred =trainpred ,hypercount="none",RANKSforNDCG=NDCGpredics)
     fail.try.main<-F  
   })
   if(!fail.try.main){

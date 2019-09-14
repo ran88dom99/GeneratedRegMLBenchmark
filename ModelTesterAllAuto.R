@@ -15,6 +15,7 @@ memory.limit()
 
 ########packages install check######
 
+.libPaths("D:/R library/3.4");
 #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
 list.of.packages <- c("DALEX","ddalpha","dplyr","gtools","reticulate","AlgDesign","LearnBayes","httpuv","gower","dimRed","DEoptimR","caretEnsemble","logicFS",
                       " RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn",
@@ -45,10 +46,10 @@ task.subject<-"firstfullPCAs4bk"#"carEnstest3"#
 # regeneration including same 100, reselection to testrun  
 pc.tpot=F
 pc.caret=T
-pc.mlr<-c("ACEREBOUTt","HOPPER","ALTA")#T,"HOPPER"
-pc.smallR<-c("HOPPER","ALTAt","ACEREBOUT")
+pc.mlr<-c("ACEREBOUTt","HOPPER","ALTAf")#T,"HOPPER"
+pc.smallR<-c("HOPPER","ALTAf","ACEREBOUT")
 if(which.computer=="ALTA") 
-  {.libPaths("D:/R library/3.4");pc.tpot=F;pc.caret=F}#;task.subject<-"carEnstest4"
+  {.libPaths("D:/R library/3.4");pc.tpot=F;pc.caret=T}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
   {pc.tpot=T;pc.caret=F}#task.subject<-"hffoldreccTPOT";
 if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F;task.subject<-"firstfullPCAs4bk10"}
@@ -66,12 +67,14 @@ cpout.folder<-paste(base.folder,"/",which.computer,sep = "")
 setwd(cpout.folder)
 
 if(length(which(list.files() == out.file))<1){
-  write.table("spearman,pMAE,pRMSE,ocvRMSE,RMSEutrans,MAEutrans,date,algomodel,trgCol,transTarg,task,missing,append,transform,pc,expirament,fold,maxfold,seed,seedit,foldseed,RMSEmean,RMSEmeantrain,hpGen,time,validmethod,tuneLength,cvcount,ignrepeats,adaptivemin,bestTuneparams,btp1,btp2,btp3,btp4,btp5,btp6,btp7,btp8,btp9,btp10,btp11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
-  write.table("0,0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,bac latent features,ignore,none,asis,CLOUD,10hp10cv,1,5,403,624,222,0.9,0.9284,random,434,cv,10,10,NA,5,15,1.3312352844514,0.968602964049205,1.30087468028069,1.36411243351176,,," ,file =,out.file,append=T,quote = F, sep = ",", row.names = F,col.names = F)
+  write.table("meanRank,NDCG50,spearman,pMAE,pRMSE,ocvRMSE,RMSEutrans,MAEutrans,date,algomodel,trgCol,transTarg,task,missing,append,transform,pc,expirament,fold,maxfold,seed,seedit,foldseed,RMSEmean,RMSEmeantrain,hpGen,time,validmethod,tuneLength,cvcount,ignrepeats,adaptivemin,bestTuneparams,btp1,btp2,btp3,btp4,btp5,btp6,btp7,btp8,btp9,btp10,btp11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
+  write.table("0,NA,0,0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,bac latent features,ignore,none,asis,CLOUD,10hp10cv,1,5,403,624,222,0.9,0.9284,random,434,cv,10,10,NA,5,15,1.3312352844514,0.968602964049205,1.30087468028069,1.36411243351176,,," ,file =,out.file,append=T,quote = F, sep = ",", row.names = F,col.names = F)
   }
 if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,".csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 #if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F
+#popularity for NDCG comparison must be loaded from preprocessed file 
 
+predictNDCG<-T
 high.fold=20
 min.high.fold=10
 cv.iters=20
@@ -333,7 +336,9 @@ for(gend.data in gensTTest){
           } 
 
           ################preprocess###########
+          df.forNDCG=data.frame(df.toprocess[-dependant.selection,])
           df.toprocess=data.frame(df.toprocess[dependant.selection,])
+          print(dim(df.forNDCG))
           #quantile takes a while so it runs after dataset is reduced to usable y values
           # no. quantile is too error prone so its not used in "all" or as y transformer. 
           #But is used regularily and with ALL data on explanatories like the others. 
@@ -348,9 +353,7 @@ for(gend.data in gensTTest){
             df.toprocessFA[,1:l.df.tpfa]<- predict(preProcValues, df.toprocessFA[,1:l.df.tpfa])
             df.toprocess<-cbind( df.toprocess,df.toprocessFA,deparse.level = 1)
           }
-
       
-          
 
           #####second folding
           set.seed(seed.var)#spliting after transform is not ok?
@@ -417,14 +420,14 @@ for(gend.data in gensTTest){
             train.based.med<-signif(median(training[,1], na.rm = T), digits = 4)
             test.based.med<-signif(median(testing[,1], na.rm = T), digits = 4)
             
-              un.train.based.mean<-signif(mean(y.untransformed[-foldTrain[[FN]]], na.rm = T), digits = 4)
-              un.test.based.mean<-signif(mean(y.untransformed[foldTrain[[FN]]], na.rm = T), digits = 4)
-              un.train.based.med<-signif(median(y.untransformed[-foldTrain[[FN]]], na.rm = T), digits = 4)
-              un.test.based.med<-signif(median(y.untransformed[foldTrain[[FN]]], na.rm = T), digits = 4)
+            un.train.based.mean<-signif(mean(y.untransformed[-foldTrain[[FN]]], na.rm = T), digits = 4)
+            un.test.based.mean<-signif(mean(y.untransformed[foldTrain[[FN]]], na.rm = T), digits = 4)
+            un.train.based.med<-signif(median(y.untransformed[-foldTrain[[FN]]], na.rm = T), digits = 4)
+            un.test.based.med<-signif(median(y.untransformed[foldTrain[[FN]]], na.rm = T), digits = 4)
 
-              RMSE.mean=signif(RMSE(y.untransformed[foldTrain[[FN]]],un.train.based.mean), digits = 4)
-              RMSE.mean.train=signif(RMSE(training[,1],train.based.mean), digits = 4)
-              #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
+            RMSE.mean=signif(RMSE(y.untransformed[foldTrain[[FN]]],un.train.based.mean), digits = 4)
+            RMSE.mean.train=signif(RMSE(training[,1],train.based.mean), digits = 4)
+            #RMSE.mean=(sqrt(mean((p[,2]-mean(p[,2]))^2, na.rm = T)))
             
           write.table(df.toprocess,file = "sanity check 1.csv",  quote = F, row.names = F, col.names = T)
           allmodel<-"perfect"; when<-0
@@ -445,17 +448,18 @@ for(gend.data in gensTTest){
             
           } else {
           if(max(which.computer==pc.smallR)>0){
-            source("autoH2Oallmodel.R")
-            setwd(base.folder)
             source("SuperLearnerAllmodel.R")
+
             setwd(base.folder)
             #source("subsemble.R")
             setwd(base.folder)
             source("SuperSuperAll.R")
             setwd(base.folder)
+            source("autoH2Oallmodel.R")
+            setwd(base.folder)
           } else {
             if(pc.caret){
-             source("carEns3.R")
+             #source("carEns3.R")
              setwd(base.folder)
              source("Caret part.R")
              setwd(base.folder)
