@@ -42,7 +42,7 @@ which.computer<-Sys.info()[['nodename']]
 write(which.computer,"thispc.txt")
 }
 
-task.subject<-"fullPCAs9bk10"#"carEnstest3"#
+task.subject<-"netQueryToplistQS1"#"fullPCAs9bk10"#"carEnstest3"#
 # regeneration including same 100, reselection to testrun  
 pc.tpot=F
 pc.caret=T
