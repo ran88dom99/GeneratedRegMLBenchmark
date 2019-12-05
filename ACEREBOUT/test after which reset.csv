@@ -1,6 +1,4 @@
-Mon Dec 18 08:39:39 2017,regr.gamboost,just random,3,20,windows,i386,ALTA
-Mon Dec 18 08:48:29 2017,regr.bgpllm,just random,3,20,windows,i386,ALTA
-Mon Dec 18 08:48:29 2017,regr.bgpllm,just random,3,20,windows,i386,ALTA
+Mon Dec 18 08:39:39 2017,regr.gamboost,just random,3,20,windows,i386,ALTA 
 Mon Dec 18 13:15:01 2017,regr.extraTrees,just random,3,20,windows,i386,ALTA
 Mon Dec 18 13:54:00 2017,regr.randomForest,just random,3,20,windows,i386,ALTA
 Mon Dec 18 17:50:47 2017,regr.extraTrees,just random,3,20,windows,i386,ALTA
@@ -263,10 +261,7 @@ Sun Jun 02 15:35:35 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_
 Wed Jun 05 13:47:51 2019,SL.ipredbagg,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Sat Jun 08 14:45:30 2019,SL.ksvm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Tue Jun 11 13:51:04 2019,SL.speedglm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Fri Jun 14 21:11:24 2019,SL.speedglm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Mon Jun 17 14:56:36 2019,SL.speedlm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Thu Jun 20 18:54:45 2019,SL.speedlm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Sun Jun 23 13:51:08 2019,SL.speedlm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Fri Jun 14 21:11:24 2019,SL.speedglm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT 
 Wed Jun 26 15:13:24 2019,SL.bartMachine,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Sat Jun 29 15:44:01 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Tue Jul 02 16:24:55 2019,SL.ipredbagg,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
@@ -291,3 +286,5 @@ Sun Aug 25 17:09:54 2019,SL.randomForest,9thbadbooksPCAprcomp_irlba_unsort_notag
 Wed Aug 28 14:41:23 2019,h2oAutoml 10,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Wed Nov 27 02:57:18 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Fri Nov 29 13:48:38 2019,h2oAutoml 10,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Mon Dec 02 15:15:58 2019,SL.bartMachine,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Wed Dec 04 23:42:11 2019,SL.xgboost,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
