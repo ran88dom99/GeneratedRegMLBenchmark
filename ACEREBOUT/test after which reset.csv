@@ -208,3 +208,5 @@ Wed Nov 27 02:57:18 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_
 Fri Nov 29 13:48:38 2019,h2oAutoml 10,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Mon Dec 02 15:15:58 2019,SL.bartMachine,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Wed Dec 04 23:42:11 2019,SL.xgboost,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Thu Dec 05 00:29:07 2019,SL.caret.rpart,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Thu Dec 05 03:25:19 2019,h2oAutoml 50,QSlinks14_55,5,5,windows,x64,ACEREBOUT

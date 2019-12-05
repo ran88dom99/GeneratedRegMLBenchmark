@@ -8,7 +8,7 @@ library(h2o)
 
 
 fail.try=F
-for(itr in c(.1,1,10)){#,30
+for(itr in c(.1,1)){#,30
 
   
 try({
