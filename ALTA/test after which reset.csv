@@ -12,42 +12,8 @@ Sat May 12 14:42:49 2018,regr.blackboost,ifs C1 & C2 on C1,10,10,windows,i386,AL
 Sat May 12 15:04:54 2018,regr.randomForest,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
 Sat Jun 09 21:42:01 2018,regr.nodeHarvest,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
 Sat Jun 09 21:44:58 2018,regr.nodeHarvest,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-
-Sun Jul 15 22:25:48 2018,regr.cforest,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Mon Jul 16 13:18:45 2018,h2oAutoml 300,ifs C1 & C2 on C1,10,10,windows,i386,ALTA 
-Tue Jul 17 00:17:44 2018,TPOT 8,ifs C1 & C2 on C1,10,10,windows,i386,ALTA
-Tue Jul 17 14:25:33 2018,TPOT 5,ifs nested 2 layer,10,10,windows,i386,ALTA
-Wed Jul 18 18:00:41 2018,TPOT 33,ifs nested 2 layer,20,10,windows,i386,ALTA 
-Wed Jul 18 19:18:22 2018,regr.bartMachine,4thPCALL,20,10,windows,i386,ALTA
-Wed Jul 18 19:21:47 2018,regr.extraTrees,4thPCALL,20,10,windows,i386,ALTA
-Wed Jul 18 20:15:22 2018,regr.gbm,4thPCALL,20,10,windows,i386,ALTA
-Wed Jul 18 20:33:50 2018,regr.extraTrees,4thPCALL,20,10,windows,i386,ALTA
-Wed Jul 18 23:51:58 2018,SL.caret,4thPCALL,20,10,windows,i386,ALTA
-Thu Jul 19 15:14:22 2018,SL.glm.interaction,4thPCALL,20,10,windows,i386,ALTA
-Thu Jul 19 15:58:56 2018,h2oAutoml 100,4thPCALL,20,10,windows,i386,ALTA
-Thu Jul 19 16:07:02 2018,h2oAutoml 10,4thPCALL,20,10,windows,i386,ALTA
-Fri Jul 20 00:48:58 2018,regr.xgboost,4thPCALL,20,10,windows,i386,ALTA 
-Fri Jul 20 21:53:14 2018,TPOT 25,4thPCALL,20,10,windows,i386,ALTA
-Sat Jul 21 22:50:34 2018,93_TPOT,4thPCALL,20,10,windows,i386,ALTA
-Sun Jul 22 21:54:17 2018,224_TPOT,4thPCALL,20,10,windows,i386,ALTA
-Mon Jul 23 16:11:33 2018,1547_TPOT,4thPCALL,20,10,windows,i386,ALTA
-Tue Jul 24 23:03:26 2018,regr.xgboost,4thPCALL,20,10,windows,i386,ALTA
-Wed Jul 25 23:20:34 2018,regr.nnet,4thPCALL,20,10,windows,i386,ALTA
-Wed Sep 05 21:41:07 2018,regr.frbs,4thPCALL,20,10,windows,i386,ALTA
-Sun Oct 14 22:50:49 2018,SL.bayesglm,4thPCALL,20,10,windows,i386,ALTA
-Sun Oct 14 23:13:48 2018,h2oAutoml 100,4thPCALL,20,10,windows,i386,ALTA
-Mon Oct 15 02:05:00 2018,SL.bayesglm,4thPCALL,20,10,windows,i386,ALTA
-Mon Oct 15 16:39:22 2018,SL.ipredbagg,4thPCALL,20,10,windows,i386,ALTA
-Mon Oct 15 18:02:42 2018,SL.bayesglm,4thPCALL,20,10,windows,i386,ALTA
-Mon Oct 15 18:26:47 2018,caretPreEns,4thPCALL,20,10,windows,i386,ALTA
-Mon Oct 15 21:30:01 2018,regr.extraTrees,4thPCALL,20,10,windows,i386,ALTA
-Mon Oct 15 22:25:14 2018,regr.extraTrees,4thPCALL,20,10,windows,i386,ALTA
-Mon Oct 15 22:34:39 2018,regr.mob,4thPCALL,20,10,windows,i386,ALTA
-Tue Oct 16 22:54:02 2018,bagEarth,4thPCALL,20,10,windows,i386,ALTA
-Tue Oct 16 23:16:37 2018,bagEarth,4thPCALL,20,10,windows,i386,ALTA
-Sat Oct 20 00:56:11 2018,blasso,4thPCALL,20,10,windows,i386,ALTA
-Sun Oct 21 08:57:34 2018,blasso,4thPCALL,20,10,windows,i386,ALTA
-Mon Oct 22 02:20:48 2018,blassoAveraged,4thPCALL,20,10,windows,i386,ALTA
-Tue Oct 23 00:50:05 2018,blassoAveraged,4thPCALL,20,10,windows,i386,ALTA
-Wed Oct 24 00:02:18 2018,bridge,4thPCALL,20,10,windows,i386,ALTA
-Wed Oct 24 01:26:03 2018,bridge,4thPCALL,20,10,windows,i386,ALTA
+ 
+Mon Oct 07 19:54:05 2019,SL.gbm,netQueryToplistQS1,10,10,windows,i386,ALTA
+Mon Oct 07 20:44:30 2019,SL.step.interaction,netQueryToplistQS2,10,10,windows,i386,ALTA
+Tue Oct 08 01:18:38 2019,h2oAutoml 100,netQueryToplistQS2,10,10,windows,i386,ALTA
+Tue Oct 08 12:45:14 2019,SL.gbm,netQueryToplistQS2,10,10,windows,i386,ALTA

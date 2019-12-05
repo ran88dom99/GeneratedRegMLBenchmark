@@ -14,8 +14,7 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 memory.limit()
 
 ########packages install check######
-
-.libPaths("D:/R library/3.4");
+ 
 #list.of.packages <- c("caret","caretEnsemble","mlr","MLmetrics","tgp")
 list.of.packages <- c("DALEX","ddalpha","dplyr","gtools","reticulate","AlgDesign","LearnBayes","httpuv","gower","dimRed","DEoptimR","caretEnsemble","logicFS",
                       " RWeka","ordinalNet","xgboost","mlr","caret","MLmetrics","bartMachine","spikeslab","party","rqPen","monomvn",
@@ -42,14 +41,14 @@ which.computer<-Sys.info()[['nodename']]
 write(which.computer,"thispc.txt")
 }
 
-task.subject<-"netQueryToplistQS1"#"fullPCAs9bk10"#"carEnstest3"#
+task.subject<-"netQueryToplistQS2"#"fullPCAs9bk10"#"carEnstest3"#
 # regeneration including same 100, reselection to testrun  
 pc.tpot=F
 pc.caret=T
-pc.mlr<-c("ACEREBOUTt","HOPPER","ALTAf")#T,"HOPPER"
+pc.mlr<-c("ACEREBOUTt","HOPPER","ALTA")#T,"HOPPER"
 pc.smallR<-c("HOPPER","ALTAf","ACEREBOUT")
 if(which.computer=="ALTA") 
-  {.libPaths("D:/R library/3.4");pc.tpot=F;pc.caret=T}#;task.subject<-"carEnstest4"
+  { pc.tpot=F;pc.caret=F}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
   {pc.tpot=F;pc.caret=F; }#task.subject<-"hffoldreccTPOT";
 if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F;task.subject<-"fullPCAs9bk10"}
@@ -80,12 +79,12 @@ cv.iters=10
 tuneLength=10
 tuneLength2=4
 normings=c("asis","range01","centernscale","all","YeoJohnson","quantile","PCA","ICA","expoTrans")#,"centernscale"
-
+predictNDCG<-T
 #if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=20;high.fold=20}
 if(which.computer=="HOPPER"){high.fold=10}
 
 pram.cycle<-T
-gensTTesto<-c(71,72)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+gensTTesto<-c(79,1)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
 #write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 try({
@@ -197,11 +196,15 @@ print(date());
 setwd(base.folder)
 if(!exists("gen.count")){gen.count=56}
 gens.names<-as.matrix(read.table("gens names.csv", sep = ",",header = FALSE,row.names=1,fill=TRUE, quote="",dec="."))
-count.toy.data.passed<-1
+count.toy.data.passed <- 1
 for(gend.data in gensTTest){
-  count.toy.data.passed<-count.toy.data.passed+1
+  count.toy.data.passed <- count.toy.data.passed+1
   setwd(base.folder)
-  data.source<-as.matrix(read.csv(paste("Generats/",gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+  data.source <- read.csv(paste("Generats/",gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec=".")
+  for(i in 1:dim(data.source)[2]){
+    data.source[,i] <- as.numeric(as.character(data.source[,i]))
+  }
+  data.source <- as.matrix(data.source)
   print(head(data.source))
   datasource<-gens.names[gend.data,1]
   setwd(cpout.folder)

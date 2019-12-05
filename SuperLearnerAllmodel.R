@@ -4,7 +4,7 @@
 #superlearner has special ensembling methods ? but must save models for it. 
 
 
-list.of.packages<-c("SuperLearner","RhpcBLASctl","biglasso","dbarts","sva","LogicReg","speedglm","KernelKnn")
+list.of.packages <- c("SuperLearner","RhpcBLASctl","biglasso","dbarts","sva","LogicReg","speedglm","KernelKnn")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 #For XGBoost we need to tweak the install command a bit; Windows users may need to install Rtools first.

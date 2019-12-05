@@ -214,9 +214,9 @@ if(sum(worth.p)>0 && !is.null(RANKSforNDCG)){
   #notice, ofav already has relevant items inside it!!
   RANKSforNDCG<-append(RANKSforNDCG,ratings.ofav) 
   if(sum(RANKSforNDCG %in% ratings.ofav)<(ln.worth.p*2)) warning("fewer than twice number of favorite ratings in RANKSforNDCG ; predict of specified row changes based on other rows")
-  ranks.ofav<-rank(na.omit(-RANKSforNDCG))[(length(RANKSforNDCG)-ln.worth.p+1):length(RANKSforNDCG)]
-  NDCG50<- round((sum( ranks.ofav<=50 ) / ln.worth.p),digits=3)
-  meanFavRank<-round(mean(ranks.ofav),digits=3)
+  ranks.ofav <- rank(na.omit(-RANKSforNDCG))[(length(RANKSforNDCG)-ln.worth.p+1):length(RANKSforNDCG)]
+  NDCG50 <- round((sum( ranks.ofav<=50 ) / ln.worth.p),digits=3)
+  meanFavRank <- round(mean(ranks.ofav),digits=3)
 }
 })  
 #JUST USE CAT
