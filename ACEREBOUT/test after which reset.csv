@@ -1,6 +1,4 @@
-Mon Dec 18 08:39:39 2017,regr.gamboost,just random,3,20,windows,i386,ALTA
-Mon Dec 18 08:48:29 2017,regr.bgpllm,just random,3,20,windows,i386,ALTA
-Mon Dec 18 08:48:29 2017,regr.bgpllm,just random,3,20,windows,i386,ALTA
+Mon Dec 18 08:39:39 2017,regr.gamboost,just random,3,20,windows,i386,ALTA 
 Mon Dec 18 13:15:01 2017,regr.extraTrees,just random,3,20,windows,i386,ALTA
 Mon Dec 18 13:54:00 2017,regr.randomForest,just random,3,20,windows,i386,ALTA
 Mon Dec 18 17:50:47 2017,regr.extraTrees,just random,3,20,windows,i386,ALTA
@@ -32,44 +30,21 @@ Tue Jan 09 15:45:53 2018,regr.svm,OpenML 2dplanes,3,20,windows,i386,ALTA
 Thu Jan 11 14:15:00 2018,regr.blackboost,OpenML 2dplanes,3,20,windows,i386,ALTA
 Sat Jan 13 22:02:39 2018,regr.bartMachine,OpenML 2dplanes,3,20,windows,i386,ALTA
 Sun Jan 14 19:24:32 2018,regr.svm,OpenML 2dplanes,3,20,windows,i386,ALTA
-Thu Jan 18 16:26:22 2018,regr.svmz,OpenML 2dplanes,3,20,windows,i386,ALTA
-Thu Jan 18 23:43:31 2018,regr.bartMachinez,OpenML 2dplanes,3,20,windows,i386,ALTA
-Sat Jan 27 20:29:24 2018,regr.bartMachine,OpenML 2dplanes,3,20,windows,i386,ALTA
-Sat Jan 27 21:51:09 2018,regr.blackboost,bas interactive latent features,3,20,windows,i386,ALTA
-Sun Jan 28 15:31:52 2018,regr.rknn,bas interactive latent features,3,20,windows,x64,ACEREBOUT
-Sun Jan 28 15:32:42 2018,regr.rknn,bas interactive latent features,3,20,windows,x64,ACEREBOUT
+Thu Jan 18 16:26:22 2018,regr.svmz,OpenML 2dplanes,3,20,windows,i386,ALTA 
+Sat Jan 27 21:51:09 2018,regr.blackboost,bas interactive latent features,3,20,windows,i386,ALTA 
 Thu Feb 22 14:33:54 2018,qrnn,bas interactive latent features,3,20,windows,x64,ACEREBOUT
 Sat Mar 10 16:42:32 2018,qrnn,bas interactive latent features,3,20,windows,x64,ACEREBOUT
 
 
 Sat May 05 13:46:50 2018,rf,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sun May 06 13:48:31 2018,xgbTree,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Sun May 06 23:14:10 2018,rqlasso,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Mon May 07 13:46:18 2018,rqlasso,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+Sun May 06 13:48:31 2018,xgbTree,4thbookrPCA,20,20,windows,x64,ACEREBOUT 
 Tue May 08 13:46:08 2018,ppr,4thbookrPCA,20,20,windows,x64,ACEREBOUT
 Tue May 08 15:46:24 2018,Rborist,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Wed May 09 13:46:21 2018,krlsRadial,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Wed May 09 15:46:10 2018,rqnc,4thbookrPCA,20,20,windows,x64,ACEREBOUT
-Thu May 10 13:46:04 2018,rqnc,4thbookrPCA,20,20,windows,x64,ACEREBOUT
+Wed May 09 13:46:21 2018,krlsRadial,4thbookrPCA,20,20,windows,x64,ACEREBOUT 
 
-Thu Jun 21 15:46:06 2018,lmStepAIC,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Thu Jun 21 21:08:26 2018,leapSeq,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Thu Jun 21 22:18:20 2018,leapSeq,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Fri Jun 22 15:56:37 2018,lmStepAIC,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Fri Jun 22 16:10:28 2018,lmStepAIC,4thbookrPCA,20,10,windows,x64,ACEREBOUT 
-Fri Jun 22 20:42:50 2018,lmStepAIC,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Fri Jun 22 22:32:47 2018,lmStepAIC,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Sat Jun 23 13:46:15 2018,blasso,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Sat Jun 23 15:08:08 2018,blasso,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Sat Jun 23 17:07:14 2018,blassoAveraged,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Sat Jun 23 19:07:08 2018,blassoAveraged,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Sat Jun 23 20:58:37 2018,bridge,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Sat Jun 23 21:00:55 2018,bridge,4thbookrPCA,20,10,windows,x64,ACEREBOUT
+Thu Jun 21 15:46:06 2018,lmStepAIC,4thbookrPCA,20,10,windows,x64,ACEREBOUT 
 Sat Jun 23 21:19:39 2018,regr.blackboost,4thbookrPCA,20,10,windows,x64,ACEREBOU
-Sun Jun 24 11:11:18 2018,xgbDART,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Sun Jun 24 15:11:19 2018,h2oAutoml 300,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Sun Jun 24 15:50:22 2018,h2oAutoml 300,4thbookrPCA,20,10,windows,x64,ACEREBOUT
-Mon Jun 25 13:46:04 2018,h2oAutoml 300,4thbookrPCA,20,10,windows,x64,ACEREBOUT
+Sun Jun 24 11:11:18 2018,xgbDART,4thbookrPCA,20,10,windows,x64,ACEREBOUT 
 Tue Jun 26 15:46:11 2018,parRF,4thbookrPCA,20,10,windows,x64,ACEREBOUT
 Wed Jun 27 13:46:41 2018,rf,4thbookrPCA,20,10,windows,x64,ACEREBOUT 
 Thu Jun 28 15:18:58 2018,SL.xgboost,4thbookrPCA,20,10,windows,x64,ACEREBOUT
@@ -98,40 +73,23 @@ Wed Aug 15 13:47:50 2018,831_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Wed Aug 15 21:46:57 2018,3098_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Sat Aug 18 13:48:04 2018,1008_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Sat Aug 18 15:46:10 2018,1587_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Tue Aug 21 13:51:16 2018,2315_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT 
-Fri Aug 24 15:45:59 2018,4519_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUTSun Aug 26 22:34:02 2018,SL.gbm,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Mon Aug 27 00:26:40 2018,4519_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Mon Aug 27 13:46:29 2018,4519_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Tue Aug 21 13:51:16 2018,2315_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT  
 Mon Aug 27 15:46:05 2018,SL.step.interaction,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Thu Aug 30 13:46:33 2018,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sun Sep 02 13:46:41 2018,1587_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sun Sep 02 15:46:12 2018,3098_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sun Sep 02 17:46:10 2018,3098_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sun Sep 02 19:46:06 2018,528_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sun Sep 02 21:46:07 2018,528_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Sun Sep 02 13:46:41 2018,1587_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT 
 Wed Sep 05 13:46:50 2018,1212_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Sat Sep 08 13:47:04 2018,2315_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Sat Sep 08 15:46:45 2018,h2oAutoml 100,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sat Sep 08 17:46:08 2018,SL.randomForest,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sat Sep 08 19:46:06 2018,SL.step.interaction,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sat Sep 08 21:46:05 2018,SL.step.interaction,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Sat Sep 08 17:46:08 2018,SL.randomForest,4thPCALL2,20,10,windows,x64,ACEREBOUT 
 Tue Sep 11 13:47:54 2018,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Fri Sep 14 13:46:35 2018,1587_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Fri Sep 14 15:45:58 2018,1008_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Fri Sep 14 17:45:59 2018,1008_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Fri Sep 14 19:46:03 2018,1968_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Fri Sep 14 21:46:05 2018,1968_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Fri Sep 14 13:46:35 2018,1587_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT 
 Mon Sep 17 13:46:36 2018,2315_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Tue Sep 18 15:27:15 2018,147_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Thu Sep 20 11:59:45 2018,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Thu Sep 20 12:38:44 2018,378_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Thu Sep 20 13:36:47 2018,831_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Thu Sep 20 13:46:10 2018,1587_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Thu Sep 20 14:30:06 2018,1587_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Thu Sep 20 13:36:47 2018,831_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT 
 Thu Sep 20 15:46:56 2018,240_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sun Sep 23 13:46:56 2018,551_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sun Sep 23 15:46:10 2018,1212_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Wed Sep 26 13:47:12 2018,1212_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Sun Sep 23 13:46:56 2018,551_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT 
 Sat Sep 29 13:46:48 2018,147_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Sat Sep 29 15:46:08 2018,280_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Sat Sep 29 17:46:13 2018,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
@@ -140,35 +98,22 @@ Sat Sep 29 21:46:13 2018,831_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Tue Oct 02 13:47:08 2018,2315_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Fri Oct 05 13:46:37 2018,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Fri Oct 05 15:45:59 2018,378_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Fri Oct 05 17:46:00 2018,831_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Fri Oct 05 19:46:00 2018,551_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Fri Oct 05 21:45:59 2018,551_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Fri Oct 05 17:46:00 2018,831_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT 
 Mon Oct 08 13:47:10 2018,2315_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Thu Oct 11 13:46:35 2018,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Thu Oct 11 15:46:00 2018,378_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Thu Oct 11 17:46:05 2018,831_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Thu Oct 11 19:46:00 2018,2315_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Thu Oct 11 21:46:20 2018,2315_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sun Oct 14 13:47:04 2018,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Wed Oct 17 13:47:35 2018,method.NNLS,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Wed Oct 17 15:46:03 2018,method.NNLS,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Thu Oct 11 17:46:05 2018,831_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT 
+Sun Oct 14 13:47:04 2018,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT 
 Wed Oct 17 17:45:59 2018,67_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Wed Oct 17 19:45:59 2018,147_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Wed Oct 17 21:45:59 2018,280_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sat Oct 20 13:47:42 2018,280_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Wed Dec 05 16:06:07 2018,831_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Wed Dec 05 16:45:53 2018,240_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Wed Dec 05 17:34:58 2018,240_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Fri Dec 07 13:46:52 2018,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Fri Dec 07 15:45:59 2018,378_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Mon Dec 10 13:46:42 2018,378_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Wed Oct 17 21:45:59 2018,280_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT 
+Wed Dec 05 16:06:07 2018,831_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT 
+Fri Dec 07 13:46:52 2018,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT 
 Thu Dec 13 13:46:26 2018,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Thu Dec 13 15:45:59 2018,831_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Thu Dec 13 17:46:00 2018,SL.bartMachine,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Thu Dec 27 04:33:04 2018,SL.gbm,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Thu Dec 27 12:32:45 2018,147_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Fri Dec 28 13:46:17 2018,831_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Fri Dec 28 15:46:09 2018,831_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Thu Dec 27 12:32:45 2018,147_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT 
 Mon Dec 31 13:47:48 2018,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Mon Dec 31 15:46:11 2018,h2oAutoml 100,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Sun Jan 06 00:41:37 2019,67_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
@@ -198,41 +143,26 @@ Sun Feb 17 15:47:34 2019,h2oAutoml 100,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Sun Feb 17 17:46:29 2019,SL.bartMachine,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Sun Feb 17 19:46:15 2019,SL.caret,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Sun Feb 17 21:46:22 2019,67_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Wed Feb 20 13:47:29 2019,147_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sat Feb 23 13:47:54 2019,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Tue Feb 26 16:39:42 2019,547_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Tue Feb 26 18:33:30 2019,h2oAutoml 100,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Tue Feb 26 20:36:50 2019,h2oAutoml 100,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Fri Mar 01 13:46:36 2019,SL.biglasso,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Thu Mar 07 13:46:40 2019,147_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sun Mar 10 13:46:41 2019,147_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Wed Feb 20 13:47:29 2019,147_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT 
 Wed Mar 13 13:47:22 2019,67_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Sat Mar 16 14:03:14 2019,SL.glm.interaction,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Sat Mar 16 16:02:35 2019,67_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Sat Mar 16 18:02:35 2019,SL.caret,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sat Mar 16 20:04:55 2019,SL.xgboost,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Sat Mar 16 22:02:42 2019,67_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Tue Mar 19 13:51:10 2019,67_TPOT,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Sat Mar 16 20:04:55 2019,SL.xgboost,4thPCALL2,20,10,windows,x64,ACEREBOUT 
 Fri Mar 22 13:50:13 2019,h2oAutoml 10,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Fri Mar 22 15:47:18 2019,SL.biglasso,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Fri Mar 22 17:46:13 2019,SL.caret,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Fri Mar 22 19:46:22 2019,h2oAutoml 10,4thPCALL2,20,10,windows,x64,ACEREBOUT
 Fri Mar 22 21:46:13 2019,SL.biglasso,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Mon Mar 25 13:48:42 2019,SL.randomForest,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Tue Mar 26 20:02:57 2019,SL.glm.interaction,4thPCALL2,20,10,windows,x64,ACEREBOUT
-Tue Mar 26 20:08:32 2019,SL.glm.interaction,4thPCALL2,20,10,windows,x64,ACEREBOUT
+Mon Mar 25 13:48:42 2019,SL.randomForest,4thPCALL2,20,10,windows,x64,ACEREBOUT 
 Wed Mar 27 00:11:59 2019,SL.caret,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
 Thu Mar 28 13:46:25 2019,SL.biglasso,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
 Thu Mar 28 15:46:13 2019,SL.caret,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
 Fri Mar 29 14:54:03 2019,h2oAutoml 10,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
-Sun Mar 31 01:08:52 2019,SL.cforest,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
-Sun Mar 31 13:46:24 2019,SL.biglasso,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
-Sun Mar 31 15:47:48 2019,SL.biglasso,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
+Sun Mar 31 01:08:52 2019,SL.cforest,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT 
 Wed Apr 03 14:31:56 2019,SL.bartMachine,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
 Wed Apr 03 16:21:36 2019,SL.cforest,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
-Sat Apr 06 13:49:10 2019,SL.speedglm,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
-Tue Apr 09 13:48:03 2019,SL.step,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
-Tue Apr 09 15:46:12 2019,SL.step,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
+Sat Apr 06 13:49:10 2019,SL.speedglm,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT 
 Tue Apr 09 17:46:22 2019,SL.caret,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
 Tue Apr 09 19:53:41 2019,SL.gbm,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
 Tue Apr 09 21:48:24 2019,SL.speedglm,9thbadbooksPCAincRpca_unsort_every_blanket_only100,10,10,windows,x64,ACEREBOUT
@@ -243,9 +173,7 @@ Sun Apr 21 13:50:58 2019,SL.bartMachine,9thbadbooksPCAprcomp_irlba_unsort_notag_
 Sun Apr 21 15:51:52 2019,SL.extraTrees,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Sun Apr 21 18:34:10 2019,SL.xgboost,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Sun Apr 21 19:51:34 2019,SL.caret,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Mon Apr 22 18:36:27 2019,h2oAutoml 1,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Wed Apr 24 14:06:12 2019,SL.gbm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Mon May 06 13:58:29 2019,SL.gbm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Mon Apr 22 18:36:27 2019,h2oAutoml 1,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT 
 Thu May 09 13:49:50 2019,h2oAutoml 10,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Sun May 12 14:08:42 2019,h2oAutoml 1,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Sun May 12 16:02:24 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
@@ -256,31 +184,18 @@ Wed May 15 13:50:22 2019,SL.rpartPrune,9thbadbooksPCAprcomp_irlba_unsort_notag_d
 Sat May 18 16:09:52 2019,SL.ksvm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Sat May 18 23:31:39 2019,h2oAutoml 10,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Tue May 21 13:52:21 2019,h2oAutoml 1,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Fri May 24 14:00:32 2019,h2oAutoml 1,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Mon May 27 13:49:20 2019,SL.caret,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Thu May 30 13:49:42 2019,SL.caret,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Fri May 24 14:00:32 2019,h2oAutoml 1,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT 
 Sun Jun 02 15:35:35 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Wed Jun 05 13:47:51 2019,SL.ipredbagg,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Sat Jun 08 14:45:30 2019,SL.ksvm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Tue Jun 11 13:51:04 2019,SL.speedglm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Fri Jun 14 21:11:24 2019,SL.speedglm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Mon Jun 17 14:56:36 2019,SL.speedlm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Thu Jun 20 18:54:45 2019,SL.speedlm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Sun Jun 23 13:51:08 2019,SL.speedlm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Sat Jun 08 14:45:30 2019,SL.ksvm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT 
 Wed Jun 26 15:13:24 2019,SL.bartMachine,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Sat Jun 29 15:44:01 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Tue Jul 02 16:24:55 2019,SL.ipredbagg,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Fri Jul 05 13:48:41 2019,SL.ipredbagg,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Sat Jun 29 15:44:01 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT 
 Mon Jul 08 13:49:14 2019,h2oAutoml 10,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Thu Jul 11 13:50:45 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Sun Jul 14 15:59:55 2019,SL.step.forward,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Wed Jul 17 17:27:05 2019,SL.step.forward,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Thu Jul 11 13:50:45 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT 
 Sat Jul 20 13:50:29 2019,SL.bartMachine,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Tue Jul 23 20:17:32 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Fri Jul 26 13:49:31 2019,SL.polymars,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Mon Jul 29 13:58:18 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Thu Aug 01 17:19:48 2019,SL.ksvm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
-Sun Aug 04 13:47:51 2019,SL.ksvm,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Mon Jul 29 13:58:18 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT 
 Wed Aug 07 13:47:27 2019,SL.stepAIC,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Sat Aug 10 13:48:10 2019,SL.caret.rpart,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Tue Aug 13 16:50:14 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
@@ -288,3 +203,8 @@ Fri Aug 16 15:47:13 2019,SL.glmnet,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_n
 Mon Aug 19 16:24:52 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Fri Aug 23 16:59:13 2019,SL.extraTrees,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Sun Aug 25 17:09:54 2019,SL.randomForest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Wed Aug 28 14:41:23 2019,h2oAutoml 10,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Wed Nov 27 02:57:18 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Fri Nov 29 13:48:38 2019,h2oAutoml 10,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Mon Dec 02 15:15:58 2019,SL.bartMachine,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Wed Dec 04 23:42:11 2019,SL.xgboost,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
