@@ -64,10 +64,12 @@ fail.try=T
       #model_preds <- lapply(model_list, predict, newdata=testing[,-1], type="raw")
       #model_preds <- data.frame(model_preds)
       ens_preds <- predict(greedy_ensemble, newdata=testing[,-1], type="raw")
+      if(predictNDCG) NDCGpredics<-predict(greedy_ensemble, newdata=df.forNDCG[,-1], type="raw")
+      
       #model_preds$ensemble <- ens_preds
       #model_preds
       overRMSE<-(-1)#greedy_ensemble$error$RMSE
-      printPredMets(predicted.outcomes=ens_preds,overRMSE=overRMSE,hypercount="full")
+      printPredMets(predicted.outcomes=ens_preds,overRMSE=overRMSE,hypercount="full",RANKSforNDCG=NDCGpredics)
 
       varimportant<-varImp(greedy_ensemble)
       print(varimportant)
@@ -104,8 +106,9 @@ fail.try=T
         
         #$ens_model$finalModel
         ens_preds <- predict(stack_ensemble, newdata=testing[,-1], type="raw")
+        if(predictNDCG) NDCGpredics<-predict(stack_ensemble, newdata=df.forNDCG[,-1], type="raw")
         overRMSE<-(-1)#min(stack_ensemble$error$RMSE, na.rm = T)
-        printPredMets(predicted.outcomes=ens_preds,overRMSE=overRMSE,hypercount="full")
+        printPredMets(predicted.outcomes=ens_preds,overRMSE=overRMSE,hypercount="full",RANKSforNDCG=NDCGpredics)
         failed<-0
       })
       if(failed==0){

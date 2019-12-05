@@ -4,7 +4,7 @@
 #superlearner has special ensembling methods ? but must save models for it. 
 
 
-list.of.packages<-c("SuperLearner","RhpcBLASctl","biglasso","dbarts","sva","LogicReg","speedglm","KernelKnn")
+list.of.packages <- c("SuperLearner","RhpcBLASctl","biglasso","dbarts","sva","LogicReg","speedglm","KernelKnn")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 #For XGBoost we need to tweak the install command a bit; Windows users may need to install Rtools first.
@@ -69,10 +69,12 @@ overRMSE<-sl_lasso$cvRisk[which.min(sl_lasso$cvRisk)]
 ## SL.glmnet_All 
 ##     0.1330516
 predics<- predict(sl_lasso, X_holdout, onlySL = T)$pred
-
+bigpredict<-proc.time()
+if(predictNDCG) NDCGpredics<- predict(sl_lasso, df.forNDCG[,x], onlySL = T)$pred
+print(proc.time()-bigpredict)
 # Here is the raw glmnet result object:
 
-printPredMets(predicted.outcomes=predics,overRMSE=overRMSE,hypercount="none")
+printPredMets(predicted.outcomes=predics,overRMSE=overRMSE,hypercount="none",RANKSforNDCG=NDCGpredics)
 fail.try.main<-F  
 })
 if(!fail.try.main){
