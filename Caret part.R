@@ -59,6 +59,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
                              tuneLength = tuneLength)
 
   predicted.outcomes<-predict(trainedmodel, newdata=(testing[,-1]))
+  if(predictNDCG) NDCGpredics<-predict(trainedmodel, newdata=( df.forNDCG[,-1]))
   
   #get trainer function's metrics
   wut=print(trainedmodel,selectCol=TRUE)
@@ -69,7 +70,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
   if(replace.overRMSE==1){overRMSE=-1}
   if(length(overRMSE)<1){overRMSE=-1}
   
-  printPredMets(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,hypercount="full")
+  printPredMets(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,hypercount="full",RANKSforNDCG=NDCGpredics)
   
   not.failed=1
   })
@@ -83,6 +84,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
 
     
     predicted.outcomes<-predict(trainedmodel, newdata=(testing[,-1]))
+    if(predictNDCG) NDCGpredics<-predict(trainedmodel, newdata=( df.forNDCG[,-1]))
     
     overRMSE=-1
     wut=print(trainedmodel,selectCol=TRUE)
@@ -92,7 +94,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     if(replace.overRMSE==1){overRMSE=-1}
     if(length(overRMSE)<1){overRMSE=-1}
  
-    printPredMets(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,hypercount="part")
+    printPredMets(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,hypercount="part",RANKSforNDCG=NDCGpredics)
     
     not.failed=1
     })
@@ -104,7 +106,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
                                method = allmodel)
     
     predicted.outcomes<-predict(trainedmodel, newdata=(testing[,-1]))
-    
+    if(predictNDCG) NDCGpredics<-predict(trainedmodel, newdata=( df.forNDCG[,-1]))
     
     overRMSE=-1
     wut=print(trainedmodel,selectCol=TRUE)
@@ -115,7 +117,7 @@ for(allmodel in allmodels){#just before all models define d.f and reduce it
     if(replace.overRMSE==1){overRMSE=-1}
     if(length(overRMSE)<1){overRMSE=-1}
     
-    printPredMets(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,hypercount="none")
+    printPredMets(predicted.outcomes=predicted.outcomes,overRMSE=overRMSE,hypercount="none",RANKSforNDCG=NDCGpredics)
     
     not.failed=1
     })

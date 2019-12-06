@@ -138,6 +138,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   #keep rmse but train new model on mod$x's parameters
   
   predicted.outcomes<-predict(m, newdata=(testing[,-1]))
+  if(predictNDCG) NDCGpredics<-predict(m, newdata=( df.forNDCG[,-1]))
   #predicted.outcomes<-predict(mod, newdata=(testing[,-1]))
   
   
@@ -146,7 +147,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   #if(replace.overRMSE==1){overRMSE=-1}
   if(length(overRMSE)<1){overRMSE=-1}
   
-  printPredMets(predicted.outcomes=predicted.outcomes$data[,1],overRMSE=overRMSE,hypercount="full",libpack="mlr")
+  printPredMets(predicted.outcomes=predicted.outcomes$data[,1],overRMSE=overRMSE,hypercount="full",libpack="mlr",RANKSforNDCG=NDCGpredics)
   
   not.failed=1
   })
@@ -157,6 +158,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
     
     predicted.outcomes<-predict(mod, newdata=(testing[,-1]))
     train.outcomes<-predict(mod, newdata=(training[,-1]))
+    if(predictNDCG) NDCGpredics<-predict(m, newdata=( df.forNDCG[,-1]))
   
   overRMSE=-1
   try({overRMSE<-mod$learner.model$rmse_train 
@@ -171,7 +173,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   #if(replace.overRMSE==1){overRMSE=-1}
   if(length(overRMSE)<1){overRMSE=-1}
   
-  printPredMets(predicted.outcomes=predicted.outcomes$data[,1],overRMSE=overRMSE,hypercount="none",libpack="mlr")
+  printPredMets(predicted.outcomes=predicted.outcomes$data[,1],overRMSE=overRMSE,hypercount="none",libpack="mlr",RANKSforNDCG=NDCGpredics)
   
   m<-mod
     not.failed=1
