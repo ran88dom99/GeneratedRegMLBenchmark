@@ -104,6 +104,7 @@ for(retpop in c(25,1000)){
       X_holdout <- r_to_py(testing[,-1])
       Y_holdout <- r_to_py(testing[,1])
       predictions <- ztpot$predict(X_holdout)
+      if(predictNDCG) NDCGpredics <- ztpot$predict(df.forNDCG[,-1])
       old.predicttt <- predicttt
       predicttt <- RMSE(predictions,py_to_r(Y_holdout))
       if(old.predicttt==predicttt) {
@@ -140,9 +141,9 @@ for(retpop in c(25,1000)){
       })
       
       if(fail.grep==F){
-        printPredMets(predicted.outcomes=predictions,overRMSE=oveRMSE,hypercount="full",libpack="tpot")
+        printPredMets(predicted.outcomes=predictions,overRMSE=oveRMSE,hypercount="full",libpack="tpot",RANKSforNDCG=NDCGpredics)
       } else {
-        printPredMets(predicted.outcomes=predictions,overRMSE=oveRMSE,hypercount="full",libpack="emptpot")
+        printPredMets(predicted.outcomes=predictions,overRMSE=oveRMSE,hypercount="full",libpack="emptpot",RANKSforNDCG=NDCGpredics)
       }
       
       if( ((itr.genr-1) %% varimp.every)==0  ) {

@@ -66,8 +66,17 @@ preddf<-as.data.frame(pred) #452434
 row.names(preddf) <- row.names(testing)
 print(preddf)
 
+RANKSforNDCG<-NULL
+if(predictNDCG){
+NDCGtest<- as.h2o(df.forNDCG)
+RANKSforNDCG <- h2o.predict(aml, NDCGtest)  # predict(aml, NDCGtest) also works
+RANKSforNDCG <- h2o.predict(aml@leader, NDCGtest)
+#row.names(RANKSforNDCG) <- row.names(df.forNDCG)
+RANKSforNDCGdf <- data.frame(RANKSforNDCG,1)
+RANKSforNDCG<-RANKSforNDCGdf[,1]
+}
 overRMSE<-lbdf[1,3]
-printPredMets(predicted.outcomes=preddf,overRMSE=overRMSE,hypercount="full",libpack="autoH2O")
+printPredMets(predicted.outcomes=preddf,overRMSE=overRMSE,hypercount="full",libpack="autoH2O",RANKSforNDCG=RANKSforNDCG)
 
 
 varimportant<-as.data.frame(h2o.varimp(aml@leader))
