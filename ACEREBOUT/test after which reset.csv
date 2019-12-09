@@ -217,3 +217,12 @@ Fri Dec 06 18:18:47 2019,method.NNLS,QSlinks14_55,5,5,windows,x64,ACEREBOUT
 Sat Dec 07 12:50:38 2019,SL.caret,QSlinks14_55,5,5,windows,x64,ACEREBOUT
 Sun Dec 08 04:35:53 2019,h2oAutoml 5,QSlinks115_60,5,5,windows,x64,ACEREBOUT
 Sun Dec 08 13:46:57 2019,SL.biglasso,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Sun Dec 08 15:46:14 2019,SL.biglasso,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 02:05:30 2019,SL.caret,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 02:43:00 2019,h2oAutoml 0.5,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 03:33:39 2019,SL.caret,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 03:46:38 2019,SL.caret,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 04:08:36 2019,SL.xgboost,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 04:09:57 2019,SL.xgboost,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 17:00:09 2019,SL.step,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 17:13:55 2019,SL.cforest,QSlinks03_95,5,5,windows,x64,ACEREBOUT
