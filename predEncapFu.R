@@ -201,26 +201,37 @@ spearmanrhosqrd<-(spearmanrhosqrd)*abs(spearmanrhosqrd)
 
 ##NDCG and rank means 
 meanFavRank<-0
-NDCG50<-NA
+gainin30<-NA
 try({
-worth.p<-vector(mode = "logical", length = 0)
-good.cut<-quantile(training[,1],probs = .75)
-worth.p<-(p[,2]>=good.cut)
-ln.worth.p<-length(worth.p)
+worth.p <- vector(mode = "logical", length = 0)
+good.cut <- quantile(training[,1],probs = .85)
+good.cut <- as.numeric(names(table(training$V1)))[5]
+worth.p <- (p[,2]>=good.cut)
+p<-data.frame(p,worth.p=worth.p)
+p<-p[order(-p$predicted.outcomes),]
+ln.worth.p <- length(worth.p)
 if(sum(worth.p)>0 && !is.null(RANKSforNDCG)){
-  ratings.ofav<-p[worth.p,1]
+  if(ln.worth.p < 100 & ln.worth.p > 97) warning("gainin will bounce between 30 gain and other statistic")
+  if(ln.worth.p >= 100){ #expect user to only care to use first 30. approximate using 1/4 of test when not enough data
+  usr.use <- 30
+  } else {
+    usr.use <- floor(ln.worth.p * .3)
+  }
+  gainin30 <- (sum(p$worth.p[1:usr.use]) - usr.use * (sum(worth.p)/ln.worth.p))/(usr.use - usr.use * (sum(worth.p)/ln.worth.p))
+  #percent correctly identified greater than random chance is what "NDCG" is I hope this is not wrong
+  ratings.ofav <- p[p$worth.p==T,1]
   #ratings.ofav<-c(5,3,4.4)
   #RANKSforNDCG<-c(3.3,.3,4.4,.4,4,3,2.3)
   #notice, ofav already has relevant items inside it!!
-  RANKSforNDCG<-append(RANKSforNDCG,ratings.ofav) 
+  RANKSforNDCG <- append(RANKSforNDCG,ratings.ofav) 
   if(sum(RANKSforNDCG %in% ratings.ofav)<(ln.worth.p*2)) warning("fewer than twice number of favorite ratings in RANKSforNDCG ; predict of specified row changes based on other rows")
   ranks.ofav <- rank(na.omit(-RANKSforNDCG))[(length(RANKSforNDCG)-ln.worth.p+1):length(RANKSforNDCG)]
-  NDCG50 <- round((sum( ranks.ofav<=50 ) / ln.worth.p),digits=3)
+  #NDCG50 <- round((sum( ranks.ofav<=30 ) / ln.worth.p),digits=3)
   meanFavRank <- round(mean(ranks.ofav),digits=3)
 }
 })  
-#JUST USE CAT
-writeout<- paste(c(meanFavRank,NDCG50,round(spearmanrhosqrd,digits = 3),round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
+#JUST USE CAT #its gainin30
+writeout<- paste(c(meanFavRank,round(gainin30,digits = 3),round(spearmanrhosqrd,digits = 3),round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                    signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
                    trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,
                    Rseed,Cseed,seed.var,RMSE.mean,RMSE.mean.train,outCtrl$search,
@@ -242,7 +253,7 @@ print(date())
 failfail<-function()
 {
   print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,allmodel))
-  write.table(paste("Fail","Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
+  write.table(paste("Fail","Fail","Fail","Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
               file = out.file, append =TRUE, quote = F, sep = ",",
               eol = "\n", na = "NA", dec = ".", row.names = F,
               col.names = F, qmethod = "double")  
