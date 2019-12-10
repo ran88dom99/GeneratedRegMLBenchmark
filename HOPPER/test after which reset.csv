@@ -293,3 +293,4 @@ Thu Dec 05 19:58:17 2019,regr.randomForest,QSlinks03_95,5,5,windows,x64,HOPPER
 Mon Dec 09 00:25:53 2019,regr.xgboost,QSlinks03_95,5,5,windows,x64,HOPPER
 Mon Dec 09 17:42:15 2019,regr.featureless,QSlinks03_95,5,5,windows,x64,HOPPER
 Mon Dec 09 17:45:56 2019,regr.featureless,QSlinks03_95,5,5,windows,x64,HOPPER
+Mon Dec 09 18:29:42 2019,regr.km,QSlinks115_60,5,5,windows,x64,HOPPER
