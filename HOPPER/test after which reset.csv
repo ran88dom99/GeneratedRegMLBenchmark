@@ -264,3 +264,4 @@ Thu Jun 06 13:56:24 2019,regr.earth,9thbadbooksPCAincRpca_unsort_first3000_nobla
 Thu Jun 06 17:10:35 2019,regr.gbm,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
 Sat Jun 08 17:24:11 2019,regr.h2o.glm,9thbadbooksPCAincRpca_unsort_first3000_noblanket,10,10,windows,x64,HOPPER
  
+Tue Dec 10 23:09:48 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
