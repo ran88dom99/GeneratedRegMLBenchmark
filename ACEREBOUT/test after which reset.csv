@@ -234,3 +234,9 @@ Tue Dec 10 18:06:11 2019,SL.caret.rpart,QSlinks03_95,5,5,windows,x64,ACEREBOUT
 Tue Dec 10 18:09:40 2019,SL.caret.rpart,QSlinks03_95,5,5,windows,x64,ACEREBOUT
 Tue Dec 10 18:16:05 2019,SL.cforest,QSlinks03_95,5,5,windows,x64,ACEREBOUT
 Tue Dec 10 18:43:59 2019,SL.cforest,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Wed Dec 11 00:06:32 2019,SL.gbm,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Wed Dec 11 00:07:55 2019,SL.gbm,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Wed Dec 11 00:11:18 2019,SL.ipredbagg,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Wed Dec 11 00:32:30 2019,SL.glm.interaction,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Wed Dec 11 01:11:55 2019,SL.extraTrees,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Wed Dec 11 01:21:17 2019,SL.bayesglm,QSlinks03_95,5,5,windows,x64,ACEREBOUT
