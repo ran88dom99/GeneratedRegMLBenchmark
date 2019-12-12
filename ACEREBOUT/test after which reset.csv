@@ -208,3 +208,29 @@ Wed Nov 27 02:57:18 2019,SL.cforest,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_
 Fri Nov 29 13:48:38 2019,h2oAutoml 10,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Mon Dec 02 15:15:58 2019,SL.bartMachine,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
 Wed Dec 04 23:42:11 2019,SL.xgboost,9thbadbooksPCAprcomp_irlba_unsort_notag_dup_noblanket,10,10,windows,x64,ACEREBOUT
+Thu Dec 05 00:29:07 2019,SL.caret.rpart,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Thu Dec 05 03:25:19 2019,h2oAutoml 50,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Thu Dec 05 13:47:59 2019,SL.step.interaction,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Thu Dec 05 16:38:55 2019,SL.step.interaction,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Fri Dec 06 07:11:25 2019,method.NNLS,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Fri Dec 06 18:18:47 2019,method.NNLS,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Sat Dec 07 12:50:38 2019,SL.caret,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Sun Dec 08 04:35:53 2019,h2oAutoml 5,QSlinks115_60,5,5,windows,x64,ACEREBOUT
+Sun Dec 08 13:46:57 2019,SL.biglasso,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Sun Dec 08 15:46:14 2019,SL.biglasso,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 02:05:30 2019,SL.caret,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 02:43:00 2019,h2oAutoml 0.5,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 03:33:39 2019,SL.caret,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 03:46:38 2019,SL.caret,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 04:08:36 2019,SL.xgboost,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 04:09:57 2019,SL.xgboost,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 17:00:09 2019,SL.step,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 17:13:55 2019,SL.cforest,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 17:34:28 2019,SL.gbm,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Tue Dec 10 00:51:24 2019,SL.step,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Tue Dec 10 01:06:18 2019,SL.step,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Tue Dec 10 18:01:12 2019,SL.cforest,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Tue Dec 10 18:06:11 2019,SL.caret.rpart,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Tue Dec 10 18:09:40 2019,SL.caret.rpart,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Tue Dec 10 18:16:05 2019,SL.cforest,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Tue Dec 10 18:43:59 2019,SL.cforest,QSlinks03_95,5,5,windows,x64,ACEREBOUT

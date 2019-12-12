@@ -41,14 +41,14 @@ which.computer<-Sys.info()[['nodename']]
 write(which.computer,"thispc.txt")
 }
 
-task.subject<-"QSlink"#"carEnstest3"#
+task.subject<-"QSlink3"#"carEnstest3"#
 # regeneration including same 100, reselection to testrun  
 pc.tpot=F
 pc.caret=T
-pc.mlr<-c("ACEREBOUTt","HOPPER","ALTA","LAPTOPBBQf")#T,"HOPPER"
-pc.smallR<-c("HOPPER","ALTAt","ACEREBOUT","LAPTOPBBQ")
-if(which.computer=="ALTA") 
-  {.libPaths("D:/R library/3.4");pc.tpot=F;pc.caret=F}#;task.subject<-"carEnstest4"
+pc.mlr<-c("ACEREBOUTt","HOPPER","ALTA")#T,"HOPPER"
+pc.smallR<-c("HOPPER","ALTAt","ACEREBOUT")
+if(which.computer=="ALTA") #.libPaths("D:/R library/3.4");
+  {pc.tpot=F;pc.caret=F}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
   {pc.tpot=F;pc.caret=F; }#task.subject<-"hffoldreccTPOT";
 if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F}
@@ -66,8 +66,8 @@ cpout.folder<-paste(base.folder,"/",which.computer,sep = "")
 setwd(cpout.folder)
 
 if(length(which(list.files() == out.file))<1){
-  write.table("spearman,pMAE,pRMSE,ocvRMSE,RMSEutrans,MAEutrans,date,algomodel,trgCol,transTarg,task,missing,append,transform,pc,expirament,fold,maxfold,seed,seedit,foldseed,RMSEmean,RMSEmeantrain,hpGen,time,validmethod,tuneLength,cvcount,ignrepeats,adaptivemin,bestTuneparams,btp1,btp2,btp3,btp4,btp5,btp6,btp7,btp8,btp9,btp10,btp11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
-  write.table("0,0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,bac latent features,ignore,none,asis,CLOUD,10hp10cv,1,5,403,624,222,0.9,0.9284,random,434,cv,10,10,NA,5,15,1.3312352844514,0.968602964049205,1.30087468028069,1.36411243351176,,," ,file =,out.file,append=T,quote = F, sep = ",", row.names = F,col.names = F)
+  write.table("pq9TargRank,gainin30,spearman2,pearson2,pMAE,pRMSE,ocvRMSE,RMSEutrans,MAEutrans,date,algomodel,trgCol,transTarg,task,missing,append,transform,pc,expirament,fold,maxfold,seed,seedit,foldseed,RMSEmean,RMSEmeantrain,hpGen,time,validmethod,tuneLength,cvcount,ignrepeats,adaptivemin,bestTuneparams,btp1,btp2,btp3,btp4,btp5,btp6,btp7,btp8,btp9,btp10,btp11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",file =,out.file,  quote = F, sep = ",", row.names = F,col.names = F)
+  write.table("0,NA,0,0,0.01,0.01,100,100,100,Wed Aug 02 16:37:25 2017,dummy,8,1,bac latent features,ignore,none,asis,CLOUD,10hp10cv,1,5,403,624,222,0.9,0.9284,random,434,cv,10,10,NA,5,15,1.3312352844514,0.968602964049205,1.30087468028069,1.36411243351176,,," ,file =,out.file,append=T,quote = F, sep = ",", row.names = F,col.names = F)
   }
 if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,".csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F)
 #if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F
@@ -78,7 +78,7 @@ cv.iters=5
 tuneLength=5
 tuneLength2=3
 normings=c("asis","range01","centernscale","all","YeoJohnson","quantile","PCA","ICA","expoTrans")#,"centernscale"
-
+predictNDCG<-T
 #if(which.computer=="ACEREBOUT") {cv.iters<-20;min.high.fold=20;high.fold=20}
 #if(which.computer=="HOPPER"){high.fold=5}
 
@@ -200,6 +200,10 @@ for(gend.data in gensTTest){
   count.toy.data.passed<-count.toy.data.passed+1
   setwd(base.folder)
   data.source<-as.matrix(read.csv(paste("Generats/",gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
+  #for(i in 1:dim(data.source)[2]){
+  #  data.source[,i] <- as.numeric(as.character(data.source[,i]))
+  #}
+  #data.source <- as.matrix(data.source)
   print(head(data.source))
   datasource<-gens.names[gend.data,1]
   setwd(cpout.folder)
@@ -333,7 +337,9 @@ for(gend.data in gensTTest){
           } 
 
           ################preprocess###########
+          df.forNDCG=data.frame(df.toprocess[-dependant.selection,])
           df.toprocess=data.frame(df.toprocess[dependant.selection,])
+          if(!identical(df.forNDCG,df.toprocess)){warning("some na in rows? because difference betwix complete.cases() df[-dependant.selection,] and df[dependant.selection,]")}
           #quantile takes a while so it runs after dataset is reduced to usable y values
           # no. quantile is too error prone so its not used in "all" or as y transformer. 
           #But is used regularily and with ALL data on explanatories like the others. 
@@ -445,7 +451,7 @@ for(gend.data in gensTTest){
             
           } else {
           if(max(which.computer==pc.smallR)>0){
-            source("autoH2Oallmodel.R")
+            #source("autoH2Oallmodel.R")
             setwd(base.folder)
             source("SuperLearnerAllmodel.R")
             setwd(base.folder)
