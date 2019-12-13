@@ -243,3 +243,4 @@ Wed Dec 11 01:21:17 2019,SL.bayesglm,QSlinks03_95,5,5,windows,x64,ACEREBOUT
 Wed Dec 11 04:36:33 2019,SL.svm,QSlinks03_95,5,5,windows,x64,ACEREBOUT
 Wed Dec 11 13:46:14 2019,SL.gam,QSlinks04_90Int,5,5,windows,x64,ACEREBOUT
 Wed Dec 11 15:57:13 2019,SL.bartMachine,QSlinks04_90Int,5,5,windows,x64,ACEREBOUT
+Thu Dec 12 01:58:27 2019,method.CC_nloglik,QSlinks04_90Int,5,5,windows,x64,ACEREBOUT
