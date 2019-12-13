@@ -52,7 +52,7 @@ if(which.computer=="ALTA") #.libPaths("D:/R library/3.4");
 if(which.computer=="ACEREBOUT") 
   {pc.tpot=F;pc.caret=F; }#task.subject<-"hffoldreccTPOT";
 if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F}
-if(which.computer=="LAPTOPBBQ"){pc.tpot=F;pc.caret=T}
+if(which.computer=="LAPTOPBBQ"){pc.tpot=F;pc.caret=F}
 
   
 out.file<-paste("out",task.subject,which.computer,.Platform$OS.type,.Platform$r_arch,".csv",sep="")

@@ -900,3 +900,54 @@ Fail,Fail,Fail,Fail,Fail,Fail,Sat Dec 07 21:22:01 2019,xgbDART,1,2,QSlinks14_55,
 Fail,Fail,Fail,Fail,Fail,Fail,Sat Dec 07 21:22:03 2019,xgbLinear,1,2,QSlinks14_55,ignore,none,centernscale,LAPTOPBBQ,QSlink,2,5,403,6,222,2
 Fail,Fail,Fail,Fail,Fail,Fail,Sat Dec 07 21:22:05 2019,xgbTree,1,2,QSlinks14_55,ignore,none,centernscale,LAPTOPBBQ,QSlink,2,5,403,9,222,2
 Fail,Fail,Fail,Fail,Fail,Fail,Sat Dec 07 21:22:07 2019,xyf,1,2,QSlinks14_55,ignore,none,centernscale,LAPTOPBBQ,QSlink,2,5,403,12,222,2
+0,NA,1,1,1,-1,0,0,Sat Dec 07 23:00:44 2019,perfect,1,2,QSlinks14_55,ignore,none,centernscale,LAPTOPBBQ,QSlink,2,5,403,311,222,7.272,7.466,random,NA,nohyperparameters,1,5,no rep,no min,,,,,,,,,,0,2,2,4,2,5,7,12,2,14,3,19,2,21,1,24,3,27,27,30,1,32,1,33,7,35,2,46,7,55,3,59,7,61,24,62,3,75,3,79,7,81,3,83,24,91,2,95,3,96,3,103,3,116,2,120,3,121,7,124,7,127,3,132,7,147,2,167,7,168,7,169,3,180,24,185,3,190,3,192,3,218,7,219,7,225,7,229,7,230,24,233,7,249,7,253,24,260,3,264,2,269,2,271,7,273,3,275,24,284,24,285,3,288,2,289,2,297,7
+Fail,Fail,Fail,Fail,Fail,Sat Dec 07 23:03:36 2019,MAJOR FAIL in CARET.ENS,1,2,QSlinks14_55,ignore,none,centernscale,LAPTOPBBQ,QSlink,2,5,403,624,222,NA
+Fail,Fail,Fail,Fail,PackageFail,Sat Dec 07 23:05:13 2019,mxnet,1,2,QSlinks14_55,ignore,none,centernscale,LAPTOPBBQ,QSlink,2,5,403,624,222,30
+Fail,Fail,Fail,Fail,PackageFail,Sat Dec 07 23:05:19 2019,mxnetAdam,1,2,QSlinks14_55,ignore,none,centernscale,LAPTOPBBQ,QSlink,2,5,403,624,222,4
+Fail,Fail,Fail,Fail,PackageFail,Sat Dec 07 23:05:33 2019,pls,1,2,QSlinks14_55,ignore,none,centernscale,LAPTOPBBQ,QSlink,2,5,403,624,222,4
+0,NA,1,1,1,-1,0,0,Sat Dec 07 23:06:25 2019,perfect,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,311,222,7.466,7.418,random,NA,nohyperparameters,1,5,no rep,no min,,,,,,,,,,0,1,1,10,1,11,1,17,1,18,1,20,3,22,24,23,2,37,7,45,3,48,7,65,24,77,2,80,7,84,7,85,3,92,3,93,2,98,7,110,7,118,24,122,7,128,7,129,3,131,7,134,7,140,2,146,2,149,2,150,24,153,2,159,3,161,3,172,3,173,2,175,3,176,3,178,7,182,3,184,3,194,3,202,24,203,2,204,7,210,7,212,2,215,7,216,3,240,24,245,7,246,3,251,3,255,3,265,2,276,24,277,24,279,7,281,7,286,3,298,24
+Fail,Fail,Fail,Fail,Fail,Sat Dec 07 23:12:18 2019,MAJOR FAIL in CARET.ENS,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,624,222,NA
+Fail,Fail,Fail,Fail,Fail,Fail,Sat Dec 07 23:13:24 2019,avNNet,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,135,222,66
+Fail,Fail,Fail,Fail,Fail,Fail,Sat Dec 07 23:13:27 2019,bag,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,624,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Sat Dec 07 23:16:57 2019,bagEarthGCV,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,44,222,209
+Fail,Fail,Fail,Fail,Fail,Fail,Sat Dec 07 23:16:59 2019,bartMachine,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,47,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Sat Dec 07 23:17:57 2019,bayesglm,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,624,222,57
+0,NA,1,1,1,-1,0,0,Sat Dec 07 23:48:16 2019,perfect,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,311,222,7.466,7.418,random,NA,nohyperparameters,1,5,no rep,no min,,,,,,,,,,0,1,1,10,1,11,1,17,1,18,1,20,3,22,24,23,2,37,7,45,3,48,7,65,24,77,2,80,7,84,7,85,3,92,3,93,2,98,7,110,7,118,24,122,7,128,7,129,3,131,7,134,7,140,2,146,2,149,2,150,24,153,2,159,3,161,3,172,3,173,2,175,3,176,3,178,7,182,3,184,3,194,3,202,24,203,2,204,7,210,7,212,2,215,7,216,3,240,24,245,7,246,3,251,3,255,3,265,2,276,24,277,24,279,7,281,7,286,3,298,24
+Fail,Fail,Fail,Fail,Fail,Fail,Sat Dec 07 23:48:40 2019,SL.bartMachine,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sat Dec 07 23:48:50 2019,SL.bayesglm,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,10
+0,NA,1,1,1,-1,0,0,Sat Dec 07 23:54:14 2019,perfect,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,311,222,7.466,7.418,random,NA,nohyperparameters,1,5,no rep,no min,,,,,,,,,,0,1,1,10,1,11,1,17,1,18,1,20,3,22,24,23,2,37,7,45,3,48,7,65,24,77,2,80,7,84,7,85,3,92,3,93,2,98,7,110,7,118,24,122,7,128,7,129,3,131,7,134,7,140,2,146,2,149,2,150,24,153,2,159,3,161,3,172,3,173,2,175,3,176,3,178,7,182,3,184,3,194,3,202,24,203,2,204,7,210,7,212,2,215,7,216,3,240,24,245,7,246,3,251,3,255,3,265,2,276,24,277,24,279,7,281,7,286,3,298,24
+Fail,Fail,Fail,Fail,Fail,Fail,Sat Dec 07 23:58:50 2019,SL.biglasso,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,492,222,252
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:06:01 2019,SL.caret,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,460,222,430
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:06:13 2019,SL.caret.rpart,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,624,222,10
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:06:42 2019,SL.cforest,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,570,222,28
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:07:01 2019,SL.dbarts,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,77,222,17
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:07:06 2019,SL.earth,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,4
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:07:08 2019,SL.extraTrees,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:07:15 2019,SL.gam,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,6
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:10:44 2019,SL.gbm,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,530,222,208
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:10:46 2019,SL.glm,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:14:21 2019,SL.glm.interaction,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,214
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:03 2019,SL.glmnet,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,180,222,26
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:24 2019,SL.ipredbagg,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,54,222,19
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:27 2019,SL.kernelKnn,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:30 2019,SL.knn,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:34 2019,SL.ksvm,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,178,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:37 2019,SL.lda,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:39 2019,SL.leekasso,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:41 2019,SL.lm,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:44 2019,SL.loess,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:47 2019,SL.logreg,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:49 2019,SL.mean,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,0
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:51 2019,SL.nnet,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,604,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:53 2019,SL.nnls,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:15:57 2019,SL.polymars,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,3
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:16:00 2019,SL.qda,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:16:24 2019,SL.randomForest,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,79,222,22
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:16:33 2019,SL.ranger,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,251,222,7
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:16:35 2019,SL.ridge,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:16:38 2019,SL.rpart,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:16:40 2019,SL.rpartPrune,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,180,222,1
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:16:44 2019,SL.speedglm,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,257,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:16:47 2019,SL.speedlm,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,257,222,2
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:23:11 2019,SL.step,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,382
+Fail,Fail,Fail,Fail,Fail,Fail,Sun Dec 08 00:23:20 2019,SL.step.forward,1,2,QSlinks14_55,ignore,none,all,LAPTOPBBQ,QSlink,1,5,403,238,222,7
