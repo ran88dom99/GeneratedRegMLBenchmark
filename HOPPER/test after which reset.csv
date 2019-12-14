@@ -266,5 +266,9 @@ Sat Jun 08 17:24:11 2019,regr.h2o.glm,9thbadbooksPCAincRpca_unsort_first3000_nob
  
 Tue Dec 10 23:09:48 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
 Tue Dec 10 23:21:19 2019,regr.ksvm,QSlinks14_55Int,5,5,windows,x64,HOPPER
-Wed Dec 11 04:45:40 2019,regr.cubist,QSlinks03_95,5,5,windows,x64,HOPPER
-Wed Dec 11 15:57:00 2019,regr.cubist,QSlinks03_95,5,5,windows,x64,HOPPER
+Wed Dec 11 04:45:40 2019,regr.cubist,QSlinks03_95,5,5,windows,x64,HOPPER 
+Wed Dec 11 17:07:41 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
+Thu Dec 12 06:41:59 2019,regr.crs,QSlinks14_55,5,5,windows,x64,HOPPER
+Thu Dec 12 17:07:55 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
+Fri Dec 13 05:56:32 2019,regr.mob,QSlinks14_55,5,5,windows,x64,HOPPER
+Fri Dec 13 16:34:56 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
