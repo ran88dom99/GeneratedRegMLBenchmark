@@ -246,3 +246,11 @@ Wed Dec 11 15:57:13 2019,SL.bartMachine,QSlinks04_90Int,5,5,windows,x64,ACEREBOU
 Thu Dec 12 01:58:27 2019,method.CC_nloglik,QSlinks04_90Int,5,5,windows,x64,ACEREBOUT
 Thu Dec 12 21:30:41 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
 Fri Dec 13 00:00:22 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Fri Dec 13 16:35:29 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Fri Dec 13 16:56:14 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Sat Dec 14 06:24:13 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Sat Dec 14 06:49:25 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Sat Dec 14 06:55:05 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Sat Dec 14 08:55:05 2019,SL.glm.interaction,QSlinks14_55Int,5,5,windows,x64,ACEREBOUT
+Sat Dec 14 09:21:57 2019,SL.ipredbagg,QSlinks14_55Int,5,5,windows,x64,ACEREBOUT
+Sat Dec 14 13:47:11 2019,SL.bartMachine,QSlinks03_95,5,5,windows,x64,ACEREBOUT
