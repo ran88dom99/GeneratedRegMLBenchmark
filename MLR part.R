@@ -73,7 +73,8 @@ write.table(paste("mlr",methods[n],date(),"",trans.y,datasource,missingdata,with
 
 ######for all mlr models########
 for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce it
-
+#allmodel="regr.km" 
+  
   when<-proc.time()
   write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
   write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
@@ -133,7 +134,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   try({
     mod<-hyperopt(regr.task, learner = allmodel, hyper.control =hyper.control.rand)
     lrn = setHyperPars(makeLearner(allmodel), par.vals = mod$x)
-    m = train(lrn, regr.task)
+    m = mlr::train(lrn, regr.task)
 
   #keep rmse but train new model on mod$x's parameters
   
@@ -154,7 +155,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
 
   #if hyperopt failed just use no hypering
   try({if(not.failed==0) {
-    mod<-  train(allmodel, regr.task)
+    mod<-  mlr::train(allmodel, regr.task)
     
     predicted.outcomes<-predict(mod, newdata=(testing[,-1]))
     train.outcomes<-predict(mod, newdata=(training[,-1]))

@@ -277,3 +277,6 @@ Sat Dec 14 19:26:44 2019,regr.cubist,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Sun Dec 15 04:44:44 2019,regr.cubist,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Mon Dec 16 14:34:42 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
 Mon Dec 16 17:10:00 2019,regr.crs,QSlinks115_60,5,5,windows,x64,HOPPER
+Tue Dec 17 03:33:33 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
+Tue Dec 17 15:50:46 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
+Tue Dec 17 17:37:09 2019,regr.glmboost,QSlinks115_60,5,5,windows,x64,HOPPER

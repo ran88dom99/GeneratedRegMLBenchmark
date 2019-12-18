@@ -7,8 +7,7 @@ options(repos=structure(c(CRAN="https://rweb.crmda.ku.edu/cran/")))
 #try(log("a")) ## test --no-edit
 #WHEN INSTALLING RTOOLS MAKE SURE TO "Select Additional Tasks" dialog box I checked "Edit the system PATH. ...".
 #install.packages("devtools")+++++
-##devtools::install_github("r-lib/devtools")
-#
+#devtools::install_github("r-lib/devtools")
 #devtools::install_github("berndbischl/ParamHelpers") # version >= 1.11 needed.
 #devtools::install_github("jakob-r/mlrHyperopt", dependencies = TRUE)
 memory.limit()
