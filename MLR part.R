@@ -41,7 +41,7 @@ hyper.control.rand<-makeHyperControl(mlr.control = makeTuneControlRandom(maxit=t
 
 
 try({
-  methods = c("mrmr","randomForestSRC.rfsrc", "univariate.model.score")
+  methods = c("mrmr","randomForestSRC_importance", "univariate.model.score")
 fv = generateFilterValuesData(regr.task,
                               method = c("mrmr","randomForestSRC.rfsrc", "univariate.model.score"),
                               nselect<-10)#,,"permutation.importance","randomForestSRC.var.select"
@@ -121,7 +121,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
   if(length(new.packages)) install.packages(new.packages, dep = TRUE)
   if(length(list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])])){
-    write.table(paste("Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,round(proc.time()[3]-when[3]),  sep = ","),
+    write.table(paste("Fail","Fail","Fail","Fail","Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,round(proc.time()[3]-when[3]),  sep = ","),
                 file = out.file, append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
@@ -132,8 +132,19 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
 
   not.failed=0
   try({
+    nf3<-0
+    try({
     mod<-hyperopt(regr.task, learner = allmodel, hyper.control =hyper.control.rand)
-    lrn = setHyperPars(makeLearner(allmodel), par.vals = mod$x)
+    nf3<-1
+    })
+    if(nf3==0) {
+      lrn = setHyperPars(makeLearner(allmodel))
+    } 
+    if(nf3==1) {
+      lrn = setHyperPars(makeLearner(allmodel), par.vals = mod$x)
+    }
+      
+    
     m = mlr::train(lrn, regr.task)
 
   #keep rmse but train new model on mod$x's parameters
