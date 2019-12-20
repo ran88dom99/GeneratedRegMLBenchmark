@@ -284,3 +284,4 @@ Wed Dec 18 04:23:56 2019,regr.km,QSlinks14_55,5,5,windows,x64,HOPPER
 Wed Dec 18 14:45:49 2019,regr.h2o.glm,QSlinks03_95,5,5,windows,x64,HOPPER
 Wed Dec 18 15:19:54 2019,regr.randomForest,QSlinks03_95,5,5,windows,x64,HOPPER
 Wed Dec 18 17:09:28 2019,regr.laGP,QSlinks03_95,5,5,windows,x64,HOPPER
+Thu Dec 19 17:29:31 2019,regr.LiblineaRL2L1SVR,QSlinks03_95,5,5,windows,x64,HOPPER
