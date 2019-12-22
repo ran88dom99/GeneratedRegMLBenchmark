@@ -263,3 +263,5 @@ Wed Dec 18 04:24:16 2019,method.CC_LS,QSlinks14_55,5,5,windows,x64,ACEREBOUT
 Wed Dec 18 14:01:44 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
 Wed Dec 18 16:11:53 2019,SL.bartMachine,QSlinks14_55Int,5,5,windows,x64,ACEREBOUT
 Thu Dec 19 17:27:25 2019,SL.glmnet,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Fri Dec 20 03:57:51 2019,SL.glm.interaction,QSlinks115_60,5,5,windows,x64,ACEREBOUT
+Fri Dec 20 13:47:05 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
