@@ -273,3 +273,8 @@ Sun Dec 22 19:23:29 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOU
 Mon Dec 23 03:35:33 2019,method.CC_nloglik,QSlinks115_60Int,5,5,windows,x64,ACEREBOUT
 Mon Dec 23 13:47:45 2019,method.NNLS2,QSlinks03_95,5,5,windows,x64,ACEREBOUT
 Mon Dec 23 14:21:47 2019,SL.stepAIC,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Tue Dec 24 19:12:54 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Wed Dec 25 05:39:32 2019,SL.mean,QSlinks115_60,5,5,windows,x64,ACEREBOUT
+Wed Dec 25 18:24:04 2019,SL.ipredbagg,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Thu Dec 26 00:57:11 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Thu Dec 26 13:46:39 2019,SL.svm,QSlinks03_95,5,5,windows,x64,ACEREBOUT
