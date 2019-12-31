@@ -1,31 +1,32 @@
 #ggplot: how  label, print to file
-.libPaths("D:/R library/3.4")
-exp.name<-"acefoldbadpca"
+#.libPaths("D:/R library/3.4")
+### Load file and directory move
+exp.name<-"QSlink3ACER"
 mainDir<-getwd()
 subDir<-exp.name
-expiramentresults<-read.csv("acefoldbadpca.csv", sep = ",",fill=TRUE, header =T,quote="",dec=".")
+expiramentresults<-read.csv("QSlink3ACER.csv", sep = ",",fill=TRUE, header =T,quote="",dec=".")
 gene.expect<-matrix(data = NA, nrow = 100, ncol = 100, byrow = FALSE,
                     dimnames = NULL)#gene.expect<-read.csv("gens names.csv", sep = ",",fill=TRUE, header = F,quote="",dec=".")
 dir.create(file.path(mainDir, subDir))
 setwd(file.path(mainDir, subDir))
 
 #for highfold
-expiramentresults[,10] <- paste(expiramentresults[,10],expiramentresults[,16],sep="_")
-expiramentresults<-expiramentresults[(expiramentresults[,7]!="perfect"),]
-expiramentresults[,13] <- paste(expiramentresults[,13],expiramentresults[,9],sep="_")
+expiramentresults[,14] <- paste(expiramentresults[,14],expiramentresults[,20],sep="_")
+expiramentresults<-expiramentresults[(expiramentresults[,11]!="perfect"),]
+expiramentresults[,17] <- paste(expiramentresults[,17],expiramentresults[,13],sep="_")
 
 library(ggplot2)    
 library(reshape2) 
 #######percent failed######
 fails.df<-data.frame()
 countr=0
-for(algo in unique(expiramentresults[,7]))
+for(algo in unique(expiramentresults[,11]))
 {
   countr=countr+1
   fails.df[countr,1]<-algo
-  fails.df[countr,2]<-as.numeric(sum(expiramentresults[,7]==algo))
-  fails.df[countr,3]<-as.numeric(sum((expiramentresults[,1]=="Fail")*(expiramentresults[,7]==algo), na.rm = T))
-  fails.df[countr,4]<-as.numeric(sum((is.na(expiramentresults[,1]))*(expiramentresults[,7]==algo)))
+  fails.df[countr,2]<-as.numeric(sum(expiramentresults[,11]==algo))
+  fails.df[countr,3]<-as.numeric(sum((expiramentresults[,1]=="Fail")*(expiramentresults[,11]==algo), na.rm = T))
+  fails.df[countr,4]<-as.numeric(sum((is.na(expiramentresults[,1]))*(expiramentresults[,11]==algo)))
   fails.df[countr,5]<-(as.numeric(fails.df[countr,4])+as.numeric(fails.df[countr,3]))/as.numeric(fails.df[countr,2])
 }
 iti <- order(fails.df[,5],-fails.df[,4])
@@ -36,7 +37,7 @@ write.table(fails.df,
             col.names = F, qmethod = "double")
 not.interesting<-(fails.df[,5]==1) + (fails.df[,5]<.001)
 I.fails.df<-fails.df[!not.interesting,]
-library(ggplot2)
+require(ggplot2)
 
 z<-ggplot(I.fails.df, aes(y = I.fails.df[,4], x = reorder(I.fails.df[,1], I.fails.df[,5]))) + geom_point()+ coord_flip()
 z+ geom_point(colour="red",aes(I.fails.df[,1] ,I.fails.df[,3]),na.rm = TRUE)+
@@ -48,15 +49,15 @@ ggsave(paste(exp.name,"Fails.png", sep = ""),plot = last_plot(),scale = 3)
 #####time taken#####
 time.df<-data.frame()
 countr=0
-for(algo in unique(expiramentresults[,7]))
+for(algo in unique(expiramentresults[,11]))
 {
   countr=countr+1
-  only.algo<-(expiramentresults[,7]==algo)
+  only.algo<-(expiramentresults[,11]==algo)
   time.df[countr,1]<-algo
-  time.df[countr,2]<-min(expiramentresults[only.algo,21],na.rm = T)
-  time.df[countr,3]<-median(expiramentresults[only.algo,21],na.rm = T)
-  time.df[countr,4]<-mean(expiramentresults[only.algo,21],na.rm = T)
-  time.df[countr,5]<-max(expiramentresults[only.algo,21],na.rm = T)
+  time.df[countr,2]<-min(expiramentresults[only.algo,28],na.rm = T)
+  time.df[countr,3]<-median(expiramentresults[only.algo,28],na.rm = T)
+  time.df[countr,4]<-mean(expiramentresults[only.algo,28],na.rm = T)
+  time.df[countr,5]<-max(expiramentresults[only.algo,28],na.rm = T)
 }
 iti <- order(time.df[,3],time.df[,4])
 time.df<-rbind(time.df)[iti,]
@@ -80,13 +81,13 @@ z+   geom_point(colour="blue",aes(I.time.df[,1] ,I.time.df[,2]))+
 #####success by task#### 
 fails.df<-data.frame()
 countr=0
-for(algo in unique(expiramentresults[,10]))
+for(algo in unique(expiramentresults[,14]))
 {
   countr=countr+1
   fails.df[countr,1]<-algo
-  fails.df[countr,2]<-as.numeric(sum(expiramentresults[,10]==algo))
-  fails.df[countr,3]<-as.numeric(sum((expiramentresults[,1]=="Fail")*(expiramentresults[,10]==algo), na.rm = T))
-  fails.df[countr,4]<-as.numeric(sum((is.na(expiramentresults[,1]))*(expiramentresults[,10]==algo)))
+  fails.df[countr,2]<-as.numeric(sum(expiramentresults[,14]==algo))
+  fails.df[countr,3]<-as.numeric(sum((expiramentresults[,1]=="Fail")*(expiramentresults[,14]==algo), na.rm = T))
+  fails.df[countr,4]<-as.numeric(sum((is.na(expiramentresults[,1]))*(expiramentresults[,14]==algo)))
   fails.df[countr,5]<-(as.numeric(fails.df[countr,4])+as.numeric(fails.df[countr,3]))/as.numeric(fails.df[countr,2])
 }
 iti <- order(fails.df[,5],-fails.df[,4])
@@ -110,10 +111,10 @@ ggsave(paste(exp.name,"FailTask.png", sep = ""),plot = last_plot(),scale = 3)
 #####time taken by task#####
 time.df<-data.frame()
 countr=0
-for(algo in unique(expiramentresults[,10]))
+for(algo in unique(expiramentresults[,14]))
 {
   countr=countr+1
-  only.algo<-(expiramentresults[,10]==algo)
+  only.algo<-(expiramentresults[,14]==algo)
   time.df[countr,1]<-algo
   time.df[countr,2]<-min(expiramentresults[only.algo,17],na.rm = T)
   time.df[countr,3]<-median(expiramentresults[only.algo,17],na.rm = T)
@@ -145,10 +146,10 @@ exp.res.noF[is.na(exp.res.noF)]<-0
 exp.res.noF[exp.res.noF<(-3)]<-(-3)
 power.df<-data.frame()
 countr=0
-for(algo in unique(expiramentresults[,10]))
+for(algo in unique(expiramentresults[,14]))
 {
   countr=countr+1
-  only.algo<-as.logical((expiramentresults[,10]==algo)*(expiramentresults[,1]!="Fail"))
+  only.algo<-as.logical((expiramentresults[,14]==algo)*(expiramentresults[,1]!="Fail"))
   only.algo[is.na(only.algo)]<-F
   if(sum(only.algo, na.rm=T)<1) {
     countr=countr-1    
@@ -186,7 +187,7 @@ ttdd<-data.frame()
 ttdz<-data.frame()
 iti <- order(power.df[,4],power.df[,3])
 power.df<-rbind(power.df)[iti,]
-orderedlevels<-factor(expiramentresults[,10], power.df[,1],  ordered = T)
+orderedlevels<-factor(expiramentresults[,14], power.df[,1],  ordered = T)
 ttdz<-data.frame(exp.res.noF,orderedlevels)
 ttdd<-ttdz[expiramentresults[,1]!="Fail",]
 
@@ -264,10 +265,10 @@ acceptAlgo.Rdf<-data.frame()
 acceptAlgo.Rdf[1,1]<-NA
 acceptAlgo.Rdf[,c(1:400)]<-NA
 countr=0
-for(algo in unique(expiramentresults[,10]))
+for(algo in unique(expiramentresults[,14]))
 {
   countr=countr+1
-  only.algo<-as.logical((expiramentresults[,10]==algo)*(expiramentresults[,1]!="Fail"))
+  only.algo<-as.logical((expiramentresults[,14]==algo)*(expiramentresults[,1]!="Fail"))
   only.algo[is.na(only.algo)]<-F
   if(sum(only.algo, na.rm=T)<1) {
     countr=countr-1    
@@ -309,10 +310,10 @@ exp.res.noF[exp.res.noF<(-3)]<-(-3)
 
 algPower.df<-data.frame()
 countr=0
-for(algo in unique(expiramentresults[,7]))
+for(algo in unique(expiramentresults[,11]))
 {
   countr=countr+1
-  only.algo<-as.logical((expiramentresults[,7]==algo)*(expiramentresults[,1]!="Fail"))
+  only.algo<-as.logical((expiramentresults[,11]==algo)*(expiramentresults[,1]!="Fail"))
   only.algo[is.na(only.algo)]<-F
   if(sum(only.algo, na.rm=T)<1) {
     countr=countr-1    
@@ -334,10 +335,10 @@ exp.res.noF<-exp.res.noF/algo.max
 
 #algPower.df<-data.frame()
 countr=0
-for(algo in unique(expiramentresults[,7]))
+for(algo in unique(expiramentresults[,11]))
 {
   countr=countr+1
-  only.algo<-as.logical((expiramentresults[,7]==algo)*(expiramentresults[,1]!="Fail"))
+  only.algo<-as.logical((expiramentresults[,11]==algo)*(expiramentresults[,1]!="Fail"))
   only.algo[is.na(only.algo)]<-F
   if(sum(only.algo, na.rm=T)<1) {
     countr=countr-1    
@@ -397,7 +398,7 @@ ggsave(paste(exp.name,"PowerReorder2.png", sep = ""),plot = last_plot(),scale = 
 }
 ######power to detect by pipe#####
 for (itr1 in c("algonly","pipe")) {
-  if(itr1=="pipe") expiramentresults[,7] <- paste(expiramentresults[,7],expiramentresults[,13],sep = "_") 
+  if(itr1=="pipe") expiramentresults[,11] <- paste(expiramentresults[,11],expiramentresults[,17],sep = "_") 
 for (itr2 in c("abs","relmax")) {
     
   out.file.name<-paste0("Power",itr1,itr2)
@@ -408,10 +409,10 @@ exp.res.noF[exp.res.noF<(-3)]<-(-3)
 
 algPower.df<-data.frame()
 countr=0
-for(algo in unique(expiramentresults[,7]))
+for(algo in unique(expiramentresults[,11]))
 {
   countr=countr+1
-  only.algo<-as.logical((expiramentresults[,7]==algo)*(expiramentresults[,1]!="Fail"))
+  only.algo<-as.logical((expiramentresults[,11]==algo)*(expiramentresults[,1]!="Fail"))
   only.algo[is.na(only.algo)]<-F
   if(sum(only.algo, na.rm=T)<1) {
     countr=countr-1    
@@ -434,10 +435,10 @@ exp.res.noF<-exp.res.noF/algo.max
 
 #algPower.df<-data.frame()
 countr=0
-for(algo in unique(expiramentresults[,7]))
+for(algo in unique(expiramentresults[,11]))
 {
   countr=countr+1
-  only.algo<-as.logical((expiramentresults[,7]==algo)*(expiramentresults[,1]!="Fail"))
+  only.algo<-as.logical((expiramentresults[,11]==algo)*(expiramentresults[,1]!="Fail"))
   only.algo[is.na(only.algo)]<-F
   if(sum(only.algo, na.rm=T)<1) {
     countr=countr-1    
