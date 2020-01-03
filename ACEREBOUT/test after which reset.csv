@@ -279,3 +279,10 @@ Wed Dec 25 18:24:04 2019,SL.ipredbagg,QSlinks14_55,5,5,windows,x64,ACEREBOUT
 Thu Dec 26 00:57:11 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
 Thu Dec 26 13:46:39 2019,SL.svm,QSlinks03_95,5,5,windows,x64,ACEREBOUT
 Thu Dec 26 15:46:35 2019,SL.randomForest,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Fri Dec 27 02:42:37 2019,SL.ranger,QSlinks115_60,5,5,windows,x64,ACEREBOUT
+Sat Dec 28 02:34:50 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Sun Dec 29 13:47:16 2019,SL.ranger,QSlinks115_60,5,5,windows,x64,ACEREBOUT
+Sun Dec 29 15:56:04 2019,SL.ranger,QSlinks115_60,5,5,windows,x64,ACEREBOUT
+Mon Dec 30 03:11:51 2019,SL.earth,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Tue Dec 31 02:51:25 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
+Wed Jan 01 18:00:50 2020,SL.step.forward,QSlinks03_95,5,5,windows,x64,ACEREBOUT

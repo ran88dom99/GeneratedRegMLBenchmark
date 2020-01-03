@@ -1,0 +1,164 @@
+---
+title: "Results analysis"
+---
+load packages read files comboine files
+```{r}
+try({setwd(mainDir)})
+mainDir<-getwd()
+subDir<-"QSlinks_simple"
+#dir.create(file.path(mainDir, subDir))
+  
+resultDir<-"ACEREBOUT"
+#setwd(resultDir)
+setwd(file.path(mainDir, resultDir))
+
+
+  
+require(readr)
+QSlink3ACE <- read_csv("outQSlink3ACEREBOUTwindowsx64.csv")
+#summary(QSlink3ACE[,1:30])
+
+getwd()
+```
+remove useless columns, convert time, check for unused columns, seed changes?
+```{r}
+require(data.table)
+DF<-as.data.table(QSlink3ACE)
+DF$date<-as.numeric(as.POSIXct(DF$date,format = "%a %b %d %H:%M:%S %Y"))
+#str(DF)
+
+#what is seedit? and seed cause foldseed is always the same
+summary(DF[,.(seed,seedit,foldseed)])
+unique(DF$seed);unique(DF$seedit);unique(DF$foldseed)
+unique(DF$trgCol);unique(DF$missing);unique(DF$append)
+unique(DF$hpGen);unique(DF$tuneLength);unique(DF$ignrepeats)
+usless<-c("trgCol","missing","append","foldseed")
+names(DF<-DF[,1:45,with=F])
+names(DF<-DF[,-(usless),with=F])
+
+```
+
+perfect/ideal results at section start
+check for oddness, remove
+```{r}
+getwd()
+imperfect<-DF$algomodel=="perfect"
+names(DF)
+DF[,keyRedun:=paste0(transTarg,task,transform,pc,expirament,fold)]
+Perf<-DF[imperfect,]
+DF<-DF[!(imperfect)]
+summary(Perf[,1:20])
+
+if(F){ #transtarg1 causes utrans to get numbers other than 0
+halfver<-median(unique(Perf$RMSEutrans))
+P1<-Perf[RMSEutrans>=halfver,]
+P2<-Perf[RMSEutrans<=halfver,]
+summary(P1[,1:30])
+summary(P2[,1:30])
+}
+
+Perf[,.N,by=fold]
+if(F){ #fold changes max possible but rarely!?
+for(i in unique(Perf$fold)){
+print(summary(Perf[Perf$fold==i,c(1:30),with=FALSE]))
+} }
+
+#check for redundancy against possible combinatorial explosion
+Explosion<-1
+for(i in which(names(Perf) %in% c("transTarg","task","transform","pc","expirament","fold"))){
+  Explosion<-Explosion * dim(unique(Perf[,(i),with=F]))[1]
+  print(Explosion)
+}
+length(unique(Perf$keyRedun))
+length(Perf$keyRedun)/length(unique(Perf$keyRedun))
+Perf[,.N,by=keyRedun]
+```
+Percent success
+```{r}
+#install.packages("VIM")
+require(VIM)
+mice_plot <- aggr(DF[,1:20], col=c('navyblue','yellow'),
+numbers=TRUE, sortVars=TRUE,
+labels=names(DF[,1:20]), cex.axis=.7,
+gap=3, ylab=c("Missing data","Pattern"))
+mice_plot <- aggr(DF[,21:40], col=c('navyblue','yellow'),
+numbers=TRUE, sortVars=TRUE,
+labels=names(DF[,21:40]), cex.axis=.7,
+gap=3, ylab=c("Missing data","Pattern"))
+```
+```{r}
+require(naniar)
+gg_miss_upset(DF[,1:25],nsets = 15,nintersects=20)
+```
+
+Full fails checked
+```{r}
+DF$totFail <- is.na(DF$hpGen) & is.na(DF$RMSEutrans) & is.na(DF$spearman2) 
+sum(DF$totFail)
+dim(DF)[1]
+DF[(totFail),][1:30,]
+
+require(netCoin)
+if(F){
+data("families")
+data("links")
+G <- allNet(incidence=links[links$link=="Marriage",-17],
+     nodes=families, layout="md", percentages= FALSE,
+     criteria="f",minL=1, size="f.Marriages",shape="seat",
+     main="Marriage links beetween Italian families",
+     note="Data source: Padgett & Ansell (1983)")
+H <- allNet(incidence=links[links$link=="Business",-17],
+     nodes=families, layout="md", percentages= FALSE,
+     criteria="f",minL=1, size="f.Business",shape="seat",
+     main="Marriage links beetween Italian families",
+     note="Data source: Padgett & Ansell (1983)")
+multigraphCreate(Marriage=G,Business=H,dir="italian")
+
+data("Galapagos")
+data("finches")
+finches$species<-system.file("extdata", finches$species,
+        package="netCoin") # copy path to the species field
+Net<-allNet(Galapagos,nodes=finches, criteria="hyp", maxL=.05,
+        lwidth ="Haberman",lweight="Haberman",
+        size="frequency", image="species", layout="mds",
+        main="Species coincidences in Galapagos Islands",
+        note="Data source: Sanderson (2000)")
+plot(Net)
+}
+set <- c("totFail","algomodel","transTarg","task","transform","fold")
+essCoin <- surCoin(data = DF, variables = set, lwidth ="Haberman", lweight="Haberman", size="frequency")
+essCoin
+plot(essCoin)
+
+```
+Full NAs removed
+```{r}
+TF<-DF[totFail,]
+DF<-DF[!(totFail)]
+?data.table
+```
+```{r}
+require(naniar)
+gg_miss_upset(DF[,1:35],nsets = 15,nintersects=20)
+require(VIM)
+mice_plot <- aggr(DF[,1:35], col=c('navyblue','yellow'),
+numbers=TRUE, sortVars=TRUE,
+labels=names(DF[,1:35]), cex.axis=.7,
+gap=3, ylab=c("Missing data","Pattern"))
+
+```
+remaining missing values
+```{r}
+
+(noPear<-DF[is.na(spearman2)])
+(noUtrans<-DF[is.na(RMSEutrans)])
+```
+
+
+
+
+
+
+
+ 
+ 
