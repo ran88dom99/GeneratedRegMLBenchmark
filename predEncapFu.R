@@ -259,10 +259,10 @@ writeout<- paste(c(round(p9TargRank,digits = 2),round(gainin30,digits = 3),
                    signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
                    trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,
                    Rseed,Cseed,seed.var,RMSE.mean,RMSE.mean.train,outCtrl$search,
-                   round(proc.time()[3]-when[3]),outCtrl$method,outCtrl$tuneLength,
+                   round(proc.time()[3]-when[3]),R.Version()$major,R.Version()$minor,R.Version()$platform,
+                   outCtrl$method,outCtrl$tuneLength,
                    outCtrl$number,outCtrl$repeats,outCtrl$adaptivemin,
-                   for1tea,for2tea,for3tea,R.Version()$major,R.Version()$minor,R.Version()$platform,
-                   outCtrl$bestune[1:6],InxdPred))
+                   for1tea,for2tea,for3tea, outCtrl$bestune[1:6],InxdPred))
 for(i in 2:length(writeout)){
   writeout[1]<-paste(writeout[1],writeout[i],sep=",")}
 

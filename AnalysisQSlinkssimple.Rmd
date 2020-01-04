@@ -2,30 +2,74 @@
 title: "Results analysis"
 ---
 load packages read files comboine files
+[1] "pq9TargRank"    "gainin30"       "spearman2"      "pearson2"      
+  [5] "pMAE"           "pRMSE"          "ocvRMSE"        "RMSEutrans"    
+  [9] "MAEutrans"      "date"           "algomodel"      "trgCol"        
+ [13] "transTarg"      "task"           "missing"        "append"        
+ [17] "transform"      "pc"             "expirament"     "fold"          
+ [21] "maxfold"        "seed"           "seedit"         "foldseed"      
+ [25] "RMSEmean"       "RMSEmeantrain"  "hpGen"          "time"          
+ [29] "validmethod"    "tuneLength"     "cvcount"        "ignrepeats"    
+ [33] "adaptivemin"    "bestTuneparams" "btp1"           "btp2"          
+ [37] "btp3"           "btp4"           "btp5"           "btp6"          
+ [41] "btp7"           "btp8"           "btp9"           "btp10"         
+ [45] "btp11"
 ```{r}
+col_typed <- "dddddddddccddccccccdddddddcdcddc??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+
 try({setwd(mainDir)})
 mainDir<-getwd()
 subDir<-"QSlinks_simple"
 #dir.create(file.path(mainDir, subDir))
-  
+  require(readr)
+
+
 resultDir<-"ACEREBOUT"
 #setwd(resultDir)
 setwd(file.path(mainDir, resultDir))
+QSlink3ACE <- read_csv("outQSlink3ACEREBOUTwindowsx64.csv",col_types = col_typed)
+#summary(QSlink3ACE[,1:30])
+ spec(QSlink3ACE)
+ problems(QSlink3ACE)
+ setwd(file.path(mainDir))
 
+
+ 
+ resultDir<-"HOPPER"
+#setwd(resultDir)
+setwd(file.path(mainDir, resultDir))
+QSlink3HOP <- read_csv("outQSlink3HOPPERwindowsx64.csv",col_types = col_typed)
+#summary(QSlink3ACE[,1:30])
+ spec(QSlink3HOP)
+ problems(QSlink3HOP)
+ setwd(file.path(mainDir))
+ 
+ names(QSlink3HOP)
+ 
+  resultDir<-"LAPTOPBBQ"
+#setwd(resultDir)
+setwd(file.path(mainDir, resultDir))
+QSlink3BBQ <- read_csv("outQSlink3LAPTOPBBQwindowsx64.csv",col_types = col_typed)
+#summary(QSlink3ACE[,1:30])
+ spec(QSlink3BBQ)
+ problems(QSlink3BBQ)
+ setwd(file.path(mainDir))
 
   
-require(readr)
-QSlink3ACE <- read_csv("outQSlink3ACEREBOUTwindowsx64.csv")
-#summary(QSlink3ACE[,1:30])
+require(data.table)
+DF<-as.data.table(QSlink3ACE)
+DF1<-as.data.table(QSlink3HOP)
+DF2<-as.data.table(QSlink3BBQ)
 
-getwd()
+DF<-rbindlist(list(DF,DF1,DF2),fill = T)
+rm(DF1,DF2,QSlink3BBQ,QSlink3HOP)
 ```
 remove useless columns, convert time, check for unused columns, seed changes?
 ```{r}
-require(data.table)
-DF<-as.data.table(QSlink3ACE)
+
 DF$date<-as.numeric(as.POSIXct(DF$date,format = "%a %b %d %H:%M:%S %Y"))
 #str(DF)
+summary(DF$pq9TargRank)
 
 #what is seedit? and seed cause foldseed is always the same
 summary(DF[,.(seed,seedit,foldseed)])
@@ -38,14 +82,64 @@ names(DF<-DF[,-(usless),with=F])
 
 ```
 
+Which models were somehow missed? Just checking just incase errors or 
+machines did not run fast enough
+Also if some hype hype parameters were way overblown
+```{r}
+DF[,keyMiss:=paste0(task,transform,transTarg,expirament,fold)]
+luMiss<-length(unique(DF$keyMiss))
+DF[,unmissed:=length(unique(keyMiss)),by=algomodel]
+DF[unmissed<luMiss][order(unmissed)]
+max(DF$unmissed)-luMiss
+plot(DF$unmissed[order(DF$unmissed)])
+```
+
+
+
+for netcoinnetwork grap write out features
+these will be used later on to separate data and for more detailed views
+```{r}
+getwd()
+DF$imperfect <- DF$algomodel=="perfect"
+DF$totFail <- is.na(DF$hpGen) & is.na(DF$RMSEutrans) & is.na(DF$spearman2)
+DF[,noPear:=is.na(spearman2) & !totFail]
+DF[,noUtrans:=is.na(RMSEutrans) & !totFail]
+
+if(F){
+DF$btp4[is.na(DF$btp4)]<-"NA"
+DF$btp4[DF$btp4=="NA"]<-"4.4"
+DF$btp5[is.na(DF$btp5)]<-"NA"
+DF$btp3[is.na(DF$btp3)]<-"NA"
+}
+DF$btp3<-(DF$btp3=="3")
+summary(DF$btp3)
+
+```
+
+
+plot the netcoin graphs
+first focusing onperfection then droping it
+"seed" btw is just a function of R version change
+```{r}
+require(netCoin)
+#,"seedit"
+set <- c("transTarg","task","transform","fold","imperfect","seed","btp3")
+
+essCoin <- surCoin(data = DF, variables = set, lwidth ="Haberman", lweight="Haberman", color="variable", lcolor="Haberman", ltext="Haberman", linkFilter="Haberman", repulsion=90)
+essCoin
+plot(essCoin)
+
+set <- c("algomodel", "transTarg", "task", "transform", "fold", "pc", "totFail", "noPear", "noUtrans")
+
+
+```
 perfect/ideal results at section start
 check for oddness, remove
 ```{r}
-getwd()
-imperfect<-DF$algomodel=="perfect"
+
 names(DF)
 DF[,keyRedun:=paste0(transTarg,task,transform,pc,expirament,fold)]
-Perf<-DF[imperfect,]
+Perf<-DF[(imperfect)]
 DF<-DF[!(imperfect)]
 summary(Perf[,1:20])
 
@@ -91,51 +185,17 @@ require(naniar)
 gg_miss_upset(DF[,1:25],nsets = 15,nintersects=20)
 ```
 
-Full fails checked
+
+Full fails checked and removed
 ```{r}
-DF$totFail <- is.na(DF$hpGen) & is.na(DF$RMSEutrans) & is.na(DF$spearman2) 
+ 
 sum(DF$totFail)
 dim(DF)[1]
 DF[(totFail),][1:30,]
 
-require(netCoin)
-if(F){
-data("families")
-data("links")
-G <- allNet(incidence=links[links$link=="Marriage",-17],
-     nodes=families, layout="md", percentages= FALSE,
-     criteria="f",minL=1, size="f.Marriages",shape="seat",
-     main="Marriage links beetween Italian families",
-     note="Data source: Padgett & Ansell (1983)")
-H <- allNet(incidence=links[links$link=="Business",-17],
-     nodes=families, layout="md", percentages= FALSE,
-     criteria="f",minL=1, size="f.Business",shape="seat",
-     main="Marriage links beetween Italian families",
-     note="Data source: Padgett & Ansell (1983)")
-multigraphCreate(Marriage=G,Business=H,dir="italian")
-
-data("Galapagos")
-data("finches")
-finches$species<-system.file("extdata", finches$species,
-        package="netCoin") # copy path to the species field
-Net<-allNet(Galapagos,nodes=finches, criteria="hyp", maxL=.05,
-        lwidth ="Haberman",lweight="Haberman",
-        size="frequency", image="species", layout="mds",
-        main="Species coincidences in Galapagos Islands",
-        note="Data source: Sanderson (2000)")
-plot(Net)
-}
-set <- c("totFail","algomodel","transTarg","task","transform","fold")
-essCoin <- surCoin(data = DF, variables = set, lwidth ="Haberman", lweight="Haberman", size="frequency")
-essCoin
-plot(essCoin)
-
-```
-Full NAs removed
-```{r}
-TF<-DF[totFail,]
+TF<-DF[(totFail),]
 DF<-DF[!(totFail)]
-?data.table
+
 ```
 ```{r}
 require(naniar)
@@ -147,13 +207,114 @@ labels=names(DF[,1:35]), cex.axis=.7,
 gap=3, ylab=c("Missing data","Pattern"))
 
 ```
-remaining missing values
-```{r}
 
-(noPear<-DF[is.na(spearman2)])
-(noUtrans<-DF[is.na(RMSEutrans)])
+Which models were often failed or missed again
+
+```{r}
+DF[,keyMiss:=paste0(task,transform,transTarg,expirament,fold)]
+luMiss<-length(unique(DF$keyMiss))
+DF[,unmissed:=length(unique(keyMiss)),by=algomodel]
+DF[unmissed<luMiss][order(unmissed)]
+max(DF$unmissed)-luMiss
+plot(DF$unmissed[order(DF$unmissed)])
 ```
 
+Checks of variation inside redundant runs
+If summary 0s and 1s then no NA variance
+redonePQ9TF does range of 90th percentile rank by more than .02?
+
+```{r}
+DF[,keyOnerun:=paste0(expirament,task,pc,fold,transTarg,transform,algomodel,seed)]
+DF[,redonee:=.N,by=keyOnerun]
+DF[,redoneNA:=(sum(noPear) + sum(noUtrans))/redonee,by=keyOnerun]
+summary(DF$redoneNA)
+DF[,redonePQ9:=max(pq9TargRank,na.rm = T)-min(pq9TargRank,na.rm = T),by=keyOnerun]
+DF[,redonePQ9TF:=redonePQ9>.02]
+(specimen<-DF[(redonePQ9TF)][order(keyOnerun)][1:100])
+(exems<-unique(specimen$keyOnerun))
+DF[keyOnerun=="QSlink3QSlinks03_95ACEREBOUT21centernscaleSL.bartMachine403"]
+```
+
+net coicidence with everything to be removed, removed
+```{r}
+#DF$noPear
+#DF$noUtrans
+# 1 2345 67 8 910
+# #get rid of this part when redoing
+binnerr<-function(x){
+  if(x==1) return(1)
+  if(x>=2 & x<=5) return(3)
+  if(x>=6 & x<=10) return(8)
+}
+DF[,rowNum:=seq_len(.N)]
+length(unique(DF$rowNum))==dim(DF)[1]
+DF[,redoneeb:=binnerr(redonee),by=rowNum]
+summary(DF$redoneeb)
+
+set <- c("algomodel", "transTarg", "task", "transform", "fold", "pc",  "noPear", "noUtrans","redonePQ9TF","redoneeb")
+essCoin <- surCoin(data = DF, variables = set, lwidth ="Haberman", lweight="Haberman", color="variable", lcolor="Haberman", ltext="Haberman", linkFilter="Haberman", repulsion=90)
+essCoin
+plot(essCoin)
+```
+
+```{r}
+DF[,keyOnerun:=paste0(expirament,task,pc,fold,transTarg,transform,algomodel,seed)]
+dim(DF)
+uDF<-unique(DF,by = c("pearson2","pRMSE","keyOnerun"))
+dim(uDF)
+uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
+```
+missing values in metric will be made 80%tile
+only the better score really matter so 
+to prevent crashing later score its set to 80%
+```{r}
+for(i in names(uDF)[1:9]){#i<-2
+  print(na.replace<-quantile(uDF[,i,with=F],.8,na.rm=T))
+  nafound<-as.vector(is.na(uDF[,i,with=F]))
+  summary(nafound)
+  uDF[(nafound),(i):=na.replace]
+  #uDF[(nafound)]
+}
+```
+Getting into selecting metrics here; lets see their correlations and distributions
+```{r}
+
+```
+Here user must make a combined metric by 
+multipying metrics by set score then suming result
+```{r}
+
+```
+
+```{r}
+uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
+uDF[,keyOneRecipe:=paste0(expirament,task,transTarg,transform,algomodel,fold)]
+
+uDF[,gainin30:=median(gainin30,na.rm = T),by=keyOneRecipe]
+uDF[,pq9TargRank:=median(pq9TargRank,na.rm = T),by=keyOneRecipe]
+uDF[,spearman2:=median(spearman2,na.rm = T),by=keyOneRecipe]
+uDF[,pearson2:=median(pearson2,na.rm = T),by=keyOneRecipe]
+uDF[,pMAE:=median(pMAE,na.rm = T),by=keyOneRecipe]
+uDF[,pRMSE:=median(pRMSE,na.rm = T),by=keyOneRecipe]
+uDF[,ocvRMSE:=median(ocvRMSE,na.rm = T),by=keyOneRecipe]
+uDF[,RMSEutrans:=median(RMSEutrans,na.rm = T),by=keyOneRecipe]
+uDF[,MAEutrans:=median(MAEutrans,na.rm = T),by=keyOneRecipe] 
+
+uDF<-unique(uDF,by = c("pq9TargRank","pearson2","pRMSE","keyOneRecipe"))
+dim(uDF)
+
+uDF[,redonePQ9:=max(pq9TargRank,na.rm = T)-min(pq9TargRank,na.rm = T),by=keyOnerun]
+uDF[,redonePQ9TF:=redonePQ9>.02]
+(specimen<-uDF[(redonePQ9TF)][order(keyOnerun)][1:100])
+(exems<-unique(specimen$keyOnerun))
+
+```
+```{r}
+DF[,keyOneRecipe:=paste0(expirament,task,transTarg,transform,algomodel,fold)]
+
+uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
+DF[keyOneRecipe=="QSlink3QSlinks115_602expoTransSL.randomForest"][order(fold)]
+```
 
 
 
