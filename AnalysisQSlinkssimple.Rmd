@@ -167,6 +167,29 @@ length(unique(Perf$keyRedun))
 length(Perf$keyRedun)/length(unique(Perf$keyRedun))
 Perf[,.N,by=keyRedun]
 ```
+infinte checked and converted to NA
+```{r}
+DF[,infin:=0]
+for(i in 1:50){
+DF$infin <- is.infinite(DF[,i,with=F][[1]]) + DF$infin
+}
+
+(infinDF<-DF[(infin>0)])
+
+for(i in names(DF)[1:50]){#i<-2 
+  nafound<-as.vector(is.infinite(DF[,i,with=F][[1]]))
+  summary(nafound)
+  na.replace<-NA
+  DF[(nafound),(i):=na.replace]
+  
+  #DF[(nafound)]
+}
+
+DF[(infin>0)]
+stop()#not getting everything?
+```
+
+
 Percent success
 ```{r}
 #install.packages("VIM")
@@ -275,11 +298,103 @@ for(i in names(uDF)[1:9]){#i<-2
   uDF[(nafound),(i):=na.replace]
   #uDF[(nafound)]
 }
+summary(uDF[,1:9,with=F]) 
 ```
 Getting into selecting metrics here; lets see their correlations and distributions
 ```{r}
+uDF[,topmetrics:=(gainin30>quantile(gainin30,.801))+(pq9TargRank>quantile(pq9TargRank,.801))+(spearman2>quantile(spearman2,.801))+(pearson2>quantile(pearson2,.801))+(pMAE>quantile(pMAE,.801))+(pRMSE>quantile(pRMSE,.801))]
+iDF<-uDF[(topmetrics>0)][order(-topmetrics)]
+summary(iDF$topmetrics)
+for(i in names(iDF)[1:9]){#i<-2
+  yy<-as.vector(iDF[,i,with=F][[1]])
+  print(summary(yy))
+  yy<-as.integer(yy*10000)
+  print(summary(yy))
+  #gg<-ecdf(yy);summary(gg)
+  #unique(yy);dim(iDF[,i,with=F]);unique(iDF[,i,with=F]);iDF[,i,with=F]
+  plot.ecdf(yy, verticals = TRUE, do.points = FALSE)
+  title(i, adj = 1)
+}
 
 ```
+```{r}
+for(i in names(iDF)[1:9]){
+print(ggplot(iDF, aes(x=get(i))) + geom_histogram(aes(y=..density..), stat="bin", position="stack", alpha=0.5, bins=16) + geom_path(aes(y=..density..), stat="bin", position="identity", linetype="dashed", bins=16, pad=TRUE) + geom_density(aes(y=..density..), stat="density", position="identity", alpha=0.5) + theme_grey() + theme(text=element_text(family="sans", face="plain", color="#000000", size=15, hjust=0.5, vjust=0.5)) + xlab(i) + ylab("density"))
+}
+
+
+
+```
+
+maybe all this is too much work and I should just take tops?
+```{r}
+summary(uDF[,.(gainin30,pq9TargRank,spearman2,pearson2,pMAE,pRMSE)])
+uDF[,topmetrics:=(gainin30>quantile(gainin30,.92))+(pq9TargRank>quantile(pq9TargRank,.99))+(spearman2>quantile(spearman2,.99))+(pearson2>quantile(pearson2,.99))+(pMAE>quantile(pMAE,.99))+(pRMSE>quantile(pRMSE,.99))]
+uDF[(topmetrics>5)]
+```
+```{r}
+##-- Simple didactical  ecdf  example :
+x <- rnorm(12)
+x
+Fn <- ecdf(x)
+Fn     # a *function*
+Fn(x)  # returns the percentiles for x
+ecdf(x)
+tt <- seq(-2, 2, by = 0.1)
+tt
+Fn(tt) # Fn is a 'simple' function {with values k/12}
+summary(Fn)
+##--> see below for graphics
+knots(Fn)  # the unique data values {12 of them if there were no ties}
+
+y <- round(rnorm(12), 1); y[3] <- y[1]
+y
+Fn12 <- ecdf(y)
+Fn12
+knots(Fn12) # unique values (always less than 12!)
+summary(Fn12)
+summary.stepfun(Fn12)
+
+## Advanced: What's inside the function closure?
+ls(environment(Fn12))
+str(Fn12)
+##[1] "f"  "method"  "n"  "x"  "y"  "yleft"  "yright"
+utils::ls.str(environment(Fn12))
+stopifnot(all.equal(quantile(Fn12), quantile(y)))
+quantile(Fn12);quantile(y)
+```
+```{r}
+###----------------- Plotting --------------------------
+require(graphics)
+
+op <- par(mfrow = c(3, 1), mgp = c(1.5, 0.8, 0), mar =  .1+c(3,3,2,1))
+
+F10 <- ecdf(rnorm(10))
+summary(F10)
+
+plot(F10)
+plot(F10, verticals = TRUE, do.points = FALSE)
+
+plot(Fn12 , lwd = 2) ; mtext("lwd = 2", adj = 1)
+xx <- unique(sort(c(seq(-3, 2, length = 201), knots(Fn12))))
+lines(xx, Fn12(xx), col = "blue")
+abline(v = knots(Fn12), lty = 2, col = "gray70")
+
+plot(xx, Fn12(xx), type = "o", cex = .1)  #- plot.default {ugly}
+plot(Fn12, col.hor = "red", add =  TRUE)  #- plot method
+abline(v = knots(Fn12), lty = 2, col = "gray70")
+## luxury plot
+plot(Fn12, verticals = TRUE, col.points = "blue",
+     col.hor = "red", col.vert = "bisque")
+
+##-- this works too (automatic call to  ecdf(.)):
+plot.ecdf(rnorm(24))
+title("via  simple  plot.ecdf(x)", adj = 1)
+
+par(op)
+```
+
+
 Here user must make a combined metric by 
 multipying metrics by set score then suming result
 ```{r}
