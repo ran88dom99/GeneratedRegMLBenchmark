@@ -307,3 +307,4 @@ Thu Jan 02 17:08:02 2020,regr.ksvm,QSlinks115_60,5,5,windows,x64,HOPPER
 Fri Jan 03 18:27:11 2020,regr.km,QSlinks14_55,5,5,windows,x64,HOPPER
 Sat Jan 04 17:07:32 2020,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
 Sun Jan 05 12:07:53 2020,regr.randomForest,QSlinks14_55Int,5,5,windows,x64,HOPPER
+Sun Jan 05 17:08:40 2020,regr.xgboost,QSlinks14_55Int,5,5,windows,x64,HOPPER
