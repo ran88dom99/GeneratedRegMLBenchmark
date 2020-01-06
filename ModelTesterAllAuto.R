@@ -45,11 +45,11 @@ task.subject<-"QSlink3"#"carEnstest3"#
 pc.tpot=F
 pc.caret=T
 pc.mlr<-c("ACEREBOUTt","HOPPER","ALTA")#T,"HOPPER"
-pc.smallR<-c("HOPPERf","ALTAt","ACEREBOUT")
+pc.smallR<-c("HOPPERf","ALTAt","ACEREBOUTf")
 if(which.computer=="ALTA") #.libPaths("D:/R library/3.4");
   {pc.tpot=F;pc.caret=F}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
-  {pc.tpot=F;pc.caret=F; }#task.subject<-"hffoldreccTPOT";
+  {pc.tpot=F;pc.caret=T; }#task.subject<-"hffoldreccTPOT";
 if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F}
 if(which.computer=="LAPTOPBBQ"){pc.tpot=F;pc.caret=T}
 
@@ -72,7 +72,7 @@ if(length(which(list.files() == paste(importance.file,".csv",sep="")))<1) write.
 #if(length(which(list.files() == paste(importance.file,"mlr.csv",sep="")))<1) write.table( ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," ,file = paste(importance.file,"mlr.csv",sep=""),  quote = F, sep = ",", row.names = F,col.names = F
 
 high.fold=5
-min.high.fold=4
+min.high.fold=5
 cv.iters=5
 tuneLength=5
 tuneLength2=3
