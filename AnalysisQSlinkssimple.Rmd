@@ -98,12 +98,15 @@ plot(DF$unmissed[order(DF$unmissed)])
 
 for netcoinnetwork grap write out features
 these will be used later on to separate data and for more detailed views
+outliers too
 ```{r}
 getwd()
 DF$imperfect <- DF$algomodel=="perfect"
-DF$totFail <- is.na(DF$hpGen) & is.na(DF$RMSEutrans) & is.na(DF$spearman2)
+DF$totFail <- is.na(DF$hpGen) & is.na(DF$RMSEutrans) & is.na(DF$spearman2) & is.na(DF$pq9TargRank)
+DF$totFail <- DF$totFail |  DF$algomodel=="ignore"
 DF[,noPear:=is.na(spearman2) & !totFail]
 DF[,noUtrans:=is.na(RMSEutrans) & !totFail]
+
 
 if(F){
 DF$btp4[is.na(DF$btp4)]<-"NA"
@@ -170,13 +173,13 @@ Perf[,.N,by=keyRedun]
 infinte checked and converted to NA
 ```{r}
 DF[,infin:=0]
-for(i in 1:50){
+for(i in 1:45){
 DF$infin <- is.infinite(DF[,i,with=F][[1]]) + DF$infin
 }
 
 (infinDF<-DF[(infin>0)])
 
-for(i in names(DF)[1:50]){#i<-2 
+for(i in names(DF)[1:45]){#i<-2 
   nafound<-as.vector(is.infinite(DF[,i,with=F][[1]]))
   summary(nafound)
   na.replace<-NA
@@ -185,8 +188,8 @@ for(i in names(DF)[1:50]){#i<-2
   #DF[(nafound)]
 }
 
-DF[(infin>0)]
-stop()#not getting everything?
+DF[(infin>0)]#not getting everything?
+infinDF
 ```
 
 
@@ -210,8 +213,8 @@ gg_miss_upset(DF[,1:25],nsets = 15,nintersects=20)
 
 
 Full fails checked and removed
+mlr fail state not updated algo "ignore" also a fail
 ```{r}
- 
 sum(DF$totFail)
 dim(DF)[1]
 DF[(totFail),][1:30,]
@@ -230,6 +233,7 @@ labels=names(DF[,1:35]), cex.axis=.7,
 gap=3, ylab=c("Missing data","Pattern"))
 
 ```
+
 
 Which models were often failed or missed again
 
@@ -258,6 +262,26 @@ DF[,redonePQ9TF:=redonePQ9>.02]
 DF[keyOnerun=="QSlink3QSlinks03_95ACEREBOUT21centernscaleSL.bartMachine403"]
 ```
 
+outliers moved to some more reasonable state
+may be column specific
+lots of NAS not dealt with; let NA algo deal with them
+```{r}
+
+for(i in names(DF)[1:9]){#i<-2
+  bxs <- boxplot.stats(DF[,i,with=F][[1]],coef=3)
+  print(bxs$stats)
+  nafound <- as.vector(DF[,i,with=F]<bxs$stats[[1]])
+  print(summary(nafound))
+  #DF[(is.na(nafound))];
+  #print(DF[(nafound)])
+  DF[(nafound),(i):=bxs$stats[[1]]]
+  nafound <- as.vector(DF[,i,with=F]>bxs$stats[[5]])
+  print(summary(nafound))
+  DF[(nafound),(i):=bxs$stats[[5]]]
+}
+ 
+```
+
 net coicidence with everything to be removed, removed
 ```{r}
 #DF$noPear
@@ -283,7 +307,7 @@ plot(essCoin)
 ```{r}
 DF[,keyOnerun:=paste0(expirament,task,pc,fold,transTarg,transform,algomodel,seed)]
 dim(DF)
-uDF<-unique(DF,by = c("pearson2","pRMSE","keyOnerun"))
+uDF<-unique(DF,by = c("pq9TargRank","pearson2","pRMSE","keyOnerun"))
 dim(uDF)
 uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
 ```
@@ -318,6 +342,7 @@ for(i in names(iDF)[1:9]){#i<-2
 
 ```
 ```{r}
+require(ggplot2)
 for(i in names(iDF)[1:9]){
 print(ggplot(iDF, aes(x=get(i))) + geom_histogram(aes(y=..density..), stat="bin", position="stack", alpha=0.5, bins=16) + geom_path(aes(y=..density..), stat="bin", position="identity", linetype="dashed", bins=16, pad=TRUE) + geom_density(aes(y=..density..), stat="density", position="identity", alpha=0.5) + theme_grey() + theme(text=element_text(family="sans", face="plain", color="#000000", size=15, hjust=0.5, vjust=0.5)) + xlab(i) + ylab("density"))
 }
@@ -332,71 +357,11 @@ summary(uDF[,.(gainin30,pq9TargRank,spearman2,pearson2,pMAE,pRMSE)])
 uDF[,topmetrics:=(gainin30>quantile(gainin30,.92))+(pq9TargRank>quantile(pq9TargRank,.99))+(spearman2>quantile(spearman2,.99))+(pearson2>quantile(pearson2,.99))+(pMAE>quantile(pMAE,.99))+(pRMSE>quantile(pRMSE,.99))]
 uDF[(topmetrics>5)]
 ```
-```{r}
-##-- Simple didactical  ecdf  example :
-x <- rnorm(12)
-x
-Fn <- ecdf(x)
-Fn     # a *function*
-Fn(x)  # returns the percentiles for x
-ecdf(x)
-tt <- seq(-2, 2, by = 0.1)
-tt
-Fn(tt) # Fn is a 'simple' function {with values k/12}
-summary(Fn)
-##--> see below for graphics
-knots(Fn)  # the unique data values {12 of them if there were no ties}
-
-y <- round(rnorm(12), 1); y[3] <- y[1]
-y
-Fn12 <- ecdf(y)
-Fn12
-knots(Fn12) # unique values (always less than 12!)
-summary(Fn12)
-summary.stepfun(Fn12)
-
-## Advanced: What's inside the function closure?
-ls(environment(Fn12))
-str(Fn12)
-##[1] "f"  "method"  "n"  "x"  "y"  "yleft"  "yright"
-utils::ls.str(environment(Fn12))
-stopifnot(all.equal(quantile(Fn12), quantile(y)))
-quantile(Fn12);quantile(y)
-```
-```{r}
-###----------------- Plotting --------------------------
-require(graphics)
-
-op <- par(mfrow = c(3, 1), mgp = c(1.5, 0.8, 0), mar =  .1+c(3,3,2,1))
-
-F10 <- ecdf(rnorm(10))
-summary(F10)
-
-plot(F10)
-plot(F10, verticals = TRUE, do.points = FALSE)
-
-plot(Fn12 , lwd = 2) ; mtext("lwd = 2", adj = 1)
-xx <- unique(sort(c(seq(-3, 2, length = 201), knots(Fn12))))
-lines(xx, Fn12(xx), col = "blue")
-abline(v = knots(Fn12), lty = 2, col = "gray70")
-
-plot(xx, Fn12(xx), type = "o", cex = .1)  #- plot.default {ugly}
-plot(Fn12, col.hor = "red", add =  TRUE)  #- plot method
-abline(v = knots(Fn12), lty = 2, col = "gray70")
-## luxury plot
-plot(Fn12, verticals = TRUE, col.points = "blue",
-     col.hor = "red", col.vert = "bisque")
-
-##-- this works too (automatic call to  ecdf(.)):
-plot.ecdf(rnorm(24))
-title("via  simple  plot.ecdf(x)", adj = 1)
-
-par(op)
-```
 
 
 Here user must make a combined metric by 
 multipying metrics by set score then suming result
+eh no!? 
 ```{r}
 
 ```
@@ -432,7 +397,10 @@ DF[keyOneRecipe=="QSlink3QSlinks115_602expoTransSL.randomForest"][order(fold)]
 ```
 
 
+actualy randomtime base dseeds cut last 5 digits off
 
+best algo is just first 3 scores in 95% and number of oflds too
+else just use median
 
 
 
