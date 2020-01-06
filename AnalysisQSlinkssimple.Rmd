@@ -361,11 +361,11 @@ uDF[(topmetrics>5)]
 
 Here user must make a combined metric by 
 multipying metrics by set score then suming result
-eh no!? 
+eh no!? not doing this 
 ```{r}
 
 ```
-
+two medianings because fold is very special compared to just hyperparameer jiggling. 
 ```{r}
 uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
 uDF[,keyOneRecipe:=paste0(expirament,task,transTarg,transform,algomodel,fold)]
@@ -380,8 +380,12 @@ uDF[,ocvRMSE:=median(ocvRMSE,na.rm = T),by=keyOneRecipe]
 uDF[,RMSEutrans:=median(RMSEutrans,na.rm = T),by=keyOneRecipe]
 uDF[,MAEutrans:=median(MAEutrans,na.rm = T),by=keyOneRecipe] 
 
-uDF<-unique(uDF,by = c("pq9TargRank","pearson2","pRMSE","keyOneRecipe"))
+uDF[,hyperUnqs:=.N,by=keyOneRecipe]
+uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
 dim(uDF)
+
+```
+```{r}
 
 uDF[,redonePQ9:=max(pq9TargRank,na.rm = T)-min(pq9TargRank,na.rm = T),by=keyOnerun]
 uDF[,redonePQ9TF:=redonePQ9>.02]
@@ -389,11 +393,24 @@ uDF[,redonePQ9TF:=redonePQ9>.02]
 (exems<-unique(specimen$keyOnerun))
 
 ```
-```{r}
-DF[,keyOneRecipe:=paste0(expirament,task,transTarg,transform,algomodel,fold)]
 
+```{r}
 uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
-DF[keyOneRecipe=="QSlink3QSlinks115_602expoTransSL.randomForest"][order(fold)]
+uDF[,keyOneRecipe:=paste0(expirament,task,transTarg,transform,algomodel)]
+
+uDF[,gainin30:=mean(gainin30,na.rm = T),by=keyOneRecipe]
+uDF[,pq9TargRank:=mean(pq9TargRank,na.rm = T),by=keyOneRecipe]
+uDF[,spearman2:=mean(spearman2,na.rm = T),by=keyOneRecipe]
+uDF[,pearson2:=mean(pearson2,na.rm = T),by=keyOneRecipe]
+uDF[,pMAE:=mean(pMAE,na.rm = T),by=keyOneRecipe]
+uDF[,pRMSE:=mean(pRMSE,na.rm = T),by=keyOneRecipe]
+uDF[,ocvRMSE:=mean(ocvRMSE,na.rm = T),by=keyOneRecipe]
+uDF[,RMSEutrans:=mean(RMSEutrans,na.rm = T),by=keyOneRecipe]
+uDF[,MAEutrans:=mean(MAEutrans,na.rm = T),by=keyOneRecipe] 
+
+uDF[,foldCount:=.N,by=keyOneRecipe]
+uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
+dim(uDF)
 ```
 
 
@@ -402,7 +419,99 @@ actualy randomtime base dseeds cut last 5 digits off
 best algo is just first 3 scores in 95% and number of oflds too
 else just use median
 
+maybe all this is too much work and I should just take tops?
+```{r}
+#summary(uDF[,.(gainin30,pq9TargRank,spearman2,pearson2,pMAE,pRMSE)])
+uDF[,topmetrics:=(gainin30>quantile(gainin30,.95))+(pq9TargRank>quantile(pq9TargRank,.96))+(spearman2>quantile(spearman2,.96))+(pearson2>quantile(pearson2,.95))+(pMAE>quantile(pMAE,.99))+(pRMSE>quantile(pRMSE,.99))]
+summary(uDF[(topmetrics>1)][(foldCount>2)][,.(gainin30,pq9TargRank,spearman2,pearson2,pMAE,pRMSE)])
+uDF[(topmetrics>1)][(foldCount>2)][order(-gainin30)]
+uDF[(topmetrics>1)][(foldCount>2)][order(-pq9TargRank)]
+uDF[(topmetrics>1)][(foldCount>2)][order(-spearman2)]
+uDF[(topmetrics>1)][(foldCount>2)][order(-pearson2)]
+uDF[(topmetrics>1)][(foldCount>2)][order(-pq9TargRank)][order(-topmetrics)]
+```
+QSlink3QSlinks14_55Int2range01SL.ranger	#### winner ####
+QSlink3QSlinks14_55Int1range01SL.ranger	
+QSlink3QSlinks115_602expoTransSL.ranger	
+QSlink3QSlinks14_55Int1centernscaleSL.extraTrees	
+QSlink3QSlinks14_55Int2range01regr.h2o.randomForest	
+QSlink3QSlinks14_55Int2centernscaleSL.extraTrees	
+QSlink3QSlinks14_55Int2range01SL.extraTrees	
+QSlink3QSlinks14_55Int1range01SL.extraTrees	
+QSlink3QSlinks03_951range01regr.randomForest	
+QSlink3QSlinks14_55Int2expoTransSL.ranger
 
+QSlink3QSlinks03_951centernscaleregr.h2o.randomForest	0.384000 p2
+QSlink3QSlinks03_952expoTransregr.evtree	
+QSlink3QSlinks14_55Int2range01SL.ranger	0.374125
+QSlink3QSlinks14_55Int1range01SL.ranger	
+QSlink3QSlinks14_55Int2quantileSL.ranger	
+QSlink3QSlinks14_55Int2expoTransSL.ranger	
+QSlink3QSlinks14_55Int2asisSL.ranger	
+QSlink3QSlinks14_55Int2YeoJohnsonSL.ranger	
+QSlink3QSlinks14_55Int2asisSL.randomForest	
+QSlink3QSlinks14_55Int2YeoJohnsonSL.randomForest
+ 
+ QSlink3QSlinks14_55Int2expoTransSL.ranger 0.66875	pq9
+QSlink3QSlinks14_55Int2asisSL.ranger	
+QSlink3QSlinks14_55Int2range01SL.ranger	
+QSlink3QSlinks14_55Int2YeoJohnsonSL.ranger	0.66750
+QSlink3QSlinks115_602YeoJohnsonRborist	
+QSlink3QSlinks14_55Int1range01SL.ranger	
+QSlink3QSlinks14_55Int2centernscaleSL.ranger	
+QSlink3QSlinks14_55Int1centernscaleSL.ranger	
+QSlink3QSlinks115_602asisregr.ranger	
+QSlink3QSlinks115_602YeoJohnsonregr.ranger
 
+QSlink3QSlinks115_602centernscaleregr.randomForest	0.798750 gain30
+QSlink3QSlinks14_55Int2centernscaleregr.cvglmnet	
+QSlink3QSlinks115_602expoTransSL.randomForest	
+QSlink3QSlinks14_55Int2range01SL.extraTrees	
+QSlink3QSlinks14_55Int2centernscaleSL.extraTrees	
+QSlink3QSlinks14_55Int2range01SL.ranger	         0.775750
+QSlink3QSlinks03_952asisregr.ranger	
+QSlink3QSlinks03_952YeoJohnsonregr.ranger	
+QSlink3QSlinks115_602quantileRborist	
+QSlink3QSlinks115_602quantileranger
  
- 
+ #spearman only odd because it does not value gulfs between ratings
+QSlink3QSlinks03_952centernscaleregr.randomForest	0.400250
+QSlink3QSlinks03_952expoTransregr.randomForest	
+QSlink3QSlinks14_55Int2range01SL.extraTrees	
+QSlink3QSlinks14_55Int2allSL.randomForest	
+QSlink3QSlinks14_55Int2range01regr.h2o.randomForest	
+QSlink3QSlinks14_55Int1centernscaleSL.extraTrees	
+QSlink3QSlinks14_55Int1range01SL.extraTrees	
+QSlink3QSlinks03_952asisregr.ranger	
+QSlink3QSlinks03_952YeoJohnsonregr.ranger	
+QSlink3QSlinks03_952asisSL.randomForest
+QSlink3QSlinks03_952YeoJohnsonSL.randomForest	
+QSlink3QSlinks14_55Int2asisSL.extraTrees	
+QSlink3QSlinks14_55Int2YeoJohnsonSL.extraTrees	
+QSlink3QSlinks03_951range01SL.randomForest	
+QSlink3QSlinks03_951range01regr.randomForest	
+QSlink3QSlinks03_952asisregr.randomForest	
+QSlink3QSlinks03_952YeoJohnsonregr.randomForest	
+QSlink3QSlinks03_952expoTransSL.randomForest	
+QSlink3QSlinks14_55Int2centernscaleSL.extraTrees	
+QSlink3QSlinks03_952quantileregr.randomForest
+QSlink3QSlinks03_952range01SL.randomForest	
+QSlink3QSlinks03_952centernscaleSL.randomForest	
+QSlink3QSlinks03_951centernscaleregr.h2o.randomForest	
+QSlink3QSlinks03_952centernscaleregr.ranger	
+QSlink3QSlinks03_952quantileSL.randomForest	
+QSlink3QSlinks03_951centernscaleSL.randomForest	
+QSlink3QSlinks14_55Int2asisSL.randomForest	
+QSlink3QSlinks14_55Int2YeoJohnsonSL.randomForest	
+QSlink3QSlinks14_55Int1centernscaleSL.randomForest	
+QSlink3QSlinks14_55Int2allSL.ranger
+QSlink3QSlinks14_55Int1range01SL.ranger	  0.386250
+QSlink3QSlinks14_55Int1centernscaleSL.ranger	
+QSlink3QSlinks14_55Int2range01SL.ranger	0.386125
+QSlink3QSlinks14_55Int2centernscaleSL.ranger	
+QSlink3QSlinks14_55Int2centernscaleSL.randomForest	
+QSlink3QSlinks14_55Int2quantileSL.ranger	
+QSlink3QSlinks14_55Int2expoTransSL.ranger	
+QSlink3QSlinks14_55Int2asisSL.ranger	
+QSlink3QSlinks14_55Int2YeoJohnsonSL.ranger	
+QSlink3QSlinks14_55Int2expoTransSL.randomForest

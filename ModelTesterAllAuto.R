@@ -187,7 +187,7 @@ if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 tuneLengthMLR<-tuneLength
 mlr.iters<-cv.iters
 #######data read process start#####
-seed.var =222 #folds must be kept the same so no +round(runif(1,min=0,max=100)) for main
+seed.var = as.integer(Sys.time()) - 1578348621#222 #folds must be kept the same so no +round(runif(1,min=0,max=100)) for main
 column.to.predict=1
 print(date());
 
