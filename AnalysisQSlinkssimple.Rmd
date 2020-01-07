@@ -71,12 +71,12 @@ DF$date<-as.numeric(as.POSIXct(DF$date,format = "%a %b %d %H:%M:%S %Y"))
 #str(DF)
 summary(DF$pq9TargRank)
 
-#what is seedit? and seed cause foldseed is always the same
-summary(DF[,.(seed,seedit,foldseed)])
+#what is seedit? and seed bcause foldseed is always the same
+summary(DF[,.(seed,seedit,foldseed)])#need foldseed now
 unique(DF$seed);unique(DF$seedit);unique(DF$foldseed)
 unique(DF$trgCol);unique(DF$missing);unique(DF$append)
 unique(DF$hpGen);unique(DF$tuneLength);unique(DF$ignrepeats)
-usless<-c("trgCol","missing","append","foldseed")
+usless<-c("trgCol","missing","append")
 names(DF<-DF[,1:45,with=F])
 names(DF<-DF[,-(usless),with=F])
 
@@ -303,7 +303,7 @@ essCoin <- surCoin(data = DF, variables = set, lwidth ="Haberman", lweight="Habe
 essCoin
 plot(essCoin)
 ```
-
+fold now depends on seed so fold becomes paste of fold and seed
 ```{r}
 DF[,keyOnerun:=paste0(expirament,task,pc,fold,transTarg,transform,algomodel,seed)]
 dim(DF)
@@ -351,20 +351,7 @@ print(ggplot(iDF, aes(x=get(i))) + geom_histogram(aes(y=..density..), stat="bin"
 
 ```
 
-maybe all this is too much work and I should just take tops?
-```{r}
-summary(uDF[,.(gainin30,pq9TargRank,spearman2,pearson2,pMAE,pRMSE)])
-uDF[,topmetrics:=(gainin30>quantile(gainin30,.92))+(pq9TargRank>quantile(pq9TargRank,.99))+(spearman2>quantile(spearman2,.99))+(pearson2>quantile(pearson2,.99))+(pMAE>quantile(pMAE,.99))+(pRMSE>quantile(pRMSE,.99))]
-uDF[(topmetrics>5)]
-```
 
-
-Here user must make a combined metric by 
-multipying metrics by set score then suming result
-eh no!? not doing this 
-```{r}
-
-```
 two medianings because fold is very special compared to just hyperparameer jiggling. 
 ```{r}
 uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
@@ -515,3 +502,17 @@ QSlink3QSlinks14_55Int2expoTransSL.ranger
 QSlink3QSlinks14_55Int2asisSL.ranger	
 QSlink3QSlinks14_55Int2YeoJohnsonSL.ranger	
 QSlink3QSlinks14_55Int2expoTransSL.randomForest
+maybe all this is too much work and I should just take tops?
+```{r}
+summary(uDF[,.(gainin30,pq9TargRank,spearman2,pearson2,pMAE,pRMSE)])
+uDF[,topmetrics:=(gainin30>quantile(gainin30,.92))+(pq9TargRank>quantile(pq9TargRank,.99))+(spearman2>quantile(spearman2,.99))+(pearson2>quantile(pearson2,.99))+(pMAE>quantile(pMAE,.99))+(pRMSE>quantile(pRMSE,.99))]
+uDF[(topmetrics>5)]
+```
+
+
+Here user must make a combined metric by 
+multipying metrics by set score then suming result
+eh no!? not doing this 
+```{r}
+
+```
