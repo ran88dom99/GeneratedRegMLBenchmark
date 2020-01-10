@@ -138,6 +138,3 @@ d <- matrix(c(0.63,0.42,0.63,0.67,0.8,0.59,0.8,0.84,0.92,0.75,0.92,0.92,0.29,0.7
 w <- c(1/24,1/24,1/24,1/24,1/24,1/24,1/24,1/24,1/24,1/24,1/24,1/24,1/24,1/24,1/24,1/24,
        1/24,1/24,1/24,1/24,1/24,1/24,1/24,1/24)
 cb <- c('max','max','max','max','max','max','max','max')
-FuzzyMMOORA(d,w,cb)
-https://arxiv.org/ftp/arxiv/papers/1401/1401.4590.pdf
-https://stats.stackexchange.com/questions/154888/combining-multiple-metrics-to-provide-comparisons-ranking-of-k-objects-question
