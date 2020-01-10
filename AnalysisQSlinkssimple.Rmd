@@ -22,7 +22,11 @@ mainDir<-getwd()
 subDir<-"QSlinks_simple"
 #dir.create(file.path(mainDir, subDir))
   require(readr)
-
+require(netCoin)
+require(data.table)
+require(naniar) 
+require(VIM)
+require(ggplot2)
 
 resultDir<-"ACEREBOUT"
 #setwd(resultDir)
@@ -225,7 +229,7 @@ DF<-DF[!(totFail)]
 ```
 ```{r}
 require(naniar)
-gg_miss_upset(DF[,1:35],nsets = 15,nintersects=20)
+gg_miss_upset(DF[,1:35],nsets = 15,nintersects=15)
 require(VIM)
 mice_plot <- aggr(DF[,1:35], col=c('navyblue','yellow'),
 numbers=TRUE, sortVars=TRUE,
@@ -305,6 +309,12 @@ plot(essCoin)
 ```
 fold now depends on seed so fold becomes paste of fold and seed
 ```{r}
+DF[,foldOrg:=fold]
+DF[,fold:=paste0(fold,".",foldseed)]
+```
+
+remove completely redundant rows
+```{r}
 DF[,keyOnerun:=paste0(expirament,task,pc,fold,transTarg,transform,algomodel,seed)]
 dim(DF)
 uDF<-unique(DF,by = c("pq9TargRank","pearson2","pRMSE","keyOnerun"))
@@ -351,12 +361,22 @@ print(ggplot(iDF, aes(x=get(i))) + geom_histogram(aes(y=..density..), stat="bin"
 
 ```
 
+```{r}
 
+uDF[,redonePQ9:=max(pq9TargRank,na.rm = T)-min(pq9TargRank,na.rm = T),by=keyOnerun]
+uDF[,redonePQ9TF:=redonePQ9>.02]
+(specimen<-uDF[(redonePQ9TF)][order(keyOnerun)][1:100])
+(exems<-unique(specimen$keyOnerun))
+
+uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
+```
 two medianings because fold is very special compared to just hyperparameer jiggling. 
 ```{r}
+
 uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
 uDF[,keyOneRecipe:=paste0(expirament,task,transTarg,transform,algomodel,fold)]
 
+ 
 uDF[,gainin30:=median(gainin30,na.rm = T),by=keyOneRecipe]
 uDF[,pq9TargRank:=median(pq9TargRank,na.rm = T),by=keyOneRecipe]
 uDF[,spearman2:=median(spearman2,na.rm = T),by=keyOneRecipe]
@@ -372,147 +392,140 @@ uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
 dim(uDF)
 
 ```
+prep for duplication of recipes removal
+#wierd effect of lowered variance drasticaly dropping interval 
+using variance of all recipes
+here quick view of these variances
 ```{r}
-
-uDF[,redonePQ9:=max(pq9TargRank,na.rm = T)-min(pq9TargRank,na.rm = T),by=keyOnerun]
-uDF[,redonePQ9TF:=redonePQ9>.02]
-(specimen<-uDF[(redonePQ9TF)][order(keyOnerun)][1:100])
-(exems<-unique(specimen$keyOnerun))
-
-```
-
-```{r}
-uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
 uDF[,keyOneRecipe:=paste0(expirament,task,transTarg,transform,algomodel)]
-
-uDF[,gainin30:=mean(gainin30,na.rm = T),by=keyOneRecipe]
-uDF[,pq9TargRank:=mean(pq9TargRank,na.rm = T),by=keyOneRecipe]
-uDF[,spearman2:=mean(spearman2,na.rm = T),by=keyOneRecipe]
-uDF[,pearson2:=mean(pearson2,na.rm = T),by=keyOneRecipe]
-uDF[,pMAE:=mean(pMAE,na.rm = T),by=keyOneRecipe]
-uDF[,pRMSE:=mean(pRMSE,na.rm = T),by=keyOneRecipe]
-uDF[,ocvRMSE:=mean(ocvRMSE,na.rm = T),by=keyOneRecipe]
-uDF[,RMSEutrans:=mean(RMSEutrans,na.rm = T),by=keyOneRecipe]
-uDF[,MAEutrans:=mean(MAEutrans,na.rm = T),by=keyOneRecipe] 
-
 uDF[,foldCount:=.N,by=keyOneRecipe]
+
+if(F){
+uDF[,staDev:=sd(pearson2),by=keyOneRecipe]
+uDF[,meanie:=mean(pearson2),by=keyOneRecipe]
+summary(uDF$staDev)
+summary(uDF$meanie)
+summary(uDF$foldCount)
+ggplot(data = uDF,mapping = aes(x=as.factor(foldCount),staDev)) + geom_boxplot() + geom_smooth(method="lm")
+
+ggplot(data = uDF,mapping = aes(meanie,staDev)) + geom_point() + geom_smooth()
+}
+```
+actualy applying manual ttest 
+and then collapsing all unique folds
+
+```{r}
+
+cl <- 0.7
+ttOK <- function(x){
+  vax<-var(x)
+  if(is.na(vax)) return(F)
+  if(vax==0) return(F)
+  return(T)
+}
+
+tt1 <- function(x,o=1,coi=.95){
+  x <- c(x,o)
+  return(t.test(x,conf.level = coi))
+}
+
+#manual mean interval ttest with outside SD if vector small
+ttm <- function(x,psd,cl=.95,u_l="u",dsda=10){
+  if(cl>=1 | cl<=0) warning("confidence level out of bounds")
+  if(!is.vector(x)) warning("x not a vector")
+  n <- length(x)
+  if( n < 1 ) warning("x has length 0")
+  if(n>1){
+    nsd <- sd(x) * min( n / dsda , 1) + psd * max((1 - n / dsda) , 0)
+  } else {
+    nsd <- psd
+  }
+  ttt <- qt((1-(1-cl)/2),df = max((n-1),1))
+  entrvl <- ttt * nsd / sqrt(n)
+  if(u_l=="u"){  return( mean(x) + entrvl) }
+  if(u_l=="l"){  return( mean(x) - entrvl) }
+}
+
+dsda<-10
+lastCol<-dim(uDF)[2]
+for(i in names(uDF)[1:9]){#i<-"spearman2"
+  uDF[(foldCount>3), intSD := sd(get(i),na.rm=T), by=keyOneRecipe]
+  #summary(uDF$intSD)
+  print(osd <- quantile(uDF[,.SD[1], by=keyOneRecipe]$intSD, na.rm=T,.8))
+
+  uDF[(foldCount<=dsda),paste0(i,"u") := ttm(get(i), osd, cl = cl, dsda = dsda), by=keyOneRecipe]
+  uDF[(foldCount<=dsda),paste0(i,"l") := ttm(get(i), osd, u_l="l", cl = cl, dsda = dsda),  by=keyOneRecipe] 
+  uDF[(foldCount>dsda),paste0(i,"u") := t.test(get(i),conf.level = cl)$co[2], by=keyOneRecipe]
+  uDF[(foldCount>dsda),paste0(i,"l") := t.test(get(i),conf.level = cl)$co[1], by=keyOneRecipe] 
+
+#print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
+  uDF[,(i):=mean(get(i),na.rm = T),by=keyOneRecipe] 
+  print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
+}
+
+if(F){ #us and ls NAs to means
+for(i in names(uDF)[lastCol:dim(uDF)[2]]){#i<-"spearman2l"
+uDF[(is.na(get(i))),(i):=mean(get(i),na.rm = T)] 
+print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
+}
+}
+  
 uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
 dim(uDF)
 ```
 
 
-actualy randomtime base dseeds cut last 5 digits off
-
 best algo is just first 3 scores in 95% and number of oflds too
 else just use median
 
 maybe all this is too much work and I should just take tops?
+by tops I mean lower bound confidence intervals of each of the four merics
 ```{r}
-#summary(uDF[,.(gainin30,pq9TargRank,spearman2,pearson2,pMAE,pRMSE)])
-uDF[,topmetrics:=(gainin30>quantile(gainin30,.95))+(pq9TargRank>quantile(pq9TargRank,.96))+(spearman2>quantile(spearman2,.96))+(pearson2>quantile(pearson2,.95))+(pMAE>quantile(pMAE,.99))+(pRMSE>quantile(pRMSE,.99))]
-summary(uDF[(topmetrics>1)][(foldCount>2)][,.(gainin30,pq9TargRank,spearman2,pearson2,pMAE,pRMSE)])
-uDF[(topmetrics>1)][(foldCount>2)][order(-gainin30)]
-uDF[(topmetrics>1)][(foldCount>2)][order(-pq9TargRank)]
-uDF[(topmetrics>1)][(foldCount>2)][order(-spearman2)]
-uDF[(topmetrics>1)][(foldCount>2)][order(-pearson2)]
-uDF[(topmetrics>1)][(foldCount>2)][order(-pq9TargRank)][order(-topmetrics)]
-```
-QSlink3QSlinks14_55Int2range01SL.ranger	#### winner ####
-QSlink3QSlinks14_55Int1range01SL.ranger	
-QSlink3QSlinks115_602expoTransSL.ranger	
-QSlink3QSlinks14_55Int1centernscaleSL.extraTrees	
-QSlink3QSlinks14_55Int2range01regr.h2o.randomForest	
-QSlink3QSlinks14_55Int2centernscaleSL.extraTrees	
-QSlink3QSlinks14_55Int2range01SL.extraTrees	
-QSlink3QSlinks14_55Int1range01SL.extraTrees	
-QSlink3QSlinks03_951range01regr.randomForest	
-QSlink3QSlinks14_55Int2expoTransSL.ranger
+#summary(uDF[,.(gainin30l,pq9TargRankl,spearman2l,pearson2l,pMAEl,pRMSEl)])
+uDF[,topmetrics:=(gainin30l>quantile(gainin30l,.95, na.rm=T))+(pq9TargRankl>quantile(pq9TargRankl,.96, na.rm=T))+(spearman2l>quantile(spearman2l,.96, na.rm=T))+(pearson2l>quantile(pearson2l,.95, na.rm=T))+(pMAEl>quantile(pMAEl,.99, na.rm=T))+(pRMSEl>quantile(pRMSEl,.99, na.rm=T))]
 
-QSlink3QSlinks03_951centernscaleregr.h2o.randomForest	0.384000 p2
-QSlink3QSlinks03_952expoTransregr.evtree	
-QSlink3QSlinks14_55Int2range01SL.ranger	0.374125
-QSlink3QSlinks14_55Int1range01SL.ranger	
-QSlink3QSlinks14_55Int2quantileSL.ranger	
-QSlink3QSlinks14_55Int2expoTransSL.ranger	
-QSlink3QSlinks14_55Int2asisSL.ranger	
-QSlink3QSlinks14_55Int2YeoJohnsonSL.ranger	
-QSlink3QSlinks14_55Int2asisSL.randomForest	
-QSlink3QSlinks14_55Int2YeoJohnsonSL.randomForest
- 
- QSlink3QSlinks14_55Int2expoTransSL.ranger 0.66875	pq9
-QSlink3QSlinks14_55Int2asisSL.ranger	
-QSlink3QSlinks14_55Int2range01SL.ranger	
-QSlink3QSlinks14_55Int2YeoJohnsonSL.ranger	0.66750
-QSlink3QSlinks115_602YeoJohnsonRborist	
-QSlink3QSlinks14_55Int1range01SL.ranger	
-QSlink3QSlinks14_55Int2centernscaleSL.ranger	
-QSlink3QSlinks14_55Int1centernscaleSL.ranger	
-QSlink3QSlinks115_602asisregr.ranger	
-QSlink3QSlinks115_602YeoJohnsonregr.ranger
 
-QSlink3QSlinks115_602centernscaleregr.randomForest	0.798750 gain30
-QSlink3QSlinks14_55Int2centernscaleregr.cvglmnet	
-QSlink3QSlinks115_602expoTransSL.randomForest	
-QSlink3QSlinks14_55Int2range01SL.extraTrees	
-QSlink3QSlinks14_55Int2centernscaleSL.extraTrees	
-QSlink3QSlinks14_55Int2range01SL.ranger	         0.775750
-QSlink3QSlinks03_952asisregr.ranger	
-QSlink3QSlinks03_952YeoJohnsonregr.ranger	
-QSlink3QSlinks115_602quantileRborist	
-QSlink3QSlinks115_602quantileranger
- 
- #spearman only odd because it does not value gulfs between ratings
-QSlink3QSlinks03_952centernscaleregr.randomForest	0.400250
-QSlink3QSlinks03_952expoTransregr.randomForest	
-QSlink3QSlinks14_55Int2range01SL.extraTrees	
-QSlink3QSlinks14_55Int2allSL.randomForest	
-QSlink3QSlinks14_55Int2range01regr.h2o.randomForest	
-QSlink3QSlinks14_55Int1centernscaleSL.extraTrees	
-QSlink3QSlinks14_55Int1range01SL.extraTrees	
-QSlink3QSlinks03_952asisregr.ranger	
-QSlink3QSlinks03_952YeoJohnsonregr.ranger	
-QSlink3QSlinks03_952asisSL.randomForest
-QSlink3QSlinks03_952YeoJohnsonSL.randomForest	
-QSlink3QSlinks14_55Int2asisSL.extraTrees	
-QSlink3QSlinks14_55Int2YeoJohnsonSL.extraTrees	
-QSlink3QSlinks03_951range01SL.randomForest	
-QSlink3QSlinks03_951range01regr.randomForest	
-QSlink3QSlinks03_952asisregr.randomForest	
-QSlink3QSlinks03_952YeoJohnsonregr.randomForest	
-QSlink3QSlinks03_952expoTransSL.randomForest	
-QSlink3QSlinks14_55Int2centernscaleSL.extraTrees	
-QSlink3QSlinks03_952quantileregr.randomForest
-QSlink3QSlinks03_952range01SL.randomForest	
-QSlink3QSlinks03_952centernscaleSL.randomForest	
-QSlink3QSlinks03_951centernscaleregr.h2o.randomForest	
-QSlink3QSlinks03_952centernscaleregr.ranger	
-QSlink3QSlinks03_952quantileSL.randomForest	
-QSlink3QSlinks03_951centernscaleSL.randomForest	
-QSlink3QSlinks14_55Int2asisSL.randomForest	
-QSlink3QSlinks14_55Int2YeoJohnsonSL.randomForest	
-QSlink3QSlinks14_55Int1centernscaleSL.randomForest	
-QSlink3QSlinks14_55Int2allSL.ranger
-QSlink3QSlinks14_55Int1range01SL.ranger	  0.386250
-QSlink3QSlinks14_55Int1centernscaleSL.ranger	
-QSlink3QSlinks14_55Int2range01SL.ranger	0.386125
-QSlink3QSlinks14_55Int2centernscaleSL.ranger	
-QSlink3QSlinks14_55Int2centernscaleSL.randomForest	
-QSlink3QSlinks14_55Int2quantileSL.ranger	
-QSlink3QSlinks14_55Int2expoTransSL.ranger	
-QSlink3QSlinks14_55Int2asisSL.ranger	
-QSlink3QSlinks14_55Int2YeoJohnsonSL.ranger	
-QSlink3QSlinks14_55Int2expoTransSL.randomForest
-maybe all this is too much work and I should just take tops?
-```{r}
-summary(uDF[,.(gainin30,pq9TargRank,spearman2,pearson2,pMAE,pRMSE)])
-uDF[,topmetrics:=(gainin30>quantile(gainin30,.92))+(pq9TargRank>quantile(pq9TargRank,.99))+(spearman2>quantile(spearman2,.99))+(pearson2>quantile(pearson2,.99))+(pMAE>quantile(pMAE,.99))+(pRMSE>quantile(pRMSE,.99))]
-uDF[(topmetrics>5)]
+summary(uDF[(topmetrics>1)][(foldCount>2)][,.(gainin30l,pq9TargRankl,spearman2l,pearson2l,pMAEl,pRMSEl)])
+uDF[(topmetrics>1)][(foldCount>2)][order(-gainin30l)]
+uDF[(topmetrics>1)][(foldCount>2)][order(-pq9TargRankl)]
+uDF[(topmetrics>1)][(foldCount>2)][order(-spearman2l)]
+uDF[(topmetrics>1)][(foldCount>2)][order(-pearson2l)]
+uDF[(topmetrics>1)][(foldCount>2)][order(-pq9TargRankl)][order(-topmetrics)]
+
 ```
 
 
 Here user must make a combined metric by 
-multipying metrics by set score then suming result
-eh no!? not doing this 
-```{r}
+multipying metrics distance from optimal by user set score then summing result. knowing distribution of metrics here is kindof important
 
+```{r}
+uDF[,sqrdcomb:=((max(gainin30l, na.rm=T)-gainin30l)^2) *.5 + ((max(pq9TargRankl, na.rm=T)-pq9TargRankl)^2)*1.5 + ((max(spearman2l, na.rm=T)-spearman2l)^2) + ((max(pearson2l, na.rm=T)-pearson2l)^2) ]
+uDF[,l1comb:=((max(gainin30l, na.rm=T)-gainin30l)) *.5 + ((max(pq9TargRankl, na.rm=T)-pq9TargRankl))*1.5 + ((max(spearman2l, na.rm=T)-spearman2l)) + ((max(pearson2l, na.rm=T)-pearson2l)) ]
+
+uDF[(foldCount>2)][order(sqrdcomb)]
+uDF[(foldCount>2)][order(l1comb)]
 ```
+
+QSlink3QSlinks14_55Int2range01SL.ranger	#### winner best mean on most####
+
+which models need to be run more
+in other words which models have best chance to be really good
+```{r}
+uDF[,sqrdcombu:=((max(gainin30u, na.rm=T)-gainin30u)^2) *.5 + ((max(pq9TargRanku, na.rm=T)-pq9TargRanku)^2)*1.5 + ((max(spearman2u, na.rm=T)-spearman2u)^2) + ((max(pearson2u, na.rm=T)-pearson2u)^2) ]
+uDF[,l1combu:=((max(gainin30u, na.rm=T)-gainin30u)) *.5 + ((max(pq9TargRanku, na.rm=T)-pq9TargRanku))*1.5 + ((max(spearman2u, na.rm=T)-spearman2u)) + ((max(pearson2u, na.rm=T)-pearson2u)) ]
+
+uDF[order(sqrdcombu)]
+uDF[order(l1combu)]
+h<-which(names(uDF)=="pq9TargRanku")
+h<-names(uDF)[h:dim(uDF)[2]]
+h<-c(c("expirament","task","transTarg","transform","algomodel","hpGen","time","validmethod","tuneLength","cvcount","unmissed","keyMiss","foldCount"),h)
+uDF[order(l1combu)][,h,with=F]
+```
+ 
+maybe all this is too much work and I should just take tops?
+```{r}
+summary(uDF[,.(gainin30l,pq9TargRankl,spearman2l,pearson2l,pMAEl,pRMSEl)])
+uDF[,topmetrics:= (gainin30l>quantile(gainin30l,.92, na.rm=T)) + (pq9TargRankl>quantile(pq9TargRankl,.99, na.rm=T)) + (spearman2l>quantile(spearman2l,.99, na.rm=T)) + (pearson2l>quantile(pearson2l,.99,  na.rm=T)) + (pMAEl>quantile(pMAEl,.99, na.rm=T)) + (pRMSEl>quantile(pRMSEl,.99, na.rm=T))]
+uDF[(topmetrics>5)]
+```
+
