@@ -215,27 +215,13 @@ Thu Dec 05 16:38:55 2019,SL.step.interaction,QSlinks14_55,5,5,windows,x64,ACEREB
 Fri Dec 06 07:11:25 2019,method.NNLS,QSlinks14_55,5,5,windows,x64,ACEREBOUT
 Fri Dec 06 18:18:47 2019,method.NNLS,QSlinks14_55,5,5,windows,x64,ACEREBOUT
 Sat Dec 07 12:50:38 2019,SL.caret,QSlinks14_55,5,5,windows,x64,ACEREBOUT
-Sun Dec 08 04:35:53 2019,h2oAutoml 5,QSlinks115_60,5,5,windows,x64,ACEREBOUT
-Sun Dec 08 13:46:57 2019,SL.biglasso,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Sun Dec 08 15:46:14 2019,SL.biglasso,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Sun Dec 08 04:35:53 2019,h2oAutoml 5,QSlinks115_60,5,5,windows,x64,ACEREBOUT 
 Mon Dec 09 02:05:30 2019,SL.caret,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Mon Dec 09 02:43:00 2019,h2oAutoml 0.5,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Mon Dec 09 03:33:39 2019,SL.caret,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Mon Dec 09 03:46:38 2019,SL.caret,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Mon Dec 09 04:08:36 2019,SL.xgboost,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Mon Dec 09 04:09:57 2019,SL.xgboost,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 02:43:00 2019,h2oAutoml 0.5,QSlinks03_95,5,5,windows,x64,ACEREBOUT 
 Mon Dec 09 17:00:09 2019,SL.step,QSlinks03_95,5,5,windows,x64,ACEREBOUT
 Mon Dec 09 17:13:55 2019,SL.cforest,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Mon Dec 09 17:34:28 2019,SL.gbm,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Tue Dec 10 00:51:24 2019,SL.step,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Tue Dec 10 01:06:18 2019,SL.step,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Tue Dec 10 18:01:12 2019,SL.cforest,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Tue Dec 10 18:06:11 2019,SL.caret.rpart,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Tue Dec 10 18:09:40 2019,SL.caret.rpart,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Tue Dec 10 18:16:05 2019,SL.cforest,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Tue Dec 10 18:43:59 2019,SL.cforest,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Wed Dec 11 00:06:32 2019,SL.gbm,QSlinks03_95,5,5,windows,x64,ACEREBOUT
-Wed Dec 11 00:07:55 2019,SL.gbm,QSlinks03_95,5,5,windows,x64,ACEREBOUT
+Mon Dec 09 17:34:28 2019,SL.gbm,QSlinks03_95,5,5,windows,x64,ACEREBOUT 
+Tue Dec 10 18:01:12 2019,SL.cforest,QSlinks03_95,5,5,windows,x64,ACEREBOUT 
 Wed Dec 11 00:11:18 2019,SL.ipredbagg,QSlinks03_95,5,5,windows,x64,ACEREBOUT
 Wed Dec 11 00:32:30 2019,SL.glm.interaction,QSlinks03_95,5,5,windows,x64,ACEREBOUT
 Wed Dec 11 01:11:55 2019,SL.extraTrees,QSlinks03_95,5,5,windows,x64,ACEREBOUT
@@ -280,9 +266,7 @@ Thu Dec 26 00:57:11 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOU
 Thu Dec 26 13:46:39 2019,SL.svm,QSlinks03_95,5,5,windows,x64,ACEREBOUT
 Thu Dec 26 15:46:35 2019,SL.randomForest,QSlinks03_95,5,5,windows,x64,ACEREBOUT
 Fri Dec 27 02:42:37 2019,SL.ranger,QSlinks115_60,5,5,windows,x64,ACEREBOUT
-Sat Dec 28 02:34:50 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
-Sun Dec 29 13:47:16 2019,SL.ranger,QSlinks115_60,5,5,windows,x64,ACEREBOUT
-Sun Dec 29 15:56:04 2019,SL.ranger,QSlinks115_60,5,5,windows,x64,ACEREBOUT
+Sat Dec 28 02:34:50 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT 
 Mon Dec 30 03:11:51 2019,SL.earth,QSlinks14_55,5,5,windows,x64,ACEREBOUT
 Tue Dec 31 02:51:25 2019,method.CC_nloglik,QSlinks14_55,5,5,windows,x64,ACEREBOUT
 Wed Jan 01 18:00:50 2020,SL.step.forward,QSlinks03_95,5,5,windows,x64,ACEREBOUT
@@ -291,3 +275,7 @@ Sat Jan 04 13:48:48 2020,SL.extraTrees,QSlinks115_60,5,5,windows,x64,ACEREBOUT
 Sun Jan 05 02:35:19 2020,SL.ksvm,QSlinks115_60,5,5,windows,x64,ACEREBOUT
 Mon Jan 06 02:51:49 2020,svmLinear2,QSlinks115_60,5,5,windows,x64,ACEREBOUT
 Mon Jan 06 13:43:13 2020,RRF,QSlinks115_60,5,5,windows,x64,ACEREBOUT
+Mon Jan 06 17:24:57 2020,caretPreEns,QSlinks115_60,5,5,windows,x64,ACEREBOUT
+Tue Jan 07 13:47:38 2020,glmnet_h2o,QSlinks115_60,5,5,windows,x64,ACEREBOUT
+Tue Jan 07 15:49:22 2020,gaussprRadial,QSlinks115_60,5,5,windows,x64,ACEREBOUT
+Fri Jan 10 13:49:03 2020,rqnc,QSlinks14_55,5,5,windows,x64,ACEREBOUT

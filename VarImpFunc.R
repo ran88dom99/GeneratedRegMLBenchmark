@@ -24,7 +24,7 @@ varimperm<-function(custom_predict, modeltp, X, Y, n_sample = 200, metpack = "un
     Cseed <- .Random.seed[2]
     metpack <- paste(metpack,"permute",sep = "_")
     
-    varImpMix<-as.character(round(proc.time()[3]-when[3]))#varImpMix<-vector(mode="character",length = length(colNms)*2)
+    varImpMix <- as.character(round(proc.time()[3]-when[3]))#varImpMix<-vector(mode="character",length = length(colNms)*2)
     for(i in 2:(length(vi_reg[,2])-1)){
       #varImpMix[i*2]<-colNms[i] ; varImpMix[i*2+1]<-colImpor[i]
       varImpMix<-paste(varImpMix,vi_reg[i,1],signif(vi_reg[i,2],digits = 4), sep = ",")
