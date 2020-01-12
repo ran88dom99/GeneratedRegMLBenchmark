@@ -79,6 +79,7 @@ reset1<-as.data.table(resetHOP)
 reset2<-as.data.table(resetBBQ)
 
 reset<-rbindlist(list(reset,reset1,reset2),fill = T)
+rm(reset1,reset2,resetACE,resetHOP,resetBBQ)
 ```
 
 remove useless columns, convert time, check for unused columns, seed changes?
