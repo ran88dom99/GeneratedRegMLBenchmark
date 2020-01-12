@@ -310,3 +310,12 @@ Sun Jan 05 12:07:53 2020,regr.randomForest,QSlinks14_55Int,5,5,windows,x64,HOPPE
 Sun Jan 05 17:08:40 2020,regr.xgboost,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Mon Jan 06 14:39:48 2020,regr.km,QSlinks115_60,5,5,windows,x64,HOPPER
 Mon Jan 06 17:08:30 2020,regr.ranger,QSlinks115_60,5,5,windows,x64,HOPPER
+Mon Jan 06 17:32:08 2020,regr.ranger,QSlinks115_60,5,5,windows,x64,HOPPER
+Tue Jan 07 17:08:11 2020,regr.IBk,QSlinks14_55,5,5,windows,x64,HOPPER
+Wed Jan 08 04:02:48 2020,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
+Wed Jan 08 17:08:14 2020,regr.glmboost,QSlinks14_55Int,5,5,windows,x64,HOPPER
+Thu Jan 09 17:08:03 2020,regr.xgboost,QSlinks115_60,5,5,windows,x64,HOPPER
+Thu Jan 09 19:01:26 2020,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
+Fri Jan 10 17:08:15 2020,regr.ctree,QSlinks03_95,5,5,windows,x64,HOPPER
+Sat Jan 11 15:47:51 2020,regr.LiblineaRL2L1SVR,QSlinks115_60,5,5,windows,x64,HOPPER
+Sat Jan 11 17:07:44 2020,regr.kknn,QSlinks115_60,5,5,windows,x64,HOPPER
