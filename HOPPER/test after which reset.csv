@@ -321,3 +321,4 @@ Sat Jan 11 15:47:51 2020,regr.LiblineaRL2L1SVR,QSlinks115_60,5,5,windows,x64,HOP
 Sat Jan 11 17:07:44 2020,regr.kknn,QSlinks115_60,5,5,windows,x64,HOPPER
 Sun Jan 12 15:13:23 2020,regr.IBk,QSlinks115_60,5,5,windows,x64,HOPPER
 Sun Jan 12 17:08:05 2020,regr.crs,QSlinks115_60,5,5,windows,x64,HOPPER
+Mon Jan 13 05:17:47 2020,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
