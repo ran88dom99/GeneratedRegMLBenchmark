@@ -33,6 +33,7 @@ resultDir<-"ACEREBOUT"
 setwd(file.path(mainDir, resultDir))
 QSlink3ACE <- read_csv("outQSlink3ACEREBOUTwindowsx64.csv",col_types = col_typed)
 resetACE <- read_csv("test after which reset.csv")
+names(resetACE)<-c("date","model","task","fold","cv","arch","arch2","pc")
 #QSlinkImp3ACE <- read_csv("importanceQSlink3ACEREBOUTwindowsx64.csv",col_types = col_typed)
 #summary(QSlink3ACE[,1:30])
  spec(QSlink3ACE)
@@ -46,6 +47,7 @@ resetACE <- read_csv("test after which reset.csv")
 setwd(file.path(mainDir, resultDir))
 QSlink3HOP <- read_csv("outQSlink3HOPPERwindowsx64.csv",col_types = col_typed)
 resetHOP <- read_csv("test after which reset.csv")
+names(resetHOP)<-c("date","model","task","fold","cv","arch","arch2","pc")
 #summary(QSlink3ACE[,1:30])
  spec(QSlink3HOP)
  problems(QSlink3HOP)
@@ -58,6 +60,7 @@ resetHOP <- read_csv("test after which reset.csv")
 setwd(file.path(mainDir, resultDir))
 QSlink3BBQ <- read_csv("outQSlink3LAPTOPBBQwindowsx64.csv",col_types = col_typed)
 resetBBQ <- read_csv("test after which reset.csv")
+names(resetBBQ)<-c("date","model","task","fold","cv","arch","arch2","pc")
 #summary(QSlink3ACE[,1:30])
  spec(QSlink3BBQ)
  problems(QSlink3BBQ)
@@ -78,7 +81,7 @@ reset<-as.data.table(resetACE)
 reset1<-as.data.table(resetHOP)
 reset2<-as.data.table(resetBBQ)
 
-reset<-rbindlist(list(reset,reset1,reset2),fill = T)
+reset<-rbindlist(list(reset,reset1,reset2),fill = T,idcol=T)
 rm(reset1,reset2,resetACE,resetHOP,resetBBQ)
 ```
 
@@ -86,12 +89,14 @@ remove useless columns, convert time, check for unused columns, seed changes?
 ```{r}
 
 DF$date<-as.numeric(as.POSIXct(DF$date,format = "%a %b %d %H:%M:%S %Y"))
+reset$date<-as.numeric(as.POSIXct(reset$date,format = "%a %b %d %H:%M:%S %Y"))
+
 #str(DF)
 summary(DF$pq9TargRank)
 
 #what is seedit? and seed bcause foldseed is always the same
 summary(DF[,.(seed,seedit,foldseed)])#need foldseed now
-unique(DF$seed);unique(DF$seedit);unique(DF$foldseed)
+unique(DF$seedit);unique(DF$foldseed);#unique(DF$seed)
 unique(DF$trgCol);unique(DF$missing);unique(DF$append)
 unique(DF$hpGen);unique(DF$tuneLength);unique(DF$ignrepeats)
 usless<-c("trgCol","missing","append")
@@ -110,14 +115,24 @@ DF[,datePOSIX:=as.POSIXct(DF$date, origin = '1970-01-01',tz='UTC')]
 ggplot(DF[(pc %in% c("ACEREBOUT", "LAPTOPBBQ", "HOPPER"))][order(date)], aes(x=date,y=datePOSIX)) + geom_point() + facet_wrap(~ pc) + theme_grey() + theme(text=element_text(family="sans", face="plain", color="#000000", size=15, hjust=0.5, vjust=0.5)) + xlab("date") + ylab("date")# + scale_y_date(labels = date_format("%m/%d"))# +theme(axis.text.x = element_text(angle=45))
 # Format : month/day
 
+unique(reset$pc)
+reset[,datePOSIX:=as.POSIXct(reset$date, origin = '1970-01-01',tz='UTC')]
+ggplot(reset[(pc %in% c("ACEREBOUT", "LAPTOPBBQ", "HOPPER"))][order(date)], aes(x=date,y=datePOSIX)) + geom_point() + facet_wrap(~ .id) + theme_grey() + facet_wrap(~ pc) + theme(text=element_text(family="sans", face="plain", color="#000000", size=15, hjust=0.5, vjust=0.5)) + xlab("date") + ylab("date")
+
 ```
 
+fold now depends on seed so fold becomes paste of fold and seed
+```{r}
+DF[,foldOrg:=fold]
+DF[,fold:=paste0(fold,".",foldseed)]
+```
 
 Which models were somehow missed? Just checking just incase errors or 
 machines did not run fast enough
 Also if some hype hype parameters were way overblown
+if cosole is negative its mostly ok. still means some combos that exist in system never run by any model
 ```{r}
-DF[,keyMiss:=paste0(task,transform,transTarg,expirament,fold)]
+DF[,keyMiss:=paste0(task,transform,transTarg,expirament)]
 luMiss<-length(unique(DF$keyMiss))
 DF[,unmissed:=length(unique(keyMiss)),by=algomodel]
 DF[unmissed<luMiss][order(unmissed)]
@@ -160,8 +175,8 @@ require(netCoin)
 set <- c("transTarg","task","transform","fold","imperfect","seed","btp3")
 
 essCoin <- surCoin(data = DF, variables = set, lwidth ="Haberman", lweight="Haberman", color="variable", lcolor="Haberman", ltext="Haberman", linkFilter="Haberman", repulsion=90)
-essCoin
-plot(essCoin)
+#essCoin
+#plot(essCoin)
 
 set <- c("algomodel", "transTarg", "task", "transform", "fold", "pc", "totFail", "noPear", "noUtrans")
 
@@ -267,9 +282,9 @@ gap=3, ylab=c("Missing data","Pattern"))
 
 
 Which models were often failed or missed again
-
+if cosole is negative its mostly ok. still means some combos that exist in system never run by any model
 ```{r}
-DF[,keyMiss:=paste0(task,transform,transTarg,expirament,fold)]
+DF[,keyMiss:=paste0(task,transform,transTarg,expirament)]
 luMiss<-length(unique(DF$keyMiss))
 DF[,unmissed:=length(unique(keyMiss)),by=algomodel]
 DF[unmissed<luMiss][order(unmissed)]
@@ -284,6 +299,7 @@ redonePQ9TF does range of 90th percentile rank by more than .02?
 ```{r}
 DF[,keyOnerun:=paste0(expirament,task,pc,fold,transTarg,transform,algomodel,seed)]
 DF[,redonee:=.N,by=keyOnerun]
+
 DF[,redoneNA:=(sum(noPear) + sum(noUtrans))/redonee,by=keyOnerun]
 summary(DF$redoneNA)
 DF[,redonePQ9:=max(pq9TargRank,na.rm = T)-min(pq9TargRank,na.rm = T),by=keyOnerun]
@@ -292,6 +308,17 @@ DF[,redonePQ9TF:=redonePQ9>.02]
 (exems<-unique(specimen$keyOnerun))
 DF[keyOnerun=="QSlink3QSlinks03_95ACEREBOUT21centernscaleSL.bartMachine403"]
 ```
+Quick look at seconds for model to run.
+```{r}
+DF[,timesd:=sd(time),by=keyOnerun]
+DF[,time:=mean(time),by=keyOnerun]
+ggplot(data=DF,aes(x=time,y=timesd))+geom_point()
+ggplot(data=DF,aes(x=log(time)))+geom_histogram()
+ggplot(data=DF,aes(x=sqrt(time)))+geom_histogram()
+summary(DF$time)
+log(0);sqrt(0)
+```
+
 
 outliers moved to some more reasonable state
 may be column specific
@@ -331,21 +358,21 @@ summary(DF$redoneeb)
 
 set <- c("algomodel", "transTarg", "task", "transform", "fold", "pc",  "noPear", "noUtrans","redonePQ9TF","redoneeb")
 essCoin <- surCoin(data = DF, variables = set, lwidth ="Haberman", lweight="Haberman", color="variable", lcolor="Haberman", ltext="Haberman", linkFilter="Haberman", repulsion=90)
-essCoin
-plot(essCoin)
-```
-fold now depends on seed so fold becomes paste of fold and seed
-```{r}
-DF[,foldOrg:=fold]
-DF[,fold:=paste0(fold,".",foldseed)]
+#essCoin
+#plot(essCoin)
 ```
 
+warning! R version should be included in most keys but I just do not wan t to bother
 remove completely redundant rows
 ```{r}
 DF[,keyOnerun:=paste0(expirament,task,pc,fold,transTarg,transform,algomodel,seed)]
+print("dimensions before and after removal of duplicates")
 dim(DF)
 uDF<-unique(DF,by = c("pq9TargRank","pearson2","pRMSE","keyOnerun"))
 dim(uDF)
-uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
+#uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
 save(uDF,file="routuDFintermhold.RData") #rout used so file is not sent to github
 ```
+
+
+
