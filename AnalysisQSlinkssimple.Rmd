@@ -32,6 +32,8 @@ resultDir<-"ACEREBOUT"
 #setwd(resultDir)
 setwd(file.path(mainDir, resultDir))
 QSlink3ACE <- read_csv("outQSlink3ACEREBOUTwindowsx64.csv",col_types = col_typed)
+resetACE <- read_csv("test after which reset.csv")
+#QSlinkImp3ACE <- read_csv("importanceQSlink3ACEREBOUTwindowsx64.csv",col_types = col_typed)
 #summary(QSlink3ACE[,1:30])
  spec(QSlink3ACE)
  problems(QSlink3ACE)
@@ -43,6 +45,7 @@ QSlink3ACE <- read_csv("outQSlink3ACEREBOUTwindowsx64.csv",col_types = col_typed
 #setwd(resultDir)
 setwd(file.path(mainDir, resultDir))
 QSlink3HOP <- read_csv("outQSlink3HOPPERwindowsx64.csv",col_types = col_typed)
+resetHOP <- read_csv("test after which reset.csv")
 #summary(QSlink3ACE[,1:30])
  spec(QSlink3HOP)
  problems(QSlink3HOP)
@@ -54,12 +57,15 @@ QSlink3HOP <- read_csv("outQSlink3HOPPERwindowsx64.csv",col_types = col_typed)
 #setwd(resultDir)
 setwd(file.path(mainDir, resultDir))
 QSlink3BBQ <- read_csv("outQSlink3LAPTOPBBQwindowsx64.csv",col_types = col_typed)
+resetBBQ <- read_csv("test after which reset.csv")
 #summary(QSlink3ACE[,1:30])
  spec(QSlink3BBQ)
  problems(QSlink3BBQ)
  setwd(file.path(mainDir))
 
-  
+```
+```{r}
+
 require(data.table)
 DF<-as.data.table(QSlink3ACE)
 DF1<-as.data.table(QSlink3HOP)
@@ -67,7 +73,15 @@ DF2<-as.data.table(QSlink3BBQ)
 
 DF<-rbindlist(list(DF,DF1,DF2),fill = T)
 rm(DF1,DF2,QSlink3BBQ,QSlink3HOP)
+
+reset<-as.data.table(resetACE)
+reset1<-as.data.table(resetHOP)
+reset2<-as.data.table(resetBBQ)
+
+reset<-rbindlist(list(reset,reset1,reset2),fill = T)
+rm(reset1,reset2,resetACE,resetHOP,resetBBQ)
 ```
+
 remove useless columns, convert time, check for unused columns, seed changes?
 ```{r}
 
@@ -85,6 +99,19 @@ names(DF<-DF[,1:45,with=F])
 names(DF<-DF[,-(usless),with=F])
 
 ```
+
+which computers ran when?
+```{r}
+require(scales)
+#require(ggraptR)
+#ggraptR()
+unique(DF$pc)
+DF[,datePOSIX:=as.POSIXct(DF$date, origin = '1970-01-01',tz='UTC')]
+ggplot(DF[(pc %in% c("ACEREBOUT", "LAPTOPBBQ", "HOPPER"))][order(date)], aes(x=date,y=datePOSIX)) + geom_point() + facet_wrap(~ pc) + theme_grey() + theme(text=element_text(family="sans", face="plain", color="#000000", size=15, hjust=0.5, vjust=0.5)) + xlab("date") + ylab("date")# + scale_y_date(labels = date_format("%m/%d"))# +theme(axis.text.x = element_text(angle=45))
+# Format : month/day
+
+```
+
 
 Which models were somehow missed? Just checking just incase errors or 
 machines did not run fast enough
@@ -320,223 +347,5 @@ dim(DF)
 uDF<-unique(DF,by = c("pq9TargRank","pearson2","pRMSE","keyOnerun"))
 dim(uDF)
 uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
+save(uDF,file="routuDFintermhold.RData") #rout used so file is not sent to github
 ```
-missing values in metric will be made 80%tile
-only the better score really matter so 
-to prevent crashing later score its set to 80%
-```{r}
-for(i in names(uDF)[1:9]){#i<-2
-  print(na.replace<-quantile(uDF[,i,with=F],.8,na.rm=T))
-  nafound<-as.vector(is.na(uDF[,i,with=F]))
-  summary(nafound)
-  uDF[(nafound),(i):=na.replace]
-  #uDF[(nafound)]
-}
-summary(uDF[,1:9,with=F]) 
-```
-Getting into selecting metrics here; lets see their correlations and distributions
-```{r}
-uDF[,topmetrics:=(gainin30>quantile(gainin30,.801))+(pq9TargRank>quantile(pq9TargRank,.801))+(spearman2>quantile(spearman2,.801))+(pearson2>quantile(pearson2,.801))+(pMAE>quantile(pMAE,.801))+(pRMSE>quantile(pRMSE,.801))]
-iDF<-uDF[(topmetrics>0)][order(-topmetrics)]
-summary(iDF$topmetrics)
-for(i in names(iDF)[1:9]){#i<-2
-  yy<-as.vector(iDF[,i,with=F][[1]])
-  print(summary(yy))
-  yy<-as.integer(yy*10000)
-  print(summary(yy))
-  #gg<-ecdf(yy);summary(gg)
-  #unique(yy);dim(iDF[,i,with=F]);unique(iDF[,i,with=F]);iDF[,i,with=F]
-  plot.ecdf(yy, verticals = TRUE, do.points = FALSE)
-  title(i, adj = 1)
-}
-
-```
-```{r}
-require(ggplot2)
-for(i in names(iDF)[1:9]){
-print(ggplot(iDF, aes(x=get(i))) + geom_histogram(aes(y=..density..), stat="bin", position="stack", alpha=0.5, bins=16) + geom_path(aes(y=..density..), stat="bin", position="identity", linetype="dashed", bins=16, pad=TRUE) + geom_density(aes(y=..density..), stat="density", position="identity", alpha=0.5) + theme_grey() + theme(text=element_text(family="sans", face="plain", color="#000000", size=15, hjust=0.5, vjust=0.5)) + xlab(i) + ylab("density"))
-}
-
-
-
-```
-
-```{r}
-
-uDF[,redonePQ9:=max(pq9TargRank,na.rm = T)-min(pq9TargRank,na.rm = T),by=keyOnerun]
-uDF[,redonePQ9TF:=redonePQ9>.02]
-(specimen<-uDF[(redonePQ9TF)][order(keyOnerun)][1:100])
-(exems<-unique(specimen$keyOnerun))
-
-uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
-```
-two medianings because fold is very special compared to just hyperparameer jiggling. 
-```{r}
-
-uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
-uDF[,keyOneRecipe:=paste0(expirament,task,transTarg,transform,algomodel,fold)]
-
- 
-uDF[,gainin30:=median(gainin30,na.rm = T),by=keyOneRecipe]
-uDF[,pq9TargRank:=median(pq9TargRank,na.rm = T),by=keyOneRecipe]
-uDF[,spearman2:=median(spearman2,na.rm = T),by=keyOneRecipe]
-uDF[,pearson2:=median(pearson2,na.rm = T),by=keyOneRecipe]
-uDF[,pMAE:=median(pMAE,na.rm = T),by=keyOneRecipe]
-uDF[,pRMSE:=median(pRMSE,na.rm = T),by=keyOneRecipe]
-uDF[,ocvRMSE:=median(ocvRMSE,na.rm = T),by=keyOneRecipe]
-uDF[,RMSEutrans:=median(RMSEutrans,na.rm = T),by=keyOneRecipe]
-uDF[,MAEutrans:=median(MAEutrans,na.rm = T),by=keyOneRecipe] 
-
-uDF[,hyperUnqs:=.N,by=keyOneRecipe]
-uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
-dim(uDF)
-
-```
-prep for duplication of recipes removal
-#wierd effect of lowered variance drasticaly dropping interval 
-using variance of all recipes
-here quick view of these variances
-```{r}
-uDF[,keyOneRecipe:=paste0(expirament,task,transTarg,transform,algomodel)]
-uDF[,foldCount:=.N,by=keyOneRecipe]
-
-if(F){
-uDF[,staDev:=sd(pearson2),by=keyOneRecipe]
-uDF[,meanie:=mean(pearson2),by=keyOneRecipe]
-summary(uDF$staDev)
-summary(uDF$meanie)
-summary(uDF$foldCount)
-ggplot(data = uDF,mapping = aes(x=as.factor(foldCount),staDev)) + geom_boxplot() + geom_smooth(method="lm")
-
-ggplot(data = uDF,mapping = aes(meanie,staDev)) + geom_point() + geom_smooth()
-}
-```
-actualy applying manual ttest 
-and then collapsing all unique folds
-
-```{r}
-
-cl <- 0.7
-ttOK <- function(x){
-  vax<-var(x)
-  if(is.na(vax)) return(F)
-  if(vax==0) return(F)
-  return(T)
-}
-
-tt1 <- function(x,o=1,coi=.95){
-  x <- c(x,o)
-  return(t.test(x,conf.level = coi))
-}
-
-#manual mean interval ttest with outside SD if vector small
-ttm <- function(x,psd,cl=.95,u_l="u",dsda=10){
-  if(cl>=1 | cl<=0) warning("confidence level out of bounds")
-  if(!is.vector(x)) warning("x not a vector")
-  n <- length(x)
-  if( n < 1 ) warning("x has length 0")
-  if(n>1){
-    nsd <- sd(x) * min( n / dsda , 1) + psd * max((1 - n / dsda) , 0)
-  } else {
-    nsd <- psd
-  }
-  ttt <- qt((1-(1-cl)/2),df = max((n-1),1))
-  entrvl <- ttt * nsd / sqrt(n)
-  if(u_l=="u"){  return( mean(x) + entrvl) }
-  if(u_l=="l"){  return( mean(x) - entrvl) }
-}
-
-dsda<-10
-lastCol<-dim(uDF)[2]
-for(i in names(uDF)[1:9]){#i<-"spearman2"
-  uDF[(foldCount>3), intSD := sd(get(i),na.rm=T), by=keyOneRecipe]
-  #summary(uDF$intSD)
-  print(osd <- quantile(uDF[,.SD[1], by=keyOneRecipe]$intSD, na.rm=T,.8))
-
-  uDF[(foldCount<=dsda),paste0(i,"u") := ttm(get(i), osd, cl = cl, dsda = dsda), by=keyOneRecipe]
-  uDF[(foldCount<=dsda),paste0(i,"l") := ttm(get(i), osd, u_l="l", cl = cl, dsda = dsda),  by=keyOneRecipe] 
-  uDF[(foldCount>dsda),paste0(i,"u") := t.test(get(i),conf.level = cl)$co[2], by=keyOneRecipe]
-  uDF[(foldCount>dsda),paste0(i,"l") := t.test(get(i),conf.level = cl)$co[1], by=keyOneRecipe] 
-
-#print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
-  uDF[,(i):=mean(get(i),na.rm = T),by=keyOneRecipe] 
-  print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
-}
-
-if(F){ #us and ls NAs to means
-for(i in names(uDF)[lastCol:dim(uDF)[2]]){#i<-"spearman2l"
-uDF[(is.na(get(i))),(i):=mean(get(i),na.rm = T)] 
-print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
-}
-}
-  
-uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
-dim(uDF)
-```
-
-
-best algo is just first 3 scores in 95% and number of oflds too
-else just use median
-
-maybe all this is too much work and I should just take tops?
-by tops I mean lower bound confidence intervals of each of the four merics
-```{r}
-#summary(uDF[,.(gainin30l,pq9TargRankl,spearman2l,pearson2l,pMAEl,pRMSEl)])
-uDF[,topmetrics:=(gainin30l>quantile(gainin30l,.95, na.rm=T))+(pq9TargRankl>quantile(pq9TargRankl,.96, na.rm=T))+(spearman2l>quantile(spearman2l,.96, na.rm=T))+(pearson2l>quantile(pearson2l,.95, na.rm=T))+(pMAEl>quantile(pMAEl,.99, na.rm=T))+(pRMSEl>quantile(pRMSEl,.99, na.rm=T))]
-
-
-summary(uDF[(topmetrics>1)][(foldCount>2)][,.(gainin30l,pq9TargRankl,spearman2l,pearson2l,pMAEl,pRMSEl)])
-uDF[(topmetrics>1)][(foldCount>2)][order(-gainin30l)]
-uDF[(topmetrics>1)][(foldCount>2)][order(-pq9TargRankl)]
-uDF[(topmetrics>1)][(foldCount>2)][order(-spearman2l)]
-uDF[(topmetrics>1)][(foldCount>2)][order(-pearson2l)]
-uDF[(topmetrics>1)][(foldCount>2)][order(-pq9TargRankl)][order(-topmetrics)]
-
-```
-
-
-Here user must make a combined metric by 
-multipying metrics distance from optimal by user set score then summing result. knowing distribution of metrics here is kindof important
-
-```{r}
-uDF[,sqrdcomb:=((max(gainin30l, na.rm=T)-gainin30l)^2) *.5 + ((max(pq9TargRankl, na.rm=T)-pq9TargRankl)^2)*1.5 + ((max(spearman2l, na.rm=T)-spearman2l)^2) + ((max(pearson2l, na.rm=T)-pearson2l)^2) ]
-uDF[,l1comb:=((max(gainin30l, na.rm=T)-gainin30l)) *.5 + ((max(pq9TargRankl, na.rm=T)-pq9TargRankl))*1.5 + ((max(spearman2l, na.rm=T)-spearman2l)) + ((max(pearson2l, na.rm=T)-pearson2l)) ]
-
-uDF[(foldCount>2)][order(sqrdcomb)]
-uDF[(foldCount>2)][order(l1comb)]
-```
-
-QSlink3QSlinks14_55Int2range01SL.ranger	#### winner best mean on most####
-
-which models need to be run more
-in other words which models have best chance to be really good
-```{r}
-uDF[,sqrdcombu:=((max(gainin30u, na.rm=T)-gainin30u)^2) *.5 + ((max(pq9TargRanku, na.rm=T)-pq9TargRanku)^2)*1.5 + ((max(spearman2u, na.rm=T)-spearman2u)^2) + ((max(pearson2u, na.rm=T)-pearson2u)^2) ]
-uDF[,l1combu:=((max(gainin30u, na.rm=T)-gainin30u)) *.5 + ((max(pq9TargRanku, na.rm=T)-pq9TargRanku))*1.5 + ((max(spearman2u, na.rm=T)-spearman2u)) + ((max(pearson2u, na.rm=T)-pearson2u)) ]
-
-uDF[order(sqrdcombu)]
-uDF[order(l1combu)]
-h<-which(names(uDF)=="pq9TargRanku")
-h<-names(uDF)[h:dim(uDF)[2]]
-h<-c(c("expirament","task","transTarg","transform","algomodel","hpGen","time","validmethod","tuneLength","cvcount","unmissed","keyMiss","foldCount"),h)
-uDF[order(l1combu)][,h,with=F]
-```
- 
-maybe all this is too much work and I should just take tops?
-```{r}
-summary(uDF[,.(gainin30l,pq9TargRankl,spearman2l,pearson2l,pMAEl,pRMSEl)])
-uDF[,topmetrics:= (gainin30l>quantile(gainin30l,.92, na.rm=T)) + (pq9TargRankl>quantile(pq9TargRankl,.99, na.rm=T)) + (spearman2l>quantile(spearman2l,.99, na.rm=T)) + (pearson2l>quantile(pearson2l,.99,  na.rm=T)) + (pMAEl>quantile(pMAEl,.99, na.rm=T)) + (pRMSEl>quantile(pRMSEl,.99, na.rm=T))]
-uDF[(topmetrics>5)]
-```
-
-this entire process of evaluating which model is best was not thouroughly researched by me. More links to posssily better options follow. also should scale to SD of each evaluated variable.
-
-FuzzyMMOORA(d,w,cb)
-https://arxiv.org/ftp/arxiv/papers/1401/1401.4590.pdf
-https://stats.stackexchange.com/questions/3201/how-do-i-order-or-rank-a-set-of-experts/3218#3218
-https://stats.stackexchange.com/questions/154888/combining-multiple-metrics-to-provide-comparisons-ranking-of-k-objects-question
-https://stats.stackexchange.com/questions/9358/creating-an-index-of-quality-from-multiple-variables-to-enable-rank-ordering
-https://stats.stackexchange.com/questions/117239/ranking-based-on-lower-confidence-interval/444117#444117
-https://en.wikipedia.org/wiki/Multi-attribute_utility
-#[ranking] [valuation] [confidence interval]
-https://stats.stackexchange.com/questions/56852/overall-rank-from-multiple-ranked-lists?rq=1
