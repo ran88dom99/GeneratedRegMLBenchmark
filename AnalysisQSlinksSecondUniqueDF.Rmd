@@ -79,6 +79,9 @@ uDF[,ocvRMSE:=median(ocvRMSE,na.rm = T),by=keyOneRecipe]
 uDF[,RMSEutrans:=median(RMSEutrans,na.rm = T),by=keyOneRecipe]
 uDF[,MAEutrans:=median(MAEutrans,na.rm = T),by=keyOneRecipe] 
 
+DF[,timesd:=sd(time),by=keyOneRecipe]
+DF[,time:=mean(time),by=keyOneRecipe]
+
 uDF[,hyperUnqs:=.N,by=keyOneRecipe]
 uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
 dim(uDF)
@@ -103,6 +106,25 @@ ggplot(data = uDF,mapping = aes(x=as.factor(foldCount),staDev)) + geom_boxplot()
 ggplot(data = uDF,mapping = aes(meanie,staDev)) + geom_point() + geom_smooth()
 }
 ```
+
+what do I want the reduction in upper confidence level to be for a given time taken?
+```{r}
+
+los<-c(.1,1,2,3,pi,10,30,400,3000,5233)
+for(i in los){
+  print(i)
+print(t.test(c(-1,0,1),conf.level = .95-sqrt(i)/100)$co)
+print(t.test(c(-1,0,1),conf.level = .95-log(i)/100)$co)
+}
+if(F){
+for(i in los){
+  print(i)
+print(t.test(c(-1,0,1),conf.level = .8-sqrt(i)/100)$co)
+print(t.test(c(-1,0,1),conf.level = .8-log(i)/100)$co)
+}
+}
+```
+
 actualy applying manual ttest 
 and then collapsing all unique folds
 
@@ -145,10 +167,10 @@ for(i in names(uDF)[1:9]){#i<-"spearman2"
   #summary(uDF$intSD)
   print(osd <- quantile(uDF[,.SD[1], by=keyOneRecipe]$intSD, na.rm=T,.8))
 
-  uDF[(foldCount<=dsda),paste0(i,"u") := ttm(get(i), osd, cl = cl, dsda = dsda), by=keyOneRecipe]
-  uDF[(foldCount<=dsda),paste0(i,"l") := ttm(get(i), osd, u_l="l", cl = cl, dsda = dsda),  by=keyOneRecipe] 
-  uDF[(foldCount>dsda),paste0(i,"u") := t.test(get(i),conf.level = cl)$co[2], by=keyOneRecipe]
-  uDF[(foldCount>dsda),paste0(i,"l") := t.test(get(i),conf.level = cl)$co[1], by=keyOneRecipe] 
+  uDF[,paste0(i,"u") := ttm(get(i), osd, cl = cl, dsda = dsda), by=keyOneRecipe]
+  uDF[,paste0(i,"l") := ttm(get(i), osd, u_l="l", cl = cl, dsda = dsda),  by=keyOneRecipe] 
+#  uDF[(foldCount>dsda),paste0(i,"u") := t.test(get(i),conf.level = cl)$co[2], by=keyOneRecipe]
+#  uDF[(foldCount>dsda),paste0(i,"l") := t.test(get(i),conf.level = cl)$co[1], by=keyOneRecipe] 
 
 #print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
   uDF[,(i):=mean(get(i),na.rm = T),by=keyOneRecipe] 
@@ -161,11 +183,30 @@ uDF[(is.na(get(i))),(i):=mean(get(i),na.rm = T)]
 print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
 }
 }
-  
+
+DF[,timesd:=sd(time),by=keyOneRecipe]
+DF[,time:=mean(time),by=keyOneRecipe]
+
 uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
 dim(uDF)
 ```
+```{r}
+smpl<-100
+for(i in names(uDF)[1:9]){
+#print(ggplot(data = uDF[(foldCount>2)][order(-get(i))][1:smpl], aes(x=get(i),y=c(1:smpl))) + geom_point() + geom_errorbarh(aes(xmin=get(paste0(i,"l")),xmax=get(paste0(i,"u")),colour="red"),height=1) +xlab(i))
+  print(ggplot(data = uDF[(foldCount>2)][order(-get(paste0(i,"l")))][1:smpl], aes(x=get(i),y=c(1:smpl))) + geom_point() + geom_errorbarh(aes(xmin=get(paste0(i,"l")),xmax=get(paste0(i,"u")),colour="red"),height=1) +xlab(i))
+}
 
+```
+Quick look at seconds for model to run.
+```{r}
+
+ggplot(data=uDF,aes(x=time,y=timesd))+geom_point()
+ggplot(data=uDF,aes(x=log(time)))+geom_histogram()
+ggplot(data=uDF,aes(x=sqrt(time)))+geom_histogram()
+summary(uDF$time)
+log(0);sqrt(0)
+```
 
 best algo is just first 3 scores in 95% and number of folds too
 else just use median
@@ -191,11 +232,29 @@ Here user must make a combined metric by
 multipying metrics distance from optimal by user set score then summing result. knowing distribution of metrics here is kindof important
 
 ```{r}
-uDF[,sqrdcomb:=((max(gainin30l, na.rm=T)-gainin30l)^2) *.5 + ((max(pq9TargRankl, na.rm=T)-pq9TargRankl)^2)*1.5 + ((max(spearman2l, na.rm=T)-spearman2l)^2) + ((max(pearson2l, na.rm=T)-pearson2l)^2) ]
-uDF[,l1comb:=((max(gainin30l, na.rm=T)-gainin30l)) *.5 + ((max(pq9TargRankl, na.rm=T)-pq9TargRankl))*1.5 + ((max(spearman2l, na.rm=T)-spearman2l)) + ((max(pearson2l, na.rm=T)-pearson2l)) ]
+glx<-max(uDF$gainin30l, na.rm=T)
+qlx<-max(uDF$pq9TargRankl, na.rm=T)
+slx<-max(uDF$spearman2l, na.rm=T)
+plx<-max(uDF$pearson2l, na.rm=T)
+uDF[,rownum:=1:dim(uDF)[1]]
+uDF[,sqrdcomb:= ((glx-gainin30l)^2) *.5 + 
+      ((qlx-pq9TargRankl)^2)*1.5 + 
+      ((slx-spearman2l)^2) + 
+      ((plx-pearson2l)^2) ]
+uDF[,l1comb:=((glx-gainin30l)) *.5 + 
+      ((qlx-pq9TargRankl))*1.5 + 
+      ((slx-spearman2l)) + 
+      ((plx-pearson2l)) ]
+uDF[,mincomb:= min(
+    ((glx-gainin30l) *.5),
+    ((qlx-pq9TargRankl)*1.5),
+    (slx-spearman2l),
+    (plx-pearson2l),
+    na.rm = T) ,by=rownum]
 
 uDF[(foldCount>2)][order(sqrdcomb)]
 uDF[(foldCount>2)][order(l1comb)]
+uDF[(foldCount>2)][order(mincomb)]
 ```
 
 QSlink3QSlinks14_55Int2range01SL.ranger	#### winner best mean on most####
@@ -203,21 +262,30 @@ QSlink3QSlinks14_55Int2range01SL.ranger	#### winner best mean on most####
 which models need to be run more
 in other words which models have best chance to be really good
 ```{r}
-uDF[,sqrdcombu:=((max(gainin30u, na.rm=T)-gainin30u)^2) *.5 + ((max(pq9TargRanku, na.rm=T)-pq9TargRanku)^2)*1.5 + ((max(spearman2u, na.rm=T)-spearman2u)^2) + ((max(pearson2u, na.rm=T)-pearson2u)^2) ]
-uDF[,l1combu:=((max(gainin30u, na.rm=T)-gainin30u)) *.5 + ((max(pq9TargRanku, na.rm=T)-pq9TargRanku))*1.5 + ((max(spearman2u, na.rm=T)-spearman2u)) + ((max(pearson2u, na.rm=T)-pearson2u)) ]
-
+uDF[,sqrdcombu:= ((glx-gainin30u)*abs(glx-gainin30u)) *.5 + 
+      ((qlx-pq9TargRanku)*abs(qlx-pq9TargRanku))*1.5 + 
+      ((slx-spearman2u)*abs(slx-spearman2u)) + 
+      ((plx-pearson2u)*abs(plx-pearson2u)) ]
+uDF[,l1combu:=((glx-gainin30u)) *.5 + 
+      ((qlx-pq9TargRanku))*1.5 + 
+      ((slx-spearman2u)) + 
+      ((plx-pearson2u)) ]
+uDF[,mincombu:= min(
+    ((glx-gainin30u) *.5),
+    ((qlx-pq9TargRanku)*1.5),
+    (slx-spearman2u),
+    (plx-pearson2u),
+    na.rm = T) ,by=rownum]
 uDF[order(sqrdcombu)]
 uDF[order(l1combu)]
+uDF[order(mincombu)]
 
 ```
-here I will output all recipes tested and if they have a chance of being the best recipe overall
+here I will output all recipes tested and if they have a chance of being the best recipe overall. Or when I am  indecisive, if any of their upper bound metrics overtake best lowerbound.
 ```{r}
-sqrdcombumin <- max(c(uDF[(l1comb==min(uDF$l1comb)),.(sqrdcombu)][[1]],uDF[(sqrdcomb==min(uDF$sqrdcomb)),.(sqrdcombu)][[1]]))
-l1combumin <- max(c(uDF[(l1comb==min(uDF$l1comb)),.(l1combu)][[1]],uDF[(sqrdcomb==min(uDF$sqrdcomb)),.(l1combu)][[1]]))
-sqrdcombumin<-sqrdcombumin *1.1
-l1combumin<-l1combumin *1.1
 
-uDF[,keeprunning:= l1combu<l1combumin | sqrdcombu<sqrdcombumin ]
+uDF[,keeprunning:= mincombu<0 | sqrdcombu<0 ]
+summary(uDF$keeprunning)
 
 h <- which(names(uDF)=="pq9TargRanku")
 h <- names(uDF)[h:dim(uDF)[2]]
