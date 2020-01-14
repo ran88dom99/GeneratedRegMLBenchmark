@@ -79,8 +79,8 @@ uDF[,ocvRMSE:=median(ocvRMSE,na.rm = T),by=keyOneRecipe]
 uDF[,RMSEutrans:=median(RMSEutrans,na.rm = T),by=keyOneRecipe]
 uDF[,MAEutrans:=median(MAEutrans,na.rm = T),by=keyOneRecipe] 
 
-DF[,timesd:=sd(time),by=keyOneRecipe]
-DF[,time:=mean(time),by=keyOneRecipe]
+uDF[,timesd:=sd(time),by=keyOneRecipe]
+uDF[,time:=mean(time),by=keyOneRecipe]
 
 uDF[,hyperUnqs:=.N,by=keyOneRecipe]
 uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
@@ -130,7 +130,7 @@ and then collapsing all unique folds
 
 ```{r}
 
-cl <- 0.9
+
 ttOK <- function(x){
   vax<-var(x)
   if(is.na(vax)) return(F)
@@ -160,6 +160,7 @@ ttm <- function(x,psd,cl=.95,u_l="u",dsda=10){
   if(u_l=="l"){  return( mean(x) - entrvl) }
 }
 
+cl <- 0.9
 dsda<-10
 lastCol<-dim(uDF)[2]
 for(i in names(uDF)[1:9]){#i<-"spearman2"
@@ -184,8 +185,8 @@ print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
 }
 }
 
-DF[,timesd:=sd(time),by=keyOneRecipe]
-DF[,time:=mean(time),by=keyOneRecipe]
+uDF[,timesd:=sd(time),by=keyOneRecipe]
+uDF[,time:=mean(time),by=keyOneRecipe]
 
 uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
 dim(uDF)
