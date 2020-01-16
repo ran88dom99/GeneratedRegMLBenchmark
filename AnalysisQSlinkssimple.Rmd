@@ -167,7 +167,7 @@ summary(DF$btp3)
 
 
 plot the netcoin graphs
-first focusing onperfection then droping it
+first focusing on perfection then droping it
 "seed" btw is just a function of R version change
 ```{r}
 require(netCoin)

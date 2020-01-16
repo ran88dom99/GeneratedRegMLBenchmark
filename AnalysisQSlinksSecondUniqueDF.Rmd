@@ -107,7 +107,7 @@ ggplot(data = uDF,mapping = aes(meanie,staDev)) + geom_point() + geom_smooth()
 }
 ```
 
-what do I want the reduction in upper confidence level to be for a given time taken?
+what do I want the reduction in upper confidence level to be for a given time taken? Should it be based on  log or sqrt?
 ```{r}
 
 los<-c(.1,1,2,3,pi,10,30,400,3000,5233)
@@ -206,6 +206,7 @@ ggplot(data=uDF,aes(x=time,y=timesd))+geom_point()
 ggplot(data=uDF,aes(x=log(time)))+geom_histogram()
 ggplot(data=uDF,aes(x=sqrt(time)))+geom_histogram()
 summary(uDF$time)
+str(uDF$time)
 log(0);sqrt(0)
 ```
 
