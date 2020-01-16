@@ -1,0 +1,327 @@
+---
+title: "R Notebook"
+---
+
+
+```{r}
+require(readr)
+require(netCoin)
+require(data.table)
+require(naniar) 
+require(VIM)
+require(ggplot2)
+load(file="routuDFintermhold.RData")
+```
+
+missing values in metric will be made 80%tile
+only the better score really matter so 
+to prevent crashing later score its set to 80%
+```{r}
+for(i in names(uDF)[1:9]){#i<-2
+  print(na.replace<-quantile(uDF[,i,with=F],.8,na.rm=T))
+  nafound<-as.vector(is.na(uDF[,i,with=F]))
+  summary(nafound)
+  uDF[(nafound),(i):=na.replace]
+  #uDF[(nafound)]
+}
+summary(uDF[,1:9,with=F]) 
+```
+Getting into selecting metrics here; lets see their correlations and distributions
+```{r}
+uDF[,topmetrics:=(gainin30>quantile(gainin30,.801))+(pq9TargRank>quantile(pq9TargRank,.801))+(spearman2>quantile(spearman2,.801))+(pearson2>quantile(pearson2,.801))+(pMAE>quantile(pMAE,.801))+(pRMSE>quantile(pRMSE,.801))]
+iDF<-uDF[(topmetrics>0)][order(-topmetrics)]
+summary(iDF$topmetrics)
+for(i in names(iDF)[1:9]){#i<-2
+  yy<-as.vector(iDF[,i,with=F][[1]])
+  print(summary(yy))
+  yy<-as.integer(yy*10000)
+  print(summary(yy))
+  #gg<-ecdf(yy);summary(gg)
+  #unique(yy);dim(iDF[,i,with=F]);unique(iDF[,i,with=F]);iDF[,i,with=F]
+  plot.ecdf(yy, verticals = TRUE, do.points = FALSE)
+  title(i, adj = 1)
+}
+
+```
+```{r}
+require(ggplot2)
+for(i in names(iDF)[1:9]){
+print(ggplot(iDF, aes(x=get(i))) + geom_histogram(aes(y=..density..), stat="bin", position="stack", alpha=0.5, bins=16) + geom_path(aes(y=..density..), stat="bin", position="identity", linetype="dashed", bins=16, pad=TRUE) + geom_density(aes(y=..density..), stat="density", position="identity", alpha=0.5) + theme_grey() + theme(text=element_text(family="sans", face="plain", color="#000000", size=15, hjust=0.5, vjust=0.5)) + xlab(i) + ylab("density"))
+}
+
+
+
+```
+
+```{r}
+
+uDF[,redonePQ9:=max(pq9TargRank,na.rm = T)-min(pq9TargRank,na.rm = T),by=keyOnerun]
+uDF[,redonePQ9TF:=redonePQ9>.02]
+(specimen<-uDF[(redonePQ9TF)][order(keyOnerun)][1:100])
+(exems<-unique(specimen$keyOnerun))
+
+uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
+```
+two maveraging and duplicate removal because fold is very special compared to just hyperparameer jiggling. 
+```{r}
+
+uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
+uDF[,keyOneRecipe:=paste0(expirament,task,transTarg,transform,algomodel,fold)]
+
+ 
+uDF[,gainin30:=median(gainin30,na.rm = T),by=keyOneRecipe]
+uDF[,pq9TargRank:=median(pq9TargRank,na.rm = T),by=keyOneRecipe]
+uDF[,spearman2:=median(spearman2,na.rm = T),by=keyOneRecipe]
+uDF[,pearson2:=median(pearson2,na.rm = T),by=keyOneRecipe]
+uDF[,pMAE:=median(pMAE,na.rm = T),by=keyOneRecipe]
+uDF[,pRMSE:=median(pRMSE,na.rm = T),by=keyOneRecipe]
+uDF[,ocvRMSE:=median(ocvRMSE,na.rm = T),by=keyOneRecipe]
+uDF[,RMSEutrans:=median(RMSEutrans,na.rm = T),by=keyOneRecipe]
+uDF[,MAEutrans:=median(MAEutrans,na.rm = T),by=keyOneRecipe] 
+
+uDF[,timesd:=sd(time),by=keyOneRecipe]
+uDF[,time:=mean(time),by=keyOneRecipe]
+
+uDF[,hyperUnqs:=.N,by=keyOneRecipe]
+uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
+dim(uDF)
+summary(uDF$keyOneRecipe)
+```
+prep for duplication of recipes removal
+#wierd effect of lowered variance drasticaly dropping interval 
+using variance of all recipes
+here quick view of these variances
+```{r}
+uDF[,keyOneRecipe:=paste0(expirament,task,transTarg,transform,algomodel)]
+uDF[,foldCount:=.N,by=keyOneRecipe]
+
+if(F){
+uDF[,staDev:=sd(pearson2),by=keyOneRecipe]
+uDF[,meanie:=mean(pearson2),by=keyOneRecipe]
+summary(uDF$staDev)
+summary(uDF$meanie)
+summary(uDF$foldCount)
+ggplot(data = uDF,mapping = aes(x=as.factor(foldCount),staDev)) + geom_boxplot() + geom_smooth(method="lm")
+
+ggplot(data = uDF,mapping = aes(meanie,staDev)) + geom_point() + geom_smooth()
+}
+```
+
+what do I want the reduction in upper confidence level to be for a given time taken? Should it be based on  log or sqrt?
+```{r}
+
+los<-c(.1,1,2,3,pi,10,30,400,3000,5233)
+for(i in los){
+  print(i)
+print(t.test(c(-1,0,1),conf.level = .95-sqrt(i)/100)$co)
+print(t.test(c(-1,0,1),conf.level = .95-log(i)/100)$co)
+}
+if(F){
+for(i in los){
+  print(i)
+print(t.test(c(-1,0,1),conf.level = .8-sqrt(i)/100)$co)
+print(t.test(c(-1,0,1),conf.level = .8-log(i)/100)$co)
+}
+}
+```
+
+actualy applying manual ttest 
+and then collapsing all unique folds
+
+```{r}
+
+
+ttOK <- function(x){
+  vax<-var(x)
+  if(is.na(vax)) return(F)
+  if(vax==0) return(F)
+  return(T)
+}
+
+tt1 <- function(x,o=1,coi=.95){
+  x <- c(x,o)
+  return(t.test(x,conf.level = coi))
+}
+
+#manual mean interval ttest with outside SD if vector small
+ttm <- function(x,psd,cl=.95,u_l="u",dsda=10){
+  if(cl>=1 | cl<=0) warning("confidence level out of bounds")
+  if(!is.vector(x)) warning("x not a vector")
+  n <- length(x)
+  if( n < 1 ) warning("x has length 0")
+  if(n>1){
+    nsd <- sd(x) * min( n / dsda , 1) + psd * max((1 - n / dsda) , 0)
+  } else {
+    nsd <- psd
+  }
+  ttt <- qt((1-(1-cl)/2),df = max((n-1),1))
+  entrvl <- ttt * nsd / sqrt(n)
+  if(u_l=="u"){  return( mean(x) + entrvl) }
+  if(u_l=="l"){  return( mean(x) - entrvl) }
+}
+
+cl <- 0.9
+dsda<-10
+lastCol<-dim(uDF)[2]
+for(i in names(uDF)[1:9]){#i<-"spearman2"
+  uDF[(foldCount>3), intSD := sd(get(i),na.rm=T), by=keyOneRecipe]
+  #summary(uDF$intSD)
+  print(osd <- quantile(uDF[,.SD[1], by=keyOneRecipe]$intSD, na.rm=T,.8))
+
+  uDF[,paste0(i,"u") := ttm(get(i), osd, cl = cl, dsda = dsda), by=keyOneRecipe]
+  uDF[,paste0(i,"l") := ttm(get(i), osd, u_l="l", cl = cl, dsda = dsda),  by=keyOneRecipe] 
+#  uDF[(foldCount>dsda),paste0(i,"u") := t.test(get(i),conf.level = cl)$co[2], by=keyOneRecipe]
+#  uDF[(foldCount>dsda),paste0(i,"l") := t.test(get(i),conf.level = cl)$co[1], by=keyOneRecipe] 
+
+#print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
+  uDF[,(i):=mean(get(i),na.rm = T),by=keyOneRecipe] 
+  print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
+}
+
+if(F){ #us and ls NAs to means
+for(i in names(uDF)[lastCol:dim(uDF)[2]]){#i<-"spearman2l"
+uDF[(is.na(get(i))),(i):=mean(get(i),na.rm = T)] 
+print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
+}
+}
+
+uDF[,timesd:=sd(time),by=keyOneRecipe]
+uDF[,time:=mean(time),by=keyOneRecipe]
+
+uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
+dim(uDF)
+```
+```{r}
+smpl<-100
+for(i in names(uDF)[1:9]){
+#print(ggplot(data = uDF[(foldCount>2)][order(-get(i))][1:smpl], aes(x=get(i),y=c(1:smpl))) + geom_point() + geom_errorbarh(aes(xmin=get(paste0(i,"l")),xmax=get(paste0(i,"u")),colour="red"),height=1) +xlab(i))
+  print(ggplot(data = uDF[(foldCount>2)][order(-get(paste0(i,"l")))][1:smpl], aes(x=get(i),y=c(1:smpl))) + geom_point() + geom_errorbarh(aes(xmin=get(paste0(i,"l")),xmax=get(paste0(i,"u")),colour="red"),height=1) +xlab(i))
+}
+
+```
+Quick look at seconds for model to run.
+```{r}
+
+ggplot(data=uDF,aes(x=time,y=timesd))+geom_point()
+ggplot(data=uDF,aes(x=log(time)))+geom_histogram()
+ggplot(data=uDF,aes(x=sqrt(time)))+geom_histogram()
+summary(uDF$time)
+str(uDF$time)
+log(0);sqrt(0)
+```
+
+best algo is just first 3 scores in 95% and number of folds too
+else just use median
+
+maybe all this is too much work and I should just take tops?
+by tops I mean lower bound confidence intervals of each of the four merics
+```{r}
+#summary(uDF[,.(gainin30l,pq9TargRankl,spearman2l,pearson2l,pMAEl,pRMSEl)])
+uDF[,topmetrics:=(gainin30l>quantile(gainin30l,.95, na.rm=T))+(pq9TargRankl>quantile(pq9TargRankl,.96, na.rm=T))+(spearman2l>quantile(spearman2l,.96, na.rm=T))+(pearson2l>quantile(pearson2l,.95, na.rm=T))+(pMAEl>quantile(pMAEl,.99, na.rm=T))+(pRMSEl>quantile(pRMSEl,.99, na.rm=T))]
+
+
+summary(uDF[(topmetrics>1)][(foldCount>2)][,.(gainin30l,pq9TargRankl,spearman2l,pearson2l,pMAEl,pRMSEl)])
+uDF[(topmetrics>1)][(foldCount>2)][order(-gainin30l)]
+uDF[(topmetrics>1)][(foldCount>2)][order(-pq9TargRankl)]
+uDF[(topmetrics>1)][(foldCount>2)][order(-spearman2l)]
+uDF[(topmetrics>1)][(foldCount>2)][order(-pearson2l)]
+uDF[(topmetrics>1)][(foldCount>2)][order(-pq9TargRankl)][order(-topmetrics)]
+
+```
+
+
+Here user must make a combined metric by 
+multipying metrics distance from optimal by user set score then summing result. knowing distribution of metrics here is kindof important
+
+```{r}
+glx<-max(uDF$gainin30l, na.rm=T)
+qlx<-max(uDF$pq9TargRankl, na.rm=T)
+slx<-max(uDF$spearman2l, na.rm=T)
+plx<-max(uDF$pearson2l, na.rm=T)
+uDF[,rownum:=1:dim(uDF)[1]]
+uDF[,sqrdcomb:= ((glx-gainin30l)^2) *.5 + 
+      ((qlx-pq9TargRankl)^2)*1.5 + 
+      ((slx-spearman2l)^2) + 
+      ((plx-pearson2l)^2) ]
+uDF[,l1comb:=((glx-gainin30l)) *.5 + 
+      ((qlx-pq9TargRankl))*1.5 + 
+      ((slx-spearman2l)) + 
+      ((plx-pearson2l)) ]
+uDF[,mincomb:= min(
+    ((glx-gainin30l) *.5),
+    ((qlx-pq9TargRankl)*1.5),
+    (slx-spearman2l),
+    (plx-pearson2l),
+    na.rm = T) ,by=rownum]
+
+uDF[(foldCount>2)][order(sqrdcomb)]
+uDF[(foldCount>2)][order(l1comb)]
+uDF[(foldCount>2)][order(mincomb)]
+```
+
+QSlink3QSlinks14_55Int2range01SL.ranger	#### winner best mean on most####
+
+which models need to be run more
+in other words which models have best chance to be really good
+```{r}
+uDF[,sqrdcombu:= ((glx-gainin30u)*abs(glx-gainin30u)) *.5 + 
+      ((qlx-pq9TargRanku)*abs(qlx-pq9TargRanku))*1.5 + 
+      ((slx-spearman2u)*abs(slx-spearman2u)) + 
+      ((plx-pearson2u)*abs(plx-pearson2u)) ]
+uDF[,l1combu:=((glx-gainin30u)) *.5 + 
+      ((qlx-pq9TargRanku))*1.5 + 
+      ((slx-spearman2u)) + 
+      ((plx-pearson2u)) ]
+uDF[,mincombu:= min(
+    ((glx-gainin30u) *.5),
+    ((qlx-pq9TargRanku)*1.5),
+    (slx-spearman2u),
+    (plx-pearson2u),
+    na.rm = T) ,by=rownum]
+uDF[order(sqrdcombu)]
+uDF[order(l1combu)]
+uDF[order(mincombu)]
+
+```
+here I will output all recipes tested and if they have a chance of being the best recipe overall. Or when I am  indecisive, if any of their upper bound metrics overtake best lowerbound.
+```{r}
+
+uDF[,keeprunning:= mincombu<0 | sqrdcombu<0 ]
+summary(uDF$keeprunning)
+
+h <- which(names(uDF)=="pq9TargRanku")
+h <- names(uDF)[h:dim(uDF)[2]]
+h <- c(c("expirament","task","transTarg","transform","algomodel","hpGen","time","validmethod","tuneLength","cvcount","unmissed","keyMiss","foldCount"),h)
+(recipeOptimistic<-uDF[order(l1combu)][,h,with=F])
+t <- c("expirament","task","transTarg","transform","algomodel","hpGen","time","validmethod","tuneLength","cvcount","unmissed","keyMiss","foldCount","keeprunning","l1combu","sqrdcombu")
+(recipeOptimistic<-recipeOptimistic[,t,with=F])
+recipeOptimistic$l1combu<-round(recipeOptimistic$l1combu,digits = 5)
+recipeOptimistic$sqrdcombu<-round(recipeOptimistic$sqrdcombu,digits = 5)
+
+write_csv(recipeOptimistic,path="recipeOptimistic.csv")
+```
+ 
+maybe all this is too much work and I should just take tops?
+Eh no this is just rubbish
+```{r}
+summary(uDF[,.(gainin30l,pq9TargRankl,spearman2l,pearson2l,pMAEl,pRMSEl)])
+uDF[,topmetrics:= (gainin30l>quantile(gainin30l,.92, na.rm=T)) + (pq9TargRankl>quantile(pq9TargRankl,.99, na.rm=T)) + (spearman2l>quantile(spearman2l,.99, na.rm=T)) + (pearson2l>quantile(pearson2l,.99,  na.rm=T)) + (pMAEl>quantile(pMAEl,.99, na.rm=T)) + (pRMSEl>quantile(pRMSEl,.99, na.rm=T))]
+uDF[(topmetrics>5)]
+```
+
+this entire process of evaluating which model is best was not thouroughly researched by me. More links to posssily better options follow. also should scale to SD of each evaluated variable? or use nonparametrc ranks instead?
+
+FuzzyMMOORA(d,w,cb)
+https://arxiv.org/ftp/arxiv/papers/1401/1401.4590.pdf
+https://stats.stackexchange.com/questions/3201/how-do-i-order-or-rank-a-set-of-experts/3218#3218
+https://stats.stackexchange.com/questions/154888/combining-multiple-metrics-to-provide-comparisons-ranking-of-k-objects-question
+https://stats.stackexchange.com/questions/9358/creating-an-index-of-quality-from-multiple-variables-to-enable-rank-ordering
+https://stats.stackexchange.com/questions/117239/ranking-based-on-lower-confidence-interval/444117#444117
+https://en.wikipedia.org/wiki/Multi-attribute_utility
+#[ranking] [valuation] [confidence interval]
+https://stats.stackexchange.com/questions/56852/overall-rank-from-multiple-ranked-lists?rq=1
+https://www.sciencedirect.com/science/article/abs/pii/0001691894900442
+
+cutoff by comparing optimistic vs best pesimistic combined scores does not prove dominanace. also there must be a way to compare patterns detected for uniquenes. but that is for much later
+
+also maybe time to calcuate model should be taken into account
