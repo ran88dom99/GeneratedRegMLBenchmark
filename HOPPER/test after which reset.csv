@@ -326,3 +326,4 @@ Mon Jan 13 14:11:30 2020,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
 Mon Jan 13 17:07:58 2020,regr.plsr,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Tue Jan 14 17:07:54 2020,regr.mars,QSlinks03_95,5,5,windows,x64,HOPPER
 Wed Jan 15 17:08:09 2020,regr.xgboost,QSlinks03_95,5,5,windows,x64,HOPPER
+Thu Jan 16 17:21:51 2020,regr.nodeHarvest,QSlinks14_55,5,5,windows,x64,HOPPER
