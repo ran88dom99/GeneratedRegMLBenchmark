@@ -127,6 +127,8 @@ DF[,foldOrg:=fold]
 DF[,fold:=paste0(fold,".",foldseed)]
 ```
 
+
+
 Which models were somehow missed? Just checking just incase errors or 
 machines did not run fast enough
 Also if some hype hype parameters were way overblown
@@ -238,7 +240,6 @@ DF[(infin>0)]#not getting everything?
 infinDF
 ```
 
-
 Percent success
 ```{r}
 #install.packages("VIM")
@@ -322,11 +323,11 @@ log(0);sqrt(0)
 
 outliers moved to some more reasonable state
 may be column specific
-lots of NAS not dealt with; let NA algo deal with them
+maybe cause of problem
 ```{r}
 
 for(i in names(DF)[1:9]){#i<-2
-  bxs <- boxplot.stats(DF[,i,with=F][[1]],coef=3)
+  bxs <- boxplot.stats(DF[,i,with=F][[1]],coef=3.5)
   print(bxs$stats)
   nafound <- as.vector(DF[,i,with=F]<bxs$stats[[1]])
   print(summary(nafound))
@@ -340,6 +341,18 @@ for(i in names(DF)[1:9]){#i<-2
  
 ```
 
+metrics that are best when low 
+made negative ?inverted about he x axis?
+BC code assume higher is better
+after outliers to not move to  1e+10
+```{r}
+metrics.invert <- c("ocvRMSE", "RMSEutrans", "MAEutrans")
+for(i in names(DF)[7:9]){#i<-"ocvRMSE";i<-"RMSEutrans"
+  maxim<-max(DF[,i,with=F],na.rm=T)
+  DF[,(i):=  (-1 * get(i)), by=1:dim(DF)[1] ]
+}
+
+```
 net coicidence with everything to be removed, removed
 ```{r}
 #DF$noPear
