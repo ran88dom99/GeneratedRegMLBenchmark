@@ -18,7 +18,7 @@ only the better score really matter so
 to prevent crashing later score its set to 80%
 ```{r}
 for(i in names(uDF)[1:9]){#i<-2
-  print(na.replace<-quantile(uDF[,i,with=F],.8,na.rm=T))
+  print(na.replace<-quantile(uDF[,i,with=F],.7,na.rm=T))
   nafound<-as.vector(is.na(uDF[,i,with=F]))
   summary(nafound)
   uDF[(nafound),(i):=na.replace]
@@ -109,18 +109,26 @@ ggplot(data = uDF,mapping = aes(meanie,staDev)) + geom_point() + geom_smooth()
 
 what do I want the reduction in upper confidence level to be for a given time taken? Should it be based on  log or sqrt?
 ```{r}
+if(F){
 
-los<-c(.1,1,2,3,pi,10,30,400,3000,5233)
+los<-c(.0001,.1,1,2,3,pi,10,30,400,3000,5233)
+vec<-c(-1,-1,-1,0,1,1,1)
+ddf<-data.frame()
 for(i in los){
   print(i)
-print(t.test(c(-1,0,1),conf.level = .95-sqrt(i)/100)$co)
-print(t.test(c(-1,0,1),conf.level = .95-log(i)/100)$co)
+print(sqrt<-t.test(vec,conf.level = .95-sqrt(i)/100)$co[2])
+print(curt<-t.test(vec,conf.level = .95-((i)^.33333)/100)$co[2])
+try({
+print(log<-t.test(vec,conf.level = .95-log(i)/100)$co[2])})
+ddf<-rbind(ddf,data.frame(i,sqrt,curt,log))
 }
+ddf
 if(F){
 for(i in los){
   print(i)
 print(t.test(c(-1,0,1),conf.level = .8-sqrt(i)/100)$co)
 print(t.test(c(-1,0,1),conf.level = .8-log(i)/100)$co)
+}
 }
 }
 ```
@@ -130,18 +138,8 @@ and then collapsing all unique folds
 
 ```{r}
 
-
-ttOK <- function(x){
-  vax<-var(x)
-  if(is.na(vax)) return(F)
-  if(vax==0) return(F)
-  return(T)
-}
-
-tt1 <- function(x,o=1,coi=.95){
-  x <- c(x,o)
-  return(t.test(x,conf.level = coi))
-}
+uDF[,timesd:=sd(time),by=keyOneRecipe]
+uDF[,time:=mean(time),by=keyOneRecipe]
 
 #manual mean interval ttest with outside SD if vector small
 ttm <- function(x,psd,cl=.95,u_l="u",dsda=10){
@@ -160,7 +158,8 @@ ttm <- function(x,psd,cl=.95,u_l="u",dsda=10){
   if(u_l=="l"){  return( mean(x) - entrvl) }
 }
 
-cl <- 0.9
+clu <- 0.95
+cll <- 0.9
 dsda<-10
 lastCol<-dim(uDF)[2]
 for(i in names(uDF)[1:9]){#i<-"spearman2"
@@ -168,8 +167,8 @@ for(i in names(uDF)[1:9]){#i<-"spearman2"
   #summary(uDF$intSD)
   print(osd <- quantile(uDF[,.SD[1], by=keyOneRecipe]$intSD, na.rm=T,.8))
 
-  uDF[,paste0(i,"u") := ttm(get(i), osd, cl = cl, dsda = dsda), by=keyOneRecipe]
-  uDF[,paste0(i,"l") := ttm(get(i), osd, u_l="l", cl = cl, dsda = dsda),  by=keyOneRecipe] 
+  uDF[,paste0(i,"u") := ttm(get(i), osd, cl = (clu-((time)^.33333)/100), dsda = dsda), by=keyOneRecipe]
+  uDF[,paste0(i,"l") := ttm(get(i), osd, u_l="l", cl = cll, dsda = dsda),  by=keyOneRecipe] 
 #  uDF[(foldCount>dsda),paste0(i,"u") := t.test(get(i),conf.level = cl)$co[2], by=keyOneRecipe]
 #  uDF[(foldCount>dsda),paste0(i,"l") := t.test(get(i),conf.level = cl)$co[1], by=keyOneRecipe] 
 
@@ -185,8 +184,6 @@ print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
 }
 }
 
-uDF[,timesd:=sd(time),by=keyOneRecipe]
-uDF[,time:=mean(time),by=keyOneRecipe]
 
 uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
 dim(uDF)
@@ -199,15 +196,16 @@ for(i in names(uDF)[1:9]){
 }
 
 ```
-Quick look at seconds for model to run.
+Quick look at seconds for model to run. primarily to choose confidence level and penalty for model time
 ```{r}
-
+if(F){
 ggplot(data=uDF,aes(x=time,y=timesd))+geom_point()
 ggplot(data=uDF,aes(x=log(time)))+geom_histogram()
 ggplot(data=uDF,aes(x=sqrt(time)))+geom_histogram()
 summary(uDF$time)
 str(uDF$time)
 log(0);sqrt(0)
+}
 ```
 
 best algo is just first 3 scores in 95% and number of folds too

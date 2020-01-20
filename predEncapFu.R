@@ -336,3 +336,24 @@ if(F)
   NoAp<-"NoAp"
   NoHyper<-"nohyperparam"
 }
+##Classification accuracy or classification error is a proportion or a ratio. It describes the proportion of correct or incorrect predictions made by the model. Each prediction is a binary decision that could be correct or incorrect. Technically, this is called a Bernoulli trial, named for Jacob Bernoulli. The proportions in a Bernoulli trial have a specific distribution called a binomial distribution. Thankfully, with large sample sizes (e.g. more than 30), we can approximate the distribution with a Gaussian.
+
+##In statistics, a succession of independent events that either succeed or fail is called a Bernoulli process. […] For large N, the distribution of this random variable approaches the normal distribution.
+
+##— Page 148, Data Mining: Practical Machine Learning Tools and Techniques, Second Edition, 2005.
+
+##We can use the assumption of a Gaussian distribution of the proportion (i.e. the classification accuracy or error) to easily calculate the confidence interval.
+
+##In the case of classification error, the radius of the interval can be calculated as:
+##  interval = z * sqrt( (error * (1 - error)) / n)
+##1
+
+##interval = z * sqrt( (error * (1 - error)) / n)
+
+##In the case of classification accuracy, the radius of the interval can be calculated as:
+##  interval = z * sqrt( (accuracy * (1 - accuracy)) / n)
+##1
+
+##interval = z * sqrt( (accuracy * (1 - accuracy)) / n)
+
+##Where interval is the radius of the confidence interval, error and accuracy are classification error and classification accuracy respectively, n is the size of the sample, sqrt is the square root function, and z is the number of standard deviations from the Gaussian distribution. Technically, this is called the Binomial proportion confidence interval.
