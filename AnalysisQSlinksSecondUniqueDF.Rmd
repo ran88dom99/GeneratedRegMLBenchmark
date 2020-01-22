@@ -1,7 +1,10 @@
 ---
 title: "R Notebook"
 ---
+several aggregation/removal of duplicats of data untill single row exists for each recipe. first just completely exact duplicates in previous notebook. here is second one. duplicates with same recipese and folds aggregated (barmachine only?). then finaly aggregaation between fold.
 
+why is featureless so highly ranked in pessimistick lower boun score? because no sd for featureless and NAs are converted to high scores
+Rank 90 and gain in 30 really terrible for featureless so this is just  optimism in algorthm.
 
 ```{r}
 require(readr)
@@ -132,6 +135,39 @@ print(t.test(c(-1,0,1),conf.level = .8-log(i)/100)$co)
 }
 }
 ```
+test for unimodality. probability of unimodality. 1 is no dip likely unimodal. .05 is one in 20 chance of unimodality.
+```{r}
+require(diptest)
+if(F){
+x<-c(1,1,1,1,1,1,1,6,6,6,6,6,6,6)
+x<-c(1,2,3,4,5,6,7,8,9)
+str(dip.test(x))
+dip.test(x)$p.value
+}
+recipee<-c("QSlink3QSlinks115_602PCAregr.earth",	
+"QSlink3QSlinks115_602allregr.ksvm"	,
+"QSlink3QSlinks115_602expoTransregr.svm",	
+"QSlink3QSlinks14_55Int1range01regr.evtree"	,
+"QSlink3QSlinks14_55Int2asisregr.gbm"	,
+"QSlink3QSlinks14_55Int2YeoJohnsonregr.gbm"	,
+"QSlink3QSlinks115_602asisregr.evtree"	,
+"QSlink3QSlinks115_602asisregr.glmboost",	
+"QSlink3QSlinks14_55Int2quantileregr.bst"	,
+"QSlink3QSlinks14_55Int1centernscaleregr.glmboost")
+
+modaldraw<-uDF[(keyOneRecipe %in% recipee[1])]
+hist(modaldraw$pq9TargRank)
+ggplot(data=modaldraw[(order(pq9TargRank))],aes(x=pq9TargRank,y=1:dim(modaldraw)[1]))+geom_point()
+hist(modaldraw$spearman2)
+hist(modaldraw$pRMSE)
+summary(uDF$keyOneRecipe %in% recipee)
+
+modaldraw<-uDF[(keyOneRecipe %in% recipee[1:6])]
+ggplot(modaldraw, aes(y=pq9TargRank, x=as.factor(keyOneRecipe))) + geom_violin() +geom_point()
+ggplot(modaldraw, aes(y=spearman2, x=as.factor(keyOneRecipe))) + geom_violin() +geom_point()
+ggplot(modaldraw, aes(y=pearson2, x=as.factor(keyOneRecipe))) + geom_violin() +geom_point()
+
+```
 
 actualy applying manual ttest 
 and then collapsing all unique folds
@@ -162,12 +198,15 @@ clu <- 0.95
 cll <- 0.9
 dsda<-10
 lastCol<-dim(uDF)[2]
+uDF[(keyOneRecipe==uDF$keyOneRecipe[1])]
 for(i in names(uDF)[1:9]){#i<-"spearman2"
+  uDF[(foldCount>2), paste0(i,"_sd") := sd(get(i),na.rm=T), by = keyOneRecipe]
+  uDF[(foldCount>10), paste0(i,"_unimode") := dip.test(get(i))$p.value, by = keyOneRecipe]
   uDF[(foldCount>3), intSD := sd(get(i),na.rm=T), by=keyOneRecipe]
   #summary(uDF$intSD)
-  print(osd <- quantile(uDF[,.SD[1], by=keyOneRecipe]$intSD, na.rm=T,.8))
-
-  uDF[,paste0(i,"u") := ttm(get(i), osd, cl = (clu-((time)^.33333)/100), dsda = dsda), by=keyOneRecipe]
+  print(osd <- quantile(uDF[,.SD[1], by=keyOneRecipe]$intSD, na.rm=T,.8)) 
+ uDF[,cluMtim := (clu-(time^.33333)/100), by=keyOneRecipe]
+  uDF[,paste0(i,"u") := ttm(get(i), osd, cl = mean(cluMtim), dsda = dsda), by=keyOneRecipe]
   uDF[,paste0(i,"l") := ttm(get(i), osd, u_l="l", cl = cll, dsda = dsda),  by=keyOneRecipe] 
 #  uDF[(foldCount>dsda),paste0(i,"u") := t.test(get(i),conf.level = cl)$co[2], by=keyOneRecipe]
 #  uDF[(foldCount>dsda),paste0(i,"l") := t.test(get(i),conf.level = cl)$co[1], by=keyOneRecipe] 
@@ -187,15 +226,23 @@ print(summary(uDF[,(c(i,paste0(i,"u"),paste0(i,"l"))),with=F]))
 
 uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
 dim(uDF)
+uDF[(keyOneRecipe==uDF$keyOneRecipe[1])]
+
+uDF[,cluMtim:=NULL]
 ```
+
+
 ```{r}
 smpl<-100
 for(i in names(uDF)[1:9]){
 #print(ggplot(data = uDF[(foldCount>2)][order(-get(i))][1:smpl], aes(x=get(i),y=c(1:smpl))) + geom_point() + geom_errorbarh(aes(xmin=get(paste0(i,"l")),xmax=get(paste0(i,"u")),colour="red"),height=1) +xlab(i))
   print(ggplot(data = uDF[(foldCount>2)][order(-get(paste0(i,"l")))][1:smpl], aes(x=get(i),y=c(1:smpl))) + geom_point() + geom_errorbarh(aes(xmin=get(paste0(i,"l")),xmax=get(paste0(i,"u")),colour="red"),height=1) +xlab(i))
 }
-
+uDF[(foldCount>2)][order(-pearson2l)][40:98]
+uDF[(foldCount>2)][order(-spearman2l)][55:90]
 ```
+
+
 Quick look at seconds for model to run. primarily to choose confidence level and penalty for model time
 ```{r}
 if(F){
@@ -298,15 +345,43 @@ recipeOptimistic$sqrdcombu<-round(recipeOptimistic$sqrdcombu,digits = 5)
 
 write_csv(recipeOptimistic,path="recipeOptimistic.csv")
 ```
- 
-maybe all this is too much work and I should just take tops?
-Eh no this is just rubbish
+Same sort of output but in this case the pessimisticaly considered best models. The more reliable ones. 
 ```{r}
-summary(uDF[,.(gainin30l,pq9TargRankl,spearman2l,pearson2l,pMAEl,pRMSEl)])
-uDF[,topmetrics:= (gainin30l>quantile(gainin30l,.92, na.rm=T)) + (pq9TargRankl>quantile(pq9TargRankl,.99, na.rm=T)) + (spearman2l>quantile(spearman2l,.99, na.rm=T)) + (pearson2l>quantile(pearson2l,.99,  na.rm=T)) + (pMAEl>quantile(pMAEl,.99, na.rm=T)) + (pRMSEl>quantile(pRMSEl,.99, na.rm=T))]
-uDF[(topmetrics>5)]
-```
 
+
+h <- which(names(uDF)=="pq9TargRankl")
+h <- names(uDF)[h:dim(uDF)[2]]
+h <- c(c("expirament","task","transTarg","transform","algomodel","hpGen","time","validmethod","tuneLength","cvcount","unmissed","keyMiss","foldCount"),h)
+(recipePessimistic<-uDF[order(l1comb)][,h,with=F])
+t <- c("expirament","task","transTarg","transform","algomodel","hpGen","time","validmethod","tuneLength","cvcount","unmissed","keyMiss","foldCount","keeprunning","l1comb","sqrdcomb")
+(recipePessimistic<-recipePessimistic[,t,with=F])
+recipePessimistic$l1comb<-round(recipePessimistic$l1comb,digits = 5)
+recipePessimistic$sqrdcomb<-round(recipePessimistic$sqrdcomb,digits = 5)
+recipePessimistic<-recipePessimistic[1:300]
+
+write_csv(recipePessimistic,path="recipePessimistic.csv")
+```
+ 
+ most multimodal of distros. now with ignorance of useless models
+```{r}
+if(T){
+for(i in names(uDF)[1:6]){
+  #print(uDF[(order(get(paste0(i,"_unimode"))))][1:100])
+}
+}
+uDF[,sqmoda:=((pq9TargRank_unimode)^2) + 
+      ((spearman2_unimode)^2) + 
+      ((pearson2_unimode)^2)   ]
+
+uDF[(foldCount>7)][(gainin30>.4)][(order(sqmoda))][1:100]
+
+uDF[,limoda:= ((pq9TargRank_unimode)) + 
+      ((spearman2_unimode)) + 
+      ((pearson2_unimode))   ]
+
+uDF[(foldCount>7)][(gainin30>.4)][(order(limoda))][1:100]
+```
+ 
 this entire process of evaluating which model is best was not thouroughly researched by me. More links to posssily better options follow. also should scale to SD of each evaluated variable? or use nonparametrc ranks instead?
 
 FuzzyMMOORA(d,w,cb)
