@@ -16,7 +16,8 @@ load packages read files comboine files
  [45] "btp11"
 ```{r}
 col_typed <- "dddddddddccddccccccdddddddcdcddc??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
-
+#71 per row so 142+ more than 20?
+#167
 try({setwd(mainDir)})
 mainDir<-getwd()
 subDir<-"QSlinks_simple"
@@ -100,7 +101,6 @@ unique(DF$seedit);unique(DF$foldseed);#unique(DF$seed)
 unique(DF$trgCol);unique(DF$missing);unique(DF$append)
 unique(DF$hpGen);unique(DF$tuneLength);unique(DF$ignrepeats)
 usless<-c("trgCol","missing","append")
-names(DF<-DF[,1:45,with=F])
 names(DF<-DF[,-(usless),with=F])
 
 ```
@@ -176,7 +176,7 @@ require(netCoin)
 #,"seedit"
 set <- c("transTarg","task","transform","fold","imperfect","seed","btp3")
 
-essCoin <- surCoin(data = DF, variables = set, lwidth ="Haberman", lweight="Haberman", color="variable", lcolor="Haberman", ltext="Haberman", linkFilter="Haberman", repulsion=90)
+#essCoin <- surCoin(data = DF, variables = set, lwidth ="Haberman", lweight="Haberman", color="variable", lcolor="Haberman", ltext="Haberman", linkFilter="Haberman", repulsion=90)
 #essCoin
 #plot(essCoin)
 
@@ -217,6 +217,7 @@ for(i in which(names(Perf) %in% c("transTarg","task","transform","pc","expiramen
 length(unique(Perf$keyRedun))
 length(Perf$keyRedun)/length(unique(Perf$keyRedun))
 Perf[,.N,by=keyRedun]
+save(Perf,file="routPerfects.RData")
 ```
 infinte checked and converted to NA
 ```{r}
@@ -268,7 +269,6 @@ DF[(totFail),][1:30,]
 
 TF<-DF[(totFail),]
 DF<-DF[!(totFail)]
-
 ```
 ```{r}
 require(naniar)
@@ -278,7 +278,6 @@ mice_plot <- aggr(DF[,1:35], col=c('navyblue','yellow'),
 numbers=TRUE, sortVars=TRUE,
 labels=names(DF[,1:35]), cex.axis=.7,
 gap=3, ylab=c("Missing data","Pattern"))
-
 ```
 
 
@@ -370,7 +369,7 @@ DF[,redoneeb:=binnerr(redonee),by=rowNum]
 summary(DF$redoneeb)
 
 set <- c("algomodel", "transTarg", "task", "transform", "fold", "pc",  "noPear", "noUtrans","redonePQ9TF","redoneeb")
-essCoin <- surCoin(data = DF, variables = set, lwidth ="Haberman", lweight="Haberman", color="variable", lcolor="Haberman", ltext="Haberman", linkFilter="Haberman", repulsion=90)
+#essCoin <- surCoin(data = DF, variables = set, lwidth ="Haberman", lweight="Haberman", color="variable", lcolor="Haberman", ltext="Haberman", linkFilter="Haberman", repulsion=90)
 #essCoin
 #plot(essCoin)
 ```
@@ -378,13 +377,25 @@ essCoin <- surCoin(data = DF, variables = set, lwidth ="Haberman", lweight="Habe
 warning! R version should be included in most keys but I just do not wan t to bother
 remove completely redundant rows
 ```{r}
+
 DF[,keyOnerun:=paste0(expirament,task,pc,fold,transTarg,transform,algomodel,seed)]
 print("dimensions before and after removal of duplicates")
 dim(DF)
 uDF<-unique(DF,by = c("pq9TargRank","pearson2","pRMSE","keyOnerun"))
 dim(uDF)
 #uDF[order(-spearman2)][order(-pRMSE)][order(-pq9TargRank)][order(-gainin30)]
+rcPs <- read_csv("recipePessimistic.csv")
+problems(rcPs)
+Unq<- uDF[as.data.table(rcPs), on=c("keyMiss","algomodel")]
+save(Unq,file="routuDFpessimistUnique.RData")
+
+names(uDF<-uDF[,c(1:45,161:dim(uDF)[2]),with=F])
 save(uDF,file="routuDFintermhold.RData") #rout used so file is not sent to github
+
+```
+
+```{r}
+Unq[(algomodel=="blasso")]
 ```
 
 

@@ -167,6 +167,10 @@ ggplot(modaldraw, aes(y=pq9TargRank, x=as.factor(keyOneRecipe))) + geom_violin()
 ggplot(modaldraw, aes(y=spearman2, x=as.factor(keyOneRecipe))) + geom_violin() +geom_point()
 ggplot(modaldraw, aes(y=pearson2, x=as.factor(keyOneRecipe))) + geom_violin() +geom_point()
 
+modaldraw<-uDF[(keyOneRecipe %in% recipee[7:length(recipee)])]
+ggplot(modaldraw, aes(y=pq9TargRank, x=as.factor(keyOneRecipe))) + geom_violin() +geom_point()
+ggplot(modaldraw, aes(y=spearman2, x=as.factor(keyOneRecipe))) + geom_violin() +geom_point()
+ggplot(modaldraw, aes(y=pearson2, x=as.factor(keyOneRecipe))) + geom_violin() +geom_point()
 ```
 
 actualy applying manual ttest 
