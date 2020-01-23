@@ -1,0 +1,20 @@
+---
+title: "uniqueness of models use predicion variance column importance"
+---
+```{r}
+  require(readr)
+require(netCoin)
+require(data.table)
+require(naniar) 
+require(VIM)
+require(ggplot2)
+```
+
+first lets get the perfect goals and clean that set 
+```{r}
+ load(file="routPerfects.RData")
+dim(Perf)
+unique(Perf)
+dim(Perf)
+```
+ 
