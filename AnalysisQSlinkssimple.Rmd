@@ -102,7 +102,7 @@ unique(DF$trgCol);unique(DF$missing);unique(DF$append)
 unique(DF$hpGen);unique(DF$tuneLength);unique(DF$ignrepeats)
 usless<-c("trgCol","missing","append")
 names(DF<-DF[,-(usless),with=F])
-
+maxcol_bef_fetcre<-dim(DF)[2]
 ```
 
 which computers ran when?
@@ -389,7 +389,7 @@ problems(rcPs)
 Unq<- uDF[as.data.table(rcPs), on=c("keyMiss","algomodel")]
 save(Unq,file="routuDFpessimistUnique.RData")
 
-names(uDF<-uDF[,c(1:45,161:dim(uDF)[2]),with=F])
+names(uDF<-uDF[,c(1:45,maxcol_bef_fetcre:dim(uDF)[2]),with=F])
 save(uDF,file="routuDFintermhold.RData") #rout used so file is not sent to github
 
 ```
