@@ -14,7 +14,148 @@ first lets get the perfect goals and clean that set
 ```{r}
  load(file="routPerfects.RData")
 dim(Perf)
-unique(Perf)
+Perf<-unique(Perf,by=c("pq9TargRank","RMSEutrans","MAEutrans","transTarg","RMSEmean","RMSEmeantrain","seedit","transform","fold","task"))
 dim(Perf)
+Perf[(is.na(gainin30))]
+Perf[(spearman2!=1)]
+Perf<-Perf[(spearman2==1)]
+
+#Does perfect greement between perfects matter? All 
+#I need is perfect scores per item. the perfect scores seem the same but seed affects foldseed 222
+Perf[,recifKey:=paste0(transTarg,task,transform,expirament,fold)]#seed seedit
+Perf[,recifN:=.N,by=recifKey]
+summary(Perf$recifN)
+Perf[(recifN>1)][(order(recifKey))]
+
+#assuming only one expirament task or else another outer loop will be needed
+#also not really bothering with transformations bc work
+
+prf<-data.table()
+for(i in unique(Perf$task)){
+  wrk<-Perf[(task==i)]
+  wrk<-wrk[(transTarg==2)]
+  #just because changes in code were made thispart shouldbeless necessarylater
+  wkn<-wrk[(is.na(btp9))][,(44:163),with=F]
+  wkf<-wrk[(!is.na(btp9))][,(41:160),with=F]
+  wrk<-rbindlist(list(wkn,wkf),use.names =F)
+  wrk<-unique(wrk)
+  indx<-as.integer(unlist(wrk[,seq(by=2,from=1,to=dim(wrk)[2]),with=F]))
+  val<-as.integer(unlist(wrk[,seq(by=2,from=2,to=dim(wrk)[2]),with=F]))
+  unique(indx)
+  unique(val)
+  wrk<-data.table(indx,val)
+  dim(wrk)
+  wrk<-unique(wrk)
+  if(dim(wrk)[1]!=length(unique(wrk$indx))) stop("more work, multiple valuse for same index")
+  wrk<-wrk[(order(indx))]
+  prf<-rbindlist(list(prf,wrk),use.names =T)
+}
+prf<-unique(prf)
+  if(dim(prf)[1]!=length(unique(prf$indx))) stop("more work, multiple valuse for same index")
+dim(prf)
+```
+load and fix uniq worthy tested models
+```{r}
+load(file="routuDFpessimistUnique.RData")
+nnd<-which(names(Unq)=="datePOSIX")
+strt<-which(names(Unq)=="btp8")
+Unqn<-Unq[(is.na(btp11))]
+Unqf<-Unq[(!is.na(btp11))]
+Unqf[,dum1:=0]
+Unqf[,dum2:=0]
+Unqf[,dum3:=0]
+Unqn[,dum1:=0]
+Unqn[,dum2:=0]
+Unqn[,dum3:=0]
+colord<-names(Unqf)
+ol<-length(colord)
+(colord<-c(colord[1:strt],colord[(ol-2):ol],colord[(strt+1):(nnd-4)],colord[(nnd):(ol-3)]))
+setcolorder(Unqf,colord)
+
+```
+
+
+```{r}
+  why<-rbindlist(list(Unqn,Unqf),use.names =F)
+ why<-why[(order(algomodel))][(transTarg==2)]
+ strt<-which(names(Unq)=="X47")
+nnd<-which(names(Unq)=="datePOSIX") -1
+ why[,keyErrors:=paste0(keyMiss,algomodel)]
+
+prd<-data.table(trg=prf$val)
+i<-unique(why$keyErrors)[1]
+
+for(i in unique(why$keyErrors)){
+  wrk<-why[(keyErrors==i)][,(strt:nnd),with=F]
+  wrk<-unique(wrk)
+  indx<-as.integer(unlist(wrk[,seq(by=2,from=1,to=dim(wrk)[2]),with=F]))
+  val<-as.integer(unlist(wrk[,seq(by=2,from=2,to=dim(wrk)[2]),with=F]))
+  unique(indx)
+  unique(val)
+  wrk<-data.table(indx,val)
+  wrk$val<-as.numeric(wrk$val)
+  dim(wrk)
+  wrk<-wrk[(order(indx))]
+  wrk[,sdw:=sd(val),by=indx]
+  wrk[,Nw:=.N,by=indx]
+  wrk[,val:=mean(val),by=indx]
+  wrk<-unique(wrk)
+  if(dim(wrk)[1]!=length(unique(wrk$indx))) stop("more work, multiple valuse for same index")
+  prd[wrk$indx,paste0(i,"val"):=wrk$val]
+  prd[wrk$indx,paste0(i,"sd"):=wrk$sdw]
+}
+prd
+length(names(prd))#removed transformed target so not 601
+names(prd)[c(1,2,3,6,7,8,15,16,17)]
+
+require(stringr)
+vals<-str_detect( names(prd), "val")
+vals<-str_detect( names(prd), "sd")
+```
+like time series of each; red dot vs lots of other colors. orered by trg. must make mean?
+some models are bad with exact valuse but their spearman and pearson are fantasic. maybe can draw spearman and pearson errors? basic normalization just does not do enough; because of skew, outliers? or just bas alaignment; some algorithms bothered to try to catch thos e24s others didnt
+```{r}
+vals[1]<-F
+prd[,medi:=0]
+prd$medi<-apply(prd[,vals,with=F],1,median,na.rm=T)
+prd[,men:=0]
+prd$men<-apply(prd[,vals,with=F],1,mean,na.rm=T)
+prd[,ninfi:=0]
+prd$ninfi<-apply(prd[,vals,with=F],1,quantile,.95,na.rm=T)
+prd[,ofif:=0]
+prd$ofif<-apply(prd[,vals,with=F],1,quantile,.05,na.rm=T)
+prd<-prd[(order(medi))][(order(trg))]
+vals[1]<-T
+ggplot(prd, aes(x=1:dim(prd)[1])) + geom_point(aes(y=medi),color="green") + geom_point(aes(y=trg),color="red") + 
+geom_point(aes(y=ninfi),color="blue") +
+geom_point(aes(y=ofif),color="blue")
+
+```
+corrplot; intermodel correlations usualy bigger than target
+```{r}
+vals[1]<-T
+require(corrplot)
+M<-cor(prd[,vals,with=F],use="pairwise.complete.obs",method = "spea")
+corrplot(M[1:20,1:20],tl.cex	=.45)
+```
+does sd ever predict error?
+
+```{r}
+vals[1]<-F
+M<-cor(prd[,(vals==F),with=F],use="pairwise.complete.obs",method = "spea")
+
 ```
  
+
+
+
+
+clustering & netgraph
+
+new dataset to MILL (does linear combo make anything?)
+
+fix first and simple firts
+
+include min distance insed of l1 as a pessimism
+
+then column importance
