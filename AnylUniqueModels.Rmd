@@ -131,6 +131,7 @@ geom_point(aes(y=ninfi),color="blue") +
 geom_point(aes(y=ofif),color="blue")
 
 ```
+converting scores drectly to pearson
 corrplot; intermodel correlations usualy bigger than target
 ```{r}
 vals[1]<-T
