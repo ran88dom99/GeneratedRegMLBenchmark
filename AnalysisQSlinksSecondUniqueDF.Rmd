@@ -83,7 +83,7 @@ uDF[,RMSEutrans:=median(RMSEutrans,na.rm = T),by=keyOneRecipe]
 uDF[,MAEutrans:=median(MAEutrans,na.rm = T),by=keyOneRecipe] 
 
 uDF[,timesd:=sd(time),by=keyOneRecipe]
-uDF[,time:=mean(time),by=keyOneRecipe]
+uDF[,time:=round(mean(time),digits=2),by=keyOneRecipe]
 
 uDF[,hyperUnqs:=.N,by=keyOneRecipe]
 uDF <- unique(uDF,by = c("pq9TargRank", "pearson2", "pRMSE", "keyOneRecipe"))
@@ -395,7 +395,7 @@ https://stats.stackexchange.com/questions/154888/combining-multiple-metrics-to-p
 https://stats.stackexchange.com/questions/9358/creating-an-index-of-quality-from-multiple-variables-to-enable-rank-ordering
 https://stats.stackexchange.com/questions/117239/ranking-based-on-lower-confidence-interval/444117#444117
 https://en.wikipedia.org/wiki/Multi-attribute_utility
-#[ranking] [valuation] [confidence interval]
+!!!ranking valuation confidence interval
 https://stats.stackexchange.com/questions/56852/overall-rank-from-multiple-ranked-lists?rq=1
 https://www.sciencedirect.com/science/article/abs/pii/0001691894900442
 
