@@ -110,10 +110,10 @@ names(prd)[c(1,2,3,6,7,8,15,16,17)]
 
 require(stringr)
 vals<-str_detect( names(prd), "val")
-vals<-str_detect( names(prd), "sd")
+sds<-str_detect( names(prd), "sd")
 ```
 like time series of each; red dot vs lots of other colors. orered by trg. must make mean?
-some models are bad with exact valuse but their spearman and pearson are fantasic. maybe can draw spearman and pearson errors? basic normalization just does not do enough; because of skew, outliers? or just bas alaignment; some algorithms bothered to try to catch thos e24s others didnt
+
 ```{r}
 vals[1]<-F
 prd[,medi:=0]
@@ -124,39 +124,97 @@ prd[,ninfi:=0]
 prd$ninfi<-apply(prd[,vals,with=F],1,quantile,.95,na.rm=T)
 prd[,ofif:=0]
 prd$ofif<-apply(prd[,vals,with=F],1,quantile,.05,na.rm=T)
-prd<-prd[(order(medi))][(order(trg))]
 vals[1]<-T
-ggplot(prd, aes(x=1:dim(prd)[1])) + geom_point(aes(y=medi),color="green") + geom_point(aes(y=trg),color="red") + 
+ggplot(prd[(order(medi))][(order(trg))], aes(x=1:dim(prd)[1])) + geom_point(aes(y=medi),color="green") + geom_point(aes(y=trg),color="red") + 
 geom_point(aes(y=ninfi),color="blue") +
-geom_point(aes(y=ofif),color="blue")
-
+geom_point(aes(y=ofif),color="blue") +
+geom_point(aes(y=QSlinks115_60centernscale2QSlink3regr.randomForestval
+,color="yellow"))
+vals[1]<-F
+ggplot(prd, aes(x=as.factor(trg))) +
+geom_boxplot(aes(y=QSlinks115_60centernscale2QSlink3regr.randomForestval))
 ```
-converting scores drectly to pearson
 corrplot; intermodel correlations usualy bigger than target
 ```{r}
 vals[1]<-T
 require(corrplot)
 M<-cor(prd[,vals,with=F],use="pairwise.complete.obs",method = "spea")
 corrplot(M[1:20,1:20],tl.cex	=.45)
-```
-does sd ever predict error?
-
-```{r}
 vals[1]<-F
-M<-cor(prd[,(vals==F),with=F],use="pairwise.complete.obs",method = "spea")
-
 ```
- 
+some models are bad with exact valuse but their spearman and pearson are fantasic. maybe can draw spearman and pearson errors? basic normalization just does not do enough; because of skew, outliers? or just bas alaignment;
+first check for NAs
+```{r}
+
+vals[1]<-T
+prd[,vals,with=F][(dim(prd)[1])]
+prd<-prd[(1:(dim(prd)[1]-1))]
+prd[,vals,with=F][,2,with=F]
+sum(is.na(prd[,vals,with=F]));dim(prd)[1] * dim(prd)[2] / 2
+for(i in names(prd)){
+  mpi<-mean(prd[,(i),with=F][[1]],na.rm = T)
+  prd[(is.na(get(i))),c(i):=mpi]
+  prd[,c(i):=round(get(i),digits = 3)]
+  
+}
+sum(is.na(prd[,vals,with=F]));dim(prd)[1] * dim(prd)[2] / 2
+prd
+```
+
+converting scores drectly to pearson cor and spearman cor errors
+```{r}
+vals[1]<-T
+prd$trg<-as.numeric(prd$trg)
+prdr<-prd[,vals,with=F]
+prdn<-prd[,vals,with=F]
+for(i in names(prdr)){ #i<-"QSlinks14_55all2QSlink3BstLmval"
+  prdr[,c(i):=rank(get(i),na.last = "keep",ties.method = "average")]
+
+  prdn[(!is.na(get(i))),c(i):=(get(i)-mean(get(i)))/sd(get(i))]  
+  prdr[(!is.na(get(i))),c(i):=(get(i)-mean(get(i)))/sd(get(i))]
+  prdn[(is.na(get(i))),c(i):=0]  
+  prdr[(is.na(get(i))),c(i):=0]
+  
+  if(i!="trg"){
+    prdn[,c(i):=(prdn$trg-get(i))^2]  
+    prdr[,c(i):=(prdr$trg-get(i))^2]
+  }
+  prdn[,c(i):=round(get(i),digits = 3)]
+  prdr[,c(i):=round(get(i),digits = 3)]
+}
+```
+corrplot; intermodel correlations usualy bigger than target
+```{r}
+
+require(corrplot)
+M<-cor(prdn,use="pairwise.complete.obs",method = "spea")
+corrplot(M[1:20,1:20],tl.cex	=.45)
+hist(as.vector(M))
+M<-cor(prdr,use="pairwise.complete.obs",method = "spea")
+corrplot(M[1:20,1:20],tl.cex	=.45)
+hist(as.vector(M))
+```
+new datasets to MILL (does linear combo make anything?) #effectively stacking. though maybe I should have left that to tpt
+```{r}
+
+require(readr)
+prdr$trg<-as.numeric(prd$trg)
+prdn$trg<-as.numeric(prd$trg)
+write_csv(prd,path="routQSlinksStack.csv")
+write_csv(prdr,path="routQSlinksStackErrRankSqr.csv")
+write_csv(prdn,path="routQSlinksStackErrSqr.csv")
+```
+
+include min distance instead of l1 as a pessimism
+
+then column importance in different notebook
 
 
+does sd ever predict error?
+if that colorfull graph is any indication then no
+Else I should use ML for the 300x300 possible interactions
 
+clustering & netgraph & PCA ICA 
+first must check if this kind of stacking is ever useful by sending data to ml
 
-clustering & netgraph
-
-new dataset to MILL (does linear combo make anything?)
-
-fix first and simple firts
-
-include min distance insed of l1 as a pessimism
-
-then column importance
+??fix first and simple firts??
