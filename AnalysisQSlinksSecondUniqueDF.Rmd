@@ -179,7 +179,7 @@ and then collapsing all unique folds
 ```{r}
 
 uDF[,timesd:=sd(time),by=keyOneRecipe]
-uDF[,time:=mean(time),by=keyOneRecipe]
+uDF[,time:=round(mean(time),digits=2),by=keyOneRecipe]
 
 #manual mean interval ttest with outside SD if vector small
 ttm <- function(x,psd,cl=.95,u_l="u",dsda=10){
