@@ -154,6 +154,7 @@ sum(is.na(prd[,vals,with=F]));dim(prd)[1] * dim(prd)[2] / 2
 for(i in names(prd)){
   mpi<-mean(prd[,(i),with=F][[1]],na.rm = T)
   prd[(is.na(get(i))),c(i):=mpi]
+  prd[(is.na(get(i))),c(i):=0]
   prd[,c(i):=round(get(i),digits = 3)]
   
 }
