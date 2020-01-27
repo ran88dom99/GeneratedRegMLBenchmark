@@ -273,12 +273,9 @@ Thu Dec 12 17:07:55 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
 Fri Dec 13 05:56:32 2019,regr.mob,QSlinks14_55,5,5,windows,x64,HOPPER
 Fri Dec 13 16:34:56 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
 Fri Dec 13 17:07:34 2019,regr.bcart,QSlinks14_55Int,5,5,windows,x64,HOPPER
-Sat Dec 14 19:26:44 2019,regr.cubist,QSlinks14_55Int,5,5,windows,x64,HOPPER
-Sun Dec 15 04:44:44 2019,regr.cubist,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Mon Dec 16 14:34:42 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
 Mon Dec 16 17:10:00 2019,regr.crs,QSlinks115_60,5,5,windows,x64,HOPPER
 Tue Dec 17 03:33:33 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
-Tue Dec 17 15:50:46 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
 Tue Dec 17 17:37:09 2019,regr.glmboost,QSlinks115_60,5,5,windows,x64,HOPPER
 Wed Dec 18 04:23:56 2019,regr.km,QSlinks14_55,5,5,windows,x64,HOPPER
 Wed Dec 18 14:45:49 2019,regr.h2o.glm,QSlinks03_95,5,5,windows,x64,HOPPER
@@ -294,9 +291,6 @@ Tue Dec 24 17:08:22 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
 Wed Dec 25 17:09:58 2019,regr.h2o.glm,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Thu Dec 26 17:09:21 2019,regr.laGP,QSlinks03_95,5,5,windows,x64,HOPPER
 Fri Dec 27 17:09:53 2019,regr.h2o.glm,QSlinks03_95,5,5,windows,x64,HOPPER
-Sat Dec 28 02:33:34 2019,regr.h2o.glm,QSlinks03_95,5,5,windows,x64,HOPPER
-Sat Dec 28 15:30:10 2019,regr.h2o.randomForest,QSlinks03_95,5,5,windows,x64,HOPPER
-Sat Dec 28 17:09:05 2019,regr.h2o.randomForest,QSlinks03_95,5,5,windows,x64,HOPPER
 Sun Dec 29 17:08:40 2019,regr.laGP,QSlinks115_60,5,5,windows,x64,HOPPER
 Mon Dec 30 17:07:48 2019,regr.gausspr,QSlinks14_55,5,5,windows,x64,HOPPER
 Tue Dec 31 13:49:57 2019,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
@@ -310,19 +304,15 @@ Sun Jan 05 12:07:53 2020,regr.randomForest,QSlinks14_55Int,5,5,windows,x64,HOPPE
 Sun Jan 05 17:08:40 2020,regr.xgboost,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Mon Jan 06 14:39:48 2020,regr.km,QSlinks115_60,5,5,windows,x64,HOPPER
 Mon Jan 06 17:08:30 2020,regr.ranger,QSlinks115_60,5,5,windows,x64,HOPPER
-Mon Jan 06 17:32:08 2020,regr.ranger,QSlinks115_60,5,5,windows,x64,HOPPER
 Tue Jan 07 17:08:11 2020,regr.IBk,QSlinks14_55,5,5,windows,x64,HOPPER
 Wed Jan 08 04:02:48 2020,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
 Wed Jan 08 17:08:14 2020,regr.glmboost,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Thu Jan 09 17:08:03 2020,regr.xgboost,QSlinks115_60,5,5,windows,x64,HOPPER
-Thu Jan 09 19:01:26 2020,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
 Fri Jan 10 17:08:15 2020,regr.ctree,QSlinks03_95,5,5,windows,x64,HOPPER
 Sat Jan 11 15:47:51 2020,regr.LiblineaRL2L1SVR,QSlinks115_60,5,5,windows,x64,HOPPER
 Sat Jan 11 17:07:44 2020,regr.kknn,QSlinks115_60,5,5,windows,x64,HOPPER
 Sun Jan 12 15:13:23 2020,regr.IBk,QSlinks115_60,5,5,windows,x64,HOPPER
 Sun Jan 12 17:08:05 2020,regr.crs,QSlinks115_60,5,5,windows,x64,HOPPER
-Mon Jan 13 05:17:47 2020,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
-Mon Jan 13 14:11:30 2020,regr.xgboost,QSlinks14_55,5,5,windows,x64,HOPPER
 Mon Jan 13 17:07:58 2020,regr.plsr,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Tue Jan 14 17:07:54 2020,regr.mars,QSlinks03_95,5,5,windows,x64,HOPPER
 Wed Jan 15 17:08:09 2020,regr.xgboost,QSlinks03_95,5,5,windows,x64,HOPPER
@@ -334,5 +324,6 @@ Sun Jan 19 17:09:33 2020,regr.fnn,QSlinks14_55,5,5,windows,x64,HOPPER
 Tue Jan 21 17:11:40 2020,regr.LiblineaRL2L1SVR,QSlinks14_55,5,5,windows,x64,HOPPER
 Wed Jan 22 17:09:58 2020,regr.nodeHarvest,QSlinks14_55,5,5,windows,x64,HOPPER
 Thu Jan 23 16:52:20 2020,regr.penalized,QSlinks14_55Int,5,5,windows,x64,HOPPER
-Thu Jan 23 17:08:02 2020,regr.penalized,QSlinks14_55Int,5,5,windows,x64,HOPPER
+
 Fri Jan 24 17:08:57 2020,regr.mob,QSlinks03_95,5,5,windows,x64,HOPPER
+Sat Jan 25 17:10:34 2020,regr.rknn,QSlinks03_95,5,5,windows,x64,HOPPER
