@@ -82,7 +82,7 @@ predictNDCG<-T
 #if(which.computer=="HOPPER"){high.fold=5}
 
 pram.cycle<-T
-gensTTesto<-c(79:84)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
+gensTTesto<-c(79:87)#,  51,c(4)#c(1:40)#c(5,10,11,13,14,15,16,17,18,19,20,21,24,28,38,39,40)
 gensTTest<-vector()
 #write.table( t(gensTTesto),file = "initial tasks to test.csv",  quote = F, sep = ",", row.names = F,col.names = F)
 try({
