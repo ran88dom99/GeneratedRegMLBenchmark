@@ -327,3 +327,5 @@ Thu Jan 23 16:52:20 2020,regr.penalized,QSlinks14_55Int,5,5,windows,x64,HOPPER
 
 Fri Jan 24 17:08:57 2020,regr.mob,QSlinks03_95,5,5,windows,x64,HOPPER
 Sat Jan 25 17:10:34 2020,regr.rknn,QSlinks03_95,5,5,windows,x64,HOPPER
+Sun Jan 26 17:09:36 2020,regr.randomForest,QSlinks03_95,5,5,windows,x64,HOPPER
+Mon Jan 27 04:06:18 2020,regr.cubist,QSlinks03_95,5,5,windows,x64,HOPPER
