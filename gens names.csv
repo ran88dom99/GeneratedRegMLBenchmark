@@ -82,9 +82,9 @@
 82,QSlinks14_55Int,0,0
 83,QSlinks115_60Int,0,0
 84,QSlinks04_90Int,0,0
-85,FALSE,0,0
-86,FALSE,0,0
-87,FALSE,0,0
+85,QSlinksStackErrRankSqr,0,0
+86,QSlinksStackErrSqr,0,0
+87,QSlinksStack,0,0
 88,FALSE,0,0
 89,FALSE,0,0
 90,FALSE,0,0
