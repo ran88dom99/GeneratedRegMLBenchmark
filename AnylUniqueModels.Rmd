@@ -1,6 +1,9 @@
 ---
 title: "uniqueness of models use predicion variance column importance"
 ---
+need to compare against best model to get competeing interesting ones
+then separate using PCA? let allmodel decide if there is anything
+!mincomb has been added
 ```{r}
   require(readr)
 require(netCoin)
@@ -57,6 +60,7 @@ dim(prf)
 load and fix uniq worthy tested models
 ```{r}
 load(file="routuDFpessimistUnique.RData")
+(bestest<-Unq[(1)])
 nnd<-which(names(Unq)=="datePOSIX")
 strt<-which(names(Unq)=="btp8")
 Unqn<-Unq[(is.na(btp11))]
@@ -77,7 +81,7 @@ setcolorder(Unqf,colord)
 
 ```{r}
   why<-rbindlist(list(Unqn,Unqf),use.names =F)
- why<-why[(order(algomodel))][(transTarg==2)]
+ why<-why[(transTarg==2)]
  strt<-which(names(Unq)=="X47")
 nnd<-which(names(Unq)=="datePOSIX") -1
  why[,keyErrors:=paste0(keyMiss,algomodel)]
@@ -201,9 +205,9 @@ new datasets to MILL (does linear combo make anything?) #effectively stacking. t
 require(readr)
 prdr$trg<-as.numeric(prd$trg)
 prdn$trg<-as.numeric(prd$trg)
-write_csv(prd,path="routQSlinksStack.csv")
-write_csv(prdr,path="routQSlinksStackErrRankSqr.csv")
-write_csv(prdn,path="routQSlinksStackErrSqr.csv")
+write_csv(prd[,1:190,with=F],path="routQSlinksStack.csv")
+write_csv(prdr[,1:150,with=F],path="routQSlinksStackErrRankSqr.csv")
+write_csv(prdn[,1:150,with=F],path="routQSlinksStackErrSqr.csv")
 ```
 
 include min distance instead of l1 as a pessimism

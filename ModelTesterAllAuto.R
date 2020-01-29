@@ -199,9 +199,18 @@ for(gend.data in gensTTest){
   count.toy.data.passed<-count.toy.data.passed+1
   setwd(base.folder)
   data.source<-as.matrix(read.csv(paste("Generats/",gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = FALSE,quote="",dec="."))
-  #for(i in 1:dim(data.source)[2]){
-  #  data.source[,i] <- as.numeric(as.character(data.source[,i]))
-  #}
+  for(i in 1:dim(data.source)[2]){
+    if(is.character(data.source[,i])) break() 
+  }
+  if(i!=dim(data.source)[2]){ #if file has a header load it
+  data.source<-as.matrix(read.csv(paste("Generats/",gens.names[gend.data],".csv", sep = ""), sep = ",",fill=TRUE, header = T,quote="",dec="."))
+  }
+  for(i in 1:dim(data.source)[2]){
+    if(is.character(data.source[,i])) break() 
+  }
+  if(i!=dim(data.source)[2]){
+    stop("some variables are numeric")  
+  }
   #data.source <- as.matrix(data.source)
   print(head(data.source))
   datasource<-gens.names[gend.data,1]
