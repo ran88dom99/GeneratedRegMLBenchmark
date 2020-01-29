@@ -357,7 +357,7 @@ h <- which(names(uDF)=="pq9TargRankl")
 h <- names(uDF)[h:dim(uDF)[2]]
 h <- c(c("expirament","task","transTarg","transform","algomodel","hpGen","time","validmethod","tuneLength","cvcount","unmissed","keyMiss","foldCount"),h)
 (recipePessimistic<-uDF[order(l1comb)][,h,with=F])
-t <- c("expirament","task","transTarg","transform","algomodel","hpGen","time","validmethod","tuneLength","cvcount","unmissed","keyMiss","foldCount","keeprunning","l1comb","sqrdcomb")
+t <- c("expirament","task","transTarg","transform","algomodel","hpGen","time","validmethod","tuneLength","cvcount","unmissed","keyMiss","foldCount","keeprunning","l1comb","sqrdcomb","mincomb")
 (recipePessimistic<-recipePessimistic[,t,with=F])
 recipePessimistic$l1comb<-round(recipePessimistic$l1comb,digits = 5)
 recipePessimistic$sqrdcomb<-round(recipePessimistic$sqrdcomb,digits = 5)
@@ -367,6 +367,7 @@ write_csv(recipePessimistic,path="recipePessimistic.csv")
 ```
  
  most multimodal of distros. now with ignorance of useless models
+ WHAT I REALLY NEED IS MORE CONDITIONAL DIFFERENT SAMPLE TESTS
 ```{r}
 if(T){
 for(i in names(uDF)[1:6]){

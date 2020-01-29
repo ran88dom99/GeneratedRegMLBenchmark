@@ -1,0 +1,33 @@
+---
+title: "Variable importance"
+---
+load all varimp files and combine into one
+```{r}
+
+```
+attach missing names from original files
+```{r}
+
+```
+by task, get all remotley useful variables and graph best ones
+```{r}
+
+```
+select best from pessimist file 
+```{r}
+
+```
+by task, get all remotley useful variables and graph best ones
+```{r}
+
+```
+look for highly uncorrelated recipies
+by task select single best model and add to possiblyUniq
+then those models that most strongly discorrelate are also added
+```{r}
+
+```
+
+
+
+

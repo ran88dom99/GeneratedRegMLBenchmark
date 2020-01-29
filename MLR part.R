@@ -113,18 +113,12 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   try({list.of.packages <-getLearnerPackages(allmodel)
   error.pack=1})
   if(error.pack==0){
-    write.table(paste("Fail","Fail","Fail","Fail","Fail","Fail","Fail","Fail","PrePackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,round(proc.time()[3]-when[3]),  sep = ","),
-                file = out.file, append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
+    failfail("PrePackageFail")
     next()}
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
   if(length(new.packages)) install.packages(new.packages, dep = TRUE)
   if(length(list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])])){
-    write.table(paste("Fail","Fail","Fail","Fail","Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,round(proc.time()[3]-when[3]),  sep = ","),
-                file = out.file, append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
+    failfail("PackageFail")
     next()}
 
 
