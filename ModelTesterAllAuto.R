@@ -45,10 +45,10 @@ task.subject<-"QSlink"#"carEnstest3"#
 # regeneration including same 100, reselection to testrun  
 pc.tpot=F
 pc.caret=T
-pc.mlr<-c("ACEREBOUTt","HOPPER","ALTA")#T,"HOPPER"
+pc.mlr<-c("ACEREBOUTt","HOPPER","fALTA")#T,"HOPPER"
 pc.smallR<-c("HOPPER","ALTAt","ACEREBOUT")
-if(which.computer=="ALTA") 
-  {.libPaths("D:/R library/3.4");pc.tpot=F;pc.caret=F}#;task.subject<-"carEnstest4"
+if(which.computer=="ALTA")# .libPaths("D:/R library/3.4");
+  {pc.tpot=F;pc.caret=T}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
   {pc.tpot=F;pc.caret=F; }#task.subject<-"hffoldreccTPOT";
 if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F}
