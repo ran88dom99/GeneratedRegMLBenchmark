@@ -41,7 +41,7 @@ hyper.control.rand<-makeHyperControl(mlr.control = makeTuneControlRandom(maxit=t
 
 
 try({
-  methods = c("mrmr","randomForestSRC.rfsrc", "univariate.model.score")
+  methods = c("mrmr","randomForestSRC_importance", "univariate.model.score")
 fv = generateFilterValuesData(regr.task,
                               method = c("mrmr","randomForestSRC.rfsrc", "univariate.model.score"),
                               nselect<-10)#,,"permutation.importance","randomForestSRC.var.select"
@@ -73,7 +73,8 @@ write.table(paste("mlr",methods[n],date(),"",trans.y,datasource,missingdata,with
 
 ######for all mlr models########
 for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce it
-
+#allmodel="regr.km" 
+  
   when<-proc.time()
   write.table(allmodel,file = "last algorithm tried.csv",  quote = F, row.names = F,col.names = F)
   write.table(gens.names[gend.data],file = "last task tried.csv",  quote = F, row.names = F,col.names = F)
@@ -112,18 +113,12 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
   try({list.of.packages <-getLearnerPackages(allmodel)
   error.pack=1})
   if(error.pack==0){
-    write.table(paste("Fail","Fail","Fail","Fail","PrePackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,round(proc.time()[3]-when[3]),  sep = ","),
-                file = out.file, append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
+    failfail("PrePackageFail")
     next()}
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
   if(length(new.packages)) install.packages(new.packages, dep = TRUE)
   if(length(list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])])){
-    write.table(paste("Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,round(proc.time()[3]-when[3]),  sep = ","),
-                file = out.file, append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
+    failfail("PackageFail")
     next()}
 
 
@@ -131,9 +126,20 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
 
   not.failed=0
   try({
+    nf3<-0
+    try({
     mod<-hyperopt(regr.task, learner = allmodel, hyper.control =hyper.control.rand)
-    lrn = setHyperPars(makeLearner(allmodel), par.vals = mod$x)
-    m = train(lrn, regr.task)
+    nf3<-1
+    })
+    if(nf3==0) {
+      lrn = setHyperPars(makeLearner(allmodel))
+    } 
+    if(nf3==1) {
+      lrn = setHyperPars(makeLearner(allmodel), par.vals = mod$x)
+    }
+      
+    
+    m = mlr::train(lrn, regr.task)
 
   #keep rmse but train new model on mod$x's parameters
   
@@ -154,7 +160,7 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
 
   #if hyperopt failed just use no hypering
   try({if(not.failed==0) {
-    mod<-  train(allmodel, regr.task)
+    mod<-  mlr::train(allmodel, regr.task)
     
     predicted.outcomes<-predict(mod, newdata=(testing[,-1]))
     train.outcomes<-predict(mod, newdata=(training[,-1]))

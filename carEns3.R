@@ -42,10 +42,7 @@ fail.try=T
     if(fail.try) {
       allmodel<-"MAJOR FAIL in CARET.ENS"
       print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
-      write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
-                  file = out.file, append =TRUE, quote = F, sep = ",",
-                  eol = "\n", na = "NA", dec = ".", row.names = F,
-                  col.names = F, qmethod = "double") 
+      failfail() 
       print(allmodel)
       next()
       }
@@ -81,10 +78,7 @@ fail.try=T
     })
     if(failed==1) {
         print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,allmodel))
-        write.table(paste("Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
-                    file = out.file, append =TRUE, quote = F, sep = ",",
-                    eol = "\n", na = "NA", dec = ".", row.names = F,
-                    col.names = F, qmethod = "double")    
+      failfail()    
         }  
     print("carens 3")
     

@@ -1,0 +1,225 @@
+---
+title: "uniqueness of models use predicion variance column importance"
+---
+need to compare against best model to get competeing interesting ones
+then separate using PCA? let allmodel decide if there is anything
+!mincomb has been added
+```{r}
+  require(readr)
+require(netCoin)
+require(data.table)
+require(naniar) 
+require(VIM)
+require(ggplot2)
+```
+
+first lets get the perfect goals and clean that set 
+```{r}
+ load(file="routPerfects.RData")
+dim(Perf)
+Perf<-unique(Perf,by=c("pq9TargRank","RMSEutrans","MAEutrans","transTarg","RMSEmean","RMSEmeantrain","seedit","transform","fold","task"))
+dim(Perf)
+Perf[(is.na(gainin30))]
+Perf[(spearman2!=1)]
+Perf<-Perf[(spearman2==1)]
+
+#Does perfect greement between perfects matter? All 
+#I need is perfect scores per item. the perfect scores seem the same but seed affects foldseed 222
+Perf[,recifKey:=paste0(transTarg,task,transform,expirament,fold)]#seed seedit
+Perf[,recifN:=.N,by=recifKey]
+summary(Perf$recifN)
+Perf[(recifN>1)][(order(recifKey))]
+
+#assuming only one expirament task or else another outer loop will be needed
+#also not really bothering with transformations bc work
+
+prf<-data.table()
+for(i in unique(Perf$task)){
+  wrk<-Perf[(task==i)]
+  wrk<-wrk[(transTarg==2)]
+  #just because changes in code were made thispart shouldbeless necessarylater
+  wkn<-wrk[(is.na(btp9))][,(44:163),with=F]
+  wkf<-wrk[(!is.na(btp9))][,(41:160),with=F]
+  wrk<-rbindlist(list(wkn,wkf),use.names =F)
+  wrk<-unique(wrk)
+  indx<-as.integer(unlist(wrk[,seq(by=2,from=1,to=dim(wrk)[2]),with=F]))
+  val<-as.integer(unlist(wrk[,seq(by=2,from=2,to=dim(wrk)[2]),with=F]))
+  unique(indx)
+  unique(val)
+  wrk<-data.table(indx,val)
+  dim(wrk)
+  wrk<-unique(wrk)
+  if(dim(wrk)[1]!=length(unique(wrk$indx))) stop("more work, multiple valuse for same index")
+  wrk<-wrk[(order(indx))]
+  prf<-rbindlist(list(prf,wrk),use.names =T)
+}
+prf<-unique(prf)
+  if(dim(prf)[1]!=length(unique(prf$indx))) stop("more work, multiple valuse for same index")
+dim(prf)
+```
+load and fix uniq worthy tested models
+```{r}
+load(file="routuDFpessimistUnique.RData")
+(bestest<-Unq[(1)])
+nnd<-which(names(Unq)=="datePOSIX")
+strt<-which(names(Unq)=="btp8")
+Unqn<-Unq[(is.na(btp11))]
+Unqf<-Unq[(!is.na(btp11))]
+Unqf[,dum1:=0]
+Unqf[,dum2:=0]
+Unqf[,dum3:=0]
+Unqn[,dum1:=0]
+Unqn[,dum2:=0]
+Unqn[,dum3:=0]
+colord<-names(Unqf)
+ol<-length(colord)
+(colord<-c(colord[1:strt],colord[(ol-2):ol],colord[(strt+1):(nnd-4)],colord[(nnd):(ol-3)]))
+setcolorder(Unqf,colord)
+
+```
+
+
+```{r}
+  why<-rbindlist(list(Unqn,Unqf),use.names =F)
+ why<-why[(transTarg==2)]
+ strt<-which(names(Unq)=="X47")
+nnd<-which(names(Unq)=="datePOSIX") -1
+ why[,keyErrors:=paste0(keyMiss,algomodel)]
+
+prd<-data.table(trg=prf$val)
+i<-unique(why$keyErrors)[1]
+
+for(i in unique(why$keyErrors)){
+  wrk<-why[(keyErrors==i)][,(strt:nnd),with=F]
+  wrk<-unique(wrk)
+  indx<-as.integer(unlist(wrk[,seq(by=2,from=1,to=dim(wrk)[2]),with=F]))
+  val<-as.integer(unlist(wrk[,seq(by=2,from=2,to=dim(wrk)[2]),with=F]))
+  unique(indx)
+  unique(val)
+  wrk<-data.table(indx,val)
+  wrk$val<-as.numeric(wrk$val)
+  dim(wrk)
+  wrk<-wrk[(order(indx))]
+  wrk[,sdw:=sd(val),by=indx]
+  wrk[,Nw:=.N,by=indx]
+  wrk[,val:=mean(val),by=indx]
+  wrk<-unique(wrk)
+  if(dim(wrk)[1]!=length(unique(wrk$indx))) stop("more work, multiple valuse for same index")
+  prd[wrk$indx,paste0(i,"val"):=wrk$val]
+  prd[wrk$indx,paste0(i,"sd"):=wrk$sdw]
+}
+prd
+length(names(prd))#removed transformed target so not 601
+names(prd)[c(1,2,3,6,7,8,15,16,17)]
+
+require(stringr)
+vals<-str_detect( names(prd), "val")
+sds<-str_detect( names(prd), "sd")
+```
+like time series of each; red dot vs lots of other colors. orered by trg. must make mean?
+
+```{r}
+vals[1]<-F
+prd[,medi:=0]
+prd$medi<-apply(prd[,vals,with=F],1,median,na.rm=T)
+prd[,men:=0]
+prd$men<-apply(prd[,vals,with=F],1,mean,na.rm=T)
+prd[,ninfi:=0]
+prd$ninfi<-apply(prd[,vals,with=F],1,quantile,.95,na.rm=T)
+prd[,ofif:=0]
+prd$ofif<-apply(prd[,vals,with=F],1,quantile,.05,na.rm=T)
+vals[1]<-T
+ggplot(prd[(order(medi))][(order(trg))], aes(x=1:dim(prd)[1])) + geom_point(aes(y=medi),color="green") + geom_point(aes(y=trg),color="red") + 
+geom_point(aes(y=ninfi),color="blue") +
+geom_point(aes(y=ofif),color="blue") +
+geom_point(aes(y=QSlinks115_60centernscale2QSlink3regr.randomForestval
+,color="yellow"))
+vals[1]<-F
+ggplot(prd, aes(x=as.factor(trg))) +
+geom_boxplot(aes(y=QSlinks115_60centernscale2QSlink3regr.randomForestval))
+```
+corrplot; intermodel correlations usualy bigger than target
+```{r}
+vals[1]<-T
+require(corrplot)
+M<-cor(prd[,vals,with=F],use="pairwise.complete.obs",method = "spea")
+corrplot(M[1:20,1:20],tl.cex	=.45)
+vals[1]<-F
+```
+some models are bad with exact valuse but their spearman and pearson are fantasic. maybe can draw spearman and pearson errors? basic normalization just does not do enough; because of skew, outliers? or just bas alaignment;
+first check for NAs
+```{r}
+
+vals[1]<-T
+prd[,vals,with=F][(dim(prd)[1])]
+prd<-prd[(1:(dim(prd)[1]-1))]
+prd[,vals,with=F][,2,with=F]
+sum(is.na(prd[,vals,with=F]));dim(prd)[1] * dim(prd)[2] / 2
+for(i in names(prd)){
+  mpi<-mean(prd[,(i),with=F][[1]],na.rm = T)
+  prd[(is.na(get(i))),c(i):=mpi]
+  prd[(is.na(get(i))),c(i):=0]
+  prd[,c(i):=round(get(i),digits = 3)]
+  
+}
+sum(is.na(prd[,vals,with=F]));dim(prd)[1] * dim(prd)[2] / 2
+prd
+```
+
+converting scores drectly to pearson cor and spearman cor errors
+```{r}
+vals[1]<-T
+prd$trg<-as.numeric(prd$trg)
+prdr<-prd[,vals,with=F]
+prdn<-prd[,vals,with=F]
+for(i in names(prdr)){ #i<-"QSlinks14_55all2QSlink3BstLmval"
+  prdr[,c(i):=rank(get(i),na.last = "keep",ties.method = "average")]
+
+  prdn[(!is.na(get(i))),c(i):=(get(i)-mean(get(i)))/sd(get(i))]  
+  prdr[(!is.na(get(i))),c(i):=(get(i)-mean(get(i)))/sd(get(i))]
+  prdn[(is.na(get(i))),c(i):=0]  
+  prdr[(is.na(get(i))),c(i):=0]
+  
+  if(i!="trg"){
+    prdn[,c(i):=(prdn$trg-get(i))^2]  
+    prdr[,c(i):=(prdr$trg-get(i))^2]
+  }
+  prdn[,c(i):=round(get(i),digits = 3)]
+  prdr[,c(i):=round(get(i),digits = 3)]
+}
+```
+corrplot; intermodel correlations usualy bigger than target
+```{r}
+
+require(corrplot)
+M<-cor(prdn,use="pairwise.complete.obs",method = "spea")
+corrplot(M[1:20,1:20],tl.cex	=.45)
+hist(as.vector(M))
+M<-cor(prdr,use="pairwise.complete.obs",method = "spea")
+corrplot(M[1:20,1:20],tl.cex	=.45)
+hist(as.vector(M))
+```
+new datasets to MILL (does linear combo make anything?) #effectively stacking. though maybe I should have left that to tpt
+```{r}
+
+require(readr)
+prdr$trg<-as.numeric(prd$trg)
+prdn$trg<-as.numeric(prd$trg)
+write_csv(prd[,1:190,with=F],path="routQSlinksStack.csv")
+write_csv(prdr[,1:150,with=F],path="routQSlinksStackErrRankSqr.csv")
+write_csv(prdn[,1:150,with=F],path="routQSlinksStackErrSqr.csv")
+```
+
+include min distance instead of l1 as a pessimism
+
+then column importance in different notebook
+
+
+does sd ever predict error?
+if that colorfull graph is any indication then no
+Else I should use ML for the 300x300 possible interactions
+
+clustering & netgraph & PCA ICA 
+first must check if this kind of stacking is ever useful by sending data to ml
+
+??fix first and simple firts??

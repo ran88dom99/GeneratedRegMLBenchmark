@@ -89,14 +89,71 @@ printPredMets<-function(predicted.outcomes=predicted.outcomes,trainpred="none",o
   #MPEtra <- mean(????)/mean(training[,1])
   #these are not accuracy scores but model failure chekers, put next to RMSE of mean not first columns. 
   #MPE train may be relevant but test? 
-  
+  #if(allmodel!="perfect") stop(stop(stop()))
   #hypercount=c("full","part","none")
   p <- data.frame(predicted.outcomes,testing[,1])
+  print(testing.size <- sum(!is.na(p)))
   #Rsqd =(1-sum((p[,2]-p[,1])^2, na.rm = T)/sum((p[,2]-mean(p[,2]))^2, na.rm = T))
   Rsqd <<- 1-RMSE(p[,1],p[,2])/RMSE(p[,2],train.based.mean)
   #mean.improvement=1-mean(abs(p[,2]-p[,1]), na.rm = T)/mean(abs(p[,2]-median(p[,2])), na.rm = T)
   mean.improvement <<- 1-MAE(p[,1],p[,2])/MAE(p[,2],train.based.med)
   
+  pearsonrhosqrd<-NA_integer_
+  pearsonrhosqrd<-cor(x=p[,1],y=p[,2],use="complete.obs",method = "pearson")
+  pearsonrhosqrd<-(pearsonrhosqrd)*abs(pearsonrhosqrd)
+  #because all transfroms that would make a difference are not run(quantile, boxcox yeojhonson expoTrans) 
+  #pearson is before loess. however depending on the problem it may be better to keep it after predictor and target are transformed
+  #spearman should not be affected by the transformations cause they do not change ordering so lets avoid loess rank and AUC too
+  spearmanrhosqrd<-NA_integer_
+  spearmanrhosqrd<-cor(x=p[,1],y=p[,2],use="complete.obs",method = "spearman")
+  spearmanrhosqrd<-(spearmanrhosqrd)*abs(spearmanrhosqrd)
+  
+  #####NDCG and rank means ####
+  p9TargRank<-0
+  gainin30<-NA
+  try({
+    worth.p <- vector(mode = "logical", length = 0)
+    good.cut <- quantile(training[,1],probs = .85)
+    fales<-T
+    try({
+      ehhehe <- as.numeric(names(table(training$V1)))[5]
+      if(good.cut < ehhehe){
+        good.cut<-ehhehe
+      }  else {
+        print("using prob .85 instead of 5th form bottom")
+      }
+      fales<-F
+    })
+    if(fales) warning("could not get 5th from bottom target factor")
+    
+    worth.p <- (p[,2] >= good.cut)
+    p<-data.frame(p,worth.p=worth.p)
+    p<-p[order(-p$predicted.outcomes),]
+    p<-data.frame(p,rnkrw=1:dim(p)[1])
+    ln.worth.p <- length(worth.p)
+    if(sum(worth.p)>0 ){#RANKSforNDCG no longer used
+      if(ln.worth.p < 100 & ln.worth.p > 97) warning("gainin will bounce between 30 gain and other statistic")
+      if(ln.worth.p >= 100){ #expect user to only care to use first 30. approximate using 1/4 of test when not enough data
+        usr.use <- 30
+      } else {
+        usr.use <- floor(ln.worth.p * .3)
+      }
+      perc.worthy <- usr.use * (sum(worth.p)/ln.worth.p)
+      gainin30 <- (sum(p$worth.p[1:usr.use]) - perc.worthy)/(min(usr.use,sum(worth.p)) - perc.worthy)
+      #percent correctly identified greater than random chance is what "NDCG" is I hope this is not wrong
+      #ratings.ofav <- p[p$worth.p==T,1]
+      #ratings.ofav<-c(5,3,4.4)
+      #RANKSforNDCG<-c(3.3,.3,4.4,.4,4,3,2.3)
+      #notice, ofav already has relevant items inside it!!
+      #RANKSforNDCG <- append(RANKSforNDCG,ratings.ofav) 
+      #if(sum(RANKSforNDCG %in% ratings.ofav)<(ln.worth.p*2)) warning("fewer than twice number of favorite ratings in RANKSforNDCG ; predict of specified row changes based on other rows")
+      #ranks.ofav <- rank(na.omit(-RANKSforNDCG))[(length(RANKSforNDCG)-ln.worth.p+1):length(RANKSforNDCG)]
+      #NDCG50 <- round((sum( ranks.ofav<=30 ) / ln.worth.p),digits=3)
+      #meanFavRank <- round(mean(ranks.ofav),digits=3)
+      p9TargRank <- (ln.worth.p - quantile(p[p$worth.p,4],probs = .9) ) / ( ln.worth.p )
+    }
+  })  
+  if(p9TargRank==0 & allmodel != "perfect") warning("why did rank quantiles code block not work?")
   
   if(is.data.frame(predicted.outcomes))
     predicted.outcomes<-as.vector(predicted.outcomes[,1])  
@@ -195,39 +252,17 @@ for(i in 1:length(testIndex)){
   InxdPred[i*2]<-testIndex[i] 
   InxdPred[i*2+1]<-signif(predicted.outcomes[i],digits = 3)
 }
-spearmanrhosqrd<-NA_integer_
-spearmanrhosqrd<-cor(x=p[,1],y=p[,2],use="complete.obs",method = "spearman")
-spearmanrhosqrd<-(spearmanrhosqrd)*abs(spearmanrhosqrd)
-
-##NDCG and rank means 
-meanFavRank<-0
-NDCG50<-NA
-try({
-worth.p<-vector(mode = "logical", length = 0)
-good.cut<-quantile(training[,1],probs = .75)
-worth.p<-(p[,2]>=good.cut)
-ln.worth.p<-length(worth.p)
-if(sum(worth.p)>0 && !is.null(RANKSforNDCG)){
-  ratings.ofav<-p[worth.p,1]
-  #ratings.ofav<-c(5,3,4.4)
-  #RANKSforNDCG<-c(3.3,.3,4.4,.4,4,3,2.3)
-  #notice, ofav already has relevant items inside it!!
-  RANKSforNDCG<-append(RANKSforNDCG,ratings.ofav) 
-  if(sum(RANKSforNDCG %in% ratings.ofav)<(ln.worth.p*2)) warning("fewer than twice number of favorite ratings in RANKSforNDCG ; predict of specified row changes based on other rows")
-  ranks.ofav <- rank(na.omit(-RANKSforNDCG))[(length(RANKSforNDCG)-ln.worth.p+1):length(RANKSforNDCG)]
-  NDCG50 <- round((sum( ranks.ofav<=50 ) / ln.worth.p),digits=3)
-  meanFavRank <- round(mean(ranks.ofav),digits=3)
-}
-})  
-#JUST USE CAT
-writeout<- paste(c(meanFavRank,NDCG50,round(spearmanrhosqrd,digits = 3),round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
+#JUST USE CAT 
+writeout<- paste(c(round(p9TargRank,digits = 2),round(gainin30,digits = 3),
+                   round(spearmanrhosqrd,digits = 3),round(pearsonrhosqrd,digits = 3),
+                   round(mean.improvement,digits = 3),round(Rsqd,digits = 3),signif(overRMSE,digits = 3),
                    signif(RMSEp,digits = 3),signif(MMAAEE,digits = 3),date(),allmodel,column.to.predict,
                    trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,
                    Rseed,Cseed,seed.var,RMSE.mean,RMSE.mean.train,outCtrl$search,
-                   round(proc.time()[3]-when[3]),outCtrl$method,outCtrl$tuneLength,
+                   round(proc.time()[3]-when[3]),R.Version()$major,R.Version()$minor,R.Version()$platform,
+                   outCtrl$method,outCtrl$tuneLength,
                    outCtrl$number,outCtrl$repeats,outCtrl$adaptivemin,
-                   for1tea,for2tea,for3tea,
-                   outCtrl$bestune[1:6],InxdPred))
+                   for1tea,for2tea,for3tea, outCtrl$bestune[1:6],InxdPred))
 for(i in 2:length(writeout)){
   writeout[1]<-paste(writeout[1],writeout[i],sep=",")}
 
@@ -239,15 +274,18 @@ write.table( writeout[1],
 print(date())
 }
 
-failfail<-function()
+failfail<-function(lastword="Fail")
 {
   print(c("failed","failed",date(),datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,allmodel))
-  write.table(paste("Fail","Fail","Fail","Fail","Fail","Fail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
+  write.table(paste("Fail","Fail","Fail","Fail","Fail","Fail","Fail","Fail",lastword,date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
               file = out.file, append =TRUE, quote = F, sep = ",",
               eol = "\n", na = "NA", dec = ".", row.names = F,
               col.names = F, qmethod = "double")  
 }
-
+#write.table(paste("Fail","Fail","Fail","Fail","Fail","Fail","Fail","Fail","PackageFail",date(),allmodel,column.to.predict,trans.y,datasource,missingdata,withextra,norming,which.computer,task.subject,FN,high.fold,.Random.seed[1],.Random.seed[2],seed.var,round(proc.time()[3]-when[3]),  sep = ","),
+#            file = out.file, append =TRUE, quote = F, sep = ",",
+#            eol = "\n", na = "NA", dec = ".", row.names = F,
+#            col.names = F, qmethod = "double")
 ############bunch of scraps kept just in case########
 if(F){
   libpack="mlr"
@@ -301,3 +339,24 @@ if(F)
   NoAp<-"NoAp"
   NoHyper<-"nohyperparam"
 }
+##Classification accuracy or classification error is a proportion or a ratio. It describes the proportion of correct or incorrect predictions made by the model. Each prediction is a binary decision that could be correct or incorrect. Technically, this is called a Bernoulli trial, named for Jacob Bernoulli. The proportions in a Bernoulli trial have a specific distribution called a binomial distribution. Thankfully, with large sample sizes (e.g. more than 30), we can approximate the distribution with a Gaussian.
+
+##In statistics, a succession of independent events that either succeed or fail is called a Bernoulli process. […] For large N, the distribution of this random variable approaches the normal distribution.
+
+##— Page 148, Data Mining: Practical Machine Learning Tools and Techniques, Second Edition, 2005.
+
+##We can use the assumption of a Gaussian distribution of the proportion (i.e. the classification accuracy or error) to easily calculate the confidence interval.
+
+##In the case of classification error, the radius of the interval can be calculated as:
+##  interval = z * sqrt( (error * (1 - error)) / n)
+##1
+
+##interval = z * sqrt( (error * (1 - error)) / n)
+
+##In the case of classification accuracy, the radius of the interval can be calculated as:
+##  interval = z * sqrt( (accuracy * (1 - accuracy)) / n)
+##1
+
+##interval = z * sqrt( (accuracy * (1 - accuracy)) / n)
+
+##Where interval is the radius of the confidence interval, error and accuracy are classification error and classification accuracy respectively, n is the size of the sample, sqrt is the square root function, and z is the number of standard deviations from the Gaussian distribution. Technically, this is called the Binomial proportion confidence interval.
