@@ -17,3 +17,8 @@ Mon Oct 07 19:54:05 2019,SL.gbm,netQueryToplistQS1,10,10,windows,i386,ALTA
 Mon Oct 07 20:44:30 2019,SL.step.interaction,netQueryToplistQS2,10,10,windows,i386,ALTA
 Tue Oct 08 01:18:38 2019,h2oAutoml 100,netQueryToplistQS2,10,10,windows,i386,ALTA
 Tue Oct 08 12:45:14 2019,SL.gbm,netQueryToplistQS2,10,10,windows,i386,ALTA
+Thu Dec 05 01:47:43 2019,regr.laGP,netQueryToplistQS2,5,5,windows,i386,ALTA
+Thu Dec 05 03:41:57 2019,regr.laGP,netQueryToplistQS2,5,5,windows,i386,ALTA
+Thu Dec 05 03:53:32 2019,regr.evtree,QSlinks14_55,5,5,windows,i386,ALTA
+Thu Dec 05 04:06:48 2019,regr.frbs,QSlinks14_55,5,5,windows,i386,ALTA
+Thu Dec 05 04:11:01 2019,caretPreEns,QSlinks14_55,5,5,windows,i386,ALTA
