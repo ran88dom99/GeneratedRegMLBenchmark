@@ -13,8 +13,24 @@ by task, get all remotley useful variables and graph best ones
 ```{r}
 
 ```
-select best from pessimist file 
+select best from pessimist file ! not finished just copied from outside
 ```{r}
+load(file="routuDFpessimistUnique.RData")
+(bestest<-Unq[(1)])
+nnd<-which(names(Unq)=="datePOSIX")
+strt<-which(names(Unq)=="btp8")
+Unqn<-Unq[(is.na(btp11))]
+Unqf<-Unq[(!is.na(btp11))]
+Unqf[,dum1:=0]
+Unqf[,dum2:=0]
+Unqf[,dum3:=0]
+Unqn[,dum1:=0]
+Unqn[,dum2:=0]
+Unqn[,dum3:=0]
+colord<-names(Unqf)
+ol<-length(colord)
+(colord<-c(colord[1:strt],colord[(ol-2):ol],colord[(strt+1):(nnd-4)],colord[(nnd):(ol-3)]))
+setcolorder(Unqf,colord)
 
 ```
 by task, get all remotley useful variables and graph best ones
