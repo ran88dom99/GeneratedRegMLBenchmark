@@ -4,8 +4,11 @@ title: "uniqueness of models use predicion variance column importance"
 need to compare against best model to get competeing interesting ones
 then separate using PCA? let allmodel decide if there is anything
 !mincomb has been added
+
+which recipes are worth keeping because they are different from main?
+on hold. waiting for Big ML to run on possible stacks to see if this is all really worth it
 ```{r}
-  require(readr)
+require(readr)
 require(netCoin)
 require(data.table)
 require(naniar) 
