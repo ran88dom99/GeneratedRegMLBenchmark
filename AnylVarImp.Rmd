@@ -1,0 +1,195 @@
+---
+title: "Variable importance"
+---
+load all varimp files and check problems and remove some problems
+```{r}
+col_typed <- "cccddccccccddddddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+#71 per row so 142+ more than 20?
+#167
+try({setwd(mainDir)})
+mainDir<-getwd()
+subDir<-"QSlinks_simple"
+#dir.create(file.path(mainDir, subDir))
+require(readr)
+require(netCoin)
+require(data.table)
+require(naniar) 
+require(VIM)
+require(ggplot2)
+require(stringr)
+
+resultDir<-"ACEREBOUT"
+#setwd(resultDir)
+setwd(file.path(mainDir, resultDir))
+QSlink3ACE <- read_csv("importanceQSlink3ACEREBOUTwindowsx64.csv",col_types = col_typed)
+resetACE <- read_csv("test after which reset.csv")
+names(resetACE)<-c("date","model","task","fold","cv","arch","arch2","pc")
+#QSlinkImp3ACE <- read_csv("importanceQSlink3ACEREBOUTwindowsx64.csv",col_types = col_typed)
+#summary(QSlink3ACE[,1:30])
+ spec(QSlink3ACE)
+ prACE<-problems(QSlink3ACE)
+ unique(prACE$actual)
+ prACE[!str_detect(prACE$actual,"columns"),]
+ rowrem<-prACE[!str_detect(prACE$actual,"columns"),]$row
+ QSlink3ACE<-QSlink3ACE[-rowrem,]
+ setwd(file.path(mainDir))
+
+ 
+ resultDir<-"HOPPER"
+#setwd(resultDir)
+setwd(file.path(mainDir, resultDir))
+QSlink3HOP <- read_csv("importanceQSlink3HOPPERwindowsx64.csv",col_types = col_typed)
+resetHOP <- read_csv("test after which reset.csv")
+names(resetHOP)<-c("date","model","task","fold","cv","arch","arch2","pc")
+#summary(QSlink3ACE[,1:30])
+ spec(QSlink3HOP)
+ prHOP<-problems(QSlink3HOP)
+ unique(prHOP$actual)
+ prHOP[!str_detect(prHOP$actual,"columns"),]
+  rowrem<-prHOP[!str_detect(prHOP$actual,"columns"),]$row
+ QSlink3HOP<-QSlink3HOP[-rowrem,]
+ setwd(file.path(mainDir))
+ names(QSlink3HOP)
+ 
+  resultDir<-"LAPTOPBBQ"
+#setwd(resultDir)
+setwd(file.path(mainDir, resultDir))
+QSlink3BBQ <- read_csv("importanceQSlink3LAPTOPBBQwindowsx64.csv",col_types = col_typed)
+resetBBQ <- read_csv("test after which reset.csv")
+names(resetBBQ)<-c("date","model","task","fold","cv","arch","arch2","pc")
+#summary(QSlink3ACE[,1:30])
+ spec(QSlink3BBQ)
+ prBBQ<-problems(QSlink3BBQ)
+ unique(prBBQ$actual)
+ prBBQ[!str_detect(prBBQ$actual,"columns"),] 
+ rowrem<-prBBQ[!str_detect(prBBQ$actual,"columns"),]$row
+ QSlink3BBQ<-QSlink3BBQ[-rowrem,]
+ setwd(file.path(mainDir))
+
+```
+tibble into data.table
+```{r}
+
+require(data.table)
+DF<-as.data.table(QSlink3ACE)
+DF1<-as.data.table(QSlink3HOP)
+DF2<-as.data.table(QSlink3BBQ)
+
+DF<-rbindlist(list(DF,DF1,DF2),fill = T)
+
+rm(DF1,DF2,QSlink3BBQ,QSlink3HOP,QSlink3ACE)
+
+reset<-as.data.table(resetACE)
+reset1<-as.data.table(resetHOP)
+reset2<-as.data.table(resetBBQ)
+
+reset<-rbindlist(list(reset,reset1,reset2),fill = T,idcol=T)
+rm(reset1,reset2,resetACE,resetHOP,resetBBQ)
+```
+check rename remove nas
+```{r}
+sum(str_detect(DF$X4,"FAIL"),na.rm = T)
+sum(str_detect(DF$X5,"FAIL"),na.rm = T)
+#str(DF)
+head(DF)
+unique(DF$X13)
+
+DFnam<-c("modelset","model","datetime","success","transTarg","task","missing","append","transform","pc","expirament","fold","maxfold","seed","seedit","foldseed","RMSEmean")
+colNum<-T
+firCol<-length(DFnam)+1
+for (i in (firCol):dim(DF)[2]) {
+  if(colNum){
+    DFnam<-c(DFnam,paste0("Col",i))
+    colNum<-F
+  } else {
+    DFnam<-c(DFnam,paste0("Val",i))
+    colNum<-T
+  }
+}
+names(DF)<-DFnam
+summary((DF$Val27))
+DF[(is.na(Val29) & is.na(Val27)),]
+DF[(is.infinite(Val29)),]
+DF<-DF[!(is.na(Val29) & is.na(Val27)),]
+DF<-DF[!(is.infinite(Val29)),]
+summary((DF$Val19));summary((DF$Val29));summary((DF$Val27))
+```
+by task, using melt eh, get all remotley useful variables and graph best ones
+```{r}
+  why<-rbindlist(list(Unqn,Unqf),use.names =F)
+ why<-why[(transTarg==2)]
+ strt<-which(names(Unq)=="X47")
+nnd<-which(names(Unq)=="datePOSIX") -1
+ why[,keyErrors:=paste0(keyMiss,algomodel)]
+
+prd<-data.table(trg=prf$val)
+i<-unique(why$keyErrors)[1]
+
+for(i in unique(why$keyErrors)){
+  wrk<-why[(keyErrors==i)][,(strt:nnd),with=F]
+  wrk<-unique(wrk)
+  indx<-as.integer(unlist(wrk[,seq(by=2,from=1,to=dim(wrk)[2]),with=F]))
+  val<-as.integer(unlist(wrk[,seq(by=2,from=2,to=dim(wrk)[2]),with=F]))
+  unique(indx)
+  unique(val)
+  wrk<-data.table(indx,val)
+  wrk$val<-as.numeric(wrk$val)
+  dim(wrk)
+  wrk<-wrk[(order(indx))]
+  wrk[,sdw:=sd(val),by=indx]
+  wrk[,Nw:=.N,by=indx]
+  wrk[,val:=mean(val),by=indx]
+  wrk<-unique(wrk)
+  if(dim(wrk)[1]!=length(unique(wrk$indx))) stop("more work, multiple valuse for same index")
+  prd[wrk$indx,paste0(i,"val"):=wrk$val]
+  prd[wrk$indx,paste0(i,"sd"):=wrk$sdw]
+}
+prd
+length(names(prd))#removed transformed target so not 601
+names(prd)[c(1,2,3,6,7,8,15,16,17)]
+
+require(stringr)
+vals<-str_detect( names(prd), "val")
+sds<-str_detect( names(prd), "sd")
+attach missing names from original files
+```{r}
+
+```
+
+```{r}
+
+```
+select best from pessimist file ! not finished just copied from outside
+```{r}
+load(file="routuDFpessimistUnique.RData")
+(bestest<-Unq[(1)])
+nnd<-which(names(Unq)=="datePOSIX")
+strt<-which(names(Unq)=="btp8")
+Unqn<-Unq[(is.na(btp11))]
+Unqf<-Unq[(!is.na(btp11))]
+Unqf[,dum1:=0]
+Unqf[,dum2:=0]
+Unqf[,dum3:=0]
+Unqn[,dum1:=0]
+Unqn[,dum2:=0]
+Unqn[,dum3:=0]
+colord<-names(Unqf)
+ol<-length(colord)
+(colord<-c(colord[1:strt],colord[(ol-2):ol],colord[(strt+1):(nnd-4)],colord[(nnd):(ol-3)]))
+setcolorder(Unqf,colord)
+
+```
+by task, get all remotley useful variables and graph best ones
+```{r}
+
+```
+look for highly uncorrelated recipies
+by task select single best model and add to possiblyUniq
+then those models that most strongly discorrelate are also added
+```{r}
+
+```
+
+
+
+
