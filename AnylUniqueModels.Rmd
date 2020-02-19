@@ -7,6 +7,21 @@ then separate using PCA? let allmodel decide if there is anything
 
 which recipes are worth keeping because they are different from main?
 on hold. waiting for Big ML to run on possible stacks to see if this is all really worth it
+
+FUTURE Expiraments will not have the missalignment fixed in realignment
+non-errored dataset likely causes breaks due to too much correlation
+maybe mean should be base for error instead of best algo but that would not be stacking
+
+libraries
+load "perfects" file and clean; to reconstitute perfect target variable
+load and realign worthy models table
+malordered; separated and duplicated results per each recipe into tiddy table
+graph results; of near best one and of all
+graph correlation between models
+check for NAs and convert to mean or 0
+prediction scores into squared errors (rank,norm,sqrd error)
+corrplot; intermodel correlations usualy bigger than target
+new datasets to check via AllAuto though maybe I should have left that to tpt
 ```{r}
 require(readr)
 require(netCoin)
@@ -22,8 +37,8 @@ first lets get the perfect goals and clean that set
 dim(Perf)
 Perf<-unique(Perf,by=c("pq9TargRank","RMSEutrans","MAEutrans","transTarg","RMSEmean","RMSEmeantrain","seedit","transform","fold","task"))
 dim(Perf)
-Perf[(is.na(gainin30))]
-Perf[(spearman2!=1)]
+(Perf[(is.na(gainin30))])
+(Perf[(spearman2!=1)])
 Perf<-Perf[(spearman2==1)]
 
 #Does perfect greement between perfects matter? All 
@@ -31,7 +46,7 @@ Perf<-Perf[(spearman2==1)]
 Perf[,recifKey:=paste0(transTarg,task,transform,expirament,fold)]#seed seedit
 Perf[,recifN:=.N,by=recifKey]
 summary(Perf$recifN)
-Perf[(recifN>1)][(order(recifKey))]
+(Perf[(recifN>1)][(order(recifKey))])
 
 #assuming only one expirament task or else another outer loop will be needed
 #also not really bothering with transformations bc work
@@ -59,6 +74,7 @@ for(i in unique(Perf$task)){
 prf<-unique(prf)
   if(dim(prf)[1]!=length(unique(prf$indx))) stop("more work, multiple valuse for same index")
 dim(prf)
+prf
 ```
 load and fix uniq worthy tested models
 ```{r}
@@ -81,7 +97,7 @@ setcolorder(Unqf,colord)
 
 ```
 
-
+malordered; separated and duplicated results per each recipe into tiddy table
 ```{r}
   why<-rbindlist(list(Unqn,Unqf),use.names =F)
  why<-why[(transTarg==2)]
@@ -115,13 +131,15 @@ prd
 length(names(prd))#removed transformed target so not 601
 names(prd)[c(1,2,3,6,7,8,15,16,17)]
 
-require(stringr)
-vals<-str_detect( names(prd), "val")
-sds<-str_detect( names(prd), "sd")
 ```
 like time series of each; red dot vs lots of other colors. orered by trg. must make mean?
 
 ```{r}
+
+require(stringr)
+vals<-str_detect( names(prd), "val")
+sds<-str_detect( names(prd), "sd")
+
 vals[1]<-F
 prd[,medi:=0]
 prd$medi<-apply(prd[,vals,with=F],1,median,na.rm=T)
@@ -150,7 +168,7 @@ corrplot(M[1:20,1:20],tl.cex	=.45)
 vals[1]<-F
 ```
 some models are bad with exact valuse but their spearman and pearson are fantasic. maybe can draw spearman and pearson errors? basic normalization just does not do enough; because of skew, outliers? or just bas alaignment;
-first check for NAs
+check for NAs and convert to mean or 0
 ```{r}
 
 vals[1]<-T
@@ -163,19 +181,23 @@ for(i in names(prd)){
   prd[(is.na(get(i))),c(i):=mpi]
   prd[(is.na(get(i))),c(i):=0]
   prd[,c(i):=round(get(i),digits = 3)]
-  
 }
 sum(is.na(prd[,vals,with=F]));dim(prd)[1] * dim(prd)[2] / 2
 prd
 ```
 
-converting scores drectly to pearson cor and spearman cor errors
+prediction scores into pearson cor and spearman cor errors
+just removed trg from all and added best result as ideal for error calculation
+check best algo, 
 ```{r}
 vals[1]<-T
 prd$trg<-as.numeric(prd$trg)
 prdr<-prd[,vals,with=F]
 prdn<-prd[,vals,with=F]
-for(i in names(prdr)){ #i<-"QSlinks14_55all2QSlink3BstLmval"
+bestalgo<-names(prd)[2]
+i<-bestalgo
+i<-names(prdr)[5]#i<-"QSlinks14_55all2QSlink3BstLmval"
+for(i in names(prdr)[-1]){ #prdr$QSlinks115_60asis2QSlink3regr.randomForestval
   prdr[,c(i):=rank(get(i),na.last = "keep",ties.method = "average")]
 
   prdn[(!is.na(get(i))),c(i):=(get(i)-mean(get(i)))/sd(get(i))]  
@@ -183,9 +205,9 @@ for(i in names(prdr)){ #i<-"QSlinks14_55all2QSlink3BstLmval"
   prdn[(is.na(get(i))),c(i):=0]  
   prdr[(is.na(get(i))),c(i):=0]
   
-  if(i!="trg"){
-    prdn[,c(i):=(prdn$trg-get(i))^2]  
-    prdr[,c(i):=(prdr$trg-get(i))^2]
+  if(i!=bestalgo){
+    prdn[,c(i):=(prdn[,bestalgo,with=F]-get(i))^2]  
+    prdr[,c(i):=(prdr[,bestalgo,with=F]-get(i))^2]
   }
   prdn[,c(i):=round(get(i),digits = 3)]
   prdr[,c(i):=round(get(i),digits = 3)]
@@ -208,9 +230,9 @@ new datasets to MILL (does linear combo make anything?) #effectively stacking. t
 require(readr)
 prdr$trg<-as.numeric(prd$trg)
 prdn$trg<-as.numeric(prd$trg)
-write_csv(prd[,1:190,with=F],path="routQSlinksStack.csv")
-write_csv(prdr[,1:150,with=F],path="routQSlinksStackErrRankSqr.csv")
-write_csv(prdn[,1:150,with=F],path="routQSlinksStackErrSqr.csv")
+write_csv(prd[,1:130,with=F],path="routQSlinksStack.csv")
+write_csv(prdr[,1:130,with=F],path="routQSlinksStackErrRankSqr.csv")
+write_csv(prdn[,1:130,with=F],path="routQSlinksStackErrSqr.csv")
 ```
 
 include min distance instead of l1 as a pessimism

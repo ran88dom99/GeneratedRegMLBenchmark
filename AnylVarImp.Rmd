@@ -26,10 +26,10 @@ resetACE <- read_csv("test after which reset.csv")
 names(resetACE)<-c("date","model","task","fold","cv","arch","arch2","pc")
 #QSlinkImp3ACE <- read_csv("importanceQSlink3ACEREBOUTwindowsx64.csv",col_types = col_typed)
 #summary(QSlink3ACE[,1:30])
- spec(QSlink3ACE)
+ #spec(QSlink3ACE)
  prACE<-problems(QSlink3ACE)
  unique(prACE$actual)
- prACE[!str_detect(prACE$actual,"columns"),]
+ #prACE[!str_detect(prACE$actual,"columns"),]
  rowrem<-prACE[!str_detect(prACE$actual,"columns"),]$row
  QSlink3ACE<-QSlink3ACE[-rowrem,]
  setwd(file.path(mainDir))
@@ -42,14 +42,14 @@ QSlink3HOP <- read_csv("importanceQSlink3HOPPERwindowsx64.csv",col_types = col_t
 resetHOP <- read_csv("test after which reset.csv")
 names(resetHOP)<-c("date","model","task","fold","cv","arch","arch2","pc")
 #summary(QSlink3ACE[,1:30])
- spec(QSlink3HOP)
+ #spec(QSlink3HOP)
  prHOP<-problems(QSlink3HOP)
  unique(prHOP$actual)
- prHOP[!str_detect(prHOP$actual,"columns"),]
+ #prHOP[!str_detect(prHOP$actual,"columns"),]
   rowrem<-prHOP[!str_detect(prHOP$actual,"columns"),]$row
  QSlink3HOP<-QSlink3HOP[-rowrem,]
  setwd(file.path(mainDir))
- names(QSlink3HOP)
+ #names(QSlink3HOP)
  
   resultDir<-"LAPTOPBBQ"
 #setwd(resultDir)
@@ -58,10 +58,10 @@ QSlink3BBQ <- read_csv("importanceQSlink3LAPTOPBBQwindowsx64.csv",col_types = co
 resetBBQ <- read_csv("test after which reset.csv")
 names(resetBBQ)<-c("date","model","task","fold","cv","arch","arch2","pc")
 #summary(QSlink3ACE[,1:30])
- spec(QSlink3BBQ)
+ #spec(QSlink3BBQ)
  prBBQ<-problems(QSlink3BBQ)
  unique(prBBQ$actual)
- prBBQ[!str_detect(prBBQ$actual,"columns"),] 
+ #prBBQ[!str_detect(prBBQ$actual,"columns"),] 
  rowrem<-prBBQ[!str_detect(prBBQ$actual,"columns"),]$row
  QSlink3BBQ<-QSlink3BBQ[-rowrem,]
  setwd(file.path(mainDir))
@@ -85,9 +85,11 @@ reset2<-as.data.table(resetBBQ)
 
 reset<-rbindlist(list(reset,reset1,reset2),fill = T,idcol=T)
 rm(reset1,reset2,resetACE,resetHOP,resetBBQ)
+gc()
 ```
 check rename remove nas
 ```{r}
+print("any fails in 4th and fifith coulums? success and transtarg")
 sum(str_detect(DF$X4,"FAIL"),na.rm = T)
 sum(str_detect(DF$X5,"FAIL"),na.rm = T)
 #str(DF)
@@ -112,24 +114,33 @@ DF[(is.na(Val29) & is.na(Val27)),]
 DF[(is.infinite(Val29)),]
 DF<-DF[!(is.na(Val29) & is.na(Val27)),]
 DF<-DF[!(is.infinite(Val29)),]
+print("summary of first and 4th and 5th valuse")
 summary((DF$Val19));summary((DF$Val29));summary((DF$Val27))
 ```
-by task, using melt eh, get all remotley useful variables and graph best ones
+poor organization; separated and duplicated results per each recipe into tiddy table
 ```{r}
-  why<-rbindlist(list(Unqn,Unqf),use.names =F)
- why<-why[(transTarg==2)]
- strt<-which(names(Unq)=="X47")
-nnd<-which(names(Unq)=="datePOSIX") -1
- why[,keyErrors:=paste0(keyMiss,algomodel)]
+cols<-which(str_detect(names(DF),fixed("Col")))
+vals<-which(str_detect(names(DF),fixed("Val")))
+(fir<-min(cols))
+(endd<-max(cols))
+(lst<-max(cols))
+if(lst==dim(DF)[2]) {
+  DF[,(lst):=NULL]
+  cols<-cols[-length(cols)]
+  lst<-lst-2
+}#dim(DF)
+ strt<-fir#names(DF)[strt]
+nnd<-lst+1
+ DF[,keyVarImp:=paste0(modelset, model, transTarg, task, transform, expirament)]
 
-prd<-data.table(trg=prf$val)
-i<-unique(why$keyErrors)[1]
+prd<-data.table(allColNm=unique(as.vector(DF[,(cols),with=F][[1]])))
+i<-unique(DF$keyVarImp)[1]
 
-for(i in unique(why$keyErrors)){
-  wrk<-why[(keyErrors==i)][,(strt:nnd),with=F]
+for(i in unique(DF$keyVarImp)){
+  wrk<-DF[(keyVarImp==i)][,(strt:nnd),with=F]
   wrk<-unique(wrk)
-  indx<-as.integer(unlist(wrk[,seq(by=2,from=1,to=dim(wrk)[2]),with=F]))
-  val<-as.integer(unlist(wrk[,seq(by=2,from=2,to=dim(wrk)[2]),with=F]))
+  indx<-(unlist(wrk[,seq(by=2,from=1,to=dim(wrk)[2]),with=F]))
+  val<-(unlist(wrk[,seq(by=2,from=2,to=dim(wrk)[2]),with=F]))
   unique(indx)
   unique(val)
   wrk<-data.table(indx,val)
@@ -141,21 +152,92 @@ for(i in unique(why$keyErrors)){
   wrk[,val:=mean(val),by=indx]
   wrk<-unique(wrk)
   if(dim(wrk)[1]!=length(unique(wrk$indx))) stop("more work, multiple valuse for same index")
-  prd[wrk$indx,paste0(i,"val"):=wrk$val]
-  prd[wrk$indx,paste0(i,"sd"):=wrk$sdw]
+  names(wrk)<-c("indx",paste0(i,"val"),paste0(i,"sd"),paste0(i,"N"))
+  merge(prd, wrk,  by.x = "allColNm", by.y = "indx", all = T)
 }
 prd
 length(names(prd))#removed transformed target so not 601
 names(prd)[c(1,2,3,6,7,8,15,16,17)]
 
-require(stringr)
-vals<-str_detect( names(prd), "val")
-sds<-str_detect( names(prd), "sd")
-attach missing names from original files
+```
+ordered by highest multi column into melted long one "colname" one value
 ```{r}
+if(F){
+cols<-which(str_detect(names(DF),fixed("Col")))
+vals<-which(str_detect(names(DF),fixed("Val")))
+(fir<-min(cols))
+(endd<-max(cols))
+(lst<-max(cols))
+if(lst==dim(DF)[2]) {
+  DF[,(lst):=NULL]
+  cols<-cols[-length(cols)]
+  lst<-lst-2
+}
 
+if(F){
+allcols<-unique(as.vector(DF[,(cols),with=F][[1]]))
+allcols[which(str_detect(allcols,"V")==F)]
+for(i in 1:length(cols)){
+print(paste(i,sum(str_detect(DF[,(cols[i]),with=F][[1]],fixed("QSlinks115_60centernscale2QSlink3regr.randomForestval")))))
+}
+DF[(str_detect(DF[,(cols[2]),with=F][[1]],fixed("QSlinks115_60centernscale2QSlink3regr.randomForestval")))]
+}
+
+#create key and remove all in key then 
+#make 3 column long table of key col val 
+#require 8 gb of ram. NVM 
+#cast the very long table to make it wide
+ 
+ DF$keyVarImp[1:30]
+ 
+ rmcols<-names(DF)[1:(fir-1)]
+for(i in rmcols) DF[,(i):=NULL] #i<-allcols[3]
+ 
+cols<-which(str_detect(names(DF),fixed("Col")))
+vals<-which(str_detect(names(DF),fixed("Val")))
+(fir<-min(cols))
+(endd<-max(cols))
+(lst<-max(cols))
+if(lst==dim(DF)[2]) {
+  DF[,(lst):=NULL]
+  cols<-cols[-length(cols)]
+  lst<-lst-2
+}
+
+mint<-data.table()
+whereVarimp<-dim(DF)[2]
+for(i in cols){#i<-cols[3]
+  hold<-DF[,c(i,(i+1),whereVarimp),with=F]
+  hold<-hold[!(is.na(hold[,(1),with=F][[1]]) | is.na(hold[,(2),with=F][[1]]))]
+  mint<-rbindlist(list(mint,hold),use.names = F)
+}
+rm(DF);gc()
+}
+```
+time to cast melted data
+```{r}
+if(F){
+require(reshape2)
+names(mint);str(mint)
+#
+mint[(is.na(as.numeric(Val19)))]
+mint$Val19<-as.numeric(mint$Val19)
+dcast(mint,Col18 ~ Val19, mean)
+?dcast
+
+
+
+names(airquality) <- tolower(names(airquality))
+aqm <- melt(airquality, id=c("month", "day"), na.rm=TRUE)
+
+acast(aqm, day ~ month ~ variable)
+acast(aqm, month ~ variable, mean)
+acast(aqm, month ~ variable, mean, margins = TRUE)
+dcast(aqm, month ~ variable, mean, margins = c("month", "variable"))
+}
 ```
 
+by task get all remotley useful variables and graph best ones
 ```{r}
 
 ```
