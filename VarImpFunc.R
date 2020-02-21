@@ -1,14 +1,53 @@
 #ExplDALEX for allmodel
-library("DALEX")
+require("DALEX")
 
-varimperm<-function(custom_predict, modeltp, X, Y, n_sample = 200, metpack = "unk")
+varimperm<-function(custom_predict, modeltp, X, Y, n_sample = 5, metpack = "unk", lossfunction="none")
   {
+
+  fail.try.vif=T
+  if((mean.improvement<.05) && (Rsqd<.05)){return(NULL)}
+  #permutation causes extra variability; more error than expected.
+  #eg variable with few great spikes translate into double the "empty" error
+  #if mean or mode is used the actual missing variance should be found?
+  if(lossfunction=="none"){
+    lossfunction<-function(trg,modl,ndta){
+      return(sqrt(mean((custom_predict(modl, ndta) - trg)^2)))
+    }
+  }
+  
+  if(T){try({ 
+    #for each column
+    #set it to each (mean , median , mode, 0, multiple permutations)
+    #calculate rmse for them and compare via newrmse /oldrmse ?
+    #minimal is the correct change because I am looking for a variable  
+    #that is empty of info but disturbs the system least
+    stop(stop(stop(stop())))
+    varImpMix <- as.character(round(proc.time()[3]-when[3]))
+    for(i in 1:dim(X)[2]){
+      A <- X
+      A[,i] <- mean(A[,i])
+      nMnE <- lossfunction(Y,modeltp, A)
+      A <- X
+      A[,i] <- median(A[,i])
+      A <- X
+      A[,i] <- mode(A[,i])
+      nMoE <- lossfunction(Y,modeltp, A)
+      A[,i] <- 0
+      nZeE <- lossfunction(Y,modeltp, A)
+      A[,i] <- A[sample.int(dim(A)[1]),i]
+      A <- X
+      nPerE <- lossfunction(Y,modeltp, A)
+      solv <- min(nMnE,nMdE,nMoE,nZeE,nPerE)
+      varImpMix <- paste(varImpMix,names(X)[i],signif(solv,digits = 4), sep = ",")
+    }
+    fail.try.vif=F
+    metpack <- paste(metpack,"minEmpt",sep = "_")
+  })}
   ###VARIEBLE IMPORTANCE USING FRIEDMANS PERMUTE
   #n_sample : time to spend 
   #metpack is just an addition to name
-  fail.try.vif=T
-  if((mean.improvement<.05) && (Rsqd<.05)){return(NULL)}
-  try({ 
+  
+  if(F){try({ 
     when<-proc.time()
     set.seed(seed=seed.var)
     expl_reg <- DALEX::explain(modeltp, data=X, y=Y,
@@ -19,16 +58,19 @@ varimperm<-function(custom_predict, modeltp, X, Y, n_sample = 200, metpack = "un
 
     #noVarImp.models=c("parRF")#var imp crashes with these models
     #if(allmodel %in% noVarImp.models){next()}#
-
-    Rseed <- .Random.seed[1]
-    Cseed <- .Random.seed[2]
-    metpack <- paste(metpack,"permute",sep = "_")
-    
     varImpMix <- as.character(round(proc.time()[3]-when[3]))#varImpMix<-vector(mode="character",length = length(colNms)*2)
     for(i in 2:(length(vi_reg[,2])-1)){
       #varImpMix[i*2]<-colNms[i] ; varImpMix[i*2+1]<-colImpor[i]
       varImpMix<-paste(varImpMix,vi_reg[i,1],signif(vi_reg[i,2],digits = 4), sep = ",")
     }
+    fail.try.vif=F
+    metpack <- paste(metpack,"permute",sep = "_")
+  })}
+    Rseed <- .Random.seed[1]
+    Cseed <- .Random.seed[2]
+
+    
+
     write.table(paste(metpack,allmodel,date(),round(mean.improvement,digits=3),trans.y,
                       datasource,missingdata,withextra,norming,which.computer,task.subject,
                       FN,high.fold,Rseed,Cseed,seed.var,
@@ -36,8 +78,8 @@ varimperm<-function(custom_predict, modeltp, X, Y, n_sample = 200, metpack = "un
                 file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
                 eol = "\n", na = "NA", dec = ".", row.names = F,
                 col.names = F, qmethod = "double")
-    fail.try.vif=F
-  })
+
+  
   if (fail.try.vif==T) {
     write.table(paste(metpack,allmodel,date(),"FAIL",  sep = ","),
                 file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",

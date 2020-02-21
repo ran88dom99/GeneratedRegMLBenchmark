@@ -1,6 +1,8 @@
 ---
 title: "Variable importance"
 ---
+DALEX produced rediculous valuse but it's main "added to model or not" 1 count does accomplish something. Will rewrite Varimp code and run this notebook with next expirament. 
+
 load all varimp files and check problems and remove some problems
 ```{r}
 col_typed <- "cccddccccccddddddcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
@@ -116,134 +118,14 @@ DF<-DF[!(is.na(Val29) & is.na(Val27)),]
 DF<-DF[!(is.infinite(Val29)),]
 print("summary of first and 4th and 5th valuse")
 summary((DF$Val19));summary((DF$Val29));summary((DF$Val27))
-```
-poor organization; separated and duplicated results per each recipe into tiddy table
-```{r}
-cols<-which(str_detect(names(DF),fixed("Col")))
-vals<-which(str_detect(names(DF),fixed("Val")))
-(fir<-min(cols))
-(endd<-max(cols))
-(lst<-max(cols))
-if(lst==dim(DF)[2]) {
-  DF[,(lst):=NULL]
-  cols<-cols[-length(cols)]
-  lst<-lst-2
-}#dim(DF)
- strt<-fir#names(DF)[strt]
-nnd<-lst+1
- DF[,keyVarImp:=paste0(modelset, model, transTarg, task, transform, expirament)]
 
-prd<-data.table(allColNm=unique(as.vector(DF[,(cols),with=F][[1]])))
-i<-unique(DF$keyVarImp)[1]
-
-for(i in unique(DF$keyVarImp)){
-  wrk<-DF[(keyVarImp==i)][,(strt:nnd),with=F]
-  wrk<-unique(wrk)
-  indx<-(unlist(wrk[,seq(by=2,from=1,to=dim(wrk)[2]),with=F]))
-  val<-(unlist(wrk[,seq(by=2,from=2,to=dim(wrk)[2]),with=F]))
-  unique(indx)
-  unique(val)
-  wrk<-data.table(indx,val)
-  wrk$val<-as.numeric(wrk$val)
-  dim(wrk)
-  wrk<-wrk[(order(indx))]
-  wrk[,sdw:=sd(val),by=indx]
-  wrk[,Nw:=.N,by=indx]
-  wrk[,val:=mean(val),by=indx]
-  wrk<-unique(wrk)
-  if(dim(wrk)[1]!=length(unique(wrk$indx))) stop("more work, multiple valuse for same index")
-  names(wrk)<-c("indx",paste0(i,"val"),paste0(i,"sd"),paste0(i,"N"))
-  merge(prd, wrk,  by.x = "allColNm", by.y = "indx", all = T)
-}
-prd
-length(names(prd))#removed transformed target so not 601
-names(prd)[c(1,2,3,6,7,8,15,16,17)]
-
-```
-ordered by highest multi column into melted long one "colname" one value
-```{r}
-if(F){
-cols<-which(str_detect(names(DF),fixed("Col")))
-vals<-which(str_detect(names(DF),fixed("Val")))
-(fir<-min(cols))
-(endd<-max(cols))
-(lst<-max(cols))
-if(lst==dim(DF)[2]) {
-  DF[,(lst):=NULL]
-  cols<-cols[-length(cols)]
-  lst<-lst-2
-}
-
-if(F){
-allcols<-unique(as.vector(DF[,(cols),with=F][[1]]))
-allcols[which(str_detect(allcols,"V")==F)]
-for(i in 1:length(cols)){
-print(paste(i,sum(str_detect(DF[,(cols[i]),with=F][[1]],fixed("QSlinks115_60centernscale2QSlink3regr.randomForestval")))))
-}
-DF[(str_detect(DF[,(cols[2]),with=F][[1]],fixed("QSlinks115_60centernscale2QSlink3regr.randomForestval")))]
-}
-
-#create key and remove all in key then 
-#make 3 column long table of key col val 
-#require 8 gb of ram. NVM 
-#cast the very long table to make it wide
- 
- DF$keyVarImp[1:30]
- 
- rmcols<-names(DF)[1:(fir-1)]
-for(i in rmcols) DF[,(i):=NULL] #i<-allcols[3]
- 
-cols<-which(str_detect(names(DF),fixed("Col")))
-vals<-which(str_detect(names(DF),fixed("Val")))
-(fir<-min(cols))
-(endd<-max(cols))
-(lst<-max(cols))
-if(lst==dim(DF)[2]) {
-  DF[,(lst):=NULL]
-  cols<-cols[-length(cols)]
-  lst<-lst-2
-}
-
-mint<-data.table()
-whereVarimp<-dim(DF)[2]
-for(i in cols){#i<-cols[3]
-  hold<-DF[,c(i,(i+1),whereVarimp),with=F]
-  hold<-hold[!(is.na(hold[,(1),with=F][[1]]) | is.na(hold[,(2),with=F][[1]]))]
-  mint<-rbindlist(list(mint,hold),use.names = F)
-}
-rm(DF);gc()
-}
-```
-time to cast melted data
-```{r}
-if(F){
-require(reshape2)
-names(mint);str(mint)
-#
-mint[(is.na(as.numeric(Val19)))]
-mint$Val19<-as.numeric(mint$Val19)
-dcast(mint,Col18 ~ Val19, mean)
-?dcast
-
-
-
-names(airquality) <- tolower(names(airquality))
-aqm <- melt(airquality, id=c("month", "day"), na.rm=TRUE)
-
-acast(aqm, day ~ month ~ variable)
-acast(aqm, month ~ variable, mean)
-acast(aqm, month ~ variable, mean, margins = TRUE)
-dcast(aqm, month ~ variable, mean, margins = c("month", "variable"))
-}
-```
-
-by task get all remotley useful variables and graph best ones
-```{r}
 
 ```
 select best from pessimist file ! not finished just copied from outside
 ```{r}
 load(file="routuDFpessimistUnique.RData")
+
+if(F){
 (bestest<-Unq[(1)])
 nnd<-which(names(Unq)=="datePOSIX")
 strt<-which(names(Unq)=="btp8")
@@ -259,19 +141,196 @@ colord<-names(Unqf)
 ol<-length(colord)
 (colord<-c(colord[1:strt],colord[(ol-2):ol],colord[(strt+1):(nnd-4)],colord[(nnd):(ol-3)]))
 setcolorder(Unqf,colord)
-
+}
 ```
-by task, get all remotley useful variables and graph best ones
+before melting casting massaging w/e must separate by subject?
+otherwise calculation time and memory is huge
+poor organization; separated and duplicated results per each recipe into tiddy table
+FUNCTION to convert to sparse matrix
 ```{r}
 
+chosenToSparse<-function(datFr)
+{
+cols<-which(str_detect(names(datFr),fixed("Col")))
+vals<-which(str_detect(names(datFr),fixed("Val")))
+(fir<-min(cols))
+(endd<-max(cols))
+(lst<-max(cols))
+if(lst==dim(datFr)[2]) {
+  datFr[,(lst):=NULL]
+  cols<-cols[-length(cols)]
+  lst<-lst-2
+}#dim(datFr)
+ strt<-fir#names(datFr)[strt]
+nnd<-lst+1
+
+
+prd<-data.table(allColNm=unique(as.vector(datFr[,(cols),with=F][[1]])))
+length(unique(datFr$keyVarImp))
+i<-unique(datFr$keyVarImp)[10]
+
+for(i in unique(datFr$keyVarImp)){
+  wrk<-datFr[(keyVarImp==i)][,(strt:nnd),with=F]
+  wrk<-unique(wrk)
+  indx<-(unlist(wrk[,seq(by=2,from=1,to=dim(wrk)[2]),with=F]))
+  val<-(unlist(wrk[,seq(by=2,from=2,to=dim(wrk)[2]),with=F]))
+  unique(indx)
+  #unique(val)
+  wrk<-data.table(indx,val)
+  wrk$val<-as.numeric(wrk$val)
+  dim(wrk)
+  wrk<-wrk[(order(indx))]
+  #wrk[,sdw:=sd(val),by=indx]
+  #wrk[,Nw:=.N,by=indx]
+  wrk[,val:=mean(val),by=indx]
+  wrk<-unique(wrk)
+  if(dim(wrk)[1]!=length(unique(wrk$indx))) stop("more work, multiple valuse for same index")
+  names(wrk)<-c("indx",paste0(i,"val"))#,paste0(i,"sd"),paste0(i,"N"))
+  prd<-merge(prd, wrk,  by.x = "allColNm", by.y = "indx", all = T)
+}
+return(prd)
+}
+rm(datFr)
+ 
+ 
 ```
+
+select by task, run choice to sparse,
+
+```{r}
+require(stringr)
+Unq[,keyVarUnq:=paste0( algomodel, transTarg, task, transform, expirament)]
+DF[,keyVarImp:=paste0(modelset, model, transTarg, task, transform, expirament)]
+DF[,keyVarUnq:=paste0( model, transTarg, task, transform, expirament)]
+(tsks<-unique(Unq$task))
+#unique(DF$task)
+its<- "QSlinks03_95"#"QSlinks115_60"#tsks[1]
+DFs<-DF[(task == its )]
+prds<-chosenToSparse(DFs[(keyVarUnq %in% Unq$keyVarUnq)])
+#datFr<-DF[(task == its )]
+dim(prds)
+```
+ clean, outliers, features
+```{r}
+#implemented outlier removal by hand because didn't bother to lookup sparse matrix
+lic<-dim(prds)[2]
+IQn<-quantile(unlist(prds[,2:lic,with=F]),c(.01,.99),na.rm = T)
+IQr<-(IQn[2]-IQn[1])*2
+IQn[1]<-IQn[1]-IQr
+IQn[2]<-IQn[2]+IQr
+wiOut<-names(prds)[which(apply(prds[,2:lic,with=F],2,max,na.rm=T)>IQn[2] | apply(prds[,2:lic,with=F],2,min,na.rm=T)< IQn[1])+1]
+i<-wiOut[1]
+for(i in wiOut){
+  toobig<-as.vector(prds[,i,with=F]>IQn[2])
+  toobig[is.na(toobig)]<-F
+  prds[(toobig),(i):=IQn[2]]
+  toobig<-as.vector(prds[,i,with=F]<IQn[1])
+  toobig[is.na(toobig)]<-F
+  prds[(toobig),(i):=IQn[1]]
+} 
+
+nonna<-function(x){
+  return(sum(!is.na(x)))
+}  
+prds$countVar<-apply(prds[,2:lic,with=F],1,nonna)
+prds$minVar<-apply(prds[,2:lic,with=F],1,min,na.rm=T)
+prds$maxVar<-apply(prds[,2:lic,with=F],1,max,na.rm=T)
+prds$meanVar<-apply(prds[,2:lic,with=F],1,mean,na.rm=T)
+```
+plots to understand Varimp
+```{r}
+
+plot(prds$countVar, prds$maxVar)
+plot(prds$countVar, prds$meanVar)
+hist(prds$countVar)
+hist(prds$meanVar)
+plot(prds$minVar, prds$maxVar)
+plot(prds$meanVar, prds$maxVar)
+#prds[(order(meanVar))]$allColNm
+```
+at this point about to give up because converting column names would be hard and code to fix exists but lets see it anyway
+```{r}
+actNamesQSlinks03_95 <- c("page","searxinstance","tries","success","time","isPDF","enginebing","engineduckduckgo","enginefaroo","engineggl","enginegoogle","enginegoogle_scholar","enginemojeek","engineyacy","engineyahoo","string.connectordb.","string.markwk.","string.open.humans.","string.open.mhealth.","string.personal_dashboard.","stringBiofourmis","stringBodyTrack","stringconnectordb.io","stringexist.io","stringFitnessSyncer.fluxtream","stringFitnessSyncer.HealthKit","stringFitnessSyncer.zenobase","stringfluxtream.zenobase","stringHealthKit","stringHealthKit.BodyTrack.exist.io","stringHealthKit.BodyTrack.humanapi.co","stringHealthKit.BodyTrack.open.humans"," "," "," "," "," "," ","stringHealthKit.fluxtream.zenobase","stringHealthKit.humanapi.co.betterself.io","stringHealthKit.humanapi.co.connectordb.io","stringHealthKit.humanapi.co.gyrosco.pe","stringHealthKit.humanapi.co.open.humans","stringHealthKit.humanapi.co.open.mhealth","stringHealthKit.humanapi.co.openhumans.org","stringHealthKit.humanapi.co.openmhealth.org","stringHealthKit.tapiriik.connectordb.io","stringHealthKit.tapiriik.gyrosco.pe","stringHealthKit.tapiriik.open.mhealth","stringHealthKit.tapiriik.zenobase","stringHealthKit.tictrac.exist.io","stringHealthKit.tictrac.fluxtream","stringHealthKit.tictrac.gyrosco.pe","stringHealthKit.tictrac.humanapi.co","stringHealthKit.tictrac.open.humans","stringHealthKit.tictrac.open.mhealth","stringHealthKit.tictrac.zenobase","stringHealthKit.validic.BodyTrack","stringHealthKit.validic.exist.io","stringHealthKit.validic.fluxtream","stringHealthKit.validic.gyrosco.pe","stringHealthKit.validic.humanapi.co","stringHealthKit.validic.open.humans","stringHealthKit.validic.open.mhealth","stringHealthKit.validic.openmhealth.org","stringHealthKit.validic.tictrac","stringHealthKit.validic.zenobase","stringHealthKit.zenobase.betterself.io","stringHealthKit.zenobase.connectordb.io","stringHealthKit.zenobase.gyrosco.pe","stringHealthKit.zenobase.open.humans","stringHealthKit.zenobase.open.mhealth","stringHealthKit.zenobase.openmhealth.org","stringhealthvault","stringopen.mhealth","stringopenhumans.org","stringopenmhealth.org","stringpersonal_dashboard","stringqs_ledger","stringtictrac","stringtsubery.quantifier","stringvalidic","sCntQstr","sCntEngine","sRareSite","sRareQstr","sRareEngine","s.score","sRank","sStrongSubQstr","searchCount","sSearchBrevity","sRareSiteBySearch","sSimpleBySearch","sLinProBySearch","sDnchar","sDiNA","fluxtream","healthvault","tapiriik","tictrac","humanapi.co","zenobase","exist.io","quantimodo","openmhealth.org","betterself.io","connectordb.io","connectordb","qs_ledger","tsubery","quantifiedmind","habitica","vitadock","openhumans","humanapi","openmhealth","sDCountWords","sDUWfract","sDUWlog","sDUWsqrt","pageMin","pageMax","searxinstanceMax","triesMax","successMax","timeMax","enginebingMax","engineduckduckgoMax","enginegglMin","enginegglMax","enginegoogleMax","enginegoogle_scholarMax","enginemojeekMax","engineqwantMax","engineredditMax","engineseznamMax","enginestartpageMax","engineyacyMax","engineyahooMax","string.connectordb.Min","string.connectordb.Max","string.markwk.Max","string.open.humans.Min","string.open.humans.Max","string.open.mhealth.Max","string.personal_dashboard.Max","stringBodyTrackMax","stringconnectordb.ioMin","stringexist.ioMax","stringFitnessSyncerMax","stringfluxtreamMin","stringfluxtreamMax","stringfluxtream.zenobaseMax","stringHealthKitMin","stringHealthKit.BodyTrack.connectordb.ioMax","stringHealthKit.BodyTrack.exist.ioMax","stringHealthKit.BodyTrack.humanapi.coMax","stringHealthKit.BodyTrack.open.humansMax"," "," "," "," stringHealthKit.BodyTrack.zenobaseMax","stringHealthKit.fluxtream.exist.ioMax","stringHealthKit.fluxtream.open.humansMax","stringHealthKit.fluxtream.open.mhealthMax","stringHealthKit.fluxtream.openhumans.orgMax","stringHealthKit.fluxtream.openmhealth.orgMax","stringHealthKit.fluxtream.zenobaseMax","stringHealthKit.healthvaultMax","stringHealthKit.humanapi.co.gyrosco.peMax","stringHealthKit.humanapi.co.open.mhealthMax","stringHealthKit.humanapi.co.openhumans.orgMax")#
+otherhalf <- c("stringHealthKitlthMin","stringHeargMax","stringHealthKit.humanapitsubery.quantifierMax","stringHealthKit.tapiriik.gyrosco.peMax","stringHealthKit.tapiriik.open.mhealthMax","stringHealthKit.tapiriik.zenobaseMax","stringHealthKit.tictrac.exist.ioMax","stringHealthKit.tictrac.fluxtreamMax","stringHealthKit.tictrac.gyrosco.peMax","stringHealthKit.tictrac.humanapi.coMax","stringHealthKit.tictrac.openhumans.orgMax","stringHealthKit.tictrac.openmhealth.orgMax","stringHealthKit.tictrac.zenobaseMax","stringHealthKit.validic.BodyTrackMax","stringHealthKit.validic.connectordb.ioMax","stringHealthKit.validic.exist.ioMax","stringHealthKit.validic.fluxtreamMax","stringHealthKit.validic.gyrosco.peMax","stringHealthKit.validic.humanapi.coMax","stringHealthKit.validic.markwkMax","stringHealthKit.validic.open.humansMax","stringHealthKit.validic.open.mhealthMax","stringHealthKit.validic.openhumans.orgMax","stringHealthKit.validic.openmhealth.orgMax","stringHealthKit.validic.tictracMax","stringHealthKit.validic.zenobaseMax","stringHealthKit.zenobase.betterself.ioMax","stringHealthKit.zenobase.gyrosco.peMin","stringHealthKit.zenobase.gyrosco.peMax","stringHealthKit.zenobase.markwkMax","stringHealthKit.zenobase.open.humansMax","stringHealthKit.zenobase.openmhealth.orgMax","stringHealthKit.zenobase.quantimodoMax","stringHealthKit.zenobase.tsubery.quantifierMin","stringhealthvaultMax","stringhuman.apiMax","stringmyfitnesspalMax","stringopen.mhealthMax","stringopenhumans.orgMax","stringopenmhealth.orgMin","stringqs_ledgerMax","stringquantimodoMin","stringvalidicMax","stringzenobaseMax","sRareQstrMin","sRareQstrMax","sRareEngineMax","sRankMin","searchCountMin","searchCountMax","sSearchBrevityMin","sRareSiteBySearchMin","sRareSiteBySearchMax","sSimpleBySearchMin","sSimpleBySearchMax","sLinProBySearchMin","sLinProBySearchMax")
+#
+#print(actNamesQSlinks03_95)
+#print(otherhalf)
+actNamesQSlinks03_95<-c(actNamesQSlinks03_95,otherhalf)
+```
+
+```{r}
+actNamesQSlinks115_60<-c("page","tries","isPDF","engineduckduckgo","enginegoogle","engineyahoo","stringBiofourmis","stringFitnessSyncer.HealthKit","stringHealthKit.BodyTrack.exist.io","stringHealthKit.BodyTrack.humanapi.co","stringHealthKit.fluxtream.open.humans","stringHealthKit.fluxtream.open.mhealth","stringHealthKit.humanapi.co.connectordb.io","stringHealthKit.humanapi.co.open.mhealth","stringHealthKit.humanapi.co.openmhealth.org","stringHealthKit.tictrac.fluxtream","stringHealthKit.tictrac.humanapi.co","stringHealthKit.tictrac.open.mhealth","stringHealthKit.validic.BodyTrack","stringHealthKit.validic.exist.io","stringHealthKit.validic.gyrosco.pe","stringHealthKit.validic.humanapi.co","stringHealthKit.validic.open.mhealth","stringHealthKit.validic.openmhealth.org","stringHealthKit.zenobase.betterself.io","stringHealthKit.zenobase.gyrosco.pe","stringHealthKit.zenobase.open.mhealth","sRareSite","sStrongSubQstr","sRareSiteBySearch","sDiNA","healthvault","humanapi.co","vitadock","open mhealth","sDUWfract","pageMin","searxinstanceMax","enginegglMin","enginegoogle_scholarMax","engineyacyMax","stringBodyTrackMax","stringexist.ioMax","stringfluxtream.zenobaseMax","stringHealthKit.BodyTrack.openmhealth.orgMax","stringHealthKit.fluxtream.openmhealth.orgMax","stringHealthKit.humanapi.co.openhumans.orgMax","stringHealthKit.tapiriik.gyrosco.peMax","stringHealthKit.tapiriik.open.mhealthMax","stringHealthKit.tictrac.exist.ioMax","stringHealthKit.tictrac.gyrosco.peMax","stringHealthKit.tictrac.openmhealth.orgMax","stringHealthKit.tictrac.zenobaseMax","stringHealthKit.validic.open.humansMax","stringHealthKit.zenobase.connectordb.ioMax","stringHealthKit.zenobase.gyrosco.peMax","stringHealthKit.zenobase.openmhealth.orgMax","stringzenobaseMax","sRareQstrMax","sSimpleBySearchMin")
+
+
+for(i in length(actNamesQSlinks03_95):1){
+(prds$allColNm<-str_replace(prds$allColNm,paste0("V",i),actNamesQSlinks03_95[i]))
+}
+prds[(order(meanVar))]$allColNm[1:30]
+prds[(order(maxVar))]$allColNm[1:30]
+prds[(order(countVar))]$allColNm[1:30]
+```
+alt mean that equates all ignored with 1
+```{r}
+
+i<-names(prds)[-1][17]
+for(i in 2:lic){
+  tfi<-(as.vector(is.na(prds[,i,with=F])))
+  prds[(tfi),(i):=1]
+} #prds[(tfi)] #prds[,(i),with=F]
+prds$oneMeanVar<-apply(prds[,2:lic,with=F],1,mean,na.rm=T)
+plot(prds$oneMeanVar,prds$meanVar)
+plot(prds$oneMeanVar,prds$maxVar)
+plot(prds$oneMeanVar,prds$countVar)
+
+prds[(order(oneMeanVar))]$allColNm[1:30]
+```
+what was the varimp formula?
+what the 0 -5 and huge + mean?
+Bunch of nans and infs
+Normalization is a pita; some runs had bigger RMSE ranges because of transform.
+maybe should have used min change (mean , median , 0, permute) instead of permutation?
+Goal is to approximate importance of this feature to overall model performance but seems like everything overshoots!
+```{r}
+aggsum<-data.frame(sum=sapply(prds[,2:lic,with=F], sum, na.rm=TRUE),
+sd=sapply(prds[,2:lic,with=F], sd, na.rm=TRUE))
+plot(aggsum$sd,aggsum$sum)
+aggsum$sum[order(aggsum$sum)]
+```
+what percent of the usefullness of model cause dby each feature?
+kind of cramming broken data into seemingly good form
+ok now I feel like standardizing; all less than 1 set to 1 , log 
+subtract 1 from all, divide all by column's sum
+```{r}
+i<-names(prds)[-1][17]
+for(i in 2:lic){
+  tfi<-(as.vector((prds[,i,with=F])<1))
+  prds[(tfi),(i):=1]
+  intrm<-log(prds[,i,with=F])
+  intrm<-intrm/sum(intrm)
+  prds[,(i):=intrm]
+}  
+prds$minVarN<-apply(prds[,2:lic,with=F],1,min,na.rm=T)
+prds$maxVarN<-apply(prds[,2:lic,with=F],1,max,na.rm=T)
+prds$meanVarN<-apply(prds[,2:lic,with=F],1,mean,na.rm=T)
+```
+now plot it ? 
+nope this data is useless. will come back to it whenever i fix and figure out whatever dalex did
+```{r}
+plot(prds$maxVarN,prds$meanVarN)
+plot(prds$oneMeanVar,prds$maxVarN)
+
+
+prds[(order(maxVarN))]$allColNm[1:30]
+prds[(order(meanVarN))]$allColNm[1:30]
+```
+
 look for highly uncorrelated recipies
 by task select single best model and add to possiblyUniq
 then those models that most strongly discorrelate are also added
+Since features should be uncorrelated? A rare column effectively used indicates uniqueness? or just cluster?
 ```{r}
 
 ```
-
 
 
 
