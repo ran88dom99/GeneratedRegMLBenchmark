@@ -206,6 +206,7 @@ DF[,keyVarUnq:=paste0( model, transTarg, task, transform, expirament)]
 #unique(DF$task)
 its<- "QSlinks03_95"#"QSlinks115_60"#tsks[1]
 DFs<-DF[(task == its )]
+DFs<-DFs[(str_detect(modelset,fixed("hold")) )]
 prds<-chosenToSparse(DFs[(keyVarUnq %in% Unq$keyVarUnq)])
 #datFr<-DF[(task == its )]
 dim(prds)
@@ -215,9 +216,10 @@ dim(prds)
 #implemented outlier removal by hand because didn't bother to lookup sparse matrix
 lic<-dim(prds)[2]
 IQn<-quantile(unlist(prds[,2:lic,with=F]),c(.01,.99),na.rm = T)
-IQr<-(IQn[2]-IQn[1])*2
+IQr<-(IQn[2]-IQn[1])*20
 IQn[1]<-IQn[1]-IQr
 IQn[2]<-IQn[2]+IQr
+if((IQn[2]-IQn[1] > 10)){
 wiOut<-names(prds)[which(apply(prds[,2:lic,with=F],2,max,na.rm=T)>IQn[2] | apply(prds[,2:lic,with=F],2,min,na.rm=T)< IQn[1])+1]
 i<-wiOut[1]
 for(i in wiOut){
@@ -228,7 +230,7 @@ for(i in wiOut){
   toobig[is.na(toobig)]<-F
   prds[(toobig),(i):=IQn[1]]
 } 
-
+}
 nonna<-function(x){
   return(sum(!is.na(x)))
 }  
@@ -296,7 +298,7 @@ sd=sapply(prds[,2:lic,with=F], sd, na.rm=TRUE))
 plot(aggsum$sd,aggsum$sum)
 aggsum$sum[order(aggsum$sum)]
 ```
-what percent of the usefullness of model cause dby each feature?
+what percent of the usefullness of model caused by each feature?
 kind of cramming broken data into seemingly good form
 ok now I feel like standardizing; all less than 1 set to 1 , log 
 subtract 1 from all, divide all by column's sum
