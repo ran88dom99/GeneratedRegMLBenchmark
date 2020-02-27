@@ -23,7 +23,7 @@ imp = impute(testing, classes = list(numeric = 0),
 testing<-imp$data
 
 configureMlr(on.learner.error = "warn")
-regr.task = makeRegrTask(id = "recc", data = training, target = "V1")
+regr.task = makeRegrTask(id = "recc", data = training, target = names(training)[1])
 mlrallmodels<-listLearners("regr")
 
 resampler<-makeResampleDesc("CV",iters=mlr.iters)
