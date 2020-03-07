@@ -23,6 +23,7 @@ list.of.packages <- c("DALEX","ddalpha","dplyr","gtools","reticulate","AlgDesign
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages, dep = TRUE)
 
+tempDF<-data.frame()#record best constant for var importance
 
 #install.packages("mlr", dependencies = c("Depends", "Suggests"))
 #install.packages("caret", dependencies = c("Depends", "Suggests"))

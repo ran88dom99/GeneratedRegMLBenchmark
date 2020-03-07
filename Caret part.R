@@ -139,7 +139,7 @@ failfail()
         #varImpMix[i*2]<-colNms[i] ; varImpMix[i*2+1]<-colImpor[i]
         varImpMix<-paste(varImpMix,colNms[i],colImpor[i], sep = ",")
       }
-       write.table(paste("caret",allmodel,date(),round(mean.improvement,digits=3),trans.y,
+       write.table(paste("caret_base",allmodel,date(),round(mean.improvement,digits=3),trans.y,
                          datasource,missingdata,withextra,norming,which.computer,task.subject,
                          FN,high.fold,Rseed,Cseed,seed.var,
                          varImpMix,  sep = ","),
@@ -148,19 +148,19 @@ failfail()
                   col.names = F, qmethod = "double")
       fail.try=F
     })
-    if(fail.try==F){
-      try({
+    #if(fail.try==F){
+    try({
         #object=sl_lasso; newdata=X_holdout
         custom_predict <- function(object, newdata) {
           pred <- predict(object, newdata) 
           return(pred)
         }
         varimperm(custom_predict=custom_predict, modeltp=trainedmodel,
-                  X=testing[,-1], Y=testing[,1], metpack = "caret_hold")
-        varimperm(custom_predict=custom_predict, modeltp=trainedmodel,
-                  X=training[,-1], Y=training[,1], metpack = "caret_train")
-      })
-    }
+                  X=testing[,-1], Y=testing[,1],R=training[,-1], metpack = "caret_hold")
+        #varimperm(custom_predict=custom_predict, modeltp=trainedmodel,
+        #          X=training[,-1], Y=training[,1],R=training[,-1], metpack = "caret_train")
+    })
+    #}
     if(fail.try==T){
       write.table(paste("caret",allmodel,date(),round(mean.improvement,digits=3),datasource,"Failed",  sep = ","),
                   file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",

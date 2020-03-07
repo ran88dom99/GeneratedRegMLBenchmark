@@ -22,6 +22,11 @@ check for NAs and convert to mean or 0
 prediction scores into squared errors (rank,norm,sqrd error)
 corrplot; intermodel correlations usualy bigger than target
 new datasets to check via AllAuto though maybe I should have left that to tpt
+
+restate goal notes; predict how close a prediction will by compring model outputs;
+if some models always agree when right that is a more certain predictor
+
+
 ```{r}
 require(readr)
 require(netCoin)
