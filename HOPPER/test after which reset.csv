@@ -383,3 +383,5 @@ Sat Feb 29 17:09:06 2020,regr.cubist,QSlinks04_90Int,5,5,windows,x64,HOPPER
 Sun Mar 01 17:09:39 2020,regr.cubist,QSlinks04_90Int,5,5,windows,x64,HOPPER
 Mon Mar 02 17:10:21 2020,regr.featureless,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Tue Mar 03 17:09:23 2020,regr.xgboost,QSlinks14_55Int,5,5,windows,x64,HOPPER
+Wed Mar 04 17:09:51 2020,regr.gbm,QSlinks115_60,5,5,windows,x64,HOPPER
+Thu Mar 05 11:51:16 2020,regr.randomForest,QSlinks115_60,5,5,windows,x64,HOPPER
