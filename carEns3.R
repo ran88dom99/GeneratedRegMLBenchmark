@@ -112,9 +112,9 @@ fail.try=T
           return(pred)
         }
         varimperm(custom_predict=custom_predict, modeltp=stack_ensemble,
-                  X=testing[,-1], Y=testing[,1], metpack = "carEns_hold")
+                  X=testing[,-1], Y=testing[,1], R=training[,-1], metpack = "carEns_hold")
         varimperm(custom_predict=custom_predict, modeltp=stack_ensemble,
-                  X=training[,-1], Y=training[,1], metpack = "carEns_train")
+                  X=training[,-1], Y=training[,1], R=training[,-1], metpack = "carEns_train")
         
           })
       }

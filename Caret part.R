@@ -157,8 +157,8 @@ failfail()
         }
         varimperm(custom_predict=custom_predict, modeltp=trainedmodel,
                   X=testing[,-1], Y=testing[,1],R=training[,-1], metpack = "caret_hold")
-        #varimperm(custom_predict=custom_predict, modeltp=trainedmodel,
-        #          X=training[,-1], Y=training[,1],R=training[,-1], metpack = "caret_train")
+        varimperm(custom_predict=custom_predict, modeltp=trainedmodel,
+                  X=training[,-1], Y=training[,1],R=training[,-1], metpack = "caret_train")
     })
     #}
     if(fail.try==T){

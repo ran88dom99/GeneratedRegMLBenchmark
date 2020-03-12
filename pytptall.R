@@ -154,10 +154,10 @@ for(retpop in c(25,1000)){
             return(pred)
           }
           varimperm(custom_predict=custom_predict, modeltp=ztpot,
-                    X=testing[,-1], Y=testing[,1], metpack = paste0("TPOT_hold_",itr.genr),
+                    X=testing[,-1], Y=testing[,1],R=training[,-1], metpack = paste0("TPOT_hold_",itr.genr),
                     n_sample = 10000)
           varimperm(custom_predict=custom_predict, modeltp=ztpot,
-                    X=training[,-1], Y=training[,1], metpack = paste0("TPOT_train_",itr.genr),
+                    X=training[,-1], Y=training[,1],R=training[,-1], metpack = paste0("TPOT_train_",itr.genr),
                     n_sample = 1000)
         })
       }

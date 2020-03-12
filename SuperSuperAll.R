@@ -90,9 +90,9 @@ for(itr in methodsz){
       return(pred)
     }
     varimperm(custom_predict=custom_predict, modeltp=fit_nnls,
-              X=X_holdout, Y=Y_holdout, metpack = "SLS_hold")
+              X=X_holdout, Y=Y_holdout,R=training[,-1], metpack = "SLS_hold")
     varimperm(custom_predict=custom_predict, modeltp=fit_nnls,
-              X=X_train, Y=Y_train, metpack = "SLS_train")
+              X=X_train, Y=Y_train,R=training[,-1], metpack = "SLS_train")
   }
   if(fail.try.main){    
 failfail()

@@ -12,9 +12,9 @@ require("DALEX")
 #check for spearman!! not "mean.improvement"
 
 varimperm <- function(custom_predict, modeltp, X, Y, R, n_sample = 20, metpack = "unk", lossfunction="pearson")
-  {
+{
   fail.try.vif=T
-
+  
   #permutation causes extra variability; more error than expected.
   #eg variable with few great spikes translate into double the "empty" error
   #if mean or mode is used the actual missing variance should be found?
@@ -43,7 +43,7 @@ varimperm <- function(custom_predict, modeltp, X, Y, R, n_sample = 20, metpack =
   }
   org <- lossf(Y,modeltp, X) 
   if((org<.05)){return(NULL)}
-try({ 
+  try({ 
     #for each column
     #set it to each (mean , median , mode, 0, multiple permutations)
     #calculate rmse for them and compare via newrmse /oldrmse ?
@@ -58,16 +58,17 @@ try({
     #unfortunately could land on wrong or right number!
     #say pick the more correct number for this testing set bc more 
     #of this data actualy would have had 
-
+    
     varImpMix <- as.character(round(proc.time()[3]-when[3]))
     i<-4
     #sumsolv<-0
     #tempDF<-data.frame()
     for(i in 1:dim(X)[2]){
       A <- X
-      smy<-summary(R[,i])
-      A[,i] <- smy[3]
+      #smy<-summary(R[,i])
+      A[,i] <- mean(R[,i],na.rm=T)#smy[3]
       nMnE <- lossf(Y,modeltp, A)
+      if(F){
       A[,i] <- smy[4]
       nMdE <- lossf(Y,modeltp, A)
       comn  <- as.numeric(names(sort(table(R[,i]),decreasing=TRUE)[1:5]))
@@ -93,7 +94,9 @@ try({
       
       tempDF <<- rbind(tempDF,data.frame(paste0(allmodel,datasource,names(A)[i]),org,nMnE,nMdE,nZeE,nMoE,nM3E,nM5E,nPerE))
       tomin <- c(nMnE,nMdE,nZeE,nMoE)
-
+      }
+      tomin <- nMnE
+      
       #,nPerE
       #nPerE;nMnE;nMdE;nZeE;nMoE;nM2E;nM3E;
       #print(which.min(tomin))
@@ -104,19 +107,19 @@ try({
     }
     fail.try.vif=F
     metpack <- paste(metpack,"minEmpt",sep = "_")
-})
+  })
   
-    Rseed <- .Random.seed[1]
-    Cseed <- .Random.seed[2]
-
-    write.table(paste(metpack,allmodel,date(),round(mean.improvement,digits=3),trans.y,
-                      datasource,missingdata,withextra,norming,which.computer,task.subject,
-                      FN,high.fold,Rseed,Cseed,seed.var,
-                      varImpMix,  sep = ","),
-                file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
-                eol = "\n", na = "NA", dec = ".", row.names = F,
-                col.names = F, qmethod = "double")
-
+  Rseed <- .Random.seed[1]
+  Cseed <- .Random.seed[2]
+  
+  write.table(paste(metpack,allmodel,date(),round(mean.improvement,digits=3),trans.y,
+                    datasource,missingdata,withextra,norming,which.computer,task.subject,
+                    FN,high.fold,Rseed,Cseed,seed.var,
+                    varImpMix,  sep = ","),
+              file = paste(importance.file,".csv",sep=""), append =TRUE, quote = F, sep = ",",
+              eol = "\n", na = "NA", dec = ".", row.names = F,
+              col.names = F, qmethod = "double")
+  
   
   if (fail.try.vif==T) {
     write.table(paste(metpack,allmodel,date(),"FAIL",  sep = ","),
