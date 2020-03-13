@@ -56,7 +56,7 @@ for(itr in methodsz){
   table(Y_train, useNA = "ifany")
   allmodel <- itr
   if(CrashNRep(allmodel)) {next()}
-
+  
   fail.try.main<-T 
   try({
     # Set the seed for reproducibility.
@@ -68,7 +68,7 @@ for(itr in methodsz){
     
     if(itr=="method.NNLS"){
       fit_nnls <- SuperLearner(Y = Y_train, X = X_train, SL.library = super, 
-                             verbose = TRUE, method = "method.NNLS",cvControl = list(V = cv.iters))
+                               verbose = TRUE, method = "method.NNLS",cvControl = list(V = cv.iters))
     } else {
       fit_nnls<- recombineSL(fit_nnls, Y = Y_train, method = itr)
     }
@@ -76,7 +76,7 @@ for(itr in methodsz){
     summary(fit_nnls)
     print(fit_nnls)
     fit_nnls$coef
- 
+    
     predics<- predict(fit_nnls, X_holdout, onlySL = T)$pred
     trainpred<- predict(fit_nnls, X_train, onlySL = T)$pred
     if(predictNDCG) NDCGpredics<- predict(fit_nnls, df.forNDCG[,x], onlySL = T)$pred
@@ -84,18 +84,20 @@ for(itr in methodsz){
     printPredMets(predicted.outcomes=predics,trainpred =trainpred ,hypercount="none",RANKSforNDCG=NDCGpredics)
     fail.try.main<-F  
   })
-  if(!fail.try.main){
-    custom_predict <- function(object, newdata) {
-      pred <- predict(object, newdata, onlySL = T)$pred
-      return(pred)
+  try({
+    if(!fail.try.main){
+      custom_predict <- function(object, newdata) {
+        pred <- predict(object, newdata, onlySL = T)$pred
+        return(pred)
+      }
+      varimperm(custom_predict=custom_predict, modeltp=fit_nnls,
+                X=X_holdout, Y=Y_holdout,R=training[,-1], metpack = "SLS_hold")
+      varimperm(custom_predict=custom_predict, modeltp=fit_nnls,
+                X=X_train, Y=Y_train,R=training[,-1], metpack = "SLS_train")
     }
-    varimperm(custom_predict=custom_predict, modeltp=fit_nnls,
-              X=X_holdout, Y=Y_holdout,R=training[,-1], metpack = "SLS_hold")
-    varimperm(custom_predict=custom_predict, modeltp=fit_nnls,
-              X=X_train, Y=Y_train,R=training[,-1], metpack = "SLS_train")
-  }
+  })
   if(fail.try.main){    
-failfail()
+    failfail()
   }
 }
 

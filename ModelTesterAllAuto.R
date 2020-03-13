@@ -46,12 +46,12 @@ task.subject<-"QSlink3"#"carEnstest3"#
 pc.tpot=F
 pc.caret=T
 pc.mlr<-c("ACEREBOUTt","HOPPERt","ALTA")#T,"HOPPER"
-pc.smallR<-c("HOPPERt","ALTAt","ACEREBOUTf")
+pc.smallR<-c("HOPPER","ALTAt","ACEREBOUTf")
 if(which.computer=="ALTA") #.libPaths("D:/R library/3.4");
   {pc.tpot=F;pc.caret=F}#;task.subject<-"carEnstest4"
 if(which.computer=="ACEREBOUT") 
   {pc.tpot=F;pc.caret=T; }#task.subject<-"hffoldreccTPOT";
-if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=T}
+if(which.computer=="HOPPER"){pc.tpot=F;pc.caret=F}
 if(which.computer=="LAPTOPBBQ"){pc.tpot=F;pc.caret=T}
 
   

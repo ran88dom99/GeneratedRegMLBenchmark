@@ -106,7 +106,7 @@ varimperm <- function(custom_predict, modeltp, X, Y, R, n_sample = 20, metpack =
       varImpMix <- paste(varImpMix,names(X)[i],signif(solv,digits = 4), sep = ",")
     }
     fail.try.vif=F
-    metpack <- paste(metpack,"minEmpt",sep = "_")
+    metpack <- paste(metpack,"JustMean",sep = "_")
   })
   
   Rseed <- .Random.seed[1]
