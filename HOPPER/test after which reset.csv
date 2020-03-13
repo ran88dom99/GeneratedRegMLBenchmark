@@ -338,3 +338,4 @@ Fri Jan 31 17:07:59 2020,regr.cvglmnet,QSlinks14_55,5,5,windows,x64,HOPPER
 Thu Mar 12 14:41:15 2020,regr.crs,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Thu Mar 12 17:09:15 2020,gbm_h2o,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Fri Mar 13 13:24:54 2020,logreg,QSlinks14_55Int,5,5,windows,x64,HOPPER
+Fri Mar 13 17:09:47 2020,summary.CV.SuperLearner,QSlinks14_55Int,5,5,windows,x64,HOPPER
