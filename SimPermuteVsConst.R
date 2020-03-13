@@ -26,13 +26,14 @@ metr<-function(g,h){
 } #EDIT metric measuring agreement and error between two variables
 #edit ideal at line 155 1 for correlation and 0 for rmse
 #do not forget to change save file name 
+#asume competnt feature selection and remove unused featurs from dataframe
 
 require(caret)
 allmodels <- unique(modelLookup()[modelLookup()$forReg,c(1)])
 bad.models=c("randomGLM","DENFIS","neuralnet","partDSA","blackboost","bstSm","bstTree","penalized","brnn",
              "gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay",
              "mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS",
-             "svmSpectrumString","svmExpoString","svmBoundrangeString","bagEarthGCV","bam","mxnet")
+             "svmSpectrumString","svmExpoString","svmBoundrangeString","bagEarthGCV","bam","mxnet","mlpKerasDecay","mlpKerasDropout")
 allmodels <- setdiff(allmodels,bad.models)
 
 iter <- 40
@@ -89,7 +90,7 @@ for(i in 1:iter){
   v<-v+rnorm(leng)/4 
   q<-q+rnorm(leng)/4 
   
-  d<-data.frame(y,E,x,z,r,v,q)
+  d<-data.frame(y,E,x,z,r)#,v,q)
   
   xh<-makemean(x)
 
