@@ -330,8 +330,6 @@ Sat Jan 25 17:10:34 2020,regr.rknn,QSlinks03_95,5,5,windows,x64,HOPPER
 Sun Jan 26 17:09:36 2020,regr.randomForest,QSlinks03_95,5,5,windows,x64,HOPPER
 Mon Jan 27 04:06:18 2020,regr.cubist,QSlinks03_95,5,5,windows,x64,HOPPER
 Mon Jan 27 17:09:11 2020,regr.featureless,QSlinks115_60,5,5,windows,x64,HOPPER
-Tue Jan 28 17:09:44 2020,regr.h2o.randomForest,QSlinks115_60,5,5,windows,x64,HOPPER
-Wed Jan 29 14:12:13 2020,regr.h2o.randomForest,QSlinks115_60,5,5,windows,x64,HOPPER
 Wed Jan 29 17:09:00 2020,regr.h2o.glm,QSlinks115_60,5,5,windows,x64,HOPPER
 Thu Jan 30 17:09:22 2020,regr.mob,QSlinks14_55,5,5,windows,x64,HOPPER
 Fri Jan 31 17:07:59 2020,regr.cvglmnet,QSlinks14_55,5,5,windows,x64,HOPPER
@@ -339,3 +337,4 @@ Thu Mar 12 14:41:15 2020,regr.crs,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Thu Mar 12 17:09:15 2020,gbm_h2o,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Fri Mar 13 13:24:54 2020,logreg,QSlinks14_55Int,5,5,windows,x64,HOPPER
 Fri Mar 13 17:09:47 2020,summary.CV.SuperLearner,QSlinks14_55Int,5,5,windows,x64,HOPPER
+Fri Mar 13 18:13:31 2020,method.CC_nloglik,QSlinks14_55Int,5,5,windows,x64,HOPPER
