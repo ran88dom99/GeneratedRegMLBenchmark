@@ -191,9 +191,9 @@ for(allmodel in mlrallmodels[[1]]){#just before all models define d.f and reduce
         return(pred)
       }
       varimperm(custom_predict=custom_predict, modeltp=m,
-                X=testing[,-1], Y=testing[,1], metpack = "mlr_hold")
+                X=testing[,-1], Y=testing[,1], R=training[,-1], metpack = "mlr_hold")
       varimperm(custom_predict=custom_predict, modeltp=m,
-                X=training[,-1], Y=training[,1], metpack = "mlr_train")
+                X=training[,-1], Y=training[,1], R=training[,-1], metpack = "mlr_train")
     })
   }
   if(not.failed==0) {
