@@ -69,7 +69,7 @@ for(allmodel in allmodels){
       )
     #(y~.,daata),
   }
-  print(allmodel)
+  print(paste(allmodel,date()))
   record <- data.frame()
 try({
 for(i in 1:iter){
