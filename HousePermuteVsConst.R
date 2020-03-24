@@ -13,7 +13,7 @@ metr<-function(g,h){
 } #EDIT metric measuring agreement and error between two variables
 #edit ideal at line 155 1 for correlation and 0 for rmse
 #do not forget to change save file name 
-#asume competnt feature selection and remove unused featurs from dataframe
+#DIDNT use competnt feature selection and remove unused featurs from dataframe
 ##set all file name including htis one
 
 require(caret)
@@ -39,13 +39,19 @@ if(exists("recoutr2")){
   finished <- vector()
 }
 
+library(MASS)
+bs<-Boston
+
+
 iter <- 40
-leng <- 1000
-ix <- 1:(leng/2+1) #testing partition
+leng <- dim(bs)[1]
+ix <- 1:(leng/3+1) #testing partition
 ux <- (max(ix):leng) #training partition
+names(bs)[14]<-"y"
+dim(bs)
 
-
-for(allmodel in allmodels){
+for(col in 1:13){ #col<-1
+for(allmodel in allmodels){#allmodel<-allmodels[3]
   mdle<-function(daata){
     return(
       train(x = data.frame(daata[,2:length(daata[1,])]),
@@ -59,53 +65,73 @@ for(allmodel in allmodels){
   record <- data.frame()
   try({
     for(i in 1:iter){
-      y<-d$targ
+      y <- bs$y
       
-      dt <- d[ix,]
-      d <- d[ux,]
+      dt <- bs[ix,]
+      d <- bs[ux,]
       
-      lmd<-mdle(d[,c(-2,-3)]) #daata<-d[,c(-2,-3)]
-      ylx=predict(lmd,newdata=dt[,c(-1,-2,-3)]) #based on linear model withOUT x
-      lmd<-mdle(d[,-2])#
-      yl=predict(lmd,newdata=dt[,c(-1,-2)]) #based on linear model with x
-      f<-dt
-      f$x<-xh[ix]
-      ylm=predict(lmd,newdata=f[,c(-1,-2)]) #based on linear model with x as mean
-      
+      lmd <- mdle(d[,c(-col)]) #based on linear model withOUT x
+      ylx = predict(lmd,newdata=dt[,c(-14,-col)]) 
+      lmd <- mdle(d[,]) #based on linear model with x
+      yl = predict(lmd,newdata=dt[,c(-14)]) #based on linear model with x
+      f <- dt
+      f[,col] <- makemean(dt[,col])
+      ylm = predict(lmd,newdata=f[,c(-14)]) #based on linear model with predict x as mean
       
       #based on linear model with x as permutation
-      if(T){
-        tb=data.frame(y[ix]) #build up for permutation mean then metric
-        tb<-tb[,-1]
-        for(i in 1:30){
-          f<-dt
-          f$x<-sample(x[ix],size = length(x[ix]))
-          ylp=predict(lmd,newdata=f[,c(-1,-2)]) 
-          tb<-cbind(tb,ylp)
+      try({
+        tb = data.frame(y[ix]) #build up for permutation mean then metric
+        tb <- tb[,-1]
+        for(i in 1:20){
+          f <- dt
+          f[,col] <-sample(f[,col],size = length(f[,col]))
+          ylp = predict(lmd,newdata=f[,c(-14)]) 
+          tb <- cbind(tb,ylp)
         }
-        ylp<-apply(tb,1,mean) #yp (permute) final
-      }
-      ylp<-sample(y[ix],size = length(y[ix]))
+        ylp <- apply(tb,1,mean)
+        ylpsd <- apply(tb,1,sd)#yp (permute) final
+      })
       
-      tb=vector() #build up for permutation metric then mean 
-      tbx=vector() #build up for permutation metric then mean 
-      for(i in 1:30){
-        f$x<-sample(x[ix],size = length(x[ix]))
-        ylpp=predict(lmd,newdata=f[,c(-1,-2)]) 
-        tb<-cbind(tb,metr(ylpp,y[ix]))
-        tbx<-cbind(tb,metr(ylpp,ylx))
-      }
-      ylpm<-mean(tb) #yp (permute) final
-      ylxpm<-mean(tbx)
+      #x as qantiles
+      try({
+        tb = data.frame(y[ix]) #build up for permutation mean then metric
+        tb <- tb[,-1]
+        tq <- vector(mode = "numeric",length = dim(f)[1])
+        for(i in quantile(f[,col])){#i<-quantile(f[,col])[1]
+          g <- dt
+          tq[] <- i
+          tq[] <- f[which.min(abs(f[,col]-tq)),col]
+          g[,col] <- tq
+          ylq = predict(lmd,newdata=g[,c(-14)]) 
+          tb <- cbind(tb,ylq)
+        }
+        ylq <- apply(tb,1,mean)
+        ylqsd <- apply(tb,1,sd)#yp (permute) final
+      })
       
-      record<-rbind(record,data.frame(1,metr(y,yo),metr(y,yp),ypl,metr(y,yi),
+      try({
+      tb = vector() #build up for permutation metric then mean 
+      tbx = vector() #build up for permutation metric then mean 
+      for(i in 1:20){
+        f[,col] <- f[order(runif(dim(f)[1])),col]
+        ylpp = predict(lmd,newdata=f[,c(-14)]) 
+        tb <- rbind(tb,metr(ylpp,y[ix]))
+        tbx <- rbind(tbx,metr(ylpp,ylx))
+      }
+      ylpm <- mean(tb) #yp (permute) final
+      ylxpm <- mean(tbx)
+      ylpsd <- sd(tb) #yp (permute) final
+      ylxpsd <- sd(tbx)
+      })
+      
+      record<-rbind(record,data.frame(1,
                                       metr(y[ix],yl),metr(y[ix],ylx),metr(y[ix],ylm),
                                       metr(y[ix],ylp),ylpm,metr(ylx,ylm),ylxpm))
     }
     
     names(record)<-c("ideal_corrs_w_y", "modl_w_x",
                      "modl_wo_x", "modl_mean_x",
-                     "y_perm","modl_x_perm",
+                     "modl_x_perm_mean","modl_x_perm_met",
                      "modl_wo_x_and_modl_mean_x",
                      "modl_wo_x_and_modl_perm_x")
     
@@ -119,14 +145,14 @@ for(allmodel in allmodels){
     rownames(out)[1] <- allmodel
     print(out)
     recoutr<-rbind(recoutr,out)
-    save(recoutr,file = "routSplitr_vq1Corr.Rdata")
+    save(recoutr,file = "routHouseCorr.Rdata")
     dts<-dist(t(record), method = "eucl",upper=T)
     out<-round((as.matrix(dts)[,c(1,5,7)])/iter,digits = 3)
     #not reached? crashes at dist with NAs?
     rownames(out)[1] <- allmodel
     print(out)
     recoutr2<-rbind(recoutr2,out)
-    save(recoutr2,file = "routSplitr_vq1L2Corr.Rdata")
+    save(recoutr2,file = "routHouseL2Corr.Rdata")
     
     
     avc<-vector()
@@ -135,10 +161,11 @@ for(allmodel in allmodels){
     }
     justmeans<-cbind(justmeans,data.frame(avc))
     names(justmeans)[dim(justmeans)[2]]<-allmodel
-    save(justmeans,file = "routSplitr_vq1.Rdata")
+    save(justmeans,file = "routHouse.Rdata")
     
     finished<-c(finished,allmodel)
   })
+}
 }
 recoutr;finished
 #cor(record)

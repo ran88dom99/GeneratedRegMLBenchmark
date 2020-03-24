@@ -178,7 +178,7 @@ for(i in 1:iter){
     f$x<-sample(x[ix],size = length(x[ix]))
     ylpp=predict(lmd,newdata=f[,c(-1,-2)]) 
     tb<-cbind(tb,metr(ylpp,y[ix]))
-    tbx<-cbind(tb,metr(ylpp,ylx))
+    tbx<-cbind(tbx,metr(ylpp,ylx))
   }
   ylpm<-mean(tb) #yp (permute) final
   ylxpm<-mean(tbx)
