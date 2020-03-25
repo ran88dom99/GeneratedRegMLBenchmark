@@ -18,8 +18,8 @@ makemean<-function(x){
   }
   return(t)
 } # just makes a vector of means
-xnd<-function(q){
-  return(q)#slt(q,r,v)*r
+xnd<-function(q,r,v){
+  return(slt(q,r,v))#*r
 }#EDIT interaction for x Note "ideal" (yi) must still be edited by hand
 metr<-function(g,h){ 
   cor(g,h)
@@ -35,7 +35,8 @@ bad.models=c("randomGLM","DENFIS","neuralnet","partDSA","blackboost","bstSm","bs
              "gamLoess","ANFIS","FIR.DM","FS.HGD","nodeHarvest","mlpWeightDecayML","monmlp","mlp","mlpWeightDecay",
              "mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS",
              "svmSpectrumString","svmExpoString","svmBoundrangeString",
-             "bagEarthGCV","bam","mxnet","mlpKerasDecay","mlpKerasDropout","qrnn")
+             "bagEarthGCV","bam","mxnet","mlpKerasDecay","mlpKerasDropout",
+             "qrnn","mxnet")
 
 allmodels <- setdiff(allmodels,bad.models)
 if(exists("recoutr2")){
@@ -69,7 +70,7 @@ for(allmodel in allmodels){
       )
     #(y~.,daata),
   }
-  print(allmodel)
+  print(paste(allmodel,date()))
   record <- data.frame()
 try({
 for(i in 1:iter){
@@ -79,7 +80,8 @@ for(i in 1:iter){
   r<-rnorm(leng) #usualy unused but maybe interactive used in xnd()
   v<-rnorm(leng) #usualy unused but maybe interactive used in xnd() 
   q<-rnorm(leng) #usualy unused but maybe interactive used in xnd() 
-  y=xnd(x)+E+z #actual model with error
+  thon<-seq.int(by=0,length.out = length(v))
+  y=xnd(x,r,slt(v,q,thon))+E+z #actual model with error
   
   
   if(F){
@@ -89,14 +91,14 @@ for(i in 1:iter){
       metr(y,z),
       metr(y,r),
       metr(y,v),
-      metr(y,xnd(x))))
+      metr(y,xnd(x,r,slt(v,q,thon)))))
     print(paste(
       metr(y,E)^2,
       metr(y,x)^2, 
       metr(y,z)^2,
       metr(y,r)^2,
       metr(y,v)^2,
-      metr(y,xnd(x))^2))
+      metr(y,xnd(x,r,slt(v,q,thon)))^2))
   }
   
   #each variable signal should not be clean except E
@@ -111,15 +113,15 @@ for(i in 1:iter){
   xh<-makemean(x)
 
   if(F){
-    ymx=xnd(xh)+E+z #model if x meaned with error
+    ymx=xnd(xh,r,slt(v,q,thon))+E+z #model if x meaned with error
   print(paste(
     metr(y,ymx)^2,
-    metr(y,xnd(xh))^2,
+    metr(y,xnd(xh,r,slt(v,q,thon)))^2,
     metr(y,E)^2))
   }
   
   #yr<-r+z
-  yo=xnd(xh)+z  #model if x meaned 
+  yo=xnd(xh,r,slt(v,q,thon))+z  #model if x meaned 
   #metr(yo,yr)
   
   #why is this diffferent than mean!!???
@@ -127,7 +129,7 @@ for(i in 1:iter){
   tb<-tb[,-1]
   for(i in 1:30){
     xp<-sample(x,size = length(x))
-    yp=xnd(xp)+z
+    yp=xnd(xp,r,slt(v,q,thon))+z
     tb<-cbind(tb,yp)
   }
   yp<-apply(tb,1,mean) #yp (permute) final
@@ -135,7 +137,7 @@ for(i in 1:iter){
   tb=vector() #build up for permutation metric then mean 
   for(i in 1:30){
     xp<-sample(x,size = length(x))
-    yp=xnd(xp)+z
+    yp=xnd(xp,r,slt(v,q,thon))+z
     tb<-cbind(tb,metr(yp,y))
   }
   ypl<-mean(tb) #yp (permute) final
@@ -176,7 +178,7 @@ for(i in 1:iter){
     f$x<-sample(x[ix],size = length(x[ix]))
     ylpp=predict(lmd,newdata=f[,c(-1,-2)]) 
     tb<-cbind(tb,metr(ylpp,y[ix]))
-    tbx<-cbind(tb,metr(ylpp,ylx))
+    tbx<-cbind(tbx,metr(ylpp,ylx))
   }
   ylpm<-mean(tb) #yp (permute) final
   ylxpm<-mean(tbx)
@@ -204,14 +206,14 @@ out<-round((as.matrix(dts)[,c(1,5,7)])/iter,digits = 3)
 rownames(out)[1] <- allmodel
 print(out)
 recoutr<-rbind(recoutr,out)
-save(recoutr,file = "routLinearCorr2.Rdata")
+save(recoutr,file = "routSplitr_vq1Corr.Rdata")
 dts<-dist(t(record), method = "eucl",upper=T)
 out<-round((as.matrix(dts)[,c(1,5,7)])/iter,digits = 3)
 #not reached? crashes at dist with NAs?
 rownames(out)[1] <- allmodel
 print(out)
 recoutr2<-rbind(recoutr2,out)
-save(recoutr2,file = "routLinearL2Corr2.Rdata")
+save(recoutr2,file = "routSplitr_vq1L2Corr.Rdata")
 
 
 avc<-vector()
@@ -220,7 +222,7 @@ for(i in 1:dim(record)[2]){
 }
 justmeans<-cbind(justmeans,data.frame(avc))
 names(justmeans)[dim(justmeans)[2]]<-allmodel
-save(justmeans,file = "routLinear2.Rdata")
+save(justmeans,file = "routSplitr_vq1.Rdata")
 
 finished<-c(finished,allmodel)
 })
