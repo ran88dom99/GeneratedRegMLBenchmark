@@ -79,13 +79,14 @@ for(allmodel in allmodels){#allmodel<-allmodels[3]
       
       dt <- bs[ex,]
       d <- bs[rx,]
+      lE<-length(ex)
       
       lmd <- mdle(d[,c(-col)]) #based on model withOUT x
       ylx = predict(lmd,newdata=dt[,c(-1,-col)]) 
       lmd <- mdle(d[,]) #based on linear model with x
       yl = predict(lmd,newdata=dt[,c(-1)]) #based on model with x
       f <- dt
-      f[,col] <- makemean(dt[,col])
+      f[,col] <- makemean(d[,col])[1:lE]
       ylm = predict(lmd,newdata=f[,c(-1)]) #based on model with predict x as mean
       
       #based on linear model with x as permutation
@@ -94,7 +95,7 @@ for(allmodel in allmodels){#allmodel<-allmodels[3]
         tb <- tb[,-1]
         for(i in 1:20){
           f <- dt
-          f[,col] <-sample(f[,col],size = length(f[,col]))
+          f[,col] <-sample(d[,col],size = length(f[,col]))
           ylp = predict(lmd,newdata=f[,c(-1)]) 
           tb <- cbind(tb,ylp)
         }
@@ -106,7 +107,7 @@ for(allmodel in allmodels){#allmodel<-allmodels[3]
         tb = data.frame(y[ex]) #build up for permutation mean then metric
         tb <- tb[,-1]
         tq <- vector(mode = "numeric",length = dim(f)[1])
-        for(i in quantile(f[,col])){#i<-quantile(f[,col])[1]
+        for(i in quantile(d[,col],seq(.1,.9,.2))){#i<-quantile(f[,col])[1]
           g <- dt
           tq[] <- i
           tq[] <- f[which.min(abs(f[,col]-tq)),col]
@@ -121,7 +122,7 @@ for(allmodel in allmodels){#allmodel<-allmodels[3]
       tb = vector() #build up for permutation metric then mean 
       tbx = vector() #build up for permutation metric then mean 
       for(i in 1:20){
-        f[,col] <- f[order(runif(dim(f)[1])),col]
+        f[,col] <- sample(d[,col],size = length(f[,col]))
         ylpp = predict(lmd,newdata=f[,c(-1)]) 
         tb <- rbind(tb,metr(ylpp,y[ex]))
         tbx <- rbind(tbx,metr(ylpp,ylx))
@@ -193,6 +194,9 @@ recoutr;finished
 #cor(record,method = "sp")
 
 ##### IMPORTANT TODO #####
-where do we get the data for permuting
-mean before or after proximity metric
-what about SD
+#where do we get the data for permuting? Training OFC! DONE. but not in first run
+#quantiles represent edges of cuts not centers; fix this.
+#mean before or after proximity metric, lets see what shows up in aggregate anylis
+#what about Standard deviation? also after anyl
+
+
