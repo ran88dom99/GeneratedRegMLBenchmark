@@ -23,7 +23,7 @@ bad.models=c("randomGLM","DENFIS","neuralnet","partDSA","blackboost","bstSm","bs
              "mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS",
              "svmSpectrumString","svmExpoString","svmBoundrangeString",
              "bagEarthGCV","bam","mxnet","mlpKerasDecay","mlpKerasDropout",
-             "qrnn","mxnet","mxnetAdam")
+             "qrnn","mxnet","mxnetAdam","WM")
 
 allmodels <- setdiff(allmodels,bad.models)
 if(exists("recoutr2")){
