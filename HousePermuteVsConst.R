@@ -23,14 +23,11 @@ bad.models=c("randomGLM","DENFIS","neuralnet","partDSA","blackboost","bstSm","bs
              "mlpSGD","rbf","rbfDDA","rfRules","GFS.FR.MOGUL","mlpML","HYFIS","GFS.THRIFT" ,"GFS.LT.RS",
              "svmSpectrumString","svmExpoString","svmBoundrangeString",
              "bagEarthGCV","bam","mxnet","mlpKerasDecay","mlpKerasDropout",
-             "qrnn","mxnet","mxnetAdam")
+             "qrnn","mxnet","mxnetAdam","WM")
 
 allmodels <- setdiff(allmodels,bad.models)
-if(exists("recoutr2")){
-  allmodels <- setdiff(allmodels,rownames(recoutr2))
-} else {
-  recoutr <- data.frame()
-  recoutr2 <- data.frame()
+load("~/GitHub/GeneratedRegMLBenchmark/routHouse.Rdata")
+if(!exists("justmeans")){
   justmeans <- data.frame(nams=c("ideal_corrs_w_y", 
                                  "modl_w_x",
                                  "modl_wo_x",
@@ -44,8 +41,12 @@ if(exists("recoutr2")){
                                  "wo_x_n_modl_x_quant_mean",
                                  "wo_x_n_modl_x_perm_met",
                                  "wo_x_n_modl_x_perm_met_sd"))
+  
+} 
   finished <- vector()
-}
+  recoutr <- data.frame()
+  recoutr2 <- data.frame()
+
 
 library(MASS)
 bs<-Boston
@@ -70,22 +71,23 @@ for(allmodel in allmodels){#allmodel<-allmodels[3]
     #(y~.,daata),
   }
   print(paste(allmodel,date()))
-  record <- data.frame()
+  #record <- data.frame()
   try({
-    for(i in 1:iter){#i<-1
+    for(izzyx in 1:iter){#i<-1
       ex <- sample(1:leng,leng/3) #testing partition
       rx <- setdiff(c(1:leng),c(ex))#training partition
       y <- bs$y
       
       dt <- bs[ex,]
       d <- bs[rx,]
+      lE<-length(ex)
       
       lmd <- mdle(d[,c(-col)]) #based on model withOUT x
       ylx = predict(lmd,newdata=dt[,c(-1,-col)]) 
       lmd <- mdle(d[,]) #based on linear model with x
       yl = predict(lmd,newdata=dt[,c(-1)]) #based on model with x
       f <- dt
-      f[,col] <- makemean(dt[,col])
+      f[,col] <- makemean(d[,col])[1:lE]
       ylm = predict(lmd,newdata=f[,c(-1)]) #based on model with predict x as mean
       
       #based on linear model with x as permutation
@@ -94,7 +96,7 @@ for(allmodel in allmodels){#allmodel<-allmodels[3]
         tb <- tb[,-1]
         for(i in 1:20){
           f <- dt
-          f[,col] <-sample(f[,col],size = length(f[,col]))
+          f[,col] <-sample(d[,col],size = length(f[,col]))
           ylp = predict(lmd,newdata=f[,c(-1)]) 
           tb <- cbind(tb,ylp)
         }
@@ -106,7 +108,10 @@ for(allmodel in allmodels){#allmodel<-allmodels[3]
         tb = data.frame(y[ex]) #build up for permutation mean then metric
         tb <- tb[,-1]
         tq <- vector(mode = "numeric",length = dim(f)[1])
-        for(i in quantile(f[,col])){#i<-quantile(f[,col])[1]
+        qit <- 5
+        a <- (1/qit)/2; b <- (1-(1/qit)/2); c <- (((b-a)/qit))
+        qunt <- quantile(d[,col],seq(a,b,c))
+        for(i in qunt){#i<-qunt[1]
           g <- dt
           tq[] <- i
           tq[] <- f[which.min(abs(f[,col]-tq)),col]
@@ -121,7 +126,7 @@ for(allmodel in allmodels){#allmodel<-allmodels[3]
       tb = vector() #build up for permutation metric then mean 
       tbx = vector() #build up for permutation metric then mean 
       for(i in 1:20){
-        f[,col] <- f[order(runif(dim(f)[1])),col]
+        f[,col] <- sample(d[,col],size = length(f[,col]))
         ylpp = predict(lmd,newdata=f[,c(-1)]) 
         tb <- rbind(tb,metr(ylpp,y[ex]))
         tbx <- rbind(tbx,metr(ylpp,ylx))
@@ -132,25 +137,29 @@ for(allmodel in allmodels){#allmodel<-allmodels[3]
       ylxpsd <- sd(tbx)
       })
       
-      record <- rbind(record,data.frame(1, metr(y[ex],yl),metr(y[ex],ylx),metr(y[ex],ylm),
-                                      metr(y[ex],ylp),metr(y[ex],ylq),ylpm,ylpsd,
-                                      metr(ylx,ylm),metr(ylx,ylp),metr(ylx,ylq),ylxpm,ylxpsd))
+      record1 <- data.frame(allmodel,colnam=names(bs)[col],
+                             ideal_corrs_w_y=1,
+                            modl_w_x=metr(y[ex],yl),
+                            modl_wo_x=metr(y[ex],ylx),
+                            modl_mean_x=metr(y[ex],ylm),
+                            modl_x_perm_mean=metr(y[ex],ylp),
+                            modl_x_quant_mean=metr(y[ex],ylq),
+                            modl_x_perm_met=ylpm,
+                            modl_x_perm_met_sd=ylpsd,
+                            wo_x_n_modl_mean_x=metr(ylx,ylm),
+                            wo_x_n_modl_perm_mean=metr(ylx,ylp),
+                            wo_x_n_modl_x_quant_mean=metr(ylx,ylq),
+                            wo_x_n_modl_x_perm_met=ylxpm,
+                            wo_x_n_modl_x_perm_met_sd=ylxpsd)
+      
+      if (!exists("record")) {
+        record <- record1
+      } else {
+      record <- rbind(record,record1)
+      }
+      
     }
-    
-    names(record)<-c("ideal_corrs_w_y", 
-                     "modl_w_x",
-                     "modl_wo_x",
-                     "modl_mean_x",
-                     "modl_x_perm_mean",
-                     "modl_x_quant_mean",
-                     "modl_x_perm_met",
-                     "modl_x_perm_met_sd",
-                     "wo_x_n_modl_mean_x",
-                     "wo_x_n_modl_perm_mean",
-                     "wo_x_n_modl_x_quant_mean",
-                     "wo_x_n_modl_x_perm_met",
-                     "wo_x_n_modl_x_perm_met_sd")
-    
+    save(record,file = "rouRecHouse.Rdata")
     print(record)
     if(F){
     for(i in 1:dim(record)[2]){
@@ -172,15 +181,15 @@ for(allmodel in allmodels){#allmodel<-allmodels[3]
     recoutr2<-rbind(recoutr2,out)
     save(recoutr2,file = "routHouseL2Corr.Rdata")
     }
-    
+    if(F){
     avc<-vector()
     for(i in 1:dim(record)[2]){
       avc<-c(avc,mean(record[,i],na.rm = T))
     }
     justmeans<-cbind(justmeans,data.frame(avc))
     names(justmeans)[dim(justmeans)[2]]<-paste0(allmodel,"_",names(bs)[col])
-    save(justmeans,file = "routHouse.Rdata")
-    
+      save(justmeans,file = "routHouse.Rdata")
+    }
     finished<-c(finished,allmodel)
   })
 }
@@ -193,6 +202,12 @@ recoutr;finished
 #cor(record,method = "sp")
 
 ##### IMPORTANT TODO #####
-where do we get the data for permuting
-mean before or after proximity metric
-what about SD
+#where do we get the data for permuting? Training OFC! DONE. but not in first run
+# hopefully sources for X substitutes are from the training set now
+#quantiles represent edges of cuts not centers; fix this. DONE
+#mean before or after proximity metric, lets see what shows up in aggregate anylis
+#what about Standard deviation? also after anyl
+# record every time run not just mean and at that time ignore sd
+#no more mxnet no more WM
+# I cannnot concentrate enough to tell what is causing quant to create identical scores to mean
+# its the correlation; the permuttion changes order but quant does not
