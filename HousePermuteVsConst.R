@@ -9,7 +9,7 @@ makemean<-function(x){
 } # just makes a vector of means
 
 metr<-function(g,h){ 
-  cor(g,h)
+  sqrt(mean((g-h)^2))
 } #EDIT metric measuring agreement and error between two variables
 #edit ideal at line 155 1 for correlation and 0 for rmse
 #do not forget to change save file name 
@@ -29,6 +29,7 @@ allmodels <- setdiff(allmodels,bad.models)
 load("~/GitHub/GeneratedRegMLBenchmark/routHouse.Rdata")
 if(!exists("justmeans")){
   justmeans <- data.frame(nams=c("ideal_corrs_w_y", 
+                                 "modl_only_x",
                                  "modl_w_x",
                                  "modl_wo_x",
                                  "modl_mean_x",
@@ -82,6 +83,10 @@ for(allmodel in allmodels){#allmodel<-allmodels[3]
       d <- bs[rx,]
       lE<-length(ex)
       
+      con<-col+1#otherwise caret crashes
+      if(con>dim(bs)[2]) con<-2
+      lmd <- mdle(d[,c(1,col,con)]) #model with only x
+      yox = predict(lmd,newdata=dt[,c(col,con)]) 
       lmd <- mdle(d[,c(-col)]) #based on model withOUT x
       ylx = predict(lmd,newdata=dt[,c(-1,-col)]) 
       lmd <- mdle(d[,]) #based on linear model with x
@@ -139,6 +144,7 @@ for(allmodel in allmodels){#allmodel<-allmodels[3]
       
       record1 <- data.frame(allmodel,colnam=names(bs)[col],
                              ideal_corrs_w_y=1,
+                            modl_only_x=metr(y[ex],yox),
                             modl_w_x=metr(y[ex],yl),
                             modl_wo_x=metr(y[ex],ylx),
                             modl_mean_x=metr(y[ex],ylm),
