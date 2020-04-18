@@ -60,7 +60,9 @@ bs<-bs[,c(14,1,2,3,4,5,6,7,8,9,10,11,12,13)]
 names(bs)[1]<-"y"
 str(bs)
 
-for(col in 2:14){ #col<-14
+4*3*length(allmodels)
+print("COLSSETLATER")
+for(col in 5:14){ #col<-14
 for(allmodel in allmodels){#allmodel<-allmodels[3]
   mdle<-function(daata){
     return(
