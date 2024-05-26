@@ -1,8 +1,9 @@
 This project is licensed under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE license.
 # GeneratedRegMLBenchmark
-Testing what the machine learning algorithms of R-caret can detect.
+Testing what the machine learning algorithms of R-caret can detect. 
+[Many benchmarks have been run on common real world datasets](https://datascience.stackexchange.com/a/18380). This Benchmark is over generated extremes.
 
-For results see wiki and folders containing [number]th. Files named minnrec ods, power png especially. 
+For results see WIKI and folders containing [number]th. Files named minnrec ods, power png especially. 
 Some patterns, like 3 variables multiplied to produce target variable and nested if statments can barely be reconstructed by any algorithm.
 
 First run: R version 3.3.2., 100 datapoints, 3 Xvalidated repeated 5 times, 16 random hyper-parameters tested each time. 
